@@ -108,19 +108,21 @@
 				</gmd:CI_Citation>
 			</gmd:citation>
 			<gmd:abstract>
-				<gco:CharacterString>This data set contains UK-wide maps of ten different among-model ensemble approaches for above ground Carbon stock.
+				<gco:CharacterString>
+					This data set contains UK-wide maps of ten different among-model ensemble approaches for above ground Carbon stock.
 
-The image service has been created using the data input described below:
-Fourteen TIF maps for above-ground carbon storage at a 1-km2 resolution with associated world files: ten approaches, with a double option for two of those, together with maps of variation among models and among ensembles.
-Vector Cells named 'Carbon Raster Cells' that have the gridocde of all the rasters.
+					The image service has been created using the data input described below:
+					Fourteen TIF maps for above-ground carbon storage at a 1-km2 resolution with associated world files: ten approaches, with a double option for two of those, together with maps of variation among models and among ensembles.
+					Vector Cells named 'Carbon Raster Cells' that have the gridocde of all the rasters.
 
-Ensemble output maps were calculated with different approaches following the supporting documentation and associated publication. Uncertainty estimates for these services are included as variation among contributing model outputs and among the employed ensemble approaches.
+					Ensemble output maps were calculated with different approaches following the supporting documentation and associated publication. Uncertainty estimates for these services are included as variation among contributing model outputs and among the employed ensemble approaches.
 
-The work was completed under the ‘EnsemblES - Using ensemble techniques to capture the accuracy and sensitivity of ecosystem service models’ project (NE/T00391X/1) funded by the UKRI Landscape Decisions programme.
+					The work was completed under the ‘EnsemblES - Using ensemble techniques to capture the accuracy and sensitivity of ecosystem service models’ project (NE/T00391X/1) funded by the UKRI Landscape Decisions programme.
 
-Full details about this dataset can be found at https://doi.org/10.5285/a9ae773d-b742-4d42-ae42-2b594bae5d38
+					Full details about this dataset can be found at https://doi.org/10.5285/a9ae773d-b742-4d42-ae42-2b594bae5d38
 
-Related article: Reducing uncertainty in ecosystem service modelling through weighted ensembles</gco:CharacterString>
+					Related article: Reducing uncertainty in ecosystem service modelling through weighted ensembles
+				</gco:CharacterString>
 			</gmd:abstract>
 			<gmd:pointOfContact>
 				<gmd:CI_ResponsibleParty>
