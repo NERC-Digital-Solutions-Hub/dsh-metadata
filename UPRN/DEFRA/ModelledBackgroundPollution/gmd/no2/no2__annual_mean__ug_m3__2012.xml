@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gmd:MD_Metadata xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd">
-	<gmd:fileIdentifier><gco:CharacterString>e0b5b617-d3bf-42c8-92d4-fbf27a653f2d</gco:CharacterString></gmd:fileIdentifier><gmd:language>
+<gmd:MD_Metadata xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
+	<gmd:fileIdentifier>
+		<gco:CharacterString>e0b5b617-d3bf-42c8-92d4-fbf27a653f2d</gco:CharacterString>
+	</gmd:fileIdentifier>
+	<gmd:language>
 		<gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</gmd:LanguageCode>
 	</gmd:language>
 	<gmd:characterSet>
@@ -44,7 +47,7 @@
 			<gmd:citation>
 				<gmd:CI_Citation>
 					<gmd:title>
-						<gco:CharacterString>DEFRA Modelled Background Pollution - NO2, 2012</gco:CharacterString>
+						<gco:CharacterString>UK Air Modelled Background Pollution - NO2, 2012</gco:CharacterString>
 					</gmd:title>
 					<gmd:date gco:nilReason="missing" />
 					<gmd:presentationForm>
@@ -57,10 +60,10 @@
 			</gmd:abstract>
 			<gmd:credit>
 				<gco:CharacterString>
-            Technical Report: Pugsley, K. L., Stedman, J. R., Brookes, D. M., Kent, A. J., Morris, R. J., Whiting, S. L., Wareham, J. V., Goodhand, A., Pepler, A., Thorp, T. M., Gorji, S. (2023). Technical report on UK supplementary modelling assessment under the Air Quality Standards Regulations 2010 for 2021. Ricardo Energy and Environment
-            
-            The dataset is owned by DEFRA.
-        </gco:CharacterString>
+					Technical Report: Pugsley, K. L., Stedman, J. R., Brookes, D. M., Kent, A. J., Morris, R. J., Whiting, S. L., Wareham, J. V., Goodhand, A., Pepler, A., Thorp, T. M., Gorji, S. (2023). Technical report on UK supplementary modelling assessment under the Air Quality Standards Regulations 2010 for 2021. Ricardo Energy and Environment
+
+					The dataset is owned by DEFRA.
+        		</gco:CharacterString>
 			</gmd:credit>
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
@@ -68,11 +71,49 @@
 						<gco:CharacterString>DEFRA</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:keyword>
-						<gco:CharacterString>pollution</gco:CharacterString>
+						<gco:CharacterString>UK Air</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:keyword>
-						<gco:CharacterString>model</gco:CharacterString>
+						<gco:CharacterString>Modelled Background Pollution</gco:CharacterString>
 					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>Annual Mean</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>Time Series</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>Nitrogen Dioxide</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>NO2</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gco:CharacterString>Pollution</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:keyword>
+						<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/theme/ac">Atmospheric conditions</gmx:Anchor>
+					</gmd:keyword>
+					<gmd:type>
+					<gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+					</gmd:type>
+					<gmd:thesaurusName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/inspire_themes">GEMET - INSPIRE themes, version 1.0</gmx:Anchor>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2008-06-01</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
 			<gmd:resourceConstraints>
@@ -91,9 +132,6 @@
 			<gmd:characterSet>
 				<gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</gmd:MD_CharacterSetCode>
 			</gmd:characterSet>
-			<gmd:environmentDescription>
-				<gco:CharacterString>Esri ArcGIS 13.1.3.41833</gco:CharacterString>
-			</gmd:environmentDescription>
 			<gmd:extent>
 				<gmd:EX_Extent>
 					<gmd:geographicElement>
@@ -117,18 +155,20 @@
 					</gmd:geographicElement>
 				</gmd:EX_Extent>
 			</gmd:extent>
+			<gmd:extent>
+				<gmd:EX_Extent>
+					<gmd:temporalElement>
+						<gmd:EX_TemporalExtent>
+							<gmd:extent>
+								<gml:TimePeriod gml:id="tp_2012">
+									<gml:beginPosition>2012-01-01</gml:beginPosition>
+									<gml:endPosition>2012-12-31</gml:endPosition>
+								</gml:TimePeriod>
+							</gmd:extent>
+						</gmd:EX_TemporalExtent>
+					</gmd:temporalElement>
+				</gmd:EX_Extent>
+			</gmd:extent>
 		</gmd:MD_DataIdentification>
 	</gmd:identificationInfo>
-	<gmd:distributionInfo>
-		<gmd:MD_Distribution>
-			<gmd:distributionFormat>
-				<gmd:MD_Format>
-					<gmd:name>
-						<gco:CharacterString>File Geodatabase Raster Dataset</gco:CharacterString>
-					</gmd:name>
-					<gmd:version gco:nilReason="missing" />
-				</gmd:MD_Format>
-			</gmd:distributionFormat>
-		</gmd:MD_Distribution>
-	</gmd:distributionInfo>
 </gmd:MD_Metadata>
