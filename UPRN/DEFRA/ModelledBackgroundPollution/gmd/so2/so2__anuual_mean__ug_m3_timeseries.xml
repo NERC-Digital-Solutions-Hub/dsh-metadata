@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gmd:MD_Metadata xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
 	<gmd:fileIdentifier>
-		<gco:CharacterString>9f0d5f22-9398-4f04-9834-d126962eda73</gco:CharacterString>
+		<gco:CharacterString></gco:CharacterString>
 	</gmd:fileIdentifier>
 	<gmd:language>
 		<gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</gmd:LanguageCode>
@@ -17,7 +17,7 @@
 	</gmd:hierarchyLevelName>
 	<gmd:contact gco:nilReason="missing" />
 	<gmd:dateStamp>
-		<gco:Date>2024-09-02</gco:Date>
+		<gco:Date>2024-08-30</gco:Date>
 	</gmd:dateStamp>
 	<gmd:metadataStandardName>
 		<gco:CharacterString>ISO 19139 Geographic Information - Metadata - Implementation Specification</gco:CharacterString>
@@ -47,7 +47,7 @@
 			<gmd:citation>
 				<gmd:CI_Citation>
 					<gmd:title>
-						<gco:CharacterString>UK Air Modelled Background Pollution - SO2, 2016</gco:CharacterString>
+						<gco:CharacterString>UK Air Modelled Background Pollution - Sulfur Dioxide (SO2) annual mean timeseries, 2010-2022</gco:CharacterString>
 					</gmd:title>
 					<gmd:date gco:nilReason="missing" />
 					<gmd:presentationForm>
@@ -56,14 +56,14 @@
 				</gmd:CI_Citation>
 			</gmd:citation>
 			<gmd:abstract>
-				<gco:CharacterString>This information product contains DEFRA's modelled background pollution data on annual average SO2 concentration for the year 2016. Values are given in ug/m3.</gco:CharacterString>
+				<gco:CharacterString>This information product contains DEFRA's modelled background pollution timeseries data on annual average SO2 concentration for the years 2010-2022. Values are given in ug/m3.</gco:CharacterString>
 			</gmd:abstract>
 			<gmd:credit>
 				<gco:CharacterString>
-					Technical Report: Pugsley, K. L., Stedman, J. R., Brookes, D. M., Kent, A. J., Morris, R. J., Whiting, S. L., Wareham, J. V., Goodhand, A., Pepler, A., Thorp, T. M., Gorji, S. (2023). Technical report on UK supplementary modelling assessment under the Air Quality Standards Regulations 2010 for 2021. Ricardo Energy and Environment
+					Technical Report: Pugsley, K. L., Stedman, J. R., Brookes, D. M., Kent, A. J., Morris, R. J., Whiting, S. L., Wareham, J. V., Goodhand, A., Pepler, A., Thorp, T. M., Gorji, S. (2023). Technical report on UK supplementary modelling assessment under the Air Quality Standards Regulations 2010 for 2022. Ricardo Energy and Environment
 
 					The dataset is owned by DEFRA.
-        		</gco:CharacterString>
+				</gco:CharacterString>
 			</gmd:credit>
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
@@ -83,10 +83,10 @@
 						<gco:CharacterString>Time Series</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:keyword>
-						<gco:CharacterString>Sulfur Dioxide</gco:CharacterString>
+						<gco:CharacterString>Ozone</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:keyword>
-						<gco:CharacterString>SO2</gco:CharacterString>
+						<gco:CharacterString>O3</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:keyword>
 						<gco:CharacterString>Pollution</gco:CharacterString>
@@ -153,6 +153,20 @@
 							</gmd:northBoundLatitude>
 						</gmd:EX_GeographicBoundingBox>
 					</gmd:geographicElement>
+				</gmd:EX_Extent>
+			</gmd:extent>
+			<gmd:extent>
+				<gmd:EX_Extent>
+					<gmd:temporalElement>
+						<gmd:EX_TemporalExtent>
+							<gmd:extent>
+								<gml:TimePeriod gml:id="tp_2010_2022">
+									<gml:beginPosition>2010-01-01</gml:beginPosition>
+									<gml:endPosition>2022-12-31</gml:endPosition>
+								</gml:TimePeriod>
+							</gmd:extent>
+						</gmd:EX_TemporalExtent>
+					</gmd:temporalElement>
 				</gmd:EX_Extent>
 			</gmd:extent>
 		</gmd:MD_DataIdentification>
