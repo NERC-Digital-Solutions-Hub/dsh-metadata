@@ -83,10 +83,10 @@
 						<gco:CharacterString>Time Series</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:keyword>
-						<gco:CharacterString>Ozone</gco:CharacterString>
+						<gco:CharacterString>Nitrogen Dioxide</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:keyword>
-						<gco:CharacterString>O3</gco:CharacterString>
+						<gco:CharacterString>NO2</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:keyword>
 						<gco:CharacterString>Pollution</gco:CharacterString>
