@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gmd:MD_Metadata xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd">
+<gmd:MD_Metadata xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
 	<gmd:fileIdentifier>
 		<gco:CharacterString>74d65f9a-19d2-4f82-843e-69ff29bf02de</gco:CharacterString>
 	</gmd:fileIdentifier>
