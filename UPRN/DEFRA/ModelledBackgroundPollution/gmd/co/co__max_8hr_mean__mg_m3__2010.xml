@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gmd:MD_Metadata xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2">
 	<gmd:fileIdentifier>
-		<gco:CharacterString>46309a35-18d6-47d2-860b-6b2edf04b80d</gco:CharacterString>
+		<gco:CharacterString>0d1884de-4d5f-42f6-8699-57b2e0a4f89f</gco:CharacterString>
 	</gmd:fileIdentifier>
 	<gmd:language>
 		<gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</gmd:LanguageCode>
@@ -56,7 +56,7 @@
 				</gmd:CI_Citation>
 			</gmd:citation>
 			<gmd:abstract>
-				<gco:CharacterString>This information product contains DEFRA's modelled background pollution data on annual average, CO concentration for the year 2010. Values are given in mg/m3.</gco:CharacterString>
+				<gco:CharacterString>This information product contains DEFRA's modelled background pollution data on the maximum of 8-hourly average CO concentration for the year 2010. Values are given in mg/m3.</gco:CharacterString>
 			</gmd:abstract>
 			<gmd:credit>
 				<gco:CharacterString>
