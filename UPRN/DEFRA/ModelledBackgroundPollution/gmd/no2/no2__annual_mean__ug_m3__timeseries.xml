@@ -47,7 +47,7 @@
 			<gmd:citation>
 				<gmd:CI_Citation>
 					<gmd:title>
-						<gco:CharacterString>UK Air Modelled Background Pollution - Ozone annual mean timeseries, 2010-2022</gco:CharacterString>
+						<gco:CharacterString>UK Air Modelled Background Pollution - Nitrogen Dioxide (NO2) annual mean timeseries, 2010-2022</gco:CharacterString>
 					</gmd:title>
 					<gmd:date gco:nilReason="missing" />
 					<gmd:presentationForm>
@@ -56,7 +56,7 @@
 				</gmd:CI_Citation>
 			</gmd:citation>
 			<gmd:abstract>
-				<gco:CharacterString>This information product contains DEFRA's modelled background pollution timeseries data on annual average NO2 concentration for the year 2010-2022. Values are given in ug/m3.</gco:CharacterString>
+				<gco:CharacterString>This information product contains DEFRA's modelled background pollution timeseries data on annual average NO2 concentration for the years 2010-2022. Values are given in ug/m3.</gco:CharacterString>
 			</gmd:abstract>
 			<gmd:credit>
 				<gco:CharacterString>
@@ -83,10 +83,10 @@
 						<gco:CharacterString>Time Series</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:keyword>
-						<gco:CharacterString>Ozone</gco:CharacterString>
+						<gco:CharacterString>Nitrogen Dioxide</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:keyword>
-						<gco:CharacterString>O3</gco:CharacterString>
+						<gco:CharacterString>NO2</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:keyword>
 						<gco:CharacterString>Pollution</gco:CharacterString>
