@@ -1,6 +1,15 @@
 {
     "tabs": [
         {
+            "title": "Metadata",
+            "content": [
+                {
+                    "type": "xml",
+                    "link": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/gmd/e5e1af92-521e-48af-9af2-633f357f9fb4.xml"
+                }
+            ]
+        },
+        {
             "title": "Infographics",
             "content": [
                 {
