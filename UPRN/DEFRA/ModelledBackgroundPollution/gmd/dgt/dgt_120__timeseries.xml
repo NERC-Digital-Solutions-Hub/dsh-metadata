@@ -47,7 +47,7 @@
 			<gmd:citation>
 				<gmd:CI_Citation>
 					<gmd:title>
-						<gco:CharacterString>UK Air Modelled Background Pollution - Ozone annual mean timeseries, 2010-2022</gco:CharacterString>
+						<gco:CharacterString>UK Air Modelled Background Pollution - Ozone timeseries (number of days concentration above 120 ug/m3), 2010-2022</gco:CharacterString>
 					</gmd:title>
 					<gmd:date gco:nilReason="missing" />
 					<gmd:presentationForm>
