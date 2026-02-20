@@ -1,0 +1,47 @@
+{
+    "tabs": [
+        {
+            "title": "Metadata",
+            "content": [
+                {
+                    "type": "xml",
+                    "link": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/gmd/modelled-background-pollution.xml"
+                }
+            ]
+        },
+        {
+            "title": "Infographics",
+            "content": [
+                {
+                    "type": "image",
+                    "link": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/infographics/no01.png"
+                }
+            ]
+        },
+        {
+            "title": "Slides",
+            "content": [
+                {
+                    "type": "slideshow",
+                    "links": [
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no01.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no02.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no03.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no04.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no05.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no06.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no07.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no08.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no09.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no10.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no11.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no12.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no13.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no14.png",
+                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/slide-decks/no15.png"
+                    ]
+                }
+            ]
+        }
+    ]
+}
