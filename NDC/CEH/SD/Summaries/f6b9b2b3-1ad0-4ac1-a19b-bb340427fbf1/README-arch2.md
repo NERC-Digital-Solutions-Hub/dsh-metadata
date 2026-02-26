@@ -1,0 +1,37 @@
+# Description of the Data and file structure
+
+- Focus: Abundance of freshwater macroinvertebrates recorded by the Environment Agency, stored as a long-form dataset (year, month, day, site, sample, taxon, abundance) in an R-friendly rds file.
+- Timeframe: 2002–2019 (data before 2002 excluded due to lack of widespread abundance recording).
+- Geography: Sites across England; across ten river basins defined under the EU Water Framework Directive; bias toward mid to lower perennial reaches.
+- Sampling method: Three-minute kick-samples (net disturbance for 3 minutes downstream of a sampled area).
+- Data lineage: Processed from the EA Ecology and Fish Explorer Macroinvertebrate database; data are pooled by family and wider taxonomic groupings.
+- File format and access: Single rds file; accessible via R; missing values coded as NA.
+- Data lineage note: Used in a 2022 Global Change Biology manuscript exploring abundance trends across taxa, trophic groups, and river typology.
+
+- Key fields (columns)
+  - riverbasin, Description: name of river basin district
+  - agency_area, Description: Environment Agency agency area
+  - waterbody, Description: waterbody name
+  - wfd_waterbody_id, Description: Water Framework Directive code
+  - site_id, Description: unique sampling location code
+  - full_easting / full_northing, Description: coordinates of sampling site
+  - Latitude / Longitude, Description: decimal degree coordinates
+  - season, Description: spring or autumn sampling
+  - year, month, day, Description: sampling date
+  - sample_id, Description: unique site-date sample identifier
+  - order_taxon / family_taxon, Description: taxonomic classification
+  - total_abundance, Description: total counts at family level
+  - year_scaled, Description: year rescaled (1-18)
+  - group, Description: higher taxonomic grouping for families
+- Data processing details
+  - Abundance counts are discrete and represent the number of individuals observed
+  - Abundance aggregated at the family level within included taxa (e.g., Ephemeroptera, Plecoptera, etc.)
+  - Data manipulated and analyzed in R between 2019–2022
+- Quality control
+  - Since 2002, improved QA with one in ten samples independently re-analysed
+  - Original data extended back to 1991, but restricted to 2002–2019 for reliability
+- Accessibility and reuse
+  - Public data link: https://environment.data.gov.uk/ecology-fish
+  - Used in Powell et al. (2022) Global Change Biology publication
+- Units and interpretation
+  - Recorded values are discrete abundance counts (number of individuals per sample)

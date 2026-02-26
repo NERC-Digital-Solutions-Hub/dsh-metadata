@@ -1,0 +1,29 @@
+# Sup_Doc_NH3_SouthLanarkshire_indoors&outdoors
+
+- Two sites in a rural area of South Lanarkshire (inside hall of a dwelling and outside in the garden) monitored for ammonia (NH3) using CEH ALPHA samplers; analysis performed by the Centre for Ecology and Hydrology Edinburgh.
+- Sampler methodology:
+  - Passive samplers with citric acid coated filters and a protecting PTFE membrane.
+  - Samplers mounted at ~1.5 m height on a shelter; replicates used for reliability.
+  - Monthly exposure cycles; samplers extracted into deionised water and analysed with SEAL AA3 colorimetry.
+  - Ammonia concentration in air calculated from measured ammonium with a known uptake rate (0.003241315 m3/h) and exposure duration.
+- Data products and contents:
+  - Final dataset: NH3_SouthLanarkshire_indoors_outdoors.csv, with one row per site per monthly period.
+  - Columns include: site name, unique site/network identifiers, parameter type (alpha_NH3_g), exposure start/end dates and times, measured concentration (µg NH3 m-3), data flags, detection-limit indicators, verification status, unit, data capture percentage, validity status, and EMEP-related codes.
+  - Metadata fields provide: month-year, measurement start/end times, and data quality flags.
+- Data quality, validation, and flags:
+  - Quality rule: coefficient of variation (CV) of replicates < 15%; if CV > 15%, replicate handling and representativeness are reviewed; valid data can be flagged as 103.
+  - Some data exceed calibration range but are retained as valid when re-measurement/dilution was not possible due to instrument issues.
+  - Missing data/metadata are marked with -9999; dates/times missing prevent concentration calculations.
+  - EMEP flags accompany data to indicate data status, validity, and contextual reasons (e.g., contamination, period length, detection limits, etc.).
+- Site information and logistics:
+  - Inside site: coordinates 55.64072, 3.59705; air inlet height 1.5 m; located in the hall of the dwelling.
+  - Outside site: same coordinates; located in the garden area adjacent to grassland on a dairy farm.
+  - Start date for both sites: 01/01/17; End date: ongoing.
+- Data governance and stewardship implications:
+  - Dataset supports governance by providing structured metadata, replicates for reliability, and clear data flags to indicate quality and limitations.
+  - Documentation notes align with standards for data sharing and discovery, including explicit data capture, validity, and measurement context.
+  - The presence of detailed site information and a defined data model facilitates interoperability and reuse across portals and catalogues.
+- Practical considerations for data stewards:
+  - Ensure timely data uploads to relevant portals and consistent cataloging of NH3_SouthLanarkshire_indoors_outdoors data.
+  - Maintain and update QA rules, especially around CV checks, calibration range handling, and missing metadata.
+  - Track any changes in site status or measurement procedures to preserve provenance and data interpretation.

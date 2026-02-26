@@ -1,0 +1,31 @@
+# Experimental Design
+
+- Objective: Assess potential exposure to antibiotic-resistant bacteria from livestock, poultry, and the environment; also evaluate antibiotic use in humans and poultry.
+- Study design: Cross-sectional, interviewer-administered survey conducted in multiple settings.
+- Settings and exposure groups:
+  - Rural Mirzapur, Tangail district: rural households and rural broiler farms.
+  - Urban Dhaka city: urban food markets.
+  - Exposure groups (high vs low poultry exposure):
+    - Rural villages: low exposure — households without domestic poultry (n=20); high exposure — households with domestic poultry (n=20).
+    - Rural poultry farms: low exposure — non-poultry farm workers (n=40); high exposure — poultry farm workers (n=40).
+    - Urban markets: low exposure — fruit/vegetable sellers (n=40); high exposure — live poultry sellers/slaughterers (n=40).
+- Sampling framework:
+  - Rural households: 20 villages; within each village, one poultry-owning and one non-poultry-owning household (total n=40).
+  - Rural farms: 40 broiler farms randomly selected; one farm worker per farm (n=40).
+  - Urban markets: 40 markets selected; one livestock stall holder and one fruit/vegetable stall holder per market (n=80 respondents across two groups).
+- Informed consent and ethics:
+  - Written informed consent with right to withdraw.
+  - Ethical approvals: icddr,b (PR16071) and Loughborough University (R17-P037).
+- Data collection methods:
+  - Interviewers: trained icddr,b staff; conducted in Bangla; responses recorded on paper.
+  - Translation: responses translated to English before data entry.
+  - Timing: Phase 1 (Feb–Apr 2017) and Phase 2 (Aug–Oct 2017).
+- Data quality and management:
+  - Data entry into Excel; random checks against original forms; frequency checks to identify/out-of-range values; corrections applied.
+- Data structure and access:
+  - Three CSV data files: ruralhouseholdsurvey.csv, poultryfarmsurvey.csv, urbanmarketsurvey.csv.
+  - Blank cells denote missing data.
+  - Supporting documentation: Ruralsurveydatastructure.rtf, Farmsurveydatastructure.rtf, Marketsurveydatastructure.rtf (list column headings).
+- Notes on analysis potential:
+  - Enables cross-sectional analyses of antibiotic resistance exposure in humans and poultry, and associations with antibiotic use patterns.
+  - Data suitable for developing dashboards or self-serve data products; potential for further data products and sharing of early prototypes.

@@ -1,0 +1,36 @@
+# Summary
+
+- The dataset details the number of seeds produced by pollinator-exposed and supplemented Eschscholzia californica plants across habitats with different floral cover. Data were collected in June 2015 at the Hillesden estate, Buckinghamshire, UK.
+- Purpose and scope
+  - Part of a larger experiment examining how floral resources affect pollination services to isolated plants.
+  - Aims to quantify pollen limitation by comparing seed set in field-exposed flowers to seed set in outcrossed, supplemented flowers across habitat contexts.
+- Experimental design
+  - Experimental arrays: sixteen arrays across four 100-hectare replicate blocks; each block contains four arrays arranged in a 150 m transect crossing the boundary between florally rich and florally poor habitats (two arrays in each habitat type).
+  - Each array consists of three E. californica plants, 1 m apart, in a triangular formation.
+  - Centered within blocks: arrays placed 50 m apart; two arrays in florally rich habitat and two in florally poor habitat.
+- Collection methods
+  - All open flowers were removed before placement.
+  - Field exposure lasted 16 days to ensure full anthesis and multiple pollination events.
+  - One flower per plant supplemented with outcrossed pollen; pollen transfer performed by touching four dehiscing anthers onto the stigma with tweezers.
+  - Supplemented flowers protected with fine muslin to prevent windborne pollen transfer.
+  - Fruits collected and stored under controlled glasshouse conditions until maturation; mean seeds per fruit recorded.
+  - Pollen limitation expressed as the ratio of mean seeds from field-exposed flowers to seeds from supplemented flowers.
+- Data structure and units
+  - Single CSV file: The_seed_set_of_supplemented_and_pollinator_exposed_E.californica_flowers.csv.
+  - Key columns:
+    - Block: replicate block identifier (four 100 ha blocks).
+    - Experimental_array: array identifier within a block (three plants per array).
+    - Plant_identification_number: plant ID prior to field transfer.
+    - Habitat: florally rich vs florally poor location.
+    - Treatment: field-exposed vs supplemented.
+    - Mean_number_of_seeds_from_field_exposed_flowers: average seeds per fruit for field-exposed flowers.
+    - Number_of_fruits: number of fruits used to calculate seed set.
+    - Number_of_seeds_from_supplemented_flowers: seed count for supplemented flowers.
+    - NA: indicates supplemented flowers that did not survive.
+- Provenance and documentation
+  - Dataset complete; collected and interpreted by Evans, T.M.
+  - Supporting documentation: “The seed set of supplemented and pollinator exposed flowers from Eschscholzia californica plants located within habitats comprising different floral cover.”
+- Data relevance for data strategy
+  - Demonstrates end-to-end data lifecycle: clear experimental design, field collection, treatment application, data capture, and computed outcomes (seed set and pollen limitation).
+  - Metadata-rich structure supports discoverability, reuse in meta-analyses, and cross-study comparisons within ecological data systems.
+  - Highlights areas to consider for data systems: provenance, context (habitat types), handling of missing data (NA), and clear mapping between field conditions and data fields.

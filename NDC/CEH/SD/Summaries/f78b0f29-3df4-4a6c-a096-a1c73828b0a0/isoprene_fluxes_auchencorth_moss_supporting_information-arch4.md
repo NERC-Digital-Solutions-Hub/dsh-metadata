@@ -1,0 +1,42 @@
+# Site Description
+
+- Period and location: Measurements conducted between 8 June and 21 July 2015 at Auchencorth Moss (55°47'32.4" N, 3°14'35.3" W, 270 m a.s.l.), a peatbog site 4.4 km SW of Penicuik, Scotland. The site is mainly peatland (85%) with grassland across 5,612 km2.
+- Study target: Concentrations and fluxes of isoprene using eddy covariance.
+- Instrumentation and inlet setup:
+  - Flux measurements with a quadrupole PTR-MS (IONICON) and 15 m of 1/4" O.D. PFA tubing sampling at ~10 L/min.
+  - Inlet positioned 5 cm below ultrasonic anemometer (Windmaster Pro) at 3.1 m height.
+  - PTR-MS operating parameters held constant to maintain E/N = 110 Td; drift tube pressure 196 Pa, voltage 450 V, temperature 331 K.
+  - VOC-free air supplied via a zero-air generator with a catalytic VOC removal step (250°C) to monitor subtractable instrument background.
+- Calibration:
+  - Isoprene calibrations at start (09/06/2015) and end (15/07/2015) with ~1 ppmv isoprene diluted to achieve a 0–20 ppb calibration range.
+  - Average instrument sensitivity during the period: 2.6 ncps/ppbv.
+- Flux calculation approach:
+  - Fluxes calculated per 25-minute averaging period using a two-dimensional rotation to set average vertical wind velocity to zero.
+  - Cross-covariance used to identify time lag; initial lag Δt estimated from absolute maximum and then refined to 2.6 seconds (per Langford et al.) to reduce bias from a moving maximum search.
+  - Fluxes filtered to remove periods with flux < 200 μg m⁻² h⁻¹ to improve signal-to-noise ratio.
+  - Random flux error (RE) computed per Langford et al. and scaled by 1.96 to yield a 95% confidence limit for each flux measurement.
+- Data processing and corrections:
+  - Custom LabVIEW package used; hourly background subtraction based on measurements from the zero-air generator.
+  - Flux attenuation correction applied to account for eddy flux loss at frequencies above the PTR-MS 5 Hz response time, using the attenuation factor involving fm, τc, and α (specific form provided in the documentation).
+  - Displacement height and canopy considerations used to determine relevant turbulence corrections (d = 2h/3 with h = 0.4 m, yielding d ≈ 0.27 m).
+- Quality assessment:
+  - Stationarity checks following Foken and Wichura: compare 25-min flux to the average of five 5-min fluxes; large percentage differences (typically >60%) flag non-stationarity.
+  - Turbulence statistics check: compare observed σw/u* to the Monin-Obukhov-based prediction σw/u* = C1 (z/L)^{c2}, with stability-dependent C1 and C2 values (Table 1 in the document); divergences >250% indicate poorer data quality.
+  - All data retained; missing flux periods due to instrument downtime or insufficient data points; users may apply their own quality thresholds.
+- Data structure and units:
+  - Date & Time: UTC (dd/mm/yyyy hh:mm:ss).
+  - Isoprene mixing ratio: ppbv.
+  - Isoprene Flux: μg m⁻² h⁻¹.
+  - Random Error: μg m⁻² h⁻¹.
+  - Flux limit of detection: μg m⁻² h⁻¹ (1.96 × random error).
+  - Temperature: °C.
+  - Photosynthetically active radiation: μmol m⁻² s⁻¹.
+  - Sensible heat flux: W m⁻².
+  - Friction velocity: m s⁻¹.
+  - Wind speed: m s⁻¹; Wind direction: degrees from North.
+  - Stationarity test: % difference.
+  - Turbulence Statistics test: % difference.
+- References and methodological context:
+  - Langford et al. 2015 for time-lag determination, uncertainties, and detection limits.
+  - Horst 1997 for eddy flux attenuation correction.
+  - Davison et al. 2009; Foken & Wichura 1996; Foken et al. 2004 for QA/QC and flux methodology.

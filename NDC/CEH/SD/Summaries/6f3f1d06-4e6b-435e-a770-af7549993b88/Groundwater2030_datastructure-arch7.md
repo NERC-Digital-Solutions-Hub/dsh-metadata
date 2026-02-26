@@ -1,0 +1,28 @@
+# Groundwater2030: Data structure for field survey files
+
+- Four CSV tables are provided, each can be joined on common identifier fields
+  - Groundwater2030_sanrisk.csv (sanitary risk inspection). Primary key: Wellcode
+  - Groundwater2030_waterquality.csv (water quality test results). Primary key: Wellcode
+  - Groundwater2030_well_owner_survey.csv (well owner questionnaire). Primary key: Well number
+  - Groundwater2030_WellCustomerSurvey.csv (well customer questionnaire). Primary key: Well number
+- Identifiers
+  - Wellcode is the primary key for sanrisk and waterquality
+  - Well number is the primary key for owner and customer surveys
+  - Unique codes follow the forms W1…n, S1…n, B1…n
+  - Prefix meaning: W = well, S = spring, B = borehole
+  - O indicates baseline wells where water quality data could not be collected
+- Relationships and data volume
+  - There may be multiple customers per groundwater source
+  - Owner or customer questionnaires may not link to an individual well; such records are labelled None1-n
+  - All questionnaires include neighbourhood information
+- Linking and data quality considerations for GIS work
+  - Use Wellcode to join sanrisk and waterquality tables; use Well number to join owner and customer surveys
+  - Maintain one-to-many relationships for multiple customers per source
+  - Handle O-coded wells and potential missing water quality data appropriately
+  - Ensure consistency of prefixes (W/S/B) when categorizing sources in spatial analyses
+- Practical guidance for GIS workflows
+  - Plan joins across four tables to build a comprehensive groundwater dataset
+  - Validate neighbourhood data presence on all questionnaire records
+  - Prepare for data gaps where linking is not possible and for baselined wells without quality data
+- Key caution
+  - Data may originate from multiple sources with varying resolutions; harmonize fields and keys before analysis

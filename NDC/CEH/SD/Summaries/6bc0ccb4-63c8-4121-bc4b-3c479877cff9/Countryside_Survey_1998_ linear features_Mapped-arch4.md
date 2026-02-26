@@ -1,0 +1,49 @@
+# Dataset Documentation
+
+- Overview
+  - Countryside Survey data (© NERC - Centre for Ecology & Hydrology) provides national estimates of landscape linear feature stock for 1998, calculated using the 2007 ITE Land Classification (Scott 2007; Bunce et al. 2007).
+  - Estimates are total lengths in metres for each linear feature type per 1km square per Land Class.
+  - Note: there may be negative values in LC2007 due to the statistical model; treat these as zero.
+- Data structure and fields
+  - FID: Feature ID (autonumber)
+  - Shape: Geometry
+  - LC2007: ITE Land Class (numeric)
+  - LC2007_COD: ITE Land Class (text code)
+  - CSYEAR: Year of survey
+  - LCAREA: Total area of relevant Land Class (00s ha)
+  - LF_1: Hedges (metres per 1km square per land class)
+  - LF_3: Wall (metres per 1km square per land class)
+  - LF_4: Line of trees/shrubs/relict hedge/fence
+  - LF_5: Line of trees/shrubs/relict hedge
+  - LF_6: Bank/grass strip
+  - LF_7: Fence
+  - LFTOTAL: Total length of linear features
+  - Shape_Length: Length of Land Class shape
+  - Shape_Area: Area of Land Class
+- Linear features defined
+  - _1 Hedges: managed woody vegetation; may accompany other features
+  - _3 Wall: built stone/manufactured walls; may include fences or banks/grass strips
+  - _4 Line of trees/shrubs/relict hedge/fence: natural-shaped line of trees/shrubs; may include banks/grass strips
+  - _5 Line of trees/shrubs/relict hedge: natural-shaped line of trees/shrubs; may include avenues
+  - _6 Bank/grass strip: earth/stone-faced bank or grass strip with/without a fence
+  - _7 Fence: permanent posts and wires/rails; may include accompanying grass strip, ditch, or stream
+  - TOTAL: total length of all linear features
+- Reporting approach
+  - Six major feature types reported with a hierarchical system
+  - No double counting of multi-element features
+  - Hedges take precedence in reporting when found with other features; hedge lengths are not overlapped into wall or fence lengths
+- Usage limitations and attribution
+  - All use must acknowledge Countryside Survey data owned by NERC - Centre for Ecology & Hydrology
+  - Credit: Countryside Survey © NERC- Centre for Ecology & Hydrology. All rights reserved.
+- Source, methodology, and references
+  - Countryside Survey website for project overview and documents
+  - Carey et al. (2008) Countryside Survey: UK Results from 2007
+  - Scott (2007) CS Technical Report No.4/07 (Statistical methods for national estimates)
+  - Bunce et al. (1996, 2007) ITE Land Classification and related background
+  - Additional methodological references detailing habitat classification and reporting frameworks
+- Practical considerations for data leaders
+  - Useful for assessing national-scale landscape connectivity and habitat feature stocks
+  - Provides a clear, non-duplicative basis for aggregating linear features across land classes and regions
+  - Metadata and methodological reports support data quality assessment, standardization, and discoverability
+  - Be mindful of potential negative LC2007 values; treat as zero in analyses
+  - Ensure proper attribution and consult referenced reports for deeper methodological context and data handling rules

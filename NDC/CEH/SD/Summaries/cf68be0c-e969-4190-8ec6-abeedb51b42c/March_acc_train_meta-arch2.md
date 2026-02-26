@@ -1,0 +1,1 @@
+Definitions and Training/Accuracy Assessment Pixels for Maximum Likelihood Classifications of Prunus spinosa (3 cm and 7 cm)

@@ -1,0 +1,56 @@
+# Glastir Monitoring & Evaluation Programme
+
+- Purpose and scope
+  - Welsh Government monitoring programme (GMEP) to assess Glastir scheme effects on environment, focusing on soil quality, climate, biodiversity, and water/woodland outcomes.
+  - Aims to quantify status and trends of soil quality and to identify drivers of change beyond Glastir interventions.
+- Survey design and spatial framework
+  - 4-year rolling survey cycle (2013–2016) to maximize site coverage while enabling year-on-year monitoring of spatial and temporal variation.
+  - Two components: Wider Wales (baseline estimates and national trends) and Targeted (Glastir priority areas).
+  - Common spatial unit: 1 km square to enable integration across components and with GB datasets.
+  - Sample: 300 1 km squares over the cycle; half random within Land Classification strata (topography, geology, climate, etc.) and half targeted at Glastir priorities.
+  - Exclusions: squares with >75% urban land or >90% sea are removed.
+- Field and sampling methodology
+  - In each square, soil samples collected from 5 randomly dispersed locations using a C-core (15 cm) at vegetation survey sites.
+  - Samples refrigerated and sent to UK CEH Bangor for analysis.
+  - Focus: soil particle size distribution (PSD) via laser diffraction; PSD informs hydrology, nutrient availability, erosion, pollutant transport, etc.
+- PSD measurement and lab methods
+  - Instrument: Beckman Coulter LS13 320 laser diffraction analyzer; complementary hydrometer method used for comparison.
+  - Calibration and standards: multiple size standards (glass beads, garnet, various well-characterised soils) plus internal Bangor standards (BS1, BS3).
+  - Sample preparation: organic matter removal (peroxide digestion), calibration, and controlled sonication and pumping settings for LD analysis.
+  - Quality assurance/quality control (QA/QC):
+    - NERC CoP compliance; batch QA sheets; instrument calibration; duplicate samples (1 in 10); cross-check of sand fraction via sieving (63 µm) with LD results.
+    - Investigation of organic matter effects on LD measurements; adjustments discussed where LOI is high.
+  - Comparison with reference methods:
+    - LD results compared to hydrometer method (Gee & Or, 2002) using internal standards BS1 and BS3.
+    - Findings: LD is accurate and reproducible; differences with hydrometer may occur in clay range; LD tends to be more reliable for clay, with LD-adjusted cut-offs aligning better with modern understanding.
+  - Final PSD cut-offs (LD method):
+    - Sand: 64.61 – 2000 µm
+    - Silt: 2.42 – 63.41 µm
+    - Clay: 0.04 – 2.41 µm
+- Data quality and external benchmarking
+  - Inter-laboratory comparisons with ADAS and BGS using sandy, clay, and silty soils; results indicate LD method is consistent and reproducible across laboratories.
+  - Reported standard deviations demonstrate precision; cross-lab values support comparability.
+- Data structure and metadata
+  - Example dataset: GMEP_TOPSOIL_PSD_2013_16.csv
+  - Key fields:
+    - SQ_ID: anonymised 1 km square identifier
+    - PLOT_TYPE, PLOTNUM, PLOTYEAR: sampling plot details
+    - EASTING_10km, NORTHING_10km: 10 km resolution coordinates (OSGB 1936, metres)
+    - LC: ITE Land Classification code
+    - REPEATED, BATCH: repetition and batch information
+    - um0.03999 to um2000: PSD size-bin columns (percentages)
+    - SAND, SILT, CLAY: percentages in defined size ranges
+    - TOTAL: QA check total
+  - Metadata notes: 1 km squares are anonymised; the dataset supports integration with wider Wales and GB datasets.
+- Data integration and GIS relevance
+  - 1 km square grid enables robust national and sub-national aggregation and trend analysis.
+  - Compatible with Countryside Survey methodology to facilitate future cross-survey integration.
+  - Spatial data supports mapping of baseline estimates, national trends, and targeted Glastir priority areas.
+- Data provenance and acknowledgments
+  - Primary data management and QA led by UK CEH ( Bangor ) with contribution from Bangor University and field teams.
+  - References include methods for PSD analysis, QA/QC practices, and Glastir monitoring reports.
+- Practical takeaways for GIS specialists
+  - Use the 1 km square grid and 10 km easting/northing coordinates to join PSD data with other spatial layers (land classification, land cover, climate, topography).
+  - Leverage the Wider Wales vs Targeted components to create maps showing baseline values, spatial patterns, and shifts over the 2013–2016 cycle.
+  - Apply the documented PSD cut-offs (Sand/Silt/Clay) for consistent thematic mapping and cross-dataset comparisons.
+  - Exploit the detailed QA/QC metadata to assess data reliability and to harmonise with external laboratories for multi-source analyses.

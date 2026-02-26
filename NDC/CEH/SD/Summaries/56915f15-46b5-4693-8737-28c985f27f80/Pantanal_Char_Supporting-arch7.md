@@ -1,0 +1,104 @@
+# SUPPORTING DOCUMENTATION FOR 'Radiocarbon-dated charcoal datasets obtained from lake sediments from the Pantanal, Brazil'
+
+- Overview
+  - Charcoal datasets derived from macroscopic charcoal fragments in radiocarbon-dated lake sediment cores from the Pantanal, Brazil.
+  - Geographic data for each record and collection/generation details are summarized in Table 1.
+
+- Site records and key attributes (Table 1)
+  - Laguna Mandior e core M1
+    - Core collection date: 2001
+    - Coordinates: 18°11′33'S, 57°34′05'W
+    - Lake area: 150 km
+    - Lake water depth: 4–6 m
+    - Elevation: 90 masl
+    - Max depth of sediment core: 68 cm
+    - Nature of sediments: Organic clay – unconsolidated
+    - Collection method: 5 cm diameter Perspex tube and piston; extruded in field into 1-cm slices
+  - Laguna Mandior e core M5
+    - Core collection date: 2001
+    - Coordinates: 18°5′30'S, 57°33′45'W
+    - Lake area: 150 km
+    - Lake water depth: 4–6 m
+    - Elevation: 90 masl
+    - Max depth of sediment core: 77 cm
+    - Nature of sediments: Organic clay – unconsolidated
+    - Collection method: 5 cm diameter Perspex tube and piston; extruded in field into 1-cm slices
+  - Laguna Mimoso
+    - Core collection date: 2019
+    - Coordinates: 16°15'14.79"S, 55°45'7.10"W
+    - Lake area: 1 km
+    - Lake water depth: <1 m
+    - Elevation: 135 masl
+    - Max depth of sediment core: 112 cm
+    - Nature of sediments: Organic clay – consolidated
+    - Collection method: 5 cm diameter PVC tube; extruded in field into 1 cm slices
+  - Laguna Caceres
+    - Core collection date: 2020
+    - Coordinates: 19°7'8.77"S, 56°53'3.33"W
+    - Lake area: 0.1 m (likely a formatting/units note)
+    - Lake water depth: <1 m
+    - Elevation: 88 masl
+    - Max depth of sediment core: 84 cm
+    - Nature of sediments: Organic clay – consolidated
+    - Collection method: 7 cm diameter PVC tube; extruded in field into 1 cm slices
+
+- Data units and representation
+  - Concentration data: charcoal particles >125 μm per cm3 at each 1-cm horizon in the sediment cores.
+  - Depth value: midpoint of the 1-cm sampling interval.
+  - Data structure: radiocarbon dates accompany the charcoal data as headers for each core’s CSV files.
+
+- Quality control and laboratory procedures
+  - Standard laboratory procedures for charcoal preparation and counting.
+  - Deflocculation: chosen based on sediment type (7% Na hexametaphosphate for clay-rich; 10% KOH for organic-rich).
+  - Processing: samples deflocculated at ~80°C for 30 minutes; residues treated with H2O2 for organic-rich sediments.
+  - Sieving: residues sieved at 125 μm and 250 μm.
+  - Counting: charcoal fragments counted under a microscope in a Bogorov tray.
+  - Resolution: 1 cm; volume measured by water displacement.
+  - Data structure confirms per-horizon concentration data and moisture-adjusted volumes.
+
+- Data structure and access
+  - Concentration data are stored in individual CSV files for each 1-cm horizon.
+  - Radiocarbon dates for each core are included as headers in the corresponding CSV files.
+  - Radiocarbon ages are uncalibrated conventional radiocarbon years BP.
+  - Each core has an age-depth profile formed from discrete horizon dates (full laboratory reporting provided for each date).
+
+- Radiocarbon dating details (Table 2)
+  - Laguna Mandiore core M1
+    - No. radiocarbon dates: 3
+    - Date provider: Beta Analytic
+    - Units: Conventional radiocarbon years BP
+    - Data structure: sediments dated at 3 discrete horizons for age-depth profiling
+  - Laguna Mandiore core M5
+    - No. radiocarbon dates: 3
+    - Date provider: Beta Analytic
+    - Units: Conventional radiocarbon years BP
+    - Data structure: sediments dated at 3 discrete horizons for age-depth profiling
+  - Laguna Mimoso
+    - No. radiocarbon dates: 2
+    - Date providers: Beta Analytic, UGAMS
+    - Units: Conventional radiocarbon years BP
+    - Data structure: sediments dated at 2 discrete horizons for age-depth profiling
+  - Laguna Caceres
+    - No. radiocarbon dates: 3
+    - Date provider: Beta Analytic
+    - Units: Conventional radiocarbon years BP
+    - Data structure: sediments dated at 3 discrete horizons for age-depth profiling
+  - Note: Full laboratory reporting is provided for each date.
+
+- Uncalibrated radiocarbon dates (examples)
+  - Caceres core (uncalibrated)
+    - Sample depths correspond to charcoal horizons
+    - Examples include: Cac-41 at 41 cm with 1940 ± 30 BP; Cac-21 at 21 cm with 1150 ± 30 BP; Cac-13 at 13 cm with 260 ± 30 BP
+    - d13C values provided as per mil (e.g., -14.7, -11.1, -9.5)
+  - Surface cores (Mandiore)
+    - Man-Sur-60 at 60 cm: 3120 ± 30 BP; d13C = -19.2
+    - Man-Sur-44 at 44 cm: 1690 ± 30 BP; d13C = -20
+    - Man-Sur-26 at 26 cm: 1050 ± 30 BP; d13C = -22.4
+  - Mandiore core M5 surface (Man-C5-70): 2720 ± 30 BP; d13C = -18.7
+  - Mandiore core M5 horizon 50 cm: 1610 ± 30 BP; d13C = -20.4
+  - Mimoso core Mi46: 850 ± 80 BP; d13C = -24.8
+
+- GIS-relevant notes for integration
+  - Dataset links charcoal concentrations to exact core horizons, enabling age-depth modeling and spatial visualization.
+  - Coordinates, lake attributes, and elevation support geospatial context and layer construction.
+  - Data are organized per core with horizon-level chemistry and radiocarbon dating, suitable for linking to GIS-based temporal visualizations and landscape-scale analyses.

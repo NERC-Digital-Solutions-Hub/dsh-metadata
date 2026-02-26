@@ -1,0 +1,41 @@
+# Dataset Documentation
+
+- National estimates of landscape linear feature stock for 1990 calculated using the 2007 ITE Land Classification (refer to Scott, 2007; Bunce et al, 2007). Estimates are total lengths in metres for each linear feature type per 1km square per Land Class. Note: there may be negative values in LC2007; treat these as zero.
+- Key identifiers and fields:
+  - FID: Feature ID (autonumber)
+  - LC2007: ITE Land Class (numeric)
+  - LC2007_COD: ITE Land Class (text code)
+  - CSYEAR: Year of survey
+  - LCAREA: Total area of relevant Land Class (00s ha)
+  - LF_1 to LF_7: Length estimates per 1km square in metres for six feature types plus TOTAL
+  - LFTOTAL: Total length of linear features (metres per 1km square per land class)
+  - Shape_Length / Shape_Area: Geometric descriptors of the Land Class shape
+- Linear feature types (with reporting interpretations):
+  - _1: Hedges — managed hedgerows, may occur with other features; hedges are prioritized in reporting
+  - _3: Wall — built stone/manufactured walls; may include walls with fences or banks/grass strips and/or lines of trees/shrubs
+  - _4: Line of trees/shrubs/relict hedge/fence — trees/shrubs with or without hedges/fences
+  - _5: Line of trees/shrubs/relict hedge — natural-line tree/shrub features; includes avenues
+  - _6: Bank/grass strip — earth/stone bank or grass strip, with/without a fence
+  - _7: Fence — post-and-wire/rail structures; may include grass strip, ditch, or stream
+  - TOTAL: Total length of linear features
+- Reporting and data relationships:
+  - Reporting uses a hierarchical system of six major feature types
+  - No double counting of multi-element features; hedges take precedence when co-occurring with other features
+  - Hedge-containing features are reported as hedges even if adjacent to walls or fences; walls/fences are not counted where a hedge is present
+- Field methodology and data quality:
+  - Data collected during field surveys as a series of detailed codes; supports reporting flexibility based on code combinations
+  - Negative LC2007 values arise from the statistical model; treat as zero for practical use
+- Use limitations and rights:
+  - All use of Countryside Survey data must be acknowledged
+  - Acknowledgement text required on all copies, publications, and presentations:
+    - “Countryside Survey data owned by NERC - Centre for Ecology & Hydrology”
+    - “Countryside Survey © Database Right/Copyright NERC- Centre for Ecology & Hydrology. All rights reserved.”
+- Access and additional information:
+  - Countryside Survey Website provides general project overview and links to relevant documents and methodologies: http://www.countrysidesurvey.org.uk/
+  - Key references and reports for background and methodology, including:
+    - Carey et al. (2008): Countryside Survey UK Results from 2007
+    - Countryside Survey 1990: main report (Barr et al., 1993)
+    - Scott (2007): CS Technical Report No.4/07 – Statistical Report
+    - Bunce et al. (2007): ITE Land Classification 2007 vector dataset
+    - Bunce et al. (1996); Barr et al. (1991); and related land classification literature
+  - Additional metadata and background reports available via listed URLs and DOIs linked in the document.

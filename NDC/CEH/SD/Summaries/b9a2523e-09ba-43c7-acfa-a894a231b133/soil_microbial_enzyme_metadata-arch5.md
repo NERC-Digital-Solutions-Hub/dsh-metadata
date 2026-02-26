@@ -1,0 +1,38 @@
+# AFEX Experiment at the Biological Dynamics of Forest Fragments Project (BDFFP/ INPA) – Site Description and Hydrolytic Enzyme Assay Data
+
+- Context and location
+  - Study conducted in the AFEX project area at BDFFP/INPA, about 80 km north of Manaus, Brazil (climate: mean temp ~26°C, mean annual rainfall ~2400 mm; humidity 75–92%).
+- Experimental setup
+  - Full factorial nutrient addition experiment with eight treatments: control, N, P, cations (Ca, Mg, K), and combinations N+P, N+cations, N+P+cations.
+  - Four replicate plots per treatment, total of 32 plots, arranged in four independent blocks separated by at least 250 m.
+  - Each plot: 50 m x 50 m; central 30 m x 30 m used for measurements; nutrients applied as dry granules three times per year.
+  - Nutrient application rates (per year): N 125 kg ha^-1 (as urea), P 50 kg ha^-1 (as triple superphosphate), Ca 50 kg ha^-1, Mg 20 kg ha^-1 (as dolomitic limestone), K 50 kg ha^-1 (as KCl).
+- Sampling design
+  - Soil sampling occurred seven months after nutrient addition (January 2018).
+  - For each plot: three soil cores (5 cm diameter) collected from the central 30 m x 30 m area; roots removed.
+  - Depths sampled: 0–5 cm and 5–10 cm; samples composited by depth and plot.
+  - Subsamples of fresh soil reserved for enzyme assays.
+- Hydrolytic enzyme assays
+  - Target enzymes linked to carbon, nitrogen, and phosphorus cycling: BG (β-glucosidase), NAG (N-acetyl-β-D-glucosaminidase), PHOS (phosphomonoesterase).
+  - Assay method: microplate fluorimetric assays using 1 g of fresh sieved soil in 100 mM sodium acetate buffer (pH 5.5); 200 μL soil suspension incubated with 50 μL substrate (BG, NAG, PHOS) in triplicates.
+  - Incubation: ~1 hour at ~25°C; fluorescence read at 365 nm excitation / 450 nm emission.
+  - Results expressed as nmol MUF g soil dry weight^-1 hour^-1.
+- Data structure and documentation
+  - Spreadsheet schema includes:
+    - Block: 1–4 (eight plots per block).
+    - Plot: 1–8 per block.
+    - TRT: nutrient treatment (8 levels: control, P, N, cations, N+P, N+cations, N+P+cations).
+    - Depth: 0–5 cm and 5–10 cm.
+    - BG: β-glucosidase activity description.
+    - NAG: N-acetyl-β-glucosaminidase activity description.
+    - PHOS: phosphomonoesterase activity description.
+- Data quality and provenance
+  - Root removal and sieve-based soil preparation documented.
+  - Enzyme activity assays performed with standardized buffers, substrates, and calibration (standard curves and blanks included).
+  - Clear mapping of measurements to plot, block, treatment, and depth to support reproducibility and cross-study comparisons.
+- Reuse and dissemination
+  - Data are suitable for uploading to data portals and catalogues with metadata on site, design, treatments, depths, and enzyme measurements.
+  - Documentation supports understanding of data limitations (e.g., central plot focus, depth-specific measurements) and facilitates data integration with related environmental and nutrient studies.
+- References
+  - Araújo AC (2002) on CO2 flux measurements at Manaus LBA site.
+  - Kaiser et al. (2010) on soil enzyme activities and microbial responses in forest soils.

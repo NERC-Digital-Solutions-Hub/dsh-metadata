@@ -1,0 +1,35 @@
+# Amazon Fertilization Experiment (AFEX)
+
+- Study area and context
+  - Conducted within the Biological Dynamics of Forest Fragments Project (BDFFP) area, KM41 reserve, ~100 km from Manaus, Brazil.
+  - Humid, wet climate (mean ~26.7°C), annual precipitation ~2200 mm; dry season July–September; peak rainfall in March–April.
+  - Dense Terra Firme rainforest with canopy 30–37 m on average; soils are clayey with high weathering, acidity, low fertility (FAO/UNESCO WRB: ferrasols).
+- AFEX experimental design
+  - Full factorial fertilization experiment starting March 2017 with seven treatments plus a control, replicated four times (32 plots total).
+  - Treatments: N, P, and various cations (K, Ca, Mg) in combinations: CONTROL, N, P, CATIONS, N+P, N+CATIONS, P+CATIONS, N+P+CATIONS.
+  - Plot configuration: each 50 x 50 m, arranged in four independent blocks with a minimum of 250 m between blocks; plots at least 100 m apart.
+  - Fertilization regime: annual, delivered in three applications by hand within plots to reduce leaching and runoff.
+  - AFEX 2.0 update: includes detailed plot delineation within KM41 (Figure reference in document).
+- Seedling sampling protocol
+  - Within each 50 x 50 m plot, four 30 x 30 m subplots containing sixteen 1 x 1 m subplots are established per treatment (total 128 subplots across all treatments).
+  - Target individuals: seedlings >20 cm tall and with ground-diameter at breast height (DGH) < 1 cm; palms and lianas excluded.
+  - Leaf-level herbivory monitoring: for each sampled seedling, the closest 10 mature leaves to the apical yolk are marked and tracked bi-monthly for 12 months.
+  - Measurements and data collected per leaf: percent leaf area loss due to herbivory (via direct visual estimates with a millimetre grid for accuracy), presence/absence of galls, pathogens, and leaf miners; leaf-level data captured as qualitative/quantitative indicators.
+  - Sampling cadence: six campaigns total (four in the rainy season, two in the dry season).
+- Data spreadsheet and structure
+  - Dataset: seedlings_herbivory.csv containing 27,510 rows and 14 columns.
+  - Key columns and meanings:
+    - CENSUS, MONTH, DATE: timing of sampling
+    - TRT: plot treatment (as defined in AFEX design)
+    - BLOCK, PLOT, SUBPLOT: spatial design identifiers
+    - INDIVIDUAL, LEAF: seedling and leaf identifiers
+    - HERBIVORY: leaf-area loss by herbivory (percentage)
+    - GAIL: gall presence (1) or absence (0)
+    - FUNGUS: fungus presence (1) or absence (0)
+    - LEAF_MINERS: leaf miner presence (1) or absence (0)
+    - MORTALITY: leaf death (1) or not (0)
+- Data quality, provenance, and potential use
+  - Rich, replicated, temporally stratified dataset enabling analyses of fertilization effects on seedling herbivory and associated biotic factors (galls, fungi, miners) across treatments and seasons.
+  - Detailed metadata on sampling design supports reproducibility and data discoverability; data can support broader ecological questions about nutrient addition, herbivory dynamics, and early seedling performance in tropical forests.
+- References
+  - Chauvel (1982); Comita, Condit, & Hubbell (2007); Johnson, Bertrand, & Turcotte (2016); Laurance et al. (1999); Lovejoy & Bierregaard (1990); Quesada et al. (2010, 2011); RADAMBRASIL (1978); Ranzani (1980).

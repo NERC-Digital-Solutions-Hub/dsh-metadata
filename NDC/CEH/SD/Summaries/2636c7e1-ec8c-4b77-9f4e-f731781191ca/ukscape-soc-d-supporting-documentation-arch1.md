@@ -1,0 +1,145 @@
+SOC-D: Soil Organic Carbon Dynamics data description
+
+- Overview
+  - Large UK-SCAPE project (SOC-D) to understand biotic and abiotic controls on soil organic carbon (SOC) dynamics and identify where UK SOC stocks are at risk or could be increased through land management.
+  - Five long-term grassland-to-woodland contrasts across England were surveyed (2018–2021) with co-located aboveground and belowground measurements.
+  - Four main data families: Aboveground productivity and litter; soil chemical/physical/biological properties; soil hydraulic conditions; earthworm counts and species IDs. Includes extensive metadata and site coordinates to enable data linking.
+
+- Data description (what is provided)
+  - Four datasets covering soil and vegetation measurements across five contrasting sites:
+    - ANPP and litter layer depth
+    - Soil chemical, physical and biological properties for up to six soil depth increments from 0 to 100 cm
+    - Soil hydraulic conditions (soil water release curves and unsaturated hydraulic conductivity)
+    - Earthworm counts and species IDs with weights
+  - Completeness notes:
+    - Most common measurements (e.g., LOI, bulk density, soil moisture, pH, EC) are complete.
+    - Less common measurements (e.g., DOC, nitrate, soil texture, enzyme activities) are limited to certain layers or sites and flagged as NA where missing.
+  - Site details:
+    - Gisburn-1 (grassland x conifer), Gisburn-2 (grassland x broadleaf), Alice Holt (grassland x broadleaf), Wytham Woods (grassland x broadleaf), Kielder Forest (grassland x conifer)
+    - Plot design: two plots per site (grassland vs woodland), each plot divided into grids (1–6) with randomized sampling points (n=18 per contrast)
+    - Sampling timeline: soil cores collected Nov 2018–Mar 2019; additional measurements in 2020–2021
+  - Data availability and linking:
+    - Two connector files plus four measurement files to connect samples to locations and plots
+    - ENA sequencing data available under PRJEB66294
+    - Datasets organized to enable cross-site comparisons within UK-wide soil-vegetation-climate contexts
+
+- Project background and aims
+  - Central questions:
+    - How sensitive is SOC to local/global climate and land management changes?
+    - What feedbacks link SOC with soil structure, chemistry and biota?
+    - Which metrics and modelling approaches best reflect SOC dynamics?
+    - Which UK areas are most at risk of SOC loss and where can SOC be protected or increased?
+  - Focused on land management and process understanding in grassland-to-woodland transitions, given policy relevance for woodland creation and Net Zero targets.
+  - Aims to test biological/structural controls on SOC using UKCEH’s long-term soil monitoring and partner experiments, with an emphasis on developing a modular SOC dynamics model for integration into broader soil models.
+
+- Site selection and land-use contrasts
+  - Criteria included woodland age, management history, plot size, and transect design to capture proximity to trees and potential confounding factors (e.g., roads, streams).
+  - Five sites selected for accessibility and representativeness; contrasts include both conifer and broadleaf woodlands, managed/unmanaged grasslands, and varying landscape contexts.
+  - Site-level descriptions include geography, soil types, vegetation, and management histories (e.g., grazing, mowing, afforestation).
+
+- Data structure and file architecture
+  - Primary data files (six main components):
+    - SOC-D_DATABASE_CONNECTOR.csv: links all data files; includes site, plot, grid, core, transition distance, lateral distance, slice/depth, and sample IDs
+    - SOC-D_DATABASE_LOCATIONS.csv: location metadata; coordinates and OS grid references
+    - SOC-D_DATABASE_ANPP.csv: aboveground net primary productivity estimates and links to LDMC-derived leaf data
+    - SOC-D_DATABASE_LITTER_DEPTH.csv: litter depth (mean of three measurements)
+    - SOC-DATABASE_COMMON_SOIL_METRICS.csv: core soil metrics for all depths (0–100 cm)
+    - SOC-DATABASE_SOIL_METRICS_GRID2_GRID5.csv: soil metrics specifically for grids 2 and 5 (grassland and woodland) across depths
+    - SOC-DATABASE_HYDRAULIC_CONDUCTIVITY.csv: unsaturated hydraulic conductivity (Kfs) by location and tension
+    - SOC-DATABASE_HYPROP_RETENTION_T_PF.csv: HYPROP raw data (pF and water content) for retention curves
+    - SOC-DATABASE_HYPROP_CONDUCTIVITY_K_PF.csv: HYPROP raw data (log10 K) for conductivity
+    - SOC-DATABASE_HYPROP_CONDUCTIVITY_K_T.csv: HYPROP data (water content and log10 K)
+    - SOC-DATABASE_EARTHWORMS.csv: earthworm counts and fresh biomass by species
+  - Structure notes:
+    - Datasets are NA-filled where data are missing
+    - Supplement A–C provide additional context: field maps, core collection details, and a measurement/analysis planning table
+
+- Data collection methods (highlights)
+  - Field design and sampling
+    - Grassland-to-woodland contrasts sampled along transects to capture boundary effects
+    - Randomized sampling points within each grid; measurements tied to Grassland vs Woodland sections
+  - Aboveground productivity
+    - ANPP estimated from fresh leaf material and leaf dry matter content (LDMC) with a cover-weighted LDMC predictor
+  - Litter depth
+    - Measured at three locations around each sampling point
+  - Soil cores and sampling depths
+    - Multiple core types used to construct 0–100 cm profiles: HyPROP, national survey cores, Split Tube, Cobra precision cores, and Russian auger for deeper sections
+    - Depth increments vary by site but commonly include 0–5 cm, 5–15 cm, 15–30 cm, 30–50/60 cm, and 50/60–100 cm
+  - Hydraulics
+    - HYPROP used for water release curves (0–5 cm; some sites also 30–35 cm)
+    - Mini-disk infiltrometers used for unsaturated hydraulic conductivity at low suctions
+  - Earthworms
+    - Hand-sorted 25 cm × 25 cm soil blocks to 25 cm depth; specimens weighed and identified
+  - Laboratory analyses
+    - SOC and total N by elemental analysis (Vario EL)
+    - Total P by H2O2/H2SO4 digestion; organic P and inorganic P quantified; ammonium and nitrate analyzed via colorimetric methods
+    - LOI by thermogravimetric analysis (TGA)
+    - Bulk density determined from 1-m cores; detailed core processing to maintain sample integrity
+    - Particle size distribution (PSD) via laser diffraction after OM removal
+    - Density fractionation to obtain LP (light fraction), OP (occluded), MA (mineral-associated), plus DOM
+    - Enzyme activities (β-glucosidase, N-acetylglucosaminidase, leucine aminopeptidase, phosphatase, phenol oxidase) on select sites
+    - Extracellular enzyme activities assayed with fluorescent substrates and L-DOPA
+  - Microbial communities
+    - Amplicon sequencing (16S for bacteria, ITS2 for fungi) and shotgun metagenomics
+    - DNA extracted from topsoil and subsoil; quality checked; sequencing on Illumina platforms
+    - Bioinformatics: DADA2 for OTU table construction; DIAMOND/SAMSA2 for metagenomics; Kraken2 for fungi/bacteria ratio
+
+- Analytical methods and quality control
+  - ANPP modelling
+    - LDMC-based regression to predict ANPP with uncertainty via Bayesian MCMC
+  - Hydraulics
+    - HYPROP data analysed with HYPROP-FIT software; water retention curves used to derive Ksat and pore-size distribution
+  - Soil properties
+    - pH (DIW and CaCl2), EC, BD calculated from core slices
+    - LOI via TGA; SOC/TN via elemental analysis
+    - NO3-N and DOC quantified from field-moist and processed samples
+    - CEC measured by ammonium acetate extraction and ICP-OES
+    - P measured via peroxide/sulfuric acid digestion and colorimetric detection
+  - Particle size and SOM fractions
+    - PSD via laser diffraction; aggregation state assessed via ASD and occluded OM concepts
+    - SOM density fractionation into LP, OP, MA fractions plus DOM; carbon and nitrogen contents quantified
+  - Enzyme and microbial data
+    - Enzymes assayed with fluorescent substrates; activity expressed per gram soil per hour
+    - Microbial community data provided as OTU/marker gene metrics (nMDs), plus metagenome functional profiles
+  - Data quality controls
+    - Use of internal standards and blanks for EC, pH, LOI
+    - Replicates and batch QC; notes on dataset-specific issues (e.g., Gisburn buffer error leading to dataset exclusions)
+
+- Details of data structure and integration
+  - Data connectors
+    - SOC-D_DATABASE_CONNECTOR.csv contains experimental layout: SITE_NAME, LANDUSE, PLOT, GRID, CORE, transition distances, lateral distances, SLICE, depth, and SAMPLE_ID
+  - Location mapping
+    - SOC-D_DATABASE_LOCATIONS.csv provides location coordinates (OS grid and lat/long)
+  - Linking across datasets
+    - LOCATION_IDS in ANPP, LITTER_DEPTH, and SOIL_METRICS files align to the CONNECTOR
+  - Data usage notes
+    - Missing values are NA; data can be connected across files using the connectors
+    - ENA sequencing data linked via project PRJEB66294
+  - Access to supplementary materials
+    - Supplement A: field maps and site figures
+    - Supplement B: soil coring specifics by site
+    - Supplement C: broader measurement plan and rationale
+
+- Supplementary and project context
+  - Related projects and programmes
+    - ELUM, GMEP, UGRASS, ERAMMP
+  - Funding and acknowledgments
+    - UK-SCAPE programme, NERC (NE/R016429/1)
+    - Collaborations with Forest Research and sampling permissions at Alice Holt and Kielder Forest
+  - Data citation and usage
+    - Data are intended for modelling SOC dynamics and informing land-management policies; derived metrics and analytical workflows are documented (e.g., R Markdown workflows for ANPP predictions)
+
+- Key references and methodology sources
+  - Foundational methods for SOC and soil analyses (LOI, SOC/TN, CEC, NO3/N, DOC, BD)
+  - Standards and prior trait databases for LDMC and SLA
+  - HYPROP methods and software, plus related soil physics and aggregation literature
+  - Microbial ecology pipelines (DADA2, Kraken2, SAMSA2) and OTU/functional analyses
+
+- Supplemental details (high-level)
+  - Supplement A–C provide field visualization, core-by-core sampling details, and a table of possible measurements, their rationale, and planned analyses
+  - The dataset acknowledges some site-specific measurement inconsistencies (e.g., buffer issues at Gisburn) and notes on data quality and comparability
+
+- Data scope and intended use
+  - Aims to enable cross-site synthesis of SOC dynamics under grassland-to-woodland transitions
+  - Supports development of a flexible, process-based SOC model that can be embedded in other soil models and national-scale assessments
+  - Facilitates exploration of SOC sensitivity to climate, management, soil structure, chemistry, biology, and hydrology across representative UK soil-vegetation-climate combinations

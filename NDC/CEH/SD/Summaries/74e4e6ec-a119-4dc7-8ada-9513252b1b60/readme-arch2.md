@@ -1,0 +1,36 @@
+# Flood maps for the Central Highlands of Vietnam and surrounding Provinces
+
+- Purpose and scope: flood depth maps to support planning and policy decisions, including SDG-related planning; covers 11 provinces in the Central Highlands and surrounding areas.
+- Geographic coverage: Binh Dinh, Dak Lak, Dak Nong, Gia Lai, Khanh Hoa, Kon Tum, Lam Dong, Ninh Thuan, Phu Yen, Quang Nam, Quang Ngai.
+- Spatial and temporal detail: 30 m horizontal grid spacing; 10 design flood return periods (1 in 5, 10, 20, 50, 75, 100, 200, 250, 500, 1000 year).
+- Flood types provided: fluvial undefended (FUD), fluvial defended (FD), and pluvial (P). FUD lacks defences; FD adjusts conveyance for estimated defence standards; validation suggests limited difference between FD and FUD in these regions due to data and assumptions. Pluvial maps are harder to validate due to short-duration events.
+- Model and updates: generated with an updated Fathom 3.0 global flood model, incorporating:
+  - improved river channel conveyance capacity (Neal et al., 2021)
+  - improved design flood estimation (Zhao et al., 2021)
+  - FABDEM 30 m elevation dataset (Hawker et al., 2022)
+  - validation against satellite imagery and household surveys (Hawker et al., in prep)
+- Data content and structure:
+  - 330 GeoTIFF files plus 1 readme
+  - per province: 30 maps (10 for each flood type)
+  - file naming convention: Province_FloodType_ReturnPeriod.tif
+  - examples: Quang_Ngai_FD_1in20.tif
+  - FloodType shorthands: FUD (fluvial undefended), FD (fluvial defended), P (pluvial)
+  - Return periods are labeled as 1in5, 1in10, 1in20, 1in50, 1in75, 1in100, 1in200, 1in250, 1in500, 1in1000
+- Data use and interpretation:
+  - depth values are in metres; 0 = 0 m flood depth (consider reclassifying 0 as NoData for visualization)
+  - recommended visualization in GIS (QGIS/ArcMap); more advanced spatial/statistical analysis in R or Python
+  - assists surface water and river flood risk assessment for planners and policymakers
+- Analytical considerations for monitoring teams:
+  - enables comparison with flood observations (satellite data, photos, reports) and calculation of skill scores (critical success index, hit rate, false alarm ratio, bias)
+  - useful for cross-referencing with other datasets to enhance data value and accessibility
+- Quality control and limitations:
+  - model validation reported against satellite observations and household surveys; in-press article comparing Fathom 3.0 to Fathom 2.0
+  - does not explicitly model flood defences not visible in the 30 m FABDEM data; differences between FD and FUD may be small due to defence standard estimation
+- Access and data management:
+  - designed for storage and upload to appropriate data portals; intended to support transparency and reuse by other organisations
+- References (model and validation context):
+  - Hawker et al. 2022 (FABDEM 30 m elevation dataset)
+  - Hawker et al., in prep (validation with satellite imagery and surveys)
+  - Sampson et al. 2015 (high-resolution global flood hazard model)
+  - Neal et al. 2021 (river channel bathymetry estimation)
+  - Zhao et al. 2021 (design flood estimation via machine learning)

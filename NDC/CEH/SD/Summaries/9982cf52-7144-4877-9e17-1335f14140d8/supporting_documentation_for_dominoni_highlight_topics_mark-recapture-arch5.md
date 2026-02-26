@@ -1,0 +1,37 @@
+# Collection/generation methods: Study sites
+
+- Study design and scope
+  - Approximately 35-kilometre urban–non-urban gradient between Glasgow city centre and Loch Lomond National Park, Scotland.
+  - Monitored annually from 2014 to 2022, with 5–20 sites per year.
+  - Target species: blue tit (Cyanistes caeruleus) and great tit (Parus major) nestbox populations.
+  - Monitoring period: 1 April to 20 June; productivity tracked via breeding attempts in nestboxes.
+- Data collection methods
+  - Nestbox monitoring: weekly from April, reducing disturbance during incubation (no checks for 14 days after incubation begins).
+  - Adult birds: ringed with unique BTO rings or ring numbers noted; adults marked at nest sites.
+  - Nestlings: marked at 13 days post-hatching.
+  - Supplementary data: opportunistic mist netting outside breeding season to supplement mark–recapture data and capture data on other passerines bycatch.
+  - Morphological measurements recorded: wing length, weight, tarsus length, fat score, and other notes.
+  - Additional data: RFID and/or radio tags fitted; colour rings recorded; nestbox number; site/location details; free-text notes.
+  - Data handling: end-of-year data checked and uploaded to a central long-term Access database enabling linking between reproductive attempts and mark–recapture data; datasets deposited with EIDC.
+- Data structure and coding (Table 1 concepts)
+  - Rows represent individual capture events; columns capture event details.
+  - Key fields include: ID, year, retrap status (new, ringed before, control, found dead, unknown), ring_number, species code (five-letter BTO codes), age code, sex, date, time, site, wing length, weight, initial processor, moult, tarsus, fat score, chicks_alive, chicks_ringed, nestbox_number, notes, chick_age, father_ring, mother_ring, RFID_fitted, RFID_number, radio_tag_fitted, radio_tag_ID, colour_left_up, colour_left_down, colour_right_up, colour_right_down, CES_visit_number, notes_colour, old_greater_c, muscle score, among others.
+- Metadata and coding standards
+  - Species codes follow BTO conventions; age codes follow BTO age coding (Table 2).
+  - Fat scores use standardized scales (e.g., BWG/ESF descriptions) with defined mappings.
+  - Clear definitions for fields such as retrap status, nestbox numbers, and measurement units (e.g., wing in millimetres, weight in grams).
+- Data governance, quality control, and storage
+  - Annual quality control: data checked and uploaded to a central database linking reproductive data with mark–recapture data.
+  - Long-term data stewardship: data and associated metadata curated in a central system and deposited with a data repository (EIDC).
+  - Data provenance: multiple data sources (field measurements, ringing, RFID/radio tagging) linked through a central database to preserve relationships between individuals, nests, and breeding attempts.
+- Data sharing and accessibility
+  - Primary data repository: EIDC (Ecology and Evolution Data Centre) for discoverability and reuse.
+  - Underlying data model and tables (Table 1 and Table 2) provide detailed data dictionaries for researchers and data stewards.
+- Practical considerations for data stewardship
+  - The dataset uses a bespoke Access database; attention to interoperability and potential mapping to standard schemas (e.g., Darwin Core) could improve cross-dataset discovery and integration.
+  - Documentation of data structures, field definitions, code lists, and units is essential to support reuse.
+  - Ongoing updates and versioning should be managed to maintain data consistency across years (2014–2022) and to accommodate new measurements or corrections.
+- Challenges and considerations highlighted
+  - Maintaining a complete picture of user needs and ensuring timely data provision.
+  - Aligning metadata and standards across multiple data streams (nesting data, mark–recapture data, mist netting data).
+  - Handling large, evolving datasets and bespoke database solutions that may require interoperability work for broader reuse.

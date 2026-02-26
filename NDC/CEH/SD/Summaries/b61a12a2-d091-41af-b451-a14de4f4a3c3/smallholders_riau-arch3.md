@@ -1,0 +1,71 @@
+# Environmental_Riau.csv
+
+- Overview
+  - A collection of interrelated data files documenting biodiversity, environmental conditions, and social context from biodiversity surveys and environmental monitoring in smallholder oil palm plantations in Riau, Sumatra, Indonesia.
+  - Aims to provide environmental health indicators to scrutinise policy, evaluate outcomes, and inform future decisions.
+  - Data sources include dataloggers, pitfall and sticky traps, transect observations, environmental surveys, and social surveys.
+
+- Key datasets and their monitoring focus
+  - DataLoggers_Riau.csv
+    - Tracks locations of data loggers within plots and hourly air temperatures recorded after deployment (TempHr1–TempHr25).
+    - Linkages via PlantationCode and SamplePoint (T1–T4) to spatial context.
+  - Inflorescences_Riau.csv
+    - Observations of oil palm inflorescences, including: percent flowers open/partially closed/closed, ground cover around palms, and two-day pollinator observations.
+    - Rich metadata: weather, observation times (Day1/Day2), GPS references, inflorescence and palm characteristics (height, canopy openness, etc.), and a wide range of pollinator and arthropod counts (ants, weevils, bees, wasps, flies, Lepidoptera, Thrips, etc.).
+    - Includes habitat/biodiversity context around inflorescences (ground cover categories, canopy openness, substrate features).
+  - Pitfalls_Riau.csv
+    - Abundance data for arthropods captured in pitfall traps, with taxon-level counts (e.g., Endopterygote larvae, ants, termites, beetles, spiders, etc.).
+    - Location and trap setup/collection details for temporal monitoring.
+  - Transects_Riau.csv
+    - Observational data for butterflies, orb-weaving spiders, and assassin bugs, including activity states (flying, resting, nectaring, etc.) and microhabitat, along with weather and air temperature during surveys.
+    - Species-level identifiers and observation times.
+  - Traps_Riau.csv
+    - Set-up and collection timing for pitfall traps, sticky traps, dataloggers, and bait cards; includes weather conditions during setup/collection.
+    - Detailed timing fields (setup/collection dates and times) and equipment identifiers.
+  - StickyTraps_Riau.csv
+    - Abundance data from sticky traps, with counts by taxon (ants, termites, wasps, beetles, spiders, etc.), plus total specimen numbers and ordinal abundance.
+    - Includes trap locations and dates.
+  - Environmental_Riau.csv
+    - Environmental salud: vegetation, microclimate, and soil conditions across plantations.
+    - Variables cover: crop, bare ground, ferns, ground vegetation, leaf litter, palm fronds, and other vegetation; cover percentages and vegetation heights.
+    - Soils: moisture, pH, horizon depth, VESS depth assessments, soil block sampling, density scores, and related measurements.
+    - Microclimate and vegetation metrics collected at plantation and sub-sites, with GPS references and canopy openness indicators.
+  - Social_Riau.csv
+    - Social survey data across three locations (SMARTRI sites in Indonesia and sites in Malaysia), covering plantation characteristics, management inputs, socio-demographics, attitudes toward nature and industry, and motivators.
+    - Extensive items: plantation type, area, ownership, palm density, farmer age, education, income, intercropping, fertilizer/herbicide practices and costs, management motivations, and perceptions of nature.
+    - Includes rankings of the importance of nature’s values (economic, food, wildlife, beauty, culture, health, and “none”), hours spent farming, soil type opinions, herbicide use, intercropping decisions, wildlife observations, and management influence factors (neighbors, scientific input, cost, effort, consistency, yields).
+
+- Key design and data-collection features
+  - Spatial and temporal linkage
+    - PlantationCode and SamplePoint (e.g., T1–T4) serve as primary spatial anchors across datasets.
+    - GPS coordinates are linked via GPSCode fields and GPSDataRiau.csv for precise geolocation.
+    - Time-stamped data across multiple layers (setup, deployment, observation days) enable temporal analysis.
+  - Rich biodiversity and environmental indicators
+    - Microhabitat metrics: ground cover, canopy openness, vegetation height, leaf litter, canopy openness via both densitometer and visual estimates.
+    - Soil metrics: moisture, pH, horizon depth, soil block evaluations (VESS), soil mass/ weights, and depth layers.
+    - Pollination biology and arthropod monitoring: inflorescence pollinator observations, pitfall and sticky trap counts, transect-based observations of target taxa.
+  - Data interoperability and governance
+    - Clear linkages among datasets using PlantationCode, GPSCode, and T1–T4 sampling points.
+    - Descriptions specify units (e.g., °C, %, cm, m, ha, Date formats) and data types (character, numeric, integer, date, time).
+    - Some fields reference external data sources (GPSDataRiau.csv) to maintain geospatial accuracy.
+  - Societal and policy relevance
+    - Social_Riau.csv captures farmer perspectives, economic drivers, and management motivations, enabling policy analyses that connect environmental outcomes with stakeholder behavior and incentives.
+
+- Practical considerations for use in monitoring frameworks
+  - Metrics alignment
+    - Temperature and microclimate data support climatic exposure assessment.
+    - Canopy openness, ground cover, and vegetation height inform habitat structure and microhabitat quality indicators.
+    - Soil properties and litter depth contribute to soil health and resilience indicators.
+    - Biodiversity indicators (pollinators, arthropod diversity/abundance) inform ecosystem health, pollination service assessments, and pest management implications.
+  - Data integration and quality
+    - Metadata-rich schema aids standardization, reproducibility, and cross-site comparisons.
+    - Public sharing of underlying data may be a barrier; governance and metadata quality are critical to enable data reuse, transparency, and governance compliance.
+  - Scope and limitations
+    - Data are location-specific (Riau, Sumatra) and tied to oil palm plantations; extrapolation beyond similar agroecosystems should be cautious.
+    - Temporal depth varies by dataset; some require consistent revisits to track trends over time.
+
+- How this supports the monitoring framework aims for Authors of Monitoring Frameworks
+  - Provides concrete, parameterized measures across environmental health domains (climate, habitat structure, soil health) and biodiversity (pollinators, arthropods) relevant for evaluating policy outcomes and informing future decisions.
+  - Demonstrates an integrated data governance approach: dataset interlinkages, standardized fields, and explicit data provenance via GPS references and sampling point IDs.
+  - Highlights operational and governance challenges (data access, metadata quality, data sharing) that policy managers must address when implementing monitoring frameworks.
+  - Enables stakeholder-informed monitoring by including socio-economic and perception data (Social_Riau.csv), linking ecological results to management decisions and incentives.

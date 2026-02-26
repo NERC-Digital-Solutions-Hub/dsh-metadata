@@ -1,0 +1,49 @@
+# Experimental design / sampling regime
+
+- Study location and plots
+  - Three oil palm estates in Riau Province, Sumatra, Indonesia: Ujung Tanjung, Kandista, Libo (Pt Ivo Mas Tunggal)
+  - Planting years ranged 1987–1995 (mature/over-mature on Ujung Tanjung and Kandista; Libo replanted in 2014)
+  - 18 plots established in 2013 as part of the Biodiversity and Ecosystem Function in Tropical Agriculture (BEFTA) project
+  - Each plot: 50 × 50 m with ~50 m separation from access tracks on three sides and ~1000 m to the fourth side
+  - Palm sampling positions: three per plot at edge points at 45°, 165°, and 285° from north
+- Experimental design and sampling regime
+  - Population: BEFTA core plots (mature stands) and replanted stands
+  - Sampling frequency: herbivory measured every 3–4 months from 2013 to August 2017 (total 18 time points)
+  - Palm selection: three palms per plot randomly chosen from numbered palms
+  - Measurements: herbivory damage to the palm crown estimated visually; 18th frond chopped, photographed, and analyzed
+- Methods for measuring herbivory
+  - Leaflet sampling: 20 leaflets (in 10 pairs) along the 18th frond, evenly spaced; photographed from a fixed position and setup by the same photographer
+  - Image processing and damage assessment
+    - Photos pre-processed to remove noise; leaflets analyzed in Fiji to measure total leaflet area
+    - A second image "filled" to represent intact leaflets; missing tips conservatively estimated
+    - Percent damaged area calculated as area consumed by herbivores
+  - Damage categorization
+    - Leaflets categorized into damage classes 1 (no damage) to 4 (heavy damage)
+    - For each image, recorded the number of leaflets in each damage class
+- Nature and units of recorded values
+  - Percentdamagephotos: percent of damage within the 20 photographed leaflets (from image analysis)
+  - Count: number of leaflets in the recorded damage class
+  - Additional metadata fields
+    - Estate_abbrev, Triplet, Plot, Treatment (reduced, normal, enhanced), Period, PalmNumber, Date
+    - PercentTotalDamageEye: observed total crown damage by eye
+    - PercentFrondEye: damage on the 18th frond by eye
+    - PercentDamagePhoto: damage as percent from photo analysis
+    - Abunclass: damage class label
+    - distance: distance to an exclosure (within 20 m; related to ant poison experiments)
+- Data quality control
+  - Basic checks for impossible values
+  - 50% data entry cross-checks against field sheets with <1% error rate
+  - All changes documented and retained with the dataset
+- Format and storage of data
+  - Three separate CSV files (thin format: each row is a single observation; percentage data repeated across rows)
+  - Metadata headers and descriptions included for each column
+  - Data distinguishes mature-stand plots from replanted-stand plots
+- Data structure and key variables
+  - Triplet, Plot, and PalmNumber identifiers to locate observations
+  - Date of observation and Period (discrete sampling intervals)
+  - Treatment and Period used to analyze management effects over time
+  - Distance column for exclosure proximity (note: data may be inappropriate for analysis when within an exclosure)
+- Miscellaneous
+  - Funding: NE/P00458X/1
+  - Datasets include BEFTA core plots (2016–2017) and replanted plot data
+  - Plot coordinates and naming conventions provided (for traceability and mapping)

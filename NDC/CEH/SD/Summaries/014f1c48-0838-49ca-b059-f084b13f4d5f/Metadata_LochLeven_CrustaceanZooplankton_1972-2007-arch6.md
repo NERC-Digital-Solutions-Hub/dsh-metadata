@@ -1,0 +1,44 @@
+# METADATA FOR 'LOCH LEVEN CRUSTACEAN ZOOPLANKTON 1972-2007' DATASET
+
+- Overview
+  - A long-term dataset of crustacean zooplankton densities from Loch Leven, collected 1972–2007.
+  - Focuses on three major taxa: Cyclops abyssorum (+ nauplii), Eudiaptomus gracilis (+ nauplii), and Daphnia sp.
+  - Data intended for understanding temporal trends in zooplankton communities as part of the lake’s monitoring programme.
+- Data structure and content
+  - Columns include: date of sample, sampling information, sampling methodology, and densities (ind/l) for the three taxa.
+  - Sampling locations are recorded; GB national grid locations are provided in Table 1.
+  - When multiple locations or methods are present, values are averaged.
+  - Zeros indicate the species was not recorded at the sampling/analytical resolution; blanks indicate missing values.
+- Temporal and methodological coverage
+  - Sampling methods changed over time:
+    - 1972–1974: fortnightly sampling with a 5 L Friedinger sampler.
+    - 1975–1982: vertical plankton net haul or integrating tube sampler (mesh 125 µm).
+    - 1992 onward: 45-degree angled net haul (mesh 120 µm).
+  - Samples preserved in 4% formaldehyde immediately after collection.
+- Laboratory processing and data handling
+  - Samples brought to a final volume of 250 ml, thoroughly mixed, and sub-sampled (5 ml).
+  - Species identification and counting performed under a low-power microscope; typically three subsamples counted.
+  - Species identified to the finest possible level given preservation and maturity.
+  - Subsample counts converted to numbers per litre using transformation factors.
+  - Reconstituted samples archived after counting; taxonomic names updated if changed over time.
+- Locations and spatial data
+  - Table 1 lists sampling sites with GB national grid coordinates:
+    - Centre Loch, Kinross Bay, North Deeps, Public Pier, Castle Bay, Reed Bower, Outflow.
+  - Each site has corresponding Easting and Northing coordinates.
+- Quality control and provenance
+  - Data quality controlled by:
+    - Dr Linda May (pre-1992 data checks) and
+    - Iain Gunn (1992–2007 data analysis and checks).
+- Taxonomy and references
+  - Taxonomic references used for identification include guides by Dussart & Defaye, Einsle, Flößner & Kraus, George & Owen, Harding & Smith, Johnson, and Scourfield & Harding.
+  - Older species names updated to current nomenclature where applicable.
+- Data interpretation notes
+  - Zero values indicate non-detection at the specified resolution, not necessarily complete absence from Loch Leven.
+  - Missing values are represented as blanks.
+  - When multiple data points exist for a site/method, averaging is applied.
+- Potential uses
+  - Supports long-term analyses of crustacean zooplankton dynamics.
+  - Enables data products (e.g., dashboards, time-series visualizations) to explore trends across years and locations.
+  - Can be combined with metadata (locations, methods) for transparency in analysis and reproduction.
+- References
+  - Key identification and taxonomy references listed for the identification of crustacean zooplankton.

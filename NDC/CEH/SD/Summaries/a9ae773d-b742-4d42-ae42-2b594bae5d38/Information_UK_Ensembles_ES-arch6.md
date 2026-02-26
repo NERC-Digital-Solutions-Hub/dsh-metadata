@@ -1,0 +1,57 @@
+# Ensembles of ecosystem service models for above ground carbon stock and water supply in the UK
+
+- Data set purpose and scope
+  - Provides ensemble-based maps and data products for above-ground carbon stock and water supply in the UK (Great Britain and Northern Ireland, including outlying Isles).
+  - Contains 14 raster layers (1-band, 32-bit float, 1000 m x 1000 m grid) plus 1 shapefile (UKWaterEnsembles) with 14 estimates per watershed catchment.
+  - Outputs are normalised to a 0–1 scale (relative service delivery); NoData value is -999.
+- Data structure and content
+  - Rasters named by ensemble approach; shapefile named UKWaterEnsembles.
+  - Projection: British National Grid (EPSG 27700) with a 0.9996 scale factor; units in metres.
+  - Coverage: above-ground carbon stock across Great Britain, Northern Ireland, including Isles; water supply across 519 selected mainland GB and NI catchments.
+  - Grid details: carbon rasters are 1 km2 resolution; water rasters use catchment polygons. Weights transfer from validation-based calibration to full-area maps.
+  - Data origin notes: ensemble outputs come from the EnsemblES project (Bangor University, UKCEH, Lactuca) funded by UKRI; methodology and outputs relate to Hooftman et al. (2022) and supplementary materials.
+- Origin and validation data
+  - Ensemble methods reflect multiple modelling frameworks (10 different ensemble approaches) for UK carbon stock and water supply; not all input models cover the same area.
+  - Validation inputs:
+    - Carbon: Forest Research data for England and Scotland (2019) with 201,143 forest compartments aggregated to 2,078 forest polygons; mapped to full area.
+    - Water: 519 hydrometric NRFA gauging stations with catchments >100 km2 (plus 41 Welsh catchments) to ensure robust mean runoff representation.
+  - Validation datasets and validations are not exhaustively described here; datasets are drawn from peer-reviewed or accepted sources.
+- Individual model outputs and processing
+  - For each model, predictions are produced per validation polygon using ArcGIS Zonal statistics (2.5 m grid resolution) and aggregated to per-polygon values; for some flow models, maximum flow within a 2 km window of gauging locations is used to align with polygons.
+  - Normalisation: outputs are area-corrected and normalised to 0–1 across models and validation data to enable cross-model comparability; extreme values are controlled with a double Winsorising method (2.5th and 97.5th percentiles).
+  - Model inputs described in detail (Table 1) with varying grains and coverage, including:
+    - InVest, LPJ-GUESS, LUCI, dollar-value (benefit transfer), Aqueduct, ARIES, Barredo, Copernicus Tree Cover Density, DECIPHeR, Grid-to-Grid, Henrys, National Forest Inventory, WaterWorld, and others.
+    - Grains range from sub-kilometre (e.g., LUCI 10 m grid) to coarse (~0.5°).
+- Calculation polygons and mapping details
+  - Validation datasets are organized around polygons that contain validation data:
+    - Carbon validation: aggregated to 2,078 forest polygons (mean ~4.4 ha; median ~1.6 ha).
+    - Water validation: 519 NRFA catchments; Welsh catchments included to balance representation.
+  - All ensemble calculations and comparisons are performed on the same jack-knifed subset of polygons to enable fair comparisons.
+- Ensemble modelling approaches (methods for deriving weights)
+  - Overall approach: bagging with 50% spatial data polygons for 250 runs; per-run calculations use the same polygon subset; weights are averaged across runs.
+  - Unweighted ensembles: Mean and Median ensembles per data point (validation polygon).
+  - Untrained weighted ensembles (several deterministic and iterative methods):
+    - PCA ensemble: weights from principal component loadings on the first axis; higher weight for models closer to the consensus axis.
+    - Correlation coefficient ensemble: weights based on mean correlation of each model with all others.
+    - Regression to the median ensemble: iterative log-likelihood regression against the median ensemble; weights derived from regression coefficients.
+    - Leave-one-out cross-validation ensemble: iterative regression excluding one model at a time; mean coefficients across models used as weights.
+    - Grain-size ensemble: penalises coarser grid sizes; weights inversely related to grain size.
+    - Distinct ensembles: attribute-based grouping (17 categories) with weighting that emphasizes or downweights model groups based on distinctiveness; normalised to sum to 1.
+    - Trained/Accuracy-weighted ensembles: weights based on per-model accuracy on validation data not used in training.
+    - Log-likelihood regression (alternative): regression against corresponding validation data points rather than median.
+  - Additional concepts:
+    - Distinctiveness weighting allows emphasizing minority groups of models or downweighting them, depending on the chosen strategy.
+    - All resulting weights are normalised to sum to 1 before applying in the ensemble equation.
+  - Practical notes:
+    - Some ensembles are “trained” using data splits akin to species distribution modelling (train on 50% of points, test on the remainder).
+    - The methodology includes iterative optimization (e.g., 200 repetitions) and uses Matlab tools (nlmefit) for regression-based weighting.
+- Quality control and provenance
+  - All approaches and outputs underwent internal team review and external peer review.
+  - Most input model data originate from peer-reviewed or widely accepted sources.
+- Funding and references
+  - Funded by the EnsemblES project within the UKRI Landscape Decisions programme (NE/T00391X/1).
+  - References cover foundational ecosystem service modelling, ensemble methods, and contributing datasets and tools (e.g., InVest, LPJ-GUESS, LUCI, Copernicus, DECIPHeR, WaterWorld, etc.).
+- Notes on outputs and usage
+  - The carbon dataset contains 253,802 cells that partially cover non-sea land areas after downscaling to 1 km2 resolution.
+  - Weights applied to the carbon layer were derived from forest-focused validation, which may introduce a bias toward forested areas in non-forested regions.
+  - Outputs are designed to support self-service use, enabling end users to explore ensemble-based estimates of ecosystem services across space and time with accompanying methodological transparency (weighting methods and validation).

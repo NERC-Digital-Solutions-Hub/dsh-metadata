@@ -1,0 +1,39 @@
+# Tree Distribution (2007) Dataset Documentation
+
+- Document title and provenance: Countryside Survey: Individual Ash tree distribution 2007; Document Version: 1:19-8-2013; Data © NERC - Centre for Ecology & Hydrology; Prepared by C.M. Wood, L.C. Maskell, P.A. Henrys (CEH Lancaster)
+- Dataset file: CS07_Ash_Ind_Trees
+  - Content: Estimates of individual ash trees for Great Britain; trees counted outside woodland/hedgerows; based on Countryside Survey 2007 data
+  - Associated datasets: ITE Land Classification (2007); Countryside Survey website
+- Data columns
+  - LC2007: Land Class (numeric)
+  - LandClass: Land Class (text)
+  - Mn_tree_km: Mean number of individual ash trees per 1km per land class
+  - Resolution: 1km
+  - Coordinate system: British National Grid
+  - Projection: Transverse Mercator
+  - Extent: Great Britain
+  - Projection reference: OSGB1936
+- Sampling and methodology
+  - Countryside Survey samples 1km squares across GB using stratified random sampling based on land classes derived from ecological gradients (soils, geology, climate)
+  - In each 1km square, every individual tree in the landscape (outside woodland) is recorded with an estimate of modal DBH
+  - Small clumps included if above the minimum mappable unit (mmu) of 20m x 20m; if clumps were above mmu, they would be included in area data
+  - Up to 10 veteran trees recorded per 1km square (maximum 2 per species)
+- National estimates and calculation
+  - National areal extent of ash for GB derived by:
+    - Counting trees within each 1km square (as point features by land class)
+    - Calculating mean ash trees per 1km square for each land class
+    - Multiplying by the area of each land class
+    - Summing across all land classes
+- Land classification
+  - Used 2007 ITE Land Classification with 45 land classes
+- Purpose and outputs
+  - Enables scaling from 1km square samples to national estimates of ash distribution
+  - Produces standardized outputs suitable for monitoring environmental health and policy performance
+- Additional information and references
+  - More information at www.countrysidesurvey.org.uk
+  - Further reading includes:
+    - Distribution of Ash trees (Fraxinus excelsior) in Countryside Survey data (2013)
+    - CS Sampling Strategy documents and revisions
+    - ITE Merlewood Land Classification of Great Britain (1996)
+    - Countryside Survey UK Results from 2007 (Carey et al. 2008)
+    - LCM2007 land cover map final report (Morton et al. 2011)

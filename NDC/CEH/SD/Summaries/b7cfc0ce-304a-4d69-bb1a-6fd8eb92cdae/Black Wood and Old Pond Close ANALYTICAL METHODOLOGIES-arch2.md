@@ -1,0 +1,30 @@
+# Rainfall catch
+
+- Scope: Documentation of rainfall, throughfall, and stemflow catch measurements and a broad suite of dissolved chemical analyses over 23-May-1990 to 06-Apr-1992; data prepared for uploading to portals; laboratories: Wallingford (rainfall, throughfall, dissolved constituents) and Field (stemflow).
+- Timeframe and sampling scope:
+  - Rainfall, throughfall, and stemflow windows: 23-May-1990 to 06-Apr-1992.
+  - Rainfall/throughfall: Gravimetric, unfiltered.
+  - Stemflow: Volumetric, unfiltered.
+  - Dissolved constituents: Filtration to 0.45 μm (field) with acidification where applicable; preserved and stored per analyte specifics.
+- Sampling methods and preservation (highlights):
+  - Rainfall/throughfall: Gravimetric collection; typically no preservation.
+  - Stemflow: Volumetric collection; typically no preservation.
+  - Dissolved constituents: Filtration (47 mm 0.45 μm or similar); preservation includes acidification to 1% with high-purity nitric acid when applicable; samples stored under defined conditions (e.g., dark storage at 4°C for certain analytes).
+  - SRP (soluble reactive phosphorus): Preservation noted as stored in dark at 4°C; measurement by automated colorimetry.
+  - Analytical approaches:
+    - Metals and metalloids: ICP-OES after filtration and acidification.
+    - Anions and simple ions: Ion chromatography or automated colorimetry.
+    - pH: Radiometer pH meter and electrode.
+    - Additional dissolved species (e.g., Si, F, NO3, SO4, SRP) measured per analyte.
+- Analytes and analytical methods (selected highlights):
+  - Metals/soluble constituents: Al, B, Ba, Br, Cu, Cl, F, Fe, Mn, K, Ca, Mg, Na, NH4, NO3, Si, SO4, Sr, Zn, SRP.
+  - Methods: ICP-OES for metals; IC for major anions; Autoanalyzer for selected ions; pH measurements.
+  - Data structure includes start/end dates, lab (Wallingford or Field), filtration, and preservation details per parameter.
+- Data handling, quality assurance, and outputs:
+  - Steps: understand required data from established sources, quality assure, clean, and transform to standardized formats.
+  - Analysis: apply standardized methods to assess environmental health against standards.
+  - Outputs: reports, maps, and charts; datasets stored and uploaded to portals for accessibility.
+  - Accessibility and reuse: emphasis on enabling access to underlying data; encourage combining datasets to enhance value beyond single-use outputs.
+- Outputs and intended use:
+  - Supports time-series monitoring of environmental health and policy performance.
+  - Promotes transparency and data accessibility to enable scrutiny of environmental indicators and policy effectiveness.

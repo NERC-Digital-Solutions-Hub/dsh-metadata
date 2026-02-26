@@ -1,0 +1,89 @@
+# Field measurements of peatland carbon cycling at a wind farm hosting peatland in Scotland, UK
+
+- Overview
+  - Field-based investigation of spatio-temporal variability in abiotic and biotic controls on peatland carbon cycling.
+  - Data collected 2011–2013 at Black Law Wind Farm, Lanarkshire, Scotland (blanket bog peatland).
+  - Four sites (A–D) along a SW to NE transect, 12 plots per site (total 48 plots), with four blocks per site dominated by plant functional types (PFTs).
+  - Comprehensive suite of measurements spanning plant–soil properties, peat carbon cycling, microbial community composition, litter decomposition, GHG fluxes, and physical site conditions.
+
+- Data and variables
+  - Plant–soil properties
+    - Total carbon content (%), total nitrogen content (%), C:N ratio (of vegetation, litter, and peat)
+    - Carbon stock and nitrogen stock for litter and peat (g C m-2 and g N m-2)
+    - Dry bulk density (g m-3), soil moisture (%), pH
+    - Soil microbial community composition via phospholipid fatty acids (PLFAs) expressed as µg g-1 dry soil
+    - PLFA-based microbial indicators (bacteria, fungi, and ratios such as F:B; Gram+ vs Gram−)
+  - Peatland carbon cycling
+    - Litter decomposition (% initial litter mass remaining)
+    - Dissolved organic carbon concentration [DOC] (mg L−1)
+    - Methane fluxes (CH4 flux; mg CH4-C m−2 h−1)
+    - Net ecosystem exchange (NEE; CO2-C m−2 h−1) and ecosystem respiration (Reco)
+    - Photosynthesis proxy (Pcal) derived from NEE and Reco
+  - Physical and temporal parameters
+    - Belowground temperature (5 cm depth; °C)
+    - Soil moisture content (%, surface measurements)
+    - Temporal coverage includes multi-site, multi-year (2011–2013) measurements and a year-long GHG campaign (May 2011–April 2012)
+  - Litter decomposition experiment
+    - Litter from each PFT placed in litter bags (0.50 g air-dried litter per bag; 1 mm mesh; 5 mm x 5 mm bags)
+    - 386-day exposure (Mar 2012–Apr 2013); litter decomposition expressed as % initial dry mass remaining
+  - Pore-water chemistry
+    - Pore water DOC collected from 0–15 cm depth; analyzed within two months
+    - Analysis by Thermalox Total C analyser; calibration with potassium phthalate standards
+  - Sampling design data
+    - Plot and site metadata (A–D sites, 48 plots total, blocks per site)
+    - Dominant PFTs at each plot (Sphagnum spp., Eriophorum vaginatum, Calluna vulgaris)
+    - Field sampling dates and depths (peat cores to 15 cm, 5 cm soil depth, quadrat area of 400 cm2)
+
+- Methods and instruments
+  - Chemical and soil analyses
+    - Carbon and nitrogen: LECO Truspec CN Analyser; furnace temp ~950 °C; EDTA standards for calibration
+    - pH: Hanna 211 pH meter; ratio 1:2.5 peat to deionised water
+  - Gas and flux measurements
+    - CH4 and CO2 fluxes via static chambers; CO2 measured with EGM-4 portable IR gas analyser; CH4 analysed in lab with Perkin Elmer Autosystem XL GC
+    - Flux calculations following Levy et al. (2012); extreme CH4 fluxes excluded to remove ebullition or measurement artifacts
+  - Microbial and PLFA analyses
+    - PLFA extraction from peat samples (Bligh and Dyer method; modified as per Frostegård et al. procedures)
+    - PLFA quantification by GC-FID; identification via GC-MS; internal standard used for calibration
+    - Assignment of PLFAs to microbial groups (bacteria vs fungi; gram+ vs gram−)
+  - Litter decomposition protocol
+    - Litter bags prepared with 0.50 g air-dried litter; 1 mm mesh; placed under litter layer; retrieved after 386 days
+    - Litter moisture and dry weight used to determine mass loss
+  - Temperature and moisture monitoring
+    - Peat temperature: 5 cm depth; loggers installed at blocks across sites; data loggers record every 30 min
+    - Soil moisture: probes at multiple blocks/sites; data logging at 30-minute intervals
+  - Site and sampling logistics
+    - Four sites A–D; plots arranged in a transect; eight plots per site sampled in February 2011; a wooden sampling platform used to minimize disturbance
+    - 400 cm2 quadrats per plot for peat, litter, and vegetation sampling; cores collected for C and N analyses
+
+- Data management, quality assurance, and sharing
+  - Documentation and provenance
+    - Detailed methodological descriptions, calibration procedures, and standards referenced (e.g., EDTA standards for CN, internal PLFA standards, GC-MS validation)
+    - Clear recording of site coordinates, altitude, and plot-level data to enable traceability
+  - Quality assurance
+    - Regular calibration against standards (e.g., EDTA standards every ~20 samples for CN)
+    - PLFA identifications cross-validated with GC-MS; use of internal standards for quantification
+    - CH4 flux screening to exclude ebullition events and measurement artifacts using predefined thresholds
+  - Data structure and integration
+    - Multiple data streams (plant–soil properties, PLFA/Microbial, litter decomposition, GHG fluxes, pore-water DOC, temperature, soil moisture)
+    - Spatially explicit design (site, plot, block, PFT) with temporal coverage across months/years
+  - Sharing considerations
+    - Aimed at uploading to relevant portals and cataloguing in data holdings; requires comprehensive metadata (methods, units, dates, locations, QC procedures) for interoperability
+    - No explicit embargo or access restrictions stated in the provided text; dataset is designed for discoverability and reuse by others
+
+- Practical considerations for Data Stewards
+  - Metadata to capture
+    - Dataset title, description, study location (Black Law Wind Farm), coordinates, altitude
+    - Study design (A–D sites, 12 plots per site; 48 plots total; PFT blocks)
+    - Variables and units (C %, N %, C:N, C and N stocks m-2, bulk density, moisture %, pH, PLFA µg g-1, DOC mg L−1, CH4-CH4-C m−2 h−1, NEE CO2-C m−2 h−1, Reco, Pcal)
+    - Sampling dates, durations, depths, core sizes, quadrat areas, litter bag specs, and mesh sizes
+    - Instruments and methods with version or model details and calibration procedures
+    - QA/QC steps (e.g., CN calibration, CH4 flux thresholds, PLFA standardization)
+  - Data integration and interoperability
+    - Ensure consistent plot and site identifiers across data streams
+    - Standardize units and clearly document any deviations or data processing steps
+  - User needs and governance
+    - Recognize the dataset’s multi-disciplinary use (ecology, biogeochemistry, microbial ecology) and provide user-focused metadata (dataset-level and variable-level) to support discovery and reuse
+    - Align with data governance practices for large environmental datasets, addressing data availability, update cycles, and any potential proprietary or access considerations
+
+- Endnotes
+  - The dataset comprises rich, multi-modal measurements from a replicated peatland field study, with extensive QA/QC and provenance documentation embedded in the methods and references. It is well-suited for integration into data portals with robust metadata to support discoverability, reuse, and cross-study synthesis.

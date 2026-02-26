@@ -1,0 +1,80 @@
+# Predicted outcomes from land use change scenarios in upland Wales catchments
+
+- Aims and scope
+  - Presents predicted land use change outcomes for upland Wales catchments under four scenarios (Agricultural Intensification, Business-as-Usual, Managed Extensification, Agricultural Abandonment).
+  - Provides eight data files (two per scenario): maximum and minimum predicted change for each scenario, as CSVs.
+  - Outputs are tabular (not spatial) summaries at the level of Duress sub-catchments.
+
+- Datasets included
+  - Predicted Maximum Change datasets
+    - Agricultural Intensification: Duress_intensification_max_area.csv
+    - Business-as-Usual: Duress_bau_max_area.csv
+    - Managed Extensification: Duess_managed_e_max_area.csv
+    - Agricultural Abandonment: Duress_abandoment_max_area.csv
+  - Predicted Minimum Change datasets
+    - Agricultural Intensification: Duress_intensification_min_area.csv
+    - Business-as-Usual: Duress_bau_min_area.csv
+    - Managed Extensification: Duress_managed_e_min_area.csv
+    - Agricultural Abandonment: Duress_abandonment_min_area.csv
+
+- Collection method and data provenance
+  - Study area: Duress catchments in upland Wales; spatial extent bounded by specified coordinates.
+  - Data sources used to derive outcomes
+    - Land Cover Map 2007 (LCM2007) at 25 m resolution, 13-class aggregation for Wales.
+    - Agricultural Land Classification (ALC), with a modified non-agricultural land category inferred for consistency in analysis.
+    - Designated area layers: SSSI, SAC, SPA, Ancient Woodland Inventory, Historic Landscapes, National Parks.
+    - Ownership boundary layers: MoD, National Trust, Common Land, National Forest Estate boundaries.
+  - Rights and restrictions
+    - Some ownership layers require permission for use (MoD, National Trust).
+    - Data credits and copyrights noted (CEH, NRW, CADW, etc.).
+
+- Analytical method (how outcomes are generated)
+  - Two expert-led rule-bases per scenario translate narrative scenarios into predicted land-use change probabilities.
+  - Filters and predictions
+    - Filter A: Agricultural Land Classification (ALC) as the primary constraint.
+    - Filter B: Ownership type as a secondary constraint.
+    - Filter C: Current nature conservation status as a tertiary constraint.
+  - Scenarios produce probabilities on a 1-5 scale (very unlikely to very likely) for each land-cover type.
+  - Maximum change: determined by ALC filter only.
+  - Minimum change: determined by ALC, ownership, and designation status.
+  - Process steps (high level)
+    - Identify relevant dataset information and create spatial units for baseline and scenario changes.
+    - Join rule-base to appropriate layers; generate unique identifiers.
+    - Calculate baseline (before) and post-scenario areas and percentages; derive change in area and percent.
+    - Output is tabular (no spatial dataset is produced).
+  - Implementation environment: ArcGIS used for data manipulation and interpretation.
+
+- Data structure and content
+  - For each scenario, two CSVs (minimum and maximum) summarize predicted land-cover change outcomes for each Duress sub-catchment.
+  - All eight CSVs share the same 9-column structure.
+  - Scenario descriptions (high-level)
+    - Agricultural Intensification: focus on production with habitat conversion (e.g., grassland changes, hedge/woodland reduction).
+    - Business-as-Usual: continued farming intensity with some balance between productivity and environment.
+    - Managed Extensification: emphasis on carbon and biodiversity, peatland/wetland restoration, woodland expansion.
+    - Agricultural Abandonment: decline in farming, rewilding tendencies, increased tree and heather cover.
+  - Column details (common across all eight CSVs)
+    - Sub catchment
+    - Habitat type (Description)
+    - Area Before (m^2)
+    - Area Before (%)
+    - Area After (m^2)
+    - Area After (%)
+    - Difference (m^2)
+    - Difference (%)
+    - Change (Yes/No)
+
+- Relevance for Data Stewards
+  - Data governance and standardization
+    - Clear provenance: multiple input datasets with licenses and attributions (LCM2007, ALC, Designated Areas, Ownership boundaries).
+    - Modified ALC for consistency in several scenarios; note which scenarios used the original vs modified ALC.
+  - Metadata and documentation
+    - Documentation covers dataset mappings, scenario descriptions, and methodological steps; ensure metadata captures data lineage, processing steps, and versioning.
+  - Data sharing and access
+    - Ownership-layer permissions (e.g., MoD, National Trust) must be managed; plan for access controls and usage rights.
+    - Outputs are non-spatial tabular summaries; consider adding data dictionaries, column definitions, and units to facilitate reuse.
+  - Data quality and interoperability
+    - Aggregation of land-cover classes from LCM2007 and the modified ALC introduces potential interoperability considerations; align with other datasets in your catalog and note any non-interoperable components.
+  - Updates and sustainability
+    - If datasets are updated (new land-use scenarios or revised inputs), maintain consistent schema across versions; document any structural changes to allow proper linking and reuse.
+  - Usage considerations
+    - Outputs are scenario-based predictions at sub-catchment scale; users should interpret probability-driven change with awareness of underlying assumptions and limitations described in Prosser et al. (2014) and the Duress project context.

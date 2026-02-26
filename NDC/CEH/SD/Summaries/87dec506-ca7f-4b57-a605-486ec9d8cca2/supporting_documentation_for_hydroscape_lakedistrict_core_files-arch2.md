@@ -1,0 +1,24 @@
+# Document describes the headings used to record the stratigraphic data collected for each core
+
+- Associated files: 23 CSV files (e.g., 28965_DERW_DEEP.csv, 28965_DERW_LITT.csv, 28965_DERW_INT.csv, 29166_EASE_DEEP.csv, 29166_EASE_LITT.csv, 29166_EASE_INT.csv, 29184_GRAS_DEEP.csv, 29184_GRAS_LITT.csv, 29184_GRAS_INT.csv, 29197_RYDA_DEEP.csv, 29197_RYDA_LITT.csv, 29197_RYDA_INT.csv, 29215_BURNMT_DEEP.csv, 29215_BURNMT_LITT.csv, 29215_BURNMT_INT.csv, 29321_CONI_DEEP.csv, 29321_CONI_LITT.csv, 29321_CONI_INT.csv, 29328_ESTH_DEEP.csv, 29328_ESTH_LITT.csv, 29328_ESTH10_INT.csv, 47008_WIND_DEEP.csv, 47008_WIND_LITT.csv, 47008_WIND_INT.csv). Filenames encode water body identification number (WBID) and project lake/core location.
+- Purpose: document describes the headings used to record stratigraphic data collected for each core; data blanks indicate no measurement; the data matrix comprises columns (determinands) and rows corresponding to contiguous core-depth intervals.
+- Data structure
+  - Core slice identification: Sub_ID (internal UCL Amphora database unique ID)
+  - Depths: Top_Depth_cm (distance to top of sliced section from sediment/water interface), Bottom_Depth_cm (bottom of sliced section)
+  - Mass and content measurements: DW (percentage of dry weight lost after drying at 105°C for 24 h), LOI_550 (loss on ignition at 550°C for 2 h), LOI_950 (carbonate content via combustion at 950°C for 2 h), wetd (wet density; mass per cm^3)
+  - Lead-210 and related dating: Pb210_Total, Pb210_Total_err, Pb210_Supported, Pb210_Supported_err, Pb210_Unsupported, Pb210_Unsupported_err, Cum_Unsupported_Pb210, Cum_Unsupported_Pb210_err
+  - Other radionuclides: Cs137, Cs137_err, Am241, Am241_err
+  - Chronology: Date_AD (calculated year), Age_yr, Age_yr_err (age via Constant Rate of Supply model)
+  - Sedimentation indicators: SAR (sediment dry mass accumulation rate), SR (sedimentation rate), SR_err
+  - XRF measurements (element concentrations by % dry mass or µg/g): Na_per, Al_per, Si_per, P_per, S_per, Cl_per, K_per, Ca_per, Ti_per, V_µg_g, Mn_per, Fe_per, Co_µg_g, Ni_µg_g, Cu_µg_g, Zn_µg_g, Ga_µg_g, As_µg_g, Br_µg_g, Rb_µg_g, Sr_µg_g, Y_µg_g, Nb_µg_g, Ba_µg_g, Pb_µg_g
+- Measurement and QA methods
+  - Loss on ignition and mass-based content: standardized LOI methodology (Heiri et al. 2001) for estimating organic matter and carbonate content; wet density calculated from three replicate measurements (~2 cm^3 vessel) and converted to g cm^-3
+  - XRF spectroscopy: freeze-dried sediments milled to powder, ~2 g loaded into XRF vessels, measured by energy-dispersive XRF (EDXRF) in helium; daily re-calibration with a factory standard; reference sediment used for calibration; accompanying QC documentation provided (supporting_documentation_for_hydroscape_lakedistrict_core_xrf_qc.docx)
+  - Radioisotope dating: dried sediments analyzed for 210Pb, 226Ra, 137Cs, and 241Am by direct gamma counting with an ORTEC HPGe detector; 210Pb via 46.5 keV gamma, 226Ra via 214Pb daughters; 137Cs and 241Am via 662 keV and 59.5 keV lines; detector efficiency calibrated with standards and samples; self-absorption corrections applied
+  - Chronology model: 210Pb dating using the CRS (constant rate of supply) model (Appleby and Oldfield 1978; Appleby 2001)
+- References
+  - Heiri, Lotter, Lemcke (2001) on LOI methodology
+  - Appleby et al. (1986) on 210Pb dating by low-background gamma counting
+  - Appleby & Oldfield (1978); Appleby (2001) on CRS dating
+- Supporting materials
+  - QC documentation: supporting_documentation_for_hydroscape_lakedistrict_core_xrf_qc.docx

@@ -1,0 +1,41 @@
+# Discovery metadata
+
+- File: adcp_####_xs#.csv
+- Authors: Chris Unsworth, Andrew Nicholas, Phil Ashworth, Dan Parsons, Greg Sambrook Smith
+- Data description: These files contain water depths and velocities measured at cross-sections on the South Saskatchewan River, Canada. The file naming convention encodes year and cross-section number:
+  - The first four # symbols indicate the year of data collection.
+  - The # after 'xs' indicates the cross-section number.
+- Contextual metadata (structure and content):
+  - Five data columns:
+    - Column 1: Measurement location UTM Easting (m)
+    - Column 2: Measurement location UTM Northing (m)
+    - Column 3: Water depth (m)
+    - Column 4: Depth-averaged velocity component in Easting direction (m/s)
+    - Column 5: Depth-averaged velocity component in Northing direction (m/s)
+  - Purpose: Data collected to map the distribution of flow across river cross-sections.
+  - Instrumentation and methods:
+    - Instrument: Sontek M9 Acoustic Doppler Current Profiler (aDCP)
+    - Mounting: On a small zodiac boat or SonTek Hydroboard
+    - Positioning: Recorded with RTK differential GPS (dGPS)
+    - Data processing: Velocities corrected using boat speed and heading derived from dGPS
+    - Sampling: Pulse coherent mode, 7 pings/s, averaged to 1 Hz for improved signal-to-noise
+    - Transducers: 9 transducers; frequency range 0.5–3.0 MHz
+    - Velocity accuracy: ±1 cm/s
+    - Alignment: Cross-sections extended between banks and oriented approximately perpendicular to downstream flow
+    - Reported velocity: Two horizontal components of depth-averaged velocity
+- Data collection timeline:
+  - 28/08/2015: adcp_2015_xs1.csv – adcp_2015_xs8.csv
+  - 29/08/2015: adcp_2015_xs9.csv – adcp_2015_xs18.csv
+  - 31/08/2015: adcp_2015_xs19.csv – adcp_2015_xs24.csv
+  - 12/09/2016: adcp_2016_xs1.csv – adcp_2016_xs6.csv
+  - 10/09/2016: adcp_2016_xs7.csv – adcp_2016_xs12.csv
+  - 14/09/2016: adcp_2016_xs13.csv – adcp_2016_xs20.csv
+  - 08/06/2017: adcp_2017_xs1.csv – adcp_2017_xs6.csv
+- Data management and sharing notes:
+  - Files are intended to be uploaded to relevant portals and catalogued as a dataset collection.
+  - Documentation of work performed on datasets may accompany the data (dataset provenance and processing steps).
+- Data quality and governance considerations (for Data Stewards):
+  - Metadata includes essential units and column definitions; ensure consistent use across all cross-sections and years.
+  - Provenance: clear record of instruments, mounting, positioning, data corrections, and averaging.
+  - Limitations to note: cross-sections are aligned perpendicularly to flow; potential gaps in year-to-year continuity if sections vary.
+  - Potential challenges highlighted in broader governance context: timely data delivery, standardization across many formats, handling large waveform-derived datasets, and alignment with older or non-interoperable systems.

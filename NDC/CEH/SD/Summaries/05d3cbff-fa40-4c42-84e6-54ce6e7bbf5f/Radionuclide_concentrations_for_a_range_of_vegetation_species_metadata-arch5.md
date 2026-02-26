@@ -1,0 +1,46 @@
+# Radionuclide meta-data
+
+- Purpose and scope
+  - Metadata for CEH Radiochemistry laboratory samples, capturing identifiers, sampling details, taxonomic information, sample mass, analysis timing, and radionuclide activity concentrations (K-40, Cs-137, Be-7) along with associated errors, detection flags, and minimum detectable activities.
+- Key fields and explanations
+  - Sample_ID: CEH Radiochemistry laboratory unique sample identifier.
+  - Sampling_Site: sampling site.
+  - Sampling_date: date plant species or soil was sampled.
+  - Species, Common_name, Order, Family, Genus: taxonomic information; species Latin name; common name if available.
+  - Mass_of_sample_g: mass of sample (dry weight) in grams.
+  - Analysed_date: date the sample was analyzed (dd/mm/yyyy).
+  - Analysis_time_days: number of days the sample was analyzed for gamma-emitting radionuclides.
+  - Activity_concentration_40K_Bq_kg_dry: K-40 activity concentration (Bq per kg dry weight).
+  - Counting_error_40K_Bq_kg_dry: counting error for K-40.
+  - 40K_<: indicator that K-40 concentration is below the limit of detection (LOD).
+  - MDA_40K_Bq_kg_dry: minimum detectable activity for K-40 (Bq/kg dry weight).
+  - Activity_concentration_1 37Cs_Bq_kg_dry: Cs-137 activity concentration (Bq/kg dry weight).
+  - Counting_error_137Cs_Bq_kg_dry: counting error for Cs-137.
+  - 137Cs_<: indicator that Cs-137 concentration is below LOD.
+  - MDA_137Cs_Bq_kg_dry: minimum detectable activity for Cs-137.
+  - 7Be_<: indicator for Be-7 concentration below LOD.
+  - MDA_7Be_Bq_kg_dry: minimum detectable activity for Be-7.
+  - Notes: information related to samples that may impact results; otherwise not applicable.
+- Data quality and interpretation
+  - Field-level explanations and units support consistency and reuse.
+  - Presence of LOD flags, MDAs, and notes aids interpretation of non-detects and detection limits.
+  - Some entries show not applicable or n/a; parsing artifacts may exist and warrant cleaning.
+- Metadata and governance considerations for Data Stewards
+  - Ensure consistent field naming, unit conventions, and complete metadata to meet user needs.
+  - Validate LOD flags, MDAs, and notes; maintain a data dictionary with clear meanings.
+  - Record provenance: origin from CEH Radiochemistry lab; capture sampling site/date, analysis date, and methods if available.
+  - Manage data sharing and versioning; document transformations (e.g., conversion to dry weight) and handling of non-detects.
+  - Consider embargo or disclosure handling if needed; preserve caveats in Notes.
+- Data access, storage and sharing
+  - Upload to appropriate data portals and catalogue datasets; maintain reproducible data transformations.
+  - Include comprehensive metadata and field definitions to enhance discoverability.
+  - Preserve Notes and result-impacting information for accurate interpretation.
+- Practical considerations and challenges for Data Stewards
+  - Potential inconsistencies in naming and formatting; standardize to improve interoperability.
+  - Handling missing or non-standard entries; implement data validation rules.
+  - Scalability for larger datasets; ensure robust storage and indexing.
+- Recommendations
+  - Develop a data dictionary mapping all fields to precise definitions and units.
+  - Implement quality checks for masses, dates, and concentration values; flag anomalies.
+  - Document data processing steps and any conversions; maintain audit trails.
+  - Define clear data-sharing rules, update procedures, and version control mechanisms.

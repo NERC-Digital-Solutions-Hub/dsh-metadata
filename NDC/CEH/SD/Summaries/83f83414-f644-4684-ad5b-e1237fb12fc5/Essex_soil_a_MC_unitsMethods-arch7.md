@@ -1,0 +1,48 @@
+# Overall sampling design
+
+- Purpose: Collect data to test how the functional microbial community involved in carbon and nitrogen cycling changes seasonally and with geology.
+- Spatial framework:
+  - At each site, 9 soil samples were taken within a 40 x 40 m transect at 20 m intervals.
+  - Sub-samples were created from these samples and stored differently depending on the analysis performed.
+- Identifying information and site encoding:
+  - Year and Month of measurement (date metadata).
+  - site.name: short site name; encoding includes geology and river origin.
+    - First letter = underlying geology (C = chalk, A = clay, G = greensand).
+    - Second letter = initial of river name (e.g., A for Avon, W for Wylye, S for Sem).
+    - A numeric suffix identifies the river (e.g., GA2 = River Avon with provided coordinates; CW2 = River Wylye; AS2 = River Sem).
+  - geology: sub-catchment underlying geology type (Clay, chalk, greensand).
+  - Provided geographic context for rivers with explicit coordinates (e.g., GA2, CW2, AS2) to aid spatial placement.
+- Measured domains and data structure:
+  - Carbon:
+    - TOC (mg TOC g-1 soil dry weight).
+    - Method: remove inorganic carbon with 2 HCl, dry, and measure at 900°C using Shimadzu TOC-V.
+  - Anions and cations (environmental water and related soil chemistry):
+    - Analytes: acetate, fluoride, formate, nitrate, nitrite, phosphate (phos), sulfate, ammonium, calcium, magnesium, potassium, sodium.
+    - Units: µmol L-1 for dissolved species; details imply water-phase measurements near sediment collection.
+    - Methodology: Dionex ion analyser; sample collection from upper reach prior to destructive sediment sampling; filtration (0.2 µm) and freezing before analysis; calibration against standards (0–200 µmol L-1).
+  - Genes (microbial genetic markers):
+    - Targets include 16S rRNA (bacteria) and several functional genes (amoA AOA/AOB, nirS, nirK, pmoA, mcrA).
+    - Units: genes g-1 soil dry weight.
+    - Methodology: DNA extraction from 0.25 g wet weight sediment; qPCR with specified primers; absolute quantification against DNA standards; standard controls included.
+  - Methane-related metrics:
+    - MOP: Methane oxidation potential (pmol g-1 soil dry weight).
+    - MPP H/N/N: Methane production potential under headspaces of 80% H2/20% CO2, or 80% N2/20% CO2.
+    - Units: pmol g-1 soil dry weight.
+    - Methodology: incubation in serum bottles with headspace sampling over 9 days; GC-FID analysis for methane.
+- Data processing and sample handling:
+  - Sub-samples and processing steps vary by analysis; some analyses involve drying, homogenising, and chemical pretreatment; others involve filtration and cold storage.
+  - Analytical setups include specific instrument models and operating parameters (e.g., GC conditions, ion chromatography setup, qPCR conditions).
+- GIS-relevant implications:
+  - The design supports spatial mapping of soil carbon, ion chemistry, microbial gene abundances, and methane-related potentials across transects.
+  - Data can be linked to sites via site.name and geology, enabling layering with geological and hydrological maps.
+- Data quality, standards, and integration challenges:
+  - Data are described as residing in multiple locations and subject to inconsistent standards.
+  - Large, multi-parameter datasets and data cleaning/transformations are required.
+  - Spatial precision is enhanced by river-coordinate references, but complete site coordinate data would improve GIS usability.
+- Recommendations for GIS preparation and integration:
+  - Create a geospatial layer for sampling sites with precise coordinates, transect geometry, and site-level metadata (geology, river, year/month).
+  - Store measurements in linked tabular tables (e.g., TOC, ions, genes, methane metrics) with foreign keys to site identifiers.
+  - Use a common coordinate reference system (e.g., WGS84) and document coordinate sources and uncertainty.
+  - Include comprehensive metadata with measurement methods, units, detection limits, and calibration details.
+  - Plan for data standardization and provenance tracking to facilitate cross-study comparisons and reproducibility.
+  - Consider multi-resolution representation (site-level vs. transect-level) and possibly aggregate to appropriate spatial scales for mapping.

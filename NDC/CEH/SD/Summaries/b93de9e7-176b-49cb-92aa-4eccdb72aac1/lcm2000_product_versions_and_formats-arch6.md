@@ -1,0 +1,57 @@
+# LCM2000 specification
+
+- LCM2000 is a UK-wide parcel-based thematic land cover map derived mainly from Landsat satellite imagery, produced in both vector (parcels) and raster formats. It updates the LCMGB 1990 and integrates additional ancillary data, offering a hierarchical classification aligned with the JNCC Broad Habitats system.
+- Formats and detail
+  - Vector: polygons representing land parcels with attached attributes.
+    - Level 2: 26 Subclasses (most widely used).
+    - Level 3: up to 72 Variants (more detailed; may vary in accuracy by area and may require expert interpretation; available by special arrangement).
+  - Raster: 25m resolution (26 Subclasses) and 1km resolution (derived from 25m) with:
+    - Subclass level values
+    - Dominant values per 1km pixel
+    - Percentage values per 1km pixel
+    - Aggregate class level (10 simplified aggregates)
+- Minimum mapping unit
+  - Minimum mappable area is >0.5 ha; parcels ≤0.5 ha are dissolved during production using spectral or proximity rules; a few exceptions may remain due to processing constraints.
+- Coverage and data structure
+  - Data compiled on a 100km tile basis; parcels are classified per tile and then assembled into a full UK dataset.
+  - Raster data are not directly comparable with LCM1990 due to different production methods; not suitable for estimating change over the 10-year period.
+- Nomenclature and attribute codes
+  - Vector data use a hierarchical Subclass and Variant system (Level 2 and Level 3 codes). A mapping table links Subclass codes to Variant codes (e.g., Broad-leaved/mixed woodland, Coniferous woodland, Arable cereals, etc.).
+  - Each parcel carries a unique SegID (highly recommended to retain for traceability).
+- Vector polygon attributes
+  - SegID: unique parcel identifier (spatially locates within an OS 100km square).
+  - BHSub: dominant land cover (Level 2 Subclass).
+  - BHSubVar: dominant land cover (Level 3 Variant; available in Level 3 data).
+  - PerPixList: top-five spectral Subclasses by pixel percentage (Level 3 only).
+  - OpHistory: processing history (image date(s), KBC rules applied, etc.).
+  - TotPixels: total pixels in the parcel.
+  - CorePixels: pixels in the core area used for maximum likelihood classification.
+- OpHistory (processing history descriptor)
+  - Each parcel includes a five-field descriptor with input data, classification stages, knowledge-based corrections (KBC), and compilation details; a sixth field notes other information (scenes, sensors, dates, cloud-hole patches, etc.).
+  - Scene and sensor combinations cover Landsat TM, IRS, etc., with acquisition dates and patching notes included.
+- Colour mapping (Table 5)
+  - A predefined colour palette assigns distinct hues, saturations, and brightness to each Subclass (and some for Level 3 Variants) to aid visualization. Example groups include Broad-leaved/mixed woodland, Coniferous woodland, Arable cereals, Improved grassland, Neutral/Calcareous/Acid grasslands, Bracken, Dwarf shrub heath, Fen/marsh/swamp, Inland water, Montane habitats, Inland bare ground, Suburban/urban, Supra-littoral and Littoral habitats, etc.
+- Broad Habitat descriptions (Table 6)
+  - Provides succinct definitions for broader habitat categories such as Broad-leaved/mixed woodland, Coniferous woodland, Arable and horticulture, Improved/Neutral/Calcareous/Acid grasslands, Bracken, Dwarf shrub heath, Fen/marsh/swamp, Bog, Standing water, Montane habitats, Inland rock, Built-up areas, Supra-/Littoral habitats, and Offshore/Continental classifications.
+- Dataset usage and customization
+  - LCM2000 is designed as a data storage and analysis framework, enabling users to alter and extend the database while preserving provenance. Retain SegID and other parcel-level metadata to maintain traceability.
+  - Production philosophy emphasizes preserving as much information as possible; recommended to keep lineage metadata when editing attributes.
+- Edge overlaps and artefacts (Appendix 1)
+  - The mosaic of overlapping images and cloud-hole patches across 100km tiles can create artefacts at tile edges. Overlaps are removed via erosion/merging to produce a single parcel layer, with parcels crossing edges retained in both adjoining tiles.
+  - Artefacts are rare (<0.1% of parcels) but may occur; users are advised to visually tidy via dissolving boundaries between like classes, using layer-specific operations (e.g., ArcMap dissolve with bhsub or bhsubvar for Level 3).
+  - Clipping or merging tiles affects parcel-level attributes and may invalidate some per-parcel metadata; dissolving or union operations can also impact metadata. It is important to consider these implications before performing edge-merging.
+- Edge artefact handling and practical tips
+  - Methods include clipping to 100km edges, using Merge themes, or Union to preserve multiple attribute sets (with caveats). After merging, use dissolves to remove boundaries between same classes at Level 2; for Level 3, preserve bhsubvar during dissolve to avoid losing classification detail.
+  - For slivers and very small parcels, recommended approaches include visual removal, dissolving into adjacent same-class parcels, or intelligent dissolution based on the longest shared boundary.
+  - Users should assess artefacts in the context of the entire dataset and avoid wholesale dissolution to preserve parcel-level information.
+- Data integrity, lineage, and documentation
+  - Unique SegID labeling should be retained to maintain communication with data management and other users.
+  - Documenting changes is essential to data management and for user feedback to the LCM2000 team.
+- Accuracy and interpretation
+  - Users should avoid equating inaccuracy with data model or resolution changes; LCM2000 contains inherent inaccuracies due to methodology, but these should be evaluated against user needs, not assumed as errors.
+- Further information and references
+  - Contact CEH Spatial Data for LCM data and sales; follow-up methodology references include Fuller et al. 2002 and Smith et al. 2001–2002, detailing parcel-based map construction from satellite imagery.
+  - For a detailed description of Broad Habitat classification, consult Jackson 2000 (JNCC Report No. 307) and related documentation.
+- Practical takeaway for Data Support
+  - When supporting data use: help users understand the vector/raster formats, choose appropriate detail levels (Level 2 vs Level 3), and manage edge overlap artefacts with careful preservation of metadata.
+  - Provide guidance on visualizing with the recommended colour recipes, interpreting Broad Habitat classes, and documenting data lineage for reproducibility and auditability.

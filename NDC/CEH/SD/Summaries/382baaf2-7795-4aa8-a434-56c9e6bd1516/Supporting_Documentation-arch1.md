@@ -1,0 +1,26 @@
+# Brief description of methods
+
+- Study organisms: Leontodon hispidus (Rough Hawkbit) and Succisa pratensis (Devil's-bit Scabious) grown from plugs and planted in April 2016 at Abergwyngregyn, North Wales (Orthic Podzol, pH 5; 53.2389 N, -4.0185 W).
+- Experimental setup: Plants arranged in 1 m square blocks within nine Free Air Ozone Enrichment (FAOE) rings (4 m diameter) to expose them to ozone and nitrogen treatments.
+- Treatments and design:
+  - Ozone: Low (mean ~24 ppb), Medium (mean ~40 ppb), High (mean ~57 ppb).
+  - Nitrogen: Nitrogen addition at 40 kg N ha-1 yr-1 in one block per ring or no addition.
+  - Species: Two species tested within the same design.
+  - Layout: Latin-square arrangement within each ring; blocks receive specified N treatment.
+- Growth and treatments: Spanned three growing seasons; irrigation relied on rainfall with minimal supplementary watering except for N addition.
+- Measurements and responses:
+  - Growth and physiology: leaf ground cover, leaf litter, flowering, chlorophyll index, photosynthesis (Asat), and stomatal conductance (gs).
+  - Instruments: LI-COR 6400XT for Asat and gs; Opti-Sciences CCM200 for chlorophyll index.
+  - Constant chamber conditions during measurements: ~20°C, CO2 ~400 µmol mol-1, light ~1500 µmol m-2 s-1; relative humidity 60–80%, VPD 0.8–1.2 kPa.
+- Quality control: Calibrated ozone analyzer (Thermo 49i); LI-COR pre-checks; checks for chamber leaks and CO2/H2O; data screened for outliers.
+- Data collection location details: Latitude 53.2389, Longitude -4.0185; natural precipitation used for irrigation; no extra watering beyond N addition.
+- Data files (CSV) and structure:
+  - Asat_gs.csv: Date, Ring, Nitrogen, Ozone, Species; Asat (µmol CO2 m-2 s-1), gs (mmol H2O m-2 s-1).
+  - Chlorophyll.csv: Date, Ring, Nitrogen, Ozone, Species; Chl (chlorophyll index).
+  - FlowerStems.csv: Date, Ring, Nitrogen, Ozone, Species; No_FlowerStems (count).
+  - LeafCover.csv: Ring, Nitrogen, Ozone, Species; Cover (leaf ground cover %), PurpleCover (damaged leaves %), FrostDamage (%; January 2017).
+  - WeightLitter.csv: Month, Year, Ring, Nitrogen, Ozone, Species; Litter (g; oven-dried, July 2016–February 2017).
+- Metadata and data quality notes:
+  - NA indicates missing measurements.
+  - Leaf damage details: FrostDamage NA for Leontodon (no observed damage).
+- Observational scope: Measurements taken across multiple dates and months within the three-year experimental window to assess ozone and nitrogen effects on physiology, growth, phenology, and litter production.

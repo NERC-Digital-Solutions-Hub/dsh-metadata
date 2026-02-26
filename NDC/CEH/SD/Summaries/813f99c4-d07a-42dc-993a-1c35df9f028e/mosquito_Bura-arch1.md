@@ -1,0 +1,31 @@
+# Experimental Design/Sampling Regime
+
+- Objective: Assess the effect of irrigation on the abundance of mosquito species, focusing on Rift Valley fever vectors; examine how this effect varies with season (dry vs wet) and irrigation activity (active vs inactive).
+- Study design: Analytical study with sampling sites inside and outside an irrigation scheme; repeated sampling across wet and dry seasons and across irrigation activity periods; each site sampled for three consecutive days to reduce catch variability.
+- Field collection methods:
+  - Adult mosquitoes captured with CO2-baited CDC light traps (10 traps per night) from 4:00 pm to 6:00 pm over three consecutive days.
+  - Sampling locations include homesteads and surrounding irrigated farms in ten villages within the irrigation scheme; control sites include Murukani village (15 km east) and pastoral areas in Ijara, Garissa.
+  - Mosquitoes collected each morning; processed in field lab; immobilized with 99.5% triethylamine; preserved in liquid nitrogen for transport to KEMRI.
+  - Traps placed in livestock night sheds, bushes, houses, farms, and forested areas; field data captured in a data collection tool.
+- Sample processing and handling:
+  - Mosquitoes (adults and those from larvae) identified to species; sorted, pooled (up to 25 per pool), and preserved on ice packs to safeguard virus for cell-culture work.
+  - Early samples transferred from collection bags directly to EPF tubes after sorting; later samples used CNTs to facilitate field-to-lab transport.
+  - Identified mosquitoes preserved at -70°C for future analysis.
+  - All trapping and larval collection sites georeferenced for mapping.
+- Dataset details:
+  - File: DDDAC_Kenya_entomology.csv
+  - Contains 9 variables describing each sampling pool.
+- Variables in the dataset:
+  - date: date of sampling
+  - latitude: decimal degrees latitude
+  - longitude: decimal degrees longitude
+  - cbg: collection bag/trap identification number
+  - cnt: centrifuge tube with mosquitoes linked to trap/CBG; empty indicates no sample; "not_used" indicates direct transfer to EPF after sorting; "na" indicates no data
+  - epf: Eppendorf tube/pool with identified mosquitoes
+  - species: species of identified mosquitoes in the pool
+  - sex: sex of the mosquitoes by species in the pool
+  - Pool_size: number of mosquitoes in the pool
+- Data quality and control:
+  - Mosquito identification performed by expert taxonomists; accuracy confirmed by internationally certified taxonomists prior to pooling and preservation.
+- Additional notes:
+  - All sampling and larval sites are georeferenced to enable mapping and spatial analyses; data collection and laboratory processing are designed to support downstream analyses of irrigation effects and seasonal patterns on mosquito populations.

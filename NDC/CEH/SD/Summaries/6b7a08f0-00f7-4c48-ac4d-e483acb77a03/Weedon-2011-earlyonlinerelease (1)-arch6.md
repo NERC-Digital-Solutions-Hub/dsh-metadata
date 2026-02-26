@@ -1,0 +1,39 @@
+# Creation of the WATCHForcing Data and its use to assess global and regional reference crop evaporation over land during the twentieth century
+
+- The text provides basin-scale statistics for key evaporative and meteorological variables used in the WATCH Forcing Data (WFD) framework, focusing on 1901-1957 and 1958-2001, with some 1979-2001 refinements. It includes PET-related metrics (PET rc and PET PT), Net Radiation, VPD, Wind, Rainfall, Snowfall, and Precipitation, across several major basins.
+- Variables and units covered
+  - PET rc (mm/yr) and PET PT (mm/yr)
+  - Net Radiation (W/m^2)
+  - VPD (kPa)
+  - Wind (m/s)
+  - Rainfall (mm/yr)
+  - Snowfall (mm/yr)
+  - Precipitation (mm/yr)
+- Time periods presented per basin
+  - 1901-1957: baseline period
+  - 1958-2001: main historical period
+  - 1979-2001: extended recent period (where available)
+- Key data presentation details
+  - For each basin and variable, the document provides: average (mm/yr or appropriate units), slope per year, slope-min, slope-max, Neff (effective sample size), and Adjusted Slope P (significance indicator)
+  - Several entries show missing or incomplete values in this excerpt, and some periods have stronger or weaker statistical significance as indicated by Adjusted Slope P
+- Notable basins and example patterns (selected highlights)
+  - Orange River Basin
+    - PET rc: 1901-1957 average ~1586 mm/yr; slope ~1.23 mm/yr^2; 1958-2001 average ~1604 mm/yr; slope ~0.65; 1979-2001 average ~1623 mm/yr; slope ~-2.39
+    - Net Radiation: ~96.75 W/m^2 (1901-1957) with near-zero to small positive slope in later period
+  - Murray-Darling River Basin
+    - PET rc: 1901-1957 average ~1429 mm/yr; slope ~-1.56; 1958-2001 average ~1449 mm/yr; slope ~-3.68; 1979-2001 average ~1415 mm/yr; slope ~-5.46
+    - PET PT: 1901-1957 average ~959 mm/yr; slope ~-1.05; 1958-2001 average ~997 mm/yr; slope ~+2.54; 1979-2001 average ~1029 mm/yr; slope ~+0.67
+  - Lena River Basin
+    - PET rc: 1901-1957 average ~363 mm/yr; slope ~+0.13; 1958-2001 average ~366.7 mm/yr; slope ~-0.05; 1979-2001 average ~366.1 mm/yr; slope ~+0.54
+    - PET PT: 1901-1957 average ~313 mm/yr; slope ~+0.15; 1958-2001 average ~313.5 mm/yr; slope ~+0.24; 1979-2001 average ~314.7 mm/yr; slope ~+0.42
+  - Ganges-Brahmaputra River Basin
+    - PET rc: 1901-1957 average ~889 mm/yr; slope ~+0.04; 1958-2001 average ~869.7 mm/yr; slope ~-2.26; 1979-2001 average ~843.6 mm/yr; slope ~-1.84
+    - PET PT: 1901-1957 average ~798.7 mm/yr; slope ~+0.10; 1958-2001 average ~768.0 mm/yr; slope ~-1.26; 1979-2001 average ~752.0 mm/yr; slope ~-0.89
+    - Precipitation: 1958-2001 average ~1426.3 mm/yr; slope ~+0.23; 1979-2001 average ~1426.7 mm/yr; slope ~-1.33
+- Practical implications for data support and use
+  - The data enable basin-specific assessment of evaporation-related drivers (PET_rc vs PET_PT) in relation to radiation, VPD, and precipitation, supporting hydrological modeling and climate impact analyses.
+  - The time-segmented structure (1901-1957 vs 1958-2001, with 1979-2001 in some cases) helps identify shifts in trends and potential regime changes across the 20th century.
+  - The inclusion of Neff and Adjusted Slope P values helps gauge the reliability and significance of detected trends, guiding which basins/periods are robust for interpretation.
+  - Users should account for incomplete entries in some basins/variables and consider regional differences in data quality and sampling when validating model outputs.
+- Appendix information
+  - Appendix Table 1 describes the order of ERA-40 basis years used in the WATCH Forcing Data for 1901-1957, illustrating how basis years and real years are interleaved to preserve diurnal-to-monthly statistics across the reconstruction.

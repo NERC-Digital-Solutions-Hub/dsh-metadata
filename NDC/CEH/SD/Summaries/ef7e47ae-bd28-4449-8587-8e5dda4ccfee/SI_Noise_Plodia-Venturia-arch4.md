@@ -1,0 +1,42 @@
+# Brief description of the project, experimental design and data recorded
+
+- Objective: Experimentally investigate how coloured environmental variation (temporal structure) affects life history and population dynamics in a host-parasitoid system comprising Plodia interpunctella (host) and Venturia canescens (parasitoid).
+- Environmental colour treatments:
+  - Blue: rapid temperature fluctuations
+  - Red: slow temperature fluctuations
+  - White: random fluctuations
+  - All coloured treatments contrasted with a constant 26°C treatment (CST)
+  - Temperature time series length: 458 days; AR1 coefficients  white 0.00, blue -0.70, red +0.70
+  - Mean temperature held at 26°C; constant treatment has no variability
+- Experimental design
+  - Life history experiments: single generation with 50 unparasitized and 26 parasitized host larvae per treatment
+  - Microcosm experiments: 4 replicates per temperature time series for each microcosm type, total 56 microcosms
+  - Microcosms include:
+    - Pi: host alone
+    - Pi-Vc: host-parasitoid
+  - Diet and setup: 83 g high-quality diet per microcosm; weekly resource replacement; monitoring from week 3 to week 45
+  - Parasitism: in Pi-Vc microcosms, a second host cohort is exposed to Venturia parasitism after 11 weeks
+  - Bt bacterial infection: occurred around week 34, affecting some microcosms; data flagged pre- and post-infection
+  - Sampling timeline: weekly population counts; mid- to late-instar host counts; pupae; adult hosts and parasitoids sampled for body size and fecundity; common garden tests for host eggs
+- Datasets and data coverage
+  - Plodia-life-history-data_Noise.csv: individual-level life-history traits for unparasitized and parasitized Plodia; includes development times, survival, sex, mating pairs, fecundity at multiple windows, leg length, and timing of measurements
+  - Venturia-life-history-data_Noise.csv: parasitoid-host parasitism data; parasitism outcomes, timing, host/parasitoid sizes, fecundity proxies, and leg measurements
+  - Pop-count-data_Noise.csv: weekly live counts of hosts and parasitoids; mortality counts; infection status; infection period pre/post Bt
+  - Plodia-body-size-fecundity-data_Noise.csv: host body size proxies and fecundity across sessions; weekly infection status and sampling details
+  - Venturia-body-size-data_Noise.csv: parasitoid body size (hind-tibia length) by population/session; infection metadata
+  - Plodia-common-garden_Noise.csv: common garden measurements for host eggs (egg stage duration, survival, adult size) and related metrics
+  - Temperature-time-series_Noise.csv: actual temperature values per day for each series; treatment and fluctuation type
+- Key variables and data structure
+  - Treatments and colours: CST, B1/B2 (blue), R1/R2 (red), W1/W2 (white)
+  - Series and replicates: 1 constant series + 2 coloured series per colour; Replicate = 4 per microcosm type×temperature
+  - Population-level identifiers: population code (species, treatment, replicate), population/invidual IDs, sampling weeks
+  - Measurements: development times (egg, juvenile), adult lifespan, fecundity windows, leg length (proxy for body size), mass/size proxies, parasitism outcomes, infection status
+  - Time scales: daily/weekly records over up to 45 weeks; pre- and post-infection periods defined
+- Data quality and governance
+  - Quality control: data checked for entry errors; outliers rechecked
+  - Cautions: incomplete non-infected replicates in later weeks for certain Red treatments; interpret post-infection data with care for infected populations
+- Practical notes for data use
+  - Data packages provide comprehensive metadata across life-history, population dynamics, body size, and temperature context
+  - Experimental design enables analyses of how environmental colour structure influences both individual traits and trophic interactions across time
+- References for methods and context
+  - Foundational works on coloured environmental variation, parasitoid-host dynamics, and the methods used to generate and analyze coloured time series (e.g., Ruokolainen et al. 2009; Cohen et al. 1999; Begon et al. 1995; Harvey et al. 1994; Knell et al. 1996; Mugabo et al. 2019)

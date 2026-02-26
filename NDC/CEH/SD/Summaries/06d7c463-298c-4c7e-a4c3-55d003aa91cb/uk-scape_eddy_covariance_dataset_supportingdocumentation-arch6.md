@@ -1,0 +1,41 @@
+# Meteorology, soil physics, and eddy covariance measurements of carbon dioxide, energy, and water exchange from a distributed network of sites across England and Wales, 2018-2023
+
+- A UK-SCAPE Eddy Covariance dataset providing time series of land surface–atmosphere exchanges of sensible heat (H) and latent heat (LE) plus supporting meteorological, soil physics, and vegetation data from ten EC flux tower sites across England and Wales (2018–2023).
+- Dataset components
+  - UK-SCAPE_Site_Metadata.csv: site-level metadata describing each flux site.
+  - Site data files: one per site, containing flux and ancillary observations.
+  - UK-SCAPE_Biomass.csv: vegetation biomass data.
+  - UK-SCAPE_Canopy_Height_LAI.csv: canopy height and LAI data.
+  - UK-SCAPE_Data_Dictionary.csv: description of all variables and units.
+- Study sites
+  - Ten flux monitoring sites with diverse land uses (croplands on drained peat, managed grasslands, cropland converted from grassland, lowland fens, and upland bog).
+  - Elevation range from -2 m to 565 m; mean annual temperature 5–10°C; total annual rainfall 534–1815 mm.
+  - Metadata summarized in UK-SCAPE_Site_Metadata.csv.
+- Data files and naming
+  - Flux and ancillary data per site: <SITE_ID>_<SOIL_TYPE>_<LAND_USE>_<START_DATE>_<END_DATE>.csv.
+  - Vegetation dataFiles: UK-SCAPE_Biomass.csv and UK-SCAPE_Canopy_Height_LAI.csv.
+- Data types and content
+  - Flux data: turbulent fluxes of sensible heat (H) and latent heat (LE) above the canopy, measured with open-path EC systems (sonic anemometer + LI-7500 IRGA) at 20 Hz; processed to 30-minute block averages.
+  - Ancillary data: air temperature (TA), relative humidity (RH), barometric pressure (PA), net radiation (NETRAD) and components (SW_IN, SW_OUT, LW_IN, LW_OUT), soil heat flux (G), soil moisture (SWC) and soil temperature (TS), precipitation (P), water table depth (peatlands) where available.
+  - Vegetation data: biomass (destructive samples where possible) and canopy height/LAI measurements.
+- Data processing and quality control
+  - Fluxes processed with EddyPro v7.0.6; corrections including angle-of-attack, two-dimensional rotation, spectral corrections, humidity-density correction, and air-density adjustment.
+  - QC: outlier removal (median absolute deviation), stationarity and turbulence tests (Mauder & Foken), friction-velocity (USTAR) filtering, 80% footprint within target ecosystem via Flux Footprint Prediction (FFP).
+  - Visual QC: manual review of all flux and ancillary data.
+- Gap filling and flux partitioning
+  - Gaps filled with Marginal Distribution Sampling (Reichstein et al. 2005) for LE, H, NEE and ancillary variables.
+  - Partitioning of net ecosystem exchange (NEE) into gross primary production (GPP) and ecosystem respiration (RECO) using night- and day-time approaches (Reichstein et al. 2005; Lasslop et al. 2010).
+  - Gap-filling and partitioning performed with the REddyProc package in R; ancillary data gaps may be filled using co-located COSMOS-UK sites when available.
+- Data structure and accessibility
+  - Time series provided per site; non-continuous vegetation data where available.
+  - Missing records are denoted by -9999; non-applicable metadata are NA.
+  - Data dictionaries describe variable names, types, units, and sensor depths where applicable.
+- Instrumentation and calibration
+  - EC instruments: sonic anemometer and LI-7500 IRGA; calibration performed in-house or by manufacturer as feasible.
+  - Ancillary sensors: calibrated per instrument standards; periodic repairs or replacements as needed.
+- Data provenance and acknowledgments
+  - COSMOS-UK data contributions; funding and support from Natural Environment Research Council and Defra, among others.
+  - Authors acknowledge landowners and site managers for access to flux towers.
+- Considerations for data use
+  - Be aware of peatland sensor issues (e.g., water table depth sensor reliability) and data quality flags from QC procedures.
+  - Use the Data Dictionary to understand variable definitions and units; rely on the metadata for site-specific measurement details (e.g., measurement heights, sensor models).

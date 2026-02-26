@@ -1,0 +1,54 @@
+# Soil methane sink capacity response to a long-term wildfire chronosequence in northern Sweden
+
+- Study aim and design
+  - Investigates how boreal forest soils' capacity to oxidize methane (CH4) responds to long-term wildfire history.
+  - Retrogressive chronosequence across 30 freshwater islands in northern Sweden, varying in wildfire frequency but with similar climate and geology.
+  - Islands range in size (0.02 to 15 ha) and provide a natural experiment to assess successional and humus development effects on CH4 cycling.
+
+- Data collected and key variables
+  - In situ CH4 fluxes
+    - Measured over one week in August 2006 using static chambers (n=5 per island).
+    - Chamber setup and sampling at 0, 5, 10, 15, 20, 25, 30 minutes.
+    - CH4 analyzed by gas chromatography; detection limit 0.05 ppm CH4.
+    - Fluxes calculated by standard regression; flux values used even when below detection limit.
+  - Ex situ CH4 fluxes from intact soil cores
+    - Top 25 cm cores collected in 2006; whole profile to bedrock (20–85 cm) in 2007.
+    - Four cores per island per sampling period; grouped by successional stage (early, mid, late).
+    - Static chamber measurements with sampling at 0–150 minutes.
+    - Soil moisture and depth to bedrock recorded; moisture adjusted to field content using artificial rain solution.
+  - Isotopic measurements and oxidation assessment
+    - In situ δ13CH4 and CH4 concentrations measured within humus profiles across depths (15–75 cm) in July 2007.
+    - δ13C CH4 analyzed by isotope ratio mass spectrometry; isotope fractionation controlled via prepared standards.
+    - Top-to-Bottom δ13C-CH4 approach used to determine the fraction of CH4 oxided (Fo) and the oxidation fractionation factor (aox).
+    - Mass balance model applied to estimate Fo, incorporating isotopic effects of both biological oxidation and gas transport; atrans treated as 1.0195 based on diffusion fractionation in temperate forest soils.
+  - Ecosystem and soil properties
+    - Soil pH (1:3 soil:water), %C, %N (oxidative combustion with thermal detection).
+    - Humus depth measured along transects; existing data on vegetation mass, shrub and tree productivity, and humus mass incorporated.
+  - Data handling and analysis
+    - All analyses conducted in R.
+    - Simple regressions for relationships with successional age and humus development.
+    - GLMs to compare CH4 fluxes across successional stages (Early, Mid, Late).
+    - Linear mixed effects models (lme) with island as a random effect to compare fluxes, CH4 concentration, δ13CH4, and Fo across depths and stages.
+    - Data adjustments included adding a constant (lowest datapoint + 1) to ensure non-negative values; diagnostics checked for residual bias and heteroscedasticity.
+
+- Methodological details relevant for data governance
+  - Field ethics and permissions
+    - Study conducted on public land islands; no human or animal measurements; no conflicts of interest.
+  - Instrumentation and calibration
+    - CH4 quantified by GC with Flame Ionization Detector; calibration with certified standards.
+    - Isotopic analyses performed with preconcentration and high-temperature combustion, calibrated to NIST standards and CH4 standards.
+  - Reproducibility and data provenance
+    - Explicit measurement schedules, chamber volumes, sample storage (exetainers), and analytical workflows described.
+    - Sensitivity and detection limits stated; isotopic methods and diffusion fractionation factor explicitly documented for Fo calculation.
+
+- Key considerations for Data Leaders
+  - Handling dispersed data sources
+    - Data drawn from in situ flux measurements, ex situ cores, and depth-resolved isotope sampling; requires careful integration across temporal and spatial scales.
+  - Data quality and comparability
+    - Detection limit considerations and inclusion of sub-detection fluxes; standardization across successional stages and island contexts.
+  - Uncertainty and model assumptions
+    - Use of atrans from temperate forest soils and isotopic fractionation factors varies by site; explicit acknowledgement and incorporation into Fo estimation via a mass balance approach.
+  - Documentation and metadata
+    - Detailed descriptions of chamber geometry, sampling times, soil depths, and analytical methods essential for reproducibility and future meta-analyses.
+  - Implications for policy and practice
+    - Methodology enables better understanding of how wildfire history and soil development influence methane oxidation in boreal systems, informing regional methane budgets and carbon cycling models.

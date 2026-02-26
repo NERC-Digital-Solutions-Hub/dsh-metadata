@@ -1,0 +1,31 @@
+# Experimental Design
+
+- Objective
+  - Qualitative study conducted to complement quantitative assessment of antibiotic-resistant bacteria among poultry, humans, and the environment in Bangladesh.
+- Study design and themes
+  - In-depth interviews across three settings:
+    - Rural households with domestic poultry
+    - Small-scale commercial poultry farmers in a rural area
+    - Market sellers of live poultry in urban Dhaka
+  - Interview guides tailored for each setting.
+  - Explored themes including:
+    - Poultry rearing practices (care, feed, decision making, disease prevention)
+    - Waste disposal practices (solid/liquid waste, carcasses, processing water)
+    - Biosecurity, hygiene, and personal protection
+    - Sources of advice and influences on poultry keeping and business decisions
+    - Perceptions of antibiotics and reasons for use
+  - Formative research approach; no sample size calculation; interviews continued until saturation of responses and themes.
+- Data collection locations and participants
+  - Mirzapur sub-district, Tangail District (rural)
+  - Dhaka city (urban)
+  - Participants: rural poultry owners (n=3), small-scale commercial farm workers (n=10), urban market live poultry stall holders (n=5)
+  - Total interviews: 18
+- Ethics and consent
+  - Written informed consent obtained; right to withdraw at any time.
+  - Ethical clearance: International Centre for Diarrhoeal Disease Research, Bangladesh (PR16071) and Loughborough University (R17-P037).
+- Data collection and quality control
+  - Interviews conducted and transcribed by an experienced researcher from icddr,b.
+  - Transcripts checked against original audio recordings.
+- Data handling and structure
+  - Anonymised interview transcripts presented.
+  - Interviews conducted and transcribed in Bangla.

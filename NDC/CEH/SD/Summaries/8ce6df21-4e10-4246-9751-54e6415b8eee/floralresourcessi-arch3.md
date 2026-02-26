@@ -1,0 +1,24 @@
+# Data overview
+
+- What it is: Records of flower species and their estimated abundances on farmland, collected on eight farms in Hampshire and West Sussex, England, during 2014 and 2018.
+- Study design: One 3 km transect per farm (established in 2013) spanning diverse habitat types such as hedgerows, sown seed mixtures for birds or bees, grass margins, and areas left to regenerate.
+- Locations: Eight farms labeled A–H with precise latitude and longitude coordinates provided.
+- Temporal coverage: Surveys conducted in May–August of 2014 and 2018, with three survey rounds per year:
+  - 2014 rounds: 17–27 May, 21 Jun–9 Jul, 3–15 Aug
+  - 2018 rounds: 14–19 May, 20 Jun–7 Jul, 3–7 Aug
+- Data recorded: For each transect section, all observed flower species were noted and the number of open flowers estimated within 2 meters on either side of the observer; a “flower” is counted when fully open (single flower, umbels/spikes, or capitula).
+- Quality control: Counts between surveyors calibrated by comparing estimates from photographs to derive a scaling factor.
+- Data file and structure: Data are stored in an Excel file named FloralResources.csv with 11 columns, including:
+  - Year, Round
+  - Type (management regime: ELS or HLS)
+  - Farm, Label (transect section), What (type of management for the section)
+  - Length (m), Width (m)
+  - Family, Species
+  - Abundance (estimated open flowers per transect section)
+- Geographic scope of data collection: Each transect subsection is aligned across the two survey years, maintaining consistent sections for comparability.
+- Relevance for monitoring and policy:
+  - Provides concrete measures of flowering abundance across different habitat management regimes (ELS/HLS) and farm contexts.
+  - Enables assessment of habitat management effects on floral resources, useful for evaluating environmental health indicators and informing future decisions.
+- Metadata and governance considerations (as relevant to monitoring frameworks):
+  - Requires clear metadata for reproducibility and cross-study comparability (e.g., definitions of “flower,” transect section boundaries, and rounding rules).
+  - Data quality is addressed via inter-surveyor calibration, but ongoing data governance would benefit from explicit documentation of data provenance and sharing practices.

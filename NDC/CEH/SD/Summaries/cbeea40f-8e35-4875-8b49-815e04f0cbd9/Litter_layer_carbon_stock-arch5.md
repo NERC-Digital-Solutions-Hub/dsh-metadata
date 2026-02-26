@@ -1,0 +1,50 @@
+# DATA HEADER information for Litter_layer_carbon_stock.csv
+
+- Overview
+  - This dataset describes the carbon stock of the litter on each site.
+  - DOI: https://doi.org/10.5285/cbeea40f-8e35-4875-8b49-815e04f0cbd9
+  - Programme: ESPA; Project: P4GES
+  - See also Manual 1_Classical_Survey
+  - Acknowledgement requirement: Laboratoire des Radio Isotopes, Université d’Antananarivo must be acknowledged for products derived from these data.
+
+- Data provenance and access
+  - Data are associated with ESPA/P4GES projects; related project and programme URLs are provided.
+  - The dataset includes site-level litter carbon stock measurements and associated field measurements.
+  - Acknowledgement requirement applies to derived products.
+
+- Data dictionary / Variables
+  - site_ID
+    - Information: P4GES site code
+    - Variable Type: Text String
+    - Unit: .
+    - Field materials/resources: .
+  - Subplot
+    - Information: subplot where the sample was collected
+    - Variable Type: Categorical
+    - Unit: S1 / S2 / S3 / S4
+    - Field materials/resources: botanist
+  - Area
+    - Information: Area of the quadrat in which the samples were taken
+    - Variable Type: Numeric
+    - Unit: square metre (m2)
+    - Field materials/resources: botanist
+  - Litter_thickness
+    - Information: thickness of the litter layer measured before sampling in the field
+    - Variable Type: Numeric
+    - Unit: Centimeter (cm)
+    - Field materials/resources: ruler
+  - Matt_root_thickness
+    - Information: thickness of the root matt layer measured before sampling in the field
+    - Variable Type: Numeric
+    - Unit: Centimeter (cm)
+    - Field materials/resources: ruler
+  - Biomass
+    - Information: Biomass stock of litter
+    - Variable Type: Numeric
+    - Unit: milligrams per hectare (Mg.ha-1)
+    - Field materials/resources: .
+  - Stock_C
+    - Information: Carbon stock of litter
+    - Variable Type: Numeric
+    - Unit: milligrams per hectare (Mg.ha-1)
+    - Field materials/resources: .

@@ -1,0 +1,28 @@
+# SUMMARY
+
+- The NERC Soil Biodiversity Thematic Programme at Sourhope (Macaulay Land Use Research Institute, Sourhope, Scottish Borders) spans four years of intensive field study, focusing on above-ground biomass (productivity), plant composition and diversity, and their links to soil biota and ecosystem processes.
+- Four major management influences on botanical changes were examined:
+  - Mowing: annual mowing to ~6 cm after fencing out grazing; associated rise of Festuca spp. and bryophyte expansion.
+  - Fertilisation: nitrogen and/or lime additions increase productivity; lime markedly raises soil pH (to around 7); potential moisture stress in high-pH plots.
+  - Insecticide treatment: possible link between herbivore suppression and shifts in plant diversity; observed highest Shannon diversity in insecticide plots, though causality is not fully established.
+  - Trampling: notable impact on C2 plots during 13CO2 pulse experiments, potentially reducing productivity.
+- Site and dataset framework:
+  - Rigg Foot experimental site with 5 replicate blocks along downslope gradient; 6 main plots per block, subdivided into 10 sub-plots; treatments allocated randomly.
+  - Data collection includes: annual above-ground biomass (May–Sept, five cuts per year, sub-samples per plot), baseline and follow-up botanical surveys, point analysis surveys (0.5 m2 cells with 100-hole frame, annually 2000–2002), bryophyte identification, soil pH measurements (5 cm depth), soil moisture (theta probe), and on-site weather data from an Automatic Weather Station.
+  - Five plot-level treatments (Control 1, Control 2, Nitrogen, Lime, Nitrogen & Lime) and one insecticide treatment; data collected across 1998–2002 with extensive appendices documenting treatments, species lists, and activity.
+- Key data outputs and analyses:
+  - Biomass productivity trends show persistent increases with nutrient amendments, strongest when both nitrogen and lime are applied; productivity declined in several plots in 2002 relative to 2001.
+  - Soil pH and moisture interplay with productivity: lime raises pH significantly; higher pH generally correlates with higher productivity, though relationships vary by treatment.
+  - Point analysis (2000–2002) reveals shifts in species composition with fertilisation and lime causing more fertile-species dominance, while unimproved plots show greater bryophyte and stress-tolerant species presence.
+  - Functional group dynamics (stress tolerators, competitive-stress-ruderal groups) shift with treatments; nitrogen + lime plots favor C-S-R species, whereas unimproved plots favor stress-tolerant groups.
+  - Bryophytes (notably Rhytidiadelphus squarrosus) increase across treatments, especially in unimproved plots; mosses contribute a rising share of total hits and biomass in later years.
+  - Multivariate analyses (PCA) differentiate improved versus unimproved plots and show treatment-associated clustering of species assemblages.
+- Data governance and availability:
+  - Data and project details are available via the Soil Biodiversity website and the Centre for Ecology & Hydrology (CEH); Appendices provide the site map, treatment summaries, species lists, and weather/biomass datasets.
+  - Notable data caveat: 2002 weather data include missing periods due to an on-site station malfunction; some dates were substituted with data from Konza station.
+  - Total soil samples recorded since project start: 11,621.
+  - The dataset supports long-term, cross-treatment and cross-year analyses of plant–soil–management interactions and functional-group dynamics.
+- Implications for data stewardship:
+  - Rich, multi-source, longitudinal dataset requiring careful metadata, data dictionaries, and provenance tracking to enable reproducible analyses (e.g., biomass calculations, CSR classifications, PCA loadings, and ANOVA results).
+  - Complex experimental design (blocks, plots, sub-plots, early baseline and multiple surveys) necessitates rigorous data organization, consistent coding of treatments and species, and clear documentation of data transformations and analytical steps.
+  - Data sharing should continue via the Soil Biodiversity website and CEH repositories, with explicit metadata on protocols, units, time points, and any data processing (e.g., log transformations of biomass).

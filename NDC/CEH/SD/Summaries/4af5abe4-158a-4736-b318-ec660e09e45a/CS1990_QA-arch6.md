@@ -1,0 +1,82 @@
+# 1990 Countryside Survey: Quality Assurance Exercise
+
+- Aim and scope
+  - Quantify accuracy of field recording in the 1990 Countryside Survey and assess accuracy of change statistics.
+  - Explain differences in recording in terms of observer error, seasonal timing, plot location, data type, and regional factors; relate to previous work; and recommend methodological modifications for future surveys.
+  - Evaluate data quality across multiple plot types and landclass categories to enable better data products and re-use.
+
+- Methods and QA design
+  - Two assessment phases:
+    - Autumn 1990: 21 of the original survey squares; two independent assessors used original sketch maps for plot relocation.
+    - 1991: June–September; added photographs of plots to improve relocation accuracy; assessed a single 1 km square from each terrain class; included self-assessment squares.
+  - Plot types covered (six types in total):
+    - Quadrats: 200 m2 (X-plots) and 4 m2 (Y-plots)
+    - Linear plots: 1x0 m (roadverges, hedges along streams, etc.)
+    - Boundaries and strips in enclosed land
+  - Plot relocation and plate-plot verification
+    - Relocation attempted using sketch maps, photographs, and metal plates when possible; plate recovery and relocation tracked.
+  - Data collection and comparison
+    - Within-square sampling: nine predetermined points per quarter for landcover features.
+    - Species lists and cover estimates compared between original survey (T1) and QA reassessment (T2) using multiple concordance indices.
+  - Annexed data
+    - Tables and figures document species concordance, cover comparisons, and landuse coding checks.
+
+- Key findings: accuracy, concordance, and sources of variation
+  - Overall agreement and accuracy
+    - Species concordance between timepoints varied by plot type; initial autumn 1990 QA yielded about 60% concordance; full 1990 QA reported 60.9% agreement across 5205 records common to T1 and T2 (Table 4).
+    - Mean number of species per plot in 1991 increased significantly compared with 1990 (overall: 23.4 vs 20.7; p = 0.009 for all plots).
+    - Initial efficiency of recording in 1990 averaged about 74% (varied by plot type and landclass; Table 5 and related text).
+  - Sources of variation
+    - Major contributors identified as: mis-identifications, species overlooked, over-zealous recording, relocation/mis-location, and seasonal/management changes.
+    - Seasonal effects: drought year 1990 vs comparatively normal growing season 1991; drought amplified apparent changes in lowland and marginal areas.
+    - Plot relocation challenges were plot-type dependent: X plots easier to relocate; Y plots (4 m2) hardest; roadside and hedgerow plots generally better, upland plots more difficult to relocate.
+  - Plot-type and landclass effects
+    - X plots (linear/relocation-friendly) showed better search performance; Y plots required improved ground positioning methods.
+    - Upland (UP) landclass showed distinct vegetation and less year-to-year variability; lowland arable (LC) showed notably lower accuracy, possibly due to greater species diversity and arable-associated flux.
+    - Enclosed vs unenclosed: relocation and mapping accuracy differed; plates were less time-efficient in unenclosed uplands.
+  - Cover estimates and species groups
+    - Some significant differences in cover values between 1990 and 1991 for a few common grasses (e.g., Holcus lanatus; Urtica dioica) and other species; overall, many changes were linked to seasonal or management-driven shifts rather than mis-recording alone.
+    - Species group analyses showed no significant difference in cumulative frequency between original survey and reassessment for the groupings tracked.
+  - Mapping and landuse coding
+    - Primary landuse codes were generally reliable; marsh and some upland categories caused some inconsistencies.
+    - Boundary codes were more variable; suggest restricting primary boundary coding to hedges and capturing species composition via qualifying codes.
+    - Concordance for landuse primary codes around 88–89%; boundary primary codes around 80–83%; level qualifiers also displayed substantial agreement.
+    - Differences in code interpretation arose from ambiguous qualifying codes and mismatches between codes with similar meanings (e.g., bog vs moorland vs blanket), leading to targeted coding recommendations.
+  - Vegetation mapping and species cover
+    - Point-grid coverage showed high concordance for the most prevalent species; co-dominant species across points had much lower concordance (about 34%).
+    - Overall, the mapping of the most prevalent species tended to resemble the mapped vegetation unit, but finer-level co-dominance and cover partitioning produced lower reproducibility.
+    - Recommendations to focus on recording the two most prevalent species per landunit parcel to improve consistency.
+  - Temporal and cross-year comparisons
+    - When comparing across three time periods (1978, 1990, 1991 QA), the direction of axis shifts in DECORANA analyses generally aligned with expected ecological gradients, though upland responses varied and sometimes suggested year-to-year perturbations rather than a single climatic shift.
+
+- Recommendations (highlights)
+  - Species identification and bryophytes
+    - Include more bryophyte consideration in surveys and training; expand reference materials and habitat context for bryophyte identification (Recommendation 1; and Annex notes).
+  - QA timing and seasonality
+    - Conduct QA as close as practical to the initial survey and, ideally, in the same year to reduce seasonal/annual differences (Recommendation 2 and 64).
+  - Plot relocation and documentation
+    - Photographs are valuable for re-establishing exact plot positions; surveyors should annotate photographs and relate them to the plots (Recommendations 60–63).
+    - Use metal marker plates for X plots wherever possible; relocation in unenclosed upland areas is time-consuming and may require extra manpower (Recommendations 9 and 60).
+    - For small Y plots, define the plot with a survey tape and orient sides to N-S; ensure corner placement is standardized (Recommendation 5).
+  - Mapping and landuse coding
+    - Simplify mapping by adopting a simple dichotomous landuse system and focus on the most prevalent species for mapping to improve reproducibility (Recommendation 12).
+    - Expand the landuse primary code set but subdivide ambiguous upland classes (e.g., 102 upland grassland) to distinguish improved vs unimproved and other habitat nuances (Recommendations 8–10).
+    - Restrict primary boundary codes to hedges and capture species composition through qualifying codes; improve handling of forb cover and hedge management qualifiers (Recommendations 11, 58–59).
+  - Data quality and training focus
+    - Target improved field characteristics for distinguishing similar taxa (e.g., grasses) in training; emphasize vegetative identification for key taxa.
+    - Provide standardized guidance on tree and shrub cover coding and ensure consistent usage in subsequent analyses.
+  - Data-products and transparency
+    - Document sources of variation and data-quality notes to support downstream analyses; present clear guidance on which comparisons (seasonal, annual, or landclass) are appropriate for change statistics.
+
+- Conclusion and implications for future surveys
+  - Photographic and plate-based relocation significantly improves plot re-identification and data reliability.
+  - Season/year alignment between baseline surveys and QA is crucial to avoid misattributing seasonal changes to survey error.
+  - Landclass-specific differences are robust and must be accounted for in analysis and training.
+  - The recommended changes aim to improve consistency, reproducibility, and usefulness of data products for long-term vegetation change monitoring and landuse mapping.
+
+- Notable numeric takeaways
+  - 1990 QA full concordance (T1 vs T2) around 60.9%; initial season-only concordance about 45–47% in earlier analyses.
+  - 1991 QA showed a statistically significant increase in mean species per plot (1980s: ~20.7 to 1991: ~23.4; p = 0.009 for all plots).
+  - Plate relocation success: Autumn 1990, recovery rate ~71% for plates vs ~87% for plots; 1991 QA indicated ~65% plate and ~87% plot relocation with photographs aiding positioning.
+  - Landclass effects: UP uplands differed significantly from other aggregates; LC (lowland arable) showed notably lower accuracy.
+  - Mapping concordance: Landuse primary codes ~88–89% agreement; boundary primary codes around 80–83% agreement; qualifiers and level codes also showed substantial consistency but with interpretation variability.

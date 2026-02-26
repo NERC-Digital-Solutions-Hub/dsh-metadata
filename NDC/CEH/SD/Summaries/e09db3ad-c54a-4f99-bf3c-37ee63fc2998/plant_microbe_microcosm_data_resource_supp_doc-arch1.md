@@ -1,0 +1,50 @@
+# Plant_microbe_microcosm_design.csv
+
+- Aim and scope
+  - Understand how drought adaptation in Festuca ovina and its root-associated bacteria interact under different moisture environments.
+  - Combine plant genotype ancestry (drought- vs control-adapted Buxton material) with microbial inocula (bacterial isolates or soil wash) across moisture treatments in a controlled microcosm setup.
+- Experimental design
+  - Source materials:
+    - Bacterial inocula: a single pooled population of Pseudomonas koreensis.
+    - Field-derived soil wash containing an intact soil microbial community.
+    - Plant material: surface-sterilised Festuca ovina clones.
+    - Soil: sterilised natural rendzina soil.
+    - Origins: drought-treated Buxton climate treatment vs control Buxton climate treatment.
+  - Factorial structure:
+    - Plant climate ancestry: drought-adapted vs control-adapted.
+    - Microbial inoculum: bacterial isolates vs soil wash.
+    - Moisture environment: drought vs well-watered control.
+    - Result: eight main combinations (2 x 2 x 2) plus no-plant controls.
+  - Replication and scope:
+    - 176 microcosms in total for the main experiment.
+    - 32 additional microcosms as no-plant controls (with either bacterial population or soil wash, across moisture treatments).
+    - 16 spare microcosms representing each treatment combination.
+    - 3 microcosm pots containing sterilised soil only.
+  - Timeline: 19 weeks of experiment duration.
+- Measurements and data collection
+  - Weekly soil respiration measurements using LiCor Li-8100 IRGA and Li-Cor 8150 Multiplexer; soil volumetric water content recorded with ThetaProbe ML2x.
+  - Soil respiration and moisture data linked to metadata for merging with other datasets.
+  - Additional datasets collected from control-treatment microcosms (February–March 2021) include soil enzyme activities, microbial community physiological profiles, substrate use profiling, lab-based drought resistance assays, plant nutrient supply, and plant growth traits.
+- Datasets and data structure
+  - Core design file: Plant_microbe_microcosm_design.csv
+    - Metadata fields (Table 1): pot_no, potID, Clone full_ID, Festuca ancestry, Inoculation type (Pse, soil wash, NA), Microbial ancestry (C or D), Treatment (D or C), Design (Full, No plant control, Spare, probes), table, row, column.
+  - Related measurement files (examples):
+    - Plant_microbe_microcosm_soil_respiration.csv: weekly CO2 efflux and soil moisture/temperature alongside pot metadata.
+    - Plant_microbe_microcosm_enzymes.csv: extracellular enzyme activities (GLU, NAG, PHO) from control microcosms; enzyme extraction, assay protocol, and data processing details including calibration equations.
+    - Plant_microbe_microcosm_sup_substrate.csv: substrate addition effects on soil CO2 efflux using MicroResp method; substrate treatments include glucose, ABA, malic acid, L-leucine, and water control.
+    - Plant_microbe_microcosm_sup_drought.csv: effects of a lab-imposed drought and subsequent rewetting on CO2 efflux; includes days and MR_Treatment (control/drought) with multiple observation points.
+    - Plant_microbe_microcosm_nutrient_supply.csv: nutrient supply rates measured with PRS probes (anions and cations; multiple elements including NO3-N, NH4-N, Ca, Mg, K, P, Fe, Mn, Cu, Zn, B, S, Pb, Al, Cd, etc.).
+    - Plant_microbe_microcosm_plant_size_traits.csv: non-invasive image-based plant size traits over time (canopy area, height, width).
+    - Plant_microbe_microcosm_plant_morphology_traits.csv: six morphologic traits measured once (leaf length/width, regrowth, SLA, above-ground biomass, inflorescences).
+- Quality control, instrumentation, and methods
+  - Randomisation used to ensure valid experimental design.
+  - Instrumentation for main respiration measurements: Li-Cor Li-8100 IRGA and Li-Cor 8150 Multiplexer; soil moisture via ThetaProbe ML2x.
+  - Enzyme assays: fluorescence-based activity measurements with plate reader; live vs boiled controls for background correction; calibration using standard curves.
+  - MicroResp assays: colorimetric detection of CO2 with cresol red in agar; 3 technical replicates per sample-substrate combination; blanks included.
+  - No separate calibration steps required beyond standard instrument calibration and plate reader standards; data processing includes normalization and calibration equations described in metadata for each dataset.
+- Data integration and usage notes
+  - All datasets include pot_no to allow merging with Plant_microbe_microcosm_design.csv and to enable cross-dataset analyses.
+  - Datasets capture temporal (weekly) and spatial (microcosm layout: table/row/column) dimensions suitable for mixed-effects modeling.
+  - Potential analyses include interactions among plant ancestry, microbial inoculum type, and moisture treatment on soil respiration, enzyme activities, substrate responses, nutrient uptake, and plant growth traits.
+- Context and references
+  - Substrate-induced respiration methodology references Campbell et al. (2003) and inter-laboratory comparisons by Creamer et al. (2009) for MicroResp data interpretation.

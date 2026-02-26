@@ -1,0 +1,65 @@
+# Brief description of the project, experimental design and data recorded
+
+- Objective and system
+  - Investigates how coloured environmental variation (blue, red, white noise) in temperature affects life history traits and population dynamics.
+  - Laboratory host-parasitoid model: Plodia interpunctella (host) and Venturia canescens (parasitoid).
+  - Focus on both single-generation life history responses and multi-generation population dynamics over approximately 7 host generations.
+
+- Experimental design
+  - Two main components:
+    - Life history assay: 50 unparasitized and 26 parasitized Plodia hosts per temperature treatment; individual hosts tracked daily for life-history traits.
+    - Microcosm experiment: 56 microcosms total (4 replicates × 7 temperature series × 2 microcosm types: host alone Pi and host–parasitoid Pi-Vc).
+  - Temperature treatments
+    - 7 treatments: CST (constant 26°C) and 6 coloured-time-series (B1, B2, R1, R2, W1, W2).
+    - Coloured series generated to have identical white-noise values but with different temporal structure using AR processes and spectral mimicry; series 458 days long with autocorrelations: white ≈ 0, blue = -0.70, red = 0.70.
+  - Experimental timeline and disruptions
+    - Temperature time series used for both life history and microcosm experiments.
+    - Microcosms begin at 26°C constant; at week 11, a second host cohort is introduced for Pi-Vc microcosms; Bt bacterial infection occurs week 34 affecting some microcosms, ending the microcosm experiment around week 45 (310 days total).
+    - Post-infection data are flagged; recommended to use pre-infection data for certain analyses.
+  - Replication and sampling
+    - Life history: per treatment, 50 unparasitized and 26 parasitized hosts, tracked daily.
+    - Microcosms: 4 replicates per treatment type (Pi and Pi-Vc) per temperature series; weekly monitoring of counts, instar stages, pupae, and resource replacement.
+    - Sampling of adults and eggs for body size and fecundity; common garden experiment conducted with host eggs to assess potential transgenerational effects.
+  - Common garden and infection design
+    - Common garden: host eggs collected at week 29 from microcosms, reared at constant 26°C to measure development times and body size.
+    - Bt infection: introduced to a subset of microcosms, influencing population dynamics and infection status tracking.
+
+- Datasets and key variables
+  - Plodia-life-history-data_Noise.csv
+    - Individual-level life history under each treatment: egg stage duration, juvenile stage duration, adult lifespan, fecundity across time windows, leg length, sex, mating pairs, dates (start, hatch, emergence, death), and various timing and status fields.
+  - Venturia-life-history-data_Noise.csv
+    - Parasitoid-host parasitism details: Pi stage/age, parasitism time, mass, time of observation, parasitoid outcome (Pi, Vc, DD, NA), leg photos, and lifespan data.
+  - Pop-count-data_Noise.csv
+    - Weekly population counts: live/dead Pi and Vc, instar and pupae counts, diet replacement, infection status, and replication metadata.
+  - Plodia-body-size-fecundity-data_Noise.csv
+    - Population- and individual-level fecundity across weeks, plus leg length, body size proxy, and sampling metadata.
+  - Venturia-body-size-data_Noise.csv
+    - Parasitoid body size (hind-tibia length) and infection sampling metadata.
+  - Plodia-common-garden_Noise.csv
+    - Common garden measurements for host development and body size across weeks and treatments; links to individual codes.
+  - Temperature-time-series_Noise.csv
+    - Daily temperature time series: date, day, temperature, treatment, and whether fluctuations are none/blue/red/white.
+  - Quality control
+    - All data underwent error checking; outliers rechecked during initial analysis.
+
+- Data structure and interpretation notes
+  - Treatments and replication
+    - 7 temperature treatments: CST and B1, B2, R1, R2, W1, W2.
+    - 2 colour treatments within coloured series (blue, red, white noise) plus CST control.
+    - 14 microcosm-type × temperature × series combinations, with 4 replicates per combination.
+  - Data relationships
+    - Datasets are interlinked via treatment, series, population, and individual codes, enabling cross-dataset analyses (life history, body size, fecundity, population dynamics, and common garden outcomes).
+  - Temporal scope
+    - Temperature data cover 458 days; microcosm experiment runs up to ~310 days due to Bt infection; life-history data cover early to late development under assigned temperature regimes.
+  - Cautions for reuse
+    - Post-infection data should be treated with caution; recommended to limit population counts to pre-infection periods (up to week 39) for Pi and Pi-Vc, and to exclude post-infection data from infected populations.
+    - Parasitoid body size data at week 41 are less reliable due to reduced sampling in red treatments.
+  - References and methodological basis
+    - Methodological references for temperature generation and ecological design (spectral mimicry, coloured variation) and parasitoid-host dynamics are provided to guide analysis and replication.
+
+- Potential analyses and data products
+  - Compare life-history traits (development times, lifespan, fecundity) across CST, blue, red, and white temperature fluctuations.
+  - Assess how coloured environmental variation shapes host-parasitoid population dynamics and stability over multiple generations.
+  - Explore transgenerational effects using common garden data.
+  - Build self-serve dashboards or time-series visualizations that integrate life-history, body-size, fecundity, and population counts across treatments.
+  - Use temperature-series data to align observed biological responses with temporal structure (autocorrelation, spectral properties) of the environment.

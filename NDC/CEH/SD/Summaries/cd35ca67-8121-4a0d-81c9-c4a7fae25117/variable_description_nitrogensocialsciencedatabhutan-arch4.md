@@ -1,0 +1,33 @@
+# Variable description
+
+- Comprehensive, multi-season data dictionary for an agricultural survey detailing labour, input use, and household characteristics across crops and seasons. It covers:
+  - Labour inputs and costs broken down by household members (HM) and hired labour (HL) across activities (e.g., land preparation, seed sowing, weeding, planting, fertilizing, transplanting, water management, harvesting, and other).
+  - Season-specific measurement (season 1 through season 4) and per-crop codes, with totals and activity-level wages (season 2 wages appears in multiple entries; analogous structures exist for other seasons).
+  - Crop coding and plot-level data, including crop codes for seasons 1–2 and mechanization details for various activities.
+- Detailed wage and labour-time data:
+  - Hours spent by HM and HL on each activity per crop in each season (e.g., land preparation, seed, weeding, planting, fertilizing, transplanting for rice, water management, harvesting, etc.).
+  - Average wages by activity and season; total wages per season; male/female labour counts; season-specific labour totals.
+- Crop and land data:
+  - Crop codes per season; land preparation costs with animal power or machinery; mechanization status for land prep, seed sowing, fertilizer application, irrigation, and harvesting (fully mechanized, partially, or fully manual).
+  - Machinery types used and associated costs; irrigation sources, water pricing methods, payments, and usage details; crop-specific labour and input patterns.
+- Irrigation and water management:
+  - Access to irrigation, actual irrigation, proportion irrigated, water management methods (especially rice-specific), puddling decisions, and source of irrigation water.
+- Fertilizer and pest management decision-making:
+  - Data on fertilizer use (synthetic vs organic), sources of information, decision-making processes (guidance documents, calculators, dependence on prior-year amounts), and whether fertilizer records are kept.
+  - Pesticide use by season and crop, pesticide types (farm-made vs manufactured), application frequency, total cost, and IPM usage; influence of decision-support tools on pest management practices.
+  - Attitudes toward fertilizer use, risk tolerance, and openness to new information or tools; sources of fertilizer guidance (government, extension, private traders, print media, radio/TV, internet, family/neighbours).
+- Livestock and animal husbandry:
+  - Ownership by species across multiple waves/years, mature animal counts, reasons for raising animals (income, milk, meat, festivals, power, etc.), and animal movement (sale, slaughter, dowry, death, etc.).
+  - Time spent with animals in various housing settings (yard, open, closed) and across multiple species and years.
+- Household economics and assets:
+  - Expenditures by category (food, tobacco, electricity, fuel, transport, mobile/internet, education, health, taxes, festivals, durable assets, repairs, savings/investments, debt repayment, etc.), both monthly and annually across years.
+  - Household assets and infrastructure (home ownership, room counts, floor material, lighting sources, cooking fuel, drinking water source, number of TVs, smartphones, internet access, power tillers, irrigation pumps, transport ownership, crop insurance, subsidies for farming inputs, irrigation subsidies, machinery subsidies, etc.).
+  - Financial access and resilience indicators (loans, distance to financial institutions, crop insurance status, subsidies/subsidy uptake for inputs like synthetic fertilizer, irrigation, machinery, etc.).
+- Decision support tools and guidance:
+  - Awareness, use, and discontinuation of decision-support tools (e.g., leaf colour charts, other soil/fertility tools) and agroforestry or other sustainable practices; adoption patterns and barriers.
+  - Information-seeking behavior for fertilizer use (family/neighbours, extension agents, government, traders, media, internet) and preferred channels; willingness to adjust practices based on information and risk tolerance.
+- Cross-cutting metadata and governance:
+  - Extensive enumerator notes interspersed throughout to capture contextual observations, data collection timing, and tool usage; explicit season/crop coding, unit definitions, and data collection dates/times to support harmonization and longitudinal analysis.
+  - The dataset is designed with cross-season and cross-crop analyses in mind, including cross-year comparability and potential cross-country harmonization (e.g., alignment with broader SANH WP 1.3 framework).
+- Data quality and integration considerations:
+  - The heavy use of coded variables (e.g., N... series) and season-specific subsets requires careful metadata, consistent coding schemes, and clear documentation of units, crop codes, and season definitions to enable reliable policy analysis, benchmarking, and cross-network collaboration.

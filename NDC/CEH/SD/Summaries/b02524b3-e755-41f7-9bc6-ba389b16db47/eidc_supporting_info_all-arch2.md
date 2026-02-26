@@ -1,0 +1,89 @@
+# Physiological responses of marine phytoplankton to acute and chronic thermal stress
+
+- Scope and aim
+  - Document the physiology-based measurements used to study how marine phytoplankton respond to acute and chronic thermal stress.
+  - Supports data from the research grant Identifying the mechanisms and resource use implications of acclimation to high temperature in marine cyanobacteria (NE/P002374/1) led by Richard J. Geider.
+  - Emphasizes description of data collection, normalization, quality control, and the experimental designs used.
+
+- Organisms and culturing conditions
+  - Species studied:
+    - Synechocystis sp. (PCC 6803)
+    - Synechococcus sp. (CCMP 2370)
+    - Phaeodactylum tricornutum (CCMP 2561)
+    - Emiliana huxleyi (CCMP 1516)
+  - Growth media and setup
+    - Synechocystis: BG-11 medium, 30 °C, ~150 μmol photons m-2 s-1, 1% CO2-enriched air.
+    - Synechococcus: K medium, artificial seawater, 3 mM bicarbonate, 26 °C, ~325 μmol photons m-2 s-1.
+    - P. tricornutum: K medium with silicic acid, 20 °C, ~325 μmol photons m-2 s-1.
+    - E. huxleyi: K medium with silicic acid, 20 °C, ~325 μmol photons m-2 s-1.
+  - Experimental replication and culture vessels
+    - Cultures maintained in glass vessels with continuous stirring; volumes range from ~50 to 6 L depending on species/experiment.
+    - Replication: multiple biological replicates per condition; specifics vary by experiment type.
+
+- Experimental designs
+  - Ramp experiments (3.1)
+    - Purpose: characterize transient physiological responses to heating rate.
+    - Approach: acclimate to optimal conditions, then expose to sub-lethal temperatures; sample hourly for time-series measurements.
+    - Species-specific ramp details:
+      - Synechocystis: stepwise heating from 30 °C to 46.5 °C at 1.5 °C h-1; 12 time points; 3 biological replicates.
+      - Synechococcus: gradual heating from ~27 °C to 32 °C at 1 °C d-1; 4 vessels; monitored for growth and physiology; 4 biological replicates.
+      - P. tricornutum: heat to 28 °C over 0.5 h; hourly sampling for 12 time points; 4 biological replicates.
+  - Steady state experiments (3.2)
+    - Purpose: characterize acclimated responses to suboptimal, optimal, and supra-optimal temperatures for metabolic rates and biochemical composition.
+    - Conditions: exponential growth at temperatures representing subopt, opt, and supra-opt for each species (see Table 1 in the document); continuous light ~325 ± 25 μmol photons m-2 s-1.
+    - Experimental setup: replicate vessels, harvested after at least four cell divisions; multiple physiological and 'omics' measurements.
+  - Thermal performance experiments (3.3)
+    - Purpose: assess physiological responses across a matrix of temperatures and light levels after acclimation.
+    - Conditions: temperature gradients with varying light intensities (PPFD) for E. huxleyi and P. tricornutum; 9–12 temperature points per row with multiple light treatments; large number of biological replicates and growth media (F/2 or K with silicic acid).
+
+- Measurements and methods (Section 4)
+  - Growth and cell abundance
+    - Direct cell counts via flow cytometry or chlorophyll a as a biomass proxy.
+    - Growth rates calculated from natural-log transformed cell counts or Chl a fluorescence over time.
+  - Particulate organic carbon and nitrogen and phosphorus
+    - POC: filtration, acidification to remove inorganic carbon, analysis with Formacs HT; normalization to cell density or carbon content.
+    - PON and POP: persulfate digestion with UV absorption nitrate method and phosphate measurement; normalization as above.
+  - Chlorophyll a
+    - Extraction with acetone/DMSO; spectrophotometric measurement; normalization to cell density or carbon.
+  - Macromolecules (protein, lipids, carbohydrates)
+    - Sequential extraction and quantification (lipids by vanillin-sulfuric acid method; proteins by BCA; carbohydrates by anthrone; polysaccharides after fractionation and precipitation).
+    - Normalization to cell density or carbon.
+  - FRRf (Fast Repetition Rate fluorometry)
+    - Assess PSII electron transport: yield (Fq'/Fm'), PSII antenna size (σ), QA re-oxidation kinetics (τ).
+    - Measurements taken immediately after sampling or within minutes of removal from temperature block.
+  - Fluorescence Light Curves (FLC)
+    - Light-dependent PSII electron transport parameters across a range of PPFDs; conducted with actinic light and temperature-controlled flow cell.
+  - Oxygen light curves (OLC; MIMS)
+    - Oxygen production and consumption measured with 18O2 isotope using a gradient of PPFDs.
+    - Rates normalized to cell, carbon, and chlorophyll a.
+  - PSII photoinactivation
+    - Rate constants for photoinactivation at multiple PPFDs, with and without lincomycin to distinguish gross vs net inactivation.
+  - Mortality
+    - Live/dead discrimination using SYTOX Green staining and flow cytometry; mortality rates derived from live/dead cell abundances.
+  - Flow cytometric cell characterization
+    - Cell size (FSC-A) and pigment content (Chl a, phycoerythrin) via flow cytometry; gating consistent across treatments.
+
+- Data files and structure
+  - The dataset comprises eighteen CSV files (Table 3 in the document).
+  - Examples of file names and purposes:
+    - P_tricornutum_mortality_data.csv — mortality rates of P. tricornutum under acute thermal stress.
+    - P_tricornutum_steady_state_data.csv — physiological measurements from steady-state experiments at three acclimated temperatures.
+    - E_huxleyi_steady_state_data.csv — steady-state physiological measurements for E. huxleyi.
+    - Synechococcus_steady_state_data.csv — steady-state data for Synechococcus.
+    - P_tricornutum_photoinhibition_lincomycin_data.csv — photoinhibition data with lincomycin treatment.
+    - P_tricornutum_oxygen_evolution_MIMS_data.csv — oxygen evolution/uptake data from MIMS.
+    - P_tricornutum_FLC_data.csv — fluorescence light curve data from FRRf.
+    - E_huxleyi_SS_FLC_data.csv, Synechococcus_SS_FLC_data.csv, Synechocystis_ramp_data.csv, and other ramp/thermal/performance data files.
+  - Data dictionary and column headings are standardized across files (examples include Time, Biological Replicate, Sample ID, Temperature, Growth Rate, Mortality Rate, Cell mL-1, Chla, POC, PON, POP, C:N, C:P, N:P, etc.).
+
+- Data quality, provenance, and access
+  - Original laboratory work conducted at the School of Life Science laboratories, Colchester Campus, University of Essex, from March 2017 to February 2021.
+  - Data collation and quality control completed in July 2021.
+  - The documentation outlines how data were collected, normalized, and quality controlled to ensure consistency and comparability across experiments and species.
+  - The dataset is designed to enable integration with other monitoring data and to support cross-study comparisons and time-series analyses relevant to environmental health and policy performance.
+
+- Relevance to environmental monitoring
+  - Provides standardized physiological metrics of phytoplankton responses to thermal stress, enabling detection of potential shifts in community function under warming.
+  - Comprehensive coverage across multiple key phytoplankton groups (cyanobacteria, diatoms, coccolithophores) and multiple response pathways (growth, carbon/nitrogen/phosphorus cycling, photosynthesis, photoinhibition, mortality).
+  - Facilitates data reuse and integration with broader environmental datasets by detailing culture conditions, experimental designs, measurement techniques, and data formatting.
+  - Supports monitoring the environmental condition and policy performance over time by offering robust, comparable indicators of phytoplankton health and thermal tolerance.

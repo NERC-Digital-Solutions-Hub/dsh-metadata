@@ -1,0 +1,27 @@
+# Visualising UKCEH Land Cover Class using a GIS application
+
+- This document is a short guide for visualising Land Cover Class data in band 1 of UKCEH land cover rasters (2017-2020) using common GIS applications.
+- Data structure:
+  - 20m and 10m rasters: two bands; Band 1 = UKCEH Land Cover Class identifier; Band 2 = classification confidence.
+  - 25m rasters: three bands; Band 1 = dominant Land Cover Class identifier; Bands 2 and 3 = indicators of classification confidence.
+- Visualization workflow by software:
+  - QGIS:
+    - Add the file to your project; layer appears in the layers panel.
+    - Layer properties -> Symbology -> Paletted/Unique Values; Band 1.
+    - Click style > Load style from the LCMcolours_QGIS.qml file accompanying this document; map will redraw with correct classification.
+  - ArcGIS Desktop:
+    - In Catalog, locate the folder with the data; expand the raster to show bands.
+    - Drag band_1 into the Table of Contents.
+    - Layer properties -> Symbology -> Unique Values (if prompted to build an attribute table, click Yes).
+    - Click Import and load LCMcolours.lyr provided with these instructions; map will redraw with correct classification.
+  - ArcGIS Pro:
+    - Open Catalog, browse to the data folder; expand to view raster bands.
+    - Drag band_1 into the Contents.
+    - Layer properties -> Appearance > Symbology; select Unique Values.
+    - Use the hamburger menu in the Symbology panel and choose Import, then load LCMcolours.lyr; map will redraw with correct classification.
+- Additional notes:
+  - A full description of the data is available in the product documentation.
+  - The styling files (LCMcolours_QGIS.qml and LCMcolours.lyr) accompany these instructions to ensure consistent classification visuals.
+- Relevance for analysts monitoring the environment:
+  - Enables standardized, repeatable visualization outputs for environmental health and policy performance monitoring.
+  - Supports clear formats for reporting and data sharing, aligning with broad, standardized approaches and ensuring transparency of classifications.

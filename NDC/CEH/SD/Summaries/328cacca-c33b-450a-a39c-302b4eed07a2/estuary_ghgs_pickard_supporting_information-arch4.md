@@ -1,0 +1,32 @@
+# Sampling regime
+
+- Study scope: Sampling conducted at seven UK estuaries to measure greenhouse gases and water chemistry across salinity gradients, spanning four coordinated campaigns (July and October 2017; January and April 2018).
+- Estuary sites: Clyde, Forth, Tay (central Scotland); Conwy, Clwyd (northern Wales); Dart, Tamar (southwest England).
+- Sampling campaigns and logistics:
+  - In situ and fixed-point sampling used depending on site constraints.
+  - Greenhouse gas and water chemistry samples collected at six locations per survey, targeting salinity intervals of 1, 2, 5, 10, 15, and >25 ppt (not always achieved).
+  - Sampling depth: measurements taken ~10 cm below the surface; salinity and temperature recorded at each point.
+- Sampling methods and sample handling:
+  - Freshwater and saline sites used different sampling workflows and laboratories, affecting data structure (see data structure section).
+  - For Clyde, Clywd, Conwy, Forth, Tay: headspace method with exact water volume equilibrated with ambient air in a syringe, then transferred to pre-evacuated vials for GC analysis; ambient air sample also collected.
+  - For Tamar and Dart: 500 mL bottles used, overfilled to remove bubbles, poisoned with mercuric chloride, then GC analysis.
+- Gas analyses:
+  - Instruments: Agilent 7890B GC with FID for CH4 and CO2; μECD for N2O; headspace autosampler or single-phase equilibration GC approach.
+  - Calibration and standards: three certified reference standards (traceable to NOAA WMO), instrument calibration across a broad concentration range; temperature equilibration for Tamar/Dart at ~25°C.
+  - Analytes: methane (CH4), nitrous oxide (N2O), carbon dioxide (CO2); gas concentrations reported after standardization procedures (solubility corrections applied as needed).
+- Water chemistry analyses:
+  - Dissolved organic carbon (DOC): measured at UKCEH using a Shimadzu TOC-L with 0.45 μm filtration.
+  - Total dissolved carbon (TDC): freshwater method includes inorganic carbon removal steps to capture organic and inorganic carbon.
+  - Freshwater nutrients (Position 1; with Conwy having expanded positions in 2018): Nitrate + nitrite, ammonium, total nitrogen (TN), total phosphorus (TP), dissolved phosphorus species (PO4-P), silicate; methods include ion chromatography and colorimetric analyses with appropriate QC and LODs.
+  - Saline nutrients (Positions 2–6): analyzed at Plymouth Marine Laboratory using SEAL Analytical AAIII with GO-SHIP-compliant protocols; standard nutrient suites with isotope-appropriate calibrations.
+- Data structure and units:
+  - Data stored in CSV with missing values marked; freshwater and saline datasets may have many missing columns due to separate laboratories.
+  - Measurements reported to two decimal places.
+  - Table 1 documents units and column headers for nutrients and gases (e.g., CH4, CO2, N2O in concentration units; DOC, TDC in mg/L or μM/L as specified; salinity in ppt; temperature in °C).
+  - Key metadata fields: Estuary, Position (1 = furthest upstream freshwater to 6 = downstream saline), Lat, Long, Day, Month, Year, Salinity, Temperature.
+- Data quality and standards:
+  - Use of standard reference materials and certified standards for gas and nutrient analyses.
+  - Method references and GO-SHIP protocols cited to ensure comparability and reproducibility.
+  - Acknowledgement of data gaps where salinity targets were not achieved or where laboratory separation caused missing data across certain analytes.
+- Endnotes and references:
+  - Includes methodological citations for gas chromatography, solubility corrections, and nutrient analyses (e.g., Weiss & Price solubility, WIO, GO-SHIP protocols).

@@ -1,0 +1,31 @@
+# Landscapes
+
+- Overview
+  - The two landscapes are part of the Treescapes STAND project, led by the RSPB: North Pennines & Dales in England, and Elenydd in mid Wales.
+- Data and sources
+  - England: LiDAR-derived DTM and DSM from Environment Agency National LIDAR Programme, accessed via R package gblidar.
+  - Wales: LiDAR Cloud Optimized GeoTIFFs from Welsh Government, imported into QGIS and clipped to the Elenydd boundary.
+  - Buildings: OS OpenMap - Local data used to remove buildings from tree-top and crown data.
+- Processing workflow
+  - Create canopy height models (CHM) by CHM = DSM − DTM.
+  - Identify dominant treetops, heights, and tree crowns from CHM using ForestTools (R) with vwf and mcws functions.
+  - Height threshold set at 1.5 m to capture shrubs/scrub while excluding structures.
+  - Remove buildings from the tree tops and crowns using OS building data.
+  - Compute outputs at 10 m resolution: total canopy cover (%) and mean tree height for each landscape.
+- Outputs and visualization
+  - Figure 2 shows a comparison between satellite imagery of woodlands/trees and LiDAR-derived canopy cover.
+  - Reported metrics: canopy cover percentage and mean tree height per landscape.
+- Tools and reproducibility
+  - R packages: gblidar (England data), ForestTools (vwf, mcws), and Welsh data processed in QGIS.
+- Key considerations
+  - Data scale and resolution (10 m) influence sensitivity to small vegetation.
+  - The 1.5 m threshold impacts inclusion of shrubs vs. trees.
+  - Building removal relies on the accuracy and completeness of OS data.
+  - Wales data clipped to Elenydd ensures landscape-specific analysis.
+- References (data sources)
+  - Environment Agency. National LiDAR Programme.
+  - Graham, H. gblidar package.
+  - Ordnance Survey. OS OpenMap - Local.
+  - Plowright, A. ForestTools R package.
+  - Syder et al. (in prep). Visioning future treescapes in upland landscapes.
+  - Welsh Government. LiDAR data.

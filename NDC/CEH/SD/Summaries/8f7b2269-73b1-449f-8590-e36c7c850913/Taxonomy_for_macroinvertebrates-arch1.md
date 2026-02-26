@@ -1,0 +1,37 @@
+# Taxonomy for macroinvertebrates in Welsh upland rivers
+
+- Purpose and scope
+  - Datasets from two surveys: 66 WAWS (Welsh Acid Water Survey) sites and 44 Wye catchment sites.
+  - WAWS aims to capture biological response to acidity gradients from geology and acidic episodes; Wye survey covers a gradient of land-use intensification.
+- Sampling design
+  - Invertebrates collected in riffles using 2-minute semiquantitative kick samples.
+  - Spring 2012 (WAWS) and 2013 (Wye) sampling across all sites to capture major habitats.
+  - Samples preserved on-site with 100% IMS; laboratory processing with 70% IMS.
+- Taxonomic identification and units
+  - Identification to species or genus where possible; family or higher where development or taxonomy limits.
+  - Some taxa identified at coarse levels (e.g., Oligochaeta, Tricladida); when genus not available, NA provided for family/genus.
+  - Recorded units: abundance of each taxon.
+  - Trait-level information typically available at genus or family level, enabling extraction of trait data across taxa.
+- Data structure and content
+  - Primary data: flatbed file with nine columns
+    - dataset, site_code, year, class, order, family, genus, taxon_name, abundance
+  - Taxonomic detail
+    - For each taxon: class, order, family, genus, taxon_name, abundance
+- Site description and geometry
+  - Supporting file: DURESS_CU_site_description.csv (10 columns)
+  - Key fields: site_code, name, Eastings, Northings, Grid, Latitude, Longitude, Elevation, Survey (WAWS or Wye), Catchment
+- Collection methods and instruments
+  - Kick-net (1 mm mesh); field microscopes.
+- Quality control and data caveats
+  - No formal quality control described.
+  - Some taxa identified at coarse taxonomic levels; possible gaps in genus/family data.
+  - Calibration steps: none documented.
+- Additional context and references
+  - Foundational references on kick-sampling and acidification impacts:
+    - Weatherley & Ormerod (1987)
+    - Bradley & Ormerod (2002)
+  - Links to references may be present in the CEH Data Catalogue; access persistence not guaranteed.
+- Considerations for analysis
+  - Data supports analyses of macroinvertebrate community composition across acidity and land-use gradients.
+  - Utility for trait-based analyses given genus/family-level trait information.
+  - Spatial coverage includes upland Welsh rivers and the Wye catchment; may require harmonization for cross-dataset comparisons.

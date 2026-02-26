@@ -1,0 +1,31 @@
+# Experimental design/sampling regime
+
+- UK Butterfly Monitoring Scheme (UKBMS) collects data from over 2,000 sites annually across the UK, using standardised methods to estimate butterfly abundance.
+- Main data collection methods:
+  - All-species transects: fixed-route line transects (2–4 km) walked weekly during a defined season; 5 m wide belt counts all butterfly species; typically 26 counts per year.
+  - Transect routes are fixed to enable year-to-year comparability and habitat/management sampling.
+  - Weather and time constraints: transects run between 10:45 and 15:45, under suitable butterfly activity conditions (dry, Beaufort wind ≤ 5, temperature thresholds with sunshine or overcast rules).
+  - Single-species transects: follow the all-species methodology but record only for a few weeks of the focal species’ flight period.
+  - Timed counts: counts of a particular species over a fixed period and area, within same daily time window.
+  - Egg/larval web counts: counting eggs or larval webs in suitable habitats (e.g., Marsh Fritillary).
+- Wider Countryside Butterfly Survey (WCBS): a reduced-effort survey established in 2009 to sample wider habitats (farmland) with two parallel 1-km transects in randomly selected 1-km squares; 2–4 visits per year, with a minimum of 2 visits in July/August.
+- Data collection and entry:
+  - Site location data captured in the field when a transect, timed count, or larval/web count is set up.
+  - Data entered online via the UKBMS data entry site or via Transect Walker (free download).
+  - Data from transects are uploaded to an Oracle database; route changes create a new site with a new site number.
+- Data and units (Site Location Data):
+  - OS grid reference for each site; Easting (x) and Northing (y) coordinates; transect length (metres); number of sections on the transect.
+  - Indicator of WCBS participation (Yes/No); No. of years surveyed; First and Last year surveyed (UKBMS, up to 2013/2012).
+  - Survey type: 'WCBS' for WCBS sites; 'UKBMS' for all-species transects and reduced-effort monitoring (e.g., timed counts, larval counts).
+- Quality control:
+  - Regional transect coordinators validate records based on local knowledge.
+  - Automated and manual validation checks follow preliminary validation.
+  - Some WCBS data may be incomplete due to randomised 1-km square sampling.
+- Data format and storage:
+  - Site Location Data stored as a CSV file with defined columns (Site number, Site name, Gridreference, Easting, Northing, Length, Country, No. Sections, No. Yrs surveyed, First year surveyed, Last year surveyed, Survey type).
+  - Grid reference is split into Easting and Northing; the start point of the transect route is captured.
+- Data handling implications:
+  - Fixed-route design and consistent sampling windows enable robust temporal comparisons.
+  - Route changes are treated as new sites to preserve data integrity across transects.
+- References:
+  - The fixed transect approach and sampling framework are grounded in Pollard, E. & Yates, T.J. (1993) Monitoring Butterflies for Ecology and Conservation.

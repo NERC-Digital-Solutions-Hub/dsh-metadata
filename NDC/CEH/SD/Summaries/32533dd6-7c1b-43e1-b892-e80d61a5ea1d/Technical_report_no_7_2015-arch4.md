@@ -1,0 +1,41 @@
+# Copernicus land CORINE metadata 2012
+
+- The document provides metadata for three CORINE Land Cover (CLC) datasets covering the UK, Guernsey, and Jersey, produced under the Copernicus programme. It documents the 2012 CLC data and 2006–2012 change layers, including their structure, provenance, and access conditions.
+- Datasets covered:
+  - Dataset 1: Corine land cover 2006 (revised), 2012 and changes (2006-2012) for the UK
+    - Filename: CLC2012_UK.mdb
+    - Three layers: CLC-Changes (2006-2012), CLC2006revised, CLC2012
+    - Projection: British National Grid (Transverse Mercator); Datum: OSGB 1936
+  - Dataset 2: Corine land cover 2006 (revised), 2012 and changes (2006-2012) for Guernsey
+    - Filename: CLC2012_UK.mdb
+    - Three layers: CLC-Changes (2006-2012), CLC2006revised, CLC2012
+    - Projection: Guernsey Grid (Transverse Mercator); Datum: WGS 1984
+  - Dataset 3: Corine land cover 2006 (revised), 2012 and changes (2006-2012) for Jersey
+    - Filename: CLC2012_UK.mdb
+    - Three layers: CLC-Changes (2006-2012), CLC2006revised, CLC2012
+    - Projection: New JTM (Transverse Mercator); Datum: ETRF 1989
+- Metadata details:
+  - Language: English; Character set: UTF-8
+  - Keywords: Land cover, Land use; UK
+  - Extent: West -8.62 to East 1.76; South 49.88 to North 60.84
+  - Spatial resolution: 1:100,000
+  - Metadata standards: INSPIRE-compliant metadata profile (EEA)
+  - Resource linkage and online resources: Link to COPERNICUS/Land CORINE metadata portal and related documentation
+- Purpose and scope:
+  - Documents CORINE Land Cover (CLC) 2012 update and 2006–2012 changes; aims to support land cover monitoring, environmental indicators, and policy-relevant analysis.
+  - Base parameters: 44 classes; MMU for status 25 ha; MMU for LCC changes 5 ha.
+  - Data are produced via photointerpretation of satellite imagery (2011–2013) with aerial support; notes that no up-to-date national land cover map existed at update time; the UK LCM2007 served as a reference for previous mapping.
+- Lineage and methodology:
+  - Updated for reference year 2012; use of satellite imagery (2011–2013) and Google Earth imagery to support interpretation.
+  - Adheres to EEA technical guidelines and InterChange mapping workflow for CLC changes.
+- Access, use, and licensing:
+  - Use limitations governed by Regulation EU 1159/2013 (now updated under related regulations); free, full, and open access with conditions:
+    - Users must acknowledge the data source
+    - Users should not imply Union endorsement
+    - Any adaptations must be clearly stated
+  - Data remain EU property; publication must acknowledge the Copernicus framework and funding.
+- Data management and quality:
+  - Metadata confirms dataset language, lineage, and compliance with INSPIRE; focuses on data availability, discovery, and traceability.
+- Contacts and acknowledgments:
+  - Point of contact: The University of Leicester (originator), Defra (custodian), European Environment Agency (owner), European Commission – DG ENTR (owner)
+  - Acknowledgments: Project by University of Leicester, Centre for Landscape and Climate Research; supported by Defra and EEA under specific grant; Copernicus/GMES context.

@@ -1,0 +1,62 @@
+# Plant and soil animal diversity measurements from a disturbance and nitrogen addition experiment in an upland grassland site [NERC Soil Biodiversity Programme]
+
+- Purpose and scope
+  - Large-scale field experiment (Sourhope, Scotland) to understand how soil biodiversity and aboveground productivity respond to disturbance and nitrogen addition.
+  - Data cover plant and microarthropod diversity, community composition, and aboveground biomass across controlled treatment gradients.
+
+- Site description and experimental design
+  - Location: Sourhope, Cheviot Hills, Southeast Scotland; upland semi-improved grassland, ~350 m elevation.
+  - Climate and soil: ~1117 mm annual rainfall; humic brown soil (Sourhope series).
+  - Experimental structure:
+    - Five replicate blocks.
+    - Each block initially contained six plots (12 m x 20 m) with randomly assigned treatments.
+    - In December 1999, five replicated experimental sub-areas (3 m x 3 m) were created within a control area, resulting in five separate experimental areas.
+    - Within each 3 m x 3 m area, a crossed, continuous gradient of nitrogen addition and disturbance was established as a 5 x 5 matrix (25 sub-plots, each 0.5 m2).
+    - Treatments applied: nitrogen addition (0, 60, 120, 180, 240 kg N ha-1) and disturbance (0%, 25%, 50%, 75%, 100% ground cover disturbed).
+    - Edge effects mitigated with a 0.5 m buffer zone around each sub-plot; random orientation of treatments following Burke and Grime (1996).
+    - Nitrogen applications occurred February 2000 and April 2001.
+    - Disturbance events: December 1999 and December 2000, simulating trampling via a specialized tool to disturb soil structure.
+
+- Sampling and measurements
+  - Plant diversity and productivity
+    - Sampling dates: 1–18 August 2000; 20–23 August 2001.
+    - Methods: point quadrat technique for relative abundance; biomass harvested from sub-plots (sward height 6 cm, August 2000 and 2001) and oven-dried to estimate aboveground biomass.
+    - Diversity indices: Shannon-Wiener (H), evenness (J), and species richness (R) for plants and for microarthropods combined or separately.
+  - Soil microarthropods
+    - Extraction: soil cores (3 cm diameter, 5 cm depth) with Tullgren funnels for 96 hours; preserved in 70% ethanol with glycerol.
+    - Taxa counted: mites and Collembola; 2000 and 2001 samples; 2001 species-level identifications for Collembola and mites where possible.
+    - Indices: total counts and group-specific diversity; subsets include predatory vs. non-predatory mites.
+  - Data structure and sampling scope
+    - Matrix plots: 25 sub-plots per experimental area; data linked to block, main plot, matrix position, disturbance level, and nitrogen level.
+    - Aboveground biomass: plant biomass per sub-plot (g m^-2) used as a functional productivity indicator.
+    - Depth and sampling consistency: soil cores sampled to 5 cm depth; both 2000 and 2001 sampling events included.
+  - Data products (file-level)
+    - Dataset 1047: Matrix plant species abundance data 2000 (P2133_MATRIX_SURVEY2000.csv)
+      - Key fields: SAMPLING_DATE, BLOCK, MAIN_PLOT, MATRIX_POSITION, DISTURBANCE, NITROGEN, SPECIES, COUNT
+      - Purpose: plant species counts by matrix position and treatment year 2000.
+    - Dataset 1048: Matrix plant species abundance data 2001 (P2133_MATRIX_SURVEY2001.csv)
+      - Key fields: SAMPLING_DATE, BLOCK, MAIN_PLOT, MATRIX_POSITION, DISTURBANCE, NITROGEN, SPECIES, COUNT
+      - Purpose: plant species counts by matrix position and treatment year 2001.
+    - Dataset 1045: Microarthropod species abundance, 2001 (P2133_MATRIX_MPOD_SPECIES.csv)
+      - Key fields: YEAR, BLOCK, MAIN_PLOT, MATRIX_POSITION, DISTURBANCE, NITROGEN, SPECIES, COUNT
+      - Measures microarthropod species counts per sample (5 cm depth cores).
+    - Dataset 1045 (continued): Microarthropod counts per sample and biomass data (P2133_MATRIX_PLANT_MPOD.csv)
+      - Key fields: YEAR, BLOCK, MAIN_PLOT, MATRIX_POSITION, DISTURBANCE, NITROGEN, PLANT_BIOMASS, MITES, COLLEMBOLA
+      - Combines above-ground biomass with mite and Collembola counts; includes sampling method notes.
+  - Quality control and provenance
+    - Verification steps: numeric range checks, formatting conformity, and logical integrity checks.
+    - Data quality disclaimer: NERC provides no warranty on accuracy or fitness for purpose; no liability for use of the data.
+  - References and additional context
+    - Foundational papers and handbooks documenting design, methods, and ecological context (e.g., Burke & Grime 1996; Begon et al. 1996; Hopkin 2000; Krantz 1978).
+    - Suggested use and further reading: Sourhope Field Data Handbook (2003); related publications on soil biodiversity and experimental design (Usher et al. 2006).
+
+- GIS-relevant considerations for use
+  - Spatial schema
+    - Grid-based, crossed gradient design: defined blocks, main plots, matrix positions, and edge-buffer zones enable spatial joins and map-based visualization of treatment effects.
+    - Location metadata: Sourhope site coordinates and grid references support georeferencing and integration with spatial layers (soil type, elevation, rainfall).
+  - Data integration and mapping
+    - Link plant and microarthropod data to precise sub-plot positions within each experimental area for rapid GIS plotting of diversity and biomass across the disturbance-nitrogen gradient.
+    - Time series potential: year-wise data (2000 and 2001) enables temporal mapping of treatment impacts on communities and productivity.
+  - Metadata and data reuse
+    - Clear field definitions and data types facilitate schema mapping to GIS attribute tables.
+    - References and documentation support reproducibility and integration with related Soil Biodiversity Programme datasets.

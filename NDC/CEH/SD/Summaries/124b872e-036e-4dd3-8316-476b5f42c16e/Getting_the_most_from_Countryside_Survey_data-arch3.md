@@ -1,0 +1,26 @@
+# Notes on the downloadable data
+
+- Purpose
+  - Explains how Countryside Survey (CS) data are collected, sampled, and estimated, including confidentiality constraints and methods for uncertainty assessment.
+- Data confidentiality and access
+  - Precise locations of CS survey squares are kept confidential by CEH to preserve representativeness.
+  - External users cannot identify survey squares with precision finer than 100 square km.
+  - This confidentiality limits the ability to map squares to specific defined areas.
+- Sampling design
+  - CS field data come from a sample of 1 km squares across GB, with measurements at two levels: whole squares and within-square features.
+  - The sample is stratified rather than random, using the ITE Land Classification. Country-specific classifications have evolved: 32 classes originally, 42 (1998) for Scotland, and 45 (2007) for Wales; England has 21 classes, Wales 8, Scotland 16.
+  - Not all GB squares are eligible: squares >90% sea or >75% urban are excluded from field surveys.
+  - Estimates for GB/regions assume excluded squares have similar vegetative land composition to sampled squares; bias is expected to be small unless a region has a high sea/urban proportion.
+- Estimation and uncertainty
+  - Estimates by land class are produced as ratio estimates weighted by the vegetative land area within each land class.
+  - Since 1998, standard errors and confidence intervals are estimated using bootstrap methods due to skewness in some features.
+- Implications for monitoring and analysis
+  - Analyses must account for stratification and weighting; avoid naïve extrapolation beyond the defined sampling frame.
+  - Country-specific classifications should be used when combining data across the UK.
+  - Data confidentiality and evolving metadata can affect data usability and verification; explicit consideration of these factors is important in monitoring design.
+- References
+  - Barr, Bunce, Clarke, et al. (1993). Countryside Survey 1990 Main Report.
+  - Cochran (1963). Sampling Techniques.
+  - Efron & Tibshirani (1993). Bootstrap.
+- Notes for practitioners
+  - For detailed methodology and exact procedures, consult the cited references; methodology is designed to ensure representative GB estimates with quantified uncertainty within the constraints of data confidentiality.

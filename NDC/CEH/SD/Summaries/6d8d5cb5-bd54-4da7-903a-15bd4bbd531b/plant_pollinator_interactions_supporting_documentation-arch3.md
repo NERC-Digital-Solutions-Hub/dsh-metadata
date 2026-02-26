@@ -1,0 +1,35 @@
+# Plant pollinator interactions for potential networks 2018
+
+- Overview
+  - A dataset of pairwise plant-pollinator interactions for bees, hoverflies, and butterflies, intended to support construction and analysis of potential plant-pollinator networks when combined with species occurrence data.
+- Data scope
+  - 16,712 unique interactions
+  - 499 plant species and 485 pollinator species (206 bees, 56 butterflies, 223 hoverflies)
+  - Collected from 1985–2015 across Great Britain
+  - Mostly derived from biological recording data (about 73%), with some unpublished experimental data and published interactions
+- Collection methods
+  - Sources: Bees, Wasps and Ants Recording Society (BWARS), Butterflies for the Millennium (BNM), Hoverfly Recording Scheme (HRS)
+  - Interactions recorded as incidental metadata with occurrence records
+  - Interactions identified by algorithmic text matching of pollinator records to valid plant names or synonyms, followed by data cleaning
+  - Exclusion criteria applied to ensure ecological relevance (only plants with flowers visited by insects and with potential for pollen transfer)
+  - Some genus-level matches used when species-level identification was not available; 79 genera treated as interacting across all recorded species within those genera; approximately 7% of interactions come from genus-level assumptions
+- Quality control and limitations
+  - Manual checks by experts (CEH and BWARS) for key indicators of flower visitation (e.g., “nectaring”, “feeding at”)
+  - Acknowledgement that some records may be spurious without exhaustive manual verification
+  - Not a complete GB record of plant–pollinator interactions; coverage gaps exist for species and links (e.g., ~76% bee, ~95% butterfly, ~83% hoverfly, ~55% insect-pollinated plant species represented)
+  - Interactions reflect flower visitation rather than confirmed pollination and assume consistency across space where co-occurring
+  - Where possible, datasets should be supplemented/validated with observational or molecular data
+- Data structure
+  - File: plant_pollinator_interactions_for_potential_networks_2018.csv
+  - Columns:
+    - POLLINATOR_NAME: Scientific name of pollinator
+    - Description: Nomenclature used (as per BWARS/HRS/UKBMS)
+    - PLANT_NAME: Scientific name of plant
+    - Description: Nomenclature as in PLANTATT
+    - Group: Pollinator group (Bees, Hoverflies, or Butterflies)
+- Practical use for monitoring frameworks
+  - Enables creation of large numbers of replicate networks to study patterns of network structure under consistent limitations
+  - Facilitates integration with species occurrence data to evaluate network properties and policy-relevant metrics
+  - Highlights data governance considerations: provenance, metadata quality, openness of underlying data, and the impact of data gaps on decision-making
+- References
+  - Adams et al. (1981); Asher (1997); Clifford (1964); Hill et al. (2004) PLANTATT (as cited in the dataset)

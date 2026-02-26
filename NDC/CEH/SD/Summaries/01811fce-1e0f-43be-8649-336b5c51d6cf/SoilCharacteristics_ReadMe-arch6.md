@@ -1,0 +1,55 @@
+# ReadMe file for SoilCharacteristics.csv
+
+- Purpose and scope: Describes soil characteristics from two seasonal field trials (2017–2018) used to monitor greenhouse gas fluxes from sheep urine applied to an unimproved pasture.
+- Location: Common grazing land in the Carneddau mountain range, Snowdonia National Park, North Wales, UK (556 m above sea level; coordinates 53°22'N, 3°95'W).
+- Sampling design:
+  - Soil samples collected from control plots at 0–10 cm depth.
+  - Two seasons: summer and autumn.
+  - Sample size: n = 4 per season.
+  - Sample dates: 18/07/2017 (summer) and 17/10/2017 (autumn).
+- Soil typing: Summer plots identified as Dystric Histosol; Autumn plots as Humic Gleysol.
+- Measurements and methods (main analyses):
+  - Bulk density (0–5 cm) from intact cores; corrected for stone weight/volume.
+  - Gravimetric soil moisture (105 °C, 24 h).
+  - Organic matter (loss-on-ignition; 450 °C, 16 h).
+  - pH and electrical conductivity (EC) on 1:2.5 soil-to-water suspensions.
+  - Total soil carbon (C) and nitrogen (N) and C:N ratio using a TruSpec analyzer.
+  - Nitrogen mineralisation rate (Nmin) via incubation with NH4+ measurements before/after anaerobic incubation.
+  - N forms and related metrics: NH4+, NO3- (KCl and K2SO4 extractions).
+  - Microbial biomass carbon (MicC) and nitrogen (MicN) via CHCl3 fumigation-extraction.
+  - Dissolved organic C (DOC) and total dissolved N (TDN) from 0.5 M K2SO4 extracts (pre- and post-fumigation).
+  - Phosphate (PO4 3-) and exchangeable cations (Na, K, Ca) via 1.0 M CH3COOH extraction; PO4 determined by Murphy and Riley method; cations by flame photometry.
+  - All extractions analyzed against matrix-matched certified reference standards; blanks checked for contamination.
+- Data quality and provenance:
+  - Visual quality assurance and data flagging/cleaning performed.
+  - Methods and references provided to enable reproducibility.
+- Data structure and units:
+  - Distinct variables for Summer and Autumn (suffixes Summer/Autumn) including:
+    - BulkDensity (g cm-3)
+    - GravMoist (%) 
+    - OrgMatter (% dry weight)
+    - pH (dimensionless)
+    - EC (µS cm-1)
+    - TotC (% dry weight)
+    - TotN (% dry weight)
+    - CN (ratio)
+    - Nmin (mg N kg-1 d-1)
+    - DOC (mg C kg-1 soil dry weight)
+    - TN (mg N kg-1 soil dry weight)
+    - MicC (g C kg-1 soil dry weight)
+    - MicN (mg N kg-1 soil dry weight)
+    - Nitrate (NO3--N; mg NO3--N kg-1 soil dry weight)
+    - Ammonium (NH4+-N; mg NH4+-N kg-1 soil dry weight)
+    - Phos (mg P kg-1 soil dry weight)
+    - Na (mg Na kg-1 soil dry weight)
+    - K (mg K kg-1 soil dry weight)
+    - Ca (mg Ca kg-1 soil dry weight)
+  - All measurements linked to the two seasonal sampling sets and report units accordingly.
+- Usage guidance:
+  - Suitable for integrating with greenhouse gas flux data to assess soil characteristics influencing emissions.
+  - Can be explored via self-serve tools (e.g., dashboards, pivot tables) to compare Summer vs. Autumn, and to examine relationships among physical, chemical, and biological soil properties.
+  - Data can support broader collaboration or policy work requiring soil health indicators and nutrient status in upland pastures.
+- Licensing and citation:
+  - Authors must be acknowledged if data are reused or reproduced.
+- References (methodological basis):
+  - Ball (1964); Mulvaney (1996); Miranda et al. (2001); Voroney et al. (2008); Waring & Bremner (1964).

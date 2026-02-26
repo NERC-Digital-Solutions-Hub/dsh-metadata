@@ -1,0 +1,39 @@
+# Supporting Documentation
+
+- Datasets
+  - Hampshire Avon: trace gas fluxes from experimentally manipulated plots in three sub-catchments (two entries with similar naming; Depositor: Name; Depositor: James Stockdale; Contact: james.stockdale@york.ac.uk)
+  - Files:
+    - gasflux_chalk.csv
+      - Description: CO2, CH4, and N2O fluxes from lysimeters; measured with automated chamber method.
+      - Location: OS Grid Reference ST 85862 38261.
+      - Timeframe: From 04 Aug 2015; To not specified.
+    - gasflux_clay.csv
+      - Description: CO2, CH4, and N2O fluxes from lysimeters; measured with automated chamber method.
+      - Location: OS Grid Reference ST 92218 27263.
+      - Timeframe: From 04 Mar 2015 to 04 Aug 2015.
+    - gasflux_greensand.csv
+      - Description: CO2 and CH4 fluxes from lysimeters; measured with automated chamber method.
+      - Location: OS Grid Reference SU 09720 57896.
+      - Timeframe: From 17 Mar 2015 to 01 Sep 2015.
+- Dataset structure
+  - All three files use the same CSV format and share similar variable structures (specific variables not listed in the provided text).
+- Methods and data collection
+  - Platform and measurement approach
+    - Near-continuous greenhouse gas measurements using SkyLine2D, a mobile platform.
+    - Sequential, automated measurements of all plots per site with a non-steady state chamber.
+    - Lysimeters contain intact soil-vegetation monoliths from unimproved pastures across three geological substrates in the Hampshire Avon catchment.
+  - Analyzers and analyte specifics
+    - CO2: Infra-red gas analyser (IRGA, model Li-Cor 8100).
+    - CH4: Campaign-mode measurements using Fast Greenhouse Gas Analyzer (FGGA; model 907-0010).
+    - N2O: Campaign-mode measurements using Isotopic N2O Analyzer (INA; model 914-0027) from Los Gatos Research.
+  - Measurement protocol
+    - Chamber closure: 180 seconds (extended to 300 seconds in campaign-mode).
+    - CO2 data processing: Li-Cor 8100 software (v2.0.0) with a 60-second deadband; quality control excludes poorly fitted slopes (R^2 < 0.7) or highly variable fluxes (CV > 50%) not near zero (fluxes between -0.5 and 0.5 µmol CO2 m^-2 s^-1).
+    - CH4 and N2O processing: linear regression with similar quality-control criteria as CO2.
+- Data quality and provenance implications for Data Leaders
+  - Clear documentation of instruments, measurement durations, and QC criteria supports reproducibility and cross-site comparability.
+  - Well-defined metadata elements (location, site description, instrument models, deposition contact) aid discoverability and governance.
+  - Metadata gaps to consider (noted in broader challenges): detailed variable definitions, calibration records, and broader metadata standards to ensure consistency and discoverability across datasets.
+- Access and contact
+  - Primary depositor: James Stockdale; contact: james.stockdale@york.ac.uk
+  - Data appears to be described with explicit measurement methods, site coordinates, and timeframes to enable assessment of suitability and potential reuse.

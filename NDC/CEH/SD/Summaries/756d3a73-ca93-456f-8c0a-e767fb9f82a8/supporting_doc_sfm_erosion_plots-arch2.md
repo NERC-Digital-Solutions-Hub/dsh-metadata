@@ -1,0 +1,31 @@
+# Collection, generation methods and quality control
+
+- Purpose: Establish seven erosion plots on Iron Tongue Hill (approximately 5 x 5 m) to capture burnt moorland surface state and monitor erosion and vegetation recovery; plots are identified by their OS grid references.
+- Plot locations: Seven plots with OS grid references:
+  - SK 00834 99983
+  - SK 00867 99986
+  - SE 00882 00010
+  - SE 00987 00113
+  - SE 01085 00511
+  - SE 01142 00397
+  - SE 01042 00206
+- Survey timeline and method:
+  - Each plot surveyed 10 times (including the initial survey) using Structure-from-Motion (SfM) photogrammetry.
+  - Survey dates: S1 (26/07/2018), S2 (02/08/2018), S3 (12/09/2018), S4 (04/10/2018), S5 (13/11/2018), S6 (13/12/2018), S7 (08/01/2018), S8 (16/05/2019), S9 (29/07/2019), S10 (22/11/2019). Note: S7 date appears chronologically inconsistent with surrounding dates.
+  - Fieldwork used 40–60 photographs per survey to build SfM models.
+- Data processing and products:
+  - SfM models created for all 70 surfaces.
+  - Dense SfM point clouds generated in Agisoft Photoscan (Metashape).
+  - Ground Control Points used to scale and georeference point clouds based on differential GPS coordinates.
+  - Registration errors reported to be approximately 20 mm.
+  - Outputs exported as .tif files:
+    - Dense DEM point cloud
+    - 1 mm/pixel resolution orthomosaic (orthophoto)
+- Data organization and file naming:
+  - For each plot and survey, two .tif files are produced:
+    - P1_S1_DEM.tif
+    - P1_S1_ortho.tif
+  - File convention: P# = Plot number (1–7), S# = Survey number (S1–S10)
+  - Total dataset: 7 plots x 10 surveys x 2 file types = 140 files
+- Figure reference:
+  - Figure 1 shows the location map of erosion plots on Iron Tongue Hill.

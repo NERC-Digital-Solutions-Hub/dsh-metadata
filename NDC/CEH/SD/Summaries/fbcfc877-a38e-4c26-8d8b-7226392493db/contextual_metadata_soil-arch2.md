@@ -1,0 +1,61 @@
+# Discovery metadata- Soil nutrients, soil pyrogenic carbon, soil bulk density and roots dry weight under different intensities of soil management in the Colombian Andes between 2019-2021
+
+- Purpose and scope
+  - Provides datasets on soil nutrients, soil pyrogenic carbon, soil bulk density, and roots dry weight.
+  - Collects under different intensities of soil management along an altitudinal gradient in Andean Colombia.
+  - Aims to understand drivers of variation in forest resilience and the effects of perturbation on ecosystem functioning.
+  - Part of the BioResilience project, funded by UK NERC (NE/R017980/1).
+
+- Study design and sampling
+  - 27 permanent forest monitoring plots, each 0.5 hectares.
+  - Locations span lowlands, midlands, and highlands along an altitudinal gradient.
+  - Disturbance gradient categories: low, medium, high perturbation, with recovery times specified.
+  - Plots distributed across five locations, covering diverse ecological contexts.
+  - Data collected 2019–2022 (plot establishment and soil sampling aligned with the BioResilience framework).
+
+- Data content (four CSV files)
+  - pyrogeniccarbonbr.csv
+    - Variables include: Plot_code, depth_range_cm, depth_upper_cm, depth_lower_cm, depth_mid_cm, Sample_Id, Project/Collected, %C_(Bulk), Lower_D13C_(pyc), Median_D13C_(pyc), Upper_D13C_(pyc), Cpyc_(%), %Cpyc/Cbulk, %OC.
+    - Measures total organic carbon, pyrogenic carbon (via HyPy), D13C corrections, and PyC/C_bulk ratios.
+  - soilnutrientbr.csv
+    - Variables include: Plot_code, pH, p_available, tot_p, sand, clay, silt, Ca_ex, Mg_ex, K_ex, Na_ex.
+  - bulkdensitybr.csv
+    - Variables include: Plot_code, Depth, Date_sample_taking, Municipio, Departamento, Farm, Land_use, Ecosystem, Bulk_density.
+  - dryweigthbr.csv
+    - Variables include: Plot_code, Ecosystem, Land_use, Municipio, Departamento, Depth, Dry_weight.
+- Data collection and processing methods
+  - Pyrogenic carbon
+    - TOC (%C_bulk) measured by elemental analysis (Costech ECS-4010).
+    - Pyrogenic carbon (Cpyc) measured via hydrogen pyrolysis (HyPy).
+    - Cpyc%/CBulk calculated from HyPy results; D13C corrections per Wurster et al. 2012.
+  - Soil nutrients
+    - pH: shaken soil-water suspension (10 g soil with 25 mL water) and measured with automatic probe.
+    - Available P: sequential extraction (resin, 0.5 M NaHCO3, 0.1 M NaOH, 1 M HCl).
+    - Total P: acid digestion (H2SO4) with H2O2 (Tiessen & Moir reference).
+    - Particle size: Bouyoucos method for sand, silt, clay.
+    - Exchangeable Ca, Mg, K, Na: Ag-TU extraction (Pleysier & Juo).
+  - Bulk density
+    - Pit samples collected and oven-dried to constant weight for bulk density calculation.
+  - Dry weight (roots)
+    - Roots dried to determine dry weight per plot and depth.
+- Calibration, quality control, and data validation
+  - Instrument calibration and reference value establishment before measurements.
+  - External review of database structure and metadata; checks for missing values, duplicates, and data typing.
+  - Metadata validation for accuracy, completeness, and consistency.
+  - Emphasis on accuracy, completeness, and consistency to ensure reliability for monitoring and policy evaluation.
+- Nature and units of recorded values
+  - pyrogeniccarbonbr.csv: %C_(Bulk), Lower/Median/Upper D13C_(pyc) in ‰, Cpyc_(%), %Cpyc/Cbulk, %OC (all with specified ranges and units).
+  - soilnutrientbr.csv: pH (water), p_available (mg/kg), tot_p (mg/kg or % as indicated), sand/clay/silt (%), Ca_ex/Mg_ex/K_ex/Na_ex (cmolc/kg).
+  - bulkdensitybr.csv: Depth (cm), Bulk_density (g/cm3), date, location identifiers (Municipio, Departamento, Farm), Land_use, Ecosystem.
+  - dryweigthbr.csv: Dry_weight (g), Depth (cm), Ecosystem, Land_use, location identifiers.
+- Data structure and accessibility
+  - Four csv files collectively titled to reflect pyrogenic carbon, soil nutrients, bulk density, and dry weight.
+  - Plot_code serves as a unique key linking records across files.
+  - Data are organized to support cross-tabulation by ecosystem, land use, depth, altitude, and perturbation level.
+- Context and references
+  - Linked to the BioResilience project, addressing forest resilience after Colombia’s post-conflict period.
+  - References key methods for pyrogenic carbon quantification and soil analysis (e.g., HyPy, Quesada et al., Tiessen & Moir, Wurster et al.).
+- Practical usage notes for analysts
+  - Use plot_code to merge datasets across the four CSV files for integrated analyses.
+  - Consider altitude and perturbation category as primary stratifiers when assessing soil properties and forest resilience.
+  - Leverage standardized measurement and QC procedures to compare with other monitoring datasets and over time.

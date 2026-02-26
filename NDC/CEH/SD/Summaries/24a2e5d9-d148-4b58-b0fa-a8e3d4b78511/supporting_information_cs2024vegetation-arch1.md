@@ -1,0 +1,36 @@
+# Countryside Survey: Vegetation Plots 2024
+
+- Overview
+  - Countryside Survey is a long-running UK study auditing natural resources to detect changes over time, with a rolling program adopted in 2019 (UKCEH-CS). The focus is on ecosystem-wide metrics across soils, vegetation, streams, habitats, and landscape features.
+  - The 2019–2023 rolling program concentrated on soil and vegetation recording at five plots per 1 km square. In 2024, additional plots are added along linear landscape features: 1 boundary plot, 1 roadside plot, 1 streamside plot, and 1 hedgerow plot (dominant species in England). Soil is sampled in these plots using methods aligned with adjacent field plots.
+  - The rolling survey targets ~500 1 km squares per five-year cycle, visiting about 100 squares annually. The first cycle started in 2019; 2024 marks the first year of the second cycle.
+- Design and Sampling Framework
+  - Sampling uses a multi-metric, ecosystem-based approach to assess changes in soils, vegetation, headwater streams, habitats, and landscape features, with data collected across multiple scales in the same locations where possible.
+  - The sample of 500 squares is randomly selected and stratified by the Land Classification of Great Britain (ITE-based). Exclusions: any square with >75% urban land or >90% sea.
+  - Long-running time series are anchored by the 1978 set of 256 squares; additional squares from 1990 onward expand the panel to preserve the longest possible time series for change detection.
+- Data Collection and Quality Assurance
+  - Field surveys are conducted by trained botanical surveyors following standard protocols (Smart et al., 2024) and field handbooks. Intensive pre-survey training and ongoing supervision ensure consistency.
+  - 10% of plots are re-surveyed for quality assurance by the same assessor since 1990, providing independent validation of plot locations and habitat classifications (JNCC broad and priority habitats).
+  - QA processes improve detection rate estimates by year, location, and plant type, supporting robust comparisons over time.
+- 2024 Data Products (Vegetation)
+  - Two main data files from 2024 vegetation plots:
+    - UKCEHCS_VEGETATION_PLOTS_2024.csv
+      - Plot-level information: YEAR, SQUARE_ID, PLOT_TYPE (plot category; e.g., boundary, hedgerow, roadside, streamside), PLOT_ID, land classification (LC07, LC07_NUM), environmental zone (ENV_ZONE_2007), country, county, habitat and vegetation descriptors (e.g., canopy height, shrub height), plot-specific metrics.
+      - Plot-specific metadata: environment zone descriptions, boundary/road/stream/hedgerow plot fields, and other site descriptors.
+    - UKCEHCS_VEGETATION_PLOT_SPECIES_2024.csv
+      - Species list per plot: YEAR, SQUARE_ID, PLOT_ID, PLOT_TYPE, species identifiers (BRC_NUMBER), species names (BRC_NAMES), nesting-related data (NEST_LEVEL) for plots with nests, cover metrics (ZERO_COVER, FIRST_COVER, TOTAL_COVER), and overall plot-based percent cover data.
+  - Nomenclature and structure align with the 2024 Field Handbook for Vegetation Plots (Smart et al., 2024). Species nomenclature follows Stace (1997).
+- Relationship to Other Data and Publications
+  - The Countryside Survey design and methods are linked to a broad suite of documentation, including ITE Land Classification (Bunce et al., 1996; 2007), habitat classifications (JNCC), UK Biodiversity Action Plan descriptions, and prior Countryside Survey reports (e.g., 2007 UK results; 2012 policy-relevant findings).
+  - Data and methodologies are supported by field handbooks and statistical reports (e.g., Scott 2008; Norton et al. 2012; Carey et al. 2008), with ongoing updates through the UKCEH Countryside Survey program and associated metadata.
+- Data Access and Use for Analysts
+  - The dataset is designed to enable national and subnational indicators, trend analysis, and cross-cutting analyses by soil, vegetation, habitat, and landscape context.
+  - Rolling design allows for year-to-year and cycle-to-cycle comparisons while buffering against climate variability.
+  - Data are documented with metadata and are intended to be discoverable via data portals; the program emphasises reproducibility, traceability of sources, and the ability to share datasets alongside accompanying methodology.
+- Practical Considerations for Analysis
+  - Key strengths: long-running time series from robust sampling, integration of multi-metric data (soil and vegetation), standardized protocols, and rigorous QA.
+  - Key limitations to note: 1 km square-based design with potential gaps in data for very local or urban areas; 2024 additions (boundary/roadside/streamside/hedgerow plots) extend the dataset but may require careful harmonization with the core five-plot design; some older data are tied to historic classifications and environmental zones that may need alignment with current classifications for comparability.
+  - Opportunities for analysis include examining changes in vegetation composition and cover over time, correlations with soil and habitat variables, and trend detection across spatial scales, aided by the standardized plot and species data and the accompanying field handbook.
+- Notes on Scope and Timeline
+  - The rolling program began in 2019; the first survey cycle concluded around 2023, with 2024 initiating the second cycle.
+  - The sampling framework prioritizes squares with the longest running data to maximize the reliability of trend assessments while maintaining national representativeness through stratified random selection.

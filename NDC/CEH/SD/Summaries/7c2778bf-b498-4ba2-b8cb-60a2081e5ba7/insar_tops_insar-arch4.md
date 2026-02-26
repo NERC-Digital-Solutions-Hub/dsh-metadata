@@ -1,0 +1,42 @@
+# Survey Overview
+
+- Purpose: Interferometric Synthetic Aperture Radar (InSAR) measurements over Caithness and Sutherland to quantify peatland surface motion across Flow Country using the APSIS InSAR technique.
+- What the data include:
+  - Surface motion time series for all land cover types within the survey area.
+  - Timeseries of peat surface height and long-term mean motion over the survey period.
+  - Data cadence: 6–12 days between acquisitions.
+  - Missing pixels excluded due to low coherence; missing survey dates due to processing issues or coherence problems.
+- Survey area and extent:
+  - Processed over about 930 km² of blanket bog in the Flow Country (Caithness and Sutherland), masking out surface water bodies and sea.
+  - Area referenced to Wick Airport as a stable point for motion measurements.
+- Data sources and processing:
+  - Data: 410 Sentinel-1A/1B IW images (Orbit 125) from 12/03/2015 to 01/06/2019, obtained from the Copernicus Open Access Hub.
+  - Processing framework: Advanced Pixel System Intermittent Small Baseline Subset (APSIS), an adapted ISBAS/time-series approach, implemented with Terra Motion Ltd’s Punnet software.
+  - Coherence and baselines:
+    - Maximum horizontal baseline: 250 m
+    - Maximum temporal separation: 1 year
+    - Coherence threshold: 0.25
+    - Point threshold: 360
+  - Phase unwrapping: In-house SNAPHU implementation.
+  - Output per pixel: two products at ~80 by 90 m resolution:
+    - Multiannual average line-of-sight velocity (m/yr)
+    - Mean velocity in the line-of-sight
+- Data products and file structure:
+  - Time-series files: stored as .tif with accompanying .aux files; file naming uses dates (e.g., 20190701.tif, 20190701.tif.aux).
+  - Height data: represents relative land-surface height for a given date (in meters).
+  - Additional outputs:
+    - ortho_velocity_utm_isbas.tif: mean LOS motion over the study period (m/yr)
+    - ortho_velocity_utm_isbas_evv.tif: corrected mean vertical motion over the study period (m/yr)
+    - ortho_cohcount.tif: number of coherent interferograms within each pixel
+    - ortho_velocity_utm_verror.tif: standard error of LOS motion (m/yr)
+- Coordinate reference system and data format:
+  - CRS: WGS84 UTM Zone 29N
+  - No_data value: -999
+- Data context and provenance:
+  - Sentinel data processed by ESA; APSIS/Punnet-based workflow developed by Terra Motion Ltd; SNAPHU-based phase unwrapping.
+  - Full processing chain covers SLC co-registration to time-series generation.
+- Access and references:
+  - Source data: Copernicus Sentinel data (2015–2019)
+  - Key references include foundational ISBAS/APSIS methods and related InSAR processing literature.
+- Appendices and data catalog:
+  - Appendix lists Sentinel-1 image entries used (Table 1) with dates and file naming conventions; the dataset includes extensive temporally stacked acquisitions spanning 2015–2019 and beyond.

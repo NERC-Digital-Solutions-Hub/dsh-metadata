@@ -1,0 +1,40 @@
+# Frame Modelling
+
+- FRAME (Fine Resolution Multi-pollutant Exchange) is a Lagrangian atmospheric transport model used to estimate the annual mean deposition of reduced and oxidised nitrogen over the United Kingdom, with a domain covering the UK and Ireland at 1 km x 1 km resolution and 33 vertical layers up to 2500 m.
+- Emissions input and sources
+  - UK emissions from the UK National Atmospheric Emissions Inventory (NAEI), split into 160 subsectors and aggregated into 11 SNAP sectors, for NH3, NOx, and SO2 for both diffuse and point sources.
+  - UK agricultural NH3 emissions are annually estimated using census data, agricultural practices, and input strengths, distributed to a 1 x 1 km grid using land-cover-weighted methods.
+  - Ireland emissions derived from CLRTAP/EMEP and E-PRTR data, with 2016 maps scaled to year-specific totals (MapEire) at 1 km x 1 km.
+  - Wider European boundary conditions come from CLRTAP/EMEP data (50 km x 50 km resolution).
+- Simulations and initialisation
+  - Eight simulations per year with 45-degree directional resolution generate boundary air concentrations, which initialize the 1 km x 1 km UK-domain simulation.
+- Forcing data and land cover
+  - Wind data from radiosondes or the Weather and Research Forecast model (WRF).
+  - Rain data from published sources (Tanguy et al. 2019; Walsh 2012).
+  - Land cover data from Land Cover Map 2015 (1 km; based on 5 land-cover categories).
+- Deposition outputs and resolution
+  - Outputs include wet and dry deposition of reduced nitrogen (NHx) and oxidised nitrogen (NOy).
+  - Depositions are produced on a 1 km x 1 km grid and presented as grid-average values weighted by land-cover proportions across the grid cell.
+  - Deposition is provided for forest and moorland land-cover categories and a grid-average (weighted across all land-cover types).
+  - Model evaluation uses measurements from the UKEAP network.
+- Data products and structure
+  - 28 CSV files (ASSIST_N_dep_kgha_xxxx.csv for each year 1990–2017) containing grid-average and land-cover-specific deposition values.
+  - Each file includes columns for:
+    - Easting and Northing (OS British National Grid)
+    - grd_NHx_dry, grd_NOy_dry (grid-average dry deposition)
+    - grd_NHx_wet, grd_NOy_wet (grid-average wet deposition)
+    - for_NHx_dry, for_NOy_dry (forest-only dry deposition)
+    - for_NHx_wet, for_NOy_wet (forest-only wet deposition)
+    - mor_NHx_dry, mor_NOy_dry (moorland-only dry deposition)
+    - mor_NHx_wet, mor_NOy_wet (moorland-only wet deposition)
+  - Deposition values are expressed as kilograms of nitrogen per hectare per year (kg N ha^-1 yr^-1); missing data are NA.
+- Data quality and governance
+  - FRAME and outputs have undergone extensive peer review and participate in Defra model inter-comparison exercises.
+  - The model and outputs are widely published in peer-reviewed literature and supported by a formal evaluation framework (e.g., UKEAP network comparisons).
+- Resource access and metadata
+  - Resource locator for related information: UK Acidifying and Eutrophying Atmospheric Pollutants (URL provided in the document).
+  - The data structure is documented in the data description and includes explicit field definitions and units.
+- Context and relevance for monitoring frameworks
+  - FRAME provides high-resolution, policy-relevant measures of nitrogen deposition to support environmental health monitoring and impact assessment.
+  - Uses official inventories and harmonized inputs to ensure data provenance and traceability.
+  - Integrates data governance considerations (transparency of inputs, reproducibility of outputs, and model evaluation) to underpin decision-making and future monitoring decisions.

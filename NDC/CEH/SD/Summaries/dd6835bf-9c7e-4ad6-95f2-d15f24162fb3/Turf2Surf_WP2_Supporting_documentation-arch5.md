@@ -1,0 +1,71 @@
+# Turf2Surf WP2 Supporting documentation for data
+
+- The Turf2Surf project investigates coupled nutrient (nitrogen and phosphorus) cycling in terrestrial and freshwater ecosystems and its relation to water quality, carbon sequestration and biodiversity. WP2 specifically studies nitrogen and phosphorus impacts on carbon exchange between land and atmosphere, with data collected between 2013 and 2016 in the Conwy catchment (North Wales).
+- Project scope and governance
+  - Authors and project members include: Sabine Reinsch (corresponding author), Helen Glanville, Simon Smart, Lina Mercado, Bridget Emmett, Davey Jones, and others across CEH, Bangor University, and Exeter University.
+  - Data responsible individuals are identified for each data area (e.g., NPP and data processing: Simon Smart; Plant photosynthesis: Lina Mercado; Leaf traits: Lina Mercado and Simon Smart; General soil measures: Helen Glanville; Phosphorus: Helen Glanville; Available C/N: Helen Glanville; Soil cations: Helen Glanville; Root biomass: Helen Glanville; TXRF: Helen Glanville).
+  - Version dates: 01/06/2016; 25/08/2016; 04/11/2016.
+  - Data produced to support integration with the JULES model; methodologies and data processing described in Turf2Surf WP2 data documents and, where applicable, in a separate methodology document (e.g., Turf2Surf_WP2_NPP_Smart.rft).
+- Datasets and contents
+  - Five data files included:
+    1) Turf2Surf_Plant_biomass_data.csv
+    2) Turf2Surf_Plant_structural_data.csv
+    3) Turf2Surf_Plant_physiological_data.csv
+    4) Turf2Surf_Soil_Carbon_data.csv
+    5) Turf2Surf_Soil_raw data.csv
+  - Common structure (applies to all files)
+    - Column A: unique Site number (as defined in Table 1)
+    - Column B: Habitat
+    - Column C: Habitat description
+    - Column D: Site name
+    - Column E: Ecosystem Component (Plant, Soil, or Roots)
+    - Column F: For plants, plant species; for soil/roots, NA
+    - Column G: Plot number
+    - Column H: Replicate number
+    - Column I: Soil depth interval (for Soil and Roots)
+  - Data are organized to enable cross-component analyses (plant biomass, structure, physiology, and soil properties) and are intended to support ecological and biogeochemical interpretation across habitats.
+  - Missing data are indicated as NA.
+- Data collection, processing, and measurement domains
+  - 1) Aboveground net primary productivity (NPP) and standing biomass (3 sites overview)
+    - Annual NPP measured 2013–2015 for dominant species; plots protected from grazing in winter; adjustments made for plant life strategies.
+    - Aboveground biomass measured at 10 of 17 sites with multiple replicates; methods differ by habitat type (grassland/bog vs woodland/shrubland). Biomass calculations include tree volume, wood density, and litter contributions; leaf biomass added for total standing biomass.
+    - Data processing linked to JULES (details in Turf2Surf_WP2_NPP_Smart.rft).
+  - 2) Plant photosynthesis measures
+    - Parameters: Asat, Vcmax (25°C), Jmax (25°C) measured for dominant species; measurements conducted with CIRAS-I/leaf gas exchange equipment and LICOR 6400 systems; CO2 levels ranged from 50–2000 ppm; temperatures around 20°C; data processed with fit algorithms (R scripts available).
+    - Temperature-corrected parameters to 25°C using established functions; methodology references provided (Farquhar et al. 1980; De Pury & Farquhar 1997; Medlyn et al. 2002; Kattge & Knorr 2007).
+    - Data processing and calculations performed by Lina Mercado and Harry Harmens; Vcmax/Jmax derived using De Kauwe’s fit framework.
+  - 3) Leaf traits and plant community traits
+    - Measurements include leaf N and P, leaf dry matter content (LDMC), specific leaf area (SLA), leaf mass per area (LMA), canopy height, bryophyte cover.
+    - LMA derived from scanned leaves with ImageJ; N and P analyzed via standard lab methods; SLA = 1/LMA.
+    - Data processing and integration with JULES performed by Blanes and Smart.
+  - 4) General soil measures (BD, SWC, C, N, pH, EC, LOI/LOI-C, etc.)
+    - Intact soil cores collected (17 habitats; depths down to 1 m) with multiple depth intervals.
+    - Measurements include soil water content, bulk density, loss-on-ignition (LOI and LOI-C), pH, electrical conductivity (EC), and total C and N (via thermal oxidation).
+  - 5) Phosphorus (P) fractions and related analyses
+    - Olsen P, Root-P, Complex-P, Enzyme-P, and Protons-P fractions analyzed to capture available, root-accessible, and recalcitrant P pools.
+    - Methods include colorimetric analysis (Malachite Green after extraction) and various extraction schemes (Olsen, CaCl2, citrate, enzyme extracts, HCl) to emulate plant/microbial P acquisition strategies.
+  - 6) Available carbon and nitrogen
+    - DOC and TDN measured after extracting soils with 0.5 M K2SO4; standardized QC and analysis protocols described.
+  - 7) Soil available cations (Ca, Na, K)
+    - Extracted with 0.5 M acetic acid; cations measured with flame photometry.
+  - 8) Root biomass and growth
+    - Total and fine root biomass measured via soil cores; roots scanned with WinRhizo for morphometrics; in-growth cores used to quantify root growth over growing season.
+  - 9) Soil elements by TXRF
+    - Comprehensive elemental analyses (Al, Fe, Ca, K, Ti, S, etc.) performed on 17 sites using TXRF; sample preparation and analysis described; limitations noted in a dedicated TXRF limitations file.
+- Data governance, quality, and interoperability
+  - Metadata and data lineage aligned with Turf2Surf WP2 aims to support integration with ecophysiological models (e.g., JULES) and cross-site comparisons.
+  - Documentation provides explicit data responsibilities, methods, and QA/QC references; a separate methodology document is available for detailed procedures (e.g., NPP processing).
+  - The dataset structure is designed to support discoverability and reuse, with consistent site/habitat descriptors and explicit replication information; NAD/NA usage clearly indicated.
+  - TXRF-specific limitations are acknowledged and documented in a dedicated file (Turf2Surf_WP2_TXRF_Limitations_Glanville.rft).
+- Practical notes for data stewardship
+  - Ensure metadata completeness and maintain version history; link data to the corresponding methodology documents and JULES integration work.
+  - Maintain consistent units and abbreviations (abbreviations are enumerated in the documentation) and preserve the explicit site/habitat mapping to Site numbers.
+  - Monitor and document any restricted depths or limited replicates (indicated as NA in the datasets) to support data discovery and proper interpretation.
+- References and resources
+  - Key methodological references provided for photosynthesis modeling and parameterization (Farquhar et al. 1980; De Kauwe et al.; Medlyn et al. 2002; Kattge & Knorr 2007).
+  - GitHub resource for photosynthesis modeling scripts: https://github.com/mdekauwe/FitFarquharModel
+  - Abbreviations and data processing details are supplied within the dataset documentation and accompanying tables.
+- Summary for data stewards
+  - The Turf2Surf WP2 data package offers a cohesive, multi-component dataset (plant biomass, structure, physiology, and soil properties) across diverse Conwy catchment habitats, with explicit data responsibilities and versioned documentation.
+  - The dataset structure (five CSV files) and detailed column definitions support robust data governance, discovery, and reuse, including model integration and cross-site analyses.
+  - Ongoing stewardship should focus on metadata completeness, adherence to the defined data structure, documentation of any data constraints (NA values, restricted depths, limited replicates), and reference to the methodological documents and TXRF limitations file.

@@ -1,0 +1,33 @@
+# A brief description/overview of the data being described
+
+- Dataset: PULA water quality data folder containing 25 CSV files, each representing one of 25 indicators (Total Organic Carbon; Chloride; Fluoride; Bromine; Sulfate; Potassium; Aluminium; Calcium; Iron; Magnesium; Sodium; Phosphorus; Chromium; Manganese; Cobalt; Nickel; Copper; Zinc; Arsenic; Selenium; Molybdenum; Cadmium; Lead; and stable water isotopes δD and δ18O).
+- Scope of data: groundwater (GW) and surface water (SW) samples collected across the Gaborone Reservoir catchment, south-west Botswana.
+- Timeframe: February 2017 – May 2018.
+- Partners: Botswana Department of Water Affairs, Botswana International University of Science and Technology, University of Aberdeen; part of the NERC PULA project on impacts of extreme rainfall and flooding on water quality.
+- Sampling design: 287 sampling occasions over 41 days, concentrated in ~15 campaigns; aims to capture spatial variability and flood-drought cycles; locations chosen for variability and accessibility.
+- Sampling and handling methods:
+  - For each occasion, multiple aliquots prepared for different analyses:
+    - 2 × 30 mL for trace metals (P, Cr, Mn, Co, Ni, Cu, Zn, As, Se, Mo, Cd, Pb) with in-field acidification.
+    - 2 × 15 mL for Total Organic Carbon (TOC).
+    - 2 × 10 mL for stable isotopes and metals (Al, Ca, Fe, K, Mg, Na).
+  - Field labeling, data collection logs, refrigeration, and shipment in 4 batches to the University of Aberdeen.
+  - Analyses conducted on arrival; timing aligned with campaign sequencing (2017–2018).
+- Analytical methods and instrumentation:
+  - ICP-MS (Agilent 7900) for 12 trace metals (P to Pb) in Aberdeen.
+  - MP-AES for Al, Ca, Fe, K, Mg, Na.
+  - LABTOC for TOC.
+  - TWIA-45-EP LGR for stable isotopes δD and δ18O.
+  - Calibration performed with multiple standards; 5 standards spanning sample ranges.
+- Data quality and caveats:
+  - Some results exceed the maximum calibration range; interpret with caution.
+  - Pb analyses largely incomplete due to methodological limitations; many results may be flagged as unreliably high or missing.
+  - Many elements (Cu, Zn, Cd, Pb, Al, Fe, Fl, Br) have more than one-third of samples below detection limits (reported as <LOD in CSVs).
+- Data structure and metadata:
+  - Each of the 25 CSV files starts with a header row detailing:
+    - Water type (SW or GW), sampling location name (Botswana DWA designation), geographic coordinates (UTM; also decimal degrees for latitude/longitude), elevation (m, if available).
+    - Dates of sampling (format: dd/mm/yy); blank cells indicate no value recorded.
+  - Spatial coverage is distributed to reflect physiographical differences (geology, land use) within the catchment.
+- Intended use for data users:
+  - Enables self-service analysis and visualization of multiple water quality indicators across space and time.
+  - Facilitates cross-variable analyses (e.g., trace metals, major ions, TOC, and isotopes) and linkage with hydrological or geospatial context.
+  - Useful for assessing impacts of extreme rainfall/flood events on surface and groundwater quality in a spatially variable setting.

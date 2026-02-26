@@ -1,0 +1,27 @@
+# WildCrickets06H_EarlyDominanceVsSurvival Description of content
+
+- The dataset describes individual male crickets with lifespan and early-life dominance classification.
+- Purpose: to study the relationship between early-life dominance in fights and survival (lifespan) in days.
+- Key fields:
+  - Year: calendar year in which the cricket was alive.
+  - Year alive: the year associated with the cricket’s life event(s).
+  - Lifespan: total lifespan in days.
+  - EarlyDominance: a binary category indicating early-life dominance, with values High (H) or Low (L).
+- Dominance classification rationale:
+  - EarlyDominance is determined as a relative measure ( High if dominance is above the population median; Low if below), representing an early-life behavioral trait linked to survival.
+- Data types:
+  - Year and Lifespan: numeric/integer.
+  - EarlyDominance: categorical (H or L).
+- Data quality considerations:
+  - Clarity needed for the exact meaning of Year vs Year alive (how each is defined in the study timeline).
+  - Potential missing values in any field (Year, Lifespan, EarlyDominance).
+  - Consistency of how dominance was measured and how the population median was computed to define High vs Low.
+  - Possible measurement error in lifespan or in determining dominance from fights.
+- Data governance and usage notes:
+  - Metadata should document data provenance, collection methods, and any preprocessing (e.g., how dominance was assessed, how lifespans were recorded).
+  - Ensure clear definitions, units, and constraints for users intending to combine this dataset with others.
+  - Consider caveats when linking Year fields to broader temporal analyses or longitudinal studies.
+- Potential analyses:
+  - Association between EarlyDominance and Lifespan.
+  - Stratified analyses by Year or other experimental conditions.
+  - Evaluation of data completeness and potential biases related to data collection timing or observation effort.

@@ -1,0 +1,29 @@
+# ReadMe file for SummerCO2Flux.csv
+
+- The dataset contains CO2 flux measurements from soil under four treatments: Control (no urine), artificial sheep urine, and real sheep urine (each in triplicate patches, with n=4 for the experimental design).
+- Location: unimproved grazing land in the Carneddau mountains, Snowdonia National Park, Wales, UK (556 m above sea level; 53°22'N, 3°95'W).
+- Experimental period and setup:
+  - Sheep excluded from plots from 15/05/2017 to avoid recent excretal effects.
+  - Treatments applied on 24/07/2017.
+  - Emissions monitored for 80 days post-treatment.
+  - Randomised block design with triplicate patches per treatment.
+  - Patch details: each patch receives 200 ml of urine over 100 cm2; artificial urine at 920 kg N ha-1; real urine at 930 kg N ha-1.
+- Data collection system:
+  - Automated greenhouse gas monitoring system (Queensland University of Technology) with a LI-COR LI-820.
+  - Eight flux measurements per chamber per day; 1-hour chamber closure; four gas samples per closure, with calibration after every fourth sample.
+  - Chamber basal area: 0.25 m2; chamber dimensions: 50 cm x 50 cm x 15 cm.
+- Data scope and content:
+  - High-frequency data from the automated system; includes processed flux data (not raw gas concentration data).
+  - Data headers: Timestamp (dd/mm/yy hh:mm); Days (time relative to treatment); Columns B–M: CO2 fluxes in mg CO2-C m-2 h-1.
+  - Column headers indicate treatment (Control, ArtUrine, Urine) and chamber/plot numbers.
+- Quality assurance and limitations:
+  - Data vetted by inspecting raw files and GC chromatograms; anomalies or interferences removed as needed (e.g., peak interference).
+  - Emissions dataset represents high-frequency measurements only; not raw concentration data.
+- Usage notes:
+  - Authors must be acknowledged if data are reused or reproduced.
+  - Data reflect flux measurements from a specific field site and experimental design; consider replicates and block effects in analyses.
+- Metadata and provenance:
+  - Location details, soil type (dystric histosol), and site management (unimproved grazing land) provided to support contextual analyses.
+- Key insights for analysts:
+  - Enables comparison of CO2 flux responses to artificial vs. real urine applications relative to a control over an 80-day post-treatment period.
+  - Suitable for time-series analyses, treatment effect estimation, and exploration of temporal dynamics in soil CO2 emissions under different nitrogen inputs.

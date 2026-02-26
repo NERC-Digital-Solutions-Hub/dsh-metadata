@@ -1,0 +1,82 @@
+# 2.1 Site description and species sampled
+
+- Study setting
+  - Located in a managed coniferous forestry plantation (~25 km2) in northwest England; main study area ~0.4 km2.
+  - Vegetation: established conifers with grasses and sedges; wetter areas dominated by Molinia caerulea; some shrubs and small broadleaf trees.
+  - Roe deer samples collected within ~2 km north/east of main site; previous use for estimating absorbed dose rates to burrowing mammals.
+
+- Sampling scope
+  - All terrestrial RAP species sampled except Reference Frog and Duck.
+  - Species selected to align with ICRP terrestrial RAP definitions; sampling covered adult life-stages where possible.
+
+- Data collected and geolocation
+  - GPS-recorded sampling locations for all sites.
+  - For each specimen or sample, recorded fresh weight, dimensions and other relevant measurements prior to analysis.
+
+- 1.2 Sample collection and preparation (by organism/type)
+  - Bees (Bombus spp.)
+    - August–September 2010; 30 pan traps at ground level or elevated on hummocks/stumps.
+    - Traps filled with water + a drop of washing-up liquid; emptied every 2–4 days.
+    - After sieving, bees pooled by collection day, then freeze-dried. Fresh weights and body dimensions measured for 20 individuals.
+    - Species identified: Bombus lucorum, Bombus terrestris, Bombus (Psithyrus) vestalis.
+  - Earthworms (Lumbricidae)
+    - August–September 2010; three composite samples (11–15 worms each) collected by digging.
+    - Gut evacuation via distilled water; gut-evacuated worms weighed and measured (15 individuals).
+  - Sitka spruce (Picea sitchensis)
+    - Three ~15-year-old self-seeded trees felled August 2010; samples from trunk heartwood, branches, needles, and immature cones.
+    - Air-dried to ~40–59% dry weight by component; seeds retained.
+  - Wood mice (Apodemus sylvaticus)
+    - 10 males and 10 females trapped in September 2010 within 0.25 km2 area; Longworth traps along transects.
+    - Baiting and handling protocol described; 3 trapping bouts over 8 days.
+    - 20 mice weighed and measured; carcasses skinned with GI tracts removed; organs sampled (gonads, liver, hind-leg muscle/bone, spleen/kidney/liver composite).
+    - Some carcasses used in Dermestes beetle colony to estimate total muscle and bone mass.
+  - Purple moor grass (Molina caerulea)
+    - Three samples collected August 2010; air-dried for analysis.
+  - Roe deer (Capreolus capreolus)
+    - Three females shot February 2011; ages varied (pregnant adults and a juvenile).
+    - Live-weight recorded; carcasses processed to separate muscle, fat, bone; GI tract and internal organs weighed.
+    - Muscle, bone, liver, ovaries weighed; beetle colony used to clean bone samples.
+  - Soils
+    - 41 topsoil samples (0–10 cm) collected from RAP sampling locations in Aug/Sep 2010.
+    - Additional 3 soil samples near Roe deer shooting sites in Feb 2011; samples chosen where deer activity evident.
+    - For Wood mice, soils sampled along trapping lines; all soils split for ICP-MS and gamma analysis.
+    - Feb 2011: 25 fresh soil samples for pH measurement.
+  - General note
+    - Additional co-located sampling areas avoided duplicate sampling (bee area overlapped with grass area).
+
+- 2 Sample analyses (analytical workflow)
+  - All RAP samples and associated soils sent for stable element analysis by ICP-MS; subset also analyzed for carbon and nitrogen; larger mass samples analyzed for gamma-emitting radionuclides.
+  - ICP-MS specifics
+    - Conducted by Fera (UKAS-accredited).
+    - Samples analyzed: three bees per collection date (whole), three sub-samples for purple moor grass, Sitka spruce (needles, branches, trunk heartwood), Sitka spruce cone and seeds; three samples for each tissue type in Wood mice and Roe deer; three freeze-dried earthworms; 12 soil samples (composites by RAP line).
+    - Preparation minimised metal contamination; homogenization done with ceramic blades or manual crushing.
+    - Digestion with nitric and hydrochloric acids in quartz high-pressure vessels; quantified 60 elements with Agilent ICP-MS (with collision cell).
+    - QA: reagent blanks and CRM-spiked blanks for recovery; replicates for QA.
+    - Data quality categories (Q±20, Q±40, QL, U, No CRM) based on CRM agreement.
+  - Gamma analysis
+    - Sub-samples homogenized; Sitka spruce trunk ashed; Roe deer muscle/liver diced; Wood mouse tissues insufficient in mass for gamma.
+    - Measurements using hyper-pure germanium detectors; spectra analyzed with Canberra Apex-Gamma; activity concentrations decay-corrected to sampling day.
+    - Replicates and blanks used for QA; UKAS-accredited methods SOP4504 and SOP4505.
+  - Loss on ignition (LOI) and pH
+    - LOI at 450°C for 4 h on all 41 soil samples.
+    - pH measured in distilled water for 25 fresh soil samples.
+  - Data outputs and records
+    - For each sample: element concentrations (60 elements), potential C and N data, gamma activity concentrations, LOI, pH.
+    - Documentation includes sample IDs, tissue type, sampling date/location, weights/dimensions, processing steps, QA results, and method references.
+
+- Data governance and quality considerations for stewardship
+  - Detailed metadata accompany samples (locations, dates, sample type, tissue, weights, and dimensions).
+  - Use of standardized QA metrics (CRM-based QC categories) and documented replication strategies.
+  - Clear delineation between composite vs. individual samples; explicit notes on exclusions (e.g., Reference Frog and Duck not sampled; any shrews released; Bank voles retained for possible analysis).
+  - Methods and accreditation cited (UKAS-accredited ICP-MS and gamma analysis; specific SOPs and references) to support data trustworthiness.
+  - Data handling implications
+    - Enables reproducibility and re-use for exposure/dose assessments and cross-species comparisons.
+    - Provides a framework for data archiving, discovery, and potential future analyses (e.g., updates to databases with new sample analyses or re-analyses).
+
+- References (selected)
+  - Allen, 1989. Chemical analysis of ecological materials.
+  - Beresford et al., 2012. Exposure of burrowing mammals to 222Rn.
+  - Best Practice Guidance, 2012. Roe deer.
+  - ICRP Publication 114, 2009. Transfer parameters for reference animals and plants.
+  - Westphal et al., 2008. Measuring bee diversity in European habitats.
+  - UKAS schedules for ICP-MS and gamma analyses.

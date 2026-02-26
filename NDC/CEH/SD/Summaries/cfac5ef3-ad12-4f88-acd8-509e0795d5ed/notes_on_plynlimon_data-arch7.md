@@ -1,0 +1,28 @@
+# Sampling regime
+
+- Timeframe and frequency: data cover March 2019 to March 2023 with sampling every four weeks.
+- Documentation and data sources: 
+  - Plynlimon_site_information.csv for sample site details
+  - Plynlimon_field_measurements_and_methods.csv for collection methods
+  - Description_of_column_headings.csv for instrument descriptions, units, and analytical methods
+  - CAST (CEH Analytical Services Thesaurus) used for determinant and method descriptions
+- Data structure and interpretation:
+  - Hydrochemical values are described with notes on detected values and units; multiple rows may exist for chemicals with changing LOD across subperiods
+  - Full determinant and method descriptions available in Description_of_column_headings.csv
+- Quality control and calibration:
+  - pH, conductivity, and alkalinity measured at CEH Bangor laboratories; ongoing participation in LGC AquaCheck Proficiency Testing
+  - Other chemical analyses conducted at CEH Lancaster; UKAS-accredited to ISO 17025:2005
+- Data cleaning and processing:
+  - Fixed inconsistent SO4-S notation (SO4 vs SO4-S)
+  - Removed obvious gross errors in chloride (Cl)
+  - Corrected inconsistent bromide units (mg/L vs µg/L)
+  - Resolved swapped pH values for Afon Cyff/Gwy (since Aug 2022)
+- Missing data and limitations:
+  - Missing values may result from insufficient samples (e.g., rain), instrument failure, or fieldworker error
+  - Some periods had restricted site access in 2020 due to Covid-19
+  - Some sample IDs are not included when no sample was collected
+- Context and interpretation notes:
+  - Rainfall volume measurements for Carregwen chemistry are recorded from a Hafren near-site rain gauge (near the B sample site) rather than the Carregwen gauge AJ to maintain consistency with existing datasets
+- GIS relevance:
+  - Spatial data linked via sample sites (Plynlimon_site_information.csv); join attributes by sample ID
+  - Clear unit, method, and QC metadata available to support accurate map-based representations and cross-dataset joins

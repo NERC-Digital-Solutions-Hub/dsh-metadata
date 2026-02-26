@@ -1,0 +1,38 @@
+# PastureProperties.csv
+
+- Project and authors: Uplands-N2O, Grant NE/M015351/1; Authors include Karina A Marsden, Lucy Lush, Jon A Holmberg, Mick J Whelan, Andrew J King, Rory P Wilson, Alice F Charteris, Laura M Cardenas, Davey L Jones, Dave R Chadwick.
+- Purpose and scope: Dataset describing properties of pasture fed to Welsh Mountain ewes during urine collection experiments; intended to support understanding of nitrogen and carbon dynamics in grazing systems; published data from 2016 field trials.
+- Study sites and design:
+  - Site 1: Semi-improved upland grassland at Henfaes Research Station, Abergwyngregyn, North Wales (53°13′N, 4°0′W), elevations around 270 m a.s.l.; vegetation classified as NVC U4 and MG6.
+  - Site 2: Lowland improved Lolium multiflorum pasture (<100 m a.s.l.).
+  - Trials conducted in spring, summer, and autumn 2016 at Site 1; autumn 2016 at Site 2.
+  - Forage samples (n = 4 per season per site) analyzed for total C and N; analyzed for nutritional metrics at external lab.
+- Analytical methods and labs:
+  - Total C and N measured with TruSpec Analyzer (Leco).
+  - Nutritional analyses performed by Sciantec Analytical (Cawood Scientific Ltd.): crude protein, NDF, sugar, ash, metabolizable energy (ME), digestible organic matter (D), ADF, oil by acid hydrolysis (OAH), and neutral cellulase gammanase digestibility (NCGD).
+- Data schema and variables:
+  - Season: spring, summer, or autumn.
+  - Site: semi-improved or improved pasture.
+  - N: pasture nitrogen content (% dry weight).
+  - CN: carbon-to-nitrogen ratio.
+  - Protein: crude protein content (g kg-1 pasture dry weight).
+  - NDF: neutral detergent fibre (g kg-1 pasture).
+  - Sugar: sugar content (g kg-1 pasture).
+  - Ash: ash content (g kg-1 pasture).
+  - ME: metabolizable energy (MJ kg-1 pasture).
+  - NCGD: neutral cellulase gammanase digestibility (g kg-1 pasture).
+  - D: digestible organic matter (%).
+  - ADF: acid detergent fibre (g kg-1 pasture).
+  - OAH: oil by acid hydrolysis (g kg-1 pasture).
+- Provenance and citation: If data are reused, please ensure full citation to the study authors and dataset.
+- Data governance and usability considerations:
+  - Clear documentation of site classifications (NVC codes U4, MG6) and site descriptions to support metadata consistency.
+  - Units are specified (e.g., g kg-1 pasture, MJ kg-1, %), aiding interoperability and aggregation.
+  - Linked data may span two field sites and multiple seasons, requiring careful join keys and versioning for updates.
+  - Data integrity relies on standardized laboratory methods and external lab reporting (TruSpec Analyzer; Sciantec Analytical) to ensure comparability.
+- Data management implications for Data Stewards:
+  - Ensure comprehensive metadata coverage: project, grant, authors, sites, locations, sampling timeline, Lab methods, units, and variable definitions.
+  - Maintain consistent variable naming and units across portals; map NVC site classifications to standardized ontologies where possible.
+  - Plan for data provenance tracking, versioning, and clear citation records for reuse.
+  - Facilitate discoverability by linking to related datasets (urine collection results) and noting any embargo or access restrictions.
+  - Address potential interoperability challenges due to different site formats or laboratory analyses by providing data transformation scripts or mapping tables.

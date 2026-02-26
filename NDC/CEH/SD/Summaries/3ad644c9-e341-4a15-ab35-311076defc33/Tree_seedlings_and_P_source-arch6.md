@@ -1,0 +1,50 @@
+# Study sites and focal species
+
+- Purpose: Shade-house experiments to test how seedling growth and mycorrhizal associations influence responses to different phosphorus (P) forms, and to assess generalisability across two forest biomes.
+- Study locations:
+  - Kabili-Sepilok Forest Reserve, Malaysia (tropical lowland rainforest; ECM-dominated overstorey, AM-dominated understorey).
+  - Heishiding Nature Reserve, China (subtropical evergreen broad-leaved forest; similar mycorrhizal pattern with AM/ECM dynamics).
+- Experimental subjects:
+  - Eight common tree species at each site with seeds/ fruits available; mycorrhizal status assigned per species based on Brundrett (2009).
+  - Species lists include ECM species (e.g., Shorea spp. at Sepilok) and AM species (e.g., Mangifera sp., Adenantera pavonina at Sepilok).
+  - Some species were removed from analysis due to poor survival (e.g., Canarium album at Heishiding).
+- Experimental design:
+  - Seedlings germinated and transplanted into pots (8 cm diameter, 10 cm tall) with sterilised field understory soil-sand mix and 20 g live soil inoculum from under adult trees.
+  - Treatments:
+    - Two mycorrhizal types: ECM vs AM.
+    - Five phosphorus (P) forms: inorganic phosphate (Na3PO4), simple organic (AMP), complex organic (phytic acid), a 1/3 mixture of the three, and water control.
+  - Experimental units: 12 blocks per site; each block contains all treatments, randomised within blocks.
+  - Replication: 40 pots per block (8 species × 5 P treatments), total of 480 pots per site.
+  - Duration and sampling: 6 months of growth; regular monitoring of seedling height; harvest to measure biomass and root-colonisation metrics.
+  - P application: monthly dosing for 6 months, with site-specific background P concentration informing dose (Heishiding 0.24 mg P g−1 soil; Sepilok 0.27 mg P g−1 soil).
+- Data collection and measurements:
+  - Growth metrics: shoot and root dry weights; total biomass; biomass standardized to species maximum (TotalBiomassStandard).
+  - Nutrient analyses: leaf N, P, K concentrations; soil available P (Olsen method).
+  - Mycorrhizal assessment:
+    - AM: percent root colonisation determined via gridline intersection after trypan blue staining (200 intersections per seedling).
+    - ECM: colonisation quantified as the proportion of colonised root tips (30–50 tips per seedling).
+- Data structure and fields (dataset schema):
+  - Site: Sepilok or Heishiding.
+  - Block: 24 blocks total (1–12 Sepilok; 13–24 Heishiding) representing replicates of each treatment–species combination.
+  - Ptreatment: numeric code 1–5 for P treatments; combined with P column details.
+  - P: descriptive P treatment (Water, Na3PO4, AMP, Phytic acid, Mixture).
+  - Species: coded A–H corresponding to focal species; full binomial names in SpName.
+  - SpName: binomial species name.
+  - MycorrhizalType: ECM or AM.
+  - Height: seedling height at end of experiment (cm).
+  - TotalBiomass: total dry mass at end (g).
+  - TotalBiomassStandard: biomass scaled to species maximum.
+  - RootBiomass: root dry mass (g).
+  - RootColonization: proportion colonised (AM: root length; ECM: root tips); NA if not sampled.
+- Data collection timeline and methods:
+  - Seed collection: Heishiding (Oct–Dec 2014); Sepilok (Aug 2015).
+  - Seedling germination and transplant: March 2015 onward; one seedling per pot; partial replacement of dead seedlings.
+  - Laboratory analyses: Kjeldahl method for total N; ICP-OES for total P and K after acid digestion; Olsen method for soil available P.
+- Practical notes for data reuse:
+  - The dataset enables cross-site comparisons of growth responses to P forms by ECM vs AM associations.
+  - Allows analysis of how mycorrhizal type interacts with P form to affect biomass allocation and nutrient uptake.
+  - Root-colonisation data support links between fungal association and nutrient acquisition strategies under different P regimes.
+- Key considerations for data use:
+  - Some species were excluded from analysis due to low survival, which may affect cross-site comparisons for certain taxa.
+  - Data are organized by site, block, and treatment, enabling breakdown by mycorrhizal type, P form, and species.
+  - Units and methods are specified (e.g., biomass in grams, colonisation percentages, Olsen P for soil P), facilitating reproducibility and meta-analyses.

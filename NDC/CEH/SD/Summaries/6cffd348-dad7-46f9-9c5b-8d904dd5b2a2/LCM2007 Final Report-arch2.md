@@ -1,0 +1,47 @@
+# Final Report for LCM2007 - the new UK land cover map
+
+- Aims and scope
+  - Delivers the first continuous UK parcel-based land cover map (LCM2007) derived from national cartography and multi-temporal imagery.
+  - 23 land cover classes mapped to 17 Broad Habitats, with supporting raster products (25 m and 1 km) and detailed metadata for traceability.
+  - Supports nationwide monitoring of habitat distribution, biodiversity context, ecosystem services, catchment planning, and landscape-scale policy analysis.
+- Data sources and production
+  - Multi-temporal satellite imagery (Landsat TM/ETM+, SPOT, LISS-III) used to maximize class separability; 6-band summer-winter composites; target year 2007.
+  - Spatial framework built from national cartography (OS MasterMap and related data); GB and NI treated as separate spatial databases.
+  - Image pre-processing includes cloud masking, atmospheric and topographic correction; segmentation yields parcels (minimum mapping unit ~0.5 ha); parcel-based, supervised classification with knowledge-based enhancements (KBEs) to resolve spectral confusion.
+  - Quality assurance via ground references (about 9,127 points; overall accuracy ~83%; class accuracies vary).
+- Product range and access
+  - Vector product: parcels with 10+ attributes (area, source images, Broad Habitat assignment, processing history, KBE history, ProbList, etc.).
+  - Raster products: 25 m resolution with 23 LCM2007 classes; 1 km rasters provide percentage cover or dominant class per square.
+  - Access: 1 km rasters via CEH Information Gateway; full vector and 25 m rasters available on request under licence (fees may apply).
+- Validation and accuracy
+  - Overall accuracy of 83% across UK; class-level accuracies vary significantly.
+  - Notable example class issues:
+    - Bog: high producer/users in some cases, but variability exists due to peat depth and context.
+    - Neutral vs Improved Grassland: differences attributed to spectral signatures and soil context; neutral grassland often spectrally similar to improved grassland.
+    - Fen, Marsh and Swamp: large differences with Countryside Survey (CS) due to mosaic nature and small, patchy occurrences; many CS-derived fen areas map to rough grassland or acid grassland in LCM2007.
+    - Montane and coastal habitats: underrepresented in CS, leading to discrepancies.
+  - Countryside Survey (CS) comparison indicates varying agreement across Broad Habitats; grassland classifications are particularly challenging due to one-to-many mappings to Broad Habitats.
+- Change mapping and monitoring
+  - Longitudinal change detection is complex because LCM1990/2000/2007 differ in spatial framework, class structure, and accuracies.
+  - Robust real-change detection methods are not fully established; cautions include potential artefacts from boundary shifts and spectral confusion.
+  - Suggested approaches include focusing on aggregated classes, targeting consistently mapped classes, or re-organizing older CEH maps into a common spatial framework to enable better change tracking.
+- UK distribution and landscape context (LCM2007 vs prior maps)
+  - LCM2007 indicates over 50% of the UK in intensive land use (arable/horticulture plus improved grassland) or built-up areas; about 12% in woodland; remaining land semi-natural or natural to coastal.
+  - England shows the highest share of intensive land use; Scotland has the largest share of Coniferous Woodland and substantial montane and semi-natural habitats.
+  - Compared with LCM2000, LCM2007 records higher arable and lower neutral grassland extents, with some shifts attributed to the updated spatial framework and improved boundary delineation.
+- Implications for analysts monitoring the environment
+  - Provides a standardized, policy-relevant, multi-layer evidence base for environmental health, habitat distribution, and landscape planning.
+  - When combined with other datasets (e.g., biodiversity surveys, ecosystem service analysis, catchment management data), supports habitat connectivity, biodiversity reporting, and Landscape-level policy evaluation.
+  - Emphasizes transparency through metadata, modular data products (vector, 25 m raster, and 1 km summaries), and broad accessibility for monitoring programs.
+- Key methodological notes for analysts
+  - The parcel-based spatial framework enhances spatial and thematic accuracy and supports future change detection, but requires careful interpretation when comparing to older pixel-based maps.
+  - KBEs (knowledge-based enhancements) are used to resolve spectral confusion and improve thematic resolution; about 20% of parcels were modified by KBEs.
+  - Validation datasets indicate that some habitats (e.g., fen, bog, montane) may be under- or over-represented depending on their patch size and boundary classification relative to the minimum mapped unit.
+- Data quality and future directions
+  - Recognize the impact of MMU definitions, boundary generalization, and year-to-year image availability on area estimates for certain habitats.
+  - Future work suggested includes integrating additional data sources to assign some grassland areas to fen/marsh/swamp classes and further developing a consistent framework for cross-year change detection.
+  - European and national linkages (e.g., Corine Land Cover) are strengthened by transforming LCM2007 into pan-European contexts, enabling broader policy and environmental assessments.
+- Notable appendices and contextual details
+  - Broad Habitat Association (BHA) rules describe the rationale for aligning LCM2007 classes with Countryside Survey categories, including complexities in grasslands, bogs, and montane habitats.
+  - Bespoke validation approaches promote a Bayesian-style, parcel-level quality check using high-resolution imagery to classify confidence levels (plausible, probable, possible).
+  - The report situates LCM2007 within the Countryside Survey partnership, clarifying the relationship between field surveys and satellite-derived mapping, and discusses complementary information sources and potential data integration avenues.

@@ -1,0 +1,34 @@
+# Data sources plus links to individual datasets
+
+- Purpose and scope
+  - Documentation for Earthstat crop yield data used to create maps of yields for three crops (maize, sugar cane, wheat) at multiple spatial scales.
+  - All yields are aligned to a single year (2016) and provided with full metadata to support quality control and reuse in monitoring and policy evaluation.
+- Crops covered
+  - Maize: yellow maize (grain, corn cob, popcorn, etc.) with additional data for maize used for silage where available.
+  - Sugar cane
+  - Wheat
+- Spatial scope and data levels
+  - Global coverage with data aggregated at national, subnational (state/province), and sub-subnational (county/district) levels.
+- Data formats and structure
+  - Primary data: NetCDF format with a global crop mask to indicate where each crop was grown.
+  - Crop mask files indicate growth presence (0 = not grown, 1 = grown).
+  - Projections: WGS84 (EPSG 4326) for crop masks; crop yield data in NetCDF with consistent metadata.
+  - Units: tonnes per hectare (t/ha); all data refer to year 2016.
+- Metadata and data content
+  - Each NetCDF file includes grid projection, year, crop type, yield, and units.
+  - Crop mask data accompany yield data to show spatial extent of cultivation.
+- Data sources and provenance
+  - Maize: FAOSTAT and EUROSTAT, plus national statistics offices from various countries; includes data for maize silage integrated with yellow maize data where available.
+  - Sugar cane: FAOSTAT and EUROSTAT; country-level data from national statistical agencies.
+  - Wheat: FAOSTAT and EUROSTAT; detailed country-level data from national agencies (e.g., US USDA, Statistics Canada, DEFRA, LUKE, etc.) with country-specific notes on data availability and regional granularity.
+- Data availability and coverage notes
+  - Data sources and links are provided for each country/region, with access dates (primarily June 2016 and August 2016).
+  - Some countries have partial data (e.g., regional vs. national data, or missing data for certain years or crops); for some regions, data may be missing entirely (e.g., certain years or regions for specific crops).
+  - For several countries, regional yield data exist only for subset years, with national-level values used to complement gaps.
+- Data quality and validation
+  - Data were checked for consistency with underlying national/global statistics to ensure that spatial disaggregation did not introduce errors.
+  - National/global statistics (spatially aggregated values) served as benchmarks for quality control of the final spatial data.
+- Practical notes for monitoring frameworks
+  - The dataset provides spatially explicit yield information suitable for environmental health monitoring, land-use planning, and policy evaluation.
+  - While comprehensive, the data may require handling of gaps, country-specific data availability issues, and potential transformations to align with local metadata standards.
+  - The accompanying crop masks enable rapid visualization of where each crop is grown, supporting interpretation of yield patterns in relation to land use and environmental factors.

@@ -1,0 +1,26 @@
+# Groundwater2030: Data structure for field survey files
+
+- Four CSV tables are provided to cover sanitary risk, water quality, well owner surveys, and well customer surveys:
+  - Groundwater2030_sanrisk.csv: Sanitary risk inspection data. Uses Wellcode as the Well ID field.
+  - Groundwater2030_waterquality.csv: Water quality test results. Uses Wellcode as the Well ID field.
+  - Groundwater2030_well_owner_survey.csv: Questionnaire survey of well owners. Uses Well number as the Well ID field.
+  - Groundwater2030_WellCustomerSurvey.csv: Questionnaire survey of well customers. Uses Well number as the Well ID field.
+- Common identifiers and linking:
+  - The four tables can be joined on common identifier fields that are unique to each groundwater source from the fieldwork.
+  - For sanrisk and waterquality, these identifier fields form the primary keys.
+  - For the owner survey and the customer survey, the Well IDs are held as foreign keys referencing the wells in the main datasets.
+- Identifier conventions and meanings:
+  - Unique identifiers follow the forms W1…n, S1…n, B1…n:
+    - W = well, S = spring, B = borehole.
+  - The O code indicates wells in the baseline survey for which water quality data could not be collected.
+  - If owner or customer questionnaires cannot be linked to a specific well, they are labeled None1, None2, etc., but still include neighborhood information.
+- Data governance and usability considerations for Data Stewards:
+  - Ensure metadata documents the identifier fields, their roles (primary vs foreign keys), and how records relate across tables.
+  - Maintain consistent use of W/S/B prefixes and the O baseline indicator to support interoperability.
+  - Manage one-to-many relationships (e.g., potentially multiple customers per groundwater source) and ensure proper linking to the corresponding well identifiers.
+  - Track data quality issues (e.g., wells with no associated water quality data) and the implications for analyses.
+  - Preserve provenance and update mechanisms so that changes in any dataset can be reflected across the integrated view.
+- Practical implications:
+  - Enables integrated discovery and use of datasets by ensuring records about sanitary risk, water quality, and social data (owners/customers) can be correlated at the source level.
+  - Highlights potential gaps where some wells lack water quality data (O-coded) or where questionnaire data could not be linked (None codes).
+  - Supports neighborhood-level context in questionnaire data, facilitating user-centric analyses while maintaining structured linkages to well identifiers.

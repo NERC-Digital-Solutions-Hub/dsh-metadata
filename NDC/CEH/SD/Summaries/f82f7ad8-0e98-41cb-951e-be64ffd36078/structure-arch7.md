@@ -1,0 +1,39 @@
+# Details of data structure
+
+- Dataset composition
+  - 34 RTF documents and 20 CSV documents containing interview transcripts from study villages.
+  - Participants' names anonymized.
+- File categories and counts
+  - Participatory_map_engl: 10
+  - Participatory_map_port: 10
+  - Seasonal_calendar_port: 3
+  - Seasonal_calendar_engl: 4
+  - Trendanalysis_port: 5
+  - Trendanalysis_engl: 10
+  - Village_profiles: 1
+  - Wealthranking_qual: 11
+- Data collection and fieldwork
+  - Exercise led by a research assistant with groups of 3–8 villagers in each village.
+  - Field protocol followed; notes taken in local language; transcripts prepared in Portuguese.
+  - Translations to English performed by a designated assistant and quality-checked by a third party.
+- Language and translation workflow
+  - Local language notes -> Portuguese transcripts -> English translations -> final checks.
+- Geographic and temporal scope
+  - Village-focused data; Village_profiles relate to a two-week pre-visit in July 2015 in Lioma (13 villages visited).
+- Data formats and structure
+  - Transcripts and qualitative/participatory data stored across RTf and CSV formats.
+  - Documents likely encompass participatory maps, seasonal calendars, trend analyses, village profiles, and wealth rankings.
+- Anonymization and ethics
+  - Interviewee names are anonymized to protect privacy.
+- GIS relevance and integration considerations
+  - Participatory maps (Participatory_map_engl/port) can be integrated into GIS for spatial visualization of village perspectives.
+  - Seasonal calendars and trend analyses can be linked to village locations as temporal/spatial attributes.
+  - Wealthranking_qual and Village_profiles provide contextual, qualitative attributes to enrich GIS layers.
+  - Translation and consistency across languages should be harmonized before GIS ingestion.
+- Data quality and management notes
+  - Data distributed across multiple files and formats; potential inconsistencies from multi-source translations.
+  - Positive quality control through third-party checking of translations.
+- Practical considerations for GIS specialists
+  - Plan to extract village-level attributes from transcripts and link them to village geographies.
+  - Normalize formats and create a metadata schema to describe language, translation status, and provenance.
+  - Consider creating GIS-ready outputs (e.g., shapefiles/GeoJSON) that incorporate participatory map data and qualitative attributes.

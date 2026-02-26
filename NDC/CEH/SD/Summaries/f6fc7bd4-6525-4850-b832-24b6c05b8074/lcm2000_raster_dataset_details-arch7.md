@@ -1,0 +1,185 @@
+# 25m raster
+
+- Purpose
+  - Describes two raster datasets derived from LCM2000 land cover data for Great Britain and Northern Ireland: a 25m raster and a 1km raster.
+  - 25m raster: records the dominant land cover per 25m cell using LCM2000 Subclasses.
+  - 1km raster: created by summarising the 25m raster within 1km grid.
+
+- Spatial coverage and grid details
+  - Across Great Britain (GB) and Northern Ireland (NI)
+  - 25m raster
+    - GB: 24,400 columns x 48,400 rows
+    - NI: 7,600 columns x 7,200 rows
+    - Lower left easting/northing: GB 50,000 m / 10,000 m; NI 180,000 m / 280,000 m
+    - Pixel size: 25 m
+    - Coordinate system: GB = British National Grid; NI = Irish National Grid
+    - Projection: Transverse Mercator; Spheroid: Airy (GB), Airy Modified 1849 (NI)
+    - Datum: OSGB 1936 (GB); Ireland 1965 (NI)
+    - Note: The values refer to the lower left corner of the lower-left pixel; to get the pixel centre add 12.5 m to each value.
+  - 1km raster
+    - GB: 700 columns x 1,300 rows
+    - NI: 500 columns x 500 rows
+    - Lower left easting/northing: GB 0 m / 0 m; NI 0 m / 0 m
+    - Pixel size: 1,000 m
+    - Coordinate system: GB = British National Grid; NI = Irish National Grid
+    - Projection: Transverse Mercator; Spheroid: Airy (GB), Airy Modified 1849 (NI)
+    - Datum: OSGB 1936 (GB); Ireland 1965 (NI)
+    - Note: The values refer to the lower left corner of the lower-left pixel; to get the pixel centre add 500 m to each value.
+
+- 25m raster details (Table 1)
+  - Metadata highlights
+    - Great Britain: 24400 columns, 48400 rows
+    - Northern Ireland: 7600 columns, 7200 rows
+    - Lower left easting/northing and pixel-centre offsets as noted above
+    - Pixel size: 25 m for both GB and NI
+    - Coordinate systems, projections, spheroids, and datums as described above
+
+- 1km raster details (Table 2)
+  - Metadata highlights
+    - Great Britain: 700 columns, 1300 rows
+    - Northern Ireland: 500 columns, 500 rows
+    - Lower left easting/northing: 0 m for both GB and NI
+    - Pixel size: 1000 m for both GB and NI
+    - Coordinate systems, projections, spheroids, and datums as described above
+  - Note: Pixel-centre offset for 1km: add 500 m to lower-left values.
+
+- Encoding and class correspondence (Table 3)
+  - 25m Subclass codes are floating point with one decimal place and are stored as unsigned 8-bit bytes by multiplying by 10 (range 0–255).
+  - Example: Water (inland) LCM2000 Subclass.25m code = 131 becomes 1310 when scaled? (illustrative): actual storage is 131 for 25m subclass; the key point is scaling to an 8-bit byte (e.g., 22.1 → 221).
+  - 1km codes and Aggregate class codes provide a cross-walk from 25m Subclasses to 1km Subclass codes and to 1km Aggregate class codes.
+  - Examples from Table 3
+    - Sea / Estuary
+      - 25m Subclass code: 221
+      - 1km subclass code: 1
+      - Aggregate class: Oceanic seas
+      - 1km aggregate code: 10
+    - Water (inland)
+      - 25m Subclass code: 131
+      - 1km subclass code: 2
+      - Aggregate class: Standing open water
+      - 1km aggregate code: 8
+    - Littoral rock
+      - 25m Subclass code: 201
+      - 1km subclass code: 3
+      - Aggregate class: Coastal
+      - 1km aggregate code: 9
+    - Littoral sediment
+      - 25m Subclass code: 211
+      - 1km subclass code: 4
+      - Aggregate class: Coastal
+      - 1km aggregate code: 9
+    - Saltmarsh
+      - 25m Subclass code: 212
+      - 1km subclass code: 5
+      - Aggregate class: Coastal
+      - 1km aggregate code: 9
+    - Supra-littoral rock
+      - 25m Subclass code: 181
+      - 1km subclass code: 6
+      - Aggregate class: Coastal
+      - 1km aggregate code: 9
+    - Supra-littoral sediment
+      - 25m Subclass code: 191
+      - 1km subclass code: 7
+      - Aggregate class: Coastal
+      - 1km aggregate code: 9
+    - Bog (deep peat)
+      - 25m Subclass code: 121
+      - 1km subclass code: 8
+      - Aggregate class: Mountain, heath, bog
+      - 1km aggregate code: 6
+    - Dense dwarf shrub heath
+      - 25m Subclass code: 101
+      - 1km subclass code: 9
+      - Aggregate class: Mountain, heath, bog
+      - 1km aggregate code: 6
+    - Open dwarf shrub heath
+      - 25m Subclass code: 102
+      - 1km subclass code: 10
+      - Aggregate class: Mountain, heath, bog
+      - 1km aggregate code: 6
+    - Montane habitats
+      - 25m Subclass code: 151
+      - 1km subclass code: 11
+      - Aggregate class: Mountain, heath, bog
+      - 1km aggregate code: 6
+    - Broad-leaved / mixed woodland
+      - 25m Subclass code: 11
+      - 1km subclass code: 12
+      - Aggregate class: Broad-leaved / mixed woodland
+      - 1km aggregate code: 1
+    - Coniferous woodland
+      - 25m Subclass code: 21
+      - 1km subclass code: 13
+      - Aggregate class: Coniferous woodland
+      - 1km aggregate code: 2
+    - Improved grassland
+      - 25m Subclass code: 51
+      - 1km subclass code: 14
+      - Aggregate class: Improved grassland
+      - 1km aggregate code: 4
+    - Neutral grassland
+      - 25m Subclass code: 61
+      - 1km subclass code: 15
+      - Aggregate class: Semi-natural grassland
+      - 1km aggregate code: 5
+    - Setaside grassland
+      - 25m Subclass code: 52
+      - 1km subclass code: 16
+      - Aggregate class: Semi-natural grassland
+      - 1km aggregate code: 5
+    - Bracken
+      - 25m Subclass code: 91
+      - 1km subclass code: 17
+      - Aggregate class: Semi-natural grassland
+      - 1km aggregate code: 5
+    - Calcareous grassland
+      - 25m Subclass code: 71
+      - 1km subclass code: 18
+      - Aggregate class: Semi-natural grassland
+      - 1km aggregate code: 5
+    - Acid grassland
+      - 25m Subclass code: 81
+      - 1km subclass code: 19
+      - Aggregate class: Semi-natural grassland
+      - 1km aggregate code: 5
+    - Fen, marsh, swamp
+      - 25m Subclass code: 111
+      - 1km subclass code: 20
+      - Aggregate class: Semi-natural grassland
+      - 1km aggregate code: 5
+    - Arable cereals
+      - 25m Subclass code: 41
+      - 1km subclass code: 21
+      - Aggregate class: Arable and horticulture
+      - 1km aggregate code: 3
+    - Arable horticulture
+      - 25m Subclass code: 42
+      - 1km subclass code: 22
+      - Aggregate class: Arable and horticulture
+      - 1km aggregate code: 3
+    - Arable non-rotational
+      - 25m Subclass code: 43
+      - 1km subclass code: 23
+      - Aggregate class: Arable and horticulture
+      - 1km aggregate code: 3
+    - Suburban / rural developed
+      - 25m Subclass code: 171
+      - 1km subclass code: 24
+      - Aggregate class: Built up areas and gardens
+      - 1km aggregate code: 7
+    - Continuous urban
+      - 25m Subclass code: 172
+      - 1km subclass code: 25
+      - Aggregate class: Built up areas and gardens
+      - 1km aggregate code: 7
+    - Inland bare ground
+      - 25m Subclass code: 161
+      - 1km subclass code: 26
+      - Aggregate class: Mountain, heath, bog
+      - 1km aggregate code: 6
+
+- Practical notes for GIS use
+  - The 25m dataset provides high-resolution classification suitable for detailed map-based analyses; the 1km raster offers a coarser, synthesis view.
+  - The cross-walk in Table 3 enables translation between 25m Subclasses, 1km Subclasses, and 1km Aggregate classes for multi-resolution analyses.
+  - The encoding to 8-bit bytes (via scaling) supports compact storage in raster formats.

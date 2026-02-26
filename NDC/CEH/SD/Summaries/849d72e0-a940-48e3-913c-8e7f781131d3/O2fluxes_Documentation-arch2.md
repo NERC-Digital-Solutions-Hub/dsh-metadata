@@ -1,0 +1,31 @@
+# Overview of data
+
+- Purpose and scope: Compilation of results from the stream metabolism component of the NERC Macronutrients consortium project on the role of lateral exchange in seaward flux of carbon, nitrogen, and phosphorus. Accompanied by one dataset (O2fluxes_Avon.CSV) and intended for cross-site, temporal assessment of environmental oxygen fluxes in river ecosystems.
+- Data collection period and scope: Four field campaigns conducted across 2013–2014 to measure oxygen production/consumption in the benthic zone and in the water column within six tributaries of the Hampshire Avon catchment. Campaign seasons and dates:
+  - Spring 2013 (23/04–09/05/2013)
+  - Summer 2013 (31/07–16/08/2013)
+  - Autumn 2013 (29/10–11/11/2013)
+  - Winter 2014 (28/01–09/02/2014)
+- Sites and connectivity:
+  - CE1: River Ebble
+  - GA2: River Avon
+  - GN1: River Nadder
+  - CW2: River Wylye
+  - AS1 (AP): Tributary of River Sem
+  - AS2 (AS): River Sem
+  - Note: CE1 excluded from winter sampling due to flooding; GA2 autumn/winter data excluded for quality reasons; other data quality issues marked as not determined.
+- Methods and protocols:
+  - Benthic O2 fluxes measured with aquatic eddy covariance (AEC); processing aligned with Attard et al. (2014) and Rovelli et al. (2015).
+  - Water-column O2 fluxes measured via 24-hour incubations of 100 mL bottles with an optical O2 sensor; procedures discussed in Rovelli et al. (submitted).
+- Data coverage and structure:
+  - Variables include campaign, site, depth (average stream depth in meters), benthic day/night fluxes (mmol/m2/h with SE and data counts), benthic Total PAR, daylight duration; and water-column day/night fluxes (µmol/L/h with data counts and detection limits), Total PAR in water column, and daylight duration near the surface.
+  - Daylight threshold for nighttime defined as 2 µmol quanta/m2/s; data may include values below detection (<0.1 µmol/L/h) for water-column fluxes.
+- Dataset specifics:
+  - Primary dataset: O2fluxes_Avon.CSV
+  - Additional documentation and context provided by the project references and related Rovelli et al. works; data provenance linked to NERC Environmental Information Data Centre.
+- Data quality and limitations:
+  - Some campaigns had incomplete or quality-filtered data (e.g., GA2 autumn/winter data omitted; CE1 winter sampling not conducted due to flooding).
+  - Missing data marked as not determined (n.d.); results and interpretations accompany related manuscript submissions and data deposition.
+- References and data provenance:
+  - Key methodological sources: Berg et al. (2003); Attard et al. (2014); Rovelli et al. (2015); Rovelli et al. (2016; data centre entry); and related Limnology & Oceanography publications.
+  - Data and analytic approaches align with published protocols for aquatic eddy-covariance measurements and benthic O2 uptake studies.

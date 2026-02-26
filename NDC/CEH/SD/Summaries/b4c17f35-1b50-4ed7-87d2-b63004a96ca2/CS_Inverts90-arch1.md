@@ -1,0 +1,26 @@
+# Headwater stream invertebrate data 1990 [Countryside Survey] Data Table Descriptions
+
+- This document describes the data tables and collection methods for headwater stream macroinvertebrate data from 1990 within the Countryside Survey, © NERC - Centre for Ecology & Hydrology.
+- Related guidance and reports to consult alongside this data:
+  - Murphy, John; Weatherby, Anita. 2008 Countryside Survey. Freshwater Manual.
+  - Dunbar, M. et al. 2010 Countryside Survey: Headwater Streams Report from 2007.
+- Data collection and methods:
+  - Macroinvertebrates sampled in 1990 using standard Countryside Survey protocols; sampling in a single stream-bed area (typically 5–15 m reach) with about 3 minutes of active sampling plus 1 minute of hand search.
+  - Samples collected with a 1 mm mesh pond net and brought to CEH for sorting/identification; supplementary measurements (width, depth, substrate) gathered for RIVPACS.
+  - Taxonomic identification and counting methods changed over time; harmonisation to a common modern taxonomy implemented to enable cross-year comparisons; standardisation performed to derive a mutually exclusive set of taxa for species richness calculations.
+- Data entry and quality control:
+  - Field data entered from paper sheets, then digitised into a database; cross-checked against original laboratory sheets with corrections applied for any data-entry errors.
+- Data tables included:
+  - STREAM_INV_SITE_90.csv (site-level data 1990):
+    - Key fields include: YEAR, SQUARE (1 km square code), SITE_ID, SAMPLE_DATE, WATER_WIDTH, DEPTH1/2/3, SURF_VEL_CAT, CLARITY, SAMPLING_TIME, METHOD, substrate cover categories (ROCK_PAVEMT, BOULDER_COBBLE, PEBBLE_GRAVEL, SAND, SILT_CLAY), DOM_PART_SIZE (phi sediment score), MACROPHYTE_COVER, LC07/LC07_NUM (land classification 2007), EZ_DESC_07 (environmental zone), COUNTRY, COUNTY07.
+  - STREAM_INV_SP_90.csv (species-level data 1990):
+    - Key fields include: YEAR, SQUARE, SITE_ID, SAMPLE_DATE, SPECIES_CODE, NAME (scientific name), LC07/LC07_NUM, EZ_DESC_07, COUNTRY, COUNTY07.
+- Taxonomy and data standardisation:
+  - Harmonisation of species data to current taxonomy; standardisation ensures consistent species richness calculations across years.
+- Usage rights and acknowledgement:
+  - All Countryside Survey data must be acknowledged with the specified credit text:
+    - Acknowledgement: Countryside Survey data owned by NERC - Centre for Ecology & Hydrology
+    - Countryside Survey © Database Right/Copyright NERC- Centre for Ecology & Hydrology. All rights reserved.
+- Additional information and references:
+  - This dataset is linked to the Countryside Survey series and should be interpreted in the context of the 2007 land classification (ITE Land Classification of Great Britain 2007) and environmental zone descriptors (EZ_DESC_07).
+  - Useful sources include Murphy & Weatherby (2008) and Dunbar et al. (2010); links to the CEH/NERC data catalogue are provided for documentation and dataset access.

@@ -1,0 +1,52 @@
+# Metadata
+
+- This dataset contains information about multiple palaeoecological proxies from stand-scale analyses of Cambusurich Wood, Scotland (Ordnance Survey grid reference: NN 62741 34679), generated to study long-term dynamics in ancient temperate woodland of high conservation value.
+- Sampling context:
+  - Duplicate peat cores collected using a large Russian corer in October 2020 from an 8.5 x 7 m peat-infilled forest hollow named Camb in Cambusurich Wood Site of Special Scientific Interest.
+  - Microfossil analyses performed on one core set (pollen, non-pollen palynomorphs, spores, and microcharcoal); plant macrofossil and macrocharcoal analyses performed on a second core set.
+  - Chronology and loss-on-ignition (LOI) analyses based on the same core as the microfossil analyses.
+  - Study supported by the Natural Environment Research Council (Grant NE/S007377/1).
+- Datasets included
+  - CambusurichWood_Raw_Microfossil_Data.csv
+    - Sample_mid_depth: 1 cm peat subsample mid-depth (cm)
+    - Sample_volume: volume of sample (cm3)
+    - Exotic_lycopodium_added: number of exotic lycopodium spores added for pollen concentration calculations (Stockmarr 1971)
+    - Exotic_lycopodium_counted: number of exotic lycopodium spores counted
+    - Exotic_lycopodium_tablets_added: number of exotic lycopodium tablets added
+    - Rows 6-120: raw count data for pollen, spores, non-pollen palynomorphs, and microcharcoal
+  - CambusurichWood_Raw_Macrofossil_Data.csv
+    - Sample_mid_depth: 2 cm peat subsample mid-depth (cm)
+    - Sample_volume: volume of sample
+    - Rows 3-76: raw data from macrofossil analyses per sample (depth)
+      - Categories include seeds (s), bracts (br), male catkin scales (m.cat), buds (bd), twigs (tw), cones (c), bud scales (bs), nutlets (n), florets (f), utricles (utr), megaspores (ms), fruit varves (fv), leaves (lf), leaf branches (lb), and undifferentiated remains
+      - Data presented as raw counts or a four-point semi-quantitative scale: x = rare (1-10), xx = occasional (10-50), xxx = frequent (10-100), xxxx = abundant (>100)
+    - Rows 77-80: macrocharcoal counts in size classes (0-1 mm, 1-2 mm, 2-3 mm, 3-4 mm)
+  - CambusurichWood_Chronological_Controls.csv
+    - Depth_cm: sample depth for chronological controls
+    - Lab-code: unique sample identifier (AMS radiocarbon dates only)
+    - Material: description of chronological control or dated materials
+    - 14C_Age: sample age (years before present)
+    - Error: age uncertainty (years)
+  - CambusurichWood_Loss_On_Ignition.csv
+    - Mid_depth_cm: mid-depth of 1 cm peat sample
+    - Loss-on-ignition: percentage LOI (per Heiri et al. 2001 protocol)
+  - CambusurichWood_Troels_Smith.csv
+    - Depth_cm: sediment depth boundaries (cm)
+    - Components: sediment components described using the Troels-Smith (1955) system
+- Supporting literature references included in the metadata
+  - Bennett, K. (1995-2007). Catalogue of pollen types.
+  - Field, Beaulieu, Guiot & Ponel (2000). Palaeoecology study.
+  - Heiri, Lotter, Lemeke (2001). LOI methodology
+  - Miola (2012). Tools for Non-Pollen Palynomorphs (NPPs)
+  - Moore, Webb & Collinson (1991). Pollen Analysis
+  - Nakagawa et al. (1998). Dense-media pollen extraction method
+  - Stockmarr (1971). Tablets with spores for absolute pollen analysis
+  - Troels-Smith (1955). Sediment characterization system
+- Implications for environmental monitoring
+  - Provides long-term proxies of environmental conditions in a temperate woodland, enabling assessment of ecosystem dynamics and policy-relevant indicators over time.
+  - Data are structured with standardized fields (depth, volume, counts/semiquantitative scales, chronological controls, LOI, sediment descriptions) to support integration with other environmental datasets and cross-study comparisons.
+  - Emphasizes data quality, provenance, and the use of established methodologies for reproducibility and potential reuse in broader environmental monitoring contexts.
+- Key considerations for use
+  - Datasets include both raw counts and semi-quantitative abundance levels, requiring careful handling for quantitative synthesis.
+  - Chronological controls linked to radiocarbon dating and LOI provide a timescale for long-term environmental interpretation.
+  - Data are stored as distinct CSV files with explicit field definitions, facilitating dataset combination and reanalysis.

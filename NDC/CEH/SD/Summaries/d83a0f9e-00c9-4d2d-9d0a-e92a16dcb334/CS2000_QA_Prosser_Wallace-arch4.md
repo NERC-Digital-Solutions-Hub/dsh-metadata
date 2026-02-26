@@ -1,0 +1,64 @@
+# COUNTRYSIDE SURVEY 2000 QUALITY ASSURANCE EXERCISE
+
+- Purpose and scope
+  - Assess consistency and reliability of the CS2000 field programme amid many recorders and surveyors.
+  - Sample: 38 of 519 squares; in each square, one quarter resurveyed (234 species plots across nine plot types).
+  - Aims include evaluating plot relocation efficiency, species concordance, cover estimates, direction of vegetation change, landcover mapping, and change recording; and comparing CS2000 with CS1990.
+
+- QA design and methodology
+  - Plot relocation: compare CS2000 plate/plot locations eight years on with original marks, photos, sketch maps, and metal detectors.
+  - Species records: compare approximately 6,000 records from 210 plots; assess concordance and mis-matches.
+  - Vegetation cover: compare percent cover for the 30 most frequent species between CS2000 and QA.
+  - Change analysis: use DECORANA ordination to assess axis scores and direction of change; analyze changes in land use, boundary features, and hedge types.
+  - Landcover and boundary mapping: evaluate primary codes, descriptive/qualification codes, and boundary features.
+  - Timing: Annex B provides dates and efficiency measures.
+
+- Key findings
+  - Plot relocation
+    - 86.7% of 210 plots could be relocated satisfactorily.
+    - Surveyors accurately relocated about 60% of plots; ~25% relocated with minor discrepancies; ~15% inadequately relocated.
+    - Plates recovered by QA assessors: 69.3% (vs 65.2% in 1991 CS1990 QA). Overall, relocation performance similar to prior QA despite eight-year gap.
+    - Some relocation errors occurred (e.g., wrong bank of a river, wrong side of hedge); in several cases, new plates were installed, complicating future surveys.
+  - Species concordance
+    - Mean species per plot increased from CS2000 to QA (CS2000 17.9 vs QA 20.4 in all plots), with some increases due to seasonal effects or extended species lists.
+    - Initial recording accuracy around 73% (slightly lower than CS1990), with non-concordances partly due to plot location errors.
+    - Across plots, data show a mix of correct identifications, mis-identifications (notably within Poa, Agrostis, Rumex, Ranunculus, Stellaria), and overlooked species; mosses and certain grasses commonly mis-recorded.
+  - Vegetation cover
+    - Overall cover agreement between CS2000 and QA varied by species; some species showed significant differences in cover estimates (e.g., Holcus lanatus, Dactylis glomerata, Anthoxanthum odoratum, Elymus repens, Arrhenatherum elatius, Eriophorum vaginatum).
+    - For many species, differences attributed to seasonal timing or identification challenges; some species showed no significant cover differences.
+    - Across species, surveyors tended to assign higher covers more often than assessors for certain grasses; overall not uniformly biased but with notable exceptions.
+  - Change in frequency of prevalent species
+    - Frequencies of many common species were broadly similar in ranking between CS2000 and QA, but with notable discrepancies in mosses and several grasses.
+    - Under- or over-recording patterns observed in several taxa; frequency discrepancies did not uniformly track with plot type.
+  - Direction of vegetation change
+    - DECORANA analysis: overall axis shift between CS2000 and QA was not significant; no directional bias detected in changes across plot types or land classes.
+  - Landcover mapping
+    - Primary landcover codes: high concordance; primary codes 88% agreement; landcover mapping showed strong consistency.
+    - Overall primary land cover agreement: 87.5% (excluding BAP codes); including BAP-related codes, alignment is lower due to broader habitat classifications.
+    - BAP codes: concordance around 77.4%.
+    - Hedge/wall/ boundary coding: hedge shapes and boundary descriptors showed good concordance, with some confusion around specific hedge/Wall codes; some instances of changes not reflected in CS2000 codes.
+  - Boundary features and hedge conditions
+    - Boundary height and stockproof status recorded with high efficiency (boundary height concordance ~92.8%; stockproof ~89.4%).
+    - Hedge shape coding (new codes 374–380) had limited success; many hedges fit existing codes, but some omissions occurred for hedge categories.
+  - Change recording (landuse and boundaries)
+    - Change concordance overall: 51.4% (low); 33.9% changes not noted by CS2000; 14.7% changes recorded but not substantiated by assessors.
+    - A substantial portion of changes since 1990 may have been missed; CS2000 plots may provide more reliable evidence of change than the original strings due to inconsistencies in 1990 coding.
+    - Many changes stem from mis-codings or misinterpretations by surveyors, highlighting the need for rigorous coding checks and post-survey reconciliation.
+
+- Implications for data strategy and governance
+  - Data reliability is generally robust for relocation and landcover coding, with strong codes concordance and minimal directional bias.
+  - Change detection and recording require improved consistency; significant portion of changes were not captured or substantiated, impacting long-term change analysis.
+  - Permanent marking and precise plot relocation are critical; eight-year relocation challenges underscore the importance of stable marking and updated metadata.
+  - Seasonal effects and observer biases influence species presence/absence and cover estimates; systematic training and standardized timing are important to reduce variance.
+  - Data standards: high concordance in primary landcover but variable in fine-grained landuse and hedge/wall coding; need clearer guidelines and consistent use of codes across field teams.
+  - Metadata and provenance: maintain detailed records of plot location, orientation, and boundary references to support future re-surveys and change detection.
+  - Recommendations for future practice (inference)
+    - Improve plot marking permanence and ensure robust documentation for relocation.
+    - Enhance training focused on accurate plot location/orientation, species identification (especially grasses and mosses), and consistent cover coding.
+    - Implement stricter change-recording protocols with explicit criteria for what constitutes a real change versus coding corrections.
+    - Standardize landcover and boundary codes with clearer definitions to minimize cross-survey variance.
+    - Consider multiple, well-spaced site visits for arable-margin plots to improve reliability in fluctuating weed communities.
+
+- Overall assessment
+  - The Countryside Survey 2000 QA shows substantial reliability in field data collection, especially for plot relocation and landcover coding, with no detectable directional bias in vegetation change.
+  - Key weaknesses relate to change detection and some aspects of boundary/hedge coding; improvement in data governance, coding standards, and documentation would strengthen long-term data utility for policy and management decisions.

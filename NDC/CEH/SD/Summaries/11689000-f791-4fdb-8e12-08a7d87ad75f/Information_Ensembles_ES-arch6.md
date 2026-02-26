@@ -1,0 +1,62 @@
+# Details of data-structure
+
+- Dataset comprises ensemble ecosystem service model outputs for sub-Saharan Africa, designed to enable data discovery, combination, analysis, and data product creation (e.g., dashboards, reports) for further exploration and use.
+- Contents include:
+  - 12 TIFF raster layers with world-files containing Mean, Median, and Standard Error of Mean (SEM) for ensemble outputs across services: Stored Carbon, Grazing use, Firewood, Charcoal.
+  - Two shapefiles with Mean, Median, and SEM ensembles for water supply in catchments delineated for weirs from two delineation sources (South Africa DWS and Global Runoff Data Centre). Layers separated due to overlapping polygons.
+  - One shapefile with Mean, Median, and SEM ensembles for per-country water use per capita.
+- Naming conventions:
+  - Rasters: <Ensemble type_Service>
+  - Shapefiles: <Ensembles_delineation source>
+- Spatial resolution and grid:
+  - 1 km x 1 km grid (1-band, 32-bit floating point)
+  - Area projected on WGS-1984 Lambert Azimuthal Equal Area (EPSG 9820); central meridian 20°E, latitude 5°N; units in metres
+- Geographic coverage:
+  - All continental territory of 36 African countries in Sub-Saharan Africa, including Madagascar
+  - Islands and areas not connected to the continent omitted
+  - Catchments crossing outside this area may be affected (e.g., Niger and contributors)
+- Data normalization and units:
+  - Relative service delivery, linearly normalised to 0–1
+  - No Data value: -999 (outside area or outside LCM mask per service)
+- Origin of model outputs:
+  - Based on Willcock et al. (2019) outputs from the WISER project (Which Ecosystem Service Models Best Capture the Needs of the Rural Poor?)
+  - Validations and correlations to model complexity described in Willcock et al. 2019
+  - Six ecosystem services modeled: Stored carbon; Available water supply; Water use (including beneficiaries); Non-Timber Forest Product: Firewood (including beneficiaries); Non-Timber Forest Product: Charcoal (including beneficiaries); Grazing (including beneficiaries)
+  - Modelling frameworks employed per service:
+    - InVEST
+    - Co$ting Nature
+    - WaterWorld
+    - Benefits transfer
+    - LPJ-GUESS
+    - Scholes models (grazing and rainfall surplus)
+  - Notes:
+    - Water services per hectare; other services per hectare with bespoke carbon-related outputs
+    - Use of relative rural population density to translate model outputs into beneficiary context
+    - LCM masks define relevant land cover for each service; values outside masks set to No Data
+    - All values log10-transformed (except stored carbon), then normalised to 0–1 using the 95th percentile (winsorising) to improve comparability
+- Ensemble modelling approach:
+  - Ensembles produced per ecosystem service and per data type (grid cells, catchment polygons for water, country polygons for water use)
+  - Ensemble statistics:
+    - Emn(x): Mean of available models for grid cell x
+    - Emd(x): Median of available models for grid cell x
+    - SEMx: Standard Error of Mean across models (σ(x,i) / sqrt(n))
+  - Model coverage:
+    - Only grid cells with at least 3 valid model estimates are included; others are No Data (-999)
+  - Processing pipeline:
+    - Clip Willcock et al. (2019) raster layers to a standard area shape and consistent extent
+    - Export as ASCII from ArcGIS, read into Matlab, compute mean, median, and SEM
+    - Re-normalise mean and median to 0–1
+    - Code for the workflow is available at https://github.com/dhooftman72/ES_Ensembles
+    - Results re-drawn in ArcGIS and exported as TIFF
+- Frameworks included in the ensembles per service (note: the number of models contributing per cell can vary; minimum 3 models required):
+  - Available water supply: InVEST; Co$ting Nature; WaterWorld; Benefits transfer; LPJ-GUESS; Scholes Growth days model
+  - Water usage: InVEST; Co$ting Nature; WaterWorld; Benefits transfer; LPJ-GUESS; Scholes Growth days model
+  - Stored carbon: InVEST; Co$ting Nature; Benefits transfer; LPJ-GUESS
+  - Non-Timber Forest Product – Firewood: InVEST; Co$ting Nature; Benefits transfer; LPJ-GUESS; Scholes firewood model
+  - Non-Timber Forest Product – Charcoal: InVEST; Co$ting Nature; Benefits transfer; LPJ-GUESS
+  - Grazing: InVEST; Co$ting Nature; Benefits transfer; LPJ-GUESS; Scholes (global/local parameters)
+- Funding information:
+  - WISER project: NE/L001322/1 (ESPA)
+  - EnsemblES: NE/T00391X/1
+- References used:
+  - Key methodological and modelling references supporting ensemble forecasting, ecosystem service modelling, and normalisation approaches (e.g., Araújo & New 2007; Costanza et al. 2014; Kareiva 2011; Marmion et al. 2009; Mulligan 2010, 2013, 2015; Scholes 1998; Smith et al. 2001, 2014; Verhagen et al. 2017; Willcock et al. 2019)

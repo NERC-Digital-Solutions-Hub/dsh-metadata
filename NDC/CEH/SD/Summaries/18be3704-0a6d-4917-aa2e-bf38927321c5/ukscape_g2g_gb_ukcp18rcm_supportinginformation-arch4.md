@@ -1,0 +1,81 @@
+# Supporting information for Grid-to-Grid model estimates of river flow for Great Britain driven by UK Climate Projections 2018 (UKCP18) Regional (12km) data (1980 to 2080)
+
+- Purpose and scope
+  - Provides Grid-to-Grid (G2G) hydrological model outputs for Great Britain using UKCP18 Regional (12km) projections, spanning 1980–2080.
+  - Delivered as high-resolution 1km x 1km gridded river-flow estimates to support climate-impact analyses.
+
+- What the dataset contains
+  - Variables
+    - Monthly mean river flow (m3 s-1)
+    - Annual maxima of daily mean river flow (m3 s-1) – water-year based (October–September)
+    - Annual minima of 7-day mean river flow (m3 s-1) – Dec–Nov years
+  - Spatial and temporal resolution
+    - Grid: 1km x 1km across non-tidal GB rivers with catchment area ≥ 50 km2
+    - Domain: 700 km x 1000 km grid on the GB national grid
+    - Time: December 1980 to November 2080 (per the 360-day calendar of UKCP18 data)
+    - Ensemble: 12 PPE members (01, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 15)
+  - Format and file structure
+    - NetCDF4 files, one per ensemble member and variable
+    - File naming examples:
+      - G2G_GB_mmflow_UKCP18RCM_ensnum_1980_2080.nc (monthly mean river flow)
+      - G2G_GB_amaxflow_UKCP18RCM_ensnum_1980_2080.nc (annual maxima)
+      - G2G_GB_aminflow_UKCP18RCM_ensnum_1980_2080.nc (annual minima)
+    - Time stamps: days since 1900-01-01; monthly flows nominally assigned to first day of month
+    - Values outside the non-tidal, ≥50 km2 catchment area are set to missing (-9999)
+  - Supporting datasets to aid interpretation
+    - Digitally-derived catchment-area grid (km2) draining to each 1km x 1km cell
+    - Estimated locations of NRFA river-flow gauging stations on the 1km grid, with a CSV of station IDs
+  - Data provenance and related datasets
+    - Driven by UKCP18 Regional (12km) projections; bias-corrected precipitation and derived potential evapotranspiration (PE)
+    - Downscaled from 12km to 1km using spatial weighting; temporal downscaling applied (uniform per time-step)
+    - Snow module is optional; PE computed via Penman–Monteith with adjustments for CO2 concentration
+    - Acknowledges similar datasets under MaRIUS-G2G-WAH2 and prior work (MaRIUS, MORECS-based calculations)
+
+- How the data were produced (methodology)
+  - Hydrological modeling
+    - Grid-to-Grid (G2G) model on a 1km x 1km grid, 15-minute time-step
+    - Calibrated with nationally applicable parameter values; minimal catchment-specific calibration
+    - Accounts for urban/suburban land-cover effects on runoff
+  - Forcing data and bias correction
+    - UKCP18 Regional (12km) daily precipitation, daily min/max temperature, daily PE
+    - Bias-correction of precipitation using monthly multiplicative factors
+    - PE derived via Penman–Monteith with MORECS-aligned method and CO2 adjustments
+  - Downscaling and data preparation
+    - 12km precipitation and PE downscaled to 1km (spatial weighting and elevation-based lapse rates)
+    - Temp data downscaled to 1km via elevation, then temporally smoothed within each time-step
+  - Outputs and coverage
+    - Outputs include dates of occurrence for annual maxima and minima
+    - Non-tidal rivers, with catchment area threshold, across GB
+    - Additional datasets provide gauging-station context for validation
+
+- How to use the dataset (data usage guidance)
+  - Comparisons
+    - For historical baselines, compare G2G outputs driven by UKCP18 with observation-based inputs or observed river flow in a statistical sense (not point-by-point time matching)
+    - When comparing periods, use the same ensemble member to preserve consistency
+    - These data are designed to support statistical assessments of climate-change impacts on river flows
+  - Relationship to other datasets
+    - Used alongside MaRIUS-G2G-WAH2-monthly datasets and other UK-SCAPE outputs for cross-study analyses
+    - The NRFA-station grid enables potential comparison to observed flows at gauging sites, though discretisation may introduce biases for small catchments
+  - Considerations for interpretation
+    - Best performance in catchments with natural flow regimes; reduced accuracy where artificial abstractions/discharges or complex subsurface hydrology are dominant
+    - Recognize calendar differences (360-day year) and alignment of annual-maximum/minimum periods with water-year conventions
+
+- Data quality, metadata and governance considerations
+  - Metadata and discoverability
+    - NetCDF4 format with explicit naming conventions and ensemble identifiers
+    - Supplementary catchment and NRFA station grids to enhance spatial context
+  - Uncertainties and limitations
+    - Ensemble spread reflects climate-model uncertainty; results are not point-wise weather replicas
+    - Downscaling introduces additional uncertainty; discretisation can affect small catchments
+  - Access and provenance
+    - Part of UK-SCAPE program; supported by NERC; documented with references and acknowledgements
+    - Encourages statistical cross-period analyses using consistent ensemble members to assess climate-change impacts
+
+- Key caveats and limitations
+  - Outputs are for non-tidal rivers with catchment area ≥50 km2; not applicable to tidal estuaries or small catchments below threshold
+  - Temporal calendar is 360-day year; monthly and annual timestamps reflect this convention
+  - Differences between observed weather features and the 12km PPE input data prevent exact time-point equivalence with observations
+
+- References and acknowledgements
+  - Includes foundational methodological references (Bell, Kay, Jones, etc.) and related MaRIUS, MORECS, and UKCP18 studies
+  - Acknowledges support from the Natural Environment Research Council (NE/R016429/1) and project collaborators

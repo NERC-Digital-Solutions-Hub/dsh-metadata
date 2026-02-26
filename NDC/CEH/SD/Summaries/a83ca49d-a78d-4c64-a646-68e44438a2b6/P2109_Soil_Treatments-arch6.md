@@ -1,0 +1,24 @@
+# NERC Soil Biodiversity Thematic Programme
+
+- The NERC Soil Biodiversity Thematic Programme (established 1999) focused on an intensive field experiment at Sourhope, Scottish Borders, to study changes in aboveground biomass, species composition, and relative abundance (soil biota) and to understand the functional roles of soil organisms in key ecological processes.
+- Aims and scope:
+  - Understand soil biota diversity and functional roles in ecosystem processes.
+  - Funded 24 projects on soil structure, carbon and nitrogen cycles, micro-, meso-, and macro-fauna roles.
+- Data set and metadata:
+  - Primary dataset: P2109_VIEW_SOIL_TREATMENTS.csv (1999–2001 treatments; additional data 2001–2004; usable with other site datasets as explanatory variables).
+  - Key columns: TREATMENT_DATE, BLOCK, MAIN_PLOT, SUB_PLOT, CELL_X, CELL_Y, TREATMENT_TYPE, DOSAGE.
+  - Documentation: SOURHOPE FIELD DATA HANDBOOK 2003 (Scott et al.); available via the EIDC catalogue.
+- Site and plot-level treatments:
+  - Site-level vegetation cutting (Cut 1–5) with specific yearly date ranges (1999–2002); occasional periods where mower was unavailable are noted.
+  - Plot-level treatments:
+    - Control 1 and Control 2: No treatment.
+    - Nitrogen: NH4NO3 fertilizer; total N 34%; annual rate 24 g m-2, split into two doses; treatment years 1999–2002 with specified spring and late-year dates.
+    - Lime: CaCO3; 600 g m-2 annually; one dose each year with specified spring dates.
+    - Nitrogen and Lime: combination of N and Lime as above.
+    - Insecticide: Dursban 4 OPA; 0.15 ml m-2; annual rate 7.5 L ha-1; applied after mowing on multiple dates per year.
+- Data usage and provenance:
+  - Data can be combined with other experimental datasets from the Sourhope site as explanatory variables.
+  - Emphasis on understanding the ask, data quality, and making outputs usable for end users (e.g., through dashboards or reports) with appropriate context.
+- Quality, access, and limitations:
+  - Data are subject to quality assurance procedures, but NERC cannot warrant accuracy or liability for use.
+  - Users should consider potential data limitations when integrating with broader analyses or policy work.

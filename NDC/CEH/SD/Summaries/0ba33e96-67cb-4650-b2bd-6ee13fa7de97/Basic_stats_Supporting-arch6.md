@@ -1,0 +1,26 @@
+# Summary statistics for performance of a genotyping microarray for Scots pine (Pinus sylvestris) and closely related members of the Pinus mugo complex
+
+- What has been recorded and what form does the data take
+  - Summary statistics describing the performance of a genotyping microarray tested on 87 pine samples.
+  - For ~50,000 SNPs (SNPs: single nucleotide polymorphisms) on the array, records include conversion rate, mean allelic frequency (MAF), and call rate (CR).
+  - Columns include: SNP_ID, ConversionType (Polymorphic or Monomorphic), MAF indicator (MAF > 0.1: Y/N/NA), and CR.
+- Data content and structure
+  - Number of SNPs: 49,829 from multiple sources.
+  - Per-locus summary stats: state (polymorphic/monomorphic), mean allele frequency, and conversion rate averaged across 87 genotypes.
+  - SNP sources:
+    - 49,052 SNPs from transcriptome sequencing across four pine species (P. sylvestris, P. mugo, P. uncinata, P. uliginosa), including shared and species-fixed polymorphisms.
+    - 578 SNPs from candidate genes (279 loci resequenced in prior studies).
+    - 14 mtDNA-targeted SNPs.
+    - 185 SNPs putatively associated with susceptibility to Dothistroma needle blight (from Pinus radiata data).
+- Data collection timeframe
+  - Assembled in 2016.
+- How the data were collected (methods and instrumentation)
+  - SNP set assembled for a 50K SNP Axiom array.
+  - Majority SNPs derived from transcriptome sequencing; array quality filtered by Thermo Fisher (p-convert values) with guidance on probes (avoid SNPs with polymorphisms within 35 bp).
+  - Final mix includes SNPs from transcriptome data, candidate genes, mtDNA targets, and disease-associated SNPs.
+- Why the data were collected
+  - For manufacture of a genotyping array for Scots pine and closely related Pinus mugo complex members.
+- Who was responsible for collection and interpretation
+  - Stephen Cavers (scav@ceh.ac.uk).
+- Completeness
+  - The completeness details are not provided in the excerpt; no explicit statement about missing data or exclusions beyond what is described is included.

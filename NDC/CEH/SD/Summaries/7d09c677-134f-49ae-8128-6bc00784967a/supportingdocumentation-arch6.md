@@ -1,0 +1,14 @@
+# Brief Overview
+
+- Repeat electrical resistivity tomography (ERT) measurements were conducted over four sites to capture changing soil resistivity throughout the agricultural growing season, with surveys in Spring, Summer, and Autumn to track transitions across construction, production, and post-harvest stages (April/May, June/July, September 2021).
+- Each ERT transect was precisely positioned using a Leica GNSS system with ~0.01 m accuracy to ensure repeatable survey locations.
+- Survey design: for each location, a single 19 m ERT transect with 96 electrodes spaced at 20 cm, using a Campus Tigre system and a Wenner Array to provide adequate vertical and horizontal resolution; approximately 660 apparent resistivity readings per transect down to ~1 m below ground level.
+- Field data were collected with ImagerPro2006 and processed with Geotomo’s Res2DInv.
+- The data collection supported the LANDWISE NFM research project (Land Management in Lowland Catchments for Integrated Flood Risk Reduction).
+- Sites and dates: Lower Hampen Farm (Barn Ground and Flat Ground), Manor Farm (Whittington Hill), Hendred Farm (Lockinge Untraffic and East Hendred Traffic A/B); fieldwork spans February, April, May, June, July, and September 2021, including site visits and ERT surveys.
+- Spatial context: Start and end coordinates (BNG) provided for each survey location to anchor spatial analyses.
+- Data collection details: 19 m transects with 96 electrodes (0.2 m spacing) using a Wenner Array; data captured as apparent resistivity readings with field data managed in ImagerPro2006 and initial handling in Res2DInv.
+- Nature and units: Resistivity measurements in Ohm.m; Wenner Array mechanism involves current between outer electrodes (C1, C2) and potential measurements between inner electrodes (P1, P2); increasing electrode spacing probes deeper portions of the soil profile (depth ~ a/2).
+- Quality control: Pre-survey checks for ground contact and electrode reliability; post-collection data cleaning in Res2DInv to remove noisy points before inversion.
+- Data structure: Stored in Geotomosoft Res2DInv format; example BarnGround_April.dat includes metadata (survey name, unit spacing 0.2, Wenner array flag, number of data points 660, mid-point x-location, 2-byte data per point with resistivity values, and end-of-survey indicators).
+- Potential data products and reuse: Enables generation of 2D resistivity models and cross-sections to analyze temporal and spatial subsurface changes; suitable for soil moisture, salinity, and groundwater/flood risk assessments within the LANDWISE framework.

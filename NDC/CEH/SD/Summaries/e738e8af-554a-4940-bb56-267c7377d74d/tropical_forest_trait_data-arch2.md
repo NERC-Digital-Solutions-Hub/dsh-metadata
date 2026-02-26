@@ -1,0 +1,47 @@
+# Study site
+
+- Location and habitat
+  - Unlogged primary forest: Danum Valley Conservation Area (DVCA), 438 km², lowland dipterocarp forest and lower montane rainforest; upper catchment of Segama River, Sabah, Malaysia.
+  - Adjacent selectively logged forest: Ulu Segama Forest Reserve (USFR); region sampled for the study.
+  - Coordinates: 4°58' N, 117°52' E.
+  - Climate: mean annual rainfall ~2305 mm; mean daily temperature ~25.8°C.
+- Logging history and management
+  - USFR was logged between 1981 and 1993 in annual coupes (~27 km² each) with high intensity (~118 m³ ha⁻¹ from 1970–1990).
+  - Harvest methods: tractor extraction on moderate terrain; high-lead cables on steep slopes.
+  - 1993 Reduced Impact Logging (RIL) trial introduced (climbers cut prior to felling, directional felling, planned harvest/skid-trails).
+  - Silvicultural intervention in a subset of coupes to restore forest carbon stocks as part of Innoprise-FACE Foundation Rainforest Rehabilitation Project; other areas left to natural recovery.
+- Seedling plots and sampling design
+  - Seedling plots (1 m²) established during mast fruiting in Sept–Oct 2019.
+  - Primary forest plots: 87 within the Danum Valley 50 ha forest dynamics plot.
+  - Logged forest plots: 96 within INDFORSUS project plots (52 actively restored; 44 naturally regenerating).
+  - Sampling status: 75 plots chosen for trait measurements (46 primary; 26 logged).
+- Species coverage and sampling strategy
+  - 15 species sampled across plots; 399 seedlings measured (195 in primary; 204 in logged).
+  - Species selection aimed to cover >80% of seedlings on plots and enable intraspecific comparisons between forest types.
+  - Some species sampled in both forest types; others exclusive to primary or logged forests due to availability or mortality.
+  - Seedling collection outside of permanent plots for multiple individuals to enable population monitoring; additional samples taken 20–40 m from plots when needed.
+- Trait sampling and measurement
+  - Traits measured on 14 per-seedling: leaf mass fraction (LMF), root mass fraction (RMF), leaf mass per area (LMA), leaf thickness, leaf force to punch (LFP), leaf area:shoot area (LA:SA), root length:shoot length (RS), specific maximum root length (SMRL), leaf N, P, Ca, Mg, K concentrations (per unit mass), and leaf N:P.
+  - Sampling occurred January–February 2020; seedlings (~six months post-mast) collected in the morning, processed in the field to separate above- and belowground material, and stored to prevent water loss.
+  - Additional measurements: seedling biomass (dry weight after 50°C drying for 48 h), longest root and shoot lengths, shoot diameter for cross-sectional area; leaf area by scanning and ImageJ LeafArea; leaf thickness measured on up to three leaves with calipers.
+  - Foliar nutrients: leaves ground and digested; N and P measured colorimetrically; Ca, K, Mg measured spectroscopically; moisture content determined by drying sub-sample to 105°C.
+  - Data normalization: all leaf nutrient measurements corrected to oven-dry basis.
+- Data structure and fields
+  - Dataset: Danum_Valley_Seedling_Traits.csv
+  - Key fields and descriptions
+    - Date: sampling date; Forest: primary or logged; Management: Natural Regeneration or Active Restoration; Species and Family.
+    - Seedling.Plot: 1 m² plot identifier; Individual: seedling identifier.
+    - Biomass: total seedling biomass (g).
+    - RL:SL: root length to shoot length ratio.
+    - LMF, RMF, LMA, Leaf.Thickness, LFP, LA:SA.
+    - Leaf.N, Leaf.P, Leaf.Ca, Leaf.K, Leaf.Mg, Leaf.N:P.
+    - SMRL: specific maximum root length.
+  - Descriptions of measured methods and calculation notes are included (e.g., how LMA is calculated, how LA:SA is derived, how N:P is computed).
+- Data quality, access and challenges
+  - Mortality and access constraints limited sampling in some logged plots; some species represented only in one forest type.
+  - Sampling outside plots intended to support ongoing monitoring of population dynamics.
+  - Standardized measurement protocols facilitate comparability across forest types and integration into larger environmental monitoring datasets.
+- Relevance for environmental monitoring
+  - Provides standardized seedling trait data across unlogged and selectively logged forests during a mast fruiting period.
+  - Supports assessment of restoration effectiveness, species trait variation due to logging, and early-life forest recovery indicators.
+  - Designed for integration into data portals and reuse for long-term monitoring of environmental health and policy performance.

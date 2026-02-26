@@ -1,0 +1,32 @@
+# River and surface water flood maps for Central Highlands of Vietnam and surrounding Provinces
+
+- Purpose and policy relevance
+  - Provide flood extent and depth information to help planners and policymakers assess areas at risk and inform policy initiatives, including sustainable development goals.
+- Coverage and content
+  - Geographic coverage: 11 provinces in the Central Highlands region of Vietnam.
+  - Dataset size: 330 GeoTiff files plus 1 readme; for each province, 30 flood maps (10 for each flood type).
+  - Flood depth: estimated in metres at 30 m horizontal grid spacing.
+  - Return periods: 10 design flood return periods ranging from 1 in 5 to 1 in 1000 years.
+  - Flood types: fluvial undefended (FUD), fluvial defended (FD), and pluvial (P); file names indicate type (FUD, FD, P).
+  - Application: designed to help estimate areas at most risk and support policy planning.
+- Methods and model details
+  - Based on an updated global flood model (Fathom 3.0), with improvements including channel conveyance capacity, design flood estimation, and a 30 m FABDEM elevation dataset.
+  - Model validation: against satellite imagery and household survey data (Hawker et al., in prep).
+  - Defence treatment: FD reflects estimated flood defence standards; validation indicates little difference between FD and FUD for these regions due to defence standard estimation. The model does not explicitly include non-visible defences beyond FABDEM resolution.
+- Data types, file naming, and return periods
+  - File naming convention: Province_FloodType_ReturnPeriod.tif (e.g., Quang_Ngai_FD_1in20.tif).
+  - Return periods represented: 1 in 5, 10, 20, 50, 75, 100, 200, 250, 500, 1000 years.
+  - Flood depth values: measured in metres; 0 m depth indicates no inundation.
+- Experimental design and validation
+  - Ten return periods selected to cover frequent to rare events, including the commonly used 1 in 100-year design standard.
+  - Validation approaches: comparison with flood observations from remote sensing, photos, newspaper reports, wrack marks; skill metrics such as critical success index, hit rate, false alarm ratio, and bias can be computed.
+- Data structure and access
+  - Structure: 11 provinces × 30 maps each (one per flood type and return period); stored as GeoTiff files.
+  - Usage guidance: open in GIS software (QGIS, ArcMap); set 0 m as no-data or start color scale above a flooded threshold; more advanced spatial/statistical analysis recommended in R or Python.
+- Quality control, governance, and openness
+  - Model quality: ongoing validation with satellite data and household surveys; comparative assessment with earlier version (Fathom 2.0) is documented.
+  - Metadata and documentation: includes a readme document; dataset emphasizes transparency and reproducibility.
+- Limitations and considerations for policy and monitoring
+  - Pluvial flood validation is challenging due to short-lasting events; defences not visible at 30 m resolution may not be fully captured.
+  - The absence of a comprehensive global flood defences database means defence estimates are model-based rather than site-verified.
+  - Users should consider data sharing and metadata completeness as factors in data governance and use for policy evaluation.

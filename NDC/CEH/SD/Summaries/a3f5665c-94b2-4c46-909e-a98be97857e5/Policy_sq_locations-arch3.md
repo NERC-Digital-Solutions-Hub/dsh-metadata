@@ -1,0 +1,22 @@
+# Policy of the Countryside Survey partners on access to survey square locations
+
+- Aim: Maximise the utility of Countryside Survey (CS) spatial data in the public interest while minimising risks to future surveys and landowner anonymity; applies only to survey square location data and spatial data within survey squares; all other CS data are publicly accessible.
+- Current CS partners: Natural Environment Research Council (CEH), Defra, Natural England, Welsh Government, Scottish Government, NIEA, Forestry Commission, Countryside Council for Wales, Scottish Natural Heritage.
+- Rationale for confidentiality: Survey square locations are kept confidential to preserve sampling representativeness and landowner goodwill, both vital for continuing surveys, scientific integrity, environmental protection, and landowner permission for future surveying. Public-interest justification is asserted.
+- Circumstances for release and precision levels:
+  - Four-digit grid references: can be released under licence to indicate which 10x10 km grid square contains a CS square.
+  - Six-digit grid references: ordinarily not released; only in very exceptional circumstances, with proof that related data/models require equal or higher confidentiality.
+  - Spatial data within squares (e.g., habitat maps): treated as capable of identifying square locations and released only under the same exceptional terms as six-digit references.
+  - Any release is under licensing with strict use limitations; external users must avoid enabling precise location identification.
+- Specific conditions of release:
+  - Licensees must preserve confidentiality, store data securely, and restrict access to authorized personnel.
+  - Licences are finite and tied to specific projects; data must be destroyed or confirmed destroyed at licence end.
+  - No data or derived information may be shared with third parties that could compromise square locations; data cannot be used to plan visits or verify landowner compliance.
+  - If required, licensees must demonstrate project management standards at least equivalent to JCOP.
+  - Licences for four-digit releases have looser IP-confidentiality requirements than six-digit releases; licensees may not attempt to deduce precise square locations.
+- Roles and governance:
+  - CEH, on behalf of NERC, decides on exceptional releases and issues hardcopy licences with appropriate clauses.
+  - If a release is denied, CEH follows statutory procedures under FOI Act and Environmental Information Regulations.
+  - CEH provides an annual report to CS partners detailing applications and decision grounds.
+  - CEH will, subject to reasonable demand, provide necessary pre-processing support for internal CS partnership use; requests from other organisations are case-by-case.
+  - Partners are advised to consult CEH before committing to use CS location data; CEH involvement may be collaborative or paid, as negotiated.

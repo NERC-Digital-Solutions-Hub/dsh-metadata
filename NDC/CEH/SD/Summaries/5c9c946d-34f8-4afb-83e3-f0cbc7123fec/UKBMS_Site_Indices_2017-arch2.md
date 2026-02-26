@@ -1,0 +1,34 @@
+# About the UK Butterfly Monitoring Scheme
+
+- Organization and purpose
+  - Funded by Butterfly Conservation, the Centre for Ecology and Hydrology, the British Trust for Ornithology, and the Joint Nature Conservation Committee.
+  - Relies on volunteers; provides annual data on butterfly population status from site-based monitoring and randomly sampled 1km squares.
+  - Monitors since 1976; currently over 2500 active sites each year; dataset supports understanding biodiversity status and policy questions.
+- Data collection framework (components)
+  - Standard butterfly transects (Pollard walks): fixed-route, 2–4 km, 5 m wide belt, all species recorded weekly from April–September (ideally 26 counts/year); ~2000 sites.
+  - Reduced effort surveys: single-species transects and alternative methods (e.g., timed counts, egg/larval web counts) focusing on selected species.
+  - Wider Countryside Butterfly Survey (WCBS): transect methodology in stratified-random 1km squares; two parallel 1km transects, 2–4 visits/year (min 2 in July/August); ~750 squares/year.
+- Data nature and trend analysis
+  - Uses abundance indices (relative measures, not absolute counts) from counts within transects/sites.
+  - Collated species indices produced with Generalised Abundance Index (GAI) method (2016) plus site-weighting by flight period coverage to emphasize observed data; combines all counts across methods to estimate seasonal patterns and fill gaps.
+- Quality control
+  - Field data collected on standard forms; online entry via UKBMS data site or Transect Walker; automated checks flag anomalies.
+  - Regional transect coordinators validate data; ongoing checks throughout the season.
+  - Further automated/manual validation for out-of-range distributions, unusual flight periods, first-time site records, or extreme/dissimilar counts; corrections applied to the main dataset as needed.
+- Details of this data download
+  - Contains annual abundance indices for each species at each UK site with sufficient data, 1976–2017; provided as a CSV.
+  - Columns include:
+    - SITE CODE: unique site identifier
+    - COUNTRY: region used for regional collated index
+    - SPECIES CODE: unique species code
+    - SPECIES: scientific name (Fauna Europaea v2.2)
+    - COMMON NAME: vernacular name (Emmet & Heath)
+    - YEAR: year of the collated index
+    - SITE INDEX: abundance index for the species at the site and year; -2 indicates insufficient monitoring within the flight period
+- Licence and attribution
+  - Open Government Licence (OGL) for open use; citation with DOI in any publications using the data; attribution statement required: Contains UK Butterfly Monitoring Scheme (UKBMS) data © Butterfly Conservation, CEH, BTO, and JNCC.
+- Offer of collaboration and contact details
+  - UKBMS partners offer guidance on dataset use and interpretation; potential co-authorship and intellectual input for publications.
+  - Contacts:
+    - Butterfly Conservation: Tom Brereton (tbrereton@butterfly-conservation.org)
+    - Centre for Ecology & Hydrology: Marc Botham (ukbms@ceh.ac.uk)

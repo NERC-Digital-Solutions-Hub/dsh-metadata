@@ -1,0 +1,35 @@
+# Itogon Landslide Inventory (v11) in WGS84 UTM Zone 51N
+
+- Purpose and scope
+  - Inventory of landslide polygons mapped after a typhoon, using satellite imagery and visual evidence of change.
+  - Mapping performed in a GIS environment to identify landslide areas for analysis and potential public sharing.
+- Data collection and mapping methods
+  - Polygons mapped by a single mapper using high- to very high-resolution satellite imagery.
+  - Visual observation of pre- and post-typhoon changes used to identify landslides.
+  - All measurements and mapping conducted within a Geographic Information System (GIS).
+- Temporal coverage
+  - Imagery time window: February 2018 to March 2019 (1 year).
+  - Analysis and processing conducted January–May 2020.
+- Data content and structure
+  - Data format: Shapefile bundle consisting of:
+    - itogon_inventory_v11_wgs84utm51.shp (main polygon data; 1101 features with FID)
+    - itogon_inventory_v11_wgs84utm51.dbf (attribute table)
+    - itogon_inventory_v11_wgs84utm51.cpg (UTF-8 encoding)
+    - itogon_inventory_v11_wgs84utm51.prj (projection: WGS 1984 / UTM Zone 51N)
+    - itogon_inventory_v11_wgs84utm51.shx (spatial indexes)
+    - itogon_inventory_v11_wgs84utm51.xml (version/changes metadata)
+  - Version: Inventory version 1.0 (XML notes changes/updates between geodatabases and external systems)
+- Spatial characteristics
+  - Projection: WGS 1984 UTM Zone 51N
+  - Polygon count: 1101
+  - Polygon areas: 25–120,000 m²
+  - Source imagery resolution: 0.5 m to 10 m (high to very high resolution)
+- Data quality and validation
+  - Post-mapping quality control: independent reviewer conducted quality checks.
+- Data provenance and references
+  - Location: Itogon (implied by file naming)
+  - Documentation includes a metadata file set describing sampling, methods, and data structure
+- Notes on use and limitations
+  - Mapping relied on a single person; potential for user interpretation variance.
+  - Data coverage reflects a specific event period and may be patchy across the region.
+  - No sample storage/treatment details provided (N/A).

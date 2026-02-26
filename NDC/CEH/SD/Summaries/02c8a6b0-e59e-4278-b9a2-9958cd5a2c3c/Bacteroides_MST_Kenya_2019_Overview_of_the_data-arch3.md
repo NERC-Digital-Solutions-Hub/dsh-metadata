@@ -1,0 +1,8 @@
+# Overview of the data being described
+
+- Public health context: Diarrhoeal disease and lack of access to safe water remain major health issues in developing countries; growing concern about transmission from livestock to humans in rural sub-Saharan Africa.
+- Project aim: Drinking-water under a "One Health" lens—quantifying microbial contamination pathways between livestock and drinking-water; develop or adapt low-cost Microbial Source Tracking (MST) techniques applicable to sub-Saharan Africa.
+- Key objective: Locally isolate novel Bacteroides spp. hosts from human and cattle fecal sources to indicate human and cattle fecal contamination of water sources; test the geographical stability of Bacteroides fragilis GB124 as a marker of human fecal contamination in drinking water sources in Siaya County, Kenya.
+- Data described: recovery and isolation of novel Bacteroides spp. hosts from human and cattle fecal sources; detected levels of bacteriophages capable of infecting these newly isolated Bacteroides spp. hosts; measurements of fecal indicator bacteria (total coliforms, Escherichia coli, intestinal enterococci); somatic coliphages; bacteriophages capable of infecting Bacteroides fragilis GB124.
+- Sampling locations: rural western Kenya water sources and a Kisumu wastewater treatment plant (KIWASCO).
+- Data collection and interpretation: Collected by Dr. Diogo Trajano Gomes da Silva and Mr. Kevin Ives; data interpreted by Dr. Diogo Trajano Gomes da Silva.

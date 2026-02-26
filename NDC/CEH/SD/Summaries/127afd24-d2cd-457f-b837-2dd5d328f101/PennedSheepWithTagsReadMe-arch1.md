@@ -1,0 +1,25 @@
+# PennedSheepWithTags.csv
+
+- Data context: urine collection study with Welsh Mountain ewes (n=5) housed in urine collection pens.
+- Equipment: Daily Diary (DD) tags (Wildbyte Technologies Ltd., UK) with triaxial accelerometers (X surge, Y sway, Z heave), 12-bit resolution, 40 Hz sampling.
+- Study aim: determine if the characteristic squatting posture and squat duration during urination can predict the subsequent urine volume per event.
+- Procedure:
+  - Sheep fed in the pens; urination events observed and start time of squatting recorded.
+  - Urine event volumes were measured.
+  - DD tag data were analyzed blind with a Boolean algorithm to determine squatting duration.
+- Key findings:
+  - The squatting duration correlated linearly with urine volume across all sheep.
+  - The Boolean algorithm detected squatting without false positives or negatives in this dataset.
+  - The linear relationship was used to estimate urine volume from squat time for field deployments.
+- Data structure (headers and units):
+  - Sheep_ID: replicate sheep identifier (1-5)
+  - Time: observed urination start time (hh:mm:ss)
+  - Date: date of urination event (dd/mm/yyyy)
+  - SquatTime: squatting duration identified by the algorithm (seconds)
+  - MeasuredVol: actual urine volume per event (ml)
+  - EstimatedVol: urine volume estimated from squat time using the regression (ml)
+- Metadata notes:
+  - Data are intended to be reusable with full citation.
+  - Study context includes project details: Project: Uplands-N2O; Grant NE/M015351/1; authors listed.
+- Practical takeaway:
+  - Squat duration from wearable accelerometers can serve as a predictor of urine volume in controlled conditions, enabling estimated volume calculations for field deployments.

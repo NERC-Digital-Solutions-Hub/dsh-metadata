@@ -1,0 +1,36 @@
+# Section 1: Overview
+
+- Purpose and scope
+  - Describes the data submitted for the Bislak River Styles Report and the paper “River Styles and stream power analysis reveal the diversity of fluvial morphology in a Philippine tropical catchment.”
+  - Initial analyses conducted March–October 2020; methods are discussed in Section 2; analyses and data gathering were led by Tolentino, Perez, and Guardian, with the rest of the authors reviewing River Styles classification.
+- Data assets produced
+  - Segment-stream power shapefiles and spreadsheets
+    - Derived using TopoToolbox V2 to extract the stream network and compute catchment areas; only alluvial channels (>1 km^2) used.
+    - Data cleaned with non-parametric quantile regression and quantile carving (τ = 0.5) to ensure downstream decreasing elevations; slope averaged over 0.2 km segments (1129 segments); outputs include mean elevation, mean slope, median catchment area per segment length.
+    - Validation of stream network position against Google Earth imagery.
+    - Omega (Ω) computed for constant total stream power using the relationship Ω = 0.44 χ A S, with γ (unit weight of water), A (catchment area), and S (slope) as inputs.
+    - Resulting files: shapefiles with segment-level stream power attributes and .csv spreadsheets of stream power partitioned by River Style.
+  - River Style identification shapefiles
+    - Stage One River Styles identification following the River Styles Framework (confinement, planform, geomorphic unit assemblage, and bed material texture).
+    - Outputs include polygon shapefiles for landscape units (lowland, upland, hills, catchment) and polylines for isohyet and river styles.
+    - Classification informed by Google Earth imagery (reach-level, ~1:75k to 1:10k; unit scales ~1:5k to 1:500) and ground-truthing; expert judgement governs classification due to multilayer criteria.
+- Processing workflow and data standards
+  - Data processing and analysis steps are anchored in established methods and references (Section 2 provides full details).
+  - Data are organized to enable downstream analyses by River Style, with stream power and geomorphic attributes linked to spatial units.
+- Data lineage and authorship
+  - Data gathering and analyses conducted by a core team in 2020; Section 2 provides methodological detail.
+  - Supporting documentation and multiple CSV and segment files accompany the shapefiles to enable replication and transparency.
+- Supporting documentation and metadata
+  - A comprehensive set of CSVs accompanies the spatial data, including:
+    - RS_Complete_Confined_Floodplain_Pockets.csv, RS_Complete_Confined_Gorge.csv, RS_Complete_Confined_Steep_Headwater.csv, RS_Complete_Laterally_Unconfined_Braided.csv, RS_Complete_Laterally_Unconfined_Deltaic.csv, RS_Complete_Partly_Confined_Bedrock.csv, RS_Complete_Partly_Confined_Planform_Low_Sin.csv, RS_Complete_Partly_Confined_Plan.csv, and several variants with column headers and details specified (e.g., FID, X, Y, Z, Strahler/Shreve orders, area, distance to outlet, slope, chi values, ks n values, Stream Power).
+    - Segment-level files: Bislak_200m_segment.csv and Bislak_50m_segment.csv, mapping attributes such as stream_pow, coordinates, elevations, stream orders (Strahler/Shreve), flow accumulation, distance to outlet, gradient, chi (0.45 and 0.79 concavity indices), normalised channel steepness (ksn), and related area/distances.
+  - Detailed metadata structure includes coordinate axes (x, y, z), lineage identifiers (FID), river style names, segment identifications, and multiple derived metrics.
+- River Styles framework and classification references
+  - Brierley GJ & Fryirs KA (2005) Geomorphology and river management: applications of the river styles framework.
+  - Fryirs K & Brierley G (2018) Naming convention for geomorphic river types in River Styles.
+  - Khan S & Fryirs KA (2020) Delineation of valley bottom segments using coarse-resolution DEMs.
+  - Rhoads B (2020) River dynamics for management.
+  - Schwanghart W & Scherler D (2014, 2017) TopoToolbox and smoothing/uncertainty methods.
+  - Tadaki M, Brierley G, Cullum C (2014) River classification theory and practice.
+- References
+  - Full citation list for foundational methods and tools used in the analysis (as detailed in the document).

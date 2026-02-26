@@ -1,0 +1,30 @@
+# European Monitoring and Evaluation Program Model for the UK (EMEP4UK) annual surface resistance based atmospheric deposition for 2018
+
+- Dataset scope: Provides the annual total surface resistance based atmospheric deposition for the UK in 2018, produced with EMEP4UK model rv4.36 and WRF v4.2.2.
+- Models and domain: 
+  - Atmospheric chemistry transport model (ACTM) derived from EMEP MSC-W rv4.36.
+  - 3D meteorology from WRF v4.2.2 with 1°x1° reanalysis nudging every 6 hours (NCEP/NCAR GFS).
+  - Model domain covers EU at 27×27 km2 with a nested UK domain at 3×3 km2; only UK results provided.
+- Emissions data:
+  - UK emissions (NOx, NH3, SO2, primary PM2.5, primary PMcoarse, CO, NMVOCs) from 2019 NAEI, rescaled to 2018.
+  - Non-UK emissions from CEIP at 0.1°×0.1°; UK total used for 2018.
+- Data outputs and formats:
+  - NetCDF files with surface concentration and deposition fields.
+  - Key variables include:
+    - Area_Grid_km2 (grid area in km2)
+    - DDEP_SOX_m2Grid (dry deposition of oxidised sulphur, area weighted)
+    - DDEP_SOX_m2Conif, DDEP_SOX_m2Seminat, DDEP_SOX_m2Water_D, DDEP_SOX_m2Decid, DDEP_SOX_m2Crops (deposition to conifer, semi-natural, water, deciduous, crops)
+    - DDEP_OXN_m2Grid, DDEP_OXN_m2Conif, DDEP_OXN_m2Seminat, DDEP_OXN_m2Water_D, DDEP_OXN_m2Decid, DDEP_OXN_m2Crops (oxidised nitrogen)
+    - DDEP_RDN_m2Grid, DDEP_RDN_m2Conif, DDEP_RDN_m2Seminat, DDEP_RDN_m2Water_D, DDEP_RDN_m2Decid, DDEP_RDN_m2Crops (reduced nitrogen)
+  - Units: area in km2; dry deposition in mgS/m2 or mgN/m2 depending on species and category.
+- Data structure and usage guidance:
+  - Data projected on a polar stereographic grid.
+  - Proj4: '+proj=stere +ellps=sphere +lat_0=90.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +units=km +k_0=0.9330127018922193 +no_defs +type=crs'.
+  - NetCDF libraries required; compatible with R, Python, and FORTRAN.
+- Quality control and caveats:
+  - QA/QC performed for 2018; reports available on request.
+  - Content provided without warranty; use at your own risk.
+- Data access notes:
+  - Computations performed on the UKCEH POLAR cluster using the Intel FORTRAN compiler.
+- Bibliography and references:
+  - Key sources detailing model descriptions, emissions, and evaluation studies (Ge et al., 2021; Gu et al., 2021; Jalkanen et al., 2016; NCEP/NCAR reanalysis; Simpson et al., 2012; Skamarock et al., 2019; Vieno et al., 2016a,b).

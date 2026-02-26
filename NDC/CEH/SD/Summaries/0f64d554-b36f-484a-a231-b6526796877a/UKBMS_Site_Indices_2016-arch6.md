@@ -1,0 +1,35 @@
+# United Kingdom Butterfly Monitoring Scheme: site indices data 2016
+
+- Data access and citation details
+  - Data and reuse/licensing information available at the provided DOI link.
+  - If you use the data, citation required: Botham, M.; Roy, D.; Brereton, T.; Middlebrook, I.; Randle, Z. (2017). United Kingdom Butterfly Monitoring Scheme: site indices data 2016. NERC Environmental Information Data Centre.
+- Data description
+  - UKBMS collects data from over 2,000 sites per year across the UK.
+  - Primary method: fixed linear transect counts along Pollard walks, recording all butterfly species within a 5 m wide belt.
+  - Across sites, data sources include:
+    - All-species transects (majority of sites, 2–4 km transects, weekly counts April–September; ~26 counts/year).
+    - Reduced-effort Wider Countryside Butterfly Survey (WCBS) transects initiated in 2009 for farmland and wider habitats.
+    - Single-species transects, timed counts, and egg/larval web counts on select occasions.
+  - WCBS provides 2–4 visits per site (versus 26 for full transects) and is not used for site indices.
+- Data collection methods
+  - Field data recorded on standard forms; entered via UKBMS MyData or Transect Walker software.
+  - Data are uploaded to an Oracle database; regional transect coordinators compile data for their regions.
+  - Data collection windows and weather constraints ensure butterfly activity (specific times, wind, temperature, sunlight conditions).
+  - Site indices are calculated only for sites with sufficient monitoring; for timed/egg/larval counts, counts are aligned to peak flight period and adjusted for time of year and habitat area.
+  - Missing values for transects are handled using a General Additive Model (GAM) to impute and compute site indices.
+- Nature and units of recorded values
+  - Site indices are relative measures of population size, not absolute counts.
+  - They are proportional indicators that correlate with more intensive methods (e.g., mark-release-recapture) and vary by species visibility.
+  - Indices reflect the proportion of butterflies observed relative to expected abundance, not exact population figures.
+- Quality control
+  - In-field automatic checks (Transect Walker) flag unusually high counts or records outside flight periods.
+  - Regional coordinators review data; continuous validation during the season.
+  - Automated and manual validation procedures check for: records outside known distribution, atypical flight periods, first-time site records, extreme or unusual counts.
+- Format and structure of stored data
+  - Site indices are stored as CSV files with columns:
+    - Species (scientific name per Fauna Europaea), Common name, Year, SiteNo, Site Index.
+  - Value -2 indicates insufficient data to calculate an accurate site index for a given species/site/year.
+  - Data are originally captured in field, entered online, and stored in an Oracle database.
+- Reference information and context
+  - Key methodological sources include Pollard & Yates (1993) on transect-based monitoring, Rothery & Roy (2001) on GAM-based imputation for butterfly data, and Emmet & Heath (1990) for nomenclature.
+  - Data coverage and methods emphasize standardized transects, fixed routes, and long-term comparability to assess trends.

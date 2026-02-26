@@ -1,0 +1,87 @@
+# 1990 Countryside Survey: Quality Assurance Exercise
+
+- Purpose and scope
+  - Assess accuracy and reliability of field recording in the 1990 Countryside Survey.
+  - Quantify observer error and factors affecting recording (season, location, plot type).
+  - Relate findings to previous surveys and provide recommendations to improve future surveys.
+
+- Background and context for GIS work
+  - Field data involve multiple plot types (quadrats: 200 m2 X-plots and 4 m2 Y-plots; linear plots; road verges; hedges; streamsides; boundaries).
+  - Mapping includes primary land-use codes, boundary features, and vegetation cover at fixed point grids.
+  - Emphasis on standardised data capture to support map-based data products.
+
+- QA methodology (design and execution)
+  - Two QA phases:
+    - Autumn 1990: 21 squares reassessed using original sketch maps; two independent assessors.
+    - 1991: Enhanced QA with photographs; 1 km squares from each terrain class revisited; included self-assessment with a second set of assessors.
+  - Plot relocation and plate extraction:
+    - Relocation attempts for buried plates and plot corners using sketch maps, photographs, and metal detectors.
+    - Six plot types (200 m2 X-plots, 4 m2 Y-plots, and linear/road verge/hedge/streamside/boundary plots) sampled within quarters of each square.
+  - Data quality indicators:
+    - Species concordance: multiple indices to compare original vs. QA results (percent agreement, agreement, % accuracy, etc.).
+    - Efficiency of recording: initial % accuracy and square-level accuracy.
+  - Land-use and mapping assessment:
+    - Primary land-use codes evaluated for consistency; boundary codes and level qualifiers analyzed.
+    - Nine-point vegetation sampling at a fixed grid to assess cover and presence.
+
+- Key findings (in relation to GIS data quality and mapping)
+  - Plot relocation and plate recovery
+    - Plate recovery ~71% with five-minute searches; overall plot relocation efficiency improved in 1991 with photographs.
+    - Road verges and boundary features were more efficiently relocated than small plots (e.g., X plots more reliable than Y plots).
+  - Species concordance and change over time
+    - Overall species agreement across plots around 60–61% (T1 vs T2), with higher agreement when seasonal/management changes were accounted for.
+    - 1991 re-survey showed a real increase in mean species per plot (about 13% overall), largely due to genuine ecological differences between years, not only observer experience.
+    - Seasonal effects were strong in lowland arable/marginal areas; upland plots showed less seasonal variation.
+    - Certain taxa (grasses and bryophytes) contributed to mismatches; bryophyte and grass identification were highlighted as needs for training.
+  - Cover estimates and species groups
+    - Visual cover estimates for species present at both times differed only modestly for some species, but not consistently across all taxa.
+    - Group-level analyses indicated no significant difference in the cumulative frequency of selected species groups between 1990 and 1991.
+  - Mapping accuracy (land-use and boundaries)
+    - Primary land-use codes showed high concordance (roughly 88–89% overall); boundary codes slightly lower (around 80–83% depending on time/assessor).
+    - Land-class aggregates showed significant differences in accuracy: upland (UP) generally less accurate than lowland aggregates (LC, LG, MA).
+    - The accuracy of pinpoint location versus code interpretation varied; primary land-use coding was robust, but boundary and descriptive qualifiers introduced more variability.
+  - Mapping of vegetation and cover at point grid
+    - Single-point concordance around 81% for dominant species; co-dominant and less dominant species had much lower concordance.
+    - For robust GIS use, emphasis should be on Major species at each point rather than complete species lists.
+  - Data quality implications
+    - A large portion of mismatches attributed to seasonal/annual changes, mis-location, and mis-identifications, with seasonal effects being particularly important in lower-intensity land uses.
+    - There is evidence that initial surveys may under-record certain taxa (notably in drought years), which affects year-to-year change statistics.
+
+- Recommendations (selected, relevant for GIS data creation and future surveys)
+  - R1: Record lichens and bryophytes more consistently; integrate habitat-based identification in training.
+  - R2: Conduct QA as close as practical to the initial survey timing to minimize seasonal/annual variation confounding.
+  - R3: Use photographs to re-establish exact plot positions; require annotating photographs with location context.
+  - R4: Annotate and relate photographs to plot locations; ensure accompanying sketches show identifiable features.
+  - R5: Use metal marker plates to mark X plots; allocate extra effort for plate relocation in unenclosed upland areas.
+  - R6: Improve quadrat placement methods (especially Y plots); photographs should clearly show the location and nearby features.
+  - R7: Define 4 m2 (Y) plots with a survey tape; orient so that the shorter side aligns N-S and place at the SE corner.
+  - R8–R11: Refine land-use coding structure:
+    - Sub-divide upland grassland (102) into upland improved vs. upland grassland; recognize lowland rush pastures; identify wet heath as a distinct primary type.
+    - Increase primary land-use code options and provide simpler, dichotomous decision trees for field recording to reduce ambiguity.
+    - Restrict primary boundary coding to hedge presence and use qualifying codes for species composition.
+  - R12: Limit reporting to the two most prevalent species at a point to improve reproducibility of land-use mapping.
+  - R13–R14: Enhance guidance on recording tree and shrub cover; apply explicit rules for interpreting cover data in subsequent analyses.
+  - R15–R16: Improve training emphasis on grasses and bryophytes; clarify distinctions among similar taxa to reduce misidentifications.
+  - R17–R18: For future QA, ensure same-year comparisons and minimize gaps between the original survey and QA for more reliable change statistics.
+  - R19–R20: Expand use of simple, robust codes for boundary and land-use features; reduce reliance on nuanced cover values in boundary classification.
+  - R21–R22: Adopt simpler, repeatable coding schemes for mapping vegetation and land-use to better align with National Vegetation Classification objectives.
+  - R23–R24: Continue integrating photograph-based QA with plate-based relocation; optimize workflows for small quadrats (Y plots).
+  - R25–R26: Provide targeted training on specific problematic taxa and on the interpretation of ephemerals and crop-related changes.
+  - R27–R29: Use DECORANA and related multivariate analyses to monitor consistency over time and across plot types; report axis scores with clear ecological interpretations.
+  - R30–R32: Document and publish QA findings to inform future GIS data products, ensuring metadata captures known uncertainties and recommended practices.
+
+- Implications for GIS data products and practice
+  - Data standardization and metadata
+    - Emphasize primary land-use codes and hedges/boundaries with clearly defined qualifiers; document any use of secondary descriptive codes.
+    - Record the timing (year/season) of surveys and QA activities to contextualize potential seasonal effects.
+  - Data structure and sharing
+    - Favor a mapping-centric schema that highlights land-use parcels, boundary features, and dominant vegetation at key points, with explicit support for comparing across years.
+    - Use standardized plate/plot identifiers and align any relocation aids (sketches, photographs) with GIS feature IDs.
+  - Quality control workflow
+    - Integrate QA steps into the data pipeline, including periodical checks of land-use code frequencies, plot relocatability, and consistency of boundary classifications.
+    - Maintain a repository of recommended practices (e.g., R1–R29) to guide field teams and data users.
+
+- Conclusions
+  - The 1990 QA exercise demonstrates that, while there is substantial variability in species-level records and plot relocation, strong consistency exists in core land-use mapping and in the identification of major vegetation features.
+  - Photographic re-surveys, improved ground-truthing for plots, and refined coding schemes markedly improve the reliability of GIS-ready vegetation and land-use data.
+  - The study underscores the need to align QA with the same-year survey context and to focus mapping efforts on core, reproducible attributes (primary land-use codes and dominant vegetation) to support robust map-based data products.

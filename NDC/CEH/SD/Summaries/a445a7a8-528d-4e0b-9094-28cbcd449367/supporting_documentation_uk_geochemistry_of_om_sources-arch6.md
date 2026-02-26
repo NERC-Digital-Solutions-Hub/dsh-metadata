@@ -1,0 +1,32 @@
+# Supporting documentation for data resource UK_geochemistry_of_OM_sources.csv
+
+- Purpose of the data resource: Provide bulk elemental (organic carbon and nitrogen) and stable isotope (δ13C_org and δ15N) data to help constrain organic carbon sources (terrestrial vs marine) in UK environments using isotope mixing models.
+- Scope and samples: 491 samples collected across the United Kingdom from terrestrial, intertidal, and marine environments between 2016 and 2021.
+  - Terrestrial: soil, peat, living biomass, dead biomass
+  - Intertidal: saltmarsh vegetation, saltmarsh roots, seagrass biomass, mudflat, faecal matter
+  - Marine: macroalgae, microalgae, zooplankton, finfish aquaculture waste
+- Variables observed: δ13C_org (‰), δ15N (‰), OC_content (%), N_content (%), C/N ratio, N/C ratio.
+- Location and coverage: UK-wide observations with geographic coordinates provided (examples include 60.9735, -8.0192; 60.9735, 2.1761; 49.8440, -8.0192; 49.8440, 2.1761). Location descriptions indicate sampling across coastal catchments to capture diverse organic matter sources.
+- Sample handling and preparation: 
+  - Storage at -20°C
+  - Oven drying at 40°C for 72 hours, then milled to a fine powder
+- Analytical methods:
+  - Isotopic and elemental analysis performed on approximately 12 mg processed sediment in tin capsules; an additional 12 mg in silver capsules for carbonate removal via acid fumigation
+  - Stable isotope and elemental analyses conducted using an elemental analyser coupled to an isotope ratio mass spectrometer (EA-IRMS) at the James Hutton Institute
+  - δ13C_org and OC values from acidified samples; δ15N and N from tin-encapsulated samples
+- Quality assurance and calibration:
+  - Isotopic values quality controlled via repeated analysis of a high OC sediment standard (B2151) with reference values for C and N
+  - Laboratory equipment calibrated following University of St Andrews practices
+- Data formats and checks:
+  - Primary data format: CSV
+  - Data checking indicators noted as NA where not applicable
+- Secondary data resource description included:
+  - Aboveground_Biomass_Carbon_UK.csv describes metadata fields such as Sample_id and Sample_class, covering categories like Terrestrial Vegetation, Soil, Wetland Vegetation, Zooplankton, Seagrass (Vegetation/Soil), Seagrass, Saltmarsh, Phytoplankton, Mudflat, Mix, Microalgae, Macroalgae, Faecal Matter, and Aquaculture
+  - Descriptions include National Vegetation Classification (NVC), location descriptions, and nation (Scotland, England, Wales)
+- References:
+  - Harris et al., 2001. Acid fumigation of soils to remove carbonates prior to total organic carbon or carbon-13 isotopic analysis
+  - Rodwell, 2000. Maritime communities and vegetation of open habitats
+- Practical use notes:
+  - Data intended to support isotope-based partitioning of organic matter sources in UK ecosystems
+  - Suitable for integration with isotope mixing models and related environmental datasets
+  - Metadata provides context for sampling design, sample classes, and national classifications to aid data discovery and re-use

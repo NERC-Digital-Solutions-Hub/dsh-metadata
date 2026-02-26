@@ -1,0 +1,21 @@
+# Abstract
+
+- Dataset contains stable isotope data (δ13C and δ15N) from two tissue types (whole blood and mantle feathers) of 16 adult birds across 8 procellariiform species at Bird Island, South Georgia, collected in the austral summer 2001–2002.
+- Purpose: dataset has been used to examine inter-specific competition during both breeding and non-breeding periods; part of long-term Bird Island research under the British Antarctic Survey.
+- Species included: wandering albatross (Diomedea exulans), grey-headed albatross (Thalassarche chrysostoma), black-browed albatross (Thalassarche melanophris), northern giant petrel (Macronectes halli), southern giant petrel (Macronectes giganteus), Antarctic prion (Pachyptila desolata), South Georgian diving petrel (Pelecanoides georgicus), and common diving petrel (P. urinatrix).
+- Sampling design:
+  - 16 adults total; sex evenly split (8 male, 8 female) determined by morphology or genetic markers.
+  - Blood: 0.2–1.0 mL collected from the tarsal vein; processed within 1–3 hours, centrifuged to separate cells and plasma, then frozen at −20°C; lipids not extracted from blood cells.
+  - Feathers: 8–10 mantle feathers per individual collected, selecting newer feathers grown in the most recent non-breeding period when applicable.
+  - Breeding context: surface-nesting species sampled within weeks after hatching; burrow-nesting species (Antarctic prions and diving petrels) caught later during chick-rearing.
+- Data columns and notes:
+  - Species (common name), sp_code (numeric species type), d13C, d15N, TissueType (feather or whole blood), Sex (male or female; NA for diving petrels due to labeling ambiguity).
+- Analytical methods:
+  - Blood preparation: centrifuged shortly after collection; no lipid extraction.
+  - Feather preparation: dried, ground to a fine powder in a freezer mill at liquid nitrogen temperature.
+  - Isotope analysis: continuous-flow isotope ratio mass spectrometry using EA-linked instruments; three internal standards per every ten unknowns; measurement precision for both δ13C and δ15N ≤ 0.2 ‰.
+  - Standards: routinely calibrated against IAEA and NIST stable isotope reference materials (monthly).
+- Data handling and context:
+  - Part of ongoing Bird Island projects; data accompanied by metadata and sourced from long-term studies, enabling cross-species and life-history comparisons.
+- Considerations for analysts:
+  - The dataset enables comparisons of trophic position and carbon sources across species, tissues, and breeding stages; potential analyses include isotopic niche comparisons, sex- or tissue-dependent patterns, and integration with ecological or behavioral data to interpret inter-specific competition. Notes on breeding strategies indicate biennial vs. annual breeding tendencies for certain albatross species may influence interpretation of isotopic signals.

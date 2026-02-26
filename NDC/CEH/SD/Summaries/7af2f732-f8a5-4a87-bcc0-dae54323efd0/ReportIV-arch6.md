@@ -1,0 +1,70 @@
+NERC Soil Biodiversity Thematic Programme: Sourhope Site Summary
+
+- Purpose and scope
+  - Four years into the NERC Soil Biodiversity Thematic Programme at the Sourhope site (Macaulay Land Use Research Institute, Sourhope, Scottish Borders).
+  - Focused on linking below-ground biodiversity processes with above-ground plant communities via monitoring of above-ground productivity (biomass), species composition, and diversity.
+  - Five annual management treatments implemented across plots: nitrogen, lime, both nitrogen and lime, insecticide, and controls; plots either fertilised or unfertilised; mowing applied site-wide.
+
+- Site design and data framework (for data support)
+  - Experimental layout: Rigg Foot site with 5 replicate blocks along a downslope gradient; each block contains 6 main plots, subdivided into 10 sub-plots; 0.5 m x 0.5 m sampling cells used for data collection.
+  - Treatments and treatments mapping: Control 1, Control 2, Nitrogen, Lime, Nitrogen & Lime (N&L), Insecticide; insecticide plots use Dursban 4 OPA.
+  - Data collection regime (since 1999)
+    - Above-ground biomass: regular harvests (five cuts per summer) from random 0.5 m2 cells; samples dried and weighed.
+    - Plant surveys: baseline (1998) and annual/biannual point analysis surveys (2000–2002) using a 0.5 m2 cell with 100-hole frame and 25-point probing; bryophyte identification enhanced in 2002.
+    - Soil data: soil pH (5 cm depth) measured annually; soil moisture via theta probe in 2002; routine soil sampling since 1998.
+    - Weather: on-site automatic weather station providing rainfall, radiation, temperature, and moisture data since 1999.
+  - Data outputs and analyses
+    - Biomass time series by plot and year; normalization against a control baseline (Control 1) to reveal treatment effects.
+    - Statistical tests: split-plot ANOVA (treatment, year, interaction) on biomass; PCA on point-analysis species data; diversity indices (Shannon H’) over time.
+    - Functional grouping analyses: classification of species into stress-tolerant (S), competitive-stress-ruderal (CSR), and related SR/CSR categories to interpret community shifts.
+
+- Key findings by component (beginning to end of the study period)
+  - Mowing and disturbance regime
+    - Regular mowing (~6 cm sward height) and cessation of grazing linked to shifts in plant communities.
+    - Agrostis capillaris and Agrostis vinealis declined markedly since 2000; Festuca rubra expanded, especially in fertilised/fertile plots.
+    - Bryophyte expansion observed across the site, associated with reduced disturbance and sward structure.
+  - Fertilisation effects (Nitrogen and Lime)
+    - Fertilised plots showed consistently higher productivity than unfertilised plots; the strongest production in plots receiving both nitrogen and lime.
+    - Signs that productivity may have peaked in 2002 in some fertilised plots, potentially linked to near-neutral soil pH (close to 7.0) and lower soil moisture, increasing susceptibility to water stress.
+    - Soil pH rose significantly with lime (near pH 7 in limed plots); nitrogen alone also raised pH but to a lesser extent.
+    - Positive relationship between soil pH and biomass on a site-wide scale, but treatment-specific patterns varied; when both N and lime are applied, the pH–biomass relationship shows a more complex, possibly nonlinear pattern.
+  - Insecticide effects (Dursban 4 OPA)
+    - Shannon diversity index highest in insecticide-treated plots (circumstantial evidence suggests reduced herbivory may enable more palatable species to persist), though causal links require caution due to limited direct herbivory data.
+    - Bryophyte and vascular-plant responses indicate complex plant–herbivore interactions and potential indirect benefits to some species in the presence of insecticide.
+  - Trampling effects (notably in C2 plots)
+    - 2002 C2 plots (newly surveyed) showed lower productivity, likely due to trampling during 13CO2 pulse experiments and intensified sampling activity.
+  - Community structure and functional groups
+    - Functional-group composition shifts over time: increase in stress-tolerant species in unimproved plots; competitive-stress-ruderal (CSR) and SR/CSR groups increasingly dominate fertilised plots, with SR/C-S-R groups reduced in lime- and insecticide-treated plots.
+    - By 2002, significant treatment-driven differences emerged in all three major functional groupings (S, CSR, SR/CSR).
+  - Species composition and diversity (point analysis)
+    - Improved pastures (lime and/or nitrogen) dominated by Festuca rubra and Poa pratensis; unimproved plots remained dominated by Festuca ovina and Agrostis spp.
+    - Bryophyte hits rose across treatments, particularly Rhytidiadelphus squarrosus; bryophyte frequency increased from 2000 to 2002, especially in unimproved plots.
+    - Litter presence and dead-vegetation hits increased in later years, with higher litter in N&L plots in 2002.
+    - PCA of point analysis data effectively separated improved vs unimproved plots; some nitrogen-treated samples clustered with limed plots, indicating convergence of vegetation characteristics under certain fertilisation regimes.
+  - Biomass and productivity trends (1999–2002)
+    - Long-term rise in biomass across most treatments relative to 1999 baseline, with nitrogen and lime together giving the strongest ongoing boost to productivity.
+    - 2002 biomass generally lower than 2001 across most plots, with the sharpest decline in Control 2 plots; spatial pattern showed lower productivity downslope (Block 5) and higher upslope variability.
+  - Appendices and data depth (for data support)
+    - Detailed site activity logs, species lists (vascular plants and bryophytes), and biomass datasets by plot and year.
+    - Weather station datasets and notes on 2002 data gaps due to equipment failure (late July–Nov data replaced with data from a nearby station during outage).
+
+- Data integrity and usage notes (Data Support perspective)
+  - Robust, multi-year, multi-treatment dataset enabling time-series analyses of productivity, diversity, and community composition in response to mowing, fertilisation, and insecticide regimes.
+  - Key data products to consider:
+    - Yearly biomass by treatment with relative changes vs Control 1 baseline.
+    - Treatment-by-year interaction effects from ANOVA results.
+    - PCA-driven plots to visualize treatment clustering and species-group shifts (including bryophyte contributions).
+    - Functional-group distributions (S, CSR, SR/CSR) by treatment over time.
+    - Correlation maps of soil pH, moisture, and biomass with treatment context.
+  - Caveats and data gaps
+    - 2002 weather data gaps due to weather-station failure; some 2002 data substituted from Konza station for select variables.
+    - Trampling effects in C2 plots may confound certain productivity readings in 2002.
+    - Complex indirect pathways (e.g., herbivory, nutrient cycling) require careful interpretation; causal links between insecticide and diversity are suggestive rather than definitive.
+  - Practical data outputs for stakeholders
+    - Dashboards showing biomass trajectories by treatment, with overlays for pH and moisture.
+    - Interactive maps or plots of block/plot layout, treatments, and year-by-year changes.
+    - Species- and bryophyte-focused views highlighting shifts in dominance and diversity across fertilisation and mowing regimes.
+
+- Overall implications for data use
+  - The dataset supports analyses of how mowing, nutrient enrichment, soil chemistry (pH), and pest management shape plant productivity, species composition, and functional strategies in grassland systems.
+  - Demonstrates how long-term, replicated field experiments with detailed plant surveys and soil measurements can reveal nuanced interactions among management practices, environment, and plant communities.

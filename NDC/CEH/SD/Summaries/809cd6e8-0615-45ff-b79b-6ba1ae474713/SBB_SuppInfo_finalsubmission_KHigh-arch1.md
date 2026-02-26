@@ -1,0 +1,90 @@
+# New approaches using mass spectrometry to investigate changes to cytokinin and abscisic acid (ABA) concentrations in soil in the presence of earthworms with or without plants
+
+- Purpose and approach
+  - Develop and apply mass spectrometry workflows to investigate how earthworms (with or without plants) affect soil concentrations of key phytohormones: cytokinins (zeatin, isopentenyladenine ribosides and free bases) and abscisic acid (ABA), along with associated compounds like indole-3-acetic acid (IAA) and adenosine (Ade).
+  - Combine soil and hydroponic experiments to compare matrices and to understand interactions among earthworms, plants, and phytohormone dynamics.
+  - Use a two-stage analytical strategy: discovery/identification by FT-ICR-MS followed by targeted quantification by multiple reaction monitoring (MRM) on a triple quadrupole MS, with internal standards for robust quantification.
+
+- Experimental design (hydroponic and soil)
+  - Hydroponic experiments (42 days total): four treatments with four replicates each
+    - Earthworms + plants, earthworms only, plants only, neither (control)
+    - Plant species: Sinapis alba (white mustard); 5 established plants per jar; earthworms added for 24 hours at the end
+    - Earthworm species: Eisenia fetida; depurated prior to addition
+  - Soil experiments (42 days; five replicates per treatment, four treatments)
+    - Plant presence/absence crossed with earthworm presence/absence
+    - Soil: sandy loam Cambisol; 300 g soil per jar; 15 S. alba seeds planted; 3 mature Lumbricus terrestris earthworms added to earthworm-present treatments
+    - Earthworms introduced after plant establishment to reduce burrowing effects on initial growth
+  - Measurements and endpoints
+    - Plant biomass (above-ground) and soil moisture with corrections to oven-dried mass
+    - Hydroponic solution chemistry and phytohormone concentrations
+    - Soil biological activity via fluorescein diacetate (FDH) hydrolysis assay
+    - pH of hydroponic solutions at experiment end (as an index of earthworm impact on solution chemistry)
+  - Molecular analyses (plants)
+    - Target genes chosen from ABA synthesis and abiotic-stress responses (ABA pathway: NCED3, NCED5; abiotic stress: CIPK6, NHX1, RD29A)
+    - Brassica napus genome guidance used to design primers; qPCR performed on root and shoot RNA to assess gene expression
+    - Primer validation included cross-checks against earthworm genomes to ensure plant specificity
+  - Investigation of earthworm phytohormone biosynthesis potential
+    - In silico searches for diagnostic genes in E. fetida and L. terrestris for ABA biosynthesis
+    - Comparative analyses using Arabidopsis thaliana and Brassica napus gene references
+
+- Sample preparation, extraction, and cleanup (soil vs hydroponic)
+  - Soil samples
+    - Phytohormone extraction adapted from plant tissue methods; four successive extraction steps over five days; 24-hour extraction time adopted to minimize degradation
+    - Internal standards added prior to extraction: isotopically labelled zeatin, iP, ABA, IAA, and Ade for internal standardization
+    - Cleanup via mixed-mode cation-exchange (MCX) solid-phase extraction (SPE) to separate acidic compounds (Fraction 1), cytokinin ribosides (Fraction 2), and cytokinin free bases (Fraction 3)
+    - Fraction 2 archived; Fractions 1 and 3 analyzed
+  - Hydroponic solutions
+    - Recovery of authentic standards straightforward; internal calibration with isotopically labelled standards added to the hydroponic solutions
+  - Analytical workflow
+    - FT-ICR-MS (Bruker solariX XR) used for initial identification of target analytes in Fractions 1 and 3 (negative mode for Fraction 1, positive mode for Fraction 3) with mass accuracy < 1 ppm
+    - Target compounds identified by accurate mass; subsequent quantification by MRM on a TSQ Endura triple quadrupole MS with LC separation
+    - HPLC separation on a Kinetex C18 core-shell column; specific gradient profiles for Fractions 1 and 3
+  - Quantification
+    - MRM transitions established for IAA, ABA, Zeatin (Z), Ade, iP, plus isotopically labelled internal standards
+    - Instrumentation details: negative mode for IAA/ABA, positive mode for cytokinins; specific collision energies and instrument settings outlined
+    - Isotopically labelled standards used to enable robust internal standardisation and correction for matrix effects
+
+- Data collection, analysis, and quality control
+  - Data types
+    - Phytohormone concentrations in hydroponic solutions (environmental matrices)
+    - Phytohormone and related metabolite levels across soil and hydroponic matrices
+    - FDH activity as a proxy for soil biological activity
+    - Soil pH at experiment end (hydroponic context)
+    - Plant biomass (fresh/dry) as a growth endpoint
+    - Gene expression for ABA synthesis and abiotic-stress response genes (qPCR; ΔΔCt analysis)
+  - Statistical analysis
+    - Normality checks; when appropriate, t-tests used for biomass and pH comparisons
+    - Two-way ANOVA to assess effects of earthworms and plants on FDH activity and phytohormone concentrations
+    - Holm-Sidak post hoc tests for multiple comparisons; non-normal hydroponic hormone data analyzed with two-way ANOVA due to interaction effects and robustness of ANOVA to deviations from normality
+  - Data handling and reproducibility
+    - Replication across hydroponic and soil experiments; explicit control treatments
+    - Data normalization where applicable (e.g., to oven-dried soil mass)
+    - Primer sequences and gene targets documented; supplementary tables provide detailed method specifics
+    - Data and materials availability noted (EIDC data catalogue; High et al., 2019)
+
+- Molecular biology approach and cross-species considerations
+  - Plant molecular targets
+    - ABA biosynthesis and stress-responsive genes selected based on Brassica napus genome; S. alba orthologues amplified and validated
+    - cDNA synthesis and qPCR performed with standard molecular biology workflows; normalization to Actin7 control
+  - Earthworm biosynthesis inquiry
+    - Publicly available E. fetida and L. terrestris genomes screened against ABA pathway enzyme references from A. thaliana to assess potential for direct phytohormone biosynthesis by earthworms
+
+- Data availability and supplementary material
+  - All data available from the EIDC data catalogue as High et al, 2019
+  - Supplementary information includes: Tables of measured concentrations, biomass data, FDH results, pH values, and primer sequences
+  - Figure 1 provides a schematic of the extraction, purification, and analytical workflow
+
+- Key insights for data analysts
+ - The study establishes a robust, multi-matrix analytical pipeline to quantify phytohormones in soil and hydroponic solutions with internal standardisation, enabling cross-matrix comparisons
+ - The combination of discovery (FT-ICR-MS) and targeted quantification (MRM) supports confident identification and precise quantification of low-abundance phytohormones in complex matrices
+ - The experimental design facilitates evaluation of interactions between earthworms and plants on hormonal dynamics, growth, and soil biological activity
+ - There are explicit plans for data traceability (source materials, methods, and metadata) and openness (data deposition in a public catalogue)
+ - Potential analyses for data-driven insights
+    - Correlate soil phytohormone levels with FDH activity to link microbial/biological activity with hormone availability
+    - Assess interactions between earthworms and plants on ABA and cytokinin profiles, considering biomass and pH as covariates
+    - Explore gene expression changes in ABA biosynthesis and stress-response pathways in relation to hormone concentrations and organism presence
+    - Build predictive models linking earthworm presence, plant presence, hormone levels, and growth outcomes across hydroponic and soil matrices
+  - Considerations and potential data gaps
+    - Limited result interpretation in this excerpt; full results would illuminate which factors most strongly influence phytohormone dynamics
+    - Scale and generalizability across soil types and plant species would benefit from broader datasets
+    - Data standardization across matrices (soil vs hydroponic) is crucial for cross-context analyses; ensure consistent normalization to relevant mass or volume units

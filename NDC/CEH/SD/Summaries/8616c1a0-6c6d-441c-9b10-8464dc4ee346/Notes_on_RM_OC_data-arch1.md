@@ -1,0 +1,27 @@
+# Sediment collection
+
+- Time frame and study site: Sediment trapping at Rostherne Mere from May 2010 to September 2016; traps deployed at 10 m (shallow) and 25 m (deep) water depths; 2-week collection periods per trap (12 bottles per trap), with longer periods up to 4 weeks in January–February; traps reset every 6 months; sample sediment kept cool, dark, and frozen during transport and storage.
+- Core sampling: A 112 cm sediment core collected at 26 m depth in September 2011 using a Livingstone piston corer; stored vertically in a dark cold room at 5°C and sectioned at 1 cm intervals for the upper 50 cm, then 0.5 cm intervals thereafter.
+- Sample processing and storage: All trap and core samples freeze-dried prior to analysis.
+- Organic matter and carbon analysis:
+  - Organic matter (OM) estimated by loss-on-ignition (LOI) at 550°C for 3 h.
+  - Organic carbon (OC) calculated from %OM using a lake-specific conversion factor OC% = OM% × 0.56, derived from calibration against mass-spectrometry measured OC.
+  - Calibration details provided (d13C_cal, C_cal, N_cal, C/N_cal) for calibration standards (e.g., SOIL B and BROC2) used to convert LOI to OC.
+- Chronology and sedimentation rates:
+  - 210Pb activity measured by alpha spectrometry to determine age-depth relationships.
+  - Chronology and sedimentation rates derived using the CRS (constant rate of supply) model; confidence intervals calculated by first-order error analysis.
+- Data types and units recorded:
+  - Recorded variables include water content, LOI, CaCO3, minerogenic fraction, sedimentation rates, and fluxes.
+  - Sediment trap data provide fluxes as grams per square meter per day (g m^-2 d^-1); core data provide sedimentation rates and fluxes in grams per square meter per year (g m^-2 y^-1); OC burial fluxes provided as g C m^-2 y^-1 (with focusing correction in some records).
+  - C, N, LOI, C/LOI, and C/N ratios included in OC-related records.
+- Data structure and files:
+  - RMLOItoTOC: 9 columns including SampleNo, d13C, C, N, C/N, Trap/core, Depth, LOI, C/LOI.
+  - RMSedCore2011LOI: 7 columns including AverageDepth(cm), Water, Calcium_Carbonate(CaCO3), LOI, EstimatedDate(AD), SedimentationRate(g cm^-2 yr^-1), FocusingCorrectedOrganicCarbon(g m^-2 yr^-1).
+  - RMTrapSed: 14 columns including SampleCode, DateIn, DateOut, ShallowTrap/DeepTrap, Calcium_Carbonate(CaCO3), LossOnIgnition, MinerogenicFraction, DaysCollecting, TotalSampleDryWeight(g), TrapArea(m^2), FluxOrganicMatter(g m^-2 d^-1), FluxOrganicCarbon(g m^-2 d^-1), FluxCaCO3(g m^-2 d^-1), MinerogenicFlux(g m^-2 d^-1).
+- Data notes:
+  - Blank spaces indicate samples not analysed.
+  - The dataset provides detailed provenance, including trap deployment details, core sampling, and the laboratory methods used for processing and analysis.
+- References for methods:
+  - APPLEBY, P. G. 2001. Chronostratigraphic techniques in recent sediments.
+  - DEAN, W. E. 1974. LOI method for organic matter and carbonate determination.
+  - WRIGHT, H. E. 1967. Piston sampler methodology.

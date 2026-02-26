@@ -1,0 +1,28 @@
+# Summary
+
+- This dataset contains key photosynthesis and respiration measurements from three common-garden sites along an elevation/temperature gradient in the Colombian Andes, collected June–August 2019.
+- Data are organized into three CSV files: ACiData_ColombianAndes_2019, VcmaxJmaxData_ColombianAndes_2019, and RdarkData_ColombianAndes_2019, with accompanying Table 1 detailing column names and units.
+- Experimental design: three sites at different mean annual temperatures (MAT) corresponding to high (2516 m, ~14°C MAT), mid (1357 m, ~22°C MAT), and low (736 m, ~26°C MAT) elevations; 8 mid-successional Andean tropical montane forest species; 123 individuals across plots with uniform soils and irrigation; planting and fertilization in a six-block plot design.
+- A-Ci measurements:
+  - Leaf gas exchange measured with a LI-6800, cuvette conditions standardized to 29°C, 65% RH, and 410 ppm CO2.
+  - Eight ambient CO2 concentrations (Ca) tested to generate A–Ci curves; light intensity set to species-specific saturating PPFD values.
+  - Data used to estimate Vcmax (Rubisco carboxylation) and Jmax (RuBP regeneration) via Farquhar model using the plantecophys R package.
+- Data processing and modeling:
+  - Curve fitting performed with fitacis; reference site atmospheric pressure set per site; Rdark incorporated in fitting.
+  - Default non-linear method used initially; bilinear method employed when default was unsuitable.
+  - Quality checks led to retention of 144 of 147 individuals; 9 Jmax values excluded; some curves were Rubisco-limited, affecting Jmax estimates.
+  - Vcmax and Jmax values corrected to both 25°C and to the growth temperature (MAT) using a temperature response function with Ea, Sd, and Hd parameters; temperature dependencies drawn from Kumarathunge et al. (2019).
+- Rdark measurements:
+  - Dark respiration measured after 30 minutes of dark adaptation (or longer) by CO2 efflux in the LI-6800, at ambient site temperatures, then adjusted to measurement temperatures using a fixed Q10 model with Tg equal to site MAT.
+- Data quality and limitations:
+  - Some data omitted due to instrument error or post-processing quality assessment.
+  - R dark values corrected to 25°C and site MAT; all data are provided in RdarkData_ColombianAndes_2019.csv.
+- Practical use and purpose:
+  - Enables assessment of thermal acclimation of photosynthesis across species and elevations, comparing Vcmax and Jmax at 25°C and at site MAT, and relating photosynthetic capacity to environmental temperature.
+  - Data suitable for analyses of correlations between leaf gas-exchange parameters, leaf temperature, and growth conditions across an elevational gradient.
+- References for methods and models:
+  - Duursma (2015) Plantecophys R package
+  - Farquhar, von Caemmerer, & Berry (1980) C3 photosynthesis model
+  - Kumarathunge et al. (2019) global temperature dependence of photosynthesis
+  - R Core Team (2022) R statistical software
+  - Scafaro et al. (2017); Tjoelker et al. (2001) for temperature response and respiration modeling

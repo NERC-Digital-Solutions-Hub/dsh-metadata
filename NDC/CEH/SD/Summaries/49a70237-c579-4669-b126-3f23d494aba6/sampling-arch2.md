@@ -1,0 +1,56 @@
+# Sampling Design
+
+- Objective and context
+  - Develop a village-level understanding of seasonal dynamics and forest resource use to monitor environmental health and inform management.
+  - Explore how forest degradation (driven by charcoal production) affects resources and livelihoods across a gradient of conditions.
+- Study area and sampling frame
+  - Period: May 2014 to September 2014.
+  - Study site: Mabalane district, Gaza province.
+  - Village selection: Seven villages chosen along a forest degradation gradient (from abundant undisturbed forest to degraded forests) with similar infrastructure, soils, rainfall, and vegetation; purpose is to compare trends across different degradation stages.
+- Seasonal calendar method
+  - Participants: Mixed groups of 5–10 people per session; led by a researcher and a local-language assistant (Changana).
+  - Resources and setup: 12 month cards, activity cards, stones/seeds; total 30 stones per activity to indicate relative intensity; required time: 1–2 hours.
+  - Procedure:
+    - Explain purposes: assess seasonality and changes in forest product availability/USE around the surrounding forest.
+    - Identify main environmental services (ES) during participatory mapping (e.g., charcoal production, wood for charcoal, firewood, hunting).
+    - Facilitate selection of time landmarks and illustrate a timeline on the ground.
+    - Use stone-voting to depict abundance of each ES over historical time points (higher stones = greater abundance).
+    - Prompt participants to forecast ES status 10 years into the future and review results for agreement.
+    - For each ES, discuss factors driving changes, governance/permissions, access controls, sacred areas, substitutes, and impacts on daily life and other environmental conditions.
+  - Outputs: Group-derived, time-indexed trends for ES; discussion notes on governance, access, and future projections.
+- Data capture and key fields
+  - Essential fields: Village name, date, number of participants, duration; men­tion of past changes (e.g., policy/licensing changes) and drivers (outsiders, new laws, licenses).
+  - Trend analysis is conducted across ES to identify drivers and impacts on the environment and community.
+- Village profiles and forest use (data collection framework)
+  - Source: Interviews with village leaders and key informants; language support by Changana-speaking assistant.
+  - Content areas:
+    - Village profile: GPS, date, leader, age, function, duration of residence.
+    - Village characteristics: structure (households, neighborhoods), education, health, water, land tenure (DUAT), migration, livelihoods (LH) activities, commercial activities (COM) by outsiders, market access.
+    - Forest use and products: main forest products used, transformed, and traded; origin; who participates in production.
+  - Commoditized ecosystem services (ES)
+    - Charcoal: production location, sales, estimated quantity, licensing status, associations, chainsaws, outsiders, decision rights, external funding (e.g., government license revenue), community management structures.
+    - Agriculture: main crops, productivity, farming practices (mashambas, home gardens), location and distance of fields, size, market sales, extension services.
+    - Livestock: species, sale patterns, market destinations, pastures.
+    - Others: additional marketable forest products.
+  - Regulating services and disservices
+    - Environmental condition indicators (rainfall, soil fertility, erosion).
+    - Natural disasters or shocks (floods, pests, droughts, disease, conflicts, large forest loss) and affected groups.
+  - Change and drivers
+    - Social change: what has changed in the village, duration, and perceived direction.
+    - Environmental change: changes in forest extent, flora and fauna, water availability/quality, soil; implications for daily life and beneficiaries.
+    - Causes: deforestation, soil fertility loss, fires, market access, commercial agriculture, etc.
+- Wealth ranking (household-level socio-economic assessment)
+  - Purpose: Rank households by wealth to contextualize environmental use and access patterns.
+  - Participants and leadership: conducted with village leaders, secretary, and other key figures; requires a reliable household list.
+  - Process (approx. 2 hours):
+    - Compile list of all households; place each name on a card.
+    - Classify into four wealth classes: poorest, poor, better-off, rich.
+    - Rank households within each class from richest to poorest; discuss and adjust as needed.
+    - Collect qualitative criteria for ranking (attitudes, agriculture/livestock, housing/assets, education, nutrition/health, social relations).
+    - Optional: rearrange households if necessary based on discussion.
+  - Outputs: Wealth categorization and accompanying qualitative insights on how well-being relates to assets and ecosystem benefits.
+- Data handling implications for an environmental monitoring analyst
+  - Data quality and standardization: field protocol and bilingual materials support consistency across villages and sessions.
+  - Outputs: datasets, maps, charts, and narrative summaries that track seasonal dynamics, ES trends, governance arrangements, and livelihoods.
+  - Data storage and sharing: intention to store and upload created datasets to appropriate data portals; standardised formats and documentation needed to enable reuse.
+  - Cross-dataset value: design of the methods supports combining ecological/degradation indicators with socio-economic and governance data to enhance the usefulness of the monitoring dataset and enable broader analysis over time and across gradients.

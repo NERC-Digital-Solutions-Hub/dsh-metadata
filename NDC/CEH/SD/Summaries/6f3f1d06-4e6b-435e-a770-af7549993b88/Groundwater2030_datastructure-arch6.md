@@ -1,0 +1,22 @@
+# Groundwater2030: Data structure for field survey files
+
+- Four separate CSV tables ( Groundwater2030_sanrisk.csv, Groundwater2030_waterquality.csv, Groundwater2030_well_owner_survey.csv, Groundwater2030_WellCustomerSurvey.csv ) that can be joined using common identifier fields.
+- Identifiers are unique to each groundwater source and serve as keys:
+  - Sanitary risk and water quality datasets: the Well ID field is Wellcode.
+  - Well owner and well customer surveys: the Well ID field is Well number.
+- Datasets and their descriptions:
+  - Groundwater2030_sanrisk.csv: Sanitary risk inspections; Wellcode is the primary key.
+  - Groundwater2030_waterquality.csv: Water quality test results; Wellcode is the primary key.
+  - Groundwater2030_well_owner_survey.csv: Questionnaire survey of well owners; Well number is the primary key.
+  - Groundwater2030_WellCustomerSurvey.csv: Questionnaire survey of well customers; Well number is the primary key.
+- Identifier conventions:
+  - Unique identifiers use prefixes W (well), S (spring), B (borehole); followed by a number (e.g., W1, S2, B3).
+  - An O code indicates wells in the baseline survey for which water quality data could not be collected.
+  - When owner or customer questionnaires could not be linked to a specific well, they are labeled None1, None2, etc.; neighbourhood information is still included in all questionnaires.
+- Data relationships:
+  - The Wellcode/Well number fields act as primary keys for their respective datasets and as a foreign key to link owner and customer surveys to the corresponding groundwater sources.
+  - There may be more than one customer per groundwater source, enabling analysis of multiple customer relationships per well/source.
+- Practical use and implications for data work:
+  - Enables integrated analysis across sanitary risk, water quality, and stakeholder surveys by joining on the common identifiers.
+  - Supports creation of data products (dashboards, reports) that let end users explore groundwater sources by type (well, spring, borehole), location (neighbourhood), and related risk/quality metrics.
+  - Must handle special codes (O for missing data in baseline wells; NoneX for unlinked questionnaires) to maintain accurate joins and interpretations.

@@ -1,0 +1,86 @@
+# Explanatory notes
+
+- The Farm Scale Evaluations (FSE) were set up to determine whether genetically-modified herbicide-tolerant (GMHT) crops might have significant effects on farmland wildlife due to management practices.
+- The study covers four crops: Beet, Maize, Spring-sown Oilseed Rape, and Winter-sown Oilseed Rape.
+- Data collected span multiple domains:
+  - Seedbank: seedbank counts from soil before planting, plus follow-up samples at 1 year and 2 years after initial sampling.
+  - Vegetation in the crop: multiple surveys including First-seedling, Post-herbicide, Final Counts, Biomass, Seed Rain, and Follow-ups; with Crop-specific nuances (e.g., Mezzanine surveys in Beet and Winter Rape).
+  - Field edge vegetation: Margin Attributes and related metrics (Edge Veg Cover, Flower, Seed, Bare Ground, Spray Damage) around field boundaries.
+  - Invertebrates: monthly Bee and Butterfly transects (Pollinators), Crop Pests, Gastropods (Search and Trap), Pitfall, and Vortis counts in the verge and crop.
+  - Additional tables: crop drilling dates, herbicide applications, and height/cover of weeds and crops.
+- Data are systematically named using a consistent convention (e.g., sum_b_seedrain for Beet seedrain; sum_b_early_pitfall for Beet early-season pitfall).
+- Generic table properties:
+  - Each row represents half-field totals (counts/biomass/mean percent cover) for a single site.
+  - Group totals and species-level contributions are stored.
+  - Sites are referenced within Defra regions; South-eastern and Eastern England regions are aggregated for confidentiality.
+  - Nulls appear where data were not collected; some counts may include decimals due to partial transects.
+- Specific table properties:
+  - All crop_pest tables use a suffix indicating winged/wingless status with W+ or W-.
+- Column headings and data elements:
+  - conv_count, conv_count_FL, conv_count_GE4TL, conv_count_L4TL, conv_count_SE (conventional crop counts by category)
+  - gm_count, gm_count_FL, gm_count_GE4TL, gm_count_L4TL, gm_count_SE (GMHT crop counts by category)
+  - crop_cover (percent cover of crop), crop_unit (C = conventional, GM = GM crop)
+  - crop_height (crop height in cm)
+  - name (species or group name)
+  - site_ref (site reference, consistent across tables)
+  - Region (Defra government region or aggregate)
+  - VEG/ARTHROPOD/GASTROPOD/BB_BRC codes (coding for records)
+  - weed_cover_pc (percent cover of non-crop vegetation)
+- Documentation and references for context:
+  - The spring crop theme issue: The Farm Scale Evaluations of spring-sown genetically modified crops, Phil. Trans. R. Soc. (2003)
+  - Effects on weed and invertebrate abundance and diversity of herbicide management in GM herbicide-tolerant winter-sown oilseed rape, Proc. R. Soc. B (2005)
+
+## Dataset Descriptions
+
+- Seedbank
+  - Seedbank counts from soil samples taken before planting.
+  - Follow-ups: Seedbank Follow-up 1 (one year after initial), Seedbank Follow-up 2 (two years after initial).
+- Vegetation in the crop
+  - First-seedling: first vegetation survey before herbicide application.
+  - Mezzanine (Beet and Winter Rape): additional vegetation survey between herbicide applications on conventional vs GM sides.
+  - Post-herbicide: vegetation survey after herbicide application on both sides.
+  - Final Counts: vegetation survey concurrent with biomass sampling just before harvest.
+  - Biomass: weed biomass sampled in the crop a month before harvest.
+  - Seed Rain: seeds collected throughout the growing season.
+  - Follow-up 1 and Follow-up 2: vegetation surveys at one year and two years after the trial crop.
+- Field edge vegetation
+  - Margin Attributes: physical features around the trial field edge.
+  - Edge Veg Cover: percent cover of non-crop vegetation in June.
+  - Edge Veg Flower: plant flowering activity (April–August).
+  - Edge Veg Seed: seed setting in July–August.
+  - Edge Bare Ground: percent bare ground.
+  - Edge Spray Damage: vegetation damage from spraying.
+- Invertebrates
+  - Bee and Butterfly transects: monthly counts April–August in crop and margins; combined as Pollinators.
+  - Crop Pests: herbivores on the crop early and late in the season.
+  - Gastropod Search: gastropods in the field margin.
+  - Gastropod Trap: gastropods trapped in the crop (spring and autumn).
+  - Pitfall: counts of surface-active invertebrates (early, mid, late).
+  - Vortis: arthropods on plants (early and late); sampling in field verge and crop.
+- Additional tables
+  - Date drilled, Herbicides applied, Height/Cover of weeds and crop.
+- Data structure and referencing
+  - Table naming follows the sum_<crop>_<date>_<protocol> convention.
+  - Site_ref ties together data across tables; regions may be aggregated for confidentiality.
+  - Data capture includes explicit notes on nulls, decimals, and the proportion-based calculation method for some transect-derived counts.
+
+## Data Stewardship considerations for this dataset
+
+- Metadata and data dictionary
+  - Maintain explicit definitions for all fields (e.g., conv_count categories, gm_count categories, crop_unit, region codes, codes for VEG/ARTHROPOD/GASTROPOD/BB_BRC).
+  - Document timing, protocol variations (e.g., Mezzanine surveys), and adjustments by crop.
+- Data quality and completeness
+  - Track missing data with clear null indicators; document reasons (e.g., not collected, access issues).
+  - Capture decimal counts arising from partial transects and ensure provenance of calculations.
+- Standardization and interoperability
+  - Preserve naming conventions and coding schemes to enable cross-study integration (e.g., consistent site_ref and region mappings).
+  - Ensure alignment with Defra region classifications and any confidentiality constraints.
+- Provenance and governance
+  - Record who collected data, at what dates, and under which protocols; reference external publications for context.
+  - Manage access controls and aggregation rules for regional data to protect confidentiality (e.g., aggregated regions).
+- Data sharing and publication
+  - Prepare comprehensive dataset description, data dictionaries, and example queries to support reuse.
+  - Link datasets to related publications (e.g., Phil. Trans. R. Soc., Proc. R. Soc. B) to support interpretation.
+- Provider and portal considerations
+  - Ensure datasets are uploaded to appropriate portals/catalogues with stable identifiers.
+  - Establish procedures for updates, versioning, and maintaining cross-table consistency over time.

@@ -1,0 +1,34 @@
+# Data recorded for a mesocosm study on persistence of wet wipes in beach sand and the survival of E. coli on their surfaces
+
+- Five CSV data files capture different aspects of a mesocosm study conducted at the University of Stirling (May–August 2023) to assess how wet wipes of different compostability behave as reservoirs for faecal bacteria, including potential human pathogens and antimicrobial resistance genes.
+- Experimental design:
+  - Three wet wipe brands representing: A) non-compostable (plastic-containing), B) home compostable, C) commercially compostable.
+  - Wipes cut into 7 × 7 cm squares and subjected to a sequence simulating bathroom-to-beach exposure: flushed in water with faecal matter and E. coli, then exposed to WWTP effluent, seawater, and beach sand mesocosms.
+  - Weekly sampling over 15 weeks with four wipes per type analyzed each time.
+- Data collection methods:
+  - E. coli enumeration from wipes via PBS rinse, vortexing, vacuum filtration, and selective media (MLGA); CFU counted after 24 h at 37 °C.
+  - Tensile strength measured on a 50 N force meter after drying.
+- Data provenance and purpose:
+  - Aimed at understanding sewage-associated plastic waste as reservoirs for faecal bacteria, potential pathogens, and antimicrobial resistance genes.
+  - Collected to support UKRI-NERC projects on microbial hitchhikers of marine plastics.
+  - Principal responsibility: Rebecca Metcalf.
+- Completeness and quality:
+  - Data checked for anomalous values; no missing data reported.
+- Data files and contents (replicate structure noted across files):
+  - Dry_weight_sand_used_in_wet_wipes_mesocosm.csv
+    - Dry weight of sand used in each mesocosm.
+  - Background_bacterial_concentrations_in_wet_wipes_mesocosm.csv
+    - Background bacterial concentrations used in mesocosms.
+  - Water_characteristics_used_in_wet_wipes_mesocosm.csv
+    - Water type and chemical characteristics (e.g., pH, salinity) used in mesocosms.
+  - Tensile_strength_of_wet_wipes_in_wet_wipes_mesocosm.csv
+    - Tensile strength (N) of wipes; sampled weekly; includes Week, Date, Wipe_type, Replicate.
+  - Bacterial_concentrations_in_wet_wipes_mesocosm.csv
+    - Bacterial concentrations on wipes (CFU per ml and per wipe); includes Week, Date, Wipe_type, Replicate, Dilution, CFU measurements.
+- Variable notes and structure (highlights):
+  - Replicate identifiers and descriptive variable names common across files (e.g., Rep, Week, Date, Wipe_type).
+  - Bacterial measurements include CFU_per_ml and CFU_per_wipe.
+  - Water-related variables include Water_type, pH, and Salinity.
+  - Tensile strength file includes Tensile Strength (N) with relevant identifiers (Rep, Week, Date, Wipe_type).
+- Overall relevance:
+  - Provides a structured, multi-faceted dataset suitable for analyzing temporal trends in microbial colonization on wipes, effects of wipe type/compostability, and associated physical properties, facilitating data products such as dashboards or self-serve analyses for end users.

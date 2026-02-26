@@ -1,0 +1,34 @@
+# The UK Butterfly Monitoring Scheme (UKBMS)
+
+- The UKBMS collates data from over 2,000 sites annually across the UK to monitor butterfly abundance and trends.
+- Data collection methods include:
+  - All-species transects: fixed-route, weekly counts (April–September) along 2–4 km routes, in a 5 m wide band; transects divided into habitat sections; 26 counts/year; counts occur 10:45–15:45 under suitable weather (dry, Beaufort wind ≤5, temperature thresholds with sun or over 17°C if overcast).
+  - Single-species transects: same methodology as all-species but limited to a few weeks for the focal species.
+  - Timed counts and egg/larval web counts: counts of a specific species over a set time/area, with weather criteria similar to transects.
+  - Wider Countryside Butterfly Survey (WCBS): reduced-effort sampling since 2009 along two parallel 1-km transects within randomly selected 1-km squares; 2–4 visits/year (minimum 2 visits in July/August), following a BBS-like design for broader habitats.
+- Data capture and storage:
+  - Field data recorded on standard forms; entered online via the UKBMS data entry site or via Transect Walker software.
+  - Data uploaded to an Oracle database; regional transect coordinators compile data for their regions.
+- Analytical methods by species group:
+  - Wider countryside species: two-stage model using all survey data.
+    - Stage 1: Generalised Additive Model (GAM) estimates the annual seasonal flight pattern; daily values are normalised to a common seasonal curve.
+    - Stage 2: A model on the full annual counts with seasonal values as an offset to estimate annual abundance changes and trends.
+    - Method details: Dennis et al. 2013.
+  - Habitat specialists and regular migrants: GAM imputes missing values and derives a site index; site indices are combined to produce a national Collated Index via a log-linear model that accounts for year and site effects.
+    - Collated Indices are updated annually as new data are added; calculated for species observed at five or more sites per year.
+- Outputs and indices:
+  - Collated Indices are reported as the log10 Collated Index (LCI) for each species; indices are scaled so the series average equals 2 for relative comparisons over time.
+  - Site indices are relative measures of population size, proportional to true abundance, and vary by species visibility.
+- Data definitions and categorisations:
+  - Wider countryside species: mobile across a range of habitats.
+  - Habitat specialists: low mobility, restricted to semi-natural habitats.
+  - Regular migrants: species that do not overwinter in the UK but arrive annually from Europe.
+  - Red Admiral may be resident in parts of southern England and Wales, but is predominantly migratory elsewhere.
+- Data quality, validation, and governance:
+  - Automatic checks in Transect Walker flag anomalies (e.g., unusually high counts, records outside flight period).
+  - Regional coordinators validate data; continuous validation during the season.
+  - Post-entry validation includes checks against distribution ranges, flight periods, first-time site records, and outlier abundances.
+- Data product structure:
+  - Collated Indices stored as CSV with columns: Species, Common name, Year, No. Sites, Collated Index, Time period.
+- Context and references:
+  - Foundational sources for methods include Pollard & Yates (1993), Rothery & Roy (2001), Moss & Pollard (1993), and Dennis et al. (2013).

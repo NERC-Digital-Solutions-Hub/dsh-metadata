@@ -1,0 +1,30 @@
+# Details of data structure
+
+- This dataset consists of six CSV files that document sampling and analysis related to Bacteroides spp. markers, including sampling locations, isolation steps over two time windows, and detection of fecal indicator bacteria and related markers.
+- The six files are:
+  - LocationOfFaecalSampling.csv: location and context of faecal samples (date, sample number/origin, source name, latitude, longitude, altitude).
+  - IsolationOfBacteroidesHostsWeek10-6-18StepA.csv: initial isolation steps for week starting 10 Jun 2018 (location, coordinates, altitude, sample origin, dilution factor, and CFU counts with esculin reactions, anaerobic/aerobic).
+  - IsolationBacteroidesHostsWeek10-6-18StepB.csv: final isolation steps for week starting 10 Jun 2018 (location/source, isolate code, esculin reaction results, CFU counts, Gram info, status, origin).
+  - IsolationBacteroidesHostsWeek17-6-18StepA.csv: initial isolation steps for week starting 17 Jun 2018 (location, coordinates, altitude, sample origin, dilution factor, esculin/CFU data).
+  - IsolationBacteroidesHostsweek17-6-18StepB.csv: final isolation steps for week starting 17 Jun 2018 (location/source, isolate code, esculin reaction results, CFU counts, Gram info, status, origin).
+  - DetectionOfFIB&MSTmarkers.csv: concentrations of faecal indicator bacteria and phages in water sources and wastewater effluents (date, water source, CFU/100 mL or PFU/mL for various markers, with explicit codes for Bacteroides spp. hosts).
+- Column-level highlights:
+  - LocationOfFaecalSampling: Date, Faecal sample number/origin, sample source name, Latitude, Longitude, Altitude.
+  - StepA files (weeks 10-6-18 and 17-6-18): Location name, coordinates (Latitude, Longitude, Altitude), Faecal sample origin, Dilution factor, and numerous CFU counts by esculin reaction and environment (Anaerobic/Aerobic).
+  - StepB files (weeks 10-6-18 and 17-6-18): Location/source, Faecal sample origin, Bacterial Isolate code, CFU/esculin results, Gram staining information, Status, and origin of Bacteroides hosts.
+  - DetectionOfFIB&MSTmarkers: Date, Water source, multiple CFU/PFU metrics for enterococci, total coliforms, E. coli, somatic coliphages, and phages for various Bacteroides-related markers and host codes.
+- Linkages and data integration:
+  - The Week10 StepB file is a continuation of Week10 StepA; entries should be matched by Location name from faecal sample collection (column A).
+  - The Week17 StepB file is a continuation of Week17 StepA with the same matching approach.
+  - Users should implement cross-file joins using the location/name identifiers to assemble complete per-sample isolation histories.
+- Data quality and governance considerations for Data Stewards:
+  - Ensure consistent metadata across files (e.g., units: CFU per gram or per 100 mL, PFU per mL, coordinates in decimal degrees, altitude in metres).
+  - Maintain clear provenance: track sample origins, dates, and the sequence of StepA to StepB processing.
+  - Validate cross-file linkages and handle mismatches in ordering or entry counts between continuation files.
+  - Preserve the codes for isolates (e.g., LU.2, SIN.19) and document the mapping between codes and location origins.
+  - Document any potential ambiguities or missing values in the linkage fields to prevent incorrect joins.
+  - Store and share alongside a data dictionary and a data provenance note describing collection methods, laboratory procedures, and reporting conventions.
+- Practical considerations and challenges:
+  - Multiple files with similar column sets require careful deduplication and consistent join keys.
+  - Handling of incomplete or misaligned entries due to differing entry orders between StepA and StepB.
+  - Interoperability across weeks and potential need for standardized schema to enable reuse in downstream analyses.

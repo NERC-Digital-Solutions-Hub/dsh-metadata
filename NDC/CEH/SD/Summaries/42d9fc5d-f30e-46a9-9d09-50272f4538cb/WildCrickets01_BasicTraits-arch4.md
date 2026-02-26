@@ -1,0 +1,28 @@
+# WildCrickets01-BasicTraits Description of content
+
+- Purpose: A dataset with basic information on each adult tagged cricket in the population, covering life-history traits and identification.
+- Tagging and identification: Each cricket has a two-character Tag read from video recordings; a plastic tag attached to the pronotum is used to identify individuals in the footage.
+- Key traits included:
+  - Year: The year the cricket was alive.
+  - Sex: Male (M) or Female (F).
+  - Emerged: Date when the cricket emerged as an adult (may be left empty if unknown).
+  - Tagged: Date when the cricket was first caught and tagged.
+  - Dead: Date of death or the last observed date if death is not recorded.
+  - ThoraxWidth: Width of the thorax, measured from a top-down picture.
+  - BodyMass: Mass of the cricket at the date it was tagged.
+  - Monitored: Number of days the individual has been observed.
+- Data context and collection notes:
+  - The dataset focuses on adult individuals and uses video-based identification via the tag.
+  - Measurements (thorax width and body mass) are tied to specific dates (e.g., tagging date for body mass).
+- Data quality and completeness considerations:
+  - Emerged and Dead fields may be missing if the information is unknown or not recorded.
+  - The accuracy of measurements relies on image-based thorax width assessments and timely tagging data.
+- Potential uses and analyses:
+  - Life-history tracking (emergence, tagging, survival).
+  - Growth and condition assessments (thorax width, body mass).
+  - Individual identification and longitudinal monitoring across observed days.
+- Data governance implications for Data Leaders:
+  - Clear documentation of measurement methods, units, and date formats.
+  - Metadata requirements to ensure discoverability and interpretability (e.g., what “Monitored” counts).
+  - Consideration of data completeness and handling of missing values (e.g., unknown Emerged or Dead dates).
+  - Data stewardship around updates to Tag-to-cricket mappings and consistency across video records.

@@ -1,0 +1,34 @@
+# Harmonia axyridis invasion: UK distribution data 2004-2016
+
+- Overview
+  - Dataset of Harlequin ladybird (Harmonia axyridis) sightings in the UK from 2004–2016 (three records in 2003).
+  - Primary sources: online recording via Harlequin Ladybird Survey, UK Ladybird Survey, and iRecord Ladybird app; plus inputs from coleopterists and data calls to local record centres and natural history societies.
+  - Records include abundance, life stage (adult, larva, pupa, and occasionally eggs) and colour form (conspicua, spectabilis, succinea) when available.
+- Data management and standardization
+  - Data collated and stored in an Oracle database; records are not altered beyond standardized export for the dataset.
+  - Quality control checks applied (see Quality control section) to ensure validity before export.
+- Data content and variables
+  - Each record represents a sighting of one or more individuals; abundance and life stage/colour form may be partial.
+  - Location data provided as:
+    - Grid references (OSGB for Britain, OSI for Ireland, truncated MGRS for Channel Islands) and as latitude/longitude (WGS84).
+    - Grid references at full precision, plus 1km and 10km grid squares with corresponding lat/long.
+  - Temporal data:
+    - Start and end dates (usually the same date when full date is available); if only month/year or year are provided, intervals span the entire month or year.
+  - Spatial metadata:
+    - Precision of grid reference; vice county code (British and Irish vice counties); 1km and 10km grid centroids provided as needed.
+  - Other fields:
+    - Abundance (text; may be a single value, range, or qualitative like “a couple”).
+    - Form_abundance, Form (colour form), Stage_abundance, Stage.
+    - RECORDER field (recorder ID standardized as surname plus initials; one ID may refer to multiple individuals; a person may have multiple IDs).
+- Data structure details
+  - Key columns include STARTDATE, ENDDATE, GRIDREF, PRECISION, VC (Watsonian vice county), LATITUDE/LONGITUDE (and 1km/10km variants), GR_1KM/LATITUDE_1KM/LONGITUDE_1KM, GR_10KM/LATITUDE_10KM/LONGITUDE_10KM, ABUNDANCE, FORM_ABUNDANCE, FORM, STAGE_ABUNDANCE, STAGE, RECORDER.
+- Quality control
+  - Validation checks: grid references must map to land; dates must be valid (no future dates).
+  - Records are verified by Coccinellidae experts, via photo/specimen verification or by reliance on known expert recorder.
+- Recording bias and limitations
+  - Potential spatial bias toward urban areas due to citizen-science nature.
+  - Temporal bias with spikes during periods of intensive media activity around the Ladybird Survey.
+- Access and implications for data leaders
+  - Organized for discoverability and re-use within an Oracle-based system; export provides standardized values for analysis.
+  - Useful for tracking invasion dynamics, identifying data gaps (e.g., records lacking abundance or life stage), and informing data governance, metadata standards, and cross-source coordination.
+  - Highlights need to account for recorder ambiguity and variable data completeness when integrating with other datasets.

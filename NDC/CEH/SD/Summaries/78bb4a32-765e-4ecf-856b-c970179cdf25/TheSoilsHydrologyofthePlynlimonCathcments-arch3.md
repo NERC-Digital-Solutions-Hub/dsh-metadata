@@ -1,0 +1,43 @@
+# The Soil Hydrology of the Plynlimon Catchments
+
+- An observational soil hydrology study (1968/69) in the Plynlimon catchments to understand how soils regulate rainfall-runoff, conducted by the Institute of Hydrology; later extensively revised in 2005.
+- Two adjacent catchments chosen to represent contrasting upland land uses: coniferous forestry vs sheep-grazed grassland; matched for size, rainfall, geology, topography, and climate to isolate land-use effects.
+- Aims included mapping soil types, linking them to topography, elucidating main soil-water pathways, and informing physically based hydrological models and water-quality research.
+- Data and methods:
+  - Extensive field work: soil mapping, soil pits, and observation, integrated with instrumented hydrology (flow gauges, rainfall networks, meteorological stations, neutron probe networks).
+  - Early emphasis on water-balance components followed by modelling as computer capabilities grew.
+  - Acknowledges subjectivity and limitations of field mapping; discusses potential for modelling using digitised topographic data to refine hydrologically relevant soil maps.
+- Key concepts introduced:
+  - Hydrological domains: areas with the same slope characteristics expected to exhibit similar hydrological behaviour.
+  - Slope-element framework inspired by the hypothetical nine-unit land-surface model, adapted here to seven elements to better fit field observations.
+- Soil types and hydrology:
+  - Podzols: form on flatter to upper slopes; strongly leached with an A/O horizon (peaty) over an E horizon; an iron pan (BFe) may impede infiltration, promoting lateral downslope flow and saturated pathways.
+  - Creep Brown Earths: on steeper slopes; lack a distinct Ea horizon or iron pan; more mixed with weathered mudstone fragments; typically support grassy vegetation; drainage differences influence hydrological response.
+  - Peaty Gleys / Peaty Gley Podzols: on lower concave slopes and riparian zones; very poor drainage with thick peat, leading to saturated, anaerobic conditions; often gleyed horizons indicating fluctuating water tables.
+- Slope and aspect influences:
+  - South-facing slopes (Colluvium-dominated): generally warmer, faster weathering, thinner soils, and a downslope sequence from hilltop podzolised Colluvium to cretaceous soils; extensive first-order and ephemeral channels on steeper parts.
+  - North-facing slopes (Head, Boulder Clay, and Colluvium): more complex distribution with hilltop Head, Soliflucted Head, Bedded Soliflucted Head, and Boulder Clay terraces; notable gully erosion and deep peat storage on lower slopes.
+- Soil-parent materials:
+  - Head (hilltops and upper slopes): frost-shattered rock remnants; podzolisation possible where superficial material remains, otherwise podzol development limited by instability.
+  - Boulder Clay (glacial till): impermeable, forms terraces especially on north-facing slopes; supports extensive peat formation and occasional gleying; underlies valley floors in many areas.
+  - Colluvium: weathered material deposited downslope after erosion; more permeable than Boulder Clay and often associated with podzolisation on south-facing slopes.
+- Soil-water pathways (dominant transport routes from rain to streams):
+  - Overland flow on soil surface (especially on upper convex slopes and lower concave slopes under certain conditions).
+  - Subsurface laminar flow along permeable interfaces within soil profiles.
+  - Subsurface pipe flow forming networks (valley-flank and valley-head pipes) on impeded horizons, delivering rapid downslope movement of water.
+  - Lateral flow through the base of the weathered rock zone (potential deep storage and slow discharge).
+  - Fissure flow through fresh, unweathered bedrock (possible but not proven as a major river-flow contributor).
+- Groundwater and hydrological balances:
+  - Initial assumption of watertight catchments with negligible groundwater inputs/outputs was not fully provable; evidence suggests limited aquifer-scale groundwater contributions to river flow but not ruling out shallow regolith storage or minor fissure flows, which could influence water quality.
+- Modelling and mapping implications:
+  - Modelling the soil map using topographic criteria offers a way to reduce subjectivity and improve hydrologically meaningful maps.
+  - Suggested steps to develop hydrological domains:
+    - Divide by aspect (north vs south).
+    - Further divide by slope convexity/concavity and slope angle.
+    - Calibrate boundaries with field data and optimise using field-derived soil-profile observations.
+  - Proposes scoring map accuracy by comparing predicted soil-pit profiles against randomly placed pits.
+  - Envisions using modelled hydrological domains to inform physically-based hydrology and water-quality modelling for catchments similar to Plynlimon.
+- Enduring implications for monitoring frameworks:
+  - Demonstrates how detailed soil-hydrology understanding, tied to precise topography and soil-parent materials, underpins robust hydrological modelling and policy-relevant monitoring.
+  - Highlights data-generation needs (consistent metadata, documentation, and openness) to support reproducible monitoring and governance.
+  - Emphasises the importance of integrating field observations with spatial modelling to overcome subjectivity in soil mapping and to produce hydrologically meaningful domains for decision-making.

@@ -1,0 +1,47 @@
+# Frame Modelling
+
+- Frame (Fine Resolution Multi-pollutant Exchange) is a Lagrangian atmospheric transport model used to estimate the annual mean deposition of reduced and oxidised nitrogen and sulphur over the United Kingdom.
+- Domain and resolution:
+  - Coverage: British Isles
+  - Spatial grid: 5 km resolution (172 x 144 grid)
+- Emissions and input data:
+  - Emissions from the UK National Atmospheric Emissions Inventory (NAEI) across 160 sub-sector categories
+  - 22 point sources plus background area emissions; 11 SNAP sectors; international shipping and European emissions considered
+  - Ammonia inputs derived from the National Ammonia Reduction Strategy Evaluation System (NARSES), split into 5 sectors
+  - Regional land masks separate sources by country (England, Scotland, Wales, Northern Ireland)
+- Purpose of inputs:
+  - Enable source-specific attribution of deposition to regulators and policymakers
+  - Provide detailed breakdown by source type, region, and pollutant
+- Model runs and footprint methodology:
+  - Baseline run: all sources active
+  - Abate each emission source by 25% in separate runs to reduce non-linearities in atmospheric chemistry
+  - Final footprints are scaled (multiplied by 4) to align with policy-scale practices
+  - Footprint for a source is the difference between the baseline deposition and the deposition with that source abated
+  - Deposition outputs are computed for each 5 km grid cell for SOx, NOy, and NHx
+  - Output also disaggregates into detailed source attribution types (e.g., livestock, fertiliser, shipping) and short-range vs long-range contributions
+- Habitat and ecosystem considerations:
+  - Deposition data split by ecosystem type: forest, moorland (representing short semi-natural vegetation), and grid average (arable, grassland, urban, forest, moorland)
+  - Recognises that deposition varies with surface roughness; dry deposition rates for ammonia are higher to forests and moorland than to agricultural fields
+- Data processing and normalization:
+  - Post-processing normalizes each footprint so its sum matches the baseline to account for model non-linearities
+  - The sum of footprints is checked against the baseline, with typical differences around 4%
+- Calibration and validation:
+  - Calibration against CBED (Concentration Based Estimated Deposition) data for 2011–2013 to produce robust annual deposition estimates
+  - Calibration equations adjust FRAME deposition (uncalibrated) to align with official CBED totals for 2012
+  - Calibration can be applied to footprints as well, ensuring that aggregated footprints reproduce official CBED totals
+- Data products and file structure:
+  - FRAME outputs 160 footprint files per footprint type per pollutant; aggregated to 90 footprint files for easier processing
+  - Data products include ecosystem-specific source attribution and deposition data for nitrogen and sulfur compounds
+  - Dataset detail includes 5x5 km grid coordinates (Easting, Northing), footprint IDs and names, source locations, and deposition values for grid, forest, and moorland with short/long-range classifications
+- Quality control and accessibility:
+  - QA checks include normalizing footprints, cross-checking national budgets of total deposition, and generating error-check visuals (e.g., JPGs of footprints)
+  - Resources and data access are linked through the CEH pollutant deposition portal
+  - Key outputs intended to support policy development, deposition budgeting, and impact assessments at sub-national (devolved) and regional scales
+
+- Key outputs and use cases:
+  - Enables policy-relevant attribution of nitrogen and sulphur deposition to specific sources and regions
+  - Provides high-resolution spatial-deposition data by pollutant, chemical form, and source category
+  - Supports derivation of short-range vs long-range deposition contributions for different habitats, informing targeted mitigation strategies and regulatory decisions
+
+- Resource references:
+  - Frame modelling details and deposition data available at the CEH pollutant deposition resource portal (linked in the document)

@@ -1,0 +1,32 @@
+# Description, Experimental Design and Collection
+
+- Study objective: quantify abundance of parasitic wasps (Diaretiella rapae) that emerged from cabbage aphids on Brassica napus plants within Free-Air Diesel and Ozone Enrichment (FADOE) rings, to support monitoring of environmental health under air pollutant treatments.
+- Data scope: two-year sampling (2018–2019) across multiple FADOE rings and pollution treatments, recording the number of parasitoids emerged from aphids collected on individual plants.
+- Location and setup:
+  - Field location in 2018: field of wheat at latitude 51.482853, longitude -0.897749.
+  - Field location in 2019: moved to adjacent field at latitude 51.482374, longitude -0.895855.
+  - FADOE rings: numbered rings distributed within the field; two rings per pollution treatment.
+  - Pollution treatments: diesel exhaust (D), ozone (O3), diesel exhaust + ozone (D+O3), and control (CON; natural air).
+- Experimental design:
+  - OPEN treatment: plants five weeks old, inoculated with 10 Brevicoryne brassica aphids and netted.
+  - Post-inoculation: nets removed for one week to allow parasitoid activity, then nets re-applied and a sticky trap placed inside the net for parasitoid capture.
+  - Replication: Year 1 had four plants per run, Year 2 had seven plants per run, Year 3 had four plants per run.
+  - Runs: three experimental runs across the two years.
+- Data collection and measurement:
+  - For each plant, sticky traps inside nets were collected 10 days after trap placement.
+  - Outcome variable: number of Diaretiella rapae parasitoids emerged (the dominant parasitoid species for B. brassicae in this setup; others were not abundantly observed).
+  - Primary data column: Parasitoids_emerged (count) per Plant_ID, within Run, Ring, Pollutant, and Treatment.
+- Data structure (key columns):
+  - Year (Year)
+  - Ring (Ring)
+  - Pollutant (Pollutant)
+  - Treatment (Treatment)
+  - Plant_ID (Plant_ID)
+  - Run (Run)
+  - Parasitoids_emerged (Parasitoids_emerged)
+- References and methodology:
+  - Methodology and quality control details described in Ryalls et al. 2022 (Anthropogenic air pollutants reduce insect-mediated pollination services), Environmental Pollution 297, 118847.
+- Data quality and reuse considerations:
+  - Data are gathered using standardized procedures across treatments and years to enable comparisons of environmental health indicators.
+  - Original dataset emphasizes verifying and quality-assuring data from established monitoring protocols; outputs are suitable for reporting in maps, charts, and standardised environmental health formats.
+  - Suggested practices include storing datasets in appropriate data portals and, where possible, combining with other relevant environmental datasets to increase value and accessibility.

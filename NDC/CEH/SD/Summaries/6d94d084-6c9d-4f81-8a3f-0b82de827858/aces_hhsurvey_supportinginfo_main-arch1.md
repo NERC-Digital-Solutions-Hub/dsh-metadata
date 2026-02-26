@@ -1,0 +1,48 @@
+# Overview
+
+- Objective: The ACES project (Abrupt Changes in Ecosystem Services and Wellbeing in Mozambican Woodlands) (2013–2018) aimed to link woodland cover and ecosystem service availability to human wellbeing across three Mozambican districts, testing the hypothesis that wellbeing changes abruptly as ecosystem services change with woodland loss.
+- Scope of the household survey: Quantitatively assessed household wellbeing and reliance on ecosystem services; collected data on household composition, assets, income (across nine sources), and special modules on education, health, housing, service access, land/agriculture, shock coping, and subjective wellbeing to reflect Mozambique’s multidimensional poverty.
+- Design approach: Followed an HAI+ framework (hypothesis-driven with measurable indicators) to verify or falsify the main ACES hypothesis; incorporated both inter-household and intra-household variation where possible.
+- Study locations: Three districts representing distinct social-ecological contexts:
+  - Marrupa (Niassa Province) – subsistence/low infrastructure; dominant land-use: tobacco
+  - Gurué (Zambezia Province) – commercial crops (soya, pulses, sunflower) from smallholders
+  - Mabalane (Gaza Province) – high charcoal dependence for Maputo
+  - In total, 27 villages were included (7 in Mabalane, 10 in Gurué, 10 in Marrupa) selected to vary intensities of the dominant land use and share similar soils/vegetation; each village had a local leader.
+- Household sampling strategies:
+  - Malabane: attempted census given small village sizes
+  - Marrupa and Gurué: stratified random sampling with oversampling of rich and very poor households because these groups are expected to have higher dependence on ecosystem services
+  - Household definition: those “eating from the same pot”; polygamous households treated as separate if each wife eats separately, otherwise as one
+- Household listing and validation:
+  - Lists compiled via village secretaries; validated by enumerators at survey start; households not found or not on wealth ranking lists were removed
+  - Wealth ranking stratified households into four strata: rich (rico), medium (estavel), poor (pobre), very poor (muito pobre); an ‘unranked’ stratum included unknown or newly identified households
+  - Post-sampling name reconciliation led to minor corrections; some households lacked wealth ranking data if not identifiable
+- Wealth ranking process:
+  - Participatory ranking within villages; ranks recorded to reflect relative standing; unranked used for unknown or evolving lists
+  - After sampling, names were cross-checked against lists; 40 mismatches corrected
+- Sampling intensities by strata:
+  - Marrupa and Gurué used varying probabilities by stratum to oversample rich and very poor; target intensities differed by village size and stratum, with higher intensities for very poor and very rich groups
+  - In Mabalane, attempts were made to survey all households (approx. 84% coverage; treated as an incomplete census)
+- Survey design and content:
+  - Informed by reviews of existing poverty–environment surveys (CIFOR-PEN, ASSETS, Missing Dimensions of Poverty, Mozambican National Agricultural Survey)
+  - Variables chosen to capture inter-household variation and, where possible, intra-household variation (e.g., education data for individuals within households)
+  - Income-focused: data collected for nine income sources (environmental and non-environmental); expenditure data not systematically captured due to attribution challenges and subsistence-oriented economies
+  - District-specific adjustments: questions adapted to reflect land-use drivers unique to each district (e.g., inclusion of soya questions in Gurué)
+- Data collection and workflow:
+  - Fieldwork conducted May 2014–Oct 2014 (Mabalane), May–Aug 2015 (Marrupa), Aug–Dec 2015 (Gurué); reflects reference year 2013–2014 for Mabalane and 2014–2015 for Marrupa/Gurué
+  - Data collection via tablets using Open Data Kit (ODK); trained local enumerators; interviews in local languages; responses recorded in Portuguese
+  - Real-time data capture enabled rapid preliminary analyses and integration with broader ACES components
+  - Local units used; conversions to metric units applied using Mozambican national standards and focus-group inputs
+- Data cleaning and quality assurance:
+  - Daily consistency checks during field season; post-season data cleaning to remove duplicates, correct spellings, and address missing values
+  - Final analyses used a cleaned a_household dataset; some non-published tables may require pre-processing or re-cleaning
+- Ethical considerations:
+  - Compliance with ESPA ethics requirements and University of Edinburgh standards
+  - Written informed consent obtained from participants; anonymization protocols implemented to protect identities
+  - Anonymization and data dissemination protocols are documented and available upon request
+
+- Implications for analysts:
+  - Rich, multi-dimensional data linking household wellbeing, income sources, asset ownership, and ecosystem service use to changes in woodland cover
+  - Sampling design enables exploration of correlations across wealth strata and the role of land-use changes in wellbeing
+  - Data collection through tablets with standardized units and transparent QA enhances reproducibility and cross-district comparability
+  - Some limitations: incomplete census coverage in one site, potential gaps in wealth ranking for unlisted households, and variability in data cleaning across non-published datasets
+  - Ethical data handling and clear documentation of data sources and processing support robust secondary analyses and replication efforts

@@ -1,0 +1,30 @@
+# Water quality, nutrients and the water framework directive in an agricultural region: The lower Humber Rivers, northern England
+
+- Study area and context
+  - Eastern Humber Basin includes the land north and south of the Humber estuary, covering East Riding of Yorkshire and northern Lincolnshire; about one-sixth of the Humber Basin.
+  - Landscape: western two-thirds are low-lying clay vales with low-permeability soils; eastern Wolds with higher ground and Chalk aquifer.
+  - Agriculture dominates: ~90% of land used for cereals, sugar beet, oilseed rape, root vegetables.
+  - Climate and hydrology: Chalk-fed Hull and Ancholme basins; rainfall/runoff patterns differ between Chalk and clay catchments; the Ancholme valley has been heavily modified to a straight-cut channel; saline intrusion at the estuary is managed with a lock and bubble barrier.
+- Monitoring and data sources
+  - Baseflow survey design: river waters sampled at EA monitoring points and additional sites to capture sewage influence (urban vs rural reaches); multiple sites along the Hull, Foulness, Ancholme, Rase, Kelsey Beck, West Drain, Skittle Beck, Freshey, Waith Beck, Lud, Great Eau.
+  - Sampling timing: conducted 11–13 August 2006 under prolonged baseflow conditions.
+  - Sampling and storage: water filtered in the field (0.45 μm) for major ions, SRP, trace metals; unfiltered samples for total P; on-site measurements of pH, conductivity, and temperature.
+  - Analytical scope: major ions, soluble reactive P, total P, ammonium, nitrite, dissolved/total trace metals, dissolved organic carbon, particulate carbon, and micro-organics; pH, alkalinity, and dissolved inorganic carbon indicators calculated from measured parameters.
+  - Continuous monitoring: Hydrolab Datasonde 3 units deployed on major rivers to log pH, conductivity, dissolved oxygen, and temperature at 30-minute intervals; periodic changes (weekly Apr–Nov; biweekly otherwise) to minimize fouling; spot checks with portable meters during equipment changes.
+- Sample processing and chemical analysis
+  - Sample collection and handling: bridges preferred for representative mid-river samples; varied bottle types (plastic, PTFE, glass) depending on analyses; depth 0.5–1.0 m to reduce contamination.
+  - On-site measurements and calibration: field pH, conductivity, and temperature readings with calibrated meters; lab calibration prior to use; repeated measurements to ensure accuracy.
+  - Determinant-specific processing and storage
+    - Soluble reactive phosphorus (SRP): 0.45 μm filtration; analysis by modified Murphy and Riley colorimetric method using spectrophotometry at 880 nm.
+    - Ammonia: 0.45 μm filtration; colorimetric indophenol method with EDTA to prevent precipitation; analysis at 25°C.
+    - Nitrite: sulphanilamide and N-1-naphthylethylenediamine method; spectrophotometric readout at 543 nm; analyzed the day of collection.
+    - Alkalinity: Gran titration with autotitrator; pH calibration at 4.0 and 7.0; titration to pH 3.0.
+    - Carbon analyses: filtration for dissolved/particulate carbon; analysis workflow includes blanks, drying, and storage as appropriate.
+    - Sediments: filtration onto dried filters to determine solids and associated carbon content.
+    - Metals and organics: 0.45 μm filtration for dissolved metals; 1% HNO3 acidification for dissolved fractions; additional unfiltered fraction for acid-soluble portions.
+    - Micro-organics: preserved and analyzed via high-performance liquid chromatography and gas chromatography as appropriate.
+  - Data handling and quality control: samples refrigerated or preserved per determinant-specific guidelines; duplicate filtration for carbon analyses; routine calibration and standard references underpin the analytical methods.
+- Implications for monitoring frameworks and policy
+  - The study demonstrates a comprehensive, transparently documented monitoring framework combining targeted site selection, baseflow-focused sampling, broad chemical analyses, and continuous high-frequency monitoring.
+  - It supports assessment of water quality and nutrient dynamics in an agricultural landscape, informing policy under the Water Framework Directive and guiding future data collection, data management, and reporting practices.
+  - The approach highlights the importance of overcoming data gaps, ensuring metadata availability, and integrating both discrete sampling with continuous monitoring to capture temporal and spatial variability.

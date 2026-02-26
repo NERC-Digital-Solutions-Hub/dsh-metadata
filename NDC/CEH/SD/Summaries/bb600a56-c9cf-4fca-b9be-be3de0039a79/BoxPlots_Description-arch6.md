@@ -1,0 +1,21 @@
+# LOCAR BASELINE DATASETS LOCAR
+
+- Box and whisker plots display the range, median, and quartiles of a dataset to provide a visual check of data quality and distribution.
+- Purpose:
+  - Helps interpret how data are spread and where most values lie.
+  - Assists in identifying outliers and assessing data quality across sites.
+- Plot structure:
+  - Y-axis uses the number line and relates to the units of the determinand.
+  - X-axis shows different sites; site IDs represent these sites.
+  - Red line indicates the median.
+  - Box edges represent Q1 (25th percentile) and Q3 (75th percentile).
+  - Whiskers are calculated as:
+    - Lower whisker = Q1 − 1.5 × IQR
+    - Upper whisker = Q3 + 1.5 × IQR
+    - IQR = Q3 − Q1
+  - Points outside whiskers are considered outliers.
+- Interpretation guidance:
+  - Observe how much data fall inside the box versus outside.
+  - Longer whiskers indicate greater variability; more outliers suggest data quality or measurement differences across sites.
+- Illustration:
+  - A diagram accompanies the description to demonstrate the plot structure.

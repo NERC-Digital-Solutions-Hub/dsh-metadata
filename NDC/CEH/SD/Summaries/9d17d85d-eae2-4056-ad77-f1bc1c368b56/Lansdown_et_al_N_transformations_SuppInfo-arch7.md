@@ -1,0 +1,57 @@
+# Overview of data
+
+- A dataset compilation from the in-stream N-cycling component of the NERC Macronutrients consortium, led by Prof. Mark Trimmer (Queen Mary University of London), titled "The role of lateral exchange in the seaward flux of C, N and P."
+- Two accompanying data files:
+  - N transformations and porewater chemistry in permeable sediments
+  - N transformations in clays
+- Field campaigns: four campaigns measuring in situ rates of nitrogen transformations and porewater chemistry in rivers with varying land-river connectivity in the Hampshire Avon catchment.
+  - Permeable sediments (sand or chalk geology): push-pull sampling with bespoke riverbed probes; measurements of O2, pH, Fe(II), methane, nitrate, nitrite, ammonium, chloride, SRP, and porewater chemistry; 15N-labelled nitrate injections to quantify transformations.
+  - Clays: attempted push-pull sampling (less successful); used intact-core method with 15N-nitrate and subsequent analyses.
+- Core methodology and timing:
+  - Permeable sediments: samples collected at depths 3–20 cm; tracer injections followed by time-series sampling over about 60 minutes.
+  - Clays: small perspex cores (3 cm diameter) incubated up to 4 hours with overlying water containing 15N-nitrate.
+- Key outputs include in situ rates and isotope-based calculations of nitrogen transformation processes (anammox, denitrification, nitrification) and related by-products.
+
+- Data structure and content:
+  - Permeable sediments: 241 rows x 20 columns
+  - Clays: 153 rows x 7 columns
+  - Column headers (selected): RecordID, Season, SiteCode, Vegetated, Depth, A14, D14, ra, Nit-15N, Nit-pn, Ammonium, Chloride, Iron(II), Methane, Nitrate, Nitrite, N2O, O2, O2sat, pH, SRP
+  - A14 and D14: rates of in situ anammox and denitrification (units differ by substrate type)
+  - ra: contribution of anammox to N2 production (percent)
+  - Nit-15N: nitrification potential in permeable sediments (nmol N/L/h)
+  - Nit-pn: ambient nitrification activity in clays (micromol/m^2/h)
+  - N2 calculations: 15N-labeling of N2 and N2O, isotope pairing to separate ambient from tracer-derived production
+- Spatial and temporal coverage:
+  - Sites with coordinates included (examples): CE1 (River Ebble), GA2 (River Avon), GN1 (River Nadder), CW2 (River Wylye), AS1 and AS2 (River Sem)
+  - Depths recorded as mid-screen depth below riverbed (cm)
+  - Seasons: Spring 2013, Summer 2013, Autumn 2013, Winter 2014
+  - Sampling gaps due to flooding (GA2 autumn/winter; CE1 winter) and access restrictions (AS2 spring)
+- Vegetation context:
+  - Vegetated vs un-vegetated sediments indicated (Y/N); e.g., no aquatic vegetation observed in clay sites AS1/AS2, all data from these sites are un-vegetated
+- Data quality notes:
+  - ND denotes missing measurements due to flow conditions
+  - BDL indicates measurements below detection limit
+  - O2 contamination during sample handling corrected by subtracting an estimated 10 µM
+  - Calibration references and standard materials used for nutrient and isotopic analyses
+  - Detection limits and precision specified for each measured parameter (e.g., NH4, NOx, NO2, Fe(II), O2, SRP, CH4, N2O)
+
+- Derived calculations and methodologies (highlights for GIS use):
+  - 15N-N2 measurements via mass spectrometry to partition N2 production into tracer-derived and ambient components
+  - Permeable sediments: calculation of aN2, p14, ra, A14, D14
+  - Clays: conversion of N2 data to per m2 and per L porewater equivalents to derive p14, ra, A14, D14
+  - Nit-pn in permeable sediments calculated with p14 and pw.14 (and r14 derived from 45N2O/46N2O ratios)
+  - For all substrates, ra provides the fraction of N2 production attributable to anammox
+  - p14 represents production of ambient 14N-N2; D14 and A14 quantify denitrification and anammox contributions to ambient N2 production
+- GIS-friendly considerations:
+  - Each sample row includes a SiteCode and coordinates are provided for sites (enables point mapping)
+  - Data can be joined with vegetation maps, river geology, land-use layers, and upstream-downstream connectivity
+  - Seasonal and substrate-type distinctions allow tesselation into maps or time-series visualizations
+  - Large and complex datasets are broken into two manageable files (permeable sediments and clays), each with site- and sample-level attributes
+- References for methods and context:
+  - Lansdown et al. 2014; Lansdown et al. 2016; Nielsen 1992; Trimmer et al. 2006; Risgaard-Petersen et al. 2003; Thamdrup & Dalsgaard 2000; Weiss & Price 1980; Yamamoto et al. 1976
+
+- Practical outcomes for map-based data products:
+  - Map layers showing in situ rates (A14, D14) and isotopic partitioning (ra, p14) by site and season
+  - Point themes or small-area polygons representing sample locations with depth and substrate attributes
+  - Derived rasters or charts illustrating the relative contributions of anammox vs denitrification to N2 production across the riverbed
+  - Quick-look visuals for policy or public audiences highlighting spatial variation in nitrogen transformations along the Hampshire Avon catchment

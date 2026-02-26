@@ -1,0 +1,52 @@
+# The Sampling Strategy for Countryside Survey (up to 2007)
+
+- Purpose and core approach
+  - Describes the sampling framework and land classification (ITE Land Classification) used to stratify and sample Countryside Survey field work in Great Britain.
+  - Emphasizes the historical development of the stratification system over 30 years and its central role in deriving national, regional, and country-specific habitat estimates.
+  - Uses a stratified, random sampling design anchored to a standardized land classification to ensure representative sampling and assist policy-relevant reporting.
+
+- How the Land Classification and sampling evolved (chronology)
+  - 1978: Initial Land Classification and first field survey
+    - Indicator Species Analysis (ISA) used to create 32 land classes from environmental variables.
+    - Centre squares of a 15 x 15 km grid were classified (1228 squares); four surrounding squares added per centre, yielding 6039 km² of classified area.
+    - Sampling: 8 samples per land class, total of 256 1 km squares surveyed.
+    - National habitat estimates derived from mean habitat area per square times the land class area.
+  - 1984: Second land use survey
+    - Expanded sample: 12 squares per land class (total 384).
+    - Continued use of the 1978 Land Classification for national estimates.
+  - 1990: Countryside Survey 1990 (All Squares Land Classification)
+    - Land Classification revised to classify every square in GB; urban and sea corrections incorporated.
+    - 508 squares surveyed; repeat of 1978 quadrats alongside new data.
+    - Results tied to the 1990 Land Classification; major step toward national-level estimates with more comprehensive coverage.
+  - 1998: Revised Land Classification and 4th field survey
+    - GB-wide classification updated to allow Scotland-only reporting; number of land classes increased to 40.
+    - 569 squares surveyed; results published later (CS1990 and related outputs).
+  - 2000: Countryside Survey 2000 (CS2000)
+    - Introduction of separate country estimates (England with Wales, Scotland) using country-unit versions of land classes.
+    - Land Classes subdivided into country-unit variants; aggregation rules applied where few squares remained in a country.
+    - 19 additional squares added to ensure representation of new classes; additional adjustments to achieve balanced sampling across England and Wales.
+    - An uplands module was added to improve statistical accuracy for upland habitats in England and Wales.
+  - 2007: Countryside Survey 2007 (CS2007)
+    - Wales-only reporting needs led to further adjustments.
+    - Land Classes subdivided into country-unit versions for England-with-Wales (5w, 6w, 7w, 15w, 18w) and England-only (5e, 15e) variants, increasing to 45 strata.
+    - Wales received 43 additional squares for Wales-specific representation; England did not receive similar additional squares to maintain overall precision.
+    - Wales-associated sampling increased for new Welsh classes; English classes 5e and 15e retained 4 squares each.
+    - Revised land-class maps (England with Wales and Scotland) and sample-square maps published (Figures 4–7).
+- Country estimates and reporting framework
+  - Separate country-unit estimates (England with Wales; Scotland) introduced to support country-specific environmental policy needs.
+  - Isle of Man squares were replaced in the country-unit framework.
+  - Tables and figures (Tables 2–4; Figures 4–7) illustrate class distributions, sample counts, and country-specific sampling rates.
+- Uplands module
+  - CS2000 included surveying an additional 30 upland squares to improve habitat estimates in upland regions, reflecting policy and reporting requirements for upland areas.
+- Data interpretation and national consistency
+  - Notes on how changing land classifications affects national estimates; prefer using the latest country-unit classification for consistency within a survey while maintaining comparability with earlier surveys.
+  - Table 4 documents the number of squares per land class across CS1978, CS1984, CS1990, CS2000, and CS2007 under the Original (1990) Land Classification.
+- Acknowledgements and references
+  - Acknowledgements highlight statistical guidance and graphical/data synthesis contributions.
+  - Extensive references document the methodological evolution, applications of the ITE Land Classification, and related Countryside Survey reports and papers.
+
+- Key implications for GIS and data practices
+  - The sampling framework is explicitly tied to a hierarchical land-class map that evolves over time, affecting how spatial data are stratified and summarized.
+  - For GIS workflows, follow the country-unit stratifications and sub-classifications (e.g., 5w/6w/7w/15w/18w; 5e/15e) introduced in 2007 to support Wales- and England-specific reporting.
+  - National estimates are derived by combining per-square habitat data with class-area proportions; awareness of classification changes across survey waves is essential for temporal comparability.
+  - Upland-focused modules and updated Land Classification maps influence both the sampling design and the interpretation of habitat-change statistics.

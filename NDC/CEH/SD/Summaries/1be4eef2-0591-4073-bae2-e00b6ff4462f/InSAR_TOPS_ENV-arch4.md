@@ -1,0 +1,24 @@
+# Survey Overview
+
+- Purpose: Environmental Monitoring as part of the NERC InSAR ToPS project to monitor climate impact from September 2017 to November 2018.
+- Study area: Two Flow Country peatland sites in Scotland
+  - Knockfin Heights (upland blanket peatland, >300 m above sea level; part of RSPB Forsinard Estate)
+  - Munsary (lowland blanket peatland; part of Plantlife Munsary Nature Reserve)
+- Site context: Flow Country is the largest expanse of blanket bog in Europe; Knockfin Heights features peat hags, drained/undrained pools, lochans; Munsary includes pool systems (Dubh Lochans), high water table, rare plants, with historic grazing, peat extraction, and burning; recent restoration (drain blocking) with sites near natural condition.
+- Monitoring approach: Environmental monitoring using a variety of sensors to measure soil moisture, soil temperature, water level at sub-sites, plus a central site for precipitation and photosynthetically active radiation (PAR); data are linked to surface motion monitoring from ISBAS DInSAR (Alshammari et al., 2018).
+- Equipment and sensors: At each site, multiple HOBO data loggers (Weather/Energy), water level loggers, EC-5 soil moisture sensors, PAR sensor, rainfall sensor; data collected from multiple sub-sites (A–F) with site-specific configurations.
+- Data collection and calibration:
+  - Measurements every 30 minutes during the survey period.
+  - Water level calibrated quarterly to account for peat growth.
+  - PAR measurements started later due to equipment delays.
+  - Some sensors lost due to deer damage or equipment failure.
+- Data management and processing:
+  - Data downloaded approximately every 6 months.
+  - Processed using HOBOWARE software.
+  - File naming convention includes site codes (KH = Knockfin Heights, MUN = Munsary) and environmental data indicators (ENV, SITE, WT).
+  - Data files include metadata-era fields: Date, Time, Date_Time, Temp_Soil, Pressure_mbar, Water_Content, Precipitation_mm, PAR_uE, Temp_Water, Water_level_meters.
+- Data structure and metadata:
+  - Sub-sites labeled A–F within each site.
+  - Central site for precipitation measurements.
+  - Detailed site coordinates and equipment lists provided (OSGB36 references).
+- References: Alshammari, L., et al. 2018, Long-Term Peatland Condition Assessment via Surface Motion Monitoring Using the ISBAS DInSAR Technique over the Flow Country, Scotland.

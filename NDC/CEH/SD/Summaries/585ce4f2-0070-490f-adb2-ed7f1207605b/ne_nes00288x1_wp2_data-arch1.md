@@ -1,0 +1,30 @@
+# Supporting information
+
+- This document describes inundation results simulated by the HiPIMS model for pluvial and fluvial flooding in Can Tho city, Vietnam.
+- Pluvial flooding results are driven by design rainfall with return periods of 2, 5, 10, 20, 50, and 100 years.
+- Fluvial flooding results are driven by the river water level boundary in 2011.
+- Data are provided as TIFF (.tif) files containing the maximum inundation water depth (in meters) during each flood event.
+- File categories:
+  - Pluvial flooding inundation results:
+    - 2years.tif
+    - 5years.tif
+    - 10years.tif
+    - 20years.tif
+    - 50years.tif
+    - 100years.tif
+  - Fluvial flooding inundation results:
+    - 2011inundationMap.tif
+- Each file contains the cell-averaged maximum inundation depth and information about the base data resolution.
+- Collection/generation approach:
+  - HiPIMS model used to simulate inundation and support flood risk assessment.
+  - Design rainfall and 2011 river boundary serve as drivers for the respective flood types.
+- Quality control:
+  - HiPIMS has been successfully used in multiple projects for inundation modelling.
+  - Referenced prior work validating methods: Zhao & Liang (2022); Xia et al. (2019); Xing et al. (2019).
+- References for methodology and context:
+  - Xia, X., Liang, Q., Ming, X. (2019). A full-scale fluvial flood modelling framework based on HiPIMS. Advances in Water Resources.
+  - Xing, Y. et al. (2019). City-scale hydrodynamic modelling of urban flash floods: scale and resolution issues. Nature Hazards.
+  - Zhao, J., & Liang, Q. (2022). Variable reconstruction and friction source term discretisation for hydrodynamic modelling. Advances in Water Resources.
+- Use case:
+  - Supports flood risk assessment, comparative analysis across different return periods, and visualization of inundation extents.
+  - Datasets may facilitate cross-comparison with other data sources, model validation, and scenario planning.

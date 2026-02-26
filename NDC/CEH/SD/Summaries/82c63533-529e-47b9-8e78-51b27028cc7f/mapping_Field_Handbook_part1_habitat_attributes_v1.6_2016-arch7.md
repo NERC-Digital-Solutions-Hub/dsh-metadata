@@ -1,0 +1,71 @@
+# GLASTIR MONITORING & EVALUATION PROGRAMME MAPPING FIELD HANDBOOK Part 1: Habitat attributes
+
+- Purpose and scope ( GIS-focused)
+  - Field protocol for mapping habitat attributes within the Glastir Monitoring and Evaluation project.
+  - Data captured in a GIS-based editable polygon/habitat layer, aligned with Countryside Survey methods for historical consistency.
+  - Focus on 1km squares, with BH (Broad Habitats) and PH (Priority Habitats) reporting to support time-series analyses and policy applications.
+
+- Visit status for GIS data quality and workflow
+  - Every Event, Point, and Area includes a VISIT STATUS field to track survey progress.
+  - Status codes:
+    - 0 = unsurveyed
+    - 1 = IN PROGRESS
+    - 2 = COMPLETED
+    - 3 = REFUSED ACCESS
+  - Usage guidance:
+    - Mark as IN PROGRESS when partial extent or uncertain species composition remains.
+    - Use COMPLETED only when the feature is fully surveyed; otherwise leave as IN PROGRESS or REFUSED ACCESS.
+    - Upon finishing a square, ensure all features are marked COMPLETED or REFUSED ACCESS.
+  - How to work with VISIT STATUS in GIS:
+    - Layer options: Landscape Points, Landscape Events, Landscape Areas.
+    - Search methods:
+      - Find command (binocular icon): search by VISIT STATUS (0 or 1 most commonly).
+      - Select by Attribute: highlights features across map; can search multiple criteria and layers; supports complex terms.
+      - Attribute Table: work through selections; allows inverted selections (e.g., find not completed if you have no REFUSED ACCESS).
+    - Practical tips:
+      - Use Find to quickly locate unsurveyed or in-progress features; use Zoom to feature for precise location.
+      - Keep the Find window open during edits; switching layers or criteria updates the results list automatically.
+      - For linears, use Select by Attribute to simultaneously highlight unsurveyed and in-progress features.
+      - When the square is completely blank, lines and points exist in an unsurveyed state; this changes once you split polygons.
+    - MMU-related handling:
+      - You cannot map features smaller than the Minimum Mapping Unit (MMU).
+      - For edge-cases (partial overlaps at square boundaries), prefer including the area in the adjoining polygon or use the UPDATE function to split/merge without creating sub-MMU polygons.
+      - COPY+/COPY- and multi-layer selection can help add or remove areas without re-drawing from scratch.
+
+- Ancient (Veteran) trees: identification and measurement guidance
+  - Definition reminder: ancient/veteran trees are old-looking for their species, often with large girth, substantial dead wood, cavities, and other features indicating long-standing presence.
+  - Girth-based guidance:
+    - A species-specific table provides minimum girth thresholds to categorize trees as potentially interesting, valuable, or truly ancient.
+    - DBH is normally measured at 1.3 metres (breast height); girth data help identify veteran trees but should not be used in isolation.
+  - Additional indicators of ancient status:
+    - Large dead wood in canopy, trunk cavities, water pools nearby, bark loss, fissures, fungal fruiting bodies, epiphytic plants, high wildlife diversity, and an aged appearance.
+    - Cultural/historic value or pollard forms may also contribute to ancient status.
+  - Practical notes:
+    - Species-specific thresholds are provided for guidance (e.g., for various common European species); use as a rule of thumb rather than an absolute determinant.
+    - When assessing a tree, combine girth with the presence of other ancient-tree indicators for a robust judgment.
+  - Documentation approach:
+    - Record DBH, species, and observable ancient-tree indicators; where applicable, tag as ancient, potentially interesting, or valuable according to the combined assessment.
+
+- Practical GIS and mapping workflow considerations
+  - Boundaries and line work:
+    - Prioritize correct extent and relative positioning; reflect habitat extent rather than forcing precise boundary perfection at all times.
+  - Updating and editing techniques:
+    - Use the UPDATE tool to split/merge polygons without creating unintended sub-MMU polygons.
+    - Leverage Copy+ and Copy- across layers to assemble complex geometries from existing features.
+  - Component-based and mosaic approaches:
+    - Where necessary, map by habitat components and aggregate component-level descriptions with area percentages.
+    - Use mosaics sparingly; prefer editing within component boundaries when possible.
+  - Field notes and documentation:
+    - Appendices provide mapping notes, line-editing guidance, and example workflows.
+    - Photographs and field notes are recommended for condition documentation and support for historic/environmental assets.
+
+- End-to-end data quality and standardisation takeaways
+  - Emphasize habitat extent and relative positions over perfect spatial precision; maintain MMU discipline.
+  - Ensure every feature has a valid VISIT STATUS to enable progress tracking and time-series comparability.
+  - Maintain consistent keys (vegetation and woodland) and a robust attribute framework to support analysis and policy-informed mapping products.
+  - Use standardized GIS workflows (Find, Select by Attribute, Attribute Table, and UPDATE) to maintain efficiency and data integrity across squares and over time.
+
+- Takeaways for GIS specialists
+  - The mapping framework supports map-based data products with robust BH/PH classification, dual vegetation/woodland keys, and comprehensive attributes.
+  - Time-series readiness depends on complete and accurately status-marked features, efficient editing workflows, and clear documentation of veteran-tree indicators.
+  - Efficient data capture relies on consistent use of visit statuses, MMU-aware mapping, and mosaic/component-based approaches when necessary.

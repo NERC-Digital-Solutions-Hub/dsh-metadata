@@ -1,0 +1,92 @@
+# Plynlimon Experimental Catchments
+
+- Overview and aim
+  - The Plynlimon experimental/research catchments were established in the late 1960s by the Institute of Hydrology (IH), later part of CEH, to study how land use affects catchment water availability, flooding, and low flows in the River Severn and River Wye headwaters in mid-Wales.
+  - The two adjacent catchments represent the two main upland land uses in Wales: coniferous forestry and sheep-grazed grassland, chosen to be as similar as possible otherwise.
+  - Data collected include long-term climate, streamflow, soil moisture, and detailed surveys of topography, soils, and land use to understand how physical attributes influence hydrology.
+  - Outputs support monitoring of environmental health and policy performance over time, with a focus on standardized, comparable datasets.
+
+- Spatial data architecture and layers
+  - Plynlimon Spatial datasets
+    - Catchment and subcatchments boundaries
+    - River network
+    - Spot heights
+    - Wye catchment contour lines
+    - Severn catchment contour lines
+    - Soil Parental Materials
+    - Vegetation map
+  - Hydrologically corrected elevation grid (DTM)
+    - Plynlimon DEM (GRID, 15 m cells, floating point, British National Grid)
+  - Key shapefiles (British National Grid)
+    - PlynlimonCatchments.shp: upland catchments; subcatchments defined by tributaries
+    - PlynlimonRiverNetwork.shp: river network with node IDs, length, catchment, and type (natural/artificial)
+    - PlynlimonSpotHeight.shp: spot elevations
+    - Plynlimon_WyeElevationContours.shp: 10 and 20 m contour lines for Wye
+    - Plynlimon_SevernElevationContours.shp: 10 m contour lines for Severn
+    - Plynlimon_SoilParentalMaterials: soil parent materials with codes and descriptions
+    - Plynlimon_VegetationMap2013: vegetation classifications and variants
+  - Vegetation mapping details
+    - Updated vegetation map (2013) derived from 2009 aerial photography with ground truthing in 2013
+    - Base used CEH Land Cover Map 2000 (LCM2000) as standard, extended to include heath, bracken, improved grassland
+    - Classes include: Conifer plantation, New plantation, Felled plantation, Rough acid grass, Bracken, Open dwarf shrub heath, Improved grassland, Inland bare ground, Deciduous woodland, Inland water
+    - Editing performed in ArcGIS 10.1 using 2013 field checks; differences with 2009 imagery due to date and field observations
+    - Variants column enables use as coniferous woodland or as felled/new plantation
+  - Soil data
+    - Soil Parental Materials map from Bell, J.P. (1969) The Soil Hydrology of the Plynlimon Catchments (IH Report No. 8)
+    - CEH 2005 revision of Bell’s map accompanies the dataset
+  - Contour datasets
+    - Wye and Severn elevation contours created from historical topographic data and digitised surfaces
+    - Severn contours derived from Edinburgh University point dataset; later converted to lines and clipped to catchment
+  - Topography and base maps
+    - Large-scale topographic maps from the Hunting Survey (1967-68) at 1:5000 and 1:10000 scales with 2.5 m contour intervals
+    - Huntings’ aerial survey provided the base for photogrammetric topography and subsequent digitisation
+
+- Data creation, processing, and methods
+  - Digitising and data capture
+    - Historical hard-copy maps digitised in the late 1990s into Arcinfo GIS
+    - Data captured using CALCOMP digitising tablet with ground control points to register elevations and contours (10 and 20 m intervals)
+    - Severn contour data captured at Edinburgh University from 1:5000 maps; later converted to line features
+  - Hydrologically corrected elevation model
+    - DEM derived by integrating 1:5,000 contour maps, spot heights, stream maps, and catchment boundaries
+    - A TIN was created and converted to a hydrologically corrected grid-based DEM
+    - Plyn_DEM: 15 m cell size, British National Grid, hydrologically corrected digital terrain model
+  - Data formats and access
+    - Arcinfo-compatible shapefiles for vector data
+    - GRID format for the hydrologically corrected DEM
+    - Metadata includes catchment names, subcatchment definitions, river types, contour heights, soil materials, and vegetation classes
+  - Topography map references
+    - 1968 references for 1:5000 topographic sheets; 1:10000 sheet produced from photogrammetric reduction
+    - Appendix A documents Hunting Survey technical specifications and frame footprints
+
+- Vegetation mapping methodology and implications
+  - Basis and rationale
+    - A need for a broad vegetation class map to assist SoilTrEC and soil carbon analyses
+    - LCM2000 used as base to avoid IPR conflicts with LCM2007; updated to better reflect heath, bracken, and improved grassland
+  - Process
+    - Draft vegetation map created from 2009 Next Perspectives aerial photography
+    - On-screen digitisation in ArcGIS 10.1 with aerial backdrop; field observations guided revisions
+    - Differences between draft map and field observations noted and corrected (date-related shifts in plantation status)
+    - Final map aligned with LCM2000 classes; conifer-related classes reclassified and variants added for flexibility
+  - Output
+    - Shapefile: Plynlimon_VegetationMap2013
+    - Attributes: id, VegClass, Varients
+
+- Historical context and references
+  - Original aims and methods contextualised by Brandt et al. (2004) for long-term hydrological interpretation
+  - Soil hydrology map and IH Report No. 8 (1969) by Bell; updated 2005 CEH edition
+  - Hunting Survey aerial photography (1967) as the foundational imagery for topography and GIS layers
+
+- Use cases, outputs, and access
+  - Data intended to demonstrate environmental health and inform policy performance over time
+  - Outputs include maps, GIS layers, and a hydrologically corrected DEM suitable for hydrological and geostatistical analyses
+  - Datasets were created with quality assurance steps (data verification, cleaning, transformation) and are prepared for storage in appropriate data portals
+
+- Key challenges and opportunities
+  - Increasing the value of datasets by combining streams of data (avoiding single-use datasets)
+  - Enabling broad access to underlying data used to generate final outputs, promoting transparency and reusability
+
+- Sources and further information
+  - CEH project pages and publications for Plynlimon datasets
+  - Appendix A: Hunting Survey documentation
+  - Bell, J.P. (1969) IH Report No. 8 (soil hydrology); revised 2005 CEH publication
+  - Brandt, C., Robinson, M., Finch, J.W. (2004) Anatomy of a catchment: hydrology and water status

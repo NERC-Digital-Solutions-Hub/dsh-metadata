@@ -1,0 +1,62 @@
+# ITE LAND CLASSIFICATION: CLASSIFICATION OF ALL SQUARES IN GB
+
+- Aim and scope
+  - Classify every 1 km square in Great Britain into land classes, reproducing the original classification where possible.
+  - Use automated, machine-readable data to cover all squares and enable broad applicability and reuse.
+  - Preserve confidence in the original classification due to extensive prior use and existing databases.
+
+- Data and data structure
+  - Data requirements: need comprehensive, square-based data available across GB; detailed field data impractical for all squares.
+  - Data categories used for classification:
+    - COASTAL: coastal cliff, rock, sand, mud, shingle, tidal
+    - ALTITUDE: hill/valley heights, distances, gradients, mean altitude, aspect
+    - MAPDATA: OS-derived layers (coastlines, woodland, villages, roads, canals, water bodies, towns, railways, etc.)
+    - DISTANCE: distance to south and west coasts
+    - ISLAND: island indicators
+    - CLIMATE: sunshine, snow days, January minima
+    - GEOLOGY: lithology and rock types
+    - DRIFT: glacial and related deposits
+  - Data sources and scale: used digitised map data (OS), 1:250,000 data, MOD 100 m DTM for altitude, and other land cover attributes; aims to be usable across GB with standardized units.
+
+- Methodological approaches explored (the middle)
+  - Initial approach: attempt to reproduce ISA (Indicator Analysis) using a detailed data set; practical challenges due to data balance and scale.
+  - Multivariate techniques tested:
+    - Discriminant Function analysis
+    - Logistic Regression (and combinations with discriminant methods)
+    - Other multivariate algorithms (tested but not adopted)
+    - Simulation/ordination approaches
+  - Evaluation criteria used
+    - Geographical distribution of squares within each class
+    - Class dispersion, means, and standard errors of variables
+    - Agreement with the original 1,212-squares classification
+    - Proportions of squares in each class GB-wide
+    - Relationship to the principal environmental gradient and its variability
+    - Proportion of field-sampled squares over time
+    - Efficiency in predicting areas and cover features
+    - Ecological characteristics across data sets
+  - Key results from comparisons
+    - Discriminant Function alone failed to capture coastal classes (7 & 8) in the south and extended class 25 into southern Britain; would require redefining coastal classes and class extents.
+    - Logistic Regression and combinations (Logistic/Discriminant) offered tighter clustering and better alignment with the original gradient, though some regional divergences remained.
+    - An expanded indicator-based approach (4800 squares with 76 attributes) showed significant divergences from the original, underscoring the value of the more integrated Logistic/Discriminant approach.
+    - Cross-tabulations and gradient correlations showed Logistic/Discriminant provided closer correspondence to the original classification than other methods.
+
+- Findings and conclusions (end)
+  - Overall assessment
+    - The Logistic Regression with Discriminant (Logistic/Discriminant) approach provided the best balance between accuracy, regional applicability, and alignment with the original classification, while reducing dispersion and error relative to the original.
+    - Discriminant Function alone was problematic for coastal classes and certain regional extents, necessitating redefinition of some classes.
+  - Recommendations
+    - Adopt Logistic/Discriminant as the recommended method for classifying all GB squares.
+    - Justifications:
+      - It best identified coastal classes without requiring major redefinitions of existing classes.
+      - Sampling balance was closer to proportional to stratum size, improving representativeness.
+      - Lower standard errors and less dispersion compared to the original, with improvements over the 4800-indicator approach.
+      - Produces more stable, policy-relevant dispersion characteristics, suitable for land-use planning and environmental policy.
+  - Outputs and outputs validation
+    - Produced distribution maps showing class dispersion and environmental gradients.
+    - Generated environmental means and standard errors for key variables (altitude, coast distance, etc.).
+    - Assessed correlations with vegetation data and ecological characteristics to validate ecological coherence.
+    - Provided ecological summaries for each land class (soil properties, vegetation associations).
+    - Availability of outputs: maps and classifications (original 32 ISA classes, original 1212 squares plus 4800 indicator-sample squares, and full-square classifications trained via the discriminant function) available on request.
+  - Implications for future work
+    - The established framework enables broader applications in land-use planning and environmental analysis, with a dataset suitable for integration with remote sensing and other thematic data sources.
+    - Further refinement and expansion possible through linked datasets and metadata portals to improve discoverability and reuse.

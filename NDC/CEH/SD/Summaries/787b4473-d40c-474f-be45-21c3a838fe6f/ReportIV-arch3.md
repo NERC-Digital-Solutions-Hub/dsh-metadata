@@ -1,0 +1,73 @@
+# NERC Soil Biodiversity Thematic Programme: Sourhope Site Summary
+
+- Overview
+  - Four years into the NERC Soil Biodiversity Thematic Programme, focused on a large field experiment at Sourhope, Macaulay Land Use Research Institute, Scottish Borders.
+  - Main outputs track above-ground productivity (biomass), plant community composition, and diversity, with attention to how management influences soil-plant feedbacks.
+  - Site design includes five replicate blocks on a downslope gradient, each with six main plots subdivided into sub-plots for 16 Phase I projects and 8 Phase II projects.
+
+- Monitoring measures and data collection
+  - Treatments (plot-level): Control 1, Control 2, Nitrogen, Lime, Nitrogen & Lime (N&L), Insecticide (formerly Biocide).
+  - Site-level management: monthly mowing to ~6 cm (May–Sept); insecticide applications after mowing; spring fertiliser applications.
+  - Data streams and methods:
+    - Above-ground biomass: regular clipping of a 0.5 m2 cell per sub-plot, oven-dried and weighed; data collected since 1999.
+    - Botanical surveys: baseline 1998 survey; annual point analysis surveys (July/August) using a 0.5 m2 cell and a 100-hole frame to record species hits; bryophytes identified to species level from 2002 onward.
+    - Species data: dominant vascular plants tracked (e.g., Agrostis capillaris, Festuca spp., Poa spp.), with bryophyte trends (Rhytidiadelphus squarrosus increasingly common).
+    - Soil and moisture: soil pH measured at ~5 cm depth since 1998 (distilled water method); soil moisture measured in 2002 with theta probe; 2002 included on-site soil moisture data across all cells.
+    - Weather: on-site Automatic Weather Station providing rainfall, radiation, and temperature data since 1999.
+    - Additional surveys: targeted vegetation cover, biomass sorting by species, and various small-scale plots and transects; Appendix 3 lists full species tallies.
+  - Data management and analysis:
+    - Statistical analyses include split-plot ANOVA (Genstat), and PCA on point-analysis data.
+    - Results integrated across multi-year data (1999–2002) with year, treatment, and interaction effects.
+  - Data scale and accessibility:
+    - 11,621 soil samples collected to date; long-running dataset with multiple appendices detailing species lists, biomass, weather, and site activity.
+
+- Key findings by theme
+  - Mowing effect
+    - Regular mowing, combined with lack of grazing, promoted Festuca rubra in fertile plots and increased bryophyte presence (sward height ~6 cm linked to moss expansion).
+    - Stress-tolerant species expanded across most treatments, while ruderal and SR/C-S-R groups declined with disturbance removal.
+  - Fertilisation effect
+    - Nitrogen and/or lime consistently increased above-ground productivity; plots receiving both N and lime showed the strongest biomass responses, though signs of potential productivity peaking in these highly limed plots were noted.
+    - High lime application raised soil pH toward ~7.0; productivity correlates with pH and moisture, with a positive pH–biomass relationship across treatments but variable within treatments (especially in N or lime only plots vs. combined N&L plots).
+    - Higher pH and nutrient availability favored competitive species, while unimproved plots favored stress-tolerators.
+  - Insecticide effect
+    - Insecticide-treated plots (Dursban) showed highest plant diversity in some analyses; the relationship with reduced herbivory is interpretive and likely indirect, potentially benefiting palatable species under relatively infertile conditions.
+    - Diversity responses align with earlier work suggesting herbivory pressure can shape plant community composition.
+  - Trampling effect
+    - A notable productivity decline in C2 plots (first-year sampling) likely linked to trampling during 13CO2 pulse experiments, rather than to the treatment per se.
+  - Bryophyte dynamics
+    - Bryophyte cover increased across the site, particularly in unimproved plots, contributing to shifts in biomass and relative abundance.
+  - Functional groups (CSR framework)
+    - Three functional groups—stress tolerators (S), competitive-stress-ruderal (CSR), and SR/CSR—accounted for the majority of plant hits in each plot.
+    - By 2002, N&L plots favored CSR and C-S-R species, while unimproved plots favored stress-tolerators; SR/C-S-R declines were linked to disturbance reduction and nutrient changes.
+  - Community composition and diversity
+    - Point analyses show shifts in species dominance: Festuca ovina and Festuca rubra gains in fertilised plots; Agrostis capillaris and Agrostis vinealis declined since 2000.
+    - Shannon diversity decreased in N&L plots by 2002 relative to baseline, while other treatments showed increases.
+    - PCA of point analysis data segregates improved vs unimproved plots; lime-treated plots cluster separately, with nitrogen-treated samples sharing some similarity to limed plots.
+  - Biomass trends and productivity
+    - Long-term increase in biomass across all treatments since 1999, with the greatest gains where N and lime were applied; 2002 saw reductions in biomass compared with 2001, especially in unfertilised and certain fixed-plot treatments.
+    - Block/location effects observed on slope: lower productivity lower on steeper blocks; biomass declines varied by block (e.g., Block 1 vs Block 5).
+
+- Implications for monitoring and policy-oriented monitoring frameworks
+  - Indicators used and their relevance
+    - Above-ground biomass as a direct productivity metric across treatments and years.
+    - Plant diversity indices (Shannon) and species hits from point analysis to capture community-level changes.
+    - Functional-group composition (CSR framework) to interpret ecological strategies under different management regimes.
+    - Bryophyte frequency and biomass as indicators of habitat condition under mowing and grazing removal.
+    - Soil chemistry and moisture (pH, moisture) to link abiotic drivers with biotic responses.
+  - Data quality and governance considerations
+    - The programme demonstrates the value of long-term, multi-metric monitoring with standardized sampling (0.5 m2 cells, 25-point baseline quadrats, 100-hole PCA-oriented quadrats).
+    - Challenges highlighted include data completeness (e.g., 2002 weather data gaps due to equipment downtime), need for consistent metadata, and ensuring data are readily auditable across years and plots.
+    - The initiative underscores the importance of transparent data provenance, robust metadata, and public sharing of underlying data where feasible, while balancing practical barriers observed (e.g., data-sharing constraints linked to dataset formats and scope).
+  - Lessons for monitoring frameworks
+    - Multi-dimensional indicators (biomass, diversity, functional types, soil chemistry, and moisture) provide a robust basis for understanding policy-relevant environmental health outcomes.
+    - Longitudinal designs with replicated plots and factorial treatments enable disentangling main effects and interactions (e.g., nitrogen, lime, and their combination) on ecological function.
+    - Functional-type analyses (CSR and SR/CSR) offer deeper insight into ecological mechanisms beyond simple species counts, aiding interpretation of policy-driven management changes.
+    - Integrating above- and below-ground processes (soil pH, nutrient status, moisture) with above-ground responses supports holistic environmental health assessments.
+
+- Notable data sources and resources
+  - Appendices and datasets detailing site activity, plant and bryophyte species lists, weather data, and biomass samples (e.g., Appendix 3 species lists; Appendix 5 weather; Appendix 6 biomass; Appendix 8 point-analysis comparisons).
+  - References to foundational ecological concepts (CSR theory, plant functional types) used to interpret community responses.
+
+- Endnotes
+  - The document synthesizes four years of data (1999–2002) and points to ongoing monitoring and potential future work to assess long-term trajectories under varying nutrient and disturbance regimes.
+  - The Sourhope site continues to function as a key platform for linking above- and below-ground biodiversity with management practices and environmental health indicators.

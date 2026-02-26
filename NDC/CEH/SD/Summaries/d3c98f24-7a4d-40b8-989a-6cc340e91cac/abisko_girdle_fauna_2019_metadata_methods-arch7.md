@@ -1,0 +1,4 @@
+# Metadata, site descriptions and methods for ' Soil fauna abundance under birch and willow vegetation in girdled and non-girdled plots, subarctic Sweden, 2019' Metadata for 'Primetime_Abisko_2019_Mesofauna.csv'
+
+- Purpose: Document metadata, site details, experimental design, and sampling methods for a girdling experiment assessing soil microarthropod (mesofauna) abundance under birch and willow vegetation; accompanies the dataset Primetime_Abisko_2019_Mesofauna.csv containing counts of soil fauna and associated environmental variables.
+- Data file focus: Primetime_Abisko_2019_Mesofauna.csv, including plot-level descriptors, vegetation and treatment codes, soil layer information, soil mass, and counts for a wide range of microarthropod taxa and other invertebrates.

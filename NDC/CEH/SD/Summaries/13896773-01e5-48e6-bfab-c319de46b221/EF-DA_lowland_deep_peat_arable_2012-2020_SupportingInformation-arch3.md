@@ -1,0 +1,33 @@
+# Supporting information for: Eddy Covariance measurements of carbon dioxide, energy and water flux at an intensively cultivated lowland deep peat soil, East Anglia, UK, 2012 to 2020.
+
+- Purpose and content
+  - Time series of land surface–atmosphere exchanges: net ecosystem CO2 exchange (NEE), sensible heat (H), latent heat (LE), and momentum (τ).
+  - Turbulent flux densities measured by eddy covariance (EC) between 2012-06-22 and 2020-01-01.
+  - Includes ancillary meteorological and soil physics observations and variables describing atmospheric turbulence.
+- Study site and context
+  - Location: EF-DA flux site in the East Anglian Fens, UK, a region with extensive drained peatlands used for agriculture.
+  - Site characteristics: lowland deep peat, multiple crop types (lettuce, leek, celery, sugar beet, potatoes); long-term drainage and land-use history; mean climate in the region is temperate maritime.
+  - Coordinates and elevation: 52°31'N, 0°29'E, ~0 m above mean sea level.
+- Sampling regime and data collection
+  - Automated, continuous collection of flux, meteorological, and soil data over the study period.
+  - EC measurements at 1.5 m height using LI-7500 IRGA and CSAT3 sonic anemometer, sampled at 20 Hz and logged by CR3000.
+  - Ancillary meteorology and soil data colocated with the flux tower (radiation, PAR, air temperature, humidity, precipitation, soil heat flux, soil temperature, and volumetric water content).
+  - Two soil-physics arrays installed 2 m apart, with detailed depths and sensor placements.
+- Data processing and quality control
+  - Flux calculations with EddyPRO v6.1; 30-minute averaging; comprehensive QC and corrections (coordinate rotation, spectral corrections, density corrections, etc.).
+  - Computation of turbulence metrics (u*, TKE, L, z/L) and flux footprint estimates (ART footprint tool).
+  - Quality control measures: outlier removal (MAD), non-stationary turbulence exclusion, flux range filters, nighttime NEE exclusion, footprint threshold (>70% from target ecosystem), and weekly visual checks with manual outlier removal.
+- Gap-filling and flux partitioning
+  - Gap-filling of NEE, LE, and H using Marginal Distribution Sampling.
+  - Partitioning of NEE into GEP and TER using Reichstein et al. (2005) approach driven by air temperature.
+  - Processing performed with REddyProc (R package) for reproducible gap-filling and partitioning.
+- Data structure, content, and units
+  - Data provided as CSV time series with 30-minute records; missing data denoted by -9999.
+  - Variables include NEE, LE, H, τ and their uncertainties; energy and CO2 storage terms; atmospheric pressure (Pa), air temperature (Ta), relative humidity (RH), vapor pressure deficit (VPD), net radiation (Rnet), radiation components (Rg), soil heat flux (G) across four locations, soil temperature and moisture (VWC), precipitation, wind speed and direction, footprint contribution, friction velocity (U*), TKE, Obukhov length (L), stability parameter (z/L), and gap-filled/partitioned products (NEE_filled, NEE_filled_sd, LE_filled, H_filled, etc.), plus GEP and TER.
+  - Metadata and provenance: variable descriptions and units aligned with LI-COR and Reichstein et al. conventions; detailed description of measurement and processing steps.
+- Governance, openness, and provenance notes
+  - Explicit use of standardized processing algorithms and publicly documented software (EddyPRO, REddyProc) to support transparency and reproducibility.
+  - Documentation of data provenance, processing steps, and QC procedures to enable assessment against monitoring framework requirements.
+  - Acknowledgments indicate funding sources and site ownership, reflecting governance and stewardship aspects of long-term environmental monitoring.
+- References and supporting materials
+  - Cited methodological and software references for QC, processing, and interpretation of EC data (e.g., Moncrieff et al., Reichstein et al., Papale et al., Reichstein et al., Neftel et al., and others).

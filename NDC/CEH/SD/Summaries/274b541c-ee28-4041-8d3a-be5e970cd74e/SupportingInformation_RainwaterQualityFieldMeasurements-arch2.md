@@ -1,0 +1,50 @@
+# Field measurements of alkalinity, chloride-ion, conductivity,   pH   and   nutrients   in   rainwater   (2004-2006) [LOCAR] LOCAR BASELINE DATASETS LOCAR
+
+- Overview
+  - Rainwater samples collected and analysed for anions and nutrients as part of the Lowland Catchment Research (LOCAR) Programme.
+  - Conducted at 7 sites across three catchments: Frome/Piddle (FP), Pang/Lambourn (PL), and Tern (TE) between 2004 and 2006.
+  - Sampling frequency: fortnightly in Pang/Lambourn and Tern catchments; roughly monthly in Frome and Piddle catchments.
+- Variables measured
+  - Alkalinity (as CaCO3)
+  - Ammonia (mg/l N)
+  - Chloride (mg/l Cl)
+  - Conductivity at 20 °C (µS/cm)
+  - Nitrate (mg/l N)
+  - pH
+  - Phosphorus soluble reactive (SRP, mg/l P)
+  - Silicate reactive dissolved (SRD, mg/l SiO2)
+  - Sulphate (mg/l SO4)
+- Site locations and designations
+  - FP04 – CEH Winfrith (Frome/Piddle catchment) – RNWQ (rainwater collector for water quality)
+  - FP13 – Higher Came Farm – RNWQ
+  - FP35 – Lower Wraxall Farm – RNWQ
+  - PL06 – Warren Farm – RNWQ (Pang/Lambourn)
+  - PL11 – Frilsham Meadow – RNWQ
+  - TE11 – Helshaw Grange – RNWQ (Tern)
+  - TE17 – Oakley Folly – RNWQ
+- Temporal coverage
+  - From January 2004 to May 2006
+  - Sampling cadence: fortnightly (FP, PL, TE catchments with variable durations per site) and roughly monthly (Frome/Piddle catchment)
+- Measurement and handling procedures
+  - Rainwater collectors transported to the lab and aliquoted into bottles for analysis.
+  - pH and alkalinity read from glass bottles; SRP filtered; other determinations unfiltered.
+- Analysis and laboratories
+  - Samples sent to Thames Water for analysis.
+  - Methods (Thames Water): 
+    - Chloride and Sulphate and Nitrate via Seal discrete analyser.
+    - Ammonia via Seal discrete analyser.
+    - Silicate (SRD) via Seal discrete analyser.
+    - Phosphorus soluble reactive (SRP) via Seal discrete analyser.
+    - pH via pH electrode.
+    - Conductivity via conductivity electrode.
+  - Quality control metrics (where reported): calibration standards, mean concentration accuracy, and detection limits provided; typical calibrations and accuracy indicators applied.
+- Data quality and QA/QC
+  - Thames Water performed quality control; weekly duplicates and QC samples used to compare laboratory results.
+  - Frome and Piddle catchment data lack time stamps (time recorded as 00:00 when samples returned to lab).
+  - Box-and-whisker plots generated for all variables to show range, median, quartiles, and outliers.
+- Data management and outputs
+  - Standardised dataset with clear unit definitions and site-catchment codes.
+  - Outputs suitable for presentation as reports, charts, and maps; data intended to be stored and uploaded to appropriate data portals.
+- Particular challenges noted
+  - Increasing the value of datasets by integrating with other relevant data (beyond single-use applications).
+  - Enabling access to the underlying data used to produce final outputs for broader scrutiny and reuse.

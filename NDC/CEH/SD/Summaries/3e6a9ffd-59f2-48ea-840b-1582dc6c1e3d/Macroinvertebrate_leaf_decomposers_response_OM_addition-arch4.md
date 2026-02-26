@@ -1,0 +1,33 @@
+# Macroinvertebrate leaf decomposers of Welsh upland rivers in response to organic matter addition
+
+- Study design: Before-After-Control-Impact (BACI) experiment in eight streams with each stream having an upstream reference zone and a downstream experimental zone. A 20–50 m separation maintained to ensure independence.
+- Timeline and manipulations:
+  - Before period (T1): 61–65 days from early Nov 2012 to early Jan 2013; both reference and experimental zones untreated and treated equally.
+  - After period (T2): 57–62 days from early Jan 2013 to Mar 2013; experimental zone received leaf litter additions to simulate natural senescence/abscission.
+  - Leaf litter additions: one tonne bags of oak, birch, and alder proportioned to experimental area; minimum wet weight of 1.7 kg m⁻² maintained; additional 630 kg (wet weight) added on 12 Feb and 5 Mar 2013 after storm events. Litter bags placed above the experimental zone and below the reference zone.
+- Experimental setup and materials:
+  - Nylon mesh litter bags (10 × 15 cm) with two aperture sizes: fine (500 µm) and coarse (5 mm) to control invertebrate access.
+  - Each bag contained five grams (±0.05 g) of air-dried deciduous leaves.
+  - Bags deployed as 48 replicates per stream (24 reference, 24 experimental) for each mesh type; bags secured on metal poles and covered with cobbles to enhance colonisation; submerged under low flow.
+- Sampling regime:
+  - Beginning Nov 2012 (T0): initial deployment of mesh bags.
+  - End of before period (T1): half of the bags (6 fine and 6 coarse per mesh type) removed from each zone; replaced with new bags to measure decomposition during T2.
+  - End of after period (T2): remaining bags from T0 period (half) and bags added at start of T2 removed; samples designated as T18 (≈18 weeks) and T2 respectively.
+  - Each replicate bag labeled with a letter (A–F) to create identifiers such as T1-A, T2-B, etc.
+- Processing and analysis:
+  - On collection, litter bags preserved in 70% ethanol on-site; transported to lab.
+  - In the lab: leaf material rinsed (250 µm sieve) and air-dried; macroinvertebrates separated and identified to species where possible; some taxa identified at coarser taxonomic levels (e.g., Chironomidae, Tipulidae, Oligochaeta, Limnephilidae).
+  - Identification performed visually; field and lab instrumentation include standard lab microscopy.
+- Data and metadata:
+  - Bag data structure (10 columns): 
+    - site_code, region, date, time, landuse, reach (Experimental or Control), Replicate (T1, T2, T18 with A–F), BagMesh (leaf bag type), taxon_name, abundance.
+  - Supporting site description file (DURESS_CU_site_description.csv) with 10 columns:
+    - Site_description fields including Site_code, Name, Eastings, Northings, Grid, Latitude, Longitude, Elevation, Survey, Catchment.
+- Scale and scope:
+  - 8 streams studied with paired reference and experimental zones.
+  - 48 litter bag replicates per stream (24 reference, 24 experimental) across two mesh sizes.
+  - Temporal coverage includes pre-manipulation (T1), during manipulation (T2), and extended post-manipulation (T18) observations.
+- Quality and calibration:
+  - Calibration steps and values: None noted.
+  - Quality control: None noted.
+  - Data captured as invertebrate abundance with taxonomic resolution limited by identifications to species where possible and higher taxa where necessary; data are organized to support BACI-style analyses and cross-zone comparisons.

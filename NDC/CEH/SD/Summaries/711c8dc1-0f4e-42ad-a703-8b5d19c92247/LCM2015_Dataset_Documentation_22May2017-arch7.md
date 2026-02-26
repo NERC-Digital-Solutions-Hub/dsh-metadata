@@ -1,0 +1,42 @@
+# Dataset documentation
+
+- UK land cover map 2015 (LCM2015) is a parcel-based land cover product for Great Britain and Northern Ireland, created by classifying satellite data into 21 Broad Habitat classes.
+- Data sources and structure:
+  - Primarily Landsat-8 (30 m) with AWIFS (60 m) as needed.
+  - Based on two-date composites; polygons reflect real-world boundaries for easy GIS integration.
+  - Spatial framework built from OSMM/LDSP boundaries; refined for improved compatibility with other datasets.
+- Products and formats:
+  - Vector data (core product): 6.7 million polygons (GB) and 0.9 million polygons (NI) with rich attributes.
+  - 25 m raster: two-band raster (band 1 = dominant class; band 2 = mean per-polygon probability).
+  - 1 km raster: multiple products including dominant class (1 band) and percentage cover per class (21 bands for classes; 10 bands for aggregates).
+  - Aggregates: 1 km products include both target 21 classes and 10 aggregated classes to support various analyses.
+- Class system:
+  - 21 target LCM2015 classes based on UK Broad Habitats (JNCC Jackson 2000).
+  - Some classes are split (e.g., Urban vs Suburban; Heather vs Heather grassland; Littoral subdivisions; etc.).
+  - Each parcel has a unique gid label for unambiguous communication.
+- Metadata and uncertainty:
+  - Per-polygon dominant class (Modal_class) and detailed breakdown of pixels per class (Pix_dist).
+  - Uncertainty: mean per-polygon probability from the Random Forest classifier; accompanying standard deviation available.
+  - Composite indicator shows the source of the classification (with 99 indicating infill from LCM2007).
+- Data access and citation:
+  - 1 km rasters available via CEH Environmental Information Platform (EIP).
+  - Full vector and 25 m rasters available on request under licence; licensing may apply.
+  - Each product has a DOI; separate DOIs for GB and NI vector, 25 m raster, and 1 km products to cite in publications.
+  - Projections: GB vector/raster in British National Grid; NI vector/raster in TM75 Irish Grid.
+- Data quality, caveats, and use guidance:
+  - LCM2015 is complex; users are advised that differences between LCM maps reflect both real land cover change and classification differences.
+  - The dataset is not recommended for change mapping in its current state due to changes in methodology and output representations across versions.
+  - Minimum mapping unit: polygons >0.5 ha; linear features <20 m dissolved to surrounding landscape.
+  - No segmentation is used in the LCM2015 spatial framework to avoid segmentation-related errors; changes mainly affect upland GB vector and 25 m raster products.
+- Differences from LCM2007 (highlights relevant to GIS work):
+  - Output data changes: Montane class removed; Rough grassland removed; 25 m raster now two-band; probability data restructured; spectral sub-classes removed; segmentation-based spatial framework removed; changes in mixed woodland handling.
+  - Methodology changes: Random Forest classifier replaces Maximum Likelihood; stable training areas used; ancillary data included as input rather than post-classification rules; classification integrates knowledge-based enhancements within the model.
+- Data products overview (how each product supports GIS work):
+  - Vector: rich polygon-level attributes (dominant class, per-class pixel counts, uncertainty, gid, etc.) ideal for detailed attribution and querying.
+  - 25 m raster: per-polygon class with accompanying probability band, suitable for map-based analyses with fewer attributes.
+  - 1 km rasters: suitable for regional-scale modelling and integration with other large datasets (e.g., climate or species distribution models); percentage and dominance summaries provided.
+
+- Where to find more:
+  - Information and access: CEH websites and the CEH EIP portal.
+  - Documentation sections include detailed class definitions, color mappings, and composite image recipes (Appendices 1–4).
+  - Citing data: DOIs provided per product (GB and NI; vector, 25 m, and 1 km products).

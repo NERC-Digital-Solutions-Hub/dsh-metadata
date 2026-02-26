@@ -1,0 +1,38 @@
+# Experimental design/sampling regime
+
+- The UK Butterfly Monitoring Scheme (UKBMS) collects data from over 2,000 sites annually across the UK, using standardized methods to estimate butterfly abundance.
+- Main data collection approaches:
+  - All-species transects: fixed-route line transects (2–4 km) walked weekly from April to September; 5 m belt along the transect; 26 counts per year; transects fixed to enable year-to-year comparisons.
+  - Wider Countryside Butterfly Survey (WCBS): reduced-effort sampling in wider countryside habitats (farmland, etc.), based on two parallel 1-km transects within randomly selected 1-km squares; 2–4 visits per year with minimum July/August visits.
+  - Single-species transects, timed counts, and egg/larval web counts conducted during the focal species’ flight periods.
+- Transect timing and conditions:
+  - Walks typically between 10:45 and 15:45; weather criteria required (suitable butterfly activity: dry, wind < Beaufort scale 5, temperature thresholds with sunshine or overcast conditions).
+- Data collection workflow:
+  - Field data recorded on standard forms and entered online via the UKBMS data entry site or Transect Walker (free download).
+  - Regional transect coordinators assemble data for their region; data uploaded to an Oracle database.
+- Data processing and analysis:
+  - Two main analytical approaches to national indices:
+    - Wider countryside species: two-stage model using all counts per season; first stage uses a generalized additive model (GAM) to estimate a seasonal flight pattern, then uses an off-set in a full-year model to estimate annual changes.
+    - Habitat specialists and regular migrants: GAM used to impute missing values and derive site indices; a log-linear regression is then applied to collated indices to produce national trends.
+  - Collated Index concept: combines site indices across monitored sites to reflect national abundance trends; updated annually as new data are received.
+  - Trends are calculated as linear regressions on collated indices over time, with specific periods:
+    - All years (since 1976)
+    - Last 20 years (1997–2016)
+    - Last 10 years (2007–2016)
+- Data characteristics and units:
+  - Site indices are relative measures of population size (not absolute counts) and are proportional to butterfly abundance observed.
+  - Collated Indices are presented as Log10 Transformations (LCI) to enable relative comparisons; trends are shown as annual slope estimates.
+  - Species are categorized as wider countryside species, habitat specialists, or regular migrants, reflecting mobility and habitat use.
+- Quality control and data validation:
+  - Automatic checks in Transect Walker flag unusual counts or out-of-season records.
+  - Regional coordinators review data for questionable entries; ongoing online checks during the season.
+  - Additional validation includes checks against known distributions, flight periods, site introductions, and atypical abundances.
+- Data format and storage:
+  - Stored as a CSV file with columns including:
+    - Sci_Name, Common_name, No_years, Series_slope, Series_Std_Err, Series_P_value, Series_trend, Series_%_change
+    - 20_yr_Slope, 20_yr_Std_Err, 20_yr_P_value, 20_yr_Trend, 20_yr_%_change
+    - 10_yr_Slope, 10_yr_Std_Err, 10_yr_P_value, 10_yr_Trend, 10_yr_%_change
+  - The data structure supports tracking changes in national trends over multiple timescales and reporting significance.
+- Context and references:
+  - Methods build on established ecological/statistical practices (e.g., generalized additive models for seasonal patterns; index calculation approaches described in cited literature).
+  - Data interpretation includes acknowledging incomplete data years for some species and the resulting variability in trend lengths.

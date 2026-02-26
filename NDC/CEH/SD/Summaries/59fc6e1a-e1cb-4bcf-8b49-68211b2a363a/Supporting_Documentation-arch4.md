@@ -1,0 +1,24 @@
+# Method
+
+- Purpose: investigate the distribution and apparent density of tsetse populations in Mambwe District, Eastern Province, Zambia.
+- Timeline: two field surveys in 2013 – cold dry season (May/June) and hot dry season (November).
+- Location: transect from the plateau eastern Luangwa Valley (altitude ~900 m) down to the valley floor near Mfuwe Airport (altitude ~550 m); starting at the old tsetse barrier in Wazaza, via Msoro to Mfuwe, ending at M'nkanya turning.
+- Sampling design:
+  - Fly rounds conducted at ~1 km intervals perpendicular to the road.
+  - Each fly round ~6 km long, with sampling stops every ~200 m.
+  - Two-person teams used black screens with fly nets; screens baited with phenols and acetone to boost sampling efficiency.
+  - Sampling time standardized to start at 7 am to align with peak tsetse activity.
+- Species observed:
+  - Target: Glossina morsitans morsitans (G. pallidipes present but rare; dataset contains only G. morsitans morsitans).
+- Data collection at stops:
+  - Catch tsetse landing on the screen or by personnel; record species and count.
+  - Record geographic coordinates (GPS) for each stop; date of fly round.
+- Data structure:
+  - Dataset file: DDDAC_tsetse_2013.csv
+  - Variables: Code (unique observation ID), Survey (One = May/June, Two = November), ID_Survey, BFR (fly round number), Stop (sampling point), Latitude, Longitude, Date, Result (1 = tsetse recorded, 0 = none), Count (number of tsetse recorded).
+  - NA indicates missing data; coordinates may be NA if not recorded.
+- Geographical extent: Longitude 31.826–32.094; Latitude -13.248–-13.828.
+- Data quality and limitations:
+  - Some missing data (NAs) and coordinates not recorded for all stops.
+  - Only two seasonal snapshots from a single transect; potential sampling bias due to road-based transects and species focus.
+  - Data suitable for geospatial analyses of distribution and apparent density; limited by scope and potential reporting gaps.

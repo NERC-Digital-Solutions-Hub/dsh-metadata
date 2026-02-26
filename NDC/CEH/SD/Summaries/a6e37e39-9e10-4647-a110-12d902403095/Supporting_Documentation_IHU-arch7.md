@@ -1,0 +1,89 @@
+# Integrated Hydrological Units of the United Kingdom (IHU)
+
+- Purpose and scope
+  - A multi-layer dataset of polygon hydrological units for the United Kingdom, organized into five layers: Hydrometric Areas with Coastline, Hydrometric Areas without Coastline, Groups, Sections, and Catchments.
+  - Hydrometric Areas with Coastline and without Coastline represent the same entities at coarse level; the difference is how coastlines are delineated (smooth UK coastline vs. IHDTM boundaries).
+  - Groups, Sections, and Catchments provide progressively finer spatial detail; Groups comprise Sections, Sections underpin Catchments, and Catchments represent the full upstream area from each Section outlet.
+
+- Layer descriptions and use cases
+  - Hydrometric Areas with Coastline
+    - Covers Great Britain and Northern Ireland; used for cartography and overview of river catchments with sea outlets.
+    - Administrative groupings for river flow measurement and hydrometric data management.
+  - Hydrometric Areas without Coastline
+    - Same entities as above but boundaries follow IHDTM edges; better for analyses that require exact IHDTM grid alignment, not ideal for cartography.
+  - Groups
+    - Medium-resolution units (~average 400 km², from 4 km² to 3019 km²); consist of one or more Sections; can be combined to form larger Hydrometric Areas without Coastline.
+    - Names reflect major rivers and local geography.
+  - Sections
+    - Drainage area of a watercourse between two confluences with named rivers; core building blocks of Groups; each Section links to a single Catchment.
+    - Naming often partial; “UNKNOWN” used where upstream names are not known; “Source” indicates no upstream section; “Sea” indicates discharge to sea.
+  - Catchments
+    - Finest level of detail; upstream area from every Section outlet; polygons may overlap across Sections/Groups, unlike other layers which are topologically constrained to be non-overlapping.
+
+- Quality, limitations, and scope
+  - Quality tied to the underlying IHDTM with a 50 m grid resolution.
+  - Coverage:
+    - Hydrometric Areas with Coastline: Great Britain and Northern Ireland.
+    - Other layers: Great Britain only (NI data lacking suitable detail for rivers with names and geometry).
+  - Data limitations:
+    - Some minor rivers may not be captured even in Great Britain.
+    - Northern Ireland catchments are clipped to the national boundary; some hydrometric areas may not be hydrologically complete.
+  - Topology:
+    - Boundaries processed to be topologically correct with no gaps or overlaps (each point allocated to exactly one Hydrometric Area).
+  - Updates:
+    - No routine updates expected; updates may occur if errors are found or if improvements to underlying river/drainage grid data become available.
+
+- Data creation, history, and lineage
+  - Historical framing:
+    - Hydrometric Areas originate from a 1930s Inland Water Survey Committee framework; numbering used in national hydrometric systems.
+    - Original boundaries evolved from digitization of catchments; IHDTM-aligned boundaries implemented later for consistency with CEH and NRFA datasets.
+  - Creation process:
+    - Boundaries derived from CEH IHDTM using in-house tooling; coastline for Great Britain from Ordnance Survey Meridian2; Northern Ireland coastline from OS GB Panorama.
+    - In 2014, islands without defined Hydrometric Areas were assigned to nearby areas to achieve full UK coverage (specific mergers listed, e.g., Isles of Scilly merged with HA 49).
+    - Islands/regions merged based on proximity and existing numbering conventions.
+  - Coverage notes:
+    - All boundaries were adjusted to be topologically valid; NI catchments are clipped to the national boundary, which may affect hydrologic completeness for cross-border catchments.
+
+- Data structure and attributes
+  - Primary format: Geodatabase (preserves NULL values; Shapefile would convert NULLs to zeros or empty strings).
+  - Feature counts:
+    - Hydrometric Areas with Coastline: 115 features.
+    - Hydrometric Areas without Coastline: 105 features.
+    - Groups: 405 features.
+    - Sections: 584,556 features.
+    - Catchments: 584,556 features (note: catchments are the upstream areas; overlaps exist at the Catchment level).
+  - Key attributes (highlights):
+    - Hydrometric Areas with Coastline/without Coastline:
+      - HA_NUM: Hydrometric Area number.
+      - HA_NAME: Hydrometric Area name.
+      - HA_ID: Hydrometric Area identifier (e.g., HA000).
+    - Groups:
+      - G_ID: Group identifier; G_NAME: Group name; G_AREA_KM2: area in km²; G_CAT: category (core, marginal, estuarine); RIVER-related fields describing principal rivers.
+      - HA_ID: linked Hydrometric Area; OUTF_SC: outflow section within the group; RIVER fields for main river names.
+    - Sections:
+      - S_ID: Section identifier; S_NAME: public full section name; RIVER fields (RIVER, RIVER_DS, RIVER_US) describing main river context.
+      - S_AREA_KM2: polygon area; S_DS_ID: downstream section identifier (null if flows to sea).
+      - HA_ID, HA_NUM: identifiers linking to parent Hydrometric Area.
+      - OUTF_X/OUTF_Y: coordinates of the outlet point; S_ID aligns with downstream Section as needed.
+    - Catchments:
+      - S_ID: downstream section identifier; EAST/NORTH: outlet coordinates; CEAST/CNORTH: centroid coordinates; KMSQ: area in square kilometres.
+      - Additional identifiers: S_ID to connect to the most downstream section.
+
+- Practical guidance for GIS specialists
+  - Choose layer based on use-case:
+    - For map-based cartography and general overview, use Hydrometric Areas with Coastline.
+    - For analysis requiring exact IHDTM grid alignment, use Hydrometric Areas without Coastline.
+  - Data integration:
+    - When combining with other datasets (e.g., NRFA data), consider the NI data limitations and cross-border clipping.
+  - Data format considerations:
+    - Prefer Geodatabase to preserve NULLs; be cautious with Shapefile exports where NULLs may convert to zeros or empty strings.
+  - Validation and maintenance:
+    - No routine updates; re-download or reprocess only if errors are identified or if underlying IHDTM/rivers data are improved.
+  - Attribute usage:
+    - Use HA_NUM/HA_NAME/HA_ID for hydrometric area identification.
+    - Use S_ID and RIVER fields to understand flow context within Sections and Catchments.
+  - Topology and integrity:
+    - Expect non-overlapping, gap-free Hydrometric Areas; Catchments may overlap with other sub-units at finer scales and require careful handling during analyses.
+
+- Summary takeaway for GIS workflows
+  - The IHU provides a hierarchical, multi-resolution framework for UK hydrological units, grounded in the IHDTM, with clearly defined boundary delineations and comprehensive attribute schemas. It supports both visualization and detailed hydrological analysis, while noting limitations in NI coverage and the absence of routine updates.

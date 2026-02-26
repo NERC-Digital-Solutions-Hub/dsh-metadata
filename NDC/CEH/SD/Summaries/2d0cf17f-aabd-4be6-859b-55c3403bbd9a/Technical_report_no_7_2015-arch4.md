@@ -1,0 +1,42 @@
+# Centre for Landscape and Climate Research Department of Geography Technical Report No. 7
+
+- Purpose of the report: Document the metadata for Corine Land Cover (CLC) datasets for the UK and Channel Islands (Guernsey and Jersey), including CLC2012 and changes from 2006–2012.
+- Datasets covered: (i) CLC2012_UK.mdb for the UK (including Northern Ireland and Isle of Man), (ii) CLC2012_UK.mdb for Guernsey, and (iii) CLC2012_UK.mdb for Jersey.
+- Dataset structure: Each region contains three layers:
+  - CLC-Changes (2006-2012)
+  - CLC2006revised
+  - CLC2012
+- Technical specifics:
+  - UK (Great Britain and NI): British National Grid, Transverse Mercator, GCS_OSGB_1936, Datum D_OSGB_1936
+  - Guernsey: Guernsey Grid, Transverse Mercator, GCS_WGS_1984, Datum D_WGS_1984
+  - Jersey: Transverse Mercator (New JTM), GCS_ETRF_1989, Datum D_ETRF_1989
+- CORINE metadata and background:
+  - Copernicus Land - CORINE land cover 2012 and 2006-2012 changes; part of GMES/Copernicus land monitoring
+  - 44 land cover classes; minimum mapping unit (MMU):
+    - Status layers: 25 hectares
+    - Linear elements: 100 metres
+    - Land Cover Changes: 5 hectares
+  - Aimed at Europe-wide consistent land cover inventories; supports environmental monitoring and policy indicators
+- Lineage and methodology:
+  - Update to reference year 2012 using imagery from 2011–2013; Google Earth imagery supported interpretation
+  - No up-to-date national land cover map available at update time; reference closest to CLC2006 status (LCM2007)
+  - Production followed EEA technical guidelines; used InterChange for mapping CLC changes
+- Metadata and standards:
+  - Metadata compliant with the EEA Metadata Profile; INSPIRE-compliant with extensions
+  - Metadata language: English (eng); UTF-8
+  - Resource metadata identifier: CLC_metadata_UK
+- Access, restrictions, and licensing:
+  - Data access governed by EU Regulation 1159/2013 (relevant to GMES/Copernicus data)
+  - Open access with conditions: acknowledge source, not imply EU endorsement, disclose modifications
+  - Regulatory context updated by later regulations but legacy provisions still apply
+- Geographic extent and scale:
+  - UK bounding box approx. West -8.62 to East 1.76; South 49.88 to North 60.84
+  - Spatial resolution: 1:100,000 denominator
+- Acknowledgments and contact:
+  - Metadata authored by University of Leicester; originator and custodian roles defined (Defra, European Environment Agency, European Commission DG-ENTR)
+  - Funding and support from Defra and EEA under Copernicus/GMES framework
+- Practical implications for Data Leaders:
+  - Clear, region-specific data assets with standardized metadata and documentation
+  - Cross-region coordination considerations (UK, Guernsey, Jersey) for discoverability and reuse
+  - Important for environmental monitoring, policy support, and European-wide comparability
+  - Needs attention to access restrictions, licensing, and proper attribution in dissemination

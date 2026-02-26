@@ -1,0 +1,28 @@
+# Units and Variables in Conwy Catchment Spatial Water Chemistry Database
+
+- Purpose of the note: The database lists units in a two-column format (Column 1: variable names; Column 2: units). These units may differ from the units quoted by chemical analysts, as documented in the separate metadata file Metadata_Analytical methods_conwy catchment spatial water chemistry.xlsx.
+- Core identifiers: Master_Site, Site_Code; Date; Rep (sampling replicate).
+- Variable structure: For many measurements there are corresponding Qualifier columns (e.g., CaQual, MgQual, NO3Qual, etc.) that indicate data quality or methodological notes, alongside the primary measurement columns (Ca, Mg, NO3, etc.).
+- Range of variables: Includes major cations and anions, nutrients, and a broad set of trace elements and related parameters, such as:
+  - Ca, Mg, Na, SO4, Cl, NO3, NH4, NO2, DOC, pH, Alkalinity
+  - Al, Total_N, PO4_P, TON
+  - Conductivity, Si
+  - Fe, POM, POC, Salinity, F, Br, TDP, Li, Be
+  - Al27, Sc, V, Cr, Mn, Fe57, Ni58, Co, Ni60, Cu, Zn
+  - As, Se, Rb, Sr, Mo, Cd, Sb, Cs, Ba, Pb, U, B, S
+  - La, Ce, Pr, W, Ti, Sn
+- Units variety: Most ions/metals are in micro-sugars/liter equivalents (commonly ug/l or mg/l); conductivity is in us/cm; some parameters (e.g., pH, TO N, POM/POC) use their own typical environmental chemistry units. Note that many values are labeled with Qual fields indicating quality flags; some data may be recorded in different scales (e.g., ug/l vs mg/l) across variables.
+- Important caveat: The units in the database may differ from the units used by chemical analysts; always cross-check with Metadata_Analytical methods_conwy catchment spatial water chemistry.xlsx for the authoritative unit definitions and methods.
+- Data structure implications for analysis:
+  - Use Site_Code, Date, and Rep to align temporal and spatial comparisons.
+  - Filter or interpret data using Qual columns to assess data quality.
+  - When combining variables, standardize units across measurements (convert ug/l, mg/l, etc., as needed) and keep a record of conversions.
+- Suggested analyses and use cases:
+  - Compare major ions (Ca, Mg, Na, Cl, SO4) and conductivity across sites and over time.
+  - Examine nutrient dynamics (NO3, NO2, NH4, TON, PO4_P, DOC) in relation to pH and alkalinity.
+  - Explore trace elements and metals (Fe, Mn, Cr, Ni, Cu, Zn, U, Pb, Cd, etc.) for contamination or geochemical trends.
+  - Assess data quality and consistency using Qual flags and by validating against the analytical methods metadata.
+- Data governance and reproducibility:
+  - Maintain traceability to the Master_Site/Site_Code, Date, and Rep for repeatability.
+  - Document unit conversions and data quality flags when producing aggregated datasets.
+  - Ensure datasets are discoverable and accompanied by metadata for future reuse.

@@ -1,0 +1,61 @@
+# Plant community basal data from a hedgerow cutting experiment in England, 2016
+
+- Overview
+  - Dataset of plant abundance data from an MSc project using hedgerow experiments to study how cutting regimes affect basal flora species richness.
+  - Contributes to the publication: Stanbury et al. 2020 in Biodiversity and Conservation (accepted Apr 2020).
+  - Context: part of long-running hedgerow experiments focused on management under agri-environment schemes (ELS and HLS) and restoration options.
+
+- Experimental design and scope
+  - Design: randomised block experiment (Experiment 2) with full factorial treatments (2 × 2 × 3) across four field sites, each with three replicates per treatment.
+  - Sites and hedgerow types:
+    - WO: hawthorn-dominated hedgerow, Woburn, Buckinghamshire
+    - WB: blackthorn-dominated hedgerow, Waddesdon Estate, Oxfordshire
+    - WC: mixed-species hedgerow at Waddesdon Estate, Oxfordshire
+    - YC: traditional mixed-species hedge on bank, Yarcombe, Devon
+  - Treatments (13 total, described in the accompanying experiment table):
+    - Time of cutting: Autumn vs. Late winter
+    - Intensity of cutting: Standard vs. Incremental (raising cutter bar by ~10 cm per cut)
+    - Frequency of cutting: Annual, Once every two years, Once every three years
+  - Treatment timing and duration: September 2010 – January/February 2016
+  - Notes: winter cutting was not applied at WB due to insufficient hedgerow; some access constraints affected sampling at WO and WC.
+
+- Data collection and sampling design
+  - Vegetation data collected from each side of each hedgerow plot using two quadrats per side (1 m wide × 10 m long per quadrat).
+  - Quadrats:
+    - Inner quadrat: 1 m out from hedge centre (sampled under/near hedge depending on hedge width)
+    - Outer quadrat: immediately adjacent to inner (sampled beside hedge)
+  - Sampling layout:
+    - Quadrats placed ~5 m from start of each hedgerow plot to minimize edge effects.
+    - Vegetation surveyed to 80 cm height.
+  - Abundance data:
+    - Percentage cover for each species recorded to nearest 5% (5–100%), or nearest 1% if 1–4%.
+    - Species with <1% cover recorded as 0.1% cover.
+    - Taxa include bare ground and plant litter within SPECIES_NAME.
+  - Quality controls:
+    - Standard protocol, trained surveyors, expert validation of species lists, checks for anomalous values.
+
+- Data structure and contents
+  - Primary file: HedgerowMScQuadratData.csv
+  - Key columns and meanings:
+    - EXPERIMENT: 2 (Experiment 2)
+    - SITE: code (WB, WC, WO, YC)
+    - BLOCK_NO: 1–3
+    - PLOT_NO: 1–39
+    - TREATMENT: 1–13 (definitions correspond to the experimental design table)
+    - VISIT_DATE: sample date (DD/MM/YYYY)
+    - VISIT_YEAR: year of sampling (YYYY)
+    - QUADRAT: Inner or Outer
+    - SPECIES_NAME: scientific name (includes bare ground and litter)
+    - COVER: percentage cover
+- Data provenance and references
+  - Methodology and context linked to Defra BD2114 Defra project and UKCEH guidance; methodology published in Defra report and related literature.
+  - Related data use and quality referenced to Countryside Survey: UK 2007 results (Carey et al., 2008).
+- Accessibility and limitations for GIS use
+  - Spatial scope: four sites with known coordinates; plot-level locations are implied by site/block/plot identifiers (no explicit per-plot coordinates provided).
+  - Data integration: suitable for mapping by site, block, plot, and treatment; quadrat-level data enables fine-scale mapping of species richness/cover within hedgerow plots.
+  - Practical considerations for GIS:
+    - Some sites had restricted access (WO, WC) which may affect spatial completeness.
+    - Temporal aspect: repeated visits within 2010–2016 allow temporal GIS analyses of vegetation response to treatments.
+- Funding and management
+  - Long-running hedgerow experiments funded by Defra (BD2114) and managed by UKCEH.
+  - MSc student received university funding; fieldwork support contributed by UKCEH staff.

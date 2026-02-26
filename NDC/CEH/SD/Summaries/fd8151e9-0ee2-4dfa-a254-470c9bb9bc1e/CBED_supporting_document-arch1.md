@@ -1,0 +1,42 @@
+# Methods
+
+- The Concentration Based Estimated Deposition (CBED) methodology generates 5x5 km resolution gridded data for wet and dry deposition of sulphur, oxidised and reduced nitrogen, and base cations, derived from measured air concentrations and precipitation ion concentrations collected at sites in the UK Eutrophying and Acidifying Pollutants (UKEAP) network.
+- Process flow:
+  - Site measurements are interpolated to create UK-wide concentration maps.
+  - Ion concentrations in precipitation are combined with annual precipitation maps to produce wet deposition values.
+  - Gas and particulate matter concentration maps are combined with habitat-specific deposition velocities to estimate dry deposition for five land cover categories: forest, moorland, grassland, arable, and urban.
+  - Deposition for each grid square is weighted by the relative proportions of land cover within that 5x5 km cell to produce grid-square averaged deposition.
+- Dry deposition specifics:
+  - Gases and PM deposited to vegetation include SO2, HNO3, NO2, NH3 and sulphate, nitrate, ammonium, calcium and magnesium.
+  - For critical load calculations, moorland deposition is applied to non-woodland habitats and forest deposition is applied to woodland habitats.
+- Component data and modelling inputs:
+  - SO2 concentrations come from rural measurements with an urban enhancement factor.
+  - Oxidised nitrogen dry deposition uses interpolated nitric acid concentrations from ~30 sites; NO2 from the PCM model (rural data plus point/line sources).
+  - Ammonia concentrations combine FRAME model outputs with annual UKEAP measurements to capture local variability.
+- Wet deposition:
+  - Includes wet deposition from precipitation and occult (cloud droplet) deposition to vegetation, for sulfate, ammonium, nitrate, calcium, magnesium, and acidity (hydrogen ions).
+  - Anthropogenic vs total sulphur and calcium are separated using sea-water ion ratios relative to sodium.
+  - Orographic enhancement is applied to precipitation concentration in upland regions, based on observations from Great Dun Fell and Holme Moss.
+- Temporal aspects:
+  - Deposition varies with annual weather; inter-annual variability is smoothed by averaging over a three-year period for deposition estimates and for exceedance calculations of critical loads.
+  - Calculations are annual but provided as rolling 3-year means; ecosystem-specific data include two variants: moorland/short vegetation everywhere and forest everywhere, plus grid-average values.
+- Data products and structure:
+  - Three 2013–2015 3-year mean datasets:
+    - CBED-deposition-moorland-2013-2015.csv (moorland deposition: NOx_m, NHx_m, NMS_m, NM_CA_mg_m; with easting/northing coordinates).
+    - CBED-deposition-forest-2013-2015.csv (forest deposition: NOx_f, NHx_f, NMS_f, NM_CA_mg_f).
+    - CBED-deposition-gridaverage-2013-2015.csv (grid-average deposition: NOx_ga, NHx_ga, NMS_ga, NM_CA_mg_ga).
+  - Each file includes centre coordinates (easting, northing in metres) and deposition values in keq ha-1 year-1 for the respective ecosystem category.
+  - Conversion to standard units:
+    - keq ha-1 year-1 to kg S ha-1 year-1: multiply by 16 (for sulphur).
+    - keq ha-1 year-1 to kg N ha-1 year-1: multiply by 14 (for nitrogen).
+    - keq ha-1 year-1 to kg Ca ha-1 year-1: multiply by 20 (for base cations).
+- Units and interpretation:
+  - All deposition values are expressed as keq ha-1 year-1; separate conversions enable reporting in kg S, kg N, or kg Ca per hectare per year.
+- Quality assurance and provenance:
+  - CBED methods align with government QA practices for analytical models; they undergo extensive peer review and inter-comparison exercises.
+  - Process documentation, version control, and central code storage are in place.
+  - Mass-balance checks and cross-year comparisons ensure numerical consistency.
+  - The CBED results have been published in peer-reviewed literature and overseen by senior responsible officers.
+- Data details and references:
+  - Includes detailed descriptions of input data sources (rural measurements, PCM model, FRAME model, UKEAP network) and supporting observational studies (e.g., Great Dun Fell, Holme Moss) and related modelling work.
+  - Resource locators and supporting information provided for UK Acidifying and Eutrophying Atmospheric Pollutants (UKEAP) and related Defra networks.

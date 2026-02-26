@@ -1,0 +1,43 @@
+# Countryside Survey 2007: vegetation plot data, Great Britain Dataset Documentation
+
+- Two CSV files capture vegetation data from 2007 field plots in Great Britain:
+  - Vegetation Plot - Plot Information 2007.csv
+  - Vegetation Plot - Species List 2007.csv
+- Ownership and rights:
+  - Data owned by NERC - Centre for Ecology & Hydrology (CEH)
+  - All CS data usage must include an acknowledgment: “Countryside Survey data owned by NERC - Centre for Ecology & Hydrology”
+  - Countryside Survey © Database Right/Copyright NERC- Centre for Ecology & Hydrology. All rights reserved.
+- Context and references:
+  - Refer to Maskell et al., 2008 for detailed methodology and data handling
+  - Key publications include Countryside Survey UK Results from 2007 (Carey et al., 2008) and related environmental zones documentation
+  - The Countryside Survey project has a website with general overview and methodology links
+- Dataset contents and field descriptions:
+  - Plot Information file (Vegetation Plot - Plot Information 2007.csv)
+    - YEAR: Year of Survey
+    - SQUARE_ID: Square identifier
+    - PLOT_ID: Plot identifier
+    - PLOT_TYPE: Type of plot
+    - COUNTRY: ENG, SCO, or WAL
+    - ENV_ZONE_2007: Environmental Zone number
+    - EZ_DESC_07: Environmental Zone description
+  - Species List file (Vegetation Plot - Species List 2007.csv)
+    - YEAR: Survey Year
+    - SQUARE_ID: Survey square identifier
+    - PLOT_ID: Plot identifier
+    - AMALG_PTYPE: Plot type (amalgamated)
+    - BRC_NUMBER: Species identifier
+    - BRC_NAMES: Species name
+    - NEST_LEVEL: Nest species first recorded in
+    - ZERO_COVER: Percent cover in zero nest
+    - FIRST_COVER: Percent cover in first nest
+    - TOTAL_COVER: Percent cover in whole plot
+- Nomenclature:
+  - Species names follow Stace, C. (1997) New flora of the British Isles
+- Usage notes:
+  - The dataset provides plot-level and species-level vegetation data across England, Scotland, and Wales
+  - Environmental Zones (EZ) provide a framework for regional analysis
+  - Refer to the Vegetation Plots Handbook (Maskell et al., 2008) for field methods and data handling
+- Data accessibility and discoverability:
+  - Data sources should be tracked; datasets created may be made discoverable with metadata through portals
+- Key takeaway for analysts:
+  - Enables cross-site, cross-year analyses of vegetation composition and cover, linked to environmental zone classifications, with explicit plot metadata and standardized species nomenclature for robust statistical analysis

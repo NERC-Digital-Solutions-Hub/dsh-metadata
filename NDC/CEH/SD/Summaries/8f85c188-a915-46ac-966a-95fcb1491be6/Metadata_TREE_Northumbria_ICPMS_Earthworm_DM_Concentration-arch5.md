@@ -1,0 +1,83 @@
+# TREE_Northumbria_ICPMS_Earthworm_DM_Concentration
+
+- Overview
+  - A metadata/dictionary-style dataset describing concentrations of multiple elements in earthworms, measured by ICP-MS and expressed on a dry mass basis (mg/kg_DM).
+  - Associated with Northumbria/UKCEH sampling, including species, site, sample codes, and descriptive notes.
+  - Intended for sharing, discovery, and reuse within data catalogs, with attention to governance and data quality.
+
+- Key variables and measurements
+  - Species and identification
+    - Latin_Species_Name (no unit)
+    - Common_Species_Name (no unit)
+  - Sampling and site metadata
+    - Site (no unit)
+    - Date_Sample_Collected (no unit)
+    - CEH_Sample_Codes (no unit)
+    - CEH_Sample_Description (no unit; note indicates UK origin)
+    - Notes (no unit; related to earthworms)
+  - Analytical results (all on a dry mass basis)
+    - I_mg_kg_DM
+    - Li_mg_kg_DM
+    - Be_mg_kg_DM
+    - Na_mg_kg_DM
+    - Mg_mg_kg_DM
+    - Al_mg_kg_DM
+    - P_mg_kg_DM
+    - K_mg_kg_DM
+    - Ca_mg_kg_DM
+    - Ti_mg_kg_DM
+    - V_mg_kg_DM
+    - Cr_mg_kg_DM
+    - Mn_mg_kg_DM
+    - Fe_mg_kg_DM
+    - Co_mg_kg_DM
+    - Ni_mg_kg_DM
+    - Cu_mg_kg_DM
+    - Zn_mg_kg_DM
+    - As_mg_kg_DM
+    - Se_mg_kg_DM
+    - Rb_mg_kg_DM
+    - Sr_mg_kg_DM
+    - Mo_mg_kg_DM
+    - Ag_mg_kg_DM
+    - Cd_mg_kg_DM
+    - Cs_mg_kg_DM
+    - Ba_mg_kg_DM
+    - Tl_mg_kg_DM
+    - Pb_mg_kg_DM
+    - U_mg_kg_DM
+  - Data interpretation notes
+    - Each element concentration is stated as milligrams per kilogram dry mass (mg/kg_DM).
+    - Some field explanations in the source text may contain typographical inconsistencies (e.g., Tl_mg_kg_DM_). Data stewards should harmonize field names and ensure consistent metadata terminology.
+
+- Metadata/documentation considerations for Data Stewards
+  - Data standards alignment
+    - Ensure consistent naming for species, site, sample codes, and descriptions.
+    - Confirm all element fields use mg/kg_DM and that units are standardized across the dataset.
+  - Provenance and traceability
+    - Link CEH_Sample_Codes to the underlying UKCEH sampling event records.
+    - Maintain clear notes on sampling context and any UK origin details.
+  - Data quality and validation
+    - Validate numeric concentration values and handle any missing or zero values appropriately.
+    - Check for and resolve any typographical quirks in field names (e.g., stray underscores) to maintain interoperability.
+  - Metadata completeness
+    - Ensure Latin and Common species names are present and consistent.
+    - Verify Site and Date_Sample_Collected fields provide sufficient context for discovery and re-use.
+  - Update and sharing considerations
+    - Document data processing steps (quality assurance, cleaning, transformations) if applied.
+    - Establish clear update pathways to reflect new data in portals/catalogues and to respect any sharing restrictions or embargoes.
+  - Interoperability and accessibility
+    - Prepare a controlled vocabulary for sites and species to enable cross-dataset discovery.
+    - Align with broader data governance practices to facilitate integration with other Northumbria/UKCEH datasets.
+
+- Key governance actions for effective stewardship
+  - Create or enforce a data dictionary alignment across datasets to prevent inconsistent field names and units.
+  - Implement metadata templates capturing essential fields (species, site, date, sample codes, descriptions, notes, element concentrations with units).
+  - Establish data quality checks for element concentration ranges and unit consistency.
+  - Maintain traceability to CEH sample codes and provide clear update mechanisms for revised data.
+  - Document any data sharing constraints and ensure they are reflected in catalog metadata and access controls.
+
+- End-to-end considerations
+  - Beginning: Collect and record accurate metadata for species, site, date, and sample identifiers; ensure units are mg/kg_DM for all concentrations.
+  - Middle: Quality assure concentration data across all listed elements; harmonize field names and resolve any data format inconsistencies.
+  - End: Upload to relevant data portals/catalogues, with accompanying metadata and documentation of any processing steps or embargoes, and prepare for future updates.

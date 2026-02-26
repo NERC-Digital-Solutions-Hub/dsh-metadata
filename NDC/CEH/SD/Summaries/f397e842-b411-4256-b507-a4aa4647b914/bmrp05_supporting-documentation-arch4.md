@@ -1,0 +1,15 @@
+# Sampling regime and collection methods
+
+- Study context and scope: Banded Mongoose Research Project studying wild banded mongooses on the Mweya Peninsula, Queen Elizabeth National Park, Uganda. Ongoing since 1995, typically 10–12 social groups with about 20 adults per group, uniquely marked individuals, and radio collars on 1–2 individuals per group to locate groups via telemetry.
+- Sampling regime: Groups visited every 1–3 days for at least 20 minutes to record group composition, life history, and reproductive behavior; females in estrus are identified and mated; daily visits during pregnancy to record birth dates; pups marked around 30 days old and tissue samples taken for genetic analyses to determine parentage.
+- Individual identification and tracking: Unique marks on adults (shave patches) and pups (dye marks); regular trapping every two months to update identifications; most groups habituated to observers.
+- Fieldwork instrumentation: Data recorded with Psion II data loggers (until 2014) and later via a bespoke data collection app (Mongoose 2000) on Samsung Galaxy Note tablets; data downloaded and imported into an MS Access database.
+- Calibration and data standards: Field instruments calibrated to factory settings; standardised data recording for life history, birth dates, group membership, and reproductive status.
+- Data types and units: Data on individual identities, birth dates, group membership, and reproductive status (estrus dates, identities of females in estrus, male mate-guarding identities, pregnant female identities) used to inform parentage analyses.
+- Genetic analysis and parentage: DNA genotyped using 43 microsatellite markers (or 35 markers for a subset); parentage assigned with Masterbayes and Colony; acceptance thresholds are 0.9 for full 43-marker panel and 0.95 for the subset 35-marker panel.
+- Quality control: In-app checks to reduce data-entry errors (e.g., an individual must be marked present to collect behavioral data); additional quality control via MS Access queries and bespoke R code to detect inconsistencies (e.g., multiple death records for an individual).
+- Data structure and content: Stored in two CSV files:
+  - BMRP05_01_genetic_pedigree_dams: maternal parentage assignments for individuals exposed to intergroup conflict (Jan 2000 – Mar 2019). Columns include id, individual identity, dam, assigned mother, assignment probability, panel used.
+  - BMRP05_01_genetic_pedigree_sires: paternal parentage assignments for the same timeframe. Columns include Id, individual identity, sire, assigned father, assignment probability, panel used.
+- Timeframe for genetic data: January 2000 to March 2019.
+- Data access and references: Mongoose 2000 app details available via Google Play (foam.mongoose); data ultimately stored for analysis and sharing in standardized formats to support reproducibility and downstream analyses.

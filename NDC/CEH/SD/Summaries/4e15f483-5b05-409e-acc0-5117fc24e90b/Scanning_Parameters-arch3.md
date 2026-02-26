@@ -1,0 +1,33 @@
+# Scan and Segmentation Details
+
+- The document provides scan and segmentation details for a large set of avian specimens scanned with CT, produced by NHMUK (The Natural History Museum, UK) and NMS (National Museums Scotland).
+- All image stacks were down-sampled from 16-bit depth to 8-bit and cropped to a region of interest to reduce processing requirements; voxel sizes were reduced where stacks remained large after cropping.
+- Specimens span numerous species (e.g., Acanthorhynchus superciliosus, Alcedo atthis, Aquila chrysaetos, Cygnus olor, Falco spp., Gallus gallus, Strix spp., and many others) with various accession numbers and unregistered catalog entries.
+- Scanning details:
+  - Primary instrument: Nikon Metrology HMX ST CT
+  - Axial axis scanning is common
+  - Projects/grants referenced include NERC Small Grant NE/H012176/1 and related fellowships
+- Original data formats and processing:
+  - Original 16-bit VGStudio Max VOL files are often reconstructed and output as 8-bit BMP stacks or 8-bit DCM/ MCS stacks
+  - Final image stack resolutions typically in the tens of micrometres (e.g., 27–90 µm)
+  - Final slice counts range from hundreds to thousands (examples provided across entries)
+- Segmentation and reconstruction details:
+  - Endocranial cast segmentation performed by Stig Walsh (often)
+  - Flocculus cast removal also performed by Stig Walsh
+- Metadata and provenance:
+  - Entries include species, specimen IDs, and institutional affiliations (NHMUK or NMS), with occasional unregistered or cat. numbers
+  - Details recorded include field of view, final stack resolution, and slice counts
+  - Institutional abbreviations used: NHMUK (The Natural History Museum, UK); NMS (National Museums Scotland)
+- Data governance and sharing context:
+  - The dataset exemplifies thorough documentation of data provenance and processing steps
+  - It highlights common barriers for monitoring frameworks: data access, metadata completeness, and data format heterogeneity
+  - Notes at the start about data sharing and metadata quality reflect practical considerations for making such data openly usable in policy and environmental health monitoring contexts
+- Relevance to monitoring frameworks:
+  - Demonstrates how detailed metadata, provenance, and standardized processing steps support transparent assessment of complex biological imaging data
+  - Provides a model for documenting data transformation (16-bit to 8-bit, cropping, voxel reduction) and for ensuring traceability from specimen to processed dataset
+  - Highlights the importance of clear data governance (sharing underlying data, maintaining metadata, avoiding silos) for informing policy decisions and future monitoring efforts
+- Practical takeaways for authors of monitoring frameworks:
+  - Leverage comprehensive specimen- and process-level metadata to inform environmental health indicators
+  - Prioritize data accessibility and metadata completeness to reduce barriers to reuse
+  - Establish clear data formats and transformation records to enable cross-dataset comparability
+  - Recognize the need for governance mechanisms that facilitate data sharing while preserving data quality and provenance

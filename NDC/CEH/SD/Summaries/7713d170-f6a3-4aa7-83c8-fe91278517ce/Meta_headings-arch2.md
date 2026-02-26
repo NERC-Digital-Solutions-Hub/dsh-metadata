@@ -1,0 +1,39 @@
+# Radionuclide transfer to milk: Data compilation, transfer coefficients, and sources
+
+- Context
+  - A database was created to handle and process information drawn from diverse sources (books, journals, conference proceedings, institutional reports, and databases).
+  - Entries were individually reviewed, revised, and supplemented with additional data from English and Russian literature (notably Fesenko et al., 2007).
+- Data processing and quality
+  - Data were quality assured, cleaned, and transformed before inclusion in the database.
+  - When data were sufficient, transfer table values were provided for each element, including:
+    - Number of data points
+    - Geometric mean (GM)
+    - Geometric standard deviation (GSD)
+    - Arithmetic mean
+    - Standard deviation
+  - For radionuclides with limited data (single value), only the arithmetic mean value is reported.
+- Transfer metrics and units
+  - Cow milk transfer coefficient (Fm) is defined as the ratio of element concentration in cow milk to element daily intake; reported as GM_DL-1 with units days per litre.
+  - Cow milk concentration ratio (CR) is the equilibrium ratio of element concentration in milk to concentration in feed; GM and GSD reported (units not applicable).
+  - Goat milk transfer coefficient (Fm) and concentration ratio (CR) are defined similarly to cow milk metrics.
+  - For both cow and goat milk, the number of data points (N) is reported (where available).
+- Elements and radionuclides covered
+  - Elements listed with explanations: Ag, Am, Ba, Ca, Cd, Ce, Cl, Co, Cs, Fe, I, Mn, Na, P, Pb, Pu, Ru, Se, Sr, U, Y, Zn, Zr.
+- Data fields and terminology
+  - Cow_milk_Fm_GM_DL-1: Geometric mean of cow milk transfer coefficient (Fm) for each element; units DL-1 (days per litre).
+  - Cow_milk_Fm_GSD_DL-1: Geometric standard deviation for Cow_milk_Fm_GM_DL-1.
+  - Cow_milk_CR_GM: Geometric mean of cow milk concentration ratio (CR).
+  - Cow_milk_CR_GSD: Geometric standard deviation of CR.
+  - Cow_milk_N: Number of cow milk data points per element.
+  - Goat_milk_Fm_GM_DL-1, Goat_milk_Fm_GSD_DL-1: Analogous metrics for goat milk.
+  - Goat_milk_CR_GM, Goat_milk_CR_GSD: Ratios and spread for goat milk.
+  - Goat_milk_N: Number of goat milk data points per element.
+- Data sources and references
+  - International Atomic Energy Agency (IAEA). Handbook of Parameter Values for the Prediction of Radionuclide Transfer in Terrestrial and Freshwater Environment. Technical Reports Series No. 472 (2010).
+  - Fesenko, S., et al. Review of Russian language studies on radionuclide behaviour in agricultural animals: part 2. Transfer to milk. Journal of Environmental Radioactivity, 98 (2007) 104-136.
+- Purpose and outputs
+  - Standardised data outputs (tables, figures, and charts) to support monitoring of environmental health and policy performance over time.
+  - Ensures datasets are stored and accessible via appropriate portals for broad use.
+- Challenges and goals for analysts
+  - Increase the value of monitoring datasets by combining them with other relevant data (avoiding single-use datasets).
+  - Improve accessibility of underlying data used to produce final outputs, enabling broader scrutiny and reuse.

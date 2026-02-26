@@ -1,0 +1,36 @@
+# DATA HEADER INFORMATION for Wood_specific_gravity_for_trees_in_Ankeniheny_Zahamena_forest_corridor_Madagascar.csv
+
+- The dataset records Wood Specific Gravity (WSG) and density at 12% moisture content (D12) for wood cores from trees sampled in the Ankeniheny-Zahamena forest corridor, Madagascar.
+- Analyses conducted by laboratories at UFR Sciences du bois, ESSA-forêts, Université d’Antananarivo.
+- DOI provided: https://doi.org/10.5285/efa10c00-d43a-4c94-b2f9-0708755e7d80
+- Programme ESPA and Project P4GES context: ESPA programme, P4GES project; acknowledgement required for derived products from these data.
+- Data provenance and scope:
+  - Day_of_collection: Day of collection of wood cores (text string).
+  - Zone: P4GES Zone code (text string).
+  - Identification: P4GES Wood cores identification (text string).
+  - Trees_Local_name: Vernacular/local name of sampled trees (text string).
+  - Trees_scientific_name: Scientific name of sampled trees (text string).
+  - Trees_total_height: Visual estimation of total tree height (numeric; meters).
+  - Ttrees_DBH: Diameter at breast height (1.30 m) (numeric; centimeters).
+  - Trees_PHF_index: Quality of tree form components (numeric; P/H/F).
+  - Remarks: Additional notes (text string).
+  - Vsat: Saturated volume of the sample (wood core) (numeric; cubic centimeters).
+  - M12: Weight at 12% moisture content (wood core) (numeric; grams).
+  - V12: Volume at 12% moisture content (wood core) (numeric; cubic centimeters).
+  - Manhy: Anhydrous weight of the sample (wood core) (numeric; grams).
+  - D12: Density at 12% moisture content (D12 = M12 / V12) (numeric; g/cm^3).
+  - WSG: Wood Specific Gravity (WSG = Manhy / Vsat) (numeric; g/cm^3).
+- Measurement and methods:
+  - Vsat and related volumetric measures obtained via balance and Archimedes’ principle (water displacement method).
+  - D12 calculated from M12 and V12; WSG calculated from Manhy and Vsat.
+- Data quality indicators:
+  - Note: "x" represents missing data.
+  - Metadata include field definitions, units, and data provenance to support interoperability and reuse.
+- Documentation and usage guidance for data stewards:
+  - Emphasizes maintaining accuracy, consistency, metadata richness, and appropriate file formats.
+  - Data sharing should respect limitations and update mechanisms; datasets should be uploaded to relevant portals/catalogues.
+  - Acknowledgement requirements: UFR Sciences du bois de l’ESSA-forêts, Laboratoire des Radio Isotopes, Université d’Antananarivo for derived products.
+- Practical implications for data stewards:
+  - Ensure clear definitions and units are preserved (e.g., height in meters, DBH in cm, volumes in cm^3, weights in g, densities in g/cm^3).
+  - Maintain traceability to origin (lab facilities, project codes ESPA/P4GES, DOI).
+  - Manage potential incomplete data and varying data formats across collaborators; standardize where possible for interoperability.

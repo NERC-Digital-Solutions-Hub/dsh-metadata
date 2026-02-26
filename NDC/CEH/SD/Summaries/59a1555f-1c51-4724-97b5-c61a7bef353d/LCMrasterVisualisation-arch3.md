@@ -1,0 +1,39 @@
+# Visualising UKCEH Land Cover Class using a GIS application
+
+- Overview of data structure
+  - Land Cover Map rasters come in multiple resolutions:
+    - 20m and 10m rasters: two bands total
+      - Band 1: UKCEH Land Cover Class identifier
+      - Band 2: classification confidence indicator
+    - 25m rasters: three bands total
+      - Band 1: dominant UKCEH Land Cover Class identifier
+      - Bands 2 and 3: confidence indicators
+- Purpose for monitoring frameworks
+  - Provides a concise, repeatable method to visualise land cover classifications for policy scrutiny, reporting, and decision-making.
+  - Facilitates clear communication of classification maps to stakeholders.
+- General approach
+  - Visualisation uses Band 1 to represent the Land Cover Class and applies a predefined color style to ensure consistent interpretation across platforms.
+  - The accompanying style files standardise colouring and symbolisation to aid comparability and governance.
+- Visualising with QGIS
+  - Steps (high level):
+    - Add the Land Cover data to the project; locate in layers panel.
+    - Open Layer Properties -> Symbology -> Paletted/Unique Values -> Band 1.
+    - Load the provided style file LCMcolours_QGIS.qml, then apply.
+    - Map is redrawn with correct classification colours.
+- Visualising with ArcGIS Desktop
+  - Steps (high level):
+    - Browse to data folder, expand raster to view bands.
+    - Drag band_1 into the Table of Contents.
+    - Layer Properties -> Symbology -> Unique Values (if prompted, answer YES to build attribute table).
+    - Use Import to load LCMcolours.lyr and apply.
+    - Map is redrawn with correct classification colours.
+- Visualising with ArcGIS Pro
+  - Steps (high level):
+    - Open catalog, locate data folder, view raster bands.
+    - Drag band_1 into the Table of Contents.
+    - Layer Properties -> Appearance > Symbology -> Unique Values.
+    - Use the Import option in the symbology panel to load LCMcolours.lyr.
+    - Map is redrawn with correct classification colours.
+- Additional notes
+  - The instructions refer to accompanying style files (LCMcolours_QGIS.qml for QGIS and LCMcolours.lyr for ArcGIS) to achieve consistent visuals.
+  - For a full data description, refer to the product documentation.

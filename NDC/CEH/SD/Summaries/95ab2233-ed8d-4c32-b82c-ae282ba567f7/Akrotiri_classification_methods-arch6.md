@@ -1,0 +1,46 @@
+# Akrotiri peninsula habitat map using remote sensing
+
+- Objective: Create a baseline 2-meter resolution map of habitats and invasive species on the Akrotiri peninsula to support future hydro-ecological monitoring, with a focus on identifying Acacia and Casuarina species.
+- Data sources and imagery:
+  - Satellite data purchased and used:
+    - WorldView-3 (WV-3), 1.2 m multispectral, 3 March 2018
+    - WorldView-2 (WV-2), 2.0 m multispectral, 6 July 2018
+  - Images from two dates (spring and early summer) to exploit greenness differences; anisotropic reflectance from different viewing angles addressed by classifying east and west images separately.
+  - Pre-processing:
+    - Atmospheric correction with ENVI FLAASH
+    - Resampling to 2 m and creation of a 2 m 16-band image stack
+  - Ground truth and training data:
+    - In situ reference data collected with Open Data Kit (ODK) over 2.5 field days with botanist Oliver Pescott
+    - Planned second field campaign in 2020 for drone data (SfM) to improve mapping of small patches and individual trees
+    - COVID-19 caused cancellation of the drone campaign; used supplementary data from archived 2015 and 2017 non-native species shapefiles
+- Vegetation classes mapped (thematic detail summarized):
+  - Bare, lake, temporary water, salt marsh, rush salt meadow, garrigue, sparse vegetation, grass
+  - Mixed woodland, eucalyptus, acacia, casuarina
+  - Additional mosaicked classes: salt marsh/rush salt meadow combinations
+  - Final legend included 14+ classes with specific names and colors (e.g., Acacia, Casuarina, Salt Lake, Eucalyptus, Saltmarsh, Common Reed, etc.)
+- Image processing and classification approach:
+  - Area masking to exclude non-interest areas (sea, urban, arable)
+  - Object-based (image-structure) classification using ENVI fxExampleBased (segmentation plus attributes)
+  - Feature extraction to utilize spectral, spatial, and textural information
+  - Training samples interactively assigned to classes; pixel-level classification using KNN, SVM, or PCA
+  - Output formats: classified map or shapefile
+- Validation and challenges:
+  - Validation relied on limited reference data due to the first field campaign data losses (half points lost).
+  - Validation methodology: stratified random points assessed against WorldView imagery with a botanical expert; used confusion matrix to estimate accuracy.
+  - Overall accuracy achieved: 64%
+  - Noted sources of error:
+    - Limited ground truth data due to COVID-19 restrictions
+    - Some validation grounded in Google Maps/Sentinel-2 composites, which may affect accuracy
+    - Significant confusion observed between certain classes (e.g., Bare Ground vs. Sparse Veg)
+    - Casuarina class showed very low user accuracy (0% in reported metrics)
+- Ground data and field outcomes:
+  - Field data collection intended to be random and representative across vegetation communities
+  - Half the reference points were lost due to an ODK fault
+  - A second field campaign was planned to improve training data and enable drone-based 3D mapping, but canceled by COVID-19
+  - Post-field efforts included incorporating archived non-native species data to bolster training
+- Key takeaways and future plans:
+  - A baseline habitat/invasive species map at 2 m resolution was produced, suitable for future hydro-ecological monitoring
+  - The COVID-19 disruption limited training/validation data, likely contributing to the 64% accuracy
+  - Planned enhancements include incorporating higher-resolution drone imagery (SfM) to improve detection of small patches and individual invasive trees, and expanding reference data for more robust validation
+- Reference data used:
+  - Pescott, O.; Peyton, J.; Mountford, J.; Onete, M.; Martinou, A. (2017). Non-native plant species GIS data from Cyprus Sovereign Base Areas, October 2015 and March 2017. NERC Environmental Information Data Centre. https://doi.org/10.5285/7c84e06d-bb1a-4aac-b1d7-33c11310d8a0

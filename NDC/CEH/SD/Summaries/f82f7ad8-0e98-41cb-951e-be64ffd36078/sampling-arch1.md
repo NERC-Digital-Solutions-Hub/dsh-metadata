@@ -1,0 +1,50 @@
+# Sampling Design
+
+- Timeframe and location
+  - Period of sampling: July 2015 to December 2015
+  - Study site: Gurue district, Zambezia province
+- Village selection and gradient
+  - Ten villages selected to create a land scarcity gradient from abundant land to intense land constraints
+  - Villages chosen during a scoping visit with similar infrastructure, soils, rainfall, and vegetation
+- Data collection approach
+  - Participatory maps
+    - Leaders assemble groups in village centers; fieldwork led by a multilingual assistant (Elomwe)
+    - Group discussions lasting 1–2 hours
+    - Ground-illustrated mapping using natural materials; field protocol followed
+    - Standardized legend elements for features such as community limits, streets, houses, fields, crops, water sources, markets, schools, health facilities, energy, forest products, and construction materials
+  - Seasonal calendar
+    - Similar group discussions guided by field protocol and local language facilitator
+    - Elicits main subsistence and cash crops, cropland area per household, field isolation vs. blocks, and crop calendars for sowing, growing, and harvest phases
+  - Trend analysis
+    - Year-by-year qualitative exercise using card-based discussions and a stone voting method
+    - Topics include agricultural production, land availability, forest and forest products, wellbeing; seeks changes since war, major events (e.g., new crops, prices, disasters), and migration trends
+    - Variables tracked for trend plotting: Cropland, Land under soya, Productivity, Land availability, Forest, Forest products, Quality of life
+  - Land allocation
+    - Questions on how families receive land/forest for new fields
+    - Considerations of equality across migrants, settlers, natives
+    - Criteria for when to open new land and preferred vegetation types and sites for commercial crops
+  - Village profiles
+    - Interview with village leader and key figures; guided by a structured template
+    - Covers foundations, war displacement and return, education, health, water, land rights (DUAT), markets, migration, livelihoods (charcoal, agriculture, livestock), and soya-specific questions
+    - SoYa production: start date, production model, contracting company, extension services, training, processing, conflicts, associations, prior land use, and deforestation implications
+    - Other forest products and natural disasters; changes in social and environmental conditions; drivers and future expectations
+  - Wealth ranking
+    - Household wealth ranking within each village, led by leadership and local-language assistants
+    - Categories: Very poor, Poor, Middle, Rich
+    - Qualitative notes on transition possibilities between categories
+- Data scope and outputs
+  - Comprehensive, mixed-method dataset spanning:
+    - Agriculture: main subsistence and cash crops, cropland per household, crop calendars, land fragmentation vs. concentration
+    - Soya integration: timing, production models, contracting, extension, training, processing, market links, governance, and potential deforestation
+    - Land and forest: allocation processes, vegetation conversion, land constraints, forest products, market access
+    - Wellbeing and migration: perceived quality of life, migration trends and drivers, benefits and winners/losers
+    - Village context: foundation, infrastructure, education, health, water, markets, economics, and disasters
+- Data quality, governance, and reuse
+  - Standardized field protocols and multilingual facilitator support to ensure consistent data collection
+  - Documentation includes GPS points, village profiles, and structured interview guides
+  - Findings intended for reporting with charts and clearly stated conclusions
+  - Datasets designed to be discoverable and usable with metadata, suitable for cross-village comparisons and trend analyses
+- Analytical implication for data-driven questions
+  - Enables correlations between land scarcity, soya adoption, forest product changes, and wellbeing
+  - Supports trend analysis over time to identify drivers of agricultural productivity, land expansion, and social-environmental change
+  - Provides a framework to model impacts of land allocation rules and market participation on livelihoods and equity among wealth groups

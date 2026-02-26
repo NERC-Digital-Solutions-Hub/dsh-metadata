@@ -1,0 +1,22 @@
+# LOCAR BASELINE DATASETS
+
+- Overview: Continuous recording rain gauges installed as part of the Lowland Catchment Research (LOCAR) Programme across 6 sites in the Frome/Piddle, Pang/Lambourn, and Tern catchments, collecting rainfall data from 2002 to 2007.
+- Data collected:
+  - Variable measured: Rainfall
+  - Units: millimetres (mm)
+  - Frequency: every 15 minutes
+- Sites (site code, name, and type):
+  - FP13 Higher Came Farm (RNGA)
+  - FP35 Lower Wraxall Farm (RNGA)
+  - PL14 Grimsbury Wood (Hermitage) (RNGA)
+  - PL16 Highfield Farm (RNGA)
+  - PL29 West Ilsley (RNGA)
+  - TE10 Bowling Green (RNGA)
+- Time period:
+  - Gauges recorded rainfall every 15 minutes for varying periods between November 2002 and May 2007.
+- Measurement method:
+  - Automatic tipping bucket rain gauges with a funnel feeding a seesaw-like container; each tipping event corresponds to 15-minute rainfall data, stored on a connected logger.
+- Data management:
+  - Collected, maintained, and loggers downloaded by Catchment Service Teams in each catchment.
+- Data quality:
+  - Data are raw and have not been quality controlled.

@@ -1,0 +1,40 @@
+# Overview of data
+
+- A field data compilation from the NERC Macronutrients consortium, focusing on stream metabolism and lateral exchange in C, N, and P flux. The dataset supports understanding atmospheric inputs in riverine catchments.
+- Contains results from four field campaigns measuring in situ atmospheric data in rivers within the Hampshire Avon catchment, collected with a SKYWATCH GEOS 11 high-precision weather station.
+- Includes 23 accompanying CSV data files named Geos11_<SiteCode>_<Season>.CSV, covering multiple sites and seasons.
+
+- Field campaigns and sites
+  - Four campaigns: spring 2013, summer 2013, autumn 2013, winter 2014 (note: data not collected at site CE1 in winter due to flooding).
+  - Sites (with codes and approximate coordinates):
+    - CE1: River Ebble
+    - GA2: River Avon
+    - GN1: River Nadder
+    - CW2: River Wylye
+    - AS1 (AP): tributary of the River Sem
+    - AS2 (AS): River Sem
+- Data collection details
+  - Instrument: GEOS 11 weather station by JDC Electronic SA; factory-calibrated prior to field campaigns (March 2013).
+  - Position: 1–4 m above the stream surface, depending on morphology and access.
+  - Sampling frequency: 15–30 seconds (limited by battery life).
+  - Calibration and drift: internal compass for wind direction with field calibration, recalibrated after battery changes.
+- File naming and structure
+  - Files labeled Geos11_<SiteCode>_<Season>.CSV, where SiteCode identifies the river site and Season identifies the field campaign period.
+  - Seasons covered: spring, summer, autumn 2013; winter 2014.
+- Data columns and metadata
+  - Core columns: DateTime, Date, Time, Wind (m/s), Temperature (°C), Humidity (%rH), Pressure (hPa), Direction (wind direction, degrees North).
+  - Data quality notes: NaN values indicate missing data (due to battery changes, data download issues, or contamination from insufficient wind for stable wind direction data).
+  - Units, resolutions, and accuracies provided:
+    - Wind: resolution 0.1 m/s; accuracy ±2% or measured value.
+    - Temperature: resolution 0.1 °C; accuracy ±2% (or 0.5 °C at 25 °C).
+    - Humidity: resolution 0.1 %rH; accuracy ±2% at 50 %rH.
+    - Pressure: resolution 0.1 hPa; accuracy ±0.5% (or 1.5 hPa) at 25 °C.
+    - Direction: resolution 1°; accuracy ±3%; compass calibrated in the field.
+- Data provenance and usability
+  - Data collected under the leadership of Prof. R.N. Glud; contributors include L. Rovelli, K. Attard, and Assoc. Prof. H. Stahl.
+  - The dataset is suitable for cross-site and temporally-variant analyses of atmospheric inputs to stream metabolism and related processes.
+  - Spatial and temporal context (site coordinates, campaign periods) enhances discoverability and integration with broader data networks.
+- Practical considerations for data leaders
+  - Data gaps and site-specific limitations (e.g., no winter data at CE1) require careful handling in analyses.
+  - The presence of NaN values and potential wind direction drift necessitates robust data cleaning and metadata consideration.
+  - Clear naming conventions, site codes, and provenance support effective data governance, reproducibility, and collaboration across data communities.

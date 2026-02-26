@@ -1,0 +1,9 @@
+# Notes on the downloadable data
+
+- Confidentiality of locations: precise CS survey square locations are kept confidential; external users cannot identify whether squares fall within defined areas with precision better than 100 square km.
+- Sampling design: Countryside Survey field data come from a sample of 1 km squares across GB; each square is mapped and measured at two levels (within-square and whole-square) with diverse variable types (binary to continuous).
+- Non-random, stratified sampling: the sample is stratified by ITE Land Classification, with country-specific classifications (England 21 classes, Wales 8, Scotland 16). The overall sampling is not a random subset of GB squares, and estimates must account for stratification.
+- Excluded squares and representativeness: squares with >90% sea or >75% urban land are excluded from field surveys. Official GB estimates assume similarity between vegetative land in excluded versus sampled squares; bias is generally small except in regions with high sea/urban proportions.
+- Estimation and weighting: estimates are produced as ratio estimates by land class, weighted by the vegetative land area in each class and square. Since 1998, standard errors and confidence intervals are calculated using bootstrap methods (Efron & Tibshirani).
+- Data implications for use: analyses should respect the stratified design and potential non-representativeness of excluded areas; use appropriate weighting and consider the bootstrap-based uncertainty when interpreting results.
+- References for methodology: Barr et al. (1993) Countryside Survey 1990 Main Report; Cochran (1963) Sampling Techniques; Efron & Tibshirani (1993) An Introduction to the Bootstrap.

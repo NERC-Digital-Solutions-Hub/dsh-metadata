@@ -1,0 +1,61 @@
+# DATA HEADER INFORMATION for Braun_Blanquet_vegetation_and_indicator species.csv
+
+- Purpose and scope
+  - Records the percent cover of indicator species using the Braun-Blanquet scale.
+  - Intended for ecological surveys and to support map-based visualization and analysis in GIS.
+  - Related references: Manual 1_Classical_Survey; DOI provided; ESPA Programme; P4GES project.
+  - Acknowledgement requirement: Laboratoire des Radio Isotopes, Université d'Antananarivo for products derived from these data.
+
+- Key fields (data schema)
+  - site_id
+    - Description: P4GES WP4 site code.
+    - Type: Text string.
+  - Scientific_name
+    - Description: Scientific name of the inventoried species.
+    - Type: Text string.
+  - Local_name
+    - Description: Vernacular/local name of the inventoried species.
+    - Type: Text string.
+  - Family
+    - Description: Scientific family of the inventoried species.
+    - Type: Text string.
+  - Life_form
+    - Description: Life form class/strata.
+    - Type: Categorical (Possible values: Fern/Shrub/Herb/Grass/Vine/Tree).
+  - Percent_cover
+    - Description: Indicates the degree of dominance of the inventoried species.
+    - Type: Numeric.
+    - Unit: Percent (%).
+  - Indicator_species
+    - Description: Indicates whether the inventoried species is a specific indicator of a land use.
+    - Type: Binary (Yes/No).
+  - B_B_scale
+    - Description: Braun-Blanquet scale value.
+    - Type: Categorical.
+    - Scale mapping:
+      - 0 Not present
+      - 1 1-5% cover
+      - 2 5-25% cover
+      - 3 25-50% cover
+      - 4 50-75% cover
+      - 5 75-95% cover
+      - 6 >95% cover
+
+- How to use in GIS
+  - Join and map by site_id to geographic units (plots/sites).
+  - Use Percent_cover for continuous visualization (e.g., heatmaps or graduated symbols).
+  - Use B_B_scale as a categorical map layer to represent Braun-Blanquet classes.
+  - Use Life_form to categorize symbols/colors by life form (fern, shrub, herb, etc.).
+  - Filter by Indicator_species to focus on species that serve as land-use indicators.
+  - Combine with other datasets to analyze spatial patterns of indicator species across sites.
+
+- Data provenance and references
+  - DOI: https://doi.org/10.5285/b31330cc-743c-431e-95cd-68b316efed0b
+  - Programme: ESPA
+  - Project: P4GES
+  - Related materials: Manual 1_Classical_Survey
+
+- Considerations and notes for practitioners
+  - Data may be sourced from multiple sites and collectors (field materials/resource s = botanist).
+  - Consistency in life_form categorization and Braun-Blanquet scale application is important for cross-site comparisons.
+  - Acknowledge data provenance and adhere to attribution requirements when using outputs.

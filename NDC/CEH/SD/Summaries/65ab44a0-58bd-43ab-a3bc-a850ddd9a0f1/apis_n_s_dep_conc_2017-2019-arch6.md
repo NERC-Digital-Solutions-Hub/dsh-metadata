@@ -1,0 +1,69 @@
+# Step 1: Spatial Mapping of Deposition and concentration to UK protected sites (SAC, SPA, SSSI)
+
+- Objective
+  - Map deposition and pollutant concentrations to UK protected sites (SAC, SPA, SSSI) using CBED and PCM models.
+  - Produce gridded (5x5 km) data across the UK tied to site boundaries; generate site-level deposition/concentration statistics and enable downstream analysis.
+- Modelling approaches
+  - CBED Modelling: Generates 5x5 km resolution maps of wet and dry deposition for sulphur, oxidised/reduced nitrogen, and base cations using measured air concentrations, precipitation data, and habitat-specific deposition velocities.
+  - PCM Modelling: Produces 1x1 km grid background maps of pollutant concentrations (NOx, NO2, SO2, PM, etc.) with additional road-side values; supports policy analysis and exposure assessments.
+- Data sources and inputs
+  - CBED data derived from the UKEAP network; precipitation map from the UK Met Office; habitat deposition velocities for five land cover categories (forest, moorland, grassland, arable, urban).
+  - Distinctions between wet (including occult deposition) and dry deposition; sea-salt separation for sulphur and calcium components.
+  - Orographic enhancement factor used to account for upland precipitation concentration.
+  - Inter-annual variability acknowledged; CBED values are averaged over rolling 3-year periods (2017–2019) to smooth fluctuations.
+- Step 1 workflow (grid creation and site clipping)
+  - Create a UK-wide 5x5 km grid and clip to boundaries of SAC, SPA, and SSSI/ASSI.
+  - Merge clipped grid data with 3-year CBED outputs (2017–2019) to produce a UK protected sites CBED dataset.
+  - Repeat the process for 1x1 km concentration datasets for NOx and SO2 (PCM-derived).
+  - Data boundaries and feature lists are sourced from national datasets for protected sites.
+- Step 2 workflow (minimum, maximum, and grid-average values)
+  - Use SQL on the gridded dataset to compute per-site statistics: minimum, maximum, and grid-average deposition/concentration.
+  - Grid-average calculation: CBEDDepositionValue × (GridArea / TotalSiteArea); values for overlapping grids are summed to produce the site-level figure.
+  - Outputs include multiple ecosystem-specific and grid-averaged estimates for each site.
+- CBED modelling details (core concept)
+  - Deposition values cover multiple components:
+    - Dry deposition: gases (SO2, NO2, HNO3, NH3) and PM to vegetation; deposition to moorland vs. forest varies by habitat type.
+    - Wet deposition: deposition from precipitation plus occult deposition to vegetation; includes key ions (sulphate, ammonium, nitrate) and acidity.
+  - Component separation and calculations:
+    - Anthropogenic vs total sulphur and calcium are derived via sea-salt ratio methods.
+    - An orographic enhancement factor improves precipitation-concentration estimates in upland regions.
+  - Temporal aspects:
+    - Deposition values are annual but provided as rolling 3-year means (except non-marine Ca+Mg for 2019 only).
+    - Outputs include ecosystem-specific scenarios (moorland, forest) and a grid-average, with year interpretation clarified.
+- PCM modelling details (core concept)
+  - Produces background pollutant concentration maps on a 1x1 km grid for the UK, with base year and projection model components per pollutant.
+  - Outputs support policy development, TEN (Time Extension Notification) applications, and exposure calculations.
+  - Includes ~9,000 representative roadside values to capture spatial variability.
+- Outputs and data structure
+  - Data are organized as multiple APIS files (3-year means 2017–2019) at 5x5 km and 1x1 km resolutions, covering:
+    - Deposition: forest vs moorland vs grid-average for nitrogen and sulphur compounds; coverage includes NH3/NH4 (reduced N), NO2/NO3 (oxidised N), SO2/SO4 (non-marine), and Ca/Mg.
+    - Concentrations: ammonia (NH3), nitrogen oxides (NOx/NO2), and sulphur dioxide (SO2) at 1x1 km or 5x5 km resolutions as appropriate.
+  - File types (examples)
+    - APIS_deposition_forest_site_2017_2019.csv
+    - APIS_deposition_moorland_site_2017_2019.csv
+    - APIS_deposition_gridaverage_sitebygrid_2017_2019.csv
+    - APIS_deposition_gridaverage_site_2017_2019.csv
+    - APIS_ammonia_concentration_sitebygrid_2017_2019.csv
+    - APIS_nox_concentration_sitebygrid_2017_2019.csv
+    - APIS_so2_concentration_sitebygrid_2017_2019.csv
+    - Separate files for concentration metrics at forest, moorland, and grid-average contexts
+  - Value definitions and units
+    - Deposition: expressed as kilo-equivalents per hectare per year (keq ha-1 year-1); convertible to kg S ha-1 year-1 or kg N ha-1 year-1 using factors (S: ×16; N: ×14).
+    - Concentrations: expressed as micrograms per cubic meter (µg m-3).
+  - Site data fields
+    - SITECODE, SITENAME, SITEAREA (ha), CENTROID_X/Y, COUNTRY, DESIGNATION (SAC/SPA/SSSI), GRIDAREA, YEAR (rolling mean mid-year)
+- Data quality and validation
+  - Methods align with government QA frameworks and peer-reviewed practices.
+  - CBED data and calculations have undergone extensive peer review and inter-comparison (e.g., Carslaw 2011).
+  - Version control, documentation, and central storage for method developments.
+  - Mass-balance checks performed to ensure numerical consistency and comparability with previous years.
+- Data access and references
+  - Data sources: UK Acidifying and Eutrophying Atmospheric Pollutants (UKEAP) network; PCM data from Defra/ Ricardo Energy & Environment.
+  - Key references include Beswick et al. (2003), Fowler et al. (1988), Dore et al. (2001, 2007), RoTAP (2012), and related Defra reports.
+  - Resource locators include:
+    - http://www.pollutantdeposition.ceh.ac.uk/ukeap
+    - https://uk-air.defra.gov.uk/networks/network-info?view=ukeap
+    - https://uk-air.defra.gov.uk/data/pcm-data
+- Practical implications
+  - Enables assessment of pollutant deposition and concentration at protected sites to inform conservation, policy, and management decisions.
+  - Provides both site-level summaries and grid-level context to support self-service exploration and further development of data products.

@@ -1,0 +1,14 @@
+# Supporting Information CHEMPOP Sparrowhawks SGARs
+
+- Description: Dataset of concentrations of second generation anticoagulant rodenticides (SGARs) in Eurasian sparrowhawk (Accipiter nisus) livers found dead in Great Britain (1995–2015), including demographic information (age and sex) and the location where each bird was found.
+- Associated datasets and funding: Collected under the Predatory Bird Monitoring Scheme (PBMS); supported by Natural Environment Research Council award NE/R016429/1 as part of UK-SCAPE; contaminants analysis under CHEMPOP project NE/S000100/1.
+- Authors and contributions: Lee A. Walker (concept, sample selection, manuscript prep); Richard K. Broughton (concept, manuscript prep); Kate R. Searle (quality assurance); Heather Carter (SGAR analysis); M. Gloria Pereira (SGAR analysis, manuscript prep); Elaine D. Potter (necropsies and sampling); Darren Sleep (SGAR analysis).
+- Bird sampling context: 1995–2015 period; 259 dead Sparrowhawks submitted by the public to PBMS; birds sexed and aged (adult/juvenile) based on plumage; sample counts: 134 adults, 125 juveniles; 146 females, 113 males.
+- SGARs analyzed: Bromadiolone, Difenacoum, Brodifacoum, Difethialone, Flocoumafen; plus Sum_SGAR.
+- Laboratory methods: Liver ~0.25 g dried, extracted with chloroform:acetone (1:1), cleaned with size-exclusion chromatography and solid-phase extraction; final re-dissolution for LCMS-MS analysis using APCI in negative mode; instrument setup includes Ultimate 3000 HPLC and Quantum Ultra TSQ mass spectrometer; matrix-matched standards; recoveries (69–111%); limits of detection ~2.3–3.0 ng/g wet weight depending on compound.
+- Regional grouping: Four Britain-wide regions to reflect potential differences in SGAR exposure due to land use and Sparrowhawk dispersal (Scotland; northern England; western England with Wales; eastern England).
+- Quality control: Analyses conducted in UKAS-accredited ISO 17025:2017 laboratories; datasets reviewed by at least two individuals.
+- Data structure and access: Single CSV file named ChemPop_Sparrowhawks_SGARs.csv; columns include Bird ID, REGION, Year found, AGE, SEX, concentrations for Bromadiolone, Difenacoum, Brodifacoum, Difethialone, Flocoumafen, Sum_SGAR, and Units (ng/g wet weight).
+- Metadata and notes: Regional and temporal context provided to support interpretation; references describe sampling framework and related datasets (PBMS, land cover data, and prior Sparrowhawk/ecotoxicology work).
+- References and context: Key sources for sampling framework, analytical methods, and regional considerations cited (e.g., PBMS reports, land cover mapping, Sparrowhawk recovery studies).
+- Implications for data governance and reuse: Well-documented methodology, provenance, and data structure enabling reproducibility and interoperability; clear lineage from sample collection to SGAR analysis; suitable for cross-study integration with other CHEMPOP datasets and SGAR monitoring efforts.

@@ -1,0 +1,55 @@
+# Creation of the WATCHForcing Data and its use to assess global and regional reference crop evaporation over land during the twentieth century
+
+## Appendix Table 1: The order of the ERA-40 basis years as used in the WATCH Forcing Data 1901-1957
+
+- The table excerpt presents per-basin trend metrics for multiple forcing variables across historical periods, including 1901-1957 and 1958-2001, with some data also shown for 1979-2001.
+- Variables tracked for each basin and period include:
+  - PET_rc (reference crop evapotranspiration, mm/yr)
+  - PET_PT (Priestley–Taylor PET, mm/yr)
+  - Net Radiative Flux (Net Rad, W/m^2)
+  - VPD (vapor pressure deficit, kPa)
+  - Wind (m/s)
+  - Rainfall and Precipitation (mm/yr)
+  - Snowfall (mm/yr)
+- For each variable and period, the table lists:
+ - Average (mean value)
+ - Slope (rate of change, units/yr)
+ - Slope-min and Slope-max (range of the estimated trend)
+ - Neff (effective sample size)
+ - Adjusted Slope P (statistical significance, e.g., whether the trend is considered significant)
+- Example basins (selected from the excerpt):
+  - Orange River Basin
+    - PET_rc: 1901-1957 average 1586.19 mm/yr; slope +1.2338; 1958-2001 average 1604.15 mm/yr; slope +0.6463; 1979-2001 average 1623.47 mm/yr; slope −2.3898
+    - PET_PT: 1901-1957 average 1114.63; slope +0.2471; 1958-2001 average 1123.40; slope +1.1023; 1979-2001 average 1131.46; slope +0.7341
+    - Net Rad: 1901-1957 average 96.75; slope −0.0030; 1958-2001 average 96.79; slope +0.0805; 1979-2001 average 97.17; slope +0.0648
+    - VPD: 1901-1957 average 1.4479; slope +0.0021; 1958-2001 average 1.4879; slope +0.0013; 1979-2001 average 1.5289; slope −0.0040
+    - Wind: ~2.20 m/s across periods with small slopes
+    - Rainfall: 1958-2001 average 346.47 mm/yr; 1979-2001 average 337.84 mm/yr
+    - Snowfall: 1958-2001 average 0.12 mm/yr; 1979-2001 average 0.00 mm/yr
+    - Precipitation: 1958-2001 average 447.70 mm/yr; 1979-2001 average 444.93 mm/yr
+  - Lena River Basin
+    - PET_rc: 1901-1957 average 363.47 mm/yr; slope +0.1315; 1958-2001 average 366.70; slope −0.0454; 1979-2001 average 366.11; slope +0.5366
+    - PET_PT: 1901-1957 average 331.55; slope +0.1970; 1958-2001 average 340.08; slope +0.6888; 1979-2001 average 345.62; slope +0.3891
+    - Net Rad: around 29.05 (1901-1957) to 28.65 (1958-2001) to 28.65 (1979-2001)
+    - VPD: 0.24–0.25 kPa with small changes
+    - Wind: ~1.68–1.99 m/s
+    - Rainfall: 1958-2001 around 1400.84 mm/yr; 1979-2001 around 1426.74 mm/yr
+    - Snowfall: ~132.34 mm/yr (1958-2001) to 131.41 mm/yr (1979-2001)
+    - Precipitation: ~1426.27 mm/yr (1958-2001) to 1426.74 mm/yr (1979-2001)
+  - Ganges-Brahmaputra River Basin
+    - PET_rc: 1901-1957 average 889.32 mm/yr; slope +0.0368; 1958-2001 average 869.68; slope −2.2561; 1979-2001 average 843.63; slope −1.8416
+    - PET_PT: 1901-1957 average 798.70; slope +0.0968; 1958-2001 average 767.99; slope −1.2596; 1979-2001 average 752.00; slope −0.8951
+    - Net Rad: 69.75 (1901-1957) to 67.01 (1958-2001) to 65.45 (1979-2001)
+    - VPD: 0.9467 (1901-1957) to 0.9570 (1958-2001) to 0.9281 (1979-2001)
+    - Wind: ~1.97–1.99 m/s with small changes
+    - Rainfall/Precipitation: around 1400–1427 mm/yr, with some periods showing declines or increases
+    - Snowfall: ~25.43 mm/yr (1958-2001) to ~26.34 mm/yr (1979-2001)
+- Notes on data completeness
+  - The excerpt includes several basins (e.g., Orange, Lena, Ganges-Brahmaputra) with detailed trend metrics; some entries (e.g., Murray-Darling) are incomplete in this excerpt.
+  - Across basins, many variables show small-to-moderate trends with varying statistical significance (Adjusted Slope P values), highlighting spatial heterogeneity in long-term forcing trends.
+- Appendix-year-basis-year ordering for ERA-40 (1901-1957)
+  - The appendix lists the sequence of ERA-40 basis years used to compose the WATCH Forcing Data for the 1901-1957 period.
+  - The WATCH Forcing Data uses a cycle of WFD and ERA-40 basis years (WFD, 1–5 interleaving ERA-40 and WFD), with each year in 1901-1957 tied to a specific basis year (e.g., 1901 mapped to 1974 in WFD-1; 1901 mapped to 1920 in WFD-2, etc.), illustrating the reconstructive approach used to fill data-poor periods by rotating basis years.
+- Implications for monitoring frameworks
+  - The table exemplifies how long-term, multi-variable forcing data are compiled with explicit trend metrics to support environmental health monitoring, model intercomparison, and policy-relevant analyses.
+  - Emphasizes the need for transparent metadata, explicit basis-year selection, and clear communication of period-specific uncertainties when using historical forcing data for monitoring and decision-making.

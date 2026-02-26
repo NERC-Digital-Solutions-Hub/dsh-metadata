@@ -1,0 +1,40 @@
+# The seed set of Eschscholzia californica plants introduced into habitats comprising different floral cover
+
+- Location and timing: Hillesden estate, Buckinghamshire, UK; June 2015
+- Objective: assess how habitat floral cover (florally rich vs florally poor) and pollinator access affect seed production, as part of a broader study on floral resources and pollination services to isolated plants
+- Experimental design
+  - Four replicate blocks (each 100 ha), with four experimental arrays per block (16 arrays total)
+  - Arrays arranged in triangular formations of three E. californica plants, spaced 1 m apart
+  - Centered along a 150 m transect crossing the boundary between a florally rich wildflower patch and florally poor habitat (bare/fallow ground or grazed grassland)
+  - Within each block: two arrays in florally rich habitat and two in florally poor habitat
+- Plant material and placement
+  - Eschscholzia californica plants grown from seed; three plants per array
+  - All open flowers removed prior to field placement
+  - One bud per plant marked with muslin to represent pollinator-excluded flowers
+- Pollination treatment and duration
+  - Flowers in the field exposed to pollinators or excluded (pollinator exclusion)
+  - Field phase lasted 16 days to ensure full anthesis and multiple pollination events
+  - Post-field, fruits were tagged to ensure only fruit development during the experiment was analyzed
+  - Fruits were collected and matured under controlled glasshouse conditions (day:night = 20°C:15°C; photoperiod 12:12)
+- Data collection
+  - For each fruit, the number of filled seeds was counted to quantify seed set
+  - Study aimed to link habitat context and pollinator access to reproductive output
+- Data structure and metadata
+  - Single CSV file: Eschscholzia_californica_seed_set.csv
+  - Key columns:
+    - Block: replicate block identifier
+    - Experimental array: array identifier within each block
+    - Plant identification number: pre-field plant ID
+    - Sample type: exposed or pollinator-excluded
+    - Fruit number: identifier for each analyzed fruit
+    - Habitat: florally rich vs florally poor location
+    - Treatment: exposure status related to pollination
+- Dataset status and attribution
+  - Dataset is complete
+  - Collected and interpreted by Evans, T.M.
+  - Supporting documentation: "The seed set of Eschscholzia californica plants introduced into habitats comprising different floral cover"
+  - Part of a larger experiment on the effect of floral resources on pollination services to isolated plants
+- Environmental monitoring relevance
+  - Provides standardized, location-specific data on how habitat context and pollinator access influence seed production
+  - Facilitates cross-site and temporal comparisons when monitoring changes in floral resources and pollination services
+  - Metadata and structured dataset support data quality assurance, reuse, and integration with other environmental monitoring datasets

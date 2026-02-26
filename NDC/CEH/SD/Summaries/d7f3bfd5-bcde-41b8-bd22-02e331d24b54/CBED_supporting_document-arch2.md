@@ -1,0 +1,32 @@
+# Concentration Based Estimated Deposition (CBED) methodology
+
+- Purpose: Generate 5x5 km resolution maps of wet and dry deposition for sulphur, oxidised and reduced nitrogen, and base cations, using measured air concentrations and precipitation ion concentrations; outputs support assessment of environmental health and critical loads in the UK.
+- Data sources: Measurements from the UK Eutrophying and Acidifying Pollutants (UKEAP) network; observations interpolated to UK-wide concentration maps.
+- Wet deposition: Calculated from precipitation ion concentrations combined with annual precipitation; includes direct cloud droplet deposition (occult deposition) and an orographic enhancement factor for upland regions.
+- Dry deposition: Derived from gas/PM concentration maps and habitat-specific deposition velocities; computed for five land cover categories (forest, moorland, grassland, arable, urban); deposition to non-woodland vs woodland habitats varies by category to support critical load calculations.
+- Key components and data sources:
+  - Sulphur dioxide (SO2) concentration map derived from rural measurements with urban enhancement.
+  - Oxidised nitrogen deposition: nitric acid concentrations from interpolation; NO2 concentrations from the PCM model (rural, point sources, line sources).
+  - Ammonia concentrations from the FRAME model and UKEAP measurements (local variability).
+- Temporal framework:
+  - Calculations are annual, but results are provided as rolling 3-year means to smooth inter-annual variability in weather, emissions, and transport.
+  - Outputs are ecosystem-specific and provided in two scenarios (moorland/short vegetation everywhere; forest everywhere) plus grid-average values.
+- Outputs and delivery:
+  - 3-year mean deposition data with ecosystem-specific assumptions across 5x5 km grid squares; includes grid-average as well as forest and moorland scenarios.
+  - Exceedance assessments for critical loads derived from these deposition values.
+- Data structure ( examples of fields ):
+  - Spatial identifiers: easting and northing (centre of 5x5 km grid square in OS Great Britain grid).
+  - Forest-specific deposition values: nox_f (oxidised nitrogen), nhx_f (reduced nitrogen), nms_f (non-marine sulphur), nm_ca_mg_f (non-marine base cations: Ca+Mg).
+  - Moorland-specific deposition values: nox_m, nhx_m, nms_m, nm_ca_mg_m.
+  - Grid-average deposition values: nox_ga, nhx_ga, nms_ga, nm_ca_mg_ga.
+  - All deposition values expressed as keq ha^-1 year^-1 (with guidance to convert to kg ha^-1 year^-1 via specific multipliers).
+- Data conversion and units:
+  - To convert keq ha^-1 year^-1 to kg S ha^-1 year^-1: multiply by 16 (for sulphur) or to kg N ha^-1 year^-1: multiply by 14 (for nitrogen species).
+  - Base cation deposition (Ca+Mg) uses calcium equivalents: multiply by 20 to obtain kg Ca ha^-1 year^-1.
+- Quality control and governance:
+  - Methods align with government QA for analytical models; extensive peer review and participation in model inter-comparison exercises.
+  - Version control, documentation of method developments, central storage of code, and mass-balance checks to ensure numerical consistency.
+  - Results widely published in peer-reviewed literature; led by established senior responsible officers.
+- Supporting information and references:
+  - Detailed methodology, model descriptions, and validation studies referenced (e.g., Dore et al., Fowler et al., Stedman et al., RoTAP, etc.).
+  - Information about data structure, data sources, and related supporting information available via CEH and UK DEFRA/UK-AIR portals.

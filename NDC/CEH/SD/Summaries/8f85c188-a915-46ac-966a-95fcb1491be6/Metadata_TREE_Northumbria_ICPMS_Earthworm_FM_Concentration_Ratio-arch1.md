@@ -1,0 +1,72 @@
+# TREE_Northumbria_ICPMS_Earthworm_FM_Concentration_Ratio
+
+- Overview
+  - A dataset describing concentration ratios of multiple elements in earthworms relative to the dry mass of surrounding soil.
+  - The ratio is intended to quantify uptake/accumulation of elements by earthworms from soil, using fresh earthworm mass divided by soil dry mass.
+
+- Data structure and key variables
+  - Identification and sampling metadata
+    - Latin_Species_Name
+    - Common_Species_Name
+    - Site
+    - Date_Sample_Collected
+    - CEH_Sample_Codes
+    - CEH_Sample_Description
+    - Notes
+  - Paired soil context
+    - Co_Located_Soil_Sample_Used_To_Calculate_Concentration_Ratio
+  - Concentration ratio variables (for each element)
+    - I_Concentration_Ratio
+    - Li_Concentration_Ratio
+    - Be_Concentration_Ratio
+    - Na_Concentration_Ratio
+    - Mg_Concentration_Ratio
+    - Al_Concentration_Ratio
+    - P_Concentration_Ratio
+    - K_Concentration_Ratio
+    - Ca_Concentration_Ratio
+    - Ti_Concentration_Ratio
+    - V_Concentration_Ratio
+    - Cr_Concentration_Ratio
+    - Fe_Concentration_Ratio
+    - Co_Concentration_Ratio
+    - Ni_Concentration_Ratio
+    - Cu_Concentration_Ratio
+    - Zn_Concentration_Ratio
+    - As_Concentration_Ratio
+    - Se_Concentration_Ratio
+    - Rb_Concentration_Ratio
+    - Sr_Concentration_Ratio
+    - Mo_Concentration_Ratio
+    - Ag_Concentration_Ratio
+    - Cd_Concentration_Ratio
+    - Cs_Concentration_Ratio
+    - Ba_Concentration_Ratio
+    - Tl_Concentration_Ratio
+    - Pb_Concentration_Ratio
+    - U_Concentration_Ratio (two related entries: 1 and 2)
+  - Units and explanations
+    - Most concentration ratio fields list Units = n/a
+    - Explanations specify: “I Concentration Ratio (Fresh Mass Earthworm (wholebody) divided By Dry Mass Soil)” (and similarly for other elements)
+
+- Calculation details
+  - Concentration Ratio definition: Fresh Mass Earthworm (whole body) divided by Dry Mass Soil
+  - U_Concentration_Ratio appears with two columns labeled 1 and 2, where 2 is described as the U Concentration Ratio; 1 is labeled as n/a
+
+- Data quality and consistency considerations
+  - The dataset metadata contains several typographical inconsistencies and odd formatting (e.g., “MnConcentration Ratio” phrasing, minor header typos, and inconsistent naming).
+  - Many fields list units as n/a; actual units may be missing or unspecified.
+  - The U_Concentration_Ratio has a two-part schema that may require clarification.
+  - The presence of a paired “Co_Located_Soil_Sample_Used_To_Calculate_Concentration_Ratio” enhances traceability between earthworm and soil measurements but requires careful alignment.
+
+- Potential uses and analyses
+  - Compare element-specific accumulation ratios across species (Latin/Common names), sites, and collection dates.
+  - Identify elements with consistently high or low uptake relative to soil concentrations.
+  - Explore correlations between soil concentration and earthworm concentration ratios, accounting for site-level factors.
+  - Build predictive models of uptake based on soil chemistry, species, and site metadata, subject to data quality and completeness.
+
+- Practical considerations for analysts
+  - Validate and clean the data to resolve typos and standardized variable naming.
+  - Confirm units and ensure correct pairing between earthworm and soil samples using the co-located soil sample field.
+  - Handle the two U_Concentration_Ratio columns appropriately to avoid misinterpretation.
+  - Consider data provenance (CEH sample codes and descriptions) to track sample history and metadata.

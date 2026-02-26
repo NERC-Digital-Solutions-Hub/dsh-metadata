@@ -1,0 +1,31 @@
+# Experimental_Evolution_Design.csv
+
+- Purpose: Describe an experimental evolution microcosm study to understand evolutionary adaptation to drought in two bacterial taxa, including post-drought resistance and resilience assessment.
+- Experimental setup: Factorial, randomized block design with 12 isolates of each of two taxa exposed to two moisture treatments (drought vs. control) across four experimental blocks.
+- Replication: For each isolate-treatment combination, five replicates are used; one replicate per block with a random assignment of the fifth replicate to one of the blocks.
+- Microcosm arrangement: Microcosms arranged in a grid within blocks; spatial position randomized within blocks.
+- Treatments and timing: Four drought cycles applied to drought microcosms; all microcosms subsequently subjected to a final drought treatment followed by rewetting to assess resistance and resilience.
+- Monitoring and data collection plan (linked datasets):
+  - Soil moisture by mass at four timepoints (via SWC measurements) and additional subset measurements.
+  - Bacterial population relative abundance measured by qPCR at 11 timepoints (launch, end of each drought, post-drought rewetting stages).
+  - Post-evolution sampling after the fourth drought for genome resequencing and assessment of shifts in respiration physiology.
+- Data structure and variables ( Metadata Table 1 ):
+  - key identifiers: jarID (microcosm ID), batch, inoculation (genus), isolate, replicate, treatment (control or drought), block, row, column.
+  - physical measurements: jar_mass (empty jar mass), soil_mass (dry soil mass), microcosm_dry_mass, target_mass_0.4 (target soil-water content by mass).
+  - timing and samples: date, evo_strain_ID, comment.
+- Data quality and integrity:
+  - Randomisation used to ensure valid experimental design.
+  - Documentation of experimental blocks and grid positioning to support mixed-effects analyses.
+- Instruments and methods:
+  - Mass determinations with a 2-decimal pan balance.
+  - No calibration methods specified for mass measurements in this file.
+- Relationship to other datasets:
+  - Design is coordinated with Experimental_Evolution_SWC.csv (soil moisture dynamics), Experimental_Evolution_qPCR.csv (relative bacterial abundance), and Experimental_Evolution_Microresp.csv (soil CO2 efflux responses) for integrative analyses.
+- Potential analyses for an analyst:
+  - Mixed-effects models to assess effects of drought vs. control across taxa, isolates, and blocks.
+  - Correlations between soil moisture trajectories and qPCR-derived population shifts.
+  - Linking initial isolate traits (from inoculation data) with post-evolution genomic or respiration changes.
+  - Evaluation of spatial block effects and potential interactions between taxon, isolate, and treatment.
+- Key considerations for data use:
+  - Ensure alignment of timepoints across SWC, qPCR, and post-evolution sampling when integrating datasets.
+  - Be mindful of the five-replicate scheme per isolate-treatment and randomization of the fifth replicate for proper model specification.

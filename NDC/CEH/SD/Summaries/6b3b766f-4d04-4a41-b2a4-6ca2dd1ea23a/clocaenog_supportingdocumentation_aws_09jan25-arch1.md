@@ -1,0 +1,93 @@
+# Climoor field site in Clocaenog forest. Supporting documentation for data
+
+- Data access
+  - Data available from the Environmental Information Data Centre (EIDC) under the Data collection: Daily automated weather station (AWS) data from Climoor field site in Clocaenog forest. URL: https://catalogue.ceh.ac.uk/documents/198980ac-8f5e-4a16-b1c0-bc6d61516b99
+
+- Data structure
+  - Single dataset: CLM_AWS_2024_summaryQA.csv
+  - Structure: 10 columns, 367 rows
+  - Data flags: NA = not recorded; faulty data replaced by -9999
+  - Columns and definitions:
+    - Date (Year-Month-Day)
+    - Mean_air_temperature_degC (Mean air temperature, °C)
+    - Minimum_air_temperature_degC (Minimum air temperature, °C)
+    - Maximum_air_temperature_degC (Maximum air temperature, °C)
+    - Rainfall_mm (Rainfall, mm)
+    - Air_pressure_mbar (Air pressure, mbar)
+    - Solar_radiation_kW_per_m2 (Solar radiation, kW m^-2)
+    - Photosynthetic_active_radiation_umol_per_m2_per_sec (PAR, µmol m^-2 s^-1)
+    - Wind_speed_m_per_sec (Wind speed, m s^-1)
+    - Wind_direction_degrees (Wind direction, degrees)
+
+- Site information
+  - Climoor/Clocaenog field site is a climate-change manipulation experiment (initiated 1998) using automated roof technology to create drought and warming treatments reflecting 20–30 year climate projections.
+  - Location: Clocaenog Forest, North East Wales (53°03'19"N, -03°27'55"W)
+  - Habitat: upland west-Atlantic moorland; dominated by Calluna vulgaris (heather) with Vaccinium myrtillus and Empetrum nigrum also present
+  - Vegetation overview (1998 baseline): Calluna vulgaris shrubs (~98% cover; ~2485 g m^-2 biomass); Vaccinium myrtillus and Empetrum nigrum present; bryophytes substantial (73% cover; ~520 g m^-2 biomass)
+  - Growing season: June–August; shoulder seasons April–May and September–October; winter dormancy November–February
+  - Soil: humo-ferric podzol; horizons Eg and Bh variably visible; typical horizon depths around 6–17 cm (Eg) with Bh below
+  - Climate (1997–2014): mean air temp ~8.0 °C; mean soil temp in control ~7.5 °C; mean annual rainfall ~1411 mm; total N-deposition ~20–25 kg N ha^-1 yr^-1
+  - Vegetation and soil chemistry data provided (detailed tables for species, biomass, C/N, nutrient content, and soil properties across horizons)
+
+- Climate change treatment information
+  - Treatments and layout
+    - Two treatments: drought and warming
+    - Replicates: 3 per treatment; 3 control plots (n=9 total)
+  - Drought treatment
+    - Mechanism: retractable polyethylene roof activated by tipping-bucket rainfall sensor
+    - Rainfall reduction: ~20% annually; during drought months (May–Sept originally) up to ~80% of rain excluded due to sensor thresholding
+    - Temporal scope: drought operation May–Sept (1999–2011); since 2012, April–October
+    - Operational caveats: roofs do not operate in high winds (>10 m s^-1); since 2016, issues with rainwater accumulation on roofs affected retraction
+  - Warming treatment
+    - Mechanism: retractable aluminium mesh curtains to reflect infrared radiation; reduces night-time heat loss
+    - Control of rainfall: curtains retract when rain detected to prevent rainfall loss; some rainfall excluded due to response lag
+    - Operational caveats: curtains not used in high winds (>10 m s^-1)
+  - Maintenance and upgrades
+    - 2016: frames showed wear; 2017: new frames installed on top of old frames to minimize vegetation disruption
+  - Treatment timing data
+    - Table 6(a): Drought treatment yearly data including annual and growing-season rainfall reductions
+    - Table 6(b): Warming treatment data with calculated growing degree days (GDD) and percent change due to warming
+    - GDD calculations based on plot air temperature; values provided per year with notes on when warming roofs operated separately from drought roofs
+
+- Equipment, protocols and data processing methodology
+  - On-site automated weather station (AWS) and plot sensors
+  - Data types collected: meteorological, abiotic and biotic plot-level data
+  - Summary of data sources (Table 7)
+    - AWS meteorological data: relative humidity, air temperature, rainfall, air pressure, net radiation, solar radiation, PAR, wind speed and direction
+    - Micro-meteorological plot data: soil/air temperatures, soil moisture
+    - Rainfall and rainfall chemistry: ground-level rain gauge and rainfall collectors
+    - Throughfall data: plot-level rainfall via funnels and bottles
+    - Water table depth: permeable tubes
+    - Soil respiration, trace gases (CH4, N2O), net ecosystem CO2 exchange, photosynthesis
+    - Vegetation surveys, canopy reflectance, phenology, litter chemistry, root and microbial biomass, mineralisation, SOC/SOM
+  - AWS micro-meteorological data (5.1)
+    - Sensors and measurements (examples)
+      - Air temperature: HMP 45C
+      - Relative humidity: HMP 45C
+      - Solar radiation: Skye SP1110 pyranometer
+      - PAR: SKP215 Quantum Sensor
+      - Net radiation: NR-Lites
+      - Barometric pressure: CS100
+      - Rainfall: ARG100 tipping bucket
+      - Wind speed/direction: Windsonic 2D Ultrasonic Anemometer
+    - Data cadence: every minute; hourly averages
+    - Basic quality control via visual inspection (Excel)
+  - Storage rain gauge data (5.2)
+    - Site-level rainfall: 12.7 cm funnel; biweekly collection; used as the primary robust dataset due to logger/power reliability
+  - Throughfall data (5.3)
+    - Plot-level rainfall via funnels (diameter 16.8 cm) and 3 L bottles
+    - Biweekly collection; data processing uses site-level rainfall to derive plot-level rainfall via percent change
+    - Data quality: plot means sometimes exclude replicates when data are compromised; occasional infilling with average reductions across years
+  - Data processing notes
+    - Throughfall percent changes applied to site rainfall; data exclusions for damaged/missing equipment
+    - Some datasets not stored in EIDC after June 2015
+  - Appendix and figures
+    - Figures showing site layout and quadrat arrangement
+    - Detailed plot and quadrat mapping descriptions
+
+- Appendix (layout and figures)
+  - Figure 2: Site layout for the experimental site
+  - Figure 3: Quadrat layout and motor box locations
+  - Figure 4: Plot layout with quadrats and measurement areas
+
+Note: The document provides extensive, horizon-specific soil and vegetation chemistry data, detailed year-by-year drought/warming treatment records, and a comprehensive schema for data collection, storage, and processing intended for robust, cross-year climate manipulation studies.

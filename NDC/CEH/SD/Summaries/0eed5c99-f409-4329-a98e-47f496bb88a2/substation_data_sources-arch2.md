@@ -1,0 +1,65 @@
+# Substation Data - Nature, Units, Quality Control and Data Structure
+
+- Purpose and scope
+  - Compiles a dataset of substations in Great Britain down to the primary level (33/11 kV or 33/6.6 kV) to support analysis of generation connections (e.g., solar, wind) and network constraints.
+  - Integrates information from National Grid and six Distribution Network Operators (DNOs); created in 2018 with notes that updates may have occurred since.
+  - Aims to standardise a core attribute set for comparability, while acknowledging variable data quality and standardisation across operators.
+
+- Core data structure and attributes
+  - Key fields used:
+    - SUBST_ID: unique substation identifier
+    - COMPANY_ID: substation identifier within the company
+    - SUBST_NAME: substation name
+    - COMPANY: company name
+    - REGIONAL_SERVICE_AREA: regional service area
+    - ASSET_TYPE: substation type (e.g., TRANS, GSP, BSP, PSS)
+    - VOLTAGE_HIGH / VOLTAGE_LOW: highest and lowest listed voltages
+    - CONSTRAINT_STATUS: extent of generation connection constraint
+    - EASTING / NORTHING: national grid coordinates (OS grid)
+  - Voltage structure and typical flow:
+    - Transmission: 400 kV/275 kV (often 132 kV at transition to distribution)
+    - Distribution: 132 kV down to 33 kV, 11 kV, 6.6 kV, and ultimately 230/400 V
+  - Substation types and roles:
+    - Transmission substations (often grid supply points, GSPs)
+    - Bulk Supply Points (BSPs) and primary substations
+    - Switching stations (no transformers, single voltage level)
+
+- Data collection and processing by company (method highlights)
+  - National Grid
+    - Sourced shapefiles for substations and HV lines; converted polygons to central points.
+    - Excluded headhouses and very low-voltage sites; retained cable/sealing-end locations.
+    - Classified 313 of 471 as TRANS (400/275 kV) and the remainder as GSP.
+  - SSE Networks
+    - Used generation-availability Excel data; 957 total after adjustments (North Scotland 435, Southern England 522).
+    - Transmission status treated as constraint indicator (constrained/unconstrained); Beaulay-Denny area updated with additional sites to 459 in North Scotland.
+  - SP Energy Networks
+    - 1,229 total; capacity categories Green, Amber, Red defined by operational thresholds and reinforcement needs.
+    - Additional 33 sites identified; some transmission substations (275/400 kV) not fully encompassed.
+  - Northern Powergrid
+    - From large 75k+ records, filtered to 33/11 kV or higher; final 783 sites (NE England and Yorkshire).
+  - Electricity North West
+    - 1,592 records; after cleaning, 608 remaining; updated with names, capacity, and constraint status via a thermal/heat-map approach.
+    - Capacity status coded as Green, Amber, Red.
+  - Western Power Distribution
+    - 1,592 records; deduplicated to 1,433 sites across four regions (East Midlands, South Wales, South West England, West Midlands).
+    - Used aggregated headroom and grid constraint maps to assign capacity/constraint status; address duplicates and multi-site substations on same site.
+  - UK Power Networks
+    - Shapefiles for 132 kV, 33 kV, 11 kV substations; constraint status mapped to Green/Amber/Red using internal codes and LSOA heat-map data for blanks.
+    - Final set reduced from 1,585 to 1,327 sites after deduplication; mapping of 132 kV to 132/33 kV and 33 kV to 33/11 kV by standard rules.
+    - Many records had blank or 0 constraint status; blanks assigned based on LSOA heat-map location.
+
+- Constraint status and classification
+  - General approach: traffic-light style (Green, Amber, Red) to indicate DG connection potential and reinforcement needs.
+  - Differences by operator:
+    - Some use simple constrained/unconstrained indicators (SSE).
+    - Others map internal statuses to Green/Amber/Red with additional nuance (WPD, UKPN).
+  - Gaps and mapping decisions:
+    - Where data were incomplete or inconsistent, status was inferred from related maps (e.g., heat maps, regional constraint indicators) or left blank and later filled by spatial allocation.
+    - Duplicates and multi-site configurations (e.g., BSP plus PSS on the same site) were addressed to avoid double counting.
+
+- Data quality, limitations, and usage notes
+  - Date of collection: 2018, with potential updates since; interpretation not formally validated with each company.
+  - Completeness varies by company; some sites lack constraint information or precise voltage details.
+  - Mapping decisions (e.g., 132/33 kV and 33/11 kV assignments) rely on existing development statements and public resources (e.g., Long Term Development Statements).
+  - Duplicate records identified and removed during cleaning; final counts presented by region and company.
+  - Data intended to support analyses of distributed generation capacity, network constraints, and potential reinforcement needs for environmental planning and policy assessment.

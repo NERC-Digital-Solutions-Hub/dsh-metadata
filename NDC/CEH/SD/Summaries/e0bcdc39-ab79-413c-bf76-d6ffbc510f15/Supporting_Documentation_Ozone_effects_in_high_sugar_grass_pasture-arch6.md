@@ -1,0 +1,76 @@
+# Supporting documentation - Ozone effects in high sugar grass pasture
+
+- Objective: Document and quantify the effects of ozone exposure on a high-sugar grass pasture mesocosm system, including biomass production, nitrogen fixation, injury, and canopy gas exchange, under environmentally monitored conditions.
+
+- Experimental system and design:
+  - Plants: Lolium perenne cv. AberMagic (grass) and Trifolium repens cv. Crusader (clover) grown in John Innes No. 2 compost.
+  - Setup: Pots inoculated with a soil slurry to introduce a soil microbe population; grown in glasshouse conditions, then transferred to six solardomes (3 m diameter) for ozone exposure.
+  - Treatments: Episodic ozone profiles across six solardomes (randomised). No explicit replication of ozone treatments within a dome; prior studies support the statistical validity of this design with multiple treatments.
+  - Duration: 16 weeks of ozone exposure (June 11 to October 2013); weekly rotations and regular watering to maintain near-field capacity.
+  - Environmental monitoring: Continuous recording of ambient temperature, soil moisture, PAR, and relative humidity in at least one dome.
+
+- Measurements and assessments:
+  - Biomass and productivity:
+    - Above-ground biomass measured every 4 weeks; shoot biomass pooled per ozone treatment at each harvest.
+    - Root biomass and, for Crusader, root nodules quantified at final harvest.
+    - Injury assessment on clover leaves; shoot injury quantified as a percentage where applicable.
+    - Canopy-level photosynthesis and respiration: whole-canopy hourly CO2 fluxes measured with a bell chamber and IR gas analyzer; NPP and canopy respiration (Rtot) calculated; GPP derived from NPP minus Rtot.
+  - Nitrogen fixation and nodulation:
+    - Acetylene reduction assays (ARA) conducted every 4 weeks to estimate nitrogenase activity.
+    - Nodule biomass and counts recorded for Crusader; infection and nodule metrics analyzed.
+  - Forage quality and nutritive value:
+    - Near-infrared reflectance (NIR) to determine nutritive quality; relative feed value (RFV) and consumable food value (CFV) calculated from NIR and biomass data.
+  - Ozone exposure characterization:
+    - Flux and exposure quantified using the DO3SE model to estimate stomatal ozone flux (Fst) and cumulative exposure (POD values, POD6 for AberMagic and POD1 for Crusader).
+    - Accumulated ozone flux values (g C m-2) used to relate to biomass, injury, and N-fixation endpoints.
+  - Canopy and climate variables:
+    - Leaf area index (LAI) derived from biomass; environmental variables including temperature, PAR, VPD, and PAR>200 μmol m-2 s-1 included in analyses.
+  - Data analysis approach:
+    - Regression analyses of biomass, injury, and N-fixation against accumulated POD values (4, 8, 12, 16 weeks) and/or seasonal metrics.
+    - Canopy gas-exchange data analyzed by ANOVA across ozone treatments, with week as a random factor; post-hoc comparisons via Tukey HSD.
+    - All analyses conducted in R (Version 3.1.1).
+
+- Data availability and structure:
+  - The dataset comprises multiple aligned CSV files, organized as follows:
+    - Acetylene reduction assays (nitrogenase activity):
+      - acetylene_reduction_assay_4week.csv
+      - acetylene_reduction_assay_8week.csv
+      - acetylene_reduction_assay_12week.csv
+      - acetylene_reduction_assay_16week.csv
+      - Each file contains 11 columns: pot, size, harvest.level, ozone, time period, vial, time, ethylene area, ng.ethylene.ml, nL.ethylene.ml, nL.ethylene.cm2.
+    - Shoot biomass (by week):
+      - week4shootbiomass.csv
+      - week8shootbiomass.csv
+      - week12shootbiomass.csv
+      - week16shootbiomass.csv
+      - Each file contains 27 columns including pot, size, harvest.level, dome, mean.ozone, various biomass metrics for grass and clover, including bag masses, grammes of biomass, clover:grass ratios, percent clover, total biomass, etc.
+    - Root biomass (by week):
+      - week4rootbiomass.csv
+      - week8rootbiomass.csv
+      - week12rootbiomass.csv
+      - week16rootbiomass.csv
+      - Each file contains 21 columns with metrics for grass and clover root masses, nodules, total biomass, nodules per gram, and related derived values.
+    - Injury data (by week):
+      - week4injury.csv
+      - week8injury.csv
+      - week12injury.csv
+      - week16injury.csv
+      - Each file contains 8 columns: pot, size, harvest.level, dome, mean.ozone, injured, total, percent.injury.
+    - Gs (stomatal conductance) and environmental data:
+      - allmeasurements.csv
+      - 12 columns including date, time, pot, size, dome, mean.ozone, gs, leaf.temp, soilm, PAR, air.temp, VPD.
+    - AOT40 and climate data:
+      - AOT40_and_climate_variables.csv
+      - 32 columns including date, time, weekday, week, dome-specific >40ppb values, PAR, air temp, VPD, PAR>200, and dome identifiers.
+  - Content scope:
+    - Datasets cover ozone effects on high-sugar grass pasture mesocosms, including acetylene reduction, injury, biomass across time, root and nodule data, canopy gas exchange, forage quality, and environmental/climate context.
+
+- Notable methodological notes:
+  - Ozone treatments were not replicated within a single solardome; the facility’s prior use supports the statistical validity of this approach with multiple treatments across domes.
+  - DO3SE-based ozone flux modeling was employed to estimate stomatal flux and accumulation thresholds (POD values) for each cultivar, with cultivar-specific parameterization where possible.
+  - Data are designed for integration and re-use: multiple endpoints (biomass, N-fixation, injury, gas exchange, quality) and concurrent environmental data enable cross-endpoint analyses and meta-interpretation.
+
+- Potential data use:
+  - Data supports exploration of ozone-plant interactions in mixed grass-clover systems, including relationships between ozone flux/ exposure and plant productivity, nitrogen fixation, and forage quality.
+  - Suitable for data cleaning, merging across weeks/timepoints, and comparative analyses with other ozone-perturbed pasture experiments.
+  - Can inform modeling of ozone effects in managed pastures and contribute to meta-analyses of ozone impacts on perennial forage systems.

@@ -1,0 +1,33 @@
+# Coastal Biodiversity and Ecosystem Service Sustainability (CBESS) sedimentation and erosion monitoring over saltmarsh and mudflat habitats
+
+- Purpose: Monitor sedimentation and erosion dynamics in saltmarsh and mudflat habitats using rod Surface Elevation Table (rSET) to measure surface elevation relative to benchmark rods and sediment deposition over marker horizons, enabling assessment of environmental health and policy performance over time.
+- Scope and sites:
+  - Essex: Abbotts Hall (AH), Fingringhoe Wick (FW), Tillingham Marshes (TM) representing contrasting habitats and soil types (clay soils; mudflat with cohesive clays).
+  - Morecambe Bay: Cartmel Sands (CS), Warton Sands (WS), West Plain (WP) representing sandy soils and distinct inundation/creek/vegetation characteristics.
+  - Focus on saltmarsh and mudflat habitats with intersite contrasts (soil type, inundation frequency, vegetation).
+- Monitoring design and frequency:
+  - Instruments: Rod Surface Elevation Table (rSET) with benchmark rods installed autumn 2012; receivers mounted and top of rod cemented into PVC around the benchmark.
+  - Measurements: Twice during a 1-year monitoring period; 9 pins in each of four quadrants around each benchmark; horizon depths measured on 50 cm x 50 cm feldspar marker horizons installed just beyond instrument reach.
+  - Spatial scope: Coordinates for SET benchmarks provided with accuracy better than 50 mm (OSGB1936); GPS dataset available separately ("CBESS_gps_wave_transects").
+- Variables and data collected:
+  - Heights at Pin 1-9; horizon depths at Core 1-3; accompanying notes on readings.
+  - Seasonal tagging (Winter/Summer) and other dataset fields to support analysis and sorting.
+- Procedures and standards:
+  - Standardised, globally comparable approach for elevation measurements (rSET) enabling inter-site comparability; references Cahoon et al. (2002) for method details.
+  - Core measurements: marker horizons cored contemporaneously with SET readings; if horizon depth non-horizontal, mean depth estimated from multiple sides; cores with <1 mm sediment above horizon recorded as 0 mm; 'NA' used if horizon undetectable.
+- Data management and quality:
+  - Data stored in Excel spreadsheets; coordinates and measurements catalogued; notes on significant factors are included in spreadsheets.
+  - Data checks/quality control entries are not explicitly specified (NA in the dataset description).
+  - Data values: NA indicates measurement not performed; horizon depths and pin readings are recorded as numeric values (mm) where available.
+- Metadata and field structure:
+  - Dataset descriptions include location, site, habitat, quadrat, scale, record numbers, date/time, SET number, multiple Pin readings (1–9), marker horizon depths (Core 1–3), and notes.
+  - Locations and habitats linked to site designations (AH, FW, TM; CS, WS, WP) with corresponding habitat types (Saltmarsh, Mudflat) and location specifics.
+- Staff and provenance:
+  - Staff: Tom Spencer, Ben Evans.
+  - Data generation and methodology aligned with the CBESS program and established SET protocols; dataset cites Cahoon et al. (2002) for methodology.
+- Practical relevance for analysts:
+  - Provides a standardized, comparable dataset for coastal sediment dynamics, enabling assessment of environmental health and effectiveness of coastal management policies over time.
+  - Rich geospatial and temporal data allow integration with other environmental datasets to enhance policy evaluation and monitoring outcomes.
+- Considerations and caveats:
+  - Marker horizon detection and horizon depth measurements may have limitations when horizons are not detectable or horizons are not perfectly horizontal; where applicable, data entries reflect these conditions (0 mm or NA).
+  - Data availability in Excel format; separate GPS dataset for fine-scale geolocation.

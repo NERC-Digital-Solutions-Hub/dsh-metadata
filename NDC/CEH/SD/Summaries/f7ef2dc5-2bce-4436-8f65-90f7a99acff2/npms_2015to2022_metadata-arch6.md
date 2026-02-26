@@ -1,0 +1,49 @@
+# Introduction
+
+- The National Plant Monitoring Scheme (NPMS) is a habitat-based plant monitoring program in the UK designed to track annual changes in plant abundance and diversity by engaging volunteers to sample plants and habitat attributes in a structured set of plots across the UK, Isle of Man, and Channel Islands.
+- Objectives:
+  - Detect change in the quality of priority habitats.
+  - Understand drivers and pressures behind change.
+  - Contribute data for UK Biodiversity Indicator C7 (plants of the wider countryside) by measuring plant community change in key habitats.
+- Data snapshot and access:
+  - Provides an annually updated dataset from the NPMS database held at UKCEH Wallingford.
+  - Includes a set of CSV files that capture locations, samples, attributes, species occurrences, and habitat mappings, plus lookups and harmonisation tables.
+  - Guidance, survey resources, and field recording notes are available via NPMS website links.
+- Files provided (summary of contents and purpose):
+  - locations_2015to2022.csv: Unique location_id, location_type (square or linear plot); links to repeated sampling events via location_id.
+  - sampleInfoWithLatLong_2015to2022.csv: Sample-level information including id, survey_id (87 Wildflower, 154 Inventory, 155 Indicator), date_start, location_id, spatial references, creation metadata, recorder ID, coordinates (LATITUDE, LONGITUDE), monad and monadCRS, country.
+  - sampleAttributes_2015to2022.csv: Additional sample data linked by sample_id; includes caption and text_value describing attribute categories (e.g., habitat).
+  - occurrences_2015to2022.csv: Species occurrences with id, sample_id link to samples, taxon keys, preferred_taxon, domin (Domin score), record_status (C/V/R), and sensitivity_precision (for blurred records).
+  - npmsHabitatLookup.csv: Mapping between NPMS broad habitats and fine-scale habitats for convenience.
+  - dominScores.csv: Harmonised domin score mapping (dominIndex, midPoint) to standardise between different survey forms.
+- Example workflow to access habitat information:
+  - Demonstrates joining sampleInfoWithLatLong and sampleAttributes to extract NPMS Habitat data, via R or SQL (LEFT JOIN on sample_id and id, filter caption = 'NPMS Habitat').
+- Evidence Quality Assurance (EQA) framework:
+  - NPMS data quality is supported by a body of publications and reports, including:
+    - Journal articles on design, launch, and assessment of volunteer-based plant monitoring schemes and related methodologies.
+    - Other articles on ecological monitoring, plant surveillance design, and comparisons of interval-censored plant cover data.
+    - Internal and external reports detailing design development, methodological refinements, and statistical approaches (e.g., Bayesian occupancy/abundance indicators).
+  - Aim to ensure transparent QA processes and to enable independent review of results.
+- QA governance and processes:
+  - Oversight by a project Steering Group; external peer review engaged where risk warrants (e.g., survey design).
+  - Outputs are reviewed by scientists to ensure claims are evidence-based; outputs may be circulated to the broader ecologist community for feedback.
+  - Robust statistical design to estimate uncertainty and to mitigate biases in statistics.
+  - Document tracking and version control are managed under a Data Management Plan; design work is archived, with off-site backups and adherence to PRINCE2 standards.
+- Data quality controls and workflow features:
+  - Online data capture with structured spatial databases.
+  - Use of a species dictionary, standardized date entry, map-based locations, and controlled terms for habitats and associated sample information.
+  - Automated data verification checks (e.g., geographic range checks) and a verification system (iRecord) for expert review of selected records.
+  - Public data publishing to enable independent review and transparency.
+- Analysis, reporting, and dissemination:
+  - Analyses conducted by experienced quantitative ecologists using R scripts.
+  - Reporting prepared by a multidisciplinary project team (botany, statistics, communication) and disseminated via NPMS newsletters and peer-reviewed journals.
+- Design and methodological notes:
+  - Sample stratification and survey design were developed with statistical and botanical expert input; grid-based square plots and linear plot gridlines were chosen for landscape randomness and reproducibility.
+  - Habitat definitions and indicator species lists were peer-reviewed or developed with expert input; field recording allows tiered participation by volunteers with varied expertise; training and guidance are provided.
+  - Data sharing is intended publicly, with data quality and uncertainty communicated in outputs and publications.
+- Uncertainty, limitations, and bias considerations:
+  - Uncertainty explicitly addressed through modeling and transparent communication in outputs.
+  - Potential biases mitigated by robust experimental design and continuous peer input; ongoing opportunities to improve formal quality assessment of field recording.
+- Practical notes for users:
+  - The NPMS data are designed for ease of self-serve access, with clear linking keys between files, enabling flexible analyses of habitat condition, species occurrences, and spatial trends.
+  - Users should consult the cited publications, guidance notes, and the NPMS website for detailed methodological context and up-to-date resources.

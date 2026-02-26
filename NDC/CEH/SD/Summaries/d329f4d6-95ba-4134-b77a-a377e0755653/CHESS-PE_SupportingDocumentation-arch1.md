@@ -1,0 +1,30 @@
+# Climate hydrology and ecology research support system potential evapotranspiration dataset (1961-2012) [CHESS-PE]
+
+- Purpose: Provides two daily potential evapotranspiration (PET) estimates on a 1 km grid over Great Britain for 1961–2012, derived from CHESS-met meteorological variables and CEH-GEAR precipitation.
+- Two PET variables:
+  - PET: Penman-Monteith PET for a well-watered grass surface (mm/day).
+  - PETI: PET with interception correction (mm/day); accounts for rainfall interception, canopy storage, and subsequent drying, combining interception and transpiration components.
+- Data sources:
+  - CHESS-met meteorological variables: air temperature (Ta), specific humidity (qa), downward longwave and shortwave radiation (Ld, Sd), surface air pressure (p*).
+  - CEH-GEAR precipitation: used to scale rainfall input for PETI.
+- Calculation basis:
+  - PET (E_P): Penman-Monteith equation with surface characteristics for grass; assumes stomatal resistance of 70 s m−1; constants include latent heat of vaporization, psychrometric constant, air density, and specific heat capacity.
+  - PETI (E_PI): same EP as PET plus rainfall interception dynamics; uses interception store S0 and total interception capacity Stot with an exponential dry-down formulation for interception.
+- File format and structure:
+  - NetCDF (CF-compliant) files following CEH gridded dataset conventions.
+  - Monthly files for each variable; filenames chess_<var>_wwg_<year><month>.nc.
+  - Variables: pet (PET) and peti (PETI); both cover the same time span and 1 km GB grid.
+- Temporal and spatial coverage:
+  - Time: 1961–2012.
+  - Space: Great Britain on a 1 km grid.
+- Usage guidance:
+  - PET provides the atmospheric demand for evaporation; PETI is useful when modelling canopy interception effects after rainfall.
+  - Suitable for hydrological and ecological modelling, climate impact studies, and water resource assessments.
+- Documentation and references:
+  - FAO guidelines for evapotranspiration (Allen et al., 1998) referenced for standard PET calculation.
+  - CEH-GEAR: gridded rainfall estimates (Keller et al., 2015).
+  - CHESS-met meteorology dataset (Robinson et al., 2015).
+  - Related work on rainfall and evapotranspiration trends (Robinson et al., in prep).
+- Accessibility and notes:
+  - Supporting documentation available via DOI; data distributed as netCDF with detailed metadata and conventions.
+  - References provide methodological background and validation context.

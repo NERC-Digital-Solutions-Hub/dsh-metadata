@@ -1,0 +1,78 @@
+# REPORT III RESULTS FROM THE SOURHOPE FIELD EXPERIMENT: 1999-2001
+
+- Overview
+  - Part of the NERC Soil Biodiversity Thematic Programme; intensive study at Sourhope, Macaulay Land Use Research Institute, Scotland.
+  - Aimed to provide broad context for detailed studies, enable cross-year comparisons, and document site management, measurements, and data collection protocols.
+  - The report follows the structure of earlier reports, detailing measurement types, dates, and links to datasets.
+
+- Data Collected and Measurement Context
+  - Automatic Weather Station
+    - 2001 headline weather data largely unremarkable; rainfall near long-term average; radiation stable; slightly cooler temperatures; soil moisture modestly higher than prior years.
+    - Weather data continuously collected and transmitted to the Soil Biodiversity Data Manager.
+  - Above-ground biomass
+    - Biomass measured across five mowing occasions per summer (1999–2001); clippings dried and weighed; data used to derive annual and monthly biomass.
+    - A consistent treatment hierarchy observed; 2001 showed a notable biomass increase relative to 1999–2000.
+    - Data analysis used log-transformed biomass for ANOVA; normalization against a reference plot (C1) to compare treatments over years.
+  - Soil pH
+    - Upper 5 cm soil pH monitored; liming raised pH to 6.19 in limed plots and 6.38 in nitrogen-plus-lime plots (N&L) by Oct 2001; nitrogen alone raised pH modestly; control plots remained around baseline levels since Aug 1998.
+  - Botanical composition
+    - Point Analysis surveys conducted in July 2001 (mirroring July 2000) to assess species composition and abundance; 25 sub-plots per plot surveyed; data recorded as species hits (with coded species names).
+    - Species abundance shifted with treatments; Agrostis capillaris declined across treatments in 2001; Festuca spp. increased; fertilized plots showed more pasture-improving species (Festuca rubra, Poa pratensis).
+    - Diversity appeared higher in unimproved plots (24 species in Control/Biocide vs 18 in Nitrogen & Lime plots).
+    - Multivariate analysis (PCA) showed clear separation between improved (N and/or L) versus unimproved plots; biomass was positively associated with Festuca rubra and Poa pratensis, while other species declined as biomass increased.
+  - Data documentation and codes
+    - Species codes and survey protocols documented (e.g., Ac = Agrostis capillaris, Fo = Festuca ovina, Fr = Festuca rubra, N = Nitrogen, L = Lime, N&L = Nitrogen & Lime, B = Biocide, etc.).
+    - Appendix and tables provide detailed biomass, pH, and species data (Tables 1–6; Appendix 1).
+
+- Management Context and Data Quality Considerations
+  - Field management events affecting data
+    - February–May 2001: Foot and Mouth Disease (FMD) restrictions limited site access; researchers’ visits were restricted and managed under a protocol; post-restriction sampling continued per a veterinarian-approved plan.
+    - First biocide application in May 2001 was missed; subsequent four applications completed.
+    - Change of site officer in May 2001.
+  - Data collection and protocol changes
+    - A shift from manual clipping to mechanical shears occurred in 2001, contributing to an apparent rise in biomass estimates; analyses normalized against C1 to assess true treatment effects.
+    - Inter-surveyor consistency check for the 2001 Point Analysis survey showed no statistically significant difference between surveyors, supporting data reliability.
+  - Site heterogeneity and spatial effects
+    - Noted spatial heterogeneity: columns E and F exhibited more acidic plots; central plots tended to have higher biomass; strong positive relationship between surface soil pH and biomass, with no significant block effects.
+  - Data processing and analysis
+    - Biomass data analyzed with split-plot ANOVA; inter-year (1999–2001) and intra-year (within-year) effects reported; PCA used to explore species- and treatment-driven variation.
+    - Data completeness affected by external events (FMD) and equipment/method changes; metadata should capture these to maintain data comparability across years.
+
+- Key Findings (Summarised)
+  - Weather
+    - 2001 rainfall near long-term average; radiation stable; slightly cooler average temperatures; higher soil moisture than prior years.
+  - Biomass
+    - Clear treatment-driven hierarchy in biomass; nitrogen and/or lime increased biomass; nitrogen plus lime had the strongest positive effect; 2001 biomass higher, possibly due to personnel and method changes (manual to mechanical cutting).
+  - pH
+    - Liming effectively raises soil pH; N&L plots had the highest pH readings by Oct 2001; nitrogen alone also increased pH but less so; control plots remained near baseline.
+  - Botanical composition
+    - 2001 saw higher number of species hits across all treatments; shift away from Agrostis capillaris toward Festuca spp. in fertilized plots; improved pastures (Festuca rubra, Poa pratensis) more common with nitrogen and/or lime.
+    - Diversity reduced in the most improved plots (fewer total species in Nitrogen & Lime plots).
+    - PCA confirmed separation between improved vs unimproved plots; biomass increases correlated with higher frequencies of Festuca rubra and Poa pratensis; litter increases with nitrogen and/or lime, indicating faster vegetation turnover with higher soil fertility.
+  - Site heterogeneity
+    - Spatial patterns in soil pH and biomass linked to plot columns; central plots often had higher biomass; stronger pH-biomass relationship than block differences.
+
+- Data Governance Implications for Data Stewards
+  - Metadata and provenance
+    - Capture changes in mowing method, personnel, and management (2001) to explain anomalies in biomass data.
+    - Record FMD-related access restrictions and the interim sampling protocol as critical provenance information.
+  - Data structure and standardization
+    - Maintain consistent data schemas for: weather (rainfall, radiation, soil moisture, air/soil temperatures by depth), biomass (mowing dates, plot-level totals, normalization references), soil pH (depth, date, treatment), and botanical composition (Point Analysis hits, species codes, survey dates).
+    - Preserve species codes and treatment codes with clear definitions to enable cross-year comparability.
+  - Data quality controls
+    - Document inter-surveyor reliability checks; ensure documentation of any deviations from standard protocols.
+    - Note and adjust for methodological changes (e.g., cutting method) in data analysis workflows and metadata notes.
+  - Data processing and analysis traceability
+    - Include details on transformations (e.g., log-transform of biomass for ANOVA) and normalization steps (e.g., against C1) to support reproducibility.
+    - Provide references to analysis outputs (Tables 4–6, Figures 1–9) and any statistical thresholds (e.g., LSD test results) in metadata or data dictionaries.
+  - Data availability and sharing
+    - Weather data are actively transmitted to a central data manager; ensure ongoing availability and link datasets to the main Sourhope site data portal or repository.
+    - Ensure all primary measurements (biomass, pH, botanical surveys) are versioned, timestamped, and linked to plots, treatments, and year.
+  - Site heterogeneity and spatial metadata
+    - Include spatial layout information (plot columns, blocks) and spatial statistics (e.g., relationships between pH and biomass) to support future spatial analyses.
+  - Future data curation recommendations
+    - Provide a consolidated data dictionary and a data provenance section covering years 1999–2001, including all protocol deviations and external events.
+    - Maintain appendices with annual biomass by plot (Appendix 1) and complete tables (Tables 1–6) for reproducibility and cross-study comparisons.
+
+- Concluding Note
+  - The Sourhope 1999–2001 dataset offers multi-dimensional plant-soil- climate data under controlled treatments, with robust documentation of measurements and notable interruptions due to external events. Proper metadata, data versioning, and clear provenance are essential for preserving data quality and enabling future discovery, reuse, and cross-study synthesis by data stewards and the broader research community.

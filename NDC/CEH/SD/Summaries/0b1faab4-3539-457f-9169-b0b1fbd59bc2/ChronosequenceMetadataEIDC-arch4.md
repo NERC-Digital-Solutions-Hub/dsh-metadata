@@ -1,0 +1,78 @@
+# Soil biochemical measurements from saltmarshes of different ages on the Essex coast, UK 2011..
+
+- Overview
+  - A dataset of soil biochemical measurements from natural, restored, breached, and former salt marshes along the Essex coast, designed to create a chronosequence from 16 to 114 years since restoration or breach.
+  - Sites include three restored salt marshes, six breached sites, natural marshes, and adjacent fields on former marsh land.
+  - Sampling targets changes in soil properties over time to assess recovery or alteration following tidal restoration and breach events.
+
+- Dataset contents
+  - Measured variables (all at 30 cm soil depth where applicable, with specified units):
+    - Bulk Density (g cm-3)
+    - Moisture Content (%)
+    - pH (standard units)
+    - Electrical Conductivity (mS cm-1)
+    - Available ammonium (NH4-N, mg N g-1 dry weight)
+    - Total oxidised nitrogen (TON, NO3-N, mg N g-1 dry weight)
+    - Organic Matter (Loss on Ignition at 375°C, %)
+    - Below-ground biomass to 30 cm (kg m-2)
+    - Carbon (%)
+    - Nitrogen (%)
+  - Dataset fields and descriptions are provided for two CSV files:
+    - Saltmarsh_Chronosequence_data_2011.csv
+    - Saltmarsh_Chronosequence_data_2010_2017.csv
+  - Metadata includes:
+    - Site names and codes
+    - Grid references (eastings and northings) for restored/breached sites, natural marshes, and fields on former marsh
+    - Field and laboratory data handling notes, including missing data and sample loss
+  - Data files are in Comma Separated Values (.csv) format
+
+- Sampling design and timeline
+  - Spatial scope: three restored marshes, six breached sites, natural marshes, and fields on former marsh.
+  - Temporal scope:
+    - All salt marsh sampling occurred in October 2011.
+    - Tollesbury field samples from July 2010.
+    - Barrow Hill, Wallasea Island, and Brandy Hole field samples from April 2017.
+    - No planned repeat sampling.
+  - Sampling locations:
+    - Four sampling locations per salt marsh, randomly chosen within sites.
+    - Fields on former marsh: 2–6 sampling locations, grid-referenced.
+  - Chronosequence purpose: to compare soil properties across ages since tidal restoration or breach.
+
+- Field and laboratory methods
+  - Field sampling:
+    - Cores: 4 cm diameter, 30 cm length; three cores per sampling location.
+    - Location strategy: randomly selected locations away from field edges; sampling above 1.5 m OD.
+  - Laboratory analyses (core 1 to core 3 components):
+    - Core preparation: air-dry, ground, and sieve to <2 mm.
+    - pH and EC measured in a 1:2.5 deionised water suspension; standard meters used.
+    - Organic matter by Loss on Ignition (LOI) at 375°C for 16 hours.
+    - NH4+ and NO3- via 1M KCl extraction; colorimetric analysis at 660 nm and 520 nm, respectively.
+    - Total C and N by combustion (CN analyzer).
+    - Below-ground biomass: soil root material washed, dried at 80°C for 72 hours, and weighed.
+    - Moisture content: weight loss after drying at 105°C; dry mass used to calculate moisture content.
+  - Calibration and quality control:
+    - Calibration procedures aligned with Centre for Ecology & Hydrology (CEH) Bangor practices.
+    - Data checked for outliers during entry into spreadsheets.
+
+- Data structure and governance
+  - Data management:
+    - Two dataset files with detailed field descriptions and header formats.
+    - Clear site metadata, including site names, codes, and grid references.
+  - Data quality and limitations:
+    - No statistical treatment reported (descriptive/summary focus).
+    - Some data missing due to loss of samples or analyses not performed.
+    - Data checking performed via spreadsheet review; some entries indicate missing cells.
+  - References and provenance:
+    - Method references: Avery and Bascombe (1974) for soil pH/EC method; Ball (1964) for LOI as an estimator of organic matter/organic carbon.
+  - Accessibility:
+    - Data described as CSV files intended for discovery and reuse; field names and units standardized to support downstream analyses.
+
+- Implications for data strategy and stewardship
+  - Strengths for Data Leaders:
+    - Chronosequence design enables temporal comparisons of soil biochemistry across marsh ages.
+    - Detailed metadata (site, grid references, sample location, and methods) enhances discoverability and reusability.
+    - Standardized laboratory methods and calibration practices support reproducibility.
+  - Considerations and next steps:
+    - Ensure complete, machine-readable metadata linkage between dataset files and site coordinates to improve discoverability and integration with other data systems.
+    - Address gaps in data (document missing values and reasons) to improve data quality assessments.
+    - Consider updating and archiving datasets with versioning, and potentially integrating with broader salt marsh data networks to reduce duplication of effort and strengthen communities of practice.

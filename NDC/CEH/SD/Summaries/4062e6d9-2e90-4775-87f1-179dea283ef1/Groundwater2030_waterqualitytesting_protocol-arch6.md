@@ -1,0 +1,28 @@
+# Sample collection and fieldwork
+
+- Study design: conducted during baseline and follow-up periods, collecting approximately 500 ml of water from each well.
+- Sample collection and handling:
+  - Used stainless steel sampling cup rinsed several times in well-water; transferred to sterile plastic bottles.
+  - Samples stored on ice and kept in the dark; processed within seven hours.
+  - Microbiology sample collected before physico-chemical tests to avoid cross-contamination.
+- In-field measurements:
+  - pH measured with a Hanna HI-98128 Pocket pHep5 calibrated with standard solutions; integrated thermometer used for water temperature (the thermometer was not calibrated).
+  - Depth to water below ground level (bgl) measured with a dipper probe; readings adjusted for plinth height; depth of water in the well calculated as the difference between surface and bottom readings.
+  - Conductivity measured with a COND3110 handheld meter, calibrated with standard solutions.
+  - Turbidity measured with a Hanna HI 93703 Portable Turbidity Meter; sample cell rinsed between samples (three rinses with sample before reading).
+- Laboratory instrumentation and analytical methods:
+  - Microbiology (thermotolerant coliforms, TTC): membrane filtration method using MLSB medium; 100 ml (or appropriate dilution) filtered, incubated at 44 ± 0.5°C for 20 ± 2 hours; colonies counted as typical cre­-monitored; results standardised to 100 ml; no additional confirmatory tests performed.
+  - Chemical analyses: nitrate, sulphate, phosphate, fluoride, and chloride concentrations measured with a Palintest photometer model 7100 using dedicated reagents per manufacturer instructions.
+- Calibration steps and values:
+  - Incubator temperature: checked and adjusted before each sampling campaign; re-checked every two days with a liquid thermometer (the thermometer used for calibration had not itself been calibrated against a reference thermometer).
+  - pH meter: calibrated each morning using fresh standard buffers at pH 4.0, 7.01, and 10.0; standards traceable to NIST.
+  - Conductivity meter: calibrated before each campaign with a 1413 µS standard; checked each morning for consistency; recalibrated if readings varied.
+  - Turbidity meter: calibrated each morning against a formazin standard supplied by the meter manufacturer.
+- Quality control and data integrity:
+  - Analytical quality control was challenging due to laboratory facilities; blanks run for each method (including microbiological tests).
+  - When batch size allowed (DelAgua kit max 16 samples), duplicates were analyzed at the first and last samples to assess repeatability.
+  - Tests were performed by the same analyst during each campaign to minimize variability.
+- Data implications for analysis and reporting:
+  - Outputs include TTC counts per 100 ml and concentrations of nitrate, sulfate, phosphate, fluoride, and chloride.
+  - Documented calibration and QA steps provide traceability and an understanding of data quality and potential limitations (e.g., uncalibrated incubator thermometer, limited duplicates, capacity constraints).
+  - Clear sequencing to support data self-serve and interpretation: field measurements paired with laboratory results, plus notes on cross-contamination avoidance and QA constraints.

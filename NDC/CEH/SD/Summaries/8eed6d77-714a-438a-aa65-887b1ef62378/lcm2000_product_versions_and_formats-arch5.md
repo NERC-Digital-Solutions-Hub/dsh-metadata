@@ -1,0 +1,33 @@
+# LCM2000 specification
+
+- LCM2000 is a parcel-based thematic classification of satellite imagery covering the entire United Kingdom, extending the Land Cover Map 1990 (LCMGB) with all-UK coverage including Northern Ireland. It uses a hierarchical nomenclature aligned with JNCC Broad Habitats and is produced in both vector and raster formats, with multiple versions at varying detail and resolutions.
+- Available product versions include:
+  - Vector: Level 2 (26 Subclasses) and Level 3 (up to 72 Variant level), with Level 3 available by special arrangement. Standard vector format is ESRI shapefile; Level 3 requires more user support.
+  - Raster: 25m and 1km resolutions, derived from the vector data, with 26 Subclasses at 25m; 1km rasters provide Subclass level data, dominant values, and percentage values, plus 10 Aggregates at various detail levels. Raster data is not directly comparable with LCM1990.
+- Minimum mappable area is 0.5 ha; parcels smaller than 0.5 ha are dissolved into surrounding areas during processing. Some very small parcels may remain due to processing limits.
+- Dataset coverage is organized on a 100km tile basis; parcels are classified within tiles and then compiled into the tiles, with some tiles merged for construction efficiency.
+- Hierarchical nomenclature and vector attributes:
+  - Subclass and Variant detail levels are available; attributes include Subclass code, Variant codes, and Alpha codes.
+  - Vector parcels carry a rich attribute suite, including SegID (unique parcel identifier), BHSub (dominant land cover), BHSubVar (dominant Variant, Level 3), PerPixList (top five spectral subclasses by pixel percentage), OpHistory (processing history), TotPixels, and CorePixels.
+- OpHistory attribute (processing history descriptor) is stored per parcel and records input data, stages of classification, knowledge-based corrections (KBC), and final dataset compilation. It details scene number, sensor, acquisition dates, cloud-hole patching, spectral probabilities, and KBC rule usage.
+- Colour mapping is provided to aid visualization, with predefined display values for the 26 Subclasses (and related classes) to assist interpretation in GIS.
+- Broad Habitat descriptions (as defined in the Broad Habitat classification) cover categories such as Broad-leaved/mixed woodland, Coniferous woodland, Arable and horticulture, Improved/Neutral/Calcareous/Acid grasslands, Bracken, Dwarf shrub heath, Fen/marsh/swamp, Bog, Water bodies, Montane habitats, Inland bare ground, and Built-up areas, among others.
+- Edge overlap challenges and artefacts:
+  - LCM2000 construction used multiple overlapping images and cloud-hole patching, resulting in multiple parcel layers per 100km tile. Edges were merged/eroded to produce a single layer, with edge parcels retained in adjacent tiles.
+  - Artefacts can arise at tile edges due to different imagery, erosion/merging decisions, and slivers smaller than the minimum mappable unit. These artefacts are typically less than 0.1% of parcels.
+- How to deal with edge artefacts and slivers:
+  - Visually tidy by dissolving boundaries between adjacent parcels of the same class (using GIS legend tools). Do not dissolve boundaries across the entire map to avoid losing parcel-level metadata.
+  - For Level 3 data, preserve bhsubvar during dissolving to avoid losing Level 3 information.
+  - When merging tiles, priority is given to the first input tile; edge parcels may reflect this prioritization.
+  - Slivers can be handled by visual removal, dissolving with adjacent similar-class parcels, or intelligent dissolution based on longest shared boundary; always consider the artefact’s context within the dataset.
+- Customisation and production philosophy:
+  - LCM2000 is an information-rich dataset intended as a storage/analysis framework. Users are encouraged to modify and expand their version, while retaining parcel-level metadata to preserve lineage and provenance.
+  - Unique SegID labeling is recommended to maintain traceability back to the data management team.
+  - Documenting changes is essential for data management and security; understand that differences may arise from data models, scale, resolution, or interpretation rather than inaccuracy alone.
+- Production and data governance considerations:
+  - The dataset emphasizes retaining as much information as possible and maintaining lineage through meta-data and processing history.
+  - When altering data, retain copies of original attributes or document changes in new attributes to support auditability and reproducibility.
+  - The dataset is not directly suitable for estimating change over the 10-year period when comparing with LCM1990 due to differing construction methods.
+- Further information and references:
+  - Land Cover Map home page: www.ceh.ac.uk/data/lcm; contact spatialdata@ceh.ac.uk or phone for sales.
+  - Key methodological references include Fuller et al. 2002 (construction of parcel-based vector map from satellite images) and Smith et al. 2001/Remote Sensing Society proceedings; Broad Habitat classification guidance by Jackson 2000 (JNCC Report No. 307).

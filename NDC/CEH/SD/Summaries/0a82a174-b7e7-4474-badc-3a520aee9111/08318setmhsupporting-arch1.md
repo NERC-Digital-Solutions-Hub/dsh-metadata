@@ -1,0 +1,52 @@
+# Supporting Documentation for Dataset: UK Saltmarsh Monitoring Project
+
+- Purpose
+  - Document the UK Saltmarsh Monitoring Project dataset, describing what was recorded (sediment elevation via SET-MH and environmental metadata), how it was collected, and how the data are structured and intended to be used.
+- Scope and Location
+  - Data collected along the UK coastline across 16 saltmarsh sites (from Dornoch Point to the Solent), including UKCEH sites such as Dornoch Point, Crook of Baldoon, Caerlaverock, Campfield Marsh, Warton Marsh, Banks Marsh, Marshside, Stiffkey, Brancaster, Blakeney, Bulldog Sands East/West, West Itchenor, Pilsey/Thorney Island, Gutner Point, etc.
+  - Each measurement linked to a unique plot code (e.g., SET1_RBMS) and to site metadata.
+- Temporal Coverage
+  - Initial measurements in spring/summer 2023; subsequent monitoring in spring and autumn 2024; annual monitoring planned (spring with autumn monitoring when possible).
+- Methods and Equipment
+  - Primary method: Surface Elevation Table - Marker Horizon (SET-MH).
+  - Installation and design guided by Lynch et al. (2015); components built/adjusted by UKCEH workshop; three SET plots per marsh at mid-marsh with similar plant communities.
+  - Markers: feldspar clay added to quadrats around each SET; replication across sites (nine pins from multiple orientations; triplicate measurements for marker horizons).
+  - Controls and standardization: plots chosen to minimize variability; plant communities classified with DAFOR/NVC codes; elevation estimated from LiDAR; precise GPS locations recorded.
+  - Instruments: dGPS, sediment corers, digital levels; postdrivers for installation; instrument calibration per manufacturer specs.
+- Data Collected and Variables
+  - Elevation data: sediment elevation measurements (mm) from rSET plots, across multiple orientations (1-9 pins; 1-8 orientations noted).
+  - Marker horizons: depth measurements for feldspar horizons (average of three core measurements to nearest 1 mm).
+  - Metadata: site coordinates (lat/long), depth of rSET, LiDAR-based elevation (and year), GNSS elevation, plant community (DAFOR/NVC), sediment observations, site features, weather conditions.
+  - Additional data: photos; data and metadata linked by unique IDs; temporal stamps for measurements.
+  - Species and community codes: Appendix includes NVC saltmarsh communities (SM13/SM14/SM16) with corresponding codes (e.g., Puccinellia maritima, Atriplex spp., etc.).
+- Data Structure and Files
+  - Four CSV files form the dataset:
+    - 08318setmhsitemetadata.csv: site-related metadata (locations, SET_ID, coordinates, depth_rSET, LiDAR year/elevation, GNSS elevation, vegetation codes, metadata about conditions).
+    - 08318setmhsamplingmetadata.csv: sampling-related metadata (row order, metadata codes, timestamps, plot IDs, photos, dominant/abundant/frequent/occasional/rare species codes, NVC, weather/sediment/site/installation notes).
+    - 08318setdata.csv: elevation measurements data (location_code, plot_code, replicate_code, timestamps, orientation, height_pin_mm, notes).
+    - 08318mhdata.csv: marker horizon measurements data (similar structure to setdata.csv with depth_to_horizon_m and related fields).
+  - Plot and horizon identifiers follow formats like SET1_RBMS; replication and orientation codes standardize measurements.
+- Data Processing and Quality Control
+  - Planned analysis in R; processing scripts to be shared with future publications.
+  - Quality control includes photography, metadata checks, and cross-linking via unique IDs across plots, metadata, photos, and sites.
+  - Elevation estimates also derived from LiDAR (DEFRA/Scottish remote sensing portals) with year noted; GNSS measurements provide ground-truth elevations.
+- Data Structure Details (Key Variables and Tables)
+  - Location codes cover defined sites (e.g., RBMS, RBBS, RBWM for Ribble; NNSK, NNBB, NNBN for North Norfolk; CHWI, CHPS, CHGP for Solent; DFDP for Dornoch Point; etc.).
+  - Variables include Latitude, Longitude, Depth_rSET, timestamp_lidar, LIDAR_elevation, timestamp_elevation, Elevation_m, GCS_notes, Instrument, Comment.
+  - Sampling metadata includes dominant/abundant/frequent/occasional/rare species codes (tables provide species name mappings), NVC code, weather/sediment/site notes, and installation notes.
+  - Marker horizon data includes replicate_code and depth_to_horizon_m along with timestamps and orientation.
+- Appendices and References
+  - Appendix 1: NVC saltmarsh communities with codes (e.g., SM13a/b/c/d; SM14a/c; SM16a) and sub-communities.
+  - Appendix 2: Locations and coordinates of all SET bases, with grid-like entries for each plot (lat/longs and descriptive site names for each RBMS1–RBMS3, RBBS1–RBBS3, RBWM2–RBWM3, SWCFx, SWCBx, SWCVx, DFDPx, WSBWx, WSBEx, WSWMx, NNSKx, NNBBx, NNBNx, CHGPx, CHWIx, CHPSx).
+  - 2.1 References: Lynch, J. C., Hensel, P., & Cahoon, D. R. (2015) protocol for SET-MH.
+- Access and Reproducibility
+  - Data linked by unique IDs across site, plot, sampling, and data tables to support traceability and reproducibility.
+  - Future publications may include the R scripts used for analysis.
+- Practical Considerations for Analysts
+  - Data are distributed across multiple interconnected CSVs; careful joins on location_code, SET_ID, and timestamp_TN are required to assemble full records.
+  - LiDAR-based elevations provide an alternative to GNSS but require consideration of temporal mismatch with ground measurements.
+  - The dataset spans numerous sites with potential local-scale variability; replication (nine pins per SET, triplicate horizons) supports robust estimates but still subject to site-specific conditions.
+  - Appendices provide essential contextual information for vegetation (NVC/DAFOR) and for locating all measurement bases spatially.
+- How to Cite and Contact
+  - Reference: Lynch et al. 2015 for SET-MH methodology.
+  - Contact: enquiries@ceh.ac.uk for dataset access or questions.

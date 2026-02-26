@@ -1,0 +1,27 @@
+# Sampling Regime
+
+- Location and period: Western Amazonian basin, Tambopata National Reserve, Madre de Dios, Peru (12° o 49' 54.30'' S, 69° o 16' 52.37'' W); data collected February 2011–May 2012 during three field campaigns to capture wet and dry seasons.
+- Study streams and rivers: Two small streams (MT Main Trail; NC New Colpita) and two rivers (La Torre LT; Tambopata TP). MT is seasonally active; NC flows in the dry season. Upstream catchments: LT ~2000 km2; TP ~14000 km2. Sampling point widths: NC 4.5–7.5 m; MT 3.5–5 m; river widths at sampling: LT ~40–80 m; TP ~200 m.
+- Data provenance and prior submissions: DIC, DOC, POC data previously submitted (DOIs provided). DIC data for rivers resubmitted to include samples with flux chamber and velocity measurements; metadata and data handling updated in 2012 submission.
+- Data types collected: Dissolved inorganic carbon (DIC, mg/L) with δ13C-DIC; dissolved organic carbon (DOC, mg/L); particulate organic carbon (POC, mg/L); nutrients and major ions (Ca, Mg, K, Na, P, Si). Rainfall fractions include rain water, throughfall, stemflow, and overland flow with similar chemical analyses.
+- Specific data points per file:
+  - Streams and Rivers: DIC, δ13C-DIC, DOC, POC, Ca, Mg, K, Na, TotP, Si; sample counts vary by site (NC, MT, LT, TP) as shown in Tables with total data points per variable.
+  - Rainfall Fractions: DIC, δ13C-DIC, DOC, POC, Ca, Mg, K, Na, TotP, Si; sample counts differ by fraction (Rain water, Throughfall, Stemflow, Overland flow).
+- Sampling and collection methods:
+  - Fluvial sampling: Field campaigns targeted different flow conditions; DIC collected in pre-acidified evacuated exetainers and analyzed by headspace method for concentration and isotopic composition; DOC collected, filtered, acidified, degassed, and analyzed by TOC; POC measured by loss on ignition; Ca/Mg by atomic absorption; K/Na by flame photometry; TotP by colorimetric method; Si by heteropoly blue method.
+  - Rainfall fractions: Throughfall collectors near forest plot TAM9; stemflow collected on eight tree species; overland flow collected via bank-side receivers; Rainwater collected in a separate open area; samples prepared similarly for DOC/POC/Ca/Mg/K/Na/TotP/Si analyses.
+- Data structure and metadata:
+  - Two CSV files: Amazon streams C and nutrients; Amazon rainfall fractions C and nutrients.
+  - Columns (Streams and Rivers): Time, Date, Type (stream or river), Site (MT, NC, LT, TP), CollectorID (TF-1..4; SF tree names; OF MT/NC sampling; RW EI for rainwater), DOC, POC, DIC, δ13C-DIC, Ca, Mg, K, Na, TotP, Si. Some columns may be NA if not analyzed.
+  - Columns (Rainfall fractions): Time, Date, Type (TF, SF, OF, RW), Site/Collector, DOC, POC, DIC, δ13C-DIC, Ca, Mg, K, Na, TotP, Si; many entries marked NA where not applicable.
+- Data quality and calibration:
+  - Calibration and drift controls: DIC analyses include drift correction standards ~every 10 samples; replicate checks; DOC calibrations using multi-point standards; cation analyses use multi-point calibrations; Si and TotP checked against standards; blank and mid-range standards with regular checks.
+  - Processing safeguards: Triplicate DIC measurements; randomised sample order; back-up replicates; consistency checks between beginning and end-of-run calibrations.
+- Data accuracy and limitations:
+  - Values reported within instrument detection limits; some data points are NA where analyses were not performed or data were not collected for a given fraction or site.
+- Data access and references:
+  - Data structure and methods described in detail; references include standard methods for water analysis and methodological papers on DIC isotopic measurements (e.g., Waldron et al., 2014) and standard water analysis protocols (APHA, 1999).
+- Implications for data governance and reuse (Data Leaders perspective):
+  - Rich, multi-parameter, cross-ecosystem dataset with clear documentation of collection, preparation, and analytical methods, enabling cross-site comparability and long-term ecological analysis.
+  - Metadata-rich, with explicit sampling campaigns, site geometry, and instrument calibration procedures improving discoverability, reproducibility, and data lineage.
+  - Data resubmission and prior submissions indicate ongoing data stewardship, versioning, and quality enhancements to support broader reuse and integration with related data streams (streams, rivers, and rainfall fractions).

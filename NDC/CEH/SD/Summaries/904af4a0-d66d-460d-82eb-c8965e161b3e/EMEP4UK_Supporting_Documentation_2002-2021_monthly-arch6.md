@@ -1,0 +1,37 @@
+# European Monitoring and Evaluation Program Model for the UK (EMEP4UK) monthly atmospheric deposition of oxidised sulphur, oxidised nitrogen, and reduced nitrogen for 2002-2021
+
+- Summary of the dataset: monthly-averaged atmospheric deposition for the UK over 2002–2021, covering oxidised sulphur, oxidised nitrogen, and reduced nitrogen, produced with the EMEP4UK model (rv4.36) and WRF (v4.2.2).
+- Coverage: United Kingdom domain (EU-wide 27×27 km2 with nested UK 3×3 km2 domain); results presented as monthly averages.
+- Data products: 
+  - Dry deposition (area-weighted) per species:
+    - DDEP_SOX_m2Grid (oxidised sulphur)
+    - DDEP_OXN_m2Grid (oxidised nitrogen)
+    - DDEP_RDN_m2Grid (reduced nitrogen)
+  - Wet deposition per species:
+    - WDEP_SOX (oxidised sulphur)
+    - WDEP_OXN (oxidised nitrogen)
+    - WDEP_RDN (reduced nitrogen)
+  - Rainfall: WDEP_PREC (mm)
+  - Grid area: Area_Grid_km2 (km2)
+- Units and metadata: NetCDF files with species-specific deposition values; detailed units provided in-file (e.g., mgS/m2 for dry deposition; mgN/m2 for dry deposition of nitrogen species; rainfall in mm).
+- Data lineage and modeling framework:
+  - Atmospheric chemistry transport model: EMEP4UK rv4.36 (derived from EMEP MSC-W rv4.36).
+  - Meteorology: Weather Research and Forecasting Model (WRF) v4.2.2 with data assimilation from NCEP/NCAR GFS reanalysis (1°×1°, every 6 hours).
+  - Emissions inputs: UK 2019 NAEI emissions for NOx, NH3, SO2, PM2.5, PMcoarse, CO, NMVOCs; UK totals rescaled for 2002–2019; non-UK emissions from CEIP 0.1°×0.1° data; 2020–2021 emissions based on 2019 values.
+  - Computation: compiled with FORTRAN Intel compiler; run on UKCEH POLAR cluster.
+- Data structure and access:
+  - Output example noted for 2002: mosaic data with attributes like current_date_first and current_date_last.
+  - Projection: polar stereographic grid; a Proj4 string is provided for use in GIS/analysis.
+  - Required tools: NetCDF library compatible with R, Python, or FORTRAN.
+- Quality assurance and caveats:
+  - QA/QC conducted for 2002–2021; QA/QC reports available on request.
+  - Content use is at the user’s risk; no warranty of accuracy or fitness for a particular purpose.
+- Practical considerations for data work:
+  - Outputs are suitable for creating user-friendly data products (e.g., dashboards, reports) to enable self-serve access to deposition patterns.
+  - Potential need to combine with other datasets (emissions, observations) for validation or trend analyses.
+  - Outputs may require attention to projection and grid-resolution when aggregating or comparing with other data sources.
+- References and guidance:
+  - Key literature detailing the model components and evaluations; dataset usage guidance included in the document.
+
+- Bibliography highlights:
+  - Foundational model descriptions and evaluations (EMEP MSC-W, WRF, and related studies) cited to contextualize the data and methods.

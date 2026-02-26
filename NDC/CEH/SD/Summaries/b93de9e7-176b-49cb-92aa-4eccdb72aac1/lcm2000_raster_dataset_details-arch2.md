@@ -1,0 +1,66 @@
+# 25m raster
+
+- Purpose
+  - Documents the creation of a 25m raster by converting land parcels within a vector dataset into a 25m grid.
+  - Each 25m cell records the dominant land cover using LCM2000 Subclasses; also describes a 1km raster summarised from the 25m data.
+- Metadata overview
+  - 25m raster
+    - Great Britain: 24,400 columns x 48,400 rows
+    - Northern Ireland: 7,600 columns x 7,200 rows
+    - Lower left easting/northing: GB 50,000 / 10,000; NI 180,000 / 280,000
+    - Pixel size: 25 m
+    - Coordinate systems: GB = British National Grid; NI = Irish National Grid
+    - Projection: Transverse Mercator (GB and NI)
+    - Spheroid: GB = Airy; NI = Airy Modified 1849
+    - Datum: GB = OSGB 1936; NI = Ireland 1965
+    - Note: Pixel center is 12.5 m from lower-left corner
+  - 1km raster
+    - Great Britain: 700 columns x 1,300 rows
+    - Northern Ireland: 500 columns x 500 rows
+    - Lower left easting/northing: GB = 0; NI = 0 (both)
+    - Pixel size: 1000 m
+    - Coordinate systems: GB = British National Grid; NI = Irish National Grid
+    - Projection: Transverse Mercator (GB and NI)
+    - Spheroid: GB = Airy; NI = Airy Modified 1849
+    - Datum: GB = OSGB 1936; NI = Ireland 1965
+    - Note: Pixel center is 500 m from lower-left corner
+
+- Subclass vs Aggregate summaries
+  - The 25m raster can be summarised in two ways: by LCM2000 Subclass or by LCM2000 Aggregate class.
+  - Table 3 provides the mapping between Subclasses and Aggregate classes and shows attribute codes for each land cover.
+  - Encoding for storage efficiency
+    - LCM2000 Subclass codes are typically floating point with one decimal place but are stored as unsigned 8-bit bytes by multiplying by 10 (0-255 range).
+    - Example: Water (inland) Subclass 22.1 becomes 221 in the raster dataset.
+
+- Example mappings (highlights)
+  - Sea / Estuary
+    - Subclass 25m code: 221
+    - 1km code: 1
+    - Aggregate class: Oceanic seas
+    - 1km code: 10
+  - Water (inland)
+    - Subclass 25m code: 131
+    - 1km code: 2
+    - Aggregate class: Standing open water
+    - 1km code: 8
+  - Littoral rock / Littoral sediment / Saltmarsh / Supra-littoral rock / Supra-littoral sediment
+    - Various 25m codes (e.g., 201, 211, 212, 181, 191)
+    - Corresponding 1km codes and Coastal aggregate class codes (e.g., 3 or 9)
+  - Woodlands (Broad-leaved/mixed, Coniferous)
+    - Subclass codes (e.g., 11 for Broad-leaved/mixed; 21 for Coniferous)
+    - 1km aggregate codes reflect respective woodland classes
+  - Grasses and arable lands (e.g., Improved grassland, Neutral grassland, Arable cereals)
+    - Subclass codes (e.g., 51, 61, 41)
+    - 1km codes map to respective Aggregate classes (e.g., Arable and horticulture; Semi-natural grassland)
+  - Urban and developed areas
+    - Subclass codes for Suburban/rural developed and Continuous urban
+    - 1km codes map to Built up areas and gardens
+
+- Implications for environmental monitoring
+  - Consistent, dual-scale (25m and 1km) land cover representation for Great Britain and Northern Ireland.
+  - Standardised encoding enables efficient storage and cross-scale analysis.
+  - Clear mapping between fine-grained Subclass data and broader Aggregate classes supports flexible outputs (maps, reports, charts).
+  - Facilitates data sharing and interoperability by aligning with standard coordinate systems, projections, and datums.
+
+- Notes on reuse and data access
+  - The document highlights the need to increase dataset value by enabling access to underlying data and by using standardized formats and classifications to support broader analysis and policy evaluation.

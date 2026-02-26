@@ -1,0 +1,33 @@
+# Diffuse agricultural pollution to rivers in Scotland data
+
+- Purpose: Provides a dataset to quantify diffuse agricultural pollution loads to rivers in Scotland, enabling monitoring of environmental policy effectiveness and informing future decisions; suitable for GIS analysis and integration into Water Framework Directive (WFD) catchment assessments.
+- Data files: 
+  - AgLoadsInland_Scotland.csv (inland catchments)
+  - AgLoadsCoastal_Scotland.csv (coastal catchments)
+- Key identifiers:
+  - INLAND_ID: SEPA ID for inland catchments
+  - COASTAL_ID: SEPA ID for coastal catchments
+  - CATCH_ID: Unique WFD river catchment identifier
+- Spatial linkage:
+  - Data can be mapped to WFD catchments by joining the CSVs to WFD catchment polygons
+  - WFD catchment dataset is not published by SEPA yet; SEPA plans to add it to its Environmental data page
+- Land-use area data (hectares):
+  - Arable_Are
+  - Grass_area
+  - Rough_Area
+- Pollutant loads by land-use (per pollutant x land-use combination):
+  - Arable_x, Grass_x, Rough_x, Other_x
+  - x denotes pollutant
+- Pollutants and units:
+  - _P: kg total P per year
+  - _N: kg NO3-N per year
+  - _S: kg suspended solids per year
+  - _F: 10^6 cfu per year
+  - _N2O: kg N2O per year
+  - _CH4: kg CH4 per year
+  - cfu = colony forming units
+- Data provenance and use:
+  - Enables breakdown of loads by land-use type and pollutant for monitoring trends and evaluating mitigation measures
+  - Supports aggregation at catchment scales (via CATCH_ID) for reporting and governance
+- Reference:
+  - Gooday, R., Anthony, S., Calrow, L., Harris, D. & Skirvin, D. (2016) Predicting and Understanding the Effectiveness of Measures to Mitigate Rural Diffuse Pollution. Final report for SNIFFER Project DP1, 298pp.

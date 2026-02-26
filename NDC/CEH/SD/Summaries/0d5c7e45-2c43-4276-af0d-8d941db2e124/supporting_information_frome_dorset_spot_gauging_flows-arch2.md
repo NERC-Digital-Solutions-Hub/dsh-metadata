@@ -1,0 +1,23 @@
+# What?
+
+- Purpose and scope: A dataset of spot gauged river flows (m^3 s^-1) collected in 2022 along the River Frome in Dorset, UK, to support hydrodynamic modeling of nutrient fate and transport.
+- Location and reach: River Frome, a chalk stream in West Dorset; monitoring between Environment Agency gauging stations at Dorchester and East Stoke (lower River Frome), including major tributaries South Winterbourne, Tadnoll Brook, and River Win; 11 cross-sections with 19 river channels measured due to braiding; cross-sections spaced ~3 km apart.
+- Timeframe: Flow accretion survey days from 12/04/2022 to 05/11/2022; measurements taken upstream to downstream on each survey day. Some dates/sites missing due to time or weather.
+- Methods: 
+  - River divided into at least 10 transects (5–10 for small streams); depth and velocity recorded at each transect.
+  - Velocity measured at 40% above the riverbed; flow converted from impeller revolutions using model-specific calibrations.
+  - Cross-sectional area per transect = transect width × average depth of adjacent transects; discharge per transect = cross-sectional area × average velocity of adjacent transects; total discharge = sum of transects.
+  - Instruments: Valeport Model 001/002 current meters; impeller primarily BMF002 (more suitable for shallow sections).
+- Data structure and accessibility: A single CSV file named River_Frome_Dorset_spot_gauging_flows with seven columns: Site, Description, NGR, Date, Start_time, Flow (m^3 s^-1), Impeller.
+- Data management and QA: Site locations planned based on accessibility and suitability; some sites on private land requiring permissions; no replication (one measurement per site per day).
+- Completeness and caveats:
+  - Not all sites measured on every survey day due to constraints.
+  - A potential underestimation issue noted for Pallington Lakes on 09/05/22 when using BMF001 in shallow sections.
+  - Environment Agency gauging data available for reference at upstream and downstream ends (Louds Mill, Stinsford, East Stoke) for the same dates.
+- Context and provenance:
+  - Conducted by Thomas Homan (PhD candidate, University of Bath) with supervision from Prof. Jan Hofman; data collated and checked by Thomas.
+  - Equipment provided by Wessex Water Ltd.
+  - Part of a PhD project to support hydrodynamic modeling of nutrient fate and transport in the River Frome.
+- Site details and documentation:
+  - Table 1 lists each monitoring site and its NGR for cross-sections (e.g., LMbypass, Lower Bockhampton north/south streams, South Winterbourne, Lewell Mill, Watery Lane, Pallington Lakes, Moreton, Tadnoll Brook, East Burton (south/mid/north), River Win, Wool Bridge).
+  - The LM bypass is part of cross-section 1, associated with the Louds Mill and Stinsford gauging stations on the floodplain.

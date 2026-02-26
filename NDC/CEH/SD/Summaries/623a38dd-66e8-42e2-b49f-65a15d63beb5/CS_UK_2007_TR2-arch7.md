@@ -1,0 +1,46 @@
+# CS Technical Report No. 2/07: Vegetation Plots Handbook
+
+- Purpose: CS Countryside Survey builds a globally unique, long-term dataset by re-finding vegetation plots at the same locations across four survey points over 29 years. Digital data capture begins in 2007 using Vegplots, with photos and maps for relocation and documentation.
+- GIS and data workflow:
+  - ArcMap is used for plot location maps; Vegplots is the data-entry tool linked to map-based plot IDs.
+  - Tablets store digital plot photos (New_Plot_Photos) and Vegplots data; data from two tablets can be merged but must be kept in separate Vegplots datasets (A or B) to avoid overwrites.
+  - GPS coordinates are logged for plots to aid relocation in future surveys, using a non-differential tablet GPS as a relocation aid alongside maps and photos.
+  - Plot maps (including back-ups) and photos are essential for relocation and validation; plots may be edited/moved in ArcMap if landscape features warrant it (not by adjusting GPS position).
+- Plot data and structure:
+  - Data captured per plot includes header information (plot type, number, location, slope, aspect, shading, photos, and map status), vegetation height categories, admin notes, and plot completion status.
+  - Species data is captured in nested structures (Listed Species and Selected Species) with cover estimates for each species and nesting structure for nested plots.
+  - Validation workflow includes a in-app validation step to highlight missing fields before finalizing a plot.
+- Plot recording and relocation concepts:
+  - Plot Relocation: Core to repeatability; exact relocation is prioritized but allowances are made when relocation to exact features is not feasible. A plot not found can be replaced or marked as not found; new plots may be created for changes in land use or habitat.
+  - Plot Movement: If a plot’s position is inaccurate in relation to landscape features, the plot can be moved in ArcMap (not by GPS position).
+  - Plot Map and Photo Protocols: Clear, precise maps and repeatable photos are essential for relocation; photos should include plot number/type and reference points to aid future relocation.
+- Plot types overview (key types used in CS methodology):
+  - X PLOTS (Large/Wally plots): 200 m2, random points within a square; multiple nested 1–2 m2 subplots; used to sample common vegetation types.
+  - Y PLOTS (Small, targeted/ habitats): 2 m × 2 m plots within habitat patches; used for Priority Habitats (PH) not sampled by other plots.
+  - U PLOTS (Unenclosed): 2 m × 2 m plots across unenclosed broad habitats; up to 10 per square; random placement using a grid and five habitat rules.
+  - A PLOTS (Arable field margins): 100 m × 1 m plots along arable field margins adjacent to boundary features.
+  - M PLOTS (Margins): 2 m × 2 m plots measuring margins associated with cross-compliance margins on arable fields; up to 3 per field depending on margin widths.
+  - L (M) PLOTS (Hedgerows, Hedgerow margins, and related): Includes H plots (hedgerows, 10 m × 1 m), D plots (hedgerow diversity; longer 30 m plots), and related configurations to sample woody linear features.
+  - S/W PLOTS (Streamside/Waterside): Linear plots along rivers, canals, streams, or ditches; 10 m × 1 m plots positioned along watercourses.
+  - R/V PLOTS (Roadside/Verge): Roadside and verge plots along transport routes; 10 m × 1 m plots positioned along verge interfaces.
+  - B PLOTS (Boundary plots): Boundary feature plots (hedges, walls, fences, ditches, grass strips, banks) near 200 m2 plots; used to determine sampling along boundaries; options include arable margin integrations.
+- Plot placement and marking guidelines:
+  - New plots are marked with metal plates or wooden stakes. Plates are positioned to facilitate relocation and are oriented to align with reference features; stakes are used where metal plates are impractical.
+  - For new X plots, five-sector overlay in ArcMap guides placement; if a sector has eligible land, a new X plot is placed within that sector. If land use changes, new X plots may be placed at the edge of the original land-use area.
+  - A plots are placed along arable margins with a 50 m outward extension from the B plot; margins may extend beyond 6 m with multiple plots at 6 m intervals.
+  - Boundary and verge plots follow fixed rules for proximity to boundaries and alignment with field features; the dominant feature governs plot placement when multiple features intersect.
+- Data entry details in Vegplots:
+  - Start by locating the plot in ArcMap, then open VegPlots (Standard Recording screen). Top-right fields show Square, Plot Type, Plot Number, and Plot ID (combination of square, type, and number).
+  - Header section includes: Plot relocation status (Found, Not Found, New Plot Replacement, New Plot New feature/Land cover, etc.), whether a plate was detected, and the plot ID of an unfound plot.
+  - Plot description includes slope, aspect, shading, photos, and whether a plot map was drawn or edited.
+  - Vegetation Height captures modal height across canopy, shrub, and ground levels.
+  - Admin notes, including surveyor initials and completion status, are captured under an Admin sub-section.
+  - Listed Species and Selected Species tabs capture presence/absence and estimated cover (including nested plots for certain plot types). The Selected Species tab lists all ticked species with nest numbers and allows entry of total cover percentages.
+  - Completing plots involves regular saving, validation, and then exiting; after validation, plots can be finalized and moved forward to analysis.
+- Documentation and data integrity:
+  - Plot maps must be clear and precise; inadequate maps should be annotated as edited or redrawn with clear justifications.
+  - Plot photos should aim to repeat prior reference points to aid relocation; photos must include plot number and type on the back.
+  - The document provides detailed specifications for each plot type, including nest structures, measurement protocols, and habitat-specific recording requirements.
+- Special notes:
+  - The dataset emphasizes consistency in taxa, with amalgamated taxa used when precise identification is not feasible; bryophytes and lichens are recorded only from the predefined lists.
+  - The document includes extensive appendices detailing plot types, locations, and habitat-specific protocols, highlighting the complexity of maintaining a long-term, spatially explicit vegetation dataset.

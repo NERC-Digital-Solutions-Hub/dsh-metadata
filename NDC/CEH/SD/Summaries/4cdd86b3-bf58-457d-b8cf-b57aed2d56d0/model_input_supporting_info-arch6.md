@@ -1,0 +1,43 @@
+# Supporting information for NE/W002930/1: Digital elevation models of bed rock and land surface topography, river discharge data, and settings files for the CAESAR-Lisflood model following the Chamoli ice-debris flow, India, February 2021
+
+- Data content: Input files for the CAESAR-Lisflood (CL) model, including 10 m digital elevation models (DEMs) of bedrock and surface topography, river discharge data, and configuration settings files for CL modelling.
+- Purpose: Created to support coupled hydrodynamic–landscape evolution modelling to evaluate geomorphological responses to the February 7, 2021 Chamoli ice-rock avalanche and debris flow.
+- Spatial coverage: Area bounded by approximate WGS 84 / UTM Zone 44 coordinates (top left 352312 m E, 3385209 m N to lower right 384787 m E, 3358896 m N).
+- temporal coverage: Data generated between 1 June 2021 and 31 May 2022; final, calibrated CL model data provided.
+- Data collection and processing: 
+  - CL configuration in XML; DEMs derived in QGIS 3.18, down-sampled from 2 m to 10 m for efficiency.
+  - River discharge inputs derived from GEOGloWS reanalysis data; specific discharge time series for four key stream locations.
+  - Responsibility: Project PI with support from Co-Is; outputs interpreted but not included as part of this data resource.
+- Completeness: All input files needed to run CL and reproduce results are included; CL executable is not provided but is available from SourceForge, with a comprehensive wiki for model operation.
+- Model overview: CL couples CAESAR landscape evolution with LISFLOOD-FP hydrodynamics to simulate flows, erosion, sediment transport, and slope failure over time; supports events spanning decades of simulated time.
+- Model setup:
+  - Run in reach mode, divided into four coupled domains to manage resolution and computational load.
+  - Key inputs: DEMs for bedrock and surface, river discharge time series, grain-size distributions (nine fractions, 0.0001–1 m), and various numerical/hydrological parameters.
+  - DEM choices: pre-event bedrock DEM (Sept 2015) and post-event surface DEM (Feb 2021); valley filled with debris sediment assumed after the February 2021 event.
+  - Spin-up approach: no traditional spin-up; instead, a short wetting protocol (4 days, Feb 6–9, 2021) to maintain numerical stability; sustained wetting leverages GEOGloWS hydrology from Feb 10, 2021 onward.
+  - Grain-size distribution: uniform across most of the basin; adjustments for sub-model 2 during calibration.
+  - Sediment flux input: not added from external sources due to post-event sediment dominance; external sediment input considered negligible in the first year.
+  - Notable calibrated parameters: numerous CL input settings (DEM, hydrology, grain sizes, transport laws, erosion limits, active layer thickness, lateral erosion, slope thresholds, Courant number, Manning’s n) with final optimized values documented.
+- Calibration and validation:
+  - Calibrated against domain-scale volumetric change (Feb 10, 2021–Dec 25, 2021); achieved 86.3% agreement with DEM differencing (-6.35 Mm3 modelled vs -7.35 Mm3 observed).
+  - Independent validation with satellite DoD (Feb 10, 2021–Jan 27, 2022): 91.3% agreement (-6.38 Mm3 modelled vs -6.98 Mm3 from DoD).
+  - Excluded domains 1 and 2 from some comparisons due to significant post-event mass deposition from additional avalanches not represented in the model.
+- Outputs:
+  - Daily mean discharge (Qw) at submodel exits; daily sediment yields (Qs) by size fractions; DoDs every seven model days showing vertical topographic change since model start.
+  - Data structure and formats designed to facilitate use and analysis of these outputs.
+- Data collection/transformation notes:
+  - XML configuration files describe model settings; DEMs are gridded TXT rasters in metres; hydro files are daily discharge time series; DoD rasters indicate elevation changes.
+  - DoD uncertainties were quantified using stable hillside areas via Pléiades imagery, with two-sigma thresholds; DoD uncertainty values vary by time window.
+- Dataset structure:
+  - Domain folders (domain_1, domain_2, domain_3, domain_4) containing corresponding XML, BEDR/ SURF DEMs, hydro inputs, and hydrological outputs.
+  - Upstream-domain hydro outputs serve as inputs to downstream domains; all necessary input/output files are provided to enable re-creation or reordering of runs.
+- Quality control:
+  - Gaps in input DEMs reproduce in DoD; uncertainty estimation for detected changes uses stable reference areas; stable-area polygons are provided.
+  - DoD significance assessed against two-sigma uncertainty thresholds.
+- References:
+  - Key literature and data sources supporting CL, DEMs, hydrology, sediment transport, and Chamoli-related studies are cited for methodological context and validation.
+
+- Notes for data users (Data Support perspective):
+  - The repository enables reproduction of the CL modelling workflow and re-creation of results given the included inputs and domain structure.
+  - Users should download the CL executable separately and consult the included wiki for parameter meanings and typical values.
+  - DoD and hydro outputs are designed for independent validation and for constructing data products that illustrate geomorphic changes and sediment transport during the 2021 Chamoli event.

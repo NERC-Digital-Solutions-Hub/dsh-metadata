@@ -1,0 +1,69 @@
+# Explanatory notes The Farm Scale Evaluations (FSE)
+
+- Purpose and scope
+  - The Farm Scale Evaluations (FSE) were established to determine whether genetically-modified herbicide-tolerant (GMHT) crops might significantly affect farmland wildlife through management practices.
+  - Data cover four crops: Beet, Maize, Spring-sown oilseed rape, and Winter-sown oilseed rape.
+  - Data are organized to support analyses across multiple ecological facets and timepoints, enabling comparisons between GMHT and conventional management.
+
+- Datasets and data collection areas
+  - Seedbank
+    - Seedbank: counts of plant species germinating from a soil sample taken before planting.
+    - Seedbank Follow-up 1: repeat soil sample one year after the initial seedbank sample.
+    - Seedbank Follow-up 2: final soil sample taken two years after the initial sample.
+  - Vegetation in the crop
+    - First-seedling: first vegetation survey before herbicide application.
+    - Mezzanine: Beet has an additional vegetation survey between herbicide applications on conventional vs GM sides; Winter rape has a spring pre-herbicide survey.
+    - Post-herbicide: vegetation survey after herbicide application on both conventional and GM sides.
+    - Final Counts: vegetation survey aligned with biomass sampling just before harvest.
+    - Biomass: weed biomass sampled in the month before harvest.
+    - Seed Rain: counts of seeds produced throughout the growing season.
+    - Follow-up 1 and Follow-up 2: vegetation surveys conducted one year and two years after the trial crop.
+  - Field edge vegetation
+    - Margin Attributes: physical features around the trial field edge.
+    - Edge Veg Cover: percent cover of non-crop vegetation (recorded June).
+    - Edge Veg Flower: plant flowering period (April–August).
+    - Edge Veg Seed: seed setting (July–August).
+    - Edge Bare Ground: percent bare ground.
+    - Edge Spray Damage: vegetation damage from spraying.
+  - Invertebrates
+    - Bee and Butterfly transects: monthly counts in crop and field margins (April–August); combined as Pollinators.
+    - Crop Pests: counts of herbivores on the crop early and late in the season.
+    - Gastropods: Gastropod Search (field margin) and Gastropod Trap (in crop, spring and autumn).
+    - Pitfall: counts of surface-active invertebrates (early, mid, late season).
+    - Vortis: counts of arthropods on plants (early and late season; in verge and crop).
+  - Additional tables
+    - Date drilled, Herbicides applied, Height/Cover of weeds and crop.
+  - Data organization
+    - Table naming convention uses abbreviated prefix, crop, sample date, and protocol (e.g., sum_b_seedrain for Beet crop seed rain; sum_b_early_pitfall for Beet crop early-season pitfalls).
+
+- Table structure and properties
+  - Generic properties
+    - Each row represents half-field totals (counts, biomass, or mean percent cover) for a separate site.
+    - Group totals and individual species contributions are both provided.
+    - Sites are referenced within Defra government regions; South-eastern and Eastern England regions are aggregated for confidentiality.
+    - Nulls indicate no verified data; some counts are decimal due to calculating over a proportion of transects.
+  - Specific properties
+    - All crop_pest tables use a name suffix of 'W+' or 'W-' to denote winged vs. wingless status.
+  - Column headings (key examples)
+    - conv_count, conv_count_FL, conv_count_GE4TL, conv_count_L4TL, conv_count_SE (conventional crop counts by category)
+    - gm_count, gm_count_FL, gm_count_GE4TL, gm_count_L4TL, gm_count_SE (GMHT crop counts by category)
+    - crop_cover (percent cover of crop)
+    - crop_unit (C = conventional crop, GM = GM crop)
+    - crop_height (crop height in cm)
+    - name (species or group name)
+    - site_ref (site reference number)
+    - Region (Defra government region or aggregate)
+    - VEG/ARTHROPOD/GASTROPOD/BB_BRC (codes for data type)
+    - weed_cover_pc (percent cover of non-crop vegetation)
+  - References and notes
+    - For spring crops: Phil. Trans. Royal Soc. (2003) issue on The Farm Scale Evaluations of spring-sown GM crops.
+    - For winter rape: a 2005 study in Proceedings of the Royal Society B on effects of herbicide management on weed and invertebrate abundance and diversity.
+
+- How the dataset is structured for data support
+  - Cross-crop and multi-timepoint coverage enables comparative analyses of GMHT versus conventional management across weed communities, invertebrates, field margins, and crop performance.
+  - Rich metadata at the site, region, and protocol levels supports filtering, joining, and re-using data in dashboards, reports, or analytical products.
+  - Detailed species- and group-level data alongside aggregated totals allows both high-level summaries and granular investigations.
+
+- Relevance for data support work
+  - The dataset mirrors common data support needs: clear naming conventions, well-defined data schemas, and comprehensive metadata to enable data discovery, quality assessment, and reproducible analyses.
+  - Structured around half-field totals per site, it supports self-serve exploration, combining datasets (seedbank, vegetation, margins, invertebrates, and additional measures), and projecting ecological patterns across crops and years.

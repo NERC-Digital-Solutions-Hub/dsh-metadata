@@ -1,0 +1,29 @@
+# Column heading explanations for 5_Fuel_particle_dissolution.csv
+
+- Purpose: Define the meaning, units, and notes for each column in the dataset "5_Fuel_particle_dissolution.csv," which contains radiochemical measurements related to fuel particle dissolution and the mobility of 90Sr/85Sr in soil.
+- Data structure overview:
+  - Code, Explanation: Database serial number (unique ID) with human-readable explanation.
+  - Code, Units: Instance indicating units (often not applicable, n/a).
+  - Code, Notes: Additional notes for the column (often empty).
+  - Identifier: UIAR unique label; samples with the same identifier (e.g., 1a, 1b) come from the same site.
+  - Date_of_90Sr_measurement: Date of measurement in dd-mmm-yy format.
+- Key measurement fields (percentages and uncertainties):
+  - 90Sr_exchangeable_form_in_soil_%: Percentage of 90Sr present in an exchangeable form in soil.
+  - Relative_uncertainty_of_90Sr_exchangeable_form_portion_in_soil_%: 95% confidence interval relative uncertainty for the exchangeable portion.
+  - 85Sr_exchangeable_form_in_soil_%: Percentage of 85Sr in exchangeable form in soil.
+  - Relative_uncertainty_of_85Sr_exchangeable_form_portion_in_soil_%: 95% CI relative uncertainty for the 85Sr exchangeable portion.
+  - 90Sr_activity_in_the_FP-associated_form_%: Percentage activity of 90Sr in the fuel particle (FP)-associated form (may be empty in units; values may be reported as percentages).
+  - Relative_uncertainty_of_90Sr_activity_in_the_FP-associated_form_%: 95% CI relative uncertainty for the FP-associated 90Sr activity.
+- Data interpretation notes:
+  - May contain negative values for 90Sr activity in the FP-associated form due to a low exchangeable fraction combined with high error; users should treat these values as zero.
+- Data quality and metadata considerations:
+  - Uncertainties are provided and should be incorporated into analyses.
+  - Date format and sample identifiers support traceability and cross-referencing with other datasets.
+  - Many “Notes” fields are empty, indicating potential areas for enhanced metadata documentation.
+- References (data provenance context):
+  - Kashparov, V. A., Oughton, D. H., Zvarich, S. I., Protsak, V. P., and Levchuk, S. E.: Kinetics of fuel particle weathering and 90Sr mobility in the Chernobyl 30-km exclusion zone. Health Physics, 76, 3, 251-259, 1999.
+  - Kashparov, V. A.: Hot Particles at Chernobyl, Environmental Science and Pollution Research, 10, 1, 2130, 2003.
+  - Kashparov, V. A., Ahamdach, N., Zvarich, S. I., Yoschenko, V. I., Maloshtan, I. M., and Dewiere, L.: Kinetics of dissolution of Chernobyl fuel particles in soil in natural conditions. J. Environ. Radioact. 72, 335-353, doi:10.1016/j.jenvrad.2003.08.002, 2004.
+- Practical takeaway for data governance:
+  - The document provides essential metadata to support data discovery, interpretation, and quality assessment for studies on radiochemical soil contamination and fuel particle weathering.
+  - Ensure proper handling of uncertainty, standardized date formats, and clear linkage of sample identifiers to collection sites.

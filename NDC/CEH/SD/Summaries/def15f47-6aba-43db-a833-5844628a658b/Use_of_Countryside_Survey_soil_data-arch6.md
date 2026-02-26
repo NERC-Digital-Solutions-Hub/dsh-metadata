@@ -1,0 +1,39 @@
+# Sampling design
+
+- Timeframe and scope
+  - Soils sampled in the Countryside Survey (CS) in 1978, 1998, and 2007.
+  - 1978 and 1998 used the same 256 squares; 2007 expanded to 591 CS squares.
+  - Power analyses conducted to determine the number of samples needed to detect significant change (Emmett et al. 2008).
+- Sample location framework
+  - Samples come from CS x-plots; five x-plots per CS square.
+  - X-plots are not replicates due to potentially different land uses and soil types within a square.
+  - Some plots relocated over time due to destruction, access issues, or relocation uncertainty; each location has a unique repeat ID (e.g., 2RPT1).
+  - Samples with the same repeat ID originate from the same location, typically within ~2–3 m of the permanently marked 2 m × 2 m plot corners.
+  - Relocation and site changes documented in Emmett et al. (2008).
+- Sampling methods and depth
+  - Top 15 cm of soil collected in 1998 and 2007 (8 cm for the invertebrate sample).
+  - 1978 used a soil pit; top 15 cm sampled from the side of the pit.
+  - Some soils prevented full core collection due to stones or shallow soils.
+  - Core photographs and detailed measurements of core dimensions were made in 2007 for 2 of the 4 cores (black cores and N mineralization cores).
+- Measurements and laboratory analyses
+  - 1978: pH and loss-on-ignition (LOI) only.
+  - 1990: some soil mapping undertaken.
+  - 1998 and 2007: multiple cores per x-plot; different cores have different measurements (Table 1 reference).
+  - No chemical analyses by soil horizons; samples homogenised before pH and LOI.
+  - Bulk density measured in 2007 (not by ISO bulk density method).
+  - A full description and implications are provided in Emmett et al. (2008).
+- Data collected per core and coverage
+  - Measurements span pH (in water and CaCl2), %C, %N, bulk density, core dimensions, photography, depth of organic layer, hand texture, soil moisture, Olsen P, metals, mineralisable N, and others.
+  - Data availability varies by core and plot:
+    - Some measurements available for all 591 squares; others limited to original 256 squares.
+    - For example, metals and some nutrient measurements were only available for a subset (e.g., 2 of the 5 x-plots in original 256 squares).
+  - Footnote: data released progressively, with additional data released after the Soils Report (November 2009).
+- Statistical analysis guidance
+  - Analyses should account for land class structure; ignoring it yields population stock/change estimates rather than weighted national estimates.
+  - Bootstrapping is not consistently used; design-based approaches recommended.
+  - The CS structure suggests using mixed models with square as a random factor to account for multiple x-plots per square (up to 5).
+  - Although only one core is taken per location, dispersed sampling (design-based) increases overall precision and regional coverage when estimating inventories.
+  - Users are advised to consult CEH prior to analysis and interpretation and to review existing CS publications (listed on the CS website) that exploit the data.
+- Accessibility and references
+  - Key reference: Emmett et al. 2008 – Countryside Survey Soils 2007: Method development, power analyses and protocols.
+  - Data and methodological notes are linked to the CS Soils 2007 report and related publications.

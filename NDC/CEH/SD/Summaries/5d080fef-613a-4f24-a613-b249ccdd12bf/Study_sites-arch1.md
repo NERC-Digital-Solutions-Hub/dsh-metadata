@@ -1,0 +1,46 @@
+# Study sites
+
+- Data were collected at three plots (each 50 x 50 m) near Andasibe village, Corridor Ankeniheny-Zahamena (CAZ), eastern Madagascar.
+- Site categories (land-use types):
+  - Forest (Semi-mature forest, SMF)
+  - Reforested tree fallow (Young secondary forest, YSF)
+  - Degraded land (Degraded grassland, DL)
+- Key site characteristics by category:
+  - Forest
+    - Elevation: 950 m a.m.s.l.
+    - Coordinates: Latitude 18.9317° S, Longitude 48.4117° E
+    - Aspect: NE (80°)
+    - Average slope: 18°
+    - DBH: 9.3 cm (SD 4)
+    - Basal area: 35.5 m²/ha
+    - Stem density: 5233 stems/ha
+    - Average canopy height: 19 cm (SD 8.0)
+    - Leaf Area Index (LAI): 3.39 (range 3.11–3.58)
+    - Dominant species: Abarahania ditimena, Brachulaena ramiflora, Cryptocaria spp., Ocotea samosa, Eugenia sp., Leptolaena
+    - Land-use history: mostly resprouted after illegal logging ceased in 1995; protected forest managed by Mitsinjo Association; most trees ~20 years old in Oct 2014; few remnant trees.
+  - Reforested tree fallow
+    - Elevation: 990 m a.m.s.l.
+    - Coordinates: Latitude 18.9472° S, Longitude 48.3953° E
+    - Aspect: NW (350°)
+    - Average slope: 16°
+    - DBH: 6.1 cm (SD 1.3)
+    - Basal area: 6.3 m²/ha
+    - Stem density: 2133 stems/ha
+    - Average canopy height: 5 cm (SD 0.31)
+    - LAI: 1.83 (range 1.75–2.14)
+    - Dominant species: Primarily Psiadia altissima (95% of stem density); few Cassinopsis madagascariensis and Harungana madagascariensis (<5%)
+    - Land-use history: cut and burned for rice cultivation in 1990; ~10 years of slash-and-burn; no slash-and-burn since 2000 when restoration began; native species reintroduction attempted but outcompeted by Psiadia altissima.
+  - Degraded land
+    - Elevation: 970 m a.m.s.l.
+    - Coordinates: Latitude 18.9462° S, Longitude 48.4069° E
+    - Aspect: NE (80°)
+    - Average slope: 17°
+    - DBH: ~1.2 cm
+    - Basal area: not available (-)
+    - Stem density: not available (-)
+    - Average canopy height: not reported
+    - LAI: not reported
+    - Dominant species: Imperata cylindrica, Helichrysum sp., Lodetia sp.
+    - Land-use history: degraded land abandoned in 2000 after ~15 years of slash-and-burn.
+- One-year study period: LAI values provided for forest and reforested tree fallow; DL data not reported.
+- Data completeness notes: several measurements (basal area, stem density, canopy height, LAI) are missing for degraded land.

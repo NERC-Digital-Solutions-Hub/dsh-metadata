@@ -1,0 +1,21 @@
+# LOIS Core Programme
+
+- Objective: On-site measurements of basic water quality parameters to monitor environmental health across two UK catchments (Humber and Tweed) over 1994–1997, enabling assessment of environmental health and policy performance over time.
+- Variables measured: pH (pH units), Conductivity at 25°C (µS/cm), Temperature of water (°C).
+- Monitoring network: 16 sites in total (13 in Humber catchment; 3 in Tweed catchment). Representative site examples include:
+  - Humber: Swale at Catterick Bridge (S1), Swale at Thornton Manor (S2), Ure at Boroughbridge (U3), Nidd at Skip Bridge (N4), Wharfe at Tadcaster (W5), Ouse at Clifton Bridge (O6), Derwent at Bubwith (D7), Aire at Beal Bridge (A8), Calder at Methley Bridge (C9), Don at Sprotborough Bridge (D10), Trent at Cromwell Lock (T11), Ouse at Acaster Malbis (O12).
+  - Tweed: Tweed at Boleside (TW13), Tweed at Norham (TW14), Tweed at Ormiston Mill (TW15), Aire at Allerton Bywater (A20).
+- Sampling frequency: Regular weekly sampling at each site, with additional sampling roughly once per month per site during high-flow conditions.
+- Sampling and measurement methods:
+  - Water collected using wide-neck PTFE bottles (or by immersion near the main flow when bridges were not feasible).
+  - pH and conductivity measured in the field with Mettler Toledo Check Mate meters; temperature measured with a PT 100 probe and Digitron 3204 meter.
+  - Three readings per sample, averaged for final values.
+- Quality control and data quality:
+  - pH probes calibrated in the laboratory with pH 7.0 and 10.0 buffers.
+  - Conductivity probes calibrated in air and with a 1417 µS KCl standard.
+  - On-site drift checks and recalibration performed as needed.
+  - Probes swirled in freshly collected samples for two minutes before taking three readings.
+- Personnel: Measurements conducted by the field sampling team at York University.
+- Outputs and references:
+  - Primary reference describing the LOIS river monitoring strategy and implementation: Leeks et al., 1997, Scientific/Total Environment.
+  - SOP references for conductivity and pH measurements: House, W.A. (1993) SOPs for Check Mate meters and related methods.

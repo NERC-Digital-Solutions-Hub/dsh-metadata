@@ -1,0 +1,31 @@
+# Introduction
+
+- Dataset scope: Monthly global methane emissions from natural wetlands at 0.5° x 0.5° resolution, based on JULES land surface model outputs driven by WFDEI data.
+- Key variables included:
+  - fwetl (1): Fraction of wetland in each grid cell.
+  - fch4_wetl (mg CH4 m^-2 day^-1): Gridbox methane flux from natural wetlands, scaled so global wetlands emissions total 180 Tg CH4.
+  - cs (kg m^-2): Soil carbon across decomposable plant material, resistant plant material, microbial biomass, and humus.
+  - t_soil (K): Sub-surface temperature of the top soil layer.
+- JULES model context:
+  - Joint UK Land Environment Simulator (JULES) v4.5 with TRIFFID for vegetation dynamics (competition disabled); vegetation cover prescribed from IGBP database.
+  - Uses TOPMODEL hydrology; soil properties rely on the Harmonised World Soil Database with CAP-based regridding.
+  - Methane emission scheme follows Gedney et al. (2004) with dynamic soil carbon and a temperature-dependent Q10 function; global scaling factor k chosen to yield 180 Tg CH4/year in 2000.
+- Methane emission calculation:
+  - fwetl = k * fwetl * Q10(t_soil1m)^(t_soil1m/T0) * sum over soil pools (κ_i * cs_i), where i indexes soil pools and κ values are pool-specific decay factors.
+  - Q10 uses a reference T0 = 273.15 K.
+  - fch4_wetl is computed within the model and can be deconstructed by users (e.g., divide fch4_wetl by fwetl and multiply by an observed wetland dataset).
+- Input meteorological driving data:
+  - WFDEI (WATCH Forcing Data methodology applied to ERA-Interim).
+- Other input data sources:
+  - Hydrological and thermal soil properties: Harmonised World Soil Database (FAO, 1995), regridded with CAP software.
+  - Topographic index: HydroSHEDS data (Marthews et al., 2015).
+  - Vegetation map: IGBP land cover (IGBP, 1992), regridded with CAP.
+- File format and data structure:
+  - NetCDF format, CF-compliant, following CEH gridded dataset conventions.
+  - Data stored in yearly files with all variables in a single file.
+- Practical implications for users:
+  - The dataset provides all variables from the methane emission equation, enabling users to apply their own field (e.g., using an external wetland mask).
+- References (select):
+  - JULES model descriptions and methodologies (Best et al., 2010; Clark et al., 2010; Gedney et al., 2004; Parker et al., 2018; McNorton et al., 2016).
+  - WFDEI forcing data (Weedon et al., 2011; Weedon et al., 2014).
+  - Supporting datasets: Harmonised World Soil Database (FAO, 1995); HydroSHEDS (Marthews et al., 2015); IGBP land cover (1992).

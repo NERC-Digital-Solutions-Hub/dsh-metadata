@@ -1,0 +1,30 @@
+# Overview
+
+- Purpose: A dataset of the dates and magnitudes of extreme river discharge and associated skew surge peaks for UK estuaries from 1984 to 2013, including lag times between discharge drivers and skew surge.
+- Coverage:
+  - 126 estuaries across Britain with 30 years of river discharge (1984–2013) and tide gauge data.
+  - River discharge and tide gauge data at 15-minute resolution; ~706 skew surge observations per year (one per ~12.42-hour tidal cycle).
+- Data sources:
+  - River discharge: 265 rivers, using the most downstream non-tidal gauges; data from the Environment Agency, Natural Resources Wales, and the Scottish Environment Protection Agency.
+  - Tide gauges: 27 class-A gauges from the UK National A-Class Tide Gauge Network (BODC).
+- Key metrics:
+  - Peaks over threshold (POT) analysis to identify river discharge exceeding the 95th percentile (derived from a 30-year 15-minute record).
+  - For each extreme discharge event, the largest skew surge within a storm window is identified and retained if it also exceeds the 95th percentile of skew surge.
+  - Lag time between peak discharge and peak skew surge (in hours) recorded for each co-occurring event.
+- Data processing and quality control:
+  - Tide gauge data are hourly (1984–1992) and 15-minute (1992–2013); pre-1992 data interpolated to 15-minute to align with discharge data.
+  - Improbable, null, or interpolated TWL data discarded; there are gaps (roughly 79–98% coverage for some gauges) but only reliable observations are used.
+  - River records checked for absence of tidal signal using FFT and Lomb-Scargle; 24-hour running mean smoothing applied to discharge data.
+- Data structure and access:
+  - SEARCH_DATA.csv: 10 columns per estuary containing location, gauge IDs, coordinates (OSGB36 Easting/Northing), time span (START/END), maximum discharge, nearest tide gauge, and catchment area.
+  - 126 co_occurrence CSV files (one per estuary): 5 columns each (RiverDischarge_95thTime, RiverDischarge_95th, SkewSurge_95thTime, SkewSurge_95th, LagTime).
+  - File naming: XXXXX_co_occurrence.csv, where XXXXX is the river gauge reference code.
+  - Units: discharge in m3/s; total water level and skew surge in meters (ODN); times as DateTime; lag time in hours.
+- Analytical method summary:
+  - Pair each river gauge with the nearest coastal tide gauge on the same coastline.
+  - POT threshold defined as 3-month moving mean plus 95th percentile.
+  - For each extreme discharge event, select the largest skew surge within the storm window; retain if skew surge exceeds its 95th percentile.
+- Spatial and data limitations:
+  - Southeast England has weaker coverage due to shorter data records or absence of 50 m3/s peaks in some gauges.
+  - Gaps in tide gauge records mean the dataset relies on observed values where available.
+- Related reference: Lyddon, C., Robins, P., Lewis, M., et al. (2023). Historic spatial patterns of storm-driven compound events in UK estuaries. Estuaries and Coasts, 46(1), 30-56.

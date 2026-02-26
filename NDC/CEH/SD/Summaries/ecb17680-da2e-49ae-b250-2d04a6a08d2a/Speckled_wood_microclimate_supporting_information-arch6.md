@@ -1,0 +1,46 @@
+# WINTER AND SUMMER SPECKLED WOOD SURVIVAL AND PERFORMANCE
+
+- Objective: Reared F1 larvae of wild-caught P. aegeria in winter (1 woodland, 1 grassland) and summer (3 woodlands, 3 grasslands) in the UK to assess survival and larval performance across habitats; adults collected near the northern range boundary and used to produce offspring on Poa pratensis.
+- Experimental approach: 
+  - Field pots with larval brood splits to compare habitat effects on survival, development, growth, and pupation.
+  - Winter experiment: 40 pots per site with 5–15 larvae per pot; sites Bishop Wood (woodland) and Wistow (grassland).
+  - Summer experiment: 7 pots per site with 5 larvae per pot; three woodland sites (The Grange, Bishop Wood, Skipwith Common) and three grassland sites (University of York Campus, Wistow, Skipwith Common).
+  - Measurements: development time (weeks in winter, days in summer), pupal mass, growth rate, survival (pupated or alive at end), with data averaged across individuals in a pot.
+- Data files and schema:
+  - Winter_survival_and_performance.csv
+    - Columns: Habitat (W or G), Female (offspring brood code), Alive, Dead, Development time (weeks), Pupal mass (mg), Growth rate (mg/week)
+    - Notes: Uneven number of pots per site due to disturbances.
+  - Summer_survival_and_performance.csv
+    - Columns: Habitat (W or G), Site (woodland: 1 The Grange, 2 Bishop Wood, 3 Skipwith Common; grassland: 1 York Campus, 2 Wistow, 3 Skipwith Common), Pot, Alive as larvae, Alive as pupae, Dead, Development time (days), Pupal mass (mg), Growth rate (mg/day)
+  - Winter_microclimate.csv
+    - Columns: Date and time, plus hourly temperature readings for each data logger; headers encode habitat (W/G) and logger code; loggers placed 30 cm above ground with foil insulation; iButton DS1922L, ~0.4 °C accuracy.
+  - Summer_microclimate.csv
+    - Columns: Date and time, hourly temperature readings with site code and logger code (woodland: Grange=1, Bishop Wood=2, Skipwith=3; grassland: York Campus=1, Wistow=2, Skipwith=3); uneven logger counts due to failures.
+  - Summer HOST PLANT QUALITY
+    - Potted grass water content
+      - Columns: Habitat, Site, Pot, Percentage water content
+    - Wild grass water content
+      - Columns: Habitat, Site, Sample, Percentage water content
+  - SPECKLED WOOD COLD TOLERANCE
+    - Columns: Exposure temperature (°C) (-5 or -10), Duration of exposure (days), Sample, Immediate survival (%), Successful pupation (%), Successful eclosion (%), Development time (days), Pupal mass (mg), Growth rate (mg/day)
+- Methods and measurement details:
+  - Field pots: plants replaced when eaten; netting to prevent grazing, predation, or larval movement; pots dug flush to soil surface.
+  - Growth and development: development time from field introduction to pupation; mass measured on pupation day with 0.1 mg accuracy balance.
+  - Microclimate: hourly temperature logs within netting; foil-wrapped loggers to reduce direct solar effects.
+  - Host plant quality: grass samples cut flush with soil; 3 cm diameter samples weighed, dried at 60 °C for 24 hours, reweighed to determine water content; both potted plants and nearby wild grass sampled.
+  - Cold tolerance: larvae exposed to -5 °C or -10 °C with defined durations, then moved to 5 °C for 2 days before assessing immediate survival, pupation, eclosion, and calculating development metrics.
+- Data integrity and coding notes:
+  - Habitat codes: W = woodland, G = grassland.
+  - Site codes for woodlands: 1 The Grange, 2 Bishop Wood, 3 Skipwith Common.
+  - Site codes for grasslands: 1 University of York Campus, 2 Wistow, 3 Skipwith Common.
+  - NA values used when no individuals pupated or no data available for a particular metric.
+  - Uneven sample sizes across sites due to animal disturbance and logger failures; data are averaged across individuals within a pot.
+- Potential data uses for support and insights:
+  - Compare survival, development time, and growth across woodland vs. grassland and across specific sites.
+  - Link microclimate measurements to larval performance outcomes.
+  - Assess relationship between host plant water content and larval growth/survival.
+  - Evaluate cold tolerance thresholds and their sublethal effects on development and mass.
+- Data quality considerations:
+  - Patchy data due to pot loss and equipment failures; explicit NA values to indicate missing measurements.
+  - Unit consistency across datasets (weeks vs days for development time; mg for mass; mg/day or mg/week for growth).
+  - Brd-wide design in winter (split brood) to control maternal effects; site-level replication in summer.

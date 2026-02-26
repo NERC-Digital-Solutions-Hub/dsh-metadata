@@ -1,0 +1,47 @@
+# UK Environmental Change Network (http://www.ecn.ac.uk) Vegetation: Woodland (VW)
+
+- Overview: Data on woodland vegetation collected by ECN to understand causes and consequences of environmental change; protocols and metadata designed to enable reuse and cross-site comparisons.
+- Origin, ownership, and attribution: 
+  - Originator: ECN Data Centre, Centre for Ecology and Hydrology
+  - Owners: UK government-sponsored ECN programme with a consortium of partner organizations
+  - Acknowledgement: Please acknowledge ECN data and reference the protocol; consider sharing a reprint of publications citing ECN data
+- Protocol and sampling design:
+  - Nested plot design: coarse-grain vegetation survey with a nested 10m x 10m plot surrounding a 2m x 2m central plot; includes measurements of seedlings, diameter at breast height (dbh), tree height, and dominance
+  - Sampling frequency: repeated approximately every nine years; dbh measured every three years
+  - Site context: woodland sites with associated coarse-grain vegetation protocol; quality information accompanies data
+  - Access: ECN Data Centre or Environmental Information Platform
+- Site codes, geography, and date range:
+  - T08: Wytham (1993–2012)
+  - T09: Alice Holt (1994–2011)
+- Data structure and storage:
+  - Core storage: Oracle database with two site-specific tables per site
+    - D1VW_xxx (vegetation data)
+    - D2VW_xxx (plots and related data)
+  - Core fields: SITECODE, SYEAR, PLOTPID, CELLID, TREEID, STEMID, TREE_SPEC, FIELDNAME, VALUE
+  - Metadata references: M_DESC, M_REFFIELD, and core metadata documentation
+- Variables and field definitions (highlights):
+  - Core fields across tables: SITECODE, SYEAR, PLOTPID, CELLID, TREEID, STEMID, TREE_SPEC, FIELDNAME, VALUE
+  - Field themes (FIELDNAME): A, C, DIAMETER, HEIGHT, SEEDLING, NUM_STEMS, Q1–Q8 (data quality codes)
+  - Value handling: linked to predefined field names with associated quality codes
+- Field names and species codes:
+  - Standardized field names; extensive species code mappings link numeric codes to Latin names and external taxonomic concepts
+  - Coverage includes trees, shrubs, herbs, lichens, mosses, and more; cross-database concept references (e.g., Latin names, taxonomy resources)
+- Data quality, metadata, and usage notes:
+  - Use accompanying quality information (Q1–Q8) when interpreting VALUE
+  - Protocols, site details, and species mappings documented to support reproducibility and integration
+- Access, attribution, and citation guidelines:
+  - Data accessible via the ECN Data Centre; acknowledge ECN data in publications
+  - Cite the ECN protocol and data origin; consider sending a reprint to ECN
+  - Additional data platforms: Environmental Information Platform may host ECN data alongside other datasets
+- Practical takeaways for data support and data products:
+  - Structure: Two site-specific tables per site (D1VW_xxx and D2VW_xxx) in Oracle; design dashboards around SITECODE, SYEAR, PLOTPID, TREE_SPEC, and FIELDNAME–VALUE
+  - Data integration: Join across site tables using SITECODE, SYEAR, and PLOTPID; rich species codes enable cross-referencing with external taxonomies
+  - Quality management: Always consult quality codes and accompanying metadata for valid analyses and visuals
+  - Data usage: Acknowledge ECN data; share outputs back to ECN to demonstrate dataset value
+- Data details: Quality codes (ECN standard)
+  - ECN site managers assign quality codes from a standardized list; 999 indicates an unusual event (see accompanying quality text)
+  - Examples of codes cover data loss, sampling issues, equipment problems, environmental disturbances, and other factors affecting data quality
+- Species codes (illustrative)
+  - Extensive mappings between numeric species codes and Latin names; examples include various Salix, Sorbus, Salix cinerea oleifolia, Sambucus nigra, Vaccinium species, and many others
+  - Mappings also include synonyms and cross-references to Vas_ and other internal taxonomic identifiers
+  - Indicates a comprehensive taxonomy crosswalk to support data integration and external comparisons

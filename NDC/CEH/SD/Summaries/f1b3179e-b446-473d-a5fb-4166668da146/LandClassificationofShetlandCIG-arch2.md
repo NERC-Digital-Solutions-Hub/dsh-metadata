@@ -1,0 +1,43 @@
+# Land Classification of Shetland (1974)
+
+- Purpose and scope
+  - Stratification used as the basis for sampling across Shetland for a 1974 survey employing Bunce & Shaw's standardized ecological survey methods.
+  - Aimed to classify landforms and environmental characteristics to support subsequent vegetation, soils, habitat, and biota assessments.
+- Geographic and temporal coverage
+  - Region: Shetland, Scotland
+  - Time period: 1974
+- Stratification and strata
+  - 16 environmental strata (four groups: coastal with low rivers; coastal with more sea/steeper slopes; high inland; lower undulating with peat and lochans)
+  - Groups described as: 
+    - Strata 1-4: Coastal, gentle terrain, limited river input
+    - Strata 5-8: Coastal, more sea exposure, steeper slopes, more rivers
+    - Strata 9-12: High altitude inland, dominated by gneiss
+    - Strata 13-16: Lower, undulating, peat-rich with freshwater lochans
+  - Stratification built from maps and aerial photographs to yield a landform-based classification; ground survey conducted within fixed 1 km grid squares.
+- Sampling design and data collection
+  - Sampling unit: fixed 1 km grid square (covering 2046 land-containing squares in Shetland)
+  - Data sources: maps and aerial photographs (aerials used to supplement stratification once available)
+  - Attributes: about 150 geographical attributes (physical geography) plus 18 geological attributes from the quarter-inch geological map
+  - Field methods: standardized procedures for ecological surveys; extensive vegetation surveys (nearly 1000 plots) plus specialist surveys for bryophytes, lichens, and key habitats
+  - Analysis: indicator species analysis and related ordination methods to define strata
+- Data format, projection, and access
+  - Format: ESRI Shapefile
+  - Projection: OSGB 1936
+  - Resolution: 1 km grid
+  - Dataset structure: objects with STRATA values (1–16) and standard GIS geometry fields (OBJECTID, Shape)
+- Outputs and interpretation
+  - Map showing distribution of the final 16 strata
+  - Stratification framework intended to support subsequent vegetation, habitat, and ecological surveys
+  - Relationship between geology and geography highlighted; and interactions with coastal exposure and shelter affecting vegetation patterns
+- Related datasets and publications
+  - Related 1974 surveys: Shetland Freshwater Survey, Shetland Coastal Survey, Shetland Vegetation Survey (all within Milner, 1975)
+  - Broader context: ITE Land Classification of Great Britain (Bunce et al., 2007); European climatic stratification approaches (Metzger et al., 2005)
+  - Foundational methods: Bunce & Shaw (1973) standardized ecological survey procedure; Bunce (1974, 1975) field handbooks and monitoring reports
+- Origin and provenance
+  - Originator: R.G.H. Bunce, Institute of Terrestrial Ecology, Merlewood Research Station
+  - Part of Shetland project monitoring; implementations detailed in ITE contract reports (Project 315)
+- Data management and reuse considerations
+  - Data verification, quality assurance, and standardization emphasized; supports integration with other environmental datasets
+  - Potential for combining with other environmental data to increase dataset value and enable broader accessibility of underlying data for analysis and policy monitoring
+- References and further reading
+  - Key methodological and contextual sources (Bunce et al. 1996; Bunce et al. 2007; Hill 1973; Hill et al. 1975; Metzger et al. 2005; Milner 1975)

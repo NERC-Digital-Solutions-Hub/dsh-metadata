@@ -1,0 +1,7 @@
+# A brief description/overview of the data being described
+
+- The PULA Conceptual Hydrogeological Cross-section dataset is a scaled, semi-quantitative hydrogeological cross-section of the Gaborone Catchment, Botswana. It exists as a raster image at 600 dpi and includes cross-section geographic coordinates in CSV format.
+- It combines primary quantitative data (terrain elevation; boundaries of geological units and their dip/strike; regional faults and dykes; water table elevations in boreholes; locations of streams, dams, and reservoirs) with qualitative interpretation (water table profile and hydraulic gradients; groundwater flow directions; recharge processes; groundwater–surface water interactions; surface runoff).
+- Groundwater data reflect average water levels for 2016–2018, gathered from the Botswana Department of Water Affairs and the PULA project.
+- The cross-section was produced to understand the long-term groundwater response to the 2016–2017 floods and to evaluate wider impacts of extreme rainfall and flooding on water quality across surface and groundwater systems in a geologically diverse area.
+- The dataset was created by a collaboration among Botswana’s Department of Water Affairs, Botswana International University of Science and Technology, and the University of Aberdeen, as part of the NERC-funded PULA project. The synthesis and analysis were conducted by the same team.

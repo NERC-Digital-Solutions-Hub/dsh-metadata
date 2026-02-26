@@ -1,0 +1,26 @@
+# LOIS Core Programme
+
+- Purpose and scope
+  - Discrete total alkalinity data for Humber catchment (13 sites) during 1993–1997 and Tweed catchment (3 sites) during 1994–1997.
+  - Variable: Total Alkalinity; Units: mg/l HCO3.
+- Sites and temporal coverage
+  - Humber catchment: 13 sites including S1, S2, U3, N4, W5, O6, D7, A8, C9, D10, T11, O12, A20.
+  - Tweed catchment: TW13, TW14, TW15.
+  - Sampling cadence: weekly intervals with more frequent sampling during high flows (approximately one extra sample per site per month during high flows).
+- Measurement and sampling methods
+  - Samples collected using narrow-necked HDPE bottles placed in plastic carriers; where possible taken from bridges, otherwise by hand near main flow.
+  - On return, samples filtered through Whatman 0.45 µm filters.
+  - Analysis conducted on day of collection or arrival using a Metrohm 702 Titrino autosampler with sample changer.
+- Data quality and QA/QC
+  - Calibration: standard HCl solution calibrated by titration with borax; pH electrode calibrated with pH 4.0 and pH 7.0 buffers.
+  - Quality assurance: duplicate samples analysed at IFE Windermere (12 months) and at IFE East Stoke for inter-lab comparison; alkalinity also measured under the IFE chemical harmonisation programme at East Stoke.
+  - Data quality presentation: zip file of box-and-whisker plots for each determinand showing range, median, interquartile range, and outliers to aid understanding of data quality.
+- Data processing and governance
+  - Analysis performed by the analytical chemistry section at York University (April 1994–February 1997).
+  - References provided for methodology and context (SOP for determination of total alkalinity by Gran Titration; related river chemistry studies).
+- Outputs and availability
+  - Box-and-whisker plots are provided as a zip file for users to assess data quality; the document describes the data and QC but does not explicitly detail data sharing of the underlying raw datasets.
+- References
+  - House, W.A. SOP 16/12.8.93
+  - Jarvie et al., 1997. Major ion concentration and inorganic carbon chemistry of Humber rivers. Sci. Total Environ. 194/195:285–302
+  - Neal & Robson, 2000. A summary of river water quality data within the Land-Ocean Interaction Study. Sci. Total Environ. 251/252:585–665

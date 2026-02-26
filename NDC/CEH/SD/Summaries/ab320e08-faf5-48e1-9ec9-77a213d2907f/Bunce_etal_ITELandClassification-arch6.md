@@ -1,0 +1,79 @@
+# ITE LAND CLASSIFICATION: CLASSIFICATION OF ALL SQUARES IN GB
+
+- Aim and scope
+  - Classify every 1 km square in Great Britain into land classes, with the goal of reproducing the original ISA-based classification while enabling automated processing across the entire grid.
+  - Preserve credibility and usefulness: the original classification had been widely used and supported by extensive datasets; maintain relative distributions from sample squares and facilitate widespread application and data sharing.
+
+- Data and data structure
+  - Data types used for classification (structured as inputs to automated methods):
+    - Coastal features (cliff, rock, sand, mud, shingle, tidal)
+    - Altitude-related metrics (height behind, distance to hill/valley, gradients, slopes)
+    - Map-derived data (coastlines, woodland, villages, roads, canals, water bodies, towns, railways, rivers)
+    - Distance measures (distance to south and west coasts)
+    - Island status
+    - Climate indicators (sunshine hours, snowfall, January min temp)
+    - Geology (major rock-types across a broad taxonomy)
+    - Drift/soils information (drift type, glacial/moraine deposits, loess, etc.)
+  - Data sources and scale
+    - Altitude data from MOD 100 m Digital Terrain Model
+    - Map data from OS digital data (1:250,000) via Readers Digest contract with Mapdata
+    - Coastal and environmental data digitised and aligned to Ikm grid squares
+  - Data coverage strategy
+    - Original approach based on highly detailed, per-square data deemed impractical for full GB coverage
+    - Aim to use data that could be readily acquired from existing datasets or automatically recorded
+    - Ultimately coupled a small core of originally detailed squares (1212) with a larger set (4800) identified by 76 key attributes
+
+- Classification approaches and experiments
+  - Core objective: reproduce or simulate the original ISA classification while enabling automated, comprehensive GB coverage
+  - Approaches tested
+    - Extension/reproduction of the ISA using data from 240+ variables
+    - Discriminant Function (DF) methods
+      - Early results showed 438 correspondences with original 1212-square classifications; regional balance and regional-level results varied
+      - Explored multiple transformations and data handling to maximize correspondence
+    - Logistic Regression / Discriminant Function (Logistic/Discriminant)
+      - Found to yield higher correspondence with the original classification and better regional balance
+    - Other multivariate techniques
+      - Various algorithms from phytosociology; issues with geographic dispersion of classes (e.g., Midlands classes scattered into Scotland)
+      - Some approaches allowed both variables and attributes but produced unacceptable spatial patterns
+    - Simulation ordination and indicator-based approaches
+      - Aimed to minimize misclassification and closely mimic the original methods; ultimately less satisfactory for GB-scale consistency
+  - Cross-comparisons and validation
+    - Cross-tabulations between original and derived classifications highlighted that Logistic/Discriminant had closer diagonal alignment with fewer outliers
+    - Environmental gradient alignment: correlations between original environmental gradient and class positions were very high for all methods, with Logistic/Discriminant slightly outperforming the original in certain metrics
+    - Proportional representation: Logistic/Discriminant delivered better alignment with overall GB class proportions than Discriminant alone or original
+  - Outputs from tests
+    - Geographical dispersion measures (distance from south/west coasts, altitude dispersion, drift-related dispersion) were generally tighter under Logistic/Discriminant than original
+    - Standard errors on gradient scores were lower for Logistic/Discriminant, indicating more stable classifications
+
+- Outputs and dissemination
+  - Classification outputs and maps
+    - Distribution maps for the GB-wide classifications using the Logistic/Discriminant method
+    - Availability of multiple map products:
+      - The original 32 ISA-derived classes from 1212 squares
+      - The original 1212 squares plus an additional 4800 squares identified by 76 attributes
+      - All squares trained using the discriminant function
+  - Environmental and ecological means
+    - Tables of environmental means for the data used (e.g., altitude, drift, etc.)
+    - Environmental gradient values and standard errors by class
+  - Field survey and vegetation correlation
+    - Analyses linking environmental gradients to vegetation quadrats and species assemblages
+    - Correlation of ecological gradient with vegetation data: Original 0.827, Discriminant 0.845, Logistic 0.813
+  - Ecological characteristics and soil chemistry
+    - Comparisons of soil pH values across original vs. logistic classifications using multiple soil pits
+    - Comparative vegetation cover data for representative plant species under different classification schemes
+  - Coastal features and attribute layering
+    - Distribution of coastal features across 1 km squares and potential for overlaying attributes (e.g., sea cliffs with chalk)
+
+- Recommendations and conclusions
+  - Final recommendation: adopt Logistic Regression with Discriminant Function (Logistic/Discriminant)
+  - Rationale
+    - Discriminant Function alone failed to identify certain coastal classes in southern Britain (coastal classes 7 & 8) and would necessitate redefining coastal classes and potentially misplacing other classes (e.g., class 25 extending into southern Britain)
+    - Logistic/Discriminant provides a closer match to the original GB-wide class distribution and maintains a balance closer to proportional sampling
+    - Lower standard errors and reduced dispersion relative to the original classification, indicating more reliable estimates and improved risk management for policy and planning applications
+    - Among compared methods, Logistic/Discriminant showed improvements across key metrics, including coastal factor representation and overall efficiency
+  - Implications
+    - A more stable, scalable GB-wide land classification that preserves historical continuity while enabling self-serve data products and broader data-use in planning, policy, and environmental analyses
+    - Reduces reliance on highly granular per-square data while leveraging available multi-source data, fostering broader application and re-use
+
+- Overall takeaway
+  - The study demonstrates a robust, data-driven workflow to classify all GB squares into land classes, balancing fidelity to the original ISA classification with modern, scalable, automated methods. The Logistic/Discriminant approach offers the best combination of correspondence to the original classification, proportional sampling balance, reduced uncertainties, and practical applicability for GB-wide environmental and land-use analysis.

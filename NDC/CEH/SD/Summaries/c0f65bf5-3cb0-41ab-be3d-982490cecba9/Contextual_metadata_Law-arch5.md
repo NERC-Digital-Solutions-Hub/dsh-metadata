@@ -1,0 +1,40 @@
+# Overview of data
+
+- The document describes a multi-file ant ecology dataset collected in lowland tropical rainforest in Sabah, Malaysia, focusing on ant colour (lightness) and body size across vertical strata, plus abiotic context (soil temperature and UV-B radiation) and intraspecific variation.
+- Study scope and aims:
+  - Describe spatial patterns of cuticle colour across a vertical microclimatic gradient (subterranean to canopy).
+  - Test predictions of eco-geographical hypotheses: thermal-melanism, melanism-desiccation, and photoprotection.
+  - Data collected 2014–2018 as part of the NERC Human-modified tropical forest (HMTF) Programme.
+- Experimental framework:
+  - Twelve 50 x 50 m plots within a 42-hectare area; four control, four ant-suppression, four termite-suppression plots; edge effects minimized by a 15 m buffer and central 50 x 50 m sampling.
+  - Ant suppression plots used two poison baits (Synergy Pro and a sugar+imidacloprid bait); termite suppression involved mound removal and soil treatment with imidacloprid and fipronil via treated toilet paper rolls and tea bags; suppression maintained until 2017. For the colour study, data were drawn only from the four control plots.
+- Data files and key content:
+  - AntSpeciesData.csv: morphological traits across four vertical strata; species abundances; dominant colour; RGB and HSV values; mean Weber's length (body size) for workers (n ~ per species varies; color determined across head, mesosoma, gaster).
+  - IntravarColourData.csv: intraspecific colour variation for 20 species; 50 specimens per species; colour recorded for head/mesosoma/gaster; includes RGB/HSV/CI values per specimen.
+  - IntravarSizeData.csv: intraspecific body size (Weber's length) for the same subsample of 20 species; 50 specimens per species.
+  - SoilAbioticData.csv: soil temperature (10 cm depth) at 25 points per plot, measured October 2016.
+  - UVBData.csv: UV-B radiation measurements at 5 m vertical intervals from ground to canopy (2018); additional ground readings and a canopy-open proxy; measurements taken near solar noon using a Solarmeter; cloud cover noted.
+- Data collection and processing details:
+  - Colour assignment: by eye using a predefined color set; colour pertains to cuticle (not hair), with a single dominant colour per species across body parts; RGB values derived from Paint.NET and converted to HSV (h, s, v).
+  - Morphology: Weber's length measured with ocular micrometers to 0.01 mm; measurements focused on worker caste; used the maximum magnification to fit the entire mesosoma.
+  - Specimen handling: IntravarColourData and IntravarSizeData use a subsample of 20 species with 50 specimens per species; colour data recorded by a single observer.
+  - Data provenance: data collection led by S.J. Law, H.M. Griffiths, L.A. Ashton; interpretation by the same team plus T.R. Bishop, P. Eggleton, and C.L. Parr.
+  - Located in Sabah, Malaysia; plots and sampling described in detail to support reproducibility and context for downstream analyses.
+- Data structure and column details (highlights):
+  - AntSpeciesData.csv: Plot, Strata, Assemblage, Subfamily, Genus, Species, Abundance, Prop abund, Dom colour, R/G/B, h/s/v, Mean Weber length.
+  - IntravarColourData.csv: ID, Subfamily, Species, Vial, Strata, Trait (Head/Mesosoma/Gaster), Colour, R/G/B, h/s/v.
+  - IntravarSizeData.csv: ID, Subfamily, Species, Vial, Strata, Webers length.
+  - SoilAbioticData.csv: Date, Plot, Soil temp (°C).
+  - UVBData.csv: Date, Time, Location, Height (m), Strata, UVB (mW/cm2), Cloud cover.
+- Data governance and stewardship considerations:
+  - Standards and consistency: RGB/HSV color metrics; standardized locality and stratum coding; consistent Weber’s length measurement protocol.
+  - Metadata and documentation: explicit column definitions and data provenance; explicit sampling design (plots, strata, assemblages) to support data discovery and reuse.
+  - Availability and updates: six CSV files prepared for sharing; study emphasizes standardized sharing through portals/catalogues; notes on potential sharing limitations inherent to multi-file, multi-method datasets.
+- Considerations and potential challenges for data stewards:
+  - Incomplete capture of user needs across all data aspects; ensuring discoverability of cross-file relationships (colour, size, abundance) and abiotic context.
+  - Harmonizing data across multiple systems and formats (six CSVs with species-level identifiers and morphospecies codes).
+  - Managing legacy data from long-term suppression experiments and integrating with newer observations (e.g., UVB/soil data).
+  - Documentation of subjectivity in eye-based colour assignment and its implications for repeatability and interoperability.
+
+- Primary use-case context:
+  - Enables analyses of spatial colour patterns in ant assemblages along vertical gradients and tests of ecological/geographical hypotheses, with accompanying intraspecific variation and abiotic environmental context.

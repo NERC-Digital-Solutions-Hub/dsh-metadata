@@ -1,0 +1,13 @@
+# Collection/generation methods
+
+- Scope: Monitoring an approximately 35 km urban-non-urban gradient from Glasgow city centre to Loch Lomond National Park, Scotland; annual monitoring 2014–2022 with 5–20 sites per year.
+- Nestbox setup: Woodcrete nestboxes installed at all sites, roughly 50 metres apart; 5–161 boxes per site depending on year and site size.
+- Breeding season observations: Weekly checks during nest-building and incubation (April–June); first egg date observed or back-calculated; clutch size recorded as maximum observed during incubation; 14 days after incubation begins, boxes checked every other day until chicks observed; 13 days after hatching, chicks ringed; final check >20 days after hatching to record any unhatched eggs and dead chicks to calculate fledging success.
+- Data collection details: Data entries capture breeding events with various details per event; metadata describes units and value types.
+- Data structure: Rows represent individual breeding events; columns capture event-specific details.
+- Quality control: End-of-year data are checked and uploaded to a central database.
+- Metadata and variables: Includes ID, data entry initials, year, nestbox number, site, occupancy, clutch status, species codes (5-letter BTO codes), dates for first egg, laying completion, expected hatch, observed hatch, hatch deviation, counts of hatchlings, fledglings, unhatched eggs, and success flag; notes field for important remarks.
+- Species codes (Table 1): Five-letter codes map to species (e.g., BLUTI = blue tit, GRETI = great tit, HOUSP = house sparrow, NUTHA = nuthatch, PIEFL = pied flycatcher, TRESP = tree sparrow).
+- Site information: Sites include Balmaha, SCENE, Sallochy, Cashel, Dawsholm, Drymen_forest, Drymen_village, Garscube, GCU, Hillfoot, Kelvingrove_park, Killearn_forest, Killearn_village, Kilmardinny Loch, Mugdock, Old_Station_Park, St_Mungo_Avenue, Strathblane_forest, Strathblane_village, Tannoch_Burn.
+- GIS relevance: The dataset provides spatially explicit breeding data (nestbox locations and site identifiers) suitable for mapping occupancy, clutch size, hatch success, and fledging outcomes along the urban–rural gradient, with time-series analysis across 2014–2022.
+- Potential data considerations for GIS use: varying numbers of nestboxes per site, year-to-year changes in site participation, data completeness and consistency across years, and alignment of site codes with spatial geometries.

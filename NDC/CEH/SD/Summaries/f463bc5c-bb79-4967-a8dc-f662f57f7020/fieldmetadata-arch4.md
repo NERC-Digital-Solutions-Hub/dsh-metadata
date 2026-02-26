@@ -1,0 +1,45 @@
+# Metadata for 'Long-term multisite Scots pine trial, Scotland: field phenotypes, 2013-2020'
+
+- The metadata describe a long-term, multi-site field trial of Scots pine phenotypes conducted in Scotland from 2013 to 2020.
+- Seed material and populations
+  - Seed collected in March 2007 from ten trees per each of 21 native Scottish P. sylvestris populations.
+  - Populations chosen to represent the species’ native range in Scotland, including three populations from each of seven seed zones.
+  - Seeds germinated in 2007 and grown through nursery stages before field planting.
+- Nursery and planting design
+  - Seedlings transplanted to 8 cm × 8 cm × 9 cm pots and grown in one of three nurseries (NW, NG, NE).
+  - In 2012, trees were transplanted to three field sites: Yair (FS, south Scotland), Glensaugh (FE, east Scotland), Inverewe (FW, west Scotland).
+  - Field design used randomized blocks with 3 m × 3 m spacing and a peripheral guard row.
+  - Each block included one individual from eight of the ten families from each of the 21 populations (168 trees per site).
+  - Some family replacements occurred at FS where certain families were underrepresented.
+  - Site coordinates and design details provided (FS: Yair; FE: Glensaugh; FW: Inverewe).
+- Data collected and timeline
+  - Growth measurements:
+    - Height measured annually from 2013–2020 at FE and FW; 2014–2020 at FS.
+    - Basal stem diameter measured annually at FE and FW; 2020 data available for FS only (as applicable).
+  - Phenology assessments:
+    - Spring phenology recorded at each site from 2015–2019 (2020 data not collected due to COVID-19 restrictions).
+- Dataset contents and structure
+  - Single data file: FieldTraits.txt.
+  - Key columns (examples):
+    - PopulationCode, Description: population identifiers.
+    - Family: family code (offspring from the same mother tree).
+    - FieldSite: site code (FE: Glensaugh; FS: Yair; FW: Inverewe).
+    - FieldCode: unique tree code (ranges by site; e.g., Inverewe 5001–5672; 6001–6004; 7001–7672).
+    - Block: randomized block code (A–D as applicable per site).
+    - HA13–HA20: Height after 7th to 14th growing seasons (in mm) at respective sites.
+    - HI13–HI20: Height increments per year (mm).
+    - DA13–DA20: Base stem diameter per year (mm).
+    - DI13–DI20: Base stem diameter increment per year (mm).
+    - BD15–BD19/BD20: Duration of budburst (days) per year.
+    - BT15–BT20: Time/days to reach budburst stages (various measurements per year).
+  - Units: Height, diameter, and related growth metrics are recorded in millimeters (mm); budburst timing in days.
+- Data quality, provenance, and gaps
+  - Longitudinal, multi-site design enables cross-site comparisons of growth and phenology.
+  - Data reflect nursery origin (trees raised in different nurseries) and field-site differences.
+  - COVID-19 impacted 2020 phenology data collection.
+  - Some families were replaced at FS due to insufficient representation, which may affect cross-site comparability for certain populations.
+- Governance, metadata, and reuse considerations
+  - FieldCode and FieldSite metadata provide traceability from individual trees to populations and fields.
+  - The dataset supports analyses of growth trajectories, phenology timing, and diameter growth across environments and populations.
+  - For integration and ongoing use, maintain consistent unit definitions, document nursery origins, and account for any replacements or missing years.
+  - Potential applications include long-term genotype-by-environment studies, adaptation analyses, and informing forest management or breeding programs.

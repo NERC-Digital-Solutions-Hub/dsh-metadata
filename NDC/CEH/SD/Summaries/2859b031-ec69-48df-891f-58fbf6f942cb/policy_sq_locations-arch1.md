@@ -1,0 +1,24 @@
+# Policy of the Countryside Survey partners on access to survey square locations
+
+- Aim: maximise public-interest utility of CS spatial data while minimising risk to future surveys and landowner anonymity; applies to survey square location data and spatial data within squares; all other CS data is publicly accessible.
+- Context and partners: 2019 rolling program funded by Natural Environment Research Council (NERC) under award NE/R016429/1 as part of the UK-SCaPE programme; 2007 CS partners include CEH (NERC), Defra, Natural England, Welsh Government, Scottish Government, NIEA, Forestry Commission, CCW, and SNH.
+- Rationale for confidentiality: preserves representativeness of sampling sites and goodwill of landowners, essential for scientific integrity of sampling and future land permissions; aligns with public-interest stance.
+- Circumstances for release and precision:
+  - Assessments can identify whether squares fall within predetermined areas (Country, County, ITE Land Class, Environmental Zone).
+  - For useful approximate locations, four-digit (10x10 km grid) references may be released under licence.
+  - For precise six-digit locations, pre-processing by UKCEH to avoid release is preferred; only in very exceptional cases may external release be granted under licence if the requester demonstrates equal or higher IP confidentiality than CS data.
+  - Spatial data within squares could indirectly reveal square locations and is subject to the same exceptional-release terms.
+- Specific conditions of release:
+  - Licencees must maintain confidentiality, store data securely, and restrict access to named individuals with legitimate need.
+  - Licences are finite and project-specific; data must be destroyed at licence end and not retained for other duties.
+  - No data or derived information should be released to third parties that could compromise square confidentiality; data must not be used to visit squares or to monitor landowners.
+  - If requested, licensees must demonstrate project-management standards at least equivalent to the Joint Code of Practice for Research (JCOP).
+  - Four-digit releases have similar terms but do not require the highest IP-confidentiality criteria; license terms for spatial data and four-digit references prohibit attempts to deduce precise square locations.
+- Responsibilities and governance:
+  - UKCEH, on behalf of NERC, decides on exceptional releases and issues hardcopy licences with appropriate clauses; signatories must be an authorised representative of the licensee.
+  - If approval is denied, UKCEH follows the Act and Regulations procedures.
+  - UKCEH provides an annual report to CS partners detailing applications and decisions.
+- Practical considerations and collaboration:
+  - For internal CS-partner use, UKCEH aims to provide preprocessing support within a reasonable timeframe (subject to moderate demand).
+  - Requests from external organisations are considered case-by-case.
+  - Partners are encouraged to consult with UKCEH before committing to data use covered by the policy; collaboration or paid support arrangements may be negotiated.

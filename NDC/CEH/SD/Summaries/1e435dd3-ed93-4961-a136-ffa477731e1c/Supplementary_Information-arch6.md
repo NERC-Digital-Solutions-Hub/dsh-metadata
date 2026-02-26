@@ -1,0 +1,59 @@
+# Description of the data
+
+- Study aim and scope
+  - Molecular analysis of tsetse flies to detect trypanosome species and tsetse endosymbionts
+  - Focused on Hurungwe District, Mashonaland West Province, Zimbabwe (sleeping sickness focus)
+  - Samples collected Feb–Nov 2014; part of DDDA C research on disease ecology
+- Study organisms and targets
+  - Tsetse species: Glossina morsitans morsitans (Gmm) and Glossina pallidipes (Gp)
+  - Trypanosome species examined: T. brucei s.l., T. b. rhodesiense, T. vivax, T. congolense, T. simiae, T. simiae (Tsavo), T. godfreyi
+  - Endosymbionts examined: Sodalis glossinidius and Wolbachia spp.
+- Sampling design
+  - 101 Gmm and 108 Gp tsetse analyzed
+  - Sampling methods: Epsilon traps and fly rounds
+  - Transect: 110 km long, at 10 km intervals; 3 km fly rounds at 12 sites, repeated 11 times over ~7 months
+  - Additional traps deployed at selected sites
+- Laboratory and molecular methods
+  - DNA extraction from tsetse stored in cryotubes (desiccant beads) and kept at -20°C
+  - Endosymbiont detection:
+    - Sodalis glossinidius: GroEL PCR
+    - Wolbachia: FtsZ and wsp PCRs
+  - Trypanosome detection:
+    - ITS-PCR to discriminate trypanosome species/subspecies by amplicon size
+    - SRA gene PCR for T. brucei s.l. positives to identify human-infective strains
+  - Quality controls: negative and positive controls included; PCR products visualized on 1.5% agarose gel with GelRed
+  - Sample exclusion: samples negative for Wigglesworthia (n=4) discarded due to suspected insufficient DNA
+- Data file and structure
+  - Dataset: Hurungwe_tsetse_PCR.csv
+  - Variables (binary indicators; 1 = positive, 0 = negative)
+    - Species (Gmm or Gp)
+    - Sex (Male or Female)
+    - Trypanosoma_vivax
+    - Trypanosoma_godfreyi
+    - Trypanosoma_simiae_(Tsavo)
+    - Trypanosoma_simiae
+    - Trypanosoma_congolense
+    - Trypanozoon
+    - Trypanosoma_brucei_rhodesiense
+    - Sodalis_glossinidius
+    - Wolbachia_ftsZ
+    - Wolbachia_wsp
+- Data generation and reporting
+  - 2092 tsetse flies underwent microscopic examination for infections
+  - Molecular analyses performed on a subset after initial microscopy
+  - Amplicon sizes validated against a 100 bp ladder; results recorded as present/absent
+- Potential analyses and data products for data support
+  - Correlations between trypanosome presence and endosymbiont infections
+  - Association of infections with tsetse species and sex
+  - Spatial patterns along the 110 km transect and across the 12 sites
+  - Self-serve data products such as dashboards or pivot tables summarizing prevalence by species, endosymbiont status, and parasite
+- Context and references
+  - Methods and PCR targets aligned with cited works (e.g., ITS-PCR for trypanosomes, SRA gene for human-infective strains, endosymbiont detection assays)
+  - Study contributes to understanding trypanosomiasis, well-being, and ecosystem relationships under the DDDA Consortium and supported by NERC/ESPA
+- Limitations and caveats (from dataset notes)
+  - Some data may be missing or excluded due to DNA quality concerns (e.g., four samples discarded)
+  - Data reflect a single 2014 sampling period and locality; broader generalizability may be limited
+  - Microscopy and molecular results provide presence/absence indicators; quantitative parasite load not included in the provided variables
+
+- References (representative)
+  - Baldo et al. (2006); ChCheng et al. (2000); Dennis et al. (2014); Hamidou Soumana et al. (2014); Njiru et al. (2005); Picozzi et al. (2008); Shereni et al. (2016)

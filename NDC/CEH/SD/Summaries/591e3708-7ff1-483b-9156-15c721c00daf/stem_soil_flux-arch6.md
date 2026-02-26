@@ -1,0 +1,100 @@
+# Amazon Fertilization Experiment (AFEX)
+
+- Context: Study conducted within the Biological Dynamics of Forest Fragments Project (BDFFP) area at KM41 reserve, near Manaus, Brazil. Soils are clay-rich Ferrasols; annual rainfall ~1900–2500 mm with a pronounced dry season (Jun–Oct). Above-ground biomass averaging 322 ± 54 Mg ha⁻¹ (≥10 cm DBH) and mean wood density ~0.67 g cm⁻³; species richness ~280 species per hectare (≥10 cm DBH).
+
+- Objective for data work: Collect, organize, and document multi-variable data from a factorial fertilization experiment to enable analysis of how nutrient additions affect forest carbon flux and related processes, and to support data use across topics.
+
+- Study area specifics: AFEX is a full factorial fertilization experiment with defined plot layout, fertilization schemes, and repeated measurements to enable self-serve data exploration and cross-dataset analyses.
+
+- AFEX experimental design
+  - Full factorial design with eight treatments and four replicates per treatment (32 plots total).
+  - Four independent blocks, each ≥200 m apart.
+  - Plots sized 50 x 50 m; all plots placed in areas with similar soil, vegetation, and topography.
+  - Fertilization regime (annual, split into three applications):
+    - 125 kg ha⁻¹ y⁻¹ N as urea
+    - 50 kg ha⁻¹ y⁻¹ P as triple superphosphate
+    - 50 kg ha⁻¹ y⁻¹ of cations as potassium chloride (KCl)
+    - 50 kg ha⁻¹ y⁻¹ of Ca and 20 kg ha⁻¹ y⁻¹ of Mg supplied as dolomitic limestone
+  - Treatments:
+    - Control
+    - N
+    - P
+    - Cations
+    - N + P
+    - N + Cations
+    - P + Cations
+    - N + P + Cations
+  - AFEX 2.0: Plot delineation and maintenance across blocks/plots described with location figures.
+
+- Data collection methods
+  - Stem respiration (CO2 efflux)
+    - 320 trees total (10 per plot; DBH > 25 cm)
+    - Date: October 2019
+    - Instrument: Infrared gas analyser (EGM-4, PP Systems)
+    - Method: Chamber placed on collar; CO2 accumulation measured for 2 minutes
+  - Soil respiration
+    - Autotrophic and heterotrophic components measured with Li-Cor Li-8100A
+    - Chamber diameter/area: 20 cm
+    - Observation length: 1 min 30 s; pre-/post-purge of 10 s
+  - Collar configurations to partition respiration
+    - Short collar (10 cm depth): captures total soil respiration components
+    - Long collar (25 cm depth) with no windows: excludes roots and mycorrhizae
+    - Deep-with-windows collar (25 cm) previously used until mid-2018; roots started to ingress later
+    - Difference between 25 cm and surface-only collars used to estimate rhizosphere respiration
+  - Measurement timeline
+    - 2017: June–July, September, October, November
+    - 2018: monthly through September
+    - 2019: January, February, April, July, October
+
+- Data products and structure
+  - Data deposition: Spreadsheets deposited in the EIDC system; structured to enable cross-dataset analysis
+  - Stem CO2 efflux dataset (Figure 4)
+    - Columns and meanings (examples)
+      - A = TAG (tree numeric identifier)
+      - B = POM (point-of-measurement mark)
+      - C = Block (experimental block: B1–B4)
+      - D = Plot (plot identifier: P1–P8)
+      - E = DBH (diameter at breast height)
+      - F = Inicial_CO2 (CO2 efflux at start of measurement)
+      - G = Final_CO2 (CO2 efflux at end of measurement)
+      - H = PlotID (combination of block and plot)
+      - I = Date (date of measurement)
+      - J = additional PlotID-like field
+    - Example values show per-tree records with date 24/10/2019
+  - Soil CO2 efflux dataset (Figure 5)
+    - Columns and meanings (examples)
+      - Census (campaign number)
+      - File.Name (project/file identifier; e.g., AFEX)
+      - Date (YYYYMMDD or equivalent)
+      - Block (B1–B4)
+      - Plot (P1–P8)
+      - Group (collars group)
+      - Type (collar type: T = shallow, M = deep with windows, S = deep without windows)
+      - PlotID (block plot combination)
+      - Date_IV (date/time from instrument)
+      - Obs (replication or observation count)
+      - Lin_Flux (CO2 flux; units μmol m⁻² s⁻¹)
+    - Collar Type details:
+      - T: shallow surface collars (all flux components)
+      - M: deep collars with side window (allowed mycorrhizal ingrowth; excluded after 2018 due to root ingress)
+      - S: deep collars without windows (exclude root and mycorrhizae)
+  - Data documentation
+    - Clear column definitions and units
+    - Dates and PlotIDs standardized to enable data joins across stem and soil datasets
+    - Spreadsheet examples illustrate typical entries and formatting
+  - Focus for data use
+    - Enables cross-reference of tree-level respiration with plot-level fertilization treatments
+    - Supports decomposition of soil respiration into autotrophic, heterotrophic, and rhizosphere components
+    - Facilitates time-series analysis across multi-year collection windows (2017–2019)
+
+- References
+  - Duque et al. 2017. Insights into regional patterns of Amazonian forest structure from large terra firme plots. Biodiversity and Conservation.
+  - De Oliveira & Mori 1999. Central Amazonia terra firma forest: high tree species richness on poor soils. Biodiversity and Conservation.
+  - Quesada et al. 2011. Soils of Amazonia with reference to RAINFOR sites. Biogeosciences.
+  - Rankin de Merona et al. 1992. Preliminary results of a large-scale inventory of upland rainforest in the Central Amazon. Acta Amazonica.
+
+- Data use opportunities (Data Support perspective)
+  - Provide self-serve access to the AFEX data by linking stem and soil CO2 efflux measurements to the fertilization treatments and plot metadata.
+  - Enable comparative analyses across treatments, blocks, and time points to assess nutrient addition effects on forest carbon flux.
+  - Support data quality checks by leveraging the explicit column definitions, measurement protocols, and deposition in a centralized system (EIDC).
+  - Facilitate creation of dashboards or reports that summarize respiration fluxes by treatment, collar type, and collection date, with clear unit definitions.

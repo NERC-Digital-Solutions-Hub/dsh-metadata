@@ -1,0 +1,52 @@
+# ECN CBC Bird Data: Common Birds Census (CBC) - Dataset Description
+
+- Overview
+  - Dataset originator: ECN Data Centre, Centre for Ecology and Hydrology (CEH)
+  - Part of the UK Environmental Change Network (ECN) programme; aims to understand environmental change through bird data
+  - Site network and data coordination funded by a consortium of UK government departments and agencies
+- Ownership and governance
+  - Sponsors/owners: Agri-Food and Biosciences Institute; BBSRC; Cyfoeth Naturiol Cymru - Natural Resources Wales; DSTL; DEFRA; Environment Agency; Forestry Commission; Welsh Government; Natural England; NERC; NI Environment Agency; SEPA; Scottish Government; Scottish Natural Heritage
+  - Data users are asked to acknowledge use of the datasets and to send one reprint of any publication citing the data
+- Protocols, standards, and comparability
+  - Standard operating procedures (SOPs) to ensure data comparability across sites; refer to bc.pdf for collection methodology
+  - Usage notes describe the Common Birds Census (CBC) methodology: plot visits during the breeding season, record contacts with birds by sight/sound on large-scale maps, estimate territories (CLUST); nest counts (NEST) may also be recorded
+  - CBC is a national-scale survey; ECN site data provide limited information on precise population-environment relationships; use in conjunction with broader monitoring (e.g., BTO data)
+  - CBC was used at lowland ECN sites until 1999, then largely replaced by the Breeding Bird Survey (BBS); some sites continued CBC for comparability
+- Data content and structure
+  - Core data download fields:
+    - SITECODE: unique ECN site code
+    - SYEAR: sampling year
+    - BI_SPEC: bird species code
+    - CLUST: number of territories (clusters)
+    - NEST: number of nests
+  - Supporting documentation:
+    - ECN_cbc_qtext.csv: records issues affecting data (by site/year/species)
+  - Explanatory information:
+    - Site codes include site name, coordinates, and BTO class (e.g., Drayton, Hillsborough, North Wyke, Rothamsted, Wytham, Alice Holt, Porton Down)
+  - Bird species codes:
+    - Extensive mapping of two-letter codes to species names (e.g., AC = Arctic Skua/Arctic Tern; BD, etc.), covering a wide range of taxa
+- Temporal and site coverage
+  - Site-specific year ranges (illustrative examples):
+    - Alice Holt: 1994–2007
+    - Drayton: 1993–1999
+    - Hillsborough: 1993–2001
+    - North Wyke: 1993–2002
+    - Porton Down: 1994–1998
+    - Rothamsted: 1991–1997
+    - Wytham: 1971–2003
+  - Date ranges vary by site; historical data (pre-ECN) available for some sites (e.g., Wytham)
+  - Some ECN sites continued CBC alongside BBS for comparison for a period
+- Access, usage, and quality
+  - Data should be used with accompanying quality information for proper interpretation
+  - Data download interface provides explicit fields for site, year, species, and counts
+  - Quality and issue information available in ECN_cbc_qtext.csv
+- Limitations and considerations for data leaders
+  - Site-based CBC data have limited capacity to relate population levels to environmental change at fine granularity
+  - For stronger inference on population-environment relationships, pair ECN data with broader monitoring programs (e.g., BTO data)
+  - Data standardization (site codes, species codes) and metadata are key to discoverability, interoperability, and maintainability
+- Attribution and references
+  - Acknowledge ECN data usage and share a reprint of publications citing the data
+  - Related publications and data references include Rennie et al. 2017 (UK Environmental Change Network bird data: 1995–2015)
+- Links and contact
+  - Explanatory and catalog information: CEH catalogue entry ( https://catalogue.ceh.ac.uk/id/813712d4-d1624ede-aff8-cf1c337bdc27 )
+  - Data contact: ECN Data Centre (ecn@ceh.ac.uk)

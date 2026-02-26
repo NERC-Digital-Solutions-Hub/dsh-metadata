@@ -1,0 +1,38 @@
+# Supporting Document Surface temperature, surface oxygen, water clarity, water chemistry and phytoplankton chlorophyll a data from Grasmere 1968 to 2013
+
+- Overview: Long-term monitoring dataset of Grasmere (Cumbria, England) measuring surface temperature, surface oxygen, water clarity, water chemistry, and phytoplankton chlorophyll a from 1968 to 2013.
+- Data provenance: Collected initially by the Freshwater Biological Association; since 1989 by CEH and its predecessor Institute of Freshwater Ecology.
+- Sampling regime: Weekly to fortnightly sampling; started 1968 for some variables; water samples integrated from 0 to 5 m; measurements typically taken from a boat at the lake buoy (deepest part); if buoy access was not possible, samples collected from the shore (Flag 2).
+- Variables and units:
+  - TEMP: Surface temperature, °C
+  - OXYG: Surface oxygen saturation, % air-saturation
+  - SECC: Secchi depth, m
+  - ALKA: Alkalinity, µg CaCO3 per L
+  - PH: pH
+  - NH4N: Ammonium, µg N per L
+  - NO3N: Nitrate, µg N per L
+  - PO4P: Soluble reactive phosphate, µg P per L
+  - TOTP: Total phosphorus, µg P per L
+  - SIO2: Dissolved reactive silicon, µg per L
+  - TOCA: Phytoplankton chlorophyll a, µg per L
+- Data structure and format:
+  - Delivered as CSV with columns: sdate (measurement date), variable (description of the variable), value (measurement value), sign_if_LT_LOD (indicates below detection limit), flag (1 = buoy, 2 = shore).
+- Data quality and limitations:
+  - Raw data, not yet quality controlled or calibrated (except for double entries from 2005 onwards); visually checked.
+  - Some samples were not integrated (shore samples) when buoy access was not possible.
+  - Detection limits are indicated with a “<” sign in sign_if_LT_LOD.
+- Temporal and geographic scope:
+  - Temporal coverage: June 1968 to end of 2013.
+  - Geographic scope: Grasmere Lake, Cumbria, England.
+- Data usage notes:
+  - Suitable for long-term trend analyses and cross-variable relationships, with the caveat of raw QC status and potential sampling method changes over time.
+  - Useful for linking with published studies; dataset has been cited in multiple recent publications.
+- Example publications using the dataset:
+  - 2013: Catchment productivity controls CO2 emissions from lakes (Nature Climate Change)
+  - 2012: Forty years of monitoring water quality in Grasmere: enrichment vs hydraulic flushing on phytoplankton ecology (Freshwater Biology)
+  - 2016: Coupling of carbon and silicon geochemical cycles in rivers and lakes (Scientific Reports)
+  - 2016: Lake surface temperatures (State of the Climate in 2015) (Bulletin of the American Meteorological Society)
+- Implications for data strategy and governance:
+  - Highlights the importance of documenting data provenance, collection methods, and QC status.
+  - Demonstrates need for ongoing quality control, calibration, and standardized metadata to enhance discoverability and reusability across networks.
+  - Underlines potential data gaps due to accessibility and sampling approach (buoy vs shore) over time.

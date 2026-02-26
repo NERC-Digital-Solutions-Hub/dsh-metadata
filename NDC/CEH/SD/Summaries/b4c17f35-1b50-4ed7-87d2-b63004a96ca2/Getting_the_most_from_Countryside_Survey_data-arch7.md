@@ -1,0 +1,9 @@
+# Notes on the downloadable data
+
+- Location confidentiality: precise coordinates of Countryside Survey (CS) squares are withheld to preserve representativeness; external users cannot identify square locations finer than 100 square km, so you cannot determine if squares fall within defined areas below this threshold.
+- Data origin and sampling design: CS field data come from a sample of 1 km squares across GB. Each selected square is mapped and measured at two levels—per-square and within-square—covering a range of data types from binary to continuous (e.g., vegetation, soils).
+- Non-random, stratified sampling: The sample is stratified by ITE Land Classification. Land classification details have evolved from 32 to 42 to 45 classes, with country-specific classifications (England: 21, Wales: 8, Scotland: 16). Estimates that ignore stratification may be unrepresentative.
+- Excluded squares: Squares that are >90% sea or >75% urban are excluded from field survey. Official GB estimates assume excluded squares have vegetative land composition similar to sampled squares; bias is generally negligible except in regions with high sea/urban proportions.
+- Estimation approach: GB land-class estimates are produced using ratio estimates weighted by the vegetative land area within each land class. Since 1998, standard errors and confidence intervals are estimated via bootstrap due to feature skewness.
+- Implications for GIS work: When creating map-based products, account for stratified sampling and weighting by vegetative land area; be cautious with aggregations across regions or land classes and acknowledge confidentiality constraints limiting precise locations to 100 km².
+- References: Barr et al. (1993), Cochran (1963), Efron & Tibshirani (1993).

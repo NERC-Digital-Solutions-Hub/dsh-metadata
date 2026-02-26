@@ -1,0 +1,30 @@
+# The Common Standards Monitoring guidance documents for UK habitats
+
+- Overview
+  - This dataset provides lists of species that occur in the Common Standards Monitoring (CSM) guidance documents and links them to both CSM habitats and National Vegetation Classification (NVC) communities.
+- Data sources and purpose
+  - Species data (vascular plants and charophytes) are extracted from JNCC guidance documents.
+  - The data are intended to support mapping and GIS-based visualization of habitat indicators across UK landscapes.
+- Data collection and quality control
+  - Initial extraction by Dr Kevin Walker from JNCC documentation.
+  - Some genera or descriptive terms (e.g., Carex spp.; Carex with leaves > 5 mm) were replaced by species-level names based on author knowledge and NVC occurrences.
+  - Habitat experts validated the selections during National Plant Monitoring Scheme (NPMS) development (Pescott et al. 2019).
+  - Dr Oli Pescott performed manual checks, matched taxa to NPMS indicator species, and verified names against the BSBI database (with automated look-ups and manual verification). Results are included in the deposit.
+- Data structure and datasets
+  - csmIndicatorSpecies.csv
+    - Key fields include: Species_(Stace_1997), CSM_indicator_status, NPMS_Indicator, CSM_guidance, CSM_habitat, NVC_communities, NVC_group, CSM_comment.
+  - csmHabitatsAndRefs.csv
+    - Key fields include: CSM_guidance_document, CSM_habitat_included, British_NVC_communities_covered, CSM_guidance_document_URL.
+  - nameLookup.csv
+    - Key fields include: Species_(Stace_1997), DDb_matched_name_(full/taxon_name/qualifier/authority), DDb_accepted_name_(full/taxon_name/...), taxon_errors/warnings.
+- How to use in GIS and map-based products
+  - Join indicator species to CSM habitats and corresponding NVC communities to create habitat-specific maps and visualizations.
+  - Use NPMS_indicator status to filter or flag species of interest in maps.
+  - Leverage nameLookup to align taxon names with BSBI-registered nomenclature for consistent labeling across layers.
+- Considerations, caveats, and quality notes
+  - Some updates to genus-level names and descriptive terms were made during data preparation, requiring awareness of potential nomenclature differences.
+  - Data were curated with expert validation and cross-checked against BSBI and NPMS references to improve reliability for GIS applications.
+- Related references
+  - National Plant Monitoring Scheme (NPMS) indicators (Pescott et al. 2019)
+  - BSBI database (British Plant Society)
+  - Stace, NFOBI (Stace 1997) and updated nomenclature (Stace 2019)

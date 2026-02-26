@@ -1,0 +1,72 @@
+# THE MORPHOLOGY, MINERALOGY AND GENESIS OF SOME SOILS ON THE MOOR HOUSE NATIONAL NATURE RESERVE
+
+- Purpose of this section for GIS specialists
+  - Documents horizon-level soil descriptions and bedrock context from limestone grassland sites to support depth-aware GIS mapping, soil-peat relationships, and hydro-geomorphological modeling.
+  - Emphasizes profiles associated with blanket peat, drift/head materials, and their interaction with limestone outcrops, springs, and drainage features.
+
+- Horizon data from profiles (illustrative examples)
+  - Peaty Gleyed Podzol (Profile 13, Moss Burn trench)
+    - Surface horizon (ins): Very dark grey friable loam; strong fine to A, medium crumb; root mat; moderate organic matter; gradual boundary; vegetation: Callunetum.
+    - Buried/Rooted horizon: Dark reddish brown friable stony loam; sharp irregular boundary; abundant roots; earthworms.
+    - Subsurface features: Black, wet, greasy peaty humus with sharp boundary; dark grey clay loam with roots; presence of iron pan and root mats at the upper pan surface.
+    - Bedrock context: D bedrock – Scar Limestone.
+    - Vegetation associations noted: Calluna litter; peat-influenced horizons.
+  - Peaty Gleyed Podzol (Profile 14, Moss Burn – west end)
+    - Horizon sequence indicates A/M horizons with peat-derived material; features include reddish-yellow mottles, channels, and low OM in mineral horizons.
+    - A/B horizons show clay loam textures with root channels; iron-oxides mottling in deeper horizons; clear pan development (CB/3 pan) in some intervals.
+    - Soil structure described as clay loam to loam with vigorous mottling and poor drainage in places; D bedrock: Scar Limestone.
+    - Vegetation associations reflect transition areas (Calluna litter; presence/absence of calcicoles depending on depth).
+  - General notes across profiles
+    - Bedrock control evident: Scar Limestone as D horizon in both profiles.
+    - Iron pans, clay skins along root channels, and peat-derived humus layers are recurring features in horizon sequences.
+    - The profiles illustrate interfaces between mineral soils and peat, with peat thickness affecting drainage, porosity, and horizon development.
+    - Vegetation contexts (e.g., Callunetum) are linked to soil moisture and substrate.
+
+- Major processes shaping soils (15.1–15.5)
+  - Influence of macro- and microtopography (15.1)
+    - Three limestone types (Tyne Bottom, Scar, Four Fathom) drive different topographic expression; thicker limestones yield more pronounced scarps.
+    - Hummock–hollow microtopography, bedrock outcrops, and peat cover interact to shape soil thickness and boundaries.
+  - Springs and base-level seepage (15.2)
+    - Springs at limestone bases sustain saturated conditions, promote instability, and drive sapping that can erode peat and superficial drift.
+    - Springs can re-shape scarps and influence peat removal and soil development.
+  - Shake holes and swallow holes (15.3)
+    - Drainage hollows within peat can deepen erosion; swallow holes pre-date peat and can be infilled by drift, shaping later peat formation.
+    - Large swallow holes (pre-glacial) may control areas of peat and drift distribution and subsequent soil evolution.
+  - Dominant site factors (15.4)
+    - Some sites (Hard Hill, Moss Burn – Flush, Little Dodgen Pot Sike) show erosion driven by topography, springs, shake/swallow holes; thickness of peat and drift reflects exposure to erosion.
+  - Surface water drainage and landscape history (15.5)
+    - Surface drainage has been a principal erosion agent; streams often re-excavate valleys cutting into limestone bedrock, with some sections becoming underground drainage later.
+    - Pre-glacial and inter-glacial phases determined the distribution of drift, head, and peat; peat erosion began at different times (e.g., major peat erosion inferred around 500 B.C. in this region; earlier pre-glacial drainage established 8800–5500 B.C.).
+    - The extent of superficial material remaining on outcrops depends on the timing and sequence of stream downcutting and underground drainage re-establishment.
+    - Some areas retain thicker superficial deposits where erosion was slower (non-stream-associated sites); others were thinned rapidly where streams actively downcut.
+    - The overall pattern is a mosaic controlled by microtopography, stream activity, and the timing of peat formation and erosion.
+
+- Data implications for GIS workflows
+  - Required data layers and attributes
+    - Depth-resolved horizon classifications with color, texture, structure, boundary type, and presence of features like iron pans and root skins.
+    - Bedrock layer indicating Scar Limestone (and other relevant limestones) with depth-to-bedrock attributes.
+    - Peat presence and thickness indicators, including blanket peat islands and margins.
+    - Microtopography indicators: hummock–hollow features, grykes, rock benches, limestone outcrops, and topographic breaks.
+    - Proximity to springs and base-of-outcrop seepage points; evidence of sapping effects.
+    - Features affecting drainage evolution: shake holes, swallow holes, and their spatial associations with peat and drift.
+    - Proxies for provenance and input: drift/head materials versus bedrock-derived residues; indicators of aeolian vs colluvial inputs (for uncertainty mapping).
+    - Chronology markers: timing of peat formation, major erosion events, and post-glacial drainage re-establishment (to support dynamic land-cover modeling).
+  - Suggested GIS products and layers
+    - Depth-aware soil type polygons (rendzinas, brown calcareous, acid brown earths, peaty podzols/gleys) with horizon-level attributes.
+    - Peat margin/dynamics layer showing blanket peat extents and islands across sites.
+    - Bedrock–soil interface layers, including depth to Scar Limestone where relevant.
+    - Microtopography layer capturing hummock-hollow distribution, outcrop edges, and scarps.
+    - Hydrology layers for springs, seepage zones, surface streams, and inferred underground drainage networks.
+    - Proxies for provenance with uncertainty fields (aeolian, colluvial, drift) to support uncertainty mapping.
+  - Validation and provenance
+    - Data validated via field horizon descriptions, trench profiles, transects, and cross-sections; cross-reference to bedrock lithology and microtopography.
+    - Use of historical site observations (e.g., Moss Burn, Rough Sike, Currick, Hard Hill) to calibrate spatial boundaries and depth relationships.
+  - Practical considerations
+    - Expect sharp boundaries at transitions due to microtopography; reflect abrupt changes where appropriate.
+    - Incorporate time-series or staged erosion models to capture peat thickening/thinning and drainage re-establishment.
+    - Acknowledge uncertainties around pre-glacial surface extents and the relative contributions of surface water drainage versus underground drainage in different locales.
+
+- Key takeaways for GIS specialists
+  - Moor House soils comprise distinct subtypes (peat-influenced podzols/gleys and related mineral horizons) controlled by three limestone types and strongly modulated by microtopography and peat dynamics.
+  - A robust GIS product should integrate horizon-level soil attributes, peat margins, bedrock context, microtopography, and hydrological features, with explicit layers for provenance uncertainty (aeolian vs colluvial vs drift).
+  - Including historical drainage timelines and features like springs, shake holes, and swallow holes will enhance predictive modeling of drainage, nutrient status, and vegetation associations across carbonate terrains.

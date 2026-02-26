@@ -1,0 +1,27 @@
+# Details of data structure
+
+- Purpose: Supplement to the supporting documentation for data series described in Clocaenog_supporting documentation_Data series.rtf, outlining how the dataset is structured.
+- Dataset format: One spreadsheet with 38 columns.
+- Columns and content:
+  - Date
+  - Soil temperature (°C) at 5 cm soil depth for plots 1–9
+  - Soil temperature (°C) at 20 cm soil depth for plots 1–9
+  - Air temperature (°C) 20 cm above the soil surface for plots 1–9
+  - Soil moisture (m3/m3) for plots 1–9
+- Row-level details:
+  - The second row contains the plot number information.
+  - Empty cells indicate that data are not available for that day.
+- Data granularity and scope:
+  - Daily measurements across multiple plots and variables (temperature at two depths, air temperature, and soil moisture) for plots 1–9.
+- Units:
+  - Temperature: degrees Celsius
+  - Soil moisture: cubic metres per cubic metre (m3/m3)
+- Data quality considerations:
+  - Missing data are indicated by empty cells; assess patterns of missingness to determine data usability.
+  - The document notes a potential discrepancy in column count (stated as 38 columns) vs. the described content (columns for multiple plots and variables), suggesting a need to verify the exact schema with the supporting documentation.
+- Metadata and provenance:
+  - This file serves as structural documentation for the data series and should be cross-referenced with the Clocaenog supporting documentation for full metadata and context.
+- Practical implications for data leaders:
+  - Useful for planning data quality checks, gap analysis, and data discovery workflows.
+  - Supports cross-plot and cross-depth comparisons for soil temperature and moisture, but requires confirmation of column mappings and consistent metadata.
+  - Highlighted need for clear metadata, data standards, and discoverability to address issues such as data gaps and ambiguous column definitions.

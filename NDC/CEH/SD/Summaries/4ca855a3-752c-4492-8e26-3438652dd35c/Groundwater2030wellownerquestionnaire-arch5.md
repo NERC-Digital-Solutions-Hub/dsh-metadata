@@ -1,0 +1,50 @@
+# Well owner questionnaire
+
+- Purpose and scope
+  - Collects detailed information on groundwater use, water sources, water safety practices, storage, land ownership, housing characteristics, and household food security.
+  - Designed for well owners in areas such as Manyatta and Migosi, with data to support groundwater management and governance.
+- Respondent and consent
+  - Fields capture surveyor name, date, area, and Well ID.
+  - A key step: confirm the well owner is still willing to participate before proceeding.
+
+- Instrument structure and flow
+  - Part 1: Groundwater Use
+    - Q1: Total water collected yesterday (in 20-litre jerrycans; include all users).
+    - Q2-Q3: Whether water is sold; if yes, quantity sold yesterday and identify a random neighboring buyer.
+    - Q4: Land ownership status of the well site.
+    - Q5-Q6: Water safety practices and methods used to make water safer to drink; storage method for stored water.
+    - Q7: Availability of alternative water sources besides the well (e.g., piped water, boreholes, rainwater, vendors, surface water, bottled water, etc.).
+    - Q8: For each water source, which purposes it is used for (drinking, cooking, washing, etc.) and reasons for source choices (with coding).
+    - Groundwater2030: Additional prompt for reasons for source choice (code-based).
+  - Groundwater2030 (socio-economic and housing context)
+    - Q1: Type of household toilet facility.
+    - Q2: Household ownership of assets (clock, electricity, TV, landline/mobile phone, refrigerator).
+    - Q3: Main cooking fuel.
+    - Q4-Q5: Cooking location and presence of a separate kitchen.
+    - Q6: Vehicle ownership.
+    - Q7: Main wall material (observed).
+    - Q8-Q13: Food security and consumption indicators
+      - Meat, rice, and wheat consumption in last 7 days (days served).
+      - Cassava-only meals in last 7 days.
+      - Hunger/adequacy: days not enough to eat in last 30 days; months with at least one day without enough to eat in last 12 months.
+      - Purchasing frequency for maize, maize meal, and potatoes.
+      - Weeks with stock of maize/maize meal/potatoes in past 12 months.
+- Data elements and coding
+  - Responses are typically coded numerically (e.g., YES-1, NO-0, DK-9) with explicit options for DK/Don't Know.
+  - Includes a broad range of categorical and numeric fields, some with extensive skip patterns and conditional logic.
+  - Several open-ended placeholders (e.g., OTHER) and observational fields (wall materials) to be documented.
+- Data quality and interoperability considerations
+  - Conditional branching requires careful data capture and validation (e.g., Q2 affects Q3; Q5/Q6 influence Q6; Q8 matrix requires per-source, per-purpose entries).
+  - Standardization of units (water in jerrycans, daily/weekly/monthly timeframes) and consistent coding across all questions.
+  - Handling of missing or Don’t Know responses (DK-9) and potential need for imputation guidelines.
+- Governance and privacy considerations for data stewards
+  - Consent and participation confirmation are essential; owner identifiers (Well ID, owner name) require appropriate privacy controls.
+  - Metadata needs to document instrument version, date, area, coding schemes, and recall periods (yesterday, last 7 days, last 30 days, last 12 months).
+  - Data storage and access controls should protection-sensitive information; consider anonymization or separation of personally identifiable information for sharing beyond the survey team.
+- Practical challenges for implementation
+  - High complexity due to the extensive water-source usage matrix (Q8) and numerous conditional questions.
+  - Potential data quality issues from recall bias (yesterday, last 7/30/12 months) and respondent interpretation of “food not enough” or “days of stock.”
+  - Need for thorough enumerator training to ensure consistent observation (Q7 wallMaterial) and accurate coding of responses.
+- Relevance to data stewardship goals
+  - The dataset will support analysis of groundwater reliance, water safety practices, access to multiple water sources, and household socio-economic status.
+  - Requires robust data governance to ensure discoverability, comparability, and reusability across datasets and projects.

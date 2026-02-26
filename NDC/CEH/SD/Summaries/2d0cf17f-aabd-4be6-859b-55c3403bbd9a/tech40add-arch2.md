@@ -1,0 +1,88 @@
+# CORINE land cover technical guide - Addendum 2000
+
+- Purpose and scope
+  - Addendum to the CORINE Land Cover Technical Guide (CEC, 1994) to provide new information not in the original guide.
+  - Describes methodological developments for producing the CORINE Land Cover (CLC) database, especially softcopy interpretation and (semi-) automated classification conversions.
+  - Extends the CLC nomenclature, including considerations for Central and Eastern Europe, and adds generalisation rules for mapping at 1:100 000.
+  - Improves understanding of landscape contents and supports data collection and updates.
+
+- Target audience and aims for analysts monitoring the environment
+  - Intended for those responsible for collecting and updating CLC data, with emphasis on standardized, transparent methods.
+  - Emphasises consistent formats for environmental health and policy performance over time.
+  - Highlights how to verify data quality, clean and transform data, and present outputs (reports, maps, charts).
+
+- Part I: State-of-play and production methods of the CORINE land cover database
+  - Hardcopy inventory
+    - Original approach: computer-aided photo-interpretation using transparencies over 1:100,000 hardcopy prints.
+    - Ancillary data used to confirm land cover contents; recognition of homogeneous zones, scale relevance, and border delineation challenges.
+  - Softcopy inventory
+    - Move to softcopy interpretation on-screen using GIS; facilitates data handling and integration with image processing.
+    - Integration with GIS systems and multiple raster/vector data types; emphasis on data portability and interoperability formats (e.g., geoTIFF, Arc/Info formats).
+  - GIS and data management
+    - Emphasises multi-dataset viewing, multi-window analysis, and robust import/export capabilities.
+    - Highlights the value of linking alphanumeric attributes, text documents, and images to geographic objects.
+  - System customization and functionality
+    - Discusses customizable user interfaces, software development levels, and adherence to standards to ease porting across OS environments.
+    - Identifies a minimal required functionality set: geometry/attribute editing, image management, various queries, database management, import/export, georeferencing, and basic statistics.
+  - Co-pilot software
+    - JRC’s Co-pilot provides an integrated GIS-based environment for softcopy production, maintenance, and updates; data is managed continuously across time.
+    - Describes data structures (points, lines, surfaces) and core ASCII-based data structures (Catalogue, Typelook, GraphicSet).
+  - Conversion of (semi-)automated classifications
+    - Warns of limitations of automated classification for CLC due to image quality variability, differences between land cover versus land use, and the need for human interpretation for complex classes.
+    - Notes that automated methods can be valuable for positional accuracy and generalisation, but require careful oversight.
+  - Methodological aspects of a conversion
+    - Spatial generalisation reduces data complexity but adds errors; outlines three types of spatial generalisation procedures (no contiguity, contiguity-aware, time-varying attributes).
+    - Common UK/Swedish/Finnish approaches summarized: reclassification, aggregation, amalgamation, smoothing, simplification; often involve hierarchical relabeling and careful handling of class boundaries.
+  - Specific conversion quality issues
+    - Distinguishes polygon (map-based) vs raster (cell-based) data models; notes that, at suitable pixel sizes, boundary position errors are often minor.
+    - Identifies main error sources in multispectral classification: spectral confusion, mixed pixels, system errors, and conceptual misalignments with land cover classes.
+  - Statistical properties and generalisation
+    - Explains a phase-space model for assessing relationships between land cover accuracy and derived measures; notes the predominance of non-parametric approaches due to nominal class data.
+    - Describes the trade-off in generalisation: simplicity and legibility versus increased error in location and attributes; standard quality measures may not capture all generalisation effects.
+  - Validation methodology
+    - Validation aims to evaluate identification and delineation according to CLC methodology, not to reassess data collection methods themselves.
+    - Uses random sampling to replicate data collection and builds a confusion matrix to evaluate omissions and commissions.
+    - Supports stratification to enable targeted accuracy assessment across nomenclature levels or regions.
+  - Sampling methodology
+    - Employs stratified random sampling with area-proportionate point placement to minimize standard error.
+    - Outlines two-phase process: (1) select strata and determine points per stratum; (2) draw sampling points within strata and land cover units.
+  - Determination of the number of sampling points
+    - Points per stratum calculated via a binomial-based formula considering prior error rate and acceptable standard error; includes practical caps (e.g., no more than ~2 points per km² in small strata).
+  - Random sampling steps
+    - Step 1: area-proportional, systematic selection of land cover units within a stratum.
+    - Step 2: determine within-unit sampling point locations using pure random, systematic, or grid-based strategies depending on the number of points.
+  - Interpretation of random sampling points
+    - Validation interpretation is performed on-screen, with a fixed scale (not exceeding 1:40,000) to preserve comparability with the original data.
+    - Validation circles are interpreted to assess land cover within a minimum mapping unit framework.
+  - Conducting validation and verification
+    - Validation produces plots and a summary table; topology checks and error documentation are performed.
+  - The raising (estimation of accuracy)
+    - Calculates the estimated correctly classified area per stratum and overall accuracy, with formulas for aggregating across strata and nomenclature levels.
+    - Provides standard error propagation formulas for aggregated accuracy estimates.
+
+- Part II: Addendum to the CORINE land cover nomenclature illustrated guide
+  - Introduction and methodology
+    - Builds on over a decade of image interpretation experience; refines definitions without changing core class content.
+    - Aims to provide enhanced guidance for interpreting and mapping CLC classes at 1:100 000, including typical patterns, textures, representative photos, and country-specific particularities (Phare countries).
+  - General content and structure
+    - Each class is described with refined or extended definitions, inclusion/exclusion criteria, generalised patterns, representative photographs, and note on country-specific particularities.
+  - Representative class expansions and generalisation rules (highlights)
+    - 1.1 Urban fabric: criteria for continuous (111) vs discontinuous (112) urban fabric; thresholds for impermeable surfaces (e.g., 80% for continuous urban fabric) and handling of mixed urban forms.
+    - 1.2 Industrial, commercial, and transport units (121) and related classes, including transport and parking infrastructures.
+    - 2.x Agricultural land classes (e.g., 211 Non-irrigated arable land, 212 Permanently irrigated land, 213 Rice fields, 221 Vineyards, 222 Fruit trees and berry plantations, 231 Pastures, 242 Complex cultivation patterns with scattered houses, etc.)
+    - 3.x Forests and natural vegetation
+      - 3.1 Forests, 3.2 Shrubs and/or herbaceous vegetation associations, 3.3 Open spaces with little or no vegetation, and 3.4 Specific forest-related categories (e.g., 324 Forest degradation and 331-335 dune/rock/altitude-related classes).
+    - 4.x Inland and coastal wetlands and water bodies
+      - 411 Inland wetlands, 412 Open bogs, 421 Salt marshes, 422 Salines, 431-435 various other natural features, and 5.x Inland and marine waters (5.1 Inland waters, 5.2 Marine waters, with related sub-classes such as 511, 512, 521, 522, 523).
+  - Practical mapping guidance
+    - Provides patterns, textures, and representative drawings/photos to assist interpreters in identifying and classifying landscape objects.
+    - Includes long lists of inclusion criteria, typical textures, and explicit exclusions to reduce misclassification.
+  - Extension and particularities
+    - Notes country-specific considerations (Phare countries) and how general patterns apply across Europe.
+  - References
+    - CEC (1994), other methodological and quality-management references that underpin the addendum.
+
+- Practical takeaway for analysts
+  - The addendum formalises the shift toward softcopy GIS-based production, with explicit validation, sampling, and generalisation procedures to ensure data quality and comparability over time.
+  - It provides enhanced guidance for interpreting and classifying land cover across Europe, with particular emphasis on Central and Eastern Europe, and clearer rules for generalisation at 1:100 000.
+  - It offers expanded, detailed class descriptions and patterns to aid consistent interpretation, along with tools (Co-pilot, GIS requirements) to support scalable, auditable monitoring and reporting.

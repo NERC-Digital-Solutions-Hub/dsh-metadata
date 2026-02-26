@@ -1,0 +1,34 @@
+# Supporting documentation
+
+- Overview
+  - This dataset contains hemispherical photographs of canopy structure in 0.5 ha permanent sample plots, used to estimate leaf area index (LAI) at plot level.
+- Context and purpose
+  - Part of the NORDESTE project in northeast Brazil (Caatinga biome) to address neglected biodiversity and ecosystem-function research.
+  - LAI relates to biomass, phenology, growth, water and nutrient use, carbon allocation and stocks, biodiversity, and ecosystem functioning; LAI is estimated via canopy transmittance analysis from hemispherical photos.
+- Data content and structure
+  - Two plot configurations:
+    - 12 plots (sites) with approximately 36 photos per site.
+    - 14 plots (sites) with approximately 50 photos per site.
+  - A detailed table lists each plot with:
+    - Plot ID, name, location (state, country), coordinates (latitude/longitude),
+    - Number of photos, file size (MB), and capture date.
+  - Total across all plots: 1132 photos totaling 2607.8 MB.
+  - Notes on metadata:
+    - MOR plots have photos taken on two different dates (2017 and 2018).
+    - Some JPEG dates are incorrect (photographs dated 2017 were actually taken in 2017; MOR data spans two years).
+- Data collection methods
+  - Equipment: Nikon D100 camera with Sigma 4.5 mm F2.8 fisheye lens.
+  - Procedure: in overcast conditions, one photo at each intersection of four subplots (for some plots) or at the center of plots; top of camera facing north; height ~1 m.
+  - Coverage: photos provide a representative LAI value for the entire 0.5 ha plot, not for individual subplots (vegetation height can allow canopy capture up to about 20 m from the camera).
+  - Quantity variability: photo counts per plot can vary due to camera trigger issues or sky condition changes; some images may be rejected after processing.
+- Data quality and caveats
+  - Some dates in the metadata are incorrect; MOR data include two dates (2017 and 2018).
+  - Processing yields plot-level LAI estimates rather than subplot-level values.
+  - The dataset may require careful alignment of metadata with image files during analysis.
+- Potential uses
+  - Estimating plot-level LAI for Caatinga forests to inform biomass, carbon stocks, and ecosystem-function research.
+  - Supporting calibration/validation of remote-sensing LAI products at plot scales.
+  - Integrating with soil and climate data to study plant, soil, and climate relationships across Caatinga vegetation types.
+- Metadata and access details
+  - Per-plot metadata includes plot name, location, coordinates, number of photos, file sizes, and capture dates.
+  - Total dataset size: 2607.8 MB across 1132 photos.

@@ -1,0 +1,32 @@
+# Research context
+
+- Overview: Strengthening Thailand's Agricultural Drought Resilience (STAR) is a three-year project (2018–2021) funded by UK Research and Innovation (UKRI) and Thailand Science Research and Innovation (TSRI). UK partners include the Centre for Ecology and Hydrology (CEH) and Cranfield University; Thai partners include Chulalongkorn University, King Mongkut's University of Technology Thonburi (KMUTT), and Chiang Mai University.
+- Aim: Develop insights into drought characteristics, impacts on food production and farmers' livelihoods in Thailand, and enhance drought resilience in agriculture through a participatory approach. Detailed work focuses on the Ping catchment, with national scope.
+- Problem context: Drought is a slowly evolving natural disaster. Effective monitoring, warning, and tailored stakeholder communication are crucial to proactive management. Gaps identified in hydrometeorological and socioeconomic databases, and in drought communications between decision makers and the public.
+- Dataset purpose: Identify specific socioeconomic impacts of historical droughts on agricultural communities in the Ping catchment, determine factors affecting adaptation decisions, and analyze drought communications among farmers at the local scale.
+- Data collection design: 
+  - Villages in the Ping catchment with drought history were selected to represent typical agricultural production typologies.
+  - 176 farm household questionnaires completed in January 2020.
+  - Respondents distributed across Chiang Mai (n=41), Lamphun (n=45), Kamphaeng Phet (n=45), and Tak (n=45).
+  - Village headperson selected farm household heads; enumerators trained; informed consent obtained; STAR project presence ensured quality control.
+  - Data collected included socioeconomic, agricultural, risk appraisal, adaptation appraisal, adaptation behavior, and drought communications.
+  - Instrument originally in English, translated to Thai, then back to English for analysis.
+  - Ethical approval: Cranfield University Research Ethics System (CURES) CURES/9419/2019.
+- Data content and structure:
+  - The dataset comprises 176 entries, anonymised with a unique identifier (identifier_id2).
+  - Both quantitative and qualitative data; units aligned with the questionnaire.
+  - Columns A–M contain participant identifiers and interview location (province, village, district).
+  - Columns N onward contain responses; headers clearly indicate the corresponding question (e.g., Q1_age in column N).
+  - Multichoice questions are represented across multiple columns (e.g., Q5_1 to Q5_12).
+- Documentation and guidance:
+  - Users are strongly advised to refer to the Questionnaire STAR Survey Questionnaire.docx for guidance on interpretation and analysis.
+  - Data collection and description emphasize transparency and the ability to link responses to location and questions for analysis.
+- Analytical opportunities for analysts:
+  - Explore correlations between risk/adaptation appraisal and actual adaptation behaviors.
+  - Assess how drought communications relate to adaptation decisions and farmer livelihoods.
+  - Compare across provinces to identify regional variations and drivers of resilience.
+  - Integrate qualitative responses with quantitative data to enrich understanding of decision-making under drought.
+- Data quality and limitations:
+  - Cross-sectional data from a specific time point (January 2020) in selected drought-exposed villages.
+  - Representativeness may be constrained to Ping catchment and the selected typologies.
+  - translations and back-translation may influence nuances; rely on the original STAR Survey Questionnaire for guidance.

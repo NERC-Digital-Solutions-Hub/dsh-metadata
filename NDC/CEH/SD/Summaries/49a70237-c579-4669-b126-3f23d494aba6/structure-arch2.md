@@ -1,0 +1,25 @@
+# Details of data structure
+
+- The dataset comprises 10 RTF and 8 CSV documents containing interview transcripts from villages; interviewee names are anonymized.
+- Data modules and their scope:
+  - Seasonal_calendar (3)
+    - Led by a researcher and a translator (Portuguese - Changana) with a group of 3-8 villagers in three study villages.
+    - Field protocol followed; notes taken in Portuguese/English.
+    - English transcripts compiled after field work.
+  - Trend_analysis (7)
+    - Led by the lead researcher and a translator (Portuguese - Changana) with a group of 3-8 villagers in each study village.
+    - Field protocol followed; notes taken in Portuguese/English.
+    - English transcripts compiled after field work.
+  - Village_profiles (1)
+    - Two-week pre-visit in July 2014; 11 villages in Mabalane visited.
+    - Interviews with village leaders and/or other representative people.
+    - Data recorded in Portuguese and English; transcripts compiled after field work.
+  - Wealthranking_qual (7)
+    - Qualitative information recoded during wealth rankings.
+    - In each study village a wealth ranking was undertaken.
+    - Data recorded in Portuguese and English; transcripts compiled after field work.
+- Language and translation details:
+  - Translations involve Portuguese and Changana; notes and transcripts are compiled in English after fieldwork.
+- Data processing and storage:
+  - Transcripts are compiled post fieldwork; data from multiple sources and languages are standardized into the documented formats (RTF/CSV).
+  - Participants’ names remain anonymized to protect confidentiality.

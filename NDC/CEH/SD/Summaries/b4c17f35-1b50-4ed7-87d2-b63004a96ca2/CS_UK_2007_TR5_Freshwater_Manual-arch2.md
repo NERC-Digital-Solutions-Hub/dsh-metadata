@@ -1,0 +1,113 @@
+# Countryside Survey in 2007
+
+- Purpose and scope
+  - Use standardised, time-series data to demonstrate environmental condition and policy performance over time.
+  - Provide topic-specific analyses for headwaters (streams) and ponds across Great Britain.
+  - Emphasise data quality, verification, cleaning, transformation, storage, and accessibility for reuse.
+
+- Headwaters survey (CS2007 Headwater Survey)
+  - Objectives
+    - Re-survey 425 squares from CS2000 for headwater streams.
+    - In 629 CS2007 squares containing ponds, randomly select one pond for in-depth survey.
+    - For headwaters: macroinvertebrate community, hydromorphology, physical characteristics, aquatic plant community, and water chemistry.
+  - Sampling design and scope
+    - All 425 CS2000 headwater squares re-surveyed; sampling stretch is 500 m along the watercourse.
+    - 25 of the 425 squares include a new site on a smaller watercourse to ensure headwater focus.
+    - In ponds, survey one randomly selected pond per square containing ponds.
+  - Key components surveyed
+    - Macroinvertebrate community (RIVPACS method)
+    - Hydromorphological status (River Habitat Survey RHS)
+    - Aquatic plant community (MTR method)
+    - Water chemistry (pH, conductivity, SRP, TON, alkalinity)
+  - Data capture and tools
+    - On-site data entry via RAPID (RHS data into a tablet-based database)
+    - RHS data input designed to mirror 2003 RHS guidance; integrated validation and on-site quality checks
+    - Environmental data and sampling area data recorded on standardized forms (RIVPACS Sample Area Form)
+  - Sampling procedures and site layout
+    - Sampling areas defined to capture modal conditions; 500 m RHS stretch centered on macroinvertebrate sampling site when possible.
+    - Salient measurement points include width, depth, substrate, velocity, and habitat composition.
+    - Photographs required for macroinvertebrate area and RHS reach, with marker boards for relocation.
+  - Water chemistry sampling specifics
+    - One indicative water sample collected downstream of macroinvertebrate sampling, with on-site filtration for SRP, TON, and alkalinity.
+    - Conductivity and pH measured in situ with Hanna Combi meter; calibrated prior to use.
+  - Macroinvertebrate sampling specifics
+    - Three-minute active sampling using a 25 cm2 pond-net (900 μm mesh) plus one minute of manual search.
+    - Sampling across habitats in proportion to their cover; avoid overly broad sampling that mixes disparate habitats.
+    - Post-sampling handling includes fixation with 40% formaldehyde to reach roughly 4% formaldehyde equivalent, proper labeling, and storage in designated containers.
+  - Environmental data collection
+    - Record site environmental data (width, depth, substrate, habitat types, channel shading, water clarity) on the RIVPACS Sample Area Form.
+    - Photograph, map, and sketch the sampling area to aid relocation and context.
+  - Habitat and substrate assessment
+    - Substratum categorized into four size classes; percentage cover estimated across full sampling width.
+    - Record presence of bedrock, filamentous algae, moss, and higher plants; shading and turbidity assessed.
+  - Data handling and validation
+    - Use RAPID for RHS data; data validated on-site with a “Check Data” function to ensure completeness.
+    - RIVPACS environmental data entered with the RIVPACS Form; a corresponding Sketch Map and site board used for relocation.
+  - Macrophyte data (MTR)
+    - Aquatic macrophytes surveyed over a 100 m reach centered on the macroinvertebrate sampling point.
+    - Record presence and approximate percent cover of submerged, floating-leaved, and emergent species; wading and grapnel sampling used where appropriate.
+  - Quality control
+    - All field surveyors to hold Environment Agency RHS/RIVPACS training/certification; regular team rotation to maintain consistency.
+    - Approximately 7% of headwater sites audited by CEH staff.
+    - Field survey checklist to ensure all tasks completed.
+
+- Pond condition survey (CS2007 Pond Condition Survey)
+  - Overview and objectives
+    - Integrate pond biology into CS2007 across CS squares containing ponds.
+    - Survey pond boundary, physical attributes, water chemistry, macrophyte community, and environmental context.
+  - Mapping and survey pond
+    - Ponds mapped in CS2007 Pond Mapping Recording Sheet; one “survey pond” per square selected for in-depth assessment.
+    - If ponds lie on a square boundary, survey the entire pond (including area outside the square) to ensure complete data.
+  - Procedures and steps
+    - Before disturbing sediment, collect turbidity estimate and water chemistry if water is present.
+    - Environmental survey (amenity use) followed by macrophyte survey, and then finish with data checks and dispatch of samples.
+    - Take photos of ponds with square number clearly visible; draw pond boundary sketch and estimate area; record drawdown height and proportion of water present.
+  - Water chemistry and turbidity
+    - Measure conductivity and pH in the field.
+    - Use a filtered 50 ml water sample for SRP, TON, and alkalinity following the same filtration protocol as headwaters.
+  - Sediment and pond base
+    - Estimate sediment depth and sediment/pond base composition; record the proportion of organic debris, ooze, gravel/sand, rock, peat, and others.
+  - Inflows, outflows, and pollution
+    - Document inflows/outflows and associated dimensions; estimate flow rate and detect dry vs. wet flows.
+    - Assess pollution indicators such as dumped rubbish, road runoff potential, and other pollutants.
+  - Pond management, grazing, and amenity
+    - Record pond management actions (dredging, vegetation removal, planting, structural work) and signs of livestock grazing or waterbird use.
+    - Document surrounding land use in two distance zones (0-5 m and 0-100 m) and assess public amenity value (view, access, and use).
+  - Macrophyte survey (Mean Trophic Rank, MTR)
+    - 100 m macrophyte survey; walk/wade the entire length within the pond boundary to record submerged, floating-leaved, and emergent species and estimate total cover.
+    - Identify plants to species where possible; collect specimens for laboratory confirmation when necessary; special attention to Ranunculus, Callitriche, Potamogeton, and charophytes.
+    - Use a 9-point cover scale for species abundance and total cover categories for each plant type; apply systematic approaches to estimate patch areas.
+  - Data handling for ponds
+    - CS2007 Pond Condition Survey Recording Sheets (water quality, environmental survey, macrophyte survey) are used; specimens and field notes transported to Pond Conservation with proper labeling and handling.
+    - Transport and packaging follow safety and biohazard protocols; a Transport Emergency Card (TREM) guides handling of fixatives during road transport.
+  - Field survey deliverables
+    - All data sheets stapled, photographs taken, and samples dispatched monthly to CEH Dorset for processing.
+    - Final pond data linked to mapping sheets and herbarium-type vouchers kept for verification; identification guidance provided for rare or poorly known taxa.
+  - Macrophyte identification and species confirmation
+    - A comprehensive species list (351 taxa) guides identification; emphasis on identifying to species level where possible; certain taxa require laboratory confirmation or expert input.
+    - Rare species confirmation handled with caution; some samples may be photographed or collected as vouchers while minimising impact.
+  - Quality control and safety
+    - Two-person survey teams recommended for pond work; safety checks for inflows, depth, and substrate; field-checklists ensure all steps are completed.
+    - Lab-based plant identification and voucher specimens supported by guidance for submitting specimens to experts.
+  - Outputs and data management
+    - Plant and invertebrate data are stored with standardized labeling and cross-linking to square/pond IDs.
+    - Final data and samples are prepared for submission to Pond Conservation and CEH with transport documentation.
+
+- Data systems, QA, and accessibility
+  - On-site data capture via digital systems (RAPID for RHS; IRIS for aquatic plants) to minimize transcription errors and improve data validation.
+  - Standardised forms and field sheets to ensure cross-site comparability and reproducibility across years.
+  - Regular training, accreditation, and third-party audits to safeguard data quality; field checklists and validation workflows integrated into the data pipeline.
+
+- Equipment, safety, and logistics
+  - Comprehensive field equipment lists available (safety gear, nets, sampling containers, meters, grapnels, labeling supplies, etc.).
+  - Safety considerations emphasize two-person teams, risk assessment at sampling sites, and transport of fixatives with emergency documentation (TREM cards and CEH transport procedures).
+  - Samples and specimens transported to CEH Dorset and Pond Conservation under controlled conditions with clear labeling and documented chain-of-custody.
+
+- References and contacts
+  - Methodological references include River Habitat Survey (Environment Agency), RIVPACS, Mean Trophic Rank (MTR), and standard macroinvertebrate and macrophyte identification guides.
+  - Contact points provided for sample submission, project coordination, and national Countryside Survey liaison.
+
+- Overall takeaway for environmental analysts
+  - CS2007 provides a rigorous, integrated approach to monitoring freshwater environments at scale, combining macroinvertebrate biology, hydromorphology, aquatic plants, and water chemistry.
+  - The program emphasizes consistency, data quality, and linkage across headwater streams and ponds to support longitudinal analysis of environmental health and policy effectiveness.
+  - Data management depends on digital field tools (RAPID, IRIS) and standardized recording sheets to enable cross-year comparability and robust data stewardship.

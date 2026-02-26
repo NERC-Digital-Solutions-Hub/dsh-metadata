@@ -1,0 +1,35 @@
+# Supporting information for Traits data from juvenile trees exposed to a 50% reducing in canopy throughfall at the Caxiuanã drought experiment, Brazil, August to September 2017
+
+- Experimental site and design
+  - Eastern Amazonia (Caxiuanã); two 1-hectare plots: a through-fall exclusion (TFE) plot that excludes 50% of canopy through-fall since 2002 and a control plot without drought structure.
+  - Location coordinates: 1°43' S, 51°27' W.
+- Tree and sampling design
+  - Sampling conducted in September–October 2017 (peak dry season).
+  - 76 trees sampled in total: 43 on the control plot, 33 on the TFE plot; aimed to include multiple size classes (1 cm to 10 cm DBH).
+  - Three branches sampled per tree each day to capture 17 traits.
+- Trait measurements and sampling protocol
+  - Branch 1 (0430–0630) for Ψpd (pre-dawn leaf water potential); branches rehydrated for 24 h, then used to measure P50 via the pneumatic method.
+  - Branch 2 (1000–1200) leaves for A–Ci curves using Li-Cor 6400; derived traits include Vcmax, Jmax, Rleaf, Min gs, and Max gs; leaves dried for Pleaf, Nleaf, and LMA measurements.
+  - Branch 3 (≥2 m; 1300–1400) for Ψmd (midday leaf water potential); measured PLC and Ksmax; ρ measured on a 1 cm stem section; LA:SA calculated from scanned leaves using ImageJ.
+- Traits and data structure
+  - Table 1 lists 17 traits with descriptions and units, including:
+    - Plot (Control or Drought), Species, DBH (cm)
+    - Vcmax (μmol CO2 m-2 s-1), Jmax (μmol CO2 m-2 s-1)
+    - Rleaf (μmol CO2 m-2 s-1), Min gs (mmol CO2 m-2 s-1), Max gs
+    - LMA (g m-2), Nleaf (g g-1), Pleaf (P leaf; g g-1)
+    - Thickness (mm), ρ (g cm-3)
+    - Ψpd, Ψmd (MPa)
+    - P50, P88 (MPa)
+    - Ksmax (mol H2O m MPa-1 s-1 m-2), PLC (%)
+    - LA:SA
+- Data quality control and handling of missing data
+  - Data quality controlled by removing values where curve fitting failed or measurements could not be fitted to the underlying equations (P50, P88, Ksmax, PLC, Vcmax, Jmax).
+  - Missing values are coded as NA when data could not be collected due to lost/damaged samples or measurement issues.
+  - Remaining data checked to lie within ranges reported in other studies (Bartholomew et al., 2020; Giles et al., 2022; Pereira et al., 2016; Pereira & Mazzafera, 2012; Schneider et al., 2012).
+- Data provenance and references
+  - Detailed methodology for trait collection available in Bartholomew et al. (2020) and Giles et al. (2022).
+  - Supporting methodological sources: Pereira et al. (2016); Pereira & Mazzafera (2012); Schneider et al. (2012).
+- Potential data use and value for data support
+  - Enables cross-plot comparisons of juvenile tropical tree traits under drought throughfall exclusion.
+  - Supports analyses of coordinated photosynthetic and hydraulic trait responses to drought stress.
+  - Suitable for creating data products (dashboards, pivot-centric views) to explore trait distributions, correlations, and species-level responses across control and drought plots.

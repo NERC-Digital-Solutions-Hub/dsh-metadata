@@ -1,0 +1,26 @@
+# Field protocols and data collection procedures
+
+- Field protocols were prepared in Portuguese for each exercise.
+- Training of assistant/translator:
+  - At the beginning, the lead researcher and one assistant/translator conducted exercises.
+  - Before each exercise, the assistant was trained on the objective and how to ask questions.
+  - Later, the trained assistant conducted exercises independently.
+- Triangulation and focusing:
+  - Topics discussed with various groups/persons to validate information and highlight different perspectives.
+  - Context information from interviews, conversations, and focus group discussions helped to better focus interviews.
+- Composition of group:
+  - Village leader gathered a group of participants as requested.
+  - Focus groups included both men and women; everyone was invited to contribute.
+- Translation:
+  - The researcher was accompanied by a translator/assistant fluent in the local language (native speaker).
+  - Questions were translated between Portuguese and Elomwe as needed.
+- Note taking:
+  - Notes were taken by the lead researcher and the assistant.
+- Discussion:
+  - After each interview, information was discussed with the assistant or a colleague to improve understanding.
+  - Where understanding was lacking, clarification was sought via local contacts.
+- Transcript in English:
+  - Back in the office, all notes were written in English.
+  - Notes taken by the assistant in Portuguese were translated to English.
+- Back-up:
+  - Several backups were prepared from all documents.

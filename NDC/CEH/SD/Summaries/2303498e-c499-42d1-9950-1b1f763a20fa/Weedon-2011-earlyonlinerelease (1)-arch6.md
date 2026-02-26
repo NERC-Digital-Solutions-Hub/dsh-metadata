@@ -1,0 +1,53 @@
+# The WATCH Forcing Data 1958-2001: a meteorological forcing dataset for land surface- and hydrological-models
+
+- This data chunk provides basin-by-basin time-series details for key meteorological and evapotranspiration variables used to drive land surface and hydrological models.
+- Variables covered (for multiple basins): PET_rc, PET_PT, Net Rad (W/m2), VPD (kPa), Wind (m/s), Rainfall (mm/yr), Snowfall (mm/yr), Precipitation (mm/yr).
+- Time periods presented:
+  - 1901-1957
+  - 1958-2001
+  - 1979-2001 (where available)
+- For each basin and variable/time period, the data include:
+  - Average value
+  - Slope (units/yr) with a range (slope-min to slope-max)
+  - Effective sample size (Neff)
+  - Adjusted Slope P value (statistical significance)
+- Purpose: illustrate basin-scale trends and uncertainties within the WATCH Forcing Data framework, particularly how PET and other drivers evolve from pre-1958 ERA-40-based data through the 20th century.
+
+- Representative baseline patterns (selected basins):
+  - Orange River Basin:
+    - PET_rc: 1901-1957 avg 1429.10 mm/yr (slope -1.56); 1958-2001 avg 1449.35 (slope -3.68); 1979-2001 avg 1415.69 (slope -0.61) — generally negative slopes indicating declines over later periods; significance: strong for 1958-2001.
+    - PET_PT: 1901-1957 avg 959.10 (slope +0.25); 1958-2001 avg 1123.40 (slope +1.10); 1979-2001 avg 1131.46 (slope +0.73) — PET_PT shows increasing trends, especially 1958-2001.
+    - Net Rad: 1901-1957 avg 85.33; 1958-2001 avg 88.69; 1979-2001 avg 91.30 — slight upward trend.
+    - VPD: 1901-1957 avg 0.2643; 1958-2001 avg 0.2724; 1979-2001 avg 0.2717 — small increases overall.
+    - Wind: roughly stable ~1.7 m/s with small declines in later periods.
+    - Rainfall: 1958-2001 avg 501.49; 1979-2001 avg 309.42 — variability across periods; overall increase shown in some windows.
+    - Snowfall: 1958-2001 avg 142.10; 1979-2001 avg 26.34 — notable decline in later periods.
+  - Lena River Basin:
+    - PET_rc: 1901-1957 avg 363.47 (slope +0.13); 1958-2001 avg 366.70 (slope -0.45); 1979-2001 avg 366.11 (slope +0.54) — mixed within a generally stable to modestly rising pattern.
+    - PET_PT: 1901-1957 avg 312.82 (slope +0.15); 1958-2001 avg 313.48 (slope +0.24); 1979-2001 avg 314.73 (slope +0.42) — modest increases.
+    - Net Rad: 1901-1957 avg 29.05; 1958-2001 avg 28.65; 1979-2001 avg 28.65 — relatively stable, slight declines.
+    - VPD: 1901-1957 avg 0.9467; 1958-2001 avg 0.9570; 1979-2001 avg 0.9281 — small increases, then slight leveling.
+    - Wind: around 1.9–2.0 m/s with small variations.
+    - Rainfall: 1958-2001 avg 1400.84; 1979-2001 avg 1426.74 — generally high rainfall domain with some multi-decadal fluctuations.
+    - Snowfall: 1958-2001 avg 25.43; 1979-2001 avg 26.34 — low and relatively stable.
+  - Ganges-Brahmaputra River Basin:
+    - PET_rc: 1901-1957 avg 889.32 (slope +0.04); 1958-2001 avg 869.68 (slope -2.26); 1979-2001 avg 843.63 (slope -1.84) — notable declines in later periods.
+    - PET_PT: 1901-1957 avg 798.70 (slope +0.10); 1958-2001 avg 767.99 (slope -1.26); 1979-2001 avg 752.00 (slope -0.90) — generally decreasing into 1958-2001.
+    - Net Rad: 1901-1957 avg 69.75; 1958-2001 avg 67.01; 1979-2001 avg 65.45 — gradual decline.
+    - VPD: 1901-1957 avg 0.9467; 1958-2001 avg 0.9570; 1979-2001 avg 0.9281 — small fluctuations.
+    - Rainfall: 1958-2001 avg 1426.27; 1979-2001 avg 1426.74 — substantial, basin-wide rainfall levels with variability.
+    - Snowfall: 1958-2001 avg 132.34; 1979-2001 avg 131.41 — low and stable.
+  - Murray-Darling River Basin:
+    - PET_rc and PET_PT values show basin-specific patterns (not all values shown here) with intermittent trends; Appendix includes overall PET_rc trends and PET_PT trends across 1901-1957, 1958-2001, and 1979-2001 windows.
+    - Net Rad, VPD, Wind, Rainfall, Snowfall, and Precipitation follow the general WATCH data structure with period-specific averages and slopes indicated.
+- Appendix and data construction notes:
+  - Appendix Table 1 documents the order of ERA-40 basis years used for 1901-1957, showing how basis years map to WFD years (e.g., ERA-40 year 1974 corresponds to 1901 in the first row, etc.).
+  - Data quality considerations are noted for pre-1958 periods, including data sparseness and potential biases in ERA-40 surface variables that influence interannual variability and trend estimates.
+  - PET_rc generally shows declines in the 1958-2001 window across many basins, whereas PET_PT often increases in the same window, leading to differing model results depending on PET formulation.
+  - Users should account for increased uncertainty in 1901-1957 data due to randomization of ERA-40 years and limited pre-1950 observations.
+
+- Practical takeaway for data support and modeling:
+  - The table provides basin-specific, bias-corrected forcing components essential for historical hydrological and land-surface simulations.
+  - PET_rc vs PET_PT yields different regional trends; select PET formulation consistent with modeling goals and validate against local observations where possible.
+  - The 1901-1957 data carry higher uncertainty; treat trend inferences for that period with caution in historical analyses.
+  - The dataset preserves diurnal-to-seasonal variability and inter-variable covariances, supporting robust multi-variable analyses across basins.

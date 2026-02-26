@@ -1,0 +1,56 @@
+# SAMPLING
+
+- Purpose and scope: A metadata snapshot of environmental sampling across multiple media, detailing how data were collected, measured, and processed over time to support analysis of rainfall, cloud, stream water, groundwater, throughfall, and stemflow.
+
+- Datasets and key attributes:
+  - Rainfall
+    - Collection methods/devices: Bulk samples; continuously open Warren Spring pattern collector; additional flow/volume via Tanllwyth met site ground level raingauge
+    - Field measurements: Air temperature (glass thermometer and thermistor)
+    - Sampling interval: Weekly/daily
+    - Timeframe: 10 May 1983 to 18 May 1999
+    - Filtration: Lab
+  - Cloud
+    - Collection methods/devices: Bulk samples; CEH Edinburgh pattern lidded harp type passive collector
+    - Flow/volume: Weight of sample
+    - Field measurements: None
+    - Sampling interval: Weekly
+    - Timeframe: 25 Sep 1990 to continuous
+    - Filtration: Lab
+  - Stream water
+    - Collection methods/devices: Grab samples; plastic bucket with cord
+    - Flow/volume: CEH stream (flume) gauges or nearest flume data
+    - Field measurements: Stream temperature; electrical conductivity
+    - Sampling interval: Weekly/Daily
+    - Timeframe: 10 May 1983 to continuous
+    - Filtration: Field
+  - Groundwater
+    - Collection methods/devices: Grab samples after flushing boreholes; BGS borehole sampler
+    - Flow/volume: Dip level recorder (depth referenced to borehole top)
+    - Field measurements: Groundwater temperature; electrical conductivity
+    - Sampling interval: Monthly/fortnightly/weekly
+    - Timeframe: 24 Apr 1994 to 14 Feb 2001
+    - Filtration: Field
+  - Throughfall
+    - Collection methods/devices: Bulk samples; trough collector
+    - Flow/volume: Volume of sample
+    - Field measurements: None
+    - Sampling interval: Fortnightly
+    - Timeframe: 6 Feb 1984 to 2 Sep 1991
+    - Filtration: Lab
+  - Stemflow
+    - Collection methods/devices: Bulk samples; plastic tubing around trees with carboy collector
+    - Flow/volume: Volume of sample
+    - Field measurements: None
+    - Sampling interval: Fortnightly
+    - Timeframe: 6 Feb 1984 to 2 Sep 1991
+    - Filtration: Lab
+
+- Data quality and management implications:
+  - Multiple media with different collection devices and methods (field vs lab) require harmonized metadata, units, and provenance for integration.
+  - Time series span extensive periods with contiguous and discontinuous intervals (e.g., some datasets continuous, others end in 1991 or 1999, others continue).
+  - Measurement types vary (temperature, conductivity, volume) and may rely on different instruments, affecting comparability.
+
+- Gaps and considerations for data leaders:
+  - Fragmentation across media and methods; need clear metadata standards to enable discoverability and cross-dataset analyses.
+  - Ensure consistent metadata on units, calibration, and data processing (lab vs field filtration) to support reuse.
+  - Potential access considerations not specified; dataset appears to be lab-processed with various archival timeframes, highlighting the importance of maintaining updates and documentation for ongoing datasets.

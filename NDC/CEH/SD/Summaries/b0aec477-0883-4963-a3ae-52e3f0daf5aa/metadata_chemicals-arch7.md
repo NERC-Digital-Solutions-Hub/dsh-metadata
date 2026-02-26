@@ -1,0 +1,34 @@
+# Experimental design/sampling method
+
+- Geographic and biological scope
+  - Tracks changing chemical profiles of caterpillars (Maculinea rebeli) and associated ants across regions: Pyrenees, Poland, and naïve ants in France.
+  - Samples collected under multiple rearing/interaction conditions: uncontaminated pre-adoption final instars, six weeks after adoption with ants, and five days after isolation from ants to allow semiochemicals to dissipate.
+- Sample types and groups
+  - (i) Hexane extracts from unparasitized Myrmica schencki and Myrmica sabuleti on study sites, plus naïve French ants (n = 5 workers from 5 nests per locality).
+  - (ii) Eight batches per region of pre-adoption final instar M. rebeli larvae collected after leaving Gentiana cruciata (n = 5 larvae per batch; total 40 larvae per type of M. rebeli).
+  - (iii) M. rebeli larvae after six weeks with naïve French ants (n = 5 for Spanish+schencki; n = 3 for Spanish+sabuleti and Polish+schencki; n = 3 for Spanish+sabuleti and Polish+sabuleti).
+  - (iv) M. rebeli larvae from (iii) then isolated, unfed, and singly kept in sterile conditions for 5 days (n = 5 Spanish+schencki; n = 4 Polish+schencki; n = 3 Spanish+sabuleti and Polish+sabuleti).
+- Analytical method and quality assurance
+  - GC-MS analysis with HP 5890II GC and HP 5971A MSD; helium carrier gas; sample preparation sizes: Maculinea extracts 20 ml, ants 50 ml.
+  - Full-scan mass spectra from 40–600 m/z; initial screening with m/z 57; peak integration with threshold 12 (HP integrator).
+  - Alkane standards (n-C20 to n-C36) used to determine Equivalent Chain Length (ECL); peaks assessed for hydrocarbon classes (branched/straight alkanes, alkenes) and checked for interferences.
+  - Peaks identified by ECL and full-scan spectra matched against NIST-97/08 database; interferences such as column bleed, siloxanes, and phthalate plasticizers excluded (indicator m/z 149).
+  - Quantitative data expressed as the proportion of each peak area relative to the total peak area in a chromatogram.
+- Data format and metadata
+  - Data stored as CSV text files.
+  - Column labels encode sample provenance and context, e.g.:
+    - Rebeli_sab_0_ES_1141: Maculinea rebeli reared with Myrmica sabuleti, Spain, sample 1141.
+    - Rebeli_sab_5_ES_1155: Same rearing, after 5 days isolation, Spain, sample 1155.
+    - Rebeli_sch_0_PL_1107: Maculinea rebeli reared with Myrmica schencki, Poland, sample 1107.
+    - rebeli_none_pre_PL_1032: pre-adoption Maculinea rebeli, Poland, sample 1032.
+    - Sabuleti_Fr_1082: Myrmica sabuleti, France, sample 1082.
+  - Explanations provide origin, country, sample number, and context (e.g., reared with specific ant species, post-isolation status, pre-adoption).
+- Key considerations for GIS integration
+  - Geographic footprint includes Spain, France, Poland (and the Pyrenees region), enabling regional comparisons of chemical profiles.
+  - Metadata supports linking samples to spatial units (country/region) and to experimental conditions/timepoints.
+  - To enable precise mapping, additional geocoordinates for each sampling site would be required.
+
+- How this aligns with GIS specialists’ aims
+  - Provides structured, region-labeled chemical data suitable for map-based visualization of chemistries across species and timepoints.
+  - Facilitates data merging with GIS layers (locations, ant species distributions, study-site boundaries) for exploratory spatial analysis.
+  - The CSV format supports quick ingestion into GIS workflows, with clear metadata to drive thematic mapping of chemical profiles.

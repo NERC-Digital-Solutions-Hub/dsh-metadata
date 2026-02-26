@@ -1,0 +1,24 @@
+# Hypolimnion temperature and oxygen data from North Basin of Windermere 2005 to 2009
+
+- Overview
+  - Long-term monitoring dataset with fortnightly sampling in the North Basin of Windermere, Cumbria, England.
+  - Variables available: hypolimnion temperature (hypo_temp_c, °C) and hypolimnion dissolved oxygen concentration (hypo_DO_mgL, mg/L).
+  - Timeframe: January 2005 to the end of 2009.
+- Sampling regime and collection site
+  - Measurements taken at depths between 60 and 62 m from a boat at the deepest part of the lake, near a marked buoy location.
+- Measurement methods
+  - Measurements conducted by lowering a WTW oxi340i meter to the sediment and pulling it back up to approximately 0.5 m above the bottom to take readings.
+  - Part of an ongoing long-term monitoring program with fortnightly sampling.
+- Data structure and format
+  - Downloadable CSV with columns:
+    - Date (date of measurement)
+    - hypo_temp_c (hypolimnion temperature in degrees Celsius)
+    - hypo_DO_mgL (hypolimnion dissolved oxygen in mg/L)
+- Quality control and limitations
+  - Data are raw and have not yet been quality controlled or calibrated.
+  - Data have been double-entered and visually checked.
+  - Missing data are due to weather conditions or staff shortages.
+- Data coverage and availability
+  - Data are part of the North Basin Windermere long-term monitoring dataset and available as a CSV file.
+- Funding and acknowledgments
+  - Data collection supported by Natural Environment Research Council (NERC) award NE/R016429/1 as part of the UK-SCaPE programme delivering National Capability.

@@ -1,0 +1,104 @@
+# Details of the data-structure
+
+- Overview
+  - The document describes ensemble ecosystem service (ES) model outputs for sub-Saharan Africa, including data structures, origins of model outputs, ensemble methods, funding, and references.
+  - Data are prepared to support cross-model comparability and potential optimization or prioritization analyses of ES delivery.
+
+- Data structure details
+  - Datasets
+    - 12 TIFF raster layers (with world-files) containing mean, median, and standard error of the mean (SEM) of ES model ensembles for:
+      - Stored Carbon
+      - Grazing use
+      - Non-Timber Forest Products: Charcoal and Firewood use
+      - These are normalised outputs across modelling frameworks.
+    - Two shapefile layers for water supply in catchments delineated for weirs stored at:
+      - South Africa, Department of Water and Sanitation (DWS)
+      - Global Runoff Data Centre (GRDC)
+    - One shapefile layer for per-country water use per capita.
+  - Naming conventions
+    - Raster files named as <Ensemble type_Service>
+    - Shapefiles named as <Ensembles_delineation source>
+  - Grid and projection
+    - Raster grid: 1000 m x 1000 m
+    - 1-band, 32-bit floating point
+    - Projection: WGS-1984 Lambert with Azimuthal Equal Area (EPSG 9820)
+  - Area and coverage
+    - Covers all continental territory of 36 African countries (primarily Sub-Saharan Africa, including Madagascar)
+    - Islands and non-contiguous areas omitted
+    - Catchments crossing outside area (e.g., Niger) noted
+  - Units and data handling
+    - Units: Relative Service delivery, 0–1 scale
+    - NoData value: -999 (outside area/LCM mask)
+  - Origin of delineation
+    - Data are split by origin of delineation (DWS, GRDC) due to overlapping polygons
+  - Metadata and data access
+    - Metadata completeness can vary; some data require contacting originators or may face public-sharing barriers
+    - Some outputs (model frameworks) have restrictions or rights ownership that affect publication or data sharing
+
+- Origin of individual model outputs (Willcock et al. 2019)
+  - Project context
+    - Derived from the WISER project: Which Ecosystem Service Models Best Capture the Needs of the Rural Poor?
+    - Funded by the UK ESPA program; ESPA website cited
+  - Services and models
+    - Six ES classes validated across sub-Saharan Africa:
+      - Stored Carbon
+      - Available Water Supply
+      - Water Use (including beneficiaries)
+      - Non-Timber Forest Product: Firewood (including beneficiaries)
+      - Non-Timber Forest Product: Charcoal (including beneficiaries)
+      - Grazing (including beneficiaries)
+    - Six modelling frameworks used (some outputs not publicly available):
+      - InVEST
+      - Co$ting Nature
+      - WaterWorld
+      - Benefits transfer (Costanza et al. approach)
+      - LPJ-GUESS
+      - Scholes models (grazing and rainfall surplus)
+  - Methodological notes
+    - ES values computed per hectare (water per catchment hectare)
+    - Bespoke developments for carbon outputs (e.g., grazing, firewood, charcoal)
+    - Relative rural population density used to scale outputs to beneficiaries
+    - Land-cover masks (LCMs) define where services occur (forests, woodlands, grasslands/savannas); services outside masks set to NoData
+    - Data transformations
+      - Log10 transform applied to all values except stored carbon
+      - Normalisation to 0–1 scale using 95th percentile (winsorising) to reduce effects of extremes
+    - Publication rights
+      - Some individual model outputs cannot be published due to partner/third-party rights
+
+- Analytical methods for generating Ensemble Models
+  - Ensemble construction
+    - Ensembles combine normalised outputs from multiple models per ES and per geography (1 km2 grid cells; catchments for water; country polygons for water use)
+    - Calculations yield:
+      - Emn(x): Mean of available models for grid cell x
+      - Emd(x): Median of available models for grid cell x
+      - SEMx: Standard Error of Mean across available models for grid cell x
+  - Handling incomplete coverage
+    - Not all models cover the entire study area; number of valid models per gridcell is tracked
+    - Gridcells with fewer than 3 model estimates are set to NoData (-999)
+  - Data processing workflow
+    - Clip all Willcock et al. (2019) layers to a standard area and environment
+    - Export as ASCII from ArcGIS; read into Matlab
+    - Compute mean, median, and SEM matrices
+    - Re-normalise mean and median ensembles to 0–1 using the same procedure as individual models
+    - Visuals redrawn in ArcGIS and exported as TIFF
+  - Implementation and accessibility
+    - Code for ensemble calculations available at GitHub (dhooftman72/ES_Ensembles)
+  - Model frameworks per ES (summarised)
+    - Available Water Supply: 6 frameworks (InVEST, Co$ting Nature, WaterWorld, Benefits transfer, LPJ-GUESS, Scholes Growth days model)
+    - Water Usage: 6 frameworks (InVEST, Co$ting Nature, WaterWorld, Benefits transfer, LPJ-GUESS, Scholes Growth days model)
+    - Stored Carbon: 4 frameworks (InVEST, Co$ting Nature, Benefits transfer, LPJ-GUESS)
+    - Firewood: 5 frameworks (InVEST, Co$ting Nature, Benefits transfer, LPJ-GUESS, Scholes firewood model)
+    - Charcoal: 4 frameworks (InVEST, Co$ting Nature, Benefits transfer, LPJ-GUESS)
+    - Grazing: 6 frameworks (InVEST, Co$ting Nature, Benefits transfer, LPJ-GUESS, Scholes globally and local parametrised models)
+  - Notes
+    - Some model outputs rely on bespoke or restricted data; not all frameworks are publicly available
+    - The ensembles are intended to smooth uncertainties and support comparative analyses, optimization, and prioritization of ES-relevant areas
+
+- Funding Information
+  - WISER: Which Ecosystem Service Models Best Capture the Needs of the Rural Poor? (NE/L001322/1)
+  - ESPA: UK Ecosystem Services for Poverty Alleviation program
+  - EnsemblES: Using ensemble techniques to capture the accuracy and sensitivity of ecosystem service models (NE/T00391X/1)
+
+- References used
+  - Willcock et al. 2019: Continental-Scale Validation of Ecosystem Service Models
+  - Key methodological and theoretical references on ensemble forecasting, modelling frameworks, and normalization approaches (e.g., Araújo & New 2007; Costanza et al. 2014; Kareiva 2011; Marmion et al. 2009; Mulligan et al. various; Scholes 1998; Smith et al. 2001, 2014; Verhagen et al. 2017)

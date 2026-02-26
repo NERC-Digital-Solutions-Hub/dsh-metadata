@@ -1,0 +1,31 @@
+# Modelled surface nitrogen dioxide (NO2) for the grassland growing season in the UK and USA in 2018
+
+- Purpose and scope
+  - Modelled surface NO2 for the grassland growing season (mid-April to mid-July) in 2018 for the UK and USA.
+  - Outputs are gridded, standardised data intended to support environmental health monitoring and policy evaluation over time.
+- Modelling approach and data sources
+  - Model: EMEP-WRF global model, version 4.45, based on the EMEP MSC-W framework.
+  - Meteorology: WRF (v4.2.2) providing hourly 3D meteorological fields; nudged every six hours with GFS-FNL data.
+  - Domain and resolution: global grid at 1° x 1° with 21 vertical layers (surface ~40 m to ~16 km).
+  - Emissions: IIASA ECLIPSE v6a GAINS for year 2015.
+  - Outputs: daily surface NO2 per 1° x 1° grid cell; seasonal average for grassland growing season in 2018.
+- Data characteristics
+  - Coordinate system: WGS 1984; units: micrograms per cubic metre (ug m-3).
+  - Shapefile structure: gridded data (1° x 1°) with five attributes:
+    - FID: unique grid cell identifier
+    - Lon: longitude of grid cell centre
+    - Lat: latitude of grid cell centre
+    - NAME: country (USA or UK)
+    - NO2_ug: mean surface NO2 for the season (ug m-3)
+- Quality control and validation
+  - Data undergo QA/QC before analysis.
+  - External validation (Ge et al., 2021) indicates the model captures overall spatial and seasonal variations for NO2 and other major inorganic pollutants in Europe, North America, and parts of Asia.
+- Output use and governance
+  - Outputs are presented in clear formats (maps/charts) and can be integrated with other environmental datasets.
+  - Data handling practices include storing and uploading datasets to appropriate data portals.
+- References
+  - CLRTAP (2017)
+  - Ge, Y., et al. (2021) Evaluation of global EMEP MSC-W (rv4.34) with measurements
+  - Mills, G., et al. (2018) Ozone pollution and global wheat production
+  - Simpson, D., et al. (2012) The EMEP MSC-W chemical transport model
+  - Vieno, M., et al. (2016) Sensitivities of emissions reductions for UK PM2.5

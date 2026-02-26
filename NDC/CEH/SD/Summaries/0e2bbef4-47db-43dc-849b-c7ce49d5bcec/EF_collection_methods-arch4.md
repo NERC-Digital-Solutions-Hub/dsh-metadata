@@ -1,0 +1,55 @@
+# Vegetation work
+
+- Purpose: Document vegetation characteristics and ecosystem gas exchanges across the study site, using a combination of biomass/cover assessments and soil/air gas measurements to quantify carbon and nitrogen dynamics.
+
+- Data collected (field measurements)
+  - Vegetation composition and structure:
+    - Four random 50 cm x 50 cm quadrats per site
+    - Visual estimation of percentage cover per species
+    - Species richness; combined cover for grasses and forbs across quadrats
+    - Biomass: clipping at ground level in each quadrat, drying at 80°C for 24 hours, and weighing; totals summed across the site
+    - Community diversity: Shannon’s Diversity index (Shannon and Weaver, 1963)
+  - Gas flux measurements (CO2, CH4, N2O):
+    - Net ecosystem CO2 exchange, photosynthesis, and respiration using four collars with transparent chambers attached to an infrared gas analyser (IRGA)
+    - Measurements over two minutes; repeat after covering chamber for dark CO2 efflux
+    - Concurrent measurements of soil moisture, soil temperature, and PAR (photosynthetically active radiation) in triplicate
+    - Calculations convert raw CO2 measurements (ppm) to CO2 flux (mg CO2 m^-2 h^-1) with time-stamped data and standard gas-law conversions
+    - CH4, CO2, and N2O: reflective chambers used to collect air at 10, 20, and 30 minutes into evacuated vials; analysis by Gas-Chromatograph (GC); calculations follow the same CO2 flux framework
+- Soil sampling and chemical/physical properties
+  - Soil sampling:
+    - Six samples per site using a 4 cm auger to a 10 cm depth
+    - Soil passed through 2 mm sieve; stored at 5°C
+  - Bulk density:
+    - Two cores per site; 0–5 cm and 5–10 cm depths
+    - Dried at 80°C for 48 hours; bulk density calculated as mass/volume
+  - pH:
+    - 5 g soil + 5 ml Milli-Q water (1:1); measured with pH meter
+  - Volumetric moisture content:
+    - Fresh soil weighed (approx. 5 g), dried at 80°C for 48 hours; moisture content calculated from weight change
+  - Water extractable nitrogen (DIN) and carbon (DOC):
+    - 5 g soil extracted with 25 ml Milli-Q water; shaken, filtered
+    - DIN (NH4+, NO3-, total N) via autoanalyser; DOC via TOC analyser
+    - Concentrations adjusted to mg/kg using soil moisture and dry weight
+  - KCl-extractable N and potential mineralisation:
+    - 5 g soil with 25 ml 1 M KCl; shaken, filtered, diluted, and analysed for DIN
+    - 14-day incubation (25°C) with extraction and analysis as above
+    - Mineralisation calculated as (NO3 + NH4) × bulk density ÷ days
+  - Microbial biomass (fumigation-extraction):
+    - 5 g soil fumigated with chloroform to lyse cells; a second unfumigated sample
+    - Nutrient extraction with 0.5 M K2SO4; DIN and extractable PO4 measured
+    - Dissolved carbon measured by TOC; data adjusted for moisture content
+    - Extraction efficiency corrected using KE (0.35) and KEN (0.54) factors
+- Calculations and data processing
+  - CO2 flux and CH4/N2O data derived from chamber measurements using standard gas-law conversions
+  - Mineralisation and microbial biomass calculated with established equations and correction factors
+  - All measurements linked to consistent units and time points to enable cross-site comparisons
+- Data management considerations for data leaders
+  - Emphasis on standardized protocols, replicates, and detailed methodological notes to support data discoverability and reuse
+  - Clear documentation of instruments, measurement intervals, and calculation methods
+  - Metadata considerations include location, date/time, depth, unit conventions, calibration details, and sample handling
+- Challenges and opportunities (relevant to data strategy)
+  - Fragmentation of data across multiple measurement types (biomass, gas flux, soil chemistry) requires integrated data management and clear metadata
+  - Ensuring data quality and comparability across sites and time through standardized methods and documentation
+  - Potential accessibility issues if data or results are gated behind platforms; emphasizes the value of openly accessible, well-documented datasets
+- Reference
+  - Shannon, C.E. and Weaver, W. (1963) The Mathematical Theory of Communication, University of Illinois Press, Urbana

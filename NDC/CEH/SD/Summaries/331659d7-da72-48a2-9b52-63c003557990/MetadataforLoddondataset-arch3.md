@@ -1,0 +1,71 @@
+# High resolution water quality and flow monitoring data coupled with daily and storm samples from the Loddon catchment (Sept 2017- Sept 2018)
+
+- Purpose and scope
+  - High-resolution water quality and flow data from Bow Brook (headwater of the River Loddon) in a predominantly agricultural catchment, near Sherfield-on-Loddon, Hampshire.
+  - Timeframe: hourly high-frequency data from 08/09/2017 to 09/09/2018; daily laboratory samples 08/09/2017 to 08/09/2018; storm (hourly) samples 11/09/2017 to 22/01/2018.
+  - Supplemented by daily optical scans and storm-event sampling for comprehensive water quality assessment.
+  - Data types include physical parameters (flow, depth, temperature), chemical/matrix measurements (pH, conductivity, turbidity, ammonium), UV-Vis spectral data, total suspended solids (TSS), non-purgeable organic carbon (NPOC), and pesticide analyses (12 pesticides).
+
+- Experimental design and sampling regime
+  - Monitoring site near confluence with River Loddon, in a catchment influenced by agriculture.
+  - Sampling regime:
+    - High-frequency (hourly) water quality and flow data.
+    - Daily lab analysis samples collected around 09:00 GMT.
+    - Storm event sampling with hourly samples during rainfall periods.
+  - Data gaps noted due to equipment temperature-related failures and measurement errors; turbidity measurements began on 10 October 2017 due to equipment availability.
+  -storm data: dates and number of samples per storm event documented.
+
+- Collection, laboratory, and analytical methods
+  - In-field equipment and setup
+    - Peristaltic pump sampling with two flow-through cells: one with TriOS OPUS UV/VIS spectrometer (200–800 nm) and one with YSI 6600 V2-2 multi-parameter sonde (turbidity, ammonium, pH, conductivity, temperature, dissolved oxygen).
+    - Sontek IQ flow gauge for flow and river height at sampling point.
+    - Sondes maintained and calibrated monthly; UV-Vis cleaned weekly.
+    - Data download via TriOS G2 interface.
+  - Sampling regime and handling
+    - Daily samples and hourly storm samples collected with two ISCO 6712 autosamplers.
+    - Sample containers: 300 mL in 350 mL glass bottles (avoid pesticide sorption to plastic); initial period used plastic bottles until 9 Oct 2017.
+    - Transport and storage: samples refrigerated at 4°C and analyzed within 48 hours.
+  - Laboratory analyses
+    - In-lab measurements: pH (Mettler Toledo), conductivity (Mettler Toledo), turbidity (Hanna HI-93703), UV-Vis absorbance, and total suspended solids (TSS) via filter weighing.
+    - NPOC (non-purgeable organic carbon) measurement using Shimadzu TOC-L with acidification and purging steps; selection over total carbon due to carbonate interferences.
+    - Pesticide analysis (daily and storm samples): Affinity Water Ltd. lab using Agilent 6490 LC-MS, quantifying 12 pesticides with detection limits ~0.01 µg/L.
+  - Data processing and quality controls
+    - Daily and storm sample handling procedures described; standard calibration and drift checks for pH and conductivity; turbidity measured with wait times to allow particle settling.
+    - 254 nm spectral scans performed in-field and lab-filtered scans (0.7 µm) for UV-Vis; blanks and drift checks incorporated.
+    - Pesticide data quality governed by LC-MS method and lab QA practices.
+
+- Data products and structure
+  - Six CSV data files
+    - DailyWaterQualityData.csv (366 samples)
+      - Variables include Date, Flow (m3 s-1), Depth (m), 254 nm field absorbance (AU), Turbidity field (NTU), Conductivity field (µS cm-1), pH field, Ammonium field (mg L-1), pH lab, Conductivity lab, Turbidity lab, 254 nm lab, TSS (g L-1), NPOC (mg L-1), 12 pesticide concentrations (µg L-1), Total pesticides (µg L-1), and EU limits.
+    - StormWaterQualityData.csv (207 samples)
+      - Similar variables as daily data but with date/time, flow, depth, 254 nm field, turbidity (field and lab), conductivity, pH (field and lab), ammonium, pH (lab), turbidity 5min/0min, 254 nm, TSS, NPOC, 12 pesticides, Total pesticides, EU limits per storm event.
+    - HighFrequencySensorDataFlowandSonde.csv (8,332 samples)
+      - In-field flow/gauge data: FLOW (m3 s-1), STAGE (m), MEANVELOCITY (m s-1), TOTALVOLUME (L), DEPTH (m), INDEXVELOCITY (m s-1), AREA (m2), TEMP (°C).
+      - In-field sonded data: SONDEDATE/SONDETIME, SONDETEMP (°C), SONDECOND (µS cm-1), SONDEPH (pH), SONDEAMMONIUM (mg L-1), SONDETURBIDITY (NTU), DO (%) and MGL (mg L-1) for dissolved oxygen-related metrics.
+    - HighFrequencyDataOpticalScan.csv (8,364 samples)
+      - Raw in-field TriOS OPUS UV/VIS spectra: DateTime, Date, Time, Absorption from 197.976 to 720.86 nm (AU).
+    - DailyOpticalScansBlankCorrected.csv (366 samples)
+      - Blank-corrected daily lab scans: 200–800 nm at 2 nm intervals; data quality notes on missing dates.
+    - StormOpticalScansBlankCorrected.csv (194 samples)
+      - Blank-corrected storm scans: 200–800 nm at 2 nm intervals; notes on missing data and storm-event sampling gaps.
+  - Data accessibility
+    - Data available at the BODC/NERC Environmental Information Data Centre: https://doi.org/10.5285/331659d7-da72-48a2-9b52-63c003557990
+    - Citation required when using the dataset (authors and year provided).
+
+- Data quality, limitations, and governance
+  - Missing data and gaps
+    - Some samples missing due to equipment temperature issues or measurement errors; turbidity measurements started later due to equipment delay.
+    - Storm optical scans have some missing dates and selective sampling within storm events due to time constraints.
+  - Calibration and QA
+    - Regular calibration and drift checks for pH and conductivity; turbidity measured with specified standards; spectral data drift checks via blanks.
+    - Spectral data requires drift correction for optical analyses; daily and storm optical scans include blank-corrected datasets.
+  - Metadata and data structure
+    - Comprehensive metadata embedded in data descriptions, including units, measurement methods, and instruments used.
+    - Data organized into clearly named CSV files with explicit field descriptions and units to support reuse and governance.
+
+- Implications for monitoring frameworks and policy evaluation
+  - Enables assessment of short-term (storm events) and long-term catchment responses in agricultural contexts.
+  - Facilitates integration of high-frequency sensor data with lab-based analyses for robust environmental health indicators (water quality, nutrient status, pesticide loads, and suspended solids).
+  - Supports data governance best practices by providing explicit data provenance, instrument calibration notes, sampling regimes, and licensing/citation requirements.
+  - Useful for evaluating data availability, interoperability, and the practicality of maintaining high-resolution monitoring networks in policy contexts, including handling data gaps, metadata completeness, and standardized reporting.

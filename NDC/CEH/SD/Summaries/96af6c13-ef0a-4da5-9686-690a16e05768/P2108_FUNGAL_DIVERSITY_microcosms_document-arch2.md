@@ -1,0 +1,38 @@
+# Supporting Information
+
+- Background and purpose
+  - Part of the NERC Soil Biodiversity Thematic Programme (established 1999) evaluating both soil biota diversity and the functional roles of soil organisms.
+  - Field experiments at Sourhope, Scottish Borders, with the aim of understanding soil biodiversity and ecological processes through multiple focused projects (24 projects total across soil structure, carbon and nitrogen cycles, microfauna and macrofauna).
+- Project and experimental setup
+  - Project 2108: Function and taxonomic diversity of mycorrhizas in grassland; led by Professor Peter Young.
+  - Grassland microcosms established in 1997 using rendzina soil, prepared in 600 × 600 mm boxes (150 mm deep) at the University of Sheffield Experimental Gardens.
+  - Plant assemblages transplanted from limestone grassland (Cressbrookdale NNR): 192 mature plants per microcosm in a 14 × 14 grid, with four replicates per treatment.
+  - Treatments (three vegetated + controls): monoculture of Carex flacca, monoculture of Festuca ovina, and a 12-species mixture (four forbs, four grasses, four sedges).
+  - Clipping and weeding maintained short turf (25 mm); regular maintenance over 3 years.
+- Bioassay and Mycorrhizal fungi (AM) diversity assessment
+  - July 2000: Bioassay using 5-day-old Plantago lanceolata seedlings to assess AM diversity in roots after 12 weeks.
+  - Rationale: P. lanceolata is common in limestone grasslands and highly mycorrhiza-responsive, hosting AM fungi across multiple genera.
+  - AM diversity assessment in roots via terminal-restriction fragment length polymorphism (T-RFLP) of the SSU rRNA gene.
+- Molecular methods (T-RFLP)
+  - DNA extraction from roots; amplification of a ~550 bp SSU rRNA fragment using universal NS31 and AM-fungal-specific AM1 primers.
+  - Fluorescent labelling of PCR products; purification to remove primers.
+  - Two restriction enzymes (HinFI and Hsp92II) applied to generate polymorphic terminal fragments; products size-separated on ABI377 sequencer and analyzed with GeneScan.
+  - Fragment sizes limited to 45–450 bp; only presence/absence of terminal restriction fragments (TRFs) recorded (richness), no evenness data used.
+  - Reproducibility confirmed with internal replicates.
+- Data structure and dataset (Dataset 1005)
+  - AM fungal diversity dataset from the Sheffield microcosm experiment.
+  - Key fields:
+    - MICROCOSMID: sample type (bare soil, monoculture of C. flacca, monoculture of F. ovina, 12-species mixture).
+    - TREATMENT: Sourhope soil treatment descriptor.
+    - SPECIES: monocultures or mixture described.
+    - BAND1-60: presence (1) or absence (0) of each of 60 TRFs across samples.
+  - Data type: text; Units: n/a; Data Type: text; Data captured as presence/absence of TRFs (species richness proxy).
+  - Quality control: numeric range checks, formatting, and logical integrity checks performed; data provided with standard QA but not warranting accuracy or fitness for any particular use; liability disclaimer applies.
+- Access, references, and further reading
+  - Primary reference: Johnson et al. 2004, New Phytologist: Plant communities affect AM fungal diversity and community composition in grassland microcosms.
+  - Additional references on SSU rDNA sequencing and AM fungal diversity methods (1998–2001).
+  - Useful related resources: Sourhope Field Data Handbook and UK Soil Biodiversity Programme literature.
+- Relevance to environment monitoring
+  - Demonstrates standardized collection, processing, and analysis of soil fungal diversity data in controlled microcosms.
+  - Produces a reproducible dataset (presence/absence of AM fungal TRFs) suitable for linking plant communities to AM fungal diversity and composition.
+  - Data quality assurance and methodological transparency align with aims to monitor environmental health and policy performance over time, and support data reuse and interoperability.

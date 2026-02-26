@@ -1,0 +1,78 @@
+# Dataset Originator ECN Data Centre (http://data.ecn.ac.uk - ecn@ceh.ac.uk), Centre for Ecology and Hydrology
+
+- Data Providers
+  - UK Environmental Change Network (ECN) programme funded by a consortium of UK government departments and agencies
+  - Participating organisations include: Agri-Food and Biosciences Institute; Biotechnology and Biological Sciences Research Council; Cyfoeth Naturiol Cymru - Natural Resources Wales; Defence Science and Technology Laboratory; Department for Environment, Food and Rural Affairs; Environment Agency; Forestry Commission; Llywodraeth Cymru - Welsh Government; Natural England; Natural Environment Research Council; Northern Ireland Environment Agency; Scottish Environment Protection Agency; Scottish Government; Scottish Natural Heritage
+- Purpose and acknowledgement
+  - ECN data are provided to understand environmental change; users should acknowledge data usage and send one reprint of publications citing the data
+- Protocol and quality control
+  - Surface water chemistry samples collected weekly using dip sampling
+  - A standard quality control solution is sent to analysing laboratories and analyzed with field samples
+  - Quality information accompanying the dataset should be used when using the data
+- Data Structure
+  - Core fields:
+    - SITECODE: Unique ECN site code
+    - LCODE: Location code within each site for sampling points
+    - SDATE: Sampling date
+    - FIELDNAME: Variable measured
+    - VALUE: Measured value
+- Site Codes (sample sites and coordinates)
+  - T02 Glensaugh (56° 54' 33.36" N, 2° 33' 12.14" W)
+    - Date ranges: 12-May-1993 to 26-Dec-2012
+  - T04 Moor House - Upper Teesdale (54° 41' 42.15" N, 2° 23' 16.26" W)
+    - Multiple location codes with varying ranges from 1992 to 2011
+  - T05 North Wyke (50° 46' 54.96" N, 3° 55' 4.10" W)
+    - Date ranges: 29-Sep-1993 to 26-Dec-2012 (for multiple location codes)
+  - T06 Rothamsted (51° 48' 12.33" N, 0° 22' 21.66" W)
+    - Date range: 29-Jun-1994 to 26-Dec-2012
+  - T07 Sourhope (55° 29' 23.47" N, 2° 12' 43.32" W)
+    - Date ranges: 19-May-1993 to 26-Dec-2012 (two location codes)
+  - T08 Wytham (51° 46' 52.86" N, 1° 20' 9.81" W)
+    - Date ranges: 1993 to 2012 across multiple location codes
+  - T11 Y Wyddfa - Snowdon (53° 4' 28.38" N, 4° 2' 0.64" W)
+    - Date range: 02-Jul-1997 to 27-Dec-2012
+  - T12 Cairngorms (57° 6' 58.84" N, 3° 49' 46.98" W)
+    - Date range: 18-Aug-1999 to 30-May-2012
+- Fieldnames (variables and units)
+  - Alkalinity (ALKY) – mg/L
+  - Aluminium (ALUMINIUM) – mg/L
+  - Calcium (CALCIUM) – mg/L
+  - Chloride (CHLORIDE) – mg/L
+  - Colour (COLOUR) – absorbance at 436 nm (nM)
+  - Conductivity (CONDY) – µS/cm
+  - Dissolved Organic Carbon (DOC) – mg/L
+  - Iron (IRON) – mg/L
+  - Magnesium (MAGNESIUM) – mg/L
+  - Ammonium (NH4N) – mg/L
+  - Nitrate Nitrogen (NO3N) – mg/L
+  - pH (PH) – pH scale
+  - Aquacheck pH (PHAQCS, PHAQCU) – pH scale
+  - Phosphate Phosphorus (PO4P) – mg/L
+  - Potassium (POTASSIUM) – mg/L
+  - Sulphate Sulphur (SO4S) – mg/L
+  - Sodium (SODIUM) – mg/L
+  - Stage (STAGE) – mm
+  - Total Nitrogen (TOTALN) – mg/L
+  - Total dissolved phosphorus (TOTALP) – mg/L
+  - Quality codes (Q1–Q6) per measurement
+- Additional analytical information
+  - Dataset ECN_WC2.csv provides detailed measurement metadata:
+    - SITECODE, LCODE, SDATE, SHOUR, SMINS
+    - LAB_NID (lab performing analyses)
+    - PHDATE, PHHOUR, PHMINS (pH measurement timing)
+    - FILTDATE, COMPDATE (filtration and completion dates)
+- Quality codes
+  - A standard ECN list of codes indicating data quality issues, including:
+    - 100, 101, 102, 103, 105, 106, 108, 109, 110, 111, 113, 114, 115, 116, 118, 119, 126, 127, 169, 170, 182, 191, 200, 203, 207, 208, 222, 229, 501–511, 999
+  - Codes describe issues such as no information, equipment out of action, sample loss, precipitation effects, lab contamination, non-standard sampling, and unusual events
+- Accessibility and use
+  - Data may be challenging to access without familiarity with the ECN portal and accompanying quality information
+  - Users should consult the accompanying surfaceWaterChemistryProtocol.pdf for methods and ensure proper use of quality metadata
+- Usage obligations
+  - Acknowledge the ECN data use and share one reprint of publications citing the data
+
+- Notes
+  - Weekly dip-sample collection for stream water chemistry
+  - QC standard analyses are documented and provided alongside the data
+  - Site and location codes allow replication of sampling points across years
+  - The dataset includes multiple sites with long temporal coverage, enabling trend and correlation analyses in environmental change studies

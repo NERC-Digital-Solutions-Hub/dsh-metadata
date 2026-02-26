@@ -1,0 +1,99 @@
+# The UKCEH Land Cover Maps for 2017, 2018 and 2019 v1.5.1
+
+- Purpose and scope
+  - Release and description of three UKCEH Land Cover Maps: LCM2017, LCM2018, and LCM2019.
+  - Each map provides a suite of geospatial data representing land cover across Great Britain and Northern Ireland, aligned to 21 UKCEH Land Cover Classes based on Biodiversity Action Plan (BAP) Broad Habitats.
+  - Automatic production (Bootstrap Training + Random Forest) to enable annual UK-wide maps; no manual corrections were performed for these releases.
+  - Validation indicates maps are of similar quality to the latest predecessor (LCM2015), with ongoing plans to improve methods and validation resources.
+
+- Production approach and key concepts
+  - Bootstrap Training
+    - Uses historic land cover maps (primarily LCM2015, bootstrap from majority signal) to automatically generate training data for current satellite imagery.
+    - Aims to exploit large, coast-to-coast historic coverage to train the classifier without new field data.
+  - Random Forest classification
+    - Training data from Bootstrap Training sampled from 2015, balanced across classes to improve detection of rarer classes.
+    - Produces the 20 m Classified Pixels product as the primary source for deriving other datasets.
+  - Seasonal Composite Images and Classification Scenes
+    - Sentinel-2 Seasonal Composite Images (TOA reflectance) for four seasons, resampled to 20 m.
+    - 9 spectral bands used, combined with 20 m Context Rasters to create Classification Scenes.
+    - Great Britain uses 100 x 100 km tiles (36-band Seasonal Composites + 10 Context rasters -> 46-band Classification Scenes); Northern Ireland uses a single 43-band scene.
+  - Context Rasters
+    - Provide spatial context to resolve spectral confusion (e.g., height, slope, distance to roads/buildings, coast, freshwater, urban). Separate sets for GB and NI.
+  - UK Land Parcel Spatial Framework
+    - A fixed, standardized framework of land parcels (~0.5 ha MMU) used to aggregate pixel-level classifications into parcels, aiding change detection and downstream analysis.
+    - Parcel identifiers (gid) differ from LCM2015, so cross-year parcel comparisons must use gid within the new framework.
+  - 20 m Classified Pixels and downstream products
+    - 20 m Classified Pixels: two-band raster per year; Band 1 = most likely class; Band 2 = class membership probability (0–100).
+    - Land Parcels: parcel-level attributes derived from intersecting 20 m classifications with the Spatial Framework; includes hist, mode, purity, conf, stdev, n.
+    - 25 m Rasterised Land Parcels: three-band rasters (mode, conf, purity) derived from Land Parcels.
+    - 1 km raster products: aggregated summaries
+      - 1 km Percent Cover: 21-band raster (percent cover per class per 1 km).
+      - 1 km Percent Aggregate Cover: 10-band raster (aggregate class coverage per 1 km).
+      - 1 km Dominant Cover: single-band raster (dominant class per 1 km).
+      - 1 km Dominant Aggregate Cover: derived summary product (as described in text).
+  - Dataset structure and scope
+    - 42 datasets in total (two geographies: GB and NI; three years; multiple data resolutions and products).
+    - 21 UKCEH Land Cover Classes align with, but are not identical to, BAP Broad Habitats; careful cross-referencing is provided in Appendices.
+
+- Data content and structure (highlights)
+  - 20 m Classified Pixels (new in LCM2017–2019)
+    - 2-band 8-bit rasters per year; Band 1 = class ID; Band 2 = per-pixel confidence (0–100).
+    - Preserves fine landscape detail; not aggregated through the Land Parcels framework to retain small features.
+  - Land Parcels
+    - Parcel-level attributes (gid, _hist, _mode, _purity, _conf, _stdev, _n).
+    - Histograms store class frequencies within each parcel; _mode gives dominant class; _purity indicates the share of the dominant class; _conf provides average per-pixel confidence; _stdev measures variability.
+    - Some metadata changes since LCM2015; different gid values mean cross-year parcel comparisons require gid-based matching.
+  - 25 m Rasterised Land Parcels
+    - 3-band rasters: Band 1 = _mode; Band 2 = _conf; Band 3 = _purity.
+    - Includes improved representation of parcel-level confidence and dominance at a coarser 25 m resolution.
+  - 1 km Raster Datasets
+    - 1 km Percent Cover (21 bands): per-class percentage per 1 km grid.
+    - 1 km Percent Aggregate Cover (10 bands): percentage per UKCEH Aggregate Class per 1 km.
+    - 1 km Dominant Cover (1 band): dominant class per 1 km.
+    - 1 km Dominant Aggregate Cover (derived/alternative summary not always shown in detail here).
+  - Spatial extents and coordinates
+    - Great Britain: British National Grid (EPSG: 27700).
+    - Northern Ireland: Irish Grid (TM75, EPSG: 29903).
+    - Datasets exist for both GB and NI, with yearly availability for 2017–2019.
+
+- Seasonal data and imagery details
+  - Sentinel-2 bands and spatial resolution
+    - 0.443 µm to 2.190 µm bands; resolutions range from 10 m to 60 m depending on band.
+  - TOA reflectance vs. surface reflectance
+    - Production used Sentinel-2 TOA data after assessing SR vs TOA; TOA chosen as providing no clear improvements for core Land Cover Classes in this pipeline.
+  - Gaps and data completeness
+    - Some seasonal gaps due to cloud; classifier tolerates partial spectral information; no manual gap filling applied in this release.
+
+- Validation, accuracy, and interpretation
+  - Validation dataset and approach
+    - 22,325 validation points using GB countryside survey data, National Forest Inventory data, IACS, and manual interpretation points.
+  - Accuracy outcomes
+    - LCM2017: 78.6% overall accuracy
+    - LCM2018: 79.6% overall accuracy
+    - LCM2019: 79.4% overall accuracy
+  - Notes on validation
+    - Validation data share a common source but are not exact ground truth for every class; results represent best available indicators of map reality.
+    - Approximately 80% producer/user accuracy alignment across the 21-class system; accuracy expected to improve with method maturation.
+  - Calibration and cross-year consistency
+    - Historical consistency (LCM2015) used for bootstrap training; class relationships to BAP remain close to prior mappings to facilitate change detection and comparability.
+
+- Practical considerations and limitations
+  - Automatic classification
+    - No manual thematic corrections were applied this time; spatial errors are assumed to be randomly distributed over time, enabling persistence of real land cover changes against background noise.
+  - Cross-year comparisons
+    - Parcel IDs (gid) differ from LCM2015; cross-year parcel comparisons require using the new UKCEH Land Parcel Spatial Framework identifiers.
+  - Class definitions and crosswalks
+    - 21 UKCEH Land Cover Classes are tied to BAP Broad Habitats; while broadly aligned, these are not exact botanically defined BAP classes; Appendices provide mappings and detection considerations.
+  - Data discoverability and usage
+    - Datasets are released with extensive metadata (Tables, Appendices) to support discoverability and usability; Appendix 5 lists the full dataset lineup.
+
+- Appendices and reference materials (relevance for analysts)
+  - Appendix 1 and 2: Notes on UKCEH Land Cover Classes and BAP Broad Habitats, including class derivations and detection considerations.
+  - Appendix 3: RGB color recommendations for displaying Land Cover Classes.
+  - Appendix 4: Validation details and confusion matrices for 2017, 2018, and 2019.
+  - Appendix 5: Full list of datasets per year and product type (GB/NI, 20 m, 25 m, 1 km, etc.).
+
+- Future plans and ongoing development
+  - Aim to maintain annual LCM releases, enabling near real-time monitoring of land cover change.
+  - Plans to expand input data range, potentially integrate alternative optical sources or radar data (e.g., Sentinel-1) to address gaps and improve robustness.
+  - Ongoing refinement of Bootstrap Training strategies, validation resources, and potential improvements in upland peatland vegetation detection.

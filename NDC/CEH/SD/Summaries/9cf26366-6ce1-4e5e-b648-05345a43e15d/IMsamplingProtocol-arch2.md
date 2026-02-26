@@ -1,0 +1,53 @@
+# IM Protocol
+
+- Aim
+  - To collect and identify daily collections of macrolepidoptera (large moths) using a standard light trap.
+  - Lepidoptera serve as an indicator group for environmental change; the protocol builds on the Rothamsted Insect Survey (RIS) methodology to support long-term trend analysis with an extensive national database.
+
+- Rationale
+  - Butterflies and moths, due to their biology (phytophagous larvae) and taxonomic familiarity, are effective indicators of environmental change.
+  - The RIS background provides established expertise and a long-running data foundation (25+ years) for monitoring and trend analysis.
+
+- Method
+  - Equipment
+    - Standard Rothamsted light trap (Williams 1948) requiring continuous mains power.
+  - Location
+    - Trap sited for convenient daily emptying; near the TSS when possible; near laboratories, houses, or farms when needed for access; sheltered by vegetation; ideally >20 m from artificial lights.
+  - Sampling
+    - Ideal: daily empties year-round; if not feasible, samples can be accumulated (e.g., weekends).
+    - Specimens are posted to Rothamsted for identification unless local expertise is available.
+    - Data are stored in the Rothamsted Insect Survey database and in the ECN database.
+    - For large sites, more than one trap is desirable if operators exist.
+    - Operational details and trap instructions are provided in Appendix I.
+    - Workload: emptying trap ~40 minutes per trap per week; identification up to 15 days per site/year for highly experienced identifiers.
+  - Procedure (Appendix I: light trap description and daily operation)
+    - Trap stand ~1.2 m high; total height ~1.5 m; trap ~0.6 m square.
+    - Light: 200 W clear tungsten lamp; mains supply with RCD safety device; lamp on at dusk, off at dawn via automatic timer.
+    - Collecting jar treated with ~5 ml tetrachloroethane to immobilize insects.
+    - Daily routine (summary)
+      - Check RCD status; reset if tripped; replace fuse if needed.
+      - Confirm clock/time (GMT) matches; do not adjust for local time changes (DST).
+      - Verify lamp operation; replace bulb if needed.
+      - Replace used jar with fresh one dosed with tetrachloroethane.
+      - Transfer sample to tissue-lined containers in a ventilated area; re-dose jar for next use; label with site and date.
+      - If sampling spans multiple nights, record the appropriate start/end dates; if multiple jars, note fractions (e.g., 1/2).
+  - Safety
+    - Tetrachloroethane: toxic; precautions include working in ventilated areas, PPE, ventilation for spills, and safe handling practices.
+    - Electricity: ensure power is disconnected before bulb changes; consult electrician for exposed circuitry; regular RCD testing.
+  - Specification of results and recording conventions
+    - Data are collected for each IM sampling location at an ECN Site; ECN dataset formats are defined in the Data Transfer documentation (restricted access).
+    - Key identifying fields (first four required for every dataset)
+      - Site Identification Code (e.g., T05)
+      - Core Measurement Code (e.g., PC)
+      - Location Code (e.g., 01)
+      - Sampling Date/time (date and possibly time; includes time element for non-daily sampling)
+    - Core measurement: invertebrates - moths (IM Protocol)
+    - Data fields for each sample: Site ID, Core Code, Location Code, Date; plus species code/name and counts (RIS coding).
+  - Recording forms
+    - Refer to the Rothamsted Insect Survey submission formats and the ECN data transfer documentation (via restricted site managers extranet).
+  - Notes
+    - Sampling Date reflects the catch collected after overnight recording; nights when the trap did not operate must be reported with the sampling date.
+    - Coding follows Heslop (1964) system used by RIS.
+
+- Time
+  - The trap operates continuously overnight with daily collection and processing; sampling dates reflect the overnight period and any non-operational nights are documented.

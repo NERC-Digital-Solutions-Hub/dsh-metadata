@@ -1,0 +1,11 @@
+# Notes on the downloadable data
+
+- The Countryside Survey (CS) data come from a sample of 1 km squares in GB, with measurements at both the square level and within-square features (e.g., quadrats for vegetation, soils).
+- The sampling design is not a random subset; it is stratified by land classification (ITE). The classification has evolved from 32 classes to 42 in 1998, then 45 in 2007, with separate classifications for England, Wales, and Scotland (21, 8, and 16 classes respectively).
+- Only squares meeting inclusion criteria are surveyed; squares with more than 90% sea or more than 75% urban area are excluded. Estimates for the whole GB (or regions) assume similarity between vegetative land in excluded and included squares, which may introduce bias mainly where excluded areas are substantial.
+- Official CS estimates are produced using ratio estimation by land class, weighting by the vegetative land area of each class. From 1998 onward, standard errors and confidence intervals are estimated with bootstrap methods (Efron & Tibshirani, 1993) due to concerns about skewness.
+- The precise locations of survey squares are kept confidential by CEH to preserve representativeness; external users cannot identify whether squares fall within defined areas with precision finer than about 100 square kilometres.
+- Measurements vary in type, including binary and continuous variables (e.g., areas, lengths), and there are two levels of measurement: the square as a whole and features within the square.
+- Data handling and analysis considerations for researchers include accounting for stratification, applying the appropriate area-based weights, and using bootstrap-derived standard errors to reflect uncertainty.
+- Practical notes emphasize the need for careful interpretation due to non-random sampling, stratification by land class, and potential biases from excluded squares and confidentiality constraints.
+- References: Barr et al. (1993) Countryside Survey 1990 Main Report; Cochran (1963) Sampling Techniques; Efron & Tibshirani (1993) An Introduction to the Bootstrap.

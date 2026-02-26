@@ -1,0 +1,32 @@
+# Introduction
+
+- Dataset contains channel cross-sections for the River Lambourn and Westbrook Channel at the CEH River Lambourn Observatory, Boxford, Berkshire.
+- Surveys were conducted with Trimble R8 TM dGPS:
+  - Westbrook Channel: May 2013 (44 cross-sections)
+  - River Lambourn: November 2013 (42 cross-sections)
+  - Access restricted by dense vegetation; line-of-sight limitations noted
+- Spatial context:
+  - Observatory location: Berkshire, UK (approximately 51.445°N, 1.384°W)
+  - 600 m reach of the River Lambourn with 10 hectares of riparian wetland
+  - Westbrook Channel divides the wetland into northern and southern meadows
+- Site context and hydrology:
+  - Catchment area ~162 km²
+  - Chalk valley with large baseflow component
+  - Nearest gauging station (Shaw, 5 km downstream): baseflow index 0.96; mean discharge 1.73 m³/s
+- Ecological and conservation context:
+  - Designated as Site of Special Scientific Interest (SSSI) and Special Area of Conservation (SAC) due to brook lamprey, bullhead, and Desmoulin's whorl snail
+  - EU Habitats Directive: water courses with Ranunculion fluitantis and Callitricho-Batrachion vegetation; wetland vegetation MG8 (Cynosurus cristatus - Caltha palustris) per UK NVC
+- Data collection specifics:
+  - Cross-sections located at 44 sites on Westbrook and 42 sites on River Lambourn
+  - Bankfull stage defined by abrupt slope change, dominant bench level, and lower limit of riparian vegetation where applicable
+- References for context and methods:
+  - House et al. (2015, 2016)
+  - Marsh & Hannaford (2008)
+  - Rodwell (1991)
+- Figure reference:
+  - Figure 1 shows locations for River Lambourn (L) and Westbrook (W) cross-sections
+- GIS considerations:
+  - Data suitable for map-based visualization and hydrological analysis
+  - Challenges noted in related literature include data scattered across multiple locations, potential data gaps at suitable resolutions, and the need for data cleaning and transformation when integrating datasets
+- Key takeaway for GIS work:
+  - Provides spatially explicit cross-sections along a defined reach with clear bankfull indicators, enabling visualization of river morphology and interfacing with wetland ecology data for habitat and hydrological modeling

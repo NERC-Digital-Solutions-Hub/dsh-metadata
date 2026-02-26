@@ -1,0 +1,70 @@
+# Countryside Survey 2000 QUALITY ASSURANCE EXERCISE
+
+- Purpose and scope
+  - QA exercise to measure consistency and reliability of the CS2000 field programme (Quality Assurance)
+  - Sample: 38 of 519 squares; one quarter resurveyed in each; 234 vegetation plots across nine plot types
+  - Aims: quantify accuracy of field recording and change statistics; examine plot relocation efficiency; explain observer effects, plot location/orientation biases, plot type effects, management/seasonal effects; relate findings to the CS1990 QA; assess landcover mapping and boundary coding; evaluate hedge and boundary data; assess changes since 1990
+
+- Key methodological measures
+  - Plot relocation: success of relocating buried plates and plots eight years on; comparison with 1991 QA of CS1990
+  - Species concordance: agreement of species presence and numbers between original CS2000 survey and QA
+  - Vegetation cover: comparison of cover estimates for principal species; assessment of biases or differences
+  - Change detection: analysis of changes in landcover and boundary codes; DECORANA ordination used to assess directional change
+  - Landcover and boundary coding: primary land cover codes, BAP codes, boundary and hedge codes; agreement between CS2000 and QA
+  - Hedge diversity and arable plots: assessment of hedge-related data and limited arable plot results
+
+- Major findings
+  - Plot relocation
+    - 86.7% plots recovered; CS2000 vs 1990 relocation efficiency
+    - 60% accurately relocated; ~25% approximately relocated; ~15% inadequately relocated
+    - Plate recovery by assessors: 69.3% (8 years later); overall recovery lower than ideal but comparable to prior QA
+    - 4 m habitat (Y-plots) hardest to relocate (23% failure)
+  - Species concordance
+    - Mean species per plot: CS2000 17.9 vs QA 20.4
+    - Overall concordance: 71–74% (depending on measure); initial CS2000 accuracy ~73%
+    - Most non-concordances due to plot location errors, mis-identifications, and responses to management/season
+    - Seasonal and location issues contributed to differences from CS1990
+  - Vegetation cover
+    - Among 30 most frequent species, several grasses showed significant differences in cover between CS2000 and QA (e.g., Holcus lanatus, Dactylis glomerata, Anthoxanthum odoratum)
+    - Overall, cover comparisons were broadly similar; some species showed statistically significant differences
+  - Direction of vegetation change
+    - DECORANA axis shift overall insignificant; no systematic directional bias between CS2000 and QA
+  - Landcover mapping and boundary codes
+    - Primary landcover codes: ~88% concordance; BAP codes ~77% concordance
+    - Primary boundary codes: ~85% concordance; boundary qualifiers ~83–93% depending on measure
+    - Overall primary land cover agreement: 87.5% (excluding BAP); BAP agreement 77.4%
+    - Hedge coding (374–380) had limited success; several omissions in hedge-related coding
+  - Change in landuse and boundary data
+    - Change concurrence overall: 51.4% (low)
+    - Change noted but not substantiated by assessors: 14.7%
+    - Change not noted by CS2000: 33.9%
+    - Indicates substantial changes since 1990 may be missed; changes recorded often reflect identification/coding issues more than real change
+  - Hedge diversity and boundary features
+    - Hedge diversity plots: total species 124; common species 92; agreement ~74.2% (surveyors vs QA)
+    - Boundary features: high agreement on boundary height and stockproof status; overall boundary-related concordance around 89–93% for coded features
+  - Arable plots
+    - Only five plots; concordance between CS2000 and QA was very poor; likely influenced by season and familiarity with ruderal species
+  - Overall interpretation
+    - Mapping and vegetation recording show robust reliability; changes over time are harder to detect reliably with the current QA framework
+    - Location/orientation accuracy and plot overlap are major drivers of non-concordance
+    - The QA highlights the importance of precise metadata, standardization, and governance to enable reliable monitoring for policy scrutiny
+
+- Implications for monitoring frameworks
+  - Data quality and provenance
+    - Emphasize accurate plot relocation, stable marking, and precise plot location/orientation to minimize non-concordance
+    - Maintain comprehensive metadata and documentation to support verification and reuse
+  - Data governance and sharing
+    - Ensure openness and accessibility of underlying data while managing sensitivity and changes over time
+    - Foster collaboration across organisations to reduce silos and improve data integration
+  - Coding standards and training
+    - Strengthen training for consistent coding of landcover, boundaries, hedges, and management changes
+    - Review and refine landcover and hedge coding schemes (e.g., BAP mappings) to improve consistency
+  - Change detection and monitoring design
+    - Recognize seasonal effects and plan for repeated visits to arable margins or other variable habitats
+    - Implement ongoing QA cycles to track consistency over time and identify systemic biases
+  - Data usability for policy evaluation
+    - Balance granularity of codes with clarity of interpretation to support decision-making
+    - Use ordination-based approaches (like DECORANA) to assess overall change while accounting for plot-level variability
+
+- Endnote
+  - The Countryside Survey 2000 QA exercise demonstrates both the strengths and challenges in environmental monitoring data collection, highlighting the critical role of relocation accuracy, metadata quality, and governance in producing reliable, policy-relevant environmental health measures.

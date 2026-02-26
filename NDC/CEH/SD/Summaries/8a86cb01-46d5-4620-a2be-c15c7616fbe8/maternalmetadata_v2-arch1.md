@@ -1,0 +1,29 @@
+# Long-term multisite Scots pine trial, Scotland: mother tree, cone and seed phenotypes, 2007
+
+- The dataset captures phenotypes of Scots pine mother trees and their cones/seed from 21 native Scottish populations, with seed used to establish a long-term multisite common garden trial at three nurseries/field sites.
+- Sampling design and scope:
+  - Collected in March 2007; 10 seed trees sampled from each population.
+  - Central sampling circle around a central tree (~1 km in diameter); nine sampling points in predetermined random directions.
+  - Stratified by distance from the center with a 1:3:5 ratio; for smaller woodlands, directions maintained to cover the area while keeping at least 50 m between sampled trees.
+- Mother-tree measurements (per mother tree):
+  - Height and diameter at breast height (DBH) measured.
+  - Ten cones collected and assessed; cone width/length measured before drying; cone weight measured after drying.
+  - Seeds from each cone assessed for total weight and for the count and percentage of viable seeds (viable = winged with an obvious seed).
+  - Mean values across the 10 cones recorded for each mother tree.
+- Data files and structure:
+  - Two files: MotherTraits.txt and ConeSeedTraits.txt, linked by PopulationCode.
+  - PopulationCode: unique identifier for each population; Family: ID of the mother tree (individuals sharing a family code originate from the same mother tree); Population: full population name; SeedZone: Scots pine seed zone (EC, N, NC, NE, NW, SC, SW).
+  - Geographic and environmental descriptors for populations include Latitude/Longitude, Aspect, Slope, Altitude, Regeneration, SoilDepth, SoilMoisture, Competition, HA (height of mother tree), and DA (diameter at breast height).
+  - ConeSeedTraits includes per-cone measurements: Cone (cone number 1–10), Wi (width in mm), Le (length in mm), We (weight in g), SN (total viable seeds per cone), SV (percentage of viable seeds), SW (weight of all viable seeds in a cone in g).
+- Variable details and units (as described in the metadata):
+  - PopulationCode, Family, Population, SeedZone with specified regional codes.
+  - Geographic coordinates provided as decimal degrees; environmental and morphological variables (Aspect, Slope, Altitude) with appropriate categorical or decimal scales.
+  - ConeSeedTraits metrics cover geometric, weight, and viability attributes for seeds across cones.
+- Purpose and potential analyses:
+  - Enables exploration of maternal effects on progeny traits and assessment of heritable components in cone/seed phenotypes.
+  - Facilitates geographic and environmental analyses across Scotland’s populations, including seed zone influences and local adaptation signals.
+  - Suitable for statistical modeling (e.g., mixed models with population as a random effect) to relate mother-tree traits and cone/seed traits to environmental variables and geographic location.
+- Data quality and usage considerations:
+  - Sampling aimed to capture native range variation without selecting seed trees by trait; data derive from controlled collection and standardized measurements across sites.
+  - Data are organized to enable cross-file joins via PopulationCode and Family; careful handling of units and scales is advised when combining fields.
+  - The dataset focuses on both pre- and post-drying measurements of cones and seeds, with viable seed determination based on wing and observable seed presence.

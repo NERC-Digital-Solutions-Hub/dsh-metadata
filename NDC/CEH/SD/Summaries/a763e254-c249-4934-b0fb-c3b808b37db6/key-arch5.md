@@ -1,0 +1,32 @@
+# Text
+
+- The document defines coded classifications for two attribute groups used in infrastructure datasets: road/track characteristics and built-environment types, each with an associated condition.
+- Road/Track Type codes:
+  - 1 Major (paved)
+  - 2 Major (unpaved)
+  - 3 Minor (paved)
+  - 4 Minor (unpaved)
+  - 5 Track (unpaved)
+- Road/Track Condition codes:
+  - 1 Intact
+  - 2 Obstructed/damaged
+- Built-environment Type codes:
+  - 1 Residential (permanent)
+  - 2 Residential (informal/temporary)
+  - 3 Industrial (i.e., hydropower)
+  - 4 Municipal
+- Built-environment Condition codes:
+  - 1 Intact
+  - 2 Obstructed/damaged
+
+- As a data steward, you would need to ensure clear, standardized definitions and consistent use of these codes, along with robust metadata.
+- Key considerations for governance:
+  - Define exact semantics for each code and thresholds for "Intact" vs "Obstructed/damaged."
+  - Provide a data dictionary with allowed values, definitions, and examples.
+  - Implement validation to enforce valid codes and ensure both Type and Condition are captured.
+  - Plan for data provenance, versioning, and update mechanisms when datasets are refreshed.
+  - Address interoperability across systems and formats, including potential needs for mapping or transformation.
+- Practical implications:
+  - Useful for classifying infrastructure and tracking status (e.g., maintenance prioritization).
+  - Enables filtering by road type/condition and built-environment type/condition for analyses and planning.
+  - Be mindful of data timeliness, completeness, and potential need for additional attributes to meet user needs.

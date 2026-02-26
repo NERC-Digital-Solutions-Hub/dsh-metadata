@@ -1,0 +1,24 @@
+# Hourly data (air temperature, solar radiation, wind speed and lake temperature profile) from automatic water monitoring buoy from Blelham Tarn 2019
+
+- Location and context: data from an automatic lake monitoring buoy on Blelham Tarn, Cumbria, England
+- Measured variables:
+  - Air temperature (°C)
+  - Solar radiation flux (Pyranometer) in Watts per square metre
+  - Wind speed (m/s)
+  - Lake water temperatures at depths of 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 and 12 m (°C)
+- Sampling regime:
+  - Data recorded every 4 minutes
+  - Hourly averages calculated by an Oracle database
+  - Example: 2 p.m. value is the average from 1 to 2 p.m., excluding 1 p.m. data, including 2 p.m. data
+  - All times are in GMT
+  - Timeframe: data from 2019
+- Data quality and limitations:
+  - Raw data not calibrated or quality controlled
+  - Visual checks performed; obvious hardware errors removed
+  - Gaps due to buoy maintenance or sensor/logger problems
+- Data structure and accessibility:
+  - Comma-separated values (CSV) file
+  - Columns: Date GMT, 0.5m, 1m, 2m, 3m, 4m, 5m, 6m, 7m, 8m, 9m, 10m, 12m temperatures; Air Temperature; Pyranometer; Wind Speed
+  - Each column includes a description (e.g., depth or measurement type)
+- Funding:
+  - Supported by Natural Environment Research Council (NE/R016429/1) as part of the UK-SCaPE programme delivering National Capability

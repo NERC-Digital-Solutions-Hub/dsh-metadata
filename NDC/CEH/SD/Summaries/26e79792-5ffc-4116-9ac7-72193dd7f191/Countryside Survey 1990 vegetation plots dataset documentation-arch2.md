@@ -1,0 +1,40 @@
+# Countryside Survey 1990: vegetation plot data, Great Britain Dataset Documentation
+
+- Purpose and scope: Documentation for Countryside Survey 1990 vegetation data across Great Britain, intended to support monitoring of environmental health and policy performance over time.
+- Data structure: Consists of two CSV files
+  - Vegetation Plot - Plot Information 1990.csv
+  - Vegetation Plot - Species List 1990.csv
+- Plot information file (Plot Information 1990.csv) columns:
+  - YEAR (number): Year of Survey
+  - SQUARE_ID (text): Survey square identifier
+  - PLOT_ID (text): Plot identifier
+  - PLOT_TYPE (text): Type of plot
+  - COUNTRY (text): England (ENG), Scotland (SCO) or Wales (WAL)
+  - ENV_ZONE_2007 (number): Environmental Zone number (2007 version)
+  - EZ_DESC_07 (text): Environmental Zone description (2007 version)
+- Species list file (Species List 1990.csv) columns:
+  - YEAR (number): Survey Year
+  - SQUARE_ID (text): Survey square identifier
+  - PLOT_ID (text): Plot identifier
+  - AMALG_PTYPE (text): Plot type
+  - BRC_NUMBER (number): Species identifier
+  - BRC_NAMES (text): Species name
+  - NEST_LEVEL (number): Nest species first recorded in
+  - FIRST_COVER (number): Percent cover in first nest
+  - TOTAL_COVER (number): Percent cover in whole plot
+- Nomenclature: Species names follow Stace, C. (1997) New Flora of the British Isles.
+- Data provenance and usage:
+  - Data owned by NERC - Centre for Ecology & Hydrology
+  - Acknowledgement and copyright notice required on all copies, publications, reports, and presentations
+  - Acknowledgement text: Countryside Survey data owned by NERC - Centre for Ecology & Hydrology; Countryside Survey © Database Right/Copyright NERC- Centre for Ecology & Hydrology. All rights reserved.
+- References and metadata:
+  - Barr, C.J. 1991 (1990): Countryside Survey Field Handbook (4th draft)
+  - Carey et al. 2008: Countryside Survey: UK Results from 2007
+  - Countryside Survey Website: general overview and methodologies
+  - Countryside Survey Environmental Zones metadata and documentation
+- Practical context for Analysts Monitoring the Environment:
+  - Provides standardized, verifiable plot-level vegetation data suitable for temporal comparisons and policy performance monitoring
+  - Encourages data integration and broad dissemination through portals and linked publications
+  - Ensures data quality through standardized collection and nomenclature, with clear attribution requirements
+
+- Note: The dataset documents 1990 vegetation plots and their species lists, enabling comparative analyses with later Countryside Survey rounds and environmental zone classifications.

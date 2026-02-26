@@ -1,0 +1,23 @@
+# Details of data structure to CINAg_soils_data_2016_v3.csv
+
+- Dataset scope: 42 columns, 330 rows; data from a grassland fertiliser trial in 2016.
+- Experimental design: Inorganic fertilizer experiment with treatments on a field trial; treatments are Control (C), Urea (U), Urea inhibitor (IU), and Ammonium nitrate (AN).
+- Sample identification: Sample_ID follows the pattern Year_Experiment_Site_Sampling_time_Treatment_Plot_Depths.
+- Sites and platforms: NW = North Wyke, HF = Henfaes Farm, EB = Easter Bush.
+- Sampling framework: 
+  - Sampling_date recorded as dd/mm/yyyy.
+  - Sampling_time: T0, T1, and T2 (T2 at last harvest).
+  - Plot numbers: 1 to 16.
+  - Depths: 0–15 cm, 15–30 cm, 30–60 cm.
+  - Repeat: 0, 1, or 2.
+- Measured properties (broad categories):
+  - Inorganic and organic soil chemistry: NH4_mgN_per_kg_soil, NO3_mgN_per_kg_soil, DOC_mgC_per_kg_soil, DON_mgN_per_kg_soil, Aminoacids_mgN_per_kg_soil, Peptides_and_proteins_mgN_per_kg_soil, Olsen_P_mgP_per_kg_soil, PO4.P_mgP_per_kg_soil, totC_perc, totN_perc, CN_ratio, totP_mgP_per_kg, pH_deionised_water, pH_CaCl2, EC_µS_per_cm, Na_mg_Na_per_kg_soil, K_mg_K_per_kg_soil, Ca_mgCa_per_kg_soil, Mg_mgMg_per_kg_soil.
+  - Microbial and organic matter indicators: MBC_mgC_per_kg_soil, MBN_mgN_per_kg_soil, LOI_perc.
+  - Microbial/soil biochemistry: Aminoacids, Peptides_and_proteins, POXC_mgC_per_kg_soil.
+  - Soil carbon and nitrogen pools: totC_perc, totN_perc, CN_ratio.
+  - Phosphorus and available P: Olsen_P_mgP_per_kg_soil, PO4.P_mgP_per_kg_soil.
+  - Soil physical properties and stability: Soil_moisture_perc, Agg_stability_moist_perc, Agg_stability_dry_perc.
+  - Soil texture: Sand_perc, Silt_perc, Clay_perc.
+- Data structure and documentation: Column headers include explicit explanations and units, designed to support straightforward cross-variable analyses and model development.
+- Intended use: Enables analysis of how inorganic fertiliser treatments affect soil chemical, biological, and physical properties across sites, depths, and sampling times, supporting correlation studies, modeling, and data-driven decision making.
+- Metadata and discoverability: Structured naming convention and detailed column descriptions facilitate data traceability and reuse, with explicit documentation of measurement units.

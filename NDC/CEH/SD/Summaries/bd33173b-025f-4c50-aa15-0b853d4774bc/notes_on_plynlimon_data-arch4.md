@@ -1,0 +1,23 @@
+# Sampling regime
+
+- Time frame: data cover March 2023 to March 2024.
+- Sampling cadence: samples collected every four weeks.
+- Documentation and data references:
+  - Site information: Plynlimon_site_information.csv
+  - Field measurements and methods: Plynlimon_field_measurements_and_methods.csv
+  - Instrumentation, units, and analytical methods: Description_of_column_headings.csv
+- Data structure and content:
+  - Details on data structure, column definitions, and measurement units are described in Description_of_column_headings.csv.
+  - Full determinant and method descriptions are provided using the CEH Analytical Services Thesaurus (CAST) (link: https://vocabs.ceh.ac.uk/cast/en/).
+- Notes on reported values:
+  - For hydrochemical values below the limit of detection (LOD), reported values are set halfway between 0 and the LOD.
+  - Some chemicals have changing LODs over the sampling period, resulting in multiple rows with subperiod-specific LODs.
+- Quality control and laboratory QA:
+  - pH, conductivity, and alkalinity measured at UKCEH Bangor laboratories; participation in LGC AquaCheck Proficiency Testing.
+  - Other chemical analyses conducted at UKCEH Lancaster; ISO 17025:2005 accreditation for many analyses.
+  - Data checked for missing values; blanks may reflect insufficient sample, instrument failure, or fieldworker error.
+  - Notable data issues: sample 76247 (Upper Hafren, 05/12/2023) bottle broke prior to analysis; NPOC values missing for Lower Hore (76267) and Upper Hore (76270) on 04/03/2024.
+- Data completeness and gaps:
+  - Some samples may be missing due to weather (e.g., insufficient rainfall) or non-collection; such sample IDs are omitted from records.
+- Data interpretation and consistency notes:
+  - To maintain consistency with previous Plynlimon hydrochemistry data, Carregwen rain chemistry rainfall measurements (C) are recorded from a rain gauge near the Hafren (B) site, not the Carregwen Standard gauge (AJ).

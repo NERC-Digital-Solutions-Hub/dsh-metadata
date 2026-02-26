@@ -1,0 +1,36 @@
+# Simulated Monthly Biological Indicators for England and Wales 1964-2012
+
+- Context: Part of the Historic Droughts project (2014-2018) aiming to understand past droughts in the UK across hydrometeorological, environmental, regulatory, and social dimensions; multi-institution collaboration; goal to improve drought management tools.
+- Aim of dataset: Investigate how three biological indicators respond to river discharge, using simulated, de-trended, and de-seasonalised time series.
+- Biological indicators:
+  - Average Score Per Taxon (ASPT)
+  - LIFE at Family level (LIFE_F)
+  - LIFE at Species level (LIFE_S)
+- Data provenance:
+  - Observations sourced from Environment Agency BIOSYS (England), circa 2011-2012 subset from the biosys database; BIOSYS data are the basis for the indicators.
+  - Discharge represented by the Standardised Streamflow Index (SSI), tailored for drought studies (SSI6, 6-month accumulation).
+- Study design and sampling:
+  - Raw indicator data are twice-yearly, from seasonal sampling (Autumn and Spring) at 86 bio-monitoring sites matched to 76 EA gauging stations.
+  - Time period of data: approx. 1950s onward with ~1984-2011 available for the indicators; output dataset covers 1964-2012.
+  - Seasonal and long-term trends exist (e.g., an overall positive annual trend in biological indicators); data are detrended and deseasonalised before modelling.
+- Data processing steps:
+  - De-trending and de-seasonalising: fitted linear models per site with season and year as predictors; residuals (detrended/deseasonalised values) used for analysis.
+  - SSI6 computation: standardised streamflow index with a 6-month accumulation; based on Tweedie distribution to fit UK river flow data.
+  - Predictor set: SSI6 for the sampling month plus six 6-month lagged SSI6 values (6, 12, 18, 24, 30, 36 months prior).
+  - Modelling approach: three multi-level (ML) models (one per bio-indicator) with two levels (data level and site level); Multi-Model Inference (MMI) to average across a set of good models rather than selecting a single best model.
+  - Output: final simulated, de-trended, and de-seasonalised time series for ASPT, LIFE_F, and LIFE_S covering 1964-2012.
+- Outputs and data formats:
+  - Output files (CSV): HD_Output_ASPT_ENG_WLS_1964-2012.csv; HD_Output_LIFE_F_ENG_WLS_1964-2012.csv; HD_Output_LIFE_S_ENG_WLS_1964-2012.csv
+  - Input files (observed and pre-processed): HD_Input_ASPT_ENG_WLS_1985-2011.csv; HD_Input_LIFE_F_ENG_WLS_1985-2011.csv; HD_Input_LIFE_S_ENG_WLS_1985-2011.csv
+  - Supported location data: HD_Bio_Indicators_Site_Location.csv
+  - Key headers and fields (common across files): SITE_ID, STATION_ID, EASTING, NORTHING, SAMPLE_ID, DATE_OBS, DATE_MOD, YEAR_0, SEASON, ASPT, LIFE_F, LIFE_S, DTDS_ASPT, DTDS_LIFE_F, DTDS_LIFE_S, SSI6, SSI6_6M_LAG, SSI6_12M_LAG, SSI6_18M_LAG, SSI6_24M_LAG, SSI6_30M_LAG, SSI6_36M_LAG, MOD_ASPT, MOD_LIFE_F, MOD_LIFE_S.
+- Outputs detail:
+  - DTDS_* columns: de-trended and de-seasonalised indicators for each bio-index (DTDS_ASPT, DTDS_LIFE_F, DTDS_LIFE_S) as dependent variables in the models.
+  - MOD_* columns: modelled (simulated) outputs corresponding to each de-trended/de-seasonalised indicator (MOD_ASPT, MOD_LIFE_F, MOD_LIFE_S).
+  - SSI6 and lagged SSI6 values serve as predictors for the modelling of each indicator.
+- Documentation and references:
+  - Acknowledgement: Historic Droughts Project (grant NE/L01016X/1).
+  - Key methodological references:
+    - Standardised Streamflow Index development and applications (Barker et al., 2016; Svensson et al., 2017).
+    - BIOSYS data context and usage (Environment Agency, England).
+  - Note: A dedicated paper detailing methods and data is in preparation.

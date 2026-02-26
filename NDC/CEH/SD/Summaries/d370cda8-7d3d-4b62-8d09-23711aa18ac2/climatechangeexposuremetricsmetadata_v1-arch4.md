@@ -1,0 +1,36 @@
+# Overview
+
+- Purpose: This dataset underlies an assessment of the exposure of UK habitats to climate change and evaluates how well current UK plant monitoring schemes cover climate exposure gradients (as described in Wilson & Pescott, 2023).
+- Data product: Spatially explicit, 1 km gridded metrics of climate change exposure, calculated as the Euclidean distance in multivariate climate space between historical/past and predicted future conditions.
+- Time period comparisons: Four comparisons across five periods:
+  - 1901–1930 vs 1961–1990
+  - 1961–1990 vs 2010–2019
+  - 2010–2019 vs 2021–2040
+  - 2021–2040 vs 2061–2080
+- Data sources and resolutions:
+  - Historical/present climate: HadUK-Grid (monthly precipitation and temperature at 1 x 1 km)
+  - Future projections: UKCP18 Local (5 x 5 km) regridded to 1 km via bilinear interpolation
+  - Ensemble: 12 convection-permitting UKCP18 Local simulations; ensemble mean used
+- Variables and dimensionality reduction:
+  - 37 bioclimatic variables per period, scaled and reduced with PCA
+  - PC1 and PC2 used to summarize climate space (PC1: warmer/drier to cooler/wetter; PC2: wetter to more temperature-stable)
+  - PC1 explains 58.25% and PC2 21.43% of variance
+- Exposure metric and interpretation:
+  - Euclidean distance between pixels in PC1/PC2 space across adjacent time points
+  - Resulting exposure index is dimensionless and comparable across periods
+- Data products and access:
+  - GeoTIFF files containing the climate exposure metrics for the UK and Isle of Man
+  - Explanatory context and methodological details available in Wilson & Pescott (2023) and cited sources
+- Quality control and validation:
+  - Methodology and validation details provided in the peer-reviewed work (Wilson & Pescott, 2023)
+  - Use of the ensemble mean to align with observed climate patterns
+- Data governance and reuse considerations for data leaders:
+  - Provenance: combines HadUK-Grid observational data and UKCP18 Local projections
+  - Data integration: aligns 1 km and 5 km scales through resampling; time-slice alignment across five periods
+  - Metadata and discoverability: data delivered as GeoTIFFs; additional methodological metadata referenced to supplementary information
+  - Update potential: framework supports future updates if climate projections or periods change
+  - Practical application: supports habitat exposure analyses and evaluation of plant monitoring scheme coverage; suitable for cross-organization data collaboration and decision-making
+- Limitations and caveats:
+  - Differences in original resolutions and the interpolation step may introduce uncertainties
+  - Reliance on climate model projections and ensemble mean; interpret exposure with awareness of model uncertainties
+  - The exposure metric is a summarized, dimensionless index requiring ecological context for interpretation

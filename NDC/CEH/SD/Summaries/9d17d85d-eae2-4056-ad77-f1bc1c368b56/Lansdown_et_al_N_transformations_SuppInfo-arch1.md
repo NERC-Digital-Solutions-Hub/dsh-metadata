@@ -1,0 +1,60 @@
+# Overview of data
+
+- A dataset compiled from the in-stream N-cycling component of the NERC Macronutrients consortium, led by Prof. Mark Trimmer, focusing on the role of lateral exchange in seaward flux of C, N and P.
+- Two accompanying data files:
+  - Lansdown et al N transformations and porewater chemistry in permeable sediments
+  - Lansdown et al N transformations in clays
+- Field campaigns: four campaigns in the Hampshire Avon catchment to measure in situ rates of nitrogen transformations and porewater chemistry across rivers with varying land-river connectivity.
+- Sediment types:
+  - Permeable sediments (sand or chalk geology): push-pull sampling with bespoke stainless steel probes; depths 3–20 cm; porewater O2, pH measured on site, plus samples preserved for Fe(II) and gas analysis; filter and freeze for nutrient and chloride analysis.
+  - Clays: initial push-pull attempts unsuccessful due to sediment disruption; intact core method (Trimmer et al. 2006) used with small cores (3 cm diameter) incubated in river water for up to 4 hours; no accompanying porewater chemistry.
+- Nitrogen transformation measurements:
+  - Permeable sediments: in situ 15N-labelled nitrate injections (≈300 µM, 98 atom% 15N; ~25 mL tracer) with four time points over ≤60 minutes; subsequent analysis includes 15N products (N2, N2O, NOx) and related porewater chemistry.
+  - Clays: 15N-nitrate added to overlying water; cores incubated, then slurry analysed for later N2 production.
+- Data structure and coverage:
+  - Permeable sediments data: 241 rows × 20 columns
+  - Clays data: 153 rows × 7 columns
+  - Key missingness: BD L (below detection limit) and ND (not determined due to flow or operational constraints)
+  - Seasonal campaigns: Spring 2013, Summer 2013, Autumn 2013, Winter 2014; some sites not sampled in certain seasons due to flooding or landowner restrictions
+- Column headers and key variables (with typical units):
+  - RecordID: unique sample identifier
+  - Season: sampling season
+  - SiteCode: site identifier (e.g., CE1, CW2, GN1, GA2, AS1, AS2)
+  - Vegetated: presence of vegetation in sediment (Y/N)
+  - Depth: probe depth below riverbed (cm)
+  - A14: in situ anammox rate for permeable sediments (nmol N L−1 h−1) or μmol N m−2 h−1 for clays
+  - D14: in situ denitrification rate (same units as A14)
+  - ra: contribution of anammox to N2 production (%)
+  - Nit-15N: nitrification potential in permeable sediments (nmol N L−1 h−1) or 15N-derived measure in clays
+  - Nit-pn: ambient nitrification activity in clays (μmol N m−2 h−1)
+  - Ammonium: porewater NH4+ concentration (µM)
+  - Chloride: porewater chloride concentration (mg L−1)
+  - Iron(II): Fe(II) in porewater (µM)
+  - Methane: dissolved methane in porewater (µM)
+  - Nitrate: porewater nitrate (µM)
+  - Nitrite: porewater nitrite (µM)
+  - N2O: dissolved nitrous oxide in porewater (nM)
+  - O2: dissolved oxygen in porewater (µM)
+  - O2sat: O2 saturation (%)
+  - pH: porewater pH
+  - SRP: soluble reactive phosphorus in porewater (µM)
+- Measurement details and methods:
+  - Ammonium, Chloride, Nitrate, Nitrite, SRP concentrations measured by automated colorimetry or ion-selective/standard colorimetric methods with defined detection limits and precision
+  - Fe(II) measured with phenanthroline complexation and UV/Vis spectrophotometry
+  - Methane and N2/N2O concentrations determined via gas chromatography with headspace analysis; dissolved concentrations derived using Bunsen solubility coefficients
+  - O2 measured with fast-response microelectrodes; contamination correction applied
+- N2 isotope-based calculations (isotope pairing technique):
+  - 15N-nitrate tracer mixes with ambient 14N to yield 28N2, 29N2, 30N2; headspace N2 and N2O measured by mass spectrometry
+  - Production rates (P29, P30) derived from linear trends of aN2 over time, with corrections for advective flow via chloride
+  - Permeable sediments: calculation of p14 (14N-N2 production from ambient processes), ra (fraction due to anammox), A14 (14N N2 from anammox) and D14 (denitrification-derived 14N2)
+  - Clays (impermeable sediments): similar approach but N2 content scaled to core slurry and then to per m2 riverbed
+  - Ambient nitrification (Nit-pn) calculated as p14 minus pw.14, with pw.14 = p15 × r14
+  - r14 (14N/15N ratio in nitrate) estimated from N2O products
+- Data quality context and references:
+  - Primary references detailing methods and analyses:
+    - Lansdown et al. 2014; Lansdown et al. 2016; Nielsen 1992; Trimmer et al. 2006; Risgaard-Petersen et al. 2003; Thamdrup & Dalsgaard 2000; Weiss & Price 1980; Yamamoto et al. 1976
+- Data relevance and usage notes for analysts:
+  - Dataset enables assessment of N-cycling processes (anammox, denitrification, nitrification) at fine spatial scales across sediment types
+  - Useful for correlating N-transformations with porewater chemistry, oxygenation, depth, vegetation, and site characteristics
+  - Consider scale and data gaps: local site conditions, seasonal sampling gaps, and detection limits when performing statistical analyses or model development
+  - Data provenance and metadata are available to support reproducibility and dataset discoverability via the accompanying Lansdown et al. files and described methods

@@ -1,0 +1,27 @@
+# Supporting documentation for the experiment manipulating local population density
+
+- Location and subjects: Wytham woods, Oxfordshire, UK; populations of great tits (Parus major), blue tits (Cyanistes caeruleus), marsh tits (Poecile palustris), and nuthatches (Sitta europaea).
+- Study period: January to March 2021 (six weeks of manipulation after a two-week pre-experimental phase).
+- Experimental design:
+  - Eight sites total: six experimental sites and two control sites.
+  - Each site equipped with two selective feeders ~100 m apart, offering sunflower seeds.
+  - Selective feeders control access via a flap and an RFID antenna; only PIT-tagged birds recorded when landing on the perch.
+  - Density manipulation: at each experimental site, one feeder designated as low-density and the other as high-density.
+  - Pre-experiment: two weeks of open access (all PIT-tagged birds could feed) to establish baseline visitation at each feeder.
+  - Density assignment logic:
+    - At three experimental sites, the feeder with the higher pre-experiment visitation became high-density (and the other low-density).
+    - At the other three experimental sites, the feeder with higher pre-experiment visitation became low-density (and the other high-density).
+  - Individual-level randomization: from birds recorded at least 100 times during the pre-experiment period, 20% were randomly assigned to the low-density treatment and excluded from accessing the high-density treatment at the corresponding feeder.
+  - All birds on the high-density feeder could access food except the 20% chosen for the low-density treatment.
+- Data collection:
+  - Feeders checked and refilled every 2–3 days; performance checked; data logged.
+  - Data collectors: Keith McMahon, Sam Croft, and Kristina Beck.
+- Dataset: a single CSV file with fields including:
+  - date, time, and logger per visit (Bto.ring)
+  - Site (experimental site identifier)
+  - period (pre/during experiment)
+  - treatment per logger (low/high/c1/c2 for control sites)
+  - id.treatment per individual (low/high/control)
+  - species code (Bto.species.code; greti, bluti, marti, nutha)
+- Purpose and usage: To assess how manipulating local population density affects visitor patterns to feeders, enabling analysis of density-dependent foraging by multiple bird species over time.
+- Data considerations: Uses RFID-enabled tracking to ensure precise visit timing and attribution to individuals and sites; pre-experiment data used to assign density treatments and ensure appropriate sampling of individuals.

@@ -1,0 +1,33 @@
+# Supporting information
+
+- The CHESS-PE dataset provides two daily potential evapotranspiration estimates on a 1 km grid over Great Britain (1961-2017), derived from CHESS-met meteorological variables and CEH-GEAR precipitation.
+- Two PET variables are included:
+  - PET: Penman-Monteith potential evapotranspiration for a well-watered grass surface.
+  - PETI: PET with interception correction, accounting for rainfall interception and daytime interception storage dynamics.
+- This release supersedes the previous CHESS-PE version (2016) with several updates:
+  - Extended data to 2016-2017.
+  - Updated netCDF metadata for all years.
+  - Bug fixes:
+    - Humidity deficit limited to zero (affecting ~4% of data; mean PET increases by ~0.001 mm/day, ~0.1%).
+    - PETI overestimation corrected (affecting ~63% of data; PETI decreases by ~0.02 mm/day, ~1.5% overall; winter differences up to -4%, summer ~-1%).
+- Calculation and methodology (key points):
+  - PET is computed from Ta, qa, downward longwave/shortwave radiation (Ld, Sd), and surface pressure using the Penman-Monteith equation; assumes a grass surface with stomatal resistance of 70 s/m.
+  - PETI uses the same equation as PET for transpiration plus an interception component (Ei) on wet days, with an initial interception store (S0) and a total interception capacity (Stot), modeled with an exponential dry-down.
+  - The CHESS-PE PET and PETI calculations are based on FAO-standard references (e.g., Allen et al., 1998) and prior Robinson et al. work (2017, 2016, 2020).
+- Input data sources:
+  - PET: CHESS-met meteorological variables (Ta, qa, Ld, Sd, p*).
+  - PETI: all above plus CEH-GEAR precipitation (CHESS-met precipitation scaled to appropriate units).
+- File format and data structure:
+  - NetCDF files (CF-compliant) following CEH gridded dataset conventions.
+  - Data stored as monthly files, with one file for each variable.
+- Data availability and access:
+  - Hosted by the Environmental Information Data Centre.
+  - Download link: https://catalogue.ceh.ac.uk/documents/9116e565-2c0a-455b-9c68-558fdd9179ad
+- Known issues:
+  - ArcGIS reads CF files with projected coordinate systems assuming WGS 1984, causing a positional offset (10–100 m) for CHESS-PE layers; users should adjust layers using ArcGIS tools and consult the ArcGIS documentation.
+- References:
+  - FAO (1998) for crop evapotranspiration guidelines.
+  - Keller et al. (CEH-GEAR) for rainfall estimates.
+  - Monteith (1965) on evaporation and environment.
+  - Robinson et al. (2020, 2017, 2016) on CHESS datasets and evapotranspiration trends.
+  - Tanguy et al. (2019) on gridded rainfall estimates for the UK.

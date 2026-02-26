@@ -1,0 +1,40 @@
+# Dataset Documentation
+
+- This document documents the Countryside Survey dataset providing national estimates of landscape linear feature stock for 1990, calculated using the 2007 ITE Land Classification.
+- Estimates are presented as total lengths in thousands of kilometers ('000s km) for each linear feature type per Land Class, including lower and upper 95% confidence interval estimates.
+- Key data fields include:
+  - YEAR: Year of Survey
+  - LAND_CLASS: ITE Land Class (description provided)
+  - FEATURENO: Linear feature code
+  - FEATURE: Linear feature description
+  - LOWER_ESTIMATE, MEAN_ESTIMATE, UPPER_ESTIMATE: 95% CI bounds and mean length (in '000s km)
+  - LAND_CLASS_AREA: Total area of the relevant Land Class (hundreds of hectares)
+- Linear feature codes and descriptions:
+  - _1: Hedge (managed hedgerows; may accompany other features)
+  - _3: Wall (stone or manufactured block walls; may include fences/banks)
+  - _4: Line of trees/shrubs/relict hedge/fence (natural-shaped line; may include banks/grass strips)
+  - _5: Line of trees/shrubs/relict hedge (natural-shaped line; may include avenues)
+  - _6: Bank/grass strip (earth/stone bank or grass strip)
+  - _7: Fence (permanent post/rail/mesh; may be with grass strip, ditch, or stream)
+  - TOTAL: Total length of linear features
+- Reporting and data structure:
+  - Information is recorded as codes during field surveys and reported via a hierarchical class system.
+  - When reporting, there is no double counting of multi-element features; hedges have precedence in reporting when found with other features.
+  - Hedge estimates are given precedence and walls/fences are not counted where a hedge is present.
+- Data interpretation notes:
+  - A hedge may be beside a wall or fence; however, hedge lengths are not included in wall or fence totals if associated with a hedge.
+  - Negative values may appear in the MEAN_ESTIMATE due to the statistical model; these should be treated as zero.
+- Use limitations and rights:
+  - All use of Countryside Survey data must be acknowledged.
+  - Acknowledgement and copyright notice required on all copies, publications, presentations, etc.
+  - Data are owned by NERC - Centre for Ecology & Hydrology; all rights reserved.
+- Access and related resources:
+  - Countryside Survey Website provides project overview, documentation, and methodologies: http://www.countrysidesurvey.org.uk/
+  - Key references and reports cited include:
+    - Countryside Survey: UK Results from 2007 (2008)
+    - Countryside Survey 1990: main report (1993)
+    - CS Technical Report No.4/07 (Scott, 2007)
+    - ITE Land Classification references (1996, 2007, etc.)
+- Practical notes for data leaders:
+  - The dataset links national estimates to a standardized Land Classification, enabling cross-year and cross-feature comparisons.
+  - The metadata and accompanying methodological references support data quality assessment, reproducibility, and discoverability within broader data ecosystems.

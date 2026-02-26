@@ -1,0 +1,63 @@
+# LCM2000
+
+- Overview
+  - LCM2000 is a parcel-based thematic classification of satellite imagery covering the entire United Kingdom, updating and upgrading the Land Cover Map of Great Britain (LCMGB) 1990.
+  - It is derived mainly from Landsat imagery, covers Northern Ireland, and incorporates information from ancillary datasets to provide an all-UK dataset.
+  - Produced in both vector and raster formats, with multiple versions offering different levels of detail and spatial resolutions.
+  - The classification hierarchy aligns with the Joint Nature Conservation Committee (JNCC) Broad Habitats, and includes additional detail where possible to meet user needs.
+- Data structure and classification
+  - Minimum mappable area is greater than 0.5 hectares; parcels smaller than 0.5 ha are dissolved into surrounding landscape when possible.
+  - The data use a hierarchical Target/Subclass structure, with optional Variant level for more detail (Level 3).
+  - Vector data are polygons (land parcels) with a detailed attribute set; raster data are derived from the vector dataset at 25 m and 1 km resolutions.
+  - LCM2000 raster is not directly comparable with LCM1990 due to different construction methods and should not be used to estimate change over the 10-year period.
+- Product versions and formats
+  - Vector data
+    - Level 2: 26 LCM2000 Subclasses (standard level of detail).
+    - Level 3: up to 72 Variant level details (requires special arrangement with CEH staff and more user support).
+    - Standard format is ESRI shapefile; Spatial Analyst extension may be required in ArcGIS for further analysis.
+  - Raster data
+    - 25 m resolution: 26 Subclasses.
+    - 1 km resolution: derived from the 25 m data with Subclass level, Dominant values, and Percentage values; also provides Aggregate class level data with Dominant and Percentage values.
+- Dataset coverage and tile structure
+  - Data compiled on 100 km tiles; parcels are classified per tile and then compiled into a continuous dataset.
+  - Some tiles were merged to simplify construction; edge parcels may be retained in adjacent tiles to preserve classification context.
+- Hierarchical nomenclature and coding
+  - Vector data provide both Subclass and Variant detail with codes; detailed mappings (including alpha and numeric codes) are defined to support exact classification and interoperability.
+  - The ability to distinguish Subclass vs. Variant depends on the dominant land cover at the imaging time; some distinctions (e.g., crop harvest periods) may not be captured.
+- Vector polygon attributes
+  - Each parcel includes:
+    - SegID: unique parcel identifier (stable for communication with data management).
+    - BHSub: dominant land cover as a hierarchical code (Level 2).
+    - BHSubVar: dominant land cover as a hierarchical code (Level 3; present in Level 3 data).
+    - PerPixList: per-pixel composition for top five spectral subclasses (Level 3 only).
+    - OpHistory: processing history detailing input data, classification stages, and image dates.
+    - TotPixels and CorePixels: pixel counts for the parcel and core classification region.
+- OpHistory attribute (processing history)
+  - Each parcel includes a Processing History Descriptor (PHD) comprising five fields about input data and classification steps (with a sixth field for other information).
+  - Fields document scene number, sensor, acquisition dates, cloud-hole patches, spectral probability measures, and knowledge-based correction (KBC) steps.
+  - A detailed key explains scene numbers, sensors (TM, IRS), dates, cloud-hole patches (S, W, X), and KBC rule applications.
+- Colour mapping and Broad Habitat descriptions
+  - A colour table (Table 5) assigns display colors (Hue, Saturation, Value and approximate RGB) to each Subclass for visualization.
+  - Broad Habitat descriptions (Table 6) define the target habitat groupings (e.g., Broad-leaved/mixed woodland, Coniferous woodland, Arable and horticulture, Improved/Neutral/Calcareous/Acid grassland, Bracken, Dwarf shrub heath, Fen/marsh/swamp, Bog, Standing water, Montane habitats, Inland bare ground, Built-up areas, Coastal habitats) with definitions and notes on distinctions and potential confusions.
+- Data governance, reuse, and customization
+  - LCM2000 is designed as a data storage and analysis framework; users are encouraged to customize and expand their version while preserving provenance.
+  - Parcel-level metadata should be retained to document lineage and processing history; changes should be documented, with older attributes preserved or copied to new attributes for traceability.
+  - The dataset emphasizes unique labeling (Segid) to enable unambiguous communication with data management and among users.
+- Production philosophy and data integrity
+  - The production approach aims to retain as much information as possible, resulting in an information-rich dataset.
+  - Users are advised to maintain attribute-rich provenance and to document changes to support data management and reproducibility.
+  - When discussing accuracy, users should differentiate between actual inaccuracies and differences arising from data model, scale, resolution, interpretation, or target class definitions.
+- Edge overlaps, artefacts, and artefact handling (Appendix 1)
+  - Edge overlaps arise from multiple overlapping images and cloud-hole patching; a series of erosion/merging steps creates a single parcel layer per 100 km tile, with some parcels straddling tile edges retained in both tiles.
+  - Artefacts can include edge-related classification differences, dissolved boundaries affecting attributes, and small parcels (slivers) resulting from edge processing.
+  - Recommendations:
+    - Visual tidying by dissolving boundaries between adjacent parcels of the same class (via GIS tools) without altering the underlying data integrity.
+    - Clipping or merging tiles can affect parcel-level attributes; be aware that some source attributes are tied to whole parcels and may become invalid if parcels are clipped or merged.
+    - Use selective dissolving (Level 2) or preserve Level 3 information (BHSubVar) when necessary to avoid losing important classification details.
+    - Techniques such as selective feature-based dissolution or longest-boundary dissolving can help address slivers or small artefacts while preserving meaningful attributes.
+- Good practice and further information (Appendix 2 and beyond)
+  - CEH recommends documenting changes and preserving Segid for traceability; users should follow good practices to maintain data lineage.
+  - For more information, contact CEH Spatial Data or refer to published methodology papers and the Land Cover Map homepage.
+- Accuracy and usage notes
+  - LCM2000 acknowledges inevitable inaccuracies due to data model, resolution, and interpretation; users should consider these factors when applying the data to monitoring frameworks and decision-making.
+  - The dataset provides rich metadata and provenance to support evaluation and replication in environmental monitoring and policy analysis.

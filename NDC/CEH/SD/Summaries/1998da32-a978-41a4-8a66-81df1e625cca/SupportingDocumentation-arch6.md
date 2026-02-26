@@ -1,0 +1,25 @@
+# Supporting Documentation
+
+- Dataset scope and contents
+  - Results of 17 electrical resistivity tomography (ERT) surveys.
+  - Location: Makutapora Basin, central Tanzania.
+  - Collection period: 28 June 2019 to 16 July 2019.
+- Metadata and ancillary files
+  - Supp_Table_for_Survey.csv contains coordinates, survey geometry, line name suffixes, locations, electrode spacings, and associated parameters.
+- Data collection methods
+  - Instrument: AGI SuperSting R8 (STING) resistivity meter.
+  - Configuration: dipole-dipole.
+  - Electrode spacings and parameters are detailed in Supp_Table_for_Survey.csv.
+  - Raw data: .stg files converted to .dat with bespoke Python code (conversion scripts available on request from the corresponding author).
+- Data quality control
+  - Negative values removed.
+  - Each apparent resistivity measurement captured in normal and reciprocal configurations.
+  - The measurement used is the mean of the normal and reciprocal values.
+  - Values where normal and reciprocal differ by more than 5% from the mean are removed.
+- Purpose and scientific context
+  - Aimed at delineating superficial geological structures to understand their role in mediating surface-groundwater interactions within the Makutapora wellfield and their influence on groundwater recharge.
+  - Corresponding authors responsible for survey design and data collection oversight: E. Zarate and M. O. Cuthbert.
+- Data products and reuse
+  - Outputs are designed to support interpretation and potential self-service analysis (e.g., mapping, cross-sections) related to groundwater recharge and hydrological structure.
+- Access to materials
+  - Python conversion code and raw data can be provided by request through the corresponding author.

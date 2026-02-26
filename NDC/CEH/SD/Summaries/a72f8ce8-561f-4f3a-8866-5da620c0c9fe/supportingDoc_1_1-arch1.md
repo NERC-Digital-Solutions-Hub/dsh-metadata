@@ -1,0 +1,38 @@
+# Supporting information for CEH Land Cover plus: Pesticides 2012-2016 (England and Wales)
+
+- Purpose: Introduces CEH Land Cover® Plus: Pesticides 2012-2016, a 1 km resolution product mapping average pesticide applications across England and Wales (2012–2016) by integrating Crop type data with Pesticide Utilisation Surveys (PUS).
+- Data sources and scope:
+  - Crop information from CEH Land Cover® Plus: Crops (Sentinel-1/2-based) for around 2 million GB parcels.
+  - PUS data for 2012, 2013 (fodder/forage), 2014, 2016 (annual kg of active ingredients by crop and county).
+  - Crop area data by county; ceremonial county centroids used for spatial modelling.
+  - 129 active ingredients (herbicides, insecticides, molluscicides, fungicides) modelled; 1 km raster; units: kg active ingredient per year.
+  - Data outside the extent or in mountains/urban areas may be missing; England masked for organic areas; Wales masking not implemented in this version.
+- Product specification:
+  - Output format: 129 two-band TIFF rasters (British National Grid, 1 km × 1 km).
+  - Band 1: Estimated annual application (kg/yr) for the active ingredient in the 1 km cell.
+  - Band 2: Uncertainty (percent), reflecting parameter and spatial uncertainty.
+  - Coverage: 95%+ extent required; ingredients with less coverage removed (16 ingredients removed; some Welsh-only estimations limited by data).
+  - Snapshot: Represents average applications across 2012–2016; crop-area variability across years incorporated via Crops average (2015–2017).
+- Methodology overview:
+  - Data collation and filtering: Cleaned monthly PUS data; removed unspecified actives and non-pesticide items; summed to annual kg per crop per county; kept ingredients with sufficient observations (≥20).
+  - Spatial modelling: Annual application rates (kg/km² of crop) modelled as a lognormal function of crop and county location; spatial field modelled with Gaussian Markov Random Field via INLA to smooth across counties.
+  - Prediction workflow: For each 1 km cell, apply crop-area data from LC Plus Crops to predicted crop-specific rates; sum across crops to yield total kg/yr per cell.
+  - Temporal handling: Years treated as independent replicates due to limited year data; average cropping patterns used to reflect typical conditions; uncertainty captures year-to-year variability.
+- Uncertainty quantification:
+  - 100 draws from parameter distributions to create a distribution of cell-level estimates.
+  - 95% credibility interval derived from 2.5th–97.5th percentiles; uncertainty expressed as a relative percentage: (upper−lower bound)/(mean) × 100.
+  - Uncertainty reflects both variation in application rate and proportion of land cropped; higher where rates vary by year or land coverage variability is large.
+- Validation and quality control:
+  - Lack of national independent validation data; regional totals compared to PUS statistics for consistency.
+  - RMSE-based checks: Model vs null (no variation) and model vs crop-only variation; 12/157 models failed the null-model test and were excluded; 86 of remaining 145 models showed spatial variation captured (passed second RMSE check); 16 active ingredients removed due to insufficient extent (<95% coverage).
+  - Wales data treated with caution due to data limitations; some Welsh ingredients excluded or with high uncertainty.
+- Outputs and example interpretation:
+  - Outputs show spatial patterns of pesticide applications (e.g., tebuconazole higher in eastern England); areas without estimates shown in white (mountain/urban or non-cropping areas); uncertainty maps indicate higher uncertainty where data are sparse or crop patterns change.
+  - Example outputs and figures illustrate estimated rates (kg/yr per km²) and corresponding uncertainty percentages.
+- Data access and citation:
+  - Data accessible via Environmental Information Data Centre (EIDC).
+  - Publication: Jarvis et al. (2019) CEH Land Cover plus: Pesticides 2012-2016 (England and Wales); DOI provided; licensing fees may apply for some users.
+- Notes and caveats:
+  - Models are built without Welsh data for some ingredients, leading to higher uncertainty in Wales for those cases.
+  - Some active ingredients are excluded if not meeting extent criteria; future versions aim to improve Wales coverage and reduce uncertainties.
+  - The product uses an average crop coverage baseline and does not explicitly model year-to-year temporal dynamics beyond the uncertainty captured in parameter distributions.

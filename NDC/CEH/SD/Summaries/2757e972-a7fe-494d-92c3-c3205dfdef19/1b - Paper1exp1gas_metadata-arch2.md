@@ -1,0 +1,65 @@
+# Soil Gas Flux Measurements with Biochar Amendment Dataset
+
+- Objective and context
+  - An environment monitoring data resource that captures soil gas fluxes under biochar amendment and related treatments.
+  - Designed for standardised, time-series comparison across sites to assess environmental health and policy-relevant performance.
+
+- Core data schema (key variables)
+  - Sample and time identifiers
+    - soilcoreno: unique soil core/sample number
+    - timepoint: measurement timepoint
+    - dayfromstart, dayfromstartstring: days from start of measurements (numeric and string)
+    - datetime: date and time of measurement
+  - Treatments and site metadata
+    - biochartreatment: whether biochar was added (and if amended)
+    - fulltreatname: full name of soil treatment (e.g., biochar and wetted)
+    - wettingtreatment: whether samples were periodically wetted to high water content
+    - nitrogentreatment: 15N-labeled nitrogen species (NH4 or NO3)
+    - site: site identifier
+    - biocharweight: weight of dry biochar added
+    - biocharfraction: biochar as a proportion of dry soil weight
+  - Physical and soil properties
+    - bulkdensitygcm3: soil bulk density
+    - postmixbulkdensity: bulk density after soil mixing
+    - particledensitygcm3: soil particle density
+    - totalporosity: porosity, computed as 1 - (bulk density / particle density)
+    - gravwatercontentproportion: gravimetric water content (as a proportion)
+    - temperaturetreatment: soil temperature for the treatment
+    - tempair: soil air temperature at measurement
+    - chambaream2: soil area within the static chamber
+    - headvolm3: headspace volume of the static chamber
+    - drysoilweightg: dry soil weight in the core (g)
+    - site and other contextual fields as above
+  - Gas flux measurements and derived metrics
+    - mgCO2-Cfluxm2h1: CO2 flux (mg CO2-C per m2 per hour)
+    - log10co2: log10(flux CO2 + 1) from the previous column; special handling described below
+    - ugCH4-Cfluxm2h1: CH4 flux (μg CH4-C per m2 per hour)
+    - log10ch4: log10(CH4 flux + 1) with the same special handling
+    - ugN2O-Nfluxm2h1: N2O flux (μg N2O-N per m2 per hour)
+    - log10n2o: log10(N2O flux + 1) with the same special handling
+    - CO2ppmt0, CH4ppmt0, N2Oppmt0: static chamber headspace concentrations at time t0 (ppm)
+  - Additional context and timing
+    - midpoints and intervals
+      - midpointday: time in the middle of this and the previous timepoint
+      - timeinterval: duration between successive timepoints
+      - timeintervalstring: duration as a string
+  - Other environmental and measurement details
+    - wettingtreatment, site, tempair, temperaturetreatment, gravwatercontentproportion, wfpsproportion (water-filled pore space)
+    - wfpsproportion: water-filled pore space as a derived proportion
+    - bulkdensitygcm3, postmixbulkdensity, particledensitygcm3, totalporosity as above
+    - nitrogentreatment and biochartreatment as above
+
+- Data processing, quality and transformation
+  - Data are understood, verified, quality assured, cleaned, and transformed according to standardised methods.
+  - Derived log-transformations
+    - log10co2, log10ch4, log10n2o are log10(value + 1) of their respective flux columns.
+    - If the previous flux value is negative, the positive magnitude of that negative value is added to every flux value before logging, to enable a valid log transformation.
+
+- Data storage and accessibility
+  - Datasets are stored and uploaded to appropriate portals to support reuse and integration.
+  - Designed to enable cross-study comparisons and combination with other relevant datasets for enhanced value.
+
+- Relevance for environmental monitoring and policy
+  - Enables tracking of greenhouse gas flux responses to biochar amendments and moisture treatments over time.
+  - Facilitates standardized reporting of soil gas dynamics, aiding assessment of environmental health and monitoring policy outcomes.
+  - Supports comparative analyses across sites and treatments, contributing to evidence-based soil ecosystem management.

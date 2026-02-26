@@ -1,0 +1,32 @@
+# Land Cover Map 2007 (LCM2007) is available in different formats, to suit the requirements of various users.
+
+- Purpose and formats
+  - LCM2007 is provided in multiple formats to meet diverse user needs.
+  - Supports both detailed and generalized analyses through vector and raster products.
+- Vector data
+  - Most detailed product: vector polygons representing land cover parcels.
+  - Each polygon has attributes describing land cover and metadata describing derivation.
+  - Minimum mapable unit: 0.5 hectares.
+  - Supply format: ESRI Shapefile.
+  - Coverage: United Kingdom (UK).
+- Raster data
+  - Five raster products available to summarize the information.
+  - A 25 x 25 metre raster provides the most likely Broad Habitat for each pixel.
+  - Four freely available 1 x 1 km rasters summarize the 25 x 25 m data.
+  - Scales: 25 m and 1 km pixel sizes.
+  - Supply format: GeoTiff.
+  - Coverage: UK.
+- Documentation and metadata
+  - Detailed metadata for raster formats in the Land Cover Map 2007 Dataset Documentation.
+  - Further information available in the same document, including:
+    - Table 1: Attributes of the LCM2007 vector dataset.
+    - Table 2: Habitats, LCM2007 classes, and Broad Habitat sub-classes.
+    - Table 3: Metadata information for the raster datasets.
+- Data governance and stewardship considerations
+  - Availability in multiple formats supports discoverability and reuse across systems.
+  - Detailed metadata and class descriptions facilitate standardization and interoperability.
+  - Documentation provides the necessary context for data creators, maintainers, and users to ensure consistent interpretation and use.
+- Practical notes for data custodians
+  - Align data sharing with the documentation to maintain consistency between vector and raster representations.
+  - Ensure access to both vector (Shapefile) and raster (GeoTiff) formats is maintained, with attention to license terms where applicable.
+  - Use the provided tables and metadata to support data quality assessments and dataset integration.

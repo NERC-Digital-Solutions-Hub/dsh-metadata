@@ -1,0 +1,40 @@
+# OVERVIEW
+
+- Objective: Examine how three invertebrate predator species (mantises, jumping spiders, and crab spiders) respond to 3D printed mimetic stimuli that vary in similarity to wasp features, following aversive training. The aim is to determine how accurately a stimulus must mimic the negatively conditioned wasp to be treated as a wasp by the predators.
+- Experimental approach: 
+  - Training phase with aversive conditioning where wasp-like stimuli are paired with negative experiences; fly-like stimuli are not associated with reward or punishment.
+  - Testing phase with multiple novel stimuli that span a transect of mimetic similarity, plus reinforcement trials to assess changes in response.
+  - For mantises and jumping spiders, measure latency and/or behavioral responses; for crab spiders, record behavior counts due to limited attack responses.
+- Data generation and recording:
+  - Real-time behavioural observations during trials; video used for reference; stopwatch timings.
+  - Data cleaned and formatted using custom R scripts (R v4.3.2).
+- Data structure and contents:
+  - mantis_data.csv: 88 rows, 7 columns; columns include species, id, instar, trial, model, phase, time_to_attack.
+  - jumping_spider_data.csv: 1355 rows, 6 columns; columns include id, phase, trial, model, behaviour, count.
+  - crab_spider_data.csv: 1260 rows, 8 columns; columns include id, sex, colour, day, treatment, model, behaviour, count.
+  - Each file documents the behavioural responses to specific stimuli models, with corresponding trial and stage information.
+- Stimulus design (stimuli and codes):
+  - Based on 3D images of real insects, with transects along mimetic similarity between endpoints (e.g., M. meridiana and Vespula vulgaris).
+  - Presented models include five transect points: M100, M75V25, M50V50, M25V75, V100; some variations use Chrysotoxum-based transects or exaggerated wasp traits for certain species.
+  - Stimulus codes reflect contributions from parent species and variation variants (a, b, c) to capture intraspecific variation.
+- Experimental design details:
+  - Training phase:
+    - Mantises and jumping spiders: six aversive conditioning trials on separate days; punishment applied for attacking wasp stimuli (V100); fly stimuli (M100) carry no reward or cost.
+    - Crab spiders: condensed protocol with three treatments (direct punishment with wasp stimulus, punishment with fly stimulus, or no punishment); no wasp or fly stimulus trials.
+  - Testing phase:
+    - Mantises and jumping spiders: nine trials per subject (five probe stimuli from transect, random order; four reinforcement trials with M100 and V100). All wasp encounters punished as in training.
+    - Spiders latency to attack is measured for mantises; for jumping spiders, attack latency is not the primary measure due to low attack rates; a range of pro- and anti-stimulus behaviours are recorded.
+    - Crab spiders: each tested once with a randomly selected stimulus due to limited captive time.
+- Study organisms and housing:
+  - Mantises: three species, housed individually at controlled temperature and light cycle; fed pre-trial; trials 30 hours post-feeding.
+  - Jumping spiders: Phidippus audax housed similarly; feeding schedule noted.
+  - Crab spiders: Synema globosum collected from field; housed individually; 48-hour fasting before use.
+- Arena and stimulus delivery:
+  - Mantises and jumping spiders: small opaque arena with motorized, three-dimensional moving stimuli attached to a controlled line to create jerky, multi-axial movements.
+  - Crab spiders: larger arena with a purple milk thistle perch to simulate a flower environment; stimuli moved vertically toward/away from the flower.
+- Data accessibility and references:
+  - Full description of stimulus design, including digital 3D files, is available in a linked dataset: Scanned 3D images and 3D printable images based on combinations of features of Diptera and Hymenoptera insects (doi provided in the text).
+- Notes for data users (data governance and reuse considerations):
+  - Data include both trial-level and event-level records with explicit coding for stimuli and behaviours.
+  - Metadata and codebooks referenced (e.g., "Nature and units of recorded values") are part of the broader dataset documentation.
+  - Cleaned and reproducible workflow described (data cleaning and formatting via R v4.3.2) to support reuse and replication.

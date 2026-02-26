@@ -1,0 +1,28 @@
+# What has been recorded and what form does the data take?
+
+- The dataset documents a study on the survival of human pathogens bound to microplastics during transfer through the freshwater–marine continuum.
+- Pathogens studied: Escherichia coli, Enterococcus faecalis, and Pseudomonas aeruginosa.
+- Materials: polyethylene microplastic beads and glass beads (2 mm diameter) to compare surfaces.
+- Experiments:
+  - Experiment 1: direct discharge of microplastics from WWTP into freshwater or seawater; 12 L mesocosm tanks with 30 cages per tank; sampling over 27 days.
+  - Experiment 2: downstream transport from WWTP effluent through river water, estuary, seawater to beach sand; sequential mesocosm tanks modeled this pathway; biofilm and microbial surface colonization measured.
+- Location: University of Stirling, Scotland, UK.
+- Timeframe:
+  - Mesocosm studies conducted in April and June 2022.
+  - Experiment 1 sampling: June 4–6, 2022.
+  - Experiment 2 sampling: April 12–16, 2022.
+- Data collected include:
+  - Water characteristics (pH, electrical conductivity, turbidity, salinity, temperature) for background and during experiments.
+  - Bacterial concentrations (CFU) in water and on plastics and glass surfaces.
+  - Biofilm formation quantified by crystal violet staining (absorbance at 550 nm) on plastic and glass surfaces.
+  - Sand dry weight measurements (for Experiment 2).
+- Data completeness and quality:
+  - Data checked for anomalies; no missing data reported.
+  - Initial bacterial inocula quantified and recorded.
+  - Detailed metadata and variable descriptions accompany the data files.
+- Data provenance and responsibility:
+  - Collected and interpreted by Rebecca Metcalf.
+  - Tied to UKRI NERC grants: NE/S005196/1 and NE/V005847/1.
+- Data format and documentation:
+  - The dataset comprises 14 CSV files, each with specific variable structures and accompanying metadata descriptions (full description available in section 8 of the record).
+  - File names include background characteristics, experiment characteristics, initial bacteria added, CFU counts in water and on plastics/glass, crystal violet biofilm measurements, and sand weight (sample file list provided).

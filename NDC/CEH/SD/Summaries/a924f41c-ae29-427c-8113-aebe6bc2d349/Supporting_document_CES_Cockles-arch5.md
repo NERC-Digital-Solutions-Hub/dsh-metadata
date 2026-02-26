@@ -1,0 +1,24 @@
+# Overview
+
+- Dataset title and purpose: Cultural ecosystem services provided by cockles in Portugal, Spain, France, Ireland and the UK, 2018-2020; records scores (0–5) for examples of cultural ecosystem services (CES) provided by cockles.
+- Project and funding context: Part of the COCKLES project—Co-operation for restoring cockle shellfisheries and its ecosystem services in the Atlantic Area; co-funded by the European Regional Development Fund (ERDF).
+- Data collection and workflow:
+  - Collected using an a priori framework through a face-to-face workshop in Vigo, Spain (10 April 2018) with 28 participants from 11 organisations across five countries.
+  - Followed by country-specific meetings (mostly via teleconference/video call and email) and smaller in-country follow-ups to fill gaps.
+  - Entries documented in a template spreadsheet; after initial draft, participants circulated outputs to stimulate additional ideas; second round of focused meetings conducted.
+- Dataset content and structure:
+  - Classification framework: CES categories organized according to CICES v5.1 (Division, Group, Class, Sub-classes) aligned with MEA (MEA, 2005).
+  - Sub-classes: 19 categories, covering areas such as Education & Research, Cultural identity, Gastronomy, Recreational uses, Tourism, Spiritual/symbolic interactions, etc.
+  - Scoring: For each sub-class, a country-specific score (0–5) representing the number of examples observed; scale is non-linear (0 = none; 2 = two examples; 3 = three; 4 = four or five; 5 = six or more). Education & Research uses publication counts re-scaled to 0–5 to align with other sub-classes.
+  - Countries included: Portugal, Spain, France, Ireland, United Kingdom.
+- Data attributes and format:
+  - Attributes include Division (Indirect/Direct), Group (four categories: Intellectual/representative; Physical/experiential; Other non-use; Spiritual/symbolic), Class (seven categories: Educational, Cultural heritage, Aesthetic, Recreation and ecotourism, Sense of place, Inspirational, Spiritual), and Sub-classes (19 categories such as History & archaeology, Knowledge & Informal Education, Cultural identity, Gastronomy, etc.).
+  - Country-specific numeric entries for each sub-class per country (Portugal, Spain, France, Ireland, UK).
+  - File format: Excel workbook (.csv noted as .cvs in places; template spreadsheet used for data collection and sharing).
+- Data quality and governance:
+  - Quality control: Pilot testing of the template with one country; revisions to accommodate classification challenges; data was collated and checked for missing information during the workshop and follow-up activities.
+  - Documentation and provenance: Data collection and processing steps described; responsibilities include staff member Mathilde Jackson-Bué; dataset describes methodology and alignment with established CES classifications.
+- Usage notes and governance considerations:
+  - The dataset is structured to support comparability across countries via standardized classifications and scoring.
+  - Emphasizes alignment with established CES frameworks (CICES v5.1; MEA 2005) to support interoperability and future reuse.
+  - Indicates that updates and ongoing data sharing are facilitated through the country-specific follow-ups and the shared template approach.

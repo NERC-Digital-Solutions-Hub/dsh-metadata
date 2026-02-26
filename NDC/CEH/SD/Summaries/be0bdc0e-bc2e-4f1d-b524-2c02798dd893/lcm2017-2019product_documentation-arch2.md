@@ -1,0 +1,96 @@
+# The UKCEH Land Cover Maps for 2017, 2018 and 2019 v1.6
+
+- Purpose and scope
+  - User guide for three UKCEH Land Cover Maps: LCM2017, LCM2018, and LCM2019.
+  - Each map comprises a suite of geospatial datasets representing 21 UKCEH Land Cover Classes based on Biodiversity Action Plan (BAP) Broad Habitats; aimed at UK-wide, annual land cover mapping.
+  - Production is automatic (Bootstrap Training plus Random Forest); yearly release planned.
+
+- Data products and structure
+  - Dataset suite includes 42 datasets (GB and NI, across three years), with consistent year-to-year structure.
+  - Core datasets:
+    - 20m Classified Pixels (GB and NI, 2-band rasters: class and per-pixel confidence 0–100)
+    - Land Parcels (GB and NI) with parcel-level attributes (hist, mode, purity, conf, n)
+    - 25m Rasterised Land Parcels (3-band: mode, conf, purity)
+    - 1km Dominant Cover (21-band)
+    - 1km Percent Cover (21-band)
+    - 1km Percent Aggregate Cover (10-band)
+    - 1km Dominant Aggregate Cover (1-band)
+  - Output scales and class counts
+    - 21 UKCEH Land Cover Classes (GB and NI distinctions per year)
+    - 10 UKCEH Aggregate Classes (where applicable)
+  - Coordinate systems and extents
+    - GB: Great Britain, British National Grid (EPSG 27700)
+    - NI: Northern Ireland, Irish Grid (EPSG 29903)
+    - Datasets are provided in GB and NI versions, with year-by-year duplication.
+
+- Input data and processing workflow
+  - Seasonal classification input
+    - Sentinel-2 Seasonal Composite Images (TOA reflectance), median per season, 20m resolution
+    - Four seasons: winter, spring, summer, autumn
+    - All four seasons may have gaps; classification tolerates partial spectral information
+  - Contextual information
+    - 20m Context Rasters to reduce spectral confusion (terrain, proximity to features, etc.)
+    - GB Context Rasters: height, aspect, slope, distance to buildings/roads/sea/freshwater, foreshore, tidal water, woodland mask
+    - NI Context Rasters: height, aspect, slope, urban mask, distance to coast/freshwater/road
+  - Classification Scenes and tiles
+    - Great Britain: 100x100 km GB Classification Scenes (46-band per scene; 36 spectral bands + 10 context layers), 74 overlapping scenes classified
+    - Northern Ireland: single 43-band Classification Scene per year
+  - UK Land Parcel Spatial Framework
+    - Fixed framework (0.5 ha MMU) to summarize 20m Classified Pixels into land parcels
+    - Gid identifiers may differ from LCM2015; parcels provide a stable basis for change detection
+  - Bootstrap Training and Random Forest
+    - Bootstrap Training uses historic LCM2015 as training base; majority signal sampling to balance classes
+    - RF classifier trained with equal sampling per class (e.g., 10,000 samples per bag)
+    - Output: 20m Classified Pixels, then summarized to Land Parcels, 25m Rasterised Parcels, and 1km products
+  - Software and tools
+    - Custom UKCEH software integrating Weka, PostGIS, and GDAL; open source components
+
+- Model validation and accuracy
+  - Validation approach
+    - UK-wide validation using GB countryside survey 2019 data, National Forest Inventory, IACS, and bespoke LCM validation points (22,325 points)
+  - Reported accuracy (UK scale)
+    - LCM2017: 78.6%
+    - LCM2018: 79.6%
+    - LCM2019: 79.4%
+  - Validation caveats
+    - Validation points not a perfect ground truth; some class mappings required translations
+    - No manual corrections were applied to LCM2017-2019 (automatic classification), though visual checks and formal validation performed
+  - Interpretation guidance
+    - Approximately 80% correspondence across the three products; accuracy expected to improve as methods mature
+
+- Data relationships and classification detail
+  - UKCEH Land Cover Classes vs. UK BAP Broad Habitats
+    - Classes aligned with LCM2015; not a one-to-one mapping to UK BAP Broad Habitats
+    - Appendix 1–2 describe derivations and caveats; occasional refinements to split or merge classes (e.g., Bracken merged with Acid Grassland historically)
+  - Common sources of confusion
+    - Spectrally similar surfaces (coastal vs inland features, urban vs bare ground)
+    - Saltwater vs freshwater, upland peatland vegetation
+  - Outputs and visualization
+    - Color schemes and author-recommended display schemes provided (Appendix 3) including color-blind friendly variants (Appendix 4)
+  - Data quality notes
+    - Outputs reflect a balance between rapid generation and accuracy; no manual corrections means some systematic misclassifications may persist but are expected to be non-repeating year to year
+
+- Practical considerations for analysts
+  - Time series and comparability
+    - Maps are designed to be comparable with like-for-like class definitions over time; caution required when comparing to older maps due to classification scheme evolution
+  - Data access and usage
+    - Product suite is structured to support multiple scales (20m, 25m, 1km) and summaries
+    - Outputs suitable for change detection, habitat monitoring, and policy performance assessments
+  - Documentation and resources
+    - Appendices provide detailed class definitions (Appendix 2), confusion matrices (Appendix 5), and parcel dataset attributes (Table 3)
+    - Full dataset list and metadata in Appendix 6
+
+- Limitations and future plans
+  - Limitations
+    - No manual accuracy corrections applied; potential for spectral confusion in certain habitat types
+    - Linear features are not individually classified due to spectral and resolution constraints
+    - Some coastal and peatland vegetation types show classification challenges; expectations of gradual improvement with training data
+  - Future directions
+    - Annual release model as standard; plans to bootstrap using majority signals across subsequent years (e.g., 2020 from 2017–2019; 2021 from 2018–2020)
+    - Potential expansion of input data (e.g., Sentinel-1 SAR) and refinement of training data for upland habitats and peatlands
+
+- Appendix highlights (context for use)
+  - Appendix 1–2: Summaries and motivations behind UKCEH Land Cover Classes and their relationship to BAP Broad Habitats
+  - Appendix 3–4: Official color schemes and color-blind friendly versions for display
+  - Appendix 5: Confusion matrices for LCM2017, LCM2018, LCM2019 (per-class accuracies and producer/user accuracies)
+  - Appendix 6: Full listing of datasets by year and dataset type for LCM2017–2019

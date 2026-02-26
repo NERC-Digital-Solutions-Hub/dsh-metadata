@@ -1,0 +1,12 @@
+# General information
+
+- Scope and setting: Field-based estimates of plant abundance (leaf area, floral units, seed abundance, mass, and energy) from Norwood Farm, Somerset, UK (51.3128N, -2.3206W) during 2007–2008; farm operated as an organic, low-intensity system.
+- Purpose and provenance: Part of a study on ecological interactions (food webs and plant–pollinator networks). Primary reference Pocock et al. (2012); dataset of interactions published in Dryad; full study details and Supplementary Online Material available via Pocock et al. (2012) and SOM (Extract_from_SOM.rtf).
+- Data files and contents:
+  - leafarea.csv: Leaf area of each plant taxon in each habitat per sampling month; methods include surveying up to four 9 m x 1 m transects per habitat per month; leaf area index measured with LAI-2000 (woodland habitats inferred from literature); leaf area apportioned among species by abundance x height and scaled by habitat area.
+  - floralunits.csv: Number of floral units per taxon in each habitat per month; methods include surveying three to four transects (25 m x 1 m in 2007; 50 m x 1 m in 2008); floral units defined as entities that flower-visiting insects fly between.
+  - seeds.csv: Number, mass, and energy of seeds per taxon in each habitat per season; seeds sampled from up to 39 samples per habitat per month with a vacuum sampler; seeds oven-dried and identified; large samples subsampled and scaled up; a correction factor (Evans et al. 2009) accounts for under-sampling; seed energy derived from databases (Evans et al. 2011). Totals scaled by habitat area.
+  - habitatarea.csv: Habitat code descriptions and area per habitat per sampling period; Year 1 corresponds to 2007 data for leafarea/floralunits and winter/spring/summer 2007 seeds; Year 2 corresponds to 2008 data for leafarea/floralunits and autumn 2007 seeds.
+- Documentation and methods: Full methodological details in Pocock et al. (2010) and the SOM of Pocock et al. (2012); Extract_from_SOM.rtf provided with the data.
+- Acknowledgements and funding: Supported by UK BBSRC (grant no. BBD0156341) and DEFRA (grant no. BD2303).
+- References included: Evans et al. (2009, 2011) and Pocock et al. (2010, 2012) with full citations.

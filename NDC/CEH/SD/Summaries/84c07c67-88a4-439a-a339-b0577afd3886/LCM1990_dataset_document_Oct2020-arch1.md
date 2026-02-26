@@ -1,0 +1,26 @@
+# Dataset documentation
+
+- Land Cover Map 1990 (LCM1990) is a UK parcel-based land cover map created by classifying two-date Landsat-5 composites (30 m) into 21 classes, aligned with UK Biodiversity Action Plan Broad Habitat definitions. It replaces the earlier LCMGB and uses the LCM2007/2015 spatial framework to enable long-term change analyses (e.g., a 25-year UK product).
+- Data architecture and purpose
+  - Vector data: polygons with rich metadata per parcel, including dominant class, per-class pixel breakdown, and classification confidence. Core attributes include gid (unique parcel ID), _hist (class composition), _mode (dominant LCM1990 class), _purity, _conf (per-polygon RF confidence), _stdev, _n (pixel count), and cmp (composite image source). GB polygons ~6.7 million; NI polygons ~0.9 million.
+  - Raster data: 25 m raster derived from the vector, plus 1 km percentage/dominant products. The 25 m raster has bands for dominant class, per-polygon mean confidence, and modal class coverage percentage.
+  - Spatial scales and products: 25 m raster and two 1 km products (dominant and percentage cover) for both target (21) and aggregate (10) classes. The 1 km products summarize 25 m data to UK-wide 1 km pixels.
+  - Projections: Great Britain data in British National Grid; Northern Ireland data in TM75 Irish Grid; GB and NI datasets are provided separately to match respective projections.
+- Class structure and mapping
+  - 21 LCM1990 target classes, built on Broad Habitats with some finer subdivisions (e.g., Built-up Areas and Gardens split into Urban and Suburban; Dwarf Shrub Heath split into Heather and Heather grassland; Littoral Sediment split into Saltmarsh and Littoral sediment).
+  - 1 km products include both target-class and aggregate-class perspectives; percentage cover values are integers and may not sum exactly to 100 due to rounding and coastal edge effects.
+  - LCM1990 maps land cover (not strictly land use); some land use inferences (e.g., arable land use vs. arable crop cover) may be ambiguous from remote sensing alone.
+  - Minimum mapping unit is >0.5 ha; parcels under 0.5 ha and line features under 20 m are dissolved into surrounding areas.
+- Data access, citation, and licensing
+  - Access via CEH Environmental Information Platform (eip.ceh.ac.uk); full vector product available on request; 25 m and 1 km raster products available similarly; license fees may apply for some users/applications.
+  - Each LCM1990 product has its own DOI; citations should include author and date (e.g., Rowland et al., 2020) and the full DOI in references.
+- Data quality, metadata, and uncertainty
+  - Rich polygon metadata per parcel, including dominant class, pixel breakdown, and mean probability from the Random Forest classifier.
+  - Uncertainty information: per-pixel probability (RF-derived) is provided in both vector (mean per polygon) and 25 m raster bands.
+  - Quality assurance includes projection checks, spatial completeness, modal class checks, value range checks (0–100 for raster), and pixel-size verification; a full validation exercise compared LCM1990 with external datasets (to be published separately).
+- Practical considerations for analysts
+  - Vector data offer detailed, per-polygon metadata but result in large file sizes; 25 m raster provides a balance of detail and processing efficiency; 1 km rasters are ideal for UK-scale modelling with other large datasets (e.g., climate, species distributions).
+  - The dataset is designed to support long-term change analyses (e.g., 1990–2015) when used in conjunction with compatible LCM products (like LCM2015/LCM2007 series).
+- References and further information
+  - Citing LCM1990 requires using the provided DOIs for each product; example citations and references are provided in the dataset documentation.
+  - Further information and access details: CEH eIP portal and contact: spatialdata@ceh.ac.uk.

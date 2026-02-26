@@ -1,0 +1,28 @@
+# Sampling design
+
+- The document describes Countryside Survey (CS) soils sampling over three cycles: 1978, 1998, and 2007.
+- 1978 and 1998 sampled the same 256 squares; 2007 expanded to all 591 CS squares, though not all measurements were made on every sample. Power analyses determined the required sample numbers (Emmett et al. 2008).
+- Sampling locations and plots:
+  - Soils are collected from CS x-plots within each CS square; there are 5 x-plots per square.
+  - X-plots are not replicates due to differing land uses and soil types; plots may be relocated over time (e.g., land use change, access issues).
+  - Each location has a unique repeat identifier (e.g., 2RPT1) referring to square 2, repeat plot 1; same identifier indicates the same location, though actual sampling points may be 2–3 m apart around a 2m x 2m plot.
+- Sampling methods:
+  - Top 15 cm of soil sampled (8 cm for the invertebrate sample).
+  - 1998/2007 used soil cores hammered into the soil; 1978 used a soil pit.
+  - Some cores could not be collected due to stones or shallow soils; core photographs and dimensions were recorded in 2007 for some cores.
+- Measurements and laboratory analyses:
+  - 1978: pH and loss-on-ignition (LOI) only.
+  - 1998/2007: multiple cores per x-plot with different measurements per core (as listed in Table 1); samples are homogenised before pH and LOI analyses.
+  - Bulk density measured in 2007 (not by ISO core method); full methodological implications described in Emmett et al. 2008.
+  - In 1990s CS mapping activity provided additional soil context.
+- Data structure and contents:
+  - A wide range of measurements were collected per core (e.g., pH, LOI, bulk density, %C, %N, soil moisture, Olsen P, metals, texture, depth of organic layer, mineralisable N, photographs, core dimensions).
+  - Not all measurements were taken for all squares or cores; for example, some measurements are limited to original 256 squares, others to all 591 squares.
+  - A table lists which measurements were made on which cores; some data (notably certain measurements) were released only after the Soils Report published in November 2009.
+- Data usage and analysis guidance:
+  - Analyses should account for land class structure; ignoring land classes can bias results toward stock/change of the overall population, whereas incorporating land classes yields weighted national estimates.
+  - Bootstrapping is not consistently used; recommended to use a mixed model with square as a random factor to reflect multiple x-plots within a square.
+  - For CS design-based analyses, dispersed sampling is efficient for regional Estimates; single-core-per-location is noted, but broader spatial coverage improves precision.
+  - Users are advised to consult CEH before analysis and interpretation and to review published CS outputs exploiting the data (list available on the CS website).
+- References:
+  - Emmett et al. 2008: Countryside Survey Soils 2007 – Method development, power analyses and protocols. CEH Project No. C03042/ DEFRA Contract CR0334.

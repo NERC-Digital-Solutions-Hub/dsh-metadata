@@ -1,0 +1,23 @@
+# SUMMARY
+
+- Four years into the NERC Soil Biodiversity Thematic Programme at Sourhope (Scottish Borders), focus has been on above-ground productivity, plant community composition, and diversity, in relation to three management processes: mowing, fertilisation, and insecticide application.
+- A long-term, replicated field experiment (Rigg Foot Site, Sourhope) uses 5 blocks, 6 main plots per block, subdivided into sub-plots with 0.5 m x 0.5 m cells, across 16 projects. Treatments distinguish fertilised (nitrogen and/or lime) vs unfertilised plots, plus a controlled, insecticide-treated regime.
+- Key management actions each year since 1999 include: monthly mowing to ~6 cm, application of Dursban 4 (insecticide) to designated plots, and spring addition of nitrogen and/or lime to fertilised plots.
+- Data collected since 1998 include: weather (on-site automatic station), above-ground biomass (regular clippings), baseline and annual point analyses of vegetation, soil pH (5 cm depth), soil moisture, and supplementary botanical and bryophyte surveys. Field activity includes multi-project sampling and occasional 13CO2 pulse measurements.
+- 2002 results show:
+  - Biomass: overall productivity remained higher in fertilised plots (especially nitrogen + lime) than unfertilised plots, but absolute biomass in 2002 declined slightly from 2001; sustained long-term increase since 1999, with the fertilised plots (N+L) most productive. Block slope effects indicate lower productivity at upslope positions.
+  - Soil chemistry and moisture: lime dramatically raises soil pH toward 7.0 in treated plots; nitrogen has a smaller positive effect on pH. There is a strong negative relation between soil moisture and pH; higher pH plots tend to be drier.
+  - pH–productivity relationship: positive association between higher pH and biomass when all treatments are combined; within some fertilised treatments (N or lime alone) the relationship weakens or reverses, suggesting complex interactions with moisture and nutrient status.
+  - Point Analysis: improved plots (N and/or Lime) show higher frequency of fertile grasses (Festuca rubra, Poa pratensis) and reduced abundance of some unimproved pasture grasses (Festuca ovina, Agrostis spp.). Bryophytes (mosses) have expanded across the site, particularly in unimproved plots, contributing to increasing bryophyte hits over time.
+  - Diversity and functional groups: Shannon diversity has trended upward in most treatments since 2000 but fell by 2002 in the N+L plots; diversity remains higher in other treatments. Functional-group analysis shows: stress-tolerators (S), competitive-stress-ruderals (C-S-R), and SR/C-S-R groups dominate; N+L plots show a strong shift toward C-S-R dominance, while unimproved plots favour stress-tolerators. Over time, SR/C-S-R and C-S-R groups become more differentiated by treatment.
+  - Insecticide effect: evidence suggests insecticide-treated plots may support higher diversity, potentially through reduced herbivory enabling more palatable species; causality remains uncertain due to limited direct herbivory data.
+  - Trampling effect: the recent C2 plots (which were surveyed for the first time in 2002) show unusually low productivity, likely due to trampling during intensive 13CO2 pulse activity.
+- Overall interpretation:
+  - Mowing creates a shift toward stress-tolerant and bryophytic expansion, particularly under unimproved conditions.
+  - Fertilisation (especially N+L) boosts productivity but may lead to reduced diversity over time and potential stress through higher pH and lower soil moisture.
+  - Insecticide use could indirectly support higher plant diversity by altering herbivory, but evidence remains circumstantial.
+  - The site exhibits clear, treatment-specific shifts in species composition, bryophyte expansion, and functional group dominance, with interaction effects between pH, moisture, and productivity shaping outcomes.
+- Key methodological notes:
+  - Longitudinal data (1999–2002) enable detection of treatment-year interactions in biomass and community structure.
+  - The combination of biomass measurements, point quadrats, and PCA provides a nuanced view of how treatments shape plant and bryophyte communities.
+  - Appendices document species lists, treatment schedules, weather data, and detailed point-analysis results for 2000–2002.

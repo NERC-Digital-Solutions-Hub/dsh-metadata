@@ -1,0 +1,82 @@
+# UK Environmental Change Network (http://www.ecn.ac.uk) Bats (BA)
+
+- Overview
+  - Dataset originator: ECN Data Centre (Centre for Ecology and Hydrology)
+  - Dataset owners: UK Environmental Change Network (ECN) programme; funded by a consortium of UK government departments and agencies (e.g., DEFRA, Natural England, Environment Agency, CEH, NERC, and others)
+  - Aim alignment: standardized, verifiable environmental data to monitor change over time; supports scrutiny of environmental health and policy performance
+  - Acknowledgement and citation: ECN requests acknowledgment of data use and one reprint of any publication citing ECN data
+
+- Protocols and notes
+  - Protocol reference: http://www.ecn.ac.uk/measurements/terrestrial/b/ba
+  - Bat detection and transect protocol
+    - Bat species mapped with bat detector; behaviour recorded along transects
+    - Transects walked four times per year in four three-week windows (dates specified)
+    - Surveys not conducted during heavy rain or strong winds
+    - Methodology linked to the Bats and Habitats survey (University of Bristol) for JNCC
+    - Limitations: limited information on precise population-environment relationships; linking with broader monitoring mitigates limitations
+  - Quality and metadata
+    - Use accompanying quality information when using data
+    - Core metadata and survey information stored in multiple related tables
+
+- Data structure and storage
+  - Core data tables (D1BA_xxx): bat observations
+    - One table per site; fields include SITECODE, SDATE, TRANSECT, BATLOC_ID, FIELDNAME (bat species codes), VALUE (count), ACTS (bat seen), ACTH (bat heard), ACTF (feeding buzz)
+  - Survey information tables (D2BA_xxx): survey details
+    - Fields include BATDETECTORTYPE, KEPTPROTOCOLFREQUENCY, ADJUSTFREQUENCY, USEREFERENCECD, USESONOGRAMANALYSIS
+  - Habitat data tables (D3BA_xxx): habitats observed on transect
+    - Include habitat-related fields and station data; HAB1/HAB2/HAB3 denote up to three recorded habitat types
+  - Core metadata
+    - Core metadata tables exist; refer to the metadata documentation for exact structure
+  - Storage and access
+    - Data are held in Oracle databases; 10 tables per site (D1BA_xxx, D2BA_xxx, D3BA_xxx)
+    - Site-specific suffix xxx corresponds to site code
+
+- Field codes and taxonomy
+  - Species field (FIELDNAME) codes
+    - Examples include Bb (Barbastella barbastellus), Es (Eptesicus serotinus), M (Myotis spp.), Ms (Bechstein’s), Mb (Brandt’s), Md (Daubenton’s), Mm (Myotis myotis), Mw (Whiskered), Mn (Natterer’s), Pp (Pipistrellus), Ppl (Pipistrellus pipistrellus), Ppg (Pipistrellus pygmaeus), Nl (Nyctalus leisleri), Nn (Nyctalus noctula), Rh (Rhinolophus hipposideros), Rf (Rhinolophus ferrumequinum), UU (Unidentified bat), etc.
+  - Habitat types
+    - Up to three habitat types recorded per sighting (HAB1–HAB3)
+    - Habitat codes mapped in the value field (1–43) with detailed descriptions (e.g., hedgerows, treelines, various woodland types, arable land, grassland classes, built land, water features, etc.)
+    - Examples of habitat descriptions include Hedgerows, Treelines, Broadleaved woodland, Coniferous plantations, Arable land, Built land, Ponds, Lakes, Wet ground, Quarries, Bare soil, and Others
+
+- Site codes and dataset coverage
+  - T01 Drayton
+    - Location: 52°11'37.95"N 1°45'51.95"W
+    - Date range in dataset: 29-JUN-1993 to 05-SEP-2006
+  - T02 Glensaugh
+    - Location: 56°54'33.36"N 2°33'12.14"W
+    - Date range: 07-JUL-1994 to 30-AUG-2012
+  - T03 Hillsborough
+    - Location: 54°27'12.24"N 6° 4'41.26"W
+    - Date range: 12-AUG-1994 to 05-SEP-2002
+  - T04 Moor House - Upper Teesdale
+    - Location: 54°41'42.15"N 2°23'16.26"W
+    - Date range: 16-JUN-1993 to 28-AUG-2012
+  - T05 North Wyke
+    - Location: 50°46'54.96"N 3°55'4.10"W
+    - Date range: 04-JUL-1993 to 30-AUG-2012
+  - T07 Sourhope
+    - Location: 55°29'23.47"N 2°12'43.32"W
+    - Date range: 12-JUL-1994 to 03-SEP-2012
+  - T08 Wytham
+    - Location: 51°46'52.86"N 1°20'9.81"W
+    - Date range: 05-JUL-1993 to 21-AUG-2012
+  - T09 Alice Holt
+    - Location: 51° 9'16.46"N 0°51'47.58"W
+    - Date range: 29-JUN-1994 to 05-SEP-2012
+  - T10 Porton Down
+    - Location: 51° 7'37.83"N 1°38'23.46"W
+    - Date range: 04-JUL-1994 to 03-SEP-2006
+  - T11 Y Wyddfa - Snowdon
+    - Location: 53° 4'28.38"N 4° 2'0.64"W
+    - Date range: 16-JUL-1996 to 31-AUG-2011
+
+- Practical use for Analysts Monitoring the Environment
+  - Provides standardized, monitorable data on bat presence, activity, and habitat associations across multiple UK sites and years
+  - Enables integration with other environmental datasets to study broader ecological change and policy impacts
+  - Outputs are designed to be presented as reports, maps, and charts; datasets are stored and accessible through appropriate portals
+
+- Key considerations for reuse
+  - Ensure proper acknowledgment of ECN data and include citation as specified
+  - Consult the accompanying quality information for data usage
+  - Where possible, reference the core metadata document for data structure and field definitions

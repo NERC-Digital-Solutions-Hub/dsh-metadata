@@ -1,0 +1,30 @@
+# Chalkstream survey riparian vegetation structure data
+
+- Purpose: Measure extent and complexity of riparian vegetation upstream of chalkstream sites to understand relationships between in-stream biological communities and catchment/riparian land use.
+- Data scope: LiDAR-derived vegetation statistics for 15 chalkstream sites (out of 20 sampled in July 2012 for WessexBESS WP 3.1).
+- Collected metrics (per site and upstream distance): minimum, maximum, mean, and standard deviation of vegetation heights; total vegetation area; vegetation volume.
+- Vegetation components: statistics for all vegetation combined, and separately for trees (>2 m) and low vegetation (<2 m) with buildings masked out.
+- Upstream distance bands: 10 m-wide riparian zones on each bank evaluated at 100 m, 200 m, and 1 km upstream from the sampling point.
+- Data collection and processing:
+  - Source: Environment Agency LiDAR data; processed by Centre for Ecology and Hydrology.
+  - Data collection method: LiDAR (airborne laser scanning) with high point density (up to 100,000 measurements/s); spatial resolution between 25 cm and 2 m.
+  - Data split: Trees (>2 m) vs Low vegetation (<2 m); buildings masked.
+  - Quality checks: visual verification in ArcGIS for buffer integrity; cross-check that Tree + Low equals All.
+- Geography: 15 chalkstreams distributed along the white chalk geology from Dorset (southwest) to Hampshire (northeast).
+- Data collection timeline: LiDAR requested April 2014; processed and statistics generated subsequently.
+- Completeness: Data available for 15 of 20 stream sites; 5 sites lacking LiDAR data.
+- Key data fields (sampled columns and definitions):
+  - RIVER_ID, SITE_ID, RIVER_NAME, SITE_NAME
+  - NGR (grid reference), EASTING, NORTHING
+  - Distance_upstream_m: distance upstream (km) of the sampling location for each 10 m buffer strip (100 m, 200 m, 1 km upstream)
+  - Vegetation_m2, VOLUME_m3: area and volume within the defined upstream buffer
+  - MIN_HEIGHT_m, MAX_HEIGHT_m, MEAN_HEIGHT_m, SD_HEIGHT_m: height statistics of vegetation within the sampled area
+  - AREA_m2, VOLUME_m3, for both banks and defined upstream distances
+- Data provenance and access:
+  - Primary source: Environment Agency LIDAR Composite DSM - 1m (2015)
+  - Metadata/source reference: data.gov.uk dataset link
+  - Project context: QMUL (Dr John Murphy) requested data; processed by CEH (Dr John Redhead)
+- Potential use for analysts:
+  - Examine correlations between riparian vegetation structure and in-stream biological communities
+  - Model influence of catchment land-use gradients on riparian complexity
+  - Integrate with other datasets to assess ecological impact at multiple spatial scales (100 m, 200 m, 1 km upstream) across chalkstreams.

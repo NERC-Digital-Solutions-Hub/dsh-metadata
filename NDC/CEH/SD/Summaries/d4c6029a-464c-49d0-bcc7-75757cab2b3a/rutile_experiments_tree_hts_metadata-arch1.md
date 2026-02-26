@@ -1,0 +1,87 @@
+# Materials and methods for the dataset: Growth of five species of trees on experimental plots on sand tailings left after mining for rutile in Sierra Leone.
+
+- Context and aim
+  - Study on tree growth on sand tailings from rutile mining in Sierra Leone, where soils are extremely nutrient-poor (low nitrogen ~0.0027%, carbon ~0.073%) and natural regeneration is minimal.
+  - Eight experimental plots (Lanti South) with four 25 m × 25 m compartments each, planted in 2007 to evaluate establishment under different planting and surface treatments.
+  - Focus on growth response of five species and potential interactions with soil and surface amendments; data intended for analysis of treatment effects, species performance, and potential environmental rehabilitation insights.
+
+- Experimental design
+  - Plots: 8 total (plots 1–4 square, plots 5–8 rectangular); each plot subdivided into four compartments.
+  - Compartments: 25 m × 25 m; four compartments per plot.
+  - Species: five per compartment, one species per row
+    - Mango (Mangifera indica)
+    - Gmelina arborea
+    - Cashew (Anacardium occidentale)
+    - Citrus sinensis (sweet orange; some variation possible)
+    - Monkey apple (Anisophyllea laurina)
+  - Planting treatments (per compartment): 
+    - 17 L compost
+    - 17 L topsoil
+    - 17 L 50:50 mix of compost and topsoil
+    - Control (no added material)
+  - Surface treatments (applied to entire compartment per plot):
+    - ~2 cm compost
+    - ~2 cm topsoil
+    - ~5 cm mulch
+    - Control (no surface treatment)
+
+- Data collected and dataset structure
+  - Primary outcome: tree height measured in centimeters after 2.5 years (June 2007 – November 2009).
+  - Dataset file: rutile_experiements_tree_hts.csv
+    - Size: ~42 KB
+    - Format: comma-delimited ASCII; first line contains variable names
+    - Records: 800 trees (across 8 plots × 4 compartments × 5 trees per compartment)
+    - Columns (described in Table 3): id, Plot, Planting, Surface, position, Species, Height
+      - id: unique integer (1–800)
+      - Plot: integer (1–8)
+      - Planting: string (compost, control, ts_and_c, topsoil)
+      - Surface: string (topsoil_surf, nothing_surf, compost_surf, mulch_surf)
+      - position: integer (1–5) indicating position along the row
+      - Species: string (Mangifera, Gmelina, Anisophyllea, Anacardium, Citrus)
+      - Height: integer, cm (0 indicates dead or missing)
+  - Additional measurements and samples collected (not part of the height file but described):
+    - Soil samples: carbon and nitrogen (June 2007 pre-planting; January 2009) and heavy metals tests (2009)
+    - Biodiversity indicators: invertebrates, birds, ground flora
+  - Data collection and entry
+    - Field measurements with tape measures; recordings made on paper then transcribed to Excel
+    - Data entry involved double-entry verification by two-person teams (measurer and recorder)
+
+- Data collection context and QA
+  - Field procedures
+    - Trees measured from ground to the highest apical bud; attempt to ensure vertical alignment during measurement
+    - Dead or missing trees recorded as height zero
+    - Planting treatments and plot assignments cross-checked with location maps; surface treatments clearly visible
+  - Site and environment
+    - Lanti South sand tailings with coarse quartz sand; poor drainage and high rainfall (≈3 m/year)
+    - Plot maintenance largely performed by mining company; local community-sourced compost used in some plots
+    - Some plots experienced weed/seeds from decentralized compost leading to undergrowth
+  - Quality control observations
+    - Some signboards marking plots disappeared or relocated; tall trees became difficult to measure accurately with simple tapes
+    - Cross-checks conducted to align planting treatments with plot maps
+    - No missing data reported in the id/Plot/Planting/Surface/position/Species/Height fields; some trees recorded as dead or missing (height = 0)
+
+- Site description and context (highlights relevant to data interpretation)
+  - Location: Lanti South, near 7°41' N, 12°17' W; adjacent to active dredge ponds; large nearby mangrove forest
+  - Environment: ultra-coarse sand tailings with minimal natural regeneration; rainfall concentrated in August; all plots on two sand tailing ridges separated by a shallow, seasonally flooded valley
+  - History: rutile mining since the 1970s; rehabilitation plots established in 1994 onward; planting commenced June 2007
+  - Climate and soils: sandy substrate with very low nutrients; risk of high leaching; soils markedly degraded from pre-disturbance conditions
+
+- Practical notes for analysts
+  - Data scope: height as primary response; potential secondary analyses include growth rate by species, treatment effects, interactions between planting and surface treatments, and comparisons across plots
+  - Data limitations and caveats
+    - Inconsistencies in the data description for the dataset file (7 vs 8 columns reported) versus the header definitions; treat id/Plot/Planting/Surface/position/Species/Height as the core fields
+    - Possible measurement challenges for tall trees; measurement uncertainty may increase with height
+    - Weed seeds from compost and undergrowth may confound species growth in some compartments
+    - Some plots had signage issues and potential misalignment between treatment records and plot locations
+  - How to approach analysis
+    - Use height as the primary outcome; consider censoring or treating height = 0 as mortality/missing
+    - Model design: fixed effects for planting and surface treatments, species, plot; random effects for compartments if appropriate
+    - Integrate soil chemistry (C, N) and, if available, heavy metals data to explore correlations with growth across treatments and species
+    - Validate data against QA notes and, where possible, cross-check planting/surface treatments with plot maps
+
+- Summary of key takeaways
+  - Comprehensive field experiment to assess tree growth on degraded sand tailings under varied planting and surface amendments
+  - Dataset provides a structured, multi-factor design with 5 species and 4×4 treatment combinations, plus height measurements after 2.5 years
+  - Rich metadata includes planting and surface treatment definitions, plot/compartment layout, and preliminary soil and biodiversity measurements
+  - Data quality processes documented, with acknowledged limitations related to signage, measurement challenges, and compost-derived weed pressure
+  - Suitable for analyses of treatment effects on growth, inter-species performance, and preliminary links to soil chemistry and site conditions

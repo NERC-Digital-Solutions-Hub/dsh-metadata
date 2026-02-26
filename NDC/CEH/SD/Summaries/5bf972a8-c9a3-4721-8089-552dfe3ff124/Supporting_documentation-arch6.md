@@ -1,0 +1,43 @@
+# Data Overview
+
+- This dataset collection presents outputs from ensemble Species Distribution Models (SDMs) examining how two socio-political considerations affect bird and mammal biodiversity under climate change.
+- Datasets included:
+  - Climate_impacts_by_country.csv: national-level projections for 189 countries to 2070 of changes in species richness, plus a governance quality score.
+  - transboundary_richness.csv: current number of bird and mammal species whose ranges intersect each political border.
+  - transboundary_range_shifts.csv: projected number of species crossing borders under climate change, plus an indicator for borders fortified with physical barriers.
+- Global scope: data cover >12,700 terrestrial birds and mammals (about 80% of species), excluding restricted-range species likely governed by non-climate factors.
+- Data collection and generation methods:
+  - Source data: IUCN Red List and BirdLife International (plus Handbook of the Birds of the World).
+  - Model ensemble: four model types (GAMs, GLMs, Random Forests, Boosted Regression Trees).
+  - Climatic predictors: mean annual temperature, temperature seasonality, precipitation in wettest and driest months, and precipitation seasonality.
+  - Climate scenarios and projections: four RCPs (2.6, 4.5, 6.0, 8.5) projected to 2070.
+  - Climate projections used: HadGEM2-ES, CCSM4, MIROC-ESM-CHEM.
+  - Spatial structure: data split into ten spatial blocks for 10-fold cross-validation; blocks chosen to balance area and bioclimate.
+  - Model evaluation: area under the ROC curve (AUC) to assess discrimination.
+  - Projection workflow: for each species, an ensemble of 120 projections per climate scenario (4 models x 10 blocks x 3 GCMs), weighted by model AUC to produce final species distributions.
+  - Aggregation: grid-cell richness summed to produce present and 2070 richness; national-level changes obtained by averaging grid-cell means per country.
+  - Governance metric: mean of six World Bank Governance Indicators (2018 data).
+- Data outputs and metrics:
+  - Climate_impacts_by_country.csv:
+    - 189 rows (one per country) and 31 columns.
+    - First column: ISO3 country code.
+    - Last column: governance score (-2.5 to 2.5).
+    - Intermediate columns named as [scenario]_[group]_[measure]:
+      - Scenario: current, rcp26, rcp45, rcp60, rcp85
+      - Group: mammal, bird, both
+      - Measure: SR (species richness) or pctChange (percent change in richness)
+    - Example: rcp85_bird_SR.
+  - Transboundary_richness.csv:
+    - 327 rows (one per border) and 3 columns: border, transboundary_richness, transboundary_richness_threatened.
+  - Transboundary_range_shifts.csv:
+    - 6 columns: border; and four columns detailing projected transboundary range shifts by taxonomic group (mammals or birds) and climate scenario (RCP4.5 or RCP8.5); final column barrier_species indicating non-flying mammals crossing fortified borders (NA if no barrier).
+- Data structure and units:
+  - Climate_impacts_by_country.csv: 189 country rows; 31 columns; country code in first column; governance score in last column.
+  - Transboundary_richness.csv: borders with counts of intersecting species and threatened species.
+  - Transboundary_range_shifts.csv: border-level shifts broken down by taxon and scenario; barrier_species indicates cross-border crossing for fortified borders.
+- Context and usage:
+  - Based on a open-access publication: Titley et al., 2021 (PNAS): Global inequities and political borders challenge nature conservation under climate change.
+  - Enables analysis of how biodiversity loss relates to governance and how climate change may alter cross-border species movements.
+  - Useful for informing conservation planning, policy discussions, and cross-border collaboration under climate change.
+- Important notes:
+  - All data are global in scope and derived from climate-driven projections; interpretation should consider model uncertainties and the use of multiple climate scenarios and GCMs.

@@ -1,0 +1,28 @@
+# Overview
+
+- What: Shapefiles of stream networks, including both natural and artificial watercourses (rivers, streams, canals etc.)
+- Where: Mundeni Aru, Maduru Oya and Miyangolla Ela river basins in eastern Sri Lanka
+- How: The stream networks were manually mapped using satellite imagery from Google Earth
+- Why: For use in hydrologic modelling for the CFLOOD project (Compound flooding from tropical cyclone-induced sea surge and precipitation in Sri Lanka)
+- Who: J.B.R Matthews mapped the stream networks; R. Jayaratne and A. Raby provided oversight and advice
+- Completeness: Intended to be detailed enough for the hydrologic modelling purpose, but watercourses not visible in Google Earth imagery (e.g., due to dense vegetation) could not be mapped
+- Collection/generation/transformation methods:
+  - Used the most appropriate historic Google Earth imagery for each location, prioritising higher river levels, more recent images, and higher image quality
+  - OpenStreetMap (OSM) used as a starting point; watercourses already in OSM were re-mapped
+  - Aimed for completeness; dense vegetation prevented mapping in some areas; some minor canals not mapped
+  - Missing watercourses should be accounted for when using the networks for modelling
+  - Centrelines were manually traced and snapped together at vertices; line segment order indicates flow direction (downhill); uncertainty in flat areas
+  - Breaks occur where lakes are present
+  - Widths assigned based on the maximum breadth observed in images; transitions between segments may need smoothing for modelling
+- Nature and Units of recorded values:
+  - Shapefiles contain centrelines in UTM Zone 44N (EPSG:32644)
+  - Width_m attribute provides watercourse width in meters; widths are segmented to capture variation
+  - Width values are precise for measurement but should be treated as general indicators for hydrologic modelling
+- Quality control:
+  - Data integrity checked, including vertex connections and flow-direction ordering
+- Details of data structure:
+  - Stream networks for each basin are in separate shapefile folders:
+    - CFLOOD_MundeniAru_StreamNetwork_utm
+    - CFLOOD_MaduruOya_StreamNetwork_utm
+    - CFLOOD_MiyangollaEla_StreamNetwork_utm
+  - Each shapefile contains a single attribute: Width_m (watercourse width in meters)

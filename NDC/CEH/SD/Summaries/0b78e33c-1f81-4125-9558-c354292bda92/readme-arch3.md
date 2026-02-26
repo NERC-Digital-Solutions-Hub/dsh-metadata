@@ -1,0 +1,25 @@
+# Code for generating long-term equilibrium results for a range of parasite virulence and parasite evolutionary lag values, and dynamical results for specific parameter values
+
+- Overview
+  - A supplementary code repository for the paper “Host-parasite coevolution and the stability of genetic kin recognition” (PNAS 2023).
+- Repository contents
+  - Script_for_generating_parameter_sweep_data.m
+    - Generates long-term equilibrium results across a range of parasite virulence (d) and parasite evolutionary lag (lag) values.
+    - Saves results in matrices.
+  - Script_for_generating_single_trial_data.m
+    - Generates time-series (over-time) dynamical results for a specific set of parameter values.
+  - Script_for_generating_initial_genotype_frequencies.m
+    - Generates the initial genotype frequencies used to start each run.
+- How to run
+  - Run Script_for_generating_parameter_sweep_data.m to obtain equilibrium results over a parameter grid; outputs stored in matrices.
+  - Run Script_for_generating_single_trial_data.m to obtain dynamical results for chosen parameter values.
+  - Each of the above scripts calls Script_for_generating_initial_genotype_frequencies.m to establish starting frequencies for runs.
+- Data outputs and formats
+  - Equilibrium results: saved in matrices.
+  - Dynamical results: time-series data for specified parameters.
+- Interdependencies
+  - All main scripts rely on the initial genotype frequencies script to initialize runs, ensuring consistent starting conditions across analyses.
+- Relevance to monitoring frameworks (alignment)
+  - Demonstrates a modular, reproducible workflow for exploring parameter spaces and generating both equilibrium and time-series outputs.
+  - Highlights the importance of explicit initial conditions and data generation steps in evaluating model-based environmental health insights.
+  - Illustrates how parameter sweeps and targeted simulations can support understanding of system dynamics, which can inform monitoring design and decision-making.

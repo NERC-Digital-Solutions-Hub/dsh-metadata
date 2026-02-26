@@ -1,0 +1,59 @@
+# soilcoreno, Description = Individual number given to the soil sample/core. timepoint, Description = Timepoint of measurements. biochartreatment, Description = Is the sample un-amended or amended with biochar?.
+
+- Overview
+  - Provides a structured schema for soil gas flux measurements (CO2, CH4, N2O) from soil cores under different treatments, including biochar and wetting conditions.
+  - Includes static chamber headspace measurements, soil properties, treatment details, and precise timing to support policy-relevant environmental health monitoring and evaluation.
+
+- Key fields and their meaning
+  - Sample and time
+    - soilcoreno: individual soil core/sample identifier
+    - timepoint / dayfromstart / dayfromstartstring: when measurements occurred
+    - datetime: exact date and time of measurement
+    - midpointday / timeinterval / timeintervalstring: temporal context between measurements
+  - Treatments and treatment metadata
+    - biochartreatment: whether biochar is applied
+    - fulltreatname: full descriptive name of the soil treatment (biochar and wetted)
+    - temperaturetreatment: soil temperature condition of the sample
+    - nitrogentreatment: 15N-labelled nitrogen (NH4+ or NO3−)
+    - wettingtreatment: periodic high water content vs not
+  - Gas flux measurements
+    - mgCO2-Cfluxm2h1: CO2 flux (mg CO2-C per m2 per hour)
+    - ugCH4-Cfluxm2h1: CH4 flux (unit indicated; described as mg CH4-C flux in notes)
+    - ugN2O-Nfluxm2h1: N2O flux (unit indicated; described as mg N2O-N flux)
+    - log10co2 / log10ch4 / log10n2o: log10(flux + 1) transformations with handling for negative flux by adjusting with negative flux magnitude
+  - Chamber and headspace context
+    - CO2ppmt0 / CH4ppmt0 / N2Oppmt0: gas concentrations in the static chamber headspace at t0
+    - headvolm3: volume of the static chamber headspace
+    - chambaream2: chamber area
+  - Soil and physical properties
+    - tempair: air temperature at measurement
+    - gravwatercontentproportion: gravimetric water content
+    - bulkdensitygcm3, postmixbulkdensity: soil bulk density before and after mixing
+    - particledensitygcm3: particle density
+    - totalporosity: total porosity = 1 - (bulk density / particle density)
+    - drysoilweightg: dry soil mass in grams
+    - biocharweight: dry biochar added
+    - biocharfraction: biochar as a proportion of dry soil weight
+    - soil temperature and nitrogen treatment context
+    - wfpsproportion: water-filled pore space
+  - Site information
+    - site: site identifier
+    - midden of data collection context and other metadata are captured via the above fields
+
+- Data processing and derivations
+  - Log transformations
+    - log10co2, log10ch4, log10n2o computed as log10(flux + 1)
+    - If a negative flux occurs in the base flux column, the magnitude of that negative flux is added to all flux values before logging
+  - Temporal context
+    - midpoints and time intervals enable interpretation of flux dynamics between successive timepoints
+  - Derived porosity and density relationships
+    - totalporosity computed from bulk and particle densities
+
+- How this supports monitoring and governance
+  - Rich metadata and descriptive field definitions enable transparent data governance, quality assurance, and reuse by analysts and policymakers
+  - Captures treatment effects (biochar, wetted), temporal dynamics, and site-level variation to inform environmental health monitoring frameworks
+  - Facilitates data sharing and reproducibility through explicit unit definitions, measurement context, and data transformations
+  - Highlights data considerations relevant to monitoring frameworks, such as:
+    - potential data gaps or access issues
+    - need for consistent metadata to verify dataset suitability for decision-making
+    - data transformation steps that must be documented for interpretation and policy use

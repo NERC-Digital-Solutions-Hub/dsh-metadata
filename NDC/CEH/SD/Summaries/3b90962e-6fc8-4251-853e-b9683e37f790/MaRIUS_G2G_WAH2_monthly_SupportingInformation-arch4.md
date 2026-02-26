@@ -1,0 +1,105 @@
+# Supporting information for Grid-to-Grid model estimates of monthly mean flow and soil moisture for Great Britain: weather@home2 (climate model) driving data [MaRIUS-G2G-WAH2-monthly]
+
+- Overview
+  - Describes MaRIUS-G2G-WAH2-monthly dataset: Grid-to-Grid (G2G) model estimates of monthly mean river flow and soil moisture across Great Britain at 1 km x 1 km resolution.
+  - Part of the MaRIUS project (Managing the Risks, Impacts and Uncertainties of drought and water Scarcity), funded by UK NERC, focusing on drought and water scarcity risk assessment.
+  - Uses weather@home2 regional climate model (RCM) driving data to generate ensembles for historical and future periods.
+
+- Data Content
+  - Variables provided:
+    - Flow (m3 s-1)
+    - Soil moisture (mm water per m soil; equivalent to depth-integrated θ)
+  - Temporal scope:
+    - Historical Baseline (HISTBS: 1900-2006)
+    - Baseline (BS: 1975-2004)
+    - Near-Future (NF: 2020-2049)
+    - Far-Future (FF: 2070-2099)
+  - Ensemble structure:
+    - 100 G2G simulations per period (ensembles)
+    - Historical and future ensemble members are independent; same numbers across periods are not directly comparable
+  - Spatial scope:
+    - 1 km x 1 km grid across GB; land-only, sea cells set to missing
+  - Supporting spatial datasets:
+    - Digitally-derived catchment areas (1 km grid)
+    - Estimated locations of flow gauging stations (NRFA), on the 1 km grid and in CSV
+  - Additional outputs:
+    - Example grids and NRFA station locations, catchment areas, and Wales catchment context (Figure 1)
+
+- Driving Data and Hydrological Model
+  - Meteorological driving data:
+    - MaRIUS weather@home2 (WAH2) RCM dataset; multiple ensembles of historical and projected climates
+    - Future periods use RCP8.5 emissions scenario
+  - Bias correction and meteorology:
+    - Precipitation bias-corrected with monthly multiplicative factors
+    - Potential Evaporation (PE) derived via Penman-Monteith; for historical periods, uses stomatal resistance values from MORECS
+    - For future periods, two PE schemes exist; here adjusted r_s/PE is used, which moderates projected low-flow decreases
+  - Model specifics:
+    - G2G is a 1 km x 1 km, 15-minute time-step hydrological model parameterised with soil/land-cover data
+    - Urban/suburban land-cover effects on runoff included; calibration by spatial datasets rather than catchment-specific calibration
+    - Snow module not used; precipitation assumed rain
+    - 30-day months due to 360-day calendar in climate data
+  - Inputs and re-projection:
+    - WAH2 precipitation and PE re-projected from ~25 km HadRM3P HadAM3P grid to 1 km G2G grid
+    - Spatial weighting within RCM boxes to distribute precipitation non-uniformly within box
+
+- Data Format, Organization, and Access
+  - File format:
+    - NetCDF4; one file per period and ensemble member
+  - File naming convention:
+    - Historical Baseline: G2G_WAH_var_HISTBS*.nc (1900-2006; spin-up in 1900-1901)
+    - Baseline: G2G_WAH_var_BS*.nc (1975-2004)
+    - Near-Future: G2G_WAH_var_NF*.nc (2020-2049; 2020-01 onward)
+    - Far-Future: G2G_WAH_var_FF*.nc (2070-2099; 2070-01 onward)
+  - Grid and time indexing:
+    - Domain: 700 km x 1000 kmGB grid; 1 km x 1 km cells
+    - Time: 30-day monthly values; time units days since 1900-01-01; months aligned to first day of month
+  - Metadata and auxiliary data:
+    - CatchmentAreaGrid.nc: catchment area (km2) draining each 1 km cell
+    - MaRIUS_G2G_NRFAStationIDGrid.nc: NRFA station IDs mapped to grid cells
+    - MaRIUS_NRFAStationIDs.csv: NRFA station IDs for the 1285 stations with grid mapping
+  - Usage interfaces:
+    - Outputs include both flow and soil moisture for each non-sea grid cell
+    - Some grid cells may map to the incorrect real-world catchment for very small basins due to 1 km discretisation
+
+- Data Quality, Assumptions, and Limitations
+  - Model limitations:
+    - G2G primarily relies on natural (unabstracted) flows; does not account for abstractions and discharges
+    - PE-based evaporation requires assumptions; snow module not used
+  - Data assumptions:
+    - Precipitation bias-corrected; PE not bias-corrected
+    - 360-day calendar implies 30-day months
+    - 1 km grid captures spatial variability but may misalign with real catchment delineations for small basins
+  - Spin-up considerations:
+    - Early years in HISTBS and NF/FF may be spin-up; ignore first two years for analyses or use for spin-up checks
+  - Comparisons and interpretation:
+    - Baseline (BS) is a 30-year subset of HISTBS; avoid direct time-series comparisons between ensemble members or periods
+    - Use statistical comparisons (distributions, multi-decadal trends) rather than direct pointwise time-series matches
+  - Observational comparisons:
+    - Comparisons to observations (e.g., NRFA) should be statistical; alignment of modeled and observed catchments may vary due to discretisation
+
+- Data Use and Collaboration Guidance for Data Leaders
+  - Data stewardship:
+    - Clearly documented metadata, file naming, and structure support discoverability and reuse
+    - Multiple ensembles offer a basis for uncertainty and risk assessment; treat ensemble members as plausible realizations
+  - User needs and co-ownership:
+    - Datasets serve hydrological drought and drought-risk analyses; can be integrated with impact models (economic, ecological, agricultural)
+    - Auxiliary datasets (NRFA locations, catchments) enable targeted comparisons with observations
+  - Comparability and integration:
+    - Use Baseline vs Future comparisons for assessing changes over time; avoid direct comparisons to observed series
+    - When integrating with other data products, ensure consistent spatial reference (1 km grid) and temporal alignment (monthly means)
+  - Data standards and quality:
+    - NetCDF4 with CEH-dataset conventions; clear documentation facilitates interoperability
+    - Be mindful of the 360-day calendar and ensemble IDs to avoid misinterpretation of results
+  - Future collaboration and governance:
+    - Acknowledge MaRIUS project outputs and NE/NERC funding
+    - Reference primary methodological papers for model assumptions and validation context
+
+- References and Acknowledgments
+  - MaRIUS project and associated literature cited (development of G2G, bias correction, PE methods, drought analyses, and catchment mapping)
+  - Acknowledges contributors and CEH data infrastructure; dataset produced under the UK Drought and Water Scarcity program
+
+- Key Takeaways for Data Leaders
+  - A large, high-resolution, ensemble-based hydrological dataset linking climate inputs to river flow and soil moisture across GB
+  - Provides historical and future projections with explicit guidance on how to compare and interpret ensemble results
+  - Includes rich ancillary data (catchments, NRFA stations) to support validation and end-user analyses
+  - Suitable for risk and impact assessments, with clear caveats about model limitations and appropriate comparison practices

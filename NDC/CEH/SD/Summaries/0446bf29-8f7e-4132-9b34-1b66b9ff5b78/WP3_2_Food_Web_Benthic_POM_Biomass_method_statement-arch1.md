@@ -1,0 +1,41 @@
+# Benthic particulate organic matter biomass
+
+- What has been recorded and what form does the data take
+  - Ash-free dry mass (AFDM) of three size fractions of organic matter: woody debris (>1 cm), coarse particulate (>1 mm), and fine particulate (>0.250 mm).
+  - Data are presented as means with standard deviations, in units of mg AFDM per m² of stream bed.
+- Where were the data collected
+  - Three chalkstream sites in the Wessex chalk area: Nine Mile River, River Till, and River Wylye.
+  - Selected to reflect a gradient of landscape integrity and river invertebrate diversity.
+- When were the data collected
+  - Wylye and Nine Mile River: seven sampling occasions.
+  - River Till: five sampling occasions.
+  - Timeframe: October 2012 to October 2013.
+- How were the data collected
+  - Up to 10 Surber samples per 100 m survey reach (0.25 x 0.25 m, mesh 0.025 mm).
+  - In the lab: sort invertebrates from mineral/organic material; retain three fractions; dry, then ashed to derive AFDM.
+  - Fractions processed in pre-weighed aluminum trays; dried at 80°C for at least 24 h, weighed to 0.0001 g, incinerated at 560°C for 8–12 h, weighed again.
+- Why were the data collected
+  - To construct quantified food webs detailing fluxes of mass and nutrients between nodes and to quantify standing stocks of benthic detritus resources.
+- Who was responsible for the collection and interpretation of data
+  - Queen Mary University of London River Communities Group, led by Dr J. Iwan Jones; responsible for sample collection, processing, analysis, interpretation, and data management.
+- Completeness
+  - 7 sampling occasions from Nine Mile River and Wyse (Wyse is Wylye? likely Wylye) and 5 from Till.
+  - Did not sample Till during salmonid breeding season (Dec–Mar) to avoid redd disturbance.
+  - Replicate counts: 10 replicates processed on Oct 2012, Feb 2013, Mar 2013, May 2013; 5 replicates on Jul, Aug, Oct 2013.
+- How did you check that the values you created are correct
+  - Followed standard laboratory procedures for AFDM.
+  - No formal QA via replicate repeats within a replicate Surber sample.
+  - Final values checked for outliers (none found) before calculations.
+- Data structure (column definitions)
+  - RIVER_ID: unique river identifier in Britain
+  - SITE_ID: unique sampling location identifier
+  - RIVER_NAME: river name (from OS map)
+  - SITE_NAME: site name
+  - NGR: Ordnance Survey National Grid Reference
+  - EASTING: OS Easting
+  - NORTHING: OS Northing
+  - SAMPLE_DATE: date of sampling
+  - POM_Fraction: particulate organic matter fraction (woody debris >1 cm, coarse particulate >1 mm, or fine particulate >0.250 mm)
+  - Mean_AFDM_mgperm2: mean AFDM (mg m⁻²)
+  - SD_AFDM_mgperm2: standard deviation of AFDM (mg m⁻²)
+  - AFDM_n: number of benthic samples processed from each site

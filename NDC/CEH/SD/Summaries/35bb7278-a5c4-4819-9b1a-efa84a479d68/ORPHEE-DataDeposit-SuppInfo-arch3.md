@@ -1,0 +1,33 @@
+# Experimental design
+
+- Overview
+  - Large tree diversity experiment in SW France (ORPHEE), planted in 2008, to examine how tree species richness and composition affect insect herbivory and powdery mildew, with an irrigation treatment added since 2015.
+- Experimental layout
+  - 8 blocks spanning 12 ha, using five native species: Quercus robur, Quercus pyrenaica, Quercus ilex, Betula pendula, and Pinus pinaster.
+  - Fully factorial design with 32 treatment plots per block (eight treatments replicated once per block, plus an extra replication of the five-species mixture).
+  - Each plot contains 100 trees (10 rows × 10 trees) planted at 2 m spacing; plots are randomly distributed within blocks.
+  - An irrigation treatment (rainfall vs irrigation) is applied to half of the blocks (since 2015).
+- Treatments and apparency
+  - Treatments: Q. robur monoculture; three two-species mixes with Qr; three three-species mixes with Qr; and a four-species mix of the three oaks plus birch.
+  - Oak apparency concept: focal oak height relative to the mean height of surrounding trees; apparency driven by birch proportion, enabling comparisons of plots with identical richness but different apparent oak dominance.
+- Data collection
+  - Sampling: Blocks 1–6 (3 irrigated, 3 non-irrigated); in each plot, four Qr trees were randomly selected for damage assessment.
+  - Measurements:
+    - Insect herbivory on primary shoots and powdery mildew on lammas shoots.
+    - For each tree: eight shoots (covering a range of heights and angles); five leaves per primary shoot analyzed for mines; mildew assessed on five leaves per lammas shoot.
+    - Damage categorized as leaf chewers and skeletonisers (seven percentage classes per leaf: 0–6, up to >76%); mildew classified into five classes (0–4).
+    - Data aggregated to shoot and tree levels using the median of each damage class.
+    - Additional covariates: lengths of primary and lammas shoots; tree height.
+  - Additional measurements: tree height measured in 2018; mean shoot lengths recorded per tree.
+- Data quality and structure
+  - Data entry performed manually in Excel; quality checks included visual inspection for outliers/missing values and using R’s df_status() (funModeling) to identify missing values/NAs.
+  - Data columns (selected):
+    - Tree.ID, Date.Surveyed, Block, Plot, Irrigation, Plot.Composition, Resource.Dilution (proportion of non-Qr species, 0–0.75), Richness, PA.Birch (presence/absence of birch), MeanChewerTree, MeanDefolTree, SumMinersTree, MeanMildewTree, MeanPShootLength, MeanLShootLength, H.2018 (Qr height in 2018).
+- Data provenance and references
+  - Location coordinates and detailed design specifications provided; supported by literature on plant apparency, herbivory, drought, and neighbour effects (citations included for Castagneyrol et al. and Bert et al.).
+- Limitations and notes
+  - Some lammas shoot data are missing (NAs) for a subset of trees (3 out of 190).
+- Relevance to monitoring and data governance
+  - Demonstrates multi-level ecological health indicators (chewing damage, mildew infection, defoliation, growth metrics) across a factorial planting design.
+  - Provides a clear data dictionary and structured dataset (tree, shoot, and leaf-level measures with explicit units and covariates), illustrating how environmental health metrics can be standardized and tracked over time.
+  - Highlights practical data challenges relevant to monitoring frameworks (data completeness, metadata clarity, and the need for consistent data collection and governance to enable sharing and reuse).

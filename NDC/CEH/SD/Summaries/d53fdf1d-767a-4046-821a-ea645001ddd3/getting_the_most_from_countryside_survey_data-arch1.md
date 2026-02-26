@@ -1,0 +1,21 @@
+# Notes on the downloadable data
+
+- The precise locations of Countryside Survey squares are kept confidential by UKCEH to preserve representativeness. External users cannot identify survey squares with precision finer than 100 square km.
+- Countryside Survey field data come from a sample of 1-km squares across Great Britain, with two levels of measurement:
+  - Whole square characteristics
+  - Within-square features (e.g., quadrats for vegetation, soils, etc.)
+- The sampling is not a random subset of all 1-km squares. It is stratified by the ITE Land Classification, with country-specific classifications:
+  - England: 21 classes
+  - Wales: 8 classes
+  - Scotland: 16 classes
+- Some squares were excluded from field survey (at 1:250,000 scale OS maps) if their area was more than 90% sea or more than 75% urban. Estimates for GB or regions assume excluded squares have vegetative land similar in composition to sampled squares; bias is considered small unless a region has a high proportion of sea/urban land.
+- Because of sampling design and potential skewness of some features, official estimates are produced as ratio estimates by land class, weighted by the vegetative land area of each land class.
+- Since 1998, standard errors and confidence intervals are estimated using bootstrap methods due to concerns about skewness (references to Efron and Tibshirani).
+- Data are designed to be representative of GB conditions, but users should be aware that:
+  - Estimates may be biased if regional compositions deviate significantly from the sampled squares
+  - Some data may lack fine-grained details like precise administrative boundaries
+  - Access considerations and the need to navigate data formats and potential administrative restrictions may affect data usability
+- References:
+  - Barr, C.J. et al. (1993). Countryside Survey 1990 Main Report
+  - Cochran, W.G. (1963). Sampling Techniques
+  - Efron, B. & Tibshirani, R.J. (1993). An Introduction to the Bootstrap

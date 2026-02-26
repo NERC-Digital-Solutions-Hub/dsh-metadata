@@ -1,0 +1,25 @@
+# Groundwater2030: Data structure for field survey files
+
+- Four CSV tables are provided:
+  - Groundwater2030_sanrisk.csv (sanitary risk inspections)  
+  - Groundwater2030_waterquality.csv (water quality test results)  
+  - Groundwater2030_well_owner_survey.csv (well owner questionnaire)  
+  - Groundwater2030_WellCustomerSurvey.csv (well customer questionnaire)  
+- Linking keys and identifiers:
+  - Tables can be joined on a set of common identifier fields that are unique to each groundwater source.
+  - Groundwater2030_sanrisk.csv and Groundwater2030_waterquality.csv use Wellcode as the primary key field.
+  - Groundwater2030_well_owner_survey.csv and Groundwater2030_WellCustomerSurvey.csv use Well number as the key.
+- Identifier schema:
+  - Unique source identifiers take the form W1…n (well), S1…n (spring), B1…n (borehole).
+  - An O code indicates baseline wells for which water quality data could not be collected.
+- Data relationships:
+  - There may be more than one customer per groundwater source.
+  - If a questionnaire cannot be linked to an individual well, it is labeled None1…n, but still includes neighborhood information.
+- Content of each dataset:
+  - Sanitary risk: sanitary risk inspection data for groundwater sources.
+  - Water quality: water quality test results for groundwater sources.
+  - Well owner survey: questionnaire data from well owners.
+  - Well customer survey: questionnaire data from well customers.
+- Practical implications for monitoring frameworks:
+  - The structure supports integrated analyses across sanitary risk, water quality, and stakeholder perspectives at the groundwater-source level using consistent identifiers.
+  - Requires careful management of None and O codes, consistent metadata, and robust joining keys to maintain data quality across datasets.

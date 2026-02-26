@@ -1,0 +1,57 @@
+# Supporting documentation for Sample_list.csv
+
+- Purpose and scope
+  - Provides metadata for the Sample_list.csv dataset to enable interpretation, reuse, and linkage of samples.
+  - Focuses on radiological exposure context via ICRP Reference Animals and Plants (RAP) classifications.
+  - Documents what each field represents, its units (where applicable), and any notes.
+
+- Data fields and definitions
+  - Sample_Code
+    - Description: Unique sample identifier
+    - Units: n/a
+    - Notes: 
+  - RAP
+    - Description: RAP classification to which the sampled species can be attributed (ICRP)
+    - Units: n/a
+    - Notes: 
+  - Sample_Description
+    - Description: Part of the organism analyzed (e.g., whole organism divided and analyzed separately)
+    - Units: n/a
+    - Notes: 
+  - Collection_Date
+    - Description: Date of sample collection
+    - Units: dd-mmm-yy
+    - Notes: 
+  - Dry/Fresh_Ratio
+    - Description: Dry to fresh weight ratio
+    - Units: unitless
+    - Notes: 
+  - Coordinates_of_the_Sample
+    - Description: Grid reference of sampling location
+    - Units: decimal degrees and minutes
+    - Notes: 
+  - Sample_Association
+    - Description: Unique sample identifier of soil sampled at the same site
+    - Units: n/a
+    - Notes: 
+  - Notes
+    - Description: Additional comments (where applicable)
+    - Units: n/a
+    - Notes: 
+
+- Data quality and usage notes
+  - Standardization
+    - Date format (dd-mmm-yy) and coordinate notation (decimal degrees and minutes) are defined for consistency.
+  - Linkability
+    - RAP enables linking to organism type; Sample_Association allows grouping with soil samples from the same site.
+  - Completeness and notes
+    - Several Notes fields may be blank; metadata completeness is essential for interpretability.
+  - Readiness for analysis
+    - Structure supports filtering by RAP, collection date, location, and sample description; coordinates enable spatial analyses.
+  - Considerations for analysis
+    - Ensure coordinate reference system consistency; compare dry/fresh ratios when analyzing concentration data; account for potential missing metadata.
+
+- Implications for analysts
+  - Facilitates cross-dataset integration across sites and times via Sample_Code, RAP, and Sample_Association.
+  - Supports spatial and temporal analyses through Coordinates_of_the_Sample and Collection_Date.
+  - Enables provenance and reuse through well-defined field explanations and metadata.

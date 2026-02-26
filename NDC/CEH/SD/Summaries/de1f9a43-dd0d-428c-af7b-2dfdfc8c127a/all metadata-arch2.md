@@ -1,0 +1,39 @@
+# Experimental Design / Sampling Regime
+
+- Objective and scope
+  - Study uses chloroplast DNA variation to understand historical patterns of gene flow, colonisation, and migration in Acacia senegal.
+  - Combines wild populations, experimental trials, and herbarium specimens to cover 66 sites across sub-Saharan Africa, the Arabian Peninsula, Pakistan, and India.
+- Sampling regime
+  - Total samples: 297 from mature Acacia senegal individuals.
+  - Population representation: at least one individual per population; up to 50 individuals per population depending on availability.
+  - Wild-population design: individuals separated by ~100 metres.
+  - Temporal coverage: collections conducted between July 2007 and July 2009; each population sampled once.
+  - Specimens: herbarium samples included with permissions; field sampling conducted by named researchers.
+- Sample processing and materials
+  - Tissue collection: fresh leaf or stem tissue dried on silica gel; herbarium leaf material desiccated on silica gel.
+  - Geographic data: recorded latitude, longitude, and altitude for each population.
+  - DNA extraction: using QIAGEN DNeasy 96 Plant kits; quality checked on 1% agarose gel; stored at -20°C.
+  - Field/lab workflow: tissue powder prepared with a Retsch Tissuelyser; DNA quantified with a 1 kb ladder and standard markers.
+- Analytical methods
+  - Chloroplast DNA (cpDNA) analysis to investigate historical patterns.
+  - Regions and markers
+    - trnH-psbA spacer: amplified, digested with DraI, fragments visualised for haplotypes.
+    - cpDNA simple sequence repeats (cpSSRs): two loci, ccmp5 and ccmp10, amplified and scored for haplotypes.
+  - PCR conditions and analysis: standard reaction mixes and cycling protocols; fragment sizes determined by electrophoresis against standards.
+  - Data outputs: cpDNA haplotypes at two loci; cpSSR haplotypes across two loci (36 haplotypes) and trnH-psbA haplotypes (6 haplotypes).
+- Fieldwork and instrumentation
+  - Tissue grinding: approx. 1 cm² dried tissue ground to fine powder.
+  - DNA quality checks: electrophoresis against DNA ladders; blanks used as PCR negative controls.
+- Nature and units of recorded values
+  - Measurements reported as base pairs (bp) for amplified fragments.
+  - cpSSR data presented as allele sizes (bp) at each locus; haplotype designations assigned accordingly.
+- Format of stored data and data management
+  - Data formats: Excel spreadsheets stored and submitted as CSV files to EIDC.
+  - Two CSV datasets
+    - Chloroplast DNA_cpSSR Marker.csv: eight columns (sample number, country, population, latitude, longitude, Locus1 [ccmp5], Locus2 [ccmp10], haplotype number).
+    - Chloroplast DNA_RFLP Marker.csv: six columns (sample number, country, population, latitude, longitude, trnH-psbA haplotype).
+- Quality control and provenance
+  - Samples sourced from well-documented origins.
+  - Reproducibility checks: PCR products run at least twice; DNA ladder markers used for accurate sizing; negative controls included.
+- References
+  - Cavers et al. (2003); Omondi et al. (2010); Shaw et al. (2005); Weising & Gardner (1999) – methods and primers for cpDNA analysis and cpSSR markers.

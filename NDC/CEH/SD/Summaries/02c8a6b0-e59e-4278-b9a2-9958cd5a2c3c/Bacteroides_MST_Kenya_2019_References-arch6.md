@@ -1,0 +1,21 @@
+# References
+
+- Overview
+  - A collection of international standards and research focused on water-quality microbiology, emphasizing detection and enumeration of fecal indicators (enterococci, E. coli, coliforms) and bacteriophages, plus microbial source tracking using Bacteroides species.
+- Standards and methods
+  - ISO 7899-2:2000 – Water quality: detection and enumeration of intestinal enterococci by membrane filtration.
+  - ISO 10705-2 (2001) – Water quality: detection and enumeration of bacteriophages: enumeration of somatic coliphages.
+  - ISO 10705-4 (2001) – Water quality: detection and enumeration of bacteriophages: enumeration of bacteriophages infecting Bacteroides fragilis.
+  - ISO 9308-1 (2014) – Water quality: enumeration of Escherichia coli and coliform bacteria by membrane filtration for waters with low bacterial background flora.
+- Microbial source tracking and indicators
+  - Bacteriophages as indicators for fecal pollution and enteric virus removal; exploration of GB-124 phages as a tool for viral waterborne disease control.
+  - Isolation and use of Bacteroides bacteriophage host strains to track sources of animal fecal pollution in water.
+  - Microbial source tracking markers: relationships with pathogens and human health outcomes.
+  - Development of new media for selecting and identifying Bacteroides fragilis group strains; identification of host strains for tracking pollution sources.
+- Notable studies and tools
+  - Ebdon et al. (2012) on bacteriophages of Bacteroides as a novel tool for viral waterborne disease control.
+  - Gomez-Donate et al. (2011) on isolating Bacteroides host strains suitable for tracking animal fecal pollution in water.
+  - Harwood et al. (2014) review of microbial source tracking markers and their links to health outcomes.
+  - Livingston (1978) development of a new medium for Bacteroides fragilis group identification.
+  - McMinn et al. (2017) on bacteriophages as indicators of fecal pollution and enteric virus removal.
+  - Payan et al. (2005) method for isolating Bacteroides bacteriophage host strains for tracking fecal pollution sources.

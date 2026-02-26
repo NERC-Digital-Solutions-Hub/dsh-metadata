@@ -1,0 +1,67 @@
+# REPORT III RESULTS FROM THE SOURHOPE FIELD EXPERIMENT: 1999-2001
+
+- Context and purpose
+  - Large field experiment at Sourhope, part of the NERC Soil Biodiversity Thematic Programme.
+  - Aimed to provide broad context for other studies and enable year-to-year comparisons across many measured variables.
+  - Data collected 1998–2001 to support understanding of site management, treatments, and ecological responses.
+  - 2001 adjustments: UK Foot and Mouth Disease restrictions limited site visits (Feb–May); change of site Officer in Charge.
+
+- Data collected and measurement methods
+  - Automatic Weather Station (AWS)
+    - 1999–2001: daily headline measures (rainfall, radiation, temperatures, soil moisture).
+    - 2001: rainfall near long-term average; other metrics largely stable vs previous years.
+  - Above-ground biomass
+    - Treatments on plots: Control 1, Control 2, Nitrogen, Lime, Nitrogen & Lime, Biocide.
+    - Summer sampling: 5 mowing occasions (May–Sept) per year; 0.5 m2 quadrats in subplots; vegetation dried and weighed.
+    - Data analyzed as annual totals; 2001 biomass also compared to 2000/1999; results normalized against the Control 1 (C1) for year-to-year comparisons.
+  - Soil pH
+    - Upper 5 cm soil pH measured; baseline (1998) and follow-up (2001).
+    - Lime and N treatments increased pH; control plots remained close to baseline.
+  - Botanical composition
+    - Point Quadrat surveys in July 2000 and July 2001 using 100-cell frames; 25 cells per survey point.
+    - Species hits recorded and used to derive relative abundance; two surveyors contributed ~50% of quadrats each; inter-surveyor consistency tested (no significant difference).
+    - Data analyzed with Principal Components Analysis (PCA); species-by-treatment patterns also examined.
+  - Site heterogeneity and biomass distribution
+    - Variation in surface pH and plant community across site columns.
+    - Biomass distribution analyzed across plots; central plots tended to have higher biomass; strong positive correlation between surface pH and biomass.
+  - Data management and usage
+    - Data collected by MLURI and centralized data managed by CEH; AWS data transmitted to Data Manager.
+    - Documentation includes detailed tables, figures, and appendices describing annual biomass, pH, weather, and species data.
+
+- Key findings and patterns
+  - Weather (2001)
+    - Headline measures generally unremarkable; rainfall closer to long-term average; modest temperature and moisture differences versus prior years.
+  - Above-ground biomass
+    - Consistent treatment hierarchy in biomass across years; peak biomass in July/August.
+    - 2001 biomass markedly higher than earlier years, likely due to a combination of personnel changes and the shift from manual cutting to mechanical shearing.
+    - Fertilized and/or limed plots showed the strongest biomass responses; nitrogen and lime (N or L, or both) produced the biggest gains, with N&L often most effective.
+    - ANOVA on log-transformed biomass showed significant differences between improved (N and/or L) vs. non-improved plots; strong inter-annual treatment × year interactions.
+  - Soil pH
+    - Lime raises soil pH over time; October 2001 pH: ~6.19 in limed plots and ~6.38 in nitrogen+lime plots; control plots remained near baseline values.
+  - Botanical composition
+    - 2001: overall increase in total species hits (density) across treatments; density higher than 2000, suggesting denser swards following reduced grazing since 1998.
+    - Clear treatment effects on species composition:
+      - Agrostis capillaris declined across most treatments.
+      - Festuca species (ovina and rubra) increased across treatments; Festuca rubra particularly associated with lime-treated plots.
+      - Improved pastures dominated by Festuca rubra and Poa pratensis (and Poa trivialis) in fertilized plots; Anthoxanthum odoratum and Nardus stricta more common in unimproved plots.
+    - Species diversity decreased in the most improved plots (24 species in unimproved vs 18 in Nitrogen & Lime), suggesting possible decline in diversity with higher fertility.
+    - PCA largely separates nitrogen- and/or lime-treated plots from controls and biocide plots; biomass is positively correlated with Festuca rubra and Poa pratensis, while certain grasses and bryophytes decline as biomass increases.
+    - Litter incidence increased in plots with nitrogen and/or lime, indicating faster vegetation turnover with higher fertility.
+  - Biomass vs vegetation composition
+    - Higher biomass per plot correlated with greater abundance of F. rubra and P. pratensis; reduced relative abundance of A. odoratum, N. stricta, bryophytes, and certain other taxa as biomass increased.
+  - Site heterogeneity
+    - Spatial pattern: columns E and F tended to be more acidic; central plots generally exhibited higher biomass.
+    - Strong positive pH–biomass correlation; no significant block differences in biomass across the site.
+  - Data quality and consistency
+    - No significant difference between surveyors in the point quadrat data, supporting data reliability.
+    - Data sets include cross-year comparisons (1999–2001) and can be linked to other projects (e.g., Project 2113, 2133) via shared measurement protocols.
+
+- Implications for data use
+  - The dataset provides robust, cross-year evidence of how nitrogen and lime influence biomass, soil chemistry, and plant community structure in a managed pasture system.
+  - Clear visualization opportunities exist for dashboards or self-serve exploration of treatment effects, biomass trajectories, pH changes, and species composition (e.g., by year, treatment, or plot).
+  - Users should note the 2001 methodological shift (transition to mechanical cutting) and administrative disruptions due to FMD, which may affect year-to-year comparability and interpretation of absolute biomass figures.
+
+- Notable references and outputs
+  - Tables and figures documenting annual biomass by treatment, soil pH changes, and botanical composition (e.g., Table 4–6, Figures 1–9, Appendix 1).
+  - Species codes and their abbreviations (e.g., Ac = Agrostis capillaris, Fr = Festuca rubra, Poa pratensis, etc.) provided for cross-reference.
+  - Appendices include detailed annualized biomass by plot and mean values across blocks.

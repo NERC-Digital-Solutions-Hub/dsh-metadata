@@ -1,0 +1,30 @@
+# Ecol-Evol_Bennett_CommonGuillemot_occupancy-data.csv
+
+- This dataset records occupancy-related metrics for common guillemots derived from time-lapse imagery, spanning seasonal periods including non-breeding seasons (e.g., 2017_18 from Oct 1 to Mar 31).
+- Data organisation:
+  - site-level observations nested within sub-colonies and study seasons, identified by season, sub_colony, and site_ID.
+  - includes both breeding-season indicators (e.g., success) and non-breeding period measurements.
+- Key measurement types:
+  - Breeding-related indicators:
+    - ordinal_laid: ordinal day of the year when an egg was laid at the site during the season.
+    - standard_lay: mean-centered and scaled lay date relative to sub-colony and season.
+    - success: breeding success in the following breeding season (1 = yes, 0 = no).
+  - Time-lapse bird presence metrics:
+    - no_images_1, no_images_2, no_images_any, no_images_not_present: counts of images showing one bird, two birds, at least one bird, or no birds, respectively.
+    - no_days_1, no_days_2, no_days_any, no_days_not_present: counts of days with occupancy by one bird, two birds, at least one bird, or none.
+  - First-appearance (return) timing:
+    - ordinal_return_1, ordinal_return_2, ordinal_return_any: first ordinal day of season that one bird, two birds, or any bird were present.
+  - Data quality and timing descriptors:
+    - standard_quality: mean-centered and scaled site quality relative to sub-colony and season.
+    - standard_ordinal_return: mean-centered and scaled first-appearance timing relative to sub-colony and season.
+    - standard_time: mean-centered and scaled relative time investment at a site (ratio of occupied-image days to total sampling images on days with birds).
+    - standard_days: mean-centered and scaled proportion of survey days with occupancy.
+    - prop_days: proportion of survey days with one or more birds.
+  - Sub-variants for single vs. multiple birds:
+    - standard_time_1, standard_time_2; standard_days_1, standard_days_2; standard_ordinal_return_1, standard_ordinal_return_2; prop_days_1, prop_days_2.
+- Data characteristics:
+  - Missing values are indicated by NA.
+  - Several fields are explicitly mean-centered and scaled by sub-colony and study season to enable cross-site comparisons.
+- Practical interpretation:
+  - Enables assessment of occupancy dynamics, timing of presence, site-level quality, and relative effort or exposure using a standardized framework.
+  - Facilitates comparisons across sub-colonies and seasons, as well as integration into broader monitoring and policy evaluation efforts.

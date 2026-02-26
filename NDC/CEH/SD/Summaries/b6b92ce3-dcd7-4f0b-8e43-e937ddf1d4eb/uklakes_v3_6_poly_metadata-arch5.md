@@ -1,0 +1,33 @@
+# Spatial inventory of UK waterbodies
+
+- Purpose and scope: Polygons accompanying the UK Lakes Portal and the underlying database, used for lakes and ponds research across the UK; Water Body ID (WBID) used as a common identifier; managed and maintained by Philip Taylor.
+- Access and licensing: Data available under the Open Government Licence; citation required: Taylor, P.J. (2021). Spatial inventory of UK waterbodies. NERC EDS Environmental Information Data Centre.
+- Data description and provenance:
+  - Polygons originate from OS PANORAMA data (~1993) with edits over time.
+  - Northern Ireland additions include Water Framework Directive (WFD) lakes; some large lakes’ basins split and added.
+  - Changes reflect project-focused improvements; ongoing work to increase lake names via local knowledge and maps.
+  - Regular use by many institutions; WBID used to synchronize research.
+  - Data creators and users should be aware of the age of base data and potential omissions (e.g., newer reservoirs, ponds <1 ha may be underrepresented).
+- Quality control and limitations:
+  - Based on Ordnance Survey data; edits checked and approved prior to publishing.
+  - Older quality issues may persist; real-world changes since original creation may not be reflected.
+  - Crowd-sourced data is included only after verification.
+- Governance and maintenance:
+  - Versioned dataset with updates to the underlying database; polygon updates are incorporated where relevant.
+  - Dataset management and portal oversight by Philip Taylor.
+- Dataset details:
+  - Format: GeoPackage (.gpkg); projected in OSGB 1936 / British National Grid (EPSG: 27700).
+  - File name: uklakes_v3_6_poly.gpkg; versioning aligned with the underlying database.
+  - Key attributes:
+    - WBID: Water Body ID, a cross-institution identifier.
+    - NAME: Water Body Name (from OS data, maps, and crowd-sourcing).
+    - POLY_AREA_HA: Polygon area in hectares (computed; may differ from historical values).
+    - POLY_PERIMETER_KM: Polygon perimeter in kilometers (computed; may differ from historical values).
+    - geom: Geometry for GIS use; typically not shown in attribute tables.
+- Usage notes and considerations for data stewards:
+  - Ensure proper citation when reused.
+  - Account for potential mismatches between polygon extents and current on-the-ground features due to dataset age.
+  - Be aware of limitations for very large waterbodies and newly added NI lakes; update procedures may be needed for high-impact changes.
+  - Maintain data governance practices, including version control and compatibility with downstream systems and portals.
+- References:
+  - Hughes, M., Hornby, D.D., Bennion, H. et al. (2004). The Development of a GIS-based Inventory of Standing Waters in Great Britain and a Risk-based Prioritisation Protocol. Water, Air, & Soil Pollution: Focus, 4, 73-84. DOI: 10.1023/B:WAFO.0000028346.27904.83

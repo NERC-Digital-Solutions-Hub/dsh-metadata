@@ -1,0 +1,21 @@
+# Abstract
+
+- Dataset of stable isotope ratios: ∂13C and ∂15N from two tissue types (whole blood and mantle feathers) for 16 adult individuals across 8 procellariiform species.
+- Location and time: Bird Island, South Georgia (54°00′ S, 38°03′ W) during austral summer 2001-2002.
+- Purpose: Part of long-term British Antarctic Survey projects; used to examine inter-specific competition in both breeding and non-breeding periods.
+- Sample composition:
+  - 16 adults (8 male, 8 female) with sex determined by morphology or genetic markers.
+  - Tissue types: mantle feathers (random sample of 8–10 feathers per individual) and whole blood.
+  - Species included: wandering albatross, grey-headed albatross, black-browed albatross, northern giant petrel, southern giant petrel, Antarctic prion, South Georgian diving petrel, common diving petrel.
+  - Sampling timing varied by species and breeding strategy (surface-nesting species sampled after hatching; burrow-nesting species caught later during chick-rearing).
+  - If two feather generations were apparent, the newer feathers from the most recent non-breeding period were collected.
+- Data columns:
+  - Species, sp_code, d13C, d15N, TissueType, Sex (NA for diving petrels where sex could not be definitively assigned).
+- Laboratory methods and data quality:
+  - Blood processing: centrifuged within 1–3 hours; cells and plasma separated; stored frozen; lipids not extracted.
+  - Feather processing: dried, ground to fine powder in a freezer mill at liquid nitrogen temperature.
+  - Isotope analysis: continuous-flow isotope ratio mass spectrometry using EA-linked systems.
+  - Quality controls: three internal standards for every ten unknowns; measurement precision ≤ 0.2‰ for both isotopes; internal standards calibrated against IAEA and NIST reference materials monthly.
+- Data use and limitations:
+  - Data contributed to understanding inter-specific competition across breeding and non-breeding periods.
+  - Limitations include small sample size (n=16) and potential constraints related to sampling across multiple species and years.

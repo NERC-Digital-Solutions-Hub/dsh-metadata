@@ -1,0 +1,27 @@
+# Overview
+
+- What: Shapefiles of stream networks including natural and artificial watercourses (rivers, streams, canals, etc.)
+- Where: Mundeni Aru, Maduru Oya, and Miyangolla Ela river basins in eastern Sri Lanka
+- How: Stream networks manually mapped from Google Earth satellite imagery; centrelines traced and snapped in QGIS; OpenStreetMap used as a starting reference but existing OSM watercourses re-mapped
+- Why: For hydrologic modelling in the C-FLOOD project (compound flooding from tropical cyclone-induced sea surge and precipitation)
+- Who: Mapped by J.B.R Matthews; oversight and advice by R. Jayaratne and A. Raby
+- Completeness: Aimed for detail sufficient for modelling; some watercourses not visible in imagery (dense vegetation) could not be mapped; some minor canals not included; missing watercourses should be accounted for in modelling
+- Collection/generation/transformation methods:
+  - Used the most appropriate historic Google Earth imagery per site, prioritising river level, image age, and clarity
+  - OSM used as a starting point; existing OSM watercourses re-mapped
+  - Dense vegetation caused omissions; minor low-relevance watercourses excluded
+  - Centrelines manually traced; line segments ordered to indicate flow direction; potential uncertainty in flat areas (elevations within DEM error)
+  - Widths assigned from maximum breadth visible in imagery; transitions between segments may require smoothing for modelling
+- Nature and units of recorded values:
+  - Shapefiles contain watercourse centrelines in UTM Zone 44N (EPSG:32644)
+  - Width_m: width of watercourses in meters; segments capture width variation
+  - Width values are precise for measurement convenience but should be treated as general guidance along segments
+- Quality control:
+  - Checks on vertex connections and flow-direction ordering
+- Details of data structure:
+  - Separate shapefile folders per basin:
+    - CFLOOD_MundeniAru_StreamNetwork_utm
+    - CFLOOD_MaduruOya_StreamNetwork_utm
+    - CFLOOD_MiyangollaEla_StreamNetwork_utm
+  - Each shapefile contains a single attribute: Width_m (watercourse width in meters)
+  - Coordinate system: EPSG:32644 (UTM Zone 44N)

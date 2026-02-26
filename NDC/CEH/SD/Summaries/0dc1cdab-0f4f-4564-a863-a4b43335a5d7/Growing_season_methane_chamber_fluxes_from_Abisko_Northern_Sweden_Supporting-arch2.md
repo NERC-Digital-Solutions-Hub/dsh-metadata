@@ -1,0 +1,37 @@
+# Supporting Documentation
+
+- Site description: Stordalen mire, a subarctic peatland near Abisko, Northern Sweden, characterized by heterogeneity due to thawing permafrost and varying water saturation. Vegetation and microtopography create distinct habitat types (hummock, semiwet bog, wet bog pools, graminoid-dominated bog), with broader landscape features including freshwater lakes and non-inundated bog areas.
+- Experimental design / Sampling regime:
+  - Conducted over three campaigns in 2013: 16–27 June (n=4), 11–22 August (n=5), and 16–29 September (n=5 for wetland; 4 for birch forest).
+  - 60 static chambers measured (14 in birch forest, 46 in wetland); 4 wetland chambers were relocated, bringing the potential total to 64 chambers, though at any time 60 were sampled.
+  - Exact chamber locations documented in oneoff_data.csv.
+- Collection methods:
+  - Static chambers: 40 cm diameter opaque polypropylene pipes; shallow in-ground bases (10 cm) installed day before first sampling; chamber lids sealed during 45-minute flux measurements.
+  - Air sampling: 100 mL chamber air collected at four times during each flux measurement in 20 mL vials; vials analyzed in Edinburgh within about a month.
+  - Environmental measurements: soil temperature at 10 cm depth at four replicate points around chamber bases; chamber-height air temperature recorded (sometimes subset); four replicate soil moisture measurements adjacent to chamber bases.
+  - PRS probes: paired cation and anion Plant Root Simulator probes deployed next to each of the 60 chamber bases (deployment 26/06/2013–13/08/2013 and 21/08/2013–23/09/2013); probes recovered and processed for nutrient fluxes.
+  - Special cases: Chambers 61–64 were submerged; no PRS probes installed there.
+- Fieldwork and laboratory instrumentation:
+  - Gas analysis: HP5890 Series II GC with electron capture detector (for N2O) and flame ionisation detector (for CH4).
+  - In-situ sensors: Omega HH370 soil temperature probe; CS616 soil moisture reflectometer for VMC.
+  - PRS probes supplied by Western Ag Innovations Inc., Canada.
+- Calibration steps and values:
+  - GC data calibrated with a four-point calibration every ~20 samples.
+  - CH4 and N2O standards used: CH4 (ppmv) = 1.26, 1.83, 5.16, 101.1; N2O (ppmv) = 0.1995, 0.285, 0.490, 0.975.
+- Analytical methods and quality control:
+  - Fluxes estimated with GCFlux v2, which compares multiple models (linear, quadratic, asymptotic, etc.) and selects the best fit for each chamber set.
+  - Reported CH4 fluxes expressed as nmol CH4 m^-2 s^-1 using the best-fitting model.
+- Data structure / nature and units of recorded values:
+  - RCfluxOutput.csv: Flux data for CH4 with multiple model fits per chamber:
+    - flux_linear, flux_quadratic, flux_linear2nd, flux_quadratic2nd, flux_asymptotic (nmol CH4 m^-2 s^-1)
+    - Additional fields: flux_HMR, flux_bestfit, ci95loLinear, ci95hiLinear, ci95l_bestfit, ci95h_bestfit, adjR2_linear, adjR2_quadratic, bestFitMethod, chamberID, etc.
+  - oneoff_data.csv: Per-chamber parameters measured once; includes chamber_id, total_N_PRS, individual PRS nutrients (NO3-N, NH4-N, Ca, Mg, K, P, Fe, Mn, Cu, Zn, B, S, Pb, Al, Cd), vegetation class (veg_class), and location (lat, long).
+  - nutrients (PRS probes): mean nutrient supply rates over burial lengths; units in micrograms per 10 cm2 per burial length.
+  - veg_class: vegetation classification per Table 2 (relating to site habitat types).
+  - forest-specific daily CH4 parameters: parameters_daily.csv contains date, chamberID, soil moisture (sm_vmc_mean), soil temperature (soil_temp), air temperature (air_temp).
+- Tables and references:
+  - Table 2 provides vegetation classifications for the site (hummock/sem wet/wet/grass-dominated types).
+  - References for methodology and site context include Clough et al. 2015 (Chamber methodology), Jammet et al. 2017 (year-round CH4/CO2 flux dynamics), Johansson et al. 2006 (decadal vegetation changes and greenhouse gas fluxes), Levy et al. 2011 (uncertainty in chamber fluxes), Malmer et al. 2005 (vegetation and net carbon sequestration in subarctic mire).
+- Purpose and relevance for environmental monitoring:
+  - The dataset provides standardized, QA-controlled CH4 flux measurements across a subarctic peatland, enabling temporal comparisons and integration with other environmental datasets.
+  - Data are structured for clear outputs (flux values, model fit, uncertainties) and include underlying site metadata (soil moisture, temperature, nutrient availability, vegetation), supporting cross-dataset analyses and policy-relevant environmental health assessments.

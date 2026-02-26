@@ -1,0 +1,45 @@
+# Project Overview
+
+- Historic Droughts was a four-year (£1.5m) UK Research Councils–funded project (2014–2018) to develop cross-disciplinary understanding of past UK drought episodes and create tools for better drought management. It involved eight institutions: British Geological Survey, Centre for Ecology & Hydrology, Cranfield University, University of Exeter, HR Wallingford, Lancaster University, the Met Office, and the University of Oxford.
+- Context and motivation: Droughts and water scarcity threaten livelihoods and wellbeing in the UK, with pressures from population growth and limited water resources. Droughts are shaped by hydrometeorological, environmental, agricultural, regulatory, social, and cultural factors. A detailed understanding of these links is needed to improve management.
+- Inventory purpose: The Historic Droughts Inventory is a knowledge base of past drought characteristics, drivers, impacts, and responses intended to serve policy makers, water suppliers, agriculture, and industry. It enables consistent, transparent multi-sector analysis of droughts.
+  - Core elements:
+    - Hydro-meteorological timelines: rainfall, river flows, groundwater, with consistent drought indicators, extending back to the 19th century through modelling and data rescue.
+    - Historical references: drought-related references from newspapers, legislation, agricultural media, and oral histories, all formatted with time/place and linked to full source material.
+  - The reference structure builds on, and adapts, fields from the European Drought Impact Inventory (EDII) for a broader drought-reference inventory.
+- Reservoir-focused data and drivers: A key motivation was to create a coherent dataset of reservoir details to analyse storage changes, inflows/outflows, and potential drivers of system change across the nation.
+- Methods and data assembly:
+  - Inventory designed to capture information about reservoir systems important for water supply, prioritising larger reservoirs (by storage volume) for initial input.
+  - Integration of upstream and downstream gauging data from NRFA and reconstructed streamflow datasets (Smith et al., 2018), with signposting to related datasets (e.g., CEH reservoir storages).
+  - Documentation of planning and construction dates to understand system changes; a notes field captures additional context.
+  - Data filtering and simplicity: columns limited to a small set of categories to enable easy filtering and extraction.
+- Preparation and data quality:
+  - Data sources include Environment Agency (via Open Government Licence), the UK Lakes Portal (CEH), and internet searches.
+  - A data quality flag system is used to reflect variable data quality across sources; complete references are provided for all information.
+  - Reservoirs included up to 1,600 Ml capacity (plus smaller reservoirs within sufficient context), chosen to balance data availability with representativeness of larger storage systems.
+  - Reference hierarchy and provenance are documented (Hansard, government records, water company records, journals, peer-reviewed and non-peer-reviewed books, websites).
+- Using the data:
+  - The Inventory is distributed as CSV, with an accompanying references file (HD_Inventory_of_UK_reservoirs_references.csv) to be used together.
+  - Key columns and meaning:
+    - Reservoir, Description: name and description; Easting/Northing: Ordnance Survey grid coordinates.
+    - Storage_vol, Storage_vol_ref: reservoir capacity in megalitres and reference for that value.
+    - US_gauge_1/2, DS_gauge: NRFA gauge numbers for upstream and downstream monitoring; associated data flags (DF columns) indicate data quality or status.
+    - Planning_date, Completion_date (and DF): planning and completion years with quality flags.
+    - Res_type: reservoir type (impounding or non-impounding).
+    - HD_recon_flow: NRFA gauge used in the Smith et al. streamflow reconstruction (if applicable).
+    - Timeseries: reservoir group designation (based on CEH Monthly Hydrological Summary usage).
+    - Inception_use: primary initial use (hydro-electric, water resources, drainage, canal, flood storage, environmental).
+    - Notes: additional information on drought-system linkages or other context.
+    - Reference_ID: links to the corresponding entry in HD_Inventory_of_UK_reservoirs_references.csv.
+  - The dataset supports analysis of storage, inflows, outflows, and historical changes in water supply systems, with emphasis on planning and construction timelines.
+- Licensing and references:
+  - Data and references: Environment Agency (Reservoir Safety), Smith et al. (2018) on daily river flow reconstructions, and other cited sources.
+  - All references used are included in HD_Inventory_of_UK_reservoirs_references.csv.
+  - The inventory and its references are designed to be openly accessible and reusable under the stated open licensing framework.
+- Data stewardship implications for practice:
+  - Emphasizes provenance, lineage, and documentation for multi-source data integration.
+  - Uses metadata and data flags to communicate quality and gaps, enabling informed use and responsible updates.
+  - Provides a standardized, filter-friendly schema to support interoperability across sectors (policy, water utilities, agriculture, industry).
+  - Establishes a repeatable preparation and validation approach (cross-referencing NRFA, CEH data, and planning/construction dates) to maintain data quality over time.
+- End goal for users:
+  - A robust, transparent, and usable dataset to understand historic droughts, reservoir system changes, and drivers of hydrological responses, enabling better planning and management of water resources in the UK.

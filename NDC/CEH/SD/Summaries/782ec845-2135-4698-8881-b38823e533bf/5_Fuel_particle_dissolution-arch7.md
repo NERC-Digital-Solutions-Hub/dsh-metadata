@@ -1,0 +1,69 @@
+# Column heading explanations for 5_Fuel_particle_dissolution.csv
+
+- Overview
+  - This document provides definitions and metadata for the column headings in the dataset 5_Fuel_particle_dissolution.csv, which relates to measurements of 90Sr and related forms in soil associated with fuel particle dissolution (referencing Chernobyl studies).
+  - Fields cover identifiers, measurement dates, fractionation of radionuclides (exchangeable forms for 90Sr and 85Sr), and FP-associated activity, along with their uncertainties.
+
+- Key columns and meanings
+  - Code
+    - Explanation: Database serial number – a unique ID.
+    - Units: n/a
+    - Notes: .
+  - Identifier
+    - Explanation: UIAR unique label – chemical analysis number.
+    - Notes: If the same number appears (e.g., 1a, 1b), samples come from the same site.
+    - Units/Notes: .
+  - Date_of_90Sr_measurement
+    - Explanation: Date of measurement.
+    - Format: dd-mmm-yy
+    - Units: n/a
+    - Notes: .
+  - 90Sr_exchangeable_form_in_soil_%
+    - Explanation: Percentage of 90Sr present in soil in an exchangeable form.
+    - Units: percentage
+    - Notes: .
+  - Relative_uncertainty_of_90Sr_exchangeable_form_portion_in_soil_%
+    - Explanation: Relative uncertainty of the determination (at 95% confidence interval) for the 90Sr exchangeable portion.
+    - Units: percentage
+    - Notes: .
+  - 85Sr_exchangeable_form_in_soil_%
+    - Explanation: Percentage of 85Sr present in soil in an exchangeable form.
+    - Units: percentage
+    - Notes: .
+  - Relative_uncertainty_of_85Sr_exchangeable_form_portion_in_soil_%
+    - Explanation: Relative uncertainty of the determination (at 95% confidence interval) for the 85Sr exchangeable portion.
+    - Units: percentage
+    - Notes: .
+  - 90Sr_activity_in_the_FP-associated_form_%
+    - Explanation: Percentage activity of 90Sr in the fuel-particle (FP) associated form.
+    - Units: (not explicitly stated)
+    - Notes: May contain negative values; these result from a low exchangeable fraction and high error. Users should treat these values as zero.
+  - Relative_uncertainty_of_90Sr_activity_in_the_FP-associated_form_%
+    - Explanation: Relative uncertainty of the determination (at 95% confidence interval) for the FP-associated 90Sr activity.
+    - Units: percentage
+    - Notes: .
+
+- Data quality and preparation notes (relevant to GIS workflows)
+  - Sample grouping: The Identifier indicates samples from the same site (useful for spatial clustering and site-level mapping).
+  - Uncertainty handling: Several fields include 95% confidence interval uncertainties; consider these when creating thematic layers or choropleth maps.
+  - Negative FP-associated activity: Some FP-associated 90Sr activity values may be negative; policy from the notes suggests treating these as zero in GIS analyses.
+  - Data completeness: Units are specified for some fields (percentages) but not for others; ensure consistent unit interpretation when visualizing.
+  - Data integration: Data may come from multiple samples/sites with variable resolutions; plan data cleaning and standardization before GIS joining or layering.
+  - Data provenance: References indicate the scientific basis (kinetics of fuel particle weathering and 90Sr mobility in Chernobyl contexts), supporting interpretation of the measurements.
+
+- GIS relevance and usage suggestions
+  - Mapping opportunities:
+    - Create maps of 90Sr exchangeable_form_in_soil_% and 85Sr_exchangeable_form_in_soil_% to show radionuclide speciation across sites.
+    - Map FP-associated 90Sr activity and its uncertainty to depict contaminant forms linked to fuel particles.
+    - Use Date_of_90Sr_measurement to develop time-enabled (temporal) maps if multiple dates exist.
+  - Data join strategies:
+    - Use Identifier to join measurements to site polygons or point locations.
+    - Consider filtering by measurement date or by uncertainty thresholds for clearer visualizations.
+  - Interpretation cautions:
+    - Take uncertainties (95% CI) into account when classifying or classing values into categories.
+    - Treat negative FP-associated 90Sr activity values as zero in spatial analyses per data notes.
+
+- References
+  - Kashparov, V. A., Oughton, D. H., Zvarich, S. I., Protsak, V. P., and Levchuk, S. E.: Kinetics of fuel particle weathering and 90Sr mobility in the Chernobyl 30-km exclusion zone. Health Physics, 1999.
+  - Kashparov, V. A.: Hot Particles at Chernobyl, Environmental Science and Pollution Research, 2003.
+  - Kashparov, V. A., Ahamdach, N., Zvarich, S. I., Yoschenko, V. I., Maloshtan, I. M., and Dewiere, L.: Kinetics of dissolution of Chernobyl fuel particles in soil in natural conditions. Journal of Environmental Radioactivity, 2004.

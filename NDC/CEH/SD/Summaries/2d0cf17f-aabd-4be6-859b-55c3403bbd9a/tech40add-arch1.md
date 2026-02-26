@@ -1,0 +1,80 @@
+CORINE land cover technical guide - Addendum 2000
+
+- Introduction
+  - Addendum to the CORINE Land Cover Technical Guide (1994) to support monitoring by introducing softcopy methods, (semi-) automated classification conversions, broader nomenclature descriptions, and generalisation rules for 1:100 000 mapping.
+  - Aims: provide extra guidance for data collection/updating, describe methodological developments, extend coverage to Central/Eastern Europe, and improve understanding of landscape contents.
+
+- Part I: State-of-play production methods of the CORINE land cover database
+  - Hardcopy inventory
+    - Original method relied on computer-aided photo-interpretation of transparencies over 1:100 000 hardcopy prints.
+    - Ancillary data aided identification; manual digitisation introduced potential border and interpretation errors.
+    - Still valuable; digital image processing used selectively to aid interpretation and geometric checks.
+  - Softcopy inventory
+    - Advances enabled interpretation and digitisation in one pass using softcopy tools and integrated GIS.
+    - Emphasis on on-screen data handling, multiple data types, and flexible visualization.
+  - GIS and data handling (3.1)
+    - Integrated GIS with raster and vector data; support for multiple data sets in linked windows; importance of interoperable raster formats (e.g., geoTIFF) and vector formats.
+  - Text, images and icon information (3.2)
+    - Geographic objects link to alphanumeric attributes, images, and icons; editable text linked to objects enhances data richness.
+  - System customization (3.3)
+    - Modular software, development kits, and adaptable user interfaces; aim for standards-compatible porting.
+  - Required functionalities (3.4)
+    - Core capabilities: interactive geometry/attribute editing, image management, raster/vector display, georeferencing, queries, database customization, import/export, and documentation; support for overlaying legends and multi-data viewing.
+  - Co-pilot software (3.5)
+    - JRC-developed Co-pilot: integrated Windows GIS for CORINE data; data modeled as geographic objects (points/lines/surfaces) with catalogues, Typelook, and ASCII-based main structures; distribution via JRC.
+  - Conversion of (semi-) automated classifications (4)
+    - Caution on automated conversions due to image quality, land-use vs land-cover distinctions, and need for human interpretation.
+    - Conversion can yield good positional accuracy but may struggle with attribute accuracy; holistic spatial patterns require human input.
+  - Methodological aspects of a conversion (4.1)
+    - Spatial generalisation reduces data complexity but increases some errors; approaches include reclassification, aggregation, amalgamation, smoothing, and simplification; human interpretation remains important.
+  - Specific conversion quality issues (4.2)
+    - Land cover is categorical; two data models (polygon vs raster) underpin conversions; pixel-based vs polygon-based outputs have different error profiles.
+    - Main error sources: spectral class confusion, mixed pixels, system/conceptual errors.
+  - Statistical properties of land cover data (4.2.1)
+    - Phase-space model for class definitions and map structure; non-parametric or distribution-free methods preferred for quality assessment due to nominal, spatial data.
+  - Properties of the generalisation procedure (4.2.2)
+    - Generalisation adds errors to improve simplicity/legibility; common types of spatial procedures include reclassification, aggregation, amalgamation, smoothing, and simplification.
+  - Validation methodology (5)
+    - Validation assesses reliability of CORINE inventory through repeated data collection using random sampling; produces confusion matrices and enables error analysis (omission/commission) at multiple nomenclature levels.
+    - Validation supports stratified analyses by region and nomenclature level; not a validation of data collection method itself.
+  - Sampling methodology (5.1)
+    - Stratified random sampling identifying land cover items at random points; strata can be land cover item or geographic region; outputs include misclassification percentages per stratum and total area; aims to minimise standard error.
+  - Determination of the number of sampling points (5.2)
+    - Points per stratum hu calculated from a binomial-inspired formula using estimated error rate and acceptable standard error; area-proportional allocation with practical caps (e.g., no more than 2 points per km² for small strata).
+  - The first step of random sampling (5.3.1)
+    - Area-proportional, step-size based selection of land cover units; units hit by systematic sampling receive points; larger units may receive multiple points.
+  - The second step of random sampling (5.3.2)
+    - Determination of exact point locations within units; methods adapt to case with 1, multiple, or many points; uses random within unit bounds, systematic/local random combinations, or grid-based approaches for higher point counts.
+  - Interpretation of the random sampling points (5.4)
+    - Interpretation proceeds from higher to lower nomenclature levels; to validation, interpretation is done around a 1 km eccentric circle with on-screen work at scales not exceeding 1:40 000; interpreter blind to sampling point location; use of original data sources for comparison.
+  - Conduction of the validation (5.4.1)
+    - Validation maps checked for topology; meta data and plotting used to document errors; total inner circle area compared with initial area; key-codes checked for plausibility.
+  - Verification of the interpretation results (5.4.2)
+    - GIS checks for topology, documentation of results, and verification by a supervisor; results aggregated for reporting against minimum mapping units.
+  - The raising (5.5)
+    - Overlay validated coverages with random points to compute a confusion matrix and estimate correctly classified area per stratum; overall accuracy P-hat combines stratum-area weights; standard errors computed with binomial variance equations; results can be aggregated to higher nomenclature levels.
+  - References (6)
+    - Key sources cited for methods and statistical approaches.
+
+- Part II: Addendum to the CORINE land cover nomenclature illustrated guide
+  - Introduction (1)
+    - Over 10 years of CORINE interpretation experience; refinement of class definitions to reduce confusions without changing core definitions; inclusion of broader guidance for Central/Eastern Europe; addition of generalisation rules and patterns at 1:100 000.
+  - Methodology used for the compilation of the addendum (2)
+    - Visual interpretation anchored in interpretation elements and landscape objects; focuses on land cover and its image manifestations; aims to assist interpreters with clearer definitions, patterns, textures, representative photos, and country-specific particularities.
+  - Class refinements and generalisation (3–4)
+    - Detailed refinements and extensions for numerous classes, including urban fabric (1.1–1.4), road/rail networks (122), water bodies, and a broad suite of forest and agricultural classes (2.x, 3.x, 4.x, 5.x).
+    - For each class: general patterns, typical textures, key characteristics, extension rules, and notable particularities (e.g., Phare country considerations).
+    - Examples of guidance across categories:
+      - Urban fabric: density thresholds and fusion rules (e.g., continuous urban fabric defined by >80% impermeable surfaces; discontinuous urban fabric defined by 30–80% impermeable surfaces; rule-based generalisations for adjacent polygons and buffers).
+      - Agricultural classes: distinctions among arable land (211), permanent crops (222–223), pastures (231), complex cultivation patterns (242), and related nuances with mixed parcels and agro-forestry configurations.
+      - Forests: definitions and textures for broad-leaved, coniferous, mixed forests (classes 311–313), alpine/meadow transitions, and clear-cut considerations (324) with timing and interpretation cues.
+      - Wetlands and water bodies: inland wetlands (4.1), coastal wetlands (4.2), and inland/marine water classes (5.x family) with extension rules (e.g., connecting marshes to water bodies to meet area thresholds, thresholds for including/excluding certain features).
+      - Wetlands, salts, and coastal features: salt marshes (421), salines (422), coastal lagoons (521), estuaries (522), and sea water (523) with specified exclusion criteria and generalisation guidance.
+  - Visual aids and examples
+    - Generalised patterns, textures, and representative photographs accompany class descriptions to aid interpretation and consistency.
+  - References (4)
+    - CEC 1994 CORINE Land Cover Technical Guide and related literature; contributions from national experts and European institutions.
+
+- Overall emphasis
+  - The Addendum formalises a shift toward softcopy GIS-based production, supported by Co-pilot tooling, and clarifies validation and statistical methodologies to quantify accuracy.
+  - It expands the CORINE framework with refined nomenclature guidance, extensive generalisation rules, and practical interpretation aids to handle diverse European contexts, including Phare and Central/Eastern Europe, at a 1:100 000 mapping scale.

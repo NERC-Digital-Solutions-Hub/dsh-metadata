@@ -1,0 +1,41 @@
+## NERC Soil Biodiversity Thematic Programme: Sourhope Site Summary
+
+- Four-year field study at Sourhope (Scottish Borders) focusing on above-ground biomass production, species composition, and diversity in response to management treatments.
+- Main management factors driving plant community changes:
+  - Mowing: regular cuts (~6 cm) after fencing; appears to favor Festuca spp. over Agrostis spp. and may promote bryophyte expansion.
+  - Fertilisation: nitrogen and/or lime increases productivity; combined N+L yields the strongest biomass response but may alter soil pH and moisture dynamics.
+  - Insecticide use: Dursban application linked to higher diversity signals in some analyses; possible reduction of herbivory enabling palatable species, though causality not definitive.
+  - Trampling: intense activity in C2 plots (e.g., during 13CO2 pulses) associated with reduced productivity.
+- Site and experimental design:
+  - Rigg Foot Experimental Site: 5 replicated blocks on a downslope gradient; each block has 6 main plots subdivided into 10 sub-plots; treatments assigned randomly.
+  - Treatments include: Control 1, Control 2, Nitrogen, Lime, Nitrogen+Lime, Insecticide (formerly Biocide).
+  - Monthly mowing across the site (May–Sept) to ~6 cm; insecticide applied after mowing in designated plots.
+- Data collected (1998–2002) across multiple streams:
+  - Above-ground biomass: 0.5 m2 sampling cells, dried and weighed; five summer harvests annually.
+  - Plant community surveys: baseline (1998) and annual July/August point analysis using 0.5 m2 cells with 100-point frames and Pin-drop sampling; bryophyte identification enhanced in 2002.
+  - Soil and microclimate: soil pH (5 cm depth), soil moisture (theta probe in 2002), on-site Automatic Weather Station data (temperature, rainfall, radiation).
+  - Species inventories: vascular plants and bryophytes; detailed appendices listing species observed.
+- Key data analyses and outputs:
+  - Split-plot ANOVA showing significant treatment, year, and interaction effects on shoot biomass; highest biomass in plots with nitrogen and lime, with a general long-term biomass increase since 1999.
+  - Soil pH and moisture show strong relationships; limed plots reach near-neutral pH (~7.0) with wetter plots remaining more acidic; positive link between pH and biomass at the site level, variable within treatments.
+  - Point Analysis reveals shifts in species composition associated with fertility:
+    - Improved plots dominated by Festuca rubra and Poa pratensis; unimproved plots dominated by Festuca ovina and Anthoxanthum odoratum.
+    - Bryophytes (e.g., Rhytidiadelphus squarrosus) increase across the site, particularly in unimproved plots.
+  - Functional group (CSR) analysis shows:
+    - Three main groups (stress-tolerators S, competitive-stress-ruderal CSR and SR/CSR) accounting for the majority of hits.
+    - In nitrogen+lime plots, C-S-R types become more dominant; stress-tolerant species expand in unimproved plots; lime and insecticide plots show reductions in SR/C-S-R groups.
+- Important patterns and interpretations:
+  - Mowing tends to decrease some aggressive grasses (Agrostis spp.) while promoting mosses and stress-tolerant species; nutrient enrichment shifts communities toward more competitive, high-nutrient species.
+  - Fertilisation boosts productivity but may provoke stress (chlorosis) under high pH and lower moisture; high pH appears more influential than nitrogen alone for some functional groups.
+  - Insecticide effects on diversity are consistent with some historical studies suggesting herbivore pressure shapes plant diversity, though direct causality remains uncertain.
+  - Trampling events can markedly reduce productivity in plots undergoing intensive sampling/two-year pulses.
+- Data quality and limitations:
+  - 2002 weather data includes a six-week data gap due to weather-station malfunction; interpolations/readings supplemented from nearby stations.
+  - Longitudinal data across multiple years and treatments enable robust trend analyses, though some treatment-specific responses are context-dependent (e.g., moisture stress under high pH).
+- Practical implications for data use:
+  - Robust time-series visualisations and dashboards could be built to show biomass by treatment and year, soil pH/moisture coupling with productivity, and shifts in functional group composition.
+  - Dashboards could support end-users in understanding how mowing, fertilisation, and herbivore/ insecticide pressures influence productivity and biodiversity in managed grasslands.
+  - Data products could include: (a) biomass trajectories by treatment; (b) pH–moisture–biomass relationships; (c) treatment-specific Shannon diversity trends; (d) CSR-group distributions over time; (e) species-frequency and bryophyte dynamics.
+
+- Takeaway for data support and reuse:
+  - The Sourhope data archive integrates multi-dimensional measurements (biomass, species composition, soil chemistry, moisture, and weather) with a controlled, replicated experimental design, enabling comprehensive, end-user-friendly data products to explore management-driven ecological dynamics over time.

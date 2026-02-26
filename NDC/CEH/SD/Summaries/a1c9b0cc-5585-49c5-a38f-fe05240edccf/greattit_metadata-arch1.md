@@ -1,0 +1,48 @@
+# OVERVIEW
+
+- This dataset comprises two closely related experiments using similar methods: a Discrimination Ability experiment (December 2021–May 2022) and a Multiple Models experiment (October 2022–April 2023), conducted at Madingley Wood, Cambridge, UK.
+- Objective: study how wild birds (primarily Great tits) learn to discriminate mimetic stimuli associated with rewards and how the presence of a second model type influences protection for certain mimics.
+- Organisms and site: fieldwork with Great tits, Blue tits, and occasional mice; seven feeders arranged in the wood with motion cameras and PIT-tag data loggers to track individual birds.
+- Stimulus design: 3D-printed insect-based stimuli varying in mimetic similarity; stimuli formed from endpoints and intermediates along transects, with additional extrapolations in the Two-Model experiment. Stimuli labeled by combinations of insect species contributions and variant a/b/c.
+- Experimental phases:
+  - Habituation: birds learned to visit feeders and flip lids to access mealworms; visual lids introduced to ensure engagement.
+  - Training: birds learned to avoid unrewarding wasp stimuli (V100; and A100 in 2M) by having unrewarded meals in corresponding dishes; rewarding fly stimuli (M100) provided in fly dishes.
+  - Testing: introduced novel stimuli with varying mimetic accuracy; all newly introduced stimuli were rewarded to assess discrimination and learning.
+- Data collection and processing:
+  - Methods: motion cameras, PIT-tag readers, periodic site visits; random configuration of stimuli per feeder/session; videos cross-referenced with PIT data where possible.
+  - Data handling: data cleaned and formatted in R (v4.3.2); metadata tracked to ensure reusability and cross-referencing with the PIT-tag database.
+- Data quality and accessibility:
+  - Quality control included plausibility checks, codes validation, and inspection of missing data.
+  - Datasets are accompanied by detailed field-specific metadata and descriptions of recorded values, with a link to the stimulus design files and digital 3D images.
+- Files and structure:
+  - Discrimination Ability experiment datasets:
+    - discrim_sessions.csv (303 rows, 14 columns): session timings and feeder setup.
+    - discrim_dishes.csv (7137 rows, 9 columns): stimulus per dish per session; dish-opening times and outcomes.
+    - discrim_logger_data.csv (7967 rows, 4 columns): PIT-tag trigger events (arrival/departure).
+    - discrim_bird_info.csv (53 rows, 8 columns): bird-level summaries per experimental phase.
+  - Multiple Models experiment datasets:
+    - multimod_sessions.csv (633 rows, 15 columns): session timings and feeder setup under 1M vs 2M treatments.
+    - multimod_dishes.csv (17885 rows, 10 columns): dish-level data including model and mealworm status; timing of openings.
+    - multimod_logger_data.csv (2627 rows, 4 columns): PIT-tag trigger events.
+    - multimod_bird_info.csv (50 rows, 8 columns): bird-level summaries per phase.
+- Key data columns and units (highlights):
+  - Sessions: date_start, date_end, feeder, phase, time_start, time_end, logger_start, lids_start/end, mealworms_start/end, peanuts_start/end.
+  - Dishes: start_date, end_date, phase, feeder, position, model, mealworm, timepoint, id (opening status and observer).
+  - Logger data: feeder, datetime, PIT_tag, species (BT or GT).
+  - Bird info: PIT_tag, species, sex, date_ringed, phase, N_records, N_days, N_feeders.
+- Field site and study context:
+  - Location: Madingley Wood, Cambridgeshire, UK (mixed deciduous habitat with resident Great tits).
+  - Feeder setup: seven feeders with a 7x7 array of 30 mm dishes, enclosed in a cage, with a PIT-tag reader at the entrance; cameras capture lid manipulation and bird visits.
+- Stimulus design details:
+  - Stimuli derived from scanned 3D insect images, with combinations representing percentages from two endpoints; labels indicate constituent species (e.g., M25V75) and variant a/b/c representing intraspecific variation.
+  - Training and testing stimuli include flies (rewarded) and wasp-related (unrewarded) exemplars, with extrapolated phenotypes included in the testing phase for discrimination assessment.
+- Experimental design considerations:
+  - Discrimination Ability: single model (1M) treatment during testing; assessment of accuracy across novel mimics with varying similarity to the unrewarded wasp stimulus.
+  - Multiple Models: two-model (2M) treatment; testing includes stimuli combining two model end-points and extrapolations, plus a separate non-mimetic control (M100) in training.
+  - Habituation, training, and testing phases structured to quantify learning rates, discrimination accuracy, and the influence of added model diversity on protection of intermediate mimics.
+- Practical challenges and limitations:
+  - Cross-referencing gaps: some birds did not trigger loggers or were not clearly identifiable in video, leading to incomplete bird-level linking.
+  - Timing accuracy: dish-opening times estimated when video and logger data did not align perfectly.
+  - Data gaps: some feeders/feeding events removed due to insufficient data or low visitation rates; extrapolations beyond observed endpoints introduce additional uncertainty.
+- Access to extended resources:
+  - Full stimulus design methods and digital 3D files available via the associated dataset DOI (Scanned 3D images and 3D printable images based on combinations of features of Diptera and Hymenoptera insects) for reproducibility and reuse.

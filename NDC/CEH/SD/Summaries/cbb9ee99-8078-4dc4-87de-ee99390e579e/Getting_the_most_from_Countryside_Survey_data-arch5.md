@@ -1,0 +1,31 @@
+# Notes on the downloadable data
+
+- Data confidentiality and access
+  - Precise locations of Countryside Survey (CS) survey squares are held in confidence by CEH.
+  - External users will not receive locations with precision greater than 100 square kilometres.
+  - Users cannot identify whether any survey squares fall within defined areas below this threshold.
+- Data description and sampling structure
+  - CS field survey data are from a sample of 1 km squares in Great Britain (GB).
+  - Each selected square is mapped and measurements are taken at two levels: the square level and within-square features (e.g., quadrats for vegetation, soils, etc.).
+  - Measurements include both binary and continuous variables.
+- Sampling design and stratification
+  - The sample is not a random subset of all GB squares; it is stratified with sub-samples within designated strata.
+  - Strata are defined by the ITE Land Classification, which has evolved:
+    - 32 classes originally
+    - 42 classes in 1998 for Scotland-specific reporting
+    - 45 classes in 2007 for Wales-specific reporting
+  - Each country (England, Wales, Scotland) effectively has its own classification (England 21, Wales 8, Scotland 16).
+- Representativeness and exclusions
+  - Estimates that do not account for stratification may be non-representative and misstate variation.
+  - Not all GB squares were considered for field survey; squares with area more than 90% sea or more than 75% urban were excluded.
+  - Official GB estimates assume excluded squares are similar in vegetative land composition to sampled squares; this assumption minimizes bias unless a region contains a high proportion of sea or urban squares.
+- Estimation and uncertainty
+  - Estimates by land class are produced using ratio estimates (Cochran 1963), weighted by the vegetative land area of each class.
+  - Since 1998, standard errors and confidence intervals have been estimated using the bootstrap (Efron and Tibshirani 1993) to address skewness in some features.
+- Implications for users
+  - Analyses should incorporate the stratified design, class-specific weighting, and the potential biases from excluded areas.
+  - Metadata should record the land classification version used and acknowledge the confidentiality constraints on square locations.
+- References
+  - Barr et al. (1993). Countryside Survey 1990 Main Report, DETR, London.
+  - Cochran, W.G. (1963). Sampling Techniques.
+  - Efron, B. and Tibshirani, R.J. (1993). An Introduction to the Bootstrap.

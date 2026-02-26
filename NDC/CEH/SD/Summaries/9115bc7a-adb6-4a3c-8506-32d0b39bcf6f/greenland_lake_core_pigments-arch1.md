@@ -1,0 +1,37 @@
+# Overview of the data
+
+- Purpose: Pigment biomarker data from sediment cores used to infer historical primary production and photosynthetic community composition in six West Greenland lakes (Kangerlussuaq area), sampled in summer 2017.
+- Study lakes and locations: Six lakes with precise latitude/longitude coordinates provided; sampling targeted deepest part of each lake.
+  - Lakes: SS17c, SS17b, SS85, SS1590, SS906, SS901.
+- Sampling and collection methods:
+  - Depths sampled with a HON-Kajak corer; cores sectioned in the field; stored refrigerated in sealed bags before subsampling.
+  - Subsamples stored frozen prior to pigment analysis to provide long-term perspective on lake changes.
+- Pigment purpose and metrics:
+  - Pigments measured as biomarkers of photosynthetic organisms.
+  - Concentrations reported as nanomoles of pigment per gram organic matter (nmol g-1 OM), with OM defined by LOI at 550 °C (LOI550).
+  - Pigment identification based on retention times and UV-Vis spectra; derivatives (Pheophytin, etc.) noted with standard nomenclature.
+- Analytical methods (laboratory workflow):
+  - Extraction: freeze-dried sediment, acetone:methanol:water (80:15:5), overnight at -4 °C, filtered, dried under nitrogen, re-dissolved in an injection solution.
+  - Chromatography: HPLC with Agilent 1200; mobile phases A (80:20 methanol: 0.5 M ammonium acetate), B (9:1 acetonitrile:water), C (ethyl acetate); Thermo ODS Hypersil column; specified gradient and re-equilibration.
+  - Detection and quantification: photodiode array detector (350–750 nm) with peak areas scanned at 435 nm; quantified against commercial standards (DHI Denmark).
+  - Quality controls: 8-point calibration annually; inclusion of plant extract at run start/end to monitor retention times; manual expert verification of pigment identifications and peak integration.
+- Data structure and content:
+  - Six CSV files, one per lake: SS17c_sed_pigments, SS1b_sed_pigments, SS85_sed_pigments, SS1590_sed_pigments, SS906_sed_pigments, SS901_sed_pigments.
+  - Each file: first column is sample depth (cm); subsequent columns are pigment concentrations (nmol g-1 OM) for the pigments listed, with lake-specific column sets.
+  - Depth sampling scheme: maximum depths per lake vary (e.g., 14.75–35.5 cm); above 10 cm, 0.25 cm steps; below 10 cm, 0.5 cm steps; contiguous samples above 1 cm, alternating below 1 cm.
+  - Representative pigments include Chl a, Chl b, Chl c2, pheophytins, various carotenoids (e.g., Fucoxanthin, Diadinoxanthin, Diatoxanthin, Neoxanthin, Lutein, Zeaxanthin, Canthaxanthin, B-carotene), and UV-absorbing compounds; some lakes include additional pigments (e.g., Pheophorbide_a, Isorenieratene, Okenone, Pheophytin_a derivatives, etc.).
+- Units and normalization:
+  - Pigment concentrations expressed as nmol pigment per gram organic matter (nmol g-1 OM) using LOI550 to determine OM fraction.
+  - LOI data referenced to Prater et al. (2021) for context.
+- Metadata and quality assurance:
+  - Pigment identification and baseline integration performed by trained experts.
+  - Cross-run stability checked with plant extract controls; calibration performed yearly; standard references from DHI Denmark used for pigment quantification.
+- Notable references:
+  - Chen et al. (2001) for pigment-based biomarker applications.
+  - Heiri et al. (2001) for LOI methodology.
+  - Prater et al. (2021) for landscape controls on lake nutrient stoichiometry.
+- Practical use and considerations for analysts:
+  - Data suitable for detecting long-term changes in lake primary production and shifts in phototroph communities.
+  - Normalization to OM (via LOI550) is essential for cross-sample comparability.
+  - Variations in depth resolution by lake and the presence/absence of certain pigments across lakes should be accounted for in comparative analyses.
+  - Access and reproducibility facilitated by clearly documented methods, calibration routines, and the six lake-specific pigment datasets.

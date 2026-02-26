@@ -1,0 +1,56 @@
+# REPORT III RESULTS FROM THE SOURHOPE FIELD EXPERIMENT: 1999-2001
+
+- Overview
+  - Large, intensive field experiment under the NERC Soil Biodiversity Thematic Programme at Sourhope, Scottish Borders.
+  - Aimed to provide broad context for more detailed analyses and enable cross-year comparisons; data collection aligned with a Baseline Data Survey (Nov 1998).
+  - Data presented to support links across research groups and to facilitate comparisons through standardized measurement schedules and metadata.
+
+- Data collection and governance
+  - Measurements scheduled and documented (Table 1) to monitor weather, biomass, soil chemistry, and botanical composition.
+  - Automatic Weather Station data periodically downloaded and shared with CEH’s Soil Biodiversity Data Manager.
+  - A single point analysis of botanical surveys conducted by trained surveyors; cross-surveyor consistency tested.
+  - 2001 site events affecting data collection:
+    - Foot and Mouth Disease restrictions limited site access Feb–May 2001; work continued under a protocol and an agreed timetable.
+    - Change of the site Officer in Charge mid-2001.
+  - Data processing and analysis methods:
+    - Biomass data normalized against the C1 control within each year to compare treatment effects.
+    - Biomass and dry weights analyzed with log transformations and split-plot ANOVA; inter-year analyses conducted (Tables 4–5).
+    - Botanical data analyzed with PCA (Figure 5) and correlation with biomass (Figure 6); species codes and abbreviations documented (Appendix 1).
+  - Data completeness and scope:
+    - 1999–2001 field data span multiple measurements (biomass, soil pH, species hits, weather).
+    - Baseline 1998 data referenced for context and comparison.
+
+- Key results by data type
+  - 2.1 Automatic Weather Station
+    - 2001 weather: rainfall near long-term average; radiation stable; slight temperature decrease; soil moisture higher than prior year.
+    - Overall, 1999–2001 headline measures show a generally unremarkable year with modest climate variability impacting moisture and growth conditions.
+  - 2.2 Above-ground biomass
+    - Consistent treatment hierarchy in biomass across the sampling period; peak biomass in July/August.
+    - 2001 biomass substantially higher than in previous years, likely due to personnel changes and switch from manual cutting to mechanical shears.
+    - Normalizing to C1 shows nitrogen and lime treatments most effective for biomass; significant treatment-year interactions exist; blocks not a major source of variation.
+  - 2.3 Soil pH
+    - Liming raises topsoil pH; October 2001 pH: limed plots ~6.19, N&L plots ~6.38; nitrogen alone also raises pH but less.
+    - Control plots show no significant pH change since August 1998 baseline.
+  - 2.4 Botanical composition
+    - July 2001 point quadrat survey: no significant inter-surveyor difference; total hits 58% higher in 2001 than 2000 across all treatments (denser sward, possibly due to grazing removal in 1998).
+    - Treatment effects on species abundance:
+      - Agrostis capillaris declines across all treatments in 2001; remains most abundant only in Control 1 and Limed plots.
+      - Festuca spp. (ovina and rubra) increase across treatments; most frequent in N and Biocide (F. ovina) and N&L (F. rubra) plots.
+      - Improved plots (N and/or L) show more Festuca rubra, Poa pratensis, Poa trivialis, Holcus mollis; less fertile-associated species (Anthoxanthum odoratum, Nardus stricta) more common in unimproved plots.
+    - Diversity:
+      - 24 species in unimproved treatments (Control, Biocide) vs 18 species in Nitrogen & Lime plots, suggesting potential early diversity decline with fertility enhancement.
+    - Multivariate patterns:
+      - PCA largely separates nitrogen- and/or lime-treated plots from control/biocide plots, with unimproved plots associated with bryophytes and lower-diversity suites.
+      - Biomass correlates positively with Festuca rubra and Poa pratensis, and negatively with Anthoxanthum odoratum, Nardus stricta, bryophytes, and Agrostis vinealis.
+      - Increased litter frequency in nitrogen- and/or lime-treated plots indicates faster vegetation turnover with higher soil fertility.
+  - Site heterogeneity
+    - Spatial variability observed: columns E and F show higher acidity; localized pH differences linked to plot treatment distribution.
+    - Biomass distribution shows higher values in centrally located plots; a strong positive correlation between surface soil pH and biomass, with no significant difference between blocks.
+
+- Implications for data strategy and practice (Data Leaders perspective)
+  - Longitudinal, cross-year data enable tracking of treatment effects, with careful normalization and transformation to compare years.
+  - Standardized protocols and metadata are essential for cross-site and cross-year comparability; documented measurement schedules, units, and species codes support interoperability.
+  - Data quality checks include inter-surveyor reliability assessments and consistent data processing steps (log transformations, ANOVA, PCA).
+  - External events (FMD restrictions) demonstrate the need for contingency planning and clear governance around data collection during disruptions.
+  - Site heterogeneity highlights the importance of spatial metadata and stratification when aggregating results across plots.
+  - Data infrastructure should capture both raw measurements (e.g., biomass, pH, species hits) and derived analytics (normalized biomass, PCA scores) to support diverse user needs across partner groups.

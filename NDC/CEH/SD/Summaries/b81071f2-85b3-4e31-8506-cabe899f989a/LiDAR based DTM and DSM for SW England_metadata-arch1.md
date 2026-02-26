@@ -1,0 +1,33 @@
+# LiDAR based digital terrain and surface model for SW England [TELLUS SW-Project]
+
+- Overview: British Antarctic Survey (BAS) collected a high-resolution LiDAR dataset over Cornwall and Devon in July–August 2013 for the Tellus South West project; Environment Agency contracted the processing to produce digital terrain (DTM) and surface (DSM) models.
+- Dataset details:
+  - Two height layers: DTM (bare-earth terrain) and DSM (bare-earth plus features like buildings/vegetation)
+  - Spatial resolution: 1 m grid cells
+  - Height accuracy: ~25 cm
+  - Coverage area: 9,424 km² west of Exmouth (approximately west of 3°21′W)
+  - Data format: ESRI grid tiles (e.g., SX37ne, SX37nw, SX37se, SX37sw)
+  - Coordinate system: OSGB 1936 / British National Grid (EPSG:27700)
+- Data attributes:
+  - Elevation (Height) in metres
+- Experimental design:
+  - 26 survey flights
+  - 14,817 line km of new LiDAR data
+  - Coverage: 9,424 km² with ~300 m swath overlap
+  - Target specifications: 25 cm vertical accuracy; 1 point per m² data density
+- Collection methods:
+  - Sensor: Optech ALTM 3100 EA scanning laser
+  - Positioning: Integrated Applanix GPS/INS
+  - Platform: BAS Twin Otter aircraft (VP-FBL)
+- Calibration and data products:
+  - Used layers: Raw range files, post-processed SBET, SMRSMG accuracy files, calibration files, flight logs, ground truth survey details
+  - Output: Calibrated LAS point cloud delivered as individual flight lines
+  - Processing: Environment Agency Geomatics with Terrascan to generate DSM and DTM
+- Quality control:
+  - DSM and DTM validated against existing LiDAR and GPS ground truth data
+  - EA QC report documenting accuracy and limitations
+- References/Supporting documents:
+  - BASS survey report
+  - EA QC report
+- Additional references:
+  - Tellus project overview: http://www.tellusgb.ac.uk/

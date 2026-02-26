@@ -1,0 +1,36 @@
+# ReadMe file for AutumnN2OFlux.csv
+
+- Authors must be acknowledged if data are re-used or reproduced.
+- The dataset records N2O fluxes measured from four treatments in a controlled field experiment:
+  - Control: no urine application.
+  - Artificial sheep urine: urine applied in triplicate patches inside the chamber (each patch delivers 1120 kg N ha-1; 200 ml artificial urine over 100 cm2).
+  - C and N: nitrate and glucose treatment (106 kg N ha-1 and 213 kg C ha-1) applied across a 40 × 40 cm square inside the chamber (1 L solution total).
+- Location and site:
+  - Humic gleysol in an unimproved grazing area, Carneddau mountains, Snowdonia National Park, Wales, UK.
+  - Elevation: 556 m a.s.l.; coordinates 53°22'N, 3°95'W.
+  - Sheep excluded from 15/05/17 to prevent confounding with recent excretal events.
+- Experimental design and timing:
+  - Treatments: four (Control, ArtUrine, CandN, plus one additional unspecified in the text but implied by “n=4”).
+  - Treatment application date: 25/10/17.
+  - Design: randomised block.
+  - Monitoring duration: 118 days post-treatment.
+- Data collection methods:
+  - Automated greenhouse gas monitoring system (QUT) with a SRI 8610 GC for high-frequency data.
+  - Eight flux measurements per chamber per day (1 h chamber closure; 4 gas samples per closure; calibration after every fourth sample).
+  - Chamber dimensions: 50 cm × 50 cm × 15 cm; basal area 0.25 m2.
+  - Data include high-frequency measurements during the automated period and monthly manual measurements from the same chambers after this period.
+  - Manual samples analyzed with a Perkin Elmer 580 Gas Chromatograph and Turbo Matrix 110 autosampler; calibration with four gas standards (BOC gases, Liverpool).
+- Data content and processing:
+  - The dataset contains quality-assessed N2O flux data, not raw gas concentrations.
+  - Quality assurance: inspection of raw data files and GC chromatograms for anomalies; removal if necessary (e.g., gas peak interference).
+- Data structure and headers:
+  - Timestamp: dd/mm/yy hh:mm.
+  - Days: days pre- or post-treatment.
+  - Columns B–M: N2O fluxes (µg N2O-N m-2 h-1).
+  - Column headers indicate treatment and chamber/plot numbers; codes:
+    - Control = Control treatment
+    - ArtUrine = artificial urine treatment
+    - CandN = nitrate and glucose treatment
+- Usage notes:
+  - The dataset is prepared for analysis of treatment effects on N2O fluxes with both high-frequency and monthly measurements.
+  - Users should attribute data to the authors when reusing or reproducing.

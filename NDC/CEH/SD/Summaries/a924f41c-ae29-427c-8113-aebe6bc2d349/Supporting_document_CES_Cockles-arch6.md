@@ -1,0 +1,32 @@
+# Overview
+
+- Dataset title and scope: Cultural ecosystem services provided by cockles in Portugal, Spain, France, Ireland and the UK, 2018-2020. Records are scores (0–5) representing CES examples across five countries, collected under an a priori framework.
+- Data collection and governance:
+  - Initial face-to-face workshop held in Vigo, north-west Spain, on 10 April 2018 with 28 participants from 11 organisations.
+  - Follow-up through country-specific meetings (teleconference/video calls and email) over subsequent months.
+  - Data captured by country teams using a provided template spreadsheet; first draft circulated to participants to stimulate additional ideas; a second round of focused meetings followed.
+  - Part of the COCKLES project (Co-operation for restoring cockle shellfisheries and its ecosystem services in the Atlantic Area), co-funded by the European Regional Development Fund (ERDF).
+- Countries and timeline:
+  - Countries involved: France, Ireland, Portugal, Spain, United Kingdom.
+  - Time-scale: Data collection 2018–2020; initial workshop in 2018 with ongoing follow-ups.
+- Data structure and classification:
+  - Based on hierarchical CES classifications derived from CICES v5.1 (divisions, groups, and classes) and the Millennium Ecosystem Assessment (MEA, 2005).
+  - Divisions: Indirect and Direct.
+  - Groups: Four categories (Intellectual/representative; Physical/experiential; Other non-use interactions; Spiritual/symbolic/other interactions).
+  - Classes: Seven categories (Educational; Cultural heritage; Aesthetic; Recreation and ecotourism; Sense of place; Inspirational; Spiritual and religious).
+  - Sub-classes: 19 categories (e.g., History & archaeology, Education & Research, Knowledge & Informal Education, Cultural identity, Cultural practices, Gastronomy, Imagery, Language, Folklore, Symbolic, Recreational harvesting, Festivals, Tourism, Attachment to a place, Art, Literature, Advertising, Spiritual to cockles, etc.).
+- Scoring and data attributes:
+  - Country-specific scores for each sub-class, using a non-linear scale:
+    - 0 = no example, 1 = one example, 2 = two, 3 = three, 4 = four or five, 5 = six or more examples.
+  - Education & Research sub-class adjustments: number of publications re-scaled to 0–5 to align with other sub-classes.
+  - Country data fields: Portugal, Spain, France, Ireland, UK (each as numeric scores per sub-class).
+- Data quality control:
+  - Template tested with pilot data from one country; revised to accommodate classification challenges.
+  - Data from participants were collated and checked for missing information during the workshop and follow-up activities.
+- Data formats and provenance:
+  - File format noted as an Excel workbook (with a likely typo noted as ".cvs" in the document).
+  - Staff responsible: Mathilde Jackson-Bué.
+  - Data description: For each country, sub-class scores represent the count of CES examples mapping to sub-classes.
+- Context and purpose for data support:
+  - Designed to facilitate cross-country comparison of cultural ecosystem services provided by cockles.
+  - Supports exploration and visualization (e.g., dashboards) to enable self-service analysis and inform policy and outreach within the COCKLES project.

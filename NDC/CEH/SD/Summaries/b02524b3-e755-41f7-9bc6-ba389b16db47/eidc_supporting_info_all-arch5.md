@@ -1,0 +1,44 @@
+# Physiological responses of marine phytoplankton to acute and chronic thermal stress
+
+- This dataset supports the NEP grant Identifying the mechanisms and resource use implications of acclimation to high temperature in marine cyanobacteria (NE/P002374/1) awarded to Richard J. Geider.
+- Timeframe and setting: Laboratory work conducted at the School of Life Science laboratories, Colchester Campus, University of Essex, UK, between March 2017 and February 2021; data curation and quality control completed in July 2021.
+- Organisms covered: Synechocystis sp. PCC 6803; Synechococcus sp. CCMP 2370; Phaeodactylum tricornutum CCMP 2561; Emiliana huxleyi CCMP 1516.
+- Data scope: Physiology-based measurements complemented by omics approaches (stored in separate depositories). The document details how data were collected, normalized, and quality controlled, along with culture conditions and experimental designs.
+- Data structure and metadata: The dataset comprises 18 CSV files with standardized column headings and units described in accompanying tables. File names indicate species and measurement (e.g., mortality, steady-state physiology, photoinhibition, oxygen evolution, FRRf, ramp and thermal-performance datasets). Descriptions and column definitions are provided to support cross-file integration and reuse.
+- Experimental designs:
+  - Ramp experiments: Gradual exposure to sub-lethal high temperatures to characterize transient physiological changes across time for three species; separate protocols per species due to differing thermal tolerances. Sampling occurs hourly to form time-series data; biological replicates described per species.
+  - Steady State experiments: Acclimated cultures maintained at suboptimal, optimal, and supra-optimal temperatures under constant light to assess metabolic rates, photosynthetic performance, and biochemical composition. Temperature sets are species-specific (sub, opt, supra) as detailed in the dataset.
+  - Thermal Performance experiments: Exposures to a matrix of temperatures and light intensities to map performance curves; multiple biological replicates; end-points include growth and photosynthetic parameters.
+- Culture and growth conditions (representative per organism):
+  - Synechocystis sp.: Optimal 30 °C; BG-11 medium with 10 mM TES-KOH; CO2-enriched air, ~150 µmol photons m-2 s-1 light.
+  - Synechococcus sp.: Optimal ~26 °C; K medium with artificial seawater base; 325±25 µmol photons m-2 s-1; 26 °C.
+  - Phaeodactylum tricornutum: Optimal ~20 °C; K medium with silicic acid; ~370 ± 50 µmol photons m-2 s-1; 20 °C.
+  - Emiliana huxleyi: ~20 °C; K medium with silicic acid; ~325±25 µmol photons m-2 s-1; 20 °C.
+- Measurements and methods (key variables and assays):
+  - Growth and cell abundance: Flow cytometry (live cells) and Chl a fluorometry as biomass proxy; specific growth rates from log-linear fits.
+  - Particulate organic carbon/nitrogen/phosphorus: TOC analyzer after filtration; POC, PON, POP normalized to cell density or converted to C:N:P molar ratios.
+  - Chlorophyll a: Acetone-DMSO extraction; spectrophotometric quantification; normalization to cells or carbon.
+  - Macromolecular composition: Bulk protein, lipids, carbohydrates; standard extraction and colorimetric or enzymatic assays; data normalized to cell density.
+  - FRRf (Fast Repetition Rate fluorometry): PSII electron transport kinetics; outputs include Fq'/Fm', PSII cross-section, and QA re-oxidation kinetics.
+  - Fluorescence Light Curves (FLC) and Oxygen Light Curves (OLC): Light-response of photosynthetic parameters and oxygen evolution/consumption; measurements using FRRf and MIMS, respectively.
+  - PSII photoinactivation: Time-series Fv/Fm under various PPFDs with/without lincomycin to separate gross vs net inactivation rates.
+  - Mortality: SYTOX green staining with flow cytometry to quantify live/dead cells; used to derive mortality and growth estimates.
+  - Flow cytometry characterization: Cell size (forward scatter) and pigment content (Chl a, phycoerythrin) for population discrimination.
+- Data documentation and accessibility:
+  - 18 CSV data files with descriptive names (e.g., species_steady_state_data.csv, species_ramp_data.csv, species_ramp_FLC_data.csv, species_oxygen_evolution_MIMS_data.csv, species_photoinhibition_lincomycin_data.csv, etc.).
+  - Table 3 in the document lists file names, sizes, and short descriptions.
+  - Table 4 (described in the document) provides the description of column headings and units, ensuring consistent interpretation across files.
+  - Omics data are stored in separate depositories and are not included within these CSV files.
+- Data quality, provenance, and governance:
+  - Data collection and quality control completed by July 2021; procedures for normalizing and documenting measurements are described to support reproducibility.
+  - Experimental conditions (media, temperature, light) are explicitly documented for each species.
+  - Replication: Each experimental condition includes multiple biological replicates (exact numbers per experiment provided in the methods sections).
+- Considerations for data stewards:
+  - Consistent data schema across multiple datasets and species facilitates cross-species comparative analyses.
+  - Clear documentation of experimental design, culture conditions, and measurement methods supports data discovery and provenance tracking.
+  - Omics data are housed separately; ensure cross-referencing and linkage metadata when integrating with the CSV measurements.
+  - Note: The document references a missing source in Section Error: Reference source not found, indicating a need to verify cross-references in downstream metadata or tables.
+- Practical notes for reuse:
+  - The dataset enables examination of thermal acclimation mechanisms in marine phytoplankton using multiple physiological and biochemical readouts.
+  - Data can support meta-analyses of temperature-dependent growth, photosynthesis, and elemental stoichiometry under varied light regimes.
+  - The presence of replicates and standardized metadata enhances reliability for secondary analyses and integration with other datasets.

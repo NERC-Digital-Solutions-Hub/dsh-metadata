@@ -1,0 +1,35 @@
+# Supporting information
+
+- File: BLEL_Sonde_profiles.csv
+- Collected by: Emma Gray for the project NEC05744
+- Instrument: YSI EXO2 sonde
+- Site: Blelham Tarn, Lake District, NW England; monitoring buoy at the lake’s deepest point (14.5 m)
+- Sampling frequency and period: Weekly profiles during stratified period (May/June–November) and fortnightly or monthly outside of this period in 2016–2017
+- Calibration and QA: Sensors calibrated at least every six weeks per manufacturer specifications
+- Parameters measured (profiles recorded at 0.5 m depth intervals): 
+  - Chlorophyll a (µg/L) via fluorescence
+  - Phycocyanin (µg/L) via fluorescence (not quality checked)
+  - Water temperature (°C)
+  - Conductivity (µS/cm)
+  - Specific conductivity (µS/cm)
+  - Oxygen saturation (%)
+  - Oxygen (mg/L)
+  - pH
+  - Depth (m): raw measurement and depth rounded to 0.5 m
+- Data quality notes:
+  - Chlorophyll a fluorescence measurements compared to chemically determined chlorophyll with R² = 0.56 (p < 0.05), indicating a moderate positive relationship
+  - Phycocyanin data not quality checked
+- Data structure (columns in the dataset):
+  - Date (dd/mm/yyyy)
+  - Chlorophyll a (µg/L)
+  - Phycocyanin (µg/L)
+  - Water temperature (°C)
+  - Conductivity (µS/cm)
+  - Specific conductivity (µS/cm)
+  - Oxygen (% saturation)
+  - Oxygen (mg/L)
+  - pH
+  - Depth (raw, m)
+  - Depth (rounded, m)
+- Location reference: Figure 1 shows Blelham Tarn and the buoy location
+- Reference for depth data: Ramsbottom, A. (1976) Depth charts of the Cumbrian lakes, Freshwater Biological Association, Kendal

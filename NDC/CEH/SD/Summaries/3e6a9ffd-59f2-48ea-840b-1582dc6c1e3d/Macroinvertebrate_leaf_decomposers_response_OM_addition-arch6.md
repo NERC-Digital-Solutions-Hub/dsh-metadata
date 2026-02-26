@@ -1,0 +1,31 @@
+# Macroinvertebrate leaf decomposers of Welsh upland rivers in response to organic matter addition
+
+- Study design: Before-After-Control-Impact (BACI) across 8 streams with upstream reference (control) and downstream experimental zones; 20–50 m separation to ensure independence; similar habitat and land use across zones.
+- Timeline and manipulations:
+  - Before period (T1): 61–65 days, no manipulation; both zones treated equally.
+  - After period (T2): 57–62 days; experimental zone received leaf-litter addition to simulate natural inputs.
+  - Leaf litter: 1 tonne bags of oak, birch, alder leaves added proportionally to experimental zone; additional 630 kg (wet weight) added on two dates after storm events (Feb 12 and Mar 5, 2013) to maintain leaf input.
+- Experimental design details:
+  - Leaf litter deployed above the experimental zone and below the reference zone.
+  - Nylon mesh bags (10 x 15 cm) with apertures of 500 µm (fine) and 5 mm (coarse) used to control colonisation.
+  - Bags filled with five grams (±0.05 g) of air-dried leaves.
+  - 48 replicate mesh litter bags (24 reference, 24 experimental) per mesh type across 8 streams; bags deployed on metal poles and covered with cobbles; submerged under low-flow conditions.
+- Collection and processing:
+  - Sampling occurred at T1 (before manipulation): half of the bags removed (6 fine, 6 coarse per zone) and 6 new bags per pole added to measure after manipulation (T2).
+  - Post-manipulation collections labeled: T1-A to T1-F (original bags) and T2-A to T2-F (new bags); further collections designated T18 for bags left in situ ~18 weeks.
+  - On-site preservation in 70% ethanol; laboratory processing included rinsing through a 250 µm sieve, separating macroinvertebrates, and identifying to species where possible (some taxa identified to genus, family, or coarse levels).
+  - Field instrument: microscope used for identification.
+- Data collection and structure:
+  - Primary data: invertebrate abundance per taxon, identified to the lowest feasible taxonomic level.
+  - Bag data (10 columns): site_code, region, date, time (Before/After manipulation), landuse, reach (Experimental or Control), Replicate, BagMesh (mesh type), taxon_name, abundance.
+  - Supporting data: site_description file (10 columns) with site_code, Name, Eastings, Northings, Grid, Latitude, Longitude, Elevation, Survey, Catchment.
+- Calibration and quality control:
+  - No calibration steps documented.
+  - No formal quality control procedures noted.
+- Data usefulness and potential analyses:
+  - Compare macroinvertebrate assemblages and abundances between reference and experimental zones before and after leaf litter addition.
+  - Assess differences in colonisation between fine (500 µm) and coarse (5 mm) mesh bags.
+  - Evaluate decomposition-related insect assemblages over time (T1, T2, T18) across streams.
+  - Utilize site coordinates and land-use data to explore spatial patterns and habitat influences on leaf litter processing.
+- Format and access:
+  - Data provided in bag data format (CSV-like) and a separate site_description dataset; records include replicate identifiers (A–F) and time points (T1, T2, T18) for traceability.

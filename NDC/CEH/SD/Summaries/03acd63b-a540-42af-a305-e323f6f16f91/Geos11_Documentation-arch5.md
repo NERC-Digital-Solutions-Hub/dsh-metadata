@@ -1,0 +1,40 @@
+# Overview of data
+
+- Purpose and scope
+  - Compilation of results from the stream metabolism component of the NERC Macronutrients consortium, under the project titled "The role of lateral exchange in the seaward flux of C, N and P." Includes four field campaigns to measure in situ atmospheric data in rivers within the Hampshire Avon catchment.
+- Provenance
+  - Data generated in the field by L. Rovelli, K. Attard, and Assoc. Prof. H. Stahl, under the leadership of Prof. R.N. Glud, as part of the Macronutrients collaboration led by Prof. Mark Trimmer (Queen Mary University of London).
+- Data files and naming
+  - 23 accompanying CSV data files named Geos11_<SiteCode>_<Season>.CSV, identifying riverine site and campaign season.
+  - SiteCode mappings:
+    - CE1 = River Ebble
+    - GA2 = River Avon
+    - GN1 = River Nadder
+    - CW2 = River Wylye
+    - AS1 (AP) = tributary of the River Sem
+    - AS2 (AS) = River Sem
+- Field campaigns and instrumentation
+  - Four campaigns: spring 2013 (23 Apr–9 May 2013), summer 2013 (31 Jul–16 Aug 2013), autumn 2013 (29 Oct–11 Nov 2013), winter 2014 (28 Jan–9 Feb 2014).
+  - Data collected with a SKYWATCH GEOS11 high-precision portable weather station (factory calibrated March 2013).
+  - Sensor placement: about 1–4 m above the stream surface, depending on morphology and accessibility.
+  - Sampling frequency: 15–30 seconds, limited by battery life.
+  - Data gaps: NaN values indicate missing data (battery replacement, data download, or technical difficulties) or flagged contamination.
+- Data structure and metadata
+  - Column headers and formats:
+    - DateTime (MM/DD/YYYY hh:mm:ss)
+    - Date (MM/DD/YYYY)
+    - Time (hh:mm:ss)
+    - Wind (m/s), resolution 0.1 m/s, accuracy ±2% or the measured value
+    - Temperature (°C), resolution 0.1 °C, accuracy ±2% or 0.5 °C at 25 °C
+    - Humidity (%rH), resolution 0.1 %, accuracy ±2% at 50 %rH
+    - Pressure (hPa), resolution 0.1 hPa, accuracy 0.5% (or 1.5 hPa) at 25 °C
+    - Direction (°N), accuracy ±3°, resolution 1°
+  - Direction data: compass calibrated in the field prior to each campaign and after battery changes to prevent drift.
+- Data quality, availability, and limitations
+  - Documentation of missing/contaminated data via NaN indicators.
+  - Winter CE1 data not collected due to flooding.
+  - Explicit notes on calibration and measurement conditions to aid quality assurance and reproducibility.
+- Governance and reuse considerations for Data Stewards
+  - Consistent file naming and site/season coding to facilitate dataset discovery and cross-dataset integration.
+  - Comprehensive metadata detailing instrumentation, calibration, sampling cadence, units, and accuracy to support data governance, quality assurance, and reuse by data users.
+  - Clear provenance of data collection activities and measurement context to support data stewardship, updating, and potential integration into data portals or catalogues.

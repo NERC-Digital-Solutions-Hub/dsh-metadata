@@ -1,0 +1,34 @@
+# Column header/Determinand
+
+- A metadata-style listing for a river water-quality dataset, detailing how column headers map to determinands, including preferred labels, units, and ontology URIs to support discoverability and interoperability.
+- Core fields included:
+  - Sampling Date and Sampling time
+  - Observed measurements such as Average daily river flow, Temperature, pH, Electrical conductivity, Gran alkalinity, Dissolved nitrate, Dissolved reactive silicon, Total Phosphorus, Total dissolved phosphorus, Soluble reactive phosphorus, Dissolved chloride, Dissolved sulphate, Dissolved sodium, Dissolved potassium, Dissolved magnesium, Dissolved calcium, Suspended solids, Dissolved ammonium
+- For each determinand:
+  - Determinand and its preferred label
+  - Determinand URI (ontology reference, e.g., CAST/URIs)
+  - Units and Units URI (with standard labels such as deg C, m3/s, µS cm-1, mg L-1, µg L-1, mEq L-1, etc.)
+  - Units preferred label (e.g., degrees Celsius, micrograms per litre, cumecs)
+- Time and flow specifics:
+  - hh:mm time format for sampling times
+  - Flow units shown as m3/s with corresponding URIs and labels (and sometimes cumecs)
+- Ontology use:
+  - Temperature, pH, Electrical conductivity, alkalinity, and several dissolved constituents linked to specific CAST URIs (e.g., http://onto.nerc.ac.uk/CAST/103 for Temperature, CAST/101 for pH, CAST/100 for Electrical conductivity, CAST/8 for Gran alkalinity, CAST/192 for Total dissolved P, CAST/14 for Cl, CAST/99 for SO4, CAST/77 for Na, CAST/65 for K, CAST/57 for Mg, CAST/39 for Ca, CAST/13 for NH4)
+- Data quality and completeness signals:
+  - Some determinands have explicit units and URIs, while others are indicated as No units or missing URIs, suggesting partial metadata coverage.
+  - Repetition and formatting irregularities (e.g., multiple unit/value entries for the same determinand) point to potential metadata inconsistencies to resolve.
+- Data governance implications for Data Stewards:
+  - Ensure consistent use of standardized determinand labels, units, and ontologies across datasets.
+  - Validate and fill in missing URIs and unit metadata to improve machine-actionable discoverability.
+  - Align with publishing and data catalog workflows to facilitate dataset uploading and cross-dataset interoperability.
+  - Maintain provenance by documenting how each determinand is measured, including sampling date/time and any unit conversions.
+- Practical actions to implement:
+  - Complete missing determinand URIs and units, where applicable.
+  - Harmonize units across the dataset (e.g., mg/L vs mg L-1) and ensure consistent Unit URIs.
+  - Validate alignment with CAST ontology references and update as needed.
+  - Incorporate this mapping into the dataset’s metadata schema and catalog entry.
+  - Establish update and embargo handling for time-series data to support ongoing sharing.
+- Potential challenges highlighted:
+  - Working with multiple systems and formats, and translating legacy names to standardized determinands.
+  - Handling large datasets and ensuring timely data provision with complete metadata.
+  - Dealing with incomplete metadata for some determinands, requiring targeted data curation.

@@ -1,0 +1,49 @@
+# Durleigh Reservoir Acoustic Doppler Velocimeter Measurements
+
+- Metadata for acoustic Doppler velocimeter (ADV) data collected at Durleigh Reservoir from 20/08/2018 to 24/08/2018.
+- Instruments and setup:
+  - Nortek Vector ADV
+  - Measured near-bed water velocities (10 cm above bed) near reservoir surface mixers
+  - Compass calibrated prior to deployment; velocities converted to ENU (East-North-Up)
+  - Burst mode operation: 16 seconds of data every 10 minutes
+  - Sampling frequency: 64 Hz
+- Authors and citation:
+  - Emily Slavin and Danielle Wain
+  - Citation: Slavin, E.I., Wain, D.J. 2018. Acoustic Doppler Velocimeter measurements from Durleigh Reservoir, August 2018.
+- Spatial and temporal extent:
+  - Location: Lat 51.1215, Lon -3.0396
+  - Measurements taken over 5 days (days 1–5 corresponding to August 20–24, 2018)
+- Data files and structure:
+  - File types: dat and sen
+  - Day-based files named day1, day2, day3, day4, day5
+- dat file contents (velocities and quality metrics):
+  - vel_xe (m/s) – East component
+  - vel_yn (m/s) – North component
+  - vel_zu (m/s) – Up/vertical component
+  - Amp1, Amp2, Amp3 (counts)
+  - snr1, snr2, snr3 (dB)
+  - corr1, corr2, corr3 (%)
+  - pres (dbar)
+- sen file contents (timing, orientation, and environmental context):
+  - Hour, Minute, Second
+  - soundspeed (m/s)
+  - heading (degrees)
+  - pitch (degrees)
+  - roll (degrees)
+  - tempearture (degrees C) [note: header contains a typo in "tempearture"]
+- Data characteristics and notes:
+  - ENU velocities derived from compass orientation
+  - Data capture aligned to 5-day period with separate per-day files
+  - Calibration and quality indicators included (snr, corr)
+  - Temperature field misspelling present in header; verify during processing
+- How this supports GIS work:
+  - Enables creation of map-based visualizations of near-bed flow fields
+  - Can be combined with time stamps to generate animated or time-series velocity maps
+  - Supports analyses of flow direction, magnitude, and variability around reservoir mixers
+- Processing and integration considerations:
+  - Merge dat (velocity components and quality metrics) with sen (time, orientation, and environmental context) by timestamp
+  - Transform velocity components to desired coordinate system if needed
+  - Use latitude/longitude location as the spatial reference for GIS layers
+- Access and provenance:
+  - Data are organized by day (day1–day5) covering Aug 20–24, 2018
+  - Metadata includes instrument setup, location, and measurement parameters to support reproducibility and proper interpretation in GIS workflows

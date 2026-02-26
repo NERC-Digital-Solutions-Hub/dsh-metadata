@@ -1,0 +1,40 @@
+# Dataset Summary and contextual information
+
+- The dataset provides Above-ground Carbon Density (ACD) estimates (Mg ha-1) derived from forest census surveys conducted from 1992 to 2016 in the Usia Segama Forest Reserve (USFR) and Danum Valley Conservation Area (DVCA), Sabah, Malaysia. It covers a mix of logged and unlogged tropical lowland dipterocarp forest.
+- Study area and plot networks
+  - USFR comprises 1268 km2 with coupes logged once between 1972 and 1993; restoration treatments occurred 1993–2004.
+  - Three independent plot networks contributed data:
+    - A. INDFORSUS: 53 plots (0.1 ha each) from areas logged 1981–1993 and unlogged primary forest; relocated/re-censused in 2016.
+    - B. Pinard & Putz network: 32 plots (0.08 ha) logged after initial measurement; re-censused in 1996 and 2005.
+    - C. INFRAPRO/INFAPRO: 205 plots (0.2 ha) across logged areas; re-censused in 2010 and 2015 for a subset.
+  - Data were complemented by logging method, coupe, year of logging, and restoration context from Yayasan Sabah.
+- Data quality and provenance
+  - Quality control included numeric range checks, formatting checks, and logical integrity checks.
+  - Analysis and modelling of ACD described in Philipson et al. (in press); code available at Zenodo.
+- Field measurements and protocols
+  - Three networks used slightly different measurement protocols:
+    - INDFORSUS: plots with 17.84 m radius; all woody plants ≥20 cm DBH measured for DBH, height, and identity; nested plots assess smaller diameter classes.
+    - Pinard & Putz: measurements on all woody plants ≥20 cm DBH across the whole plot, with nested subplots for smaller DBH classes (down to 1–5 cm in 25 m2 subplots).
+    - INFAPRO: plots defined on four circles (0.05 ha total) with varying nested radii to capture trees in different DBH ranges.
+- Allometric methods and carbon modelling
+  - Carbon content estimated as 47% of above-ground biomass (AGB).
+  - AGB estimated from DBH, height, and wood density using:
+    - AGB_est = 0.0673 × (ρ × DBH^2 × H)^0.976
+      - DBH in cm, H in m, ρ in g cm^-3.
+  - DBH at 1.3 m (DBH_1.3m) inferred when necessary from POM measurements using:
+    - DBH_1.3m = DBHPOM / exp(-0.029 × (POM - 1.3))
+  - Height (H) estimation via a three-parameter Weibull model fitted to observed data:
+    - H = 89.53 × [1 − exp(−0.0225 × DBH^0.7383)]
+  - Wood density sourced from global databases; species-identified stems use species-average density; missing botanical information assigned plot-average density.
+  - Individual-tree carbon values summed to yield ACD per plot; contributions from small trees on nested plots scaled to plot totals.
+- Data structure and fields (per plot)
+  - Plot Identifier, Coupe Name, Plot identifier (plot network + number), Forest (Logged/UnLogged indicator)
+  - ACD (Mg ha^-1)
+  - FACE (forest restoration scenario: Project Scenario, Baseline, N/A)
+  - LoggingMethod (High lead, Tractor, UnLogged)
+  - Year logged, YearsSinceLogging, MeasureTime (year of census)
+  - Dataset (network name: INDFORSUS, FACE, or RIL_PinardLincoln)
+- Practical implications for GIS specialists
+  - Rich, plot-level ACD data across multiple networks enable spatial mapping of carbon density and its changes with logging and restoration.
+  - Consistent unit (Mg ha^-1) and explicit metadata on restoration context, logging method, and timing support GIS analyses and time-series mapping.
+  - Data quality steps and the underlying allometric model provide transparent methods for replicating and validating spatial carbon estimates.

@@ -1,0 +1,24 @@
+# Notes on the downloadable data
+
+- Confidentiality of locations: The precise locations of Countryside Survey (CS) field survey squares are kept confidential by CEH to preserve representativeness. External users cannot identify whether squares fall within defined areas below 100 square km precision.
+- Data scope: CS field survey data come from a sample of 1 km squares across Great Britain (GB). Each selected square is mapped and measured at two levels: the square level and within-square features (e.g., quadrats for vegetation, soils, etc.). Measurements include binary and continuous variables (areas, lengths, etc.).
+- Sampling design and representativeness:
+  - The GB square sample is not random; it is stratified by the ITE Land Classification.
+  - Land Classification classifications have evolved by country: originally 32 classes, then 42 in 1998 ( Scotland reporting), and 45 after 2007 (Wales reporting), resulting in England, Wales, and Scotland having 21, 8, and 16 classes respectively.
+  - Estimates without accounting for stratification may be non-representative and have inaccurate variation estimates.
+- Excluded squares and scope of representativeness:
+  - Squares with >90% sea or >75% urban land (based on 1:250,000 OS maps) were excluded from field surveys.
+  - Official GB estimates apply to the sampled squares; extrapolation assumes similar vegetative land composition in excluded squares. This assumption is generally considered negligible in impact, except where a region has a high proportion of sea or urban squares.
+- Estimation approach:
+  - Estimates are produced using ratio estimates (Cochran, 1963) for each land class, weighted by the vegetative land area within each class.
+  - The overall GB or regional estimates are obtained by weighting land-class estimates by the total vegetative land area of each class.
+- Uncertainty and inference:
+  - Since 1998, standard errors and confidence intervals have been estimated using bootstrap methods due to concerns about skewness in some features (Efron and Tibshirani, 1993).
+- Practical implications for analysts:
+  - When analyzing CS data, account for stratification by land class and the weighting by vegetative land area.
+  - Use bootstrap-derived standard errors and confidence intervals for inference.
+  - Be aware of confidentiality constraints limiting precise geospatial identification of squares.
+- References:
+  - Barr, C.J. et al. (1993). Countryside Survey 1990 Main Report, DETR, London.
+  - Cochran, W.G. (1963). Sampling techniques (2nd ed.). Wiley & Sons; London.
+  - Efron, B. and Tibshirani, R.J. (1993). An introduction to the bootstrap. Chapman and Hall; London.

@@ -1,0 +1,24 @@
+# Experimental design/sampling regime
+
+- UK Butterfly Monitoring Scheme (UKBMS) collects data from over 2,000 sites annually across the UK, using fixed-route transects (Pollard walks) and additional methods for certain species.
+- Data collection methods include:
+  - All-species transects: fixed-route line transect, weekly counts from April to September, 2–4 km length, 5 m wide recording band, weather-constrained activity, transects fixed to enable year-to-year comparisons; typically 26 counts per site per year.
+  - Single-species transects: follow all-species methodology but only during focal periods/weeks for specific species.
+  - Timed counts and egg/larval web counts: species-specific abundance within a defined area and time window.
+  - Wider Countryside Butterfly Survey (WCBS): reduced-effort survey along two parallel 1-km transects per selected 1-km squares; 2–4 visits per year, July/August encouraged.
+- Data collection workflow:
+  - Field data recorded on standard forms; entered online via the UKBMS data entry site or via Transect Walker software.
+  - Regional transect coordinators compile data for their regions; online data and Transect Walker files feed into a central Oracle database.
+- Analytical methods:
+  - For WCBS (wider countryside) species: two-stage model using all survey data; Stage 1 applies a generalized additive model (GAM) to estimate annual seasonal flight patterns; Stage 2 uses counts with seasonal offsets to estimate annual abundance changes.
+  - For habitat specialists and regular migrants: GAMs used to impute missing values and derive site indices; these indices are combined to produce national Collated Indices; missing data are estimated via a log-linear regression model that accounts for year and site effects.
+  - Trends are computed by linear regression on Collated Indices over different periods: entire series (1976–2015), last 20 years (1996–2015), and last 10 years (2006–2015).
+- Nature and interpretation of data:
+  - Site indices are relative measures of population size, proportional to actual abundance; Collated Indices are presented as log10 values with the series scaled so the average index equals 2.
+  - Trends are reported as slopes with corresponding p-values and descriptive trend categories (rapid decline, rapid increase, stable).
+- Quality control and data validation:
+  - Automatic checks in Transect Walker flag unlikely values or records outside known flight periods; regional coordinators review records; continuous validation during the season.
+  - Additional automated/manual validation checks against distribution ranges and abnormal counts; cross-referencing with external datasets (e.g., BNMs) to flag out-of-range records.
+- Data format and storage:
+  - Recorded data stored as a CSV with structured fields; key columns include Species (scientific name), Common name, No.years, Series slope, Series Std.Err, Series P-value, Series trend, Series % change, 20-yr/10-yr slopes, their Standard Errors, P-values, Trends, and % changes.
+  - Columns provide a detailed, multi-temporal view of trends and uncertainties for each species across the monitoring period.

@@ -1,0 +1,80 @@
+# REPORT III RESULTS FROM THE SOURHOPE FIELD EXPERIMENT: 1999-2001
+
+- Overview
+  - Intensive field study at Sourhope (Scottish Borders) as part of the NERC Soil Biodiversity Thematic Programme.
+  - Aimed to provide broader context for detailed studies and enable cross-year comparisons (1999–2001).
+  - Measurements span weather, above-ground biomass, soil pH, and botanical composition; data used to assess treatment effects and site heterogeneity.
+
+- Data collected and measurements
+  - Automatic Weather Station
+    - 2001 headline measures: rainfall near long-term average; radiation similar; slightly cooler temperatures; higher soil moisture than prior years.
+  - Above-ground biomass
+    - Measured across plots with five mowing occasions per summer (1999–2001).
+    - Treatment hierarchy consistent each year; peak biomass typically in July–August.
+    - 2001 showed a substantial increase in biomass relative to previous years.
+  - Soil pH
+    - Upper 5 cm sampled; lime increased pH markedly (e.g., 6.19 in limed plots, 6.38 in N&L plots by Oct 2001); nitrogen alone also raised pH but less strongly.
+    - Control plots showed no significant pH change since baseline (Aug 1998).
+  - Botanical composition
+    - Point Quadrat surveys (July 2001) with surveyors cross-validated for consistency (no significant inter-surveyor difference).
+    - 2001 hits were 58% higher than 2000 across all treatments, suggesting increased sward density (potential grazing stock removal).
+    - Species shifts with treatments: Agrostis capillaris declined across treatments; Festuca spp. increased; improved plots (N and/or L) enriched with Festuca rubra, Poa pratensis; unimproved plots retained more nutrient-poor species (e.g., Anthoxanthum odoratum, Nardus stricta).
+    - Biodiversity: 24 species in unimproved treatments (Control and Biocide) vs 18 in Nitrogen & Lime (N&L), suggesting possible early diversity loss in higher-fertility plots.
+  - Data processing and analysis
+    - Biomass data log-transformed for ANOVA; significant treatment effects observed; year-by-treatment interactions detected; blocks not significant.
+
+- Experimental design and treatments
+  - Plot treatments (perennial field trial)
+    - C1: Control 1
+    - C2: Control 2
+    - N: Nitrogen addition
+    - L: Lime (calcium) addition
+    - N&L: Nitrogen + Lime
+    - B: Biocide
+  - Key notes
+    - 2001 management impacted by Foot and Mouth Disease restrictions: limited site access Feb–May; subsequent protocol-limited researcher visits; first biocide application in May missed but other applications completed.
+    - Change of officer in charge at Sourhope in 2001.
+
+- Key findings by data type
+  - Weather
+    - 2001: rainfall near average; modestly drier than 2000; overall radiation similar; slight temperature decrease; higher soil moisture.
+  - Above-ground biomass
+    - Treatment hierarchy persists across years; N and/or L (especially N+L) yield higher biomass than controls.
+    - 2001 biomass higher than 1999–2000; normalization to C1 by year reveals persistent positive effects of N and/or Lime on productivity.
+  - Soil pH
+    - Liming raised surface pH; N additions also increased pH modestly; controls remained stable since baseline.
+  - Botanical composition
+    - 2001: increased total hits in point surveys; shifts toward grasses associated with improved pastures (Festuca rubra, Poa pratensis) in fertilized plots.
+    - Agrostis capillaris decreased across treatments; Festuca spp. increased; N and/or Lime plots show stronger association with F. rubra and P. pratensis.
+    - Species diversity lower in the most improved plots (N&L) compared with unimproved plots.
+  - Biomass and species relationships
+    - PCA shows clear separation of improved plots (N, L, N&L) from unimproved (Control, Biocide).
+    - Biomass positively correlated with Festuca rubra and Poa pratensis; negatively correlated with some less fertile-associated species (e.g., Anthoxanthum odoratum, Nardus stricta, bryophytes).
+    - Increased litter in N and/or Lime plots indicates faster vegetation turnover with higher fertility.
+  - Site heterogeneity
+    - Spatial variability: columns E and F exhibited comparatively more acidic plots; central plots tended to have higher biomass.
+    - Positive correlation between surface soil pH and biomass (Fig 9); no significant differences among blocks.
+  - Data quality and processing notes
+    - Consistency in botanical surveyors confirmed; 2001 survey had higher overall hits, partly due to reduced grazing.
+    - Some data collection disruptions due to FMD (e.g., first biocide application missed).
+
+- Data products and usage recommendations (for Data Support perspective)
+  - Time-series dashboards
+    - Visualize biomass by plot and treatment across 1999–2001, normalized to C1 for year-to-year comparison.
+    - Track soil pH changes over time by plot and treatment (especially across lime and N&L).
+  - Multivariate analyses
+    - PCA visualizations to compare species composition across treatments (2001 data as exemplar; extend to 1999–2000 if available).
+    - Correlation plots linking biomass to key species (Festuca rubra, Poa pratensis) and to soil pH.
+  - Biodiversity and turnover
+    - Species richness per treatment over years; identify potential trade-offs between productivity and diversity (e.g., loss of less fertile taxa in improved plots).
+  - Spatial analysis
+    - Map spatial heterogeneity of pH and biomass to identify slope-facing columns and central areas with higher biomass.
+  - Data quality notes for users
+    - Be aware of 2001 methodological shift (mechanical cutting) affecting biomass measurements; consider year-specific calibration or sensitivity analyses.
+    - Account for temporary access restrictions during early 2001 (FMD period) when interpreting year-to-year comparisons.
+  - Practical outputs
+    - Printable summaries of treatment effects on biomass and pH for policy or management discussions.
+    - Quick-reference tables of biomass by treatment and year, pH by plot, and dominant species per treatment.
+
+- Endnotes and acknowledgments
+  - Acknowledges contributors, site staff, and the governance adjustments during 2001.

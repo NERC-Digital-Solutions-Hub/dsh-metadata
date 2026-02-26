@@ -1,0 +1,25 @@
+# Supporting Documentation
+
+- This dataset contains results of 17 electrical resistivity tomography surveys collected in the Makutapora Basin, central Tanzania, from 28/06/2019 to 16/07/2019.
+- Metadata and survey geometry are available in Supp_Table_for_Survey.csv, which also includes line name suffixes and locations.
+- Collection methods:
+  - Instrument: AGI SuperSting R8 resistivity meter.
+  - Configuration: dipole-dipole with electrode spacings and related parameters stored in Supp_Table_for_Survey.csv.
+  - More detailed methodology is described in the associated paper.
+- Data preparation:
+  - Raw .stg files were converted to uploaded .dat dataset files using bespoke Python code.
+  - The raw and transformed files can be provided on request from the corresponding author.
+- Quality control (QC) performed:
+  - Negative values removed.
+  - Each apparent resistivity measurement taken in normal and reciprocal configurations; the mean of the two measurements is used.
+  - Values where normal and reciprocal measurements differ by more than 5% from the mean are removed.
+  - QC references: Section 2.2 of the associated paper.
+- Purpose and scientific context:
+  - Data were collected to delineate superficial geological structures and understand their role in mediating surface-groundwater interactions within the Makutapora wellfield and their influence on groundwater recharge.
+- Roles and contact:
+  - Corresponding authors E. Zarate and M. O. Cuthbert were responsible for survey design and oversight.
+  - Data availability is via request to the corresponding author; no public portal deposition indicated in the document.
+- Data stewardship considerations:
+  - Metadata availability (coordinates, geometry) supports discoverability and reuse.
+  - Clear provenance from raw to processed formats with documented QC steps.
+  - Reproducibility through the described processing workflow and the linked associated paper.

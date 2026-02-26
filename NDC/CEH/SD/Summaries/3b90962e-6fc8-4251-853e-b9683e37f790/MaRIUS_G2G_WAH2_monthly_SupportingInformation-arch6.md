@@ -1,0 +1,62 @@
+# Supporting information for Grid-to-Grid model estimates of monthly mean flow and soil moisture for Great Britain: weather@home2 (climate model) driving data [MaRIUS-G2G-WAH2-monthly]
+
+- Purpose and scope
+  - Provides Grid-to-Grid (G2G) model estimates of monthly mean river flow and soil moisture across Great Britain at 1 km x 1 km resolution.
+  - Driven by the MaRIUS weather@home2 (WAH2) regional climate model dataset.
+  - Outputs cover historical, near-future, and far-future periods to support drought and water scarcity risk assessment.
+
+- What is included
+  - Variables
+    - Flow: monthly mean of daily mean river discharge (m3 s-1).
+    - Soil moisture: monthly mean soil water content (mm water per m soil), interpretable as depth-integrated soil-moisture (θ in m water/m soil).
+  - Spatial and temporal coverage
+    - 1 km x 1 km grid across GB; 700 km x 1000 km domain in GB National Grid coordinates.
+    - Time periods and ensembles
+      - Historical Baseline (HISTBS): 1900–2006
+      - Baseline (BS): 1975–2004
+      - Near-Future (NF): 2020–2049
+      - Far-Future (FF): 2070–2099
+    - 100 ensemble members per period (100 realizations for each period).
+    - Spin-up caveats: first two years of HISTBS and NF/FF simulations are spin-up; ignore these years in analyses or use only for spin-up purposes.
+  - Model and driving data
+    - Hydrological model: Grid-to-Grid (G2G), 1 km grid, 15-minute time-step, calibrated with global datasets.
+    - Land-cover and soil data incorporated; urban effects included in runoff but not calibrated per catchment.
+    - Meteorological driving: MaRIUS WAH2 RCM data (precipitation and potential evapotranspiration, PE).
+    - Precipitation corrections: multiplicative bias-correction applied to precipitation; PE derived via Penman-Monteith; for future periods, two PE options exist, with adjusted stomatal resistance values used here.
+    - RCP: Future scenarios based on RCP8.5 warming patterns; five NF/FF ensemble variations exist, with the median patterns used in these data.
+  - Data formats and structure
+    - NetCDF4 files, one file per period and ensemble member; naming conventions:
+      - HISTBS: G2G_WAH_var_HISTBS*.nc
+      - BS: G2G_WAH_var_BS*.nc
+      - NF: G2G_WAH_var_NF*.nc
+      - FF: G2G_WAH_var_FF*.nc
+    - Variables named flow, soil, time; 30-day months due to 360-day calendar.
+    - Time in days since 1900-01-01; monthly values assigned to the first day of each month.
+    - Data domain: 0 to 700000 (x) and 0 to 1000000 (y) meters; only land grid boxes have data (sea is missing).
+    - Missing values coded as -9999.
+  - Supporting datasets for interpretation and validation
+    - MaRIUS_G2G_CatchmentAreaGrid.nc: catchment area (km2) draining to each 1 km grid box.
+    - MaRIUS_G2G_NRFAStationIDGrid.nc: 1 km grid identifying NRFA gauging stations (1285 total).
+    - MaRIUS_NRFAStationIDs.csv: NRFA station IDs corresponding to grid cells.
+    - A figure illustrates example outputs, NRFA locations, and catchment areas.
+
+- How to use and compare
+  - Baseline vs future assessments
+    - Compare NF/FF against BS (not against observed time series directly).
+    - For impacts (economic, ecological, agricultural), compare results based on NF/FF against BS rather than against observed records.
+  - Observations and model output comparisons
+    - When comparing to observations or observation-driven G2G runs, compare statistically over long periods rather than point-by-point time series due to biases and spin-up issues.
+    - Differences between historical and future distributions are more informative than direct single-member comparisons (ensemble members 1–100 are independent realizations).
+  - Ensemble interpretation
+    - Each member (1–100) is a plausible realization; members with the same number across periods are not related and should not be paired.
+  - Practical notes
+    - The G2G model excludes abstractions and discharges; therefore, natural flow regimes are the primary focus.
+    - PE and precipitation inputs come from WAH2 with bias corrections limited to precipitation; future PE adjustments influence low-flow projections.
+    - 360-day calendar and 30-day months should be considered when aligning with other datasets.
+
+- Notes on outputs and usage ambiguities
+  - G2G flows and soil moisture are provided for non-sea grid boxes; some NRFA catchment mappings may imperfectly align with observed catchments, especially for small basins.
+  - Flow gauging station locations are provided to enable comparisons between modeled and observed data at NRFA sites, with careful geographic matching to the correct catchment.
+
+- Acknowledgements
+  - Funded by the UK Natural Environment Research Council as part of the MaRIUS project; contributions from listed researchers acknowledged.

@@ -1,0 +1,30 @@
+# SUMMARY
+
+- This document reports on the NERC Soil Biodiversity Thematic Programme at the Sourhope site in the Scottish Borders, focusing on above-ground productivity (biomass), plant species composition and diversity over four years of intensive study.
+- Core treatments and management:
+  - Mowing: plots mowed monthly to about 6 cm (1999–2002) after fencing removed grazing; impacts on species composition and bryophyte expansion observed.
+  - Fertilisation: nitrogen and/or lime applied to designated plots; operations show sustained increases in productivity, with notable shifts in plant community structure.
+  - Insecticide: Dursban 4 OPA applied to designated plots after mowing; linked to higher Shannon diversity in some analyses, with discussion on herbivory effects.
+  - Trampling: additional explanation for productivity declines in newly sampled C2 plots in 2002 during 13CO2 pulse experiments.
+- Experimental design:
+  - Five replicate blocks on a downslope gradient; each block contains six main plots subdivided into ten sub-plots; treatments allocated randomly.
+  - Data collection includes annual biomass harvests, baseline and annual point analysis surveys (0.5 m2 cells with 100-point grid), soil pH (5 cm depth), soil moisture, and on-site weather observations.
+  - Numerous appendices detail site activity, species lists (vascular plants and bryophytes), weather, biomass in each plot, and PCA results.
+- Key findings on vegetation and community dynamics:
+  - Mowing tends to favor stress-tolerant and faster-regrowing grasses (notably Festuca rubra) in fertile plots, while reducing Agrostis species across all treatments; bryophytes expand under the mowing regime and absence of grazing.
+  - Fertilisation (N and/or lime) consistently increases above-ground productivity; plots receiving both nitrogen and lime show the strongest biomass gains, though there are signs of potential productivity limits as soil pH approaches 7 and moisture declines.
+  - Soil pH is strongly influenced by lime application (approaching pH 7 in limed plots); soil moisture is negatively correlated with pH, and pH-moisture interactions influence productivity (positive overall relationship with pH, but variable within treatments).
+  - Insecticide plots exhibit higher Shannon diversity indices over time, potentially reflecting altered herbivory pressures; however, direct causal links between reduced herbivory and diversity are not definitively established.
+  - Point Analysis shows improved plots dominated by Festuca rubra and Poa pratensis, while unimproved plots maintain higher bryophyte prevalence; Agrostis capillaris and Agrostis vinealis decline over time across the site.
+  - Functional group analysis (CSR framework) indicates a shift from stress-tolerators toward competitive-stress-ruderals in fertilised plots, with unimproved plots favoring stress-tolerant taxa; SR/CSR taxa decline with lime- and insecticide-related treatments.
+- Biomass and productivity trends:
+  - Across 1999–2002, a general long-term increase in biomass is observed across treatments, despite a drop in 2002 relative to 2001 in several plots.
+  - The most productive plots remain those receiving both nitrogen and lime, while Control plots generally show the lowest productivity; biomass reductions in 2002 ranged from ~14% (N&L) to ~31% (Control 2) compared with 2001.
+  - Block location on the slope affects productivity, with lower blocks (downslope) showing larger relative increases in some years; variability across blocks is evident but not always statistically significant.
+- Data depth and accessibility:
+  - The report consolidates multiple data streams: vegetation biomass, point quadrat data, bryophyte and vascular plant lists, soil chemistry, moisture, and weather records.
+  - Appendices provide comprehensive datasets (species lists, biomass by plot, PCA results, percentage ranks, and detailed treatment schedules) enabling re-use for dashboards, time-series analyses, and data-driven decision support.
+- Implications for data support and product development:
+  - Rich, multi-dimensional data enable self-service exploration of treatment effects on productivity, diversity, and functional composition.
+  - Potential data products include: time-series dashboards of biomass by treatment, soil pH vs productivity, Shannon diversity indices by treatment, CSR-type composition over years, bryophyte vs vascular plant dynamics, and trampling-related productivity effects.
+  - The dataset supports cross-year comparisons (1998 baseline through 2002) and cross-treatment contrasts, suitable for informing land-management strategies in grassland ecosystems.

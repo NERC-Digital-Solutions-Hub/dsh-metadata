@@ -1,0 +1,22 @@
+# Plot_locations_metadata.rtf
+
+- This metadata describes the corresponding Plot_locations.csv, which holds the sampling site locations.
+- Sampling design: three transects, each 75 m long and 20 m apart, across a hillslope perpendicular to the river Hiraethlyn; along each transect four boreholes drilled to bedrock, with some locations having a second borehole labeled as 'new' (not functionally different from 'old').
+- Collection methods: coordinates measured with a handheld Garmin GPS device.
+- Recorded values and units:
+  - Latitude and Longitude recorded in decimal degrees after conversion from degrees, minutes, seconds.
+  - Also provided as six-figure Ordnance Survey National Grid (OSGB) references.
+- Data structure: Plot_locations.csv contains 8 columns:
+  - Name (Site identifier)
+  - Latitude (decimal degrees)
+  - Longitude (decimal degrees)
+  - Date (measurement date)
+  - Time (Greenwich Mean Time)
+  - Easting (British National Grid)
+  - Northing (British National Grid)
+  - ODN (Elevation in metres above Ordnance Datum Newlyn)
+- Projections and display guidance:
+  - Longitude/Latitude should be displayed using GCS_WGS_1984 (WKID: 4326, EPSG).
+  - Eastings/Northings should use OSGB1936 British National Grid (WKID: 27700, EPSG).
+  - Ensure the base map projection matches to display sites correctly.
+- Note: An image (courtesy of Welsh Government) illustrates the correct locations.

@@ -1,0 +1,53 @@
+# Study sites and focal species
+
+- Objective: Compare how shade-house grown seedlings respond to different phosphorus (P) forms across two forest biomes, enabling generalization of findings via map-based data products.
+- Settings: Two field sites with ECM- vs AM-dominated overstoreys and diverse understoreys
+  - Kabili-Sepilok Forest Reserve, Sabah, Malaysia
+  - Heishiding Nature Reserve, Guangdong, China
+- Site characteristics (for GIS context)
+  - Kabili-Sepilok: 5°49'N, 117°57'E; ~5543 ha; lowland tropical rainforest; mean annual rainfall ~2975 mm; temperatures ~26.7–27.7 °C
+  - Heishiding: 111°53'E, 23°27'N; 150–927 m a.s.l.; subtropical evergreen broad-leaved forest; mean annual temperature ~19.6 °C; ~1744 mm annual rainfall
+- Experimental design overview
+  - Shade-house experiments with experimentally germinated seedlings
+  - Eight focal tree species per site (4–6 ECM or AM per site; see species table)
+  - Randomized blocks used to control for micro-environment
+  - 5 phosphorus (P) treatments per species: Water (control), Na3PO4 (inorganic), AMP (simple organic), Phytic acid (complex organic), Mixture (1/3 of each)
+  - 12 blocks per site; each block contains all 40 pots (8 species × 5 P treatments)
+  - Total pots per site: 480; total across both sites: 960
+- Data collection and structure (GIS-ready notes)
+  - Measurements collected at end of 6-month growth: seedling height, shoot+root biomass, root colonization status
+  - Leaf and soil nutrient analyses conducted for N, P, K and soil available P
+  - Mycorrhizal assessment performed separately for AM and ECM plants
+  - Data are organized into a single dataset with clearly defined columns (A–L) capturing site, block, treatment, species, mycorrhizal type, and plant/soil metrics
+- Key data fields (for GIS linking and mapping)
+  - Site: Sepilok (Malaysia) or Heishiding (China)
+  - Block: 1–24 (1–12 Sepilok, 13–24 Heishiding)
+  - Ptreatment: 1–5 (P treatment codes)
+  - P: Water, Na3PO4, AMP, Phytic acid, Mixture
+  - Species: code A–H; SpName with binomial names
+  - MycorrhizalType: ECM or AM
+  - Height: seedling height in cm
+  - TotalBiomass: total dry mass in g
+  - TotalBiomassStandard: biomass scaled to species maximum
+  - RootBiomass: root mass in g
+  - RootColonization: proportion of colonized roots (AM) or root tips (ECM)
+- Data collection and laboratory methods (context for metadata)
+  - Seed sterilization and germination in sterilized sand; transplantation into pots with a 1:1 field soil:sand mix
+  - Live soil inoculum sourced from beneath adult trees of focal species
+  - P treatments repeated monthly for 6 months
+  - Biomass and height measured at harvest
+  - Leaf N, P, K via Kjeldahl and ICP-OES; soil Olsen-P via standard Olsen method
+  - AM colonization: gridline intersection; ECM colonization: counting ECM root tips
+  - Pseudocode for dataset fields (A–L) aligns with the described data structure
+- Data quality, scope, and limitations
+  - Seedling survival varied by species and site; Canarium album excluded from Heishiding due to low survival
+  - Data include NA where root colonization or sampling did not occur
+  - Cross-site comparability achieved through consistent experimental design and measurement protocols
+- GIS application considerations
+  - Integrate with site climate, soil, and vegetation layers for spatial visualization of responses by mycorrhizal type and P treatment
+  - Visualize trait distributions (height, biomass) and mycorrhizal colonization across sites and species
+  - Use coded fields (Site, Block, Ptreatment, P, Species, MycorrhizalType) for filtering and join operations in GIS
+  - Potential to build predictive maps of growth responses under different nutrient forms and mycorrhizal associations
+- Data interoperability and metadata needs
+  - Standardized codes for sites, blocks, species, and treatments facilitate integration with other datasets
+  - Documentation of measurement methods (Kjeldahl, Olsen P, MIC analyses, staining and counting protocols) essential for reproducibility in GIS-enabled analyses

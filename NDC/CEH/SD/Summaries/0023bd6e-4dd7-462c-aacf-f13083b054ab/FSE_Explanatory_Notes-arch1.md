@@ -1,0 +1,100 @@
+# Explanatory notes
+
+- Purpose of the Farm Scale Evaluations (FSE)
+  - Set up to determine whether genetically-modified herbicide-tolerant (GMHT) crops might have significant effects on farmland wildlife due to management practices.
+
+- Datasets collected and crops covered
+  - Four crops
+    - Beet
+    - Maize
+    - Spring-sown oilseed rape
+    - Winter-sown oilseed rape
+  - Data areas and data types
+    - Seedbank
+      - Seedbank: counts of plant species germinating from soil samples taken before planting
+      - Seedbank Follow-up 1: repeat soil sample one year after initial seedbank
+      - Seedbank Follow-up 2: final soil sample two years after initial seedbank
+    - Vegetation in the crop
+      - First-seedling: first vegetation survey before herbicide application
+      - Mezzanine: Beet has an additional vegetation survey between herbicide applications on conventional vs GM sides; Winter rape has a spring survey before any herbicide
+      - Post-herbicide: vegetation survey after herbicide on both conventional and GM sides
+      - Final Counts: vegetation survey concurrent with biomass sampling just before harvest
+      - Biomass: weeds in the crop sampled month prior to harvest
+      - Seed Rain: seeds produced during the crop’s growing season
+      - Follow-up 1: vegetation survey one year after the trial
+      - Follow-up 2: vegetation survey two years after the trial
+    - Field edge vegetation
+      - Margin Attributes: physical features around the trial field edge
+      - Edge Veg Cover: percent cover of non-crop vegetation in June
+      - Edge Veg Flower: flowering from April to August
+      - Edge Veg Seed: seed setting in July and August
+      - Edge Bare Ground: percent bare ground
+      - Edge Spray Damage: vegetation damage from spraying
+    - Invertebrates
+      - Bee and Butterfly transects: monthly counts April–August in crop and field margins
+      - Pollinators: combined bee and butterfly counts
+      - Crop Pests: counts of herbivores on the crop early and late in the season
+      - Gastropod Search: gastropods in field margins
+      - Gastropod Trap: gastropods trapped in the crop in spring and autumn
+      - Pitfall: counts of surface-active invertebrates early, mid, late in the season
+      - Vortis: counts of arthropods on plants in field verge and crop (early and late)
+    - Additional tables
+      - Date drilled
+      - Herbicides applied
+      - Height/Cover of weeds and crop
+
+- File naming conventions and data structure
+  - Table naming: sum_<crop>_<sample date>_<protocol> (e.g., sum_b_seedrain for Beet crop seed rain; sum_b_early_pitfall for Beet crop early-season pitfall)
+  - Generic properties
+    - Each row represents half-field totals (counts/biomass/mean percent cover) for a separate site
+    - Group totals and species-level contributions are provided
+    - Sites are linked to Defra government regions; South-eastern and Eastern England regions are aggregated for confidentiality
+    - Nulls indicate missing verified data
+    - Some counts shown with decimals due to calculation from a proportion of transects
+  - Specific table properties
+    - All crop_pest tables use a suffix of 'W+' or 'W-' to denote winged/wingless insects
+
+- Column headings and key variables
+  - Conventional vs GMHT details
+    - conv_count: conventional crop count
+    - conv_count_FL: conventional flowering plants
+    - conv_count_GE4TL: conventional plants with ≥ 4 true leaves
+    - conv_count_L4TL: conventional plants with < 4 true leaves
+    - conv_count_SE: conventional seeding plants
+    - gm_count: GMHT crop count
+    - gm_count_FL: GMHT flowering plants
+    - gm_count_GE4TL: GMHT plants with ≥ 4 true leaves
+    - gm_count_L4TL: GMHT plants with < 4 true leaves
+    - gm_count_SE: GMHT seeding plants
+  - Crop characteristics
+    - crop_cover: percent cover of the crop
+    - crop_unit: C = conventional crop, GM = GM crop
+    - crop_height: crop height in centimetres
+  - Taxonomic and site details
+    - name: species or group name (scientific or common British)
+    - site_ref: site reference number (consistent across all tables)
+    - Region: Defra government region or its aggregate
+  - Vegetation and invertebrate metrics
+    - Edge Veg Cover, Edge Veg Flower, Edge Veg Seed, Edge Bare Ground, Edge Spray Damage
+    - VEG/ARTHROPOD/GASTROPOD/BB_BRC: codes for vegetation/arthropods/gastropods/Bees & Butterflies
+    - weed_cover_pc: percent cover of non-crop vegetation
+
+- Data provenance, context, and references
+  - Guidance and background for related work
+    - The spring crops theme issue: The Farm Scale Evaluations of spring-sown genetically modified crops, Philosophical Transactions of the Royal Society B, 2003
+    - Winter rape effects study: Effects on weed and invertebrate abundance and diversity of herbicide management in GM winter-sown oilseed rape, Proc. Royal Soc. B, 2005
+
+- How analysts might use this data
+  - Compare GMHT vs conventional management effects on weeds, invertebrates, and vegetation
+  - Identify correlations between seedbank dynamics, vegetation stage surveys, and invertebrate communities
+  - Build site- and region-level models of ecological responses to GMHT cropping practices
+  - Integrate multiple data streams (seedbank, vegetation, field margins, invertebrates) to assess broader ecological impact
+
+- Limitations and considerations
+  - Data are aggregated at half-field, site, and regional levels with confidentiality-imposed aggregation in some regions
+  - Nulls indicate missing verified data; decimals may reflect partial transect coverage
+  - Variation in sampling schedules across crops and survey types (e.g., Mezzanine surveys only for certain crops) may affect cross-crop comparisons
+  - Some external references provide deeper methodological context for spring-sown and winter-sown crops
+
+- Summary takeaway
+  - The dataset provides a comprehensive, multi-domain collection of field-scale measurements (seedbank, crop/edge vegetation, and invertebrates) across four crop types, designed to evaluate potential wildlife effects of GMHT cropping and to support comparative analyses with conventional management practices.

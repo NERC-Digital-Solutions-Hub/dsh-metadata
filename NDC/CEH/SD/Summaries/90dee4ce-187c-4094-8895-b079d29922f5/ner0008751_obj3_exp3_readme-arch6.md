@@ -1,0 +1,65 @@
+# NERC project NE/R000875/1, Objective 3, Experiment 3: ReadMe document for data files
+
+- The data files document data collected in Objective 3, Experiment 3 of the NERC project NE/R000875/1.
+- Aim of the experiment: manipulate the fecundity-longevity relationship in Drosophila melanogaster by changing larval diet across three regimes.
+  - Diets: 1) 20% SYA, 2) 100% SYA, 3) 120% SYA.
+- Data collected from adult flies include:
+  - Death dates for individuals
+  - Egg counts every other day
+  - Offspring counts every other day
+- References for protocol and related manuscript are provided:
+  - Protocol_NER0008751_Objective 3_Experiment 3_v1_2018-05-05.docx
+  - Collins et al. manuscript on the effect of larval diet on fecundity-longevity and age-related gene expression
+
+- Data format and structure:
+  - All data are in CSV files.
+  - Each file’s columns are described in dedicated tables; each row corresponds to a single observation or entity.
+  - NA denotes missing values; '.' indicates missing data for a specific count; '*' denotes null means arising from missing values.
+
+- Key data products (files and what they contain):
+  - NER0008751_Obj3_Exp3_eclosion.csv
+    - Eclosion data by vial and counting event (up to 15 events)
+    - Columns include: Diet, Source_population, Treatment_date/time, Larvae_number, ecl.m/f/n, true_hours, and aggregated metrics like total_hours_to_eclosion, total_number_of_eclosions, Mean_eclosion_time
+  - NER0008751_Obj3_Exp3_egg_counts_data.csv
+    - Daily egg counts for life-history sub-group females (L1-L168)
+    - Columns include: day_counted, Count, date_counted, day_produced/date_produced, Total_eggs, 7D_eggs
+  - NER0008751_Obj3_Exp3_female_sizes.csv
+    - Size measurements for life-history females (thorax and wing lengths)
+    - Includes Thorax1/2, Mean_Thorax, Wing1/2, Mean_Wing
+  - NER0008751_Obj3_Exp3_individual_females.csv
+    - Metadata for each female fly (treatment, female_number, source_population, eclosion_date, sub-group, etc.)
+    - Links to Life_history_number and L_history_numeric
+  - NER0008751_Obj3_Exp3_LH_data.csv
+    - Life-history data for females (age, eggs, offspring, viability, mean values)
+    - Includes derived metrics: mean_eggs, mean_offspring, mating-event totals (m.off.tot, m.age, m.off.mean, m.egg.tot, m.egg.mean), early-life metrics (eggs_7d, off_7d)
+    - Thorax/Wing morphometrics with means
+  - NER0008751_Obj3_Exp3_mating_events.csv
+    - Adult offspring counts and egg counts for each female after successive mating events (up to 10 events)
+    - Includes m.off.* and m.egg.* totals and means, m.age, m.off.mean, m.egg.mean
+  - NER0008751_Obj3_Exp3_offspring_counts_data.csv
+    - Daily counts of adult offspring produced as eggs (life-history sub-group)
+    - Columns include: day_produced/date_produced, Total_offspring, 7D_off
+  - NER0008751_Obj3_Exp3_pupation.csv
+    - Pupation data by vial and counting event (up to 16 events)
+    - Diet, Source_population, Treatment_date/time, Larvae_number, pup.n.* counts, true_hours, total_hours_to_pupation
+    - Derived metrics: total_number_of_pupae, Mean_pupation_time, Mean_pupation_duration
+  - NER0008751_Obj3_Exp3_replacements.csv
+    - Replacement details for flies in R1, R2, L sub-groups replaced by C-sub-group
+    - Includes Day, Treatment, Sub-group, Sub-group_numeric, Replacement_sub-group, Replacement_sub-group_numeric
+  - NER0008751_Obj3_Exp3_samples_for_RNA.csv
+    - Sample sizes and censoring for RNA collection across treatments and sub-groups
+    - Includes: Total_at_start, Total_after_die-off_day4, Censors, Total_minus_censors, Death_%_needed, Death_number, Number_for_RNA, Date_collected, Age_at_collection
+  - NER0008751_Obj3_Exp3_tissue_samples.csv
+    - Summary data for tissue samples from RNA subgroups (RNA1 and RNA2) for treatments 2 and 3
+    - Fields include Sample_name, Fly_sample, Treatment, Sub-group, Replicate, Number_of_flies, Dissection_date, RNA_extraction_date, RNA_sample
+    
+- Data relationships and usage notes:
+  - Datasets are interrelated via identifiers such as Diet, Source_population, Life_history_number, and Treatment.
+  - Life-history data (LH_data) connect to individual females and their mating/offspring records (mating_events, offspring_counts).
+  - Replacement and RNA sampling data document experimental contingencies and molecular sampling plans.
+  - Tissue_sample data reflect pooled RNA samples (each pool combines multiple individuals) with replicate labeling.
+
+- Practical considerations for data support:
+  - The dataset provides rich, per-fly, per-vial, and per-mating-event granularity suitable for exploring fecundity, longevity, and their interactions under different larval diets.
+  - Missing data handling is explicit (NA, '.', '*'), and multiple derived metrics are provided to facilitate analysis (means, totals, rates).
+  - For detailed protocols and context, refer to the cited protocol document and the related manuscript mentioned in the ReadMe.

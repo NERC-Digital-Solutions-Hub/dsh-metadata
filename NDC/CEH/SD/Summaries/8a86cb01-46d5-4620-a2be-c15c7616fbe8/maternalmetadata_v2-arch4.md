@@ -1,0 +1,31 @@
+# Metadata for 'Long-term multisite Scots pine trial, Scotland: mother tree, cone and seed phenotypes, 2007'
+
+- The dataset captures phenotypes of Scots pine mother trees and their cones/seeds from 21 native populations across Scotland.
+- Seed from these trees was used to establish a long-term multisite common garden trial at three nurseries/field sites.
+- Sampling design:
+  - Ten seed trees per population sampled March 2007, covering a circle of ~1 km diameter around a central tree.
+  - Spatial protocol: nine points in predetermined random directions, with a 1:3:5 distance ratio to stratify sampling.
+  - For smaller woodland fragments or few cone-bearing trees, directions retained to ensure broad coverage; minimum distance between sampled trees never < 50 m.
+- Measurements on mother trees (to control for maternal effects) included:
+  - Height and diameter at breast height (DBH).
+  - Ten cones collected per mother tree and analyzed (cone width/length before drying; cone weight after drying).
+  - From each cone: total seed weight, count of viable seeds (viable = wings present and obvious seed).
+  - Mean values computed per mother tree across the 10 cones.
+- Dataset composition:
+  - Two files: ConeSeedTraits.txt and MotherTraits.txt.
+  - PopulationCode: short code for population; Population: full population name; SeedZone: Scots pine seed zone (EC, N, NC, NE, NW, SC, SW).
+  - Geography: Latitude and Longitude of populations; additional location attributes.
+  - MotherTraits.txt includes: Family (mother tree ID), Population, Latitude/Longitude, Aspect, Slope, Altitude, Regeneration, SoilDepth, SoilMoisture, Competition, Height (HA), Diameter at breast height (DA).
+  - ConeSeedTraits.txt includes: Cone, Width (Wi), Length (Le), Weight (We); Viable Seeds per Cone (SN); Percentage Viable (SV); Weight of viable seeds per cone (SW).
+- Units and data standards:
+  - Measurements in millimeters (mm), grams (g), counts, and percentages where applicable.
+  - Living descriptions include categorical/ordinal codes (e.g., SeedZone, Slope categories, Regeneration levels).
+  - Decimal fields for geographic and measured attributes; specific mappings described (e.g., Slope: flat to steep; Altitude: M).
+- Temporal and location context:
+  - Cone collection conducted in March 2007 at James Hutton Institute, Aberdeen (lat 57.133214, lon -2.158764).
+- Purpose and use:
+  - Designed to enable analysis of maternal effects, cone/seed traits, and their variation across populations.
+  - Supports a long-term multisite trial to study data across different environments and populations.
+- Data governance considerations:
+  - Metadata provides explicit column headers, descriptions, and units to support discoverability and interoperability.
+  - Coding schemes (PopulationCode, SeedZone) facilitate cross-dataset integration and aggregation.

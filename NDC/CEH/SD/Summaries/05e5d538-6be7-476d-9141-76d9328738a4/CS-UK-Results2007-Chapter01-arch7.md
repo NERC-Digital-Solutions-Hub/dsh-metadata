@@ -1,0 +1,32 @@
+# Countryside Survey 2007
+
+- A two-part national data program: Field Survey (habitats, vegetation, soils 0-15 cm, and freshwater) and the Land Cover Map (satellite-based digital map to be published in 2009).
+- Extensive GB-wide sampling: 591 1km x 1km sample squares in England, Scotland, and Wales; Northern Ireland included via 0.5km x 0.5km squares (NICS). All data integrated into a single, georeferenced database.
+- Broad Habitat framework: 27 Broad Habitats plus Priority Habitats (as defined for UK/Biodiversity Action Plan monitoring). 45 Land Classes used to stratify sampling; enables area estimates, changes, and conversions between habitat types.
+- Vegetation condition: Aggregation Classes (ACs) used to describe vegetation condition within Broad Habitats; allows tracking changes from 1978–2007.
+- Field mapping and sampling approach:
+  - Habitats mapped as polygons within each 1km square; minimum mapping unit and linear feature thresholds defined (400 m2; 20 m for lines).
+  - Vegetation sampling: up to ~30 plots per square, with Main Plots and additional plots targeting landscape features and under-sampled habitats.
+  - Soils: five 0–15 cm soil plots per square for pH, carbon (via loss on ignition), bulk density, and related metrics.
+  - Freshwater: headwater streams (500 m channel checks, RHS habitat assessment) and one pond per square (plant-based condition; PSYM pond quality index).
+- Data capture and GIS emphasis:
+  - 2007 introduced electronic data capture with a bespoke CEH-GIS system, integrated with ESRI software, GPS, and web-based data management for field-to-database updates.
+  - All data tied to a single GIS database linking mapped habitats, vegetation plots, soil points, and freshwater data for seamless analysis.
+- Reporting and analysis:
+  - Bootstrapping employed to estimate areas and changes with calculated standard errors and significance levels.
+  - Outputs include: area of Broad and Priority Habitats (GB, GB countries, UK post-NICS), changes in area, habitat conversions (1998–2007), and broad measures of vegetation condition.
+  - 1990–2007 changes and 1978–2007 long-term vegetation trends analyzed via AC-based cohorts.
+- Priority Habitats and spatial masks:
+  - Priority Habitats identified and mapped where possible; four masking systems (e.g., SNH, JNCC, English Natural Areas, Welsh upland mask) used to delineate upland/lowland and woodland types for UK-wide estimates.
+- Northern Ireland Countryside Survey (NICS):
+  - Independent, phased program aligned with CS methods; 288 squares in 2007 at ~0.5% intensity; results integrated with GB to form UK-wide estimates.
+- Outputs and usability for GIS specialists:
+  - Spatial data layers: Broad Habitats, Priority Habitats, land cover, linear features, vegetation plots, soils, streams, and ponds.
+  - Time-series capability: 1978, 1990, 1998, 2007 (and planned 2009 Land Cover Map) enabling multi-temporal analyses and change detection.
+  - Conversion and change flows: net movements between Broad Habitat types between 1998 and 2007 provide directional context for policy and planning.
+  - Quantitative descriptors: area (in thousands of hectares), lengths of linear features (km), pond counts, stream condition indices (RHS, HQA, MTR, PSYM), and soil carbon stocks.
+- Caveats and interpretation:
+  - Estimates are statistical and not exact; some Priority Habitats are underrepresented in the survey, so results should be used alongside UK BAP datasets.
+  - Some changes reflect mapping interpretation and data-processing nuances; 2007 emphasizes field-validated changes to reduce lab-interpretation errors.
+- Accessibility and references:
+  - Detailed methodologies, annexes, and the Soil Manual accompany the report; primary data and contact information available via the Countryside Survey website and CEH.

@@ -1,0 +1,36 @@
+# Details of Data Structure
+
+- Overview
+  - 17 .dat files containing electrical resistivity tomography (ERT) survey data from MAKUTAPORA basin, Tanzania, collected between 28/06/2019 and 16/07/2019.
+- Data format and structure
+  - ASCII-delimited data (comma, space, or line breaks separate items); formatted for reading by res2dinv software.
+  - Line definitions:
+    - Line 1: survey line name
+    - Line 2: electrode spacing
+    - Line 3: array type (uses non-conventional/general array, code 11)
+    - Line 4: sub-array type
+    - Line 5: header (choose apparent resistivity vs. resistance values)
+    - Line 6: indicator (1 to show resistance values)
+    - Line 7: number of data points
+    - Line 8: x-location type (2 indicates topographic data present)
+    - Line 9: IP data flag (0 none, 1 present)
+  - Data point lines: 10 columns per row
+    - Column 1: number of electrodes (4)
+    - Columns 2-9: x and z coordinates of C1, C2, P1, P2 electrodes
+    - Column 10: resistance value (Ωm for resistivity data when interpreted as resistivity)
+- Data content and units
+  - Measurements represent apparent resistivity or resistance values depending on header choice; units in ohm-meters (Ωm) corresponding to subsurface resistivity.
+- Data processing and provenance
+  - Generated from raw .stg files produced by an AGI SuperSting R8 (STING) resistivity meter.
+  - A bespoke Python script converted raw .stg to the .dat format and added topographic data.
+- Metadata and supporting materials
+  - SupportingDocumentation.txt: detailed collection/generation methods and quality control procedures; additional information available in the associated paper.
+  - Supp_Table_for_Survey.csv: survey numbers (and suffixes), coordinates (easting/northing) for line endpoints, geometry (line length), and survey parameters (dipole size, max dipole, number of electrodes, electrode spacing).
+  - Additional mapping resources: a map of survey lines and a .kmz file available in the associated paper.
+- Data accessibility and reuse
+  - .dat files are designed for res2dinv ingestion; supporting files provide context for reproduction and interpretation.
+  - The data lineage is documented (from raw STING data through Python conversion to .dat, with topographic augmentation) to support reproducibility and auditability.
+- Implications for data governance and leadership
+  - Provenance and quality controls are described in SupportingDocumentation.txt; ensure ongoing versioning and metadata curation.
+  - Metadata richness (survey IDs, coordinates, geometry, and parameters in Supp_Table_for_Survey.csv) supports discoverability and interoperability with analysis tools.
+  - Clear linkage between data and accompanying documentation/papers facilitates reuse and collaboration, though access to full methods may depend on the associated paper.

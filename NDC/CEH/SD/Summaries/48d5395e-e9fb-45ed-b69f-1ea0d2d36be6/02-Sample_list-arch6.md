@@ -1,0 +1,38 @@
+# Supporting documentation for 02-Sample_List.csv
+
+- Purpose
+  - Provides metadata definitions for each column in 02-Sample_List.csv, describing what data should be stored, along with units and notes.
+
+- Field definitions
+  - Sample_Code
+    - Explanation: Unique sample identifier
+    - Units: n/a
+    - Notes: n/a
+  - Sample_Type
+    - Explanation: General description of sample (i.e. foodstuff group)
+    - Units: n/a
+    - Notes: n/a
+  - Location
+    - Explanation: Name of the location where the sample was collected
+    - Units: n/a
+    - Notes: n/a
+  - Sample_Description
+    - Explanation: Further description of the sample (i.e. when organism/foodstuff was divided and analysed separately)
+    - Units: n/a
+    - Notes: n/a
+  - Collection_Date
+    - Explanation: Date of sample collection
+    - Units: dd-mm-yyyy
+    - Notes: n/a
+  - Coordinates_of_the_Sample
+    - Explanation: Latitude, longitude co-ordinates of sampling location
+    - Units: decimal degrees and minutes
+    - Notes: n/a
+  - Analysis
+    - Explanation: Analyses carried out (Gamma = gamma spectrometry; Stable = stable elements by ICP-MS)
+    - Units: n/a
+    - Notes: n/a
+  - Notes
+    - Explanation: Additional comments (where applicable)
+    - Units: n/a
+    - Notes: n/a

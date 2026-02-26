@@ -1,0 +1,25 @@
+# Collection/generation methods
+
+- Study context and subjects: Fish with mean body length 43 ± 3.2 mm were collected from the River Cary, Somerset, UK; maintained in two large aquaria at 14°C with an 11:13 hour light cycle; experiments conducted between 23 Sept 2019 and 11 Mar 2020.
+- Experimental design: Groups of six fish tested over two consecutive days; 31 groups in total. Day 1 involved individual behaviour assessment; Day 2 involved group foraging/shoaling tasks.
+- Arena and recording setup: White opaque circular arena (diameter 97 cm, water depth 10 cm) within a white Perspex tank; filmed from above by two cameras (SONY Handycam 4K and GoPro Hero5) with a high-resolution setup and external monitors for observation.
+- Group and trial structure:
+  - Day 1: Six fish from the same holding tank tested in the arena individually (via a transparent acetate cylinder for 1 minute, then released for 10 minutes). Post-individual testing, all six are placed in a central chamber for 2 minutes before being released to swim freely; shoaling behaviour recorded for 20 minutes.
+  - Day 2: Group foraging trials. Groups habituate for 5 minutes, then are repeatedly presented with a green stimulus near four evenly spaced holes; upon approach, two bloodworms are released as rewards and the trial ends when both rewards are consumed or 5 minutes elapse.
+- Data collection process: Trials were conducted in two days per group; fish were not reused across trials; up to two groups tested per week.
+- Recording and tracking methods: Video converted to MPEG-4 HD; automated 2D tracking used to obtain cartesian coordinates (x_i, y_i) for each fish at each time step (t). Identity tracking maintained using idTracker with reused references across the foraging trial to preserve individual identities.
+- Data processing notes: For individual assays, tracking initially included a central chamber; subsequent re-tracking excluded the chamber to improve individual tracking quality.
+- Data outputs and file structure:
+  - n_n2.txt: X and Y coordinates for each tracked individual (x1, y1, …) with frame information.
+  - n_shoal.txt: Trajectories for six fish during shoaling; columns for trajectories1–12 (x and y for each fish) plus frame.
+  - n_forage.txt: Trajectories for six fish during foraging; similar structure to n_shoal.txt with frame indexing.
+- Nature and units of recorded values:
+  - Trajectories are 2D Cartesian coordinates derived from video frames.
+  - Pixel scale: 1 mm corresponds to 1.05 pixels (conversion factor provided for potential real-world scaling).
+  - Testing context uses raw video-derived coordinates; no geographic coordinate system is provided within the dataset.
+- Quality control and limitations:
+  - Data presented in raw form; missing data indicated as NA where a fish could not be tracked in a frame.
+  - Some trials had no movement from one or more fish (specific file identifiers noted).
+  - A few video files were corrupted, resulting in missing trajectory data for those trials.
+- Practical notes on data structure:
+  - Data files are described with the coordinates layout (x/y for each fish) and a frame column indicating the video frame corresponding to each row.

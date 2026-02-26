@@ -1,0 +1,30 @@
+# Data Collection
+
+- A NERC-funded PhD project investigating interactions between avian colonial social structure and tick-borne pathogen dynamics, focusing on the Isle of May, Scotland, as the field site due to a large guillemot population (model species) and aiming to quantify strain-specific seroprevalence of Great Island virus (GIV) within the guillemot population.
+- Dataset scope:
+  - Maximum of 12 Great Island virus strains tested.
+  - 144 common guillemots captured between 1993 and 1995; blood samples collected on filter paper.
+  - Plaque reduction neutralisation tests (PRNT) performed to detect virus-specific neutralising antibodies.
+- Publication reference:
+  - Part of the dataset is presented in Nunn et al. (2006) Parasitology 132: 233-240; detailed methods are drawn from this publication, with notes on slight differences between two parts of the dataset (MAN and KMW).
+- Methodological details (highlights):
+  - Virus isolation: clarified tick homogenate applied to BHK21 cells, followed by two rounds of plaque picking on Vero cells; all strains except Broadhaven virus (BRDV) sourced from single ticks on the Isle of May; BRDV from a pool of 10 nymphal ticks from St Abbs Head, Scotland.
+  - Blood sample processing: discs punched from filter paper, eluted overnight at 4°C in 320 µl PBST (phosphate-buffered saline with 0.05% Tween 20 and antibiotics).
+  - PRNT setup: two different protocols (MAN and KMW):
+    - MAN: 10 µl eluted sample mixed with 10 µl virus dilution (10^-1 to 10^-3) in PBST; incubated 2 hours at 30°C before adding to Vero cells; samples assayed four times.
+    - KMW: 7 µl eluted sample mixed with 7 µl virus dilution (dilutions chosen for easy plaque counting); incubated 4 hours before adding to a single Vero cell well; samples assayed four times.
+  - Assay controls: virus incubated for 2–4 hours in PBST or in chicken blood eluted from filter paper; controls assayed at least twice.
+  - Plaque assay: cells overlaid with carboxymethylcellulose and incubated; fixed with formal saline and stained with crystal violet for plaque counting.
+  - Outcome measure: results expressed as average fold decrease in virus titre relative to controls.
+- Data structure (variables recorded):
+  - BTO_Ring: unique ID for each bird.
+  - Collection_date: date of blood sampling.
+  - Subcolony: site where the bird was found.
+  - Sex: sex of the bird.
+  - Status: breeding status (PB = pre-breeding, B = breeding).
+  - Virus_strain: virus strain tested (MDNV, CBNV, COYV, BRDV, AMDV).
+  - Sample_PFUx: number of plaque-forming units (PFU) or PFU per ml in the sample well.
+  - Sample_PFU_av: mean PFU for the sample.
+  - Control_PFU_av: mean PFU for control wells.
+- Virus strains included:
+  - Maiden virus (MDNV), Colony B North virus (CBNV), Colony virus (COYV), Broadhaven virus (BRDV), Above Maiden virus (AMDV).

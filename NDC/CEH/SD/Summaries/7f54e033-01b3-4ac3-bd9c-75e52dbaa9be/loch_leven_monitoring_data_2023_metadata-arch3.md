@@ -1,0 +1,43 @@
+# Abstract
+
+- Overview
+  - Loch Leven long-term monitoring programme in Scotland, initiated in 1968 and ongoing; conducted by NERC and more recently the UK Centre for Ecology & Hydrology.
+  - The dataset describes data types, sampling and analysis methods, data processing techniques, and output formats, as part of UK-SCAPE WP7 LEVEN.
+- Sampling regime
+  - Fortnightly sampling at two main sites: Reed Bower and Sluices (outflow); Reed Bower accessible by boat, Sluices accessible by boat or shore.
+  - Sampling occasionally skipped due to weather, ice, or resource constraints; when boats are unsafe, only Sluices may be sampled; extreme cases both sites missed.
+  - In-field measurements or lab analyses on returned samples.
+- List of sites
+  - Harbour (H), Reed Bower (RB, e.g., RB5), Sluices / Outflow (L/Sl8); site coordinates provided (UK National Grid epsg:27700).
+  - Map reference to Figure 1 illustrating site locations.
+- Sampling, measurement and analysis methods
+  - In situ measurements: conductivity, pH, temperature; Secchi depth measured at Reed Bower.
+  - Water samples collected as duplicates per site; Reed Bower uses an integrated bottom/probe approach, Sluices uses surface bottle sampling.
+  - Laboratory analyses include soluble reactive phosphorus (SRP), total phosphorus (TP), total soluble phosphorus (TSP; filtered and frozen), soluble reactive silicate, total diatom silica, chlorophyll a.
+  - Phosphorus analyses: SRP via Murphy & Riley (1962) method; TP via persulfate digestion with Wetzel & Likens (2000) protocol; TSP similar to TP with filtration.
+  - Weather data (cloud cover, wind direction, wind force) recorded at Reed Bower when possible; Beaufort scale used to describe wind and sea-state effects.
+- Data processing
+  - Import script in R performs data processing with specific decisions:
+    - Wind force: if a range (e.g., 4-5) is given, the first value is used.
+    - Probe replicates (conductivity, pH, dissolved oxygen, and related temperatures) are filtered using Median Absolute Deviation (MAD); when replicates are few, values are retained; pH values are converted to 10^pH for median/MAD calculation, then re-converted and averaged; results rounded to appropriate decimals.
+  - Instrument update: HQ30d replaced by HQ4300; inter-calibration performed; column names updated accordingly.
+- Quality Assurance (QA)
+  - Automated and manual QA checks identify data entry errors and values outside expected ranges; unusual values are investigated and corrected where appropriate.
+- Format of stored data
+  - Data stored in a single CSV file; columns describe determinands, site conditions, lake chemistry, crustacean/zooplankton counts; missing data marked as NA.
+- Column descriptions and data structure
+  - As of 2023, internal column naming is more encoding-friendly ( litres → L, µ → u, deg → deg); Ceriodaphnia_sp. added; consistent ordering maintained.
+  - Columns cover: date, week, water level, weather (cloud cover, wind), depth, Secchi, conductivity, temperature, dissolved oxygen (DO), pH, total and soluble phosphorus measures, chlorophyll a, and various zooplankton/crustacean density metrics (e.g., Daphnia hyalina, Eudiaptomus gracilis, Cyclopidae, Cyclops species, Bosmina longirostris, Leptodora kindtii, Bythotrephes longimanus, Chydoridae, Ceriodaphnia sp., Polyphemus pediculus, etc.), with site-specific suffixes.
+  - Determinands are reported per site (RB for Reed Bower, L for Sluices, H for Harbour) with units specified (e.g., µg/L for phosphorus species, ind/L for zooplankton densities, mg/L for DO, °C for temperature, etc.).
+- Crustacean & Zooplankton dataset (scope and methods)
+  - Densities of crustacean zooplankton collected at Reed Bower and Sluices; taxa list includes Daphnia hyalina, Eudiaptomus gracilis, Eudiaptomus nauplii, Cyclopidae, Cyclops abyssorum, Cyclops vicinus, Bosmina longirostris, Leptodora kindtii, Bythotrephes longimanus, Chydoridae, Ceriodaphnia sp., Polyphemus pediculus (new taxa added in 2022 dataset).
+  - Zero values indicate non-detection at sampling/analytical resolution; NAs indicate missing values.
+  - Sampling methods differ by site: Reed Bower used a 4 m, 120 µm mesh net haul; Sluices used filtration of 30 L surface water through a 120 µm net; preserved in 4% formaldehyde.
+  - Laboratory processing: subsampling and counting under low-power microscopy; counts converted to ind/L using multiplication factors; samples archived after counting.
+- Data provenance and references
+  - Core references for analytical methods include Golterman et al. (1978), Murphy & Riley (1962), Wetzel & Likens (2000), plus taxonomic keys and related Hydrobiologia literature.
+  - Additional historical monitoring reports and syntheses cited for broader context (e.g., Scottish Natural Heritage reports and Developments in Hydrobiology 218).
+- Practical considerations for monitoring framework authors
+  - Emphasizes the importance of documenting data lineage, site coding, measurement units, replication rules, and QA processes.
+  - Demonstrates handling of instrument changes, metadata updates, and dataset evolution (e.g., new taxa, naming conventions) to maintain consistency over time.
+  - Highlights data governance aspects: data sharing readiness, metadata completeness, and standardization across a long-running monitoring program.

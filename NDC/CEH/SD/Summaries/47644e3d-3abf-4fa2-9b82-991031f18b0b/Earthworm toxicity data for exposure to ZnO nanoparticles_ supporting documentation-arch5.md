@@ -1,0 +1,45 @@
+# Experimental design
+
+- Objective: Assess toxicity of ZnO nanoparticles and non-nanoparticles to earthworm Eisenia andrei using OECD guideline 222 (Earthworm reproduction test) over 28 days, measuring survival, reproduction, and weight changes.
+- Experimental framework:
+  - Five separate toxicity tests with three ZnO nanoparticles (NanoSun, Z-cote, Z-cote HP1) plus two Zn references (ZnCl2 ionic and non-nano ZnO).
+  - Exposure levels: six nominal concentrations for nanoparticles (191, 305, 488, 781, 1250, 2000 mg Zn/kg dry soil); non-nano ZnO at 305, 781, 2000 mg Zn/kg. Each treatment had 4 replicates; overall control included 10 replicates (total 118 jars).
+  - Organisms: Eisenia andrei worms from commercial source; seven worms per jar due to limited supply; pre-conditioned in loamy soil with peat; fed horse manure.
+  - Randomization and setup: treatments randomized within jars; exposure lasted 28 days at 20 ± 1°C under constant light; moisture controlled by jar weight with no significant water loss observed.
+- Soil preparation and mixture:
+  - Soil mixture per OECD guideline: 10% Sphagnum moss peat, 70% industrial quartz sand, 20% kaolinite clay (dry weight).
+  - Wetting and moisture: initial correction for water content, pH adjusted to 6.1 ± 0.05; final soil moisture ~50% of the soil’s water holding capacity; 500 g dry soil per jar (represented by ~603 g prepared soil) with 147 ml water added to reach target moisture.
+  - Handling and packaging: soils placed in Kilner jars; batches prepared (~20 kg each) with thorough mixing.
+- Materials and dispersion/dosing:
+  - ZnO materials: three nanoparticles and ZnO-based controls; ZnCl2 as ionic reference; purity generally >99% (HP1 ~97.5% due to silane coating).
+  - Dosing strategy: prepare stock dispersions in MilliQ water containing equal Zn mass (8.3 mg Zn/mL) to standardize across materials (accounting for purity); dispersion achieved via high-intensity ultrasonication; particle size distribution checked (Zetasizer, Nanosight) with TEM confirmation.
+  - Dispersion challenges: Z-cote HP1 difficult to disperse; surfactant helped but full dispersion not achieved, leading to direct addition of dry powder to soil for HP1 in some cases.
+  - ZnCl2 dosing: dissolved in water and dosed similarly to NP suspensions.
+- Dispersal and dosing specifics:
+  - Nanoparticle/non-nano NP stock solutions dosed directly onto soil and mixed into the topsoil; final moisture added the day after initial dosing.
+  - HP1 required alternative dosing due to poor dispersion; delivery sometimes via direct dry addition to soil.
+- Experimental animals and sampling:
+  - Worms weighed in batches before introduction; initial total worm weight recorded; seven worms per jar introduced.
+  - Feeding: two batches of manure (3 g at start; 2 g after two weeks) with a 6:1 water:dry manure ratio.
+  - Sampling schedule: large-scale setup over several days (up to 13 jars per day); after two weeks, excess manure removed and weighed to assess feeding rate; at 28 days, cocoons counted via wet sieving.
+- Endpoints and measurements:
+  - Survival: number of worms alive at 14 and 28 days; weight change: percent change in worm weight at 14 and 28 days relative to start.
+  - Reproduction: cocoons per worm per week over the 4-week period.
+  - Feeding rate: dry manure weight consumed per worm per week.
+  - Additional data: pre- and post-exposure jar weights to monitor moisture; tissue samples for TEM and other analyses were prepared from select worms; soil samples collected for characterization.
+- Data processing and statistics:
+  - Endpoints calculated: survival percentages, weight change percentages, reproduction rate (cocoons per worm per week), feeding rate.
+  - Analyses: ANOVA (Minitab 15); if variance homogeneous, one-way ANOVA per material with concentration as fixed factor; dose-response curves fitted with a logistic model to estimate EC50/LC50 and 95% CIs using GenStat 12.1; asymmetrical CIs calculated with custom code.
+  - Dose-response model: y = Ymax / [1 + (ci / EC50)^β], with EC50 or LC50 depending on endpoint.
+- Data fields and units (Nature and Units of recorded values):
+  - Experimental metadata: jar number, zinc type (salt, nanoparticle, or non-nano ZnO), zinc treatment, Zn concentration (mg Zn/kg dry soil), replicate number.
+  - Measurements: initial jar weight (with lid) at setup; number of worms and total worm weight at t=0; jar weight after setup; number alive and total weight at t=14 days; jar weight after t=14 days; jar weight at t=28 days; number alive and total weight at t=28 days.
+  - Derived endpoints: % worm survival (14 and 28 days), % worm weight change (14 and 28 days), cocoons per worm per week, and % worm weight change calculations.
+  - Units: concentration in mg Zn/kg; weights in grams; cocoons per worm per week as counts; percentages for survival and weight change.
+- Notable challenges and data governance considerations for Data Stewards:
+  - Dispersion variability, especially with Z-cote HP1, leading to alternative dosing methods (dry powder addition), which may affect comparability across treatments.
+  - Detailed material provenance, purity, coating (HP1) and their implications for solubility and bioavailability.
+  - Comprehensive metadata requirements to enable reuse: supplier details, material specs, dispersion parameters, TEM/Zetasizer settings, sampling times, and exact dosing procedures.
+  - Standardization needs: consistent units (mg Zn/kg dry soil), documentation of relative purity adjustments, and clear description of how EC50/LC50 were derived.
+  - Data quality considerations: small sample size per jar (7 worms), unequal replication between controls and treatments, and potential batch effects across jars or test days.
+  - Provisions for reproducibility: explicit methodological steps (soil preparation, dosing, feeding, measurement timings) and raw data fields to support re-analysis or cross-study integration.

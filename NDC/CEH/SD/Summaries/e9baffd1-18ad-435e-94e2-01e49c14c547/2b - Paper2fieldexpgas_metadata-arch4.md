@@ -1,0 +1,65 @@
+# Soil Gas Flux Measurements Dataset with Biochar Treatment
+
+- Overview
+  - A structured dataset capturing soil gas flux measurements (CO2, CH4, N2O) across multiple samples, timepoints, sites, and biochar treatment conditions.
+  - Includes both raw flux measurements and associated environmental, physical, and treatment metadata to support analysis, reproducibility, and data integration within a broader data strategy.
+
+- Key variables and measurements
+  - Sample and site identifiers
+    - sampleno: Individual number for the soil sample
+    - site: Site number where the soil was sampled
+    - fulltreatname: Full name of the soil treatment (biochar and wetted)
+    - biochartreatment: Indicates whether the sample is un-amended or amended with biochar
+    - biocharadditiontha: Amount of biochar added (tonnes per hectare)
+  - Time and measurement context
+    - timepoint: Timepoint of measurements
+    - dayfromstart: Day from the start of measurements
+    - datetime / datetimefirst: Date and time of the measurement(s)
+    - dayofyear: Day of the year of measurement
+  - Gas flux measurements (per area and time)
+    - mgCO2-Cfluxm2h1: CO2 flux (mg CO2-C per m2 per h)
+    - log10co2: log10(flux + 1) of CO2 flux with special handling for negative values
+    - ugCH4-Cfluxm2h1: CH4 flux (mg CH4-C per m2 per h)
+    - log10ch4: log10(CH4 flux + 1) with same negative-value handling
+    - ugN2O-Nfluxm2h1: N2O flux (mg N2O-N per m2 per h)
+    - log10n2o: log10(N2O flux + 1) with same negative-value handling
+  - Chamber and headspace context
+    - CO2ppmt0 / CH4ppmt0 / N2Oppmt0: Gas concentrations (ppm) in the static chamber headspace at t0
+    - chambaream2: Soil area within the static chamber (m2)
+    - headvolm3: Volume of the static chamber headspace (m3)
+  - Environmental and soil properties
+    - tempair: Temperature of the soil at measurement time
+    - volwatercontentproportion: Volumetric water content (proportion)
+    - gravwatercontentproportion: Gravimetric water content (proportion)
+    - bulkdensitygcm3: Soil bulk density (g/cm3)
+    - particledensitygcm3: Particle density of the soil
+    - wfpsproportion: Water-filled pore space (computed from gravimetric water content and densities)
+  - Data quality and metadata
+    - datetimefirst: Date/time of the first gas flux measurement
+    - dayfromstart, dayofyear: Temporal context for sequencing and filtering
+    - data transformation notes: log10 columns are derived as log10(flux + 1); when the previous column contains a negative flux, the magnitude of that negative flux is added to all flux values before logging to avoid invalid logs
+
+- Data transformations and handling
+  - log10flux columns (log10co2, log10ch4, log10n2o) are computed as log10(flux + 1) with a rule to adjust flux values if prior measurements were negative
+  - Raw flux units are defined per gas type:
+    - CO2: mg CO2-C flux per square metre soil per hour
+    - CH4: mg CH4-C flux per square metre soil per hour
+    - N2O: mg N2O-N flux per square metre soil per hour
+  - PPM measurements (CO2ppmt0, CH4ppmt0, N2Oppmt0) represent headspace concentrations at t0
+
+- Data governance and usage considerations for data leaders
+  - Data organization supports end-to-end data strategy: clear identifiers, timecontext, and treatment metadata enable cross-site analyses and integration with broader data networks
+  - Rich metadata enables discoverability and reusability, including treatment details, measurement timing, and soil properties
+  - Standardization needs:
+    - Consistent unit definitions across sites and experiments
+    - Clear documentation of log-transformation rules and negative-flux handling
+  - Potential data quality challenges to monitor
+    - Variability in data granularity across samples and timepoints
+    - Handling of negative flux values in log transformations
+    - Completeness of ancillary metadata (e.g., site-specific context, treatment details)
+
+- Practical implications for data strategy
+  - Facilitates co-ownership and collaboration by documenting treatments, measurement protocols, and temporal markers
+  - Supports data discoverability and integration with other soil and gas flux datasets through standardized field names and units
+  - Enables auditing and reproducibility by providing explicit transformation rules and measurement contexts
+  - Highlights data gaps and areas for standardization (e.g., metadata completeness, consistent reporting of soil properties) to strengthen future data acquisitions and sharing

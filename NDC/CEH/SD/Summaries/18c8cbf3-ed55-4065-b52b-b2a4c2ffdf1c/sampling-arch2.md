@@ -1,0 +1,52 @@
+# Sampling Design
+
+- Objective and scope
+  - Field study conducted from July 2015 to December 2015 in Gurue district, Zambezia province, Mozambique.
+  - Aimed at understanding soya production within a land-scarcity gradient to inform environmental health and policy considerations.
+- Study site and village selection
+  - Villages selected along a land scarcity gradient from abundant land to highly constrained land due to expanding agriculture and population growth.
+  - Ten villages chosen with similar infrastructure, soils, rainfall, and vegetation types to represent different stages of land constraint.
+- Value chain actors and sampling approach
+  - Value chain actors identified using snowball sampling.
+  - Actors include: village small-scale soya producers, emergent soya farmers, managers of commercial soya operations, district officer, NGO technicians, and formal/informal traders.
+- Sampling strategy by actor group
+  - Small-scale soya producers: focus group discussions in each village; leaders bring groups of 5–7 producers.
+  - Emergent farmers: identified via snowball sampling; one farmer convenes a group for discussion.
+  - Informal traders: random interviews at buying points along streets.
+  - Other actors of interest: interviews arranged through contact and meetings.
+- Data collection methodologies
+  - Semi-structured interviews
+    - Conducted at point of action (village center with leaders, along roads with mobile traders, or at plantation offices).
+  - Focus group discussions
+    - Led by a village leader; 1–2 hours; groups gathered in the village center.
+  - Informal communication
+    - Ongoing day-to-day interactions recorded by the researcher; translator (Portuguese to Elomwe) accompanies fieldwork.
+  - Documentation
+    - Information recorded in notebooks; electronic transcripts prepared back in the office.
+- Triangulation and data validation
+  - Information cross-checked by discussing topics with different groups and individuals to validate findings and capture multiple perspectives.
+- Interview guidelines and content areas
+  - Broad categories covered (Portuguese guidelines included) across:
+    - Soya production
+    - Soya marketing
+    - Land availability and distribution
+    - Agricultural inputs and support
+    - Constraints and challenges
+  - Detailed sections for large-scale producers cover production metrics, inputs, supply sources, practices, costs, soil improvement, marketing, storage, contracts, land tenure (DUAT), labor, and social/community aspects.
+  - Additional sections address:
+    - Contracts and formal relationships with smallholder farmers
+    - Land allocation and land-use history
+    - Input supply, costs, credit access, and reliability of inputs
+    - Market dynamics, processing/storage, buyer relationships, pricing, and risk mechanisms
+    - Company/market structure, trading networks, transport, storage capacity, and margins
+- Data collected and key variables of interest
+  - Village and participant identifiers; timing and rationale for starting/expanding soya production.
+  - Land tenure and land allocation (DUAT status, prior land use, expansion plans, conflicts).
+  - Farm practices and soil management (rotation, intercropping, inoculation, soil health changes, water/irrigation, pests).
+  - Input use and supply chains (fertilizers, pesticides, improved seeds, inoculants; suppliers; credit access; costs; seed/inputs origin).
+  - Production metrics (hectares under soy, yield, seasonality, post-harvest handling).
+  - Market dynamics (storage/processing, volumes, buyers, prices, negotiations, contracts, transportation, and market access).
+  - Social and environmental considerations (deforestation links, community benefits, and corporate/community relations).
+- Logistics and language considerations
+  - Fieldwork conducted with translator support (Portuguese to Elomwe).
+  - Data compiled in field notebooks and later transcribed into English for analysis.

@@ -1,0 +1,73 @@
+# Fish abundance, habitat, water quality, flow and climate data from English rivers,1975-2017.
+
+- Overview
+  - Purpose: A comprehensive dataset linking fish abundance with habitat, water quality, flow, and climate covariates to support exploration and data product creation.
+  - Geographic scope: England.
+  - Timeframe: Fish data spanning 1975-2017; site covariates updated to reflect data up to 2022.
+  - Data authors: Ainsworth, Nunn, Bachiller-Jareno, Rizzo, Scarlett, Antoniou, and colleagues.
+  - Funding: NERC Chempop grant NE/S000100/2.
+  - Licensing: NFPD data and RHS are open; Crown copyright and database rights; additional data sources with specific licenses.
+
+- Data content and structure
+  - Files and organization:
+    - CP_Fish_SiteVariables_region.csv: region-specific site covariates (18 variables) for individual fish sites.
+    - Fish_SiteID in site variables files matches Fish_SiteID in DataTable files and other related datasets (Hydrology, chemical determinands).
+    - Site and data tables are provided as regional files (Anglian, Midlands, North East, North West, Thames, Southern, South West); a separate Species table exists.
+  - Key covariates (site-level, upstream catchment context):
+    - HQA_Score and HMS_Score: Habitat Quality/Modification from River Habitat Survey (RHS).
+    - Fish_Altitude: elevation at site.
+    - Land use covariates (upstream catchment): LC_Woodland_Per, LC_Arable_Per, LC_Seminatural_Per, LC_Urban_Per; and corresponding Areas (km2) for Woodland, Arable, Semnatural, Urban.
+    - BFI: Base Flow Index (upstream hydrology).
+    - EDF_Mean, EDF_SD, EDF_Q90, EDF_Q95: Effluent Dilution Factor statistics (wastewater influence) derived from LF2000-WQX model.
+  - Temporal scope and linkage:
+    - Site variables are relatively time-invariant (region, catchment, river, HQA/HMS, land use context, etc.) and are linked to time-varying data in the DataTable files via Fish_SiteID.
+  - Data provenance:
+    - HQA/HMS: RHS survey data; site matching to fish sites via IRN extension; initial HQA data (1994) differs from later years; cross-year comparability protocols applied.
+    - Land use: CEH Land Cover Map 2015 (LCM2015) aggregated to 21 categories, then bundled into four macro-categories for analysis; upstream catchment calculations done in GRASS GIS and Python/DataLabs.
+    - Altitude: CEH IHDTM elevation (50 m resolution); extraction by ArcGIS; two values per site (cell center and bilinear interpolation average) with NoData handling.
+    - EDF: LF2000-WQX model for wastewater influence; sites linked to nearest river network reach; outputs include mean, SD, Q90, Q95 percentiles.
+  - Data processing tools and requirements:
+    - GIS: ArcGIS 10.x/Pro, GRASS GIS (r.accumulate), DataLabs for land-use extraction.
+    - Python 3: required for land use computations and EDF processing.
+    - Versioning: multiple dataset updates; notable change 2021-11-16 involved splitting site covariates (HQA/HMS/land use/BFI) from the main data table into regional site files (updated 2022-05-31 and 2022-08-12).
+
+- Methods and QA
+  - Data collection and linking:
+    - RHS habitat data (HQA/HMS) matched to the nearest fish site within a 5 km river section using ArcGIS IRN extension.
+    - Land use upstream proportions computed from LCM2015 and IHDTM; 21 categories collapsed into four macro-categories.
+    - Altitude derived from IHDTM with both cell-centre and interpolated values; NoData treated as 0 m where appropriate.
+    - EDF derived from LF2000-WQX; significant wastewater sources retained (top contributors by catchment).
+  - Data processing steps:
+    - RHS values taken as collected (no transformation beyond year-specific comparability protocols).
+    - Land use: calculated as percentages and areas upstream of each fish site; aggregated to four macro-categories; consistency checks on sums (near 100%).
+    - EDF: sites matched to LF2000-WQX network; percentages reflect long-term mean distributions; data include Mn, SD, Q90, Q95 summaries.
+  - Quality assurance:
+    - Site distances to RHS points checked (acceptable if <1 km).
+    - Volume of macro-category sums checked for precision (99.96–100.04% total).
+    - EDF gaps flagged when network omissions occurred; such sites left with no data for EDF fields.
+    - NoData handling for altitude tied to estuary or land below sea level (assumed 0 m).
+  - Documentation and contributors:
+    - Data checked by A. Nunn (14/7/2022).
+    - Involvement listed for sample collection, processing, analysis, and submission (Nunn, Ainsworth, Keller, Risso, Bachiller-Jareno, Eastman, Scarlett, Antoniou, Dean).
+
+- How to use and interpret the data
+  - Potential data products:
+    - Self-serve dashboards or pivot-table-like exploratory outputs enabling cross-site comparisons of fish metrics with habitat, land use, and water quality covariates.
+    - Analyses examining relationships between fish abundance and habitat quality/modification, land cover, altitude, baseflow, and wastewater influence.
+  - Access and licensing:
+    - Open access to NFPD fish data and RHS components; other ancillary layers (land cover, altitude, EDF) cited with their respective sources and licenses.
+    - Data linked via Fish_SiteID across regional site and data tables; cite dataset in research using the provided DOI.
+  - Practical notes:
+    - Land use and EDF data require GIS and Python tooling (ArcGIS, GRASS GIS, DataLabs, Python 3).
+    - Some sites could not be matched to RHS sites; missing RHS values are carried as gaps.
+    - Data are regionally organized; users should combine regional files through Fish_SiteID for cross-region analyses.
+
+- Dataset metadata and references
+  - DOI: 10.5285/b0afb78e-a0cb-4762-9220-659211ae3a5e
+  - Key sources cited for methods and models: Dawson et al. (2002); Gustard et al. (1992); CEH Land Cover Map 2015; Young et al. (2003); Williams et al. (2009).
+  - Related data links: NFPD fish data; CEH land cover map; CEH IHDTM elevation model; LF2000-WQX model.
+
+- Data-specific details (CP_Fish_SiteVariables_region.csv)
+  - Content: 18 variables per region, including Fish_SiteID, Fish_Name, Fish_River, Fish_Catchment, coordinates, HQA_Score, HMS_Score, Fish_Altitude, land-use percentages and areas, BFI, and EDF statistics (Mean, SD, Q90, Q95).
+  - Missing data code: -9999.
+  - Relationships: Fish_SiteID links to DataTable, Hydrology, and chemical determinand files; 1:1 mapping supports integrated analyses across data domains.

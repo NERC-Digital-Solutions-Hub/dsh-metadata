@@ -1,0 +1,23 @@
+# 25m raster
+
+- Creation and purpose: The 25m raster dataset was created by converting land parcels within the vector dataset into a 25m grid, with each cell recording the dominant land cover using LCM2000 Subclasses.
+- Coverage and metadata (Great Britain and Northern Ireland) – Table 1:
+  - Great Britain: 24,400 columns (width) × 48,400 rows (height); lower left easting 50,000 m; lower left northing 10,000 m; pixel size 25 m; coordinate system British National Grid; projection Transverse Mercator; spheroid Airy; datum OSGB 1936.
+  - Northern Ireland: 7,600 columns × 7,200 rows; lower left easting 180,000 m; lower left northing 280,000 m; pixel size 25 m; coordinate system Irish National Grid; projection Transverse Mercator; spheroid Airy Modified 1849; datum Ireland 1965.
+  - Note: The values refer to the lower left corner of the lower left pixel; for the pixel centre add 12.5 m to each value.
+- Data encoding for storage efficiency: LCM2000 Subclass codes (normally floating point with one decimal) are multiplied by 10 to store as unsigned 8-bit bytes (0–255). Example: Water (inland) Subclass 22.1 becomes 221.
+- 1km raster (Table 2) – creation and metadata:
+  - Created by summarising the 25m raster within a 1km grid.
+  - Great Britain: 700 columns × 1,300 rows; Northern Ireland: 500 columns × 500 rows.
+  - Pixel size: 1000 m; coordinate system: Great Britain = British National Grid; Northern Ireland = Irish National Grid.
+  - Projection: Transverse Mercator for both; spheroid: Airy (GB) / Airy Modified 1849 (NI); datum: OSGB 1936 (GB) / Ireland 1965 (NI).
+  - Note: For the pixel centre add 500 m to the lower left coordinates.
+- Subclass to Aggregate class crosswalk (Table 3):
+  - Provides the correspondence between LCM2000 Subclass and LCM2000 Aggregate class, along with attribute codes for both 25m and 1km representations.
+  - Includes a wide range of land-cover types (e.g., Sea/Estuary, Water (inland), Littoral/Saline/coastal types, various peat and heath habitats, arable and horticulture, urban/built-up, woodland types, and semi-natural grasslands).
+  - Example mappings (illustrative): Oceanic seas, Standing open water, Coastal categories, Coniferous/Broad-leaved woodland, Arable/cultivated classes, Built-up areas, Mountain/heath/bog classes, etc., with corresponding 25m codes and 1km codes.
+- Governance and data quality considerations for Data Stewards:
+  - Dual classification schemes (Subclass and Aggregate) require clear, persistent metadata and a maintained crosswalk (Table 3) to ensure consistent interpretation across datasets and time.
+  - Encoding decision (scaling Subclass codes by 10) must be documented for interoperability and downstream use.
+  - Cross-border metadata alignment is essential: GB uses OSGB 1936 and British National Grid; NI uses Ireland 1965 and Irish National Grid; harmonisation of coordinate systems, projections, and datums is important for combined analyses.
+  - Pixel-centre offset notes must be captured in metadata to avoid spatial misalignment during analysis or data integration.

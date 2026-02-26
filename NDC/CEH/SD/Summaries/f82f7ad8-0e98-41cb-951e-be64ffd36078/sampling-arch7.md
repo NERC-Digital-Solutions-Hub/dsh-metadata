@@ -1,0 +1,95 @@
+# Sampling Design
+
+- Study context and period
+  - Location: Gurue district, Zambezia province, Mozambique
+  - Timeframe: July 2015 to December 2015
+  - Purpose: Develop a land-scarcity gradient by selecting ten villages at different stages of land constraint with similar infrastructure, soils, rainfall, and vegetation
+
+- Participatory maps
+  - Process
+    - Village leader organizes a group in the village center
+    - Exercise led by a research assistant fluent in Elomwe
+    - Group discussions last 1–2 hours
+    - All items in the field protocol discussed and illustrated on the ground using natural materials
+  - Data produced
+    - Map layers corresponding to community boundaries, neighboring communities, streets, mountains/valleys, rivers, houses, fields, crops, subsistence and cash crops, fallow land, soil types, water sources, markets, schools, health facilities, churches/essential buildings, energy sources, forest products (timber, charcoal, honey, etc.), pests, devastators, and construction materials
+    - A legend system (Legend 1–3) and standard field prompts for consistent recording
+
+- Seasonal calendar
+  - Process
+    - Village leader and assistant conducted 1-hour group discussions following the field protocol
+  - Data produced
+    - Crop-specific calendars for subsistence and cash crops (e.g., maize, manioc, beans, vegetables, soya) detailing sowing, growing, and harvesting periods
+    - Questions covering cropland area, field measurement methods, land fragmentation (isolated vs. block fields), and cropland distribution over the year
+    - Additional prompts on land use timing and agricultural priorities
+
+- Trend analysis
+  - Process
+    - Village leader convened group discussions in the village center
+    - 1-hour group sessions guided by a Elomwe-speaking assistant and field protocol
+  - Data produced
+    - Year-specific discussions and ground illustrations on:
+      - When people returned after war, start of soya production, and other notable changes
+      - Changes in agricultural production, land availability, forest access, and wellbeing
+      - Migration trends, market access, and potential conflicts
+    - Cards used to discuss years/events and a stone-voting exercise to depict changes across topics:
+      - Agricultural production
+      - Land availability
+      - Forest and forest products
+      - Wellbeing
+      - Land allocation processes and vegetation conversion
+      - Preferred locations for commercial crops
+
+- Land allocation and vegetation change
+  - Topics covered
+    - How families obtain land/forest for new fields
+    - Equity of access (migrants, settlers, natives)
+    - Triggers for opening new land (production goals, soil fertility, land loss, economic capacity, tractor use)
+    - Types of vegetation converted to agriculture (native forest, secondary forest, shrub land, others)
+    - Preferred locations for growing commercial crops (most fertile land, newly opened land, proximity to home)
+
+- Village profiles and interviews
+  - Interview structure
+    - With village leader and/or key person
+    - Led by a researcher with Elomwe-speaking assistant
+    - Guideline-based covering:
+      - FOUNDATION: village foundation year, war-related displacement and return
+      - EDUCATION: schools, pupil numbers, attendance, origin of pupils, education levels
+      - HEALTH: main health issues, health centre, medicine access
+      - WATER: boreholes, location, water quality
+      - LAND: DUAT status, land conflicts, land constraints
+      - MARKET: nearest market, distance, frequency, principal products
+      - MIGRATION: migration trends, origins/destinations, reasons, demographic effects
+      - LIVELIHOOD ACTIVITIES: main activities (charcoal, agriculture, livestock), onset timing
+      - COMMUNITY ACTIVITIES: external actors’ involvement (charcoal, agriculture, livestock)
+  - Focus areas for soya and forest use
+    - Soya production: start time, production model, contracting company, extension/training, processing, conflicts, producer associations, prior land use and deforestation concerns
+    - Other forest products: types, origins, and market participation
+  - Change and drivers
+    - Social and environmental changes, drivers (deforestation, soil fertility, market access, climate factors)
+    - Implications for daily life, beneficiaries, and potential future village trajectories
+
+- Wealth ranking
+  - Procedure
+    - All households in each village ranked by wealth
+    - Conducted by researchers and local language-speaking assistant
+    - Participating group comprised of leaders (e.g., leader, secretario, regulo)
+  - Outputs
+    - Qualitative notes and a wealth categorization (Very poor, Poor, Middle, Rich)
+    - Assessment of mobility between categories and potential transitions
+
+- Data collection considerations for GIS specialists
+  - The study yields multiple GIS-relevant data types:
+    - Participatory map layers representing land use, settlements, infrastructure, and natural features
+    - Attribute-rich legend entries (descriptions, checks, notes) for map features
+    - Time-based data from seasonal calendars and trend analysis for temporal GIS analyses
+    - Village profiles and leadership interviews as structured attribute datasets
+    - Change over time indicators (agriculture, land, forest, wellbeing) suitable for time-series or multi-temporal mapping
+  - Data integration opportunities
+    - Combine participatory maps with official spatial data (boundaries, land tenure, infrastructure)
+    - Create thematic layers for subsistence vs. cash crops, land allocation, and forest products
+    - Use trend and wealth data to contextualize spatial patterns (e.g., land access, migration corridors)
+  - Practical considerations
+    - Language and protocol consistency (Elomwe) for reliable field data
+    - Standardized field prompts to ensure comparable map features across villages
+    - Documentation of foundation years, war impacts, and post-war changes to support historical GIS analysis

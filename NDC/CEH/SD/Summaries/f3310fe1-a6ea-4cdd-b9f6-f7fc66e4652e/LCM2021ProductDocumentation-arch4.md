@@ -1,0 +1,87 @@
+# The UKCEH Land Cover Map for 2021
+
+- Purpose and product scope
+  - User guide for UKCEH Land Cover Map 2021 (LCM2021), the ninth UK land cover map.
+  - LCM2021 comprises six geospatial datasets (three for Great Britain and three for Northern Ireland): a 10 m classified pixel dataset, a land parcel dataset, and a 25 m rasterised land parcel dataset. There are also 1 km summary products.
+  - Land cover is mapped into 21 UKCEH Land Cover Classes (based on Biodiversity Broad Habitats) with a view to long-term temporal consistency and change detection.
+  - The map is produced annually using automated methods to maximize temporal comparability and support change detection.
+
+- Data architecture and contents
+  - Datasets by region and type
+    - Great Britain (GB) and Northern Ireland (NI) each have:
+      - 10 m Classified Pixel dataset (classified from classification scenes)
+      - Land Parcel dataset (attributes derived from the 10 m pixels via the UKCEH Land Parcel Spatial Framework)
+      - 25 m Rasterised Land Parcel dataset (3-band rasters carrying per-parcel attributes)
+    - Additional products exist at 1 km resolution:
+      - Dominant cover and percentage cover products for both classes and aggregates.
+  - Spatial reference and extent
+    - GB: British National Grid (EPSG: 27700); NI: Irish Grid (TM75) (EPSG: 29903).
+    - Land parcel extent and minimum mapping unit (MMU) around 0.5 hectares.
+  - Classification outputs and attributes
+    - 10 m classified pixels: two-band raster (class id and class membership probability/confidence). Not generalized by the Land Parcel Spatial Framework to preserve fine details.
+    - 25 m land parcels: three-attribute rasters per parcel (dominant class, confidence, purity) and parcel-level metadata (gid, history, etc.).
+    - Land Parcel dataset includes per-parcel statistics such as class frequencies within parcels and aggregation information.
+  - Dataset governance and identifiers
+    - Unique parcel identifiers (gid) are provided, but note that LCM2021 parcel IDs do not match LCM2015 IDs due to reordering and index changes in the UKCEH Land Parcel Spatial Framework.
+
+- Methods: how LCM2021 is built
+  - Seasonal spectral information
+    - Seasonal Composite Images derived from Sentinel-2 (10 m) across four seasons (Jan–Mar, Apr–Jun, Jul–Sep, Oct–Dec) plus 10 context rasters to reduce spectral confusion.
+  - Context rasters
+    - Great Britain: height, aspect, slope; distance to buildings, roads, sea, freshwater; foreshore and tidal/water masks; woodland mask.
+    - Northern Ireland: height, aspect, slope; urban mask; distance to coast, freshwater, road; foreshore and tidal masks.
+  - Classification Scenes and processing
+    - GB uses a grid of classification tiles (~100 x 100 km) to create 32 Classification Scenes; NI uses a single 49-band scene (40-band Sentinel-2 + NI context rasters).
+    - Each Classification Scene is trained and classified independently.
+  - Bootstrap Training and Random Forest
+    - Bootstrap Training uses historic land cover maps (LCM2018–2020) to automatically generate training data, selecting parcels with >80% purity and consistent class across years.
+    - Training samples are drawn with replacement to balance class representation; a Random Forest classifier yields the 10 m Classified Pixel product.
+    - The process reduces need for costly field data, enabling annual production.
+  - Validation and accuracy
+    - Formal validation against 35,182 points shows an overall accuracy of 82.6% (95% CI: 82.19–82.99%) for full thematic detail.
+    - Validation for the 25 m Land Parcel rasterised product and parcel-level statistics is included; 10 m pixel validation is relative to parcel-based validation rather than pixel-level formal validation.
+  - Data products and accessibility
+    - The 10 m classified pixels preserve fine landscape features (narrow patches, small features) but are not generalized by the parcel framework.
+    - The 25 m rasterised parcels provide a consistent, change-detectable unit for time-series analyses and are paired with per-parcel attributes.
+    - 1 km products provide summary statistics suitable for broad-area analytics and policy-oriented uses.
+
+- Data quality, accuracy, and caveats
+  - Overall accuracy
+    - 82.6% accuracy at full thematic detail with 95% CI 82.19–82.99%.
+  - Scale and validation considerations
+    - Validation is per 25 m rasterised parcel data; 10 m classified pixels are not directly validated against the 10 m dataset (validation is against the parcel-based product).
+    - Some classes (notably various grassland, bog, fen, and coastal habitats) exhibit inter-class confusion; Appendix 4 contains detailed correspondence and producer/user accuracy metrics.
+  - Temporal dynamics and error interpretation
+    - Annual series help distinguish real change from random classification errors (random errors flicker over time; persistent changes indicate real surface change).
+  - Data limitations and interpretation guidance
+    - Saltwater vs freshwater separation is not always spectrally distinct; coastal classifications rely on context rasters and may confuse with non-vegetated surfaces near the coast.
+    - Some habitat classes have inherent spectral ambiguity (e.g., Bog, Heather, Acid Grassland, Fen/Marsh/Swamp) and may require additional training data for better separation.
+  - Compatibility and continuity
+    - LCM2021 builds on a lineage of LCM products since 1990; annual updates aim to maximize temporal compatibility, but users should be aware of adjustments in classifications and dynamic range as methods evolve.
+
+- How Data Leaders (data strategy and governance perspective) can use LCM2021
+  - System-level data integration
+    - The six datasets across GB and NI enable cross-region data integration with consistent class definitions, facilitating national-scale data governance and policy support.
+  - Data discoverability, metadata, and standards
+    - Datasets and attributes are documented (dataset names, coordinate systems, extents, pixel resolutions, band counts). Appendix 3 and related tables provide official dataset identifiers and metadata lineage.
+  - Change detection and time-series analysis
+    - The Bootstrap Training approach and annual production support robust change detection experiments and trend analyses in land cover over time.
+  - User needs and co-ownership considerations
+    - The 10 m pixel dataset preserves detailed landscape features useful for policy colleagues, planning, and landscape-scale analyses; the 25 m parcel dataset provides a stable, mappable unit for monitoring and reporting with associated confidence/purity metrics.
+  - Data quality governance
+    - Clear notes on validation, accuracy, and class confusion help data leaders set expectations and plan complementary data acquisitions or training data improvements where needed.
+  - Collaboration and standards alignment
+    - The relationship to BAP Broad Habitats is documented (Appendices 1–2), enabling alignment with biodiversity and habitat mapping though not a one-to-one mapping. This informs cross-domain data sharing and interpretation.
+
+- Practical takeaways for decision-makers
+  - LCM2021 provides a comprehensive, annually updated UK land cover map with 21 classes, useful for monitoring, reporting, and change detection, underpinned by transparent methodology (Bootstrap Training, Random Forest, Sentinel-2 Seasonal Composites, context rasters).
+  - The dataset suite supports both detailed, high-resolution analyses (10 m Classified Pixels) and stable, administrable time-series analyses (25 m Land Parcels, 1 km summaries).
+  - Users should account for potential class confusion in certain habitats and rely on parcel-level validation when interpreting granular results; for broad policy-level insights, 1 km products offer robust, aggregated information.
+  - The accompanying documentation provides guidance on color schemes (Appendix 5–6), dataset inventories (Appendix 3), and class-habitat relationships (Appendix 1–2), aiding visualization, interpretation, and governance.
+
+- Appendix and references at a glance
+  - Appendix 1–2: Notes on UKCEH Land Cover Classes and BAP Broad Habitats, including class descriptions and interpretation caveats.
+  - Appendix 3: Full list of LCM2021 datasets by region and product type.
+  - Appendix 4: Correspondence matrices and accuracy metrics by class (producer/user accuracies).
+  - Appendix 5–6: Recommended color recipes for displaying UKCEH Land Cover Classes (including color-blind friendly options).
+  - References: Key methodological and historical sources for the mapping approach and validation.

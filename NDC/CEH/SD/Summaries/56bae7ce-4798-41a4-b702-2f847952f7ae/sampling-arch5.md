@@ -1,0 +1,47 @@
+# Sampling Design
+
+- Period and location: May 2014 to October 2014; study site in Mabalane district, Gaza province.
+- Village selection: Seven villages chosen along a charcoal production gradient from degraded to intact forest; similar soils, rainfall, and vegetation to enable comparative analysis.
+- Purpose: To map and understand the charcoal value chain, its actors, and production dynamics; to identify governance, licensing, and market processes across the gradient.
+- Actor identification method: Snowball sampling to identify relevant actors across the charcoal supply chain.
+- Value chain actors identified:
+  - Village leaders
+  - Community foresters
+  - Village charcoal producers
+  - Charcoal association members and leaders
+  - Village committee members
+  - Migrant workers within village boundaries
+  - Truck drivers
+  - Forest officers at district level
+- Sampling strategy by actor group:
+  - Charcoal associations: Interview the association president in each village.
+  - Village charcoal producers: Focus group discussions with 5–7 producers per village (mix of association members and non-members).
+  - Charcoal camps: Randomly visit main production areas with a local guide; conduct short interviews with workers.
+  - Community forester: Personal interview in villages with a forester.
+  - Truck drivers: Interviews opportunistically at stops; drivers shown their licence book.
+  - Other actors: Meetings arranged as needed.
+- Data collection methodologies:
+  - Semi-structured interviews: Conducted in action sites (village center, forest camps, along roads).
+  - Focus group discussions: Centered in villages; typical duration 1–2 hours.
+  - Informal communication: Ongoing daytime interactions; researcher always accompanied by a translator (Portuguese to Changana); notes and later electronic transcripts prepared in office.
+  - Triangulation: Cross-checking information across multiple groups and perspectives to validate findings.
+- Interview content scope (categories covered by guidelines):
+  - Charcoal production history, production processes, forest access and distribution, licensing and control mechanisms, association activities, marketing and transportation, and prices.
+- Data collection guidelines (key elements observed in the field, provided in Portuguese):
+  - Charcoal associations: name, founding date, role, member count and quotas, licensing details, management plan specifications, production quantity and area, production sites, site quality, future production plans, decision-making on site selection, production outside licensed areas, extraction and production operations, buyer and transport details, price per sack, license/site control, and production season.
+  - Charcoal producers: eligibility and membership, site quality and control mechanisms, entry decisions, production volumes, licensing, transport and sale locations, pricing, and whether production occurred outside licensed areas.
+  - Charcoal camps: camp establishment and end dates, number of workers, origins, wages, employer details, annual production forecast, per-forno output, fuel requirements, work descriptions (cutting, packing, burning, bagging, transporting), and previous employment history.
+  - Community forester: name, community assignments, origin, tenure, role, recruitment, main problems (e.g., illegal cutting, unlicensed production), and salary details.
+  - Truck drivers: driver and license ownership details, licensing sources, license usage patterns, shipment quantities, origin and destination of charcoal, pricing, wages, checkpoints, penalties and fines, and frequency of fines.
+- Fieldwork logistics and language:
+  - Fieldwork conducted across village centers, forest camps, and transport routes.
+  - Translations from Portuguese to Changana used; translation accuracy and cultural context considered during interviews.
+  - Field notes kept in notebooks; electronic transcripts prepared after fieldwork.
+- Data management and integrity considerations for Data Stewards:
+  - Documentation: clear traceability of interviewee roles, locations, dates, and languages; link data to specific actors and sites.
+  - Metadata needs: capture sampling period, site characteristics, actor categories, data collection instruments, and translation notes.
+  - Data quality: use of triangulation to validate information; standardized interview guides across villages and actor types.
+  - Privacy and governance: sensitivity around licensing, pricing, and individual identities; anonymization and access controls recommended for data sharing.
+  - Interoperability: structure of data aligns with value-chain components (association, producers, camps, foresters, drivers) to facilitate future integration with other datasets.
+- End notes:
+  - The study provides rich qualitative and structured data points on governance, licensing, and operations across the charcoal value chain, suitable for policy analysis, governance improvement, and data stewardship of socio-environmental datasets.

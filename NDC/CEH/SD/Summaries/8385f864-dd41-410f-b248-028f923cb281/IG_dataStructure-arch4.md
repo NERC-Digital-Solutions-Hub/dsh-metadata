@@ -1,0 +1,45 @@
+# ECN Ground Beetles Dataset (Pitfall Trap Monitoring)
+
+- Overview
+  - Originator: ECN Data Centre (Centre for Ecology and Hydrology), with a dedicated site: http://data.ecn.ac.uk
+  - Owners: UK Environmental Change Network (ECN) programme, funded by a consortium of UK government departments/agencies (list includes Defra, Natural England, NERC, Scottish Government, etc.)
+  - Acknowledgement: Users should acknowledge ECN data usage and send one reprint of any publication citing ECN data.
+- Data governance and usage
+  - ECN maintains standard operating procedures to ensure data comparability across sites; implementers should consult the accompanying ig.pdf for data collection methods.
+  - Usage notes specify focus on ground beetles (Carabidae) using pitfall traps; data are collected fortnightly from May to October; use accompanying quality information when using data.
+- Data collection protocol
+  - Primary activity: monitor abundance of ground predators (Carabidae) via pitfall traps.
+  - Temporal cadence: fortnightly sampling from May through October.
+  - Quality considerations: data downloads include quality codes; use the quality information to assess data reliability and context.
+- Data structure and download
+  - Core dataset fields in downloads:
+    - SITECODE: unique ECN Site code
+    - LCODE: location ID (unique within site)
+    - SDATE: sampling date
+    - TRAP: trap number
+    - FIELDNAME: variable measured (taxon/quality field)
+    - VALUE: measured value
+    - TYPE: additional metadata for specific species (e.g., Pterostichus madidus) such as gender and leg colour morphs (M/F/R/B)
+  - Notable taxa encoding: FIELDNAME includes quality codes (Q1–Q8) and taxon entries (e.g., 6453 2714 Pterostichus madidus; rank indicates species/genus level)
+  - Identifiers like UU (Unidentified) and XX (No ground beetles present) are used to indicate ambiguous or absent data.
+- Supporting documentation
+  - ECN_IG2.csv: trap-out dates (FROMDATE, SDATE) and site/location codes
+  - ECN_IG3.csv: habitat descriptions (HABDESC) by site/location
+  - ECN_IG_qtext.csv: site-manager quality text additions; quality codes (and 999 for unusual events) explained; text viewable via accompanying quality information file
+- Site codes and locations
+  - Twelve ECN sites with codes T01–T12 (e.g., Drayton, Glensaugh, Hillsborough, Moor House, North Wyke, Rothamsted, Sourhope, Wytham, Alice Holt, Porton Down, Snowdon, Cairngorms)
+  - Each site includes precise geographic coordinates; additional site information available in the CEH catalogue
+  - Explanatory link for site information: https://catalogue.ceh.ac.uk/id/813712d4-d1624ede-aff8-cf1c337bdc27
+- Variables and taxonomy reference
+  - FIELDNAME mappings include Q1–Q8 quality code fields and taxonomic data
+  - Taxa are organized by genus and species groups (e.g., Cicindela, Pterostichus, Carabus, Bembidion, Amara, Harpalus, etc.), with many species listed under each genus
+  - Reference table is extensive, covering dozens of genera and hundreds of species; includes codes for taxon identity confidence (e.g., taxon identified with high/medium/low confidence)
+- Quality codes and data quality
+  - Quality Code definitions (e.g., 100, 101, 102, …, up to 999)
+  - 999 indicates an unusual event requiring textual explanation
+  - Codes describe issues such as sample loss, contamination, equipment failure, environmental interference, or data validation concerns
+- Access and usage notes for Data Leaders
+  - Dataset is designed to enable cross-site comparisons through standardized protocols and metadata
+  - Comprehensive metadata and supporting files enhance discoverability and contextual understanding (habitat, trap timing, quality context)
+  - Data provenance and governance support accountability, with clear acknowledgement requirements and publication contact expectations
+  - Site-level coordinates and habitat information support regional analysis and data integration with broader environmental change datasets

@@ -1,0 +1,35 @@
+# Introduction to the Database Catalogue
+
+- Purpose and scope
+  - Describes the Pontbren Database: instrumentation, data files, organization, and quality assurance processes to support users.
+  - Aims to enable discovery, reuse, and reliable analysis across multiple data domains and sites.
+- Data organization and access
+  - Files stored in type-specific directories; most data as text (.txt) split into six-month blocks.
+  - File names indicate collection dates; folders describe contents and instrumentation layouts.
+- Metadata and quality assurance
+  - Appendices provide QA coding schemes; QA codes accompany data points where available.
+  - Appendices A–D cover borehole logs, neutron probe logs, and field equipment/methods in detail.
+- Core data domains (data areas and structure)
+  - AWS (Automatic Weather Station) and bowl site runoff data
+  - Groundwater (boreholes with Diver transducers and barometric adjustment)
+  - Hillslope study site runoff and soil water tension data
+  - Llyn Hir study site soil water tension data
+  - Land use manipulation plots
+  - Neutron probe soil moisture data
+  - Rain gauge data (tipping bucket and storage gauges)
+  - Field diaries (field notes and data-collection issues)
+  - Streamflow (multiple sites with Starflow and other gauging approaches; calibration against manual measurements)
+- Data organization details
+  - Domain data are categorized by site and measurement type, with subfolders for instruments (e.g., weirs, tensiometers, boreholes).
+  - Metadata and description aids (figures, field diaries) help interpret anomalies and instrument layouts.
+- Data quality, standards, and caveats
+  - QA codes distinguish good, questionable, in-calibration, faults, and specific issues (sensor problems, calibration concerns, etc.).
+  - Gaps can arise from evaporation losses, device damage, and calibration adjustments; some data are patchy or lower confidence.
+- Practical takeaways for Data Leaders
+  - Governance and strategy: implement consistent cross-domain data governance; use QA codes to flag quality and filter data appropriately.
+  - Data discovery and usability: maintain comprehensive metadata (logs, boreholes, neutron probe details) to support reproducibility; ensure descriptive folder structures and clear file naming for discoverability.
+  - Data interoperability and standards: align units and calibration approaches across datasets; document site-specific calibration parameters and curves.
+  - Collaboration and reuse: the catalogue supports cross-site analyses and partnerships; extend communities of practice to strengthen standards.
+  - Mitigating data gaps: acknowledge access limitations and sensor issues; plan targeted data collection or imputation where appropriate.
+- Additional content and context
+  - The document includes detailed Equipment & Methods tabs, region-specific borehole logs (NP20–NP23) with soil descriptions and sampling details, and an Appendix D with streamflow gauging site measurements.

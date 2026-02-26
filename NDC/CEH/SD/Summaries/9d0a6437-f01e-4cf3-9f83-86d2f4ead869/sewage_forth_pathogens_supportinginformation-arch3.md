@@ -1,0 +1,31 @@
+# What has been recorded and what form does the data take?
+
+- Study focus: Data recorded to assess whether sewage-associated plastic waste acts as reservoirs for faecal bacteria, potential human pathogens, and antimicrobial resistance genes.
+- Data assets: Ten CSV files containing measurements across water, plastic waste, sand, wipes, seaweed, and antibiotic resistance data.
+  - Water_Background_Sewage_Pathogens.csv
+  - Plastic_Waste_Sewage_Pathogens.csv
+  - Sand_Background_Bacterial_Concentrations_Sewage_Pathogens.csv
+  - Wipes_Dry_Weight_Sewage_Pathogens.csv
+  - Sand_Dry_Weight_Sewage_Pathogens.csv
+  - Seaweed_Dry_Weight_Sewage_Pathogens.csv
+  - Enterococcus_Concentrations_Sewage_Pathogens.csv
+  - E_coli_Concentrations_Sewage_Pathogens.csv
+  - Vibrio_Concentrations_Sewage_Pathogens.csv
+  - Minimum_Inhibitory_Concentrations_Sewage_Pathogens.csv
+- Data completeness: Missing data indicated as 'ND' where applicable; data quality checks performed for anomalies and value ranges.
+- Data contents overview:
+  - Water_Background_Sewage_Pathogens: Concentrations of E. coli, Vibrio, and Enterococcus per site per replicate (CFU per 25 ml).
+  - Plastic_Waste_Sewage_Pathogens: Data on the weight of plastic collected per site.
+  - Sand_Background_Bacterial_Concentrations_Sewage_Pathogens: Bacterial concentrations in sand per site.
+  - Wipes_Dry_Weight_Sewage_Pathogens: Dry weight measurements of wet wipes per site.
+  - Sand_Dry_Weight_Sewage_Pathogens: Dry weight measurements of sand per site.
+  - Seaweed_Dry_Weight_Sewage_Pathogens: Dry weight measurements of seaweed per site.
+  - Enterococcus_Concentrations_Sewage_Pathogens: Enterococcus concentrations on plastic per site.
+  - E_coli_Concentrations_Sewage_Pathogens: E. coli concentrations on plastic per site.
+  - Vibrio_Concentrations_Sewage_Pathogens: Vibrio concentrations on plastic per site.
+  - Minimum_Inhibitory_Concentrations_Sewage_Pathogens: MIC data for colonies isolated from seaweed, wipes, and cotton buds across antibiotics.
+- Data structure notes:
+  - Site and Replicate identifiers common across datasets.
+  - Units include CFU per 25 ml, CFU per 5 ml, CFU per 1 g wet wipe, CFU per 100 g dry weight, etc.
+  - MIC data include antibiotics: amoxicillin, ampicillin, streptomycin, cephalexin, tetracycline (ten concentrations ranging from 256 µg/mL to 0.5 µg/mL).
+- Data provenance: Datasets align with a study on sewage-associated plastics and microbial hitchhikers, linked to grant-funded projects (NERC/UKRI context mentioned in accompanying notes).

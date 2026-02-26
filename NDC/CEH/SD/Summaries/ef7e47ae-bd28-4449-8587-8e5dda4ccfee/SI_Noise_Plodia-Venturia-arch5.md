@@ -1,0 +1,38 @@
+# Brief description of the project, experimental design and data recorded
+
+- Focus: Investigates how coloured environmental variation (temporal structure) in temperature affects life history and population dynamics in Plodia interpunctella (host) and Venturia canescens (parasitoid) using laboratory microcosms and controlled life-history assays.
+- Colour treatments: Blue (rapid fluctuations), Red (slow fluctuations), White (random fluctuations), plus Constant (CST) at 26°C.
+- Temperature regime: Mean 26°C; coloured series fluctuate 20.9–30.6°C daily with AR processes to create 458-day series; white AR(0), blue AR(-0.70), red AR(0.70).
+- Experimental scope:
+  - Life history experiment: single generation for unparasitized and parasitized Plodia larvae under seven temperature treatments.
+  - Microcosm experiment: ~7 host generations over ~310 days in four replicates per treatment; two microcosm types with and without parasitoids (Pi vs Pi-Vc).
+  - Bt infection: Bacillus thuringiensis outbreak from week 34 leading to partial collapse and eventual termination; infection status tracked and data post-infection flagged or removed for certain analyses.
+- Data collection and structure:
+  - Life history data: For Plodia and Venturia, includes development times, survival, fecundity, body size proxies, mating pairs, egg counts, and timing of emergence; extensive per-individual records and timing metadata.
+  - Microcosm data: Population counts (live hosts, parasitoids, instars, pupae), weekly monitoring, diet replacement details, and sampling sessions for body size and fecundity.
+  - Common garden: Host eggs from microcosms tested under constant 26°C to assess potential transgenerational effects on life-history traits.
+  - Body size and fecundity datasets: Daily/weekly fecundity, leg length as body size proxy, and associated sampling metadata.
+  - Parasitism data: Outcomes of Venturia parasitism (host and/or parasitoid emergence, DD failures), parasitoid leg length measurements.
+  - Temperature metadata: Temperature-time-series data documenting daily temperature values, treatment labels, and fluctuation type.
+- Datasets included:
+  - Plodia-life-history-data_Noise.csv: Individual-level life-history traits across 7 treatments (CST, B1, B2, R1, R2, W1, W2) with fields such as egg stage duration, juvenile duration, adult lifespan, fecundity, leg length, mating pairs, and sampling times.
+  - Venturia-life-history-data_Noise.csv: Parasitoid-host life-history with parasitism timing, outcomes, adult lifespan, leg measurements, and cohort details.
+  - Pop-count-data_Noise.csv: Weekly population counts for Pi and Pi-Vc microcosms across treatments, with infection status and post-infection periods; includes population codes and replication info.
+  - Plodia-body-size-fecundity-data_Noise.csv: Sampling-session data linking population, individual, sex, fecundity across time, and leg length.
+  - Venturia-body-size-data_Noise.csv: Parasitoid body size data linked to infection status and sampling session.
+  - Plodia-common-garden_Noise.csv: Common garden results for life-history traits of host eggs from microcosms, including egg stage durations, adult emergence, and leg measurements.
+  - Temperature-time-series_Noise.csv: Detailed temperature time-series with date, day, temperature, and series/type labels.
+- Metadata and variable conventions:
+  - Core categorical fields: Treatment (7 levels), Colour (CST, B, R, W), Series (replicates), Population/Microcosm codes, Species (Pi vs Pi-Vc).
+  - Continuous measurements: Temperatures (°C), lengths (mm), masses (mg), durations (days), fecundity counts, lifespan days.
+  - Sampling events: Dates of leg photos, adult emergence, parasitism, and other key events; Time points for population samplings.
+- Data governance and quality control:
+  - Datasets were checked for entry errors; outliers rechecked during initial analysis.
+  - Caution advised for post-infection data: remove post-infection data from infected populations when analyzing population dynamics; use week 39 data for population counts and fecundity/body size where possible; week 41 data in Red treatments should be used with care due to reduced sample sizes.
+- Practical notes for data stewardship:
+  - Data are spread across multiple interrelated CSV files with many cross-references (Treatment, Colour, Series, Population, Individual, Week, Time point, etc.); ensure consistent keys when integrating datasets.
+  - Documentation includes comprehensive data dictionaries (per-file variable lists) and explicit notes on experimental constraints (Bt outbreak, infection status, non-infected replicates, sample sizes in certain treatments).
+  - References provided for methodological background on temperature spectral mimicry, host-parasitoid dynamics, and Bt infection dynamics.
+- Relevance for reuse:
+  - Rich, multi-dimensional dataset suitable for analyses of how coloured environmental variation affects life-history traits, host-parasitoid interactions, population dynamics, and potential transgenerational effects under controlled experimental conditions.
+  - Clear metadata and structured data dictionaries support discoverability, reproducibility, and data sharing within large dataset repositories.

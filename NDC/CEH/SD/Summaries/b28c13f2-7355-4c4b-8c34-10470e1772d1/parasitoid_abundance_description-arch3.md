@@ -1,0 +1,34 @@
+# Description, Experimental Design and Collection
+
+- Purpose: Data on the abundance of parasitoid wasps (Diaeretiella rapae and others) collected from sticky traps to study effects of air pollutants on insect-mediated processes in Brassica napus within Free-Air Diesel and Ozone Enrichment (FADOE) rings.
+- Experimental context: FADOE configuration and quality control details are described in the cited methodology reference.
+- Sampling timeframe and layout:
+  - Conducted over two years (Year 1 and Year 2) with three experimental runs per year.
+  - Four pollution treatments: diesel exhaust (D), ozone (O3), diesel exhaust plus ozone (D+O3), and control (CON; natural air).
+  - Two experimental rings assigned to each pollution treatment (total of four treatments × two rings = 8 rings).
+  - Rings located in a wheat field in 2018, moved to an adjacent field in 2019.
+  - Field coordinates: 2018 field near latitude 51.482853, longitude -0.897749; 2019 field near latitude 51.482374, longitude -0.895855.
+- Biological design:
+  - Brassica napus plants organized in groups around traps with varying aphid pressures:
+    - Inoculation with 50 aphids, 10 aphids, or 0 aphids per treatment.
+  - One sticky trap placed on a stick surrounded by plant groups for each run:
+    - Run 1: groups of four plants
+    - Run 2: groups of seven plants
+    - Run 3: groups of four plants
+- Sampling and data collection:
+  - Sticky traps collected seven weeks after introduction, with a second set collected after one additional week.
+  - Traps frozen at -20 °C between collections; parasitoids identified under a microscope.
+  - Parasitoids categorized into two groups: Diaeretiella rapae (D_rapae_counts) and other parasitoids (Others_counts).
+  - Abundances counted per trap; data pooled by Treatment, Ring, and Year for each Run.
+  - Derived metric: Percentage_D_rapae = (D_rapae_counts / (D_rapae_counts + Others_counts)) × 100.
+- Data structure and outputs:
+  - Primary counts: D_rapae_counts, Others_counts (per trap).
+  - Derived metric: Percentage_D_rapae (per Treatment per Ring per Year).
+  - Metadata fields referenced: Year, Ring, Pollutant, Treatment, Run, and the two count variables plus the percentage.
+- Data handling and quality control:
+  - Data quality controls are described in the FADOE methodology reference.
+  - Identification and counting performed via microscopic analysis; standardization and pooling decisions applied to produce per-Treatment, per-Ring, per-Year summaries.
+- Relevance and notes for monitoring frameworks:
+  - Demonstrates a designed monitoring experiment linking environmental pollutants to ecological service providers (parasitoids) via structured replication and treatment controls.
+  - Highlights data management needs common to monitoring frameworks: clear metadata (Year, Ring, Pollutant, Treatment, Run), data pooling rules, data storage (trapped samples stored at -20 °C), and explicit QC references to ensure data quality and comparability across years.
+  - Acknowledges dependence on the original methodology for quality control details and the potential need for data sharing and metadata completeness to enable broader reuse.

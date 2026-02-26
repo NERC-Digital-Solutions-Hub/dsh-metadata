@@ -1,0 +1,25 @@
+# Weekly water quality monitoring data for the River Thames (UK) and its major tributaries (2009-2013): the Thames Initiative research platform
+
+- Scope: Dataset describing water chemistry from five rivers receiving sewage effluent, collected to study environmental dissemination of antimicrobial resistant bacteria and genes, with nutrients measured to assess sewage effluent impact.
+- Temporal and spatial design:
+  - Sampling across upstream (10 m and 100 m), effluent (0 m), and downstream (10, 100, 250, 500, 1000 m) relative to the outfall.
+  - Three sampling rounds to capture seasonal variation (Feb/Mar, Jun/Jul, Oct/Nov) in 2017.
+- Data collection and handling:
+  - Field collection using clean bottles; subsampling for solids, chlorophyll, pH/alkalinity, total metals, total phosphorus; in-field filtration for dissolved analytes; field temperature recorded; samples kept in the dark and returned to the lab within 6 hours.
+  - Bottles acid-washed; strict handling to minimise degassing and degradation; storage at 4°C in the dark until analysis.
+- Quality control and QA:
+  - Analytical methods calibrated against Wallingford standards; inclusion of Aquacheck QC standards (ISO/IEC 17043 accredited); blind QA checks (z-scores) to verify accuracy.
+  - QC batches rerun if deviations >10% from assigned value; data omitted if instrument problems prevented timely analysis.
+  - Documentation of data accuracy, limits of quantification, and uncertainties in supplementary materials (Table S1 in Bowes et al., 2018).
+- Analytical methods (key assays):
+  - Total Phosphorus (TP) and Total Dissolved Phosphorus (TDP) via persulfate digestion and colorimetric detection.
+  - Soluble Reactive Phosphorus (SRP) via phosphomolybdenum-blue method.
+  - Ammonium via indophenol-blue colorimetric method.
+  - Dissolved Organic Carbon (DOC) and Total Dissolved Nitrogen (TDN) using Elementar Vario Cube.
+  - Major dissolved ions (F, Cl, NO2, NO3, SO4) by ion chromatography.
+- Data structure and units:
+  - CSV file with rows as samples; columns include: SampleID, Date, Location, Latitude, Longitude, Site_distance (upstream negative, downstream positive), Day, Month, Year, and concentrations for SRP, TDP, TP, Dissolved Ammonium, Dissolved Fluoride, Dissolved Chloride, Dissolved Nitrite, Dissolved Nitrate, Dissolved Sulphate, Total Dissolved Nitrogen, Dissolved Organic Carbon, etc.
+  - Units standardized (e.g., μg/L for phosphorus forms; mg/L for ammonium and ions; mg/L for DOC/TDN as applicable).
+- Data provenance and references:
+  - Primary methodological framework described in Bowes et al. (2018) with data supporting the Thames Initiative data platform.
+  - Associated methodological references for phosphorus analysis and QA protocols provided in the same work.

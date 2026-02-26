@@ -1,0 +1,21 @@
+# Experimental design/collection method
+
+- Purpose and approach
+  - Investigates host specificity of Maculinea rebeli by comparing the proportion of caterpillars adopted into different Myrmica nests with the proportion that survived to adulthood or pupation.
+  - Data comprise adult estimates of M. rebeli obtained by recording eclosing individuals along stratified transects and identifying nests after confirming empty pupal cases.
+- Study scope and timing
+  - One population studied near Przemyśl, southeast Poland.
+  - Data collected over four years: 2001, 2003, 2004, and 2005.
+- Adoption assessment method
+  - Proportion of larvae adopted estimated by baiting for ants beneath stratified random samples of gentians and by counting the number of eggs on each plant.
+- Data sampling notes and limitations
+  - Nests were sampled randomly and are distinct within years.
+  - No active measures to prevent sampling the same nest in subsequent years; nests may vacate and move.
+  - It cannot be guaranteed that the same ants were observed across years, though this is unlikely.
+- Datasets
+  - sabuleti.csv
+    - Data recorded from Myrmica sabuleti nests.
+    - Columns: Observation (ID), Year, Frequency (number of Maculinea rebeli found in nests).
+  - scabrinodis.csv
+    - Data recorded from Myrmica scabrinodis nests.
+    - Columns: Observation (ID), Year, Frequency (number of Maculinea rebeli found in nests).

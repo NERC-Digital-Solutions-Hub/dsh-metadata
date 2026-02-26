@@ -1,0 +1,48 @@
+# Vegetation work
+
+- Field design and scope
+  - Four 50 cm x 50 cm quadrats per site, placed randomly
+  - Measurements span vegetation structure, soil properties, and greenhouse gas fluxes
+- Vegetation measurements
+  - Visual estimation of percent cover for each species
+  - Species richness and percent cover of grasses and forbs aggregated from the four quadrats
+  - Biomass: biomass clipped at ground level from each quadrat, dried at 80°C for 24 hours, weighed; site biomass calculated by summing quadrats (g biomass m^-2)
+  - Diversity: Shannon’s index (Shannon & Weaver, 1963)
+- Net ecosystem CO2 exchange, photosynthesis and respiration
+  - Four plastic collars (25 cm diameter) embedded in soil with infrared gas analyser (EGM-4 IRGA)
+  - CO2 flux measured over two minutes; dark flux obtained with reflective cover
+  - Simultaneous measurements of soil moisture, temperature (WET sensor), and PAR (photosynthetically active radiation) in triplicate
+  - CO2 flux converted from chamber measurements to mg m^-2 h^-1 using chamber volume, area, and temperature/pressure terms
+- Greenhouse gases (CH4, CO2, N2O)
+  - Reflective-covered chambers in collars; air samples collected at 0, 10, 20, 30 minutes
+  - Gas concentrations measured by Gas Chromatograph (GC)
+  - Final gas fluxes calculated using the same framework as IRGA-derived CO2
+- Soil sampling and processing
+  - Six soil samples per site, collected with a 4 cm auger to ~10 cm depth
+  - Samples sieved to 2 mm; stored at 5°C until processing
+- Bulk density
+  - Two cores per site (0–5 cm and 5–10 cm), dried at 80°C for 48 hours
+  - Bulk density calculated as mass/volume
+- pH and moisture
+  - pH: 5 g soil + 5 ml water (1:1) measured with pH meter
+  - Volumetric moisture content: fresh soil weighed, dried at 80°C for 48 hours; moisture calculated as proportion of wet weight
+- Water extractable nitrogen (N) and carbon (C)
+  - 5 g soil with 25 ml Milli-Q water, shaken 1 hour; filtrate analyzed for DIN (NH4, NO3, total N) and DOC
+  - Adjustments for soil moisture to express DIN/DOC as mg/kg
+- KCl extractable N and potential mineralisation
+  - 5 g soil with 25 ml 1 M KCl, shaken 1 hour; filtrate analyzed for DIN
+  - Extracts adjusted for moisture; additional 5 g soil incubated 14 days at 25°C for mineralisation (NO3 + NH4) calculation
+- Microbial biomass
+  - Fumigation (chloroform) method to lyse cells; unfumigated comparison
+  - Extraction with 25 ml 0.5 M K2SO4; DIN, PO4, and dissolved carbon measured
+  - Data corrected for water content and extraction efficiency using KE C and KEN factors (0.35 and 0.54)
+- Calculations and units
+  - Biomass expressed as g m^-2; CO2 and other gas fluxes expressed as mg m^-2 h^-1
+  - Nutrient concentrations standardized to dry soil weight (mg/kg)
+  - Mineralisation expressed as g m^-2 day^-1
+- Data quality and standardization considerations for GIS
+  - Multi-scale measurements (quadrats, collars, cores) suitable for layered GIS datasets
+  - Explicit units and aggregation steps enable consistent merging with other spatial datasets
+  - Need for consistent sampling dates, coordinates, and metadata to support map-based analyses
+- References
+  - Shannon, C.E. and Weaver, W. (1963) The Mathematical Theory of Communication, University of Illinois Press

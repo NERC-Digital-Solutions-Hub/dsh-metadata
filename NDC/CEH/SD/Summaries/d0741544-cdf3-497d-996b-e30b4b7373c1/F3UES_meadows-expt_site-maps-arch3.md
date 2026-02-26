@@ -1,0 +1,31 @@
+# Supplementary supporting document for dataset: Biodiversity responses to vegetation height and diversity in perennial meadow plantings in two urban areas in the UK
+
+- Purpose: Provides maps of field sites and plot layouts for the experimental biodiversity dataset examining responses to vegetation height and diversity in perennial meadow plantings across two urban UK areas.
+- Relationship to main data: Primary documentation for the experiment and data files is in a separate file (F3UES_meadows-expt_supporting-document-for-data.rtf).
+- Scope of content:
+  - Maps and layouts for all field sites involved in the study.
+  - Plot-level organization and assignment schemes used in the experiment.
+- Locations covered (sites and notable features):
+  - Bedford – Chiltern Avenue
+    - 10 plots (Plot 1–Plot 10) with corresponding treatments.
+  - Bedford – Brickhill Heights (additional plots at Robin Hill)
+    - 10 plots with a treatment scheme; includes “additional plots at Robin Hill.”
+  - Bedford – Robin Hill (additional plots at Brickhill Heights)
+    - 10 plots with a treatment scheme; includes “at Brickhill Heights.”
+  - Bedford – Goldington Green
+    - 7 plots listed with treatment assignments including a CONTROL.
+  - Bedford – Jubilee Park
+    - 10 plots with a detailed treatment mapping (Plots 1–10).
+  - Luton – Bramingham Rd
+    - 10 plots with a treatment mapping, including a diverse set of treatments and a Control.
+- Plot and treatment structure:
+  - Each site includes a numbered Plot framework (Plot 1 to Plot 10, or Plot 1–10) and a corresponding Treatment designation.
+  - Treatments are coded with letters (e.g., A, B, C, D, E, F, G, H, I) and include explicit CONTROL in several sites.
+  - Some sites include references to “additional plots” or placements at partner locations (e.g., @Robin Hill) to indicate extended layouts.
+- Data and metadata considerations:
+  - Emphasizes the need for clear, plot-level documentation to enable reproducibility and future data reuse.
+  - The document signals that primary data documentation is provided separately, underscoring the importance of linking layout information with dataset metadata.
+- Relevance for monitoring frameworks:
+  - Provides the structural basis for standardized biodiversity monitoring across multiple urban sites.
+  - Facilitates consistent interpretation of vegetation height and diversity treatments in perennial meadow plantings.
+  - Supports transparency and governance in data sharing by detailing plot layouts and treatment mappings, aligning with data quality and metadata practices.

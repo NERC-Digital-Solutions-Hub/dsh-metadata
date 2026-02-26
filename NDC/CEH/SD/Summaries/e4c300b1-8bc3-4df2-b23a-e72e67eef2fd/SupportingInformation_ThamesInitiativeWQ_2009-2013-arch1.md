@@ -1,0 +1,41 @@
+# Brief description of the dataset
+
+- Scope: weekly water quality monitoring data from seven sites along the River Thames and fifteen major tributaries, March 2009 to February 2013; accompanying daily river flow data.
+- Parameters measured (original and derived): phosphorus species (TP, TDP, SRP), nitrogen species, dissolved reactive silicon, water temperature, pH, Gran alkalinity, suspended solids, chlorophyll a, major dissolved anions (fluoride, chloride, bromide, sulfate) and cations (sodium, potassium, calcium, magnesium, boron); dissolved and total iron, manganese, zinc, copper (Aug 2010–Feb 2013); flow data (mean daily flow).
+- Sampling and laboratory methods:
+  - Bulk samples collected weekly (Monday/Tuesday) from main flow; subsamples filtered in the field (0.45 μm).
+  - pH measured with Radiometer pH meter; calibrated with buffers (NIST-traceable).
+  - Gran alkalinity determined by acidimetric titration to pH 4 and 3.
+  - Suspended solids by filtration/drying and reweighing.
+  - Chlorophyll a by filtration, acetone extraction and spectrophotometric measurement.
+  - TP and TDP by acidified persulphate digestion; colorimetry for phosphorus; SRP by Murphy–Riley method.
+  - Dissolved reactive silicon by molybdate method with reduction to silicomolybdenum blue.
+  - Ammonium by indophenol-blue method.
+  - DOC and TDN by Thermalox analyzer (before Dec 2010) and Elementar Vario Cube (from Jun 2011).
+  - Major dissolved cations/anions by ICP-OES and ion chromatography, respectively.
+  - All analyses (except suspended solids) aligned with Aquacheck QC standards.
+- Data format and units:
+  - Date/time in day/month/year and hour:minute; units vary by parameter (e.g., TP, TDP, SRP in μg P/L; nutrients in mg/L or μg/L; chlorophyll in μg/L; flow in m^3/s; pH units not shown; temperatures in °C).
+  - Concentrations for dissolved vs total metals derived from filtered vs unfiltered samples.
+- Spatial data and site-specific notes:
+  - Most sites near Environment Agency gauging stations; Jubilee River flow data from Windsor (downstream amalgamated flow), several sites with interpolated flows, others with upstream gauging data.
+  - Gauging station details provided in the CEH Thames Initiative SamplingSiteLocations file.
+- Data provenance and quality assurance:
+  - Sampling and analytical methods described with references to standard method papers.
+  - Daily flow data sourced from National River Flow Archive; QA aligned via reference standards.
+- Data usability and caveats:
+  - DOC method change mid-project (Thermalox before Dec 2010; Elementar after), which may require harmonization for long-term analyses.
+  - Interpolated or upstream/downstream flow data at some sites; ensure alignment of flow data with corresponding sampling sites.
+  - Some sites have flow data that are not from the exact monitoring location (requires careful matching).
+- Potential analyses for analysts:
+  - Cross-site and temporal trends in phosphorus forms (TP, TDP, SRP) and chlorophyll as indicators of eutrophication risk.
+  - Nutrient–flow relationships and seasonal cycles (e.g., nutrient concentrations vs. mean daily flow).
+  - Nutrient ratios (e.g., TP:TC, SRP vs chlorophyll) to infer limiting nutrients.
+  - Comparative analyses of dissolved metals over time (2010–2013) and their relation to other water quality parameters.
+- References for methods:
+  - Eisenreich et al. 1975
+  - Leeks et al. 1997
+  - Marker et al. 1980
+  - Mullin & Riley 1955
+  - Murphy & Riley 1962
+  - Neal et al. 2000

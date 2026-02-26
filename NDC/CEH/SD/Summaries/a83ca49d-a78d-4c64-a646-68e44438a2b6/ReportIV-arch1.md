@@ -1,0 +1,29 @@
+# SUMMARY
+
+- The report documents four years of the NERC Soil Biodiversity Thematic Programme at Sourhope, focusing on how management practices (mowing, fertilisation, insecticide application) affect above-ground biomass, plant species composition, and diversity, and how these relate to soil chemistry and moisture.
+- Main finding: three management processes drive major botanical changes:
+  - Mowing (6 cm sward): promotes Festuca spp. at Agrostis spp. expense, increases bryophyte abundance, and interacts with reduced disturbance to favor stress-tolerant species.
+  - Fertilisation (nitrogen and/or lime): markedly increases productivity, with the strongest response when both N and lime are applied; lime raises soil pH toward ~7.0; nutrient-rich plots tend toward more competitive plant groups but may experience moisture stress and chlorosis under high pH.
+  - Insecticide (Dursban 4 OPA): linked to higher Shannon diversity in some plots, though direct causality to diversity is not definitively established; possible mechanism via altered herbivory allowing more palatable species to persist.
+- Trampling effect: in 2002, C2 plots (with more intense sampling/activity) showed pronounced productivity reductions, likely due to trampling during 13CO2 pulse experiments.
+- Community and functional-shift patterns (2000–2002):
+  - Functional groups tracked by centre around three categories: stress-tolerators (S), competitive-stress-ruderal (CSR), and stress-ruderal/competitive-stress-ruderals (SR/CSR).
+  - By 2002, CSR and SR/CSR species expanded in N+L plots, while stress-tolerators dominated unimproved plots; SR/CSR declined in lime- and insecticide-treated plots.
+  - Overall diversity (Shannon) declined by about 15% in N+L plots from baseline, while other treatments generally saw increases (2–29%), with significant treatment effects (p<0.001).
+- Species composition shifts (point analysis, 2002):
+  - Improved plots dominated by Festuca rubra and Poa pratensis; unimproved plots dominated by Festuca ovina and Anthoxanthum odoratum.
+  - Bryophytes (mosses) increased across the site, contributing up to ~20% of hits in 2002, especially in unimproved plots.
+  - PCA of point data shows clear separation between improved and unimproved plots, with lime-treated plots clustering together.
+- Productivity and environmental context:
+  - 2002 saw lower biomass across many treatments compared with 2001, but the long-term pattern (1999–2002) shows an overall rise in productivity relative to the 1999 baseline.
+  - Fertilised plots (especially N+L) remain most productive; lime and nitrogen both raise soil pH and interact with soil moisture to influence productivity.
+  - Soil pH and moisture show strong interdependence: higher pH associates with lower moisture; higher pH correlates with higher biomass overall, but the positive relationship weakens or reverses in plots with both N and lime.
+- Data and methods:
+  - Experimental design: 5 blocks on a downslope gradient; 6 main plots per block with random treatment allocation; plots subdivided into sub-plots for multiple research groups; mowing every year; insecticide applied after mowing; N and/or lime added in spring per treatment schedule.
+  - Data collection: on-site weather station; above-ground biomass from 0.5 m2 cells; baseline 1998 vegetation survey; annual point analysis surveys (2000–2002) using 0.5 m2 cells and 100-point grids; soil pH and moisture measurements; extensive appendices with species lists and treatment maps.
+  - Analyses: split-plot ANOVA (treatment, year, interaction) for biomass; PCA on point-analysis data; various diversity and functional-group metrics (Shannon index, SR/CSR categorisations).
+- Implications for management and interpretation:
+  - Disturbance regime (mowing and reduced grazing) interacts with nutrient amendments to shape productivity and plant functional structure, favoring mosses and stress-tolerant species in unimproved plots.
+  - Fertilisation shifts communities toward more competitive types, potentially increasing dominance of a few species and reducing some diversity metrics in certain treatments.
+  - The insecticide effect on diversity is plausible but not unequivocally causal; further work needed to disentangle herbivore-mediated effects from direct chemical effects.
+  - Trampling during experimental pulses can confound productivity assessments in certain plots (notably C2), underscoring the need to separate sampling activity from treatment effects in long-term monitoring.

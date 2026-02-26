@@ -1,0 +1,49 @@
+# Antibiotic susceptibility tests and resistance genes in Escherichia coli bacteria from humans, poultry and environmental samples: protocol
+
+- Purpose: Identify antibiotic resistance in E. coli isolates resistant to third-generation cephalosporins and carbapenems; test susceptibility to various antibiotics relevant to human infections; detect known resistance genes via real-time PCR.
+- Setting and scope: Data collected from three contexts in Bangladesh to capture human, poultry, and environmental reservoirs of resistance.
+  - Rural households
+  - Small-scale commercial poultry farms (broiler chickens) in Mirzapur, Tangail district
+  - Urban food markets in Dhaka city
+- Target organisms and samples:
+  - E. coli isolates identified as resistant to key antibiotics
+  - Humans: healthy adults (faecal samples)
+  - Poultry: caecal samples from gastrointestinal tract
+  - Environment: water supply, wastewater, surface water (ponds/rivers), soil, solid waste, poultry litter/faeces; cattle manure when available
+- Ethical considerations:
+  - Informed consent obtained with right to withdraw
+  - Ethical approvals: International Centre for Diarrhoeal Disease Research, Bangladesh (PR16071) and Loughborough University (R17-P037)
+- Study design and timing:
+  - Data collection conducted in two rounds in 2017 (winter: Feb–Apr; summer: Aug–Oct)
+  - Additional water-supply sampling in farms and urban markets in Oct 2018
+  - No predefined sample size calculation or expected size effect
+- Collection methods:
+  - Trained researchers from icddr,b collected samples
+- Laboratory analyses:
+  - Initial identification of E. coli isolates resistant to third-generation cephalosporins and carbapenems
+  - Antibiotic susceptibility testing via disk diffusion (zone of inhibition in mm); interpretation per CLSI guidelines (M100S)
+  - Real-time PCR to detect known antibiotic resistance genes
+  - Standard operating procedures (SOPs) for susceptibility testing, DNA extraction, and PCR described in supporting documentation
+  - Analyses performed by experienced staff at the Food and Enteric Microbiology Laboratory, icddr,b
+- Data management and quality control:
+  - Data recorded on paper or generated automatically; manual data entry into Excel by a data manager
+  - Independent random checks against original data; frequency checks to identify out-of-range values and corrections applied
+- Data structure and availability:
+  - Primary dataset: Ecoliastgenes.csv
+  - Not-done flag indicates a gene was not tested due to lack of resistance to the relevant antibiotic
+  - Supporting documentation provides detailed methods and metadata:
+    - Samplingstrategy.rtf
+    - Microbiology.rtf
+    - Dnaextraction.rtf
+    - Realtimepcr.rtf
+    - Susceptibility.rtf
+    - VariablelistASTgenes.csv
+- Standards and references:
+  - CLSI Performance Standards for Antimicrobial Susceptibility Testing (M100S, 2016)
+  - WHO Global Foodborne Infections Network SOP for Enterobacteriaceae susceptibility testing by disk diffusion
+- Relevance for environmental health monitoring frameworks (for the archetype perspective):
+  - Integrates human, animal, and environmental sources to monitor antimicrobial resistance
+  - Employs standardized, auditable lab methods (disk diffusion per CLSI; real-time PCR for resistance genes) enabling comparable indicators
+  - Documents data collection timelines, settings, and handling procedures for reproducibility
+  - Highlights data management practices and quality controls, with clear data structure and accompanying metadata
+  - Notes data sharing considerations and the need for transparent metadata (as evidenced by referenced supporting documentation) to support governance and data stewardship in monitoring frameworks

@@ -1,0 +1,37 @@
+# Definition of sites and plots in this experiment
+
+- Purpose of the dataset
+  - Document a forest disturbance and soil property sampling framework in Kielder Forest, spanning windthrow-disturbed and intact stands.
+- Study design and scope
+  - Each unique site is defined by common stand type and topography (Fig 1 reference).
+  - Within each site, plots are defined, with each plot occupying 50 m² (Fig 1 reference).
+  - Transects
+    - Each plot has two 10 m transects spanning the plot and located perpendicular to each other (Fig 1 reference).
+    - Transects are used for collecting soil cores and for assessing disturbance.
+- Variables and measurements
+  - disturbance_score
+    - Categorical windthrow disturbance score (as per Fig 2 decision tree).
+    - Assessed every 20 m along transects, along ~200–400 m spans spanning known intact and windthrown stands.
+  - soil properties (measured on transects/cores)
+    - nitrogen: soil nitrogen content, units: %
+    - carbon: soil carbon content, units: %
+    - Soil.Moisture: gravimetric soil moisture, units: %
+    - root_mg_per_cm3: dry root mass per volume, units: mg
+  - location data
+    - Latitude: sample latitude
+    - Longitude: sample longitude
+- Data collection specifics
+  - Each plot is surveyed along transects for sampling and disturbance scoring.
+  - Transects are used to obtain soil cores and to apply the disturbance decision tree across the transect length.
+- Figures referenced
+  - Fig 1: Definition of sites and plots in this experiment
+  - Fig 2: Decision tree for assessing degree of disturbance every 20 m along a ~200–400 m transect
+- Data management implications for data leaders
+  - The dataset combines spatial design (sites, plots, perpendicular transects) with multiple measured variables (soil chemistry, moisture, root mass) and a structured disturbance score, highlighting the need for:
+    - clear metadata and variable definitions (including the disturbance_score schema and its categories)
+    - consistent units and data types (percentages for nitrogen, carbon, moisture; mg for root mass; geocoordinates for location)
+    - documentation of sampling scheme (two transects per plot, 10 m length, 20 m interval, transect span)
+    - traceability to the figures that describe the sampling framework (Fig 1 and Fig 2) to aid discoverability and reuse
+- Potential considerations for data quality and reuse
+  - Ensure standardized metadata to support cross-site comparability and gradient analyses (intact vs windthrow stands).
+  - Maintain provenance for disturbance scoring (per Fig 2) and sampling along the transects.

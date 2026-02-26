@@ -1,0 +1,61 @@
+# Creation of the WATCH Forcing Data and its use to assess global and regional reference crop evaporation over land during the twentieth century
+
+- The document segment provides basin- and variable-specific summaries from the WATCH Forcing Data (WFD), focusing on evaporation-related forcing terms across the 20th century.
+- Key variables tracked per basin and period (1901-1957, 1958-2001, 1979-2001) include:
+  - PET_rc (Penman–Monteith reference evapotranspiration) and PET_PT (Priestley–Taylor)
+  - Net radiation (Net Rad)
+  - Vapor pressure deficit (VPD)
+  - Wind
+  - Rainfall and Snowfall
+  - Precipitation
+- Each entry includes:
+  - Basin-specific averages (mm/yr or W/m^2 as appropriate)
+  - Trend slopes (units/yr) with a range (slope-min to slope-max)
+  - Effective sample size (Neff)
+  - Adjusted Slope P-values indicating statistical significance
+- Observations across basins and periods:
+  - PET_rc trends and magnitudes vary by basin and period; some basins show statistically significant positive or negative trends in PET_rc during 1901-1957 or 1958-2001, while others do not.
+  - PET_PT generally shows positive trends in several basins from 1901-1957 through 1979-2001, with varying significance.
+  - Net radiation displays modest to small trends in many basins; significance levels differ by period and basin.
+  - VPD trends are variable; some basins exhibit statistically significant changes, while others show weak or non-significant trends.
+  - Winds are relatively stable in many basins, but several show small but detectable trends in certain periods.
+  - Rainfall and precipitation show diverse regional patterns (increases in some basins, decreases or mixed signals in others) with varying significance.
+  - Snowfall trends are generally small and often not statistically significant, but there are basin- and period-specific variations.
+- Data quality and reconstruction notes:
+  - The 1901-1957 period relies on ERA-40 basis-year ordering and partial bias corrections, leading to caveats about the historical timing and interannual/decadal variability.
+  - The 1958-2001 period benefits from bias-corrections and aerosol/cloud considerations, producing more robust estimates, but uncertainties remain for certain variables (e.g., wind, some moisture terms) in some basins.
+  - Separate PET estimation methods (PET_rc vs PET_PT) yield different regional results; interpretation of trends depends on method choice and local conditions.
+- Appendix context:
+  - The Appendix lists the order of ERA-40 basis years used to construct the 1901-1957 data, illustrating the complexity of assembling a continuous historical forcing dataset from multiple basis years.
+- Regional highlights (examples drawn from the provided basin data):
+  - Orange River Basin:
+    - 1901-1957 PET_rc average ~1586 mm/yr; slope ~1.23 mm/yr^2 with significant positive trend (Adjusted Slope P < 0.010).
+    - 1958-2001 PET_rc average ~1604 mm/yr; slope ~0.65 mm/yr^2 (Adjusted P > 0.200, i.e., not significant).
+    - PET_PT shows a positive trend in 1901-1957 and 1958-2001, with significance improving in 1958-2001 (Adjusted P < 0.020).
+    - Net Rad largely flat with minor positive trends in 1958-2001.
+  - Lena River Basin:
+    - 1901-1957 PET_rc average ~363 mm/yr; slope ~0.13 mm/yr^2 (not consistently significant).
+    - 1958-2001 PET_rc average ~367 mm/yr; slope ~-0.05 mm/yr^2 (not significant).
+    - 1979-2001 PET_rc average ~366 mm/yr; slope ~0.54 mm/yr^2 (variable significance).
+    - PET_PT and Net Rad trends show modest increases in several periods, with mixed significance.
+    - Precipitation and VPD show basin-specific patterns, with some periods indicating notable changes and others with little trend.
+  - Ganges-Brahmaputra Basin:
+    - PET_rc and PET_PT exhibit basin-scale changes across the periods, with some periods showing significant trends and others weaker signals.
+    - Precipitation and Net Rad show substantial regional variability, reflecting the complexity of monsoonal and evapotranspiration dynamics.
+- Practical implications for data leadership and governance:
+  - Strengths:
+    - Provides a long, documented forcing dataset with explicit bias corrections, enabling cross-basin and cross-model analyses of evapotranspiration drivers.
+    - Rich metadata around averages, trends, Neff, and significance helps in risk assessment and scenario interpretation.
+  - Limitations and cautions:
+    - The 1901-1957 reconstruction is subject to methodological uncertainty due to basis-year reordering and partial bias corrections; interpret long-term early-century trends with caution.
+    - Some variables (notably wind, certain moisture terms) may have residual biases pre-1958, affecting PET_rc and regional trend analyses.
+    - Basin-level results show substantial heterogeneity; avoid overgeneralizing global trends from any single basin.
+  - Data-management recommendations:
+    - Maintain clear provenance: ERA-40 basis data, pre-1958 reordering, bias corrections, rain/snow partitioning, and later corrections.
+    - Document period-specific limitations when using pre-1958 data for trend analyses.
+    - Use 1958-2001 as a more robust baseline for comparative studies and cross-model validation, with 1901-1957 as a constrained approximation.
+    - Encourage domain-wide metadata standards and consistent documentation to facilitate reuse across communities and basins.
+- Access and usage note:
+  - The WATCH Forcing Data (WFD) is accessible through the European WATCH program and associated technical reports, widely used for forcing land-surface and hydrological models in twentieth-century analyses.
+- Bottom-line for Data Leaders:
+  - The dataset offers a comprehensive, well-documented basis for examining twentieth-century evaporation drivers at global and regional scales, with strong validation for post-1958 data and carefully caveated early-century reconstructions. Use the 1958-2001 period as the robust core, and apply careful metadata, provenance tracking, and cross-basin comparisons when leveraging 1901-1957 information.

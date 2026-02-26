@@ -1,0 +1,68 @@
+# REPORT III RESULTS FROM THE SOURHOPE FIELD EXPERIMENT: 1999-2001
+
+- Overview
+  - Intensive field experiment at Sourhope Farm, Scottish Borders, as part of the NERC Soil Biodiversity Thematic Programme.
+  - Aimed to provide broad context data for linked studies and enable year-to-year comparisons across treatments.
+  - Document covers site management events in 2001 (FMD-related access restrictions; change of site officer) and their impact on sampling.
+  - Data types include weather, above-ground biomass, soil pH, and botanical composition (Point Quadrat surveys), with cross-year and treatment comparisons.
+
+- Data Collection and Methods
+  - Automatic Weather Station
+    - 1999–2001 headline measures collected; 2001 rainfall near long-term average; radiation similar to prior years; average temperatures slightly lower; soil moisture modestly higher.
+  - Above-ground Biomass
+    - Five summer harvests per year from 0.5 m2 subplots across plots; biomass dried and weighed; yearly totals used for analyses.
+    - Treatments include Control 1, Control 2, Nitrogen, Lime, Nitrogen & Lime, Biocide.
+    - Biomass measures normalized to the Control 1 (C1) year-by-year to identify treatment effects.
+    - Data analyzed with split-plot ANOVA on ln-transformed biomass; significant differences between improved (N and/or L) vs non-improved plots; inter-year treatment × year interactions present; no significant block effects.
+  - Soil pH
+    - Upper 5 cm soil pH measured; lime raised pH considerably (e.g., 6.19 in limed plots; 6.38 in N&L plots); nitrogen alone also raised pH but less; control plots unchanged since baseline (1998).
+  - Botanical Composition
+    - 2001 Point Quadrat survey (July) with 100-cell grid, ~25 pins per cell interaction; two surveyors for ~50% coverage each; no significant inter-surveyor difference.
+    - 2001 total hits 58% higher than 2000, suggesting increased plant density (possibly from reduced grazing since 1998).
+    - Species-level shifts by treatment: Agrostis capillaris declined across treatments; Festuca spp. increased across treatments; fertilised plots show more Festuca rubra and Poa pratensis; unimproved plots retain species associated with poorer pastures.
+    - Diversity: unimproved plots had 24 species; improved (N and/or L) plots had 18 species, implying potential early loss of diversity with fertility & lime.
+    - Multivariate: Principal Components Analysis separates nitrogen- and/or lime-treated plots from control/biocide plots; biomass correlates with certain species (e.g., Festuca rubra and Poa pratensis rise with biomass; Anthoxanthum odoratum, Nardus stricta, bryophytes decline).
+    - Biomass and vegetation turnover: higher biomass in plots with N and/or L associated with increased litter, indicating faster turnover with higher fertility.
+  - Site Heterogeneity
+    - Spatial variation across columns; some columns (notably E/F) show more acidic conditions, linked to treatment distribution.
+    - Biomass variation: central plots often show higher cumulative biomass; strong positive correlation between surface soil pH and biomass; no significant differences between blocks.
+
+- Key Findings by Data Category
+  - Weather (2001)
+    - Rainfall near average; radiation stable; mild cooling; higher soil moisture than previous year.
+  - Biomass (2001)
+    - Clear hierarchy by treatment; peak biomass in midsummer (July/August).
+    - Substantial 2001 increase in biomass vs 2000, likely due to personnel changes and switch from manual mowing to mechanical shears.
+    - Nitrogen and/or Lime treatments most effective for biomass; ANOVA confirms significant treatment-year interactions.
+    - Biomass positively correlates with soil pH in several plots.
+  - Soil pH
+    - Liming raises pH substantially; N alone raises pH modestly; control pH stable since 1998 baseline.
+  - Botanical Composition
+    - 2001 density rebound (more hits overall); species composition shifts toward improved pastures in fertilised plots.
+    - Higher abundance of Festuca rubra and Poa pratensis with improved fertility; Agrostis capillaris declines broadly.
+    - Diversity slightly reduced in the most improved plots, suggesting onset of reduced species richness with fertility enhancement.
+    - PCA highlights distinct community–treatment relationships; biomass linked to specific grasses; turnover indicated by litter increases under N/L treatments.
+  - Site Heterogeneity
+    - Spatial pH and biomass gradients across site columns; central, higher-pH plots tend to produce more biomass.
+    - Positive pH–biomass relationship supports fertility-and-pH interactions driving productivity.
+
+- Data Quality, Outputs and Challenges
+  - Outputs and data products
+    - Time-series data for weather, plot-level above-ground biomass, soil pH, and species-abundance (point quadrat) data.
+    - Comparative plots and cross-year analyses enabling integration with other projects in the Soil Biodiversity programme.
+    - Visualizations: biomass time courses, treatment-normalized biomass, pH maps, PCA plots, species-abundance rankings.
+  - Data quality and challenges
+    - 2001 field-work disruptions due to FMD restrictions; sampling timetables adjusted under vet supervision.
+    - Change of site officer in 2001; potential effects on protocol adherence and data continuity.
+    - Switch from manual mowing to mechanical shears in 2001 likely affected biomass measurements; normalization to C1 attempted to mitigate this.
+    - Inter-year differences in management and measurement timing were addressed via standardized analyses (e.g., ln-biomass, split-plot ANOVA).
+  - Data interpretation notes
+    - Fertilisation (N and Lime) drives biomass increases and shifts in composition toward more productive grasses.
+    - Soil pH is a key mediator of biomass responses; lime increases pH and enhances productivity alongside nitrogen.
+    - Site heterogeneity influences where biomass concentrates; pH-biomass relationship and spatial effects should be considered in broader analyses.
+
+- Conclusion and Implications
+  - Fertilisation with nitrogen and lime tends to raise above-ground productivity and alters plant community composition toward species associated with improved pastures.
+  - Soil pH elevation from liming strengthens biomass responses and interacts with nitrogen effects.
+  - Increased litter turnover accompanies higher fertility, indicating faster ecological turnover in more fertilised plots.
+  - The dataset provides a robust, cross-year context for broader analyses within the Soil Biodiversity programme and demonstrates the importance of accounting for site heterogeneity and management practices in data interpretation.

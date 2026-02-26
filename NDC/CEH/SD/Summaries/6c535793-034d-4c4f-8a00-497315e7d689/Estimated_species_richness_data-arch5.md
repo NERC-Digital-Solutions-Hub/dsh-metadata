@@ -1,0 +1,38 @@
+# Estimated species richness data used in study of UK ecological status
+
+- Data provenance and scope
+  - UK species occurrence data collated from the Biological Records Centre (BRC) for 11 taxonomic groups at 10 km2 hectad resolution.
+  - Two time periods: 1970–1990 and 2000–2013 (two separate datasets, one per period).
+  - Bird species data (breeding birds of the UK) sourced from the British Trust for Ornithology (BTO), using atlases from 1976 and 2001–2011.
+- Data structure and coverage
+  - For each hectad and taxon/time period, a species list is compiled and observed species richness is calculated.
+  - Separate analyses conducted for each taxonomic group within each time period.
+- Data sources and integration
+  - Primary occurrence data from BRC; birds from BTO.
+  - Data are prepared to enable cross-taxon and cross-period comparisons of species richness.
+- Methodology and processing
+  - Purpose: estimate species richness while accounting for uneven recorder effort across hectads.
+  - Frescalo approach (Hill 2012) used to adjust observed richness toward a neighbourhood maximum.
+    - Neighbourhood defined as the 200 nearest hectads, using the 100 most similar hectads to form the basis for the neighbourhood.
+    - Similarity and recording intensity are assessed using a set of common benchmark species from the neighbourhood.
+  - Implementation details
+    - Frescalo executed via the Sparta R package (August, Harrower & Isaac, 2013) in R.
+    - Biological similarity for neighbourhoods defined using:
+      - Vascular plant data or
+      - Land cover type (to avoid circularity for certain datasets).
+    - All datasets analysed with the vascular plant weight files embedded in Frescalo, except for the vascular plants dataset itself, which used land cover type for similarity.
+  - Output and interpretation
+    - Estimated species richness per hectad and taxon/time period, adjusted for recorder effort, in addition to raw observed richness.
+- Data quality, governance, and reproducibility
+  - Clear data lineage: data sources (BRC, BTO), periods, and taxonomic groups documented.
+  - Standardized spatial scale (10 km2 hectads) and methodological framework (Frescalo with Sparta) support comparability across taxa and periods.
+  - Reproducibility facilitated by explicit software (R, Sparta) and cited methodological references.
+- Limitations and considerations
+  - Requires careful interpretation due to differential recorder effort and sampling intensity across hectads and time periods.
+  - Neighbourhood-based adjustment depends on the quality of benchmark species and the definition of similarity (plant-based or land-cover-based).
+  - Separate handling for vascular plants to avoid circularity in similarity definitions.
+- References and tools
+  - Sparta package for R (August, Harrower & Isaac 2013).
+  - Frescalo methodology (Hill 2012) and related studies.
+  - Dyer et al. (in press) for biodiversity indicators and case studies.
+  - Morton's 2011 LCM2007 land cover map for similarity definitions.

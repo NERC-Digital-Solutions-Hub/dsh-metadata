@@ -1,0 +1,24 @@
+# Details of data structure
+
+- Dataset comprises 34 RTF and 20 CSV documents containing interview transcripts from study villages; interviewees are anonymized.
+- Document types and language versions:
+  - Participatory_map_engl (10)
+  - Participatory_map_port (10)
+  - Seasonal_calendar_port (3)
+  - Seasonal_calendar_engl (4)
+  - Trendanalysis_port (5)
+  - Trendanalysis_engl (10)
+  - Village_profiles (1)
+  - Wealthranking_qual (11)
+- Data collection and fieldwork:
+  - Led by a research assistant with groups of 3–8 villagers per village; field protocol followed.
+  - Notes taken in local language; transcripts prepared in Portuguese.
+  - English translations performed by a second assistant and finally checked by a third party.
+- Geographic and temporal scope:
+  - Lioma region; two-week pre-visit in July 2015; interviews conducted in 13 villages with village leaders/representatives.
+- Data provenance and documentation:
+  - All data recorded in Portuguese; English transcripts compiled after fieldwork.
+  - Each document corresponds to a specific activity (participatory mapping, seasonal calendars, trend analysis, village profiles, wealth rankings).
+- Metadata and quality considerations:
+  - Anonymization of interviewees; translations include multiple checks to ensure accuracy.
+  - Indicates careful data management around language versions, provenance, and post-field processing.

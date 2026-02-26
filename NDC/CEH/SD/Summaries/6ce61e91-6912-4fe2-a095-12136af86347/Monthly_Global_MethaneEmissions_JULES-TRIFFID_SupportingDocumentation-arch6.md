@@ -1,0 +1,30 @@
+# Introduction
+
+- Dataset provides monthly global methane emissions from natural wetlands at 0.5° × 0.5° resolution.
+- Model origin: JULES land surface model driven with WFDEI meteorological forcing.
+- Key output variables:
+  - fwetl (1): Fraction of wetland in each grid cell.
+  - fch4_wetl (mg CH4 m-2 day-1): Gridbox methane flux from natural wetlands, scaled so total global wetlands emissions are 180 Tg CH4.
+  - cs (kg m-2): Soil carbon in each pool (decomposable plant material, resistant plant material, microbial biomass and humus).
+  - t_soil (K): Sub-surface temperature of the top soil layer.
+- Methane emission scheme (per Gedney et al. 2004) uses dynamic soil carbon and includes:
+  - fch4_wetl = k × fwetl × Q10(t_soil1m)^(t_soil1m / T0) × Σi (κi × csi)
+  - Pool-specific κ values: DPM, RPM, BIO, HUM with specified constants.
+  - Q10 temperature dependence with T0 = 273.15 K; k = 7.034×10^-10; global emissions set to 180 Tg CH4 in 2000.
+  - fwetl calculated using TOPMODEL hydrology within JULES.
+  - All model variables in the dataset allow users to disentangle and re-apply the emission calculation.
+- Model and vegetation details:
+  - JULES version 4.5 with dynamic vegetation (TRIFFID) but competition disabled; vegetation cover prescribed from the IGBP database.
+  - Uses Van Genuchten soil properties; TOPMODEL-based hydrology.
+- Input data sources:
+  - Meteorology: WFDEI (Watch Forcing Data for ERA-Interim).
+  - Hydrological and thermal soil properties: Harmonised World Soil Database (FAO, 1995), regridded with CAP software.
+  - Topography: HydroSHEDS-based topographic index (Marthews et al. 2015).
+  - Vegetation map: IGBP land cover map (regridded with CAP).
+- File format and structure:
+  - NetCDF format, CF-compliant, CEH gridded dataset conventions.
+  - Yearly files with all variables stored in a single file.
+- Practical use and re-use:
+  - The dataset exposes all components of the methane emission equation, enabling users to substitute in their own wetland maps (e.g., if using an observed wetland area map, divide fch4_wetl by fwetl and multiply by the observed wetlands dataset).
+- References (model and data sources) for further details:
+  - JULES model and emissions descriptions (Best et al. 2010; Clark et al. 2010; Gedney et al. 2004; Parker et al. 2018; McNorton et al. 2016; Weedon et al. 2011; and related foundational papers).

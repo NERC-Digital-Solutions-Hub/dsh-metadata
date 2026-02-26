@@ -1,0 +1,11 @@
+# Notes on the downloadable data
+
+- Data confidentiality: precise locations of Countryside Survey (CS) squares are kept confidential by UKCEH; external users cannot identify squares with precision finer than 100 square km, limiting fine-grained spatial identification.
+- Sampling design: CS field survey data come from a sample of 1 km squares across Great Britain, with two sampling levels—whole squares and within-square features (e.g., quadrats) measured.
+- Measurement types: data include a mix of binary and continuous variables (e.g., areas, lengths, vegetation/soil measurements).
+- Non-random, stratified design: squares are not a random subset; sampling is stratified by the ITE Land Classification. Country-specific stratifications exist (England: 21 classes, Wales: 8, Scotland: 16) due to separate national reporting.
+- Representativeness and extrapolation: estimates without accounting for stratification may be biased. Official GB estimates rely on ratio estimates by land class and area-weighting. Extrapolation to GB or regional scales assumes similarity between surveyed and unsurveyed vegetative land, which is generally reasonable given the small total area of excluded squares but can pose problems in regions with substantial sea or urban squares.
+- Exclusion of certain squares: squares with more than 90% sea area or more than 75% urban area were excluded from field survey; results pertain to the subset of GB squares meeting these criteria.
+- Estimation and uncertainty: since some features are skewed, standard errors and confidence intervals are estimated using bootstrap methods (since 1998) rather than traditional analytic approaches.
+- Data provenance and guidance: the notes reference foundational methodological sources for sampling and estimation (Barr et al. 1993; Cochran 1963; Efron & Tibshirani 1993) to support the stated techniques.
+- Practical implications for users: analyses should incorporate stratification, weighting by vegetative land area, and bootstrap-based uncertainty; be cautious when generalising beyond the defined square categories and when interpreting regional or GB-wide estimates; respect confidentiality constraints when considering spatial analyses.

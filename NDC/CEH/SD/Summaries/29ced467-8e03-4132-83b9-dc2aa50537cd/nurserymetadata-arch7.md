@@ -1,0 +1,34 @@
+# Long-term multisite Scots pine trial, Scotland: nursery phenotypes, 2007-2011
+
+- A long-term seedling trial of Scots pine in Scotland (2007–2011) examining nursery phenotypes across multiple environments.
+- Samples: 210 families (10 families from each of 21 native Scottish populations), with 24 half-sibling progeny per family (total 5,040 individuals).
+- Nurseries and layout:
+  - Three nursery environments: NW (outdoors at Inverewe Gardens, western Scotland), NE (outdoors in a fruit cage at the James Hutton Institute, Aberdeen), NG (unheated glasshouse at the James Hutton Institute).
+  - In 2010, NG seedlings moved outdoors to Glensaugh, Aberdeenshire.
+  - Plants arranged in 40 randomized blocks per nursery; two trees per population per block (total 42 trees per block).
+  - All nurseries used Levington’s C2a/Ericoaceous compost with slow-release fertilizer; no artificial lighting.
+- Data collection period and traits:
+  - Phenology: budburst and growth cessation assessed in 2008; weekly during spring and autumn 2008.
+  - Form: total buds (2008) and needle length (2007–2009).
+  - Cumulative growth: height (2007–2011), stem diameter (2008–2011), canopy width (2007–2009).
+  - Mortality recorded annually (2007–2010).
+  - Measurements taken annually; some measurements treated as missing if quality issues occurred.
+- Data scope and structure:
+  - File: NurseryTraits.txt containing extensive phenotype data linked to PopulationCode, Family, Seedling, and Nursery.
+  - Key fields include: Block07to10, Block10to12, FieldCode; growth metrics (HA07–HA11; DA08–DA11; CW07–CW11; NL07–NL09); bud-related metrics (Bu08, BB08, GC08); height and diameter increments (HI08–HI11, DI09–DI11); and Status indicators (STATUS07–STATUS11).
+  - Units: heights and diameters in mm; canopy width in mm; needle length in mm; days for phenology events; counts for buds.
+- Data quality and cleaning notes:
+  - Height increments less than 0 mm due to errors were removed (NA).
+  - Diameter increments between 0 and -2 mm adjusted to 0; increments < -2 mm marked as NA along with the most recent diameter.
+- Spatial context and GIS relevance:
+  - Three geolocated nursery sites with explicit coordinates (NW: Inverewe Gardens; NE and NG: Aberdeen region) enabling spatial analyses and map-based visualizations of trait variation by environment and over time.
+  - Data can be joined with population-level geographic or environmental data, and combined with other datasets across different resolutions (seed families, individual seedlings, nursery blocks).
+- Licensing, attribution, and citation:
+  - Data access: https://doi.org/10.5285/29ced467-8e03-4132-83b9-dc2aa50537cd
+  - License: Open Government Licence v3 (OGC)
+  - Citation to include in publications: Perry, A.; Beaton, J.K.; Stockan, J.A.; Cottrell, J.E.; Iason, G.R.; Cavers, S. (2022). Long-term multisite Scots pine trial, Scotland: nursery phenotypes, 2007-2011. NERC EDS Environmental Information Data Centre. (Dataset). https://doi.org/10.5285/29ced4678e03-4132-83b9-dc2aa50537cd
+  - Attribution statement to acknowledge source: "Contains data supplied by UK Centre for Ecology & Hydrology."
+  - Include any copyright notices identified in the metadata record with copies of the data and publications.
+- Version history:
+  - 2022-05-04: First version.
+  - 2022-08-11: Corrected data type note for Seedling (now Alphanumeric); added Data access and reuse section.

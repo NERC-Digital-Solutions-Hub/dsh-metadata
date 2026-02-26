@@ -1,0 +1,56 @@
+# HEADWATERS
+
+- Purpose and scope: Countryside Survey 2007 headwater stream survey integrating macroinvertebrate sampling (RIVPACS), River Habitat Survey (RHS) hydromorphology and environmental data, aquatic plant survey (Mean Trophic Rank, MTR), and water chemistry. Data collected on-site via tablet-based systems and subsequently stored and processed by CEH and partners.
+- Datasets produced:
+  - Macroinvertebrate community data (RIVPACS) including sampling area, environmental variables, substrate, width, depth, and velocity.
+  - Water chemistry data (conductivity, pH; SRP, TON, alkalinity) with on-site filtration for selected parameters.
+  - Hydromorphological and environmental data (RHS) captured via RAPID, including spot-checks, physical attributes, bank/top features, channel vegetation, and substrate.
+  - Aquatic plant data (MTR) including macrophyte and bryophyte species presence, percent cover, and associated physical habitat data; data entered via IRIS.
+  - Site location metadata: CS square number, GPS/NGR coordinates (8-digit national grid reference), sampling date, surveyors.
+- Data capture and on-site systems:
+  - RHS data entry and validation conducted in the field using RAPID (tablet PC with MS Access backend).
+  - Aquatic plant data entered in IRIS (tablet PC; two-page form for survey and physical site data).
+  - On-site data validation is mandatory before leaving site; RAPID and IRIS perform stepwise checks and generate completion messages.
+  - Field forms and systems are designed to minimize transcription errors (drop-downs, standardized codes, missing-value handling with -9).
+- Sampling protocols and temporal scope:
+  - Headwater survey covers 425 squares; 500 m RHS reach centered on macroinvertebrate site; 100 m aquatic plant survey length.
+  - Macroinvertebrate sampling: 3 minutes of active pond-net sampling plus 1 minute of manual search; use of standard pond-net (25 cm2, 900 µm mesh); sampling across habitats proportional to cover; manual search for additional taxa; careful handling of live specimens and preservation in 40% formalin to achieve ~4% formaldehyde by volume.
+  - Water chemistry sampling: one indicative chemical sample per headwater site; field measurements for conductivity and pH; filtered samples for SRP, TON, alkalinity stored in labeled bottles and mailed to CEH Lancaster.
+  - RHS: 500 m reach with 10 spot-checks plus an overall substrate/vegetation summary; on-site data entry and validation via RAPID; photographs and relocation markers included.
+  - Photographs: required for macroinvertebrate area, RHS reach, and MTR, with marker boards identifying site and square number to aid relocation.
+- Data standards and units:
+  - Conductivity: µS cm-1; pH measurements with two-point calibration.
+  - Depth and width: depth in cm; width in meters.
+  - Velocity: categorized (1–5) for main channel surface velocity.
+  - Substrata: bedrock, boulders, pebbles/gravel, sand, silt/clay, peat, artificial; proportions recorded to total 100% for sample area.
+  - Habitat types: pool, run, riffle, slack; channel shading and water clarity categorized with percentage coverage across the full sampling length.
+  - GPS/NGR: position of macroinvertebrate sampling site to at least 8-digit national grid reference.
+- Data governance and quality assurance:
+  - All surveyors hold Environment Agency RHS/RIVPACS accreditation; teams rotated to maintain consistency.
+  - Approximately 7% of headwater sites audited by CEH staff; on-site validation of RHS and plant surveys.
+  - Field Survey Check-list completed by both surveyors at end of site to prevent omissions.
+  - Sample handling and chain-of-custody: macroinvertebrate pots stored in CEH-approved boxes; TREM transport cards used; samples forwarded to CEH Dorset as boxes fill (6–8 pots per box) with clear labeling; plant specimens sent to Pond Conservation with appropriate labeling and preservation (pressed, pickle).
+- Data management, storage, and sharing:
+  - On-site data captured electronically; data exported to CEH data systems and repositories.
+  - Macroinvertebrate samples and plant specimens documented and stored per project protocol; samples dispatched monthly to CEH Dorset and Pond Conservation.
+  - Documentation and forms (RIVPACS Sample Area Form, RHS RAPID forms, IRIS plant forms, pond mapping/pond condition sheets) provide metadata and context for downstream analyses and relocatability.
+- Metadata and provenance:
+  - Essential metadata captured for each site: CS square number, pond/water body name, date, surveyors, NGR, sampling method, sample area dimensions, and environmental descriptors.
+  - Photographs and sketch maps accompany data to facilitate future relocation and re-surveys.
+- Challenges and data steward considerations:
+  - Ensuring timely data capture and completion in the field to minimize data gaps.
+  - Maintaining interoperability between systems (RAPID, IRIS) and paper forms; alignment of codes and taxonomies across datasets.
+  - Managing large, heterogeneous data streams (macroinvertebrates, plants, water chemistry, RHS) and ensuring consistent naming conventions and taxonomic identifications.
+  - Handling difficult field conditions and ensuring safety while preserving data quality and sample integrity.
+
+- Appendix: Key data collection forms and systems
+  - RIVPACS Sample Area Form: macroinvertebrate sampling metadata, sampling area, environmental variables, substrate, width, depth, velocity, and photographs.
+  - River Habitat Survey (RHS) data entry: RAPID-based, 17 sections across 4 pages; spot-checks and RHS indices; validation workflow.
+  - IRIS: aquatic plant survey data entry; 2-page form for plant species, cover categories, and physical site data; specimen handling and validation workflow.
+  - CS2007 Pond Condition Survey Recording Sheets: water quality, environmental survey, macrophyte survey, pond boundary, drawdown height, area estimation, sediment and pond base, inflows/outflows, pollution indicators, surrounding land use, amenity values, and management/grazing indicators.
+  - Field survey checklists and transport documentation (TREM cards) to support QA, safety, and traceability.
+
+- Data stewardship outcomes
+  - Structured, on-site data capture with built-in validation to ensure data quality and traceability.
+  - Comprehensive metadata enabling relocation, reuse, and longitudinal analysis of headwater stream and pond condition data.
+  - Clear data flows from field collection through to processing at CEH and sharing with partner organizations (Pond Conservation, etc.).

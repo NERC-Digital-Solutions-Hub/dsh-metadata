@@ -1,0 +1,27 @@
+# Experimental design/collection method: Life history data
+
+- Purpose: Assess life history responses of newly hatched larvae to drought stress vs. control on Poa trivialis, using individuals from nine UK populations to inform environmental health monitoring and policy-relevant outcomes over time.
+- Population and source: Larvae randomly collected from laboratory stock populations originating from nine distinct UK populations; each lab source contributed equivalent numbers of larvae to both treatments.
+- Rearing setup: Four larvae per host plant placed on potted Poa trivialis; plants allocated to either drought-stressed or control conditions; rearing conducted in netted outdoor insectary at UK Centre for Ecology & Hydrology under natural temperatures, light, and photoperiod; insectary design provides rain/wind protection while exposing pests to ambient conditions.
+- Experimental design: Each host plant carried four larvae from the same laboratory source; total numbers: 108 larvae in control and 216 in drought-stress groups, with equal representation of each lab source across treatments.
+- Monitoring timeline: Three growth checks at
+  - CheckDate1: 49 days after hatching (pre-overwintering),
+  - CheckDate2: 162 days after hatching (post-overwintering growth),
+  - Final: 309 days after hatching (late larval growth and pupation).
+- Measurements and outcomes:
+  - Larval mass recorded for all individuals surviving to the second check (mass in mg using an Ohaus Explorer balance with 0.1 mg accuracy).
+  - Survival to the third check recorded (SurviveCheck: 1 = survived, 0 = not survived).
+  - At the second check, the number of larvae found (NumLarvaeFound) was recorded.
+- Data structure and headers: Data organized in a spreadsheet with the following fields:
+  - Population (Site in UK) and Description
+  - PlantID (unique host plant identifier) and Description
+  - LarvalID (1–4 per plant) and Description
+  - HostPlantTreatment (Drought stress vs. control) and Description
+  - HatchDate (date larvae hatched and assigned to treatment) and Description
+  - CheckDate1 and CheckDate2 (dates for growth checks) and Description
+  - NumLarvaeFound (number of larvae at CheckDate2) and Description
+  - LarvalMass (mass at CheckDate2, mg) and Description
+  - SurviveCheck (survival to CheckDate3) and Description
+  - Note: Empty cells indicate missing data (e.g., due to larval death).
+- Quality control and data integrity: Data collected under standardised conditions using published methods; manual data entry with quality assurance tools (input masks, input conditions) to ensure coherence and consistency.
+- Data usage aim: Generates standardized, time-resolved metrics of growth and survival across populations and treatments to enable monitoring of environmental stress impacts and inform assessments of environmental health and resilience.

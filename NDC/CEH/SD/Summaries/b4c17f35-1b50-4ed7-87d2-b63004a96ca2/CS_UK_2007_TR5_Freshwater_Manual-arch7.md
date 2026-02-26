@@ -1,0 +1,52 @@
+Headwaters
+
+- Purpose and scope
+  - National-scale freshwater survey framework (CS2007) focused on headwater streams and associated ponds across GB.
+  - Aims to create GIS-friendly, map-based data products showing spatial patterns of macroinvertebrates, hydromorphology, water chemistry and aquatic plants; enable exploration and comparison across sites.
+- Survey design and spatial structure
+  - Coverage based on CS2000: all 425 CS2000 squares re-surveyed for headwaters; a randomly selected pond is surveyed in each of 629 CS2007 squares containing ponds.
+  - Headwater sampling site per square: a 500 m length of watercourse, with a 100 m aquatic-plant survey stretch centered on the macroinvertebrate sampling point.
+  - Location precision: NGR GPS coordinates captured to at least 8 digits; maps and grid references provided for relocation.
+- Data capture and GIS integration
+  - Field data collected via tablet-based systems (RAPID, IRIS) to minimize data-entry errors and facilitate on-site validation; data structures align with River Habitat Survey (RHS) and MTR/macrophyte protocols.
+  - Data entry sections include multiple linked forms: RIVPACS for macroinvertebrates, RHS for hydromorphology, IRIS for aquatic plants, and on-site water-chemistry records.
+  - Movement and relocation aids: senior surveyors may re-locate sampling points using fixed markers, photographs, and sketch maps; a standard RHS site is 500 m long and centered on invert sampling.
+- Biological and chemical sampling components
+  - Macroinvertebrate sampling (RIVPACS)
+    - Target: widest possible taxa range within a single continuous sampling area (5–15 m, varying with stream width).
+    - Method: standard 25 cm2 pond-net (900 µm) with three-minute kick-sweep main sample plus mandatory one-minute manual search; sampling proportional to habitat cover.
+    - Handling: live specimens retained for lab identification; uncommon/rare species carefully handled; high emphasis on preventing cross-contamination between sites.
+    - Environmental data: site environmental data collected for the entire sampling area (width, depth, velocity category, substrate, altitude, distance from source, slope, and other habitat features); data recorded on RIVPACS Sample Area Form.
+    - Water chemistry: field readings for conductivity and pH; on-site filtration for SRP, TON and alkalinity using 50 mL filtered samples; sample labeling includes square, pond, date, and project identifiers.
+  - Hydromorphology (River Habitat Survey, RHS)
+    - RHS field protocol updated to the 2003 Environment Agency version; 500 m RHS centered on invert site; includes spot-check 1–10, vegetation and substrate summaries, and an overall substrate/vegetation tab.
+    - Data capture via RAPID with validation checks; if RHS cannot be completed, site is still entered in RAPID with notes.
+    - Data flow: on-site data entry into RAPID; validation ensures completeness before leaving site.
+  - Aquatic macrophyte survey (Mean Trophic Rank, MTR)
+    - 100 m reach surveyed for macrophyte and bryophyte presence and cover, submerged and emergent species included; plants identified to species where possible.
+    - Hierarchical data: species list with abundance categories and total cover by category (submerged, floating-leaved, emergent) and shade over the pond.
+    - Field techniques emphasize systematic cover estimates (hypothetical 1 m2 references) and careful search of small patches; specimens collected for laboratory confirmation when needed.
+    - Data entry via IRIS; includes specimen handling guidelines, lab submission guidance, and a detailed plant identification table.
+- Photographs and site relocation
+  - Photographs required for macroinvertebrate sampling areas, RHS reaches, and MTR sites; marker boards labeled with letters (M, RHS, MTR) and square numbers for relocation.
+  - Sketch maps: 50 m central river reach sketched on-site to facilitate future relocation, including landmarks, distances, grid north, scale, and land use.
+- Data quality, safety, and governance
+  - QA: CEH staff audits (~7% of headwater sites); field teams trained and accredited; routine data validation via RAPID/IRIS.
+  - Safety: standard field-safety protocols for water sampling and wading; higher risk checks for deeper or unsafe sections.
+  - Data management and transport: samples stored in CEH bases and couriered to CEH Dorset; TREM transport cards used for fixatives; full documentation to Pond Conservation on return.
+- Ponds and broader mapping integration (CS2007 Pond Condition Survey)
+  - Pond mapping and condition: mapping ponds within CS2007 squares; survey pond chosen per square for macrophyte, environmental characteristics, and water chemistry assessments.
+  - Pond definition and scope: standing water from 25 m2 to 2 ha, typically holding water for at least four months; includes temporary ponds; boundary and area estimated from outer winter water level.
+  - Field workflow: photograph pond; delineate outer boundary; sketch outline; estimate pond area; measure drawdown height; estimate proportion water present; sample turbidity and water chemistry if feasible; document pollution, inflows/outflows, and pond management.
+  - Macrophyte survey in ponds: full species inventory within pond boundary; cover estimates for submerged, floating-leaved, emergent plants; shading from trees; specimen collection guidelines; lab confirmation for rare/uncertain taxa; explicit taxonomic references and specimen submission guidelines.
+  - Data capture and delivery: pond condition fieldsheets (including environmental, macrophyte and water quality pages) filled in pencil; forms stapled and sent to Pond Conservation; specimens labeled and shipped to CEH Dorset; data entries supported by specimen photography, and, where needed, digital records.
+  - Macrophyte data handling: detailed species lists with abundance codes; specific guidance for problematic taxa (e.g., Ranunculus, Callitriche, Potamogeton, charophytes) and rare species confirmation; recommended sampling and preservation methods; standard taxonomic references outlined.
+- Documentation, references, and governance
+  - Core references from Environment Agency and CEH protocols (RHS, RIVPACS, MTR/macrophyte methods); emphasis on comparability with CS2000 and future surveys.
+  - Clear guidance on field-to-database workflows (RAPID for RHS, IRIS for aquatic plants, and RIVPACS forms for macroinvertebrates); validation steps required on-site before departure.
+
+- GIS-oriented takeaways for mapping and analysis
+  - Spatial units are square-based survey areas with precise NGR coordinates, enabling aggregation to square-level and landscape-scale maps.
+  - 500 m headwater reach and 100 m macrophyte survey extents provide multi-scale spatial footprints suitable for GIS analyses of habitat, chemistry and biotic assemblages.
+  - On-site digital data capture reduces post-processing errors and supports near real-time GIS-ready databases, linking RHS, RIVPACS, and MTR data through common square identifiers and GIS coordinates.
+  - Documented relocation features (sketch maps, fixed markers, photographs) enhance repeatability and change detection in time-series GIS analyses.

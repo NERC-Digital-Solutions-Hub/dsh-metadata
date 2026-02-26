@@ -1,0 +1,21 @@
+# A high-resolution global dataset of topographic index
+
+- Purpose: A high-resolution global topographic index dataset intended as a topographic ancillary file for TOPMODEL routing in the JULES land surface model.
+- Data specifics:
+  - Single variable: the topographic index.
+  - Calculated using the GA2 program; standard algorithm with minor modifications for global DEM.
+  - Resolution: 15 arc-seconds (global).
+  - File: 11.0 Gb; archived as ga2_Global_15s_netcdf.zip; NetCDF format conforming to CF conventions.
+- Coverage and coordinates:
+  - Global extent with corners:
+    - Upper Left: (-180.0000000, 86.1000000)
+    - Lower Left: (-180.0000000, -56.3541678)
+    - Upper Right: (180.0000029, 86.1000000)
+    - Lower Right: (180.0000029, -56.3541678)
+  - Center: (0.0000014, 14.8729161)
+- Data structure:
+  - Only one variable in the file: the topographic index.
+  - Directly comparable to USGS HYDRO1k compound topographic index at 30 arc-seconds.
+- Usage notes:
+  - Intended for hydrological modelling and GIS map-based analyses as an ancillary data layer.
+  - CF-compliant NetCDF; suitable for integration into GIS and modelling workflows.

@@ -1,0 +1,72 @@
+# FADOE_yield.csv
+
+- Overview
+  - Post-flowering yield characteristics of Brassica nigra plants under Free-Air Diesel and Ozone Enrichment (FADOE) rings.
+  - Collected over two years (2018 and 2019) in field experiments, with rings moved between fields between years.
+  - Fields: 2018 at latitude 51.482853, longitude -0.897749; 2019 moved to adjacent field at latitude 51.482374, longitude -0.895855.
+  - Experimental treatments include diesel exhaust (D), ozone (O3), diesel + ozone (D+O3), and control (CON).
+
+- Experimental design
+  - 8 FADOE rings in total, with two rings assigned to each of four treatments.
+  - Each ring contained 24 plants.
+  - Rings relocated from one field to an adjacent field from 2018 to 2019.
+  - Plants harvested after flowering ceased; mature in an insect mesh-covered polytunnel before harvest.
+  - Data collected per plant and per pod/seed components to assess yield and development under different pollutants.
+
+- Measurements and components recorded
+  - Pod development
+    - No. developed pods (per plant)
+    - No. undeveloped pods (per plant)
+    - % pod development
+  - Pod sampling and mass
+    - No. pods bagged (ten random pods sampled per plant/ring)
+    - Mass of pods
+    - Pod mass (specific metric derived from pod samples)
+  - Seed metrics (from pods and plant)
+    - No. seeds (pods)
+    - Mass of seeds in bagged pods
+    - No. seeds per pod
+    - No. seeds (plant)
+    - Seed mass (plant)
+    - No. seeds total (including seeds in pods)
+    - Seed mass total (including seeds in pods)
+  - Plant-level metric
+    - Plant dry mass
+  - Process details
+    - Pods and seeds processed through oven-drying (70 °C)
+    - Seeds separated, counted, and weighed after thrashing
+    - All counts/weights used to compute derived metrics (e.g., total seed numbers, total seed mass)
+
+- Data structure and schema
+  - Data file: FADOE_yield.csv
+  - Key columns (examples, as described):
+    - Year
+    - Ring
+    - Treatment
+    - Plant no.
+    - No. developed pods
+    - No. undeveloped pods
+    - % pod development
+    - No. pods bagged
+    - Mass of pods
+    - Pod mass
+    - No. seeds (pods)
+    - Mass of seeds in bagged pods
+    - No. seeds per pod
+    - Plant dry mass
+    - No. seeds (plant)
+    - Seed mass (plant)
+    - No. seeds total (including seeds in pods)
+    - Seed mass total (including seeds in pods)
+  - Note: Column order in the description is non-sequential; values correspond to the listed measurements.
+
+- Data quality and preparation (Data Support considerations)
+  - Two-year, field-m relocation may introduce site-year effects; ensure alignment of Ring × Treatment across years.
+  - Sample size: 24 plants per ring; 8 rings per year; plan for 192 plants per year (approx.).
+  - Data may require cleaning for missing values or outliers in counts and masses.
+  - Provides opportunities to create self-service analyses (dashboards, pivot tables) to compare yield components by treatment and year.
+
+- Practical uses and outputs
+  - Compare the effects of diesel, ozone, and combined exposure on pod development, pod and seed yields, and overall plant biomass.
+  - Derive productivity metrics such as percent pod development, seeds per plant, and total seed mass across treatments and years.
+  - Generate dashboards or reports to communicate treatment effects to stakeholders and support policy or environmental impact discussions.

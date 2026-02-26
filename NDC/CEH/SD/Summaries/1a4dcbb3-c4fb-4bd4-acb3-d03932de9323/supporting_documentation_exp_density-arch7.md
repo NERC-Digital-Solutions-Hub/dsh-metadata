@@ -1,0 +1,30 @@
+# Supporting documentation for the experiment manipulating local population density
+
+- Study location and subjects: Wytham woods, Oxfordshire, UK; great tits, blue tits, marsh tits, and nuthatches; winter-spring 2021 (January–March).
+- Experimental design:
+  - Eight sites total, each with two feeders ~100 m apart; six experimental sites and two control sites.
+  - Selective feeders recording visits via RFID/PIT tags; feeders programmed to restrict access to specific individuals to manipulate local density.
+  - Pre-experiment phase: ~2 weeks of open access to all PIT-tagged birds; measured baseline visitation.
+  - Density manipulation: at three experimental sites high-density feeder vs low-density feeder determined by pre-experiment visitation; at the other three experimental sites the density roles swapped.
+  - Randomization: within birds observed at least 100 times during the pre-experimental period, 20% assigned to the low-density treatment and excluded from accessing the high-density treatment.
+  - Duration: six-week manipulation period; feeders checked and refilled every 2–3 days.
+- Data collection and sources:
+  - Collectors: Keith McMahon, Sam Croft, Kristina Beck.
+  - Data captured: each bird visit to a feeder logged with date, time, and logger (feeder).
+  - Additional metadata: experimental site, period (pre/during), treatment per logger (low/high/c1/c2 for controls), treatment per individual (id.treatment), and species code (Bto.species.code; greti, bluti, marti, nutha).
+- Data structure and schema:
+  - Single CSV file containing:
+    - Bto.ring (unique PIT tag)
+    - Site (experimental site identifier)
+    - period (pre/during)
+    - treatment (per logger: low/high/c1/c2)
+    - id.treatment (per individual: low/high/control)
+    - Bto.species.code (greti, bluti, marti, nutha)
+  - This structure enables linking visits to specific feeders, sites, and density treatments.
+- Spatial considerations for GIS:
+  - Data collected at discrete feeder locations across eight sites, with two feeders per site, enabling spatial mapping of visits and density effects.
+  - Potential GIS workflows: map feeder locations, join visits to site polygons, analyze spatial patterns by species and treatment, and assess temporal dynamics.
+- Data quality, limitations, and notes:
+  - Data depend on RFID/PIT tag detections; potential gaps if loggers fail or access control misfunctions.
+  - Resolution limited to feeder-level observations within chosen sites; may require careful cleaning to harmonize period and treatment fields.
+  - Pre- and during-experiment phases differentiate context for analyses of density effects.

@@ -1,0 +1,33 @@
+# Experimental design/sampling regime
+
+- UK Butterfly Monitoring Scheme (UKBMS) collects data from over 1,000 sites annually across the UK, using standardized methods to monitor butterfly populations.
+- Primary methods:
+  - All-species transects (Pollard walks): fixed-route line transect, 2–4 km, 45 minutes to 2 hours, weekly counts from April to September (ideally 26 counts/year) in suitable weather; record all butterfly species within a 5 m band.
+  - Transect design requires a fixed route to enable year-to-year comparisons and sampling of habitat/management types.
+  - Single-species transects: follow the all-species approach but record only one species (or a few weeks in the focal species’ flight period).
+  - Timed counts: abundance of a particular species over a set time/area, conducted under similar weather windows.
+  - Egg/larval web counts: tally eggs or larval webs in suitable habitats for specific species (e.g., Marsh Fritillary).
+- Data collection workflow:
+  - Site location data gathered in the field during transect setup.
+  - Data entered into Transect Walker software (free download from the UKBMS site); can be entered by the recorder or a regional transect coordinator.
+  - If a transect route changes, the new route is treated as a new site with a new site number.
+  - Transect Walker files are uploaded into an Oracle database that stores all records.
+- Data content and structure:
+  - Site Location Data stored as CSV with the following fields:
+    - Site number, Site name
+    - Gridreference (OS grid reference; typically 6-figure accuracy)
+    - Easting, Northing (X, Y coordinates derived from grid reference)
+    - Length (transect length in metres)
+    - Country
+    - No. Sections (number of sections along the transect)
+    - No. Yrs surveyed (years of butterfly abundance data collected up to 2013)
+    - First year surveyed
+    - Last year surveyed (up to 2012)
+- Quality control and validation:
+  - Each site belongs to a regional transect coordinator responsible for record checks.
+  - Records undergo preliminary validation by the regional coordinator, followed by automated and manual validation procedures to ensure accuracy of site location data.
+- Data standards and accessibility:
+  - Data are collected using standardized protocols to enable comparability across years and sites.
+  - Transect Walker is available for data entry; the underlying data are stored in an Oracle database, providing a centralized repository for end users to access long-term site data and trends.
+- Reference context:
+  - Described methods and protocols reflect established practices (Pollard, E. & Yates, T.J., 1993) for butterfly monitoring.

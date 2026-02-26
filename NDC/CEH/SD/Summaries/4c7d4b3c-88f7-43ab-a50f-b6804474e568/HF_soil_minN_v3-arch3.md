@@ -1,0 +1,32 @@
+# Details of data structure to HF_soil_minN.csv
+
+- Context and origin
+  - Supplement to supporting documentation for data series; data from grassland fertiliser trial 2016 at Henfaes Research Station (Bangor University).
+- Dataset size and contents
+  - 11 columns, 608 rows.
+  - Variables: soil NH4-N, soil NO3-N + NO2-N concentrations; soil moisture contents; soil pH; soil EC.
+- Columns, descriptions, and units
+  - Date: Date of sampling.
+  - N_app: 1|2|3 indicates fertiliser application; 1st & 2nd applications 90 kg ha-1, 3rd application 60 kg ha-1.
+  - Block: 1|2|3|4 (randomised block design).
+  - Plot: 1–16 (plot sampled).
+  - Treatment: AN (ammonium nitrate), U (urea), IU (inhibited urea, agrotain), C (0N control).
+  - Soil_NH4_mgNkg: ammonium concentration; mg NH4-N per kg (dry weight basis).
+  - Soil_NO3_mgNkg: nitrate concentration; mg NO3-N per kg (dry weight basis).
+  - moisture_dry: soil moisture on a dry weight basis (g H2O per g dry soil).
+  - moisture_wet: soil moisture on a wet weight basis (g H2O per g wet soil).
+  - pH: soil pH.
+  - EC: soil electrical conductivity (µS cm-1).
+- Sampling design and processing
+  - Soil sample depth: 0–10 cm; use a 1 cm diameter corer.
+  - Per-plot sampling: 6 samples collected and bulked per plot.
+  - Extraction method: 5 g soil with 25 ml 0.5 M K2SO4; shake 30 min at 200 rpm.
+- Analytical methods
+  - Nitrate: colorimetric method (Miranda et al., 2001).
+  - Ammonium: method (Mulvaney, 1996).
+  - pH and EC: standard electrodes; 1:2.5 soil to deionised water suspension.
+  - Moisture content: determined after 24 hours at 105°C.
+- Data governance and use
+  - Dataset is embedded with explicit methodological details and references, enabling replication and scrutiny of data quality for monitoring soil nitrogen dynamics under different fertilizer treatments.
+- Relevance for monitoring frameworks
+  - Provides key environmental health indicators (inorganic nitrogen forms, moisture, pH, EC) under varying N fertiliser regimes, suitable for evaluating policy options and informing future management decisions in grassland systems.

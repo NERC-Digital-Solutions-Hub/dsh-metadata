@@ -1,0 +1,49 @@
+# Experimental design/Sampling regime
+
+- The EMEP4UK model is an atmospheric chemistry transport model (ACTM) paired with WRF, simulating hourly to annual-average atmospheric composition and deposition; daily averaged data are provided here.
+- Emissions included in the model:
+  - Anthropogenic: NOx, NH3, SO2, primary PM2.5, primary PMcoarse (PM10–PM2.5), CO, and NMVOC.
+  - Emission sources and resolution:
+    - UK: National Atmospheric Emission Inventory (NAEI) at 1 km × 1 km, aggregated to 5 km × 5 km.
+    - Rest of Europe: EMEP CEIP emissions at 50 km × 50 km.
+    - International shipping (ENTEC, 2010i) aggregated to 5 km × 5 km within the British Isles domain.
+  - Natural emissions: forest fires are included; biogenic emissions of isoprene and, if required, monoterpenes are calculated in the model for every grid-cell and time-step using near-surface air temperature.
+- Model compiler and environment:
+  - FORTRAN Intel compiler 2013_sp1.3.174.
+  - Computations performed on the CEH computer cluster NEMSIS (Linux nemesis 2.6.32-431.29.2.el6.x86_64).
+- Nature and units of recorded values:
+  - Surface concentrations for multiple species, with units specified in NetCDF files:
+    - NO, NO2: µg/m3 (SURF_ug_NO, SURF_ug_NO2)
+    - PM10: µg/m3 (SURF_ug_PM10)
+    - PM2.5: µg/m3 (SURF_ug_PM2.5)
+    - NH3: µg/m3 (SURF_ug_NH3)
+    - HNO3: µg/m3 (SURF_ug_HNO3)
+    - SO2: µg/m3 (SURF_ug_SO2)
+    - NH4 (ammonium for PM2.5): µg/m3 (SURF_ug_NH4_F)
+    - TNO3 (nitrate for PM2.5): µg/m3 (SURF_ug_TNO3)
+    - SO4 (sulfate for PM2.5): µg/m3 (SURF_ug_SO4)
+    - Particulate organic matter (<2.5 μm): µg/m3 (SURF_ug_PART_OM_F)
+    - O3: ppb (SURF_ppb_O3)
+- Quality control and validation:
+  - AURN monitoring network used to verify hourly model outputs.
+  - UK Met Office AWS used to verify WRF outputs.
+  - Validation via simple linear regression; no additional QA/QC beyond these checks.
+  - Note: Use of dataset content is at your own risk; no warranty of error-free data.
+- NetCDF data structure overview:
+  - Example file: EMEP4UK_UK_webrun_emep_4.3_2001_day.nc
+  - Dimensions typically include:
+    - time: days (e.g., counting days of data)
+    - i, j: grid indices (UK grid 270 × 220 in example)
+  - Variables:
+    - time: units "days since 1900-01-01 0:0:0"
+    - i, j: grid coordinates (GeoX, GeoY)
+    - SURF_ug_SO2 (and other SURF_ug_* variables): multi-dimensional arrays with time, i, j
+    - grid mapping: Polar_Stereographic with associated metadata (scale factor, projection origin, etc.)
+  - Example attributes:
+    - SURF_ug_SO2: long_name, units (ug/m3), coordinates, grid_mapping
+    - Polar_Stereographic: scale_factor_at_projection_origin, latitude_of_projection_origin, grid_mapping_name
+- Notes and caveats:
+  - Forest fire data are included only for 2002–2012.
+  - Emissions for 2013–2014 are the same as 2012.
+  - 2001–2012 use WRF version 3.1.1; 2013–2014 use WRF 3.6.1 with changes to humidity nudging (no longer nudged with reanalysis).
+  - Supporting documentation and final report linked in notes.

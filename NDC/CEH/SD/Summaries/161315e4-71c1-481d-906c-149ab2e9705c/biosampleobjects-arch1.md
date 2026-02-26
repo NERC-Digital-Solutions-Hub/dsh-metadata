@@ -1,0 +1,29 @@
+# The second column (SRA_sample_name) in CocoaBugs_field_data_20230128.csv connects each row of CocoaBugs_field_data_20230128.csv to one of the rows below (column name:  "Sample Name")
+
+- What this document describes
+  - A linkage between environmental covariate data (in CocoaBugs_field_data_20230128.csv) and SRA/microbial sequencing data via the SRA_sample_name field.
+  - The SRA accession for the related data: PRJNA898889, with a Temporary Submission ID of SUB12256650, and a release date of 2024-12-31.
+  - After release, SRA records will be accessible at the NCBI SRA page: https://www.ncbi.nlm.nih.gov/sra/PRJNA898889.
+- Data files and linkage mechanism
+  - CocoaBugs_field_data_20230128.csv: contains environmental covariates for each sample and a key to connect to the speciesXsample table (Malaise_traps_ZG0001592.client.otuids.csv).
+  - The second column in this file, SRA_sample_name, links each row to a corresponding row in the list below (the column named "Sample Name").
+  - The list below provides SRA-related sample entries (Sample Name / SPUID / Organism / Tax ID / BioProject) such as SAMN#### numbers all under BioProject PRJNA898889.
+- Contents of the SRA mapping (high level)
+  - Multiple SAMN entries per Sample Name, representing various sub-samples or data types (e.g., GRNP-... designations, outdoor, metagenome, Sectioned samples).
+  - For each entry, fields include:
+    - SPUID (sample identifier)
+    - Organism and Tax ID (e.g., taxonomic information)
+    - BioProject (PRJNA898889) and associated SAMN identifiers
+  - The mapping shows a mix of sample contexts (e.g., outdoor vs. indoor, metagenome vs. other subsets) and frequent naming variations (e.g., GRNP-..., Section, NEW_..., Section 1-XX, etc.).
+- Access, provenance, and citation
+  - Accession to cite for the SRA data: PRJNA898889.
+  - Temporary Submission ID: SUB12256650.
+  - Release date: 2024-12-31; SRA records will be accessible via the provided NCIB SRA link after release.
+- How to use this data (analytical perspective)
+  - Use SRA_sample_name to join CocoaBugs_field_data_20230128.csv with the corresponding SRA/microbial sequencing entries to link environmental covariates with sequencing-based observations.
+  - Combine with Malaise_traps_ZG0001592.client.otuids.csv to map samples to species-OTU IDs for downstream analyses.
+  - Enables correlation analyses, pattern discovery, and predictive modeling of how environmental covariates relate to observed microbial communities across samples.
+- Practical considerations and caveats
+  - The SRA mapping list is extensive and contains many similarly named entries, with occasional formatting inconsistencies (e.g., varied separators, typos, and mixed contexts like “outdoor” and “metagenome”).
+  - Data scale and local specificity may pose challenges for integration and cleaning; careful validation of sample-name mappings is advised before analysis.
+  - Data provenance is tied to a single BioProject (PRJNA898889), but individual SAMN entries reflect diverse sample types and conditions within that project.

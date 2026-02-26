@@ -1,0 +1,30 @@
+# Experimental design/Sampling regime
+
+- EMEP4UK is an atmospheric chemistry transport model (ACTM) coupled with the weather research and forecast model (WRF) to simulate hourly to annual atmospheric composition and deposition of pollutants; daily averaged data are provided.
+- Emissions types:
+  - Anthropogenic emissions: NOx, NH3, SO2, primary PM2.5, primary PMcoarse, CO, NMVOC.
+  - Natural emissions: forest fires (included when available), biogenic isoprene and monoterpenes (calculated in the model for every grid-cell and time-step as required).
+- Spatial resolution of emissions:
+  - UK: from National Atmospheric Emission Inventory (NAEI) at 1 km x 1 km, aggregated to 5 km x 5 km.
+  - Rest of Europe: EMEP CEIP emissions at 50 km x 50 km.
+  - International shipping (ENTEC, 2010) aggregated to 5 km x 5 km for the British Isles domain.
+- Model outputs and data format:
+  - Daily averaged data are included; species include surface concentrations for NO, NO2, PM10, PM2.5, NH3, HNO3, SO2, NH4, NO3, SO4, Particulate Organic Matter (POM) below 2.5 μm, O3, etc., with specific NetCDF variable names and units.
+- Model compilation and execution:
+  - Fortran Intel compiler 2013_sp1.3.174.
+  - Computations run on the CEH computer cluster NEMSIS (Linux environment described).
+- Data quality and validation:
+  - Validation uses AURN monitoring network for hourly model output and UK Met Office AWS for WRF output.
+  - Simple linear regression used for comparisons; no additional QA/QC performed beyond this.
+  - Content is provided with no warranty; use at your own risk.
+- NetCDF data structure and metadata:
+  - Example dataset: EMEP4UK_UK_webrun_emep_4.3_2001_day.nc with dimensions time, j, i.
+  - Key variables include SURF_ug_SO2, SURF_ug_NO2, SURF_ug_PM10, SURF_ug_PM2.5, SURF_ug_NH3, SURF_ug_HNO3, SURF_ug_SO2, SURF_ug_NH4_F, SURF_ug_TNO3, SURF_ug_SO4, SURF_PART_OM_F, SURF_ppb_O3.
+  - Metadata fields specify units (e.g., ug/m3 for most surface species, ppbv for O3), standard_name, grid_mapping (Polar_Stereographic), and coordinate axes (i, j; lat/lon coordinates implied).
+  - Grid mapping uses Polar_Stereographic projection with defined scale and origin parameters; coordinates i and j correspond to EMEP grid indices and have units of km.
+- Data coverage and version notes:
+  - Forest fire data included only for 2002–2012.
+  - Emissions for 2013–2014 replicate 2012 data.
+  - 2001–2012 use WRF model version 3.1.1; 2013–2014 use WRF 3.6.1 with changes such as the removal of nudging of specific humidity with reanalysis.
+- Supporting documentation and references:
+  - Notes point to a final report and provide a link to the UK Air Defra report for detailed methodology and data provenance (retrieved 2016-04-20).

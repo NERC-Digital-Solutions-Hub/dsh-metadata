@@ -1,0 +1,30 @@
+# Methods: These 1x1 km data sets comprise the Average Accumulated Exceedance (AAE) of acidity and of nutrient nitrogen critical loads by acid and nitrogen deposition for 2015-17
+
+- Purpose: Provide 1x1 km grid data of AAE for acidity and nutrient nitrogen to summarise exceedances of habitat-specific critical loads due to acid and nitrogen deposition (2015–17).
+- How AAE is derived:
+  - For each habitat, calculate AE = exceedance (keq ha-1 year-1) × exceeded habitat area (ha).
+  - Sum AE across all habitats within each 1x1 km grid square.
+  - AAE = total AE ÷ total habitat area in the grid square (keq ha-1 year-1).
+- Habitats included:
+  - Acidity: acid grassland, calcareous grassland, dwarf shrub heath, bog, montane, certain productive and unmanaged woodlands (coniferous and broadleaved).
+  - Nutrient nitrogen: same habitats plus additional woodland types and dune grassland, saltmarsh.
+- Key units and conversions:
+  - AAE values are in keq ha-1 year-1.
+  - If deposition is below the critical load, AAE is set to zero.
+  - Nutrient nitrogen AAE can be converted to kg N ha-1 year-1 by multiplying by 14 (1 keq ha-1 year-1 = 14 kg N ha-1 year-1).
+  - Acidity exceedance combines sulfur and nitrogen contributions and cannot be expressed as kg of S or N separately.
+- Data sources and references:
+  - UK Methods Report (Hall et al., 2015) provides full methods.
+  - CBED deposition data available from the EIDC.
+  - Trends and UK Biodiversity Indicator updates published annually (e.g., Hall et al., 2017; Rowe et al., 2019).
+- Data structure and availability:
+  - Two separate files: acidhab_AAE_2015-17.csv (acidity) and nutnhab_AAE_2015-17.csv (nutrient nitrogen).
+  - Coverage differs between files due to habitat distributions.
+  - Each record includes: East_m, North_m (OSGB grid coordinates), Unique1km (grid square identifier), AAE_keq, CountryID (England=1, Wales=2, Scotland=3, Northern Ireland=4).
+- Important interpretation notes:
+  - National critical load maps are based on empirical/steady-state methods; exceedance indicates potential long-term harm, not immediate damage.
+  - Habitat maps and areas used for critical loads/exceedances may differ from other national habitat maps, affecting total areas mapped.
+  - Reducing deposition below the critical load does not guarantee immediate ecological recovery; chemical and biological recovery can be slow.
+- Uncertainty and quality control:
+  - Methods and data developed under UNECE CLRTAP; detailed transparency provided in Hall et al. (2015) and related metadata.
+  - Metadata and uncertainty information are available via the CEH data catalog and EIDC references.

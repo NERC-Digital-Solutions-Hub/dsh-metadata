@@ -1,0 +1,45 @@
+# Plant community surveys and sampling design
+
+- Study timeframe and location: fieldwork conducted between 18 June and 7 August 1983 on the Jebel, within Tunisia’s Ichkeul National Park area.
+- Sampling framework:
+  - 78 quadrats located across the Jebel, stratified using Fay (1980) vegetation maps.
+  - Quadrats arranged in a nested design: 2 x 2 m, 5 x 5 m, 7.07 x 7.07 m, 10 x 10 m, and 14 x 14 m.
+  - Most vegetated areas sampled; inaccessible cliffs excluded.
+  - At each site, a central stake was located by throwing a quadrat randomly; sites broadly dispersed to cover all community types.
+- Data collection within quadrats:
+  - Herbaceous species: cover-abundance estimated in the 2 x 2 m quadrat.
+  - Woody species: cover-abundance estimated in the 10 x 10 m quadrat.
+  - In remaining quadrats, presence-absence data were recorded.
+  - For each site, approximately three nested-quadrat surveys were conducted per day (8–10 hours).
+- Species identification and taxonomy:
+  - Collected and pressed unidentified plants; compared with herbarium references (Tunis and British Museum).
+  - Acknowledges under-recording risk for Liliaceae and Orchidaceae due to late flowering.
+  - Difficult identifications and species pairs were merged (e.g., Hypochoeris spp., Hyoseris spp., Hippocrepis spp., Sedum spp.).
+  - Taxonomy updated post-hoc using Euro-Med PlantBase and MedChecklist; final taxonomy aligned with Tunisia flora references (Le Floc'h et al. 2010; Daoud-Bouattour et al. 2007).
+- Functional group classification:
+  - Separate analyses for woody and herbaceous communities.
+  - Species grouped into functional/taxonomic groups anticipated to respond differently to grazing: Poaceae, Legumes, Geophytes, Forbs, shrub legumes, shrubs/trees.
+  - Forbs group includes ferns, cacti, club mosses, and some unidentified mosses.
+  - Annual vs. perennial distinction not made (study spans a single season).
+- Grazing intensity assessment:
+  - Within the 10 x 10 m plots, ranked browsing intensity on principal woody species.
+  - Assumed that woody browsing reflects overall grazing impact on both woody and herbaceous plants.
+  - Four-level scale: 1) unbrowsed; 2) lightly browsed; 3) moderate to heavy browsing; 4) severely clipped to short stunted bushes.
+  - Qualitative signs of herbivores (hair, droppings, feeding signs) recorded but not quantified.
+  - Distribution: 71% unbrowsed, 12.8% lightly browsed, 16.7% moderately to heavily browsed; heavily grazed sites tended to be low-altitude, rockier, with smaller-diameter olive trees.
+- Abiotic environmental measurements:
+  - Central-quadrat measurements to separate grazing effects from environment.
+  - Altitude recorded with barometric altimeter.
+  - Slope measured with inclinometer; aspect recorded as proxy for solar insolation.
+  - Percentage of rock outcropping/rock cover noted to capture substrate influence.
+- Olea europaea as anthropogenic activity proxy:
+  - Olive stems (>4 cm dbh) measured at breast height in 69 sites (data missing for 9 sites); preferred measurement at 30 cm height due to small tree size in shallow soils or under heavy grazing.
+  - Stems categorized by circumference size classes (0–5, 6–10, 11–15, 16–20, >20 cm) to compute total woody surface area using an equivalent radius approach.
+  - Rationale: woody vegetation, especially Olea europaea, reflects anthropogenic activity (grazing, woodcutting) and modulates herbaceous composition.
+- Data structure and availability:
+  - Data provided as three CSV files: woody_comm.csv (woody counts), herb_comm.csv (herb counts), spatial_env.csv ( abiotic variables).
+  - Column headers are described in accompanying metadata document (Metadata_for_Tunisia plants.rtf).
+- Data usage notes:
+  - The authors indicate potential future use of the data for another paper and request prior contact before data use.
+- References and context:
+  - Cited works cover goat grazing effects, Mediterranean vegetation dynamics, plant taxonomy updates, and environmental drivers (e.g., Fay 1980; Daoud-Bouattour et al. 2007; Le Floc'h et al. 2010; Molina-Venegas et al. 2016).

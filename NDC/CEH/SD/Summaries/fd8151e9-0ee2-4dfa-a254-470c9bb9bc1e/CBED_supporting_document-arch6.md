@@ -1,0 +1,45 @@
+# Concentration Based Estimated Deposition (CBED) methodology
+
+- Purpose: Generate 5x5 km resolution gridded data of wet and dry deposition for sulfur, oxidised and reduced nitrogen, and base cations, derived from gas/particle concentrations and precipitation ion concentrations collected in the UK Eutrophying and Acidifying Pollutants (UKEAP) network.
+- Data scope: UK-wide deposition estimates used for critical loads, including deposition to five land cover categories (forest, moorland, grassland, arable, urban) and habitat-specific deposition velocities; separation of deposition to woodland vs non-woodland habitats for critical loads.
+- Wet vs dry deposition:
+  - Wet deposition: derived from precipitation concentration maps and an annual precipitation map; accounts for occult deposition (cloud droplets) to vegetation; includes orographic enhancement for uplands.
+  - Dry deposition: based on gas/PM concentration maps and habitat-specific deposition velocities; applied to moorland or forest habitats as appropriate.
+- Temporal framing:
+  - Calculations are annual but provided as rolling 3-year means to smooth inter-annual variability.
+  - Outputs are ecosystem-specific with two scenarios: moorland/short vegetation everywhere and forest/woodland everywhere; grid-averaged values also provided.
+- Data sources and modeling components:
+  - Oxidised nitrogen: interpolated NO2/NO3, NO2 from PCM model data.
+  - Reduced nitrogen: ammonia from FRAME model and UKEAP measurements.
+  - Sulfur and calcium: atmospheric deposition components separated using sea-salt ratios; wet deposition includes cloud/droplet effects.
+  - Wet deposition includes oxidation/precipitation processes and an orographic enhancement factor.
+- Inter-annual variability: Acknowledges natural weather-driven variability; 3-year means help to smooth fluctuations.
+- Data products and formats:
+  - Three ecosystem-specific data files for 2013–2015:
+    - CBED-deposition-moorland-2013-2015.csv
+    - CBED-deposition-forest-2013-2015.csv
+    - CBED-deposition-gridaverage-2013-2015.csv
+  - Each file contains:
+    - easting (metres) and northing (metres) for the centre of each 5x5 km grid square.
+    - Deposition columns for respective components:
+      - Moorland: nox_m (oxidised N), nhx_m (reduced N), nms_m (non-marine S), nm_ca_mg_m (non-marine base cations).
+      - Forest: nox_f, nhx_f, nms_f, nm_ca_mg_f.
+      - Grid average: nox_ga, nhx_ga, nms_ga, nm_ca_mg_ga.
+  - All deposition values are in keq ha-1 year-1.
+- Units and conversions:
+  - keq ha-1 year-1; conversion factors:
+    - Sulfur (S): keq × 16 = kg S ha-1 year-1
+    - Oxidised/reduced nitrogen (N): keq × 14 = kg N ha-1 year-1
+    - Base cations (Ca+Mg): keq × 20 = kg Ca ha-1 year-1
+- Quality control and validation:
+  - Methods developed and applied in line with government QA standards.
+  - Subject to extensive peer review and included in Defra model inter-comparison exercises.
+  - Version control, documentation, and central storage of code; mass-balance checks against previous years; published in peer-reviewed literature.
+- Access and references:
+  - Resource links:
+    - http://www.pollutantdeposition.ceh.ac.uk/ukeap
+    - https://uk-air.defra.gov.uk/networks/network-info?view=ukeap
+- Practical notes for data use:
+  - Outputs intended for assessing critical load exceedances and habitat-specific deposition impacts.
+  - Data can be re-scaled to other units using provided conversion factors.
+  - Three-year mean data provide a stable basis for trend analysis and policy assessment.

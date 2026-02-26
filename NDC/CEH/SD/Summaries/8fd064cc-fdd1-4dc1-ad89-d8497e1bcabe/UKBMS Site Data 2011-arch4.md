@@ -1,0 +1,26 @@
+# Experimental design/sampling regime
+
+- UK Butterfly Monitoring Scheme (UKBMS) collects data from over 1,000 sites annually across the UK.
+- Primary method is all-species transects (Pollard walks); some sites use other standardised methods such as timed counts or egg/larval web counts.
+- Data collection methods and sampling design:
+  - All-species transects: fixed-route line transect at a site; all butterflies recorded weekly under defined weather conditions; routes sample habitat types and management activities and must remain fixed for year-to-year comparisons.
+  - Transect characteristics: typically 2–4 km long, 45 minutes to 2 hours to walk; divided into habitat/management sections; counts occur in a 5 m wide band along the transect; aim for 26 counts per year from April to September.
+  - Weather and timing constraints: observations conducted between 10:45 and 15:45; conditions require dry weather, wind < Beaufort 5, and temperature thresholds (≥13°C with ≥60% sunshine, or ≥17°C if overcast).
+  - Single-species transects: same methodology as all-species transects but record only for focal species during one or a few weeks.
+  - Timed counts: record abundance of a focal species over a set period and area under similar weather constraints.
+  - Egg/larval web counts: record eggs or larval webs of a species in suitable habitat areas.
+- Data collection workflow:
+  - Site location data are recorded in the field when a transect, timed count, or larval web count is established.
+  - Data are entered into Transect Walker (a free software); entries can be made by the recorder or a regional transect coordinator.
+  - If a transect route changes, the new route is treated as a new site with a new site number.
+  - Transect Walker files are uploaded into an Oracle database containing all records.
+- Nature and units of recorded values:
+  - Site location data include OS grid reference, transect length (metres), and number of transect sections.
+  - Grid references are broken down into Easting and Northing coordinates.
+  - Some site data may be incomplete.
+- Quality control:
+  - Each site is managed by a regional transect coordinator familiar with the sites.
+  - Records undergo initial checks by the regional coordinator, followed by automated and manual validation procedures to verify location data.
+- Data storage formats:
+  - Site Location Data are stored as CSV files.
+  - Key columns include: Site number, Site name, Gridreference, Easting, Northing, Length, Country, No. Sections, No. Yrs surveyed, First year surveyed, Last year surveyed (last year surveyed up to 2012).

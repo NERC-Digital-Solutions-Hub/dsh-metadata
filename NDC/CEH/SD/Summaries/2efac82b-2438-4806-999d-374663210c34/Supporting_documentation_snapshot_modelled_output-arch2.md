@@ -1,0 +1,24 @@
+# Supporting documentation
+
+- The dataset provides model outputs for Great Britain from two models: the land surface model JULES and the econometric agricultural land use model ECO-AG, across 8 unmitigated climate change scenarios.
+- Spatial and temporal resolution:
+  - JULES outputs on a 1.5 km x 1.5 km grid, covering 11-year present-day and 11-year future simulations.
+  - ECO-AG outputs on a 2 km x 2 km grid (400 ha grid cells) over GB.
+- Key modeled variables:
+  - JULES: net primary productivity (npp) by plant functional type, runoff, and irrigation water demand (irrig_water).
+  - ECO-AG: total arable land area per grid cell (in hectares).
+- Driving data and scenarios:
+  - Climate inputs from Regional Climate Model (RCM) runs at 1.5 km resolution with daily data.
+  - Present climate: 1998–2008; Future climate: 11-year period around 2100 with CO2 at ~936 ppm (RCP8.5).
+  - ECO-AG scenarios do not include CO2 effects; CO2 is marked as No for ECO-AG components. Irrigation can be On or Off; JULES scenarios include Climate, CO2, and Irrigation toggles in various combinations.
+- Data structure and file organization:
+  - JULES_output: tar archives per scenario/variable containing 132 monthly files (11 years) with mean values for every grid cell plus longitude/latitude. File naming: {scenario_run}_{variable}_yyyymm.nc. Present climate data labeled with present year, future data labeled 100 years later.
+  - Variables:
+    - npp: Net Primary Productivity by broadleaf trees, needleleaf trees, C3 grasses, C4 grasses, and shrubs (kg m^-2 s^-1).
+    - runoff: Grid cell runoff rate (mm s^-1).
+    - irrig_water: Irrigation water demand to alleviate water stress (mm s^-1).
+  - ECO_AG_output: CSV files per scenario containing grid-cell arable area (ha); ECO_AG_grid_2km.csv provides grid cell coordinates and identifiers to match outputs.
+- Data quality, provenance, and methodologies:
+  - JULES: community-led model by UK Met Office and CEH; version vn4.9; access via the JULES repository (registration required) and Rose suite (u-ao645, full_UK branch).
+  - ECO-AG: methodology developed by Fezzi & Bateman (2011) and used in UK NEA studies; based on 2 km grid and input from the June Agricultural Census; extensively peer-reviewed (Fezzi et al. 2014, 2015; Bateman et al. 2013, 2014).
+- References for context and methods are provided within the document.

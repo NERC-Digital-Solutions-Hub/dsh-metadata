@@ -1,0 +1,27 @@
+# Glasgow Hg Core Runs, Description
+
+- What this document covers: Table headings for results from measurements of reference sediment LKSD2 and procedural blanks processed alongside core sediments measured by Cold Vapour Atomic Fluorescence Spectroscopy (CV-AFS).
+- Core description:
+  - Glasgow Hg Core Runs: Names of Hg cores run through the CV-AFS machine
+  - Tube Code, Description: Tube code such as LKSD2
+  - Standard Sediment mass, Description: Mass of reference sediment weighed out (~0.2 g)
+- Measured concentrations:
+  - Hg ng/g: Mercury concentration in sediment (nanograms per gram)
+  - Hg µg/g: Mercury concentration in sediment (micrograms per gram)
+  - Measured blank (ng/ml): Mercury concentration measured in procedural blank (ng/mL)
+- Reference sediment standard:
+  - LKSD2 Reference Sediment Value: 160 ± 19 ng/g
+  - Partial Extraction using HNO3
+- Methodology:
+  - CV-AFS used for measurement of mercury
+- Associated data/file:
+  - Associated file: hydroscape_glasgow_hg _cores_qc.csv
+- References:
+  - Lynch, J. (1990). Provisional Elemental Values for LKSD reference materials LKSD-1 to LKSD-4 (Geostandards Newsletter, 14: 153-167). doi: 10.1111/j.1751-908X.1990.tb00070.x
+- Relevance for environmental analysts:
+  - Provides standardized outputs (numbers, units) for environmental health monitoring and policy performance.
+  - Facilitates quality assurance through defined table headings, reference materials, and procedural blanks.
+  - Supports data management practices: storage and upload of datasets to appropriate portals.
+- Key challenges (from the broader monitoring context):
+  - Increasing the value of monitoring datasets by combining with other relevant data (avoiding single-use datasets).
+  - Enabling access to the underlying data used to generate final outputs.

@@ -1,0 +1,28 @@
+# Description
+
+- Purpose: Record offspring production of 192 female Blaptica dubia cockroaches to assess fitness consequences of social network position under different humidity levels as part of the project on the evolution and plasticity of social networks traits.
+- What was recorded: number of nymphs produced by each female in up to two clutches (broods); dates for first and second brood when applicable; total offspring per female.
+- Data collection period and location: University of Aberdeen Zoology building insectary; 29 December 2023 – 23 January 2024.
+- How data were collected:
+  - Each female housed individually with food, water, shelter.
+  - Females mated with two males over two weeks at 28°C and ~50% humidity.
+  - Two humidity treatments during the experimental period: 50% (n=96) and 30% (n=96).
+  - Social associations recorded in groups of 24; offspring counted twice weekly and offspring removed.
+  - After two weeks, females returned to 28°C and 50% humidity; offspring production monitored for 10 weeks total.
+- Why these data were collected: To determine fitness consequences of social network position at different humidities within the broader study.
+- Completeness: All females have brood records; 40/192 produced non-zero brood1; 1/192 produced non-zero brood2. If a brood had zero offspring, the date is NA and the corresponding cell is 0 for brood counts.
+- Data structure and fields (in the spreadsheet):
+  - unique_ID: unique identifier for each female
+  - humidity: experimental humidity (50 or 30 percent)
+  - label: visual tag used for identification
+  - group: social group identifier
+  - nymphs: offspring count for the first brood (0 if none)
+  - date1: date of first brood (NA if none)
+  - nymphs2: offspring count for the second brood (0 if none)
+  - date2: date of second brood (NA if none)
+  - total_off: sum of nymphs and nymphs2
+- Related data: references to a separate dataset or file "cockroach_aggregation_records" for recorded social associations during the experiment.
+- Data provenance and responsibility:
+  - Data collection and initial interpretation by: Callum McLean and David Fisher
+  - Involvement in data interpretation: Callum McLean and David Fisher
+- Relevance to the study aims: Provides foundational data to analyse how social network position and humidity affect offspring production, enabling subsequent analyses and dashboards/reports for stakeholders.

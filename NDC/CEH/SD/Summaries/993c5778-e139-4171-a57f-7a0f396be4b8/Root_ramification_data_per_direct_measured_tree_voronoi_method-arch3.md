@@ -1,0 +1,77 @@
+# DATA HEADER INFORMATION for: Root_ramification_data_per_direct_measured_tree_voronoi_method.csv Please also see Manual_2_Belowground_Root_Survey, page 10.
+
+- Overview
+  - Purpose: The dataset records the target tree root architecture, with each coarse root (up to 1 cm diameter) branching tagged and measured for each target tree.
+  - Source and project context: Associated with ESPA (Programme) and the P4GES project. DOI provided. Acknowledgement required for outputs derived from these data.
+
+- Provenance and identifiers
+  - DOI: https://doi.org/10.5285/993c5778-e139-4171-a57f-7a0f396be4b8
+  - Programme: ESPA; Project: P4GES
+  - Acknowledgement: Laboratoire des Radio Isotopes, Université d'Antananarivo required for products derived from these data.
+
+- Key metadata elements (variables, types, and units)
+  - ZOI (Zone of Interest)
+    - Information: ZOI, Unit = ZOI2 (Andasibe) / ZOI3 (Anjahamana)
+    - Variable Type: Categorical
+  - Site
+    - Information: Code given to the site where the sample was collected
+    - Variable Type: Text string
+  - Local name
+    - Information: Vernacular/local name of the inventoried species
+    - Variable Type: Text string
+  - DBH Class (Diameter at Breast Height class)
+    - Information: 1.3 m DBH category
+    - Variable Type: Categorical
+    - Unit: L (Large) / M (Medium) / S (Small)
+  - Code_target_tree
+    - Information: Code assigned to each target tree (linked to site, species, diameter class)
+    - Variable Type: Text String
+  - Number of ramification
+    - Information: Number of ramifications from the north
+    - Variable Type: Numeric
+  - DiH (Horizontal diameter beginning)
+    - Information: Horizontal diameter at the start of each ramification
+    - Variable Type: Numeric
+    - Unit: Centimeter
+  - DiV (Vertical diameter beginning)
+    - Information: Vertical diameter at the start of each ramification
+    - Variable Type: Numeric
+    - Unit: Centimeter
+  - DfV (Vertical diameter ending)
+    - Information: Vertical diameter at the end of each ramification
+    - Variable Type: Numeric
+    - Unit: Centimeter
+  - DfH (Horizontal diameter ending)
+    - Information: Horizontal diameter at the end of each ramification
+    - Variable Type: Numeric
+    - Unit: Centimeter
+  - DfM (Diameter ending mean)
+    - Information: DfM = (DfH + DfV) / 2
+    - Variable Type: Numeric
+    - Unit: Centimeter
+  - Total_weight
+    - Information: Weight of each ramification
+    - Variable Type: Numeric
+    - Unit: grams (g)
+  - Total_length
+    - Information: Length of each ramification
+    - Variable Type: Numeric
+    - Unit: Centimeter
+  - Orientation
+    - Information: Indicates direction of each ramification
+    - Variable Type: Categorical
+    - Unit: N (North), S (South), E (East), W (West); Vor indicates ramification from the Voronoi triangle where roots were excavated; PV indicates taproot; NA = Not available (ramification not visible/blocked)
+  
+- Data scope and structure
+  - Granularity: Record of every ramification for each target tree; includes both orientation categories (Voronoi-based and PV taproot context)
+  - Coverage: Root architecture data captured for specified sites within the zone of interest (Andasibe and Anjahamana)
+
+- Usage and governance notes
+  - Data provenance is linked to a formal project with a DOI, enabling citation and traceability
+  - Public sharing and appropriate acknowledgement are emphasized through project guidelines and institutional affiliations
+  - Metadata richness (e.g., ZOI, site, local names) supports verification and potential data integration, though some fields (like NA orientation) indicate instances of incomplete visibility during measurement
+
+- Practical implications for monitoring frameworks
+  - Enables assessment of belowground root architecture across target trees, useful for understanding root-system development and environmental interactions
+  - Variables provide measurable traits (ramification counts, diameters, lengths, weights) suitable for comparative analyses and policy-relevant monitoring dashboards
+  - Clear documentation of measurement context (Voronoi-based versus taproot-oriented) aids interpretation and comparability across studies or monitoring programs

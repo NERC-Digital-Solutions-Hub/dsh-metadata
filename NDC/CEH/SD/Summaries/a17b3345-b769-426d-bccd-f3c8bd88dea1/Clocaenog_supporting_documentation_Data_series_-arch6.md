@@ -1,0 +1,83 @@
+# Climoor field site in Clocaenog forest Supporting documentation for data
+
+- Overview of the Clocaenog field site and its climate-change manipulation experiment, designed to reflect drought and warming scenarios for upland moorland. The site uses automated roofs and curtains to create drought and warming treatments across replicated plots, with controls to mirror shading effects. Location: Clocaenog Forest, North East Wales (53°03′19″N, 03°27′55″W). Dominant vegetation includes Calluna vulgaris (heather). Soils are humo-ferric podzols. The experiment began in 1998 and includes replicates, controls, and several measurement programmes to monitor abiotic and biotic responses over time.
+
+- Data types and datasets
+  - AWS meteorological data (daily, 1999–current day)
+  - Micro-meteorological plot data (daily, 1998–current day)
+  - Rainfall site-level data and rainfall chemistry (biweekly to monthly)
+  - Throughfall data (plot-level rainfall; biweekly)
+  - Water table depth data (2009–current day)
+  - Soil respiration data (fortnightly to automated campaigns; various methods over time)
+  - Trace gases CH4 and N2O (1999–2000; 2007–2009)
+  - Net ecosystem CO2 exchange (NEE) data (2002–2004; 2009–2011)
+  - Photosynthesis data (ambient and response curves; 2001–2003; additional years)
+  - Vegetation survey data (pin-point biomass estimates; 1998–2012 with ongoing efforts)
+  - Canopy reflectance (NDVI and PRI indices; 2000–2004; limited follow-up measurements)
+  - Vegetation phenology, annual growth and pathogen assessment (1998–present; selected years)
+  - Vegetation chemistry (carbon, nitrogen, phosphorus, etc.)
+  - Litterfall data (1999–2002; later periods with less frequent collection)
+  - Root biomass data (2003, 2004, 2008, 2011)
+  - Soil microbial biomass (2000, 2001, 2012)
+  - Nitrogen mineralisation (1998–2004)
+  - SOM, SOC and bulk density (related to mineralisation studies)
+  - Soil solution and leachate chemistry (1998–2008)
+  - Appendix: Site layout and quadrat/plot references (Appendix 1–3)
+
+- Data collection, methods and units (highlights)
+  - Climate treatments
+    - Drought: retractable polyethylene roof reduces rainfall by ~20% during growing season (May–Sept; 1999–2011; extended Apr–Oct since 2012); occasional rainfall under-detection for small events.
+    - Warming: retractable aluminum curtains reflect infrared radiation; night-time protection; rain-retraction mechanism can reduce rainfall by ~14%; not operated in winds >10 m/s.
+  - Measurements and instrumentation
+    - Automated weather station (AWS) and plot-level micro-meteorological sensors; measurements typically minute- or hourly-based with daily summaries.
+    - Soil respiration and trace-gas measurements use closed and vented chamber methods, with various analysers (e.g., CIRAS, LI-COR) and unit conversions to mg CO2-C m-2 h-1 or µmol m-2 s-1.
+    - Throughfall and rainfall data collected with funnels/bottles and storage gauges; chemical analyses performed in lab (pH, NO3, Cl, SO4, DOC, NH4, etc.).
+    - Vegetation and biomass data via pin-point method; calibration tables to convert pin hits to biomass (g m-2) using species-specific slopes.
+  - Timeframe and scope
+    - Climate treatment data cover 1997–2014 for climate-site details; on-site measurements span 1998–2014+ with varying continuity across datasets.
+    - Many datasets are long-running, but some measurements are sporadic or limited to specific years.
+  - Data formats
+    - Primary data available as CSV files (e.g., Daily automated weather station data_1999to2015_Clocaenog.csv; Throughfall_Clocaenog.csv; Soil respiration datasets; etc.).
+    - Supporting documentation and data processing notes provided in accompanying RTf/word-like files.
+  - Data processing details
+    - Explicit unit conversions and calibration steps are documented (e.g., soil respiration conversions from g CO2 m-2 h-1 or µmol m-2 s-1 to mg CO2-C m-2 h-1; biomass adjustments based on pin-hit to biomass calibration).
+    - NEE and photosynthesis data are adjusted for biomass differences within chamber bases using measured above-ground biomass.
+    - Throughfall data are adjusted to represent plot-level rainfall via percent-change calculations relative to site-level rainfall; instances with compromised measurements are excluded or infilled with year-wide averages.
+  - Data processing notes
+    - Legacy data; not all processing steps align with current best practices; some documentation of processing stages may be incomplete.
+    - Data quality control relied on basic visual checks; logger downtime, sensor issues, and field modifications introduced data gaps or variability.
+
+- Data quality, limitations and access
+  - Data quality
+    - QC performed through visual inspection due to historical constraints; some measurements are legacy with incomplete processing documentation.
+    - Patchy data availability across datasets (some datasets infrequently collected; post-2015 data not all stored in the main repository).
+  - Access and custodianship
+    - Not all data are stored within the EIDC; some smaller or post-2015 datasets may require direct inquiry.
+    - For access or details, contact Sabine Reinsch or Bridget Emmett at CEH Bangor, UK.
+  - Location and layout specifics
+    - Site coordinate references and plot/quadrat layouts provided in appendices; grid references: SJ019519; latitude/longitude 53.055N, -3.465W.
+    - Appendix materials include soil/plot layout and quadrat arrangement.
+
+- Data use, integration and potential data products
+  - Opportunities for data support and self-serve insights
+    - Combine climate treatment data (drought and warming) with plant biomass, soil respiration, NEE, and litterfall to assess climate-ecosystem carbon flux responses over time.
+    - Integrate rainfall, throughfall, and rainfall chemistry with soil solution and leachate chemistry to model hydrological and nutrient dynamics under climate treatments.
+    - Link vegetation phenology, canopy reflectance indices (NDVI/PRI), and photosynthesis data to understand seasonal response patterns under drought and warming.
+    - Utilize pin-point biomass data and vegetational chemistry to explore relationships between tissue chemistry and carbon fluxes or respiration rates.
+  - Data products and analyses to consider
+    - Time-series dashboards showing treatment effects on key CO2 fluxes (NEE, Rs), soil respiration, and net ecosystem processes across plots and years.
+    - Cross-dataset analyses of climate drivers (temp, PAR, rainfall) with biological responses (growth, phenology, litterfall, root biomass).
+    - Spatial comparisons across drought, warming, and control plots to assess treatment consistency and interaction effects.
+    - Data harmonization workflows aligning AWS, micro-met, and plot-level measurements for integrated ecological modelling.
+  - Practical notes for data users
+    - Be mindful of legacy data limitations and incomplete documentation; verify units and calibrations using dataset-specific metadata.
+    - Acknowledge potential data gaps due to throughfall measurement exclusions or plot-level data loss; apply appropriate imputation or exclusion criteria as described in each dataset’s notes.
+
+- Appendix and references
+  - Appendix 1: Site layout
+  - Appendix 2: Quadrat layout with experimental plots
+  - Appendix 3: Plot layout with quadrats and measurement areas
+  - Plot and dataset references available; includes imaging of the Climoor field site layout and grid references.
+
+- Contact for access and details
+  - Sabine Reinsch (sabrei@ceh.ac.uk) and Bridget Emmett (bae@ceh.ac.uk), CEH Bangor, for data access, further documentation, and clarifications.

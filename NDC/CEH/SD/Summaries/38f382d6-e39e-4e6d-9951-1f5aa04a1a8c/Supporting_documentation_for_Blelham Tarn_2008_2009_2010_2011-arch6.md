@@ -1,0 +1,40 @@
+# Sampling Regime and Collection Methods
+
+- Location and purpose: Dataset collected from an automatic lake monitoring buoy in Cumbria, England, at Blelham Tarn; designed to monitor meteorological conditions and in-lake temperatures.
+- Measured variables:
+  - Air temperature (°C)
+  - Solar radiation flux (Pyranometer) in W/m²
+  - Wind speed (m/s)
+  - Lake water temperature at depths: 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, and 12 m (°C) using platinum resistance thermometers
+- Instrumentation and cadence:
+  - Instruments collect data every 4 minutes
+  - Hourly averages are calculated by a Campbell Scientific datalogger
+  - Example: The value for 2 p.m. is the average from 1–2 p.m., excluding 1 p.m. data but including 2 p.m. data
+- Time zone and period:
+  - All data presented in GMT (UTC+0)
+  - Date range: 2008, 2009, 2010, and 2011
+- Data quality and QC:
+  - Data are raw and not yet calibrated or formally quality controlled
+  - Visually checked; obvious hardware-related errors removed
+  - Gaps occur due to buoy maintenance or sensor/logger problems
+- Data structure and format:
+  - Comma separated values (CSV)
+  - Columns include:
+    - Date_GMT: Date and time of measurement (GMT)
+    - 0.5m, 1m, 2m, 3m, 4m, 5m, 6m, 7m, 8m, 9m, 10m, 12m: Water temperature (°C) at each depth
+    - Air_Temperature: Air temperature (°C)
+    - Pyranometer: Solar radiation flux (W/m²)
+    - Wind_Speed: Wind speed (m/s)
+- Notes on data interpretation:
+  - Data are raw with no calibration applied; users should perform calibration/quality checks as needed for analyses
+  - Data may require handling gaps and potential sensor-related biases during processing
+- Reuse and publications:
+  - Used in several scientific studies, including PhD-related work
+  - Notable publications:
+    - Woolway et al. (2014) on estimating onset of thermal stratification from surface measurements (Water Resources Research)
+    - Woolway et al. (2015) on diel variability in epilimnetic temperature across five lakes in the English Lake District (Inland Waters)
+    - Woolway et al. et al. (2016) on diel surface temperature range scaling with lake size (PLoS ONE)
+- Practical implications for data support:
+  - Validate timing alignment and time zone (GMT) when integrating with other datasets
+  - Account for potential data gaps during analysis and modeling
+  - Provide provenance and basic QC steps to end users to facilitate self-service data exploration and responsible reuse

@@ -1,0 +1,43 @@
+# Background information
+
+- Context and purpose
+  - In Wales, agri-environment scheme funding (since the early 1990s) supports biodiversity-related monitoring through the Glastir Monitoring and Evaluation Programme (GMEP), established to track landscape features and biodiversity progress toward international obligations (CBD 2020).
+- GMEP survey design and scope
+  - Adopted a 4-year rolling cycle (2013–2016) to maximise site coverage while monitoring year-on-year changes.
+  - Two components: Wider Wales (baseline estimates and national trends) and Targeted Component (Glastir priority areas).
+  - All data integrated using a common spatial unit of 1 km square; aim to enable cross-analysis with future GB-wide surveys.
+  - Sample: 300 x 1 km squares over four years; half randomly sampled within strata by the ITE Land Classification of Great Britain; half targeted at Glastir priorities.
+  - Exclusions: squares with >75% urban land or >90% sea excluded.
+- Data collection methods
+  - Within each 1 km square, point, areal, and line features mapped onto base maps using pre-determined codes.
+  - Data capture with CS Surveyor software (CEH/Esri UK) on electronic devices; field mapping handbooks guide methodology.
+  - Point features capture elements < 20 m × 20 m (e.g., trees, ponds, buildings) with detailed coding.
+- Data schema and the GMEP dataset
+  - Primary dataset: GMEP_LANDSCAPE_PT_FEATURES_2013_16.csv
+  - Key fields (examples):
+    - SQ_ID (1 km square sampling site code)
+    - PCOMPDATA_ID, PCOMPDATA_GUID (landscape point identifiers)
+    - THEME, HABITAT_NAME (feature type and primary descriptor)
+    - VETERAN_TREE_TYPE, DEAD_MISSING_BARK, LIGHTNING_STRIKES, MISSING_LIMBS, HOLLOW_TRUNK, DEAD_WOOD, IVY_COVER, EPIPHYTE_COVER
+    - CANOPY_LIVE, TREE_DEAD, VEGETATION_TYPE, MODAL_DBH, SPECIES, PROPORTION, USE
+    - HABITAT_BOX, DISEASE_SIGNS, BUFFER
+    - SURVEY_YEAR, EASTING_10km, NORTHING_10km, LC (ITE Land Class)
+    - Notes: Species nomenclature follows Stace (1997)
+- Quality Assurance and data integrity
+  - Surveys conducted by experienced botanists; intensive training prior to fieldwork; standardized field handbooks used.
+  - Electronic data capture reduces post-survey digitising errors; mandatory fields and prompts improve data completeness.
+  - Field data verified through a Quality Control (QC) process with a second survey team; issues fed back to field teams for improvement.
+  - Project roles include QA, field team management, data management, statistical and GIS expertise.
+- Organization and teams
+  - Lists of QA leads, field team managers, database managers, and GIS/training specialists involved in data handling.
+  - Field survey teams comprise a wide roster of surveyors across Wales.
+- Data use, integration, and dissemination
+  - Integration across components enables assessment of national biodiversity indicators and landscape features.
+  - Designed to align with the Countryside Survey of Great Britain methodology to facilitate future data integration and comparative analyses.
+- References and supporting documents
+  - Field handbooks, methodology papers, and annual/final reports from GMEP (2014–2017).
+  - External references: ITE Land Classification 2007, biodiversity habitat classifications, UK BAP priority habitat descriptions, and biodiversity guidance.
+- Supporting materials
+  - Related datasets and documentation (e.g., mapping field handbooks Part 1 and Part 2, Glastir Monitoring & Evaluation Programme website) provides definitions, codes, and usage guidelines.
+- Overall aim achieved by the dataset
+  - Provides a robust, multi-scale, ecosystem-based data collection framework to monitor landscape features and biodiversity in Wales, enabling analysis of spatial and temporal trends and informing policy and conservation actions.
