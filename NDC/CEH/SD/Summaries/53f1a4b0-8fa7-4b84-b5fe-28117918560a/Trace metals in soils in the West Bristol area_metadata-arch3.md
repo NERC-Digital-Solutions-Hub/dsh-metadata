@@ -1,0 +1,112 @@
+Outdoor and indoor cadmium distributions near an abandoned smelting works and their relations to human exposure
+
+- Purpose and scope
+  - Reports soil cadmium (Cd) distributions and related metal concentrations near an abandoned smelting works and their relation to human exposure.
+  - Includes the data structure (AVONMOUTH.csv) and the materials/methods used to generate soil concentration data.
+
+- Data dictionary: AVONMOUTH.csv (column definitions)
+  - Site number
+    - Explanation/Units: Number allocated to site
+    - Method: N/A
+  - Easting
+    - Explanation/Units: Ordnance Survey Easting
+    - Method: N/A
+  - Northing
+    - Explanation/Units: Ordnance Survey Northing
+    - Method: N/A
+  - Site description
+    - Explanation/Units: Brief site description
+    - Method: N/A
+  - Distance to smelter
+    - Explanation/Units: kilometres
+    - Method: N/A
+  - Soil pH
+    - Explanation/Units: Soil pH
+    - Method: Electrode from a 1:2.5 by volume soil:water mix
+  - Loss On Ignition (organic matter)
+    - Explanation/Units: Soil organic matter (%)
+    - Method: Furnace combustion at 375°C
+  - Aluminium (Al)
+    - Explanation/Units: mg/kg
+    - Method: ICPOES
+  - Chromium (Cr)
+    - Explanation/Units: mg/kg
+    - Method: ICPMS
+  - Iron (Fe)
+    - Explanation/Units: mg/kg
+    - Method: ICPOES
+  - Copper (Cu)
+    - Explanation/Units: mg/kg
+    - Method: ICPMS
+  - Zinc (Zn)
+    - Explanation/Units: mg/kg
+    - Method: ICPMS
+  - Nickel (Ni)
+    - Explanation/Units: mg/kg (isotope Nickel60)
+    - Method: ICPMS
+  - Arsenic (As)
+    - Explanation/Units: mg/kg
+    - Method: ICPMS
+  - Cadmium (Cd)
+    - Explanation/Units: mg/kg
+    - Method: ICPMS
+  - Mercury (Hg)
+    - Explanation/Units: mg/kg
+    - Method: ICPMS
+  - Lead (Pb)
+    - Explanation/Units: mg/kg
+    - Method: ICPMS
+  - Notes on methods
+    - ICPMS: inductively-coupled plasma mass spectrometry
+    - ICPOES: inductively-coupled plasma optical emission spectrometry
+
+- Materials and methods (study context and analytical workflow)
+  - Sampling design
+    - Two soil sampling sets: grid-based and targeted.
+    - Nested grid approach within 5 km of the smelter (1 km grid) and extending up to 15 km (5 km grid).
+    - Total of 44 locations sampled in October 2007.
+    - Sampling sites on publicly accessible land with mixed grass/vegetation where possible.
+    - At each site: five 15 cm deep × 4 cm diameter cores within a 10 m × 10 m area; cores pooled to form a single homogenized sample per location.
+  - Soil processing and preparation
+    - Soils homogenised, air-dried, roots/stones removed (2 mm sieve).
+    - Sub-sampling by coning and quartering; milled with non-metallic agate mill.
+  - Chemical analysis
+    - Total metal concentrations (Cd and a suite of metals: Al, Cr, Cu, Zn, Ni, As, Pb, Hg) determined after aqua regia digestion via microwave digestion (0.5 g soil, 12 mL aqua regia, up to 200°C).
+    - Measurements by Perkin Elmer Elan DRC II ICP-MS.
+    - Internal standards: Ga, In, Re to correct drift.
+    - Method detection/limits: Cd detection limit 0.02 μg g-1 (4× SD of blanks considered with sample weight and digestion volume).
+  - Quality control and certified reference materials
+    - Included a certified soil (ISE 921, Wageningen University) with each batch.
+    - Recovery comparisons to certified values: Cd 96.3%; Al 42.3%; Cr 78.0%; Cu 89.5%; Zn 85.7%; Ni 85.6%; As 104%; Pb 93.4%; Hg 109%.
+    - High Cd recoveries support validity of measured Cd concentrations.
+  - Ancillary soil measurements
+    - Soil organic matter content (LOI) by furnace combustion at 375°C (Allen, 1989).
+    - Soil pH measured by electrode in a 1:2.5 soil:water suspension (Allen, 1989).
+  - References (methodology and context)
+    - Allen, Chemical Analysis of Ecological Materials (1989)
+    - Jones, Biological Monitoring of Metal Pollution in Terrestrial Ecosystems (1991)
+    - Spurgeon et al. (2008) on drivers of metal distribution in British soils
+
+- Data quality, limitations, and governance implications for monitoring
+  - Detection limits and QA/QC
+    - Cd detection limit established; use of certified reference material with reported recoveries demonstrates measurement reliability for the suite of metals, though some metals show variable recoveries (e.g., Al at 42.3%).
+  - Metadata and transparency
+    - Detailed method descriptions (digestion, instrumentation, internal standards, QA/QC) essential for data reuse and cross-study comparability.
+    - Clear documentation of grid design and site selection enhances interpretability for exposure assessment and spatial monitoring.
+  - Data accessibility and sharing
+    - The study demonstrates the value of sharing data (including underlying datasets) to support policy decisions, but notes potential barriers to public sharing of datasets.
+  - Data governance considerations for monitoring frameworks
+    - Emphasizes the need for data quality assurance, metadata completeness, and standardized methods to enable trustworthy, comparable environmental health indicators.
+    - Highlights challenges that monitoring bodies often face: data gaps, data access delays, organizational silos, the burden of sharing datasets publicly, keeping data up to date, and the need for robust data governance to store and update datasets.
+
+- Relevance to policy monitoring and framework design (for the archetype)
+  - Demonstrates a structured approach to measuring soil metal contamination around industrial sources, with explicit sampling design, standardized preparation, and validated analytical methods.
+  - Provides a clear example of translating field data into usable indicators (metal concentrations by site) for environmental health monitoring and exposure assessment.
+  - Illustrates practical data governance requirements (documentation, QA/QC, metadata, open data considerations) that monitoring frameworks should institutionalize to ensure data are fit for decision-making.
+  - Highlights common hurdles in turning complex analytical results into clear, policy-relevant outputs (e.g., communicating spatial patterns, standardizing units/methods, and balancing data openness with privacy or proprietary considerations).
+
+- Implications for future monitoring practice
+  - Adopt standardized sampling grids and consistent depth/area sampling to enable temporal and spatial comparisons.
+  - Ensure comprehensive metadata accompany datasets (method details, detection limits, QA/QC results, reference materials).
+  - Use validated digestion and analytical methods (e.g., aqua regia digestion, ICP-MS/ICP-OES) with clear reporting of detection limits and recoveries.
+  - Maintain transparent data governance, including data sharing practices and versioning, to support policy evaluation and future decision-making.

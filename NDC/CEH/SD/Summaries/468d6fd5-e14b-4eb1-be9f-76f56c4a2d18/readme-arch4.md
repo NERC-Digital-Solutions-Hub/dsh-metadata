@@ -1,0 +1,45 @@
+# Summary
+
+- Purpose and scope
+  - Dataset containing the input data and settings needed to run a Community Water Model (CWatM) of the Ebro River basin in Spain.
+  - Includes earth-surface maps, soils, groundwater, land cover, crop coefficients, population and GDP, and water demands for irrigation, livestock, industry, and domestic sectors.
+- Project background
+  - Developed by Dr David Haro Monteagudo (University of Aberdeen) in collaboration with Dr Andrea Momblanch Benavent (Cranfield University) with IIASA technical assistance.
+- File formats
+  - netCDF (.nc), Text (.txt), GeoTIFF (.tif), and CSV (.csv).
+- Directory structure and key components
+  - CWatM-Ebro-1km
+    - init: initialization file to reduce warm-up impact (storages start at zero if omitted).
+    - Ebro1km_20121231.nc: main input dataset.
+    - input_netcdf: earth-surface input maps and a catchment mask (basin2.tif).
+    - groundwater: GLHYMPS porosity, groundwater-related data.
+    - landcover: four classes (forest, grassland, irrPaddy, irrNonPaddy) with crop coefficients, interception, and root-depth files.
+    - landsurface/topo: topography and land-surface data (e.g., cellarea, dem, slope, lat, etc.).
+    - waterDemand: demand maps (lift_areas.tif).
+    - routing/kinematic: routing and channel/stream network data.
+    - lakesreservoirs: lake/reservoir properties (area, volume, type, year, etc.).
+    - soil: 19 soil files for soil-level water balance calculations.
+    - settings: initialization and parameter files (readme, csv, ini).
+    - meteo: meteorological forcings (EMO-5 and alternative precipitation datasets).
+- Spatial and temporal coverage
+  - Region: Ebro River basin, Spain (WSG84 bounding box: approx 43°09′N–40°32′N, 4°27′W–2°27′E).
+  - Resolution: 1 km x 1 km.
+  - Time period: 1990–2012, daily data.
+- Model context and calibration
+  - Model: CWatM (distributed hydrological model) for global/regional water resources assessment.
+  - Calibration: against Tortosa gauging station; uses an evolutionary computation framework described in CWatM manual.
+  - Run environment: Windows 10/11 desktop with ample RAM; parameters can be altered via cwatm_setting.csv; EMO-5 dataset as default with options for other precip datasets.
+- Input data sources and provenance
+  - Elevation and land cover: Copernicus; EUDEM v1.1 and EU-Hydro for flow direction; HydroLakes for lakes/reservoirs.
+  - Soil and groundwater: soil properties from Dai et al. (2019); GLHYMPS groundwater data.
+  - Land cover and crop coefficients: CORINE/European datasets; MIRCA2000.
+  - Water demand drivers: literature-based datasets (agriculture, livestock, industry, domestic, environmental flows).
+  - Meteorology/forcing data: EMO-5 (European Meteorological Observations, 5 km), with alternative datasets including SPREAD, CHELSA-W5E5, CRU TS3.10, MSWEP.
+  - All data are reprojected and resampled to 1x1 km2 grid for model input.
+- Quality control and documentation
+  - No additional in-house quality control performed; data come from published sources.
+  - Comprehensive references and provenance are provided (dataset and input data references section).
+- Usage, accessibility, and updates
+  - Model configuration and run instructions available in the CWatM user manual; cwatm_settings_*.csv and settings ini files enable parameter and input modification.
+  - The dataset notes that related articles are in preparation and will be updated upon publication.
+  - Dataset maintained with explicit citations to foundational data sources and model literature; accessible via IIASA CWatM resources and references.

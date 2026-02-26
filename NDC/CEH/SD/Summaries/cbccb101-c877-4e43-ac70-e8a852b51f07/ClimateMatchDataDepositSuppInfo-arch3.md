@@ -1,0 +1,73 @@
+# Experimental Field Sites.
+
+- Context and aim
+  - A field study within the Climate Match tree diversity experiment to investigate how oak (Quercus robur) populations respond to different provenances and climate-matched origins, focusing on herbivory and powdery mildew as environmental health indicators.
+  - Part of TreeDivNet, a global network of tree diversity experiments, with emphasis on understanding provenance and climate-related effects on plant–insect interactions and disease.
+
+- Experimental design and sites
+  - Locations: two UK sites
+    - Hucking, Kent (South East England)
+    - Hartshorne, Derbyshire (East Midlands)
+  - Planting and species
+    - Initial establishment in 2011 included four broadleaved species (wild cherry, sweet chestnut, ash, oak).
+    - Oak was the focus here, with UK and climate-matched provenances (Local UK 2404; Local Kent; French; Italian from Tuscany and Ravenna).
+  - Plot and treatment structure
+    - Three experimental blocks per site; each block contains plots for each tree species and treatment.
+    - Treatments for oak include:
+      - Monocultures of each provenance (Local, French, Italian)
+      - 50:50 and 75:25 provenance mixtures (Local:French; Local:Italian)
+      - 33:33:33 mixture of Local:French:Italian
+      - Mixed species plots containing Local and Italian provenances
+    - Plot sizes and planting
+      - Provenance monocultures and mixed provenance plots: 12 m × 12 m with 36 trees (spacing 4 m², 6 rows × 6 trees)
+      - Mixed species/mixed provenance plots: 36 m × 32 m with 288 trees (16 rows × 18 trees)
+    - Planting material: two-year-old oak saplings
+  - Study scope
+    - The experimental design includes replication and cross-treatment arrangements to examine provenance effects and their interaction with community composition across sites.
+
+- Taxa and outcomes measured
+  - Insect herbivores on oak
+    - Guilds studied: gallwasps (gallers), leaf miners, and leaf manipulators (free-feeding herbivores; generalist and specialist)
+    - Most abundant: spangle galls Neuroterus quercusbaccarum, N. numismalis, N. anthracinus; leaf miners Phyllonorycter sp. and Stigmella sp.
+  - Pathogen: oak powdery mildew
+    - Causative agents: multiple cryptic Erysiphe species; dominant UK infection believed to be E. alphitoides
+  - Sampling schedule and methodology
+    - Oak powdery mildew: measured in lammas shoots on 10 lammas shoots per tree in August (2016 at Hucking; 2017 at both sites)
+    - Insect herbivores: abundance recorded on 10 primary shoots per tree in August
+    - Covariates recorded: lammas shoot length (powdery mildew) and primary shoot length (insects)
+  - Tree apparency
+    - Apparency index calculated at end of survey (August 2017) using height measurements:
+      - Apparency = ((Height of focal tree - Average height in plot) / Average height in plot) × 100
+    - Height data: measured for all sampled trees plus 27 randomly chosen additional trees per plot
+
+- Data collection and structure
+  - Sample size and sites
+    - 9 trees per provenance per plot recorded for both powdery mildew and herbivory
+    - Total trees sampled: 411 at Hartshorne; 420 at Hucking in 2016; 416 at Hucking in 2017 (mortality caused some year-to-year variation)
+  - Data columns (structure and units)
+    - Site: Hartshorne or Hucking
+    - Year: 2016 or 2017
+    - Provenance: Local_UK2404; UK provenance region 404; Local_Kent; French; Italy_Tuscany; Italy_Ravenna
+    - Block, Plot: hierarchical experimental design
+    - Treatment: monoculture or mixture codes (e.g., Mono, P1P2_50, P1P2_75, P1P3_50, P1P3_75, Thirty-33:33:33, MixSp)
+    - Tree Number: within-plot identifier
+    - PShootLength: mean primary shoot length (mm) across 10 shoots
+    - LShootLength: mean lammas shoot length (mm) across 10 lammas shoots
+    - LShootPM: mean powdery mildew infection score across 10 lammas shoots
+    - Leaf.Manip: total leaf manipulator abundance across 10 shoots
+    - Leaf.Gallers: total leaf galler abundance across 10 shoots
+    - Leaf.Miners: total leaf miner abundance across 10 shoots
+    - TreeHeight: height of the focal tree (cm)
+    - MeanHeight: average height of a randomized sample of 28 trees per plot
+    - Apparency: apparency index as defined above
+  - Data interpretation and use
+    - The dataset is designed to enable analysis of how provenance, mixtures, and species interactions influence pest and disease pressure on oak under varying climatic expectations, with robust covariates to account for tree size and shoot phenology.
+    - Clear metadata and a standardized scoring system (0–3 for mildew; counts for herbivores) support transparency, comparability across sites and years, and reproducibility in monitoring frameworks.
+
+- References and context
+  - Foundational literature cited for oak pathology, herbivory, and provenance/mixed-planting effects, including studies on oak powdery mildew phenology, insect-plant interactions, and provenance-based adaptive management (e.g., Ayres & Edwards; Barsoum; Marçais & Desprez-Loustau; Hayward & Stone; Sinclair et al.; and others).
+
+- Relevance for monitoring framework authors
+  - Demonstrates a comprehensive, multi-site, multi-provenance monitoring approach with clearly defined treatments, standardized sampling protocols, and structured data capture.
+  - Highlights the importance of coupling biotic stress measurements (pests and pathogens) with tree traits (height, apparency) and robust metadata to support analysis under climate-change scenarios.
+  - Provides a replicable design and data schema that can inform governance of monitoring data, data quality, and data sharing practices in environmental health dashboards, reports, and decision-support tools.

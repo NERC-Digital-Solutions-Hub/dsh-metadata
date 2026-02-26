@@ -1,0 +1,51 @@
+# Supporting documentation for 14-Animal_Feed_Gamma_Spectrometry.csv
+
+## Purpose and scope
+- Provides metadata definitions and explanations for the 14-Animal_Feed_Gamma_Spectrometry.csv dataset.
+- Documents sample attributes (Animal, Location, Feeding) and radionuclide concentrations in the total diet on a dry mass basis.
+- Ensures standardized data capture, quality assurance, and traceability for environmental monitoring outputs.
+
+## Key fields and interpretation
+- Animal
+  - General type of animal; descriptive category for samples.
+- Location
+  - Name of the site where the sample was collected.
+- Feeding
+  - Description of the feeding regime for the animal/diet sampled.
+- Ra-226_Bq/kg_dm
+  - Activity concentration of Ra-226 in the total diet on a dry mass basis (Bq/kg_dm).
+  - In equilibrium with Pb-214 and Bi-214.
+  - Where blank, concentration was below the detection limit.
+- Unc_Ra-226_Bq/kg_dm
+  - Uncertainty (quadratic propagation) of Ra-226 activity concentration.
+  - In equilibrium with Pb-214 and Bi-214.
+- Detection_Limit_Ra-226_Bq/kg_dm
+  - Detection limit for Ra-226 (Bq/kg_dm).
+  - In equilibrium with Pb-214 and Bi-214.
+  - Where blank, concentration was above the detection limit.
+- Cs-137_Bq/kg_dm
+  - Activity concentration of Cs-137 in the total diet (Bq/kg_dm).
+  - Where blank, concentration was below the detection limit.
+- Unc_Cs-137_Bq/kg_dm
+  - Uncertainty (quadratic propagation) of Cs-137 activity concentration.
+- Detection_Limit_Cs-137_Bq/kg_dm
+  - Detection limit for Cs-137 (Bq/kg_dm).
+  - Where blank, concentration was above the detection limit.
+- Ra-228_Bq/kg_dm
+  - Activity concentration of Ra-228 in the total diet (Bq/kg_dm).
+  - In equilibrium with Ac-228.
+  - Where blank, concentration was below the detection limit.
+- Unc_Ra-228_Bq/kg_dm
+  - Uncertainty (quadratic propagation) of Ra-228 activity concentration.
+  - In equilibrium with Ac-228.
+- Detection_Limit_Ra-228_Bq/kg_dm
+  - Detection limit for Ra-228 (Bq/kg_dm).
+  - Where blank, concentration was above the detection limit.
+- K-40_Bq/kg_dm
+  - Activity concentration of K-40 in the total diet (Bq/kg_dm).
+  - Where blank, concentration was below the detection limit.
+- Unc_K-40_Bq/kg_dm
+  - Uncertainty (quadratic propagation) of K-40 activity concentration.
+- Detection_Limit_K-40_Bq/kg_dm
+  - Detection limit for K-40 (Bq/kg_dm).
+  - Where blank, concentration was above the detection limit.

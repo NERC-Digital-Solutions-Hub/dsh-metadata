@@ -1,0 +1,59 @@
+# Vegetation work
+
+- Overview
+  - Describes field measurements to quantify vegetation composition, diversity, biomass, and functional traits, alongside soil properties and greenhouse gas flux, with outputs suitable for map-based GIS analysis.
+- Field measurements and vegetation metrics
+  - Fully randomized sampling: four 50 cm x 50 cm quadrats per site.
+  - Visual estimation of species canopy cover within quadrats.
+  - Derived vegetation metrics per site:
+    - Species richness (count of species).
+    - Percentage cover of grasses and forbs (summed across quadrats).
+    - Biomass: biomass clipped low, dried at 80°C for 24 h, weighed; summed across quadrats to obtain site-level biomass (g per m2).
+    - Shannon's diversity index (Shannon & Weaver, 1963).
+    - Community weighted mean (CWM) traits calculated as: CWM = sum(wi × xi), where wi is relative abundance of species i and xi is the trait value; trait values sourced from databases (Díaz et al. 2007).
+  - Traits included (with data sources): longevity, plant height, specific leaf area (SLA), root architecture, rooting depth, and vesicular-arbuscular mycorrhizal (VAM) affinity.
+- Greenhouse gas flux measurements
+  - CO2 flux
+    - Four plastic collars (25 cm diameter) embedded in soil; transparent chambers connected to an infrared gas analyser (EGM-4 IRGA).
+    - Measurements taken over two minutes; repeated after covering chamber to obtain dark CO2 efflux.
+    - Concurrent measurements of soil moisture (WET sensor), soil temperature, and photosynthetically active radiation (PAR) in triplicate.
+    - CO2 flux calculated as mg CO2 m-2 h-1 using chamber volume, area, and CO2 concentration change; formulae provided.
+    - Flux estimated over an hour by comparing t0 and t120 measurements.
+  - Methane (CH4), CO2, and nitrous oxide (N2O)
+    - Chambers covered in reflective material; 9 mL air samples collected at 0, 10, 20, 30 minutes and analyzed by Gas-Chromatograph.
+    - Final gas flux values calculated using the same approach as CO2.
+- Soil sampling and laboratory analyses
+  - Soil collection
+    - Six soil samples per site using a 4 cm auger to 10 cm depth; samples sieved to 2 mm and stored at 5°C.
+  - Bulk density
+    - Two cores per site (0–5 cm and 5–10 cm) dried at 80°C for 48 h; bulk density calculated as mass/volume.
+  - pH
+    - 5 g soil mixed with 5 g Milli-Q water (1:1) and measured with a pH meter.
+  - Volumetric moisture content
+    - Fresh soil weighed (5 g), dried at 80°C for 48 h; moisture content computed from dry/wet weights.
+  - Water extractable N and C
+    - 5 g soil mixed with 25 ml Milli-Q water, shaken, filtered; filtrate analyzed for DIN (NH4+, NO3-, total N) and DOC (via TOC analyzer).
+    - DIN and DOC converted to mg/kg using moisture adjustment equations.
+  - KCl extractable N and mineralisation
+    - 5 g soil with 25 ml 1 M KCl, shaken; filtrate diluted and analyzed for DIN (NH4+, NO3-).
+    - Mineralisation: incubation of fresh soil with extraction and analysis after 14 days; mineralisation expressed as g m-2 d-1.
+  - Microbial biomass
+    - Chloroform fumigation-extraction: fumigated and unfumigated soil samples; extractable DIN, PO4, and dissolved carbon measured; KE-C and KE-N correction factors applied (0.35 and 0.54, respectively) to adjust for extraction efficiency.
+- Data processing and references
+  - Core formulas
+    - Community weighted mean (CWM) as defined above; trait values drawn from plant trait databases (LEDA/PlantATT) and literature.
+    - CO2 flux calculations follow the chamber-based approach, converting concentration changes to flux per unit area and time.
+  - Trait data
+    - Longevity, height, SLA, root architecture, rooting depth, and VAM affinity defined with ordinal or continuous scales; sources include LEDA Traitbase and PlantATT, with key literature cited (Díaz et al. 2007; Grime et al. 2007; Hill et al. 2004; Kleyer et al. 2008; Shannon & Weaver, 1963).
+- GIS-ready data products and integration
+  - Potential outputs for maps and spatial analyses:
+    - Vegetation: species richness maps, percent cover maps by functional groups, and biomass density maps.
+    - Diversity and trait maps: Shannon diversity, CWM trait maps (longevity, height, SLA, root architecture, rooting depth, VAM affinity).
+    - Soil properties: bulk density, pH, volumetric moisture, DIN, DOC, mineralisation rates, microbial biomass.
+    - GHG flux maps: CO2, CH4, and N2O flux surfaces over time.
+  - Data considerations for GIS
+    - Standardize units and projection across sites; ensure georeferencing and consistent spatial resolution for integration into GIS workflows.
+    - Harmonize data from multiple measurements (e.g., pore to per-site summaries) to enable pixel- or polygon-level mapping.
+- Challenges and alignment with GIS aims
+  - Data are collected across diverse measurements and datasets requiring cleaning, transformation, and standardization.
+  - Ensuring data at appropriate spatial resolutions and consistent data standards is essential for effective map-based visualization and analysis.

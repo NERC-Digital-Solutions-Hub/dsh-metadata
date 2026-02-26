@@ -1,0 +1,22 @@
+# Study site
+
+- Location and forest types
+  - Danum Valley Conservation Area (DVCA): unlogged primary forest, 438 km2, in the upper catchment of the Segama River, Sabah, Malaysia; consists of lowland dipterocarp forest and lower montane rainforest.
+  - Adjacent Ulu Segama Forest Reserve (USFR): selectively logged region studied, geographically near DVCA (4°58' N, 117°52' E); adjacent logging concession previously logged between 1981–1993.
+- Climate and logging history
+  - Mean annual rainfall around 2305 mm; mean daily temperature ~25.8°C.
+  - USFR logging: annual logging coupes ~27 km2; high-intensity extraction (~118 m3 ha-1 from 1970–1990); methods included tractor logging on moderate terrain and high-lead cables on steep slopes.
+  - Silvicultural interventions: in 1993, Reduced Impact Logging (RIL) trial; some coupes underwent restoration to actively restore forest carbon stocks (Innoprise-FACE Foundation Rainforest Rehabilitation Project); others left to natural recovery.
+- Seedling sampling design
+  - Seedling plots: 1 m2 plots established in Sep–Oct 2019 during a mast fruiting event.
+  - DVCA plots: 87 plots within the ForestGEO Danum Valley 50 ha forest dynamics plot (primary forest).
+  - USFR plots: 96 plots within the INDFORSUS project (logged forest), of which 52 were actively restored and 44 were naturally regenerating.
+  - Data collection: fruits dispersed and new seedling recruits counted on all plots across four censuses (Sept–Oct 2019; Nov–Dec 2019; Jan–May 2020; Feb–Mar 2021); species-level identification in the field.
+- Data and dataset structure
+  - Dataset name: Danum_Valley_Seedling_Census.csv.
+  - Key columns and structure:
+    - Forest (primary vs logged) and Management (Natural Regeneration vs Active Restoration).
+    - Seedling.Plot (plot identifier).
+    - Family and Species (plant taxonomy; unidentified species grouped as morphospecies).
+    - Date.1 to Date.4 and Count.1 to Count.4 (dates and counts for each census).
+  - Purpose: quantify fruiting and seedling recruitment by species and plot across forest types and management regimes, enabling comparisons of restoration efficacy, natural regeneration, and responses to mast fruiting.

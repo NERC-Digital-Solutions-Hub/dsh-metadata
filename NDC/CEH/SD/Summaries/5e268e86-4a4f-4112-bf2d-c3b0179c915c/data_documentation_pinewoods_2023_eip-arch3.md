@@ -1,0 +1,36 @@
+# 'Bunce' Scottish Pinewood Survey 2018-2022 Habitat, vegetation, tree and soil data from Native Pinewoods in Scotland, 2018-2022
+
+- Purpose and aim
+  - Detailed ecological survey of Scots Pine woodlands in Scotland to define ecological variation, monitor change since the 1971 baseline, and support integrated conservation planning and ongoing environmental monitoring.
+- Geographic and temporal coverage
+  - Scotland-wide survey of 27 major native pinewoods conducted from 2018 to 2022.
+  - Repeats the 1971 survey to enable environmental monitoring over time.
+- Survey design and methods
+  - 16 randomly assigned 200 m² plots per wood (totaling 432 plots across sites), with methods based on Bunce & Shaw (1973) and the National Woodland Survey Field Handbook (Smart & Wood, 2021).
+  - Additional plots (up to 50) undertaken at site 4 (Abernethy) as part of ancillary work.
+  - Data collection categories:
+    - Vegetation data: Trees, saplings & shrubs; vascular plants; bryophytes; nested quadrat sampling across 200 m² plots; percent cover estimates.
+    - Soil data: pH and loss on ignition (LOI) from topsoil (0–15 cm).
+    - Habitat data: Habitat types, slope, and aspect; site-wide descriptions for selected plots.
+  - Standardized field procedures and coding systems; nomenclature aligned with Stace (1997) for plant species.
+- Data products and structure
+  - SCOTS_PINE_2022_SITES.csv: Approximate locations and site identifiers for surveyed woodlands.
+  - SCOTS_PINE_2022_SITE_INFO.csv: Descriptions of surveyed sites, plots, habitat attributes, and survey dates (site-wide and plot-level).
+  - SCOTS_PINE_2022_TREE_DATA.csv: Tree and sapling data per plot (DBH, tree status, species, etc.).
+  - SCOTS_PINE_2022_GROUND_FLORA.csv: Ground flora records (vascular plants and bryophytes), including cover, growth form, and species metadata.
+  - SCOTS_PINE_2022_SOIL_DATA.csv: Soil measurements per plot (pH, LOI, sample dates).
+- Site coverage and design details
+  - All major native pinewoods identified in the 1959 Pinewoods work were included; 27 sites listed with specific names (e.g., Glentanar, Ballochbuie, Abernethy, Rothiemurchus, Glen Affric, Shieldaig, Loch Maree, etc.).
+  - Each site includes 16 plots (1–16, with site 4 Abernethy having additional plots) surveyed using standardized field sheets and coding.
+- Data provenance and related materials
+  - Original purpose and baseline context traceable to 1971 (Ecological survey of native pinewoods) with subsequent repeats (1973, 2000–2003, 2020–2022, and related Bunce National Woodland Survey instances).
+  - Key methodological references: Bunce & Shaw (1973); Shaw & Bunce (1971) field methods; Smart & Wood (2021) Field Handbook; Stace (1997) plant nomenclature; Wood & Bunce (2016) on the 1971 survey.
+- Governance, quality, and accessibility
+  - Data collected and presented using standardized procedures with clear metadata, coding, and site/plot descriptors to facilitate verification and reuse.
+  - Data are structured for shareability (CSV format) and aligned with field handbook standards to enable reproducibility and inter-survey comparisons.
+- Acknowledgements and authorship
+  - Prepared by C. M. Wood and S. Smart (UKCEH, Lancaster) with field surveyors and collaborators listed; soil analyses by C. Benskin and team; land permissions managed by M. Vallis-Wilks and team.
+- Practical relevance for monitoring frameworks
+  - Provides a replicable, standardized protocol and rich, multi-taxa dataset suitable for long-term environmental monitoring, trend analysis, and policy evaluation related to native pinewood conservation and habitat health.
+- References and further reading
+  - Key cited works include the 1971 National Woodland Survey, Bunce & Shaw 1973, the 2021 Field Handbook, Stace 1997, and the 2016 ESSD paper summarizing the 1971 survey.

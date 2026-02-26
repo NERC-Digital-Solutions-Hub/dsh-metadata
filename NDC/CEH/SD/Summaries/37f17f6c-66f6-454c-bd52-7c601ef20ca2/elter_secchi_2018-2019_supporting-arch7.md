@@ -1,0 +1,24 @@
+# Elter_Secchi_2018-2019.txt
+
+- Purpose and content: Secchi extinction depths (in meters) collected at Elterwater Inner basin's deepest point to assess water transparency from May 2018 to December 2019.
+- Location: Point at Lat 54.4287°, Lon -3.0350° (Elterwater Inner basin).
+- Temporal coverage and sampling frequency:
+  - Period: May 2018 through December 2019
+  - Sampling frequency: weekly during the stratified period (May–Oct); monthly outside this period (Nov–Apr)
+- Measurement details:
+  - Instrument: oceanographic Secchi disk (all white)
+  - Data fields: Date (YYYY-MM-DD), Secchi (m)
+- Data structure and format:
+  - Tabular dataset with two columns (Date, Secchi); suitable for CSV, and can be exported to GIS-friendly formats (shapefile, GeoJSON) with time attributes
+- GIS considerations:
+  - Create a time-enabled point layer using the site coordinates with attributes: date and secchi_m
+  - CRS: likely WGS84 (EPSG:4326); reproject as needed for analysis
+  - Potential analyses: time-series visualization of transparency at a single site; animation/time-slider displays; integration with other lake/water-quality layers
+- Data quality and limitations:
+  - Single monitoring location; limited spatial coverage
+  - Temporal gaps outside weekly periods; consistency depends on measurement protocol across years
+- Processing and use recommendations:
+  - Ensure proper date parsing and units (meters)
+  - Annotate metadata with measurement method, instrument, and period of record
+  - Consider aggregations (e.g., monthly means, seasonal summaries) for broader analyses
+  - Handle missing values explicitly in GIS/analysis workflows

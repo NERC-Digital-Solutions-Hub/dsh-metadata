@@ -1,0 +1,9 @@
+# Silene uniflora population GPS and habitat dataset
+
+- Purpose: Observations collected to identify populations of Silene uniflora and record their approximate geographic extents using GPS, supporting a connected dataset on heavy metal tolerance.
+- Timeframe and identification: Field work conducted between February 2018 and September 2021; sites potentially colonised identified from Botanical Society of the British Isles records, existing literature, and communication with county recorders.
+- Field methods: During site visits, the approximate geographic extent of each population was recorded based on observed specimens, using GPS positions.
+- Nature and units of recorded values: For each population, a series of GPS positions (latitude and longitude in decimal degrees, Datum: WGS84) defines the population’s approximate extent. Broad habitat/substrate type was recorded as part of the population data (montane, coastal, mine, serpentine).
+- Accuracy and quality control: GPS positions were checked against satellite imagery to ensure they correspond to the correct location and to maintain data quality.
+- Data structure: The dataset comprises 56 rows, each representing a single population. Populations are named after local area names/landmarks (column 1) and assigned population codes (column 2) used for integration with the connected dataset (Heavy metal tolerance records for Silene uniflora). Column 3 contains habitat type. Remaining column pairs contain latitude/longitude positions for the points bounding each site.
+- Dataset scope and linkage: The 56 populations capture observed extents and habitat contexts, and the data are linked to the broader Heavy metal tolerance dataset for Silene uniflora.

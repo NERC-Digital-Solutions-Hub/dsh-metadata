@@ -1,0 +1,56 @@
+# Experimental Design and Laboratory Incubation Method
+
+- Overview
+  - Sediment samples collected from Wood Brook, Staffordshire, UK, at 0–10 cm depth in June 2015.
+  - Two locations: sandy mid-stream reach and gravel downstream reach.
+  - Five pseudo-replicates per location; samples homogenised, sieved (2 mm) and stored cold within 36 hours.
+- Experimental design and sampling
+  - Multiple assays conducted to assess microbial activity and sediment chemistry:
+    - Fluorescein diacetate (FDA) hydrolysis to indicate general hydrolytic activity.
+    - Extracellular phenol oxidase activity using L-DOPA as substrate.
+    - Denitrification potential under anoxic conditions with various substrate amendments (control, nitrate-spiked, carbon-spiked, nitrate+carbon-spiked).
+    - Organic matter content by loss on ignition (LOI).
+    - Moisture content and pH of sediments.
+  - Denitrification incubation specifics:
+    - 10 g field-moist sediment in 100 mL serum bottles, dark conditions, cold pre-incubation.
+    - 20 mL of appropriate stock solutions added (control: water; nitrate 30 mg L-1 NO3; carbon: 40 mg L-1 glucose; mixed: 30 mg L-1 NO3 and 40 mg L-1 glucose-C).
+    - Incubations at 22 °C with shaking; headspace sampled at 0, 3, and 6 hours.
+    - Headspace purged with argon; 10% of headspace replaced with argon:acetylene to inhibit N2O reduction to N2.
+- Analytical measurements and procedures
+  - Fluorescein and dopachrome measurements:
+    - FDA hydrolysis: absorbance at 490 nm after incubation and quenching with acetone.
+    - Dopachrome formation (phenol oxidase activity): absorbance at 475 nm after L-DOPA reaction.
+  - Denitrification products:
+    - Nitrous oxide concentrations measured via gas chromatography with micro electron capture detector (GC-ECD).
+  - Other measurements:
+    - Organic matter by LOI after combustion at 550 °C.
+    - Moisture content by drying field-moist sediment at 105 °C.
+    - pH of sediment slurries prepared with deionised water; pH measured after settling.
+- Instrumentation and calibration
+  - GC-ECD for N2O concentrations (Agilent 7890A) with 1 mL loop, splitless mode; run time ~9 minutes.
+  - UV-Vis spectrophotometry for fluorescein (490 nm) and dopachrome (475 nm) (Varian Cary).
+  - pH measurement with a portable pH probe (HQ40d).
+  - Calibration:
+    - GC-ECD: four-point N2O standard (0, 2, 4, 6 ppm) with zero nitrogen as a blank.
+    - pH: buffers at pH 4.00 and 7.00.
+- Data structure and units
+  - One CSV file: MicrobialActivityRates.
+  - Columns:
+    - Sediment_Type: sediment type used in incubations.
+    - Sample_Number: replicate number for each sample.
+    - Fluorescein: fluorescein production during incubation, mg kg−1 h−1.
+    - Dopachrome: dopachrome production, μmol g−1 h−1.
+    - N2O_control: N2O production in control incubations, μg N2O-N g−1 h−1.
+    - N2O_nitrate: N2O production in nitrate-spiked incubations, μg N2O-N g−1 h−1.
+    - N2O_carbon: N2O production in carbon-spiked incubations, μg N2O-N g−1 h−1.
+    - N2O_mixed: N2O production in nitrate–carbon-spiked incubations, μg N2O-N g−1 h−1.
+    - OM_Content: organic matter content, %.
+    - Moisture_Content: moisture content, %.
+    - pH: pH of the sediment.
+  - Note: NAs (missing values) may result from missed sampling during the experiment.
+- Data quality and notes
+  - Data include raw incubation results and derived enzymatic activity indicators.
+  - Careful alignment of units across measurements is required for integration with other datasets.
+- References
+  - Toberman et al. 2008. Summer drought effects on soil and litter extracellular phenol oxidase activity.
+  - Sgouridis & Ullah 2014. Denitrification potential of various soils in UK catchments.

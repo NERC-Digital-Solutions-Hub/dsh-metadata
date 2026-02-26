@@ -1,0 +1,22 @@
+# ReadMe file for Rainfall.csv
+
+- Authors must be acknowledged if data are reused or reproduced.
+- Dataset contents: hourly rainfall data collected across studies investigating soil greenhouse gas emissions from sheep urine deposited onto an unimproved montane grassland.
+- Instrumentation: rainfall recorded with a HOBO RG3 Data Logging rain gauge using a Pendant Event data logger (Tempcon Instrumentation Ltd., Sussex, UK).
+- Logging behavior: hours with 0 mm rainfall are not logged; records show only time periods where rainfall was detected.
+- Data fields and formats:
+  - Date_time: date and time of the recorded event, format dd/mm/yyyy hh:mm.
+  - Hourly_rain: total rainfall for the hour in millimeters (mm).
+- Metadata and provenance notes:
+  - Authors must be acknowledged for reuse; explicit provenance details are provided via this ReadMe.
+  - Time zone not specified; date-time formatting is provided, which supports integration with other datasets.
+- Data quality and limitations (important for stewardship):
+  - Missing zero-rain periods means data gaps exist for non-detectable rainfall hours.
+  - Instrument-specific logging behavior may affect completeness and require careful handling in analyses (e.g., interpreting gaps as zero vs. missing).
+- Practical guidance for data stewards:
+  - Maintain clear citation/authorship metadata for reuse.
+  - Preserve and document instrument details, logging method, units, and date-time format.
+  - Highlight the non-logged zero-rain periods to avoid misinterpretation of gaps as zero rainfall.
+  - Provide any additional processing steps (if any) and note potential interoperability considerations with other time-series rainfall data.
+- Intended use:
+  - Suitable for analyses of rainfall input in studies of soil greenhouse gas emissions in montane grassland ecosystems.

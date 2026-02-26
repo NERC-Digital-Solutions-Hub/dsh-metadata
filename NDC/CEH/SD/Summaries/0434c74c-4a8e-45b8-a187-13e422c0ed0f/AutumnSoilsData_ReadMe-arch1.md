@@ -1,0 +1,37 @@
+# Soil Measurements accompanying greenhouse gas flux measurements from sheep urine patches deposited to a semi-improved upland grassland
+
+- Context: Data derived from a field trial examining greenhouse gas emissions from sheep urine patches; focuses on ancillary soil measurements taken alongside GHG flux measurements.
+- Location and setting: Orthic podzol at Henfaes Research Station, Abergwyngregyn, North Wales (270 m a.s.l.; 53°13'N, 4°0'W), established autumn 2016.
+- Treatments and application rates:
+  - Control: no urine
+  - ArtUrine: artificial urine, 1004 kg N ha-1
+  - RealUrine: real sheep urine, 1112 kg N ha-1
+- Experimental design: Randomised block with four replicate plots per treatment; soil samples taken from plots in each replicate (n = 4 per treatment; 3 bulked samples per replicate plot).
+- Sampling frame and depth: 0–10 cm soil depth, near to chambers used for GHG flux measurements; time-series spanning one year after treatment.
+- Sample processing and storage: Soil samples refrigerated after collection and processed within 24 hours.
+- Soil moisture measurement: Gravimetric soil moisture content (dry weight basis) determined by oven-drying at 105 °C for 24 h.
+- pH and EC measurement: Standard electrodes in 1:2.5 soil–distilled water slurries, with prior calibration to certified buffers.
+- Extraction and chemical analyses:
+  - N forms extraction: 0.5 M K2SO4 (soil:solution 1:5)
+  - Nitrate (NO3--N) and ammonium (NH4+-N) measured by spectrophotometry; calibrated with matrix-matched 6-point curves.
+  - Total dissolved nitrogen (TDN) and dissolved organic carbon (DOC) measured with Multi N/C 2100S analyzer; calibrated with matrix-matched 6-point curves.
+- Data quality assurance: Procedural blanks, calibration curve checks, appropriate dilutions and re-analysis; data visually checked and corrected for errors; zero values indicate concentrations below detection limits.
+- Data headers and variables:
+  - Plot: plot and chamber identifier
+  - Date: sampling date (dd/mm/yy)
+  - Days_after: days before/after treatment application
+  - Tmnt: treatment type (Control, ArtUrine, RealUrine)
+  - Gravmoist: gravimetric soil moisture (%) on a dry weight basis
+  - pH: soil pH at sampling
+  - EC: soil electrical conductivity (µS cm-1)
+  - Nitrate: 0.5 M K2SO4 extractable nitrate (mg NO3–-N kg-1 soil dw)
+  - Ammon: 0.5 M K2SO4 extractable ammonium (mg NH4+-N kg-1 soil dw)
+  - TDN: 0.5 M K2SO4 extractable total dissolved nitrogen (mg N kg-1 soil dw)
+  - DOC: 0.5 M K2SO4 extractable total dissolved organic carbon (mg C kg-1 soil dw)
+- Depth and sampling details:
+  - Soil samples were collected as bulked composites (3 samples per replicate plot; n = 4 replicates per treatment)
+  - Sampling occurred over a time series within one year following treatment
+- References for methods:
+  - Miranda, K.M., Epsey, M.G., and Wink, D.A. (2001) on rapid spectrophotometric nitrate/nitrite detection
+  - Mulvaney, R.L. (1996) on inorganic nitrogen forms (Methods of Soil Analysis)
+- Application relevance: Data can be used to correlate urine treatment with soil chemistry changes and to relate these changes to concurrent greenhouse gas flux measurements, while accounting for scale, replication, and detection limits.

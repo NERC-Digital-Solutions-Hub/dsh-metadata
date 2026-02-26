@@ -1,0 +1,40 @@
+# Species traits, ecological preferences and distribution metrics for 48 species of ladybird considered resident in the United Kingdom
+
+- Purpose: Compile and describe ecological traits, habitat preferences, and distribution metrics for 48 UK-resident ladybird species, including occupancy trends and species temperature indices (STIs).
+- Data sources: Literature, Field Guide to the Ladybirds of Britain and Ireland (Roy & Brown 2018), UK Ladybird Survey records, iRecord (Biological Records Centre), and European GBIF records; with a note that a detailed data paper will be published alongside the dataset.
+- Data scope: Records and-derived variables for 48 resident species in the UK, covering 1970–2023 (with occupancy trends computed for 1970–2018 long-term and 2009–2018 short-term where possible). STI calculations use UK-only and Europe-wide data.
+- Data structure: Four CSV files
+  - ladybird_traits.csv: 74 columns, 49 rows (including header) detailing species traits, ecological preferences, and trend information; missing data filled as NA.
+  - metadata.csv: Metadata corresponding to variables in Table 1 (CSV format).
+  - prey_list.csv: prey species and their families for calculating diet breadth across 11 feeding guilds; includes number of prey families per species.
+  - sources.csv: List of data sources (books, papers, websites) used to compile variables.
+- Variables and outputs included
+  - Taxonomic and descriptive fields: scientific names, common names, authority, tribe, subfamily, conspicuousness.
+  - Morphology and life history: body size ranges, polymorphisms (melanic and spot), UK native status.
+  - Records and sampling: total records, first/most recent record years; country-level presence (England, Wales, Scotland, Northern Ireland); 10-km grid cell occupancy; number of vice-counties.
+  - Temporal trends: long-term and short-term occupancy trends with 95% credible intervals; first/last years for trend calculations.
+  - Phenology and seasonality: larval and adult first/last record months; peak months for larval and adult records (with NA where data are sparse).
+  - Habitat associations: presence within IUCN Level 1 habitats (weighted and total habitats); several habitat types (e.g., Forest/Woodland, Shrubland, Native grassland, Wetlands, Marine, Artificial terrestrial, Other).
+  - Diet and feeding guilds: dominant/occasional prey guilds across 11 categories; total prey families; diet recording confidence (low/medium/high) based on feeding records.
+  - Species Temperature Index (STI): UK mean and peak STIs (based on UK records) and Europe mean and peak STIs (based on GBIF-derived European records); values rounded as specified.
+  - Additional metrics: number of feeding records, number of habitats, months of larval/adult activity, voltinism (generations per year), and related methodological notes (e.g., data provenance, processing steps).
+- Methods and validation
+  - Record-derived variables created from UK Ladybird Survey, iRecord, and GBIF Europe data; occupancy trends estimated via Bayesian occupancy modelling using records from 1970–2021 (trends computed up to 2018).
+  - First/last years chosen based on model convergence (excluding non-convergent years).
+  - Peaks and monthly activity assessed with specialized R tools (peaks function in splus2R) and validated against histograms.
+  - Data quality checks include: verification by survey organizers, expert validation by PMJB and HER, and careful handling of NA where data are scarce (notably inconspicuous species and larval records).
+  - Code and data processing workflow available at: https://github.com/CharlieOuthwaite/LadybirdTraits
+- Spatial and temporal coverage
+  - UK resident species with data from 1970–2023; occupancy trends up to 2018.
+  - European STI data derived from GBIF, filtered for quality and relevance (1,584,603 records initially; 631,289 records used after cleaning).
+  - Spatial metrics computed on GB OS 1 km and 10 km grids; country-level presence across England, Wales, Scotland, Northern Ireland; vice-counties and grid-cell occupancy also recorded.
+- Limitations and caveats
+  - Some variables are missing (NA) for inconspicuous species due to limited data or recent arrivals.
+  - Short-term trend estimates may be missing for species with non-convergent first-year occupancy models.
+  - Larval months and peaks are less complete where larval data are sparse; some peaks may reflect small-sample artefacts.
+  - Potential biases due to uneven recorder effort and knowledge across species and time; diet data vary in depth across species.
+- Practical implications for data leadership
+  - Demonstrates end-to-end data lifecycle: from literature and citizen-science observations to curated trait databases with provenance, metadata, and quality validation.
+  - Provides rich, multi-dimensional data suitable for cross-domain data strategy: standardised traits, occupancy dynamics, habitat associations, and temperature-based ecology across national and European scales.
+  - Highlights importance of data discoverability, interoperability (multiple data sources, harmonised prey and habitat classifications), and ongoing governance (updates from new records, documented methods, and public code access).
+  - Useful for policy and programmatic decision-making in biodiversity monitoring, conservation planning, and ecological forecasting, while explicitly noting data limitations and the need for continued data sharing and methodological transparency.

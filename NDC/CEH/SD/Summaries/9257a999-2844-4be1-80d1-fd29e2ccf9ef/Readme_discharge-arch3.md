@@ -1,0 +1,60 @@
+# Code documentation for discharge calculation
+
+- Overall structure
+  - Each logger has its own code to maximize flexibility and allow field-condition tweaks.
+  - The architecture is modular and may involve station-specific routines; some stations call other station routines due to loggers being moved or replaced over time.
+  - A station is the location on the stream where the original water level recorder was placed; stations may combine results from multiple logger runs (e.g., stn_107 and stn_110).
+  - Control flow: dis.control.R -> dis.functs.R -> station-wise routines.
+
+- dis.control.R (control script)
+  - Purpose: generate discharge for one-minute intervals.
+  - Inputs required from user:
+    - Site: Nilgiris or Aghnashini
+    - Relative file names for scripts and data/outputs
+    - Start/end dates and time intervals (in months) for display
+    - Names of water level recorders to be processed
+  - Outputs: CSV data and figures representing discharge data.
+  - Libraries and plotting: uses timeSeries for time aggregation and ggplot2 for plotting; dis.plot handles plotting.
+  - Data integrity: issues warnings for duplicated timestamps when multiple loggers exist; uses mk.nullfile to remove duplicates when needed.
+
+- dis.functs.R (functions used by the control script)
+  - calc.disch.areastage
+    - Purpose: compute discharge (m^3/s) from a set of points describing a rating curve using a non-linear least squares (NLS) fit.
+    - Steps:
+      - Read stage-discharge point file.
+      - Read processed water level recorder (WLR) data.
+      - Run NLS: Discharge ~ p1 * (Stage)^p3 with starting values p1=3, p3=5.
+      - Extract coefficients p1 and p3 and compute Discharge = p1 * (Stage)^p3.
+    - Inputs: input file name (and full path).
+  - calc.disch.flume
+    - Purpose: calculate discharges for a Montana flume using a 3" flume equation.
+    - Constants: p1 = 0.1771 (0.1765 suggested by other resources), p3 = 1.55.
+    - Formula: Discharge = p1 * (Stage)^p3.
+    - Inputs: input file name (and full path).
+  - calc.disch.weir
+    - Purpose: calculate discharge for v-notch weirs (not suitable for compound weirs).
+    - Constants: p1 = 1.380278, p2 = 2.5.
+    - Formula: Discharge = p1 * (Stage)^p2.
+    - Inputs: input file name (and full path).
+  - mk.nullfile
+    - Purpose: handle duplicate timestamps when a station has multiple loggers.
+    - Creates a suggested null file to avoid duplication issues; manual copying into WLR/NULL/ folder required.
+    - Input: list of duplicated timestamps.
+  - dis.plot
+    - Purpose: generate discharge plots using ggplot2 and save as PNG files.
+    - Input: formatted WLR data prepared by dis.control.R.
+
+- Code for different stations
+  - stn_101.R
+    - Description: represents a compound weir located just below Kollari Betta.
+    - Catchment context: catchment area around 293,562.50 m^2; land cover includes Acacia mearnsii and Eucalyptus globulus; upper reaches with grasslands and Sheila patches.
+    - Workflow:
+      - Define constants: catchment area, catchment type, file names (with/without directories).
+      - Read one-minute CSV data; ensure timestamp is recognized as date-time and set time zone to India.
+      - Define stage-discharge parameters for both low-stage (within the V) and high-stage (above the V) ranges.
+      - Compute discharge:
+        - Low stage: Discharge = 1.09 * (1.393799 * (Low Stage - 0.2065)^2.5)
+        - High stage: Discharge = 1.09 * ((1.394 * ((High Stage - 0.2065)^2.5 - (High Stage - 0.603)^2.5)) + (0.719 * (High Stage - 0.603)^1.5))
+      - Combine results, sort by timestamp, round discharge to five digits.
+      - Convert discharge to depth of discharge in metres by dividing by catchment area, then multiply by 1000 to obtain millimetres.
+    - Notes: This station-specific script demonstrates the practical application of the flare between stage measurements and discharge using defined stage thresholds and area-based conversion.

@@ -1,0 +1,35 @@
+# Experimental design/Sampling regime
+
+- Overview: 15-minute river stage height measurements for 6 monitoring stations in the Conwy catchment, North Wales, covering 2013–2016. At Cwm Llanerch, water temperature was also sampled. Data gaps exist due to equipment/battery or system failures.
+- Supporting information (site metadata): 
+  - Cwm Llanerch: lat 53.106627, lon -3.7916149; parameters: Water level (mm), Water temperature (°C)
+  - Glasgwm: lat 53.027723, lon -3.8462502; parameter: Water level (mm)
+  - Nant y Brwyn: lat 52.990162, lon -3.8018288; parameter: Water level (mm)
+  - Nant y Coed: lat 53.049063, lon -3.7183329; parameter: Water level (mm)
+  - Hiraethlyn: lat 53.204355, lon -3.7827381; parameter: Water level (mm)
+  - Dyffryn Mymbyr: lat 53.089587, lon -3.9718091; parameter: Water level (mm)
+- Collection methods:
+  - Water level measured every 10 seconds using pressure transducers; mean value recorded every 15 minutes on Campbell data loggers.
+  - Cwm Llanerch temperature data collected similarly.
+  - Data routinely downloaded to a field laptop and uploaded to an Access database.
+- Fieldwork and instrumentation:
+  - General: Druck PDCR 1830 pressure transducers with Campbell CR10x loggers used for five sites.
+  - Cwm Llanerch: Campbell CS451 pressure transducer with Campbell CR1000 logger.
+  - Instrument replacement occurred due to discontinuation of older models; reasons include kit availability and interoperability considerations.
+- Calibration steps:
+  - PDCR 1830s calibrated pre-deployment (Druck DPI 510) in 2013 at CEH Wallingford.
+  - Cwm Llanerch CS451 was new and factory calibrated prior to deployment.
+- Analytical methods: Not applicable.
+- Nature and units of recorded values:
+  - Stage_ht_mm: water level above transducer in millimetres.
+  - Battery_volt: logger/transducer power supply voltage (Volts).
+  - Cwm Llanerch only: Temp_degC (water temperature in degrees Celsius).
+- Quality control:
+  - Regular site visits and data downloading; data checked for obvious issues via plotting.
+  - Common issue: periods with no data due to power failure, resolved by battery replacement.
+- Data structure and storage:
+  - Data stored as individual CSV files per site, named to reflect site and time span (e.g., 2013-2016).
+  - Five sites (Dyffryn Mymbyr, Glasgwm, Nant y Brwyn, Nant y Coed, Hiraethlyn): 5 data columns (ID, Date, Time, Stage_ht_mm, Battery_volt).
+  - Cwm Llanerch: same five columns plus Temp_degC.
+- Miscellaneous supporting documents:
+  - Start and end dates per site (e.g., Cwm Llanerch 12/03/2013 to 03/02/2016; other sites around 2013–2016). Data provenance: CEH staff for the NERC project NE/J011991/1.

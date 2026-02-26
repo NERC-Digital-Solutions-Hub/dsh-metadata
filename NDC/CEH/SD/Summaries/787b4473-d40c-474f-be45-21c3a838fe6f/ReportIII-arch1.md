@@ -1,0 +1,51 @@
+# REPORT III RESULTS FROM THE SOURHOPE FIELD EXPERIMENT: 1999-2001
+
+- Introduction
+  - Part of the NERC Soil Biodiversity Thematic Programme; long-term, intensive field experiment at Sourhope, Macaulay Institute.
+  - Aimed to provide broad monitoring context for detailed studies; data collection aligns with baseline and year-to-year comparisons.
+  - 1998 Baseline Data Survey referenced for site description and experimental design.
+  - 2001 events affected management: Foot and Mouth restrictions Feb–May limited site access; an Officer in Charge managed protocol-compliant sampling; first biocide application in May was missed; management and personnel changes occurred.
+
+- Results
+  - 2.1 Automatic Weather Station
+    - 2001 headline weather data generally unremarkable.
+    - Rainfall near long-term annual average after previous very wet year.
+    - Radiation similar to prior years; average temperatures slightly lower; soil moisture modestly higher than in preceding years.
+  - 2.2 Above-ground biomass
+    - Consistent hierarchy in biomass across treatments; peaks in biomass occurred in July–August each year.
+    - 2001 biomass higher across treatments than earlier years, likely due to changes in personnel and switch from manual cutting to mechanical shears.
+    - When normalised to the C1 (control) treatment, nitrogen and lime treatments showed the strongest positive impact on biomass.
+    - ANOVA on ln-transformed biomass data: significant differences between improved (N and/or L) vs. non-improved plots; significant treatment-by-year interaction; no significant block effects.
+  - 2.3 Soil pH
+    - Lime addition continued to raise topsoil pH (0–5 cm): average pH ~6.19 in limed plots; ~6.38 in Nitrogen & Lime plots.
+    - Nitrogen alone also raised pH, but to a lesser extent.
+    - Control plots showed no significant pH change since baseline (Aug 1998).
+  - 2.4 Botanical composition
+    - July 2001 Point Analysis followed the 2000 protocol; no significant difference between surveyors; 58% more “hits” in 2001 than 2000 across all treatments, suggesting denser sward, possibly due to removal of grazing stock in 1998.
+    - Species-level shifts by treatment:
+      - Agrostis capillaris declined across all treatments in 2001; remained dominant only in Control and Limed plots.
+      - Festuca species (F. ovina and F. rubra) increased across treatments; most frequent in N and Biocide (F. ovina) and N&L plots (F. rubra).
+      - Species associated with improved pastures (Festuca rubra, Poa pratensis) increased in fertilised plots, particularly in those with both Nitrogen and Lime.
+      - Species linked to poorer pastures (Anthoxanthum odoratum, Nardus stricta) more common in untreated Control plots.
+    - Diversity indicators:
+      - 24 species identified in unimproved treatments (Control and Biocide) vs 18 species in Nitrogen plots, suggesting slight diversity decline with fertility improvements.
+    - Multivariate analysis:
+      - Principal Components Analysis (PCA) largely separates nitrogen- and/or lime-treated plots from control and biocide plots.
+      - Improved plots show stronger associations with Festuca rubra and Poa pratensis; unimproved plots associate with Agrostis vinealis, bryophytes, Nardus stricta, Anthoxanthum odoratum.
+    - Biomass–species relationships:
+      - Relative abundance of Festuca rubra and Poa pratensis positively correlated with above-ground biomass.
+      - Anthoxanthum odoratum, Nardus stricta, bryophytes decline as biomass increases.
+      - Litter density increases in plots treated with nitrogen and/or lime, indicating faster vegetation turnover with higher soil fertility.
+
+- Site heterogeneity
+  - 3.1 Variation in surface soil pH and plant community composition
+    - Documented spatial heterogeneity: columns E and F (right-hand slope) showed more acidic plots than columns on the left.
+    - Although partly confounded by plot composition (60% Controls or Biocide in those columns), there is underlying spatial heterogeneity with lower pH in N and/or Lime plots in these columns.
+  - 3.2 Variation in vegetation biomass
+    - Biomass varied among plots; outliers with low biomass identified in several plots (e.g., 5A, 1D, 2A, 5B, 1A, 2D).
+    - Higher biomass generally found in more central plots (e.g., N&L 2E; Lime 2C; Biocide 2D; Control 1 2B).
+    - Strong positive correlation between surface soil pH and biomass.
+    - No significant biomass differences between blocks (ANOVA).
+
+- Acknowledgements
+  - Acknowledges contributions of Sarah Buckland and MLURI Sourhope farm staff; support from the Soil Biodiversity Programme.

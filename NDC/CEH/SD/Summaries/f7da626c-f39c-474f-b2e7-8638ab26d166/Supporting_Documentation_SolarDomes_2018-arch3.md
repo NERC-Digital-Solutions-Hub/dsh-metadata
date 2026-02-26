@@ -1,0 +1,39 @@
+# Summary
+
+- Context and setting
+  - Rural site in North Wales, UK, part of Bangor University farm near the sea.
+  - Eight solardomes used in 2018 to study ozone exposure; three domes were heated by +7°C to simulate tropical/subtropical conditions.
+  - Ozone was added following a weekly profile, controlled by LabView; exposures occurred at night and day. Watering was provided as needed; ozone exposure ended at different times for different species.
+- Experimental design
+  - Four replicate pots per species/cultivar, grown from seed and exposed to ozone in the solardomes.
+  - Continuous hourly sampling of ozone and meteorological conditions.
+  - Ad-hoc measurements of stomatal conductance, with concurrent soil moisture and chlorophyll content index; end-of-experiment biomass/biomass yield measurements for all species/cultivars.
+  - Species/cultivars included in the study (with timing of measurements at start and end of exposure).
+- Treatments and conditions
+  - Treatment categories include: Medium ozone unheated (peak 35 ppb, ambient temp), High ozone unheated (peak 80–115 ppb), Low ozone heated (35 ppb with +7°C), Medium ozone heated (80 ppb with +7°C), High ozone heated (115 ppb with +7°C).
+  - Temperature conditions varied between ambient and ambient +7°C for heated treatments.
+  - Example species/cultivars: Beans (Mbombo, Rajama, Tiger), Cowpeas (Blue Goose, Hog brains, Old Timer, Razorback, Whippoorwill), Amaranth (Pygmy Torch, Juana's Orange), Sorghum (IS1004, IS27557).
+- Data collected and measurement regime
+  - Ozone and meteorology: hourly logging; QA checks for range and plausibility; gap-filling where needed.
+  - Plant physiology: stomatal conductance (AP4 porometer), soil moisture (theta probe), chlorophyll content index (CCI, CCM-200); ad-hoc measurements with QA.
+  - Biomass and yield: end-of-experiment measurements; notes on components (pod/bean counts and weights, seed heads, total biomass, etc.).
+- Data resources and structure
+  - Biomass_and_Yield_2018.csv: per-pot yield metrics (pods, beans, biomass, seed heads, averages, etc.) with notes and cultivar/treatment identifiers.
+  - Ozone_and_meteorology_2018.csv: hourly records of treatment, date, DOY, hour, ozone (ppb), light (PAR), vpd, pressure, wind speed, precipitation; includes dummy values to support DO3SE modeling.
+  - Plant_Physiology_2018.csv: per-measurement records of treatment, species, replicate, date/time, relative humidity, stomatal conductance, light, temperature, soil moisture, CCI, etc.
+- Calibration and quality control
+  - Ozone analyzers calibrated by external supplier; porometer daily calibration; CCM-200 auto-calibration step.
+  - Data QA includes plausibility checks, range validation, and handling of outliers.
+  - Documentation notes include the use of a LabView-controlled system (2012 software) and the need for consistent QA across datasets.
+- Data governance, sharing, and provenance
+  - Acknowledges potential barriers to data sharing (metadata quality, timeliness, data silos, and governance requirements).
+  - Gap-filling appendix (Appendix 1) describes the methods to create continuous datasets while preserving an original amended copy.
+  - Gaps up to five consecutive hours are filled with the average of neighboring values; longer gaps consult lab notes and may use previous/next-day values; complete non-operational periods filled with a 5 ppb dummy value.
+  - Anomalous values identified and adjusted using adjacent values to maintain natural patterns; original and filled datasets are stored separately.
+- Appendix and miscellaneous
+  - Gap-filling procedure detailed in Appendix 1.
+  - Reference to facility website for the experimental setup and DO3SE model requirements; notes on DO3SE inputs (air pressure, wind speed, and precipitation as required placeholders).
+  - Some model inputs (wind speed, pressure, precipitation) are standardized or dummy values due to controlled, well-watered conditions.
+
+- Analytical status
+  - No statistical analyses described or performed on these data within the document.

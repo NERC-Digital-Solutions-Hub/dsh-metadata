@@ -1,0 +1,21 @@
+# Land Cover Map 2007 (LCM2007) is available in different formats, to suit the requirements of various users.
+
+- Purpose and formats
+  - LCM2007 is available in vector and raster formats to support different user needs and analysis scales.
+- Vector data (most detailed)
+  - Each polygon represents a land cover parcel and includes attributes describing land cover and metadata describing derivation.
+  - Minimum mapping unit: 0.5 hectares.
+  - Supply format: ESRI Shapefile.
+  - Coverage: United Kingdom (UK).
+- Raster data
+  - Five raster products in total.
+  - One 25 x 25 meter raster provides the most likely Broad Habitat for each pixel.
+  - Four freely available 1 x 1 kilometer rasters summarize the 25 x 25 meter raster.
+  - Scales: 25 m and 1 km pixel sizes.
+  - Supply format: GeoTiff.
+  - Coverage: UK.
+- Further information
+  - Detailed metadata and class descriptions are available in the Land Cover Map 2007 Dataset Documentation.
+  - Table 1: Attributes of the LCM2007 vector dataset.
+  - Table 2: Habitats, LCM2007 classes, and Broad Habitat sub-classes.
+  - Table 3: Metadata information for the raster datasets.

@@ -1,0 +1,30 @@
+# Sampling Design
+
+- Period and study site: July 2015 to December 2015; Gurue district, Zambezia province.
+- Village selection: 10 villages chosen along a land scarcity gradient (abundant land to high scarcity) with similar infrastructure, soils, rainfall, and vegetation.
+- Identification of value chain actors: identified via snowball sampling; includes village small-scale soya producers, emergent farmers, managers of commercial soja operations, district officer, NGO technicians, formal and informal traders.
+- Sampling strategy:
+  - Small-scale soya producers: focus group discussions (5–7 producers per group) in each village.
+  - Emergent farmers: identified via snowball sampling; one farmer to convene a group for discussion.
+  - Informal traders: random interviews at street buying points.
+  - Other actors of interest: interviews arranged as needed.
+- Data collection methodologies:
+  - Semi-structured interviews: conducted at points of action (village center, along roads, plantation offices).
+  - Focus group discussions: led by village leaders; 1–2 hours per session.
+  - Informal communications: ongoing daily interactions; researcher accompanied by a Portuguese-to-local-language translator.
+  - Documentation: notes in a notebook; electronic transcripts prepared back in the office.
+- Triangulation and reliability: information cross-verified by discussing topics with multiple groups/persons to highlight differences and validate findings.
+- Interview guidelines (categories and approach in Portuguese): standardized lines of inquiry covering production, marketing, land availability and distribution, agricultural inputs and support, and constraints/challenges.
+- Data collection logistics and materials:
+  - Observational notes, translations, and transcripts stored and systematically recorded.
+  - Field crew coordinates with translators; data consolidated in the office.
+- Core data themes and questions covered:
+  - Production: crops grown, hectares dedicated to soy, yields, inputs (fertilizers, pesticides, seed, inoculants), suppliers, seed sources, input quality and reliability, farming practices, costs, soil improvement.
+  - Marketing: storage/processing, destinations and distances, annual volume, buyers, price formation, margins, seasonal price dynamics, constraints.
+  - Contracts: smallholder engagement, contract effectiveness, support provided (equipment, training), worker details and conditions.
+  - Land: land reception, previous use, expansion plans, social responsibility, expansion plans.
+  - Support and development: how and when support started, extension services, access to DUAT, cooperative/association involvement, future plans.
+  - Production and inputs (in-depth): input sourcing, credit and payment terms, access to credits, input quality, multi-crop use of inputs, and cross-crop utilization.
+  - Market systems: processing facilities, storage facilities, aggregation of producer outputs, price discovery, buyer relationships, contract types, transport, margins, and volume data for 2014–2015.
+  - Business and infrastructure: store locations, business growth, product mix, procurement/sales networks, storage capacity, logistics, contracts with buyers, seasonal timing, and market information access.
+- End-to-end emphasis: aims to map the full soy value chain from production through marketing to sale, including land access, inputs, support services, and market dynamics.

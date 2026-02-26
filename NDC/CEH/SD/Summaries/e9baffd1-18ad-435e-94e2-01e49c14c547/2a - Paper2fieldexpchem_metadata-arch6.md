@@ -1,0 +1,40 @@
+# Soil Core Sample Dataset - Variable Descriptions
+
+- The dataset catalogs soil core samples with a range of biological, chemical, and physical measurements, annotated by site and treatment.
+- Key identifiers:
+  - soilcorenumber: Unique identifier for each soil sample/core.
+  - site: Field site where the sample is located.
+  - depth: Depth of the soil sample from the soil surface.
+  - dayfromstart: Day count from the start of measurements.
+  - date: Date of the soil gas flux analysis.
+- Treatment context:
+  - biocharamendment: Indicates whether the sample is un-amended or amended with biochar.
+  - treatmentfullname: Full name of the soil treatment (e.g., biochar and wetted).
+- Sampling and measurement timing:
+  - date and dayfromstart describe the timeline of measurements.
+- Chemical properties:
+  - pH.water: Soil pH in water (1:2.5 ratio).
+  - total.C.percent: Total carbon content as a percentage.
+  - total.N.percent: Total nitrogen content as a percentage.
+  - CN ratio: Carbon-to-nitrogen ratio.
+  - extract.nh4-n.mgkg: Extractable ammonium (mg/kg).
+  - extract.no3-n.mgkg: Extractable nitrate (mg/kg) after the start of incubation.
+- Physical properties and mass:
+  - drysoilweightg: Dry soil weight in grams.
+  - gravwatercontproportion: Gravimetric water content as a proportion.
+  - bulkdensitygcm3: Bulk density (g/cm³).
+  - bulkdensitygcm3SE: Standard error of bulk density (g/cm³).
+- Practical use cases:
+  - Compare biochar vs. un-amended soils across sites and depths.
+  - Track temporal changes in chemical properties (pH, C, N, CN ratio) over days from start.
+  - Assess relationships between moisture, bulk density, and nutrient availability.
+  - Create self-serve dashboards or pivot tables (e.g., by site, treatment, depth, dayfromstart) to enable non-technical end users to explore outputs.
+- Data quality and preparation considerations:
+  - Ensure consistent units (e.g., mg/kg for extractables, percent for carbon/nitrogen).
+  - Align date, dayfromstart, and sampling depth across records.
+  - Address any missing values in key fields (e.g., NH4, NO3, bulk density SE) before analysis.
+  - Verify provenance and treatment labeling to avoid misclassification.
+- Suggested data products:
+  - Tables and dashboards showing by-site comparisons of pH, C, N, CN ratio, and extractables for biochar vs. control.
+  - Time-series visuals of soil properties (pH, C/N, extractables) by dayfromstart and depth.
+  - Reports summarizing the relationship between physical properties (bulk density, gravimetric water content) and nutrient availability.

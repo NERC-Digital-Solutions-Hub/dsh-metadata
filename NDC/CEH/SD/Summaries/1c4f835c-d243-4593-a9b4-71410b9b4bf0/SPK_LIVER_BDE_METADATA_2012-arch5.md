@@ -1,0 +1,93 @@
+# Bird Health and BDE Contaminant Dataset Variables
+
+## Overview
+- The dataset records per-bird observations including unique identifiers, demographics, body condition, post-mmortem measurements, and contaminant concentrations.
+- Key measurements include liver weight, body weight at post-mortem, percent lipid in liver, and concentrations of several BDE congeners (BDE47, BDE99, BDE100, BDE138, BDE153, BDE154, BDE183) plus total BDEs.
+- Units are standardized: weights in grams (g), BDE concentrations in ng/g lipid weight, and lipid percentage in percent (%).
+- Temporal data include MONTH_DIED (seasonal category: April–Sept or Oct–Mar) and YEAR_BIRD_DIED.
+- Not-detected (ND) values are substituted with a value below the limit of detection (LoD) using the Hesel method.
+- Metadata fields include explanations, units, and notes for each variable, facilitating data interpretation and reuse.
+
+## Key Variables and Descriptions
+- CEH_BIRD_CODE
+  - Explanation: Unique identifier assigned to bird on receipt
+  - Units: N/A
+  - Notes: .
+- SEX
+  - Explanation: Sex of bird
+  - Units: Male or female
+  - Notes: .
+- AGE_CLASS
+  - Explanation: Age classification assigned to birds
+  - Units: Adult or juvenile
+  - Notes: Juveniles defined as birds hatched in the current or previous calendar year
+- BODY_CONDITION
+  - Explanation: Condition of bird
+  - Units: Starved or non starved
+  - Notes: Starved birds have little or no fat deposits (often around the heart)
+- BOGY_WEIGHT_G
+  - Explanation: Weight of bird at post mortem
+  - Units: g
+  - Notes: .
+- MONTH_DIED
+  - Explanation: Month that the bird was found deceased
+  - Units: April-Sept or Oct-Mar
+  - Notes: .
+- YEAR_BIRD_DIED
+  - Explanation: Year that the bird was found deceased
+  - Units: N/A
+  - Notes: .
+- LIVER_WT_G
+  - Explanation: Weight of bird liver
+  - Units: g
+  - Notes: .
+- PERCENT_LIPID_IN_LIVER
+  - Explanation: Percent lipid found in the liver during analysis
+  - Units: %
+  - Notes: .
+- BDE47
+  - Explanation: Concentrations of individual BDEs
+  - Units: ng/g lipid weight
+  - Notes: Not detected (ND) values assigned below the LoD using Hesel method
+- BDE99
+  - Explanation: Concentrations of individual BDEs
+  - Units: ng/g lipid weight
+  - Notes: ND values below LoD using Hesel method
+- BDE100, BDE138, BDE153, BDE154, BDE183
+  - Explanation: Concentrations of individual BDEs
+  - Units: ng/g lipid weight
+  - Notes: ND values below LoD using Hesel method
+- TOTAL
+  - Explanation: Concentrations of total BDEs
+  - Units: ng/g lipid weight
+  - Notes: 
+
+## Data Quality and Governance Considerations for Data Stewards
+- metadata completeness
+  - Ensure every variable has EXPLANATION, UNITS, and NOTES populated and kept up to date
+- standardization and interoperability
+  - Enforce consistent variable naming, unit definitions, and category codes (e.g., Male/Female, Adult/Juvenile)
+  - Maintain controlled vocabularies for SEX and AGE_CLASS
+- data validation and integrity
+  - Validate numeric fields (BOGY_WEIGHT_G, LIVER_WT_G, PERCENT_LIPID_IN_LIVER, BDE concentrations) for plausible ranges
+  - Validate categorical fields (MONTH_DIED categories, SEX, AGE_CLASS) against allowed values
+- ND handling and documentation
+  - Clearly document the method for substituting ND values (Hesel) and ensure LoD is described in metadata
+- provenance and versioning
+  - Track data sources, methods for post-mortem measurements, and analytical methods for BDEs
+  - Maintain change logs and dataset versioning to reflect updates or corrections
+- data sharing and access
+  - Include data usage notes, embargo considerations, and update frequency
+- challenges to anticipate
+  - Incomplete understanding of user needs and priorities
+  - Delays in obtaining data from contributors
+  - Variation across systems and formats requiring interoperability solutions
+  - Handling large datasets and legacy/databases requiring bespoke pipelines
+  - Managing data where older databases necessitate non-interoperable approaches
+
+## Practical Recommendations for Data Stewards
+- Create and maintain a concise data dictionary aligned with this dataset, detailing each variable, its valid values, units, and data quality notes.
+- Implement automated validation checks during data ingestion to flag missing, out-of-range, or inconsistent values.
+- Document the ND-to-LoD substitution method prominently in metadata and ensure downstream users understand how ND values were derived.
+- Standardize data submission templates to minimize variability across data sources and systems.
+- Include data provenance information and update schedules to support discovery, reuse, and reproducibility.

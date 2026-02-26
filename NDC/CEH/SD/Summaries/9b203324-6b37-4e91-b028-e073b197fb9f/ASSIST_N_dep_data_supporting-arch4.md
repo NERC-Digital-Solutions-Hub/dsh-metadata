@@ -1,0 +1,28 @@
+# Frame Modelling
+
+- FRAME is a Lagrangian atmospheric transport model used to assess the annual mean deposition of reduced and oxidised nitrogen over the UK.
+- Domain and resolution:
+  - UK and Ireland domain, 1 km x 1 km grid, land-only masking for outputs.
+  - 33 vertical layers (up to 2500 m) with a multi-layer scheme for vertical diffusion.
+- Key inputs and data sources:
+  - Emissions: UK National Atmospheric Emissions Inventory (NAEI) split into 160 subsectors and aggregated into 11 SNAP sectors; includes diffuse and point sources for NH3, NOx, and SO2.
+  - Agricultural NH3: annual UK estimates using census data, farming practices, and emission source strengths; distribution to 1 km grid using land cover data.
+  - Ireland: emissions from CLRTAP/EMEP and E-PRTR, mapped to 1 km grid (MapEire) and scaled to annual totals.
+  - Wider Europe: boundary conditions from CLRTAP/EMEP (50 km x 50 km).
+  - Boundary and conditioning data: eight simulations per year (45-degree directional resolution) to generate domain boundary concentrations.
+  - Meteorology and land data: wind (radiosondes or WRF), precipitation maps (rain), and Land Cover Map 2015; deposition velocity by land cover (forest, moorland, grassland, arable, urban).
+- Deposition outputs and data products:
+  - Outputs provide wet and dry deposition of reduced N (NHx) and oxidised N (NOy) at 1 km x 1 km resolution.
+  - Deposition broken down by land cover categories (forest, moorland) and grid-average (weighted by land cover mix within each grid cell).
+  - Data are expressed as kilograms of N per hectare per year (kg N ha-1 year-1); no-data values marked as NA.
+  - Outputs are organized into 28 CSV files, masked to terrestrial UK grid cells, each containing easting, northing, and deposition values for grid-average, forest, and moorland across wet/dry and NHx/NOy components.
+- Data structure details:
+  - Each row represents a 1 km x 1 km grid cell with fields for easting, northing, and multiple deposition components (grid-average, forest, moorland) for dry and wet deposition of NHx and NOy.
+  - Files are named to reflect year(s) (1990–2017) and deposition components.
+- Quality control and validation:
+  - FRAME has undergone extensive peer review and was part of Defra model inter-comparison exercises.
+  - Model outputs and methodology widely published.
+  - Evaluation includes comparison with UK Acidifying and Eutrophying Atmospheric Pollutants (UKEAP) network measurements.
+- Access and references:
+  - Data and accompanying information available via UK-AIR network information page.
+  - Supporting information and sources cited cover emissions inventories, land cover data, wind and rainfall datasets, and relevant methodological papers.

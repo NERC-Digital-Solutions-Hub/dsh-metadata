@@ -1,0 +1,93 @@
+# Creation of the WATCHForcing Data and its use to assess global and regional reference crop evaporation over land during the twentieth century.
+
+- Overview
+  - Presents the WATCH Forcing Data (WFD) framework used to drive land surface and hydrological models across the 20th century.
+  - Provides meteorological forcing variables at sub-daily to daily resolutions and describes bias corrections, data sourcing (ERA-40, GPCC, CRU, HadGEM2-A aerosols), and interpolation schemes.
+  - Distinguishes two main periods for analysis: 1958–2001 ( ERA-40 based with extensive bias corrections) and 1901–1957 (constructed by reordering ERA-40 data to preserve statistical properties).
+  - Includes reference evapotranspiration estimates: PET_rc (Penman-Monteith, reference crop) and PET_PT (Priestley-Taylor), with guidance on when to use each.
+  - Validates against FluxNET data, noting generally good agreement for temperature and radiation, varied performance for precipitation, and regional data limitations (tropics and high latitudes).
+
+- Selected basin highlights (in this excerpt)
+  - c) Orange River Basin
+    - PET_rc (mm/yr)
+      - 1901–1957: avg 1429.10; slope -1.5615/yr; adjusted significance <0.020
+      - 1958–2001: avg 1449.35; slope -3.6782/yr; adjusted significance <0.001
+      - 1979–2001: avg 1415.69; slope -5.4585/yr; adjusted significance <0.200
+    - PET_PT (mm/yr)
+      - 1901–1957: avg 1114.63; slope 0.2471/yr; adjusted P >0.200
+      - 1958–2001: avg 1123.40; slope 1.1023/yr; adjusted P <0.020
+      - 1979–2001: avg 1131.46; slope 0.7341/yr; adjusted P >0.200
+    - Net Radiation (W/m^2)
+      - 1901–1957: avg 96.75; slope -0.0030/yr
+      - 1958–2001: avg 96.79; slope 0.0805/yr
+      - 1979–2001: avg 97.17; slope 0.0648/yr
+      - Significance generally weak aside from some periods
+    - VPD (kPa)
+      - 1901–1957: avg 1.4479; slope 0.0021/yr
+      - 1958–2001: avg 1.4879; slope 0.0013/yr
+      - 1979–2001: avg 1.5289; slope -0.0040/yr
+    - Wind, Rainfall, Snowfall, Precipitation
+      - Wind ~2.20 m/s with small trends; rain shows notable increases in some subperiods (1958–2001: +0.85 mm/yr; 1979–2001: +3.88 mm/yr); snowfall and precipitation trends indicate regionally variable patterns.
+  - f) Lena River Basin
+    - PET_rc
+      - 1901–1957: avg 363.47; slope 0.1315/yr
+      - 1958–2001: avg 366.70; slope -0.0454/yr
+      - 1979–2001: avg 366.11; slope 0.5366/yr
+      - Adjusted slope significance generally weak, with some periods showing stronger signals.
+    - PET_PT
+      - 1901–1957: avg 312.82; slope 0.1505/yr
+      - 1958–2001: avg 313.48; slope 0.2437/yr
+      - 1979–2001: avg 314.73; slope 0.4203/yr
+      - Some periods show stronger positive trends (PET_PT).
+    - Net Radiation
+      - 1901–1957: avg 29.05; slope 0.0137/yr
+      - 1958–2001: avg 28.65; slope 0.0072/yr
+      - 1979–2001: avg 28.65; slope -0.0696/yr
+    - VPD, Wind, Rainfall, Snowfall, Precipitation
+      - VPD shows modest increases in early period and smaller changes later; rainfall and precipitation exhibit regional variability with both increases and decreases depending on period; snowfall generally low but with notable fluctuations.
+  - h) Ganges-Brahmaputra River Basin
+    - PET_rc
+      - 1901–1957: avg 889.32; slope 0.0368/yr
+      - 1958–2001: avg 869.68; slope -2.2561/yr
+      - 1979–2001: avg 843.63; slope -1.8416/yr
+      - Strong downward trends in PET_rc after 1957, particularly 1958–2001 (significant, p<0.001)
+    - PET_PT
+      - 1901–1957: avg 798.70; slope 0.0968/yr
+      - 1958–2001: avg 767.99; slope -1.2596/yr
+      - 1979–2001: avg 752.00; slope -0.8951/yr
+    - Net Radiation
+      - 1901–1957: avg 69.75; slope -0.0008/yr
+      - 1958–2001: avg 67.01; slope -0.1230/yr
+      - 1979–2001: avg 65.45; slope -0.1041/yr
+      - Notable downward net-radiation trend in later period (significant)
+    - VPD
+      - 1901–1957: avg 0.9467; slope 0.0000/yr
+      - 1958–2001: avg 0.9570; slope -0.0032/yr
+      - 1979–2001: avg 0.9281; slope -0.0035/yr
+    - Wind
+      - 1901–1957: avg 1.97 m/s; slope 0.0000/yr
+      - 1958–2001: avg 1.97 m/s; slope -0.0019/yr
+      - 1979–2001: avg 1.99 m/s; slope -0.0060/yr
+    - Rainfall and Precipitation
+      - 1958–2001 Rainfall avg 1400.84 mm/yr; slope 0.1620/yr
+      - 1979–2001 Rainfall avg 1426.74 mm/yr; slope -1.3292/yr
+      - Precipitation 1958–2001 avg 1426.27 mm/yr; slope 0.2336/yr
+      - 1979–2001 Precipitation avg 1426.74 mm/yr; slope -1.3292/yr
+    - Snowfall
+      - 1958–2001 avg 25.43 mm/yr; slope 0.0716/yr
+      - 1979–2001 avg 26.34 mm/yr; slope -0.1199/yr
+
+- Methodology and data design notes (relevant to data support)
+  - The data are designed to enable analysis of PET_rc, PET_PT, NetRad, VPD, wind, and moisture balance across key basins and time slices (1901–1957; 1958–2001; 1979–2001).
+  - Adjusted Slope P-values indicate statistical significance levels (e.g., <0.001, <0.020, <0.200, or >0.200). Neff indicates effective sample size for slope statistics.
+  - Some basin entries in this excerpt have incomplete fields for certain intervals (notably Murray-Darling) and should be treated as missing or cautioned in analysis.
+  - The ERA-40 basis year ordering (Appendix Table 1) explains the randomization scheme used to create the 1901–1957 forcing record, intended to preserve statistical properties rather than exact historical sequences.
+
+- Practical data-use notes for Data Support
+  - Use PET_rc for energy- and humidity-driven hydrological modeling; use PET_PT as a complementary metric in humid regions with care for period-specific biases.
+  - Be mindful of period-specific significance and method limitations: early periods (1901–1957) are constructed to preserve statistics, not exact events, which affects interpretation of decadal trends.
+  - Regional patterns show substantial variability across basins and variables; ensure basin-specific context when integrating into dashboards, reports, or data products.
+  - Validation context: FluxNET alignment supports general reliability for temperature and radiation fields, but precipitation fields remain more challenging at sub-daily scales.
+
+- Appendices and provenance
+  - Appendix Table 1 documents ERA-40 basis-year order used to build the 1901–1957 forcing record, illustrating the integration approach across years and basis years.

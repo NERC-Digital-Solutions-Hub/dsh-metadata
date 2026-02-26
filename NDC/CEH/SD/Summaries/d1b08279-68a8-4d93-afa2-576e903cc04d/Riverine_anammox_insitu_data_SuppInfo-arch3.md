@@ -1,0 +1,86 @@
+# General information: This dataset contains results from field measurements of riverine nitrogen transformations.
+
+- Objective and scope
+  - Documents field measurements of nitrate transformations in riverbed sediments using 15N-labeled nitrate tracers.
+  - Focuses on permeable sediments (sands, chalks) via push-pull sampling and on clays using intact cores.
+  - Measurements conducted in August 2013 within the Hampshire Avon catchment.
+
+- Study design and sampling details
+  - Tracer experiments:
+    - Permeable sediments: 15N-nitrate injected into the riverbed; porewater samples collected over time.
+    - Clays: 15N-nitrate added to overlying water in intact cores; results homogenized to slurry for analysis.
+  - Pre-injection characterization: porewater samples collected to determine background nutrients, oxygen, pH, reduced iron, and baseline 15N-N2.
+  - Sample preservation and handling:
+    - Nutrients and iron filtered and/or frozen as appropriate.
+    - Gas samples preserved with zinc chloride and stored in gas-tight vials.
+    - Analyses performed within 6 months of sampling.
+  - Measurements and instruments:
+    - Dissolved oxygen measured with microelectrode; calibration against zero and known O2 solutions; contamination corrections applied.
+    - Fe(II) quantified by speciation with phenanthroline; detection limit ~1 µM.
+    - Nutrients (nitrate, nitrite, ammonium, SRP) via automated colorimetry with standard references.
+    - pH measured after O2 assessment.
+    - 15N isotope pairing technique used to quantify production of 29N2 and 30N2 with mass spectrometry; ambient production of 14N2 (p14) estimated to partition between ambient and tracer-derived processes.
+  - Data structure and flags:
+    - Data organized as a 13-column, 67-row table (including headers).
+    - Values flagged as BDL (below detection limit) or ND (not collected) where applicable.
+    - Shallow sediment samples excluded from rate calculations due to tracer plume spread.
+
+- Data content and column headers (summary descriptions)
+  - Sample Label: unique identifier for each sample.
+  - Site identifier: river/sub-catchment type (Clay, Sand, Chalk) with geographic context for sites (e.g., Clay 1, Clay 2, etc.).
+  - Depth: screen mid-point depth of porewater probe below riverbed (cm).
+  - Injection: concentration of injected 15N-nitrate (µM) and related experimental parameters.
+  - Fe(II): concentration in porewater prior to injection; measured via phenanthroline complexation.
+  - O2: dissolved oxygen in porewater prior to injection (µM); corrected for procedural contamination.
+  - O2sat: oxygen saturation relative to air-equilibrated water (%).
+  - Nitrate: nitrate concentration in porewater prior to injection (µM), derived from NOx and nitrite measurements.
+  - Nitrite: nitrite concentration in porewater prior to injection (µM).
+  - Ammonium: ammonium concentration in porewater prior to injection (µM).
+  - SRP: soluble reactive phosphorus in porewater (µM).
+  - pH: porewater pH prior to 15N injection.
+  - D14: ambient denitrification rate (µmol N per L porewater per h) derived from 15N-nitrate reduction and isotope pairing.
+  - p14: production rate of ambient 14N2 (µmol N per L porewater per h) from non-tracer processes.
+  - A14: rate of ambient anammox in the riverbed (µmol N per L porewater per h).
+  - ra: proportion of N2 production attributed to anammox (%).
+  - Derived metrics (via isotope pairing):
+    - Calculation of 29N2 and 30N2 from 15N-labeled nitrate and their conversion to concentrations.
+    - ra used to partition D14 into denitrification vs. anammox contributions.
+  - References for methods and calculations:
+    - Lansdown et al. 2014; Nielsen 1992; Risgaard-Petersen et al. 2003; Thamdrup & Dalsgaard 2000; Trimmer et al. 2006.
+
+- Analytical methods and calculations
+  - Isotope pairing technique (IPT) employed to distinguish denitrification and anammox processes in the sediment core samples.
+  - Mass spectrometry used to determine 15N labeling in N2 and N2O pools; columns and calibrations described to convert beam areas to concentrations.
+  - Calculations include:
+    - 29N2 and 30N2 production rates from time-series data.
+    - p14 estimated from ambient processes, using ratios of 14N-containing products.
+    - D14 and ra to separate denitrification and anammox contributions to N2 production.
+  - Supporting chemistry and calibration:
+    - Fe(II) measured via UV-Vis absorbance with defined detection limits and accuracy checks.
+    - Nitrate/nitrite determined by colorimetric Griess method with inline reduction for nitrate.
+    - pH and oxygen measurements with calibrated probes and standard references; oxygen contamination corrections applied.
+
+- Data quality, metadata, and governance considerations
+  - Metadata richness:
+    - Spatial identifiers, sediment type (Clay/Sand/Chalk), exact coordinates, and depth information.
+    - Pre-injection environmental context (O2, pH, Fe(II), SRP, nutrients).
+  - Quality control:
+    - Use of field and travel blanks for nutrient and iron analyses.
+    - Calibration with standard reference materials; inclusion of detection limits and precision.
+    - Preservation steps and timing (analyses within 6 months) to maintain data integrity.
+  - Data limitations and interpretation:
+    - Rates rely on isotope pairing assumptions and require careful interpretation of mixing and background processes.
+    - Data flags (BDL, ND) indicate measurement limits and missing values that affect downstream analyses.
+
+- Relevance for monitoring frameworks
+  - Demonstrates a structured approach to designing environmental health monitoring that differentiates microbially mediated processes (denitrification vs. anammox) in sediments.
+  - Highlights the importance of rigorous metadata, QA/QC, and data provenance for complex biogeochemical measurements.
+  - Provides a model for integrating field measurements, laboratory analyses, and isotope-based calculations into a coherent dataset suitable for informing policy decisions and future monitoring strategies.
+  - Illustrates practical challenges relevant to monitoring governance, including data standardization, timely data availability, and transparent documentation of methods and uncertainties.
+
+- References and primary methods
+  - Lansdown, K. et al. (2014). Fine-Scale in Situ Measurement of Riverbed Nitrate Production and Consumption in an Armored Permeable Riverbed.
+  - Nielsen, L. P. (1992). Denitrification in sediment determined from nitrogen isotope pairing.
+  - Risgaard-Petersen, N. et al. (2003). Application of the isotope pairing technique in sediments where anammox and denitrification coexist.
+  - Thamdrup, B. & Dalsgaard, T. (2000). The fate of ammonium in anoxic manganese oxide-rich marine sediment.
+  - Trimmer, M. et al. (2006). Direct measurement of anaerobic ammonium oxidation (anammox) and denitrification in intact sediment cores.

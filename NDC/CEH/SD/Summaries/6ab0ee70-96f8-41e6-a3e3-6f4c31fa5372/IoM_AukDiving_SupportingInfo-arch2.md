@@ -1,0 +1,44 @@
+# Dive times and depths of auk (Atlantic puffin, common guillemot and razorbill) from the Isle of May outside the seabird breeding season
+
+- What the dataset contains
+  - Dive times (start and end) and depths (maximum depth) for three auk species: Atlantic puffin, common guillemot, and razorbill.
+  - Location: Isle of May National Nature Reserve, Scotland (56°11′N, 02°33′W).
+  - Timeframe outside the seabird breeding season.
+- Study site and temporal scope
+  - Isle of May, Scotland.
+  - Puffins: 19 July 2008 – 3 December 2008.
+  - Guillemots: 20 July 2005 – 28 January 2006.
+  - Razorbills: 1 July 2008 – 24 January 2009.
+- Species and sample sizes
+  - Atlantic puffins: 12 individuals.
+  - Common guillemots: 13 individuals.
+  - Razorbills: 13 individuals.
+- Data collection methods
+  - Birds captured as chick-rearing adults at the breeding site during the breeding season.
+  - Time-depth recorders (TDRs) fitted to Darvic leg-rings.
+  - Attachment time < 5 minutes.
+  - Sexing of birds using CHD I genes from collected feathers (3–5 feathers per bird).
+  - Recapture during the breeding season to remove TDRs.
+- Equipment details
+  - Puffins and razorbills: G5 TDRs (CEFAS, Lowestoft, UK), 31 × 8 mm.
+  - Guillemots: LT2400 TDRs (Lotek Wireless, St John's, Newfoundland, Canada), 36 × 11 mm.
+- Sampling design and data resolution
+  - Aimed to record diving data over an extended nonbreeding period (July–April) but data gaps occurred as some TDRs failed.
+  - Sampling rates used to balance data resolution and duration:
+    - Guillemots: 16 s sampling every 30 d (n = 9 birds retrieved).
+    - Guillemots: 32 s sampling every 15 d (n = 4 birds retrieved).
+    - Razorbills: 3 s sampling every 10 d (n = 7 razorbills; n = 6 puffins for this schedule).
+    - Puffins: 30 s sampling every day (n = 6 razorbills; n = 6 puffins for this schedule).
+- Data structure
+  - File: IoM_AukDiving.csv
+  - Columns: 'Species', 'Sex', 'SamplingRate' (seconds), 'DepID' (deployment ID), 'StartTime' (start of dive, Y-M-D H:M:S), 'EndTime' (end of dive, Y-M-D H:M:S), 'DiveDepth' (maximum depth in meters).
+- Data quality and limitations
+  - Some TDRs failed partway through the study, reducing the number of individuals contributing data over time.
+  - Original aim was to cover the entire nonbreeding period, but data coverage declined due to device failures.
+- Provenance and data handling
+  - Data collection led by Ruth Dunn (processing).
+  - Fieldwork conducted with access granted by Scottish Natural Heritage.
+  - Contributors: Sarah Wanless, Mike Harris, Francis Daunt (data collection); Ruth Dunn (data processing).
+- Relevance for environmental monitoring
+  - Provides standardized, verifiable dive behavior and depth data outside breeding season for three auk species.
+  - Can support broader monitoring of marine foraging ecology and environmental health by enabling comparisons across time, seasons, and locations when integrated with other datasets and portals.

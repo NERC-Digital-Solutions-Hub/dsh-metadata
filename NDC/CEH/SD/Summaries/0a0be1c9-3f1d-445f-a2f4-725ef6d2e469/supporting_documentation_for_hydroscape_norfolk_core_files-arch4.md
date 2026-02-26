@@ -1,0 +1,68 @@
+# This document describes the headings used to record the stratigraphic data collected for each core.
+
+- Overview
+  - Associated files: 34827_FELB6.csv, 35179_WOLT1.csv, 35249_BLIC2.csv, 35738_MARS1.csv, 35852_BURF1.csv, 35977_HGB01.csv, 36043_SALG1.csv, 36202_UPTO3.csv
+  - Purpose: describe the column headings (determinands) used to record stratigraphic data for each core; data blanks indicate no measurement; matrix rows represent contiguous core-depth intervals.
+  - Core representation: Sub_ID is the internal Amphora database unique ID; Top_Depth_cm and Bottom_Depth_cm define the sliced core interval from the sediment/water interface.
+- Core interval and physical properties
+  - DW: mass of sediment after drying at 105°C for 24 hours (percentage of wet weight)
+  - LOI_550: loss on ignition at 550°C for 2 hours (organic content percentage)
+  - LOI_950: carbonate content percentage via combustion at 950°C for 2 hours
+  - Wetd: mass of 1 cm³ of wet sediment
+- Chronology and accumulation
+  - Pb210_Total: total 210Pb activity (Bq/kg)
+  - Pb210_Total_err: measurement error for total 210Pb
+  - Pb210_Supported: supported 210Pb activity (Bq/kg)
+  - Pb210_Supported_err: error for supported 210Pb
+  - Pb210_Unsupported: unsupported 210Pb activity (Bq/kg)
+  - Pb210_Unsupported_err: error for unsupported 210Pb
+  - Cum_Unsupported_Pb210: cumulative unsupported 210Pb (Bq/kg)
+  - Cum_Unsupported_Pb210_err: error for cumulative unsupported 210Pb
+  - Cs137: 137Cs activity (Bq/kg)
+  - Cs137_err: error for 137Cs
+  - Am241: 241Am activity (Bq/kg)
+  - Am241_err: error for 241Am
+  - Date_AD: calculated year date (AD)
+  - Age_yr: sediment age (years) using Constant Rate of Supply (CRS) model
+  - Age_yr_err SAR: age error under CRS model
+  - SAR: sediment mass accumulation rate (g cm^-2 yr^-1)
+  - SR: sedimentation rate (cm^-2 yr^-1)
+  - SR_err: error on sedimentation rate
+- Geochemical measurements and elemental concentrations (XRF)
+  - Hg_µg/g: total mercury concentration (µg/g, dry sediment)
+  - Elements measured by XRF (concentration as % dry mass unless specified otherwise):
+    - Na_%
+    - Mg_%
+    - Al_%
+    - Si_%
+    - P_%
+    - S_%
+    - Cl_% (note: formatting in source; intended as chlorine content)
+    - K_%
+    - Ca_%
+    - Ti_%
+    - V_µg/g
+    - Cr_µg/g
+    - Mn_%
+    - Fe_%
+    - Co_µg/g
+    - Ni_µg/g
+    - Cu_µg/g
+    - Zn_µg/g
+    - Ga_µg/g
+    - As_µg/g
+    - Br_µg/g
+    - Rb_µg/g
+    - Sr_µg/g
+    - Y_µg/g
+    - Nb_µg/g
+    - Ba_µg/g
+    - Pb_µg/g
+- Notes on methodology and interpretation
+  - References for methods:
+    - LOI methodology: Heiri, Lotter, & Lemcke (2001)
+    - 210Pb dating using CRS: Appleby & Oldfield (1978)
+- Data governance implications for Data Leaders
+  - The structure provides clear, standardized metadata per core interval, enabling interoperability across cores and partners.
+  - Unique core slice IDs, explicit depth ranges, and documented measurement methods support traceability, quality control, and auditability.
+  - Comprehensive placeholders for dating, accumulation, and multi-proxy geochemistry facilitate holistic data understanding and collaborative analysis.

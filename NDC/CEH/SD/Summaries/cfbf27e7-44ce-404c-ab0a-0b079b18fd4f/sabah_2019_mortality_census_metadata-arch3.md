@@ -1,0 +1,29 @@
+# Forest mortality and canopy gap data collection methods for Danum Valley and Sepilok Reserve
+
+- Purpose: Collect data on mortality and disturbance of large trees to support environmental health monitoring, by recording alive/dead status, mode of death, direction of fall, and canopy gap size.
+- Study sites:
+  - Danum Valley: A single 50 ha contiguous plot with consistent data collection across the site.
+  - Sepilok Reserve: A hierarchical layout comprising 4 ha plots (9 units), each with 1 ha subplots, 20x20 m subplots, and 5x5 m quadrats.
+- Collection methods:
+  - Revisit all large trees (>30 cm stem diameter) in permanent plots to assess alive/dead status.
+  - If dead, record mode of death (mostly standing dead or uprooted/snapped).
+  - If uprooted or snapped, record direction of fall and the approximate canopy gap size (small, medium, large).
+- Nature and units of recorded values:
+  - Alive/Dead: binary logical value.
+  - Direction of fall: measured in degrees from North.
+  - Canopy gap size: qualitative categories (small, medium, large).
+- Data structure and variables:
+  - Danum Valley:
+    - Single CSV with: Tag, Species, Dbh (diameter at breast height), Hom (height of measurement), Alive_2019, Direction_of_fall, Gap_size, Notes.
+  - Sepilok Reserve:
+    - More complex schema across nested plots: PlotID_4ha, Forest, PlotID_1ha, Subplot, Quadrat, TreeNo, Tno, IDNo2, Species, Diameter_1 (approx. 2010), Remarks_1, Diameter_2 (approx. 2015), Remarks_2, Remarks_2019, Mode_of_death, Direction_of_fall, GapSize.
+    - Note: Tno is not used; Diameter_1/2 provide historical measurements; Remarks indicate life or status at prior times.
+- Quality control:
+  - No formal quality control was applied; data are provided as recorded in the field.
+- Data considerations and harmonization:
+  - Differences in data structure and column naming between Danum Valley and Sepilok require harmonization for cross-site analyses.
+  - Historical diameter data (Sepilok) enable temporal analyses but may need alignment with Danum Valley fields.
+  - Metadata completeness and provenance are essential to verify suitability for reuse and integration into monitoring dashboards.
+- Relevance for monitoring frameworks:
+  - Delivers concrete, field-based indicators of tree mortality and disturbance (direction of fall, canopy gaps) that can feed environmental health metrics and policy evaluations.
+  - The explicit data capture, along with qualitative gap sizes and directional data, supports dashboards and trend analyses, though users should note the lack of formal quality checks and cross-site metadata harmonization requirements.

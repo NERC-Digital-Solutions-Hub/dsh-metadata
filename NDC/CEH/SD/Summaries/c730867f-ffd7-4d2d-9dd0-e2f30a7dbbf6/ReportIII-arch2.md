@@ -1,0 +1,44 @@
+# REPORT III RESULTS FROM THE SOURHOPE FIELD EXPERIMENT: 1999-2001
+
+- Context and purpose
+  - NERC Soil Biodiversity Thematic Programme study of Sourhope field site in the Scottish Borders.
+  - Aims to provide a broad monitoring context for detailed studies, enabling cross-year comparisons and links to other datasets.
+  - Two 2001 site events affected management: UK Foot and Mouth restrictions limiting site access (Feb–May 2001) and a change of Officer in Charge.
+
+- Data and monitoring methods
+  - Automatic Weather Station: annual headline measures (rainfall, radiation, temperatures, soil moisture).
+  - Above-ground biomass: regular summer harvests across plots; biomass weighted and analyzed (including normalization to control 1, C1).
+  - Soil pH: upper 5 cm pH measurements to assess liming and nitrogen effects.
+  - Botanical composition: Point Quadrat method (July 2001 survey) across plots; species coded and abundance tracked; supplementary full botanical surveys and litter assessments.
+  - Data management and analysis: Genstat-based ANOVA and PCA; cross-year comparisons (1999–2001) with emphasis on treatment effects and site heterogeneity; datasets stored and shared with monitoring portals.
+
+- Key results by measure
+  - Automatic Weather Station (2001)
+    - 2001 rainfall near long-term average; radiation similar to prior years; average temperatures slightly reduced; soil moisture slightly higher than previous year.
+  - Above-ground biomass
+    - Clear hierarchy across treatments: nitrogen and/or lime additions increase biomass; strongest response with nitrogen plus lime.
+    - 2001 biomass higher than 1999–2000, likely due to both personnel change and switch from manual cutting to mechanical shears.
+    - Normalising to C1 confirms continued positive impact of nitrogen and, to a lesser extent, lime.
+    - ANOVA: significant differences between improved (N and/or L) vs unimproved plots; significant year × treatment interaction; no significant block effects.
+  - Soil pH
+    - Lime addition raises pH; October 2001 averages: limed plots ~6.19; nitrogen plus lime (N&L) plots ~6.38.
+    - Nitrogen alone raises pH but to a lesser extent; control plots show little change since baseline (1998).
+  - Botanical composition
+    - 2001 survey: total hits 58% higher than 2000, suggesting denser sward, possibly from 1998 grazing stock removal.
+    - Species shifts by treatment: Agrostis capillaris declined across treatments in 2001; Festuca spp. increased and were most frequent in nitrogen- and/or lime-treated plots; fertilised plots enriched with Festuca rubra and Poa pratensis.
+    - Diversity: unimproved plots (Control and Biocide) showed 24 species; improved (N and/or L) plots showed 18 species, suggesting slight diversity loss with intensive improvement.
+    - PCA separates improved plots from unimproved; greater frequency of Festuca rubra in limed plots; litter increases linked to higher soil fertility.
+    - Biomass correlations: higher biomass associated with increased Festuca rubra and Poa pratensis; declines in Agrostis vinealis, Nardus stricta, bryophytes with higher biomass.
+    - Species–biomass relationships: relative abundance of major species correlates with above-ground productivity; litter turnover higher in nitrogen and/or lime plots.
+- Site heterogeneity and spatial patterns
+  - Spatial variation in surface soil pH and plant community composition observed across site columns (older report noted acidity in some columns; 2001 data support underlying heterogeneity).
+  - Biomass distribution shows central plots tending to higher total biomass; outlying plots in several treatments show lower biomass.
+  - Strong positive correlation between surface soil pH and biomass, with no significant differences among blocks.
+- Data quality, continuity, and challenges
+  - Data collection largely maintained through 2001, though FMD restrictions limited access and required protocol-driven, officer-led sampling during restricted periods.
+  - A change in site management occurred mid-year, but management activities (liming, nitrogen application, pH measurements, biomass collection, and vegetation cutting) largely followed the 2001 Site Management Plan.
+- Implications for environmental monitoring practice
+  - Demonstrates value of multi-parameter, standardized monitoring (weather, biomass, soil chemistry, plant composition) for detecting treatment effects and temporal trends.
+  - Highlights importance of accounting for spatial heterogeneity in site design and analysis.
+  - Provides evidence that nutrient addition and liming can shift plant communities, raise soil pH, and increase productivity, with detectable impacts on species composition and biomass turnover.
+  - Shows the need for consistent personnel, methodologies (e.g., mowing technique), and data management to ensure comparability across years.

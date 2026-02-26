@@ -1,0 +1,47 @@
+# Sampling Rationale and Locations
+
+- Context and purpose
+  - Following a drought in 2018 and a wildfire in May 2019, the Flow Country peatlands (Caithness and Sutherland, Scotland) were studied to assess wildfire effects on stream water quality.
+  - Sampling ran from September 2019 onward, with monthly collections at 52 rivers/streams; November 2019 sampling was missed due to shooting activities, and April–June 2020 were skipped due to Covid-19.
+  - Pre-fire data exist for 42 sites from FREEDOM and LOCATE projects; these provide reference conditions for comparing fire impacts.
+- Study design and site groups
+  - FREEDOM sites: 30 sites representing undrained, drained, and near-forest peatland catchments.
+  - LOCATE sites: 12 sites along the Halladale River.
+  - Additional sites were selected post-fire to directly measure wildfire effects, representing degraded (n=5) and near-natural (n=5) peatland catchments.
+  - 52 sites total; 30 FREEDOM, 12 LOCATE, plus burn-affected and control-type sites.
+  - Table 1 (and Table 3 overview) lists site codes, stream names, and coordinates; site labelling includes Burnt (degraded and near-natural) and LOCATE/FREEDOM designations.
+- Field sampling methodology
+  - Manual sample collection using a large plastic bucket; sampling from near the center of water flow.
+  - In situ measurements of pH, electrical conductivity (EC), and temperature with a Hanna HI-991300 multiparameter probe, calibrated before campaigns.
+  - Water and sediment separation for certain analyses achieved via 0.45 μm field filtration using 25 mm syringe filters.
+  - Sample bottles and containers: amber glass for DOM analyses; polypropylene tubes for nutrients and metals; bottles pre-cleaned and preconditioned.
+  - Field data captured on recording forms; site code, date/time, physico-chemical parameters, and environmental notes logged.
+- Sample containers, preservation, and storage
+  - cDOM/fDOM: 30 mL amber glass bottles; filtered; preserved at 4°C in the dark.
+  - DOC: 30 mL amber glass; filtered; preserved at 4°C in the dark.
+  - Nutrients: 50 mL polypropylene tubes; filtered; preserved at 4°C in the dark.
+  - Dissolved metals: 50 mL polypropylene tubes; filtered; preserved with HNO3 (0.5 mL per 10 mL) and stored at 4°C in the dark.
+  - Post-collection handling: cold storage on return to ERI; samples shipped to NOC and UKCEH in insulated boxes with ice packs; all deliveries timed to enable prompt analysis.
+- Analysis workflow and laboratories
+  - In-field: pH, EC, and temperature measured on-site.
+  - Laboratory instruments (primarily at ERI Thurso, with UKCEH and NOC involvement for absorbance):
+    - Dissolved nutrients (NH4+, SRP, TON): SEAL AQ2 Discrete Analyser; ISO-standard methods; calibration with certified standards; CRMs analyzed in each run.
+    - Dissolved Organic Carbon (DOC): Shimadzu TOC-L analyser (680°C combustion with NPOC method); calibration and quality controls with internal standard and CRM; automated dilution when concentrations exceed range.
+    - Absorbance and SUVA: Cary Eclipse UV-Vis (NOC) and PerkinElmer UV/Vis Lambda 365 (UKCEH) for absorbance from ~230–800 nm; SUVA254 calculated; inter-lab comparison showed high agreement (R^2 = 0.99) with minor systematic differences.
+    - Dissolved metals (New Burned and LOCATE sites only): ICP-OES (Varian 720 ES) for macro and trace elements; dilution performed to fit instrument range; river CRM used for QC.
+  - Calibration and QA
+    - Use of certified reference materials (CRMs) and blanks for each run; calibration curves generated for NH4+, SRP, TON; top standards monitored with auto-dilution as needed.
+    - For metals, QA included river CRM and multiple calibration standards; repeated measurements per sample to ensure precision.
+- Data handling, structure, and quality control
+  - Data assembled from three laboratories (ERI, NOC, UKCEH) into a single dataset with clearly labeled columns (e.g., sampling date, conductivity, temperature, pH, NH4, SRP, TON, NPOC, Abs_254, SUVA, Dissolved metals).
+  - Detection limits (LOD) calculated per analysis and instrument using blank measurements: LOD = mean(blank) + 3 × SD(blank); results flagged as <LOD where applicable.
+  - Missing data denoted by a dash (-) in the dataset.
+  - A detailed mapping of column headings, units, and descriptions provided (Table 4).
+- Timeline, scheduling, and adaptive management
+  - Original plan split sampling and analysis into two weeks per month; access issues (site access, vehicle availability) and later Covid restrictions necessitated a consolidated end-of-week sampling approach to ensure timely shipment and analysis.
+  - Sampling and analysis weeks for each month outlined in Table 3; adjustments made to accommodate laboratory processing and travel constraints.
+- Inter-lab comparability and notes
+  - July 2020 absorbance inter-lab comparison showed very high agreement (R^2 = 0.99) between NOC and UKCEH, with UKCEH values consistently lower than NOC values.
+- Output and references
+  - Recorded data include field measurements (Cond, Temp, pH) and laboratory results for nutrients (NH4+, SRP, TON), DOC, absorbance (Abs_254), SUVA, and dissolved metals (Diss_Al, Diss_Ca, etc.).
+  - References include methodology and prior related work (e.g., Gaffney et al., 2017) for dissolved metals analysis and broader context on peatland water quality.

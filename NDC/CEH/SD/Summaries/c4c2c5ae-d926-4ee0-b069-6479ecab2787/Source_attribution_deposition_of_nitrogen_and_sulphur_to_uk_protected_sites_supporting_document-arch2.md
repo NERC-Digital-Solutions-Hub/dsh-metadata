@@ -1,0 +1,38 @@
+# Frame Modelling
+
+- FRAME is a 5 km resolution Lagrangian atmospheric transport model covering the British Isles, used to estimate annual mean deposition of reduced and oxidised nitrogen and sulphur in the UK.
+- Emissions inputs:
+  - UK National Atmospheric Emissions Inventory (NAEI) with 160 sub-sector categories.
+  - Includes 22 major point sources (e.g., power stations, refineries, steel works) and background area emissions across 11 SNAP sectors, plus international shipping and European emissions.
+  - Ammonia inputs derived from the National Ammonia Reduction Strategy Evaluation System (NARSES) split into five sectors (e.g., livestock, fertiliser, non-agricultural sources).
+  - Regional land masks separate sources by England, Scotland, Wales, and Northern Ireland for regulator clarity.
+- Model runs and source attribution:
+  - Base scenario run (all sources) followed by runs abating each source by 25% to reduce non-linearities; footprints are computed as the difference from the base run.
+  - Final footprints are scaled by a factor of 4.
+  - Footprints calculated for each 5 km grid square and for each pollutant (SOx, NOy, NHx); additional breakdown by short/long range input and source attribution type (e.g., livestock, fertiliser, shipping).
+  - Outputs include deposition data for three ecosystem types: forest, moorland, and grid average (to reflect habitat surface roughness effects on deposition).
+- Post-processing, calibration, and validation:
+  - Footprints are normalized so their sum matches the baseline deposition (to mitigate model non-linearities).
+  - Calibration against the CBED (Concentration Based Estimated Deposition) dataset (2011–2013) to align FRAME outputs with measured deposition, using described calibration equations to produce calibrated deposition and footprints.
+- Spatial mapping to protected sites:
+  - FRAME outputs (160 footprint files per pollutant) are aggregated to 90 footprint files for processing efficiency.
+  - Python-based mapping to a UK protected sites shapefile (SAC, SPA, SSSI) to obtain for each site the minimum, maximum, and grid-average deposition values for each pollutant and footprint type.
+  - Outputs separated into three files corresponding to forest, moorland, and grid-average deposition values.
+- Data units and interpretation:
+  - All deposition values are in keq ha-1 year-1.
+  - Conversions: 1 keq ha-1 year-1 equals 16 kg S ha-1 year-1 for sulphur and 14 kg N ha-1 year-1 for nitrogen.
+  - Total nitrogen deposition equals NO2–NO3 plus NH3–NH4.
+- Quality control and documentation:
+  - Normalisation and cross-year budget checks ensure consistency with prior years; each footprint output is also saved as a jpg for quick error detection.
+- Data structure and availability:
+  - Datasets 1–3 provide a 3-year mean (2013–2015) of ecosystem-specific source attribution and deposition data for nitrogen and sulphur (minimum, maximum, and area-weighted values) at SAC/SPA/SSSI sites, at 5×5 km grid resolution.
+  - Example files: APIS_source_attribution_nitrogen_sulphur_to_forest_bysite.csv, APIS_source_attribution_nitrogen_sulphur_to_moorland_bysite.csv, APIS_source_attribution_nitrogen_sulphur_to_gridaverage_bysite.csv.
+  - Site and footprint metadata include SITECODE, SITENAME, coordinates (X, Y), SITE_AREA, DESIGNATION, FOOTPRINT_ID, FOOTPRINT_NAME, AREA_POINT, SOURCE_LOCATION, and deposition values for local (short-range) and long-range components across S, N species (e.g., SOD, SOW, NOD, NOW, NHD, NHW) for both forest and moorland as well as grid average.
+- Relevance for analysts monitoring the environment:
+  - Provides a standardized, calibrated, site-attribution framework to assess environmental health and changes in nitrogen and sulphur deposition over time.
+  - Delivers mass-balance like, per-site deposition indicators with habitat-specific deposition effects to support regulatory oversight and policy evaluation.
+  - Ensures data traceability and accessibility through structured outputs, calibration to official deposition totals, and aggregation to protected sites for monitoring and reporting. 
+- Key outputs for monitoring use:
+  - Calibrated deposition totals by site and habitat (forest, moorland, grid average) with source-attribution breakdown.
+  - 3-year mean site-level deposition data for SAC, SPA, and SSSI locations.
+  - Ready-to-use data blocks and metadata for integration into monitoring portals and dashboards.

@@ -1,0 +1,22 @@
+# Errata for dataset http://doi.org/1fb2cda3-cb49-414f-ad844a2f88ecce15
+
+- Overview
+  - The dataset “Historic grassland survey data with contemporary spatial habitat data for semi-natural grasslands across England” has been withdrawn and superseded by a new version titled “Historic grassland survey data with contemporary spatial habitat data for semi-natural grasslands across England v2.”
+- Reason for withdrawal
+  - One author (Richard Pywell) raised privacy/landownerConcerns: high-resolution quadrat locations could enable pinpointing land locations.
+  - The detailed locations could reveal information about the loss of important grassland habitats, potentially upsetting landowners.
+- Supersession details
+  - Superseded by version 2 (v2) with locations provided at 10km grid reference resolution.
+  - Aim: preserve broader spatial context and data usability while reducing identifiability and privacy risks.
+- Implications for data use
+  - Reduced spatial precision may affect analyses requiring exact quadrat coordinates.
+  - Enables continued use of the dataset with a privacy-protective resolution, maintaining overall utility for monitoring and policy assessment.
+- Data governance and practice implications
+  - Demonstrates versioning and errata documentation to balance data value with stakeholder privacy.
+  - Highlights a practice of adjusting data granularity rather than removing data entirely to address ethical concerns.
+- Relevance for Analysts Monitoring the Environment
+  - Emphasizes consideration of privacy, landowner sensitivities, and ethical data sharing in environmental datasets.
+  - Illustrates how standard monitoring datasets may need to be updated to maintain trust and data integrity.
+- Practical guidance for users
+  - Refer to and base analyses on the v2 dataset.
+  - Check the spatial resolution when designing analyses and mapping outputs; expect differences in results where fine-scale locations were previously used.

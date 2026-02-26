@@ -1,0 +1,32 @@
+# This dataset contains:
+
+- Data contents
+  - Field site overview: Bury Green Brook, Hertfordshire; small ephemeral gravel-bed river with riffle-pool morphology; study aims to measure grain-scale bed structure and its variation along the riffle-pool sequence; site coordinates and dates of field visits (five visits: Sep 2014, Jun 2015, Jul 2016, Apr 2017, Oct 2018).
+  - Data types included:
+    - Terrestrial Laser Scan (TLS) data: field topography (.pts format), 75 m reach scanned across five field visits; 8 high-definition survey targets; 7 scanner locations; resolution about 3.1 mm at 10 m; scans registered to an arbitrary local coordinate system with RMSE ~0.002–0.005 m; data exported as PTS with X, Y, Z, intensity per point.
+    - CT (computed tomography) data: grain-scale bed samples using buried baskets (diameter 250 mm) at multiple locations (riffle crest, pool head/shallow/deep/tail); baskets excavated after 19 months, wax-fixed, scanned with a Nikon μCT scanner; voxel size 600 μm; partial pre-processing and post-processed data provided.
+- Field site and sampling details
+  - Field site control network: 12 temporary benchmarks (2 ground permamarkers, 10 survey discs) set around the site; surveyed with reflectorless Leica total station onto an arbitrary coordinate system (X=1000, Y=1000, Z=100 m) and resectioned into that system for subsequent surveys.
+  - Field data collection overview: TLS data collected along 75 m reach from seven scan locations; data registered with target coordinates to achieve RMSE of 0.002–0.005 m; CT baskets buried at specific sites (e.g., 1BO Upstream Pool Head, 2RR Upstream Pool Deep, 3OY Upstream Pool Tail, 4GO Riffle Crest, 5OO Downstream Pool Deep, 6RG Downstream Pool Tail, 7PO Downstream Riffle Crest, 8RB Downstream Pool Head) with explicit X, Y, Z coordinates in the site coordinate system.
+- Data formats and organization
+  - TLS data: field topography in .pts format; contents include X, Y, Z coordinates and intensity per point; text-based export with header lines and point data.
+  - CT data (pre-processed and post-processed): located in two formats
+    - Pre-processed CT data: HUTCH_files folders containing sonograms and metadata necessary to reconstruct projections (multiple baskets may be in a single HUTCH folder).
+    - Post-processed CT data: CT image stacks in .tiff; for each basket, two folders are provided: Matrix (fine-grained matrix) and ParticlesFull (grains); includes two pages of data (pre/post processing) and a table of basket burial locations (Table 1 with X, Y, Z coordinates aligned to the total station system).
+  - Data references and provenance: linked to Hodge et al. (2013) and Voepel et al. (2019) for methods and context.
+- CT data processing workflow (processing steps overview)
+  - Image reconstruction pipeline
+    - Sinogram to radiograph conversion into radiographs; center-of-rotation (COR) determination; algebraic reconstruction (FBP/NITRO) using DigiXCT; options for pre-processing and image corrections.
+    - Creation of color-coded folders for each sample (e.g., 1YY, 2RB, 5PY) with dedicated Radio, Recon, and Sino folders; batch processing via DigiXCT and Nikon CT Pro 2D tools; output volumes saved as 32-bit signed float TIFF stacks with simple run-and-code filenames; reconstruction yields a 3D voxelized dataset with specified voxel size (600 μm).
+  - Registration and clipping in VGStudio Max
+    - Reorient each reconstructed volume so gravity aligns with the Z-axis; use downstream markers and simple 3-2-1 registration to align top rim; verify alignment across 2D and 3D views; crop to include the stones while excluding the bottom/noise; create Regions of Interest (ROI) and export aligned/clipped volumes as raw (.raw) with corresponding VGL file for reproducibility.
+    - Export options include alignment to scene coordinates, top-down orientation, 16-bit data, and grid-dependent naming (e.g., RR_CC_Registered_Clipped_xXXX_yYYY_zZZZ.raw) and corresponding VGL files for future re-use.
+  - Rotation and orientation adjustments in Fiji (ImageJ)
+    - Import the raw volume, identify downstream orientation marker, rotate to align downstream marker with the X-axis using bilinear interpolation; convert to 16-bit; save as TIFF (Rotated) in the Recon folder to document that the dataset has been registered, clipped, and rotated.
+- Output products and data usability
+  - Pre- and post-processed CT datasets: ready for analysis of grain-scale structure, exposure area, and downstream grain entrainment modeling (as described in the related literature).
+  - TLS datasets: high-resolution topographic context aligned to an internal arbitrary coordinate system and ready for integration with CT data.
+  - Metadata and naming conventions: explicit coordinates, sample locations, run numbers (RR), color codes (CC), and standardized file naming to support reproducibility and cross-dataset linking.
+- References
+  - Hodge, R. A., Sear, D. A., & Leyland, J. (2013). Spatial variations in surface sediment structure in riffle-pool sequences: a preliminary test of the Differential Sediment Entrainment Hypothesis (DSEH). Earth Surface Processes and Landforms, 38(5), 449-465.
+  - Voepel, H., Leyland, J., Hodge, R., Ahmed, S., & Sear, D. (2019). Development of a vector-based 3D grain entrainment model with application to X-ray computed tomography (XCT) scanned riverbed sediment. Earth Surface Processes and Landforms, 44(15), 3057-3077.

@@ -1,0 +1,57 @@
+# National Plant Monitoring Scheme survey data (2015-2017)
+
+- Overview
+  - NPMS is a habitat-based plant monitoring scheme designed to provide annually updated indications of changes in plant abundance and diversity.
+  - Run by a partnership of BSBI, CEH, JNCC and Plantlife; supports volunteer plant recorders to monitor plants and habitat attributes across the UK.
+  - Aims include detecting habitat change, understanding drivers, and contributing to the UK Biodiversity Indicator C7.
+
+- Provided files (structure and purpose)
+  - locations_2015to2017.csv: unique location identifiers (location_id) and location_type for survey plots; links to sampling events in sampleInfo_2015to2017.csv.
+  - sampleInfo_2015to2017.csv: information about individual samples (id, survey_id), date, location_id, spatial reference (entered_sref) and system (entered_sref_system), creation metadata, and recorder identity.
+  - sampleAttributes_2015to2017.csv: additional attributes for samples (sample_attribute_id, sample_id, caption, text_value) linked to sampleInfo.
+  - occurrences_2015to2017.csv: species occurrences (id) with sample_id linkage, taxon key (taxonversionkey), preferred_taxon, domin (Domin scale cover value), record_status (verification), and sensitivity_precision (blurred records).
+- Evidence Quality Assurance (EQA)
+  - EQA framework supported by peer-reviewed papers and project reports; guidance documents and data published openly for independent review.
+  - Data input and verification rely on online capture, taxon dictionaries, standardized dates, and controlled terms; verification via iRecord for expert review when needed.
+  - Outputs reviewed by scientists; projects employ robust design to quantify uncertainty; document tracking and version control (Data Management Plan; PRINCE2).
+- How the survey works (design and methods)
+  - 28 fine NPMS habitats, grouped into 11 broad NPMS categories; field teams record plant communities in fixed plots (square or linear) across UK, Isle of Man and Channel Islands.
+  - Three survey levels:
+    - Wildflower Level: fewer species recorded.
+    - Indicator Level: full set of habitat-indicator species (recommended for robust data).
+    - Inventory Level: Indicator Level plus recording all other vascular plants in each plot.
+  - Plot types and sizes:
+    - Square plots: 5x5 m (woodlands: 10x10 m).
+    - Linear plots: 1x25 m for specific linear habitats (e.g., arable margins, hedgerows, streams, etc.).
+  - Plot selection and relocation
+    - Prefilled maps with pre-selected plots; aim to place plots within a single NPMS habitat and across different habitats whenever possible.
+    - Protocol A allows self-selected plots in representative areas when needed; emphasis on relocatable plots using sketches, photographs, compass/GPS references.
+  - Habitat and plots within a kilometre square
+    - Survey minimums: typically 5 plots per square, with a mix of 3 square and 2 linear plots when possible.
+    - Accessibility, safety and land access considerations may affect plot placement.
+- Data capture and coordinates
+  - Online data entry via npms.org.uk; spatial references standardized (entered_sref) with systems such as OSGB 27700, Irish Grid 29902, WGS84 4326.
+  - Optional GPS to improve location accuracy; photographs and sketches to aid relocation.
+  - Plot placement details and relocation aids (permanent features, compass directions, grid references) are encouraged for long-term monitoring.
+- Recording in plots (method)
+  - Use habitat-specific species lists to record present species; square plots surveyed intensively from a corner outward.
+  - Assess abundances as percent cover using the Domin scale (1–10) and note bare ground, litter, bare rock/gravel, and moss/lichen cover.
+  - Optional but recommended: vegetation height classes, woodedness, aspect, slope, and management if observable.
+  - For aquatic habitats, record margins up to 1 m from water edge; avoid entering water; use bank-side plots.
+  - Ponds, flushes, and springs have specific guidance to maximize habitat proportion within plots.
+- What to do with the data and access
+  - Enter data online (npms.org.uk) after registration; if not possible, data can be posted to NPMS Volunteer Coordinator.
+  - Data are intended to be publicly accessible for independent review and broader analyses.
+- Access rights and responsibilities
+  - Respect countryside access rights and landowners; follow country-specific codes (England/Wales, Scotland, Northern Ireland).
+  - NPMS provides a letter of introduction for landowners upon request.
+- Health and safety
+  - Surveyors responsible for their own safety; plan around weather, terrain, and site hazards.
+  - Work in pairs when possible; carry mobile phones, first aid, appropriate clothing, and equipment; avoid unsafe plots (e.g., steep slopes, unstable cliffs, flooded areas).
+- Appendices and habitat descriptions
+  - Appendix 1: Habitat types and broad/nine-to-eleven category mappings with examples and notes for field identification.
+  - Domin Scale: detailed guidance for estimating percent cover, including interpretations for 5x5 m and 1x25 m plots.
+  - Guidance for re-finding plots and maintaining consistent survey conditions across years.
+- Endnotes and supporting materials
+  - Guidance notes, species lists, and example maps are provided to support consistent data collection and relocation across years.
+  - Documentation available for download from the NPMS website, including field guidance and forms.

@@ -1,0 +1,26 @@
+# Supporting documentation
+
+- The document describes simulation results for the red soil region of China using the Global ECOSSE model, a spatial application of ECOSSE.
+- Model characteristics:
+  - Pool-based soil model with carbon and nitrogen in 5 cm layers.
+  - Carbon turnover rates vary by pool and are driven by environmental factors.
+  - Carbon inputs come from land use and an internal net primary productivity (NPP) simulation.
+  - Outputs include carbon dioxide (CO2) and soil organic carbon (SOC).
+- Data inputs and sources:
+  - Soil data: Harmonised World Soil Database (HWSD) at 0.083-degree resolution.
+  - Land cover: Copernicus land monitoring service.
+  - Climate: University of East Anglia CRU high-resolution gridded data at 0.5-degree resolution.
+  - Soils considered: Acrisols, Alisols, Luvisols, Lixisols, Nitisols.
+  - Simulation period: 2016–2100.
+  - Climate scenario: IPCC A2_MG1 (business-as-usual CO2 emissions).
+  - Land uses simulated: agricultural and forest across the entire region.
+- Simulation workflow and tools:
+  - Stage 1: Prepare national/province boundaries for CookieCut; thin polygons to reduce boundary points.
+  - Stage 2: CookieCut: generate manageable shapefile; specify bounding box; use Countries utility to determine bounding boxes for countries/provinces.
+  - Stage 3: Create a JSON file specifying one or more provinces and land cover types; each line includes coordinate set, HWSD mu_global identifier, and land cover index.
+  - Stage 4: GlblEcosse: read the _hwsd.csv AOI file, generate ECOSSE input file sets for each entry, and skip adjacent entries on the same latitude with the same HWSD mu_global; record adjacent entries in a manifest file.
+- Quality and validation:
+  - Input data are checked for accuracy as part of quality control.
+- Outputs and data files:
+  - Agri_RS_co2.txt – simulated CO2 emissions from soil under agriculture.
+  - For_RS_co2.txt – simulated CO2 emissions from soil under forest.

@@ -1,0 +1,90 @@
+# 1990 COUNTRYSIDE SURVEY: QUALITY ASSURANCE EXERCISE
+
+- Purpose
+  - Outline scope of quality assurance (QA) for the 1990 Countryside Survey, present results, and provide recommendations to improve accuracy and confidence in statistics.
+  - Compare QA findings with previous exercises (autumn 1990 and 1991 trials) to understand observer error, timing effects, plot location issues, and information type influences.
+
+- Context and aims
+  - Fieldwork involved many recorders; QA quantifies consistency and reliability across major field components.
+  - Assess how observer error, seasonality, plot location, and data type affect recording accuracy and change statistics.
+  - Relate QA findings to prior ITE surveys and propose methodological modifications for future surveys.
+
+- Methods (what was done)
+  - Two QA series:
+    - Autumn 1990: 21 original survey squares; relied on original sketch maps for plot relocation; two independent assessors.
+    - 1991: added photographs of individual plots; larger subset: one 1 km square from each terrain class; 28 of 32 squares reassessed; included self-assessment squares.
+  - Plot types (six total within each quarter):
+    - Quadrats: X plots (200 m2) and Y plots (4 m2)
+    - Linear plots along roadsides
+    - Roadverges, hedges, streamsides, boundaries
+  - Relocation and recording
+    - Attempted relocation of buried plates for quadrats; additional relocation assessed using sketches and photographs.
+    - Recorded landcover and boundary features at nine predetermined points per quarter.
+  - Data quality measures
+    - Species concordance between T1 (original) and T2 (QA) using four indices: % agreement, agreement excluding new/erroneous taxa, overall agreement, and % accuracy (adjusted for T2 errors).
+    - Plate/plot relocation success rates; time spent relocating plates.
+    - Covers: comparison of cover values for key species; Wilcoxon matched-pairs tests.
+  - Data analyses
+    - Descriptive statistics, t-tests, and Wilcoxon tests; DECORANA (ordination) analyses to examine ecological gradient shifts; land-use code concordance; mapping code concordance.
+
+- Key findings (data quality and reliability)
+  - Plot relocation and plate recovery
+    - Autumn 1990: 71% recovery rate for plates with a five-minute search; 65% plates found and 87% plots found in the 1991 phase (varied by plot type).
+    - Relocation success varied by plot type: X plots more readily relocated; Y plots were most challenging; roadverges and hedges easier than enclosed plots.
+  - Species concordance and change
+    - Overall species-record concordance across the full 1990–1991 QA: about 60.9% (initially 45% in autumn 1990 analysis; improved with full data and seasonal adjustments).
+    - Removing seasonally unavailable taxa (seasonal differences) raised initial accuracy to about 74%.
+    - 1991 QA showed a significant increase in mean species per plot (1990: ~20.2–20.9; 1991: ~23.4). About 27% of the observed increase attributed to greater assessor efficiency; ~73% to real ecological change (better growing season in 1991 vs drought-affected 1990).
+    - Common sources of discrepancy: mis-identifications, overlooked species, mis-location, and seasonal/management changes.
+  - Effects of season and land class
+    - Seasonal effects were pronounced, especially in drought-affected lowland plots; upland areas showed less seasonal variation.
+    - Some genuine species population changes were detected (e.g., Taraxacum agg., Galium aparine, Cirsium arvense); others were attributed to under-recording in the original survey (Lolium perenne, Poa trivialis) or mis-recording of cover.
+  - DECORANA axis analysis (ecological gradient)
+    - Changes in axis scores between 1990 and 1991 generally aligned with expected land-use changes; uplands showed a distinct, stable gradient.
+    - Across plot types, axis shifts were in the same direction, though magnitude varied; upland aggregates (UP) showed a strong, persistent gradient.
+  - Land-use mapping and boundary coding
+    - Primary land-use codes: high concordance (approximately 88–95%); boundary codes slightly lower (around 80–83% when independent pairs were analyzed).
+    - Some codes caused mismatches (e.g., marsh code 114, upland 102 vs 111; misinterpretation of boundary hedges and hawthorn composition).
+    - Inter-assessor consistency in mapping codes was high; there was little difference between assessors and original surveyors in code usage.
+  - Mapping of species cover
+    - Point-grid concordance for dominant species at a given location was ~81%; co-dominants had much lower concordance (about 34%); perfect match for three co-dominants was rare (around 5%).
+    - Overall, two most prevalent species mapping focused approach recommended to improve reproducibility.
+  - General conclusions about data quality
+    - Photographs are a powerful aid for plot relocation, especially in unenclosed land.
+    - Distances and compass bearings to nearby features were often missing; better annotation on sketches and photographs would improve relocations.
+    - Metal plates for X plots were valuable but relocation effort was high in unenclosed uplands; more manpower may be needed for such areas.
+    - Bryophytes and certain grasses presented identification challenges; training should emphasize vegetative traits and allow bryophytes in lists where relevant.
+    - QA should be conducted in the same year as the original survey to minimize seasonal/annual variation effects.
+
+- Recommendations (synthesis of actionable improvements)
+  - Training and species identification
+    - Retain lichens in general surveys with improved training materials; include species samples and habitat information in training.
+    - Focus training on distinguishing similar grasses and standardizing the recording of bryophytes in relevant habitats.
+  - QA timing and design
+    - Conduct QA as close to the original survey date as practical; avoid large seasonal or year-to-year gaps.
+    - For QA, emphasize same-season comparisons to limit seasonal biases.
+  - Plot relocation and documentation
+    - Require surveyors to annotate photographs with location context; include distances and compass bearings in sketch maps.
+    - Use metal marker plates for X plots wherever possible; allocate additional resources for relocation in unenclosed uplands.
+    - For small Y plots, define placement with a survey tape and orient so the side, not the diagonal, is aligned NS; place the plate at the SE corner.
+  - Use of photographs and field records
+    - Encourage photographs to accompany sketch maps; annotate photos with plot areas and identifiable nearby features.
+  - Land-use coding and mapping
+    - Introduce more nuanced upland land-use codes (e.g., subdivide upland grassland types and specify lowland rush pastures).
+    - Recognize wet heath as a distinct vegetation type; reduce ambiguity in marsh/mire classifications.
+    - Restrict primary boundary codes to hedge presence; use qualifying codes for species composition within hedges.
+    - Increase the number of primary land-use codes and provide dichotomous keys to improve unambiguous recording.
+  - Data handling and reporting
+    - Report only the two most prevalent species for land-use mapping to improve reproducibility.
+    - Provide clearer guidance on tree/shrub cover coding and when to apply parentheses in cover values.
+    - Ensure consistent coding for boundary and habitat descriptors to minimize mis-classifications.
+
+- Practical takeaways for analysts
+  - QA yields concrete, quantifiable measures of data reliability (plate/plot relocation rates, species concordance, cover accuracy, mapping code agreement).
+  - Seasonality and land-class context strongly influence data quality; adjustments and controls should be embedded in future survey design.
+  - Photographic aids and standardized marker systems markedly improve plot relocation and data reproducibility.
+  - Clear, standardized coding schemes and targeted training reduce interpretive variance across assessors and survey years.
+  - META-data and transparency (code lists, Annexes, and QA tables) are critical for enabling reproducible analyses and credible change statistics.
+
+- Conclusion
+  - The 1990 Countryside Survey QA demonstrates that rigorous, multi-faceted QA can quantify sources of error, track improvements with methodological changes, and guide practical improvements for future surveys. Key gains come from improved relocation aided by photographs, tighter season-aligned QA, standardized coding, and targeted training, all of which support more reliable ecological change inferences.

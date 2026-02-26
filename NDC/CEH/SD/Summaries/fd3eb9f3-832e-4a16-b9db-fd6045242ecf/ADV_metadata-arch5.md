@@ -1,0 +1,39 @@
+# Durleigh Reservoir Acoustic Doppler Velocimeter Measurements
+
+- Metadata file for acoustic doppler velocimeter (ADV) data collected at Durleigh Reservoir between 20/08/2018 and 24/08/2018.
+- Instrument and setup:
+  - Nortek Vector ADV; compass calibrated prior to deployment; configured to record ENU velocities.
+  - Burst mode: 16 seconds every 10 minutes; sampling frequency: 64 Hz.
+  - Near-bed measurements (~10 cm above bed) near surface mixers.
+- Authors and citation:
+  - Emily Slavin and Danielle Wain.
+  - Dataset should be cited as: Slavin, E.I., Wain, D.J. 2018. Acoustic Doppler Velocimeter measurements from Durleigh Reservoir, August 2018.
+- Location:
+  - Latitude 51.1215, Longitude -3.0396.
+- Temporal coverage:
+  - Measurements taken over 5 days: 20–24 August 2018 (days 1–5).
+- Data files:
+  - Per-day pairs: dat files and sen files.
+- dat file contents (per day):
+  - vel_xe (m/s), vel_yn (m/s), vel_zu (m/s)
+  - Amp1, Amp2, Amp3 (counts)
+  - snr1, snr2, snr3 (dB)
+  - corr1, corr2, corr3 (%)
+  - pres (dbar)
+- sen file contents (per day):
+  - Hour, Minute, Second
+  - soundspeed (m/s)
+  - heading (degrees)
+  - pitch (degrees)
+  - roll (degrees)
+  - tempearture (degrees C)
+- Data characteristics:
+  - ENU velocity measurements with 64 Hz sampling from 16 s bursts every 10 minutes.
+  - Near-bed measurement context related to reservoir mixers.
+- Governance and provenance considerations for data stewards:
+  - Clear dataset identity: title, authors, and citation provided; geospatial and temporal coverage documented.
+  - File structure and variable metadata are specified, including units and data types.
+  - Quality indicators present in data (snr and corr fields) to support data quality assessment.
+  - Note on metadata accuracy: a misspelling in "tempearture" should be corrected to "temperature" in the metadata/dictionary.
+  - Data accessibility and versioning considerations should be tracked when sharing or publishing (5-day window; daily dat/sen files).
+  - Ensure consistency of naming conventions across days and alignment with catalog metadata for discoverability.

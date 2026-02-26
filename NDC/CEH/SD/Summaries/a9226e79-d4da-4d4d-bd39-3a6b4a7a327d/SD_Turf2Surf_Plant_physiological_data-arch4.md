@@ -1,0 +1,38 @@
+# Details of data structure for the dataset
+
+- Context: Supplement to the supporting documentation for Turf2Surf data series; focuses on plant physiological measurements in North Wales and Northwest England (2013, 2014, 2016) as described in Turf2Surf_Plant_physiological_data.csv.
+- Datasets sharing the first 9 columns: 
+  - Plant structural measurements (North Wales/NW England, 2013 and 2014)
+  - Plant aboveground and belowground standing biomass in the Conwy catchment (2013 and 2014)
+  - Soil carbon data in the Conwy catchment (2013 and 2014)
+  - Soil physical, chemical and biological measurements in the Conwy catchment (2013 and 2014)
+  - Plant aboveground and belowground standing biomass in the Conwy catchment (2013 and 2014)
+- Shared data structure (Columns A–I):
+  - A: Site Number (unique identifier)
+  - B: Habitat
+  - C: Habitat Description
+  - D: Site name
+  - E: Ecosystem Component (plant, soil, or roots)
+  - F: If Plant, plant species; otherwise NA
+  - G: Plot number (1–4)
+  - H: Replicate number
+  - I: Soil depth interval (for soil/roots)
+- Additional data columns (J–R; 9 extra columns; total 96 rows):
+  - J: Year of measurement
+  - K: Vcmax — Maximum rate of carboxylation at 25°C (µmol m^-2 s^-1)
+  - L: Jmax — Electron transport capacity at 25°C (µmol m^-2 s^-1)
+  - M: Asat — Photosynthetic rate at saturating irradiance and 400 ppm CO2 at 25°C (µmol m^-2 s^-1)
+  - N: Leaf mass area (gm^-2)
+  - O: Foliar nitrogen content (%)
+  - P: Foliar phosphorus content (%)
+  - Q: Specific leaf area (cm² g^-1)
+  - R: Comments (free text)
+- Data quality notes:
+  - NA indicates measurements not performed
+  - At sites 5, 7, 14, and 19, leaves were sampled in 2015 for re-analysis of foliar N and P only
+- Practical considerations for data management:
+  - Understand data provenance and maintain consistent metadata for cross-dataset compatibility
+  - Verify data content and format during integration, noting NAs and site-specific re-analysis
+  - Prioritize data discoverability and governance (format, quality, metadata, updates)
+  - Consider co-ownership and collaboration practices when using datasets across the broader data community
+  - Plan for data gaps and potential new data collection to fill granularity or coverage needs

@@ -1,0 +1,31 @@
+# Experimental design/sampling regime
+
+- Context and scope
+  - UK Butterfly Monitoring Scheme (UKBMS) collects data from over 1,000 sites per year across the UK.
+  - Data types include all-species transects (Pollard walks), single-species transects, timed counts, and egg/larval web counts.
+  - Transects are fixed routes to enable year-to-year comparability; typically 2–4 km long and subdivided into habitat/management sections.
+- All-species transects
+  - Record all butterflies along a fixed-width band (about 5 m) weekly from early April to late September, aiming for ~26 counts per year.
+  - Transects are walked during specific times (roughly 10:45–15:45) under defined weather conditions (e.g., dry, Beaufort < 5, temperature thresholds with sunshine or overcast).
+- Single-species transects
+  - Follow the same methodology as all-species transects but focused on one or a few targeted weeks for a given species.
+- Timed counts and egg/larval web counts
+  - Timed counts record abundance of a species over a set period and area, within weather constraints.
+  - Egg/larval web counts document eggs or larval webs in suitable habitat.
+- Data collection workflow
+  - Field data are captured at site setup with transect/timed count/larval web details; entered into Transect Walker software (free, UKBMS site).
+  - Data entry can be by the recorder or regional transect coordinator; route changes create a new site with a new site number.
+  - Transect Walker data are uploaded to an Oracle database.
+- Location data and coordinates
+  - Site location includes OS grid reference (typically 6-figure accuracy) for the transect’s central location, plus Easting and Northing coordinates.
+  - Additional site attributes: transect length, number of sections, country.
+- Data structure and storage
+  - Site location data are stored in CSV format with columns:
+    - Site number, Site name, Gridreference, Easting, Northing, Length, Country, No. Sections, No. Yrs surveyed, First year surveyed, Last year surveyed.
+- Quality assurance
+  - Regional transect coordinators validate records; follow-up automated and manual checks ensure correctness of location data and consistency across years.
+- Temporal coverage
+  - Years surveyed are tracked; last year surveyed noted as up to 2012 in the dataset described.
+- GIS considerations
+  - Data are spatially explicit (fixed transects with coordinates) and time-stamped; suitable for map-based analyses of habitat change, transect maintenance, and butterfly abundance trends.
+  - Data may require transformation from OS grid references to other coordinate systems for integration with other GIS layers.

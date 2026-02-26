@@ -1,0 +1,25 @@
+# UnknownsUplandLowlandMetabolomics.csv
+
+- Project and data provenance: Uplands-N2O grant NE/M015351/1; Authors: Karina A Marsden, Lucy Lush, Jon A Holmberg, Mick J Whelan, Andrew J King, Rory P Wilson, Alice F Charteris, Laura M Cardenas, Davey L Jones, Dave R Chadwick. Data reuse requires full citation.
+- Data description: Metabolomics of sheep urine; untargeted primary metabolism analysis.
+- Sampling design:
+  - Sites: autumn samples from semi-improved pasture and autumn samples from improved pasture.
+  - Replication: n = 4 per site (total n = 8).
+- Sample handling and processing:
+  - Urine collected, syringe filtered (< 0.2 μm), flash frozen.
+  - Procedural blanks of ultra-pure water processed and blank corrected.
+  - Frozen samples stored at -80 °C; shipped on dry ice to the West Coast Metabolomics Center at UC Davis.
+- Analytical method:
+  - Instrument: ALEX-CIS GC-TOF-MS (Gerstel Inc., Linthicum, MD) for untargeted primary metabolism analysis.
+- Data content:
+  - Peak intensity values for all identified compounds from the untargeted analysis.
+  - Data headers:
+    - Sample: sheep ID and site of urine collection.
+    - Season: site (semi-improved or improved).
+    - Other headers: numerical identity values for unidentified compounds; following rows contain the corresponding peak intensities.
+- Data quality and limitations:
+  - Data are blank corrected.
+  - Small sample size (n = 8) and untargeted with unidentified compound identities, which may limit interpretation.
+- Usage notes:
+  - If data are reused, ensure full citation.
+  - Data can be used to compare urinary metabolomic profiles across upland pasture conditions and to analyze unidentified metabolites (based on their peak intensities and numerical identifiers).

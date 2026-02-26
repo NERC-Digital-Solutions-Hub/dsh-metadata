@@ -1,0 +1,113 @@
+# Biomass Information and Innovation Platform Hub Site Background Information
+
+- Summary of purpose
+  - UK-wide Biomass Connect platform to support biomass feedstock production and overcome barriers to large-scale domestic supply.
+  - Deliver robust, independent information on biomass feedstock performance, agronomy, economics, and environmental benefits to landowners and managers.
+  - Evaluate geographic variations and innovations, enable knowledge sharing, and inform agricultural, environmental, and bioenergy policy.
+  - Establish eight Hub sites (up to 5 ha each) with demonstration plots across up to 11 species, plus variety trials for willow, Miscanthus, and other energy crops.
+  - Facilitate multi-site UK-wide comparisons of biomass feedstock performance.
+  - Funded by the Department for Energy Security & Net Zero (formerly BEIS).
+
+- Hub Site Network overview
+  - Site selection based on standard criteria:
+    - I) Biomass cultivation capacity
+    - II) Monitoring infrastructure and capability
+    - III) Expertise for stakeholder engagement and outreach
+  - Eight geographically spread Hub sites chosen for climate variation and regional reach.
+  - Site details and layout
+    - Aberystwyth (ABR), Auchencruive (AUC), Bio Global Industries (BGI), Boghall Farm (BHF), Cockle Park Farm (CPF), Headley Hall (HHL), Hillsborough (HLS), North Wyke (NWK).
+  - Land use and management context
+    - Some sites on arable land (AUC, BHF, CPF, HHL) and others on grassland (BGI, ABR, HLS, NWK).
+  - Existing nearby biomass plantings and environmental designations (e.g., BGI with SRC willow, Miscanthus trials near ABR, agroforestry near NWK).
+  - Environmental screening
+    - Landscape character classifications and a site-specific Environmental Impact Assessment including Nitrate Vulnerable Zone considerations.
+  - Table notes
+    - Landscape classifications vary by England, Wales, Scotland, Northern Ireland.
+    - One Hub site lies in an AONB (BGI).
+
+- Soils overview
+  - Spatially dispersed sites with soils influenced by geology, topography, and land-use history.
+  - Initial broad soil characterisation using:
+    - World Reference Base Soil (WRB)
+    - ESB Subsoil description (1:50k)
+    - Soil Moisture Regime (SMR)
+    - Soil Nutrient Regime (SNR)
+  - Acknowledgement that classifications may mismatch local conditions; field assessments will update site-specific data.
+  - Site-specific soil characteristics (selected examples)
+    - AUC: Stagnosol; Riverine clay/floodplain materials; very moist SMR; medium SNR.
+    - ABR: Stagnosol; sandstone/mudstone subsoil; very moist SMR; medium SNR.
+    - BGI: Luvisol; chalk with colluvium; moist SMR; very rich SNR.
+    - BHF: Cambisol; glacial till; slightly dry SMR; medium SNR.
+    - CPF: Stagnosol; glacial till; very moist SMR; medium SNR.
+    - HHL: Cambisol; dolostone with colluvium; slightly dry SMR; carbonate-rich SNR.
+    - HLS: Stagnosol; unconsolidated glacial deposits; data gaps for NI SMR/SNR.
+    - NWK: Cambisol; claystone/mudstone; very moist SMR; medium SNR.
+
+- Climate overview
+  - Climate context (1991-2020 averages) derived from Met Office stations nearest each Hub site to support regional assessment.
+  - Long-term climate metrics per site (max temp, min temp, frost days, sunshine, rainfall, days with >1 mm rain, wind).
+  - Examples of site data
+    - AUC: max 12.91°C, min 38.12°C (likely a formatting issue in dataset; key point includes frost days, rainfall ~165 mm, etc.).
+    - ABR: frost ~38.75 days; rainfall ~1107 mm.
+    - BGI, BHF, CPF, HHL, HLS, NWK with site-specific temp, frost, rainfall, sunshine, and wind data.
+  - Existing climate monitoring
+    - AWS (Automatic Weather Stations) installed at each Hub to capture rainfall, temperature, humidity, wind; data downloaded monthly.
+    - Nearest Met Office station noted for several sites (e.g., AUC, ABR, CPF, HHL, HLS, NWK).
+  - Data use
+    - Supports interpretation of biomass performance and site suitability under regional climate variability.
+
+- Field plots overview
+  - Each Hub site hosts diverse field plots with multiple biomass crops and configurations.
+  - Core layout across all sites
+    - Two demonstration blocks of Miscanthus giganteus (MISg) and Miscanthus athena (MISa) 0.4–0.5 ha each.
+    - One SRC willow block (0.4–0.5 ha) and one SRC willow with a 6-genotype mix.
+    - Three smaller demonstration blocks: SRC poplar (0.10–0.16 ha), SRF poplar (0.10–0.16 ha), SRF Eucalyptus (0.10–0.16 ha).
+    - Demonstration plots for perennial grasses (0.025 ha) including Reed canary grass, Switchgrass, Arundo, Sida.
+    - SRF plots for Alder and Black Locust (0.031 ha each).
+    - Variety trials of SRC willow, Miscanthus, and other energy grasses at five sites (ABR, BHF, HHL, HLS, NWK).
+  - Reference areas at each site representing ongoing land use.
+  - Plot design considerations
+    - Spatial arrangement to manage shading (taller genotypes to the north) and to accommodate annual cutting patterns.
+    - Plot and headland layout mapped with high-accuracy GIS tools.
+
+- Creating site-specific plot plans and site plot maps
+  - Field boundary mapping using Trimble Geo7x (2 cm accuracy, WGS84).
+  - Shapefile creation with Trimble Pathfinder; some sites required alternative base maps.
+  - Plot planning executed in Pear GIS PT Mapper, with consistent internal aisles and headlands.
+  - Shapefiles exported and integrated into QGIS to produce final plot maps.
+  - Site plot maps presented for all eight hubs in the report.
+
+- Crops overview
+  - Up to 11 species planted per Hub site across demonstration blocks and plots.
+  - Key crops and configurations
+    - Willow: SRC, with 0.4–0.5 ha blocks; 6-genotype SRC willow variety trials; some sites include additional willow varieties.
+    - Poplar: SRC and SRF configurations (0.10–0.16 ha each).
+    - Eucalyptus and Alder: SRF configurations (0.10–0.16 ha for Eucalyptus; 0.03 ha for Alder).
+    - Black Locust: SRC configuration (0.03 ha).
+    - Miscanthus giganteus and Miscanthus athena: 0.4–0.5 ha blocks.
+    - Perennial grasses: Reed Canary Grass, Switch Grass, Arundo, Sida (0.025 ha each).
+  - Variety trials
+    - Miscanthus: six near-commercial hybrids plus two controls (M. giganteus and M. Athena).
+    - SRC willow: 36 genotypes; additional varieties from other research projects; replicated in RCBD design.
+  - Stocking densities, spacings, and planting dates varied by site and crop.
+
+- Instrumentation
+  - 8 Hub sites equipped with meteorological and environmental monitoring
+  - 8.1 Automatic Weather Stations (AWS)
+    - Measure rainfall, air temperature, humidity, wind speed/direction.
+    - Data downloaded monthly; installed May–June 2023.
+  - 8.2 Ground sensors
+    - TOMST TMS-4 dataloggers installed at the same location as AWS.
+    - Measure soil moisture and temperature at 6 cm, plus soil temperatures at 2 cm and 15 cm above ground.
+    - Installed May–June 2023.
+  - Data integration
+    - AWS and soil sensors feed site-level climate and soil microclimate data to support analysis of crop performance and site variability.
+
+- References
+  - National Character Area profiles for England, Northern Ireland, Scotland, and Wales, plus related GIS and landscape resources.
+
+- Data-intent and potential outputs for users
+  - Aims to enable end users to self-serve data via dashboards or reports, with guidance on interpretation.
+  - Supports cross-site comparisons of biomass feedstock performance and environmental impacts.
+  - Generated data products to inform grower decisions, agronomic practices, and policy development.
+  - Plans to update soil characterisation with ongoing field assessments to maintain data accuracy.

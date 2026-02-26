@@ -1,0 +1,56 @@
+# MOOR HOUSE VEGETATION RE-SURVEY 2008
+
+- Introduction
+  - Purpose: record plant species presence and abundance in a 2x2 m plot, with header data (plot number, location type, slope, aspect, peat depth, vegetation height) and a plot photo.
+  - Data capture is digital via Vegplots; photos stored weekly on the network.
+- Location of plots
+  - Summary location map of Troutbeck Catchment shown on tablets; access via Vegplots on the tablet dashboard.
+  - Precise plot locations determined using a combination of handheld GPS, tablet GPS, distance from previous plot, and bearing.
+- Plot recording in Vegplots
+  - Minimise disturbance; peat depth measured after assessing vegetation.
+- Logistics of recording on tablets
+  - Teams may use two tablets; ensure separate datasets are labeled A or B to avoid overwriting (e.g., VegetationPlots.mdb -> VegetationPlotsA.mdb).
+- Data entry
+  - Start from ArcMap plot location, then open Vegplots to the Standard Recording screen.
+  - Top-right fields auto-fill for Square, Plot Type (U = 2x2 m), Plot Number, Plot ID; navigate between plots via Select Plot ID.
+- HEADER
+  - Plot description: slope, aspect, location type, peat depth (cm from plot centre), photos taken (Yes/No).
+  - Vegetation Height: estimate/measure at three points; height classes (0–5 cm up to >1 m).
+  - Admin: surveyors’ initials, Plot Completed status, validation status.
+  - Notes: free text (max 250 chars); date of survey and altitude from GPS.
+- LISTED SPECIES
+  - Tabs for groups (Common species, Grasses, Sedges/Rushes, Ferns, Forbs/Woody, Mosses/Lichens, Crops, Unidentified).
+  - Up to 100 common species listed; unidentified species allowed via A-C (Common) and D-Z (Unidentified) for later lab work.
+- SELECTED SPECIES
+  - As species are identified, they are added to a growing nest list for the plot.
+  - Enter estimated total cover using 1% then 5% categories; use dropdown to apply a category.
+  - Delete rows as needed; ensure cover estimates remain consistent between partners; avoid double-counting; bare ground excludes leaf litter and rock.
+  - Trees/shrubs overhanging the plot are recorded with normal cover.
+- Completing Plots
+  - Save regularly; use Validate to highlight missing fields (Header in red; missing Selected Species data marked).
+  - After validation, Save and Exit; validation required before changing plots.
+- PLOT PHOTO PROTOCOL
+  - Take new photos for plot relocation; attach a weatherwriter with plot number/type on photos.
+  - Two photos recommended: one facing north and one facing south (avoid glare, too much sky).
+  - Photos downloaded weekly to S:\ECOPRO\Moorhouse Veg Resurvey 2008\Completed Data\Plot Photos.
+- U PLOTS - UNENCLOSED PLOTS
+  - Plots are 2 x 2 m in size; North-South and East-West orientation using folding rules.
+  - Header: no specific header data for U plots.
+  - LISTED SPECIES: recorded for the 2 m x 2 m quadrat; categories via BRC list on the tablet.
+- Aggregations/Combinations
+  - Some taxa are difficult to separate; use amalgamated taxa (e.g., Cardamine hirsuta/flexuosa) when necessary; use separate names when unequivocal.
+- Bryophytes and Lichens
+  - Only bryophytes/lichens in the listed set; record individual cover values; ignore others and mosses/lichens on rocks or trees.
+- Sphagna (Mosses of peat areas)
+  - Subcategories: green/fat, green/thin, red/fat, red/thin with representative species lists and forms.
+- DATA PROTOCOLS
+  - Backup and save data frequently; close Vegplots and use Backup Current Data.
+  - Transfer any paper-based plots to the tablet ASAP.
+  - Weekly transfer: plot photos to Plot Photos folder; field data to Completed Data/Field_data; create date-named folder; use Complete Square for Upload to Wiki to generate sqcompleted_0001.zip and copy to the dated folder.
+  - If two tablets were used, ensure distinguishability between datasets.
+- Equipment Required
+  - Comprehensive field gear: rucksack, food/water, PPE, weather gear, first aid, communication devices, 4x4 vehicle, tablet with Vegplots, Garmin GPS, cameras, 2 m quadrats, depth poles, compass, hand lenses, folding rulers, bags, markers, guides, spare batteries.
+- Tablet accessories
+  - Spare batteries, base charger, cables, harness/case, optional keyboard/mouse, cleaning cloth, spare stylus, and charging provisions for field/overnight use.
+- General Protocol
+  - Step-by-step workflow: power devices, locate geo-referenced grid coordinates, capture north/south photos, record altitude/slope/aspect/vegetation height, orient quadrat, measure peat depth, and proceed with vegetation survey and data entry.

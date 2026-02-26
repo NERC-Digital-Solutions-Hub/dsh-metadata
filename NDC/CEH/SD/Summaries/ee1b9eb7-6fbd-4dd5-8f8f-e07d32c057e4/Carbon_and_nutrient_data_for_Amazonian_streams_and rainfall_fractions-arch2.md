@@ -1,0 +1,39 @@
+# Sampling Regime
+
+- A dataset describing fluvial carbon and rainfall fraction samples from the Western Amazonian Tambopata basin, Madre de Dios, Peru (latitude 12°49'54.30" S, longitude 69°16'52.37" W).
+- Temporal window: February 2011 – May 2012, with field campaigns targeting wet and dry seasons.
+- Sites and catchments:
+  - Streams: MT (Main Trail) and NC (New Colpita).
+  - Rivers: LT (La Torre) and TP (Tambopata).
+  - Upstream catchment extents: MT ~4.9 km2; NC ~7.2 km2; LT ~2000 km2; TP ~14,000 km2.
+  - Channel characteristics at sampling: MT 3.5–5 m wide; NC 4.5–7.5 m wide; LT and TP 40–80 m and ~200 m wide respectively (season dependent).
+- Data types collected:
+  - Fluvial carbon: DIC (mg/L), δ13C-DIC (‰), DOC (mg/L), POC (mg/L).
+  - Nutrients and major ions: Ca, Mg, K, Na (mg/L), P (μg/L), Si (mg/L).
+  - Rainfall fractions: DIC, δ13C-DIC, DOC, POC, Ca, Mg, K, Na, TOT-P, Si for Rain water, Throughfall, Stemflow, and Overland flow.
+  - Rainfall sampling also includes both rainwater and stemflow through a network of collectors and eight sampled trees for stemflow.
+- Data submission and availability:
+  - Some DIC/DOC/POC datasets previously submitted with DOIs provided; data re-submitted where needed to include additional campaigns.
+  - Data are organized in CSV files: "Amazon streams C and nutrients" and "Amazon rainfall fractions C and nutrients," with documented structure and columns.
+- Sampling campaigns and hydrology:
+  - Three field campaigns for streams/rivers: Feb–Apr 2011, Sept–Dec 2011, Mar–May 2012.
+  - MT stream tends to dry out in the dry season; NC maintains flow during the dry season.
+  - Rainfall fractions collected April–May 2012 to complement fluvial data.
+- Analytical methods and calibration:
+  - DIC and δ13C-DIC: headspace method using Thermo Fisher Gas Bench/Delta V Plus; samples in pre-acidified Exetainers; triplicate replicates; drift checks and midrange standards.
+  - DOC: filtered, acidified to pH 3.9, degassed, analysed by TOC (combustion).
+  - POC: determined by loss on ignition after drying and firing.
+  - Cations and nutrients: Ca/Mg by Atomic Absorption Spectrometry; K/Na by flame photometry; TOT-P and Si by colorimetric methods.
+- Rainfall fraction collection and stemflow setup:
+  - Throughfall collectors arranged at TAM9; open-area rainwater sampling at Explorer’s Inn.
+  - Stemflow collected from eight trees of various species with half-pipe tubing around the trunk; overland flow collected via collectors at stream banks.
+  - Collectors emptied after each rainfall event; samples taken for DOC and POC; limited DIC sampling on a subset.
+- Quality control and data integrity:
+  - Routine calibration and drift correction standards for DIC, DOC, and nutrient analyses.
+  - Randomized sample order and replication to ensure precision; multiple standards and drift checks across batches.
+- Data structure and format:
+  - CSV datasets include: Time (24 h clock), Date, Type (stream/river or rainfall fraction), Site/CollectorID, and concentration columns for each measured parameter.
+  - Data columns allow NA values where analyses were not performed.
+- References and methodological notes:
+  - Methods align with standard water quality analyses (APHA methods) and specific isotopic measurement protocols; calibration and quality control steps described for each analyte.
+  - Detailed references provided for isotope measurement accuracy and analytical procedures.

@@ -1,0 +1,29 @@
+# River monitoring sites in the Thames catchment
+
+- Dataset comprises 24 site codes mapped to site names and locations along the Thames catchment, including the Thames and its tributaries (Thame, Ock, Pang, Windrush, Leach, Lodden, Coln, Colne, Wye) and the Jubilee River.
+- Each entry uses a two-letter code followed by the corresponding site name and location, enabling quick reference and data linking.
+- Full mappings:
+  - Tm: Thame at Wheatley
+  - Ra: Ray at Islip
+  - Ch: Cherwell at Hampton Poyle
+  - Ev: Evenlode at Cassington Mill
+  - TS: Thames at Swinford
+  - TN: Thames at Newbridge
+  - Wi: Windrush at Newbridge
+  - Le: Leach at Lechlade (Mill Lane)
+  - Cl: Cole at Lynt Bridge
+  - Cn: Coln at Whelford
+  - Oc: Ock at Abingdon
+  - Pa: Pang at Tidmarsh
+  - TSo: Thames at Sonning
+  - Lo: Lodden at Charvil
+  - TR: Thames at Runnymede
+  - Wy: Wye at Bourne End
+  - TW: Thames at Wallingford
+  - TH: Thames at Hannington Wick
+  - Ke: Kennet at Woolhampton
+  - En: Emborne at Brimpton
+  - Ju: Jubilee River at Pocock's Bridge
+  - TT: Thames at Taplow
+  - TG: Thames at Goring
+  - Cs: Colne at Staines

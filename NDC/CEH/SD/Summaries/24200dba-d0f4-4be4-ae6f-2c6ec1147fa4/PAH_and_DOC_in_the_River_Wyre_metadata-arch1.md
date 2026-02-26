@@ -1,0 +1,24 @@
+# PAH Concentrations and DOC Partitioning Across Five Sites and Four Seasons
+
+- Dataset tracks PAH concentrations and dissolved organic carbon (DOC) relationships across five sites: Marshaw Wyre, Abbeystead, Dolphinholm, Six Arches, Garstang.
+- Seasons covered: 19 August 2010; 6 December 2010; 6 March 2011; 6 June 2011.
+- Measured variables per site-season observation:
+  - Total dissolved PAHs (ng/L)
+  - Freely dissolved PAHs (ng/L)
+  - DOC-bound PAHs (ng/L)
+  - DOC concentration (mg/L)
+  - log K_DOC: the log-transformed water-DOC partition coefficient, derived from PAH and DOC concentrations
+    - Derived using values for c_total (total dissolved PAHs, ng/L), c_free (freely dissolved PAHs, ng/L), and c_DOC (DOC concentration, mg/L)
+- Purpose and use:
+  - Clarify how PAHs partition between freely dissolved, total dissolved (including DOC-bound), and DOC-associated forms
+  - Examine seasonal and site-specific patterns in PAH burden and partitioning
+  - Explore relationships between DOC concentration and the PAH partition coefficient (log K_DOC)
+- Key analytical opportunities:
+  - Compute fractions of PAHs that are freely dissolved vs DOC-bound across sites and seasons
+  - Analyze how log K_DOC varies with DOC concentration and PAH concentration
+  - Compare total PAH loads among sites and across seasons
+  - Visualize distributions with site-season facets to identify trends or anomalies
+- Data quality considerations:
+  - Ensure consistent units (ng/L for PAHs; mg/L for DOC)
+  - Address missing observations across site-season combinations
+  - Clarify the exact calculation method for log K_DOC and its dependence on c_total, c_free, and c_DOC for reproducibility

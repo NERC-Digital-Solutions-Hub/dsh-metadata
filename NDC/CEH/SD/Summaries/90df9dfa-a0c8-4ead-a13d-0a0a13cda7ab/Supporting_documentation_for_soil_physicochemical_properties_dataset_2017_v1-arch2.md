@@ -1,0 +1,45 @@
+# Details of data structure to CINAg_digestate_experiment_2017_Soil_physicochemical_properties.csv
+
+- Dataset overview
+  - 35 columns and 180 rows
+  - Data from digestate trial conducted in 2017
+  - Purpose: capture soil physicochemical properties across treatments and depths for environmental monitoring and analysis
+
+- Experimental design and data structure
+  - Experiment: Organic_fertilizer
+  - Sample_ID: unique sample identifier formatted as Year_Experiment_Site_Sampling_time_Treatment_Plot_Depths
+  - Year: year when samples were taken
+  - Site: farm platform (NW = North Wyke, HF = Henfaes Farm)
+  - Sampling_date: date samples were taken (dd/mm/yyyy)
+  - Sampling_time: T1 (beginning after digestate application) or T2 (last harvest)
+  - Plot: plot numbers
+  - Treatment: fertilizer treatments: C = Control, D = digestate, ADNI = acidified digestate with nitrification inhibitor DMPP
+  - Depth_cm: soil depth intervals: 0-15 cm, 15-30 cm, 30-60 cm
+
+- Measured soil-chemical and biological properties (column headers and explanations)
+  - NH4_mgN_per_kg_soil: soil extractable ammonium (mg N per kg soil)
+  - NO3_mgN_per_kg_soil: soil extractable nitrate (mg N per kg soil)
+  - DOC_mgC_per_kg_soil: dissolved organic carbon (mg C per kg soil)
+  - DON_mgN_per_kg_soil: organic nitrogen (mg N per kg soil)
+  - Aminoacids_mgN_per_kg_soil: nitrogen in amino acids (mg N per kg soil)
+  - Peptides_and_proteins_mgN_per_kg_soil: nitrogen in peptides and proteins (mg N per kg soil)
+  - MBC_mgC_per_kg_soil: microbial biomass carbon (mg C per kg soil)
+  - MBN_mgN_per_kg_soil: microbial biomass nitrogen (mg N per kg soil)
+  - Aggr_b20µm_perc: percentage of aggregates smaller than 20 µm
+  - Aggr_b250µm_perc: percentage of aggregates smaller than 250 µm
+  - Aggr_b2000µm_perc: percentage of aggregates smaller than 2000 µm
+  - Sand_perc: soil texture, sand fraction (%)
+  - Silt_perc: soil texture, silt fraction (%)
+  - Clay_perc: soil texture, clay fraction (%)
+  - Soil_moisture_perc: soil moisture content (%)
+  - LOI_perc: loss-on-ignition indicating soil organic matter (%)
+  - pH_deionised_water: pH measured in deionised water
+  - pH_CaCl2: pH measured in calcium chloride extract
+  - EC_µS_per_cm: soil electrical conductivity (µS/cm)
+  - POXC_mgC_per_kg_soil: permanganate oxidisable carbon (available carbon) (mg C per kg soil)
+  - PO4.P_mgP_per_kg_soil: citric acid extractable phosphorus (plant available P) (mg P per kg soil)
+  - totC_perc: total soil carbon content (%)
+  - totN_perc: total soil nitrogen content (%)
+  - CN_ratio: soil carbon-to-nitrogen ratio
+  - totP_mgP_per_kg: total soil phosphorus content (mg P per kg soil)
+  - Olsen_P_mgP_per_kg_soil: Olsen-phosphorus (mg P per kg soil)

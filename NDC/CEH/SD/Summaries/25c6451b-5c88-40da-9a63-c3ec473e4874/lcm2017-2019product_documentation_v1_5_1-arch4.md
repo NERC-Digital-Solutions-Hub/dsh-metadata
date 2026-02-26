@@ -1,0 +1,80 @@
+# The UKCEH Land Cover Maps for 2017, 2018 and 2019
+
+- Purpose and scope
+  - User guide for three new UKCEH Land Cover Maps: LCM2017, LCM2018, and LCM2019.
+  - Registers 21 UKCEH Land Cover Classes (based on Biodiversity Action Plan Broad Habitats) and describes data content, production, validation, decisions, and future plans.
+  - Automatic production using Bootstrap Training and Random Forest; aims for annual UK-wide maps with no manual corrections in this release.
+  - Visual checks and formal validation indicate maps are of similar quality to the latest predecessor (LCM2015).
+
+- Data products and structure
+  - 21 UKCEH Land Cover Classes mapped across datasets, with close alignment to earlier maps for comparability.
+  - Dataset suite (per year, GB and Northern Ireland):
+    - 20m Classified Pixels (new)
+    - Land Parcels
+    - 25m Rasterised Land Parcels
+    - 1km Dominant Cover
+    - 1km Dominant Aggregate Cover
+    - 1km Percent Cover
+    - 1km Percent Aggregate Cover
+  - Total datasets: 42 (3 years × 2 regions × 7 dataset types).
+  - Regional specifics
+    - Great Britain: Classification Scenes built from overlapping 100x100 km tiles; 36-band Seasonal Composite Images combined with 20m Context Rasters to form Classification Scenes.
+    - Northern Ireland: Single 43-band Classification Scene per year (36 spectral + 7 context layers) tailored to NI extent.
+  - Coordinate systems and extents
+    - GB: Great Britain, British National Grid, EPSG 27700.
+    - NI: Northern Ireland, Irish Grid variant, EPSG 29903.
+  - Output characteristics
+    - 20m Classified Pixels: two-band 8-bit rasters; band 1 = most likely class; band 2 = confidence (0–100).
+    - Land Parcels: attributes including gid, _hist, _mode, _purity, _conf, _stdev, _n; minor attribute naming changes from LCM2015.
+    - 25m Rasterised Land Parcels: three-band rasters (band 1 = modal class, band 2 = conf, band 3 = purity).
+    - 1km datasets: Percent Cover (21 bands), Percent Aggregate Cover (10 bands), Dominant Cover (1 band), Dominant Aggregate Cover (1 band).
+  - Land Parcel Spatial Framework
+    - Fixed structure with parcels generally ~0.5 ha minimum; gid identifiers differ from LCM2015, but gid can be used for cross-year comparisons.
+    - Framework designed to fix spatial units for change detection; framework remains compatible for higher-resolution future developments.
+
+- Production methodology
+  - Bootstrap Training
+    - Automatic training using historic LCM2015 parcels with purity ≥ 99% to bootstrap the 2017–2019 maps.
+    - Concept: use majority spectral signals across time to train robust classifiers; future plans to bootstrap from 2017–2019 majority signals.
+  - Random Forest classification
+    - Training uses balanced sampling: 10,000 pixels per class drawn per training bag.
+    - Software stack: bespoke UKCEH tools integrated with Weka, PostGIS, and GDAL (open source).
+  - Seasonal composites and input data
+    - Sentinel-2 Seasonal Composite Images (TOA reflectance) at 20m, representing median reflectance per season (winter, spring, summer, autumn).
+    - Context rasters (20m) provide terrain, urban proximity, and proximity to features (roads, coast, freshwater, etc.) to reduce spectral confusion.
+    - Some seasons may have gaps due to clouds; the RF classifier tolerates partial data and aims to avoid manual gap filling.
+  - Classification Scenes and processing scale
+    - GB: 100x100 km tiles used to generate 46-band GB Classification Scenes; 74 overlapping scenes classified independently; visual inspection resolves overlaps.
+    - NI: one 43-band scene per year per region; simpler processing due to smaller area.
+  - UKCEH Land Parcel Spatial Framework
+    - Framework retained from earlier maps with minor changes; parcel geometries remain but indices reorganised for faster processing.
+    - MMU remains ~0.5 ha; parcels are designed to represent discrete real-world land units and to reduce noise.
+  - Validation
+    - UK-scale validation uses countryside survey data (2019), National Forest Inventory data, IACS data, and bespoke validation points (total ~22,325 points).
+    - Reported accuracy (overall): LCM2017 ~78.6%, LCM2018 ~79.6%, LCM2019 ~79.4%.
+    - Validation notes: samples come from data with different purposes; conversions to UKCEH classes can introduce subjectivity. Full details in Appendix 4.
+
+- Data governance, quality, and interpretation
+  - Data lineage and transparency
+    - Bootstrap Training and RF approach developed in-house; documentation includes methodology, training data provenance, and validation results.
+  - Data quality and limitations
+    - No manual accuracy corrections this cycle; classification errors are expected to be randomly distributed across space.
+    - Some inter-class confusion remains (e.g., upland peatland vegetation, Bracken vs. Acid Grassland, etc.); Appendix notes discuss these limitations and potential improvements.
+  - Class definitions and mapping considerations
+    - 21 UKCEH Land Cover Classes tied to UK BAP Broad Habitats; careful terminology use to distinguish between UKCEH classes and BAP Broad Habitats.
+    - Appendix 1 and Appendix 2 provide detailed notes on class interpretations, detection limitations, and habitat definitions.
+  - Future plans and flexibility
+    - Anticipate annual releases; future work may expand input data types (e.g., Sentinel-1 radar, expanded spectral/seasonal inputs) and possibly refine the Land Parcel Spatial Framework to finer resolutions.
+    - Ongoing evaluation of input data sources (TOA vs. Surface Reflectance) and potential future inclusion of additional data streams.
+
+- Validation and user guidance for Data Leaders
+  - Validation results suggest robust performance for an automated, annually produced 21-class map series; expect improvements as methods mature.
+  - Users should consider the compatibility of 2017–2019 parcel identifiers when comparing to LCM2015; gid-based comparisons are recommended for cross-year analysis.
+  - The product suite includes a comprehensive set of raster and vector outputs suitable for change detection, regional planning, habitat assessment, and policy analysis, with suitable metadata to support discoverability and reuse.
+
+- Appendices and supplementary information (highlights)
+  - Appendix 1: Notes on UKCEH Land Cover Classes with detailed class-specific considerations and potential sources of confusion.
+  - Appendix 2: Biodiversity Action Plan (BAP) Broad Habitats definitions and their relationship to UKCEH classes.
+  - Appendix 3: RGB color recipes for displaying UKCEH Land Cover Classes.
+  - Appendix 4: Validation details, confusion matrices, and per-class accuracies for LCM2017, LCM2018, and LCM2019 (full tables available in the report).
+  - Appendix 5: Full list of datasets and their naming conventions across years and regions.

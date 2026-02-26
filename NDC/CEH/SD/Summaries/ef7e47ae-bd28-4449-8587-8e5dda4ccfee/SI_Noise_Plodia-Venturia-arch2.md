@@ -1,0 +1,41 @@
+# Brief description of the project, experimental design and data recorded
+
+- Objective: Investigate how coloured environmental variation (temporal structure) affects life history and population dynamics in a host-parasitoid system comprising Plodia interpunctella (host) and Venturia canescens (parasitoid), focusing on blue (rapid fluctuations), red (slow fluctuations), and white (random fluctuations) temperature regimes.
+- Temporal structure of variation:
+  - Blue environments: high-frequency fluctuations, AR(1) = -0.70.
+  - Red environments: low-frequency fluctuations, AR(1) = +0.70.
+  - White environments: random fluctuations, AR(1) ≈ 0.
+  - Mean temperature: 26°C for fluctuating treatments; constant CST treatment also at 26°C.
+- Experimental design:
+  - Two main experiments:
+    - Single-generation life-history assay.
+    - Multi-generation microcosm experiment (~7 host generations) to characterize population responses.
+  - Species stock: Plodia interpunctella (host) and Venturia canescens (parasitoid), with parasitoids from a parthenogenetic thelytokous strain.
+- Temperature treatments and protocols:
+  - Treatments: CST (constant 26°C), Blue1 (B1), Blue2 (B2), Red1 (R1), Red2 (R2), White1 (W1), White2 (W2).
+  - Time series length: 458 days; temperature fluctuates daily with a 24h cycle.
+  - Temperature range: 20.9–30.6°C, standard deviation 1.5°C.
+  - Data generation methods: white series generated from standard normal; blue/red series generated via discrete-time autoregressive process with spectral mimicry.
+- Key disruption event:
+  - Bacillus thuringiensis (Bt) infection affecting approx. 25 microcosms between weeks 34–45, leading to termination of the microcosm experiment at week 45.
+  - Post-infection data flagged (pre-infection vs post-infection periods) to separate infection effects from baseline responses.
+- Data collected and datasets:
+  - Life-history data (Plodia-life-history-data_Noise.csv):
+    - For unparasitized and parasitized hosts, including egg stage duration, egg viability/status, adult emergence, juvenile duration, lifespan, sex, fecundity across defined post-emergence windows, body size proxies, and timing of measurements.
+  - Life-history data for Venturia (Venturia-life-history-data_Noise.csv): parasitism details, host/parasitoid development, sex, lifespan, leg measurements for body size.
+  - Population counts (Pop-count-data_Noise.csv): weekly live/dead counts of hosts and parasitoids, instar counts, pupae counts, diet replacement details, infection status, and population identifiers.
+  - Body size and fecundity datasets:
+    - Plodia-body-size-fecundity-data_Noise.csv: daily fecundity, leg length proxy for body size, sampling session info, infection status, and related metadata.
+    - Venturia-body-size-data_Noise.csv: leg length proxy for parasitoid body size, sampling metadata, and infection status.
+  - Common garden data (Plodia-common-garden_Noise.csv): host trait measurements (egg-to-adult durations, body size) from a common environment to assess transgenerational effects.
+  - Temperature series data (Temperature-time-series_Noise.csv): actual temperatures, date, day, and series metadata; includes the type of temperature fluctuations.
+- Variables and metadata:
+  - Detailed metadata for each dataset includes Treatment (CST, B1, B2, R1, R2, W1, W2), Colour (CST, B, R, W), Series (time-series replicate), Population/Microcosm IDs, Week, Time point, Infection status (pre/post), and numerous phenotypic measurements (lifespan, body size, fecundity, development times).
+  - Observational notes include who performed sampling, dates of measurements, and any comments relevant to data quality.
+- Data quality and handling:
+  - Data were checked for entry errors; outliers rechecked during initial analysis.
+  - Data structure supports cross-dataset analyses and integration with other environmental monitoring datasets.
+- Relevance to environmental monitoring and analysis:
+  - Provides standardized, well-documented time-series data on how temperature fluctuation patterns influence life history traits and population dynamics in a trophic interaction.
+  - Facilitates assessment of environmental health and policy-relevant performance over time by enabling comparative analyses across different temporal structures of climate variability.
+  - The multi-dataset design supports data integration, replication, and potential combination with other environmental datasets to increase the value of the collected data.

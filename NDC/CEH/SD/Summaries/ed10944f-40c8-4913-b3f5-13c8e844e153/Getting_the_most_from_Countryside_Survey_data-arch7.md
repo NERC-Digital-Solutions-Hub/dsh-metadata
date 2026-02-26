@@ -1,0 +1,25 @@
+# Notes on the downloadable data
+
+- Confidentiality of locations: precise positions of Countryside Survey (CS) survey squares are kept confidential by CEH; external users cannot identify squares to better than 100 square kilometres. This prevents determining whether squares fall within defined areas.
+- Sampling design and data structure:
+  - CS field survey data come from a sample of 1 km squares across GB.
+  - Each selected square is mapped and measured at two levels: the whole square and within-square features (e.g., quadrats for vegetation, soils, etc.).
+  - Measurements vary (binary yes/no and continuous like areas or lengths).
+- Stratified sampling and land classification:
+  - Squares are not a random subset; they are stratified by the ITE Land Classification.
+  - Land classification has evolved from 32 classes (original) to 42 (1998) to 45 (2007) with separate country-specific classifications: England 21, Wales 8, Scotland 16.
+  - Estimates that ignore stratification may be unrepresentative and have inaccurate variation estimates.
+- Exclusions and representativeness:
+  - Squares where area is more than 90% sea or more than 75% urban (as per 1:250000 OS maps) were excluded from field survey.
+  - Official GB estimates assume vegetative land in excluded squares is similar to sampled squares; bias is likely small unless a region has a high proportion of sea/urban squares.
+- Estimation method and uncertainty:
+  - Land class estimates are produced using ratio estimates (Cochran, 1963), weighted by the vegetative land area within each land class.
+  - Since 1998, standard errors and confidence intervals are estimated using bootstrap methods (Efron & Tibshirani, 1993) due to concerns about skewness.
+- Implications for GIS work:
+  - When creating map-based products, apply stratification and weighting by land-class area.
+  - Consider bootstrap-based uncertainty and country-specific classification differences.
+  - Be aware of confidentiality constraints limiting precise location-based analyses and the need to rely on aggregated/weighted estimates. 
+- References:
+  - Barr et al. (1993). Countryside Survey 1990 Main Report.
+  - Cochran (1963). Sampling Techniques.
+  - Efron & Tibshirani (1993). An Introduction to the Bootstrap.

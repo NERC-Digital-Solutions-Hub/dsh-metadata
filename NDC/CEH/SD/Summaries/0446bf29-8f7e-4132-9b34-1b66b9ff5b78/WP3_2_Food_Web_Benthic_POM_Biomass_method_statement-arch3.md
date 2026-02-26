@@ -1,0 +1,25 @@
+# Benthic particulate organic matter biomass
+
+- Overview
+  - Measures ash-free dry mass (AFDM) of benthic organic matter across three size fractions (>1 cm woody debris, >1 mm coarse particulate, >0.025 mm fine particulate) from quantitative samples; data are presented as means with standard deviations.
+- Study sites and timing
+  - Three chalkstream sites in the Wessex chalk area: Nine Mile River, River Till, and River Wylye.
+  - Catchments vary in land-use intensity.
+  - Sampling occurred between October 2012 and October 2013: Wylye and Nine Mile River on seven occasions; Till on five occasions.
+- Sampling and laboratory methods
+  - Up to 10 Surber samples (0.25 x 0.25 m, mesh 0.025 mm) per 100 m survey reach.
+  - In the lab: sort invertebrates from mineral/organic material; retain three fractions; dry and ashing performed to determine AFDM for each fraction.
+  - Processes: dry at 80°C for ≥24 h, weigh; incinerate at 560°C for 8–12 h, reweigh.
+  - Fractions defined as: woody debris (>1 cm), coarse particulate (>1 mm), fine particulate (>0.250 mm).
+  - Data are expressed as mean AFDM per square metre with standard deviation; units mg m^-2.
+- Rationale and outputs
+  - Aimed to construct quantified food webs detailing mass and nutrient flux between nodes and to quantify standing stocks of benthic detritus.
+- Responsibility and data management
+  - Collected, processed, analyzed, and managed by the Queen Mary University of London River Communities Group, led by Dr J. Iwan Jones.
+- Data completeness and sampling notes
+  - Till river not sampled during salmonid breeding season (Dec–Mar) to avoid redd disturbance.
+  - Ten replicate samples processed for Oct 2012, Feb 2013, Mar 2013, and May 2013; five replicates for Jul 2013, Aug 2013, Oct 2013.
+- Data quality and verification
+  - Standard laboratory procedures followed for AFDM; no formal QA procedure (e.g., replicate analyses within a replicate Surber sample); final values checked for outliers (none found) before calculations.
+- Dataset schema and metadata
+  - Columns include: RIVER_ID, SITE_ID, RIVER_NAME, SITE_NAME, NGR/EASTING/NORTHING, SAMPLE_DATE, POM_Fraction (coarse woody debris >1 cm, coarse particulate >1 mm, fine particulate >0.250 mm), Mean_AFDM_mgperm2, SD_AFDM_mgperm2, AFDM_n (number of samples per site).

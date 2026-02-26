@@ -1,0 +1,71 @@
+# Temporal variation in temperature and light availability in the Hampshire Avon, United Kingdom  [Macronutrient Cycling]
+
+- Overview
+  - Data collected by the River Communities Group, Queen Mary University of London, as part of the NERC Macronutrient Cycles project (The role of lateral exchange in modulating the seaward flux of C, N, P).
+  - Aim: capture how temperature and light availability vary temporally across streams with contrasting geology to inform understanding of lateral nutrient exchange.
+  - Variables recorded: temperature (°C) and light (Lux).
+
+- Instrumentation and calibration
+  - Instrument: Onset HOBO Pendant Temperature/Light UA-002-64 data loggers.
+  - Calibrated by the manufacturer; temperature accuracy ±0.53°C (0–50°C); time accuracy ±1 minute per month at 25°C.
+  - Light measurement: 200–1200 nm; 60% response 500–1100 nm; 100% response at 900 nm.
+  - Recording interval: every 15 minutes.
+  - In situ duration: loggers remained deployed for the full data period.
+  - Breaks in data: occur due to data downloads or logger malfunctions.
+
+- Data scope and context
+  - Streams monitored are tributaries of the Hampshire Avon, representing a gradient of base flow indices and contrasting geology (clay, greensand sandstone, chalk).
+  - Purpose within project: support understanding of lateral exchange and its influence on nutrient fluxes.
+
+- Sites, timing, and data coverage
+  - AS1
+    - River: River Sem
+    - Location: Priors Farm
+    - Grid Ref: ST8916428436
+    - Start: 13/02/2013
+    - End: 20/05/2014
+    - No. of days: 461
+  - AS2
+    - River: River Sem
+    - Location: Share Farm
+    - Grid Ref: ST9234327392
+    - Start: 05/02/2013
+    - End: 01/12/2014
+    - No. of days: 664
+  - GA1
+    - River: River East Avon
+    - Location: Marden
+    - Grid Ref: SU0973457808
+    - Start: 08/02/2013
+    - End: 19/05/2014
+    - No. of days: 465
+  - GN2
+    - River: River Nadder
+    - Location: Share Farm
+    - Grid Ref: ST9235527364
+    - Start: 05/02/2013
+    - End: 01/12/2014
+    - No. of days: 664
+  - CE1
+    - River: River Ebble
+    - Location: Stoke Farthing
+    - Grid Ref: SU0567225325
+    - Start: 06/02/2013
+    - End: 19/05/2014
+    - No. of days: 467
+  - CW2
+    - River: River Wylye
+    - Location: Brixton Deverill
+    - Grid Ref: SU1723143894
+    - Start: 07/02/2013
+    - End: 16/10/2013
+    - No. of days: 222
+
+- Data handling and accessibility
+  - Data collected for collaborative use across project partners; full methodological details available in the HOBO data logger manual (Onset HOBO Pendant Temperature/Light Data Logger UA-002-xx) at www.onsetcomp.com.
+  - The dataset provides a foundation for products enabling 'self-serve' analysis (e.g., time-series dashboards, raw and processed data tables) and can be integrated with other project datasets to analyze temporal patterns in relation to hydrology and nutrient flux.
+
+- Quality considerations and usage notes
+  - Expect potential data gaps due to logger downloads or hardware malfunctions; account for timestamps and synchronization when merging across sites.
+  - Temperature and light data are subject to instrument-specific calibration limits; reference manufacturer specifications for QA/QC and potential corrections.
+  - Data are suitable for examining cross-site temporal variation and for informing models of lateral nutrient exchange in relation to stream ambient conditions.

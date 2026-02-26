@@ -1,0 +1,89 @@
+# The UKCEH Land Cover Maps for 2017, 2018 and 2019 v1.5.1
+
+- Purpose and scope
+  - User guide for three new UKCEH Land Cover Maps: LCM2017, LCM2018, and LCM2019.
+  - Describes content, production workflow, validation, decisions, and future plans to help users apply UKCEH LCM data informatively.
+  - Aims to enable informed decisions about current and future use of UKCEH LCM data.
+
+- Data structure and datasets
+  - 21 UKCEH Land Cover Classes (based on Biodiversity Action Plan Broad Habitats; match with LCM2015 lineage).
+  - Dataset suite (per year) includes:
+    - 20m Classified Pixels (GB and NI versions)
+    - Land Parcels (GB and NI)
+    - 25m Rasterised Land Parcels
+    - 1km Dominant Cover
+    - 1km Dominant Aggregate Cover
+    - 1km Percent Cover
+    - 1km Percent Aggregate Cover
+  - Total products: 42 datasets (for GB and Northern Ireland, across three years).
+  - Spatial frameworks and metadata
+    - Great Britain: British National Grid (EPSG:27700)
+    - Northern Ireland: Irish Grid (EPSG:29903)
+    - Pixel resolution and bands defined (see below)
+
+- Dataset specifics and how to use them
+  - 20m Classified Pixels
+    - New addition in this release; RF classification results with per-pixel class probability.
+    - Band 1: most likely class; Band 2: probability (0–100) of that class.
+    - Preserves fine features (no generalisation by Land Parcel Framework).
+  - Land Parcels
+    - Spatially aggregated from 20m Classified Pixels using the UKCEH Land Parcel Spatial Framework.
+    - Attributes per parcel: gid, hist (parcel-wise class frequency), mode, purity, conf (mean membership probability), stdev, n (pixel count).
+    - Note: gid values differ from LCM2015; cross-year comparisons by gid are not possible. Use spatial overlap or other linkage methods.
+  - 25m Rasterised Land Parcels
+    - Rasterised version of Land Parcels (25m) with 3 bands: band 1 mode, band 2 conf, band 3 purity.
+  - 1km raster products
+    - 1km Percent Cover: 21-band raster (per-class percent cover)
+    - 1km Percent Aggregate Cover: 10-band raster (per-aggregate class percent cover)
+    - 1km Dominant Cover: single-band raster (dominant class)
+    - 1km Dominant Aggregate Cover: single-band raster (dominant aggregate class)
+  - Dataset extents and formats
+    - GB: 100x100 km Classification Scenes tiled across GB (for classification); NI uses a single tile per year.
+    - Pixel and parcel data supplied for GB and NI; included in Appendix 5 as full dataset list.
+
+- Production methodology
+  - Bootstrap Training and Random Forest classification
+    - Bootstrap Training uses historic maps (LCM2015 bootstrap from 99% purity parcels) to automatically generate spectral training data.
+    - RF classifier trained with equal class representation (10,000 samples per class per bag) to balance learning.
+  - Seasonal input and context
+    - Classification scenes built from Sentinel-2 Seasonal Composite Images (TOA reflectance) per season (winter, spring, summer, autumn) at 20m resolution.
+    - Context rasters (20m) added to reduce spectral confusion (terrain, proximity to buildings/roads, water, coastline, etc.).
+  - Data sources and processing
+    - UKCEH used Google Earth Engine for Sentinel-2 based seasonal composites.
+    - Context rasters derived from public/open datasets (terrain, OS, etc.).
+    - LCM2017–2019 classification scenes trained and classified independently; GB uses 100x100 km tiles; NI uses a single 43-band scene per year.
+  - Land Parcel Spatial Framework
+    - Framework unchanged in geometry; reordered storage and new indices for speed.
+    - MMU ~0.5 ha; designed to represent discrete land units (fields, woodlands, urban areas).
+  - Validation and quality control
+    - UK-scale validation using 22,325 points from GB countryside survey 2019, National Forest Inventory, IACS, and manual interpretation points.
+    - Reported accuracy (GB scale, three-year validation with same points):
+      - LCM2017: 78.6%
+      - LCM2018: 79.6%
+      - LCM2019: 79.4%
+    - Validation data converted to UKCEH classes; results are best-available indicators, not absolute truth.
+
+- Notable production choices and implications
+  - No manual corrections this release (automatic classification primary); visual checks and formal validation still performed.
+  - Annual production facilitates monitoring land cover change; aims to release new maps yearly going forward.
+  - Some class-definition nuances and changes from historical maps; emphasis on “like-for-like” comparison where possible (e.g., BAP-derived vs. UKCEH classes).
+  - Gid-based cross-year comparisons are not feasible; spatial overlap or pixel-based summaries recommended for temporal change analysis.
+
+- Practical considerations for Data Leaders
+  - Data governance and reproducibility
+    - Fully automated Bootstrap Training workflow; scalable to future years.
+    - Clear documentation of data lineage (TOA Sentinel-2 inputs, context rasters, classification process).
+  - Data quality and use
+    - Approximately 80% producer’s accuracy across major classes in validation; accuracy expected to improve as methods mature.
+    - Awareness of spectral confusion among classes; context rasters mitigate many issues.
+  - Access, interoperability, and metadata
+    - 42 datasets across GB and NI; consistent coordinate systems; detailed appendix with dataset metadata and class relationships.
+    - Attribute changes from LCM2015 (e.g., hist, conf, purity naming) to align with production software; users should adapt workflows accordingly.
+  - Applicability and future-proofing
+    - Designed to support change detection and integrated with broader UKCEH land cover/habitat analyses.
+    - Appendix notes provide detailed class definitions and mappings to BAP habitats, aiding interpretation and crosswalks.
+
+- Reference and additional details
+  - Appendix 1–3 provide class definitions, habitat mappings, color recipes for visualization.
+  - Appendix 4 contains validation tables and confusion matrices for each year.
+  - Appendix 5 offers a full dataset list and organization by year and geography.

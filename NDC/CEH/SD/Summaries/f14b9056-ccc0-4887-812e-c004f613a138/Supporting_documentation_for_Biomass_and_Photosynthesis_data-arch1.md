@@ -1,0 +1,22 @@
+# Plant material
+
+- Objective: Examine effects of ozone exposure on Lolium perenne (ryegrass) and Trifolium repens (white clover) grown in monocultures and mixtures, including biomass, tissue composition, and photosynthetic performance; data intended for identifying correlations and informing predictive analyses.
+- Species and origin: L. perenne and T. repens vegetatively propagated from pasture turf near Edinburgh, UK; plants randomized between competition types (monoculture vs mixture) and ozone treatments.
+- Experimental units: Pots with 12 plants each (4 central T. repens surrounded by 8 L. perenne); established for ~8 weeks before transplantation into monocultures or mixtures.
+- Environment: Plants exposed in solardomes (large hemispherical glasshouses) with ambient environmental conditions except rainfall; exposure lasted 12 weeks starting 26 July 2002; two harvest periods (26 July–6 Sept and 7 Sept–16 Oct).
+- Experimental design: Randomised block design with four solardomes for ozone exposure; two additional solardomes as controls (continuous 30 ppb ozone, O3(30)); two domes with episodic rural ozone profile (O3(30+peaks)); ozone concentrations programmed to peak at 80 ppb (days 1,4) and 100 ppb (days 2,3), returning to 30 ppb at other times.
+- Ozone measurement and control: Ozone monitored every 30 minutes per dome; control domes used charcoal-filtered air with mass flow controllers; exposure domes followed a schedule of rising to peak, holding, then decreasing.
+- Harvesting and biomass: Two harvests (6 Sept, 16 Oct); plants cut to 7 cm; harvested in layers (outside pot, >14 cm, 7–14 cm, and 0–7 cm in final harvest); material separated by species and canopy position; dried at 65°C for ≥4 days; subset of L. perenne leaves analysed for C and N after grinding and drying.
+- Physiological measurements: A-Ci curves to assess photosynthetic efficiency and capacity (L. perenne and T. repens) using PP-Systems CIRAS I with 1000 μmol m-2 s-1 PAR; CO2 steps from 0 to 2000 ppm; derived A and Ci via CIRAS software; AQ curves for both species at 1000 ppm CO2 and varying PAR (10–2000 μmol m-2 s-1).
+- Data analysis for photosynthesis: Farquhar model parameters estimated from A-Ci and AQ curves; Jmax estimated from A-Ci curve asymptote using Ci > 500 ppm; Vc,max inferred from initial slope of A vs Ci for Ci up to 300 ppm; specific calculation details and reference equations provided.
+- Statistical analysis: Per-solardome means used; one-way ANOVA (Minitab) for Jmax by ozone treatment; GLM regression for A vs Ci between treatments (SPSS); Genstat used for split-plot and split-split-plot ANOVAs with ozone as main factor and monoculture vs mixture as subplot; canopy position included for biomass partitions.
+- Datasets and data structure: 
+  - Lolium_and_Trifolium_solardomes_ACi_Curve_data.csv (220 rows, 7 columns): Species, Leaf number, weeks since start, Treatment, dome.pot, Ci (ppm), A corrected for leaf area (μmol m-2 s-1).
+  - Lolium_and_Trifolium_solardomes_biomass_data.csv (16 rows, 6 columns): Harvest, Species, Monoculture or mixture, Ozone treatment, dry weight per pot, standard error.
+  - Lolium_and_Trifolium_solardomes_clover_distribution_data.csv (28 rows, 6 columns): Harvest, Monoculture or mixture, part of canopy, Ozone treatment, Dry weight per pot, standard error.
+  - Lolium_and_Trifolium_solardomes_Lolium_distribution_data.csv (32 rows, 6 columns): Harvest, Monoculture or mixture, part of canopy, Ozone treatment, Dry weight per pot, standard error.
+- Key considerations for data users: 
+  - Data are aggregated to solardome means for analysis; multiple measurements per plant are summarized at the dome level.
+  - Experimental layout includes two ozone regimes (constant 30 ppb vs episodic peaks) and two competition contexts (monoculture vs mixture), enabling analysis of interactions between ozone and plant competition on growth and physiology.
+  - Data capture includes both biomass and detailed photosynthetic physiology, with explicit methods for deriving Jmax and Vc,max from gas-exchange curves.
+- Contextual challenges (as noted): data access and integration considerations typical for environmental data analyses, including potential scale limitations and the need to unify datasets across measurement types for robust interpretation.

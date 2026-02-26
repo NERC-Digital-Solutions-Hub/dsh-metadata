@@ -1,0 +1,40 @@
+# Details on data collection:
+
+- Scope and studies
+  - Longitudinal trapping study (Oct 2015–2018) in a 100 m² grid at Wytham Woods, Oxford, with fortnightly traps and additional habitat grids in 2018. Species included Apodemus sylvaticus, Apodemus flavicollis, and Myodes glareolus. Faecal samples collected for gut microbiota analysis; parasitology assessed from faeces.
+  - Dissection study (Oct 2017–2018) in Wytham Woods, using a separate distance-trapping layout. Ethical euthanasia followed; GI tract segmented into five sections for microbiota and parasite analyses; helminth burden quantified from tissues.
+  - Diet shift experiment (May 2017) in a captive wood mouse colony at the University of Edinburgh. Five diet treatments varying seed vs. insect content; 25-day perturbation with repeated sampling of faeces, body mass, and food intake; post-diet-chow period unchanged sampling.
+- Data collection logistics
+  - Trapping: Sherman live traps, 2–4 week intervals, checkerboard design within 10 × 10 m grid cells; PIT tags for permanent identification; processing included species, sex, age, weights, and reproductive status; ethical considerations documented.
+  - Dissection/tissue handling: Immediate processing after humane euthanasia; GI tract sectioning for microbiota and parasite analyses; samples stored at -80°C or in 70% ethanol as appropriate; sterilization protocols for tools between samples.
+  - Diet experiment handling: Individual housing during diet perturbations; standardized handling to align sampling times; faecal samples from handling and bedding material collected for metabolite analyses.
+- Sample analysis and sequencing
+  - Microbiome data derived from faecal samples; two sequencing batches (experimental + early-year longitudinal; later-year longitudinal + dissection).
+  - DNA extraction: Zymo Quick-DNATM Fecal/Soil Microbe kit on a plate-format or tube-format; bead-beating for homogenization; inclusion of mock community and negative controls in each batch.
+  - Library preparation and sequencing: Targeted 16S rRNA V4 region; dual-indexed, two-step PCR; Illumina MiSeq 2×250 bp; four runs total.
+  - Bioinformatics: DADA2 pipeline for ASV inference; primer/adapter trimming with cutadapt; quality trimming; merging, chimera removal, and SILVA v138 taxonomy assignment; outputs provided as a raw phyloseq object with four slots (OTU table, taxonomy, sample metadata, and reference sequences).
+- Diet characterization and metabolites
+  - Faecal metabolite profiling: GC-FID method with internal standard; acids quantified (acetic, propionic, butyric, etc.); sample prep included pH adjustment and solvent extraction for ethereal phase.
+  - Diet-related measurements: Faecal metabolites alongside SCFAs (multiple metabolites listed) and bedding-derived faecal matter analyzed for metabolite content.
+- Gut helminth quantification
+  - Faecal flotation with sodium nitrate (SG ~1.2) to detect nematodes, cestodes, and Eimeria spp. oocysts; limitations noted for trematodes and certain parasite life cycles; eggs/oocysts per gram (EPG) calculated and recorded per identified parasite.
+- Datasets included (structure and contents)
+  - Project_4_processed_microbiome_data.rds: A phyloseq object reflecting ASV-level microbiome data post-DADA2 processing; includes OTU counts, taxonomy, sample metadata, and reference sequences; raw data retained with minimal preprocessing (no filtering by prevalence or normalization applied).
+  - Wytham_longitudinal_sample_metadata.csv: Per-sample/mousing-trapping metadata across the longitudinal study, including sample IDs, collection dates, trap and grid locations, species, sex, age, reproductive status, PIT tagging, body measurements, ectoparasite data, diet-related DNA markers, and fecal metabolite measurements.
+  - Full_Wytham_trapping_data.csv: Comprehensive trapping event data with fields for processing times, trap outcomes, species, sex, measurement sets (AGD, limb lengths, body mass, etc.), ectoparasite screens, diet and DNA markers, sample collection details, and release information.
+  - Diet_shift_experiment_2017_metadata.csv: Day-by-day metadata for the 30-day captive diet shift, including experiment day, diet type, group assignment, sex, origin cage, processing times, weight and intake metrics, fecal sample metrics (fresh and bedding), and metabolites (acetic, propionic, butyric, etc.).
+  - Diet and metabolic measurements include detailed entries for SCFAs and other faecal metabolites (values in µg/mg, times of sample ingress to -80°C).
+- Data governance, metadata, and accessibility
+  - Metadata are extensive and structured to document extraction and sequencing batches, sample processing times, and storage conditions; sample_data in the microbiome object contains extraction date, batch, weight, and sequencing batch details.
+  - Two sequencing batches and two extraction batches are explicitly described, with mock and negative controls used for quality assurance.
+  - Raw phyloseq object is provided to enable researchers to reproduce or reprocess data; minimal preprocessing applied beyond removal of non-gut taxa (chloroplasts, mitochondria).
+  - Ethical approvals and licenses are documented: RVC Clinical Research Ethical Review Board (URN 2017 1721-2) and University of Oxford Animal Welfare and Ethical Review Board (APA/1/5/ZOO/NASPA/Knowles/Wood mouse); UK Home Office Project license 70/8543 for the experimental work.
+- Implications for monitoring and data management
+  - Rich, multi-faceted dataset linking host biology, gut microbiota, diet, and parasite ecology across wild and captive contexts.
+  - Demonstrates comprehensive data capture, from field trapping and dissection to lab-based sequencing and metabolic analyses, with layered metadata enabling cross-study integration.
+  - Highlights data governance considerations for monitoring frameworks: need for standardized metadata, robust data provenance (batches, extraction methods, sequencing runs), data quality controls (mock communities, negative controls), and explicit ethics/licensing documentation.
+  - Notes potential data-use challenges due to partial placeholders (e.g., XXX counts) in the manuscript, and the importance of transparency around preprocessing choices (e.g., raw vs. preprocessed microbiome data).
+- Notable limitations and considerations for reuse
+  - Some numeric counts in the documentation appear as placeholders (XXX), indicating the need to verify exact sample sizes when reusing the dataset.
+  - The provided microbiome data are raw with minimal preprocessing, meaning users must apply their own filtering, normalization, and downstream analyses suitable for their research questions.
+  - Methodological detail is thorough, but researchers should be mindful of batch effects across extraction and sequencing runs when performing meta-analyses or cross-study comparisons.

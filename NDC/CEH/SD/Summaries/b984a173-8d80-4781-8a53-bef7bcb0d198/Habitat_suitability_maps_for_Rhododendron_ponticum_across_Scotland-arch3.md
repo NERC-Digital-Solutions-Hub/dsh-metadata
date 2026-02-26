@@ -1,0 +1,83 @@
+# Habitat suitability maps for Rhododendron ponticum across Scotland as reservoir host for Phytophthora plant pathogens
+
+- Objective and scope
+  - Map habitat suitability for Rhododendron ponticum across Scotland to assess its potential as a reservoir host for Phytophthora ramorum and Phytophthora kernoviae.
+  - Use presence data spanning 1950–2008 to inform risk to vulnerable habitats and inform surveillance and policy decisions.
+
+- Data sources and data management
+  - Compiled 11 datasets of R. ponticum occurrences from Local Record Centres (predominantly volunteer-sourced), the National Biodiversity Network (NBN) Gateway, and Edwards & Taylor (2008).
+  - Spatial unit: 1 km grid cells across Scotland; 82,690 grid cells with environmental data; 1,725 presence grid cells (various sources aggregated to 1 km).
+  - Original data resolutions ranged from 1 km or finer; environmental data summarized to 1 km where needed.
+  - Data governance and metadata considerations highlighted: multiple sources, varying data quality, and the need for data sharing and provenance in monitoring frameworks.
+
+- Modelling approach and methods
+  - Species distribution modelling using Maxent (maximum entropy) to derive habitat suitability.
+  - Addressed potential sampling bias and non-equilibrium dynamics typical of invasive species.
+  - Background options tested (to represent available environment and sampling effort):
+    - ALL: entire Scotland study area as background.
+    - MCP: minimum convex polygons around presence data (per region) to reflect survey extent.
+    - REACH: reachable area defined by roads, railways, and urban land cover to reflect likely dispersal pathways.
+  - 25 model iterations with 30% of data withheld for cross-validation; both linear and quadratic predictor terms included.
+  - Upweighting of records with few geographic neighbours tested as a bias correction but generally did not improve model performance.
+  - Environmental predictors used (apriori selected based on species ecology); models produced mean predictions, standard deviations, and clamping maps across iterations.
+  - Evaluation and thresholding:
+    - Thresholds chosen to maximize test-set sensitivity plus specificity.
+    - Model discrimination assessed with AUC (training and test) and area under the ROC curve.
+    - Predicted-to-expected (P/E) ratios evaluated to gauge calibration.
+    - Clamping maps used to identify areas where predictors fall outside training ranges.
+  - Relationship with observed data validated by correlating predicted habitat suitability with R. ponticum cover in Argyll and Bute.
+  - Outputs integrated with additional spatial layers (premises inspections, potential native woodland networks, heathland distribution, and Larix kaempferi presence) to assess overlap with infection risks.
+
+- Key predictors and their ecological rationale
+  - Broad-leaved forest cover (BLWOOD): strongest predictor; higher broad-leaf woodland increases habitat suitability (≈55.8% mean contribution).
+  - Elevation (ELEV): moderate influence; suitability generally declines at higher elevations.
+  - Soil carbon content (Carbon) and soil pH (PH): significant contributions; R. ponticum tolerates acidic soils but tends to be inhibited at very high pH or extreme carbon content.
+  - Vegetation indices (EVI and NDVI): indicators of vegetation activity and soil moisture; modest contributions (EVI ≈9.1%, NDVI ≈6.25%).
+  - Coniferous forest cover (CWOOD): minor contribution (≈2.4%).
+  - Predictor importance varied slightly with background and weighting schemes but broad-leaved woodland consistently emerged as the primary driver.
+
+- Results and model performance
+  - Best-performing model: ALL background without weighting (unweighted ALL) achieved highest and most stable performance.
+  - Model accuracy:
+    - Training AUC ≈ 0.831; Test AUC ≈ 0.831 (consistent, good discrimination).
+    - P/E ratio correlations supported model reliability (significant positive associations with presence data in test regions).
+  - Background strategy:
+    - ALL background performed best; MCP background performed worst; REACH intermediate.
+    - Upweighting records did not improve performance and sometimes degraded it due to data clustering.
+  - Spatial predictions:
+    - Approximately 24% of Scotland’s 1 km grid cells predicted as suitable habitat for R. ponticum (about 20,021 of 82,960 cells).
+    - Most contiguous suitable areas found in the Great Glen, central belt, Fife, Perthshire, and parts of the SE and NE coasts.
+  - Validation with independent data:
+    - Premises inspected for P. kernoviae and P. ramorum infection disproportionately located within R. ponticum suitable habitat: 71% of all premises and 73% of non-trade garden premises fell in suitable cells.
+    - Non-trade garden premises: 23% in highly suitable habitat (>0.65) versus 13% for all inspected premises; 3% of Scotland overall area.
+    - Larix kaempferi occurrences: 64% within suitable habitat; 14% within highly suitable zones.
+  - Co-location with vulnerable habitats:
+    - Core native woodland: 54% overlapped predicted suitable habitat; 10% overlapped highly suitable zones.
+    - Heathlands: some overlap at habitat boundaries, with potential mosaics where R. ponticum habitat coincides with Larix kaempferi and garden premises.
+  - Additional results:
+    - All Scotland background model produced the most contiguous suitable areas with fewer clamped cells, suggesting robust regional predictions.
+    - Clear spatial patterns identified, enabling targeted monitoring and management.
+
+- Outputs and practical implications for monitoring
+  - Generated maps and associated diagnostics:
+    - Mean predicted habitat suitability
+    - Standard deviation across iterations (model uncertainty)
+    - Clamping extent (environmental range monitoring)
+    - Binary maps of suitable/unsuitable habitat using optimal threshold
+  - Practical implications:
+    - Identifies high-risk regions and premises for enhanced inspection and surveillance for Phytophthora pathogens.
+    - Highlights overlap with vulnerable habitats (core woodlands, heathlands) and with Larix kaempferi distributions, indicating areas where pathogen spillover risk may be highest.
+    - Supports prioritisation of monitoring resources and potential site-specific management actions.
+
+- Implications for monitoring frameworks and policy considerations
+  - Demonstrates how diverse data sources can be integrated to produce decision-relevant environmental health indicators.
+  - Highlights data governance considerations:
+    - Varied data quality and metadata completeness across sources; underscores the need for transparent data provenance and open sharing where possible.
+    - Challenges of sharing datasets publicly, which can impede use of existing data; emphasizes the importance of data management standards at the source.
+  - Aligns with monitoring framework aims:
+    - Identifies measures that provide actionable insight for policy scrutiny and future decision-making (habitat suitability as a proxy for invasion risk).
+    - Shows how to tailor monitoring outputs (maps, dashboards, summaries) to stakeholder needs and surveillance planning.
+  - Stakeholder engagement:
+    - Involves consultative processes to categorize premises (trade vs non-trade) based on infection risk, informing surveillance priorities.
+  - Data governance and accessibility:
+    - The study’s reliance on multiple data sources illustrates the necessity of setting quality controls, metadata standards, and governance processes to ensure reuse, transparency, and timely updates.

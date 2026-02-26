@@ -1,0 +1,30 @@
+# Overview
+
+- This dataset captures key operational parameters of a point-of-use drinking water treatment system (POU DWTS), PAqua 1000D-2, in long-term operation to provide biologically safe drinking water.
+- Location: University of the West of England, Frenchay Campus (coordinates: N51.498888, W2.544166).
+- Timeframe: 1 November 2019 to 29 September 2022 (34 months).
+- System principles: Ultrafiltration combined with in-situ electrochemically generated hypochlorous acid dosing for disinfection.
+- Data collection and delivery: In-line sensors and probes feed into the Grundfos Remote Manager interface; researchers at UWE Bristol download and interpret data.
+- Frequency: Data recorded and aggregated to 5-minute rolling averages.
+- Project context: Part of the NERC project “The development and implementation of sensors and treatment technologies for freshwater systems in India” (NE/R003106/1); additional dataset referenced (Fox et al., 2022).
+- Industry and partners: Portsmouth Aqua Ltd (system setup and maintenance) and Grundfos (remote monitoring);  sensor suppliers include s::can and Messtechnik GmbH (Austria).
+- Data availability and file: Core dataset is in the CSV pou-dwts_operationaltelemetrydata_uk_nov2019-sep2022.csv, containing eight columns as described in Table 2.
+- Data quality and gaps:
+  - Missing values are marked as NA; a value of 0 indicates the POU DWTS did not operate as expected.
+  - There is sporadic data availability between April and August 2020 due to a faulty SIM card; a new SIM card fixed the issue.
+- Data columns (eight in total) and units:
+  - Date and Time: dd/mm/yyyy hh:mm
+  - Flow_Rate: m3/h
+  - Discharge_Pressure: bar
+  - TMP (Transmembrane Pressure): bar
+  - ORP: mV
+  - FAC (Free Available Chlorine): ppm
+  - Filtration_Flux: m3 m-2 h-1 (calculated in Excel; see Table 2)
+  - UF_MP (UF Module Permeability): m3 m-2 bar-1 h-1 (calculated in Excel; see Table 2)
+- Data processing:
+  - Filtration Flux and UF Module Permeability were calculated in Microsoft Excel from the raw data (with formulas described in the dataset documentation).
+- Data structure: The dataset is part of the NE/R003106/1 project; detailed data structure and column descriptions are provided in Table 2 of the documentation.
+- Related publications and datasets:
+  - Clayton et al. (2024) Long-term trial of a community-scale decentralized point-of-use drinking water treatment system (PLOS Water).
+  - Fox et al. (2022) Operational and water quality data from decentralised, low-maintenance drinking water system trial (NERC EDS Environmental Information Data Centre).
+- Intended use: Enables remote diagnosis, monitoring, and analysis of long-term performance and water quality, supporting data-driven maintenance, optimization, and potential self-serve exploration by end users.

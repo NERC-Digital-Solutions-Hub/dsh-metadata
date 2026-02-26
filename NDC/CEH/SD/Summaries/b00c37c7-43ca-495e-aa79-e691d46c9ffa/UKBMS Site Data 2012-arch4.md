@@ -1,0 +1,23 @@
+# Experimental design/sampling regime
+
+- UK Butterfly Monitoring Scheme (UKBMS) collects data from over 1,000 sites annually across the UK, with butterfly counts primarily via fixed transects known as Pollard walks and supplementary methods (timed counts, egg/larval web counts) for some species and sites.
+- Data collection methods:
+  - All-species transects: fixed-route line transect where all butterflies along the route are recorded weekly under specified weather conditions. Transects are 2–4 km, divided into habitat/management sections, typically 5 m wide, yielding up to 26 counts per year from early April to late September. Routes are fixed to enable year-to-year comparability.
+  - Weather and timing constraints: transect walks occur between 10:45 and 15:45, under suitable butterfly-activity conditions (dry, wind < Beaufort 5, temperature thresholds: ≥13°C with ≥60% sunshine or >17°C if overcast).
+  - For single-species transects, the same methodology is used but only for one or a few weeks during the focal species’ flight period.
+  - Timed counts: abundance of a particular species recorded over a set period/area, under the same daily timing and weather constraints as transects.
+  - Egg/larval web counts: counts of eggs or larval webs in suitable habitat areas for target species (e.g., Marsh Fritillary).
+- Data collection and entry:
+  - Site location data are collected in the field and entered into Transect Walker, a bespoke software (free download available on the UKBMS website). Data can be entered by the recorder or a regional transect coordinator. If a transect route changes, the new route is treated as a new site.
+  - Transect Walker files are uploaded into an Oracle database that stores all records.
+- Nature and units of recorded values:
+  - Site location data include OS grid reference, transect length (metres), and number of transect sections. In some cases, data may be incomplete.
+  - Grid reference is further broken down into Easting (X) and Northing (Y) coordinates.
+- Quality control:
+  - Each site belongs to a region overseen by a transect coordinator who validates and checks records.
+  - After preliminary checks, data undergo automated and manual validation to verify site-location data accuracy.
+- Format of stored data:
+  - Site Location Data are stored as CSV files with columns including:
+    - Site number, Site name, Gridreference, Easting, Northing, Length, Country, No. Sections, No. Yrs surveyed, First year surveyed, Last year surveyed (up to 2012).
+- Reference:
+  - Pollard, E. & Yates, T.J. (1993). Monitoring Butterflies for Ecology and Conservation. Chapman and Hall, London.

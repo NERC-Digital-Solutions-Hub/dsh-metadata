@@ -1,0 +1,24 @@
+# ReadMe file for N2OCumulativeandEF.csv
+
+- Purpose of the data: Annual cumulative N2O emissions and N2O-N emission factors resulting from applying control (no urine), artificial sheep urine, and real sheep urine to an orthic podzol in semi-improved upland grassland at Henfaes Research Station, North Wales, during spring and autumn 2016.
+- Experimental design: Randomised block design conducted at 270 m a.s.l. (53°13'N, 4°0'W).
+- Treatments: Control, ArtUrine (artificial urine), RealUrine (real sheep urine).
+- N application rates by season:
+  - Spring: ArtUrine 1066 kg N ha-1; RealUrine 756 kg N ha-1.
+  - Autumn: ArtUrine 1004 kg N ha-1; RealUrine 1112 kg N ha-1.
+- Data collection and metrics:
+  - Cumulative_N2O: Cumulative N2O emissions per chamber over 1 year (µg N2O-N).
+  - N2O-N_EF: Emission factor as a percent of total N applied.
+  - Emissions calculated from the area under the curve of each replicate chamber; EF corrected for the chamber area not receiving urine due to discrete patch application.
+- Data structure:
+  - Headers: Treatment, Chamber_no, Season, Cumulative_N2O, N2O-N_EF.
+  - Season denotes spring or autumn 2016 treatments.
+- Data processing and quality:
+  - Data visually checked for errors.
+- Related data files:
+  - AutumnN2OData.csv and SpringN2OData.csv accompany this dataset and provide data collection and instrumentation details.
+- Data usage and attribution:
+  - Authors must be acknowledged if data are reused or reproduced.
+- Metadata and context:
+  - Location details, altitude, and coordinates provided for reproducibility.
+  - The dataset is part of a controlled field study on N2O emissions from urine-derived nitrogen under pasture conditions.

@@ -1,0 +1,57 @@
+# EnsemblES: Using ensemble techniques to capture the accuracy and sensitivity of ecosystem service models
+
+- Overview
+  - A data set presenting maps of ecosystem service ensembles for above ground carbon stock and water supply in the UK, derived from the EnsemblES project.
+  - Combines 10 ensemble approaches across multiple model frameworks to reflect different modelling strategies and to capture uncertainty.
+- Data content and structure
+  - 14 TIFF raster layers (with world files) representing normalized outputs from 10 ensemble approaches for above ground carbon stock and water supply.
+  - One shapefile (UKWaterEnsembles) containing 14 estimates per watershed polygon; catchments linked to National River Flow Archive (NRFA) gauging stations.
+  - Grid and projection: 1000 m x 1000 m grid, 32-bit floating point; British National Grid (EPSG 27700).
+  - Area covered: above ground carbon stock across Great Britain, Northern Ireland, and outlying islands; water supply for 519 main GB/NI catchments.
+  - Units: relative service delivery, normalized to 0–1; NoData = -999.
+- Data origin and inputs
+  - Outputs originate from the EnsemblES project (Bangor University, UKCEH, Lactuca) funded by UKRI Landscape Decisions (project NE/T00391X/1).
+  - 10 ensemble approaches built from various ecosystem service model frameworks; some inputs do not cover the entire area.
+  - Model details and input data described in Table 1 (models include InVest, LPJ-GUESS, LUCI, Copernicus Tree Cover Density, WaterWorld, DECIPHeR, Grid-to-Grid, etc.).
+- Processing and normalization
+  - Individual model outputs mapped to validation polygons using ArcGIS spatial analyst Zonal tool with a 2.5 m grid setting to minimize edge effects.
+  - Values per polygon obtained by nearest-neighbor resampling to 2.5 m; sums adjusted for actual grid size.
+  - For accumulated flow models, use the maximum flow within 2 km of NRFA station location to align with polygon.
+  - Outputs standardized by normalizing within each model and its validation dataset (Willcock et al. 2019); all normalizations used before ensemble creation.
+  - Extreme values handled with a double-sided Winsorising at the 2.5th and 97.5th percentiles.
+- Calculation polygons and validation data
+  - Carbon validation: 201,143 forest compartments from Forest Research (England and Scotland, 2019) aggregated to 2078 forest polygons; maps recalculated to full area.
+  - Water validation: 519 NRFA gauging stations across UK with catchments >100 km² (largest station per river to avoid pseudoreplication); 41 Welsh catchments included to mitigate underrepresentation of small Welsh catchments.
+- Models and inputs (Table 1)
+  - Various models and inputs with native grain sizes and coverages, including InVest, LPJ-GUESS, LUCI, $-benefit transfer (TEB), Aqueduct, ARIES, Barredo, Copernicus Tree Cover Density, DECIPHeR, Grid-to-Grid, Henrys, National Forest Inventory, Scholes Growth Days, WaterWorld, and others.
+  - Grains range from as fine as 10×10 m (LUCI) to ~1° (~46×46 km) (LPJ-GUESS); coverages span Great Britain, England & Wales, or full area.
+  - Some inputs are online tools or existing datasets; many rely on peer-reviewed sources.
+- Ensemble modelling approaches
+  - Bagging framework: 50% of spatial data polygons selected per run (N = 250 runs) to generate variation estimates; same data subset used across model calculations per run.
+  - Unweighted ensembles: mean and median across models for each polygon.
+  - Untrained weighted ensembles (several deterministic/iterative methods):
+    - PCA ensemble: weights proportional to model correlation with the first principal component (consensus axis).
+    - Correlation ensemble: weights based on mean correlation of each model with all others.
+    - Regression to the median ensemble: iterative log-likelihood regression using the median as comparator.
+    - Leave-one-out cross-validation ensemble: iterative regression leaving out one model at a time; weights averaged across models.
+    - Grain-size ensemble: downweights coarser-grained models via weights proportional to 1/log10(grain size); weights normalized to sum to 1.
+    - Distinct ensembles: grouping models by 17 attribute categories; upweights minority groups (distinctiveness) or downweights them, with normalization.
+  - Trained weighted ensembles (data-aware):
+    - Training/validation data split (50% for training; 50% for validation) to derive weights, which are then applied to the remaining data.
+    - Accuracy-weighted ensembles: weights derived from model accuracies on the validation set, used as in Eq. 1.
+    - Log-likelihood regression (weighted): regression against validation data points to obtain model weights, then applied in the ensemble.
+  - Additional approaches
+    - Results include variations on weighting by attributes, model distinctiveness, and data-driven training regimes to reflect different uncertainty and reliability profiles.
+- Quality control and reproducibility
+  - All approaches underwent internal team review and external peer review.
+  - Most input model data come from peer-reviewed or well-accepted sources.
+  - Code and methodology documented; ensemble code implemented in Matlab; replication materials and results prepared for publication.
+- Limitations and considerations
+  - Potential bias from weighting forest-only data when applying to non-forested areas, possibly affecting non-forested cells.
+  - Some input models do not cover the entire area, leading to regional coverage gaps.
+  - Scale and resolution differences across models (grain size) are explicitly addressed via grain-size weighting but remain a source of uncertainty.
+  - Validation datasets are polygon- and station-based; results depend on the representativeness of these datasets.
+- Funding and provenance
+  - Funded under the EnsemblES project: Using ensemble techniques to capture the accuracy and sensitivity of ecosystem service models, UKRI Landscape Decisions programme (NE/T00391X/1).
+- References and context
+  - Extensive citations underpinning models, validation approaches, and ensemble methodologies (e.g., Willcock et al. 2019/2020; Dormann et al. 2018; Marmion et al. 2009; Grenouillet et al. 2011; Dolomann et al. 2018; and numerous input model sources).

@@ -1,0 +1,23 @@
+# UrineVol.csv
+
+- Authors must be acknowledged if data are re-used or reproduced, indicating an attribution requirement for reuse.
+- Purpose: describes volumes of individual sheep urine events used to determine a mean urine volume representative for modeling greenhouse gas emissions from sheep urination.
+- Dataset scope: Welsh Mountain ewes (n = 6) sampled across two trials in spring 2016 and autumn 2016.
+- Collection context: trials conducted at the middle ffridd, Henfaes research station, Abergwyngregyn, North Wales during spring 2016 and autumn 2016.
+- Data corrections: volumes corrected for losses within the urine collection apparatus.
+- Key variables:
+  - Volume_SP: Volume (ml) of each individual urine event collected during spring 2016.
+  - Volume_AT: Volume (ml) of each individual urine event collected during autumn 2016.
+- Data format: CSV (UrineVol.csv).
+- Data usage implications: the dataset is intended to inform the mean urine volume used in greenhouse gas chamber modeling to reflect a typical sheep urination event.
+- Data quality and limitations:
+  - Small sample size (n = 6) limits generalizability.
+  - Specific flock and location; may not generalize to other breeds or settings.
+  - Metadata provided focuses on collection context and corrections; additional metadata (sampling scheme, timestamps, measurement uncertainty) could enhance interoperability.
+- Governance and reuse considerations:
+  - Explicit attribution requirement for reuse.
+  - Clear definitions of variables and corrected volumes support traceability and reproducibility, aiding data discovery and validation.
+- Recommendations for data leaders:
+  - Ensure discoverability by listing in data catalogs with metadata on population, timescale, and collection methods.
+  - Consider linking to broader datasets or projections used for greenhouse gas modeling to contextualize the mean urine volume.
+  - Document any further quality checks, uncertainties, or standardization steps to improve data interoperability across projects.

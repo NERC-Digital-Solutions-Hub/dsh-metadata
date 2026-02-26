@@ -1,0 +1,162 @@
+# Supporting documentation for 15-Animal_Feed_Stable.csv
+
+## Overview
+- Provides metadata for the dataset on stable element concentrations in total diet samples from animal feed.
+- Captures general context (animal type, location, feeding regimes) and concentrations of multiple elements.
+- Units are mg per kg of dry mass (mg/kg_dry_mass) for all element measurements.
+- Indicates when concentrations are below detection limits and provides uncertainty (Unc_*) and detection limit (Detection_Limit_*) fields for each element.
+- Some fields appear with multiple subfields (e.g., Na, Mg, etc.), suggesting multiple columns or versions in the source dataset.
+- Targeted at ensuring data quality, provenance, and reuse across datasets managed by data stewards.
+
+## Data Schema (Fields)
+- Animal
+  - Explanation: General type of animal
+  - Units: n/a
+  - Notes: n/a
+- Location
+  - Explanation: Name of the location where the sample was collected
+  - Units: n/a
+  - Notes: n/a
+- Feeding
+  - Explanation: Description of the feeding regimes
+  - Units: n/a
+  - Notes: n/a
+- Cs_mg/kg_dm
+  - Explanation: Concentration of stable Cs in the total diet on a dry mass basis
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Unc_Cs_mg/kg_dm
+  - Explanation: Uncertainty (quadratic propagation) of stable Cs concentration
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Detection_Limit_Cs_mg/kg_dm
+  - Explanation: Detection limit of stable Cs in the total diet on a dry mass basis
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is above the detection limit
+- Sr_mg/kg_dm
+  - Explanation: Concentration of stable Sr in the total diet on a dry mass basis
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Unc_Sr_mg/kg_dm
+  - Explanation: Uncertainty (quadratic propagation) of stable Sr concentration
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Detection_Limit_Sr_mg/kg_dm
+  - Explanation: Detection limit of stable Sr
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is above the detection limit
+- K_mg/kg_dm
+  - Explanation: Concentration of stable K in the total diet on a dry mass basis
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Unc_K_mg/kg_dm
+  - Explanation: Uncertainty (quadratic propagation) of stable K
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Detection_Limit_K_mg/kg_dm
+  - Explanation: Detection limit of stable K
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is above the detection limit
+- Na_mg/kg_dm
+  - Explanation: Concentration of stable Na in the total diet on a dry mass basis
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Unc_Na_mg/kg_dm
+  - Explanation: Uncertainty of Na (multiple subfields shown in the source)
+  - Units: mg per kg dry mass
+  - Notes: Multiple indexed variants (e.g., 1, 2, 3) indicating different columns or versions
+- Detection_Limit_Na_mg/kg_dm
+  - Explanation: Detection limit of Na
+  - Units: mg per kg dry mass
+  - Notes: Multiple indexed variants corresponding to Na
+- Ca_mg/kg_dm
+  - Explanation: Concentration of stable Ca in the total diet on a dry mass basis
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Unc_Ca_mg/kg_dm
+  - Explanation: Uncertainty of Ca
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Detection_Limit_Ca_mg/kg_dm
+  - Explanation: Detection limit of Ca
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is above the detection limit
+- Mg_mg/kg_dm
+  - Explanation: Concentration of stable Mg in the total diet on a dry mass basis
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Unc_Mg_mg/kg_dm
+  - Explanation: Uncertainty of Mg
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Detection_Limit_Mg_mg/kg_dm
+  - Explanation: Detection limit of Mg
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is above the detection limit
+- P_mg/kg_dm
+  - Explanation: Concentration of stable P in the total diet on a dry mass basis
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Unc_P_mg/kg_dm
+  - Explanation: Uncertainty of P
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Detection_Limit_P_mg/kg_dm
+  - Explanation: Detection limit of P
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is above the detection limit
+- Pb_mg/kg_dm
+  - Explanation: Concentration of stable Pb in the total diet on a dry mass basis
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Unc_Pb_mg/kg_dm
+  - Explanation: Uncertainty of Pb
+  - Units: mg per kg dry mass
+  - Notes: Detection limit related fields may be blank or labeled as detection limits
+- Detection_Limit_Pb_mg/kg_dm
+  - Explanation: Detection limit of Pb
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is above the detection limit
+- U_mg/kg_dm
+  - Explanation: Concentration of stable U in the total diet on a dry mass basis
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Unc_U_mg/kg_dm
+  - Explanation: Uncertainty of U
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Detection_Limit_U_mg/kg_dm
+  - Explanation: Detection limit of U
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is above the detection limit
+- Th_mg/kg_dm
+  - Explanation: Concentration of stable Th in the total diet on a dry mass basis
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is below the detection limit
+- Unc_Th_mg/kg_dm
+  - Explanation: Uncertainty of Th
+  - Units: mg per kg dry mass
+  - Notes: Detection limit field may be blank or indicate detection limit status
+- Detection_Limit_Th_mg/kg_dm
+  - Explanation: Detection limit of Th
+  - Units: mg per kg dry mass
+  - Notes: If blank, concentration is above the detection limit
+
+## Data Quality and Interpretations
+- Detection limit fields indicate when a measurement is not detectable and flag below-detection-limit values.
+- Uncertainty fields enable propagation of measurement error in analyses.
+- Some entries show formatting inconsistencies or truncations (e.g., Na and Pb-related fields with multiple indices or missing values); these require standardization.
+- All measurements pertain to the total diet on a dry mass basis, enabling cross-element comparisons.
+
+## Governance and Sharing Considerations for Data Stewards
+- These metadata fields support dataset discovery, interoperability, and proper reuse; align with established data standards and catalogs.
+- Document spatial/temporal provenance (animal type, location, feeding regime) for traceability.
+- Enforce consistent units and field naming; resolve multi-index subfields (e.g., Na, Pb, U, Th) into a clean, standardized schema.
+- Establish rules for handling below-detection-limit data (e.g., masking, flagging, or imputation strategies).
+- Capture data sharing constraints (embargoes, licensing) if applicable and ensure their representation in metadata.
+
+## Recommendations and Next Steps
+- Develop a unified data dictionary consolidating field names, units, and notes; remove formatting inconsistencies.
+- Reconcile multi-subfield columns into a consistent schema with clear semantics.
+- Validate and fill any missing metadata where possible, especially for detection limits and uncertainties.
+- Update the dataset in data portals with standardized metadata to improve discoverability and reuse.

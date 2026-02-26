@@ -1,0 +1,46 @@
+# Coastal Biodiversity and Ecosystem Service Sustainability (CBESS) wave monitoring in saltmarsh and mudflat habitats
+
+- Objective: Wave parameters derived from bottom pressure records along shore-normal transects crossing vegetated-unvegetated boundaries between saltmarsh and mudflat habitats.
+- Staff: Tom Spencer, Ben Evans.
+- Locations and site context:
+  - Essex: Abbotts Hall (AH), Fingringhoe Wick (FW), Tillingham Marshes (TM) – coordinates provided.
+  - Morecambe Bay: Cartmel Sands (CS), Warton Sands (WS) – coordinates provided.
+  - Rationale: Essex and Morecambe Bay sites chosen to represent contrasting sediment types and saltmarsh soil types (clays in Essex; sandy soils in Morecambe Bay) with differing inundation frequency, creek structure, and vegetation.
+- Monitoring design:
+  - Continuous monitoring with automated events aligned to high-tide slack water.
+  - Pressure sensors record simultaneously at 4 Hz during events.
+  - Sensor types: PDCR1830 and PTX1830 transducers; data logged by Campbell CR1000.
+  - Data transmission: Telemetry via GPRS; regular maintenance visits; manual downloads if telemetry fails.
+  - Event structure: Each “burst” consists of 4096 measurements at 4 Hz after inundation criteria are met, lasting ~17 minutes.
+- Observed variables:
+  - For PT1–PT12: ValidPTn, mean depth hPTn, spectrally-derived total spectral energy EPTn, spectrally-derived significant wave height HsPTn, spectrally-derived peak period TpPTn.
+- Data processing and quality control:
+  - Raw data processing workflow:
+    - Convert raw mV to pressure (Pa) using manufacturer calibration and zero offsets.
+    - Compute mean depth per sensor from pressure timeseries.
+    - Calculate spectral energy, Hs, and Tp following Möller et al. methodology (1999, 2005/2006).
+  - Data organization:
+    - All output: initial spreadsheets with all records.
+    - Filtered for reliability: records after quality checks.
+    - Suspect data removed due to known equipment issues (e.g., barnacle growth, cable damage) and during non-ideal periods.
+  - Inundation and validity checks:
+    - Submerged sensor checks to identify erroneous bursts (comparison of mean depths between sensors; removal of inconsistent records).
+    - Depth and wave height criteria to ensure continuous inundation:
+      - Minimum mean depth: at least 20 cm (per sensor; typically ~8–12 cm).
+      - Breaking waves criterion: H(max)/hPT <= 0.78, with H(max) = 1.86 × HsPT.
+    - PT4–PT8 records passing both criteria are marked valid (green); validity flagged per record.
+  - Depth-wave limitations:
+    - Attenuation of low-frequency/short-period components with depth; IQ limitations at deeper sites (AH, FW) where depth reduces detectability of high-frequency components.
+    - Result: EPT may be underestimated at depth; comparability across sites/events may be affected.
+- Data formats and storage:
+  - Input: ascii .dat files from loggers.
+  - Processing: Matlab; outputs stored as ascii .txt files.
+  - Validation: Excel-based checks.
+  - Metadata: NA values denote missing measurements.
+- Dataset field descriptions (key schema):
+  - Site, Habitat, Quadrat, Scale, Record, Date, Time, Valid PTn, hPTn, EPTn, HsPTn, TpPTn for each PT sensor.
+  - Location-specific codes include Essex (E) and Morecambe (M) designations; Seasonal indicators (Winter W, Summer S) as applicable.
+- Notes and caveats:
+  - Appendices include transect schematics.
+  - Data interpretation should consider depth-related attenuation and site-specific fetch/ cliff effects that influence wave measurements, particularly for saltmarsh-front sensors (AH, FW).
+  - The dataset provides opportunities for self-serve exploration of wave energy and vegetation interaction, with caveats about cross-site comparability due to depth and boundary conditions.

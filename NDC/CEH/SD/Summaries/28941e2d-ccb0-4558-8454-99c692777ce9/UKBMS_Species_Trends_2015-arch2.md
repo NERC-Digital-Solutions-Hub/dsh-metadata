@@ -1,0 +1,41 @@
+# Experimental design/sampling regime
+
+- The UK Butterfly Monitoring Scheme (UKBMS) collects data from over 2,000 sites per year across the UK, primarily via fixed Pollard walk transects that sample habitat types and management activities at each site.
+- Data collection methods include:
+  - All-species transects: fixed routes 2–4 km long, recording all butterflies in a ~5 m wide belt, with ~26 counts per year from April to September; walks occur under suitable weather (specific temperature, wind, sunshine conditions) and are designed to be comparable year-to-year.
+  - Single-species transects: similar methodology but focused on a focal species for a few weeks.
+  - Timed counts and egg/larval web counts: species-specific counts within a set area and period, with weather constraints.
+  - Wider Countryside Butterfly Survey (WCBS): reduced-effort sampling in wider countryside habitats (farmland, etc.), using two parallel 1-km transects within randomly selected 1-km squares, typically 2–4 visits per year.
+- Data collection workflow:
+  - Field data recorded on standard forms, entered online via the UKBMS data entry site or Transect Walker software.
+  - Transect coordinators compile data for their region; online data and Transect Walker files feed into an Oracle database.
+- Analytical framework:
+  - Two main approaches, depending on data availability:
+    - For wider countryside species: a two-stage model using all season counts to estimate annual seasonal patterns, then model counts with seasonal values as an offset to produce annual indices and trends.
+      - Stage 1: generalized additive model (GAM) to estimate seasonal flight patterns.
+      - Stage 2: model full annual counts to derive changes in abundance over time.
+      - Described in Dennis et al. (2013).
+    - For habitat specialists and regular migrants (with less WCBS data and more reduced-effort data): GAMs to impute missing values and generate site indices; combine into a national Collated Index; then apply a log-linear regression to produce species trends over time.
+      - Trends reported for:
+        - Entire series (1976–2015)
+        - Last 20 years (1996–2015)
+        - Last 10 years (2006–2015)
+  - Species are categorized as wider countryside, habitat specialists, or regular migrants (with notes on mobility and habitat use; Red Admiral, for example, is increasingly resident in parts of the UK).
+- Nature and units of recorded values:
+  - Site indices are relative measures of population size, approximating absolute counts but expressed as a proportion of an underlying population.
+  - Collated Indices are log10-transformed (LCI) and scaled so the average index over the series equals 2.
+  - Trends are expressed as the slope of the Collated Index over time.
+- Quality control and validation:
+  - Automatic checks in Transect Walker flag unusual counts or records outside expected flight periods; regional coordinators review data for questionable entries.
+  - Further automated and manual validation includes checks against known distributions, flight periods, first-time site records, and outlier abundances.
+- Data storage and format:
+  - Species Trends are stored as CSV files with fields including:
+    - Species, Common name, No.years, Series slope, Series Std.Err, Series P-value, Series trend, Series % change
+    - 20-yr slope, 20-yr Std.Err, 20-yr P-value, 20-yr Trend, 20-yr % change
+    - 10-yr slope, 10-yr Std.Err, 10-yr P-value, 10-yr Trend, 10-yr % change
+  - Species names follow Fauna Europaea; common names follow standard references.
+  - The collated indices may be updated annually as new data are incorporated, which can slightly adjust past years’ indices.
+- Notes on data provenance and interpretation:
+  - Site indices reflect relative abundance and are not absolute population sizes.
+  - The methodology combines multiple data collection types and uses statistical models to handle missing data and varying sampling effort across sites and years.
+  - References include the published methodologies for index calculation (e.g., Moss & Pollard 1993; Rothery & Roy 2001; Dennis et al. 2013).

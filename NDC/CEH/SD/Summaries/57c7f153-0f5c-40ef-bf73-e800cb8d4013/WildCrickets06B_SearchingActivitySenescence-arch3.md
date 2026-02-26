@@ -1,0 +1,22 @@
+# WildCrickets06B_SearchingActivitySenescence Description of content
+
+- Purpose: Describes per-period observation data for individual male adult crickets to study searching activity and senescence.
+- Duration classification: Each observation period is categorized as short (≤ 77 minutes) or long (> 77 minutes).
+- Key fields:
+  - Year: calendar year of the observation period.
+  - Year alive: the year in which the cricket was alive.
+  - ID: unique identifier for the individual cricket.
+  - Temp: temperature during the observation period (°C).
+  - Age: age of the cricket in days at the time of sampling.
+  - Short: binary indicator (1 if the period is short, 0 otherwise) representing the duration classification.
+- Data structure implications:
+  - A structured schema linking individual IDs with period-level measurements (temperature and duration category) and age.
+  - Enables analysis of how activity duration relates to age and environmental conditions.
+- Potential uses for monitoring frameworks:
+  - Informing ecological health metrics and thresholds for activity patterns.
+  - Assessing how environmental variables (temperature) and age influence senescence-related behavior.
+- Data quality and governance considerations (relevant to monitoring authors):
+  - Clear definitions (e.g., the 77-minute threshold) and consistent categorization across records.
+  - Accurate linkage of period observations to individual IDs and temporal context (year, age).
+  - Standardized units (temperature in °C) and complete metadata to support reuse and interpretation.
+  - Documentation of data provenance to facilitate sharing and verify data quality.

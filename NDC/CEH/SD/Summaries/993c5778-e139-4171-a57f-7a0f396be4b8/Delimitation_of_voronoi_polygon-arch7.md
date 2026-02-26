@@ -1,0 +1,74 @@
+# DATA HEADER INFORMATION for Delimitation_of_voronoi_polygon.csv
+
+- Overview
+  - Describes the target tree environment for delimiting Voronoi polygons around trees.
+  - Associated with ESPA (Programme) and P4GES (Project); DOI provided.
+  - Acknowledgement requirement for products derived from these data (Laboratoire des Radio Isotopes, Université d'Antananarivo).
+
+- Key fields and data types
+  - ZOI (Zone of Interest)
+    - Information: Zone of Interest
+    - Type: Categorical
+    - Unit: ZOI2 (Andasibe) / ZOI3 (Anjahamana)
+  - Code
+    - Information: Code for the target tree
+    - Type: Text String
+    - Construction: site code + initial of local name + L (large, DBH ≥ 20 cm) or M (medium, 10 ≤ DBH < 20 cm) or S (small, 5 ≤ DBH < 10 cm)
+  - N° (Neighbouring trees)
+    - Information: Number of neighbouring trees according to the direction of a watch hand
+    - Type: Numeric
+    - Unit: Unitless
+  - Neighbour tree name
+    - Information: Name of a neighbouring tree, oriented northward
+    - Type: Text String
+  - Distance_from target_tree
+    - Information: Distance from the target tree to each neighbour
+    - Type: Numeric
+    - Unit: Meter
+  - % (Size interaction)
+    - Information: Importance of the size of the target tree relative to neighbouring trees
+    - Formula: % = (DBH_T + DBH_N) / DBH_T × 100
+    - Type: Numeric
+    - Unit: Percentage
+  - Distance of the picket
+    - Information: Distance from the target tree to the final delimitation picket
+    - Type: Numeric
+    - Unit: Meter
+  - Height neighbour tree
+    - Information: Height (total) of each neighbouring tree
+    - Type: Numeric
+    - Unit: Meter
+  - N° Picket 1 / N° Picket 2
+    - Information: Numbers of the first and second pickets
+    - Type: Numeric
+    - Unit: Numeric
+  - Distance between picket
+    - Information: Distance between two neighbouring pickets
+    - Type: Numeric
+    - Unit: Meter
+  - Height of each triangle
+    - Information: Height used for each triangle formed with two neighbouring pickets
+    - Type: Numeric
+    - Unit: (Noted as numeric; unit not consistently specified)
+  - Base of each triangle
+    - Information: Base length of each triangle
+    - Type: Numeric
+    - Unit: Meter
+  - Area of each triangle
+    - Information: Area of each triangle
+    - Type: Numeric
+    - Unit: m²
+
+- Geometry and delimitation context
+  - The target tree forms a triangle with two neighbouring pickets; triangle height, base, and area are recorded to support Voronoi-based delimitation.
+  - Distances to neighbouring trees and to pickets, along with DBH-based size metrics, feed spatial relationships used in map-enabled analyses.
+
+- Data provenance and documentation references
+  - Related manual: Manual_2_Belowground_Root_Survey, page 7, section 2.3.1
+  - DOI and project links provided for data provenance and attribution
+
+- Usage considerations for GIS specialists
+  - Data are designed to support map-based visualization of tree environments and spatial delimitation boundaries (Voronoi polygons).
+  - Consistent coding of target tree in the Code field aids integration with other datasets.
+  - Coordinate with data collection methods (pickets, relative distances, and neighbour information) to ensure accurate spatial representation in GIS workflows.
+  - Acknowledge data origin when producing products.

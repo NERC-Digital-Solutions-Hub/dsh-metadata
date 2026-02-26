@@ -1,0 +1,64 @@
+# SANH WP 1.3 Harmonised Individual Questionnaire
+
+- Purpose for GIS specialists
+  - A harmonised, geolocatable data collection instrument designed to support map-based data products and spatial analyses of farm livestock, assets, subsidies, and related household characteristics.
+  - Data intended to be linked with end-user visualizations for policy colleagues, clients, and the public, with attention to data provenance, privacy, and governance.
+
+- Core GIS-relevant content in Sections 9–15
+  - Section 9: LIVESTOCK
+    - Species owned (e.g., cattle, buffalo, yak, goats, sheep, horse, camel, pig, poultry, etc.) with the minimum 1-month ownership criterion in the past 12 months; multiple species possible.
+    - For each species: reasons for keeping (income generation, home consumption, ceremonies, dowry, transport, draft, etc.).
+    - Counts by species per farm (question blocks reference highest livestock units and per-species totals).
+    - Livestock exit pathways in the past 12 months (sale, barter, slaughter, household use, donated, stolen, disease/death).
+    - Time spent in housing: weeks/days in yard, open animal house, and closed animal house (seasonal/myriad housing arrangements).
+    - Identification of the species with the highest number of livestock units on the farm (and related metrics).
+    - Potential GIS use: map-level aggregation of species composition, movement flows, housing intensity, and livestock-value indicators at household/farm level.
+  - Section 10: INFORMATION SOURCES
+    - Attitudes to information sources and decision-support tools for fertilizer use; provenance data to assess confidence and data lineage for GIS metadata.
+  - Section 11: ADOPTION - DRIVERS AND BARRIERS
+    - Selected farm practices and technologies (e.g., leaf colour chart, green manure, agroforestry, anaerobic digestion, midseason drainage, foliar fertilization, etc.), adoption status, and dis-adoption history.
+    - GIS relevance: spatial patterns of technology adoption, hotspot mapping, and correlates with farm type or access to information.
+  - Section 12: ATTITUDE, BEHAVIOUR, PERCEPTION AND OPINION
+    - General openness to new technologies, risk tolerance for decision-making, and attitudes toward fertilizer and manure use.
+    - Can provide contextual variables for interpretation of spatial patterns (not direct map layers but valuable metadata).
+  - Section 13: HOUSEHOLD EXPENSES
+    - Average monthly expenditures across categories (food, housing, education, health, transport, etc.).
+    - Asset/wealth context to enrich socio-economic GIS layers.
+  - Section 14: HOUSEHOLD WEALTH/ASSET
+    - Housing ownership, dwelling materials, lighting and fuel sources, water access, number of TVs, smartphones, internet, irrigation/power equipment, loan history, insurance, transport assets, and asset-based indicators.
+    - Data suitable for creating household wealth and infrastructure layers; potential to link to spatial accessibility (distance to finance, water sources, irrigation equipment locations).
+  - Section 15: SUBSIDY
+    - Direct subsidies received in the past 12 months (fertilizer, machinery, irrigation charges, output/price support, seed, others).
+    - Enables mapping of subsidy access and regional coverage.
+
+- Data modelling and GIS integration considerations
+  - Coding and standardisation
+    - Harmonise species codes, farm-activity codes, and units across sections to enable cross-site comparisons and simple GIS joins.
+  - Linking and geolocation
+    - Households as primary spatial units (point or polygon features); livestock attributes attached to household records; potential to geolocate using prior location data or via plot/farm boundaries if coordinates are captured later.
+    - Where available, link to plot-level data (earlier sections) to create combined farm land-use and livestock maps.
+  - Temporal aspects
+    - Many questions refer to the past 12 months or recent periods; design temporal schemas to support season-based mapping and trend analyses.
+  - Privacy and governance
+    - Household-level sensitivity; enforce data minimisation, anonymisation, and access controls in GIS workflows.
+
+- Practical GIS workflows and layer design
+  - Core layers
+    - Household/farm point or polygon layer with attributes from Sections 9–15 (livestock composition by species, housing, ownership, assets, subsidies, etc.).
+    - Livestock composition attributes per household: per-species counts, highest-unit species, and primary purposes.
+    - Livestock housing intensity layer: time spent in yard vs open vs closed housing (per species where applicable).
+  - Secondary layers
+    - Adoption and information-layer: presence/absence of specific practices (Section 11) with intensity where meaningful.
+    - Wealth/assets layer: dwelling quality, energy access, water source, irrigation equipment, transport assets.
+    - Subsidy coverage layer: subsidy type and amount by region or district (as available).
+  - Analytical dashboards
+    - Spatial distribution of livestock by species and total livestock units.
+    - Correlations between livestock composition, housing intensity, and asset wealth.
+    - Subsidy and adoption heatmaps to identify gaps and policy targets.
+  - Data reconciliation
+    - Implement crosswalks to reconcile seasonally duplicated fields and ensure consistent units and species codes across sections.
+
+- End-to-end takeaways for GIS-focused data products
+  - The instrument provides a rich, code-driven, geolocated dataset capturing livestock diversity, ownership dynamics, housing, and broader household socio-economics.
+  - Designed to support multi-layer GIS visualisations and spatial analyses of livestock distributions, movement, and the relationship with inputs, subsidies, and household assets.
+  - Strong emphasis on data provenance, consistent coding, and governance to enable cross-site comparability and reliable mapping outputs.

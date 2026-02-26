@@ -1,0 +1,112 @@
+# 25m raster
+
+- What it is
+  - The 25m raster dataset records the dominant land cover per 25m grid cell, derived from converting land parcels within the vector dataset into a 25m grid using LCM2000 Subclasses.
+- Metadata (Great Britain and Northern Ireland)
+  - Great Britain: 24,400 columns × 48,400 rows; lower left easting 50,000 m; lower left northing 10,000 m; pixel size 25 m; coordinate system British National Grid; projection Transverse Mercator; Spheroid Airy; Datum OSGB 1936.
+  - Northern Ireland: 7,600 columns × 7,200 rows; lower left easting 180,000 m; lower left northing 280,000 m; pixel size 25 m; coordinate system Irish National Grid; projection Transverse Mercator; Spheroid Airy Modified 1849; Datum Ireland 1965.
+  - Note: For pixel centre, add 12.5 m to each lower-left value.
+- 1km raster (summary of 25m data)
+  - The LCM2000 raster 1km data is created by summarising the 25m data within 1km grid cells.
+  - Great Britain: 700 columns × 1,300 rows; lower left easting/northing 0; pixel size 1,000 m.
+  - Northern Ireland: 500 columns × 500 rows; lower left easting/northing 0; pixel size 1,000 m.
+  - Coordinate system, projection, spheroid, and datum mirror the 25m dataset (GB OSGB36; NI Ireland 1965; Transverse Mercator; Airy/Airy Modified 1849).
+  - Note: For pixel centre, add 500 m to each lower-left value.
+- Coding and storage details
+  - 25m Subclass codes (normally floating point with one decimal place) are stored as 8-bit unsigned bytes by multiplying by 10 (0–255 range).
+  - Example: Water (inland) Subclass 22.1 → 221 in the raster dataset.
+- Table 3: Subclass-to-1km-to-aggregate mapping
+  - Provides the correspondence between 25m Subclass codes, 1km codes, and Aggregate class codes for each land cover type.
+  - Examples from the excerpt:
+    - Sea / Estuary
+      - 25m code: 221
+      - 1km code: 1
+      - Aggregate class: Oceanic seas
+      - 1km code: 10
+    - Water (inland)
+      - 25m code: 131
+      - 1km code: 2
+      - Aggregate class: Standing open water
+      - 1km code: 8
+    - Littoral rock
+      - 25m code: 201
+      - 1km code: 3
+      - Aggregate class: Coastal
+      - 1km code: 9
+    - Saltmarsh
+      - 25m code: 212
+      - 1km code: 5
+      - Aggregate class: Coastal
+      - 1km code: 9
+    - Supra-littoral rock
+      - 25m code: 181
+      - 1km code: 6
+      - Aggregate class: Coastal
+      - 1km code: 9
+    - Supra-littoral sediment
+      - 25m code: 191
+      - 1km code: 7
+      - Aggregate class: Coastal
+      - 1km code: 9
+    - Bog (deep peat)
+      - 25m code: 121
+      - 1km code: 8
+      - Aggregate class: Mountain, heath, bog
+      - 1km code: 6
+    - Dense dwarf shrub heath
+      - 25m code: 101
+      - 1km code: 9
+      - Aggregate class: Mountain, heath, bog
+      - 1km code: 6
+    - Open dwarf shrub heath
+      - 25m code: 102
+      - 1km code: 10
+      - Aggregate class: Mountain, heath, bog
+      - 1km code: 6
+    - Montane habitats
+      - 25m code: 151
+      - 1km code: 11
+      - Aggregate class: Mountain, heath, bog
+      - 1km code: 6
+    - Broad-leaved / mixed woodland
+      - 25m code: 11
+      - 1km code: 12
+      - Aggregate class: Broad-leaved / mixed woodland
+      - 1km code: 1
+    - Coniferous woodland
+      - 25m code: 21
+      - 1km code: 13
+      - Aggregate class: Coniferous woodland
+      - 1km code: 2
+    - Improved grassland
+      - 25m code: 51
+      - 1km code: 14
+      - Aggregate class: Improved grassland
+      - 1km code: 4
+    - Neutral grassland
+      - 25m code: 61
+      - 1km code: 15
+      - Aggregate class: Semi-natural grassland
+      - 1km code: 5
+    - Suburban / rural developed
+      - 25m code: 171
+      - 1km code: 24
+      - Aggregate class: Built up areas and gardens
+      - 1km code: 7
+    - Continuous urban
+      - 25m code: 172
+      - 1km code: 25
+      - Aggregate class: Built up areas and gardens
+      - 1km code: 7
+    - Inland bare ground
+      - 25m code: 161
+      - 1km code: 26
+      - Aggregate class: Mountain, heath, bog
+      - 1km code: 6
+- Practical implications for analysts
+  - Enables cross-scale analysis by providing a direct mapping between 25m land-cover subclasses and 1km aggregate classes.
+  - Facilitates area estimation and change detection at two resolutions, with consistent coding schemes across Great Britain and Northern Ireland.
+  - The byte-encoded 25m subclass codes allow compact storage and straightforward reclassification to standard categories at 1km or other analytic levels.
+- Key considerations
+  - Pixel centre offsets and differing coordinate extents between GB and NI must be accounted for in spatial joins and alignment.
+  - The mapping table (Table 3) is essential for interpreting codes and performing accurate cross-scale analyses.

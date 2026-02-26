@@ -1,0 +1,12 @@
+# Statistical Methodology for Countryside Survey Data (CS2007)
+
+- Purpose: Describe the statistical methodology used to analyse Countryside Survey (CS) data and document changes made for the 2007 analysis, with a focus on achieving consistent estimation of stock and change over time.
+- Core problem with old methods: Stock estimates used all data from a survey, while change estimates used only repeated measurements, causing inconsistencies between stock and change and difficulties interpreting results.
+- Key finding: Modelling-based, consistent estimation (via mixed effects/repeated measures models) is feasible and robust for CS data and generally yields results within the uncertainty of the previous methods, while using more information and improving precision.
+- Data-wide benefit: The modelling approach uses all available information, potentially improving estimates for earlier surveys as new data arrive, and provides more precise maps and summaries for GIS visualisations.
+- Practical trade-offs: Implementation is technically demanding and computationally intensive; AR1 modelling is chosen to balance robustness, speed, and a manageable number of random parameters.
+- Validation and safeguards: Results are checked against the old methodology, with bootstrap used to obtain robust standard errors due to possible non-normal data distributions; in some non-conforming cases (e.g., very non-normal freshwater data) the old method was retained.
+- Scope of modelling: Applicable to square-level data and extendable to plot-level data; introduces methods to ensure consistency between stock and change estimates across surveys.
+- Implications for reporting: Estimates for any given survey are influenced by all surveys (including future data), so retrospective estimates may be updated as new information becomes available; this represents a shift from prior, more static reporting.
+- Broad Habitat testing: Modelling applied to Broad Habitats showed that stock and change estimates could be made consistent across time, reducing previous discrepancies between stock-derived and repeat-square-derived change estimates.
+- Accessibility for GIS work: The approach supports more precise, GIS-friendly data products by providing coherent, time-consistent estimates of stock and change that can be mapped and explored with map-based tools.

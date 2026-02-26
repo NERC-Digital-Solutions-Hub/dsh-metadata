@@ -1,0 +1,29 @@
+# To identify loci that contribute to discrimination between males of related species
+
+- Objective: Identify genomic loci that influence discrimination between males of D. simulans and D. sechellia by genotyping female progeny from a D. sechellia backcross in a two-choice mate assay.
+- Experimental design:
+  - Two-choice mating test with three tester females and three tester males from each species, all eclosing on the same day.
+  - Females aged 3–28 days; males aged 7–28 days; kept in groups of three of the same sex per vial without yeast.
+  - The assay runs up to four hours or until copulation occurs; once mating occurs, the vial is frozen for later analysis.
+  - Species of the copulating male determined by distinct male genitalia.
+- Genotype and trait data:
+  - ID column: library ID plus a unique barcode.
+  - pheno: 0 = female mated with D. simulans males; 1 = female mated with D. sechellia males.
+  - Genomic locations correspond to specific sites in the D. simulans genome (Hu et al. 2013).
+  - Parental references: D. simulans A2A2B (Tsimbazaza) and D. sechellia D1A1C (D. sechellia 13).
+  - Genotypes obtained via Multiplexed Shotgun Genotyping (Andolfatto et al., 2011).
+  - Data thinning performed with pull_thin (Stern’s script).
+- Data quality and filtering:
+  - Low DNA content can yield incomplete/poor genotype calls.
+  - Exclude individuals with more than 25% ambiguous calls (NA).
+  - Some columns indicate BB (sim/sim), BA (sech/sim), NA (data not available).
+- Data interpretation and structure (for visualization/presentation):
+  - Columns reflect genotypes at various genomic locations; analysis seeks loci associated with mating discrimination.
+  - Reference to genome coordinates and parental haplotypes enables mapping results onto a genome-wide view.
+- Practical notes for GIS-like data handling:
+  - Treat genomic coordinates as spatial features; phenotypic outcome (pheno) as an attribute layer linked to genotype data.
+  - Use parental genomes as basemaps and genotype calls as categorical attributes (BB, BA, NA).
+- References:
+  - Andolfatto et al., Multiplexed Shotgun Genotyping for rapid genetic mapping (Genome Res. 2011).
+  - Hu et al., A second-generation assembly of the Drosophila simulans genome (Genome Res. 2013).
+  - Stern, pull_thin (GitHub) for thinning genotype data.

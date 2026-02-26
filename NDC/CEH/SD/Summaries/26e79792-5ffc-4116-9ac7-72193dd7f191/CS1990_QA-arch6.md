@@ -1,0 +1,100 @@
+# 1990 Countryside Survey: Quality Assurance Exercise
+
+- Purpose and scope
+  - Describe the scope of quality assurance (QA) for the 1990 Countryside Survey
+  - Present results of QA, and provide recommendations to improve accuracy and confidence of survey statistics
+  - Link findings to earlier comparative work and plan methodological modifications for future surveys
+
+- Background and aims
+  - Field work involves many recorders; inherent variation expected despite training and supervision
+  - QA seeks to quantify accuracy of field recording, explain observer/time factors, relate to previous surveys, and modify methodology to improve future accuracy and confidence
+
+- Methods and study design
+  - Two QA series:
+    - Autumn 1990: limited to 21 original survey squares; relied on original sketch maps for plot relocation; two independent assessors
+    - 1991: added guidance from photographs of plots; extended to a single 1 km square from each terrain class; included self-assessment squares
+  - Plots and plot types assessed
+    - Quadrats: 200 m2 (X plots) and 4 m2 (Y plots)
+    - Linear plots (10 m x 10 m strip), roadverges, hedges along streams, boundary features
+  - Plot relocation and plate study
+    - Buried metal plates used to mark quadrats where possible; relocation success categorized as relocated, found but not adequately relocated, or not found
+  - Data collection and measurement
+    - Nine predetermined points per quarter within a square for landcover and boundaries
+    - Attempt to relocate the buried plate at corners using sketch maps, photographs, and detectors
+  - Data quality and comparison metrics
+    - Species concordance using several indices (percentage agreement, agreement, accuracy)
+    - Consideration of seasonal/annual effects, plot location, and information type
+    - Initial vs. QA recording efficiency and changes in species numbers per plot
+  - Land-use and mapping
+    - Primary land-use codes, boundary codes, and descriptive qualifiers
+    - Point-by-point comparisons to assess mapping accuracy
+  - Statistical analyses
+    - Wilcoxon matched-pairs tests, t-tests, DECORANA ordination (to examine ecological gradient shifts), analysis of variance by plot type and landclass
+
+- Key findings and interpretations
+  - Plot relocation and documentation
+    - Autumn 1990 plate/plot relocation recovery ~71% within a five-minute search
+    - 1991 QA with photographs showed improvement: plates recovered 65%, plots 87% (overall improved relocation efficiency)
+    - Photographs and annotated sketches significantly aid precise relocation, especially in unenclosed terrain; metal plates effective but more time-consuming in uplands
+  - Species concordance and changes
+    - Early QA gave around 60% overall concordance in species lists between time periods
+    - 1991 QA found a substantial increase in mean species per plot (from ~20.2 to ~23.4), largely due to real seasonal/annual changes rather than just recorder experience
+    - Seasonal differences (summer vs autumn) and drought conditions contributed to substantial variation; caution needed when comparing change statistics across land-use types
+    - Some species were consistently mis-recorded or mis-identifed; grasses and bryophytes were highlighted as needing more careful training
+  - Seasonal and regional effects
+    - Annual climate variation (e.g., drought in 1990) influenced species presence and detectability
+    - In upland/unenclosed areas, recording efficiency tended to be lower; more effort required to capture bryophytes and less common vegetation
+  - Land-use mapping and boundary coding
+    - Primary land-use codes showed high concordance (~88%) across assessments
+    - Boundary codes were slightly less concordant (~80–83%), with some inflations due to same assessors revisiting squares
+    - Qualifying codes and the interpretation of several boundary/forb codes caused disagreements
+    - Some codes (e.g., marsh 114) were used inconsistently; several codes benefited from clearer definitions and subdivision
+  - Recommendations to improve land-use coding
+    - Sub-divide upland grassland (102) into more explicit categories
+    - Add codes for lowland rush pasture and distinguish wet heath as a distinct vegetation type
+    - Restrict and better define boundary and hedgerow codes to reduce ambiguity
+  - Mapping of vegetation cover and point-based concordance
+    - At the nine-point grid, concordance for species presence at >25% cover was ~81%, but co-dominance and multi-species dominance had much lower concordance
+    - Overall, mapping of vegetation at fine scale remains challenging, especially for unenclosed upland areas
+  - Effects of species changes on ecological gradients
+    - DECORANA analysis shows axis shifts consistent with known long-term land-use change in lowland areas; upland areas showed less consistent directional change, likely due to annual variation and drought effects
+    - Plot-type dependent patterns observed; some groups showed clear changes, others were more ambiguous
+  - Performance of species groups
+    - Group-level frequencies did not show significant differences between original survey and reassessment, though some individual species showed year-to-year fluctuations likely due to climate
+  - Practical conclusions for data collection
+    - Photographs are valuable for plot relocation and documentation
+    - Photograph annotation and plot relation are essential for future QA
+    - Distance to landmarks and compass bearings should be recorded to facilitate relocation
+    - Use of metal plates for X plots should be continued in enclosed land; relocation in unenclosed uplands remains time-consuming
+    - Y plots require improved positioning methods; better ground-truthing via photographs and sketches recommended
+    - Species identification, especially grasses and bryophytes, should be emphasized in training and QA
+
+- Practical recommendations (summary of key actions)
+  - Recommendation 1: Retain lichens in surveys with minor modifications; provide training materials with habitat information for familiarization
+  - Recommendation 2: Conduct QA as close as practical to the initial survey in time
+  - Recommendation 3: Ensure QA personnel annotate and link photographs to the correct plots
+  - Recommendation 4: Use metal marker plates to mark X plots in enclosed land where feasible
+  - Recommendation 5: Define 4 m2 (Y) plots with a survey tape, oriented with the side rather than the diagonal north-south, placed at the southeast corner
+  - Recommendation 6–7: (Implied by the QA narrative) Improve relocation protocols and incorporate photographs robustly into field methods
+  - Recommendation 8: Sub-divide up the upland 102 code; refine upland grassland categories
+  - Recommendation 9: Add a lowland rush pasture code
+  - Recommendation 10: Recognize wet heath as a distinct vegetation type with a primary code
+  - Recommendation 11: Restrict primary boundary code to hedge presence; document species composition with qualifying codes
+  - Recommendation 12: For vegetation mapping, record only the two most prevalent species to improve reproducibility; limit emphasis on detailed cover codes and promote simpler, more reproducible mapping
+
+- Conclusions and implications for future surveys
+  - Photographic documentation and improved relocation methods markedly enhance QA efficacy
+  - Seasonal/year-to-year variability has a substantial impact on recorded vegetation; QA should target the same season and year as the original survey for more reliable change detection
+  - Mapping and coding schemes require clearer definitions and possible subdivision to reduce interpretive variation
+  - Training emphasis should include bryophyte recording, grasses, and vegetative identification to reduce mis-recording
+  - Overall, while some concordance remains imperfect, integrated QA with improved methodologies and standardized codes can substantially increase reliability and utility of data products from countryside vegetation surveys
+
+- References and annexes (context and methodology)
+  - References to prior QA exercises, methodological standards, and ecological analysis approaches (e.g., DECORANA, observer bias, and standard vegetation survey procedures)
+  - Annexes detailing square-by-square QA results, primary land-use code frequencies, and cover-change analyses across land-use aggregates
+
+- Practical impact for data support
+  - Provides a rigorous framework for assessing data quality in large, multi-operator field surveys
+  - Highlights the value of photographs, standardized codes, and explicit documentation to enhance data provenance, comparability, and reusability
+  - Informs the design of future data products (e.g., dashboards and reports) by emphasizing data quality indicators such as plot relocation success, species concordance, and land-use coding reliability
+  - Supports development of self-serve data tools by clarifying the uncertainty bands and ensuring users understand seasonal and methodological limitations in change statistics

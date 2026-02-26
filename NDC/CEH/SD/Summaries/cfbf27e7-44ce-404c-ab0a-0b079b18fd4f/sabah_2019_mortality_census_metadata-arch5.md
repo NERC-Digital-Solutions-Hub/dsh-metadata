@@ -1,0 +1,31 @@
+# Collection methods
+
+- Data collection purpose: Revisit all large trees (>30 cm stem diameter) in permanent field plots to determine alive/dead status and, if dead, capture mode of death (mostly standing dead or uprooted/snapped). For uprooted/snapped trees, record direction of fall and estimate canopy gap size.
+- Nature and units of recorded values:
+  - Alive/Dead: boolean logical value.
+  - Direction_of_fall: measured in degrees from North.
+  - Gap_size: qualitative categories small, medium, or large.
+- Quality control:
+  - No formal quality control; data provided as recorded in the field.
+- Data structure and storage:
+  - Each site provides a single CSV file.
+  - Danum Valley (50 ha plot):
+    - Columns: Tag, Species, Dbh (diameter at breast height ~1.3 m), Hom (measurement height when 1.3 m not possible), Alive_2019, Direction_of_fall, Gap_size, Notes.
+  - Sepilok Reserve (hierarchical plot design):
+    - Columns: PlotID_4ha, Forest, PlotID_1ha, Subplot, Quadrat, TreeNo, Tno, IDNo2, Species, Diameter_1 (approx. 2010), Remarks_1, Diameter_2 (approx. 2015), Remarks_2, Remarks_2019, Mode_of_death, Direction_of_fall, GapSize.
+- Dataset structure details by site:
+  - Danum Valley: 50 ha contiguous plot; data fields link to census via Tag.
+  - Sepilok Reserve: multi-level structure (4 ha plot → 1 ha plots → 20x20 m subplots → 5x5 m quadrats); TreeNo and IDNo2 provide tree identification, with Diameter_1 and Diameter_2 representing measurements from ~2010 and ~2015, plus Remarks indicating status (e.g., snapped, missing) and 2019 mortality status.
+- Interpretation notes:
+  - Diameter measurements are time-stamped (approx. 2010 and 2015 for Sepilok).
+  - Mode_of_death distinguishes snapped vs standing dead; Direction_of_fall and GapSize provide spatial context for canopy disturbance.
+  - Remarks fields capture qualitative descriptions of tree condition across time.
+- Data governance considerations for Data Stewards:
+  - Metadata consistency: two sites use different schema; plan harmonization or mapping for cross-site analyses.
+  - Standardization: consider aligning field names (e.g., Gap_size vs GapSize) and units to improve interoperability.
+  - Provenance and versioning: track field methods and any edits; ensure links between Tag and census data are maintained.
+  - Access and reuse: data are provided as CSV per site; ensure discovery, documentation, and cataloging in relevant portals.
+  - Quality assurance: current dataset has no QC; implement data validation, outlier checks, and consistency checks before sharing or reuse.
+- Practical considerations for custodians:
+  - Data curation needed to support interoperable analyses across sites due to structural differences.
+  - Ongoing updates may require re-uploading revised datasets and updating metadata accordingly.

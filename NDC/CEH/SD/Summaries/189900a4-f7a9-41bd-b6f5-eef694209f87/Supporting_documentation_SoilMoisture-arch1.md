@@ -1,0 +1,25 @@
+# Soil moisture profiles from permafrost in subarctic Canada
+
+- Overview
+  - Soil moisture profiles were measured during summers in 2013 and 2014, alongside gas flux measurements (gas flux data sets).
+- Site codes and descriptions
+  - FFU - FireFox Unburnt: an unburnt black spruce forest
+  - FFB - FireFox Burnt: a black spruce forest burnt in 1998
+  - BLF - BlackFox: a black spruce forest
+  - WHF - WhiteFox: a white spruce forest
+  - TPP - Teslin Peatland Plateau: a peatland plateau near Teslin
+  - MCU - Mosquito Creek Unburnt: an unburnt black spruce forest
+  - MCB - Mosquito Creek Burnt: a burnt black spruce forest
+  - WTP - White Truck Plateau: a peatland plateau near Yellowknife
+  - BCB - Boundary Creek Birch: a birch forest
+  - BCS - Boundary Creek Spruce: a black spruce forest
+- Instrumentation
+  - PR2 profile probe with 4 sensing elements at 10, 20, 30 and 40 cm
+  - Portable reading meter HH2 (Delta-T Devices Ltd, Cambridge, UK)
+- Sampling procedure
+  - Access tubes inserted in the soil using an augering kit to minimize disturbance
+  - Access tubes initially placed as deep as thaw depth allowed; deeper as the active layer thickened
+  - At measurement time, PR2 was connected to the reading meter, removed from the protective tube, and inserted into the access tubes
+- Data and calibration
+  - Values of volumetric soil moisture (m^3 m^-3) recorded from the meter using the default calibration
+  - Measurements were taken alongside gas flux datasets (flux measurements) for the same sites and periods

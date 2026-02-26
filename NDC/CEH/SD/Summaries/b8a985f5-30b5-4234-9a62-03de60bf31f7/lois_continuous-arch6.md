@@ -1,0 +1,32 @@
+# LOIS Core Programme Hydrolab H20 (Hydrodata Systems, London, UK) water quality monitors were installed at 10 sites and used to log water temperature, pH, conductivity and dissolved oxygen between 1994 and 1997
+
+- What was collected
+  - Variables: pH (continuous, pH units), conductivity (continuous, 25C, µS/cm), dissolved oxygen (continuous, % sat), water temperature (continuous, Celsius); battery voltage (volts) also recorded as part of device data
+  - Temporal resolution: continuous logging at 30-minute intervals
+  - Timeframe: data collected continuously between 1994 and 1997
+- Study sites and data structure
+  - 10 sites across UK rivers, with specific site identifiers, user codes, and NGR coordinates (examples include Swale at Catterick Bridge, Derwent at Bubwith, Aire at Beal Bridge, Calder at Methley Bridge, Trent at Cromwell Lock, Ouse at Skelton, Aire above Thwaite Mills, Aire at Fleet Weir, Swale at Crakehill, Nidd at Hunsingore)
+  - For each site, all measured variables were collected (Variable = All variables)
+- Measurement and instrumentation
+  - Instrument: Hydrolab DataSonde 3 continuous monitoring units
+  - Deployment: some units suspended from trees; others placed in large steel pipes from the bank into rivers
+  - Special measures: Trent and Ouse at Skelton probes fitted with stirrers to reduce fouling from high suspended solids during spates
+- Data collection and handling
+  - Field deployment and data collection performed by the York University field sampling team
+- Calibration, quality control, and data quality
+  - Pre-deployment calibration of Hydrolabs for pH, conductivity, and dissolved oxygen in the laboratory
+  - Field unit exchange frequency: fortnightly from November to April; weekly from May to October
+  - Fouling risk: algae/diatoms contamination necessitated more regular cleaning and recalibration
+  - Data quality checks: upon field changeover, cross-check with handheld Mettler CheckMate meters; data downloaded to spreadsheets and plotted against time to identify spurious data
+  - Data treatment: spurious data removed if probes were faulty or fouled; otherwise data from DataSonde kept in raw form
+- Data provenance and roles
+  - Data collection and deployment conducted by the York University field sampling team
+- References for context and methodology
+  - Evans, J.G., Wass, P.D. and Hodgson, P. (1997). Integrated continuous water quality monitoring for the LOIS river programme
+  - Jarvie, H.P. et al. (1997). Major ion concentration and inorganic carbon chemistry of Humber rivers
+  - Neal, C. and Robson, A.J. (2000). A summary of river water quality data within the Land-Ocean Interaction Study
+
+- Notes for data use (implications for Data Support)
+  - High-frequency, multi-parameter dataset suitable for self-service analysis
+  - Data quality depends on regular maintenance and cleaning due to fouling; documented QA steps assist in vetting data
+  - Temporal and spatial coverage limited to 1994–1997 across 10 sites, with site-specific measurement lengths

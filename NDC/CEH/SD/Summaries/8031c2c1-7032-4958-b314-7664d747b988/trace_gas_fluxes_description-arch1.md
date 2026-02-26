@@ -1,0 +1,29 @@
+# Supporting Documentation
+
+- Datasets included
+  - gasflux_chalk.csv: 17Mar2015 created; From 04Aug2015; Description: CO2, CH4 and N2O fluxes from lysimeters, measured using automated chamber method. Location: OS Grid Reference ST 85862 38261.
+  - gasflux_clay.csv: 04Mar2015 created; To 04Aug2015; Description: CO2, CH4 and N2O fluxes from lysimeters, measured using automated chamber method. Location: OS Grid Reference ST 92218 27263.
+  - gasflux_greensand.csv: 17Mar2015 created; To 01Sep2015; Description: CO2 and CH4 fluxes from lysimeters, measured using automated chamber method. Location: OS Grid Reference SU 09720 57896.
+- Depositor and contact
+  - Depositor: James Stockdale (and placeholder Name). Contact: james.stockdale@york.ac.uk.
+- Datasets structure
+  - All three files share the same CSV format; they are described as having the same variables (specific variable list not provided in the summary).
+- Methods used to generate the data
+  - Experimental setup
+    - Near-continuous greenhouse gas measurements using a novel suspended mobile platform (SkyLine2D).
+    - Measurements taken on lysimeters containing intact monoliths of soils and vegetation from unimproved pastures.
+    - Three different underlying geologies within the Hampshire Avon catchment.
+  - Gases and instrumentation
+    - CO2: Infra-Red Gas Analyzer (Li-Cor Li-Cor 8100; model 8100).
+    - CH4: Campaign-mode measurements with Fast Greenhouse Gas Analyzer (FGGA; model 907-0010; Los Gatos Research).
+    - N2O: Campaign-mode measurements with Isotopic N2O Analyzer (INA; model 914-0027; Los Gatos Research).
+  - Measurement protocol
+    - Flux measurements via chamber closure for 180 seconds; extended to 300 seconds in campaign-mode.
+    - Deadband for CO2 flux: 60 seconds.
+    - Flux calculations: CO2 using Li-Cor 8100 software (version 2.0.0); CH4 and N2O fluxes calculated via linear regression.
+  - Quality control (QC)
+    - Post-flux QC to remove poorly fitted slopes (R^2 < 0.7) or highly variable fluxes (CV > 50%) not close to zero (calculated fluxes between -0.5 and 0.5 μmol CO2 m^-2 s^-1).
+    - QC criteria for CH4 and N2O fluxes implemented in a similar manner to CO2.
+- Notes on data interpretation
+  - Data represent near-continuous gas flux measurements across three sites/geologies using a combination of fixed and campaign-mode measurement approaches.
+  - Flux values are subjected to strict QC, which may result in data loss for periods not meeting the fit/variability thresholds.

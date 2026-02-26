@@ -1,0 +1,40 @@
+# Methods
+
+- What this dataset is
+  - 1x1 km grid datasets of Average Accumulated Exceedance (AAE) for acidity and for nutrient nitrogen, for 2013–2015.
+  - AAE summarises exceedances across habitats within each grid square, enabling cross-habitat and grid-scale comparison.
+- How AAE is calculated
+  - For each habitat: AE (keq year-1) = exceedance (keq ha-1 year-1) × exceeded habitat area (ha).
+  - AAE (keq ha-1 year-1) = total AE across habitats in a grid square ÷ total habitat area in that grid square.
+  - If deposition is below the critical load, AAE = 0.
+  - For nutrient nitrogen, AAE values can be converted to kg N ha-1 year-1 by multiplying by 14 (1 keq ha-1 year-1 = 14 kg N ha-1 year-1).
+  - Acidity exceedance combines sulphur and nitrogen compounds and cannot be expressed as kg S or kg N.
+- Habitats included
+  - Acidity: acid grassland, calcareous grassland, dwarf shrub heath, bog, montane, managed coniferous woodland, managed broadleaved woodland, unmanaged coniferous woodland, unmanaged broadleaved woodland.
+  - Nutrient nitrogen: (same as acidity habitats) plus unmanaged beech woodland, unmanaged oak woodland, unmanaged Scots pine woodland, other unmanaged woodland, dune grassland, saltmarsh.
+- Data coverage and context
+  - UK-wide methods and data described in Hall et al. 2015; Trends Report (e.g., Hall et al. 2017) for summary statistics.
+  - CBED deposition data accessible via the EIDC.
+  - Freshwater statistics (1752 sites) are published separately and are not included in the AAE calculations because they are catchment-based, not grid-based.
+- Data structure and file contents
+  - Two files: acidhab_AAE_2013-15.csv (acidity) and nutnhab_AAE_2013-15.csv (nutrient nitrogen).
+  - Common fields:
+    - East_m, North_m: grid cell center coordinates in OSGB (metres).
+    - Unique1km: unique identifier for each 1x1 km square (enables linking acidity and nitrogen datasets).
+    - AAE_keq: Average Accumulated Exceedance in keq ha-1 year-1.
+    - CountryID: 1=England, 2=Wales, 3=Scotland, 4=Northern Ireland.
+- Units and interpretation considerations
+  - AAE expressed as keq ha-1 year-1; below-critial-load deposits yield AAE = 0.
+  - Acidity AAE cannot be converted to kg S or kg N due to its combined S+N basis.
+  - Reduction of deposition below the critical load indicates potential long-term recovery, with significant chemical and biological time lags.
+- Quality control and provenance
+  - Methods developed and agreed through international CLRTAP processes; detailed Hall et al. 2015 methods report available.
+  - Metadata and uncertainties discussed in Hall et al. (2015) and dataset metadata; links to the Critical Loads data metadata.
+- Use and caveats for data stewards
+  - Datasets reflect long-term steady-state assumptions for critical loads; exceedances indicate potential for harm rather than immediate damage.
+  - Habitat and grid-area definitions may differ from other maps; total habitat areas may vary between acidity and nitrogen datasets.
+  - Data are time-bounded to 2013–2015; consider updating for new periods and ensuring alignment with other habitat or deposition datasets.
+  - Linkable via Unique1km to enable integration with other spatial datasets; ensure consistent coordinate reference (OSGB) and grid alignment in downstream uses.
+- Access and references
+  - Data structure and methods described in Hall et al. 2015; trends and summaries in Hall et al. 2017.
+  - CBED deposition and related data available from EIDC.

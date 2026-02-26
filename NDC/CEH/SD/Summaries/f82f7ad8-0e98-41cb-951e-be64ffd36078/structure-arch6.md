@@ -1,0 +1,30 @@
+# Details of data structure
+
+- Dataset composition
+  - 34 RTF documents
+  - 20 CSV documents
+  - All documents contain transcripts of interviews conducted in study villages
+  - Interviewees are anonymized
+- Dataset contents by type and counts
+  - Participatory_map_engl: 10 documents
+  - Participatory_map_port: 10 documents
+  - Seasonal_calendar_port: 3 documents
+  - Seasonal_calendar_engl: 4 documents
+  - Trendanalysis_port: 5 documents
+  - Trendanalysis_engl: 10 documents
+  - Village_profiles: 1 document
+  - Wealthranking_qual: 11 documents
+- Data collection context
+  - Fieldwork led by a research assistant with groups of 3–8 villagers per village
+  - Adheres to a defined field protocol
+  - Notes taken in the local language; transcripts prepared in Portuguese
+  - English translations produced by a separate assistant and subsequently checked by a third party
+- Village profiles and field timing
+  - Village_profiles collected during a two-week pre-visit in July 2015 in Lioma (13 villages)
+  - Transcripts compiled after fieldwork, in Portuguese and English
+- Language and translation workflow
+  - Primary data in Portuguese and local languages; English transcripts created via translation pipeline
+  - Translations undergo multi-person checks to ensure accuracy
+- Data governance notes
+  - Interviewees are anonymized to protect privacy
+  - Clear traceable lineage from field protocol to translated transcripts (for reproducibility)

@@ -1,0 +1,13 @@
+# Data access, licensing and citation
+
+- Licensing and access: Data available under the Open Government Licence; accessible at the provided DOI link. 
+- Citation: Brennan, G.; Creer, S.; Griffith, G. (2020). Abundance of airborne pollen for nine grass species, measured by qPCR, UK, 2016-2017. NERC Environmental Information Data Centre. (Dataset). DOI provided.
+- Data collection method: Molecular data collected via qPCR on a QuantStudio 6 Flex Real-Time qPCR machine; species-specific primers target the ITS2 region for key UK grass species and one degenerate probe that cannot discriminate all species.
+- Data analysis: qPCR data analyzed with QuantStudio Software V1.3; copy numbers quantified using standard curves with copy number standards (2 to 2×10^5 copies/µl) provided by Primer Design.
+- Timing: Samples collected during grass pollen seasons of 2016 and 2017; sampling windows 25 May–28 Aug 2016 and 5 May–10 Sep 2017, with slight site variation.
+- Location and sampling sites: Thirteen sites across the UK; sampling locations are on exposed rooftops (4–6 floors) to sample mixed air flow; coordinates available in the data file; sites chosen to align with the Met Office Pollen Monitoring Network requirements.
+- Research sample and equipment: Aerial particles (pollen) collected using Burkard Automatic Multi-Vial Cyclone Samplers (flow 16.5 L/min) with mini-cyclone collection into 1.5 ml vials; targeted to originate from plants.
+- Sampling strategy: Sites selected for geographic coverage and varied land use; sampling units run alongside Met Office seven-day volumetric pollen traps; Bangor site included with the same pollen count methodology.
+- Data exclusions and quality control: From 1,400 daily aerial samples, 1,210 used after excluding samples with excessive rainwater, qPCR efficiency outside 85–115%, high replicate variability (>6.95 in upper quartile range), or amplification outside 10–38 cycles.
+- Reproducibility and randomization: Reliability checked with positive/negative controls; samples in Bangor randomized for DNA extraction and plate-sequencing order randomized for qPCR data collection.
+- Data structure and accessibility: Data stored in qPCR_copy_number_abundance_data_aerial_DNA.csv; Table 1 describes column headers (sample IDs, site, target species, qPCR metrics, sampling dates, location coordinates, pooling days, standard curve metrics, and replicate statistics).

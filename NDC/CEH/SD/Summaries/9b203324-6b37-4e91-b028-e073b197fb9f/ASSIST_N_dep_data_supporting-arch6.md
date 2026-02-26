@@ -1,0 +1,31 @@
+# Frame Modelling
+
+- FRAME is a Lagrangian atmospheric transport model used to assess the annual mean deposition of reduced and oxidised nitrogen over the United Kingdom (UK), with a multi-layer scheme (33 vertical layers) covering ground to 2500 m.
+- Domain and resolution: UK and Ireland at 1 km x 1 km grid; outputs masked to UK land cells; deposition outputs presented as averages per 1 km x 1 km cell.
+- Outputs: wet and dry deposition of reduced nitrogen (NHx) and oxidised nitrogen (NOy); provided for forest and moorland land cover, and as a grid-average weighted across five land cover types (forest, moorland, grassland, arable, urban).
+- Data products: 28 CSV files (ASSIST_N_dep_kgha_xxxx.csv) covering years 1990–2017; each file includes grid coordinates (Easting/Northing) and deposition values for dry and wet NHx/NOy, plus land-cover–specific analogues (for_NHx_dry, for_NOy_dry, for_NHx_wet, for_NOy_wet, mor_NHx_dry, mor_NOy_dry, mor_NHx_wet, mor_NOy_wet).
+- Input data and emissions
+  - UK emissions: from the National Atmospheric Emissions Inventory (NAEI), split into 160 subsectors and aggregated into 11 SNAP sectors; includes diffuse and point sources for NH3, NOx, and SO2.
+  - UK agricultural NH3: annual estimates using agricultural census data, practice information, and emission source strength data; spatially distributed using land cover at 1 x 1 km.
+  - Large point sources: emissions injected with stack height information into appropriate vertical layers.
+  - Ireland: emissions sourced from CLRTAP/EMEP and E-PRTR; spatial distribution for 2016 scaled to year totals using MapEire at 1 km; 1 km inputs for boundary conditions from Europe (50 km x 50 km).
+  - Boundary conditions: eight 45-degree directional simulations per year to initialize UK-domain concentrations.
+- Meteorology and land use inputs
+  - Wind: from radiosondes or WRF model outputs.
+  - Rain: data from Tanguy et al. and Walsh.
+  - Land cover: Land Cover Map 2015 (1 km) used to drive deposition velocities across land-cover types.
+  - Deposition processes: wet deposition combines precipitation with precipitation-specific maps; dry deposition uses land-cover–specific deposition velocities for five land-cover categories.
+- Outputs and deposition calculation
+  - Deposition types: wet and dry; reduced nitrogen (NHx) and oxidised nitrogen (NOy).
+  - Land-cover weighting: grid-square deposition is a weighted mean across forest, moorland, and other land-cover types based on local mix.
+  - Evaluation: model outputs validated against UK Acidifying and Eutrophying Atmospheric Pollutants (UKEAP) measurements.
+- Data structure and accessibility
+  - Data are exported as CSV files in xyz format, masked to terrestrial UK 1 km cells.
+  - Units: kilograms of nitrogen per hectare per year (kg N ha-1 yr-1); no-data values marked as NA.
+  - File naming and fields: each file contains 1) E and N coordinates in OS British National Grid, 2) grd_NHx_dry, grd_NOy_dry, grd_NHx_wet, grd_NOy_wet (grid totals), and 3) for_*/mor_* fields for forest/moorland land covers (as described above).
+  - Availability: 28 files covering 1990–2017 are provided.
+- Quality control and provenance
+  - FRAME undergoes extensive peer review and was included in Defra model inter-comparison exercises.
+  - Model outputs and methodology widely published in peer-reviewed literature.
+- References and sources
+  - Key sources include Dore et al. (2012, 2016), Aleksankina et al. (2018), and programmatic inputs from NAEI, CLRTAP/EMEP, MapEire, Land Cover Map 2015, and WRF/meteorological datasets, among others.

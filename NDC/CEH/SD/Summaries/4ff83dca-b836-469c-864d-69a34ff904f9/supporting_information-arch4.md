@@ -1,0 +1,30 @@
+# Data overview
+
+- A European grassland soil experiment dataset comprising metadata and measurements from 30 sites across 10 countries, subjected to four climatic disturbances (drought, flooding, freezing, heatwave) plus a control.
+- Disturbances and sampling:
+  - Disturbances: drought (10% WHC), flooding (100% WHC), freezing (-20°C), heatwave (35°C); each with a recovery period.
+  - Sampling times: end of disturbance (S1) and 1 day (S2), 1 week (S3), and 4 weeks (S4) after disturbance end.
+  - Total microcosms: 600 (10 countries × 3 replicate sites × 5 treatments × 4 sampling times); one set excluded from Russian samples at S2.
+- Measurements and analyses:
+  - Microbial communities: bacterial 16S (V4-V5) and fungal ITS2 amplicons; sequencing via Illumina MiSeq; ASV-based analysis with DADA2; taxonomic assignment using SILVA (bacteria) and UNITE (fungi).
+  - Functional potential: whole-metagenome sequencing (subset) with MG-RAST SEED Subsystems annotation.
+  - Soil functions: enzymatic activities (acetyl esterase, β-glucosidase, phosphatase, leucine-aminopeptidase), substrate-induced respiration (MicroResp), carbon and nitrogen fluxes, dissolved and total C/N, DON, pH.
+  - Gas fluxes: CO2, CH4, N2O emissions measured in headspace via GC over multiple time points.
+  - DNA data: initial soils (n=30) and microcosms (n=590) with 620 samples analyzed for various metrics; 574 samples retained for DNA analyses after quality/availability filtering.
+- Experimental design and site characteristics:
+  - Sites span diverse European climates and soils (7 soil type categories; majority Haplic Cambisols).
+  - 3 replicate sites per country; soil sampling and handling standardized (0–15 cm organic horizon; pooling and homogenization; storage at -20°C for DNA).
+  - Spatial context: WorldClim-derived climate data (MAP and MAT) used for site characterization.
+- Data structure and accessibility:
+  - Disturbance_data.csv: 91 columns for 620 samples, detailing provenance (site, replicate, treatments), measurements (functional and soil properties), and ENA accession numbers for molecular data.
+  - Disturbance_metadata_header_description.csv: detailed description of the 91 column headers.
+  - Missing data represented as NA; some measures available only for specific sampling times (e.g., enzymes, metagenomics) or only for INITIAL field samples.
+- Data processing and quality control:
+  - DNA extraction and QC; sequencing data processed with established pipelines (DADA2 for amplicons; MG-RAST for metagenomes).
+  - Some samples excluded due to insufficient DNA yield (Spain replicates) or low-quality sequences; Russian S2 samples removed due to insufficient soil; final dataset comprises 574 DNA-ready samples for sequencing.
+  - Primer references and methodological details provided to ensure reproducibility.
+- Practical implications for users (Data Leaders perspective):
+  - Large, harmonized cross-site dataset suitable for cross-country meta-analyses of microbial responses to climate disturbances.
+  - Rich metadata enables linking microbial composition and function to soil properties, climate context, and disturbance regimes.
+  - Access to raw data and accession numbers supports data provenance, reproducibility, and integration with external datasets.
+  - Some gaps and exclusions noted (e.g., missing data, subset analyses) to consider in planning analyses and interpretations.

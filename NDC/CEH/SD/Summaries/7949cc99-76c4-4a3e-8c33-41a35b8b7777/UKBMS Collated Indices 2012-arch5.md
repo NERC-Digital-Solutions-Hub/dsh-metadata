@@ -1,0 +1,43 @@
+# Experimental design/sampling regime
+
+- The UK Butterfly Monitoring Scheme (UKBMS) collects data from over 1,000 sites annually across the UK, using multiple standardized data collection methods to monitor butterfly populations.
+- Data collection methods
+  - All-species transects (Pollard walks): fixed-route line transects (2–4 km) walked weekly (April–September) to record all species within a fixed 5 m band; routes are fixed to enable year-to-year comparisons.
+  - Single-species transects: same methodology as all-species transects but focused on one focal species for specified weeks.
+  - Timed counts: specific species counted for a set period within a defined area, under the same weather constraints as transects.
+  - Egg/larval web counts: counts of eggs or larval webs in suitable habitats (e.g., Marsh Fritillary).
+- Scheduling and weather constraints
+  - Transect counts occur between 10:45 and 15:45, only under suitable butterfly activity: dry conditions, Beaufort wind < 5, and temperature criteria (≥13°C with ≥60% sunshine or ≥17°C if overcast).
+  - Transects are designed to sample evenly across habitat types and management units.
+- Data collection workflow
+  - Field data recorded on standard forms and entered into the Transect Walker software (free). Data are input by recorders or regional transect coordinators.
+  - Transect Walker files are uploaded to an Oracle database that stores all records; regional coordinators compile data for their regions.
+- Data processing and analysis
+  - After initial validation, a General Additive Model (GAM) is used to impute missing values and calculate site indices.
+  - A Collated Index (national annual index for each species) is derived by a loglinear regression model to estimate missing values and account for year and site effects.
+  - Indices are updated annually as new monitoring data are incorporated; past years’ indices may be revised as data are added.
+  - Collated Indices are calculated for species recorded at five or more sites per year.
+- Data products and how they are stored
+  - Site indices represent a relative measure of population size, correlating with more intensive methods (e.g., mark-release-recapture).
+  - Collated Indices are presented as the Log10 Collated Index (LCI), scaled so the average index over the series equals 2 for a relative population trajectory.
+  - Data storage formats:
+    - Collated Indices are stored as CSV files with columns: Species (scientific name per Fauna Europaea v2.2), Common name (per Emmet & Heath), Year, No. Sites, Collated Index, Time period (data used).
+    - Raw transect data and records are stored in an Oracle database via Transect Walker uploads.
+- Data quality and validation
+  - Automated checks in Transect Walker flag potential data-entry errors (e.g., abnormal counts or records outside known flight periods).
+  - Regional coordinators review records for questionable entries and perform quality checks.
+  - Additional automated/manual validation includes checks against known distribution ranges, flight periods, first-time site records, and extreme or atypical abundances.
+  - Cross-validation againstButterflies for the New Millennium (BNM) data to verify geographic distribution expectations.
+- Metadata, standards, and terminology
+  - Species naming follows Fauna Europaea (v2.2); common names follow Emmet and Heath references.
+  - Time period notes specify which data contributed to the Collated Indices.
+- Implications for data governance (Data Stewards perspective)
+  - Clear data lineage: from field forms to Transect Walker, to Oracle storage, to CSV collated outputs with explicit metadata.
+  - Standardized data collection protocols and fixed transect routes support interoperability and longitudinal analyses.
+  - Regular validation, quality control, and revision of indices ensure reliability and reproducibility of data products.
+  - Data products are released in both raw (Oracle-hosted) and summarized (CSV Collated Indices) formats, with explicit documentation of methods and time periods used for indices.
+- Key challenges and considerations
+  - Maintaining timely data submissions from field sites to ensure up-to-date Collated Indices.
+  - Ensuring adherence to standardized metadata and formats across diverse transects and years.
+  - Handling incomplete site coverage and missing values in the presence of variable weather and site participation.
+  - Interpreting relative indices and their sensitivity to weather, site selection, and data availability.

@@ -1,0 +1,43 @@
+# Metadata
+
+- Overview: A metadata descriptor for a palaeoecological dataset from Cambusurich Wood, Scotland, comprising stand-scale proxies analyzed from duplicate peat cores to study long-term dynamics in ancient temperate woodland. Location: Ordnance Survey grid NN 62741 34679. Supported by Natural Environment Research Council (Grant NE/S007377/1).
+- Study context:
+  - Stand-scale analyses of Cambusurich Wood (site of Special Scientific Interest) using duplicate peat cores collected October 2020 with a large Russian corer from an 8.5 x 7 m hollow named Camb.
+  - Two parallel analytical streams: microfossil analyses (pollen, non-pollen palynomorphs, spores, microcharcoal) and macrofossil/macrocharcoal analyses.
+  - Chronology and LOI (loss-on-ignition) derived from the same core as microfossil analyses.
+- Data files included:
+  - CambusurichWood_Raw_Microfossil_Data.csv
+    - Key fields: Sample_mid_depth (cm, 1 cm subsamples), Sample_volume (cm3), Exotic_lycopodium_added/counted/tablets_added, raw counts for pollen/spores/NPPs/microcharcoal (Rows 6-120).
+  - CambusurichWood_Raw_Macrofossil_Data.csv
+    - Key fields: Sample_mid_depth (cm, 2 cm subsamples), Sample_volume, macrofossil identifications (seeds, bracts, catkin scales, buds, twigs, cones, etc.), counts or four-point qualitative scale (x, xx, xxx, xxxx), macrocharcoal counts (0-1 mm to 3-4 mm) (Rows 3-80).
+  - CambusurichWood_Chronological_Controls.csv
+    - Depth_cm, Lab-code (AMS dates only), Material, 14C_Age (yr B.P.), Error (yr).
+  - CambusurichWood_Loss_On_Ignition.csv
+    - Mid_depth_cm, Loss-on-ignition (%).
+  - CambusurichWood_Troels_Smith.csv
+    - Depth_cm, Components (Troels-Smith sediment descriptions).
+- Data standards and formats:
+  - File formats: CSV with defined column structures.
+  - Depth and depth-related measurements provided with explicit mid-depth or boundary conventions (e.g., mid_depth_cm, Depth_cm).
+  - Units clearly indicated (depth in cm, volume in cm3, LOI in percent, ages in years before present).
+- Methods and references:
+  - Microfossil and macrofossil analyses guided by established palynology and macrofossil methodologies.
+  - Exotic_lycopodium tablets/added counts used for pollen concentration calculations (Stockmarr 1971).
+  - LOI methodology follows Heiri et al. (2001) protocol for estimating organic/carbonate content.
+  - Sediment descriptions aligned with Troels-Smith (1955) system.
+  - Supporting literature includes pollen type catalogues and methodology references (e.g., Bennett 1995-2007; Field et al. 2000; Moore et al. 1991; Nakagawa et al. 1998; Stockmarr 1971; Troels-Smith 1955).
+- Data provenance and governance:
+  - Provenance linked to a specific NERC grant and a dated field collection (October 2020).
+  - Data includes raw counts and semi-quantitative scales, with an emphasis on reproducibility through explicit column definitions and referenced methods.
+- Quality and curation considerations for Data Stewards:
+  - Ensure cross-file linkage via sample identifiers and depth fields (e.g., Sample_mid_depth, Depth_cm).
+  - Preserve original data formats (CSV) and document any transformations or normalization steps.
+  - Maintain metadata for analytical methods, units, and scale interpretations (e.g., x/xx/xxx/xxxx scale).
+  - Capture provenance details (collection date, core description, core location, grant reference) for traceability.
+  - Be mindful of potential interoperability needs due to multiple data streams (microfossil, macrofossil, chronological controls, LOI, sediment description).
+- Potential challenges and considerations:
+  - Incomplete picture of user needs and priorities; complex interdisciplinary data may require careful metadata governance.
+  - Integration across multiple formats and datasets; ensuring consistent units, depth concepts, and sample identifiers.
+  - Large datasets with many records and raw counts requiring robust data validation and quality checks.
+- Contact and funding:
+  - Data tied to Cambusurich Wood study, funded by Natural Environment Research Council (Grant NE/S007377/1).

@@ -1,0 +1,77 @@
+COUNTRYSIDE SURVEY 2000 QUALITY ASSURANCE EXERCISE
+
+- Scope and purpose
+  - QA exercise to measure consistency and reliability of CS2000 fieldwork across 38 of 519 squares.
+  - Assessed plot relocation efficiency, species concordance, vegetation cover estimates, landcover and boundary mapping, and changes since 1990.
+  - Aimed to relate CS2000 findings to CS1990 and to quantify overall data quality for robust data sharing and reuse.
+
+- Methods and design
+  - Sample: 38 squares; one quarter per square rerecorded, totaling 234 species plots across 9 plot types.
+  - Plate and plot relocation: attempted relocation eight years after original burial; used original sketch maps, photographs, and metal detectors.
+  - Data types evaluated: species records, vegetation cover, landcover codes, boundary features, hedge diversity, arable plots, and recorded changes.
+  - Analysis framework: concordance/accuracy assessments, DECORANA ordination to examine directional bias, and comparison to CS1990 benchmarks.
+
+- Key findings: relocation, species records, and cover
+  - Plot relocation and plate recovery
+    - 60% of CS2000 plots accurately relocated; ~25% relocated with approximate accuracy; ~15% inadequately relocated.
+    - Plate recovery by assessors: about 69.3%; overall relocation success lower than CS1991 QA (87.1%), indicating greater challenge eight years on.
+    - Small Y-plots most difficult to relocate (23% failure).
+    - Implication: eight-year relocation introduces substantial uncertainty; new plates often created, complicating future re-surveys.
+  - Species concordance and accuracy
+    - Mean species per plot: CS2000 17.9 vs QA 20.4; QA produced longer species lists, with an overall 73% initial recording accuracy (slightly below CS1990’s ~78%).
+    - Approximately 71% of species in QA were confirmed by assessors; around 2% of non-concordances due to real management or seasonal changes.
+    - Causes of non-concordances divided into plot location/orientation errors, mis-identifications, overlooked species, and seasonal/management changes.
+  - Vegetation cover
+    - Comparison of cover estimates for principal species showed overall agreement, but notable differences for several grasses (e.g., Holcus lanatus, Dactylis glomerata, Anthoxanthum odoratum).
+    - Statistical tests indicated some significant differences in cover for a subset of species between CS2000 and QA.
+  - Change in vegetation and land use
+    - DECORANA axis analysis showed no overall directional bias between CS2000 and QA.
+    - However, overall change concurrence (ability to detect and record changes) was only 51.4%; 33.9% of changes not noted by CS2000; 14.7% changes recorded but not substantiated by assessors.
+    - Indicates substantial under-recording and misreporting of ecological changes over eight years.
+  - Landcover and boundary mapping
+    - Primary landcover codes: ~88% concordance; BAP codes: ~77%; primary boundary codes: ~85%.
+    - Overall primary landcover agreement excluding BAP: 87.5%; including BAP: ~84.3%.
+    - Hedge and boundary qualifiers: reasonably high concordance; boundary height and stockproofness showed strong agreement (around 89–90%).
+    - Hedge-structure coding improvements were limited by new coding schemes; several discrepancies arose from mismatches between hedge shapes and their coded representations.
+  - Hedge diversity plots
+    - 124 total species recorded across 19 hedge plots; overall concordance 74.2% (surveyors vs assessors), with surveyor efficiency 77.4%.
+  - Arable margin plots
+    - Only five plots; concordance was very poor, attributed largely to seasonal variation and potentially lower familiarity with ruderal species.
+    - Recommendation: plan for multiple visits to arable margins to capture seasonal dynamics.
+  - Arising patterns in species frequency and coding
+    - General pattern: common species tended to be recorded consistently, but frequent mis-identifications and scope for overlooked species persisted, especially among grasses and mosses.
+    - Some under- and over-recording patterns appeared linked to seasonal timing, plot orientation, and familiarity with vegetative states.
+
+- Data quality implications for data stewardship
+  - Location and orientation are critical: relocation reliability directly affects species concordance and change detection; robust geospatial metadata and precise plot marking are essential.
+  - Change recording is a major vulnerability: low concordance in detecting and substantiating changes undermines long-term change analyses; clear change provenance and audit trails are needed.
+  - Mapping and code consistency: high primary code concordance overall, but BAP and land-use codes require careful consistency checks; evolving coding schemes need stable documentation.
+  - Temporal dynamics and seasonality: observed differences between CS2000 and QA highlight the impact of timing; metadata must capture survey date windows and seasonality considerations.
+  - Data volume and management: large numbers of plots with differing plot types demand rigorous data entry validation, standardized protocols, and explicit handling of non-detections and omissions.
+  - ARable plots require enhanced sampling strategy to reflect rapid seasonal/management-driven changes.
+
+- Recommendations for data governance and ongoing stewardship
+  - Strengthen plot location and relocation metadata
+    - Record precise geospatial coordinates, plate status, and relocation success category for every plot.
+    - Maintain a log of relocation methods and any deviations from standard protocol to support reproducibility.
+  - Improve change detection process
+    - Implement explicit change flags, with supporting evidence (photos, notes) and a standardized change approval workflow.
+    - Encourage multi-temporal verification, especially for land-use and hedge boundary changes.
+  - Enhance data quality controls
+    - Automated validations for species identifications, including cross-checks for known problematic taxa (e.g., Poa/Rumex groups, Poa trivialis).
+    - Validate cover estimates with calibration standards or reference plots; document seasonality adjustments.
+  - Standardize and document coding
+    - Provide clear metadata on landcover, BAP, boundary, hedge, and stockproof codes; ensure consistency across survey periods.
+    - Maintain versioned code definitions; track changes to coding schemes over time.
+  - Improve data sharing and discoverability
+    - Publish comprehensive metadata including methodologies, QA procedures, sampling design, date ranges, and version history.
+    - Include data lineage: original CS2000 data, QA assessments, and any reconciled or corrected records, with clear provenance.
+  - Plan for arable margin and other underrepresented plots
+    - Adopt a two-visit or multi-visit approach to account for seasonal variation and improve concordance.
+  - Use QA results to drive continuous improvement
+    - Incorporate QA findings into training and field handbook updates; emphasize common error sources and relocation best practices.
+    - Update field protocols to minimize mis-location/orientation errors and to standardize boundary marking.
+
+- Conclusion
+  - The CS2000 Quality Assurance exercise demonstrates generally solid data quality in mapping and many field-recording components, with notable strengths in landcover coding and boundary mapping.
+  - However, significant challenges remain in plot relocation reliability, change detection, and arable plot concordance, underscoring the need for enhanced data governance, robust metadata, and improved field protocols to ensure datasets are discoverable, up-to-date, and readily usable by data stewards and users.

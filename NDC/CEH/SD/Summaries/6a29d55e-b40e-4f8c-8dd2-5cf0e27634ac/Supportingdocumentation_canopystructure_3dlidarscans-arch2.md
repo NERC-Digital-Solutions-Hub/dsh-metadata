@@ -1,0 +1,28 @@
+# Supporting documentation
+
+- Dataset scope: 3D LiDAR (Terrestrial Laser Scan, TLS) scans representing 0.5 ha permanent sample plots in Caatinga, Brazil. Includes two plots in Serra das Almas Reserve (SDA) and one plot in Petrolina (PET). Collected as part of the Nordeste project.
+- Project context: Nordeste project aims to address decades of scientific neglect of Caatinga biodiversity and ecosystem-function research in northeast Brazil by integrating Brazilian and UK efforts to understand plant, soil, and climate relationships, tree architecture, carbon allocation and stocks, biodiversity, and remote sensing. Data collection spans July 2017 to May 2019.
+- Dataset contents and format:
+  - Approximately 32 files comprising both raw and processed TLS data.
+  - PET plots: 10 individual trees represented by processed point clouds (xyz), with species including Manihot pseudoglaziovii, Commiphora leptophloeos, Sapium glandulosum, and Cnidoscolus quercifolius. Trees were scanned both outdoors (in nature) and indoors (lab) using the same protocol.
+  - SDA plots: 10 m x 10 m subplots scanned with around three raw scans per subplot; data available as processed xyz point clouds and/or converted ply formats from raw scans.
+  - Plot identifiers and locations:
+    - PET-01: Petrolina, Lat -9.04803, Lon -40.3198, Pernambuco, Brazil
+    - SDA-01: Serra das Almas, Lat -5.1468, Lon -40.9282, Crateus, Ceara, Brazil
+    - SDA-02: Serra das Almas, Lat -5.1414, Lon -40.9149, Crateus, Ceara, Brazil
+- Data collection and processing workflow:
+  - Equipment and software: TLS 3D Faro Focus scanner; Faro Scene software used to register raw scans and export point clouds.
+  - Recording protocol per tree/subplot:
+    - Select a representative tree or subplot; tag the tree with species and date; photograph from multiple viewpoints.
+    - Capture an initial low-resolution scan of the whole tree/subplot to preserve original structure.
+    - For a portion, perform indoor scans (more than eight scans from various angles/heights).
+  - Processing steps in Faro Scene:
+    - Load scans; remove dark points; smooth scans; apply stray point and edge artifact filters.
+    - Manual registration (cloud-to-cloud) using identifiable targets; create a single merged point cloud.
+    - Cleaning: create a clipping box to isolate the tree/subplot; manually remove noise.
+    - Export: wipe project history to free space; export the processed point cloud to xyz format.
+  - Notes on SDA data: raw scans are available for fine registration using user-defined parameters and algorithms; raw files include original formats (e.g., .fls) converted to ply as part of processing.
+- Data relevance and reuse considerations:
+  - Provides detailed, standardized 3D representations of Caatinga trees and vegetation patches, useful for analyses of tree architecture, carbon stocks, biomass estimation, biodiversity assessments, and remote sensing validation.
+  - Documentation includes explicit processing steps, data formats, and plot coordinates to support reproducibility and longitudinal monitoring.
+  - The Nordeste data collection period (2017–2019) offers a baseline for temporal comparisons in arid/semi-arid tropical environments.

@@ -1,0 +1,24 @@
+# About the UK Butterfly Monitoring Scheme
+
+- Overview: The UK Butterfly Monitoring Scheme (UKBMS) is organized and funded by Butterfly Conservation, the UK Centre for Ecology & Hydrology, the British Trust for Ornithology, and the Joint Nature Conservation Committee. It relies on volunteers and provides annual population status data for butterflies to inform biodiversity policy and monitoring since 1976.
+- Data collection framework:
+  - Standard butterfly transects (Pollard walks): fixed-route, 2–4 km, 5 m width, weekly counts (up to 26 visits/year) from April to September; ~2000 sites.
+  - Wider Countryside Butterfly Survey (WCBS): stratified-random 1 km squares with two parallel 1 km transects; 2–3 visits/year (minimum 2 visits in July/August); ~800 squares/year.
+  - Targeted surveys: single-species transects, alternative methods (e.g., timed counts, egg/larval web counts) focused on specific species.
+- Nature of data and analysis:
+  - Data are used to create abundance indices (relative measures) rather than absolute population sizes.
+  - Indices at sites are combined into species-level collated indices using the Generalised Abundance Index (GAI) method (2016), with weighting by the proportion of the flight period surveyed per site/year.
+  - The method uses all counts in a season to model the seasonal pattern and extrapolate for gaps, giving more weight to observed data.
+- Data quality and governance:
+  - Field data recorded on standard forms, entered online or via Transect Walker, then validated automatically and by regional coordinators.
+  - Additional automated/manual validation checks for out-of-range records, abnormal abundances, or timing anomalies; corrections made via queries and coordination with recorders.
+- Data download details:
+  - Dataset covers 1976–2021 for species with sufficient data; supplied as CSV.
+  - Key columns: SPECIES CODE, SPECIES, COMMON NAME, YEAR, NO. SITES, COLLATED INDEX (log10), YEAR RANK, TIME PERIOD, COUNTRY.
+  - Collated indices are scaled so the average index over the series equals 2, facilitating relative comparisons; some early years lack collated indices due to limited data.
+- Licence and attribution:
+  - Open Government Licence (OGL) enabling free use with few conditions.
+  - Must cite the dataset with its DOI and include the attribution: Contains UK Butterfly Monitoring Scheme (UKBMS) data © Butterfly Conservation, Centre for Ecology & Hydrology, British Trust for Ornithology, Joint Nature Conservation Committee.
+- Collaboration and contact:
+  - UKBMS partners offer data interpretation support and potential co-authorship opportunities for publications.
+  - Contacts: UK Centre for Ecology & Hydrology – Marc Botham (ukbms@ceh.ac.uk); Butterfly Conservation – Transect Co-ordinator (transect@butterfly-conservation.org).

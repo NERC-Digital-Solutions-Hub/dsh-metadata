@@ -1,0 +1,72 @@
+# Overview of the data being described
+
+- Study aim and scope
+  - Data from physiology experiments and an RNA-seq experiment to identify genes changing expression in Drosophila melanogaster after exposure to the parasitoid wasp Leptopilina boulardi.
+  - Outbred D. melanogaster population established from 372 isofemales wild-caught in Cambridgeshire, UK (October 2017).
+  - Experimental treatments (four groups each): wasp homogenate (20 female L. boulardi in 200 μl paraffin), paraffin only (oil), and an untreated control.
+  - 24 hours post-manipulation, hemocytes pooled from 100 larvae and fat bodies dissected from 8 third instar larvae.
+  - Conditions: 25°C for flies; injections at room temperature.
+  - RNA extracted from both tissues and sequenced as 50 bp single-end reads on HiSeq4000 (June 2019).
+
+- Data generation and processing
+  - Read processing: Trimmomatic trimming to remove bases with quality < 20 (4 bp sliding window).
+  - Alignment: STAR mapping to D. melanogaster reference r6.28 (Flybase); reads with mapping quality ≥ 10 counted with featureCounts.
+  - Filtering: genes with at least 10 mapped reads across the 12 libraries per tissue retained for analysis.
+  - Tissue-specific filtering: remove fat body genes enriched in salivary glands and male germ cells using FlyAtlas2 data.
+  - Differential expression: edgeR and limma; significance set at FDR-adjusted P < 0.05.
+  - Functional analysis: gene ontology (GO) enrichment using Flymine, with results reduced by REVIGO.
+
+- Data structure and contents
+  - The dataset comprises 13 tables (1 .txt and 12 .csv files).
+  - read_count_mq10.txt
+    - Contains gene-level read counts (first columns: Geneid, Chr, Start, End, Strand, Length); 24 sample columns following headers.
+  - Library_details.csv
+    - Sample-level library preparation details: library_ID, Tissue, Treatment (first three columns); six columns detailing library prep conditions.
+  - Mapping_metrics.csv
+    - Quality and mapping metrics for 12 hemocyte and 12 fat body samples; first six columns identify sample; remaining 19 columns contain STAR-derived metrics.
+  - Fatbody_GO.csv
+    - Significantly enriched GO terms, KEGG/Reactome pathways, and InterPro proteins for 29 upregulated fat body genes (Wasp homogenate vs control); 7 columns (Enrichment Database, Term, Ontology, ID, P-value, Enriched Gene).
+  - Hemocytes_GO.csv
+    - GO/KEGG/InterPro enrichments for 2,156 upregulated and 1,731 downregulated hemocyte genes; 10 columns (Trend, Enrichment Database, Term, Ontology, ID, P-value, Enriched Gene, plus uniqueness/dispensability metrics).
+  - detected_genes.csv
+    - Genes detected in both tissues after filtering (low read support, poorly aligned reads, and fat body genes expressed in male germ cells/salivary glands).
+  - differentially_expressed_genes.csv
+    - DE gene list by tissue and comparison; columns include FB_ID, logFC, AveExpr, t-statistic, PValue, adj.P.Val, B (log-odds of differential expression).
+  - Wasp_specific-Venn.csv
+    - Genes differentially expressed unique to wasp homogenate vs control; includes FB_ID, logFC, Trend, and counts per million for each sample.
+  - Wasp_and_Injury-Venn.csv
+    - Genes DE in common to wasp homogenate vs control and oil vs control; includes logFC_Wasp, logFC_Oil, Trend, and sample counts.
+  - Oil_Melanization_Phenotype_Characterization.csv
+    - Phenotype data: number of larvae melanizing an injected paraffin oil droplet across five treatments (oil, oil+wasp infection, oil+wasp homogenate, oil+male homogenate, oil+fly homogenate).
+  - Oil_Injection_Insect_Species_Phenotypes_V3.csv
+    - Phenotype data across 44 insect species for oil droplet melanization; species from various sources.
+  - Fat_body_qPCR_Confirmation.csv
+    - Ct values for 11 target genes from fat body tissue under oil, oil+wasp homogenate, and unchallenged conditions.
+  - ProteinaseK_Treatment_post_autoclave_2021_05.csv
+    - Melanization data for ~4 treatments: wasp homogenate (non-autoclaved/autoclaved with/without proteinase K) and related controls.
+
+- Data governance and stewardship considerations for Data Stewards
+  - Standards and provenance
+    - Uses FlyBase gene identifiers and FlyMine-derived GO/Pathway annotations; tissue and treatment labels standardized across files.
+    - Detailed sample metadata in Library_details and Mapping_metrics to enable traceability.
+  - Reproducibility and auditing
+    - Clear description of preprocessing steps (Trimmomatic, STAR, featureCounts), filtering criteria, and differential expression methodology (edgeR/limma).
+    - Provides both raw-derived (read counts) and analysis-ready tables (DE results, GO enrichments).
+  - Data integration and interoperability
+    - Multiple interrelated CSV/TXT files with consistent gene identifiers and sample naming, enabling cross-file joins (e.g., sample-level metadata with expression and DE results).
+    - Risk of format drift across updates; ensure alignment with current FlyBase IDs and FlyMine REVIGO outputs.
+  - Access, sharing, and curation
+    - Dataset is organized into discrete files that can be uploaded to repositories and catalogues; clear descriptions facilitate discovery and reuse.
+  - Quality control and validation
+    - Quality filters applied at read level (mapping quality) and gene level (minimum reads); tissue-specific filtering to reduce confounding signals.
+    - GO enrichments rely on external databases (Flymine, REVIGO); users should consider database version dependencies when reusing results.
+
+- Practical usage considerations for Data Stewards
+  - Validate gene ID mappings against the latest FlyBase release to maintain current annotations.
+  - Ensure consistent labeling of tissues, treatments, and libraries across Library_details, Mapping_metrics, and read count data.
+  - Preserve provenance by recording the processing pipeline details (software names/versions where available) alongside the dataset.
+  - Plan for updates or embargoes if the data are part of an ongoing study or subject to future revisions.
+
+- Summary of end-to-end data lifecycle
+  - From sample collection and RNA sequencing to rigorous data processing and generation of multiple derived tables (DE results, GO enrichments, and phenotypic data).
+  - Provides a comprehensive, multi-tables dataset suitable for reuse in meta-analyses of host response to parasitism and for methodological benchmarking in RNA-seq data processing.

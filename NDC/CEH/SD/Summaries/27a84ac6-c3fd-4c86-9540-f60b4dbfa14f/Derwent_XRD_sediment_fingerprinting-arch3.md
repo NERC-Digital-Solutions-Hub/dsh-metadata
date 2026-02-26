@@ -1,0 +1,33 @@
+# Derwent X-ray powder diffraction (XRD) Sediment Fingerprinting
+
+- Objective and scope
+  - Document describes a sediment fingerprinting study in the River Derwent Catchment, Yorkshire, UK, using XRD to characterize mineralogical composition of sediment samples.
+- Collection and sampling methods
+  - Sample collection around the Derwent Catchment via grab sampling from various soil types and in-stream sediment related to river bars and banks.
+  - Field preparation involved drying, sieving, and powdering of samples.
+- Analytical methods
+  - Instrument: Bruker D8 XRD.
+  - Analysis: qualitative phase analysis to identify mineral phases present in samples.
+  - Quality control: XRD instrument calibration performed; reported data are raw outputs (not processed with phase tables yet).
+- Nature and units of recorded values
+  - CSV data with two main values: 2-theta (angle) and count (intensity), used to infer mineralogical composition.
+- Data structure and content
+  - CSV files link data to sample sites with site names and geographic coordinates (X and Y).
+  - Multiple sample sites listed (e.g., Lower Rye up Derwent confluence, Final Derwent River, Jugger Howe soils, Boxa Woods, Spital Beck, The Beck, Harwood Dale, etc.).
+  - Extensive tabular data correlates site names to coordinates and XRD outputs; some entries appear garbled in places, but the intent is a site-level linkage to coordinates and raw XRD readings.
+- Locations and sampling coverage
+  - Sampling spans numerous sites along the Derwent River and its tributaries, including upstream and downstream sections and nearby soils.
+  - Coordinates provided for each site, enabling spatial mapping of sediment sources and processes.
+- Data quality and governance
+  - Data are raw XRD outputs; no phase-identification processing applied in the reported dataset.
+  - Calibration noted, but absence of processed phase tables means additional data processing required for full interpretability.
+  - Metadata includes site name and coordinates; however, parts of the text are inconsistent/garbled, indicating potential metadata gaps that would need addressing for robust data governance.
+- Relevance for monitoring frameworks and policy
+  - Provides a mineralogical fingerprinting dataset that can support source attribution and sediment transport monitoring.
+  - Useful for developing indicators of sediment provenance, transport pathways, and sediment-related environmental health assessments.
+  - Accessible as raw data, but effective monitoring would require standardized processing, clean metadata, and clear data provenance.
+- Key considerations and potential barriers
+  - Data availability and usability: raw outputs require processing to derive actionable indicators; need standardized pipelines and documentation.
+  - Metadata completeness: ensure complete, consistent site identifiers, coordinates, sampling dates, and QA/QC records.
+  - Silo and governance aspects: ensure data sharing and governance align with openness standards, and address any barriers to public data provision.
+  - Communication of results: translating raw XRD counts into interpretable mineralogical profiles and provenance indicators for policy audiences.

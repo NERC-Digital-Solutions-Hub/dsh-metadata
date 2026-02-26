@@ -1,0 +1,49 @@
+# Glastir Monitoring & Evaluation Programme Vegetation Survey
+
+- Wales adopted a rolling biodiversity monitoring program (GlaStIR Monitoring & Evaluation Programme, GMEP) to assess the environmental effects of agri-environment schemes (AES) since the 1990s, with a focus on reversing native biodiversity decline and meeting CBD 2020 obligations.
+- The vegetation component runs on a 4-year cycle (2013–2016 for the first cycle) and uses an ecosystem-based approach capturing data at multiple scales in a single snapshot visit.
+- The design integrates two components:
+  - Wider Wales Component: baseline estimation and national trends for Glastir.
+  - Targeted Component: focuses on Glastir priority areas.
+- A common spatial unit of 1 km² is used for integration across components and with the GB Countryside Survey (CS) to enable future combined analyses.
+- Sampling framework includes 300 1 km² squares, with half randomly selected within strata of the Land Classification of Great Britain and half targeted at Glastir priority areas. Exclusions applied to squares with >75% urban land or >90% sea.
+- Location privacy is maintained by plotting data at 10 km resolution for confidentiality.
+
+- Field data collection aims to capture a full ecosystem snapshot by recording vegetation across multiple plot types within each 1 km² square, including vascular plants, bryophytes, and macro-lichens, plus canopy and habitat context.
+- Plot types and sampling:
+  - X plots (Random/Main): 4 m² or 200 m²; up to 5 per square; random dispersion.
+  - Y plots (Small: Targeted/Enclosed Habitat): 4 m²; up to 5 per square; focused on priority habitats.
+  - U plots (Unenclosed): 4 m²; up to 10 per square.
+  - B plots (Boundary): 10 x 1 m; up to 5 per square.
+  - A plots (Arable): 100 x 1 m; up to 5 per square; anchored to arable field edges.
+  - M plots (Margin): 2 x 2 m; up to 15 per square.
+  - H plots (Hedgerow): 10 x 1 m; up to 2 per square.
+  - D plots (Hedgerow Diversity): 30 x 1 m; up to 10 per square.
+  - S/W plots (Streamside) and P plots (Perpendicular streamside): 10 x 1 m; several per square; P plots feature nests up to 10 m total length.
+  - R/V plots (Roadside verge): 10 x 1 m; up to 5 per square; sampled only in 2016 for repeated CS squares.
+- For each plot, field measurements include:
+  - Complete vascular plant list, selected bryophytes and macro-lichens, with presence/absence and % cover (to nearest 5% for covers ≥5%, presence recorded if <5%).
+  - Canopy cover of overhanging trees/shrubs and habitat context (e.g., glades, dead wood).
+  - Field handbook-guided identification and training; some species may be recorded as aggregates due to identification difficulty.
+- Data capture includes detailed plot metadata (location, year, slope, aspect, shade, ground/shrub heights, tree presence, etc.) and a structured nesting system for P plots.
+
+- Data files and structure:
+  - GMEP_VEGETATION_PLOTS_2013_16.csv: plot-level metadata per 1 km² square (SQ_ID), plot type (PLOT_TYPE), plot number, coordinates (EASTING/NORTHING at 10 km), year, and a broad set of habitat/plot attributes.
+  - GMEP_VEGETATION_PLOTS_SPECIES_2013_16.csv: species-level data per plot (BRC codes, scientific and common names, nest level, cover values by nest, total cover, plot year, coordinates, land classification, etc.).
+  - GMEP_VEGETATION_PLOTS_PNESTS_2013_16.csv: details for the P plot nests (nest count, maximum nest length, year).
+- Data collection adopted standardized methods aligned with the GB Countryside Survey protocols; deviations noted where Glastir option proportions required adaptation.
+- Quality control and assurance:
+  - Rigorous training, field handbooks, and ongoing communication to ensure consistency among surveyors.
+  - A QA exercise sampled about 10% of total squares, re-surveyed by botanical experts, with QA conducted in the southeast corner of squares (or next quadrant if needed).
+  - QA checks assessed the accuracy of plot location, plot-type selection, and species capture; across years, 85.5% to 90.9% of assessor-recorded species were captured in QA.
+  - UKCEH maintains a Quality Management System (ISO 9001:2015) with documented policies and procedures to sustain high data quality.
+- Data dissemination and reuse:
+  - Datasets are designed to be discoverable and usable with attached metadata; linkages to Countryside Survey enable integration for future analyses.
+  - The Glastir Monitoring & Evaluation Programme website and the Field Handbook (2016) provide methodological details and data context.
+- References and resources:
+  - Key methodological references include the ITE Land Classification (Bunce et al., 2007) and the GB Countryside Survey protocols.
+  - Publications include the GMEP annual and companion reports, field handbook, and data centre records.
+- Roles and teams:
+  - Appendix lists roles (data management, field team management, lead scientists, sampling/statistics experts, vegetation specialists, QA, and program/project management) and the names of field survey teams.
+- Overall aim for analysts:
+  - The GMEP vegetation data provide a robust, multi-scale, standardized dataset suitable for identifying biodiversity trends, testing correlations with Glastir actions, and building predictive insights about habitat responses and biodiversity trajectories across Wales.

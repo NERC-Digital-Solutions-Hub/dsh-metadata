@@ -1,0 +1,32 @@
+# Experimental design/sampling regime
+
+- The UK Butterfly Monitoring Scheme (UKBMS) collects data from over 1,000 sites annually across the UK, primarily via fixed-route transects known as Pollard walks, with alternative methods (timed counts or egg/larval web counts) for some species.
+- All-species transects
+  - Fixed-route line transect at each site; all butterflies recorded along the route on a weekly basis under standardized weather conditions.
+  - Transects typically 2–4 km long, divided into habitat/management sections; aim for 5 m width along the route and 26 counts per year (April–September).
+  - Transects are fixed to enable year-to-year comparisons; walks take 45 minutes to 2 hours.
+  - Counts occur 10:45–15:45 and require weather conducive to butterfly activity: dry, Beaufort wind ≤ 5, and temperature thresholds (≥13°C with 60% sunshine, or >17°C if overcast).
+- Single-species transects
+  - Follow the all-species transect methodology but focus on recording one focal species across one week or more within its flight period.
+- Timed counts and egg/larval web counts
+  - Timed counts record the abundance of a focal species over a set period in a defined area.
+  - Egg/larval counts record eggs or larval webs in suitable habitat areas.
+  - Weather conditions align with transect requirements.
+- Data collection methods
+  - Field records are captured on standard forms and entered into the Transect Walker software (free download from the UKBMS website).
+  - Data can be entered by the recorder or by a regional transect coordinator; coordinators compile data for all sites in their region.
+  - Transect Walker files are uploaded to an Oracle database housing all records.
+- Analytical methods
+  - After validation, a General Additive Model (GAM) imputes missing values and computes a site index.
+  - All-site indices from different sampling methods are combined to produce a national annual index for each species—the Collated Index—using a log-linear regression model that accounts for year effects (weather-driven) and site effects.
+  - The Collated Index for each species is updated annually as new data are incorporated; indices may shift slightly as past data are added.
+  - Collated Indices are calculated for species recorded at five or more sites per year.
+- Nature and units of recorded values
+  - Site indices are relative measures of population size, proportional to actual abundance, and depend on detectability (varying by species).
+  - Collated Indices are presented as the logarithm (base 10) of the Collated Index (Log10 Collated Index), scaled so the average index over the series equals 2.
+- Quality control
+  - Automatic checks within Transect Walker flag potential data entry errors (e.g., abnormally high counts, records outside known flight periods).
+  - Regional coordinators validate records; additional automated/manual validation screens check for out-of-range range records, unusual flights, first-time site records, and extreme values.
+- Format of stored data
+  - Collated Indices are stored as CSV files.
+  - Columns include: Species (scientific name per Fauna Europaea), Common name, Year, No. Sites, Collated Index, Time period (data period used to produce the Collated Indices).

@@ -1,0 +1,39 @@
+# SUMMARY
+
+- The report covers four years of the NERC Soil Biodiversity Thematic Programme at the Sourhope site, focusing on above-ground biomass (productivity), plant species composition and diversity, and how management treatments influence these factors.
+- Key management processes driving botanical changes:
+  - Mowing: regular cuts to ~6 cm height; fencing to exclude grazing animals since 1998.
+  - Fertilisation: plots receive nitrogen and/or lime; fertilised plots generally show higher productivity.
+  - Insecticide: application of Dursban 4 to insecticide plots; potential links to plant diversity via reduced herbivory.
+- Core finding framework:
+  - Productivity increases with nitrogen and lime, especially when both are applied; unfertilised plots may show nutrient loss over time.
+  - Plant functional groups shift with treatments; stress-tolerant species expand in unfertilised plots, while competitive species become more prevalent in fertilised plots.
+  - Bryophytes (mosses) expand across the site, likely aided by mowing height and lack of grazing.
+- The site and experimental design:
+  - The Rigg Foot Experimental Site at Sourhope comprises 5 replicate blocks on a downslope gradient, with 6 main plots per block, subdivided into 10 sub-plots; treatments allocated randomly.
+  - Treatments include: Control 1, Control 2 (no treatment), Nitrogen, Lime, Nitrogen & Lime, Insecticide.
+- Data collection and datasets:
+  - On-site Automatic Weather Station (1999–2002) providing rainfall, radiation, and temperature data, with some 2002 gaps due to a station malfunction.
+  - Above-ground biomass: annual biomass estimates from randomly sampled 0.5 m2 cells within sub-plots; seasonal mowing events recorded.
+  - Plant surveys: baseline (1998) plus annual 0.5 m2 point analyses in 2000–2002 using a 100-hole grid; bryophyte identification enhanced in 2002.
+  - Soil data: soil pH (5 cm depth) and soil moisture (theta probe) measurements; additional soil sampling and various small-scale botanical surveys conducted.
+  - Appendices document site activity, species lists, weather data, biomass data, and PCA/rank analyses.
+- Notable results highlights:
+  - Biomass productivity retains a clear treatment hierarchy, with the highest productivity in plots receiving nitrogen and lime together; in 2002, total biomass decreased across most treatments relative to 2001, with the greatest declines in Control 2 plots and the slope’s upper blocks showing larger reductions.
+  - Soil pH rose significantly in limed plots (approaching 7.0), while nitrogen alone had a smaller effect; higher pH correlates positively with biomass in most treatments, though the relationship varies by treatment (notably weaker for N or lime alone and negative for N+L in some analyses).
+  - A strong negative relationship exists between soil moisture and pH; higher pH plots tend to be drier.
+  - Point analysis shows improved plots dominated by Festuca rubra and Poa pratensis, while unimproved plots remain dominated by Agrostis spp.; bryophyte hits rise across treatments, especially in unimproved plots.
+  - Shannon diversity index declines in nitrogen+lime plots by 2002 relative to baseline, whereas other treatments show increases; beta-diversity patterns shift with lime and nitrogen treatments.
+  - Functional-group analysis (CSR framework) reveals a shift from stress-tolerators in unimproved plots to competitive-stress-ruderal groups in N+L plots; SR/C-S-R groups decrease with lime/insecticide treatments.
+- Interpretive conclusions:
+  - Mowing likely contributes to reduced Agrostis spp. and increased bryophyte cover; Festuca rubra expands in fertile plots.
+  - Lime-induced pH elevation and associated nutrient dynamics promote competitive growth, potentially at the expense of some less-fertile-dwelling species.
+  - Insecticide effects on diversity are plausible via changes in herbivory, aligning with prior literature, but direct causal links require cautious interpretation due to multiple interacting factors.
+  - Trampling in the newly implemented C2 plots (from 2002) likely contributed to reduced productivity there, possibly due to timing of labelled 13CO2 pulses.
+- Data accessibility and structure:
+  - Data are organized across multiple appendices, including detailed species lists, biomass per plot, year-by-year biomass trends, weather data, and point-analysis results (Appendices 1–8).
+  - Raw and summarized datasets accompany narrative findings, suitable for creating dashboards or self-serve analyses in data-support workflows.
+- Relevance for data support practice:
+  - Demonstrates the value of integrating long-term, multi-factor field data with standardized data collection (biomass, species, soil chemistry, moisture, weather) to enable cross-project insights.
+  - Highlights the importance of rigorous documentation of treatments, sampling dates, and methodological details to support combining datasets across years and treatments.
+  - Illustrates challenges of data gaps (e.g., weather station outages) and the need for clear metadata to sustain longitudinal analyses and end-user trust.

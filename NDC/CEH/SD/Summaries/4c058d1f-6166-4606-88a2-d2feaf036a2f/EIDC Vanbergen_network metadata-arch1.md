@@ -1,0 +1,38 @@
+# Data abstract
+
+- The dataset records insect-flower interactions in 10 birch-dominated woodland fragments in the River Dee catchment, Aberdeenshire, collected in 2009 (May–August). It includes species identities and frequencies of all insect-flower interactions observed, and supports analyses of pollination networks and ecological responses to grazing.
+- Relationship to published work:
+  - Linked to papers on network size, structure, and mutualism dependence in plant-insect extinction cascades (Functional Ecology, 2016).
+  - Related to work showing grazing alters insect visitation networks and plant mating systems (Functional Ecology, 2014).
+- Study design and sampling
+  - Two transects per site (50 × 2 m; 15 m apart; at least 50 m from woodland edge) randomly placed within each wood, sampled during the center of the flowering period.
+  - 10 woodland sites; five grazed by cattle and five undisturbed for at least 70–100 years (grazing currently light to moderate; e.g., ~8.4 cattle ha⁻¹; mean ~33 years of grazing history).
+  - One site (Brathens) lacked sufficient insect visitation data and was excluded from analyses, leaving replication n = 9.
+- Dataset contents and structure
+  - 13 columns, 2002 rows; total file size ~218 KB.
+  - Key fields include:
+    - Site name and geographic coordinates (latitude, longitude).
+    - Disturbance status: grazed vs ungrazed by beef cattle.
+    - Environmental context at sampling: wind speed (MPH) and temperature (°C) measured with portable instruments.
+    - Sampling date.
+    - Insect identification: order, family, and species (binomial or recognizable taxonomic unit).
+    - Plant context: flower species visited.
+    - Interaction data: frequency of interaction between each insect species/RTU and each flowering plant species.
+    - Flowers count: flowers_N, the count of flowers per plant individual where the insect was observed.
+- Geographic and temporal context
+  - Sites located in the River Dee catchment, Aberdeenshire (latitudes 57.0581–57.0367, longitudes -2.9621 to -2.5124).
+  - Sampling window: 20 May 2009 to 27 August 2009.
+- Data provenance and funding
+  - Data collection funded by British Ecological Society (SEPG 1563/1968) and NERC CEH Environmental Change Integrating Fund (NEC03463).
+  - Subsequent paper development supported by CEH national capability projects (NEC04654 & NEC05106).
+- Metadata and accessibility
+  - Metadata explicitly defined for each variable (e.g., site, coordinates, date, wind, temp, order, family, insect species, interaction count, flower species, flowers_N).
+  - Data designed to support replication and reuse, with the potential to be integrated into broader datasets or portals alongside documentation.
+- Potential analyses and applications
+  - Construct and compare plant–insect interaction networks between grazed and ungrazed sites.
+  - Examine how environmental factors (wind, temperature) and phenology (sampling date) influence interaction frequencies.
+  - Assess how grazing history shapes network size, structure, and mutualism dependence.
+  - Use as a basis for comparing across years or regions, or for meta-analyses related to pollination networks and grazing management.
+- Limitations and considerations
+  - Brathens site excluded due to insufficient data, reducing replication to n = 9.
+  - Data represent a single year (2009) and a specific regional context (Aberdeenshire), which may limit generalizability without additional datasets.

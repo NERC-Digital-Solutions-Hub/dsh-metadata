@@ -1,0 +1,28 @@
+# River Carnon
+
+- The document centers on a dataset entry for River Carnon with a start date of 15 September 1992 and an end date of 4 November 1994, plus a grid reference of SW772426. A vast number of fields are present but mostly blank or filled with placeholders, indicating substantial missing metadata or corrupted entries.
+- Key metadata that is present and useful for Data Stewards:
+  - Start date: 15 September 1992
+  - End date: 4 November 1994
+  - Grid reference: SW772426
+- Data governance implications:
+  - The record demonstrates incomplete metadata and inconsistent field completion, challenging discoverability and interoperability.
+  - Highlights the need for standard metadata capture (e.g., accurate dates, coordinates, units, provenance, data format, and accessibility/licensing).
+- Data quality and preparation considerations:
+  - The dataset requires quality assurance: fill missing metadata, standardize formats, and potentially transform or reconcile non-interoperable fields.
+  - Documentation of work performed on the dataset should be produced to aid future reuse.
+- Data sharing and availability:
+  - There are explicit sharing considerations to identify (disclosure risks, embargoes, proprietary issues) and to implement update mechanisms.
+  - The dataset should be uploaded to relevant portals and catalogued, once metadata is sufficiently complete.
+- Practical challenges illustrated:
+  - Incomplete user needs picture and aligning them with dataset capabilities.
+  - Timely ingestion from data creators.
+  - Encouraging data creators to meet metadata standards.
+  - Managing data across many systems and potentially large, hard-to-transfer datasets.
+  - Dealing with outdated databases that require bespoke, non-interoperable solutions.
+- Recommended actions for Data Stewards:
+  - Collaborate with data creators to complete and standardize metadata.
+  - Adopt a publishing mindset to ensure the dataset is usable and discoverable.
+  - Implement quality assurance, cleaning, and transformation of data before sharing.
+  - Establish clear update and maintenance processes, respecting any sharing limitations.
+  - Document and communicate the processing steps and data lineage to ensure reusability.

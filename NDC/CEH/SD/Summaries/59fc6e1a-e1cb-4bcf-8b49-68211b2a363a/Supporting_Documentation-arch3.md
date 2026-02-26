@@ -1,0 +1,23 @@
+# Method
+
+- Objective: Investigate the distribution and apparent density of tsetse populations in Mambwe District, Eastern Province, Zambia.
+- Study period: Two field surveys conducted in 2013—one in the cool dry season (May/June) and one in the hot dry season (November).
+- Sampling design: Black screen fly rounds sampled along a transect from the eastern Luangwa Valley plateau (about 900 m) to the valley floor near Mfuwe Airport (about 550 m). The transect started at Wazaza (old tsetse barrier), followed roads through Msoro to Mfuwe, ending at M'nkanya turning.
+- Fly rounds and sampling frequency: Fly rounds approximately 1 km apart perpendicular to the road; each fly round was 6 km long with stops every 200 m.
+- Field method: A two-person team carried a black screen with fly nets; screens were baited with phenols and acetone to boost sampling efficiency. Any tsetse alighting on the screen or personnel were collected and identified.
+- Timing: Fly rounds conducted daily at 7 am to align with peak tsetse activity.
+- Target and incidental species: Focus on Glossina morsitans morsitans; Glossina pallidipes were recorded but appeared infrequent.
+- Data collection and coordinates: Geographic coordinates recorded at each stop using a handheld GPS.
+- Data structure and contents: Dataset provided as a CSV named DDDAC_tsetse_2013.csv. Key fields include:
+  - Code: unique observation identifier
+  - Survey: "One" for May/June, "Two" for November
+  - ID_Survey: within-survey observation identifier
+  - BFR: fly round number
+  - Stop: sampling point on each fly round
+  - Latitude/Longitude: decimal degree coordinates (NA if missing)
+  - Date: sampling date
+  - Result: 1 if tsetse recorded, 0 if not
+  - Count: number of tsetse recorded
+- Data quality notes: NA values indicate missing data; dataset documents presence/absence and counts at each stop.
+- Geographical coverage: Longitude 31.826–32.094; Latitude -13.248 to -13.828.
+- Data accessibility and limitations: While the dataset is structured for analysis and sharing (including explicit metadata fields), some data gaps exist (NA entries) and only limited records of G. pallidipes were detected, potentially affecting species-specific analyses.

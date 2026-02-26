@@ -1,0 +1,22 @@
+# Data abstract
+
+- The dataset contains information on the species identity and frequency of all insect-flower interactions recorded in 10 birch (Betula spp.) woodland fragments surveyed in 2009 (May–August).
+- Data collection setup:
+  - Two transects per site (50 × 2 m; 15 m apart and at least 50 m from the woodland edge), randomly placed in the center of each wood before flowering.
+  - Five sites disturbed by cattle grazing and five undisturbed; livestock absent for 70–100 years in undisturbed sites; grazing in disturbed sites was light to moderate and long-term.
+  - One site (Brathens) yielded insufficient data for network construction; analyses used replication n = 9.
+- Spatial and temporal scope:
+  - Sites located in the River Dee catchment of Aberdeenshire, Scotland (roughly latitudes 57.0581–57.0367, longitudes -2.9621 to -2.5124).
+  - Sampling conducted between 20 May and 27 August 2009.
+- Dataset composition:
+  - 13 columns, 2002 rows, and 218 KB.
+  - Fields include: site name, geographic coordinates (latitude, longitude), grazing disturbance status, wind speed, temperature at sampling, sampling date, insect order and family, insect species (binomial or RTU), interaction frequency between each insect and flowering plant, plant species, and flowers_N (count of flowers per plant individual where insect was recorded).
+- Data provenance and funding:
+  - Co-funded by British Ecological Society (SEPG 1563/1968) and NERC CEH Environmental Change Integrating Fund (NEC03463); CEH national capability project supported subsequent papers.
+  - Lineage notes: data underpin two Functional Ecology papers; DOI link provided for the 2014 paper and the in-press 2016 paper.
+- Relation to broader research:
+  - Data were collected to examine how grazing affects insect visitation networks and plant mating systems.
+  - Later analyses used the dataset to explore network size, structure, and mutualism dependence in relation to extinction cascades.
+- GIS-relevance and potential use:
+  - Enable mapping of site locations, grazing status, and spatial patterns of insect-plant interactions.
+  - Can be integrated with environmental layers (wind, temperature, habitat type) and other ecological datasets to analyze spatial networks and habitat effects on pollination interactions.

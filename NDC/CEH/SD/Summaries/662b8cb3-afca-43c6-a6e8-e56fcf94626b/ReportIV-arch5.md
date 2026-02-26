@@ -1,0 +1,56 @@
+# SUMMARY
+
+- Four years into the NERC Soil Biodiversity Thematic Programme, the Sourhope field site has been monitored to assess changes in above-ground biomass, species composition, and diversity under five main management treatments (Control 1, Control 2, Nitrogen, Lime, Nitrogen & Lime) plus an insecticide treatment, across 5 replicate blocks and 6 main plots per block.
+- Key drivers of plant community change identified:
+  - Mowing (6 cm sward height) tends to reduce Agrostis spp. and promote Festuca rubra, with bryophyte expansion likely linked to lowered disturbance and sward height.
+  - Fertilisation (N and/or lime) increases productivity, with the strongest growth in plots receiving both N and lime; lime markedly raises soil pH toward ~7.0, affecting plant functional groups and moisture dynamics.
+  - Insecticide treatment may be associated with higher plant diversity, potentially through altered herbivory and shifts in palatable species, though direct causality is cautious due to limited mechanistic data.
+  - Trampling (notably in new C2 plots) reduced productivity, likely due to intensive activity during labelled 13CO2 pulses.
+- Data and measurement scope (dataset landscape for data stewards):
+  - Biomass: annual above-ground biomass per plot, with five cuts per summer (1999–2002); baseline and successive year comparisons shown (Appendix 6; Figure 2).
+  - Vegetation composition: repeated Point Analysis surveys (baseline 1998; 2000–2002) with 0.5 m2 cells, 25-point baseline, 100-point frame per survey; includes full species lists (Appendix 3) and bryophyte identifications (2002 enhancement).
+  - Bryophytes: species counts and biomass contributions tracked over 2000–2002 (Appendix 8; Figure 6).
+  - Soil properties: soil pH measured at 5 cm and across plots (1998 baseline; 2002 re-measurement), soil moisture (theta probe, 2002), with noted correlations between pH, moisture, and productivity (Figures 3–4).
+  - Climate data: on-site Automatic Weather Station data for rainfall, radiation, and temperature (Appendix 5; 1999–2002).
+  - Gas/flux work: Phase II activities included tracing 13CO2 pulses and related tracer studies with mobile CEH labs.
+  - Treatment design and site layout: 5 blocks, 6 main plots per block, 10 sub-plots per main plot; 0.5 m x 0.5 m cells used to allocate data collection (Appendix 1 map).
+- Data governance and availability (relevant for data stewards):
+  - Primary data repository and project details are available via the Soil Biodiversity website (http://www.nerc-merlewood.ac.uk/soilbio/index.html) and through the Centre for Ecology and Hydrology, Windermore Road, Grange-over-Sands, Cumbria.
+  - Data coverage includes Phase I (1998–2001) and Phase II (2002) projects, with ongoing fieldwork by multiple project teams (Appendix 4).
+  - Data volumes noted: 11,621 soil samples collected to date; extensive weather, biomass, and point-analysis datasets; Appendix 5–8 enumerate dataset-specific contents and structures.
+- Data quality, provenance, and interoperability considerations:
+  - Measurements follow explicit protocols (e.g., drying biomass at 80°C; baseline 1998 survey; standardized mowing and treatment schedules).
+  - Statistical analyses (ANOVA, PCA) are applied to assess treatment-year interactions and functional group shifts (e.g., Figure 2c, Figure 5a–b, Figure 9).
+  - Notable data gaps and caveats for stewardship:
+    - 2002 weather data includes missing periods due to a station malfunction; Konza station data substituted for missing intervals (Appendix 5 note).
+    - C2 plots experienced trampling effects during intense sampling activities, affecting productivity estimates.
+    - Some treatment- and year-specific data were not collected (e.g., Control 2 observations in 2000–2001).
+- Key data elements and metadata implications for data stewards:
+  - Taxonomic standards and species lists: detailed Appendices (Appendix 3) include 34 vascular plant and bryophyte species; consistent taxonomy across years is essential.
+  - Site and plot metadata: explicit mapping of blocks, plots, sub-plots, and 0.5 m x 0.5 m sampling cells; documented mowing, fertilisation, and insecticide application timing and rates (Appendix 2).
+  - Temporal alignment: multi-year time series (1998 baseline; 1999–2002 measurements) with yearly biomass cycles and point analyses; careful versioning and time-stamping recommended.
+  - Data formats and units: biomass (g per plot), pH (unitless within water), moisture (theta probe units), rainfall and radiation (standard meteorological units); ensure consistent unit usage across datasets.
+  - Data provenance: linkage among site activity, plots, treatments, and measured variables; cross-reference with Appendices 1–8 for dataset lineage.
+- Practical implications for Data Stewards:
+  - Ensure a robust data dictionary and metadata standard (taxon taxonomy, units, methods, sampling intervals, and treatment definitions).
+  - Implement data versioning and change-tracking across years, especially given missing data periods and re-measured soil properties.
+  - Provide clear data licensing, access controls, and data-sharing mechanisms to align with the Soil Biodiversity programme’s public-facing data portal and CEH data services.
+  - Maintain interoperability opportunities by aligning with commonly used ecological data schemas (e.g., CSR functional-type classifications, plant-hit metrics, and species abundance conventions) and producing crosswalks to enable reuse by external researchers.
+- Notable outcomes and management implications (high-level):
+  - Fertilisation clearly boosts productivity, but high lime application elevates soil pH toward 7.0, with potential moisture-linked stress in some plots; data indicate shifts toward competitive species under fertilised conditions.
+  - Mowing and grazing removal favor stress-tolerant and moss-dominated communities in unimproved plots; bryophyte expansion is a recurring pattern under reduced disturbance.
+  - Insecticide effects on diversity are observed but require cautious interpretation until direct causal links are established.
+  - Data-rich, multi-project integration will support meta-analyses on how management regimes shape soil-plant above-ground responses and functional community structure.
+
+- Appendices and datasets referenced (for data discovery and lineage):
+  - Appendix 1: Site map and treatment allocations
+  - Appendix 2: Summary of site- and plot-level treatments
+  - Appendix 3: Species list (vascular plants and bryophytes)
+  - Appendix 4: Summary of site activity
+  - Appendix 5: Automatic Weather Station data
+  - Appendix 6: Annual biomass by plot and block
+  - Appendix 7: Plot biomass rankings
+  - Appendix 8: Rank abundance data from point analysis (2000–2002)
+
+- Contact and access note:
+  - For full data access and project-level details, refer to the Soil Biodiversity website or contact the Centre for Ecology and Hydrology (Windermere Road, Grange-over-Sands, Cumbria).

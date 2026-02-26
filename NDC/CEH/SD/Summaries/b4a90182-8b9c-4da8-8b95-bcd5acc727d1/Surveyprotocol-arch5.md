@@ -1,0 +1,40 @@
+# Experimental Design
+
+- Objective: Assess potential sources of exposure to antibiotic-resistant bacteria (especially commensal GI bacteria) from livestock, poultry, and the environment; assess the use of antibiotics in humans and poultry.
+- Settings:
+  - Rural households and rural broiler farms in Mirzapur, Tangail district.
+  - Urban food markets in Dhaka city, Bangladesh.
+- Exposure groups and sampling framework:
+  - Rural villages
+    - Low exposure: Households without domestic poultry (n=20)
+    - High exposure: Households owning domestic poultry (n=20)
+  - Rural poultry farms
+    - Low exposure: Non-poultry farm workers (n=40)
+    - High exposure: Poultry farm workers (n=40)
+  - Urban food markets
+    - Low exposure: Fruit and vegetable sellers (n=40)
+    - High exposure: Live poultry sellers and slaughterers (n=40)
+  - Note: In rural villages, one poultry-owning and one non-poultry-owning household per village were selected; total of 40 broiler farms with one farm worker each; a healthy adult from the same village as each farm worker used for the low-exposure group.
+- Ethics and consent:
+  - Written informed consent with rights to withdraw at any stage.
+  - Ethical approvals: International Centre for Diarrhoeal Disease Research, Bangladesh (PR16071) and Loughborough University (R17-P037).
+- Data collection design:
+  - Interviewer-administered surveys conducted in Bangla; responses recorded on paper.
+  - Data entry: translations to English and entry into Excel.
+  - Phase 1: Feb–Apr 2017; Phase 2: Aug–Oct 2017.
+- Data collection team and process:
+  - Conducted by icddr,b researchers; data translated to English by bilingual staff.
+  - Random checks against original data sheets; frequency checks to identify out-of-range values.
+- Data structure and documentation:
+  - Three dataset files:
+    - ruralhouseholdsurvey.csv
+    - poultryfarmsurvey.csv
+    - urbanmarketsurvey.csv
+  - Blank cells indicate missing data.
+  - Supporting data-structure documentation:
+    - Ruralsurveydatastructure.rtf
+    - Farmsurveydatastructure.rtf
+    - Marketsurveydatastructure.rtf
+  - Each documentation file lists the column headings for its corresponding dataset.
+- Notable methodological detail:
+  - There was no expected sample-size effect and no formal sample-size calculation for this baseline survey.

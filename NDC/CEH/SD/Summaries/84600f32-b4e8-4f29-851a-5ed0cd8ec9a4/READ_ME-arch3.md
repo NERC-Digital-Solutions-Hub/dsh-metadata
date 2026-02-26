@@ -1,0 +1,22 @@
+# Collection/generation methods
+
+- Scope and timeframe: Deployment of RBRsolo3 pressure sensors from 2020 to 2023 in the upper regions of four UK estuaries (Conwy, Kent, Dyfi, Milford Haven). Loggers were not operating continuously during the period.
+- Deployment details: Sensor locations, including Eastings, Northings, and vertical reference levels (m, ODN) are specified per estuary (Conwy, Kent, Dyfi, Milford Haven). Each estuary uses its own vertical reference.
+- Measured variables and units: 
+  - Time (date and time)
+  - Air pressure (dbar)
+  - Sea pressure (dbar)
+  - Depth (m), referenced as the water depth beneath the sensor
+  - Negative depth values indicate a water level above the vertical reference
+  - Negative sea pressure indicates the sensor is out of the water
+- Quality control and data integrity:
+  - Sensors were factory calibrated; no additional quality control was performed.
+  - Data may include gaps due to non-continuous operation.
+- Data structure and file naming:
+  - Data are stored in CSV files
+  - File naming convention: Name_startdate_dataset.csv (e.g., Conwy_20201002_data1.csv)
+  - Name corresponds to estuary, startdate to the date, and dataset to the chronological sequence since the start date
+- Implications for monitoring governance and data management:
+  - Varying vertical reference levels across estuaries necessitate careful normalization for cross-site comparisons
+  - Absence of ongoing QC and potential data gaps highlight the need for metadata, provenance, and data quality indicators
+  - Public sharing of data and metadata should be considered in line with data governance practices to support transparency and reuse

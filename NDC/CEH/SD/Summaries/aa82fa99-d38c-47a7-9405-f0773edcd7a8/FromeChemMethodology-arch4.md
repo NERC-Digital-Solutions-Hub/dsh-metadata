@@ -1,0 +1,52 @@
+# Methodology
+
+- Overview
+  - Water samples were collected at the East Stoke flow gauging station from the main river flow.
+  - Samples were filtered on return to the laboratory and analysed as rapidly as possible, typically within a few days to a week.
+  - Samples that could not be analysed within the allotted time were omitted from the dataset.
+  - Given the long-term nature of the dataset, analytical methodologies changed over time; whenever a method changed, old and new methods were run in parallel for 3–6 months to assess consistency and ensure comparability.
+  - Any shifts in values due to methodological changes are discussed under the relevant determinand headings.
+
+- Determinands and Analytical Methods (by parameter)
+  - Nitrogen (NO3-N and TON)
+    - 1965–1986: NO3-N by diphenyl sulphonic acid colorimetric method.
+    - 1986–2004: NO3-N and NO2-N combined as TON via Flow Injection Analysis with cadmium reduction; colorimetric detection.
+    - From 2006: nitrate-N measured by ion chromatography (Dionex DX500).
+    - TON closely approximates NO3-N in most rivers; nitrate and nitrite measurements show nitrite typically <0.05 mg/L.
+    - Cadmium reduction method yielded slightly higher combined NO3-N+NO2-N results (0.08–0.12 mg/L) than the alternative method.
+  - Phosphorus
+    - Soluble reactive phosphorus (SRP) measured by molybdenum blue colorimetric method throughout the period.
+    - 1965–1986: manual reagent addition and spectrophotometric analysis.
+    - 1986 onward: automated using a Flow Injection Analyser.
+    - SRP analysed within 6 hours of sampling (to minimise stability issues) during 1965–2004.
+    - 2004–2006: LOCAR program analyses conducted by Thames Water laboratories.
+    - 2007–2009: CEH Wallingford laboratories analysed SRP within 24 hours of arrival using a Seal Auto Analyser 2.
+    - Total phosphorus (TP) and total dissolved phosphorus (TDP) were determined by digestion with acidic persulphate and subsequent reaction with acid ammonium molybdate; TP determined on filtered and unfiltered samples, respectively.
+    - During LOCAR (2004–2006), TP was assessed by ICP-OES, which differed significantly from pre-2004 data and from 2007–2009; some cross-project datasets (2004–2006) were omitted due to discrepancies.
+  - Dissolved reactive silicon (primarily silicic acid)
+    - Measured in filtered samples using molybdate-based colorimetry to form silicomolybdenum blue, quantified at 810 nm.
+    - 1986–2006: automated via Flow Injection Analysis; metol-sulphite reduction.
+    - From 2006: Seal Auto Analyser 2 used with tin(II) chloride as reductant.
+  - Major cations and anions
+    - Sodium, potassium, magnesium, and calcium: 1965–1996 by atomic absorption spectroscopy; 1997–2009 by ion chromatography.
+    - Sulphate and chloride: measured by ion chromatography from 1997 onward.
+  - pH
+    - Measured on unfiltered samples within 6 hours of sampling.
+    - 1965–1995 and 2006–2009: pH probe with standard buffers.
+    - 1996–2004: Metrohm 702 Autotitrator with Aquatrode electrode and buffer calibration.
+  - Conductivity
+    - Measured on unfiltered samples within 6 hours using a handheld conductivity meter; a 2-minute equilibration time used.
+  - Alkalinity
+    - Determined by acid titration of unfiltered samples.
+    - 1996–2004: Metrohm 702 Autotitrator; alkalinity calculated using a Gran titration plot.
+  - Suspended solids
+    - Filtration of ~1 kg river water onto pre-dried filters, drying to constant weight at 70°C for 24 hours.
+
+- Data quality, consistency, and provenance
+  - Method changes were documented and assessed for comparability via parallel testing during transition periods.
+  - Some determinand values show method-related biases (e.g., TON differences with cadmium reduction method).
+  - Data gaps occurred due to instrument failure, QC issues, or insufficient analytical staff time; analyses not completed within the defined time frame were omitted from the dataset.
+  - Cross-lab differences (e.g., ICP-OES vs other TP methods) led to notable discrepancies, resulting in selective omission of certain time slices to maintain dataset integrity.
+
+- References and methodological context
+  - The methodologies draw on standard references and project-specific validations, including APHA standards and multiple institution-based method papers (e.g., Murphy & Riley for SRP, Eisenreich et al. for TP, Tecator method references, and LOCAR-related studies).

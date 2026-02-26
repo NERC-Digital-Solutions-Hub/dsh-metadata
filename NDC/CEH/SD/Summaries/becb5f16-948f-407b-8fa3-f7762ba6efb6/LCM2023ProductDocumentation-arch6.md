@@ -1,0 +1,74 @@
+# The UKCEH Land Cover Map for 2023
+
+- Purpose and scope
+  - UKCEH Land Cover Map 2023 (LCM2023) is the eleventh UK land cover map, delivering 21 UKCEH Land Cover Classes (based on Biodiversity Broad Habitats) for Great Britain (GB) and Northern Ireland (NI).
+  - Maps land cover using automatic classification of Classification Scenes derived from Sentinel-2 Seasonal Composite Images plus Context Rasters; aims to support monitoring and decision-making with annual updates.
+  - Validation indicates overall accuracy of 83% at full thematic detail.
+
+- Data products (dataset suite)
+  - 10 m Classified Pixel datasets (GB and NI)
+    - Each pixel has two bands: the most likely UKCEH Land Cover Class (integer) and the associated classification probability/confidence.
+    - No generalisation by Land Parcel Spatial Framework to preserve fine detail (e.g., narrow features); outputs include a mosaic of Classification Scenes and a confidence band.
+    - GB is split into 32 Classification Scenes; NI uses a single Scene.
+  - Land Parcel products (GB and NI)
+    - Land Parcel Spatial Framework intersected with 10 m classified pixels to create parcel-level attributes.
+  - 25 m Rasterised Land Parcel datasets (GB and NI)
+    - Rasterised from the Land Parcel data; each parcel yields a 3-band raster: dominant land cover (mode), mean confidence (_conf), and purity (_purity).
+  - 1 km raster products (GB and NI)
+    - Summary rasters summarising the 25 m data to 1 km pixels:
+      - Dominant cover (1 band) for classes and aggregates.
+      - Percentage cover (21 bands for classes; 10 bands for aggregates) per 1 km pixel.
+    - Note: percentage totals may not sum exactly to 100 due to rounding; coastal areas may sum to less than 100.
+  - Seasonal Composite Images
+    - Four-season Sentinel-2 based composites (Jan–Mar, Apr–Jun, Jul–Sep, Oct–Dec) at 10 m resolution, using 10 Sentinel-2 bands; occasional gaps due to cloud cover are handled by classifier tolerance.
+  - Context Rasters
+    - 10 m contextual layers to reduce spectral confusion (GB and NI have different layers):
+      - GB: height, aspect, slope; distances to buildings, roads, tidal water, freshwater; foreshore mask; woodland mask; saltmarsh mask.
+      - NI: height, aspect, slope; urban mask; distances to coast, freshwater, roads; foreshore mask; tidal water mask.
+  - Classification Scenes
+    - GB: 32 GB tiles (approx. 100 x 100 km) used for training and classification; some tiles enlarged to accommodate sea extent.
+    - NI: single 49-band Scene combining the 40-band Sentinel-2 Seasonal Composite with NI Context Rasters.
+  - UK Land Parcel Spatial Framework
+    - Framework for parcel generalisation; MMU ~0.5 ha; used to stabilise land cover across time and enable change detection.
+    - Some dataset identifiers (gid) differ from LCM2015; spatial overlap remains the primary comparison method.
+  - Bootstrap Training
+    - Automated training using historic LCM observations (2020–2022) as training data when they show >80% probability and agree on the same class across years.
+    - Reduces need for costly field data; supports rapid production of annual maps.
+  - Random Forest classification
+    - RF classifier trained on Bootstrap Training samples; balanced sampling to ensure rare classes are learned adequately.
+    - Software stack includes Weka, PostGIS, and GDAL (open-source tools).
+  - Validation and quality
+    - Validation dataset comprises 33,107 reference points across all 21 classes.
+    - Overall accuracy: 83%.
+  - Known issues
+    - A small number of polygons may be missing in vector land parcel products; corresponding nodata in 25 m rasterised parcels. Effects on 1 km products are negligible; 10 m classified pixels are unaffected.
+  - Citations and DOIs
+    - Each dataset has its own DOI; usage should cite the respective Marston et al. (2024) papers for 2023 products and related datasets; see Table 5 in the document for details.
+  - Disclaimer
+    - Methods evolve; year-to-year differences may reflect methodological changes as well as real land-cover change.
+
+- Technical details and formats
+  - Coordinate systems
+    - GB: British National Grid, EPSG 27700.
+    - NI: Irish Grid (TM75), EPSG 29903.
+  - Pixel and parcel specifics
+    - 10 m Classified Pixels: 2-band rasters (class ID, conf) per GB and NI.
+    - 25 m Rasterised Land Parcels: 3-band rasters (mode, conf, purity) per parcel.
+    - 1 km Summary Rasters: dominants and percentages (per-class and per-aggregate) at 1 km resolution.
+  - Data provenance and validation
+    - Seasonal and context data derived from Sentinel-2 and UKCEH context datasets.
+    - Validation aligns output with a composite set from GB countryside surveys, National Forest Inventory, Rural Payments data, and expert validation points.
+  - Display and accessibility
+    - Appendix 5 and Appendix 6 provide recommended colour schemes (including colour-blind friendly versions) for displaying UKCEH Land Cover Classes; accompanying QGIS symbology files are provided.
+
+- Practical use and interpretation for Data Support
+  - Outputs support self-serve exploration of land cover and change over time, with multi-resolution products for different decision-making needs.
+  - The 10 m classified pixels enable detailed mapping of small features; the 25 m parcel products provide a robust, comparable time-series structure; the 1 km products support broad national-scale summaries.
+  - Bootstrap Training and Context Rasters help reduce spectral confusion between classes and improve classification reliability, particularly for complex habitats.
+  - Users should cite the appropriate DOIs for data products and be aware of method changes across years which may influence year-to-year comparability.
+  - For change detection and trend analysis, rely on the MMU-based Land Parcel Spatial Framework to maintain stable parcel units over time, and use the 1 km summaries to contextualise larger-scale patterns.
+
+- Appendices at a glance (context for interpretation)
+  - Appendix 1–2: UKCEH Land Cover Classes and their links to UK BAP Broad Habitats, with notes on potential spectral confusion and class definitions.
+  - Appendix 3–4: Full dataset lists, metadata, and correspondence matrices illustrating class-by-class validation results and accuracies.
+  - Appendix 5–6: Colour recipes (standard and colour-blind friendly) for mapping classes in GIS environments, plus associated symbology files.

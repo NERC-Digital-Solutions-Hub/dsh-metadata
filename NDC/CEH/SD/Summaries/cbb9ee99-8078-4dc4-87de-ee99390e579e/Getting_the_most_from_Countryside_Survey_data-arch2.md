@@ -1,0 +1,9 @@
+# Notes on the downloadable data
+
+- The exact locations of Countryside Survey (CS) field survey squares are kept confidential by CEH to preserve representativeness, with precision not greater than 100 square kilometres. This prevents external users from identifying whether squares fall within defined areas.
+- CS Field Survey data cover a sample of 1 km squares across Great Britain (GB). Each selected square is mapped and features are measured both at the square level and within-square (e.g., quadrats for vegetation, soils). Measurements include binary and continuous variables.
+- Not all GB squares are included in field surveys. Excluded are squares where >90% is sea or >75% is urban, based on 1:250,000 OS maps. Estimates for GB or regions assume excluded squares have vegetation similar to sampled squares; bias is considered small except in areas with high sea/urban proportions.
+- Sampling design is stratified, not random. Squares are selected within designated strata defined by the ITE Land Classification. The classification has evolved to 45 land classes (21 in England, 8 in Wales, 16 in Scotland). Estimates that ignore stratification may be non-representative and misestimate variation.
+- Estimation approach uses ratio estimates for each land class, weighting by the vegetative land area of each class. From 1998, standard errors and confidence intervals are derived using the bootstrap method due to skewness concerns (Cochran 1963; Efron & Tibshirani 1993).
+- Data handling and reporting emphasize standardised outputs (e.g., maps, charts, reports) and the storage/uploading of created datasets to appropriate portals.
+- References for methods and sampling design include Barr et al. (1993) Countryside Survey 1990 Main Report, Cochran (1963) Sampling Techniques, and Efron & Tibshirani (1993) An Introduction to the Bootstrap.

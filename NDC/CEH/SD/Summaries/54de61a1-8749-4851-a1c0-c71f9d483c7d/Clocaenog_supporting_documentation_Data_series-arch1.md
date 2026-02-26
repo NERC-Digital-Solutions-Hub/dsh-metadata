@@ -1,0 +1,82 @@
+# Climoor field site in Clocaenog forest Supporting documentation for data
+
+- Purpose and scope
+  - Climoor is a climate change manipulation experiment using automated roof technology to simulate drought and warming over the next 20–30 years in upland moorland.
+  - Location: Clocaenog Forest, North East Wales (53°03'19"N, -3°27'55"W); established 1998.
+  - Ecosystem: upland west-atlantic moorland dominated by Calluna vulgaris (heather); rich bryophyte and shrub community; soil is humo-ferric podzol.
+  - Data emphasis: comprehensive, long-term abiotic and biotic measurements across climate treatments to inform ecological responses and modeling.
+
+- Climate change treatments and experimental design
+  - Treatments: drought (D) and warming (W), each with three replicated plots (4 m x 5 m). Three control plots mirror shading effects of structures; total of 9 plots arranged in blocks.
+  - Drought treatment
+    - Timing: May–September (1999–2011); from 2012, April–October.
+    - Method: retractable polyethylene roof over plot; rainfall exclusion reduces annual rainfall by ~20% and excludes ~80% of rain during the drought period.
+    - Operation constraints: curtains do not operate in high winds (>10 m/s).
+  - Warming treatment
+    - Method: retractable aluminium mesh curtains over plots; reflects 96–97% of IR radiation, reducing night-time heat loss; nighttime warming implemented after dusk (~15 minutes with light threshold).
+    - Rainfall interactions: roof retraction occurs during rain to minimize rainfall loss; overall annual rainfall reduction ~14%.
+    - Operation constraints: curtains paused in high winds (>10 m/s).
+  - Treatment schedule details are summarized in accompanying tables (Tables 1–2) with site-specific climate inputs (1997–2014) and growing-season adjustments.
+
+- Site information and baseline characteristics
+  - Growing season: typically June–August; shoulder seasons April–May and September–October; winter dormancy November–February.
+  - Soil and depth characteristics: variable eluvial (E) and illuvial (Bh) horizons; typical depth 6–17 cm for E horizon when visible.
+  - Baseline climate and deposition: mean site temperature around 8.0°C; mean soil temperatures ~7.5°C in control plots; mean annual rainfall ~1411 mm; total nitrogen deposition ~20–25 kg N ha^-1 yr^-1.
+  - Vegetation and biomass context: Calluna vulgaris, Vaccinium myrtillus, Empetrum nigrum; bryophytes and litter dynamics documented; representative forested understory and moss layers recorded.
+
+- Data types, instruments, and data processing (overview)
+  - Data inventory (summary): AWS meteorological data; plot-scale micro-meteorological data; rainfall and rainfall chemistry; throughfall rainfall; water table depth; soil respiration; trace gases (CH4, N2O); net ecosystem CO2 exchange (NEE); photosynthesis; vegetation biomass (Pin-point); canopy reflectance; vegetation phenology; vegetation chemistry; litterfall; root biomass; soil microbial biomass; nitrogen mineralisation; SOM/SOC/bulk density; soil solution and leachate chemistry.
+  - Data collection cadence and history: daily to weekly measurements for many variables; long-running datasets (1998–present where possible); multiple measurement technologies evolved over time (e.g., CIRAS versus LI-COR systems for respiration).
+  - Data processing and standardization highlights
+    - Conversion between raw units to mg CO2-C m^-2 h^-1 for respiration and NEE using established factor conversions.
+    - Biomass calibration for Pin-point data using species-specific conversion factors derived from destructive sampling.
+    - Canopy reflectance indices (NDVI at 680 and 570 nm; PRI) calculated from ground-based spectrometry.
+    - Phenology and growth metrics collected for leading shoots; standardization across years and species (Calluna, Vaccinium, Empetrum).
+    - Litterfall data aggregated to annual biomass and converted to g m^-2.
+  - Data management and accessibility
+    - Most data described as stored, but not all are in the Environmental Information and Data Centre (EIDC); older or less-frequently collected datasets may be outside the portal.
+    - Contacts for data details: Sabine Reinsch and Bridget Emmett (CEH Bangor) for additional data specifics and availability.
+
+- Specific data collection methods and datasets (highlights by topic)
+  - AWS meteorological data
+    - Sensors: temperature, relative humidity, rainfall, pressure, net radiation, solar radiation, PAR, winds.
+    - Positioning: originally at 1 m, moved to 4 m after thefts; data sampled every minute, reported as hourly or half-hourly averages.
+  - Micro-meteorological plot data
+    - Soil and air temperature, soil moisture via TDR sensors and earlier theta probes; data logged daily.
+  - Rainfall and rainfall chemistry
+    - Site-level rainfall via storage rain gauge (biweekly collection; robust to power issues).
+    - Rainfall chemistry: pH, nitrate, chloride, sulfate, DOC, ammonium using ion chromatography and TOC analyses.
+  - Throughfall data
+    - Plot-level rain collectors (biweekly); data quality checks and exclusions when equipment malfunctions occur; percent-change method used to infer treatment rainfall relative to site rainfall.
+  - Water table depth
+    - Permeable tubes to bedrock (installed 2009); biweekly manual readings; maximum detectable depths recorded per plot.
+  - Soil respiration and trace gases
+    - Three collars per plot; progression from static chamber with gas analyzer to automated LI-COR-based systems (2013–2014); respiration expressed as mg CO2-C m^-2 h^-1; CH4 and N2O measured with static chambers and GC analysis.
+    - Automated campaigns in 2013–2014 with hourly measurements for at least 24 hours per plot.
+  - Net ecosystem CO2 exchange (NEE)
+    - Measurements in 2002–2004 and 2011 using CIRAS-2 and later LI-COR systems; respiration corrections using biomass-adjusted fluxes.
+  - Photosynthesis
+    - Ambient and response-curve measurements for Calluna vulgaris, Vaccinium myrtillus, Empetrum nigrum; PAR and Ci controls; leaf mass and area through destructive sampling for standardization.
+  - Vegetation biomass and Canopy
+    - Pin-point vegetation surveys (1998–2012; quadrats C7, D4, F6; 300 pins per plot); conversion factors to biomass developed per species; bryophyte pooling for calibration.
+    - Canopy reflectance (NDVI and PRI) from ground-based spectrometry (2001–2004).
+  - Phenology, growth, and pathogens
+    - Shoot elongation and phenophase scoring across species; herbivory and fungal infection notes (rust Valdensia heterodoxa).
+  - Vegetation chemistry and litterfall
+    - Determination of C, N, P, K, Ca, Mg, lignin, tannin, alpha-cellulose, carbohydrates; litter collected via collectors (1999–2002; monthly, then less frequent).
+  - Root biomass and soil biology
+    - Root biomass from multiple core methods across years (2003, 2004, 2008, 2011); various core sizes and extraction protocols.
+    - Soil microbial biomass via chloroform fumigation (2000, 2001, 2012).
+  - Nitrogen processes and soil properties
+    - Nitrogen mineralisation (1998–2004) via paired cores and KCl extraction; SOM/SOC and bulk density measured from cores; multiple depth delineations and lab analyses.
+    - Soil solution and leachate chemistry with lysimeters and tensioned samplers; analysis of NO3, Cl, SO4, pH, DOC.
+
+- Practical notes, challenges, and data quality
+  - Legacy data caveats: some data processing steps may not align with current best practices; data quality control historically performed visually in Excel rather than automated checks.
+  - Data gaps and scale challenges: drought and warming data span several years with occasional missing plots due to equipment issues or data gaps; rainfall throughfall adjustments require careful handling when plot data are lost.
+  - Access and discoverability: some data may not be housed in central portals; direct contact advised for dataset availability and metadata.
+
+- Appendices and site layout
+  - Appendix 1: Site layout and grid references.
+  - Appendix 2: Quadrat and plot layout for measurement areas.
+  - Appendix 3: Plot layout with quadrats and measurement areas highlighted.

@@ -1,0 +1,30 @@
+# Water chemistry samples from Durleigh Reservoir 2018
+
+- Timeframe and scope: 2018 dataset of water chemistry from Durleigh Reservoir, collected to assess in-reservoir water quality throughout the year.
+- Sampling design:
+  - 3 locations were surveyed, with samples taken at three depths at each location (surface, middle, bottom) named L1S, L1M, L1B.
+  - Sampling conducted between 22 February 2018 and 5 October 2018; on 5 April 2018, location 3 was inaccessible, so no data for that date at that location.
+  - All locations were accessed by boat.
+- Locations (coordinates):
+  - Location 1: lat 51.1213, lon -3.0400
+  - Location 2: lat 51.1210, lon -3.0403
+  - Location 3: lat 51.1215, lon -3.0445
+- Sampling and processing methods:
+  - Collected with a Van dorn Water sampler following Wessex Water protocol for metals, inorganics, T&O metabolites, and BOD.
+  - Processing performed at the Wessex Water Scientific Centre, Saltford.
+  - Date/time format: dd-mmm-yyyy; time format: HH:MM.
+  - Some parameters were not reported when laboratory processing frequency increased.
+- Parameters measured and units:
+  - Physical/chemical water quality: Suspended solids; turbidity (NTU) by turbidimeter; conductivity; pH; temperature; alkalinity.
+  - Nutrients and inorganic species: Ammonia (mg/L); TON (mg/L) (with nitrate reduced first); Nitrite (mg/L); Nitrate (mg/L); Ammonium (mg/L); Orthophosphate (mg/L); Sulphate (mg/L); Chloride (mg/L); Silica (mg/L); Sodium (mg/L); Magnesium (mg/L); Calcium (mg/L); Potassium (mg/L).
+  - Metals: Aluminium (total and soluble) (mg/L); Manganese (total and soluble) (mg/L) - measured by ICP-MS; Iron (total and soluble) (mg/L) - ICP-MS; Copper (total and soluble) (mg/L); Zinc (total and soluble) (mg/L); additional metals listed as part of the dataset.
+  - Geosmin and MIB (ng/L): analyzed by GC/MS/MS; extraction via solid phase extraction with dichloromethane elution.
+- Quality assurance and reporting notes:
+  - Calibration standards, analytical quality control (QC), and blank samples run alongside test samples.
+  - Concentrations reported as "<0.02" indicate the level of detection for that parameter.
+  - Some parameters were not reported when processing frequency increased.
+- Biochemical Oxygen Demand (BOD):
+  - Measured as 5-day BOD at 20°C (mg O2/L).
+  - BOD was measured only at the surface and bottom of the water column at Location 1 on 21/22/23 August 2018.
+- Data provenance and citation:
+  - Please cite the dataset as: Slavin, E.I., Wain, D.J. 2018. Water chemistry samples from Durleigh Reservoir 2018.

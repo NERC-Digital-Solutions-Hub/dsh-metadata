@@ -1,0 +1,37 @@
+# Data structure
+
+- Purpose: Document data collection and organization for an experiment on ectomycorrhizal (ECM) fungi growth under varying nitrogen and phosphorus sources.
+- Experimental design:
+  - 7 ECM fungal isolates tested.
+  - 9 MMN nutrient agar treatments, varying nitrogen (N) and phosphorus (P) sources while keeping other components constant.
+  - N sources: inorganic (ammonium nitrate NH4NO3) and organic (glycine, glutamines, glutamic acid, phenylalanine); also a NoN (no nitrogen) condition.
+  - P sources: inorganic (monopotassium phosphate KH2PO4) and organic (phytic acid dipotassium salt); also a NoP (no phosphorus) condition.
+  - Columns focus on isolates and treatment composition to capture how N and P choices affect growth.
+- Data structure and variable codes:
+  - B: Agar composition corresponding to the N and P treatment.
+  - C: Nitrogen type (InN, OrgN, NoN).
+  - D: Phosphorus type (InP, OrgP, NoP).
+  - E: Measured growth rate (mm per day).
+  - F: Biomass (g dry weight per cm2).
+- Isolates used (reference names):
+  - Laccaria bicolor (lb101B)
+  - Laccaria amethystina (la56)
+  - Paxillus involutus (Pi47)
+  - Piloderma byssinum (PbUP185)
+  - Suillus bovinus (O96)
+  - Suillus viscidus (Sv171)
+  - Suillus viscidus (SvAFST1)
+- Culture and preparation details:
+  - Fungi cultured at 18°C on 1 L of control MMN nutrient agar (pH 5.5) with 10 g/L glucose as carbon source.
+  - Trace elements added (MgSO4·7H2O, CaCl2·2H2O, FeCl3·6H2O, NaCl) to MMN mix.
+  - Each plate contained 90 mm diameter and used 1 L MMN solution; nine different MMN solutions prepared varying only N and P sources.
+- Measurements and data collection:
+  - Colony diameter measured daily with a ruler over a 57-day period.
+  - Biomass determined by harvesting mycelia, freeze-drying, and weighing (g dry weight per cm2).
+- Data organization and interpretation notes:
+  - Data are organized to reflect the relationship between fungal isolate, nutrient treatment (N and P types), and growth outcomes (growth rate and biomass).
+  - A table (not shown) maps the codes B, C, D to their specific nutrient configurations, with E and F providing growth metrics.
+- Key considerations for data management:
+  - Clear metadata linking isolate IDs, treatment codes, and measurement timelines to ensure traceability.
+  - Documentation of measurement methods (daily ruler measurements, biomass drying protocol) for reproducibility.
+  - Potential inconsistencies in the text (growth rate referenced as 52 days in the table vs. 57 days of diameter measurements) to be resolved in data curation for consistency.

@@ -1,0 +1,40 @@
+# Dataset documentation
+
+- Land Cover Map 1990 (LCM1990) is a parcel-based UK land cover dataset created from Landsat-5 imagery (30m resolution) classified into 21 Broad Habitat-based classes. It supports diverse user needs and aligns with LCM2007/LCM2015 frameworks to enable long-term change analyses.
+- Core data architecture
+  - Vector product: polygons with rich attributes, including dominant class, per-polygon class breakdown, and classification confidence.
+  - Raster products: 25m raster (dominant class per polygon, mean per-polygon confidence, percentage cover for the dominant class), plus 1km products (dominant cover and percentage cover for target and aggregate classes).
+  - 25m and 1km products are provided separately for Great Britain and Northern Ireland with appropriate coordinate systems.
+- Class structure and metadata
+  - 21 LCM1990 target classes based on UK Broad Habitats (JNCC Jackson 2000).
+  - Some Broad Habitats are subdivided (e.g., Built-up Areas and Gardens into Urban and Suburban; Dwarf Shrub Heath into Heather and Heather grassland).
+  - Each parcel (gid) has a unique identifier and a comprehensive metadata suite, including the dominant class, per-polygon pixel counts by class, mean classification probability (conf), and standard deviation (stdev) of uncertainty.
+  - Uncertainty is quantified at the per-polygon level via Random Forest per-pixel probabilities (also available for the 25m raster).
+- Data scope, resolution, and mapping units
+  - Minimum mappable area: >0.5 ha; parcels smaller than 0.5 ha and linear features <20 m are dissolved into surrounding areas.
+  - Outputs include vector polygons, 25m raster bands, and 1km aggregated rasters (dominant and percentage covers).
+  - The 1km products express percentage cover as integers (with slight rounding that may cause sums to deviate from 100%; coastal pixels may sum to less than 100).
+- Data formats and access
+  - Data available as uncompressed GeoTIFF rasters and vector datasets; 25m and 1km rasters cover GB and NI separately; vector products available on request.
+  - Projections: Great Britain in British National Grid (EPSG: 27700); Northern Ireland in TM75 Irish Grid (EPSG: 29903).
+  - Access: CEH Environmental Information Platform (eip.ceh.ac.uk) for raster data; full vector product on request; licence fees may apply.
+- Documentation, DOIs, and citation
+  - Each LCM1990 product has an individual DOI for proper citation (GB vector, GB 25m raster, various 1km products; NI equivalents as well).
+  - Guidance provided for citing DOIs in publications, with examples (e.g., Rowland et al., 2020).
+- Quality assurance and validation
+  - Extensive QA checks: projection correctness, spatial completeness, modal class presence in polygons, heading alignment, value ranges (0–100 for percent rasters), and pixel size validation.
+  - Validation against independent datasets (e.g., Countryside Survey, National Forest Inventory) with results planned for a separate publication.
+  - Parcel framework is based on 2007 Ordnance Survey MasterMap data; field boundary changes are infrequent, limiting impact on overall accuracy.
+- Data lineage and processing
+  - Based on a consistent object-based classification workflow used for LCM2007/LCM2015, enabling comparability and future 1990–2015 change analyses (25-year UK product line).
+  - DOIs and metadata ensure reproducibility and data provenance.
+- Example data content and visualization notes
+  - Vector data comprises ~6.7 million polygons for Great Britain and ~0.9 million for Northern Ireland.
+  - Example raster and vector products illustrate the relationship between 25m detail and aggregate 1km outputs, with guidance on when to prefer vector (with metadata) versus raster (simplified, metadata-light) formats.
+- Appendices and supplementary information
+  - Appendix 1/2 provide detailed class definitions and Bioregional Broad Habitat interpretations; Appendix 3 provides a standard LCM color-mapping recipe.
+  - Appendix 4 lists composite images used during LCM1990 production.
+- Practical considerations for monitoring frameworks
+  - Rich per-polygon metadata and per-class uncertainty enable transparent data governance, quality assessment, and decision-making support.
+  - Availability of DOIs and clear citation guidance enhances reproducibility and traceability in policy evaluation and environmental health reporting.
+  - Data scale choices (0.5 ha MMU, 25m and 1km products) support both fine-grained monitoring and UK-wide modelling with consistent spatial framework.

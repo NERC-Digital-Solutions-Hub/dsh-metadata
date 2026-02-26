@@ -1,0 +1,35 @@
+# Plot_locations_metadata.rtf
+
+- Purpose and scope
+  - Metadata for Plot_locations.csv, which holds the locations of sampling sites.
+- Experimental design and sampling regime
+  - Three transects, each 75 m long, spaced 20 m apart, across a hillslope and perpendicular to the river Hiraethlyn.
+  - Along each transect, four boreholes drilled to bedrock at locations listed in Plot_locations.csv.
+  - Some locations include a second borehole labelled 'new'; these do not differ from 'old'.
+- Collection methods and instrumentation
+  - Coordinates collected with a handheld Garmin GPS device.
+  - Latitude and longitude recorded in degrees, minutes, seconds and converted to decimal degrees.
+  - Also recorded as six-figure Ordnance Survey National Grid references.
+- Nature and units of recorded values
+  - Latitude and Longitude: decimal degrees (WGS84).
+  - OS Grid references provided as six-figure Easting/Northing.
+- Data structure (Plot_locations.csv)
+  - 8 columns:
+    - Name: Site identifier
+    - Latitude: decimal degrees
+    - Longitude: decimal degrees
+    - Date: date of measurement
+    - Time: time of measurement (GMT)
+    - Easting: British National Grid Easting
+    - Northing: British National Grid Northing
+    - ODN: Elevation in metres above Ordnance Datum Newlyn
+- Projections and coordinate reference systems
+  - Correct projection is essential to display sample sites accurately.
+  - Latitude/Longitude: GCS_WGS_1984 (WKID 4326, EPSG)
+  - Eastings/Northings: OSGB1936 British National Grid (WKID 27700, EPSG)
+- Notes and guidance
+  - Ensure the base map uses the matching projection for accurate site plotting.
+  - The image (courtesy Welsh Government) illustrates correct locations.
+- Data interoperability and reuse considerations
+  - The 8-column structure enables joining with other borehole data using the Name field.
+  - Clear specification of coordinate systems facilitates integration into GIS and analysis workflows.

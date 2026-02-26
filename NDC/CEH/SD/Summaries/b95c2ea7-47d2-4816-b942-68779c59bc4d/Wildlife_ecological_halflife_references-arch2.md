@@ -1,0 +1,28 @@
+# References for ecological half-life database
+
+- Overview
+  - A curated list of scholarly references focused on ecological half-lives and turnover of radiocaesium (primarily Cs-137) and related radionuclides (e.g., 90Sr) in environmental media.
+  - Compiles long-term studies and post-Chernobyl assessments across aquatic and some terrestrial systems.
+- Content Highlights
+  - Studies on long-term declines and turnover of radiocesium in fish and aquatic organisms.
+  - Investigations into sources of variation in post-Chernobyl radiocaesium in fish from lakes and streams.
+  - Analyses of ecological half-lives, effective half-lives, and factors influencing uptake and elimination of radiocaesium.
+  - Specific focus on relationships between body size, trophic level, and radiocaesium dynamics in fish.
+  - Examples include turnover in Arctic char, brown trout, carp, other fish in European lakes and rivers, and in a Savannah River Site context.
+- Geographic and Temporal Coverage
+  - Regions: Norway, Greece, Croatia, Bohemia (Czech Republic), Finland, United Kingdom (Cumbrian lakes), Germany, and the United States (Savannah River Site).
+  - Timeframe of sources: published between 1985 and 2009, with many studies addressing post-Chernobyl conditions and long-term monitoring.
+- Key Topics and Concepts
+  - Ecological half-life and effective half-life of Cs-137 in aquatic systems and in fish.
+  - Turnover rates in hydrosphere and sediment-water interfaces.
+  - Variability sources: species, lake/river characteristics, body size, trophic level, and environmental conditions.
+  - Uptake and elimination kinetics, including size effects and age-related factors.
+  - Transfer pathways and accumulation in systems affected by nuclear facilities or accidents.
+- Relevance for Environmental Monitoring Analysts
+  - Provides foundational data for building and validating an ecological half-life database used in environmental health assessments.
+  - Supports cross-site comparisons and trend analyses to evaluate environmental health and policy performance over time.
+  - Enables data quality assurance, standardization, and integration with other datasets for broader environmental monitoring.
+- Practical Implications
+  - Helps in parameterizing models of radiocaesium dynamics in fish and aquatic ecosystems.
+  - Informs risk assessments and long-term monitoring strategies by supplying documented half-life values and variability factors.
+  - Guides data stewardship, storage, and portal uploading by referencing comprehensive, multi-site studies.

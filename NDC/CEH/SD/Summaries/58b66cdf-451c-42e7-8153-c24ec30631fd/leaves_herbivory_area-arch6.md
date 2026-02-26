@@ -1,0 +1,30 @@
+# AFEX Experiment at the Biological Dynamics of Forest Fragments Project (BDFFP/INPA): Site description, experimental setup, leaf area loss by herbivory, and data spreadsheet
+
+- Context and study location
+  - Conducted in the AFEX project area within the Biological Dynamics of Forest Fragments Project (BDFFP/INPA), about 80 km north of Manaus, Brazil (02°25' S, 59°43' W).
+  - Area features plateaus (80–160 m above sea level) with steep slopes and valleys.
+  - Climate: average around 26.7°C with small seasonal temperature variation; mean annual rainfall 1900–3500 mm (peaks in April >300 mm/month) and a dry period June–October (<100 mm/month); relative humidity ranges 75–92% across seasons.
+- Experimental design: AFEX nutrient addition
+  - Full factorial nutrient addition started May 2017, including untreated control and combinations of nitrogen (N), phosphorus (P), and cations (K, Mg, Ca).
+  - Eight treatments, four replicates per treatment, across four independent blocks (minimum 250 m apart), totaling 32 plots.
+  - Plot size: 50 m × 50 m; central measurement area 30 m × 30 m to maximize litter sampled from trees inside plots.
+  - Nutrient application rates (dry granules, three times per year): 125 kg N ha⁻¹ yr⁻¹ (urea), 50 kg P ha⁻¹ yr⁻¹ (triple phosphate), 50 kg Ca ha⁻¹ yr⁻¹, 20 kg Mg ha⁻¹ yr⁻¹ (dolomitic limestone), 50 kg K ha⁻¹ yr⁻¹ (potassium chloride).
+- Leaf area lost to herbivory: data collection and processing
+  - Litter collected from all treatments during peak litterfall (2017–2019) and scanned to measure leaf area.
+  - Use of flat leaves suitable for field scanning; images captured with a Canon CanoScan LiDE 120.
+  - Leaf area analysis performed in August of 2017, 2018, and 2019; a subset of leaves from all littertraps per plot analyzed each year (total 160 littertraps).
+  - Image processing with ImageJ; leaf areas adjusted by a gap-filling method to represent undamaged leaves.
+- Data structure: data spreadsheet
+  - Column A: N — sample number.
+  - Column B: TRT — treatment (7 nutrient treatments plus Control).
+  - Column C: PlotID — identifies block (1–4) and plot (1–8) where littertraps are located.
+  - Column D: Year — collection year.
+  - Column E: Month — collection month.
+  - Column F: Leaf_area_mm — mean leaf area measured on leaves considered herbivore (mm²).
+  - Column G: Leaf_filled_area_mm — mean area measured on leaves with filled spaces representing no herbivory (mm²).
+  - Column H: LMA_gm2 — Leaf Mass per Area (g m⁻²), i.e., leaf dry mass per unit leaf area.
+- References informing methods
+  - Araújo et al. 2002: CO2 flux measurements at Manaus LBA site.
+  - Laurance et al. 2018: Forest fragments as a laboratory for global change.
+  - Metcalfe 2014: Role of herbivory in carbon and nutrient cycling in tropical forests.
+  - Witkowski & Lamont 1991: Leaf area/measurement methodology and related considerations.

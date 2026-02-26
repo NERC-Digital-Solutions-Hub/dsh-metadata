@@ -1,0 +1,27 @@
+# Scientist survey
+
+- Purpose: Gather researchers' experiences with knowledge transfer (KT) and knowledge exchange (KE), including types, outputs, end-user involvement, and attitudes toward KE, with attention to cross-country contexts (UK, China, Other).
+- Geography and involvement:
+  - Q1: Based in UK, China, or Other.
+  - Q2: Whether they have ever performed any KT/KE with users (policymakers, practitioners, public) during their research career.
+- Types of KT/KE experience:
+  - Q3: If Yes, specify the types (traditional, hybrid, knowledge exchange) or indicate never done.
+  - Q4: Pre-presentation awareness of the term knowledge exchange and/or co-production.
+- Examples of KT activities:
+  - Q5: Provide examples of KT activities, including partners (e.g., local government), collaboration mode, and outputs (e.g., reports, guidance).
+- Outputs produced:
+  - Q6: KT/KE outputs involved (policy briefing, best practice guidance, webinars, training, farmer's guidance, decision support tools, technical report, other).
+  - Q6a: If Other, describe it.
+- End-user involvement in outputs:
+  - Q7: Were outputs made with end users (co-produced KE), for end users (hybrid), or produced for end users (traditional), or only scientific outputs provided to users.
+- KT/KE processes used:
+  - Q8: KT/KE processes employed (co-design research questions, co-produced outputs with end users, participatory workshops, secondment to end-user org, other).
+  - Q8a: If Other, describe it.
+- Evaluation and impact:
+  - Q9: Whether the success of KT/KE activities has been measured, and by whom; if yes, how impact was assessed (e.g., changes in practice).
+  - Q9a: Explain the answer if yes.
+- Applicability to projects:
+  - Q10: Perceived possibility of applying KE in their project; options include not applicable, yes, no, maybe.
+  - Q10a: Explain the choice.
+- Willingness to engage KE concepts:
+  - Q11: If KE concepts were new before the talk, would they be interested in using KE with end users on their research; options include yes, no, maybe, and explanations in Q11a.

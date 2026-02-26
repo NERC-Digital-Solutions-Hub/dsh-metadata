@@ -1,0 +1,35 @@
+# UrineNExcretionPerPatch.csv ReadMe
+
+- Project and authors
+  - Project: Uplands-N2O
+  - Grant number: NE/M015351/1
+  - Authors: Karina A Marsden, Lucy Lush, Jon A Holmberg, Mick J Whelan, Andrew J King, Rory P Wilson, Alice F Charteris, Laura M Cardenas, Davey L Jones, Dave R Chadwick
+- Data reuse and provenance
+  - If data are reused please ensure it is fully cited
+  - Data were filtered to exclude observations where zero urination events were recorded
+  - Two replicate sheep were filtered due to relative infrequency of urine events (sheep 1 and 5)
+- Data scope and purpose
+  - Daily N excretion, volume, and frequency calculations were made assuming sheep time spent in urine collection (typically 10:00–16:00) is representative of a 24 h period
+  - Dataset contains urine event-level measurements to quantify nitrogen excretion
+- Data processing and quality notes
+  - Filtering decisions applied to improve data quality and relevance for analysis
+  - Calculations for daily metrics rely on a fixed collection window to extrapolate to 24 h
+- Data fields and definitions (headers)
+  - Site: Semi-improved or improved pasture
+  - Season: Season of collection (spring, summer or autumn at the semi-improved site; autumn at the improved site)
+  - Sheep_ID: Number assigned to replicate sheep
+  - Date: Date of urine collection (dd/mm/yyyy)
+  - Vol_ml: Individual urine event volume (ml)
+  - NContent: Nitrogen content (g N per liter)
+  - Nexcreted: Total nitrogen excreted in each urine event (g N)
+- Data use guidance
+  - Dataset is organized to support discovery and reuse by others, with standardized headers and units
+  - Use should reference the project and grant details, and acknowledge authors
+- Data stewardship implications
+  - Metadata includes site type, season, date, and measurement units, aiding interoperability across systems
+  - Clear documentation of filtering decisions and calculation assumptions supports reproducibility
+  - Considerations for future updates or additions include maintaining consistent metadata, documenting any further exclusions, and preserving the 10:00–16:00 collection window assumption or justifying any changes
+- Limitations and considerations for interpretation
+  - Exclusion of low-frequency events (e.g., certain sheep) may affect representativeness
+  - Assumption that the 10:00–16:00 collection window represents a 24 h period may influence daily excretion estimates
+  - Dataset focuses on per-event metrics rather than aggregated daily summaries for all animals? This clarifies scope for users.

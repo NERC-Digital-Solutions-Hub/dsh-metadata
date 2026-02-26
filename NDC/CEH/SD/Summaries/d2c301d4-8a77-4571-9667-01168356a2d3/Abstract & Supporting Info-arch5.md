@@ -1,0 +1,21 @@
+# Abstract
+
+- Dataset scope: Stable isotope data (delta-13C and delta-15N) from two tissues (whole blood and mantle feathers) of 16 adult individuals across 8 procellariiform species collected at Bird Island, South Georgia, during austral summer 2001-2002; used to examine inter-specific competition in breeding and non-breeding periods.
+- Location and context: Bird Island, South Georgia (coordinates provided); multiple long-term research projects at the site support this dataset as a component for broader biological questions.
+- Species and sampling details:
+  - Species: wandering albatross, grey-headed albatross, black-browed albatross, northern giant petrel, southern giant petrel, Antarctic prion, South Georgian diving petrel, common diving petrel.
+  - Sex: 8 male and 8 female determined by morphology or genetic markers; diving petrels labeled NA due to sex ascertainment challenges.
+  - Breeding context: surface-nesting species sampled within weeks after hatching; burrow-nesting species (Antarctic prion and diving petrels) caught later during chick-rearing.
+  - Tissue samples: mantle feathers (8–10 per individual) and whole blood (0.2–1.0 mL per individual).
+  - Sampling time relative to generation/breeding: two albatross species are biennial breeders when successful; others typically annual.
+- Data columns and structure:
+  - Columns include Species (common name), sp_code (numeric species type), d13C, d15N, TissueType (feather or whole blood), Sex (male/female/NA).
+- Sample processing and storage:
+  - Blood: centrifuged 1–3 hours post-collection to separate cells and plasma; plasma/cells frozen at -20°C; lipids not extracted.
+  - Feathers: dried, sealed, milled to fine powder in liquid nitrogen temperature.
+- Isotopic analysis and quality control:
+  - Instrumentation: continuous-flow isotope ratio mass spectrometry with Carlo Erba EA (NA 1500) linked to Finnigan Tracer Mat and Costech ECS 4010 EA with Thermo Finnigan Delta Plus XP.
+  - Calibration and standards: three internal standards per ten samples; measurement precision ≤ 0.2‰ for both d13C and d15N; internal standards calibrated monthly against IAEA and NIST reference materials.
+- Metadata and documentation:
+  - Data include detailed methodology for sample collection, processing, and analysis to support reproducibility and data integration.
+  - Explicit notes on data provenance, including sampling context, species, and sex determination methods.

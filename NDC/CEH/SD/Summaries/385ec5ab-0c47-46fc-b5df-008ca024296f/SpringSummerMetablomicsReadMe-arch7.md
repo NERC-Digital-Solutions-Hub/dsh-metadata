@@ -1,0 +1,21 @@
+# SpringSummerMetabolomics.csv
+
+- Project: Uplands-N2O; Grant number: NE/M015351/1
+- Authors: Karina A Marsden; Lucy Lush; Jon A Holmberg; Mick J Whelan; Andrew J King; Rory P Wilson; Alice F Charteris; Laura M Cardenas; Davey L Jones; Dave R Chadwick
+- Data description: Metabolomics dataset of sheep urine samples; untargeted primary metabolism analysis via GC-TOF-MS
+  - Samples: spring (n=5) and summer (n=5) from a semi-improved site
+  - Processing: syringe-filtered (<0.2 μm), flash-frozen, blanks processed with ultra-pure water; data blank-corrected
+  - Storage and analysis: stored at -80 °C; shipped on dry ice to West Coast Metabolomics Center, UC Davis
+  - Instrument: ALEX-CIS GC-TOF-MS (Gerstel Inc.)
+  - Output: peak intensity values for all identified compounds
+- Data structure
+  - Headers: Sample (season + sheep ID)
+  - Season header: spring or summer 2016
+  - Compound headers: identified metabolites; values are peak intensities beneath each header
+- Data provenance and reuse
+  - Data should be fully cited if reused
+- Additional notes relevant to GIS Specialists
+  - Location: site described as semi-improved; no explicit geographic coordinates provided
+  - Potential map-ready attributes: sample point identifiers (season, sheep ID) linked to metabolite intensities
+  - Possible GIS applications: visualize spatial distribution by season or animal, compare metabolite profiles across samples, integrate with environmental or management data if spatial coordinates become available
+  - Data quality considerations: blank correction performed; sample handling and storage details documented; instrument method and analysis approach specified

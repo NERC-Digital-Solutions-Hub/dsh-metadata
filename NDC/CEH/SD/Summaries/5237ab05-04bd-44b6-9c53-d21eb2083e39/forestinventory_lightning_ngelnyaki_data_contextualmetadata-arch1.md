@@ -1,0 +1,28 @@
+# Forest inventory and lightning strikes data from the Ngel Nyaki forest, Nigeria, from 2018-2021
+
+- Two CSV files comprise the dataset:
+  - Forest_inventory_NgelNyaki Nigeria_2018_2021.csv: measurements for 2,552 individual trees and their lianas over a 40-hectare plot, including diameter, status (alive/dead), and death mode.
+  - Lightning_strikes_Datasummary_NgelNyaki_2018_2021.csv: subset of trees from the above inventory that were struck by lightning, with species, pre-strike status, strike date, diameter, fuse status, and post-strike status and observations.
+- Study context and timeframe:
+  - Located in Ngel Nyaki Forest Dynamic Plot, submontane forest in southeastern Nigeria, within the ForestGEO network.
+  - Data collected from June 2018 to July 2021 as part of the NERC project “Lightning: An invisible driver of tree mortality in the tropics?” (Grant NE/P001564/1).
+- Scope and measurements:
+  - Target population: trees with stem diameter at 1.3 m (DBH) ≥ 25 cm (including lianas tagged and monitored).
+  - Measurements per tree: diameter at a defined Point Of Measurement (POM, typically 130 cm), living status, and death mode (codes such as A for alive, D for dead, with modifiers like AN, AB, AH, DL, etc.).
+  - Lightning subset includes 23 recorded lightning strikes with species identification, pre-strike diameter, strike-date diameter, fuse condition, and post-strike status.
+- Data collection methods:
+  - Tree tagging and tagging of lianas; regular censuses to record living status and structural condition.
+  - Rogowski Coil sensors installed on each measured stem to detect lightning strikes non-invasively, alongside notes on coil/fuse condition and electrical conductivity.
+  - Visual inspection of lightning-related damage (e.g., trunk marks, broken branches, canopy dieback) and surrounding effects (sapling mortality, canopy gaps).
+- Data quality and handling:
+  - Quality controls include checking for unit errors and flagging ambiguous values for follow-up; resurvey if possible, otherwise flag for future checks.
+  - Missing values may exist due to ambiguity in field notes; data entries include explicit coding for alive/dead status and strike outcomes.
+- Data structure and field descriptions:
+  - Forest_inventory_NgelNyaki Nigeria_2018_2021.csv:
+    - Tree_id, census_date, POM (cm), D (diameter at POM, cm), Tree_status (codes for alive/dead with modifiers like AN, AB, AH, DL, etc.).
+  - Lightning_strikes_Datasummary_NgelNyaki_2018_2021.csv:
+    - Country, Site, Plot, Tree_id, Species, census_strike_date, POM_strike, D_strike, Tree_status_strike, Fuse_status, Observations_strikes, Tree_status_after, Observations_after.
+- Practical considerations for analysts:
+  - Enables exploration of lightning as a mortality driver by linking pre-strike tree size and status with post-strike outcomes.
+  - Allows assessment of species vulnerability and how damage patterns relate to diameter and fuse condition.
+  - Supports analysis of changes in status and surrounding mortality following strikes, as well as data quality checks across two linked datasets.

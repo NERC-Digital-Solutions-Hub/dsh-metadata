@@ -1,0 +1,121 @@
+# 25m raster
+
+- What it is: A raster dataset created by converting land parcels from a vector dataset into a 25 m grid, recording the dominant land cover at each location using LCM2000 Subclasses.
+
+- Great Britain (GB) 25m raster metadata:
+  - Columns/width: 24,400
+  - Rows/height: 48,400
+  - Lower left easting: 50,000 m
+  - Lower left northing: 10,000 m
+  - Pixel size: 25 m
+  - Coordinate system: British National Grid
+  - Projection: Transverse Mercator
+  - Spheroid: Airy
+  - Datum: OSGB 1936
+  - Note: To obtain the pixel centre, add 12.5 m to each value
+
+- Northern Ireland (NI) 25m raster metadata:
+  - Columns/width: 7,600
+  - Rows/height: 7,200
+  - Lower left easting: 180,000 m
+  - Lower left northing: 280,000 m
+  - Pixel size: 25 m
+  - Coordinate system: Irish National Grid
+  - Projection: Transverse Mercator
+  - Spheroid: Airy Modified 1849
+  - Datum: Ireland 1965
+  - Note: To obtain the pixel centre, add 12.5 m to each value
+
+- Data encoding and storage efficiency:
+  - LCM2000 Subclass codes are floating point with one decimal place; to store efficiently as 8-bit integers, they are multiplied by 10 (range 0-255).
+  - Example: Water (inland) Subclass 22.1 becomes 221 in the raster
+
+- 1km raster (derived from 25m data):
+  - Created by summarising the 25m raster within 1km grid
+  - GB 1km raster: 700 columns x 1,300 rows
+  - NI 1km raster: 500 columns x 500 rows
+  - Lower left easting/northing: GB 0, NI 0
+  - Pixel size: 1,000 m
+  - Coordinate system, projection, spheroid, and datum match the respective GB/NI 25m datasets (GB: OSGB 1936; NI: Ireland 1965; both Transverse Mercator; Spheroids Airy and Airy Modified 1849)
+  - Note: To obtain the pixel centre, add 500 m to each value
+
+- Subclass to 1km and Aggregate class mappings (Table 3):
+  - There is a comprehensive correspondence between LCM2000 Subclasses (25m and 1km) and LCM2000 Aggregate classes, including their codes
+  - Example mappings:
+    - Sea / Estuary
+      - 25m code: 221
+      - 1km code: 1
+      - Aggregate class: Oceanic seas
+      - Aggregate 1km code: 10
+    - Water (inland)
+      - 25m code: 131
+      - 1km code: 2
+      - Aggregate class: Standing open water
+      - Aggregate 1km code: 8
+    - Littoral rock
+      - 25m code: 201
+      - 1km code: 3
+      - Aggregate class: Coastal
+      - Aggregate 1km code: 9
+    - Saltmarsh
+      - 25m code: 212
+      - 1km code: 5
+      - Aggregate class: Coastal
+      - Aggregate 1km code: 9
+    - Supra-littoral rock
+      - 25m code: 181
+      - 1km code: 6
+      - Aggregate class: Coastal
+      - Aggregate 1km code: 9
+    - Bog (deep peat)
+      - 25m code: 121
+      - 1km code: 8
+      - Aggregate class: Mountain, heath, bog
+      - Aggregate 1km code: 6
+    - Montane habitats
+      - 25m code: 151
+      - 1km code: 11
+      - Aggregate class: Mountain, heath, bog
+      - Aggregate 1km code: 6
+    - Broad-leaved / mixed woodland
+      - 25m code: 11
+      - 1km code: 12
+      - Aggregate class: Broad-leaved / mixed woodland
+      - Aggregate 1km code: 1
+    - Coniferous woodland
+      - 25m code: 21
+      - 1km code: 13
+      - Aggregate class: Coniferous woodland
+      - Aggregate 1km code: 2
+    - Improved grassland
+      - 25m code: 51
+      - 1km code: 14
+      - Aggregate class: Improved grassland
+      - Aggregate 1km code: 4
+    - Neutral grassland
+      - 25m code: 61
+      - 1km code: 15
+      - Aggregate class: Semi-natural grassland
+      - Aggregate 1km code: 5
+    - Suburban / rural developed
+      - 25m code: 171
+      - 1km code: 24
+      - Aggregate class: Built up areas and gardens
+      - Aggregate 1km code: 7
+    - Continuous urban
+      - 25m code: 172
+      - 1km code: 25
+      - Aggregate class: Built up areas and gardens
+      - Aggregate 1km code: 7
+    - Inland bare ground
+      - 25m code: 161
+      - 1km code: 26
+      - Aggregate class: Mountain, heath, bog
+      - Aggregate 1km code: 6
+
+- Practical implications for Data Stewards:
+  - Metadata should capture the two regional coordinate systems, projections, datums, and the pixel-centre offset notes
+  - Storage considerations: 25m Subclass codes are compacted to 8-bit integers; maintain documentation of the coding scheme and the 10x multiplier
+  - Interoperability: preserve and communicate the exact mappings between 25m Subclasses, 1km Subclasses, and Aggregate classes for consistent data use
+  - Versioning and lineage: document how the 1km raster is derived from the 25m raster, including the aggregation method
+  - Data governance: ensure consistent handling of GB vs NI grids, and maintain clear metadata to support discovery and reuse by data users with varying needs

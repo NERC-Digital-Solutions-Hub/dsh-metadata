@@ -1,0 +1,33 @@
+# Gridded data of greenhouse gas emissions from livestock and crops for year 2000
+
+- Global gridded dataset at 5 arc-minute resolution covering the world’s land area.
+- Emissions quantified as tonnes CO2e and emission intensities (tonnes CO2e per kilogram of animal product) for year 2000 (temporal scope circa 2000; annual resolution; also references 1997-2003).
+- Two broad product groups:
+  - Crops: emissions from peatland drainage, rice cultivation, manure and synthetic fertilizer on cropland.
+  - Livestock: farm-level GHGs (enteric fermentation for ruminants; manure management; pasture left/associated N2O) plus feed-related GHGs (fertilizers and manure applied to cropland/grassland).
+- Commodities:
+  - Livestock: bovine meat and milk, small ruminant meat and milk, pig meat, poultry meat and eggs.
+  - Crops: 172 crop types (list provided in cropnames file).
+- Outputs:
+  - GHG emissions (tonnes CO2e) and GHG emission intensities (tonnes CO2e per kg of product) at 5 arc-minute grid cells.
+  - Formats: CSV files suitable for GIS workflows; includes separate files for all seven livestock commodities.
+- Model and methodology:
+  - Linear model used for calculating cropland N2O emissions (alternative non-linear model exists in the referenced work).
+  - Emissions factors follow IPCC linear method (0.31% for flooded rice, 1% for other crops).
+  - Crop emissions = peatland drainage + rice + manure/synthetic fertilizer on cropland (manure amounts tied to feed production and fertilization practices from Herrero et al. 2013; re-estimated by Dalin et al. in prep.).
+  - Livestock emissions = enteric methane + manure methane/N2O + pasture N2O; feed-related N2O from synthetic fertilizers and manure on cropland; diet composition, feed origin (FAOSTAT), and grassland productivity (ORCHIDEE) incorporated.
+- Data processing and validation:
+  - Input formats include .xlsx, .tif, .nc4; processed in Matlab (and tested in R).
+  - Final outputs saved as .csv; a companion R script convert_csv_to_raster.R converts CSVs to raster for GIS import.
+  - Quality control via independent parallel coding (Matlab vs. R) with matched results; national averages checked against FAOSTAT.
+- Spatial, temporal, and coordinate details:
+  - Spatial scope: global; Coordinate reference system: WGS 84.
+  - Temporal scope: around year 2000 (1997-2003); Temporal resolution: annual.
+  - Units: tonnes CO2e for emissions; tonnes CO2e per kilogram for emissions intensities.
+  - Spatial resolution notes: 5 arc-minute grid; outputs designed for map-based visualization in GIS.
+- Data handling and GIS workflow:
+  - Files are named to reflect emissions and intensities for all seven livestock commodities.
+  - Use the provided convert_csv_to_raster.R to convert CSVs to raster format, enabling straightforward import into GIS software.
+- References and data sources:
+  - Herrero et al. 2013; FAOSTAT (2022 detailed trade matrix); Chang et al. 2016; Carlson et al. 2016/2017; Gerber et al. 2016.
+  - IPCC Guidelines for National Greenhouse Gas Inventories (De Klein et al. 2006).

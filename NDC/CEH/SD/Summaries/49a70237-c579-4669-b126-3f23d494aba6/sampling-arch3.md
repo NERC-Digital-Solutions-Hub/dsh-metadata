@@ -1,0 +1,71 @@
+# Sampling Design
+
+- Study period and location: May 2014 to September 2014; Mabalane district, Gaza province, Mozambique.
+- Village selection: Seven villages chosen along a forest degradation gradient from undisturbed forests to degraded forests mainly due to charcoal production; villages selected with similar infrastructure, soils, rainfall, and vegetation types.
+- Objective: 
+  - Understand seasonality within a village (and potentially across nearby villages in the same area).
+  - Assess availability and use of forest products and how these have changed in recent years.
+- Participating communities and facilitators:
+  - Mixed groups of 5–10 participants per session.
+  - Activities led by a researcher and an assistant fluent in the local language (Changana).
+  - Field protocol available in English and Portuguese; local language support provided.
+- Resources and time requirements:
+  - 12 month/monthly calendar cards; activity cards; stones or seeds; 1–2 hours per exercise.
+- Seasonal calendar methodology:
+  - Participants distribute a fixed number of stones/seeds (e.g., 30) across months to reflect abundance or activity levels (e.g., charcoal production, harvest, rainfall-driven activities).
+  - Fixed total allows conversion of distributions into proportions for trend analysis.
+- Data collection instruments and process:
+  - A structured set of prompts and templates to capture:
+    - Name of village, date, number of participants, duration of session.
+    - Purposes of the exercise and key forest ecosystem services (ES) identified (e.g., charcoal production, wood for charcoal, firewood, hunting).
+    - Time landmarks and past changes in ES, using ground-assisted timeline with cards.
+    - Group discussions and stone-voting results for each ES, followed by interpretation and consensus checks.
+- Trend analysis and language considerations:
+  - Facilitators guide participants to identify past change points (e.g., licenses, outsiders, new laws) and to discuss anticipated future states (e.g., 10-year projection).
+  - Content available in English, Portuguese, and local language (Changana).
+- Data capture fields (sample):
+  - Nome da aldeia / Village name
+  - Data / Date
+  - Number of participants
+  - Duração / Duration
+- Ecosystem services and products (Forest use):
+  - Main products discussed: charcoal production, wood for charcoal, firewood, hunting; potential additional services not listed explicitly.
+  - Origin and involvement: where products come from; who is involved in production.
+- Village profiles (structure and content):
+  - Interview with village leader or key person; language support; guideline-driven data collection.
+  - Village characteristics including:
+    - Structure: households, neighborhoods, leadership
+    - Education: schools, attendance
+    - Health: main problems, health center
+    - Water: boreholes, distance
+    - Land: DUAT status
+    - Migration: post-conflict and current trends
+    - Livelihoods (LH) and Commercial Activities (COM): main activities, outsiders, licenses
+    - Market: nearest market, frequency, key products
+- Commoditized ES:
+  - Charcoal: production locations, sale points, estimated quantity, licenses, associations, outsiders, governance, community licenses revenue, presence of community governance structures (CGC).
+  - Agriculture: main crops, field location (mashambas), distance, productivity, markets, extension services.
+  - Livestock: main species, sale patterns, pasture locations.
+  - Others: any additional traded forest products.
+- Regulating services and disservices:
+  - Environmental conditions: rainfall, soil fertility, erosion, etc., observed over the last 10 years.
+  - Natural disasters or shocks: floods, pests, droughts, diseases, conflicts, significant forest loss; timing and who was affected.
+- Change and drivers:
+  - Social change: major recent changes and perceived trajectory (better or worse).
+  - Environmental change: changes in forest extent, flora/fauna, water availability/quality, soil; implications for daily life; beneficiaries and those who lose.
+  - Reasons for change: deforestation, soil fertility loss, fire, market access, commercial agriculture, etc.
+- Wealth ranking (participatory asset-based assessment):
+  - All households ranked into four classes: poorest, poor, better-off, rich; led by a leader with a pre-existing household list.
+  - Process includes: listing households, classifying, ranking within classes, potential reordering, and discussion of well-being criteria.
+  - Outputs include perceived changes in well-being and links to ecosystem benefits.
+- Time and resources for wealth ranking:
+  - Estimated 2 hours; requires HH list, cards, marker, translator, facilitator, participants.
+  - Precondition: reliable household list to anchor the ranking.
+- Data quality and governance considerations:
+  - Emphasizes participatory data collection, transparency about purposes, and the potential need to share underlying data.
+  - Acknowledges challenges common to monitoring frameworks: data gaps, data accessibility, siloed information, metadata quality, data transformation needs, and governance for data storage and sharing.
+- Relevance for monitoring frameworks:
+  - Integrates community-driven indicators with ecological and governance dimensions.
+  - Generates time-series-like insights on ES abundance and drivers using simple, interpretable tools (stone voting).
+  - Produces village profiles and wealth dynamics to contextualize ES changes.
+  - Supports policy and management decisions by documenting licenses, governance structures, and external influences on forest use.

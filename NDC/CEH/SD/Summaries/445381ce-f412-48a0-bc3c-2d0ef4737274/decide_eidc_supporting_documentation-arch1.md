@@ -1,0 +1,49 @@
+# Species data
+
+- Data provenance and scope
+  - Presence-only occurrence data from Butterfly Conservation.
+  - Butterflies: 66 species, 7,471,102 records.
+  - Day-flying moths: 43 species, 94,113 records.
+  - Night-flying moths: 716 species, 11,044,769 records.
+  - Species lists distinguished as day- or night-flying through expert consultation.
+- Taxa covered
+  - Includes a broad list of butterfly and moth species (examples provided; a full list is included in the dataset description).
+- Environmental data and preprocessing
+  - Climate: HadUKGrid monthly data (2010–2019) used to derive WorldClim bioclimatic variables.
+  - Land cover: UKCEH 2015 Landcover Map (LCM) at 25 m, for Great Britain.
+  - Topography: Copernicus DEM V1.1 at 25 m (Europe).
+  - All environmental layers resampled to 100 m resolution; same layers used across all SDMs.
+- Species distribution modelling (SDM)
+  - Data preparation: removed spatial-temporal duplicates; one observation per 100 m grid cell.
+  - Background: target-group approach with 10,000 pseudoabsences per species (or equal numbers if presences exceed 10,000).
+  - Modelling methods: GLM, GAM, Random Forest, MaxEnt.
+  - Model weighting and fitting: presences and pseudoabsences balanced across models (MaxEnt requires equal numbers).
+  - Validation: 10-fold cross-validation; AUC averaged across folds.
+  - Predictions: probability of presence computed per species across GB for each model; mean and standard deviation across models produced.
+  - Ensemble selection: mean AUC across 10 iterations used to filter models; models with mean AUC < 0.75 removed; if all models < 0.75, all retained and flagged as poorly performing.
+- Outputs and metrics
+  - Predictive accuracy metric: model variability (sum of SDs across the 10 models) per grid cell for each species.
+  - Composite recording priority: DECIDE recording priority, aligned with model variability, scaled by time since last local record.
+  - Species richness: sum of predicted probabilities across species within a grid cell (example: three species with 50% probability → 1.5 richness units).
+  - Outputs enable weighting by common/rare species and include a smoothing effect based on neighboring cells for recording priority.
+- Data products and structure
+  - Spatial unit: 100 x 100 m grids across Great Britain, OS National Grid.
+  - File formats: GeoTIFF (.tif) in /data/ with names indicating taxonomic group and layer (example files listed below).
+  - Example file names and meanings:
+    - butterfly_decide_priority.tif: DECIDE recording priority for butterflies
+    - butterfly_model_variability.tif: SDM variability for butterflies
+    - butterfly_species_richness.tif: species richness for butterflies
+    - day_flying_moth_decide_priority.tif: DECIDE priority for day-flying moths
+    - day_flying_moth_model_variability.tif: SDM variability for day-flying moths
+    - day_flying_moth_species_richness.tif: species richness for day-flying moths
+    - night_flying_moth_decide_priority.tif: DECIDE priority for night-flying moths
+    - night_flying_moth_model_variability.tif: SDM variability for night-flying moths
+    - night_flying_moth_species_richness.tif: species richness for night-flying moths
+- Reproducibility and tooling
+  - Data read in R using the terra package (example provided for loading a TIFF).
+  - Model outputs and diagnostics are checked by a project team via a data end-user interface for anomalies.
+- Quality control and access
+  - DECIDE Recorder tool provides interactive access within a local extent (about 5 km) with feedback mechanisms.
+  - Approximately 5,000 users have accessed the tool to date.
+- Computing and hosting
+  - Analyses run on the JASMIN high-performance computing facility.

@@ -1,0 +1,32 @@
+# References for ecological half-life database
+
+- This document is a bibliography of studies on ecological half-lives and radiocaesium dynamics in aquatic and some terrestrial systems, focusing on Cs-137 (and Sr-90 in some works) and post-Chernobyl contexts.
+- Topics covered include long-term declines and turnover of radiocaesium, sources of variation in radiocaesium in fish, and factors affecting uptake, elimination, and accumulation across ecosystems.
+- Geographic and system diversity includes lakes, rivers, and reservoirs across the UK (Cumbrian lakes), Norway, Croatia, Bohemia (Czech Republic), Finland, Greece, Germany, and a Savannah River Site (USA) context.
+- Key themes across the references:
+  - Ecological and effective half-lives of Cs-137 and Sr-90 in fish and aquatic media.
+  - Variation in radiocaesium levels due to species, body size, trophic level, and environmental conditions.
+  - Post-Cchernobyl radiocaesium dynamics in freshwater ecosystems and in fish.
+  - Comparisons between experimental and real-world (Chernobyl-impacted) systems.
+  - Temporal trends and turnover in natural and contaminated systems.
+- Sample of specific study topics and contributions:
+  - Long-term declines in radiocesium in snake populations (Bagshaw & Brisbin, 1985).
+  - Variation in post-Chernobyl radiocaesium in brown trout and Arctic charr from multiple Cumbrian lakes (Elliott et al., 1992; 1993).
+  - Radiocaesium turnover in Arctic char in a Norwegian lake (Forseth et al., 1991).
+  - Ecological half-lives of Cs-137 in fishes from various environments (e.g., Croatian carp, Savannah River Site fishes, Greek lake fish) (Franic & Marovic, 2007; Paller et al., 1999; Kritidis & Florou, 1995).
+  - Transfer and concentration pathways for Sr-90 in Finnish lakes; Cs-137 uptake and elimination in fish; size effect and body size/trophic level impacts (Outola et al., 2009; Smith et al., 2002; Sundbom et al., 2003).
+  - Effective and ecological half-lives in different media at contaminated sites (Savannah River Site) (Paller et al., 2013; Paller et al., 1999).
+  - Cs-137 accumulation in fish after acute inputs and comparisons between controlled experiments and real-world contamination (Pinder et al., 2009).
+  - Time-dependency of Cs-137 contamination in wild boar in Germany (Semizhon et al., 2009).
+  - Broadly: ecological half-lives across terrestrial and aquatic ecosystems (Pröhl et al., 2006).
+- Data governance and reuse considerations raised by the references:
+  - The collection underscores the need for standardized metadata (organism, habitat, location, year, contaminant, half-life type, methods) to enable cross-study comparability.
+  - Data heterogeneity and variability across studies highlight challenges in harmonizing datasets for a unified ecological half-life database.
+  - Many studies span multiple years and environments, signaling the value of long-term time-series data but also the potential gaps in granularity and consistent reporting.
+  - Access and provenance are important for reuse, given the range of journals and potential paywalls; clear data licensing and repository placement would aid discoverability.
+- Implications for data strategy (Data Leaders):
+  - Use this bibliography as a foundation for assembling a comprehensive, harmonized dataset of ecological half-lives for Cs-137 and Sr-90 across aquatic systems.
+  - Develop a data model that captures species, habitat type, geographic location, time span, measured half-life type (ecological vs effective), contaminants, and methodological context.
+  - Prioritize metadata standardization to enable cross-study aggregation, comparison, and analysis of factors driving variability (e.g., body size, trophic level, environmental conditions).
+  - Identify data gaps and target collection or extraction efforts for underrepresented regions or system types to improve coverage and utility.
+  - Plan for data quality assessment, documentation of uncertainties, and pathways for data sharing with appropriate permissions to support a broader data community.

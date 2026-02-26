@@ -1,0 +1,42 @@
+# Soil Biodiversity Thematic Programme – Sourhope Site Summary (2002)
+
+- Four-year overview of the NERC Soil Biodiversity Thematic Programme focused on above-ground productivity (biomass), species composition, and diversity at the Sourhope field site (Macaulay Land Use Research Institute, Sourhope, Scottish Borders).
+- Primary aim: understand links between below-ground biodiversity and above-ground plant communities, and how management (mowing, fertilisation, lime, and insecticide) drives botanical change and functional group shifts.
+- Treatments and design: 5 replicate blocks on a downslope gradient; 6 main plots per block subdivided into 10 sub-plots; site-wide mowing plus plot-level treatments (Control 1, Control 2, Nitrogen, Lime, Nitrogen & Lime, Insecticide).
+- Functional framework: plants categorized into functional groups (stress-tolerators S; competitive-stress-ruderals CSR; stress-ruderal/competitive-stress-ruderal SR/CSR) to interpret community responses to fertilisation, liming, and disturbance.
+- Data collected (1999–2002) include:
+  - Weather data from on-site Automatic Weather Station.
+  - Above-ground biomass harvested monthly across five cuts each summer (0.5 m2 per sub-plot cell; dried and weighed).
+  - Baseline and annual point-analysis surveys (0.5 m2 cell with 100-point grid) to track species hits, including bryophytes.
+  - Soil pH (5 cm depth) and soil moisture (theta probe in 2002) per plot/cell.
+  - Additional vegetation surveys, litter counts, and species lists (Appendices 3–8).
+- Key 2002 updates and context: major field activities by Phase II projects, including labelled CO2 pulses and mobile labs; occasional data gaps due to weather-station issues and foot-and-mouth restrictions earlier years.
+- Main findings:
+  - Biomass and productivity
+    - Overall long-term increase in biomass across treatments since 1999, with nitrogen and lime combinations producing the highest productivity.
+    - 2002 biomass generally lower than 2001; Control 2 plots consistently less productive than Control 1; fertility effects (N and/or lime) remain strong but may be approaching a peak in some plots.
+    - Spatial pattern: productivity declines along the slope from bottom to top in certain years; significant treatment-by-year interactions.
+  - Fertilisation and soil chemistry
+    - Lime markedly raises soil pH toward ~7.0 in the upper soil profile; nitrogen also raises pH but to a lesser extent.
+    - Positive relationship between soil pH and biomass at the site level, but treatment-specific patterns vary; when N and lime are both applied, the pH–biomass relationship can become negative, suggesting complex interactions (including soil moisture effects).
+    - Higher soil pH and fertility promote dominance by more nutrient-demanding, competitive species (CSR), while unimproved plots favour stress-tolerators (S).
+  - Species composition and diversity
+    - Improved plots (N and/or lime) show higher presence of Festuca rubra and Poa pratensis; unimproved plots dominated more by Festuca ovina and Anthoxanthum odoratum.
+    - Bryophytes (mosses) increase across the site, particularly under mowing and reduced disturbance, contributing up to ~20% of total hits in 2002.
+    - Agrostis capillaris and Agrostis vinealis decline by over 40% since 2000, suggesting a mowing- or disturbance-related shift.
+    - Point analysis indicates clear separation between improved and unimproved plots; lime-treated plots cluster distinctly in multivariate analyses (PCA).
+    - Diversity (Shannon index) trends: 2002 shows a 15% decline in Shannon diversity in the Nitrogen & Lime plots, while several other treatments show increases (2%–29%), reflecting shifts in species evenness and dominance.
+  - Functional-group dynamics (from Point Analysis)
+    - Across years, S, CSR, and SR/CSR groups accounted for the majority of hits; treatment differences become significant by 2000–2002.
+    - C-S-R species expanded in N&L plots (dominant in higher fertility), while stress-tolerant species gained in unimproved plots; SR/CSR groups diminished where lime or nitrogen increased disturbance-avoidance conditions.
+- Notable methodological notes:
+  - 2002 weather data had missing periods due to a station malfunction; where needed, data from Konza station were substituted for affected dates.
+  - The study uses a mix of biomass harvests, point analyses, and apendix-derived datasets (species lists, biomass by plot, etc.) to triangulate community responses.
+- Implications for data utilisation and products:
+  - Data-rich, multi-dimensional view of how mowing, fertilisation, liming, and insecticide influence productivity, species composition, bryophyte dynamics, and functional-group structure over time.
+  - Enables development of data products such as time-series biomass by treatment, treatment-normalised biomass, PCA-based community composition plots, and diversity indices to support decision-making and policy discussions on grassland management and soil biodiversity.
+- Key questions for data-support actions
+  - How can the long-term biomass and diversity time-series be packaged into interactive dashboards for end users (policy-makers, land managers)?
+  - Which biomass, diversity, and functional-group metrics best communicate the trade-offs between productivity and ecosystem diversity under different management regimes?
+  - What data pipelines are needed to maintain consistency across years (e.g., standardised pH, moisture measurements, bryophyte vs vascular plant data) and to handle missing data transparently?
+  - Are there opportunities to link outputs (e.g., PCA axes, CSR/S/R distributions) to practical management recommendations for fertilisation, mowing frequency, and disturbance regimes?

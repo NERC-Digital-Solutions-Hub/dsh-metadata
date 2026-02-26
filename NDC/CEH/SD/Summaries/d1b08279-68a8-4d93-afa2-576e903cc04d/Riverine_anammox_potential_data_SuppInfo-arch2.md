@@ -1,0 +1,81 @@
+# General information: This dataset contains results from slurry incubations with 15N-labelled substrates.
+
+- Purpose and scope
+  - Data capture nitrogen cycling processes in river sediments using 15N-labelled substrates.
+  - Focus on comparing anammox, denitrification, and related nitrogen transformations across different sub-catchment sediments (Clay, Sand, Chalk) from Hampshire Avon rivers.
+  - Results interpreted as potentials (not absolute in situ rates) based on incubations conducted under controlled, dark, room-temperature conditions.
+
+- Experimental design
+  - Slurry preparations
+    - Anoxic slurries: 3 mL vials with 1 mL wet sediment, 1 mL synthetic river water, and N2 headspace.
+    - Oxic slurries: 12 mL vials with 2.5 mL sediment, 3 mL synthetic river water, and air headspace.
+    - Incubations conducted in August 2013; mass spectrometry in September 2013.
+  - N-amendments and tracers
+    - Injections of 14N (natural abundance) and 15N-labelled substrates; target post-injection nitrate or ammonium concentrations vary by sediment type.
+    - 15N-labelled tracers at ~98 atom % 15N.
+    - Anoxic slurries pre-incubated overnight before 15N addition to remove ambient 14N nitrate.
+  - Experimental treatments
+    - Reference samples (no 15N-labelled substrates).
+    - Control samples (biological activity halted with zinc chloride before 15N addition).
+    - Time-series samples (ZnCl2 added at predetermined times after 15N addition).
+  - Incubation conditions and interpretation
+    - Incubations in the dark, at room temperature.
+    - Outputs interpreted as potential activity, not precise in situ rates.
+
+- Measurements and derived metrics
+  - Nitrogen gas production (mass spectrometry)
+    - P29 and P30: production rates of 29N2 and 30N2, respectively.
+    - p15N: production of 15N-labelled N2, calculated as P29 + 2×P30.
+  - Headspace and aqueous calculations
+    - Headspace aN2 (nmol) derived from 29N2 and 30N2 signals relative to total N2.
+    - Aqueous N2 concentrations computed using Bunsen solubility and total nmoles (headspace + aqueous) per g dry sediment.
+  - Rates and totals
+    - Rates: determined from time-series plots (slope of 29N2 or 30N2 vs. time) for various treatments.
+    - Atotal: total anammox activity (nmol N2 g-1 dwt h-1) using Thamdrup and Dalsgaard equations; FN is 15N-labelling of nitrate (0.98).
+    - Dtotal: total denitrification (derived from P30 and 15N_labelling).
+    - ra: contribution of anammox to N2 production (%).
+  - Isotopic proportion estimates
+    - FN-NH4+, FN-NOx, FN-N2: proportions of 15N in ammonium, NOx, and N2 pools, used in mixing models.
+  - Oxic slurry time-series specifics
+    - Oxicp15N measurements: 15N-labelled N2 produced in oxic slurries post ammonium addition (multiple timepoints: T0, T1, T2, T3, T4).
+    - Oxicp15Nrpt measurements: replicates testing nitrification-N2 relationship with a repeat of those measurements on a different occasion.
+    - Oxicp15NATU measurements: parallel measurements with allylthiourea (ATU) to inhibit nitrification.
+  - Oxygen measurements
+    - O2Conc-T0 to T3: dissolved oxygen concentrations in oxic slurries at initiation and after 1, 3, and 6 hours.
+  - Reference concentrations
+    - AmmoniumRef and NOxRef: concentration measurements in oxic reference slurries via standard colorimetric methods.
+  - Time-series headers
+    - 15NOxT0 to 15NOxT5: concentrations of 15N-labelled NOx at successive timepoints post-15N nitrate addition.
+  - Replication and site metadata
+    - Replicate: discrete sediment samples collected from each river with 5 replicates per river.
+    - Site labeling: Clay, Sand, Chalk categories correspond to river sub-catchments; specific sites listed with geographic coordinates.
+  - Data flags and quality
+    - BDL: values below detection limits.
+    - Detection limits: specified for P29, P30, and 15N-N2 calculations.
+  - Column headers and data structure
+    - Data organized in 42 columns and 46 rows (including headers).
+    - Detailed descriptions provided for the first column header and applicable time-series headers.
+    - Examples of representative columns include P29-15A, P30-15N, Atotal, ra, FN-NH4+, FN-NOx, FN-N2, 15NOxT0–T5, Oxicp15N_T0–T4, O2Conc-T0–T3, AmmoniumRef, NOxRef.
+
+- Data quality, provenance, and methods
+  - Calibration and standards
+    - Use of mass spectrometry with calibration standards for converting signals to 15N concentrations.
+    - Colorimetric methods with calibrated standards for ammonium and NOx concentrations.
+  - References and methodological basis
+    - Nielsen (1992) and Nielsen et al. (1992) for isotopic pairing approaches.
+    - Thamdrup and Dalsgaard (2000, 2002) for Atotal and Dtotal calculations and 15N-network equations.
+  - Documentation and reproducibility
+    - Comprehensive header descriptions for time-series and isotopic metrics to enable reproducible data interpretation and cross-site comparisons.
+  - Detection limits and data handling
+    - Explicit limits of detection for key metrics (e.g., 29N2, 30N2, 15N-N2, etc.).
+    - Data flagged as BDL when below detection, ensuring transparent data quality.
+
+- Reference framework and usage
+  - References provided for methods and prior applications, enabling analysts to trace calculations and validation approaches.
+  - Data suitable for integration into broader environmental monitoring datasets to assess nitrogen loss pathways (anammox, denitrification) in river sediments and to compare across sediment types and sub-catchments.
+
+- Potential applications for environmental monitoring
+  - Assess spatial differences in nitrogen processing across river sediment types (clay, sand, chalk).
+  - Track shifts in nitrification, denitrification, and anammox contributions under controlled incubation conditions.
+  - Support standardized reporting of nitrogen transformation potentials to inform policy performance and environmental health evaluations.
+  - Facilitate data sharing by providing explicit column definitions, measurement techniques, and detection limits to enable data reuse and portal deposition.

@@ -1,0 +1,23 @@
+# Winklebury Hill experiment
+
+- Objective: Use seeds and plug plants to establish different plant communities on bare chalk at Winklebury Hill and measure resulting carbon and nutrient cycling rates; compare these to characteristics of plant groups. Study ran from March 2013 to September 2016.
+- Plant functional groups (FG) and aims:
+  - FG1: Deep, thick taproots; simple root structure; thin, large leaves; includes annuals, biennials, and long-lived species; predicted to store substantial carbon in soil via deeper rooting.
+  - FG2: Small rosettes with very small taproots; limited carbon/nitrogen cycling activity; small stature.
+  - FG3: Large plants with shallow, thin roots and large fleshy leaves; rapid carbon and nitrogen cycling with high microbial activity; may offer less long-term carbon storage due to fast turnover.
+  - Representative species lists provided for each FG to define group characteristics.
+- Experimental design:
+  - A grid of plots created in the field: 7 plots across (top to bottom orientation along slope) and 6 plots down, forming 42 plots in total.
+  - Each plot 8 m x 8 m with 2 m gaps between plots.
+  - Every plot assigned a combination of the three plant groups (FG1, FG2, FG3) to create all possible FG combinations, replicated across rows to achieve six replicates of each treatment pattern.
+  - FG combinations included across the entire slope layout to ensure spatial replication.
+- Plot layout details:
+  - Top of slope and bottom of slope designations indicate a gradient in positioning.
+  - Each FG combination is denoted within plots (e.g., FG1 alone, FG2 alone, FG1+FG2, FG1+FG3, FG2+FG3, FG1+FG2+FG3) across the grid.
+- Drought treatment (rain shelters):
+  - From 2015 onwards, rain shelters were added to some plots to simulate drought conditions.
+  - Shelters operated from early June to mid-July to mimic an extreme drought event (once in 100 years).
+- Data and mapping implications for GIS specialists:
+  - The study yields spatially explicit data on plant community composition by plot, as well as associated carbon and nutrient cycling measurements.
+  - Plot-level treatments and drought conditions enable GIS-based visualization and analysis of spatial patterns, treatment effects, and drought responses.
+  - Temporal aspects (2013–2016 and drought period starting in 2015) allow for time-series mapping and change detection across the experiment.

@@ -1,0 +1,37 @@
+# ECN Breeding Birds Survey Dataset Description
+
+- Dataset Originator: ECN Data Centre (http://data.ecn.ac.uk); ECN
+- Dataset Owners / Sponsors: UK Environmental Change Network programme, funded by a consortium of UK government departments and agencies (e.g., Defra, Natural England, Scottish Government, Welsh Government, etc.)
+- Acknowledgement and Publication: Users must acknowledge ECN data usage and send one reprint of any publication citing ECN data.
+- Protocol and Consistency: ECN employs standard operating procedures to ensure site comparability; accompanying bb.pdf explains data collection methods.
+- Usage Notes and Methodology:
+  - Birds recorded on a transect within a 1 km square; distance from transect recorded.
+  - Methodology follows the Breeding Birds Survey (BBgesetz) from the British Trust for Ornithology (BTO).
+  - Transects are walked twice per year (early and late visits).
+  - Site-based data are national-scale and limited in detailing relationships between population levels and environmental change; supplement with broader monitoring data (e.g., BTO) to mitigate limitations.
+  - Earlier protocols (Common Bird Census at lowland sites and Moorland Bird Survey at upland sites) were replaced by the Breeding Bird Survey at ECN sites.
+  - Data quality information should be used in conjunction with the accompanying quality metadata.
+- Data Download Structure (core fields):
+  - SITECODE (ECN Site code), LCODE (Location ID), VISIT (E/L), SDATE (Sampling date), TRANSECT (Transect), FIELDNAME (Bird species code), VALUE (number of birds), DISTANCE (distance category), F (Bird in flight)
+- Supporting Documentation:
+  - ECN_BB2.csv: Survey timing and weather context (FROM_HOUR, FROM_MINS, TO_HOUR, TO_MINS; CLOUD, RAIN, WIND, VISIBILITY)
+  - ECN_BB3.csv: Habitat context per transect (FIRSTHL and SECONDHL levels 1–4)
+  - ECN_BB_qtext.csv: Textual notes on data quality from site managers (quality context by field, date ranges, and ongoing status)
+- Site Codes and Locations:
+  - Explanatory Site Codes (e.g., T01 Drayton, T02 Glensaugh, T03 Hillsborough, T04 Moor House, T05 North Wyke, T06 Rothamsted, T07 Sourhope, T09 Alice Holt, T10 Porton Down, T11 Snowdon, T12 Cairngorms) with precise coordinates included
+  - Full site list available in accompanying documentation
+- Bird Species Codes and Names:
+  - Comprehensive mapping of two-letter codes to species names (e.g., AC = Arctic Skua, AE = Arctic Tern; BB = Blackbird; etc.)
+  - Extensive listing covers a wide range of common and rare species observed in UK breeding surveys
+- Habitat Codes:
+  - BTO habitat framework used with Level 1 codes (A–J) and Level 2–4 subdivisions
+  - Major categories include: A - Woodland, B - Scrubland, C - Semi-natural Grassland/Marsh, D - Heathland and Bogs, E - Farmland, F - Human Sites, G - Freshwater, H - Coastal, I - Inland Rock, J - Miscellaneous
+  - Each level includes detailed Level 2–4 codes to describe habitat type, structure, disturbance, and management (e.g., coppicing, grazing, proximity to roads)
+- Intended Use and Limitations for Data Leaders:
+  - Useful for designing data strategy around long-term avian monitoring and cross-site comparability
+  - Enables integration with wider datasets (e.g., BTO) to analyze relationships between bird populations and environmental change
+  - Metadata-rich (site codes, weather context, habitat codes, and species codes) to support data governance, discoverability, and reuse
+  - Emphasizes the need for proper attribution and submission of reprints to ECN for impact tracking
+- Access and Contact:
+  - Primary contact: ECN Data Centre
+  - Dataset available with accompanying documentation and code mappings; further details at ECN data portal and catalogues referenced in the materials

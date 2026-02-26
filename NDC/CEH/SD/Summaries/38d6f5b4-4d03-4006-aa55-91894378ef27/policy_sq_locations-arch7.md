@@ -1,0 +1,30 @@
+# Policy of the Countryside Survey (CS) partners on access to survey square locations
+
+- Aim: Maximise public interest utility of CS spatial data while minimising risks to future surveys and site anonymity; applies only to survey square locations and spatial data within survey squares; other CS data remains publicly accessible.
+- Background and partners: Rolling program funded by NERC (2018/2019–2024); 2007 CS partners include UKCEH, Defra, NE, WG, SG, NIEA, FC, CCW, SNH.
+- Confidentiality rationale: Square locations are confidential to preserve sampling representativeness and landowner goodwill, ensuring scientific integrity, environmental protection, and ongoing permission to survey land.
+- Conditions for release and precision:
+  - Four-digit grid references: may be released under licence to indicate which 10 km x 10 km grid contains a square.
+  - Six-digit grid references: released only in very exceptional circumstances; external pre-processing analysis should be done by UKCEH to avoid release.
+  - Spatial data within survey squares (habitats, linear features): can identify square locations and thus are treated with the same exceptional confidentiality terms as six-digit references.
+- Specific licensing conditions:
+  - Licensees must maintain confidentiality, store data securely, and restrict access to named individuals with legitimate need.
+  - Licences are time-bound and project-specific; data must be destroyed and confirmation provided at the end of the period.
+  - Data or derived information must not be released to third parties that could compromise square confidentiality; the data must not be used to plan visits or to check landowner compliance.
+  - If required, licensees must demonstrate project management standards at least equivalent to JCOP.
+  - Four-digit reference releases have similar but less stringent IP confidentiality criteria than six-digit releases.
+  - License terms prohibit attempts to derive precise square locations or to claim such derivations.
+- Roles and governance:
+  - UKCEH (on behalf of NERC) makes exceptional release decisions and issues hardcopy licences; decisions are based on stated policy principles.
+  - UKCEH will report annually to CS partners with decisions and grounds for releases.
+  - Internal CS partners may receive reasonable pre-processing support within moderate demand; requests from other organisations are case-by-case.
+  - It is recommended that potential data users consult with UKCEH before committing to use CS location data; collaboration or paid support can be negotiated case-by-case.
+- Practical workflow for requests:
+  - Determine necessity for four-digit vs six-digit release.
+  - Consider pre-processing by UKCEH to avoid location release where possible.
+  - Ensure licensing terms enforce confidentiality, security, destruction, and non-identification clauses.
+- Compliance framework:
+  - Any decision to release or deny access follows the Act and Regulations (FOIA/Environmental Information Regulations) as applicable.
+  - Licences require senior-level sign-off from the licensee's organization and clear attribution of responsibilities.
+- Accessibility note:
+  - All other CS data remains publicly accessible; confidentiality applies only to location data and information within survey squares.

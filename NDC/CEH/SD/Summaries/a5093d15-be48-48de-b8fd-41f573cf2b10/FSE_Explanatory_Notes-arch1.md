@@ -1,0 +1,23 @@
+# Explanatory notes
+
+- Purpose: The Farm Scale Evaluations (FSE) were set up to determine whether genetically-modified herbicide-tolerant (GMHT) crops might have significant effects on farmland wildlife due to the management of these crops.
+- Crops and areas covered: Data were collected for Beet, Maize, Spring-sown oilseed rape, and Winter-sown oilseed rape across multiple trial areas.
+- Data categories and timing:
+  - Seedbank: seedbank counts from soil before planting; Follow-up 1 (one year after initial sample); Follow-up 2 (two years after initial sample).
+  - Vegetation in the crop: First-seedling (before herbicide), Mezzanine (Beet only; between herbicide applications on conventional vs GM sides), Winter rape Mezzanine (spring before herbicide), Post-herbicide (after herbicide on both sides), Final Counts (same time as biomass sampling), Seed Rain (season-long seed collection), Follow-ups 1 and 2 (vegetation surveys one and two years after the trial).
+  - Field edge vegetation: Margin Attributes around field edges; Edge Veg Cover (June), Edge Veg Flower (April–August), Edge Veg Seed (July–August), Edge Bare Ground, Edge Spray Damage.
+  - Invertebrates: Bee and Butterfly transects monthly (April–August) to yield Pollinators; Crop Pests; Gastropod Search; Gastropod Trap; Pitfall; Vortis (on verge and in crop; early/mid/late season).
+  - Additional tables: Crop drilling date; Herbicides applied; Height/Cover of weeds and crop.
+- Data organization and naming:
+  - Table naming convention: sum_{crop}_(sample date)_protocol (e.g., sum_b_seedrain for Beet seedrain; sum_b_early_pitfall for Beet early-season pitfall).
+  - Generic table properties: Each row represents half-field totals (counts/biomass/mean percent cover) for a single site; includes group totals and contributing species; sites are referenced within Defra government regions; South-eastern and Eastern England regions are aggregated; nulls appear where data are missing; some counts are decimals due to using only a subset of transects.
+  - Specific table properties: All crop_pest tables use a suffix of 'W+' or 'W-' to denote winged vs wingless forms.
+- Column headings and measurements:
+  - Variables include conv_count (conventional crop count), gm_count (GMHT crop count), crop_cover (percent cover of crop), crop_height (crop height in cm), and similarly formatted GMHT-specific counts (e.g., gm_count_FL, gm_count_GE4TL).
+  - Each row also includes name (species or group name), site_ref (site identifier consistent across tables), and Region (Defra region or aggregation).
+- Data scope and access considerations:
+  - Data are organized by Defra regions with some confidentiality for certain sites.
+  - Null values indicate missing verified data; decimals reflect partial transect calculations.
+- References and context:
+  - For spring crops: The theme issue in Philosophical Transactions of the Royal Society B (Nov 2003; 358:1439) provides additional context on spring crops.
+  - For winter rape: Publication in Proceedings of the Royal Society B (2005) discusses effects on weed and invertebrate abundance and diversity due to herbicide management in GMHT winter-sown oilseed rape.

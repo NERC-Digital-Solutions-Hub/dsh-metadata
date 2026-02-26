@@ -1,0 +1,35 @@
+# DRAINAGE AREAS AND STREAM FLOW CONVERSION
+
+- A comprehensive, multi-site hydrological and hydrochemical dataset describing catchments around Plynlimon, mid-Wales, including Lower Hore, Upper Hore, Tanllwyth, Lower Hafren, Upper Hafren, and related sites.
+- Site codes and basic geography:
+  - Lower Hore (A), Upper Hore (D), Tanllwyth (K), Lower Hafren (B), Upper Hafren (G) with associated catchment areas: 3.172, 1.62, 0.916, 3.58, 1.22 sq km respectively.
+  - Additional sites for flow, rainfall, and water chemistry (e.g., Cloud, Tanllwyth Bridge, South East 1/3, Vyrnwy rainfall/streams, boreholes, and multiple intermediate/slopes). Location details include precise EASTING/NORTHING, latitude/longitude (WGS84), and altitude.
+- Data scope and time range:
+  - Start dates range from 10-May-1983 (for several site descriptions) through mid-1990s for many boreholes and catchment measurements, with many series continuing past 1997 and some marked as Cont. (ongoing) or End Date 2001 for several components.
+  - Measurements cover a broad spectrum of hydrology and water chemistry across the catchments, including stream channels, boreholes, ephemeral streams, flumes, and gauging structures.
+- Data types and measurements:
+  - Discharge/flow data represented in cumecs, with a provided conversion to mm/15min based on catchment area: mm/15min = cumecs × 0.9 / catchment_area_km2.
+  - Conversion back from flow in mm/15min to cumecs: cumecs = (mm/15min) × catchment_area_km2 / 0.9.
+  - Water chemistry and hydrology measurements:
+    - Daily chloride in Lower Hafren daily chloride and Tanllwyth daily chloride.
+    - Rainfall chloride and daily rainfall chloride measurements.
+    - Rainfall total nitrogen analyses at Carreg Wen.
+    - Cloud water and rainfall chemistry references and multiple related hydrochemical datasets (Overviews of throughfall, stemflow, groundwater, and various stream/forecast measurements).
+  - Other data captured per site: soil types, vegetation, land management (e.g., phased felling, clearfelled periods), mining status (primarily None), and start/end dates for data series.
+- Metadata and data governance:
+  - Extensive site-level metadata for discoverability and context, including:
+    - LOCATION CODE, coordinates (E/N, latitude/longitude), altitude.
+    - DESCRIPTION of site and sampling point (streams, boreholes, flumes, etc.).
+    - MAIN SOIL TYPES and VEGETATION, as well as LAND MANAGEMENT and MINING status.
+    - START DATE and END DATE for each data series, with some entries noting data quality caveats.
+    - PRIMARY REFERENCE NUMBER and associated references to hydrology/hydrochemistry literature (1–10), providing provenance for the data and methods.
+  - Notable data quality caveats:
+    - Tanllwyth daily chloride and related series indicate chemistry was affected by borehole introduction near the stream on 7 March 1995.
+    - Some Tanllwyth samples after 7-Mar-1995 are affected by borehole effects; practitioners should treat long-term series with borehole adjustments as indicated.
+- References and sources:
+  - A prioritized set of hydrology/hydrochemistry references (numbers 1–10) detailing major findings from the Plynlimon catchments, including rainfall/cloud water chemistry, forestry impacts on stream water quality, groundwater occurrences, and nitrogen/chloride dynamics.
+- Practical implications for Data Leaders:
+  - Demonstrates a large, rich, and highly annotated data ecosystem with cross-site comparability, enabling integrated analysis of hydrology, water quality, and atmospheric inputs across multiple catchments.
+  - Highlights the importance of robust metadata, data provenance (references), and clear data quality notes to support reliable analyses and decision-making.
+  - Provides explicit data transformation rules to support interoperability of flow data with other datasets (cumecs to mm/15min and vice versa), aiding standardization and integration across networks.
+  - Emphasizes ongoing data stewardship needs, including consistent updates, documentation of discontinuities (e.g., borehole effects), and clear endpoints for long-running series.

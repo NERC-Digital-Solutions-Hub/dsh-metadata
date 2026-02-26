@@ -1,0 +1,71 @@
+# Supporting documentation: Data from the experimental management of arable field options for rare plants (Defra project BD5204)
+
+- Purpose and scope
+  - Documents four main experiments (2011–2014) on management options for rare arable plants and baseline data for modelling population dynamics.
+  - Data are organized by experiment and dataset, with metadata and quality assurance notes to support reuse.
+
+- Common experimental context
+  - Topics across experiments include effects of cropping practices, herbicide use, cereal headland management, and crop rotation on rare arable plant communities.
+  - Species identification follows Stace (2010) with intentional aggregates for difficult-to-distinguish taxa.
+  - Data collected across multiple sites with standardized sampling protocols and temporal coverage (2011–2014 for vegetation, counts, and related measures).
+
+- Data quality assurance
+  - Procedures include outlier checks, spot checks of input data, and correction of ID inconsistencies among recorders.
+  - Where necessary, species aggregates were formed to improve reliability.
+  - Documentation notes ensure traceability of data processing and deposition, including maintaining metadata and provenance.
+
+- Experimental design overview
+  - Margin management experiment
+    - Setup: multi-site, autonomous randomised complete block split-plot design at three sites (Brecklands, Fivehead, Roundwood); Brecklands had 4 replicates, others 3.
+    - Main plots: six 12 m x 60 m blocks arranged in a 2x3 factorial of cultivation season (spring/autumn) and cultivation method (discing, harrowing, ploughing).
+    - Sub-plots: four 12 m x 15 m sub-plots per main plot with four herbicide treatments (unsprayed, glyphosate, graminicide, selective broadleaf herbicide plus graminicide).
+    - Treatments applied annually (2010–2014).
+  - Herbicide screening experiment
+    - Setup: 15 seed strips (1 m width x 110 m length) with 15 rare arable species assigned to strips; three blocks with 23 herbicide strips; 21 herbicides plus two unsprayed controls.
+    - Sowing: 30 Apr 2012; herbicides applied pre- and post-emergence in 2012; performance scored on 1 Aug 2012 in 1 m x 1.5 m plots.
+    - Selection criteria: minimum 10 established plants per plot for inclusion in assessments; 6-point scale for condition (0 = dead, 5 = no visible damage).
+  - Crop rotation experiment
+    - Purpose: baseline data for modelling population dynamics under rotation scenarios.
+    - Design: split-plot mesocosm experiment with six crop treatments across two replicate blocks; within each main plot, twelve mesocosms assigned to two seed mixes (autumn- vs spring-germinating species).
+    - Timeline: soil inoculation on 18 Sept 2013; sowing of winter crops (wheat, rape) on 19 Sept 2013; spring crops (barley, beans, grass-clover ley) on 20 Mar 2014.
+    - Counts and seed production: initial count before sowing (19 Mar 2014) and final counts (2 Jun 2014 for some crops; 7 Jul 2014 for others); seed head collection for seed production.
+  - Cereal headland experiments
+    - Purpose: assess responses of rare arable plants to cereal sowing density and N fertilizer.
+    - Two parallel experiments: winter wheat (WW) and spring barley (SB) in 12 m-wide margin; four replicate blocks; plots assigned to five treatments (control, low density, low density + N, high density, high density + N) with specified plot lengths depending on N.
+    - Sowing and management: central 5 m x 5 m area sown with rare arable species; final counts include species, seed heads, vegetation structure, and cereal metrics.
+    - Sampling: five 0.5 m x 0.5 m quadrats per plot for final assessments; seed heads collected for seed production analyses.
+  - Cereal headland data datasets
+    - Vegetation cover (five quadrats per plot) and structure (tiller density, height, bare ground) datasets.
+    - Rare plant demography and seed production datasets for sown rare arable species.
+  - Crop rotation experiment datasets
+    - Design and two counts in March 2014 and June/July 2014 for mesocosms.
+    - Seed production datasets per mesocosm for seed head analyses.
+
+- Datasets deposited (descriptions by experiment)
+  - Margin management experiment
+    - MarginManagementExperiment_01_Design.csv: randomisation of main plots and sub-plots (site, block, main plot, sub-plot, main plot treatment, sub-plot treatment).
+    - MarginManagementExperiment_02_VegetationWholeSubplots.csv: estimated annual percent cover for all species (2011–2014); edge avoidance; species aggregates applied.
+    - MarginManagementExperiment_03_VegetationQuadratsAverages.csv: mean percent cover per species from five 1 m quadrats per sub-plot; mid-summer surveys.
+    - MarginManagementExperiment_04_RarePlantCounts.csv: twice-annual counts of rare arable species; early/late census; sub-plot level counts.
+    - MarginManagementExperiment_05_FlowersSeedHeads.csv: counts of flowers and seed heads for rare species; census details.
+    - MarginManagementExperiment_06_SeedProduction.csv: counts of seeds per seed head for rare species.
+    - MarginManagementExperiment_07_SoilChemistry.csv: soil chemistry parameters per main plot (pH, P, K, Mg, texture, loss-on-ignition, total N, etc.); sampling details and units.
+    - MarginManagementExperiment_08_Bryophytes.csv: bryophyte frequencies in unsprayed sub-plots; counts per 0.2 m2 quadrats.
+    - MarginManagementExperiment_09_Seedbank.csv: seed counts from soil cores (depth 0–5 cm and 5–20 cm); greenhouse germination method; mortality tracking.
+  - Herbicide screening experiment
+    - HerbicideScreeningExperiment_01_Design.csv: randomisation of herbicide treatments and species within layout; blocks and strips.
+    - HerbicideScreeningExperiment_02_PlantConditionScores.csv: plant condition scores (0–5) by herbicide strip, treatment, and species.
+  - Crop rotation experiment
+    - CropRotationExperiment_01_Design.csv: randomisation of crop treatments within blocks; mesocosm IDs; seed mix assignments.
+    - CropRotationExperiment_02_SecondCount.csv: second count data for all rare arable species per mesocosm (counts by species).
+    - CropRotationExperiment_04_SeedProduction.csv: seeds per seed head by mesocosm and species.
+  - Cereal headland experiment
+    - CerealHeadlandExperiment_01_Design.csv: randomisation of cereal density and N fertilizer within WW and SB experiments.
+    - CerealHeadlandExperiment_02_VegetationCover.csv: percent cover by species per plot (averaged across five quadrats).
+    - CerealHeadlandExperiment_03_VegetationStructure.csv: cereal cover, tillers, height, bare ground (averaged across quadrats or summed as specified).
+    - CerealHeadlandExperiment_04_RarePlantDemography.csv: counts of rare arable plants, flowers, and seed heads (across five quadrats).
+    - CerealHeadlandExperiment_05_SeedProduction.csv: seeds per seed head (by species).
+- Target audience and use
+  - Analytic end users seeking to identify patterns and model impacts of management practices on rare arable plant populations.
+  - Data intended for modelling population dynamics, assessing treatment effects, and informing practical decisions in arable landscapes.
+  - Datasets are structured for cross-experiment integration, with consistent species naming and aggregation where necessary.

@@ -1,0 +1,33 @@
+# Experimental design/sampling regime
+
+- UK Butterfly Monitoring Scheme (UKBMS) collects data from over 2,000 sites annually across the UK to monitor butterfly abundance.
+- All-species transects (Pollard walks)
+  - Fixed-route line transects (2–4 km) where all butterflies are recorded along a 5 m wide belt.
+  - Typically 26 counts per year, weekly from early April to late September.
+  - Transects are designed to sample habitat types and management activity and must remain fixed year to year for comparability.
+  - Observations are made between 10:45 and 15:45 under specific weather conditions: dry, Beaufort wind < 5, and suitable temperatures (≥13°C with ≥60% sunshine, or >17°C if overcast).
+  - Transects are divided into sections corresponding to habitat/management units; all-species transects account for the majority of UKBMS sites (>1,000 in recent years).
+- Single-species transects
+  - Follow the all-species methodology but record only during a few weeks of the focal species’ flight period.
+- Timed counts and egg/larval web counts
+  - Timed counts record abundance of a focal species over a set period and area, following the same time-of-day and weather criteria as transects.
+  - Egg/larval web counts document eggs or larval webs in suitable habitats.
+- Wider Countryside Butterfly Survey (WCBS)
+  - Introduced in 2009 as a reduced-effort survey to sample wider countryside habitats like farmland.
+  - Based on the BTO Breeding Bird Survey (BBS) design: two parallel 1-km transects within randomly selected 1-km squares, divided into 10 sections.
+  - Typically 2–4 visits (minimum 2 in July/August; spring visits encouraged).
+- Data collection and entry
+  - Site location data collected in the field when a transect, timed count, or larval web count is established.
+  - Data entered online via the UKBMS data entry site or via Transect Walker software (free download).
+  - Data entry performed by the recorder or a regional transect coordinator.
+  - If a transect route changes, the new route is treated as a new site with a new site number.
+  - Online data and Transect Walker files are uploaded to an Oracle database.
+- Data storage and structure
+  - Site location data stored as CSV with fields including:
+    - Site number, Site name, Grid reference, Easting, Northing, Length, Country, No. of Sections, No. of Years surveyed, First year surveyed, Last year surveyed, Survey type (WCBS vs UKBMS).
+  - Grid references are provided at ~6-figure accuracy and converted to Easting/Northing coordinates.
+- Data quality control
+  - Regional transect coordinators verify records; followed by automated and manual validation checks to ensure location data accuracy.
+- Notes on data completeness
+  - Some WCBS site data may be incomplete due to the randomized 1-km square sampling.
+  - Overall, the dataset emphasizes reproducibility and comparability across years through fixed routes, standardized timing, and defined weather criteria.

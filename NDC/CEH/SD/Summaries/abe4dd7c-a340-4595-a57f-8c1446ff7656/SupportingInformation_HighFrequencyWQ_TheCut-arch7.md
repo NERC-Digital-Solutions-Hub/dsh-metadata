@@ -1,0 +1,31 @@
+# Hourly physical and nutrient monitoring data for The Cut, Berkshire (2009-2012) - Supporting Information
+
+- Purpose and scope: hourly monitoring of water quality and physical parameters at The Cut, Bray Marina, Berkshire, UK, with accompanying hourly flow data from the The Cut at Binfield gauging station. Time span: May 2010 to February 2012 (supporting information also referenced for 2009-2012 in related documents).
+- Sampling site and flow linkage:
+  - Monitoring site: Bray Marina, The Cut; National Grid reference SU915786.
+  - Upstream flow reference: The Cut at Binfield gauging station; reference SU853713, ~10 km upstream of the sampling site.
+- Parameters measured (hourly):
+  - Nutrients and related chemistry: total phosphorus (TP), total reactive phosphorus (TRP), ammonium (NH4 as N).
+  - Physical/chemical: conductivity, temperature, dissolved oxygen, pH, turbidity, chlorophyll (in situ).
+  - Flow: hourly average flow data derived from 15-minute measurements (flow in m^3/s).
+- Measurement methods and instrumentation:
+  - Water-quality instrumentation at Bray: Hach Lange Sigmatax and Phosphax Sigma, with a YSI 6600 sonde.
+  - Sample handling: continuous pumping from river center into a flow cell, with a 10 ml sub-sample analyzed by Phosphax Sigma (TP and TRP via colorimetric/digestion methods).
+  - YSI 6600 measurements: in situ DO, pH, temp, conductivity, turbidity (NTU), and chlorophyll (μg/L). Turbidity corrected for temperature; chlorophyll measured by fluorometer at 470 nm.
+  - Calibration and quality: YSI sensors calibrated every 2–3 weeks; Phosphax Sigma automated daily calibration; no filtration step; 20°C controlled trailer environment to maintain reaction temperatures and prevent freezing.
+  - Detection limits and data quality: TP and TRP detection limit 0.01 mg/L; chlorophyll measurements can be affected by sediment optical interference; calibration and QA procedures accounted for in analysis.
+- Data format and units:
+  - Time format: day/month/year hour:minute.
+  - Flow: hourly average derived from four 15-minute observations; unit = cubic metres per second (m^3/s).
+  - Concentrations: TP and TRP in mg/L; NH4 in mg/L as N.
+  - Turbidity: NTU; Chlorophyll: μg/L (total of chlorophyll a, b, and c).
+  - Location identifiers: Bray site SU915786; upstream flow station SU853713.
+  - Missing data: NaN represents missing data points.
+- Data considerations for GIS use:
+  - The dataset provides a single spatial sampling location plus an upstream flow reference, suitable for time-enabled GIS analyses (e.g., temporal mapping of water quality at a point and its relation to flow).
+  - Units and data types are clearly defined, enabling joins with other spatial datasets (catchment boundaries, land use, hydrology).
+  - High temporal resolution (hourly) supports trend analysis and event detection; consider resampling if integrating with coarser datasets.
+  - Data quality notes (chlorophyll interference, calibration frequency) should be captured in metadata to inform GIS-informed analyses and visualization.
+- Additional information and references:
+  - Related methodological and hydrochemical context: Wade et al. 2012; Halliday et al. 2015; Hydrochemical processes and high-frequency monitoring in urban catchments.
+  - The provided documentation is “Hourly physical and nutrient monitoring data for The Cut, Berkshire (2009-2012) - Supporting Information” (April 2015).

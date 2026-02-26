@@ -1,0 +1,34 @@
+# Durleigh Reservoir Acoustic Doppler Velocimeter Measurements
+
+- Metadata describes ADV data collected at Durleigh Reservoir from 20/08/2018 to 24/08/2018.
+- Instrument and setup: Nortek Vector Acoustic Doppler Velocimeter (ADV); near-bed measurements (~10 cm above bed) near surface mixers; compass calibrated; ENU velocities; burst mode recording.
+- Sampling characteristics: 64 Hz sampling frequency; data collected in bursts of 16 seconds every 10 minutes.
+- Authors and citation: Emily Slavin and Danielle Wain; please cite as Slavin, E.I., Wain, D.J. 2018. Acoustic Doppler Velocimeter measurements from Durleigh Reservoir, August 2018.
+- Location: Lat 51.1215, Lon -3.0396.
+- Temporal coverage: Measurements span 5 days, corresponding to days 1–5 named in files; Day 1 = 20 August 2018, Day 2 = 21 August 2018, Day 3 = 22 August 2018, Day 4 = 23 August 2018, Day 5 = 24 August 2018.
+- File organization: Data stored as day-specific pairs of .dat and .sen files (five days worth of data).
+- Data contents:
+  - dat files (velocities and quality metrics):
+    - vel_xe (m/s), vel_yn (m/s), vel_zu (m/s) – velocity components in ENU
+    - Amp1, Amp2, Amp3 (counts)
+    - snr1, snr2, snr3 (dB)
+    - corr1, corr2, corr3 (%) 
+    - pres (dbar)
+  - sen files (metadata and environmental conditions):
+    - Hour, Minute, Second
+    - soundspeed (m/s)
+    - heading (degrees)
+    - pitch (degrees)
+    - roll (degrees)
+    - tempearture (degrees C) [note: typo present in the dataset]
+- Data context and usability:
+  - Provides near-bed flow velocity data aligned with instrumental orientation (ENU frame) and environmental context (sound speed, temperature, heading, pitch, roll).
+  - Useful for analyses of near-bed flow dynamics around reservoir mixers, including time-series correlations with sound speed, temperature, and orientation.
+  - Data are organized by day, requiring assembly across days to form continuous time series.
+- Data quality and considerations:
+  - Compass calibration noted; ENU velocity reference established.
+  - Measurements rely on bursts; time resolution governed by 10-minute cadence with 16-second bursts.
+  - Typographical inconsistencies present in metadata (e.g., “tempearture”) to be accounted for during data ingestion.
+- Accessibility and provenance:
+  - Location and instrument details documented; dataset intended for reproducibility and proper citation.
+  - Metadata includes precise timestamp and spatial coordinates to support data discovery and reuse.

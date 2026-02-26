@@ -1,0 +1,66 @@
+# Climoor field site in Clocaenog forest Supporting documentation for data
+
+- Overview
+  - Climoor is a climate change manipulation experiment at Clocaenog Forest, North East Wales, using automated roof technology to simulate drought and warming for upland moorland over the next few decades.
+  - Established in 1998; site features replicated drought and warming treatments designed to reflect 20–30 year climate predictions and operated with energy from solar and wind power.
+  - Dominant ecosystem: wet upland heath with Calluna vulgaris (heather) as a major biomass component; soil is humo-ferric podzol with variable eluvial (E) and illuvial (Bh) horizons.
+
+- Climate change treatments and experimental design
+  - Treatments and layout
+    - Two climate treatments: drought and warming, each with three replicate plots (4 m x 5 m).
+    - Three control plots mirror shading effects of the experimental structures (n = 9 total plots).
+  - Drought treatment
+    - Operated May–Sept (1999–2011); since 2012 Apr–Oct.
+    - Mechanical roof reduces annual rainfall by ~20% and excludes ~80% of rainfall during drought periods.
+    - Triggered by tipping-bucket rainfall sensor; operations paused in high winds (>10 m/s) to protect curtains.
+  - Warming treatment
+    - Retractable aluminum mesh curtains that reflect infrared radiation, reducing night-time heat loss.
+    - Rainfall mitigation: roof is retracted when rain is detected to minimize rainfall exclusion, reducing annual rainfall by ~14%.
+    - Wind limits also apply for curtain safety.
+  - Climate data context
+    - Mean air temperature around 8.0°C; mean soil temperature in control plots ~7.5°C.
+    - Mean annual rainfall ~1411 mm.
+    - Nitrogen deposition ~20–25 kg N ha⁻¹ yr⁻¹.
+    - Ecosystem type: wet upland heath; dominant mosses and shrubs present; bryophytes indicated in species lists.
+
+- Data collection and data types
+  - Data streams and sensors
+    - AWS meteorological data (daily): air and soil temperatures, humidity, rainfall, barometric pressure, solar and PAR radiation, net radiation, wind speed/direction.
+    - Micro-meteorological plot data (daily): plot-level soil and air temperatures, soil moisture.
+    - Rainfall data: storage rain gauge (site-level, biweekly) with rainfall chemistry; throughfall data (plot-level, biweekly).
+    - Water table depth: perforated tubes reaching bedrock (biweekly).
+    - Soil respiration and trace gases: CO2 efflux, CH4 and N2O fluxes using collars and closed systems; measurements across 1998–present with method changes.
+    - Net ecosystem CO2 exchange (NEE): chamber-based CO2 flux measurements (2002–2004, 2009–2011) and 2010–2011 with different chamber systems; photosynthesis and respiration components derived.
+    - Photosynthesis: ambient and response-curve measurements (CALLUNA vulgaris, Vaccinium myrtillus, Empetrum nigrum) across multiple years.
+    - Vegetation biomass and phenology: Pin-point vegetation surveys (1998–2012 with multiple years); annual growth measurements; leaf/flower/branch assessments.
+    - Canopy reflectance: NDVI and PRI indices from ground-based spectrometer (2001–2004 with select years).
+    - Vegetation chemistry: carbon, nitrogen, phosphorus, potassium, calcium, magnesium, lignin, tannin, alpha-cellulose, carbohydrates (green and litter material).
+    - Litterfall: collectors deployed and emptied periodically from 1999–2002; later less frequent; carbon and nitrogen analyses on litter.
+    - Root biomass: soil cores across multiple years; methods evolved (manual sorting, washing, WinRHIZO analysis).
+    - Soil microbial biomass: chloroform fumigation technique (2000, 2001, 2012).
+    - Nitrogen mineralisation: soil cores with initial and final incubations; ammonium and nitrate analyses.
+    - SOM, SOC and bulk density: soil core analyses for organic/inorganic layers; bulk density calculations.
+    - Soil solution and leachate chemistry: lysimeters and tension samplers; pH, NO3, Cl, SO4, DOC, ammonium.
+  - Data processing and conversion
+    - Legacy and cross-method conversions for CO2 fluxes (C CIRAS-2, LICOR 8100) to mg CO2-C m⁻² h⁻¹.
+    - Standardization steps include area/volume corrections, PAR and temperature context for NEE and respiration calculations.
+    - Pin-point data translated to biomass using species-specific calibration factors; consistency checks and corrections applied to ensure 300 pins per plot.
+  - Data management and accessibility
+    - Data are stored in multiple formats and some data not stored within the EIDC (Environmental Information Data Centre) after June 2015.
+    - Primary contacts for data access: Sabine Reinsch (sabrei@ceh.ac.uk) and Bridget Emmett (bae@ceh.ac.uk) at CEH Bangor.
+    - The documentation notes that the dataset aims to support standardized outputs (reports, maps, charts) and to enable policy-relevant scrutiny of environmental health over time.
+
+- Site and data specifics of note for analysts
+  - Data quality and provenance
+    - Initial AWS placement at 1 m, relocated to 4 m mast after 2007 due to theft; data quality controlled via visual checks in Excel rather than hard automated limits.
+    - Micro-meteorological data initially logged at minute level and averaged hourly (and half-hourly after 2016); various methods used historically for soil moisture measurements.
+    - Some datasets are described as legacy data with imperfect documentation of processing steps; contact points provided for clarification.
+  - Throughfall and rainfall adjustments
+    - Throughfall data used to compute treatment-specific rainfall reductions; occasional data loss or instrument issues cause exclusions or infill with averages.
+  - Appendix and layout
+    - Appendix includes the Clocaenog site layout and quadrat layout; plot identifiers and quadrat references (e.g., LYS, PQ, SS) are defined for cross-referencing measurements.
+
+- End notes and implications for environmental monitoring
+  - Climoor provides a long-term, replicated, plot-level data framework for drought and warming experiments in an upland moorland context.
+  - The dataset supports evaluation of climate-change impacts on vegetation, soil processes, carbon exchange, and biogeochemical cycling.
+  - For analysts, the data offer a standardized basis to monitor environmental health and policy-relevant performance over time, with explicit data handling, processing, and access considerations to ensure reproducibility and comparability.

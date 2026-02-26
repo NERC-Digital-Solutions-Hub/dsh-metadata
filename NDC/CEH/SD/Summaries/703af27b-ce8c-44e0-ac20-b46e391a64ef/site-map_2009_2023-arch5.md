@@ -1,0 +1,38 @@
+# Site codes and site names for river monitoring locations
+
+- The document lists two-letter site codes paired with human-readable site names and locations, covering multiple river monitoring sites.
+- Each entry follows the pattern: "<code>, Site name = <Site name and location>."
+- Examples of included sites:
+  - Tm, Thame at Wheatley
+  - Ra, Ray at Islip
+  - Ch, Cherwell at Hampton Poyle
+  - Ev, Evenlode at Cassington Mill
+  - TS, Thames at Swinford
+  - TN, Thames at Newbridge
+  - Wi, Windrush at Newbridge
+  - Le, Leach at Lechlade (Mill Lane)
+  - Cl, Cole at Lynt Bridge
+  - Cn, Coln at Whelford
+  - Oc, Ock at Abingdon
+  - Pa, Pang at Tidmarsh
+  - TSo, Thames at Sonning
+  - Lo, Lodden at Charvil
+  - TR, Thames at Runnymede
+  - Wy, Wye at Bourne End
+  - TW, Thames at Wallingford
+  - TH, Thames at Hannington Wick
+  - Ke, Kennet at Woolhampton
+  - En, Emborne at Brimpton
+  - Ju, Jubilee River at Pocock's Bridge
+  - TT, Thames at Taplow
+  - TG, Thames at Goring
+  - Cs, Colne at Staines
+- Rivers represented include Thames, Ock, Cherwell, Evenlode, Windrush, Leach, Cole, Coln, Pang, Lodden, Wye, Kennet, Emborne, and Jubilee River, indicating a broad geographic scope across southern England.
+
+- Data governance implications for Data Stewards:
+  - Data model needs: a stable site_code, full site_name with location, river name, and potentially coordinates.
+  - Metadata improvements to consider: coordinates (lat/long), data type (e.g., hydrological, chemical), data ownership, collection dates, and data-sharing permissions.
+  - Standardization opportunities: ensure consistent naming conventions, unify river names, and maintain a canonical gazetteer to prevent duplicates or aliasing.
+  - Data quality considerations: verify uniqueness of codes, validate site names, capture changes over time (site renames, relocations, or removals).
+  - Data integration steps: map to a standardized schema (site_code, site_name, river, location, lat/long, data_type, steward), and catalog in appropriate data portals with versioning.
+  - Operational considerations: establish update workflows, provenance, and documentation of any embargoes or access restrictions.

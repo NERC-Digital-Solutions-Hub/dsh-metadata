@@ -1,0 +1,44 @@
+# AN Protocol
+
+- Aim
+  - Detect and define changes in periodic mean atmospheric concentrations of nitrogen dioxide (NO2).
+  - Focus on NO2 due to health effects, urban sources, and potential ecosystem impacts from NOx.
+  - Use standardized, low-cost passive diffusion tubes to measure NO2 levels over defined periods.
+  - Consider extension to other gases (ammonia, sulfur dioxide, ozone), though no reliably passive methods are available yet.
+- Context and rationale
+  - Natural and man-made NOx sources contribute differently; urban NO2 is driven by fuel combustion and industrial processes.
+  - NO2 is a respiratory irritant and participates in smog and acid rain; high levels can affect crops and vegetation.
+- Measurement method
+  - Passive diffusion tubes with NO2 absorbent discs; replicated tubes to address inter-tube variability; low capital cost and no on-site power needed.
+  - Currently no acceptably reliable passive methods for ammonia, SO2, or ozone.
+- Equipment and tube preparation
+  - Diffusion tubes consist of plastic tubes with stainless steel mesh discs coated with NO2 absorbent; caps prepared with triethanolamine solutions.
+  - Cleaning and preparation steps include acid wash, Decon 90 cleaning, ultrasonic treatment, and careful handling with gloves.
+  - Ready-made tubes with discs are available; if not, prepare manually following specified steps.
+- Deployment and location
+  - Three diffusion tubes mounted in clips at about 1.5 m above ground, either on a bulk precipitation collector pole or a post; if an enclosure exists, place within it.
+  - Tubes deployed for two weeks per sampling period; collected and blank tubes (unexposed) are handled separately.
+- Sampling protocol
+  - Remove white caps before deployment; collect with caps replaced after exposure; blanks transported to the site but not exposed.
+  - Labeling scheme includes ECN Measurement Code, Site ID, Location Code, tube code (E1–E3 or B1–B3), and Sampling Date.
+- Analytical procedure
+  - Absorbent is analyzed to yield total NO2 absorption for the sampling period; results converted to mean NO2 concentration.
+  - Reagents include sulphanilamide and N-1-naphthylethylene-diamine dihydrochloride (NEDA); colorimetric reaction read at 542 nm.
+  - Calibration with prepared standards; calculations convert nitrite weight to NO2 concentration and then to ppb.
+  - Operators must wear gloves; tubes must be rinsed after analysis.
+- Recording, metadata, and data management
+  - Core dataset variables required for each sample: Site ID, Core Measurement Code, Location Code, Setting out date/time, Sampling date/time, Tube code, and NO2 weight.
+  - Data formats and transfer documentation exist (ECN dataset specs; restricted extranet access via Site Managers' extranet); standard field recording forms provided.
+  - Unique references link analytical results to sampling occasions for traceability.
+- Appendix I: Analytical reagents and standards
+  - Detailed preparation of reagents, stock standards, and working standards; daily fresh preparation recommended.
+  - Step-by-step instructions for spectrophotometric analysis and calculations to determine NO2 concentration.
+- Appendix II: Equipment details
+  - Lists components (discs, diffusion tubes, caps) and supplier (Gradko International Ltd).
+- Quality, governance, and challenges
+  - Emphasizes replication, blanks, and strict labeling to ensure data quality and traceability.
+  - Highlights potential barriers for monitoring frameworks: data quality, metadata adequacy, data sharing, and standardization across sites.
+- Safety and handling notes
+  - Clear warnings about chemical hazards and the need for protective handling and cleaning procedures.
+- References
+  - Hargreaves, 1989; UNEP/WHO, 1994 (quality assurance in urban air quality monitoring).

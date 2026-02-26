@@ -1,0 +1,37 @@
+# Sampling, chemical analysis and thermodynamic treatment
+
+- Geographic and geologic setting
+  - Cyprus located in the north-eastern Mediterranean; three main regions: Kyrenia Range (northern coast, up to ~910 m), Troodos Massif (central-southern; up to ~1940 m), and Mesaoria Plain (east-west, <300 m).
+  - Climate: Mediterranean; hot, dry summers and cool, rainy winters; rainfall varies by region (Kyrenia ~500 mm, higher altitudes of Troodos up to 1000 mm, Mesaoria ~350 mm).
+  - Population density low outside towns; land use includes cultivation (potatoes, grapes, citrus, olives) and growing light industry; soils are peaty or shallow/stony in mountains; Troodos mining (copper, asbestos, etc.) in decline.
+- Sampling scope and objectives
+  - 21 sites within the Troodos ophiolite area sampled in mid-May 1985 to characterize major waters.
+  - Sites selected with Geological Survey input to represent major water bodies in the area.
+- Sampling, filtering, and in-field measurements
+  - Water filtered through 0.45 μm membranes; samples stored in glass or polypropylene bottles depending on analysis.
+  - pH measured in the field with minimal atmospheric CO2 contact.
+  - Alkalinity measured acidimetrically to pH ~4.0; reduced sulfur measured with ion-selective electrode.
+  - Rapid handling to minimize CO2 exchange and degassing (alkalinity and reduced sulfur analyses).
+- Laboratory analyses (conducted in the UK)
+  - Colorimetric methods for major anions, bromide, and total iodine (mainly iodide/iodate).
+  - Major cations, trace metals, and boron by inductively coupled plasma optical emission spectroscopy (ICP-OES).
+  - Sample preservation: cations/metals in 1% nitric acid; anions in high-purity water-cleaned glass bottles.
+  - Alkalinity/CO2-related analyses done promptly to minimize atmospheric equilibration or degassing.
+- Thermodynamic and geochemical calculations
+  - Dissolved carbon dioxide (CO2) saturation assessment (EpCO2)
+    - EpCO2 = [dissolved CO2 in sample] / [dissolved CO2 in pure water in equilibrium with atmosphere at same T and P].
+    - Interpretation: EpCO2 ≈ 0.1 (tenth saturation), ≈1 (saturation), ≈10 (ten times saturation).
+    - Factors influencing dissolved CO2 include atmospheric/biological sources, weathering, plant photosynthesis and respiration, gas exchange with the atmosphere, and external CO2 inputs from depth.
+  - Mineral saturation indices (SIs)
+    - Use saturation indices to evaluate solubility controls (e.g., calcium carbonate).
+    - SI for CaCO3 defined as log10([Ca2+]·[CO3 2−]) − log10(KCaCO3); SI = 0 at saturation, +1 = tenfold supersaturation, −1 = one-tenth saturation.
+    - Similar SI formulations used for other minerals (e.g., magnesium hydroxide).
+    - Calculations performed with PHREEQC thermodynamic model (Parkhurst, 1995).
+  - Data handling and reporting of saturation
+    - When determinants fall below the lowest quotable value, saturation indices are calculated using half the lowest quotable value for comparison.
+    - Lowest quotable value defined as twice the detection limit; for aluminium and magnesium (which influence the equations), estimates provide an upper bound on saturation.
+  - Data presentation
+    - Results presented in tabular form; italicized values indicate values affected by detection limit issues and are explained in table headings.
+- References and methodological basis
+  - Foundational methods and interpretations drawn from Neal (1988, 1992, 1998a), Pantazis (1978), Parkhurst (1995), and related works.
+  - For CO2 and alkalinity estimation and PHREEQC usage, these cited sources underpin the analytical and thermodynamic approaches.

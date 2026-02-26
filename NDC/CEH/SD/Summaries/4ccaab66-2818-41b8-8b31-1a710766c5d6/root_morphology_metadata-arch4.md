@@ -1,0 +1,36 @@
+# Site description
+
+- Context and setting
+  - Study location: AFEX project area at the Biological Dynamics of Forest Fragments Project (BDFFP/INPA), ~80 km north of Manaus, Brazil (02°25' S, 59°43' W).
+  - Climate: mean air temperature ~26°C; mean annual precipitation ~2,400 mm; relative humidity 75–92% (rainy season peaks in April).
+- Experimental design (AFEX Experiment)
+  - Full factorial nutrient addition with eight treatments plus an untreated control.
+  - Nutrients added: Nitrogen (N), Phosphorus (P), cations (K, Mg, Ca) and their combinations (N, P, cations, N+P, N+cations, N+P+cations).
+  - Layout: 32 plots across four independent blocks (≥250 m apart), each plot 50 m x 50 m; central measurement area 30 m x 30 m.
+  - Treatment application: dry granules applied to soil surface three times per year; rates - N 125 kg ha^-1 y^-1 (as urea), P 50 kg ha^-1 y^-1 (as triple superphosphate), Ca 50 kg ha^-1 y^-1, Mg 20 kg ha^-1 y^-1 (as dolomitic limestone), K 50 kg ha^-1 y^-1 (as potassium chloride).
+- Root sampling and processing
+  - In-growth cores: five 12 cm-diameter, 30 cm-deep, root-free cores per plot (in August 2017) installed in central 30 x 30 m area; five cores per plot.
+  - Sampling schedule: cores collected every three months; data aggregated by plot and soil depth (0–10 cm and 10–30 cm; N=64).
+  - Timeframe used for study: fine roots produced between November 2017 and February 2018 (middle of the wet season).
+  - Root extraction: manual extraction over 60 minutes in intervals of 15 minutes; subsequent washing and reintroduction of root-free soil.
+  - Biomass estimation: cumulative root biomass from four 15-minute intervals extrapolated to 180 minutes using Michaelis–Menten asymptotic curve (Metcalfe et al., 2007).
+- Root subsampling and morphology
+  - Subsampling: fine roots from both depths; roots <2 mm diameter used for morphology; dried at 60°C to determine dry mass.
+  - Morphology analysis: roots <2 mm scanned at 600 dpi; analysis with WinRHIZO to obtain mean diameter, total length, area, and volume.
+  - Derived metrics: specific root length (SRL = root length per unit dry mass; cm g^-1), specific root area (SRA = root surface area per unit dry mass; cm^2 g^-1), root tissue density (RTD = g cm^-3), mean root diameter (mm).
+- Data and metadata structure
+  - Spreadsheet fields and descriptions:
+    - Block: block where plots were installed (1–4).
+    - Plot: block and plot description (1–4, 1–8).
+    - TRT: nutrient treatment applied (control, P, N, cations, N+P, N+cations, N+P+cations).
+    - Depth: soil layer sampled (0–10 cm, 10–30 cm).
+    - root_volume: root volume (cm^3).
+    - tot_weight: total root dry weight (g).
+    - SRL: specific root length (cm g^-1).
+    - SRA: specific root area (cm^2 g^-1).
+    - RTD: root tissue density (g cm^-3).
+    - diameter: mean root diameter (mm).
+- References
+  - Araújo AC (2002). J Geophys Res.
+  - Metcalfe et al. (2007). New Phytol.
+  - Metcalfe et al. (2008). Plant and Soil.

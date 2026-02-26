@@ -1,0 +1,32 @@
+# Brief description of the dataset
+
+- Scope and content
+  - Weekly water quality monitoring data for seven River Thames sites and fifteen major tributaries, covering March 2009 to February 2013.
+  - Parameters include: phosphorus species (TP, TDP, SRP), dissolved reactive silicon, water temperature, pH, Gran alkalinity, suspended solids, chlorophyll a, major dissolved anions (F, Cl, Br, SO4) and cations (Na, K, Ca, Mg, B), dissolved and total iron, manganese, zinc, copper.
+  - Additional data: accompanying daily mean river flow data.
+- Sampling and analytical methods
+  - Bulk samples collected from the main river flow on Mondays or Tuesdays each week; subsamples filtered in the field (0.45 μm) and stored at 4°C in the dark.
+  - pH measured with Radiometer PHM210; instrument calibrated with pH 4, 7, 10 buffers (NIST-traceable).
+  - Alkalinity determined by acidimetric titration to pH 4 and 3 using 0.5N H2SO4.
+  - Suspended solids: filtered, dried, and weighed to determine solids mass.
+  - Chlorophyll a: filtered, extracted in acetone/water, measured spectrophotometrically.
+  - Phosphorus: TP and TDP by digestion with acidified persulfate for unfiltered/0.45 μm filtered samples; SRP by colorimetric molybdate method.
+  - Silicate: molybdate-blue method with reduction to silicomolybdenum blue.
+  - Ammonium: indophenol-blue colorimetric method.
+  - Dissolved organic carbon and total dissolved nitrogen: thermal oxidation (pre-2010) and Elementar Vario Cube (from 2011).
+  - Major dissolved ions: ion chromatography (anions), ICP-OES (cations); all analyses with reference Aquacheck QC standards.
+  - Quality control: analyses conducted alongside Aquacheck QC standards.
+- Data format and structure
+  - Date/time recorded as day/month/year and sampling time as hour:minute.
+  - Reported concentrations for all parameters, with units specified in the accompanying data documentation (e.g., mg/L, μg/L, mg/L for various species; flow in m3/s).
+  - Flow data: mean daily flow values accompanying the water quality data.
+- Spatial and data provenance
+  - Most sites near Environment Agency gauging stations.
+  - Flow data provenance and site-specific notes:
+    - Jubilee River: flow data from Windsor (amalgamated with Thames) rather than Jubilee River itself.
+    - Hannington Wick, Wallingford, Sonning: flows interpolated from catchment-area-based estimates using multiple Thames gauges.
+    - Cut and River Kennet sites: gauging data sourced upstream of monitoring sites.
+  - Site locations and gauging stations detailed in CEHThamesInitiative_SamplingSiteLocations file.
+- Access, metadata and references
+  - Flow data sourced from the National River Flow Archive (NRFA).
+  - References for analytical methods include Eisenreich et al. (phosphorus), Leeks et al. (LOIS network), Marker et al. (chlorophyll measurement), Mullin & Riley (silicate), Murphy & Riley (phosphorus colorimetry), Neal et al. (phosphate measurement issues).

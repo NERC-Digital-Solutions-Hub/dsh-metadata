@@ -1,0 +1,24 @@
+# TREE_Northumbria_Soil_Sample_Info
+
+- Purpose: A data dictionary/schema describing soil sample information collected (CEH/Northumbria) to enable data discovery, integration, and analysis.
+- Key data elements and descriptions:
+  - CEH_Sample_Description: CEH sample name; Explanation provided as “CEH sample name”; Units: n/a.
+  - Site: Sampling site; Explanation provided as “Sampling site”; Units: n/a.
+  - National_Grid_Reference: National grid reference of soil sampling site; Explanation provided as “National grid reference of soil sampling site”; Units: n/a.
+  - Date_Sample_Collected: Date the sample was collected; Explanation provided as “Date sample collected”; Units: n/a.
+  - CEH_Sample_Code: CEH sample code related to the soil sample; Explanation provided as “CEH sample code related to soil sample”; Units: n/a.
+  - pH: pH of the soil sample; Explanation provided as “pH of soil sample”; Units: n/a.
+  - LOI: Loss on ignition of the soil sample; Explanation provided as “LOI of soil sample”; Units: n/a.
+  - Soil_Sampling_Depth_cm: Depth at which soil was sampled; Explanation provided as “Soil sampling depth in cm”; Units: cm.
+  - Mass_Fresh_Soil_kg: Fresh mass of the soil sample; Explanation provided as “Fresh mass of soil sample in kilograms”; Units: kg.
+  - Mass_Dry_Soil_kg: Dry mass of the soil sample; Explanation provided as “Dry mass of soil sample in kilograms”; Units: kg.
+  - General_Notes: General notes about the sample; Explanation provided as “General notes”; Units: n/a.
+  - Sample_Preparation_And_Analysis_Performed: Description of sample preparation and analyses performed; Explanation provided as “Sample preparation of animal or sample and analysis performed”; Units: n/a.
+- Data quality and usability considerations:
+  - Several fields list Units as n/a; plan for consistent unit handling during integration.
+  - Cross-linking potential via CEH_Sample_Code to connect with related datasets.
+  - Fields enable creation of self-serve data products (e.g., depth vs. mass plots, pH/LOI distributions) and summaries by Site or Date.
+- How this supports data work for end users:
+  - Facilitates data discovery and combination with other soil datasets using identifiers like Site, National_Grid_Reference, and CEH_Sample_Code.
+  - Supports dashboards and reports for quality checks and exploratory analysis (pH, LOI, depth, mass).
+  - Helps communicate data lineage and processing steps via General_Notes and Sample_Preparation_And_Analysis_Performed.

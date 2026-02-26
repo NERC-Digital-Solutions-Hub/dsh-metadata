@@ -1,0 +1,30 @@
+# Dataset Originator ECN Data Centre (http://data.ecn.ac.uk - ecn@ceh.ac.uk), Centre for Ecology and Hydrology
+
+- Overview: ECN data on environmental change monitoring, focusing here on a phenology-based frog spawning dataset (Common Frog) observed in selected pools and ditches; includes field measurements and laboratory water analyses; data quality information accompanies the dataset.
+- Dataset Governance and Sponsorship: Managed by the UK Environmental Change Network (ECN) with funding from a consortium of UK government departments and agencies; members include Agri-Food and Biosciences Institute, BBSRC, Natural Resources Wales, DEFRA, Environment Agency, Forestry Commission, Welsh Government, Natural England, NERC, Northern Ireland Environment Agency, Scottish Environment Protection Agency, Scottish Government, and Scottish Natural Heritage.
+- Usage and Acknowledgement: Users should acknowledge ECN data usage and send one reprint of any publication citing ECN data.
+- Data Collection and Quality Assurance: ECN employs standard operating procedures to ensure data comparability across sites; detailed protocols are explained in accompanying BF.pdf; quality information must be used when using the data.
+- Data Format and Download: Data are organized with:
+  - SITECODE: Unique ECN Site code
+  - LCODE: Location code within site
+  - FROMDATE: From date (when quality text applies from)
+  - SDATE: Sampling date
+  - FIELDNAME: Variable measured
+  - VALUE: Measured value
+  - Supporting documentation: ECN_BF_qtext.csv, containing site-specific quality notes
+- Quality Information: Site managers assign standard quality codes indicating data-affecting factors; codes include a comprehensive list (100–513) and 999 for unusual events; a separate file (ECN_BF_qtext.csv) contains the accompanying textual explanations.
+- Site Codes and Locations: ECN site identifiers and coordinates include:
+  - T01 Drayton (52°11'37.95"N 1°45'51.95"W)
+  - T02 Glensaugh (56°54'33.36"N 2°33'12.14"W)
+  - T03 Hillsborough (54°27'12.24"N 6°4'41.26"W)
+  - T04 Moor House - Upper Teesdale (54°41'42.15"N 2°23'16.26"W)
+  - T05 North Wyke (50°46'54.96"N 3°55'4.10"W)
+  - T06 Rothamsted (51°48'12.33"N 0°22'21.66"W)
+  - T08 Wytham (51°46'52.86"N 1°20'9.81"W)
+  - T09 Alice Holt (51°9'16.46"N 0°51'47.58"W)
+  - T10 Porton Down (51°7'37.83"N 1°38'23.46"W)
+  - T11 Snowdon (53°4'28.38"N 4°2'0.64"W)
+- Variables and Measurements: FIELDNAME includes parameters such as alkalinity (ALKY), aluminium, calcium, chloride, conductivity, colour (absorbance), various frog-spawning related dates (CONGDATE, HATCHDATE, SPAWNDATE, LEAVEDATE), spawn mass counts (NEWMASS), water chemistry (NH4N, NO3N, PO4P, TOTALN, TOTALP, etc.), pH readings (PH, PH1-PH3, PHAQCS/PU), temperature (MAXTMP, MINTMP), and other related metrics (SPAWNDATE, SURFAREA, DEPTH, VOLUME, VACUUM, etc.).
+- Quality Codes: Standardized quality codes describe data quality issues (e.g., 100 No information available, 201 Biting insects affected sampling, 200 Adverse weather conditions, 501-513 laboratory/measurement issues, 999 Unusual event); the coding is complemented by textual explanations in ECN_BF_qtext.csv.
+- Explanatory Documentation: Includes the site code list, variable definitions, and quality text mappings to ensure consistent interpretation across outputs.
+- Purpose for Analysts: Supports standardized analysis of environmental health and policy performance over time, enabling data verification, quality assurance, data cleaning/transformation, and the production of consistent outputs (reports, maps, charts) for monitoring environmental change across ECN sites.

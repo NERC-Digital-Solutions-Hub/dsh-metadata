@@ -1,0 +1,22 @@
+# Experimental design overview and collection methods
+
+- Purpose: Data represent abundances of invertebrates collected to assess environmental health under controlled pollutant exposures (diesel exhaust and ozone) in Free-Air Diesel and Ozone Enrichment (FADOE) rings.
+- Study scope: Eight rings (8 m diameter) arranged octagonally within a wheat field; each ring subjected to one of four treatments (diesel exhaust D, ozone O, diesel+ozone D+O, control CON) over two summer seasons (2018 and 2019).
+- Sampling timeline: Field sampling occurred in September 2018 and September 2019; rings were moved to an adjacent wheat field between years (November 2018). Location details provided for each year.
+- Pollutant treatments: Four treatments assigned to rings—diesel exhaust (D), ozone (O), both diesel exhaust and ozone (D+O), and natural air control (CON).
+- Ring layout and distances: 8 rings arranged in an octagonal pattern with at least 30 m between rings.
+- Sampling method: Pitfall traps used to collect invertebrates; traps contained 500 mL of 20% propylene glycol with detergent to reduce surface tension.
+- Sample processing: Collected samples were filtered through mesh into 50 mL centrifuge tubes and frozen at -20 °C prior to analysis.
+- Data structure and variables: Invertebrates were identified to the highest taxonomic resolution possible and recorded with the following fields:
+  - Taxon (A): Highest taxonomic resolution achieved
+  - Abundance (B): Count per taxon
+  - Year (C): 2018 or 2019
+  - Run (D): Two sampling runs per year (one-week each)
+  - Ring (E): Ring identifier (1–8)
+  - Treatment (F): D, O, D+O, CON
+  - Trap (G): Six traps per run per ring
+  - OrderOrClass (H): Taxonomic order or class
+  - Function (I): Functional group or feeding guild
+- Data context and provenance: Detailed experimental design and collection methods are documented, with full layout and system configuration described in Ryalls et al. 2022, Environmental Pollution 297:118847.
+- Geographic specifics: Sampling location in September 2018 provided (latitude 51.482853, longitude -0.897749); rings moved to an adjacent field (latitude 51.482374, longitude -0.895855) for the 2019 sampling.
+- Relevance for monitoring: The standardized design facilitates comparison across treatments and years, enabling assessment of pollutant impacts on invertebrate communities and supporting integrated environmental health analyses.

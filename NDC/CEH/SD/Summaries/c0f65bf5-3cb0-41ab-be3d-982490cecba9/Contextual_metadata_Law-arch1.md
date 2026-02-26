@@ -1,0 +1,31 @@
+# Overview of data
+
+- Datasets included
+  - AntSpeciesData.csv: morphological traits (colour; lightness) and Weber's length for ants across four vertical strata in lowland tropical rainforest; includes species abundance and proportional abundance per assemblage.
+  - IntravarColourData.csv: colour values for a subsample of 20 ant species to test intraspecific variation (50 specimens per species).
+  - IntravarSizeData.csv: Weber's length for the same subsample of 20 species to test intraspecific size variation (50 specimens per species).
+  - SoilAbioticData.csv: soil temperature measurements at 25 points within each plot in 2016.
+  - UVBData.csv: UV-B radiation measured at 5 m vertical intervals from ground to canopy in 2018 (with ground and open-area readings as proxies).
+- Study context
+  - Location: lowland old-growth dipterocarp rainforest, Maliau Basin Conservation Area, Sabah, Malaysia.
+  - Experimental setup: twelve 50x50 m plots within a 42-hectare area; central 50x50 m sampled; plots divided into four control, four ant-suppression, and four termite-suppression plots; treatments maintained 2014–2017.
+  - Research aim: describe spatial patterns of ant cuticle colour (lightness) across a vertical microclimatic gradient and test predictions of three eco-geographical hypotheses (thermal-melanism, melanism-desiccation, photoprotection).
+- Experimental design details
+  - Ant suppression: two baits (Synergy Pro® with hydramethylnon and pyriproxyfen; cat-food in sugar solution with imidacloprid) used in ant suppression plots.
+  - Termite suppression: removal of mounds; soil treatment with imidacloprid; use of poisoned toilet paper rolls and tea bags with fipronil; repeated dosing every six months.
+  - Sampling focus for this study: data sourced from the four control plots.
+- Data collection and measurement methods
+  - Ant colour (AntSpeciesData.csv): colour classified by eye into a dominant colour per assemblage; colour tied to RGB values, converted to HSV; colour measured on head, mesosoma, and gaster for up to 12 individuals per species; body size measured as Weber's length (mm to 0.01 mm); analyses based on worker castes.
+  - Intraspecific colour variation (IntravarColourData.csv): colour recorded for a subsample of 20 species; 50 specimens per species; single observer; colour data include spectral components (R, G, B; h, s, v).
+  - Intraspecific size variation (IntravarSizeData.csv): Weber's length recorded for the same 20 species; 50 specimens per species.
+  - Soil temperature (SoilAbioticData.csv): soil temperature at 10 cm depth; measured on a single day in October 2016; 25 points per plot.
+  - UV-B radiation (UVBData.csv): UV-B readings at multiple heights (ground to canopy) and at 12 random ground/open-area points; data include date, time, location, height, strata, UV-B value, and cloud cover.
+- Data structure and column details
+  - AntSpeciesData.csv includes: Plot, Strata, Assemblage, Subfamily, Genus, Species, Abundance, Prop abund, Dom colour, R, G, B, h, s, v, Mean Weber length.
+  - IntravarColourData.csv includes: ID, Subfamily, Species, Vial, Strata, Trait, Colour, R, G, B, h, s, v.
+  - IntravarSizeData.csv includes: ID, Subfamily, Species, Vial, Strata, Weber length.
+  - SoilAbioticData.csv includes: Date, Plot, Soil temp.
+  - UVBData.csv includes: Date, Time, Location, Height, Strata, UVB, Cloud cover.
+- Data provenance and access
+  - Data collected as part of the NERC Human-modified tropical forest (HMTF) Programme.
+  - Co-authors and data-collection team credited for data collection and interpretation.

@@ -1,0 +1,72 @@
+# Details of data structure to CINAg_digestate_experiment_2017_Soil_physicochemical_properties.csv
+
+- Overview
+  - Supplying documentation for the CINAg digestate experiment dataset from 2017.
+  - Dataset: CINAg_digestate_experiment_2017_Soil_physicochemical_properties.csv
+  - Size: 180 rows, 35 columns
+  - Context: Digestate trial conducted in 2017, across two sites/farms, three depth levels, multiple sampling times, and multiple fertilizer treatments.
+  - Purpose: To capture soil physicochemical properties following different organic fertilizer treatments, enabling analysis of treatment effects over time and with depth.
+
+- Dataset structure and key design elements
+  - Experimental context and identifiers
+    - Sample_ID: unique sample identifier encoded as Year_Experiment_Site_Sampling_time_Treatment_Plot_Depths
+    - Year: year of sampling
+    - Site: farm/site code (e.g., NW = North Wyke, HF = Henfaes Farm)
+    - Sampling_date: date of sampling (dd/mm/yyyy)
+    - Sampling_time: timepoint in the trial (T1 = beginning after digestate application; T2 = last harvest)
+    - Plot: plot number
+    - Treatment: fertilizer treatment (C = Control, D = digestate, ADNI = acidified digestate with nitrification inhibitor DMPP)
+    - Depth_cm: soil depth (0-15 cm, 15-30 cm, 30-60 cm)
+    - Experiment: contextual label (e.g., Organic_fertilizer)
+  - Core soil chemical properties (selected examples with units)
+    - NH4_mgN_per_kg_soil: ammonium, mg N kg-1 dry soil
+    - NO3_mgN_per_kg_soil: nitrate, mg N kg-1 dry soil
+    - DOC_mgC_per_kg_soil: dissolved organic carbon, mg C kg-1 dry soil
+    - DON_mgN_per_kg_soil: dissolved organic nitrogen, mg N kg-1 dry soil
+    - Aminoacids_mgN_per_kg_soil: nitrogen in amino acids, mg N kg-1 dry soil
+    - Peptides_and_proteins_mgN_per_kg_soil: nitrogen in peptides/proteins, mg N kg-1 dry soil
+    - POXC_mgC_per_kg_soil: permanganate oxidisable carbon (available carbon), mg C kg-1 dry soil
+    - PO4.P_mgP_per_kg_soil: citric acid extractable phosphorus (plant available P), mg P kg-1 dry soil
+    - Olsen_P_mgP_per_kg_soil: Olsen phosphorus, mg P kg-1 dry soil
+    - totC_perc: total soil carbon, %
+    - totN_perc: total soil nitrogen, %
+    - CN_ratio: soil C-to-N ratio
+    - totP_mgP_per_kg: total soil phosphorus, mg P kg-1 dry soil
+    - pH_deionised_water: pH in soil extract with deionised water
+    - pH_CaCl2: pH in soil extract with CaCl2
+    - EC_µS_per_cm: electrical conductivity, µS cm-1
+    - LOI_perc: Loss-on-ignition (soil organic matter), %
+    - MBC_mgC_per_kg_soil: microbial biomass carbon, mg C kg-1 dry soil
+    - MBN_mgN_per_kg_soil: microbial biomass nitrogen, mg N kg-1 dry soil
+  - Soil physical/structural and texture attributes
+    - Aggr_b20µm_perc: percent aggregates < 20 µm
+    - Aggr_b250µm_perc: percent aggregates < 250 µm
+    - Aggr_b2000µm_perc: percent aggregates < 2000 µm
+    - Sand_perc: sand content, %
+    - Silt_perc: silt content, %
+    - Clay_perc: clay content, %
+    - Soil_moisture_perc: soil moisture content, %
+  - Summary of data scope
+    - Depths: three discrete depths (0-15 cm, 15-30 cm, 30-60 cm)
+    - Timepoints: two sampling times (T1 and T2)
+    - Treatments: three levels (Control, Digestate, Acidified Digestate with DMPP)
+    - Sites: two farm sites (NW and HF)
+
+- How to use the data
+  - Assess treatment effects on soil physicochemical properties by depth and over time (T1 vs T2).
+  - Compare effects of digestate, including with nitrification inhibitor, against control.
+  - Examine relationships among chemical, biological (MBC/MBN), and physical (texture, aggregates) properties.
+  - Integrate with other CINAg datasets for broader analyses of soil health and nutrient dynamics following organic fertilizer applications.
+
+- Data quality and notes
+  - The dataset is structured with explicit column headers describing the variable and units.
+  - Missing data and formatting should be checked in preparation for analysis; ensure date formats and depth categorizations are consistent.
+  - The documentation provides the data structure mapping to facilitate joining with other supporting CINAg data series.
+
+- Quick reference of column groups (selected)
+  - Sample identifiers and design: Sample_ID, Year, Site, Sampling_date, Sampling_time, Plot, Depth_cm, Treatment, Experiment
+  - Inorganic/organic N and carbon pools: NH4_mgN_per_kg_soil, NO3_mgN_per_kg_soil, DOC_mgC_per_kg_soil, DON_mgN_per_kg_soil, Aminoacids_mgN_per_kg_soil, Peptides_and_proteins_mgN_per_kg_soil, POXC_mgC_per_kg_soil, PO4.P_mgP_per_kg_soil, Olsen_P_mgP_per_kg_soil, totC_perc, totN_perc, CN_ratio, totP_mgP_per_kg
+  - pH and electrochemistry: pH_deionised_water, pH_CaCl2, EC_µS_per_cm
+  - Biological/organic matter indicators: LOI_perc, MBC_mgC_per_kg_soil, MBN_mgN_per_kg_soil
+  - Soil texture and structure: Sand_perc, Silt_perc, Clay_perc, Aggr_b20µm_perc, Aggr_b250µm_perc, Aggr_b2000µm_perc
+  - Other soil properties: Soil_moisture_perc

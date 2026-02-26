@@ -1,0 +1,32 @@
+# Plynlimon long-term hydrochemistry data base Metadata: Quality control and data editing
+
+- The dataset is released in two versions: Raw Data Archive (RDA) containing unaltered laboratory reports (with traceable transcription corrections), and an edited data set that has been cleaned for routine use. The RDA supports documentation and reassembly if new information emerges; the edited data provides high-confidence measurements with problematic values corrected or removed.
+- Edited data are preferred for routine analyses because they exclude unexplained “flyers” and blocks of implausible values, while retaining the original measurements in the Raw Data Archive for transparency and backtracking.
+- Where possible, consistency checks are applied (e.g., relationships between SO4 and S, Alk and pH, charge balance, Gran alkalinity vs ANC, N species vs TDN, ionic strength vs conductivity) to identify and remove outliers or erroneous values.
+- The editing process is documented via data notes and time-series plots; raw values that are culled or changed are shown in red in the edited data. Not all time-series are shown for every analyte due to space, but the most heavily edited series are highlighted.
+- The data cover nearly three decades and include both weekly long-term samples and periods of intensified sampling (7-hourly). Where weekly and 7-hourly datasets disagree, expert judgment guides which values are retained in the edited data.
+- Notable data handling decisions:
+  - Some blocks of data showing abrupt shifts in variability or calibration problems are omitted.
+  - Individual outliers are culled if not consistent with flow or with correlations among related analytes.
+  - Some values are retained if they appear plausible within the broader temporal pattern.
+  - Datasets are adjusted for known labeling or sampling errors (e.g., site misattributions corrected in the edited data).
+- Major methodological changes and their impacts:
+  - Metals analysis shifted from ICP-OES to ICP-MS in 1988, with continued pre-concentration; later re-analysis in a different instrument and laboratory (Wallingford to Lancaster) around 1998-1999 caused systematic shifts in means and variances for several elements.
+  - The laboratory transition (Wallingford to Lancaster) often increased variance and affected data quality; in some cases, Lancaster data were culled if not consistent with other measurements.
+  - The Cr and other metals show step changes that may reflect methodological changes rather than real environmental shifts; users should treat transitions with caution in trend analyses spanning lab changes.
+- Analyte-specific and data-management notes:
+  - Some elements have dedicated handling rules (e.g., SO4_by_ICP is computed from edited S data to reflect sulfate from ICP measurements; SO4 data before 2007 are reinterpreted accordingly).
+  - Tungsten (W) and several other elements were culled entirely when calibration issues dominated, or when data were deemed unreliable.
+  - For certain elements with known lab contamination or coarse reporting intervals (e.g., Cs, La, Pr, Ba, Mo, Cu, Zn, Sb, Sb, Sb), culling or selective retention was performed based on correlations, sampling mode, and consistency with other analytes.
+  - 7-hourly rainfall/cloudwater data and related flyers were treated distinctly from long-term stream series; when plausible, some were kept if they reflected real signals, otherwise culled.
+- Measurement protocol notes:
+  - Conductivity, pH, Gran alkalinity, and Gran acidity were measured on settled (unfiltered) samples, while solute concentrations were measured on filtered samples; tests from the 1980s indicated no significant difference between filtered and unfiltered measurements for these analytes.
+- Data availability and governance implications for Data Stewards:
+  - The dataset emphasizes transparent provenance, with both raw and edited data available and clearly linked to metadata and notes.
+  - Versioning and detailed editing logs are essential to enable reproducibility and to support analyses that may require assessment of changes across analytical methods or laboratory transitions.
+  - Documentation should continue to flag laboratory changes, calibration issues, and blocks of implausible variability to prevent misinterpretation in downstream analyses.
+  - Users should be advised to prefer edited data for routine analyses but consult the Raw Data Archive for reconstruction or methodological studies, with caution about potential errors in raw values.
+- Usage guidance:
+  - For analyses sensitive to short-term variability, consider the potential analytical noise and calibration shifts, especially around laboratory transitions.
+  - Cross-check major ion balances and relationships (e.g., pH–alkalinity, ANC, ionic strength) to identify potential data issues before trend interpretation.
+  - Refer to the accompanying data notes and time-series plots to understand the rationale for edits and the context of any anomalies.

@@ -1,0 +1,33 @@
+# Experimental Design/Sampling Regime
+
+- Purpose: Use Countryside Survey 2007 data to model nectar plant diversity as a surrogate for pollinators across Great Britain and predict counts in 1 km squares not part of the CS.
+- Study design:
+  - 591 1 km squares, stratified random sample by land class (geology, soils, etc.).
+  - Within each square, five large plots (x plots) of 14.14 x 14.14 m (200 m2) with an inner 2 m x 2 m nest for sampling unenclosed habitats (u plots).
+  - Y plots sample remnant semi-natural habitat patches not covered by other plots, often representing historically more widespread habitats.
+- Spatial reference:
+  - Coordinate System: OSGB 1936 / British National Grid (EPSG: 27700).
+- Data attributes:
+  - plantCount: modeled estimate of the count of all bee nectar plants within a 1 km square.
+  - SEM: standard error of the mean (variance of plantCount).
+- collection methods:
+  - In each plot, compile a list of all vascular plants and a selected range of easily identifiable bryophytes and macro-lichens.
+  - Nomenclature follows Stace (1991) and Watson (1981).
+  - Cover estimates recorded to the nearest 5% for species with at least 5% cover.
+- Analytical methods:
+  - Nectar plant diversity used as a surrogate for pollinator distribution.
+  - Nectar plant species lists for bumblebees and solitary bees compiled with CEH expertise; counts per plot summed to give a plot-level value.
+  - Each plot assigned Broad and Priority Habitat classifications (Jackson 2000; Maskell et al. 2008).
+  - Coastal and urban habitats excluded; analysis relies on the Land Cover Map's Broad Habitat categories and does not include linear features (hedgerows, streamsides, roadsides) that can be nectar sources.
+  - To predict nectar plant diversity for non-CS 1 km squares, a Generalised Additive Mixed Model (GAMM) is used:
+    - Response: count of nectar plants per plot.
+    - Random effect: 1 km CS square to account for non-independence of plots within squares.
+    - Distribution: Poisson.
+    - Covariates: Broad Habitat, air temperature, nitrogen deposition, precipitation, and altitude.
+    - Dominant Broad Habitat in a square used to assign the mean nectar plant count.
+- Quality control:
+  - Defra/NERC Joint Codes of Practice followed throughout.
+- References and supporting documents:
+  - Includes key literature on pollinators, habitat classifications, and CS methodologies (e.g., Biesmeijer et al. 2006; Bunce et al. 2007; Carvell et al. 2006; Jackson 2000; Maskell et al. 2008; Smart et al. 2003, 2008, 2010; Stace 1997; Watson 1981).
+- Table 1: List of bee nectar plants used in analysis:
+  - Extensive species list (e.g., Acer pseudoplatanus, Achillea millefolium, Cardamine pratensis, Cirsium spp., Trifolium spp., Verbena spp., etc.) with coded references, forming the basis for nectar plant counts per plot.

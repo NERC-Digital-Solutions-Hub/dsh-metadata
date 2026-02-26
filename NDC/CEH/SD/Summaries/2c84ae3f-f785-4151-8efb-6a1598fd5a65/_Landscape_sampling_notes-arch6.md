@@ -1,0 +1,62 @@
+# Summary Experimental Design/Sampling Regime
+
+- Purpose and scope
+  - Describes a field-scale survey of earthworm communities across hedge and field margin gradients, in multiple farms with different land uses, to enable analysis of abundance and biomass by distance from hedges and habitat type.
+- Study sites and land use
+  - Little Langton (LL): A1 organic arable; A2 conventional arable; B1 organic ley; B2 organic arable (paired design between B1/B2).
+  - Hutton Wandesley (HW): A1 conventional ley; A2 (not detailed in excerpt) for comparison; margins and hedges described.
+  - Overton (OV): Conventional arable.
+  - Whenby (WH): A1 organic ley; B1/B2 components described (organic arable and ley variants) with hedges sampled.
+  - Each site includes a single transect (one per field/land-use unit) with sampling along a transect extending from hedge into the field.
+- Sampling design and field layout
+  - A transect laid at 90 degrees from the hedge into the field; transects located midway along field length where possible; paired transects used for WH/HW comparisons.
+  - Distances from hedge sampled at: hedge (H) then 0 m; margin (M); 2, 4, 8, 16, 32, and 64 m into the field.
+  - Soil pits (18 x 18 x 15 cm) excavated at hedge, margin, and each distance along the transect; pits used for earthworm extraction and identification.
+  - Mustard solution (dilute allyl isothiocyanate) used to extract earthworms from pits; collected earthworms preserved in ethanol and identified using Sims and Gerard field key.
+  - For WH and HW, transects paired within appropriate fields; for LL, OV, margins/transects placed on opposite sides of hedges.
+- Data collection and measurements
+  - Earthworms: counted (abundance) and biomass (grams) by sample.
+  - Distances: recorded as metres from hedge; with designations Hedge (H) and Margin (M).
+  - Depth: samples labeled as Mustard (P) or Topsoil (S).
+  - Additional field measurements per pit: soil moisture (three readings in millivolts at 5 cm and 10 cm depths), soil temperature (5 cm and 10 cm), soil bulk density (at 5 cm and 15 cm) using standard rings.
+- Data structure and files
+  - Earthworm data files (30 columns each) include:
+    - Date, Field (abbreviation), Transect, Distance, Depth (P/S), Sample type (A = abundance/count, B = biomass in grams)
+    - Species counts/biomass across a long list of coded species (e.g., Allolobophora chlorotica, Aporrectodea caliginosa, Lumbricus terrestris, Eisenia fetida, etc.)
+    - Codes indicating species name and functional group mapping (Endogeic, Epigeic, Anecic) and damaged/immature indicators
+    - Note: blank cells indicate no data available for that cell
+  - Example files:
+    - HWA1_EW_landscape.csv
+    - HWB_EW_landscape.csv
+    - LLA1_EW_landscape.csv
+    - LLA2_EW_landscape.csv
+    - LLB1_EW_landscape.csv
+    - LLBS_EW_landscape.csv
+    - OV7_EW_landscape.csv
+    - WHA_EW_landscape.csv
+    - WHB_EW_landscape.csv
+  - Land-use and distance data accompany these with 30 columns per file
+- Landscape soil data
+  - Landscape2016_soil_data.csv (14 columns)
+  - Variables measured:
+    - Date, Field, code, Distance ( Hedge = H, Margin = M )
+    - Moisture at 5 cm and 10 cm depth (in millivolts; three readings at each depth)
+    - Soil temperature at 5 cm and 10 cm
+    - Soil bulk density at 5 cm and 15 cm
+  - Integrated with earthworm data to enable linkage between soil properties and worm communities
+- Earthworm taxa and functional grouping
+  - Species mapped to functional groups:
+    - Endogeic: Allolobophora chlorotica; Allolobophoridella eiseni; Aporrectodea caliginosa; Aporrectodea limicola; Aporrectodea longa; Aporrectodea rosea; Murchieona muldali; Octolasion cyaneum; Octolasion tyrtaeum; Endogeic damaged/immature indicators
+    - Epigeic: Dendrodrilus rubidus; Eisenia fetida; Eiseniella tetraedra; Lumbricus castaneus; Lumbricus festivus; Lumbricus rubellus; Epigeic damaged/immature indicators
+    - Anecic: Aporrectodea caliginosa nocturna; Lumbricus terrestris; Anecic damaged/immature indicators
+  - Some codes indicate damaged or immature stages
+- Data quality and usage notes
+  - Data organized to support self-serve exploration and cross-site comparisons
+  - Some fields include paired design and hedges versus margins to facilitate habitat-effect analyses
+  - Blank cells indicate missing data; data require careful handling of functional groups and life-history classifications during analysis
+- Practical applications for data support
+  - Clean, integrated dataset enabling analysis of earthworm community structure across hedgerows and margins, by distance, land use, and site
+  - Combine with soil property data to investigate soil conditions that correlate with worm abundance and biomass
+  - Create data products (dashboards, reports) to communicate spatial patterns and site comparisons; support data-driven policy or land-management decisions
+- References
+  - Sims & Gerard (1999) Earthworms (reference for identification and classification)

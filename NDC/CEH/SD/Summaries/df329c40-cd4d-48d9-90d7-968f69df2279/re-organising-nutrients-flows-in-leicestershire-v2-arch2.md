@@ -1,0 +1,50 @@
+# Organic waste flows and nutrients stocks and flows in Leicestershire and Leicester City
+
+- Purpose and scope
+  - Map and quantify how nutrients (nitrogen and phosphorus) are embedded in regional waste streams to identify intervention points for improved resource use, economy, and environmental performance.
+  - Region covered: Leicestershire County and Leicester City; focus on wastes generated within the region (green waste, food waste, slurry/manure, wastewater).
+  - Time basis: 2019 data (pre-COVID), with study conducted July 2022–July 2023; no significant variation observed across nearby years where data were available.
+- Data, formats, and outputs
+  - Data types: organic material flows and their N/P contents, presented as Sankey diagrams and supporting spreadsheets; all measurements in tonnes and nutrients in kg, per year.
+  - Primary data sources: mass balance modelling of Processing Units (PUs) supplemented by various data portals and datasets.
+  - Outputs: quantitative maps of stocks and flows, plus nutrient distribution across sources and sinks; visualized via Sankey diagrams (SankeyMATIC) and an Excel model.
+- Methodological approach
+  - Material Flow Analysis (MFA) as the central method to map, quantify, and visualise organic waste streams and nutrient transfers.
+  - Integration of multiple data streams:
+    - Raw waste streams (tonne/year)
+    - Processing/disposal options applied to wastes
+    - Outputs from processing/disposal (tonne outputs or ratios)
+    - Nutrient contents (N, P) in each stream
+  - Processing Units (PUs) used to balance masses and estimate nutrient recovery; focus on flows where nutrients are transformed or recovered.
+  - Visualization: Sankey diagrams to illustrate flows from sources to destinations (treatment, disposal, or reuse).
+- Data sources and case specifics
+  - Waste Data Interrogator (Environment Agency, 2019): core dataset for waste received/removed, origins, and classifications (European Waste Catalogue), with necessary assumptions due to coding limitations.
+  - Green waste, food waste, slurry/manure, and wastewater streams identified within Leicestershire/Leicester City; destinations inferred via predefined coding and local facility types.
+  - Household and non-household food waste: estimated using regional consumption statistics and residual waste destinations; non-household food waste assumed to follow patterns similar to household streams or AD directions.
+  - Slurry and manure: quantities and on-farm application destinations derived from Defra’s livestock and land use estimates.
+  - Wastewater: treated volume approximated at 125 million tonnes/year (2022 data from Severn Trent, with caveats about wetter years); nutrient contents sourced from Severn Trent data; includes primary/secondary sludge and AD digestion; septic-tank sludge also mapped.
+- Stakeholder consultations
+  - First workshop (July 5, 2022): mapped nutrient sources and flows, identified key actors, outcomes, opportunities, and bottlenecks; produced a qualitative system map (Figure 1.1).
+  - Follow-up/validation with stakeholders via one-on-one meetings and additional sessions to refine assumptions and fill data gaps; second workshop (February 2021) reviewed draft MFA model, tested technical/economic/regulatory considerations, and identified additional viable options for Leicestershire.
+- Key findings from the MFA
+  - A comprehensive set of Sankey diagrams illustrating:
+    - Overall nutrient flows in the regional organic waste system (N and P contents for raw waste and PU outputs)
+    - Subsystems: green waste, food waste (city and county), slurry/manure, and wastewater
+  - Distribution patterns showing where nutrients are recovered, transformed, or lost within processing units (ND: not all nutrient losses are fully quantified; N2 gas losses in wastewater treatment are excluded from sinks).
+  - Quantified baselines to identify intervention points for improvements in resource efficiency and environmental performance.
+- Limitations and future work
+  - Data limitations: incomplete data for some flows; potential double-counting risks due to transfer/storage streams; precision limited by R&D coding ambiguities in the EA dataset.
+  - Parameter uncertainty: PU mass balances rely on representative point values rather than ranges; variations across process conditions are not captured.
+  - Scope expansion: future work should include run-offs, imports/exports of nutrients, and chemical fertilizer inputs to build a more complete regional nutrient circularity picture.
+- Mass balances of waste processing units (Section 2)
+  - Focus on nutrient recovery through primary processing units:
+    - Anaerobic digestion (AD) of food waste and sewage sludge
+    - Composting of organic waste
+    - Incineration of food waste, sewage sludge, and green waste
+    - Wastewater treatment facilities
+  - Data sources for PU balances drawn from UK/Western European literature and regionally relevant datasets to estimate outputs and nutrient partitioning (N, P) without prioritising energy flows.
+  - Figures summarize mass balance diagrams for each PU and provide a basis for comparing nutrient recovery efficiencies across treatment routes.
+  - Tables (e.g., Table 2.1) compile the literature sources underpinning PU mass-balance estimates.
+- Visualizations and accessibility
+  - Sankey diagrams memorialize the flow of waste streams and nutrient contents; PU mass balances inform potential nutrient recovery opportunities.
+  - Supporting materials include an Excel model that feeds an online Sankey diagram tool (SankeyMATIC) and references to multiple figures (e.g., Figures 1.5–1.10 and 2.1–2.4) illustrating subsystem and PU-level flows.

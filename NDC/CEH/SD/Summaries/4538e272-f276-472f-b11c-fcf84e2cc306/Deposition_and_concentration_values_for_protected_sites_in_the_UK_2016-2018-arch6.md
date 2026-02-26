@@ -1,0 +1,49 @@
+# Step 1: Spatial Mapping of Deposition and concentration to UK protected sites (SAC, SPA, SSSI)
+
+- Objective: Create gridded representations of deposition and concentration data for UK protected sites to support assessment of pollutant exposure and potential ecological impacts.
+- Data sources and inputs:
+  - CBED data: 3-year means (2016–2018) of deposition for nitrogen and sulfur compounds and base cations; 5x5 km grid resolution.
+  - PCM data: 1x1 km grids of pollutant concentrations (NOx, NO2, SO2, etc.) and representative roadside values.
+  - Protected sites boundaries and site lists (SAC, SPA, SSSI) downloaded from national portals.
+- Spatial processing workflow (Step 1):
+  - Build a UK-wide 5x5 km grid and clip to UK protected site boundaries to produce site-specific gridded datasets.
+  - Merge gridded CBED outputs with the 5x5 km site grids to form a UK protected sites CBED dataset.
+  - Repeat for 1x1 km NOx and SO2 concentration datasets from PCM.
+  - Resulting datasets map deposition and concentration onto each protected site grid.
+- Step 1b: Data organization
+  - Data are organized by site, grid cell, and year (mid-year of rolling 3-year averages), with boundaries and grid areas captured for each site.
+- Step 2: Generating minimum, maximum, and grid average values
+  - For each protected site, compute:
+    - Grid-average deposition/concentration using SQL over the gridded data.
+    - Grid-average value = CBEDDepositionValue × (GridArea / TotalSiteArea).
+    - Sum grid-square contributions to produce a site-wide grid-average value.
+  - Outputs include minimum, maximum, and grid-average deposition/concentration values per site.
+- CBED modelling (background)
+  - Produces 5x5 km resolution maps of wet and dry deposition for S, N, and base cations from gas/PM concentrations and precipitation-derived ions.
+  - Wet deposition: precipitation plus occult deposition; uses UK precipitation map.
+  - Dry deposition: deposition velocities by land cover (forest, moorland, grassland, arable, urban) applied to gas/PM concentrations.
+  - Settlement of deposition to habitats: moorland for non-woodland, forest for woodland.
+  - Orographic enhancement factor accounts for upland precipitation concentration increases (based on Great Dun Fell and Holme Moss observations).
+  - Inter-annual variability: deposition varies yearly; 3-year rolling means used to smooth variation; outputs provided as three ecosystem-specific sets (moorland, forest, grid-average).
+  - Outputs are used to assess ecosystem-specific deposition and to calculate exceedances of critical loads.
+- PCM modelling (background)
+  - Produces background pollutant concentration maps on a 1x1 km grid and ~9,000 roadside values.
+  - Used for scenario assessments, population exposure calculations, and regulatory/ TEN (Time Extension Notification) support.
+- Data outputs and structure (examples)
+  - Datasets provide 3-year means (2016–2018) for deposition and concentrations at 5x5 km grid squares or 1x1 km grid squares.
+  - Datasets include: forest/moorland-specific deposition, grid-average deposition, and concentrations of ammonia, NOx, NO2, SO2, etc.
+  - Outputs include per-site minimum, maximum, and average deposition values for each ecosystem type, plus site-level concentration statistics.
+- Units and conversions
+  - Deposition values: keq ha-1 year-1 (convertible to kg S ha-1 year-1 or kg N ha-1 year-1 using factors 16 and 14, respectively).
+  - Concentrations: micrograms per cubic metre (µg m-3).
+- Quality control and validation
+  - Methods align with QA/RoG (Review of quality assurance of Government analytical models) practices.
+  - CBED data and calculations have undergone peer review and model inter-comparison (Carslaw 2011).
+  - Documentation, version control, and central storage of code; mass-balance checks with historical years.
+  - Extensive peer-reviewed publications of CBED and PCM results.
+- Data structure overview (Data sets)
+  - Datasets cover 3-year means (2016–2018) for deposition and concentrations at 5x5 km or 1x1 km resolutions, including ecosystem-specific and site-average values.
+  - Example dataset types include: forest/moorland deposition by grid, grid-average deposition, NH3/NH4 and NO2/NO3 concentrations, SO2/SO4, and NOx concentrations, with supporting site metadata (SITECODE, SITENAME, SITEAREA, CENTROID coordinates, GRIDAREA, YEAR, DESIGNATION, etc.).
+- Resource references
+  - Supporting information and data portals for CBED and PCM models.
+  - Key publications and technical notes for CBED/PCM methodologies and validations.

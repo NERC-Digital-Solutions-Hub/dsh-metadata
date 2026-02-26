@@ -1,0 +1,31 @@
+# Coastal Biodiversity and Ecosystem Service Sustainability (CBESS) soil electrical conductivity on salt marsh sites at Morecambe Bay and Essex.
+
+- Purpose: Provides electrical conductivity (EC) data as a proxy for soil salinity across saltmarsh sites to support monitoring of coastal biodiversity and ecosystem service sustainability within CBESS.
+- Staff responsible: Hilary Ford.
+- Locations and site details:
+  - Essex: Abbotts Hall (AH), Fingringhoe Wick (FW), Tillingham Marshes (TM).
+  - Morecambe Bay: Cartmel Sands (CS), Warton Sands (WS), West Plain (WP).
+  - Rationale: Saltmarsh sites chosen to represent two contrasting soil types (clay in Essex; sandy in Morecambe Bay) with differing inundation, creek structure, and vegetation.
+  - Grazing context: Essex heavily hare- and Brent geese-grazed; Morecambe Bay heavily sheep-grazed with pink-footed geese in winter; West Plain lightly grazed.
+- Monitoring / sampling:
+  - Campaign: Winter and Summer 2013; Essex winter samples collected 2–6 March 2013 (additional window).
+  - Sampling unit: 1 m x 1 m quadrats; Quadrat numbers 1–22.
+- Variables observed:
+  - Electrical conductivity (mS cm-1) as a proxy for soil salinity.
+- Observation/measurement procedures:
+  - Soil sample: 10 g fresh soil + 25 ml deionised water, 1:2.5 dilution.
+  - Shaking: ~30 minutes.
+  - Instrument: Jenway 4320 conductivity meter, calibrated at 20°C.
+  - Correction: Measured EC multiplied by 2.5 to account for dilution.
+  - Additional notes: Mention of pH and EC as salinity proxies in the procedure description.
+- Data structure and metadata:
+  - Data format: Excel workbook (conductivity dataset).
+  - Dataset fields described: 
+    - Row Number (1–...), Season (Winter W / Summer S), Location (Morecambe M / Essex E), Site (CS, WS, WP / AH, FW, TM), Habitat (Mudflat MF / Saltmarsh SM), Quadrat Number (1–22), Scale (A = 1 m; B = 1–10 m; C = 10–100 m; D = 100–upper limit), Electrical (mS cm-1) with dilution-corrected values.
+- Calibration and quality control:
+  - Calibration procedures: None specified as applicable.
+  - Statistical treatment and data checking procedures: Not described in the record.
+- Data governance and accessibility:
+  - Staff and site descriptions are explicit; data presented in a single Excel workbook; underlying data are described but explicit sharing or governance details are not provided in the record.
+- Context for monitoring teams:
+  - The dataset links soil salinity measurements to habitat type, inundation regime, and grazing pressure, enabling assessment of environmental health and ecosystem service status across contrasting coastal saltmarsh sites.

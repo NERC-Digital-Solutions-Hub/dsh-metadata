@@ -1,0 +1,103 @@
+# Bird Data Variables and Measurements: Post-Mortem Data and BDE Concentrations
+
+## Overview
+- A dataset describing post-mortem bird measurements and contaminant concentrations.
+- Key identifiers and variables include: CEH_BIRD_CODE (unique ID on receipt), SEX, AGE_CLASS, BODY_CONDITION, physical measurements, timing of death, and BDE concentrations.
+- BDEs measured: BDE47, BDE99, BDE100, BDE138, BDE153, BDE154, BDE183, plus TOTAL BDEs (ng/g lipid weight).
+- Units:
+  - Weights (BOGY_WEIGHT_G, LIVER_WT_G): grams (g)
+  - PERCENT_LIPID_IN_LIVER: percent (%)
+  - BDE concentrations: nanograms per gram lipid weight (ng/g lipid weight)
+- Notable data handling:
+  - Not detected (ND) values for BDEs are assigned a value below the limit of detection (LoD) using the method described by Hesel.
+  - Juveniles are defined as birds hatched in the current or previous calendar year.
+  - STARVED body condition indicates complete lack of fat deposits or minimal fat around the heart.
+
+## Variables and Descriptions
+- CEH_BIRD_CODE
+  - Explanation: Unique identifier assigned to the bird on receipt.
+  - Units: N/A
+  - Notes: .
+- SEX
+  - Explanation: Sex of bird.
+  - Units: Male or female
+  - Notes: .
+- AGE_CLASS
+  - Explanation: Age classification of birds.
+  - Units: Adult or juvenile
+  - Notes: Juveniles defined as birds hatched in the current or previous calendar year.
+- BODY_CONDITION
+  - Explanation: Condition of bird.
+  - Units: Starved or non starved
+  - Notes: Starved defined as post-mortem lack of fat deposits or only trace fat around the heart.
+- BOGY_WEIGHT_G
+  - Explanation: Weight of bird at post mortem.
+  - Units: g
+  - Notes: .
+- MONTH_DIED
+  - Explanation: Month the bird was found deceased.
+  - Units: April-Sept or Oct-Mar
+  - Notes: .
+- YEAR_BIRD_DIED
+  - Explanation: Year the bird was found deceased.
+  - Units: N/A
+  - Notes: .
+- LIVER_WT_G
+  - Explanation: Weight of bird liver.
+  - Units: g
+  - Notes: .
+- PERCENT_LIPID_IN_LIVER
+  - Explanation: Percent lipid found in the liver during analysis.
+  - Units: %
+  - Notes: .
+- BDE47
+  - Explanation: Concentrations of BDE-47.
+  - Units: ng/g lipid weight
+  - Notes: Not detected values replaced below LoD using Hesel method.
+- BDE99
+  - Explanation: Concentrations of BDE-99.
+  - Units: ng/g lipid weight
+  - Notes: Not detected values replaced below LoD using Hesel method.
+- BDE100
+  - Explanation: Concentrations of BDE-100.
+  - Units: ng/g lipid weight
+  - Notes: Not detected values replaced below LoD using Hesel method.
+- BDE138
+  - Explanation: Concentrations of BDE-138.
+  - Units: ng/g lipid weight
+  - Notes: Not detected values replaced below LoD using Hesel method.
+- BDE153
+  - Explanation: Concentrations of BDE-153.
+  - Units: ng/g lipid weight
+  - Notes: Not detected values replaced below LoD using Hesel method.
+- BDE154
+  - Explanation: Concentrations of BDE-154.
+  - Units: ng/g lipid weight
+  - Notes: Not detected values replaced below LoD using Hesel method.
+- BDE183
+  - Explanation: Concentrations of BDE-183.
+  - Units: ng/g lipid weight
+  - Notes: Not detected values replaced below LoD using Hesel method.
+- TOTAL
+  - Explanation: Concentrations of total BDEs.
+  - Units: ng/g lipid weight
+  - Notes: Not detected values replaced below LoD using Hesel method.
+
+## Data Usage Considerations for Analysts
+- Data quality and accessibility:
+  - ND handling uses Hesel method; consider this when imputing or modeling non-detects.
+  - Measurements are reported per bird and include both biological (sex, age, condition) and chemical (BDEs) data, enabling exposure and risk analyses.
+- Analytical options:
+  - Compare BDEs by age class, sex, or body condition.
+  - Normalize BDE concentrations by liver lipid percentage if exploring exposure relative to lipid content.
+  - Temporal and seasonal context available via MONTH_DIED and YEAR_BIRD_DIED.
+- Potential challenges:
+  - Missing or ND values in several variables may require careful imputation or model handling.
+  - Data are tied to a specific observational context (post-mortem birds), which may affect generalizability to living populations.
+  - Juxtaposition of multiple BDE congeners (and TOTAL) suggests multivariate exposure analyses; be mindful of inter-congener correlations.
+  
+## Practical Notes for Analysis
+- Ensure consistent interpretation of units (ng/g lipid weight) across all BDE variables.
+- When using MONTH_DIED, categorize into the two seasonal windows (April–Sept, Oct–Mar) as defined.
+- Use YEAR_BIRD_DIED alongside MONTH_DIED to explore temporal trends or seasonal effects in contamination.
+- Consider the biological condition variable (BODY_CONDITION) when assessing relationships between health status and contaminant burden.

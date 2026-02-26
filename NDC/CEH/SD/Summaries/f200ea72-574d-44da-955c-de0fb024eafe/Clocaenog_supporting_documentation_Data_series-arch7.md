@@ -1,0 +1,52 @@
+# Climoor field site in Clocaenog forest Supporting documentation for data
+
+- Climate change experiment purpose: automated roof technology to simulate drought and warming for upland moorland; reflects climate projections for 20–30 years ahead.
+- Location and site context:
+  - Clocaenog Forest, North East Wales (53°03'19"N, -03°27'55"W).
+  - Upland moorland dominated by Calluna vulgaris (heather) with additional species; soil is humo-ferric podzol.
+  - Established in 1998; replicated drought and warming treatments with controls.
+- Treatments and layout:
+  - 9 plots total: 3 warming (W), 3 drought (D), 3 control (C) across 3 blocks.
+  - Each plot: 4 m x 5 m.
+  - Drought: retractable polyethylene roof reducing rainfall; operation timing varies by year (May–Sept historically, April–October since 2012).
+  - Warming: retractable aluminium mesh curtains reducing infrared loss; rainfall protection during rain events to minimize rainfall loss.
+  - High winds (>10 m/s) interrupt curtain operation to protect equipment.
+- Data types and datasets (surveyed datasets and measurements):
+  - AWS meteorological data: daily measurements (minutely sampled, hourly averages) for temp, humidity, rainfall, pressure, net radiation, solar radiation, PAR, wind.
+  - Micro-meteorological plot data: daily soil/air temperatures and soil moisture at multiple depths; plot-scale data since 1998–2015.
+  - Rainfall data and rainfall chemistry: site-level rainfall (biweekly storage gauge) plus plot-level throughfall data; chemical analyses (pH, NO3, Cl, SO4, DOC, NH4, etc.).
+  - Throughfall data: plot-level rainfall collected biweekly; used to adjust plot-level rainfall estimates.
+  - Water table depth: biweekly measurements via permeable tubes to bedrock (maximum detectable depths per plot).
+  - Soil respiration: both fortnightly manual measurements and automated hourly campaigns (various methods over years; CO2 flux in mg CO2-C m^-2 hr^-1 or µmol m^-2 s^-1 with unit conversions).
+  - Trace gases (CH4 and N2O): static chamber measurements; gas sampling and GC analysis; flux estimates.
+  - Net ecosystem CO2 exchange (NEE): periodic measurements (2002–2004, 2011) with adjustments for biomass; flux units as mg CO2-C m^-2 hr^-1.
+  - Photosynthesis: infrequent measurements (2001–2003) using leaf cuvettes and CIRASIRGA setups.
+  - Vegetation biomass (Pin-point method): annual surveys (1998–2012); biomass conversion factors by species; data into g m^-2.
+  - Canopy reflectance: ground-based spectrometer measurements; NDVI and PRI indices (NDVI680, NDVI570, PRI).
+  - Vegetation phenology, annual growth, and pathogen assessment: shoot elongation, budburst, leaf counts, herbivory and disease indicators across species.
+  - Vegetation chemistry: carbon, nitrogen, phosphorus, potassium, calcium, magnesium, lignin, tannin, alpha-cellulose, carbohydrates (green and litterfall material).
+  - Litterfall: collectors across quadrats; monthly/annual yields; subsequent carbon and nitrogen analyses.
+  - Root biomass: multiple methods across years (soil cores; extraction, drying, and biomass estimation).
+  - Soil microbial biomass: chloroform fumigation method; microbial biomass carbon per g soil organic matter.
+  - Nitrogen mineralisation: incubation cores; NH4+/NO3- analysis to derive mineralisation rates.
+  - SOM/SOC and bulk density: soil organic matter and carbon densities; bulk density calculations and conversions to g m^-2.
+  - Soil solution and leachate chemistry: lysimeters and tensioned samplers; pH, NO3, Cl, SO4, DOC analyses; biweekly samples.
+- Data formats and documentation:
+  - Primary data files: CSV datasets with names such as Daily automated weather station data_1999to2015_Clocaenog.csv, Rainfall_Clocaenog.csv, Throughfall_Clocaenog.csv, etc.
+  - Supporting documentation: accompanying .rtf files detailing methods, QA notes, and dataset specifics.
+  - Some older or smaller datasets may not be stored in the EIDC; contact CEH Bangor for details.
+- Data quality, standards, and limitations:
+  - Early data quality control used visual Excel checks; some legacy datasets may not meet modern documentation standards.
+  - Throughfall and some plot-level datasets can have gaps due to equipment issues (e.g., funnel attachments, bottle losses) or data loss; infilling used in some cases.
+  - Data coverage varies by dataset and year; replication may be incomplete in certain periods.
+- Spatial and GIS-relevant context:
+  - Appendix and site layout provide plotting framework, including quadrat locations, plot IDs, and quadrat grids.
+  - Precise site coordinates and plot references available (Grid Ref SJ019519; Lat/Lon 53.055N, -3.465W).
+  - Vegetation quadrats, pin-point biomass data, and plot-level treatments enable GIS joins to map spatial patterns by treatment and time.
+- How to access and collaborate:
+  - Primary contact for data and metadata: Sabine Reinsch (sabrei@ceh.ac.uk) and Bridget Emmett (bae@ceh.ac.uk) at CEH Bangor.
+  - Note: Some data are not stored in the EIDC; consult contacts for access and latest dataset availability.
+- Practical implications for GIS specialists:
+  - Rich, multi-proxy temporal datasets across nine plots and three treatments enable time-series and space-for-time analyses.
+  - Data are suitable for mapping treatment effects, canopy indices, soil-plant interactions, and ecosystem CO2 dynamics.
+  - Requires careful data integration across datasets with differing units, time steps, and historical methodologies; consult the dataset-specific documentation for conversions and QC notes.

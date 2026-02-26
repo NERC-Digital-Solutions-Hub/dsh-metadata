@@ -1,0 +1,41 @@
+# Site code to site name mappings
+
+- Overview: A mapping of short site codes to descriptive site names for monitoring locations primarily within the Thames basin, including rivers and tributaries such as the Thames, Ock, Coln, Colne, Pang, Wye, and Jubilee River.
+- Code-to-site mappings:
+  - Tm → Thame at Wheatley
+  - Ra → Ray at Islip
+  - Ch → Cherwell at Hampton Poyle
+  - Ev → Evenlode at Cassington Mill
+  - TS → Thames at Swinford
+  - TN → Thames at Newbridge
+  - Wi → Windrush at Newbridge
+  - Le → Leach at Lechlade (Mill Lane)
+  - Cl → Cole at Lynt Bridge
+  - Cn → Coln at Whelford
+  - Oc → Ock at Abingdon
+  - Pa → Pang at Tidmarsh
+  - Tso → Thames at Sonning
+  - Lo → Lodden at Charvil
+  - Cu → The Cut at Paley Street
+  - TR → Thames at Runnymede
+  - Wy → Wye at Bourne End
+  - TW → Thames at Wallingford
+  - TH → Thames at Hannington Wick
+  - Ke → Kennet at Woolhampton
+  - En → Emborne at Brimpton
+  - Ju → Jubilee River at Pocock's Bridge
+  - Cs → Colne at Staines
+- Geographic scope: Primarily the Thames catchment with associated tributaries and notable features (e.g., Jubilee River, The Cut, and major tributaries like Ock, Pang, Wye, Kennet, Coln, Colne, Leach, Evenlode, Windrush, Lodden, etc.).
+- Potential data applications for analysts:
+  - Build a unified lookup table to join hydrological or environmental datasets by site code.
+  - Enable spatial analyses by linking codes to approximate locations and river networks.
+  - Support time-series analyses of flow, level, water quality, or flood risk across multiple sites.
+  - Facilitate cross-dataset comparisons by standardizing site identifiers.
+- Data considerations and challenges:
+  - Local-scale sites requiring precise geolocation data (coordinates not provided here).
+  - Datasets may use different naming conventions; a consistent code-based mapping aids unification.
+  - Some site names include tributaries or smaller features, which may affect cross-referencing with external portals.
+- Suggested next steps for analysts:
+  - Create a formal lookup table (code ↔ site name, river, tributary) with geospatial coordinates.
+  - Link this mapping to data portals and metadata to ensure discoverability and reproducibility.
+  - Validate site coverage against existing datasets to identify any gaps at required scales.

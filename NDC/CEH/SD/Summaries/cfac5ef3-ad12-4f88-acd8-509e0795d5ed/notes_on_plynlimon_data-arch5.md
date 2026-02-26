@@ -1,0 +1,33 @@
+# Plynlimon hydrochemistry dataset documentation
+
+- Time period and sampling frequency: March 2019 to March 2023; samples collected every four weeks.
+- Related metadata and methods files:
+  - Sampling methods and field measurements: Plynlimon_field_measurements_and_methods.csv
+  - Sample sites: Plynlimon_site_information.csv
+  - Instrumentation, units, and analytical methods: Description_of_column_headings.csv
+- Data structure and metadata:
+  - Full data structure details and variable descriptions are provided in Description_of_column_headings.csv
+  - Where possible, determinant descriptions use the CEH Analytical Services Thesaurus (CAST)
+  - CAST vocabulary link: https://vocabs.ceh.ac.uk/cast/en/
+- Value reporting and limits:
+  - Values below the limit of detection (LOD) are reported as halfway between 0 and the LOD
+  - LOD values may change over time for some chemicals, resulting in multiple rows per chemical for different subperiods
+- Quality control and laboratory procedures:
+  - pH, conductivity, and alkalinity analysed at CEH Bangor laboratories
+  - CEH Bangor participates in the LGC AquaCheck Proficiency Testing scheme
+  - All other chemical analyses conducted at CEH Lancaster (UKAS-accredited ISO 17025:2005 for many analyses)
+  - Data checks include identification of missing values, which may arise from insufficient samples, instrument failures, field errors, or restricted sampling (e.g., Covid-related access restrictions in 2020)
+- Data cleaning and consistency improvements:
+  - Corrected inconsistent SO4-S naming (SO4 vs SO4-S)
+  - Removed gross errors in several variables, notably chlorine (Cl)
+  - Standardized units for bromide (mg/L vs µg/L)
+  - Corrected swapped pH values for Afon Cyff/Gwy since August 2022
+- Interpretation aids and notes:
+  - Rainfall measurements for Carregwen rain (C) chemistry are recorded from a rain gauge near the Hafren (B) sample site, not at the Carregwen gauge site (AJ) to maintain consistency with previously published Plynlimon hydrochemistry data
+- Data accessibility and governance:
+  - Data are uploaded to relevant portals and catalogued as part of the dataset holdings
+  - Documentation supports reuse, including cross-references to site information, methods, and column descriptions
+- Practical considerations for data stewardship:
+  - Be aware of potential multiple-LOD entries for certain chemicals
+  - Ensure alignment of units and naming conventions across datasets
+  - Track any future updates to LOD values and metadata fields to maintain consistency over time

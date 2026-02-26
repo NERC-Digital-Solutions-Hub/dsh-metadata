@@ -1,0 +1,34 @@
+# FADOE_visitation.csv
+
+- Purpose and Scope
+  - Data represent Brassica nigra flower visitation frequencies of pollinating insects in 2018 and 2019.
+  - Observations record insect visits to a focal patch of 6 adjacent plants within each observation unit.
+  - Aim to analyze pollinator foraging under different pollution treatments using the Free-Air Diesel and Ozone Enrichment (FADOE) setup.
+- Experimental Design and Sampling
+  - Rings were distributed within a wheat field and moved to an adjacent field in 2019, providing two locations per ring.
+  - Treatments: diesel exhaust (D), ozone (O3), diesel exhaust plus ozone (D+O3), and a control (CON; natural air).
+  - Within each year, two rings were assigned to each treatment; ring positions were fixed across years except for one week in 2019 to test spatial effects.
+  - Rotation occurred for one week in 2019, swapping treatments among rings to quantify spatial variation in pollinator foraging behavior.
+- Data Collected and Observational Details
+  - Observation unit: a patch of 6 adjacent plants; number of plants (Column I) and plant number (Column H) are recorded.
+  - Observer: trained in insect identification (Column G).
+  - Sampling duration: 5–10 minutes per observation (start time Column K, finish time Column L, duration in minutes Column M).
+  - Flower abundance: number of flowers observed per period (Column N).
+  - Location metadata: ring number (Column B), location (Column C), year (Column A), date (Column F).
+  - Counts by pollinator groups: multiple columns record counts for diverse groups (e.g., honey bee, solitary bee, bumblebee, hoverfly, butterfly, moth, various beetles, hemiptera, parasitic wasp, and unknown insects) across Columns O, R, U, X, AA, AB, AE, AH, AI, AJ, AK, AL, AM, AN.
+  - Flower visitation by group: counts of flowers visited by each group (Columns P, S, V, Y, AC, AF).
+  - Insect visits per group: average number of flower visits per insect (Columns Q, T, W, Z, AD, AG).
+  - Derived totals: total insect counts, total flower visits, and visits per insect (Columns AP, AQ, AR respectively).
+- Data Structure and Derived Metrics
+  - Insect visitation frequencies are scaled by the number of flowers and sampling time to produce rates:
+    - insect counts per flower per hour
+    - flower visits per insect per hour
+    - these scaled rates are represented across columns AR to BI.
+- Location and Temporal Details
+  - Field locations with precise coordinates (2018: latitude 51.482853, longitude -0.897749; 2019: latitude 51.482374, longitude -0.895855).
+  - Years encompassed: 2018 and 2019; sampling dates indicated in Year and Date columns.
+- Use and Reuse Considerations for Data Leaders
+  - The dataset provides a comprehensive view of pollinator activity under multiple pollution treatments, enabling assessment of treatment effects and spatial/temporal variation.
+  - Rich metadata supports data discoverability across years, locations, treatments, and observation units.
+  - The explicit scaling to per-hour and per-flower rates facilitates cross-study comparability and integration with other datasets measuring pollination dynamics or environmental stressors.
+  - The rotation design and fixed ring positions (with one-week spatial test) support analyses of spatial confounding and treatment effects, informing governance of data collection consistency in multi-site experiments.

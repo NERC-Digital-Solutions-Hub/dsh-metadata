@@ -1,0 +1,41 @@
+# Skate 1
+
+- What it is: A configuration for a Skate 1 CT volume, defining a 3D voxel grid and imaging parameters for map-based visualization and spatial analysis.
+- Spatial grid and resolution
+  - Voxel grid: 2000 × 2000 × 2000 voxels
+  - Voxel size: 0.125079 mm in X, Y, and Z (isotropic)
+  - Region origin and size: RegionStartX/Y = 0; RegionPixelsX/Y = 2000
+  - Scaling factor: 1.32
+- Geometric referencing
+  - SrcToObject transformation: 733.9188
+  - SrcToDetector transformation: 1173.528
+  - Centre of rotation: Top = 0.0, Bottom = 0.0
+  - Automatic Centre of Rotation: enabled (offsets 0)
+- Detector and masking
+  - Mask radius: 125.079 mm
+  - Detector pixels: 2000 × 2000
+  - Detector pixel size: 0.2 mm
+- Acquisition and projection parameters
+  - Projections: 1080
+  - Initial angle: 132.1730 degrees
+  - Angular step: 0.3333144564 degrees
+- Imaging and data processing
+  - White level: 60000.0
+  - Scattering: 0.0
+  - Coefficients: X4=0, X3=0, X2=0.25, X1=0.75, X0=0
+  - Filter: Type 0; Cutoff frequency 2.5; Exponent 1.0; Normalisation 1.0
+  - Interpolation: Type 1; Median filter kernel size: 1
+  - Output scaling and units: OutputUnits=/m; Units=mm
+- Output and data handling
+  - Output type: 0
+  - TIFF scaling: 1
+  - Output folder/name: Skate 1
+  - Import conversion: 0
+- X-ray source and CT parameters
+  - X-ray voltage: 120 kV
+  - X-ray current: 145 μA
+  - CTPro: Filter preset 0; Thickness 0.000 mm; Material None
+- Miscellaneous
+  - Shuttling: False
+  - Region and rotation offsets: CentreOfRotationTop/Bottom = 0; Offsets = 0
+  - [XTekCT] and [Xrays] sections indicate hardware/configured settings (e.g., X-ray settings)

@@ -1,0 +1,53 @@
+# The UKCEH Land Cover Map for 2022
+
+- Purpose
+  - User guide for LCM2022, the UKCEH land cover map for 2022.
+  - Product consists of seven datasets (three per region group plus a 1 km summary product) plus guidance on data production, validation, and accuracy to inform current and future work.
+- Data products (seven datasets)
+  - 10 m Classified Pixels: Great Britain
+  - 10 m Classified Pixels: Northern Ireland
+  - 25 m Rasterised Land Parcels: Great Britain
+  - 25 m Rasterised Land Parcels: Northern Ireland
+  - Land Parcel Products: Great Britain
+  - Land Parcel Products: Northern Ireland
+  - 1 km Summary Rasters (GB + NI)
+- How the data are produced
+  - Classification Scenes: Sentinel-2 Seasonal Composite Images (spectral) plus Context Rasters to reduce spectral confusion.
+  - Seasonal Composite Images: four seasonal periods (Jan–Mar, Apr–Jun, Jul–Sep, Oct–Dec) derived from Sentinel-2; cloud gaps tolerated.
+  - Context Rasters: 10 m layers capturing terrain, proximity to roads/buildings, water, foreshore, vegetation masks (GB and NI differ slightly).
+  - Bootstrap Training: automatic training data derived from historic LCMs (LCM2019–LCM2021) with >80% probability and consistent class across years.
+  - Random Forest: balanced sampling (10,000 samples per bootstrap bag) to classify 10 m pixels; RF, Weka, PostGIS, and GDAL-based bespoke software.
+  - Land Parcels: 10 m pixels intersected with the UKCEH Land Parcel Spatial Framework to create parcel-level attributes; 25 m rasters rasterised from parcels.
+- Validation and accuracy
+  - Validation using 33,107 reference points across all 21 classes.
+  - Overall accuracy: 86.1% at full thematic detail.
+  - Appendix 4 provides detailed confusion matrices, user’s accuracy, producer’s accuracy, and class-level metrics.
+- Dataset details and specifications
+  - Coordinate systems: Great Britain – British National Grid (EPSG: 27700); Northern Ireland – Irish Grid TM75 (EPSG: 29903).
+  - Parcel framework: Land Parcel Spatial Framework with MMU ~0.5 hectares; parcels represent discrete real-world units (e.g., fields, parks, urban areas).
+  - 10 m pixel products preserve fine landscape detail (no generalisation to Land Parcel Spatial Framework); 25 m rasters summarise within the parcel framework.
+  - 1 km rasters summarize 25 m data to provide dominant class and percentage cover per 1 km pixel; rounding may cause sums to deviate from 100%.
+  - 21 UKCEH Land Cover Classes aligned to Biodiversity Action Plan (BAP) Broad Habitats but not identical; explanatory notes and mapping considerations in Appendices 1–4.
+- Relationship to UK BAP Broad Habitats
+  - Land Cover Classes are closely related but not identical to the BAP Broad Habitats; differences documented and sometimes require italicising BAP terms to avoid ambiguity.
+  - Appendices detail defined classes and how spectral data map to BAP habitats (e.g., Woodlands, Arable, Grasslands, Wetlands, Urban, Coastal habitats).
+- UKCEH Land Parcel Spatial Framework
+  - Framework originated for LCM2007; minor changes since LCM2015 (re-ordered storage, new indices).
+  - Identifiers (gid) in 2022 do not match those from LCM2015 for parcel comparison; most users will not be affected.
+- Bootstrap Training and classification approach
+  - Bootstrap Training uses historic wall-to-wall maps to sample current imagery for training; helps maintain large training sets and robust RF learning.
+  - Balanced sampling ensures rarer classes are adequately represented during RF training.
+- Known issues and caveats
+  - A small number of polygons missing from vector land parcel products; minor impact on 1 km rasters; 10 m classified pixels unaffected.
+  - Some spectral confusion remains among certain habitat types; coastal Saltwater vs Freshwater and complex upland vegetation distinctions noted.
+  - Differences in methodology over time may yield real changes alongside method-driven changes; annual maps combine to improve change detection.
+- How to cite and access the data
+  - Each dataset has a DOI; citation details provided (Table 5) and referenced works (e.g., Marston et al. 2023; Marston et al. 2024a–g).
+  - Data are hosted by NERC EDS Environmental Information Data Centre; metadata and DOIs listed for each product.
+- Appendices and supporting information
+  - Appendix 1–2: Notes on UKCEH Land Cover Classes and BAP Broad Habitats definitions.
+  - Appendix 3: Full list of LCM2022 datasets with citations.
+  - Appendix 4: Correspondence matrices (confusion matrices) for class-level accuracy.
+  - Appendix 5–6: Colour recipes for displaying UKCEH Land Cover Classes (standard and colour-blind friendly); QGIS symbology files provided.
+- Disclaimer
+  - Acknowledges that updated methods cause some changes between consecutive annual maps; results reflect both real land cover change and methodological updates.

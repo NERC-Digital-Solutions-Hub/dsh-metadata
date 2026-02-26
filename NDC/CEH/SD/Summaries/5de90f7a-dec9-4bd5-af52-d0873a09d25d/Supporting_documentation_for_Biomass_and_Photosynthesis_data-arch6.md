@@ -1,0 +1,34 @@
+# Plant material
+
+- Study organisms: Lolium perenne (ryegrass) and Trifolium repens (white clover) grown from turf samples near Edinburgh, UK. Plants from different parents were randomized across competition and ozone treatments and established for ~8 weeks before potting into monocultures or mixtures.
+- Experimental design:
+  - Large pots with drainage holes and root-barrier liners, containing 12 plants each (4 central, 8 surrounding).
+  - Solardomes: four domes arranged in a randomized block design; two additional domes as controls.
+  - Treatments:
+    - Monocultures of L. perenne or T. repens, plus a mixed canopy with central T. repens and surrounding L. perenne.
+    - Ozone regimes: Control (ozone in charcoal-filtered air, 30 ppb), O3(30) episodic peaks, and O3(30+peaks) episodic rural profile; plus a regimen with daily maximums of 80–100 ppb on days 1–4.
+    - Daily ozone pattern: ramp up from 30 ppb to a maximum over 2 h, hold for 6 h, then decrease to 30 ppb over 2 h; otherwise 30 ppb.
+  - Watering: mist irrigation at 04:00 with additional manual watering during warm periods; conditions approximate ambient climate except rainfall.
+- Exposure and harvest timelines:
+  - Exposure duration: 12 weeks total, starting 26 July 2002; divided into two harvest periods (6 weeks and 12 weeks).
+  - Harvesting: plants cut to 7 cm; material sorted by location relative to pot, height above soil (layers), and plant part. T. repens separated into stolons, flowers, leaves; L. perenne separated into leaves and stems (no visible stems above 7 cm for measurement).
+  - Drying and biomass: plant material dried at 65°C for ≥4 days to determine biomass. Subsamples of L. perenne leaf material analyzed for carbon and nitrogen content via CHNS analyzer.
+- Physiological measurements:
+  - Leaf selection: “Leaf 1” (newest fully expanded leaf) and “Leaf 2” (second newest) on each tiller/stolon; a minimum of six leaves per measurement day.
+  - Photosynthesis assessments: A-Ci curves (net CO2 assimilation rate A vs. substomatal CO2 Ci) and AQ curves (A vs. light) measured on upper canopy leaves using a CIRAS I with an automatic cuvette; standardized light at 1000 μmol m⁻² s⁻¹ PAR; CO2 varied from 0 to 2000 ppm in steps (A-Ci) and 0–2000 PAR for AQ curves.
+  - Calculations: A-Ci data analyzed with CIRAS software using Von Caemmerer and Farquhar (1981) equations; Jmax estimated from A-Ci curve asymptote (Ci > 500 ppm) using Stirling et al. (1997) method; Vc,max derived from initial slope of A vs Ci for Ci up to 300 ppm.
+  - Notes: A plant per curve; results used to compare photosynthetic capacity across treatments.
+- Statistical analysis:
+  - Data aggregation: per solardome means used for all analyses.
+  - Analyses performed:
+    - One-way ANOVA (Minitab) to test ozone effect on Jmax (no monoculture vs mixture comparison in this analysis).
+    - GLM regression (SPSS) to compare A-Ci relationships between treatments.
+    - Genstat (split-plot and split-split-plot ANOVA): factors include ozone treatment (main), monoculture vs mixture (subplot), and canopy position (sub-subplot) for biomass partitioning.
+- Data structures and availability:
+  - Lolium_and_Trifolium_solardomes_ACi_Curve_data.csv: 220 rows, 7 columns (Species, Leaf number, weeks since start, Treatment, dome.pot, Ci, A corrected for leaf area).
+  - Lolium_and_Trifolium_solardomes_biomass_data.csv: 16 rows, 6 columns (Harvest, Species, Monoculture or mixture, Ozone treatment, dry weight per pot, standard error).
+  - Lolium_and_Trifolium_solardomes_clover_distribution_data.csv: 28 rows, 6 columns (Harvest, Monoculture or mixture, part of canopy, Ozone treatment, Dry weight per pot, standard error).
+  - Lolium_and_Trifolium_solardomes_Lolium_distribution_data.csv: 32 rows, 6 columns (Harvest, Monoculture or mixture, part of canopy, Ozone treatment, Dry weight per pot, standard error).
+- Data interpretation and aims alignment:
+  - Data enable comparison of ozone effects on biomass allocation, canopy partitioning, and photosynthetic performance between monocultures and mixtures.
+  - The structured CSV outputs support re-analysis, meta-analysis, and the development of data products (dashboards/reports) to explore treatment effects, using the detailed treatment factors and canopy positions.

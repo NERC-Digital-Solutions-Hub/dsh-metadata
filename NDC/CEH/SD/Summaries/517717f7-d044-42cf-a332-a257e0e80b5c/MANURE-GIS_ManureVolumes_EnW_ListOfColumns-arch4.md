@@ -1,0 +1,34 @@
+# DATA STRUCTURE
+
+- The Manure volumes by livestock type and land use for England and Wales data are stored in a shapefile named MANURE-GIS_ManureVolumes_EnW.shp.
+- Purpose: Capture manure volumes by livestock type and land use, with a detailed columnar schema describing data provenance and usage.
+- Data schema (columns):
+  - Column codes are of the form [Prefix]_[Manure/Housing]_[Land Use Type], e.g., B_FYM_Gras, D_FYM_AraW, S_Grazing, etc.
+  - Each column encodes:
+    - SOURCE.Livestock Sectors (e.g., Beef, Dairy, Layers, Pigs, Sheep, Broilers)
+    - SOURCE.Manure/housing (e.g., Farmyard manure, Slurry, Direct excreta)
+    - DESTINATION.Land Use Type (e.g., Grass, Arable Winter, Arable Spring; some entries use '-' to indicate no land use type)
+    - Units (kilograms or litres)
+- Livestock sectors represented:
+  - Beef (B_ prefixes)
+  - Broilers (Bro_ prefixes)
+  - Dairy (D_ prefixes)
+  - Layers (L_ prefixes)
+  - Pigs (P_ prefixes)
+  - Sheep (S_ prefixes)
+- Land use types covered vary by code and include Grass, Arable Winter, Arable Spring, Arable (unspecified), and some entries with '-' indicating no land-use association.
+- Units used:
+  - Kilograms for most farmyard manure and related land uses
+  - Litres for slurry-related entries
+- Example mappings:
+  - B_FYM_Gras: Beef, Farmyard manure, Grass, kilograms
+  - B_FYM_AraW: Beef, Farmyard manure, Arable Winter, kilograms
+  - D_Slu_AraS: Dairy, Slurry, Arable Spring, litres
+  - P_Slu_Gras: Pigs, Slurry, Grass, litres
+  - S_FYM_AraS: Sheep, Farmyard manure, Arable Spring, kilograms
+- Special note for sheep data:
+  - S_Grazing (*) includes only the proportion of sheep excreta deposited at grazing on managed grassland; it does not include excreta deposited on rough grazing.
+- Data management implications for data leaders:
+  - Provides a structured, traceable schema linking livestock sectors, manure/housing type, and land use outcomes.
+  - Facilitates data discovery, quality checks, and metadata tracking by clearly defining sources, transformations, and units.
+  - Supports potential productization of manure flow data across different farming activities and land uses.

@@ -1,0 +1,21 @@
+# Chlroplast microsatellite (cpSSR) primer pairs
+
+- cpSSR primer pairs listed:
+  - Primer = ccmp5, locus = locus1
+  - Primer = ccmp10, locus = locus2
+- Chloroplast DNA marker primer pair (PCR-RFLP):
+  - Primer = trnH-psbA, locus = locus3
+- Additional entries with missing data:
+  - Primer = ., locus = .
+  - Other information, Primer = ., locus = .
+  - nd = not determined, Primer = ., nd = not determined, locus = .
+- Institutional reference:
+  - RBGE = Royal Botanic Garden, Edinburgh, with Primer = ., locus = .
+- Data characteristics:
+  - Marks chloroplast targets (cpSSR and PCR-RFLP markers) and associated loci.
+  - Several fields are not determined or unspecified, indicating incomplete data entries.
+- Intended use and context (implied):
+  - Primers and loci likely intended for chloroplast-based genetic analyses (population genetics, phylogeography, or barcoding).
+- Key caveats:
+  - High level of missing data (practically empty primer/locus fields).
+  - Data quality depends on completion and standardization of primer names and locus identifiers.

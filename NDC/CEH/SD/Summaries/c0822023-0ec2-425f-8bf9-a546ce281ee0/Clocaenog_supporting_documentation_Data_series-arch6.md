@@ -1,0 +1,78 @@
+# Climoor field site in Clocaenog forest Supporting documentation for data
+
+- Purpose and scope
+  - Document describing the Climoor climate change manipulation experiment at Clocaenog Forest, North East Wales.
+  - Automated roof-based drought and warming treatments designed to reflect 20–30 year climate projections.
+  - Dataset coverage spans abiotic and biotic measurements collected from 1998 onward, with AWS and plot-level data.
+
+- Climate change treatments and experimental design
+  - Treatments and replication
+    - Drought: 3 replicate plots (4 m x 5 m) and 3 controls (total 9 plots).
+    - Warming: 3 replicate plots and corresponding controls; scaffolding to mirror shading on treatment plots.
+  - Drought details
+    - Operated May–Sept (1999–2011); expanded to Apr–Oct since 2012.
+    - Mechanism: retractable polyethylene roof triggered by tipping-bucket rainfall sensor; reduces annual rainfall by ~20% and excludes ~80% of rain during the drought period.
+  - Warming details
+    - Night-time warming via retractable aluminum mesh curtains; reflects 96–97% of IR and reduces night-time heat loss.
+    - Roof retracted during rain to limit rainfall loss; overall annual rainfall reduced ~14%.
+  - Environmental safeguards
+    - Curtains disabled in high winds (>10 m/s) to prevent damage.
+
+- Site information and ecology
+  - Location: Clocaenog Forest, upland moorland (53°03'19" N, -3°27'55" W).
+  - Dominant vegetation: Calluna vulgaris (heather) >60% of plant biomass; co-occurring Vaccinium myrtillus, Empetrum nigrum.
+  - Soil: humo-ferric podzol with variable eluvial (E) and illuvial (Bh) horizons; typical E horizon 6–17 cm depth.
+  - Climate baseline (1997–2014 context): mean air temp ~8.0°C; mean control soil temp ~7.5°C; mean annual rainfall ~1411 mm.
+
+- Data collection and data types (datasets and methods)
+  - AWS meteorological data
+    - Daily measurements from on-site automated weather station (1 m initially; relocated to 4 m mast in 2007).
+    - Sensors: air temp, relative humidity, rainfall, air pressure, net radiation, solar radiation, PAR, wind speed/direction.
+    - Data scale: hourly averages; daily sampling; time span 1999–current day.
+  - Micro-meteorological plot data
+    - Daily plot-level soil and air temperatures, soil moisture (historical changes in measurement methods).
+    - Time span: 1998–current day.
+  - Rainfall and rainfall chemistry
+    - Storage rain gauge for site-level rainfall (biweekly data; more robust to power logger issues).
+    - Rainfall chemistry via Warren spring collectors; pH, NO3, Cl, SO4, DOC, ammonium analyses.
+  - Throughfall data
+    - Plot-level rainfall collected biweekly using 16.8 cm funnels; data normalized to site rainfall to derive treatment-level rainfall.
+  - Hydrology
+    - Water table depth measured via permeable tubes (biweekly since 2009); maximum measurable depths per plot.
+  - Soil respiration
+    - Fortnightly and automated measurements using soil collars; CO2 flux in mg CO2-C m-2 h-1; methods evolved from CIRAS-2 to LI-COR 8100 and automated systems.
+  - Trace gases (CH4 and N2O)
+    - Static chamber method adjacent to soil respiration collars; gas samples analysed by GC; multi-year measurements (1999–2000, 2007–2009).
+  - Net ecosystem CO2 exchange (NEE)
+    - Measurements in 2002–2004 and 2011 using Perspex chambers linked to IR gas analysers; biomass-adjusted fluxes.
+  - Photosynthesis
+    - Infrequent measurements (2001–2003) with leaf cuvette and CIRAS-2; standardization across species and leaf-area considerations.
+  - Vegetation biology and chemistry
+    - Vegetation surveys using pin-point method (1998–2012, with multiple years) to derive biomass by species; calibration from destructive sampling.
+    - Canopy reflectance (NDVI and PRI) using ground-based spectrometry (2000–2004).
+    - Phenology, growth, and pathogens (shoot elongation, budburst, leaf counts, pathogen incidence) across key species.
+    - Vegetation chemistry: C, N, P, K, Ca, Mg, lignin, tannin, alpha-cellulose, carbohydrates (green and senesced material).
+  - Litter and belowground biology
+    - Litterfall collectors; monthly to yearly collection; conversion to g m-2 and subsequent C/N analyses.
+    - Root biomass: multiple soil-core methods across different years (2003–2013) with varying extraction and analysis approaches.
+    - Soil microbial biomass: chloroform fumigation technique (2000, 2001, 2012) with DOC measurements.
+  - Soil biogeochemistry
+    - Nitrogen mineralisation: comparison of initial and final cores with KCl extraction for NH4-N and NO3-N.
+    - SOM/SOC and bulk density: soil core analyses across organic and inorganic horizons; calibrations to produce g m-2 values.
+    - Soil solution and leachate chemistry: lysimeters and tensioned samplers; pH, nitrate, chloride, sulfate, DOC, ammonium analyses.
+  - Data processing and standardization notes
+    - Multiple data processing pipelines due to evolving instrumentation (CIRAS-2, LICOR 8100, automated soil respiration systems).
+    - Unit conversions outlined for CO2 fluxes (e.g., g CO2 m-2 h-1 to mg CO2-C m-2 h-1) using standard factors and the ideal gas law.
+    - Vegetation biomass from pin hits converted to g m-2 using species-specific calibration factors; pin grids and quadrats standardized with fixed layouts.
+    - Data quality control largely performed via manual visual checks in Excel; notes indicate some legacy processing practices not aligned with current standards.
+  - Data availability and contact points
+    - Not all data are stored in the Environmental Information Data Centre (EIDC); contact Sabine Reinsch or Bridget Emmett at CEH Bangor for details.
+
+- Data access and stewardship
+  - Primary data hosted by CEH Bangor; some datasets may be outside EIDC; explicit contact for data requests and clarifications.
+  - Documentation emphasizes data provenance, measurement context, and methodological evolution to aid reuse and re-analysis.
+
+- Appendices and site layout
+  - Appendix 1: Site layout and grid references (including plot coordinates and grid system SJ019519; lat/long 53.055N, -3.465W).
+  - Appendix 2: Quadrat layout and measurement areas within plots.
+  - Appendix 3: Plot layout with quadrats and measurement areas; LYS (lysimeters), PQ (point quadrats), SS (soil suction samplers).

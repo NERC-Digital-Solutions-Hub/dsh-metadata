@@ -1,0 +1,53 @@
+# REPORT III RESULTS FROM THE SOURHOPE FIELD EXPERIMENT: 1999-2001
+
+- Overview
+  - Large field experiment at Sourhope (Scottish Borders) under the NERC Soil Biodiversity Thematic Programme.
+  - Aimed at providing a broad, standardised monitoring context to support interpretation of other, more detailed studies.
+  - Core data types: Automatic Weather Station data, above-ground biomass, soil pH (0–5 cm), and botanical composition (Point Quadrat method).
+  - Treatments compared: Control 1, Control 2, Nitrogen, Lime, Nitrogen & Lime, Biocide.
+  - Data management and site-wide monitoring reported to facilitate cross-year comparisons and links to other groups’ data.
+
+- Data collection, management, and context
+  - Regular data collection schedule across 1999–2001, including mowing and sampling campaigns, soil/pH measurements, and plant surveys.
+  - Quality and consistency checks across surveyors; consistent methodology for point quadrats and biomass measurements.
+  - 2001 site management affected by Foot and Mouth Disease (FMD) restrictions, limiting visitor access and modifying sampling logistics; a change in site management personnel occurred in 2001.
+  - Despite disruptions, key management activities (liming, nitrogen application, pH measurement, biomass collection, vegetation cutting, and data logging) proceeded according to the 2001 Site Management Plan; one (biocide) application in May was missed.
+
+- Results at a glance
+  - 2001 weather and climate
+    - Headline data generally unremarkable; rainfall near the long-term average after a very wet year; radiation and mean temperatures showing slight variations; soil moisture modestly higher than in preceding years.
+  - Above-ground biomass (treatments)
+    - Clear hierarchy: nitrogen and/or lime additions generally increase biomass versus unimproved plots.
+    - 2001 biomass higher than 2000, attributed in part to a shift to mechanical cutting and potential staff changes.
+    - ANOVA: significant differences between improved (N and/or L) vs unimproved plots; significant year-by-treatment interaction; no significant block effects.
+    - Biomass increases most pronounced in plots receiving nitrogen and/or lime; nitrogen+lime often strongest.
+  - Soil pH
+    - Lime addition raises topsoil pH; October 2001 pH ~6.19 in limed plots and ~6.38 in nitrogen+lime plots.
+    - Nitrogen alone also increases pH, but to a lesser extent.
+    - Control plots show little change from baseline (1998).
+  - Botanical composition (Point Quadrat surveys)
+    - 2001 survey produced 58% more hits than 2000, suggesting higher sward density, likely tied to reduced grazing since 1998.
+    - Species shifts across treatments:
+      - Agrostis capillaris declined across most treatments; remained most abundant mainly in Control and Limed plots.
+      - Festuca species (ovina, rubra) increased across all treatments; particularly associated with fertilised plots (Festuca rubra with N/L; Festuca ovina with N).
+      - Improved plots (N and/or L) showed more taxa associated with improved pastures (e.g., Festuca rubra, Poa pratensis).
+      - Unimproved plots maintained more bryophyte/drier pasture associations (e.g., Anthoxanthum odoratum, Nardus stricta).
+      - Species richness was higher in unimproved plots (24 species) than in nitrogen+lime plots (18 species), suggesting a possible early decline in diversity with fertility improvements.
+    - Multivariate patterns:
+      - Principal Components Analysis (PCA) largely separated nitrogen- and/or lime-treated plots from control/biocide plots.
+      - Increased relative abundance of Festuca rubra in limed plots; correlations show higher biomass with certain forage species (Poa pratensis, Festuca rubra) and declines for others (Anthoxanthum odoratum, Nardus stricta, bryophytes).
+      - Relative litter frequency was higher in nitrogen- and/or lime-treated plots, indicating faster vegetation turnover with higher soil fertility.
+    - Biomass vs species abundance:
+      - Positive correlations between biomass and abundances of Festuca rubra and Poa pratensis.
+      - Negative correlations between biomass and abundances of Anthoxanthum odoratum, Nardus stricta, bryophytes.
+  - Site heterogeneity
+    - Spatial heterogeneity observed across the site:
+      - Columns E and F identified as more acidic; underlying pH differences may be linked to column composition and treatment distribution (e.g., more controls/biocide in those columns).
+    - Biomass distribution shows central plots tending to higher biomass (e.g., Nitrogen & Lime plots in central positions; other examples in Lime, Biocide, Control plots).
+    - Strong positive correlation between surface soil pH and biomass, with no significant differences across blocks.
+
+- Implications for environmental monitoring and data use
+  - Demonstrates how standardised, multi-parameter monitoring can reveal treatment effects on biomass production, soil chemistry, and plant community composition.
+  - Highlights the importance of accounting for site heterogeneity and external disruptions (e.g., FMD) when interpreting long-term monitoring data.
+  - Provides a structured, comparable dataset with linkage points for broader analyses across groups within the monitoring programme.
+  - Confirms that even in a complex, field-scale setup, standardized outputs (biomass, pH, species hits, PCA groupings) enable clear interpretation of how management actions (fertiliser, liming, biocide) influence environmental health indicators.

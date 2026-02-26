@@ -1,0 +1,61 @@
+# SAMPLING
+
+- This document details sampling metadata for multiple environmental media, focusing on how data were collected, measured, and processed for GIS use.
+- Media covered: rainfall, cloud, stream water, groundwater, throughfall, and stemflow.
+- For each media type, key metadata fields are provided:
+  - COLLECTION METHOD and COLLECTION DEVICE
+  - FLOW/VOLUME measurement approach
+  - FIELD MEASUREMENTS (types and instruments)
+  - SAMPLING INTERVAL (frequency)
+  - START and FINISH dates (temporal coverage)
+  - FILTRATION (lab or field)
+- Rainfall
+  - Bulk samples with continuously open collectors (PVC, anti-bird protection; Warren Spring pattern in some cases)
+  - Ground-level raingauge for flow/volume
+  - Air temperature measured with glass thermometer and thermistor
+  - Interval: weekly or daily
+  - Start: 10 May 1983; Finish: 18 May 1999 (initial phase); then 25 May 1999 onward (continuous)
+  - Filtration: Lab
+- Cloud
+  - Bulk samples; CEH Edinburgh pattern lidded harp-type passive collector
+  - Flow/volume by weight of sample
+  - Field measurements: none
+  - Interval: weekly
+  - Start: 25 Sep 1990; Finish: ongoing (Cont.)
+  - Filtration: Lab
+- Stream water
+  - Grab samples; plastic bucket collection
+  - Flow/volume from CEH stream (flume) gauges; for non-flumed streams, flow data from nearest flume
+  - Field measurements: stream temperature and electrical conductivity (corrected to 25°C)
+  - Interval: weekly/daily
+  - Start: 10 May 1983; Finish: ongoing
+  - Filtration: Field
+- Groundwater
+  - Grab samples after flushing boreholes; BGS borehole sampler
+  - Depth recorded with dip level recorder (datum at top of borehole)
+  - Field measurements: groundwater temperature and electrical conductivity (corrected to 25°C)
+  - Interval: monthly, fortnightly, or weekly
+  - Start: 24 Apr 1994; Finish: 14 Feb 2001
+  - Filtration: Field
+- Throughfall
+  - Bulk samples; trough collector
+  - Flow/volume: volume of sample
+  - Field measurements: none
+  - Interval: fortnightly
+  - Start: 6 Feb 1984; Finish: 2 Sep 1991
+  - Filtration: Lab
+- Stemflow
+  - Bulk samples; plastic tubing around trees with carboy collector
+  - Flow/volume: volume of sample
+  - Field measurements: none
+  - Interval: fortnightly
+  - Start: 6 Feb 1984; Finish: 2 Sep 1991
+  - Filtration: Lab
+- Temporal and methodological diversity highlights:
+  - Data spans multiple decades with overlapping and ongoing collections for some media; others end in the early 1990s or early 2000s.
+  - Varied collection devices and measurement approaches across media (lab vs field, different collectors, gauging networks).
+  - Spatial linkage likely tied to networks referenced (CEH, BGS) for integration.
+- GIS-related implications:
+  - Requires harmonization of sampling intervals, units, and collection methods to enable integrated map-based visualizations.
+  - Need to account for differences in data resolution and lab vs field processing when creating derived spatial products.
+  - Temporal alignment across media is essential for analyzing hydrological processes and environmental responses.

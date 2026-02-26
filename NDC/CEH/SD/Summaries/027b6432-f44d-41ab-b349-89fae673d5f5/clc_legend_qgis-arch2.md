@@ -1,0 +1,83 @@
+# QGIS Generated Color Map Export File
+
+- Overview
+  - A QGIS color map export using discrete interpolation that defines a color ramp for 50 land cover and land use classes.
+  - Each entry maps a numeric index to a specific CORINE-style land cover category, with an associated RGBA color value for map visualization.
+  - Includes categories ranging from urban fabric and infrastructure to agriculture, forests, wetlands, and water bodies, plus unclassified and nodata options.
+
+- Data structure and format
+  - Interpolation: DISCRETE, meaning each class is assigned a single, distinct color.
+  - Each line contains:
+    - An index (1–50)
+    - RGBA color values (R, G, B, A)
+    - The class code (e.g., 111, 112, 121, …)
+    - The descriptive label for the class
+  - End-of-list categories include UNCLASSIFIED LAND SURFACE (990) and UNCLASSIFIED WATER BODIES (995/990 variants), plus NODATA (999).
+
+- Key class categories and examples
+  - Urban and built environment
+    - 111 - Continuous urban fabric
+    - 112 - Discontinuous urban fabric
+    - 121 - Industrial or commercial units
+    - 122 - Road and rail networks and associated land
+    - 123 - Port areas
+    - 124 - Airports
+  - Extractive, industrial, and transport features
+    - 131 - Mineral extraction sites
+    - 132 - Dump sites
+    - 133 - Construction sites
+  - Green spaces and recreation
+    - 141 - Green urban areas
+    - 142 - Sport and leisure facilities
+  - Agriculture and farmland
+    - 211 - Non-irrigated arable land
+    - 212 - Permanently irrigated land
+    - 213 - Rice fields
+    - 221 - Vineyards
+    - 222 - Fruit trees and berry plantations
+    - 223 - Olive groves
+    - 241 - Pastures
+    - 242 - Annual crops associated with permanent crops
+    - 243 - Complex cultivation patterns
+    - 244 - Agro-forestry areas
+    - 245–249 (broader agricultural classes with natural vegetation components)
+  - Forests and natural vegetation
+    - 311 - Broad-leaved forest
+    - 312 - Coniferous forest
+    - 313 - Mixed forest
+    - 321 - Natural grasslands
+    - 322 - Moors and heathland
+    - 323 - Sclerophyllous vegetation
+    - 324 - Transitional woodland-shrub
+  - Other natural features and landscapes
+    - 331 - Beaches, dunes, sands
+    - 332 - Bare rocks
+    - 333 - Sparsely vegetated areas
+    - 334 - Burnt areas
+    - 335 - Glaciers and perpetual snow
+  - Wetlands and water-related
+    - 411 - Inland marshes
+    - 412 - Peat bogs
+    - 421 - Salt marshes
+    - 422 - Salines
+    - 423 - Intertidal flats
+  - Water bodies and coastal systems
+    - 511 - Water courses
+    - 512 - Water bodies
+    - 521 - Coastal lagoons
+    - 522 - Estuaries
+    - 523 - Sea and ocean
+  - Unclassified and nodata
+    - 999 - NODATA
+    - 990 - UNCLASSIFIED LAND SURFACE
+    - 995 - UNCLASSIFIED WATER BODIES
+
+- Practical use for environmental monitoring
+  - Provides a standardized visual language to compare land cover changes over time across datasets and reports.
+  - Facilitates consistent map outputs for policy performance dashboards and monitoring reports.
+  - Supports data quality workflows by clearly defining the exact color for each class, aiding in cross-agency data sharing and portal uploads.
+
+- Considerations for analysts
+  - Ensure class mappings align with internal classifications and any updates to the classification schema (e.g., CORINE-like codes).
+  - Maintain the color ramp consistently across projects and time periods to preserve comparability.
+  - Verify that UNCLASSIFIED and NODATA codes are correctly interpreted during analysis and visualization.

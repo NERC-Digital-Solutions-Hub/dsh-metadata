@@ -1,0 +1,35 @@
+# Experimental design/Sampling regime
+
+- The EMEP4UK model is an atmospheric chemistry transport model (ACTM) coupled with the WRF weather model, producing hourly to annual average atmospheric composition and deposition; the document presents daily averaged data.
+- Emissions are of two types: anthropogenic and natural.
+  - Anthropogenic pollutants included: NOx, NH3, SO2, primary PM2.5, primary PMcoarse (PM10 minus PM2.5), CO, and NMVOCs, sourced at different resolutions.
+  - UK emissions are from the National Atmospheric Emission Inventory (NAEI) at 1 km x 1 km, aggregated to 5 km x 5 km.
+  - Rest of Europe uses EMEP CEIP emissions at 50 km x 50 km.
+  - International shipping emissions (ENTEC, 2010i) are aggregated to 5 km x 5 km within the British Isles domain.
+  - Forest fires are included; biogenic emissions (isoprene, monoterpenes when needed) are calculated in the model for each grid cell and at each time step using near-surface air temperature.
+- Model configurations and data provenance
+  - Models compiled with the FORTRAN Intel compiler (2013_sp1.3.174); calculations run on the CEH NEMSIS Linux cluster.
+- Recorded value types and units
+  - Surface concentrations reported for multiple species, with corresponding NetCDF variable names:
+    - NO, NO2, PM10, PM2.5, NH3, HNO3, SO2, NH4_F, TNO3, SO4, PART_OM_F, O3.
+  - Units and NetCDF variable names provided (e.g., SURF_ug_NO for nitric oxide in µg/m3; SURF_ppb_O3 for ozone in ppbv).
+- NetCDF data structure and grid details
+  - Example structure (2001 SO2 output) shows:
+    - Dimensions: time, i (x), j (y)
+    - Time units: days since 1900-01-01
+    - Spatial coordinates: i and j correspond to EMEP grid x/y in kilometers
+    - Grid mapping: Polar_Stereographic projection
+    - Each species variable (e.g., SURF_ug_SO2) is defined over (time, j, i) with metadata including long_name, units, and grid mapping
+- Spatial and temporal resolution
+  - UK domain: 5 km x 5 km resolution (emissions); daily averaged model outputs
+  - European domain: 50 km x 50 km resolution for emissions
+- Data quality control and caveats
+  - Validation uses AURN monitoring network for hourly model output and UK Met Office AWS for WRF output
+  - Simple linear regression used for comparisons; no further QA/QC performed
+  - Use of dataset is at user’s risk; no warranty or guarantee of error-free data or fitness for purpose
+- Temporal coverage and notable notes
+  - Forest-fire data included only for 2002–2012
+  - Emissions for 2013–2014 mirror 2012 values
+  - 2001–2012 use WRF version 3.1.1; 2013–2014 use WRF version 3.6.1 with changes to humidity nudging in the simulation
+- References and documentation
+  - Supporting documentation and final report linked (retrieved 2016-04-20) for further details on the EMEP4UK model and data.

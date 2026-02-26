@@ -1,0 +1,37 @@
+# Experimental Design
+
+- Aim and scope
+  - Assess potential human exposures to antibiotic-resistant bacteria carried by poultry, focusing on commensal bacteria from poultry GI tracts.
+  - Observations cover rural domestic settings, small-to-medium poultry farms, and urban live-poultry markets in Bangladesh.
+  - Goal: record hygiene practices before and after exposure to poultry or poultry waste that may contribute to environmental contamination or transmission of antibiotic-resistant bacteria.
+- Study settings and sample
+  - 5 rural households in Mirzapur, Tangail district (one household per village; total n=5).
+  - 5 small-to-medium commercial poultry farms in Mirzapur (one per village; total n=5).
+  - 5 market stalls selling live poultry in urban Dhaka (one per market; total n=5).
+  - Formative research with no expected size effect and no sample size calculation.
+- Ethical considerations
+  - Written informed consent obtained from participants with right to withdraw.
+  - Ethical approvals: International Centre for Diarrhoeal Disease Research, Bangladesh (PR16071) and Loughborough University (R17-P037).
+- Data collection methods
+  - Conducted by trained researchers from icddr,b; data recorded using structured observation forms aligned with each setting.
+  - Observers: female in households; male in farms and urban markets.
+  - Timeframe: February–June 2017.
+  - Two observation sessions per setting on the same day, each lasting three hours.
+  - Sessions scheduled in fixed time slots: early morning (06:00–09:00), afternoon (12:00–15:00), or evening (15:00–18:00) to capture varied behaviors.
+  - In sub-samples, repeat observations on the following day to compare day-to-day behavior.
+- Observed events and variables
+  - Transmission events: handwashing before/after events, number of hands washed, use of soap, drying method, and handwashing before eating/drinking or feeding a child.
+  - Exposure events: contact with poultry, poultry bedding, poultry manure, poultry meat, or other poultry-derived materials.
+  - Additional hygiene/biosecurity measures: use of protective clothing (gloves, boots, masks), cleaning of tools/equipment, and safe disposal of waste.
+- Quality control and data management
+  - Real-time data recording on structured tools; data entered into Excel by trained staff.
+  - Random checks against original data sheets by an independent researcher.
+  - Frequency checks to identify and correct out-of-range or erroneous values.
+- Data structure and accessibility
+  - Three CSV data files: observationsrural.csv, observationsfarms.csv, observationsmarkets.csv.
+  - Blank cells indicate missing data.
+  - Supporting documentation with detailed variable lists: Variablelistrural.rtf, Variablelistfarms.rtf, Variablelistmarkets.rtf, outlining column headings for each file.
+- Data management and reuse considerations
+  - Tools adapted from previously developed observation instruments used at the Environmental Intervention Unit of icddr,b.
+  - Structured design facilitates standardised analysis of environmental health practices and potential transmission pathways.
+  - Dataset organization supports integration with other environmental health data and scrutiny of policy performance over time.

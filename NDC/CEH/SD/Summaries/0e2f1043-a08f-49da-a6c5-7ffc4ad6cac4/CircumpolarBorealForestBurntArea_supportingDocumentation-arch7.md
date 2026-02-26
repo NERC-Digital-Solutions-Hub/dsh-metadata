@@ -1,0 +1,31 @@
+# Burnt area product for the circumpolar boreal forest zone derived from MODIS imagery
+
+- Purpose: Presents a 500 m daily burnt-area product for the circumpolar boreal forest zone, with a burnt date (Julian day) per year, compiled as 11 TIFF files (2001–2011). Validation against Landsat ETM yields a Kappa of 0.60.
+- Spatial scope: Circumpolar boreal forest area defined by FAO Global Ecological Zones (Boreal tundra woodland, Boreal coniferous forest, Boreal mountain system), covering ~47 million km2 from 40°N to 70°N. Forested areas identified using MODIS Land Cover Type (MOD12Q1) classes 1–8.
+- Data inputs and resolution:
+  - 16-day MODIS Nadir BRDF-Adjusted Reflectance (N-BAR) product (MCD43A4) for spectral bands in NIR and SWIR, ensuring stability across time and viewing geometry.
+  - Daily MODIS Thermal Anomalies product (MOD14A1) to identify / date burning.
+  - Snow mask and quality checks from MODIS BRDF-Albedo (MCD43A2) to exclude snow.
+  - Output grid: 2400 × 2400 pixels per granule, with each pixel representing ~500 m × 500 m.
+- Burnt area detection algorithm:
+  - Indicator: Normalised Difference SWIR (NDSWIR) using NIR (band 2) and SWIR (band 6) as a proxy for forest biomass and burn impact.
+  - Snow and fill exclusion to reduce errors.
+  - Inter-annual change detection: compute year-over-year 16-day NDSWIR differences, average across periods to yield a single annual difference per pixel.
+  - Regional thresholding: divide scene into 16 windows of 600 × 600 pixels; threshold set at 60% of the difference between the window mean and the mean of known burnt pixels (from TA data).
+  - Binary burn mask: apply threshold, remove clusters smaller than 4 pixels.
+  - Burn dating: retain only areas containing a Thermal Anomaly; assign Julian Day from TA; undated pixels are bilinearly interpolated from nearby dated pixels.
+  - Output: annual 500 m burnt-area raster with pixel values equal to the Julian Day of first burn.
+- Date validation and burning-date assignment:
+  - Thermal Anomaly data used to confirm/detect burn events and assign dates.
+  - Interpolation used where cloud cover or TA absence prevented direct dating.
+- Validation approach and results:
+  - Reference data: manual interpretation of Landsat ETM time-series (≈30 m) across 10 locations (stratified by continent) for 2001–2007.
+  - Coverage: 34.8 million km2 area (water excluded); 22.6 million km2 forest area evaluated after removing non-forest areas.
+  - Sample: 504 burnt areas identified in ETM data; CEH-BA product detected at least partially for 316 areas (62%).
+  - Pixel-level validation: 65,120 ETM burnt pixels; 45,807 (70%) also flagged by CEH-BA; 41,719 (47%) CEH-BA burnt pixels were commission errors (no ETM burn pixel correspondences); about half of CEH-BA commission errors overlapped with ETM burnt areas.
+  - Overall accuracy: Kappa coefficient of 0.60.
+- Methodology note:
+  - The approach emphasizes detecting inter-annual biomass change during the snow-free window (early June to late August, roughly Julian Days 161–241) to capture burn signals across latitudes.
+  - Thresholding and windowing designed to balance reduction of phenological variability against avoiding large, heterogeneous areas.
+- References:
+  - C. George, C. Rowland, F. Gerard, and H. Balzter, "Retrospective mapping of burnt areas in Central Siberia using a modification of the normalised difference water index," Remote Sensing of Environment, 2006.

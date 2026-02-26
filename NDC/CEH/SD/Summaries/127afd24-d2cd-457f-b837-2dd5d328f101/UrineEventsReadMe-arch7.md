@@ -1,0 +1,36 @@
+# UrineEvents.csv
+
+- Project and authors: Uplands-N2O (grant NE/M015351/1); authors include Karina A Marsden, Lucy Lush, Jon A Holmberg, Harris et al.; data reuse should be fully cited.
+- Objective and scope: large dataset detailing urination behaviour (squatting duration, frequency, estimated volume) of Welsh Mountain ewes on two contrasting upland pastures; informs nitrogen cycling, nitrate leaching, and N2O emissions from urine patches.
+- Data collection method:
+  - Sheep outfitted with Daily Diary (DD) tags (Wildbyte Technologies Ltd., UK) attached to shaved hind area.
+  - Urine event detection via Boolean algorithm on tag data; duration, frequency, and start time captured; urine volume estimated from squatting duration using a linear relationship derived from penned sheep with DD tags.
+  - Related dataset PennedSheepWithTags.csv used to derive the duration-volume relationship.
+- Campaigns and sites:
+  - Campaign 1 (Spring 2016): semi-improved upland field, Henfaes Research Centre (11.5 ha; 53°13′N, 4°0′W; 240–340 m asl); vegetation NVC U4 and MG6; n = 30 ewes.
+  - Campaign 2 (Autumn 2016): same semi-improved site; n = 30 ewes.
+  - Campaign 3 (Spring 2017): unimproved montane grazing area, Carneddau, Snowdonia National Park (495 ha; 53°22′N, 3°95′W; 322–943 m asl); vegetation NVC H12; n = 30 ewes.
+  - Campaign 4 (Autumn 2017): same unimproved montane site; n = 30 ewes.
+  - Mean starting weights: semi-improved spring 33.5 ± 1.2 kg; semi-improved autumn 39.7 ± 1.1 kg; unimproved spring 41.6 ± 0.9 kg; unimproved autumn 38.0 ± 0.7 kg.
+- Data quality, cleaning, and filtering:
+  - Some DD tags removed due to early detachment (e.g., rubbing on trees/posts).
+  - Reliability checks: days with zero urination events for more than two consecutive days or irregular patterns were filtered (likely wool growth around tag causing sensor issues).
+  - Noise removal: events shorter than 1 s excluded; minimum observed squatting duration is 1.9 s (based on penned sheep study).
+  - Final dataset is filtered and cleaned; outliers and missing values noted (some sheep IDs missing; different sets across sites).
+- Data headers and units (key fields):
+  - Site: SemiImproved or Unimproved upland pastures.
+  - Season: Spring or Autumn.
+  - Sheep: ID (R1–R30 per campaign); missing values present; different sheep sets per site.
+  - Date: dd/mm/yyyy
+  - Time: hh:mm:ss
+  - DateTime: dd/mm/yyyy hh:mm:ss
+  - Duration: squatting duration (seconds)
+  - Vol_Est: estimated urine volume per event (ml) derived from Duration via linear regression.
+- Data usage and integration:
+  - Provides event-level timing and volume estimates for spatial-temporal analysis.
+  - Can be linked with site-level GIS layers (vegetation types, elevation) and environmental layers to model nitrogen fluxes and potential N2O emissions from urine patches.
+- Data limitations and notes:
+  - Some data gaps due to tag failures; missing sheep IDs; two separate site campaigns with different sheep cohorts.
+  - Volume estimates depend on the PennedSheepWithTags regression; external dataset referenced for underlying relationship.
+- Citation requirements:
+  - If data are reused, ensure full citation in accordance with the note provided at the top.

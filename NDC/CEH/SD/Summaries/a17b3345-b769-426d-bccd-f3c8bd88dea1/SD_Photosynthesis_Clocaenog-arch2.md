@@ -1,0 +1,90 @@
+# Details of data structure for 'Photosynthesis response_Clocaenog.csv' and 'Photosynthesis_Clocaenog.csv'
+
+- Purpose and scope
+  - Supplement to supporting documentation for data series in Clocaenog project.
+  - Describes the data structure (columns and meanings) for two CSV datasets containing photosynthesis measurements collected at Clocaenog.
+  - Aimed at enabling consistent data understanding, quality assurance, and subsequent analyses.
+
+- Dataset 1: Photosynthesis response_Clocaenog.csv
+  - Size: 31 columns, 785 rows.
+  - Core columns and meanings (examples):
+    - A: Date (dd/mm/yyyy)
+    - B: Plot (1–9)
+    - C: Climate treatment (control, drought, or warming)
+    - D: Drought treatment in operation (on/off)
+    - E: Warming treatment in operation (on/off)
+    - F: Plant species (Calluna vulgaris; Vaccinium myrtillus)
+    - G: Replicate (1–3; only used for data from 04/07/2002 due to replicated measurements)
+    - H: Response type (Light response curves A/Q or A/Ci curves)
+    - I–N: Temporal markers (Year, Day, Month, Hour, Minute, Second)
+    - O: CO2 concentration in the chamber (µmol CO2 mol-1 CO2)
+    - P: Change in CO2 concentration over the measurement period
+    - Q: Photosynthetically active radiation (PAR) in the chamber
+    - R: Water content in the chamber (mbar)
+    - S: Difference in water content during measurement (mbar)
+    - T: Temperature (°C)
+    - U: Area of measurement cuvette (cm²)
+    - V: Gas flow rate (mL min-1)
+    - W: Evapotranspiration (mmol CO2 m-2 s-1)
+    - X: Stomatal conductance (mmol CO2 m-2 s-1)
+    - Y: Leaf temperature (°C)
+    - Z: Photosynthesis (µmol CO2 m-2 s-1)
+    - AA: Internal CO2 concentration (µmol CO2 mol-1 CO2)
+    - AB: Atmospheric pressure (mbar)
+    - AC: Status code for CIRAS machine
+    - AD: Leaf mass (g, dried at 65°C)
+    - AE: Leaf area (cm²)
+
+- Dataset 2: Photosynthesis_Clocaenog.csv
+  - Size: 30 columns, 925 rows.
+  - Core columns and meanings (examples):
+    - A: Date (dd/mm/yyyy)
+    - B: Plot (1–9)
+    - C: Climate treatment (control, drought, or warming)
+    - D: Drought treatment in operation (on/off)
+    - E: Warming treatment in operation (on/off)
+    - F: Plant species (Calluna vulgaris; Vaccinium myrtillus; Empetrum nigrum)
+    - G: Leaf status (Healthy; Fungal infected; Herbivory)
+    - H: Year
+    - I–M: Temporal markers (Day, Month, Hour, Minute, Second)
+    - N: CO2 concentration in the chamber (µmol CO2 mol-1 CO2)
+    - O: Change in CO2 concentration over the measurement period
+    - P: Photosynthetic active radiation (PAR)
+    - Q: Water content (in the chamber during measurements)
+    - R: Difference in water content (during the period of measurement)
+    - S: Temperature (°C)
+    - T: Area of measurement cuvette (cm²)
+    - U: Gas flow rate (mL min-1)
+    - V: Evapotranspiration (mmol CO2 m-2 s-1)
+    - W: Stomatal conductance (mmol CO2 m-2 s-1)
+    - X: Leaf temperature (°C)
+    - Y: Photosynthesis (µmol CO2 m-2 s-1)
+    - Z: Internal CO2 concentration (µmol CO2 mol-1 CO2)
+    - AA: Atmospheric pressure (mbar)
+    - AB: Status code for CIRAS machine
+    - AC: Leaf mass (g)
+    - AD: Leaf area (cm²)
+
+- Notable differences and considerations
+  - Species coverage:
+    - Dataset 1: Calluna vulgaris and Vaccinium myrtillus.
+    - Dataset 2: Calluna vulgaris, Vaccinium myrtillus, Empetrum nigrum.
+  - Biological status:
+    - Dataset 2 includes leaf status categories (Healthy, Fungal infected, Herbivory); Dataset 1 does not.
+  - Replication:
+    - Dataset 1 notes replication only for data from 04/07/2002 (G column).
+  - Temporal formatting:
+    - Some column descriptions in Dataset 2 show inconsistencies (e.g., “L, Hour = Minute; M, Hour = Second”), indicating potential formatting issues in the metadata that may require careful alignment with the actual data.
+  - Measurements:
+    - Both datasets cover CO2 concentration, CO2 changes, PAR, water content, temperature, leaf traits, photosynthesis, and related gas-exchange metrics, but the exact column labels and presence differ slightly as described above.
+
+- Data handling and analysis context for Analysts Monitoring the Environment
+  - Data workflow
+    - Identify required data from established sources, verify, quality assure, clean, and transform.
+    - Apply standardised analytical methods to generate outputs such as environmental health indicators or policy-relevant classifications.
+  - Outputs and dissemination
+    - Present results in clear formats (reports, maps, charts).
+    - Ensure datasets are stored properly and uploaded to relevant data portals or repositories.
+  - Data reuse and value
+    - Aim to increase dataset value by integrating with other relevant data.
+    - Provide access to underlying data used to produce final outputs to support transparency and reuse.

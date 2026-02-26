@@ -1,0 +1,27 @@
+# Sampling Design
+
+- Period and location: July 2015 to December 2015; study site in Gurue district, Zambezia province.
+- Village selection: Ten villages chosen along a land-scarcity gradient (from land-abundant to land-constrained) with similar infrastructure, soils, rainfall, and vegetation, to capture variation in agricultural pressure.
+- Value chain actors identified: Village small-scale soya producers, emergent soya farmers, managers of commercial soya operations, district officer, NGO technicians, and formal/informal traders (identified via snowball sampling).
+- Sampling strategy:
+  - Small-scale producers: focus groups in each village (groups of 5–7 producers).
+  - Emergent farmers: identified via snowball sampling; one farmer to assemble a group for a focus group.
+  - Informal traders: random interviews at buying points along streets (short interviews).
+  - Other actors of interest: contacted and interviewed as arranged.
+- Data collection methodologies:
+  - Semi-structured interviews: conducted at points of action (village centre, along roads with mobile traders, plantation offices).
+  - Focus group discussions: led by village leaders, typically 1–2 hours.
+  - Informal communication: daytime informal exchanges recorded by researchers; translator (Portuguese to Elomwe) present; notes taken; electronic English transcripts prepared after fieldwork.
+- Triangulation: Information cross-validated by repeatedly discussing topics with different groups/participants to highlight converging perspectives.
+- Interview guidelines and categories (in Portuguese): 
+  - Soya production, soya marketing, land availability and distribution, agricultural support and inputs, constraints and challenges.
+  - Large-scale soya production interviews cover: cultivation types, hectares, yields, inputs (fertilizers, pesticides, herbicides, improved seeds, inoculation), input suppliers, seed sourcing, input quality and reliability, farming practices (seed inoculation, soil preparation, rotation, intercropping, irrigation, weed/pest management, harvesting, post-harvest handling), costs, soil improvement.
+  - Marketing: storage/processing, sale locations, annual volumes, buyers, buyer relationships, quality requirements, unit prices and price variation, profit margins, price negotiation, key constraints and solutions.
+  - Contracts: smallholder contracting, contract terms, implementation issues, buying practices, tractor hiring, community support (training, infrastructure).
+  - Land: land acquisition, prior use, expansion plans, social responsibility, expansion feasibility, conflicts, land access preferences, land availability, deforestation considerations.
+  - Discussion: views on production discussions, rural development impacts, land conflicts, improving large-company image, regulatory obstacles, future plans.
+  - Data collection fields: village name, participant names, production history, associations, support received, land ownership, production scale, practice changes, market access, storage facilities, and buyer information.
+  - A comprehensive module titled Apoio (Support), Land-alocação (Land allocation), Produção e fornecimento de insumos (Production and input supply), Mercado (Market), and business-profile sections (including store locations, business history, product flows, pricing decisions, costs, storage, transport, credits, and contracts) to capture a wide range of data points.
+- Data management and translation:
+  - Field notes and interviews recorded in notebooks; translations conducted from Portuguese to Elomwe during fieldwork; electronic English transcripts prepared post-fieldwork.
+- End goal: Produce self-contained data assets (descriptive and quantitative) on soya production, marketing, land allocation, inputs, and market dynamics to enable analysis of the value chain and inform development interventions.

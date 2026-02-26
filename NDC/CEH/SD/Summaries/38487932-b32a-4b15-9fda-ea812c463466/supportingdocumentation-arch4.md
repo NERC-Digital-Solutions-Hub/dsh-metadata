@@ -1,0 +1,64 @@
+# ManagementYieldSoilVegetationData2019.csv
+
+- Overview
+  - A dataset examining variation in oil palm yield on smallholder farms and the roles of management intensity, ground vegetation cover, and soil characteristics (SOC, total N, total C, available P, total P) on yields.
+  - Collected Aug–Nov 2019 from 40 smallholdings (<50 ha) across six governance areas in Sabah, Malaysia.
+  - Data sources include face-to-face farmer questionnaires on management practices (including Best Management Practices) and reported Fresh Fruit Bunch (FFB) yields, plus field surveys of vegetation cover and soil chemical properties.
+  - All farms had mature oil palm trees ( >8 years).
+
+- Dataset files (structure and purpose)
+  - ManagementYieldSoilVegetationData2019.csv
+    - Primary farm-level dataset with 37 columns, including:
+      - Farm characteristics (e.g., plot_id, region, productiveTrees, farmArea_total)
+      - Management intensity index components (e.g., pruning_freq, contour, fertiliser_use, herbicide_use)
+      - Best Management Practices (BMPs) indicators (e.g., EFB_application, Spraying_pattern)
+      - Yield information (e.g., harvest_freq, yield_per_ha_yr, yield_per_tree_yr)
+      - Soil chemical properties (e.g., organicCarbon_total, nitrogen_total, phosphorus_available, phosphorus_total)
+      - Understorey vegetation measures (principal_component_1, principal_component_2)
+  - raw_vegetationPlot2019.csv
+    - Plot-level understorey data for each farm, including start_date, counts of large trees, small trees, saplings, palms, wild palms, standing_deadwood, and understorey_density.
+  - raw_vegetationQuadrat2019.csv
+    - Quadrat-level vegetation data (8–12 variables per quadrat) across eight 1 m2 quadrats per plot, including canopy_height, vegetation_height, densiometer readings, canopy_cover, leaflitter_depth, common_name, cover_species, percentage_cover.
+  - raw_vegetationTransect2019.csv
+    - 60 m transect data capturing palm-tree metrics within 5 m of the transect, including tree_height, diameter_DBH, epiphyte_cover, contour_presence, and tree_sex.
+
+- Key variables and data domains
+  - Farm information
+    - plot_id, region, productiveTrees, productiveTrees_ha, productiveTree_area, numb_cropCycle, monoculture, average_crop_age, previous_landuse, topography, farmArea_total
+  - Management intensity index
+    - pruning_freq, contour, weed_freq, herbicide_freq, herbicide_use, herbicide_perha, herbicide_per_ha_yr, fertiliser_perha, fertiliser_pertree, fertiliser_freq, fertiliser_use, fertiliser_per_ha_yr, insecticide_use
+  - Best Management Practices (BMPs)
+    - EFB_application, Spraying_pattern
+  - Yield
+    - harvest_freq, yield_per_ha_yr, yield_per_tree_yr (as described)
+  - Soil data
+    - organicCarbon_total (%), nitrogen_total (%), carbon_total (%), phosphorus_available (mg/kg), phosphorus_total (mg/kg)
+  - Understorey vegetation
+    - principal_component_1, principal_component_2 (derived from PCA on 18 vegetation parameters)
+  - Raw vegetation data
+    - Plot-level: start_date, large_trees, small_trees, sapling_count, palm_count, wild_palm, standing_deadwood, understorey_density
+    - Quadrat-level: quadrat_numb, canopy_height, vegetation_height, densiometer, canopy_cover, leaflitter_depth, common_name, cover_species, percentage_cover
+    - Transect-level: plot_id, tree_height, diameter_DBH, epiphyte_cover, contour_presence, tree_sex (and related fields)
+
+- Methods and sampling design
+  - Field interviews
+    - Face-to-face, Bahasa Malayu, standardized close-ended questions for yield and management practices.
+  - Soil sampling and analysis
+    - In each 0.28 ha plot, four soil samples (0–20 cm depth) collected to represent spatial variability and combined per farm.
+    - Lab analyses cover pH, SOC, total C, total N, available P, total P; moisture content determined; results corrected to oven-dry basis.
+    - SOC, total C and N via dry combustion; available P via Bray and Kurtz; total P via acid digestion and colorimetry.
+  - Vegetation data collection
+    - Understorey and ground vegetation quantified using plots, quadrats, and transects:
+      - Plot-level: understorey density, standing deadwood, non-palm trees by size class.
+      - Quadrat-level: canopy and understorey measures, leaf litter, moss, bare ground, deadwood, and species cover.
+      - Transect-level: palm traits (height, DBH), epiphyte cover, and vegetation around palm bases.
+  - Principal Component Analysis (PCA)
+    - PCA applied to 18 vegetation parameters to derive principal_component_1 and principal_component_2, using data from raw_vegetationPlot2019.csv, raw_vegetationQuadrat2019.csv, and raw_vegetationTransect2019.csv.
+
+- Scope and applicability
+  - Spatial and temporal scope: Sabah, Malaysian Borneo; 40 smallholder farms; data collected in a single 2019 window (Aug–Nov).
+  - Multivariate asset: integrates agronomic practices, soil chemistry, and vegetation structure to model yield outcomes.
+  - Data governance notes for data leaders
+    - Rich, multi-source data suitable for building data products around farming performance, sustainability indicators, and extension services.
+    - Requires careful metadata management across datasets (farm identifiers, dates, units, and lab methods) to enable cross-dataset linking and reproducibility.
+    - Spatial heterogeneity is addressed by pooling soil samples per farm and multiple vegetation measures across plots/quadrats/transects.

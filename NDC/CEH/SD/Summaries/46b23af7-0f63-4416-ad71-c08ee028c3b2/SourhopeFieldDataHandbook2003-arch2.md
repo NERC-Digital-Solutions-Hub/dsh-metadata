@@ -1,0 +1,33 @@
+# SOURHOPE FIELD DATA HANDBOOK 2003
+
+- Purpose: Use standardised, long-term data to assess environmental health and policy performance, focusing on soil biodiversity, vegetation, and management responses at a monitored field site.
+- Context: Sourhope field site in upland grasslands; part of UK Environmental Change Network (ECN); long-term integration with ECN measures (soil, air, water quality, biotic diversity).
+- Site characteristics: Sourhope Experimental Farm, Bowmont valley; altitude ~304–315 m; Euoceanic, very humid climate; soils predominantly brown forest soils with gleying; varied drainage and horizon profiles; land cover includes grassland, heather moor, and conifer plantations.
+- Experimental design: Five blocks, 30 main plots (12 x 20 m) divided into 15 subplots; Ecotron subplot for controlled experiments; randomized assignment of treatments within blocks.
+- Treatments and grazing: 
+  - Treatments: Control, Lime, N (nitrogen), Lime + N, Biocide, and initially Fallow (later omitted as a distinct fallow series).
+  - Stock management: plots mowed to simulate grazing; fenced to exclude large herbivores; grazing history includes seasonal cattle and goats but experimental area excluded since 1997–1998.
+- Field and sampling methods:
+  - Vegetation: 50 x 50 cm quadrats; five of the fifteen subplots per main plot surveyed; 25 points per quadrat; first survey in 1998; data analysed with Twinspan and National Vegetation Classification (NVC) comparisons.
+  - Soil: 30 auger cores per plot (0–30 cm) in a W-pattern; profile pits within blocks for horizon description; samples bulked for analysis and archived at -80°C.
+  - Analyses: soil moisture, LOI, pH (H2O and CaCl2), %N, %C, C:N, extractable Ca, Na, K, Mg; horizon descriptions capture organic-rich surface horizons and mineral layers; block-to-block variation noted.
+- Vegetation findings (highlights):
+  - Species richness: 25 species observed per site; Agrostis capillaris often dominant.
+  - Community groups: primary alignment with U4d (Festuca ovina-Agrostis capillaris-Galium saxatile grassland) and subcommunity Luzula multiflora-Rhytidiadelphus loreus; moister pockets associated with U5b (Nardus stricta-Galium saxatile grassland) subcommunities.
+  - Indicator species and associations identified (e.g., F. ovina, R. repens, D. flexuosa) with moister edge plots showing distinct associations.
+- Soil findings (highlights):
+  - 0–30 cm samples: pH ~4.5–4.8; %N ~0.56–0.58; %C ~7.6–8.0; C:N ~13.6–14.3; Ca ~1.1–2.96 meq/100 g; Mg ~0.58–1.59 meq/100 g; K ~0.58–0.81 meq/100 g; Na ~0.12–0.15 meq/100 g; LOI ~14.6–17.0%; moisture ~4.3–5.2%.
+  - Horizons: FH and H horizons highly organic with high LOI and N; Ah, AB horizons show decreasing LOI with depth; Ca, Mg, K vary by horizon and block; pH trends show slight shifts with depth.
+  - Soil types: Brown forest soils with gleying; horizon structure transitions from organic-rich, acidic surface horizons to more mineral-dominated deeper horizons.
+- Data management and integration:
+  - Data captured with standardised methods; stored within the MLURI data framework; linked to ECN network data.
+  - Soil samples archived at -80°C for long-term access and re-analysis.
+  - ECN role: Sourhope as core site for long-term environmental change monitoring; supports cross-site comparisons and data sharing.
+- Data value, accessibility, and policy relevance:
+  - Standardised, repeatable metrics enable temporal trend analysis and cross-site comparisons; potential for integration with broader environmental datasets.
+  - Underlying data and samples prepared for broader use; facilitates data access and secondary analyses.
+  - Findings support understanding of how management (lime, nitrogen, biocide) impacts vegetation composition and soil chemistry, informing sustainable grassland management and biodiversity objectives.
+- Key takeaways for analysts:
+  - The Sourhope site provides a robust, long-running platform to monitor environmental health through standardized vegetation and soil measurements.
+  - Data enable evaluation of management effects, time-trend analyses, and cross-site comparisons within ECN.
+  - Strong emphasis on data quality, archival storage, and data accessibility to maximise value and reuse for policy analysis and environmental monitoring.

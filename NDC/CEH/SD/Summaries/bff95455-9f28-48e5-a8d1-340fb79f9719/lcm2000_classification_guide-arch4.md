@@ -1,0 +1,115 @@
+# LCM2000
+
+- Aims and scope
+  - LCM2000 is a thematic satellite-derived mapping framework designed to contribute to UK biodiversity assessment and reporting by classifying Broad Habitats (BHs) and related land-cover types across Great Britain.
+  - The mapping aims to distinguish BHs where possible, using spectral data, external context, and subsequent aggregation into Target and Aggregate classes for reporting.
+  - The work is linked to the UK Biodiversity Action Plan and uses a cross-wector approach to relate satellite classifications to field-defined habitat types.
+
+- 1. Background and objectives
+  - Broad Habitats framework (developed by JNCC) guides the classification of terrestrial, freshwater, and coastal habitats for UK-wide monitoring.
+  - LCM2000 maps BHs from 1 km satellite data, with added context from external datasets to refine classifications.
+  - The project emphasizes consistency in mapping BHs, while allowing some compromises on accuracy at subclass levels to achieve national consistency.
+
+- 2. Broad Habitats and LCM2000 classes
+  - Mapping structure
+    - Spectral classes are combined into thematic components, which are further aggregated to build BHs and Target classes.
+    - Variants and Subclasses provide finer distinctions where feasible; however, BH definitions and Target classes do not map perfectly one-to-one.
+  - Practical limitations
+    - Differences in definitions (BH vs Target classes) and the spectral/contextual readability can produce mismatches.
+    - Some BHs are difficult to distinguish spectrally (e.g., Neutral/calcareous/acid grasslands; rough vs improved grasslands; bogs vs dwarf-shrub heath).
+  - Map display and aggregation
+    - Display uses standards aligned with national schemes (LCMGB 1990) with some additions (e.g., semi-natural grassland vs improved grassland).
+    - Aggregate classes are used for reporting where BH-level distinctions are unreliable at map scale.
+
+- 2.1 Introduction
+  - CS2000 field survey data (569 squares in GB; 549 in 1998, others in 1999) provide a detailed, higher-resolution baseline to assess LCM2000.
+  - FS data are not ground truth; a parallel quality-assurance exercise showed about 88% repeatability for primary FS codes.
+  - The calibration aims to understand how well LCM2000 corresponds to FS and to enable generation of BH statistics from the broad coverage of LCM2000.
+
+- 2.2 GIS Operation
+  - Data handling
+    - ARC/Info files created for all 569 FS squares and equivalent LCM2000 map sections.
+    - Three main tests: per-pixel, per-segment, per-parcel.
+  - Correspondence levels
+    - Comparisons span BH level, generalized urban, Target class level, and Aggregate class level.
+  - Test types
+    - Per-pixel: direct overlay differences between FS and LCM2000 (sensitive to resolution and MMU).
+    - Per-segment: LCM2000 segment labels vs FS dominant class.
+    - Per-parcel: FS land parcels vs LCM2000 parcel labels.
+  - Confidence assessment
+    - A bootstrapping method yields 95% confidence limits for correspondence across GB, England/Wales, and Scotland.
+
+- 2.3 Confidence limits for measures of correspondence
+  - Overall findings (GB)
+    - Per-pixel correspondence: 54% (95% CI 53–56%)
+    - Per-segment: 58% (95% CI 57–60%)
+    - Per-parcel: 62% (95% CI 60–64%)
+  - England & Wales
+    - Per-pixel: 60% (CI 58–62%)
+    - Per-segment: 64% (CI 62–66%)
+    - Per-parcel: 69% (CI 67–72%)
+  - Scotland
+    - Per-pixel: 44% (CI 40–47%)
+    - Per-segment: 47% (CI 43–50%)
+    - Per-parcel: 48% (CI 44–52%)
+  - Target class level
+    - GB: 65% (parcel-based)
+    - England/Wales: 73%
+    - Scotland: 51%
+  - Key drivers of non-correspondence
+    - FS’s higher spatial resolution, time differences between FS and LCM2000, class-definition differences, and survey errors.
+  - Additional notes
+    - The per-pixel measure is most prone to differences due to pixel-level granularity and MMU (minimum mappable unit) mismatches.
+    - The FS 1-km squares vs LCM2000 25 m parcels contribute significantly to observed differences.
+
+- 3. LCM2000 assessments at class level
+  - Overall trends
+    - Broadleaved/mixed woodland and coniferous woodland show substantial BH-level differences in small, scattered patches due to MMU limits and boundary delineation.
+    - Coniferous woodland: UK cover ~5.5% (LCM2000) vs 5.8% (FS); direct correspondence around 70%.
+    - Broadleaved woodland: LCM2000 ~6.3% vs FS ~6.2%; direct agreement ~44% due to many small woodlands below 0.5 ha MMU in LCM2000.
+  - Arable and horticultural land
+    - LCM2000 ~23.4% vs FS ~21.5%; about 70% of LCM2000 arable coincides with FS arable; misclassification occurs between arable, horticultural land, and improved grassland.
+  - Grasslands
+    - Improved grassland: LCM2000 25.7% vs FS 25.8%; good recognizability, but ~20% of FS improved grassland maps as semi-natural in LCM2000.
+    - Semi-natural grasslands, neutral/calcareous/acid: difficult to separate; many rough grasses grouped as Neutral grassland by LCM2000; FS often distinguishes Improved grassland via management signals.
+  - Peatlands and bogs
+    - Bogs (deep peat) show strong sensitivity to peat-depth masks; LCM2000 peat-based bogs are conservative and far smaller than FS estimates; ongoing integration work with other datasets is planned.
+  - Heath, dwarf shrubs, fen/marsh/swamp, and montane
+    - Notable differences between LCM2000 and FS in dwarf shrub heath vs bogs, montane mapping, and peat-context classification.
+  - Inland/scattered and coastal features
+    - Inland bare ground: LCM2000 shows more due to urban and artificial contexts; coastal BHs generally small; intertidal areas show disparities due to tidal state and mapping scale.
+  - Water and built environments
+    - Water bodies (inland) are mapped as standing open water and canals when >0.5 ha; LCM2000 generally aligns with FS for larger water bodies but smaller features differ.
+    - Built-up areas and gardens: LCM2000 separates urban development into Suburban/rural development and Continuous urban, whereas FS treats urban land more holistically; this leads to differences in how other land-cover types are mapped within urban zones.
+  - Summary implication
+    - While LCM2000 captures broad land-cover extents, accuracy varies by class, with highest confidence in some woodland types and arable/grassland distinctions, and lower accuracy in peatlands, rough grasslands, and montane/coastal categories.
+
+- 4. LCM2000 accuracy
+  - Important caveats
+    - Correspondence with FS is not a direct measure of LCM2000 accuracy; FS is not ground truth.
+    - Differences in resolution, data model, and timing contribute to mismatch.
+  - Estimated accuracy
+    - Segment-level comparisons suggest LCM2000 may achieve around 87% accuracy for Target classes; a cautious realistic figure around 85% is suggested.
+    - Per-parcel level accuracy (relative to FS) is lower due to MMU differences (0.5 ha for LCM2000 vs 0.04 ha for FS) and boundary issues.
+  - Practical takeaway
+    - The overall accuracy reflects a balance between broad coverage and field-validated precision; calibration against FS improves the ability to derive Broad Habitat statistics from LCM2000 data.
+
+- 5. Change detection
+  - Changing landscapes require high-precision mapping to distinguish real change from mapping error.
+  - Between 1990 and 2000, changes are likely modest; satellite mapping alone cannot guarantee reliable change detection due to resolution and timing issues.
+  - The preferred path forward is intelligent, pattern-based analysis that leverages FS baselines and known change directions to identify plausible changes while accounting for classification probabilities and known biases.
+  - Planned work
+    - Additional calibration against field surveys and integration with external datasets to support robust change detection and improved Broad Habitat statistics.
+
+- Appendix I. A brief review of Broad Habitats with distinguishing features in relation to LCM2000 mapping
+  - Broad Habitat overview
+    - Summarizes distinguishing features and mapping considerations for BH categories (e.g., broad-leaved/mixed woodlands, coniferous woodlands, arable land, improved vs neutral grasslands, calcareous/acid grasslands, bracken, dwarf shrub heath, fen/marsh/swamp, bogs, water, montane habitats, inland rock, built-up areas, coastal habitats).
+  - Key mapping challenges
+    - Spectral limitations: many fine distinctions (e.g., semi-natural vs improved grasslands, peat depth influence) are difficult to resolve with 1 km imagery.
+    - Context and management signals: distinguishing management practices (grazing, liming, reseeding) is difficult from imagery alone; field knowledge improves classification at subclass levels.
+    - Peat and hydrology: peat depth and hydrological context drive bog vs heath distinctions; the peat mask used in LCM2000 tends to produce conservative bog estimates compared with field surveys.
+    - Small features and MMU: many woodland patches and semi-natural swards are below LCM2000's minimum mappable unit, leading to misclassifications as grassland or arable.
+  - Practical implications for data leaders
+    - Expect differences between LCM2000 and field data; use integration with field surveys and ancillary datasets to refine classifications.
+    - Be aware of classification uncertainties at BH vs Target vs Aggregate levels, and leverage change-detection approaches that account for known biases.
+    - Recognize that coastal/habitat boundaries and urban-rural interfaces present particular mapping challenges at the 1 km scale.

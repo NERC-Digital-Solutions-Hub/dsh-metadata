@@ -1,0 +1,71 @@
+# PLOT-SCALE  SIMULATIONS  WITH  MAIN-FRAME
+
+- Purpose and scope
+  - A comprehensive configuration for plot-scale ecosystem simulations using a mainframe-based framework.
+  - Models environmental processes across vegetation types (High vs Low Vegetation) and multiple C crowns, spanning carbon, nutrient, water, and energy budgets.
+  - Supports assessment and comparison of policy-relevant scenarios and informs decisions about monitoring approaches and data needs.
+
+- Key variables and outputs (representative categories)
+  - Albedo and energy balance
+    - ALB (albedo), Hc (various heat and energy flux terms), Q, QE (latent heat), Qv (sensible heat), Rn (net radiation), L, G, etc.
+  - Vegetation production and carbon pools
+    - ANPP_H/ANPP_L (above-ground net primary production for High/Low vegetation)
+    - NPP_H/NPP_L, NPPI_H/NPPI_L (integrated production over specified periods)
+    - NEE (net ecosystem exchange)
+    - B_H/B_L and Bfac_dayH/dayL (carbon pool biomass; day- and crown-specific)
+    - LAI_H/LAI_L and LAIdead_H/LAIdead_L (leaf area indices and dead-leaf indices)
+    - SIF_H/SIF_L (solar-induced chlorophyll fluorescence)
+    - NDVI (vegetation index)
+  - Nutrient and elemental pools
+    - Min_N, Min_P (mineralization of N and P)
+    - Nuptake_H/Nuptake_L, NupI_H/NupI_L (nutrient uptake and integrated uptake over time)
+    - Nreserve_H/Nreserve_L, Preserve_H/Preserve_L (mobile reserves)
+    - TPHO_TPOT_TPOT (phosphorus and potassium related pools; P, PHE_S, POT, etc.)
+  - Soil, litter, and biogeochemistry components
+    - P pools (P), C pools in soil, litter pools (R_litter, R_litter_sur, etc.)
+    - 55 soil biogeochemistry pools referenced (P_POOLs) with detailed subcomponents
+    - LEAK_* fluxes (leakage of DOC/DON/DOP/K/NH4/NO3/P from soil bottom)
+    - Rg, Rm, Rh, Rmr, Rms, RmycAM/RmycEM, Rg_H/L, etc. (respiration and turnover terms across compartments)
+  - Water, soil moisture, and hydrology
+    - In_H/L (intercepted water storage high/low vegetation), SWE, In_SWE, V (soil water content and storage), ZR depths (root depths), Osat/Osat-like and Ks/Usle-related hydraulic parameters
+    - Precipitation partitioning (Pr_liq, Pr_sno, PAR, PARB/PARD)
+    - Runoff and drainage terms (Rd, Rh, Rg, Rrootl_H/L, q_runon, etc.)
+  - Plant hydraulics and physiology
+    - Psi_l_H/L, Psi_s_H/L, Psi_x_H/L (leaf/root/xylem water potentials)
+    - Vmax_H/L, Fi_H/L/L and other photosynthetic and hydraulic parameters
+    - CT_H/L (photosynthetic pathway), KcI/Kct/other hydraulic coefficients
+  - Forcing, initialization, and scenario inputs
+    - Ca (CO2 concentration), Datam/Date (explicit date/time), Lat/Lon/Zbas (location and elevation)
+    - Weather and radiation inputs (PARB, PARD, SAB1/2, SAD1/2, U, Ws, RH, Pre, Pr, etc.)
+    - Forcing deposition and fertilization (DepN/DepP/DepK, FertN/FertP/FertK)
+    - Upl (tectonic uplift), FertN/P/K, DepN/DepP/DepK
+  - Model configuration and options
+    - Case_root (root profile type), OPT_EnvLimitGrowth, OPT_PH, OPT_SoilBiogeochemistry, OPT_VegSnow, OPT_SoilTemp, OPT_VD, OPT_ST, OPT_STh, OPT_PlantHydr, etc.
+    - PFT_opt_H/L (vegetation optical parameter sets by crown), Pcla (clay fraction), PFT-related structural parameters
+    - Various “Assigned Parameter” and “Internal Parameter” categories governing structure, stoichiometry, interception, rooting, leaf traits, and more
+  - Time steps and data structure
+    - Time scales include hourly (h) and daily (d) data; many outputs are time-series per crown or per pool
+    - Datam and Date inputs provide explicit time context; DeltaGMT for time zone alignment
+    - x1/x2 and similar fields indicate timing for input slices and simulation steps
+  - Governance and metadata tendencies
+    - Rich metadata is encoded for many variables (UNITS, TYPE, DESCRIPTION)
+    - Emphasis on explicit data provenance (inputs, internal computations, and outputs) to support traceability and quality control
+
+- For monitoring framework purposes
+  - The model provides a robust, instrumented framework to generate environmental health indicators at plot scale, including:
+    - Carbon balance indicators (NPP, NEE, biomass pools, litter production)
+    - Water and energy flux balances (Rnet, QE, QH, Qv), soil moisture, snow, and interception dynamics
+    - Vegetation health and productivity metrics (NDVI, NPP, LAI, SIF)
+    - Nutrient cycling indicators (N, P, K pools, uptake, mineralization, and losses)
+  - It supports scenario analysis for policy-relevant drivers:
+    - Deposition and fertilization scenarios (N, P, K)
+    - Climate and CO2 forcing variations
+    - Vegetation management and structural changes (cases for High vs Low vegetation)
+  - Data and governance implications
+    - Demonstrates a structured approach to data inputs, metadata, and parameterization, highlighting the importance of metadata quality and data-sharing readiness
+    - Reflects the complexity of integrating diverse data streams (forcing time series, deployment of internal parameters, and crown-level detail) for monitoring applications
+
+- Practical takeaway for policy and decision-makers
+  - This framework enables evaluation of environmental health under multiple management and climatic scenarios by producing a wide set of indicators across carbon, nutrient, water, and energy domains.
+  - Its explicit data governance (metadata, forcing inputs, and parameter classifications) supports transparency, reproducibility, and better alignment with monitoring framework requirements.
+  - The heavy emphasis on crown-level detail, per-pool accounting, and integrated budgets makes it a powerful tool for diagnosing drivers of ecosystem responses and for communicating findings to stakeholders.

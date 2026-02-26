@@ -1,0 +1,64 @@
+# Copernicus land CORINE metadata 2012
+
+- Purpose and scope
+  - Metadata for Corine Land Cover (CLC) 2012 and CLC changes (2006-2012) datasets relevant to the UK, Guernsey, and Jersey.
+  - Datasets support land cover monitoring, change detection, and environmental policy indicators under the Copernicus GMES programme.
+  - CLC provides consistent land cover information across Europe, with a time series initiated in 1985 and updates through 2012.
+
+- Datasets described
+  - Dataset 1: Corine land cover 2006 (revised), 2012 and changes (2006-2012) for the UK
+    - Filename: CLC2012_UK.mdb
+    - Layers: CLC-Changes (2006-2012), CLC2006revised, CLC2012
+    - Geographic coverage: UK, Northern Ireland, Isle of Man
+  - Dataset 2: Corine land cover 2006 (revised), 2012 and changes (2006-2012) for Guernsey
+    - Filename: CLC2012_UK.mdb
+    - Layers: CLC-Changes (2006-2012), CLC2006revised, CLC2012
+    - Geographic coverage: Guernsey (Channel Islands)
+  - Dataset 3: Corine land cover 2006 (revised), 2012 and changes (2006-2012) for Jersey
+    - Filename: CLC2012_UK.mdb
+    - Layers: CLC-Changes (2006-2012), CLC2006revised, CLC2012
+    - Geographic coverage: Jersey (Channel Islands)
+
+- Technical specifications
+  - Projections and coordinate systems
+    - UK: British National Grid (Transverse Mercator), GCS_OSGB_1936, Datum D_OSGB_1936
+    - Guernsey: Guernsey Grid (Transverse Mercator), GCS_WGS_1984, Datum D_WGS_1984
+    - Jersey: Transverse Mercator with New Jersey Ter? (JTM) noted; GCS_ETRF_1989, Datum D_ETRF_1989
+  - Spatial details
+    - Each dataset includes three layers: CLC-Changes (2006-2012), CLC2006revised, CLC2012
+    - CLC uses 44 classes with a minimum mapping unit (MMU) of 25 ha for status layers and 5 ha for changes; linear elements have a minimum width of 100 m
+  - Extent and resolution
+    - Geographic extents described by bounding boxes; spatial resolution standardized to a 1:100,000 denominator for mapping scale
+  - Data lineage and methodology
+    - Based on photointerpretation of satellite imagery (2011-2013) and supporting aerial imagery (Google Earth)
+    - Aimed to detect, identify, and map land cover changes above 5 ha
+    - EU/EEA technical guidelines followed; no up-to-date national LCM for UK in this update; last LCM was 2007
+    - Data integrated into a seamless European land cover map; updated using InterChange software for CLC changes
+  - Metadata standards
+    - Metadata compliant with the EEA Metadata Profile; INSPIRE-compliant metadata with extended elements
+    - Language: English
+
+- Metadata and context
+  - Abstract and purpose
+    - CLC 2012 and 2006-2012 changes support monitoring environmental change, indicator development, and policy reporting (EU environmental programmes, Water Framework Directive, biodiversity, climate change monitoring)
+  - Lineage and provenance
+    - UK dataset updated for reference year 2012; 2011-2013 imagery used; previous 2007 LCM was closest to 2012 status
+  - Access and rights
+    - Resource constraints: data access governed by EU regulations (GMES/Copernicus licensing)
+    - Free, full, and open access with conditions: acknowledge data source, avoid implying EU endorsement, state modifications if applicable
+    - EU ownership of results per grant terms; licensing and use conditions apply to Copernicus data and service information
+  - Data quality and governance considerations for monitoring frameworks
+    - Data quality relies on consistent methodology and metadata; potential barriers include:
+      - Access limitations and licensing constraints
+      - Need for thorough metadata to verify suitability
+      - Data transformation requirements to align with local systems
+      - Silos within/between organisations can hinder data sharing
+      - Public sharing of underlying data may be restricted or burdensome
+  - Online resources and contacts
+    - Metadata language and external links provided; primary point of contact includes University of Leicester (Originator), Defra (Custodian), European Environment Agency (Partner/Owner)
+    - Acknowledgments: Defra, EEA, and project partners supported by EU Copernicus programme
+
+- Practical implications for monitoring frameworks
+  - Useful for developing indicators on land cover change, ecosystem monitoring, and policy evaluation across the UK and Channel Islands
+  - Provides standardized, comparable datasets aligned with European-wide CLC methodology
+  - Requires attention to licensing, data sharing policies, and metadata completeness to maximise reuse in policy analysis and reporting

@@ -1,0 +1,23 @@
+# What has been recorded and what form does the data take?
+
+- Data captured: Areal coverage (km2) of 12 land cover classes for each of 20 chalkstream catchments in southern England; includes GB Ordnance Survey grid references for each stream site.
+- Data structure: Matrix of 12 land cover classes by 20 stream sites, with the area of each land cover class provided in km2.
+- Site identifiers and coordinates: RIVER_ID, SITE_ID, RIVER_NAME, SITE_NAME, NGR, EASTING, NORTHING.
+- Land cover classes (LCM2007 Broad Habitat Name) and areas (km2): Broadleaved_km2; Coniferous_km2; Arable_km2; Impr_Grass_km2; Acid_Grass_km2; Neut_Grass_km2; Calc_Grass_km2; Rough_Grass_km2; Heath_km2; Built_Area_km2; Rock_km2; Freshwater_km2; TOTAL_AREA_km2 (total).
+- Geographic scope: 20 chalkstream catchments distributed along white chalk geology from Dorset (southwest) through Wiltshire to Hampshire (northeast).
+- Time of data collection: July 2012.
+- How data were collected:
+  - Upstream catchment shapefiles generated from stream site coordinates using WINFAP-FEH 3 software (50m2 resolution).
+  - Catchment shapefiles used to clip the Land Cover Map 2007 (LCM2007) layer (via ArcGIS Clip).
+  - Areal coverage of each land cover class derived from clipped LCM2007 within each catchment.
+- Purpose: To aid site selection for surveying chalkstreams across a gradient of catchment land cover intensification, from calcareous grassland/woodland-dominated to arable/improved grasslands.
+- Responsible personnel: Dr John Murphy (QMUL) with Dr Tom Oliver and Dr Jon Redhead (CEH) for generating catchment land cover data.
+- Data completeness and quality:
+  - Completeness: The dataset is complete.
+  - Validation: Visual checks of each catchment shapefile ensured error-free generation before clipping LCM2007.
+- Data fields (summary of columns):
+  - River and site identifiers: RIVER_ID, SITE_ID, RIVER_NAME, SITE_NAME, NGR, EASTING, NORTHING.
+  - Land cover areas by class (LCM2007 Broad Habitat Name with km2 units): Broadleaved_km2; Coniferous_km2; Arable_km2; Impr_Grass_km2; Acid_Grass_km2; Neut_Grass_km2; Calc_Grass_km2; Rough_Grass_km2; Heath_km2; Built_Area_km2; Rock_km2; Freshwater_km2; TOTAL_AREA_km2.
+- References:
+  - Morton, R.D.; Rowland, C.S.; Wood, C.M.; Meek, L.; Marston, C.G.; Smith, G.M. (2014). Land Cover Map 2007 (25m raster, GB) v1.2. NERC Environmental Information Data Centre.
+  - Wallingford HydroSolutions (2012). WINFAP-FEH 3.

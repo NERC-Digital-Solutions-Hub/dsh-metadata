@@ -1,0 +1,44 @@
+REPORT III RESULTS FROM THE SOURHOPE FIELD EXPERIMENT: 1999-2001
+
+- Context and purpose
+  - Part of the NERC Soil Biodiversity Thematic Programme focusing on an intensive, long-term field experiment at Sourhope Farm, Scottish Borders.
+  - Aims to provide a broad context for linked studies, enable cross-group comparisons, and inform data interpretation across years.
+  - 2001 site operations were affected by Foot and Mouth restrictions and a change of site management officer, with management activities resuming under a defined protocol.
+
+- Data sources and collection approach
+  - Automatic Weather Station: daily weather data (rainfall, radiation, temperatures, soil moisture) with data management by the Soil Biodiversity Data Manager.
+  - Above-ground biomass: multi-year measurements across plots, with a shift in cutting method in 2001 from manual cutting to mechanical shears; biomass harvested at five summer cuts per year.
+  - Soil pH: measurements of the upper 5 cm of soil (baseline 1998; follow-ups in 2001) to assess lime and nitrogen effects.
+  - Botanical composition: Point Quadrat surveys (July 2001 and 2000 reference), with 100-cell frames and 25 pin drops per survey cell; species coded and abundance recorded.
+  - Experimental design details: 5 blocks and multiple subplots per plot; annual data collected across treatments including Control, Nitrogen, Lime, Nitrogen & Lime, and Biocide; additional relative cover surveys and minirhizotron surveys in subplots.
+  - Data governance notes: monitoring and data handling aligned with protocol references; inter-surveyor consistency tested; 2001 field work impacted by FMD restrictions and staff changes; data management and dissemination documented (Tables and Figures provided in the report).
+
+- Key results by data domain
+  - Weather (2001)
+    - Headline measures were generally unremarkable; rainfall near long-term average, radiation stable, average temperatures slightly lower, soil moisture modestly higher than prior years.
+  - Above-ground biomass
+    - Clear treatment hierarchy in biomass responses across years; peak biomass typically in July/August.
+    - 2001 saw a substantial biomass increase vs 2000, likely due to personnel changes and switching to mechanical mowing.
+    - Normalisation to a control plot (C1) revealed sustained positive effects of nitrogen and lime on biomass; significant differences among improved (N and/or L) vs non-improved plots; significant year-by-treatment interaction; no significant block effects.
+  - Soil pH
+    - Lime addition raised surface pH to about 6.19 (limed) and 6.38 (Nitrogen & Lime) by Oct 2001; Nitrogen alone also increased pH but to a lesser extent; control plots showed no significant pH change since baseline (1998).
+  - Botanical composition
+    - Point quadrat surveys in 2001 showed substantial shifts in species abundances between treatments.
+    - Agrostis capillaris declined across all treatments in 2001; Festuca spp. increased across treatments, particularly in nitrogen and lime-influenced plots.
+    - Improved plots (nitrogen and/or lime) had fewer total species (18) than unimproved plots (Control and Biocide with 24 species), suggesting a potential early decline in diversity with stronger fertility treatment.
+    - PCA separated nitrogen- and/or lime-treated plots from control/biocide plots; relative abundance of Festuca rubra and Poa pratensis linked to higher biomass, while Anthoxanthum odoratum, Nardus stricta, bryophytes and Agrostis vinealis were more associated with lower biomass.
+    - Correlations showed biomass increases with Festuca rubra and Poa pratensis abundance; opposite trend for certain other species; increased litter in nitrogen- and/or lime-treated plots indicated faster vegetation turnover with higher fertility.
+- Site heterogeneity and spatial patterns
+  - Variation in surface soil pH and plant community composition across site columns (East-facing columns tended to be more acidic; some columns with more unimproved plots).
+  - Biomass distribution showed higher values in more central plots; low biomass in outlying plots aligned with site heterogeneity.
+  - A strong positive correlation between surface soil pH and biomass was detected; no significant differences across blocks, indicating spatial heterogeneity as a key factor in data interpretation.
+- Data quality, standards, and governance implications
+  - Consistency checks showed no significant difference between surveyors in 2001; methodical differences in data collection (e.g., mowing method) were acknowledged and accounted for in analyses.
+  - The shift in site management and restricted access during early 2001 necessitated careful documentation of provenance, protocols, and any data gaps.
+  - The report emphasizes the importance of standardized protocols, cross-year comparability, and metadata to interpret treatment effects amid spatial heterogeneity and organizational changes.
+- Practical implications for data leadership and strategy
+  - Data-system thinking: integrate multi-domain data (climate, biomass, soil chemistry, plant community) to understand treatment effects holistically.
+  - User needs and feedback: transparency on measurement methods and site heterogeneity helps researchers across studies align data use with their analyses.
+  - Data availability and discoverability: detailed documentation of protocols, measurement schedules, and site layout supports reuse by wider networks of researchers.
+  - Data standards and quality: ensure consistent data collection methods across years; capture changes in methodology (e.g., mowing technique) as metadata to preserve comparability.
+  - Collaboration and community practice: the dataset exemplifies cross-team data integration, highlighting the value of shared standards and a common data management approach for field experiments.

@@ -1,0 +1,72 @@
+# Summary of data regarding Colt Park drought experiment
+
+- Overview
+  - Drought experiment embedded within a long-term grassland restoration study at Colt Park meadows, Ingleborough National Nature Reserve (54°12'N, 2°21'W).
+  - Restoration treatments: fertiliser application and seed addition (since 1990; with exceptions in 2009–2010 for fertiliser; 19 species used for seed addition).
+  - Drought treatments (imposed in 2013): ambient (no shelter), drought (rain-out shelter), and control shelter (rain-out shelter with holes).
+  - Hay cut on 16 July 2013 followed by cattle/sheep grazing.
+  - Primary aim for analysts: enable data-driven analysis of how fertiliser, seed addition, and drought interact to influence plant, soil, and ecosystem carbon fluxes.
+
+- Experimental design details
+  - Treatments applied to plots organized into a grid matching prior restoration experiments (references to Smith et al. 2000; 2003; 2008; De Deyn et al. 2011).
+  - Drought shelter period: 5 June – 10 July 2013.
+  - Measurements cover plant community, soil chemistry and biology, microbe communities, and carbon fluxes.
+
+- Data files and key variables (data types and main columns)
+  - Averagesoilmoisture2013
+    - Purpose: soil moisture measurements under different treatments.
+    - Key columns: unique.id, julian, date, year, plot, block, treatment (c, cs, f, sf), drought (dr, csh, c), seed (seed, noseed), fertiliser (fert, nofert), shelter (before/during/after drought).
+    - Soil moisture: percent.mean (average of three readings per plot); measurement method noted (ML3 ThetaProbe, Delta-T).
+  - BacteriarelativeabundanceTRFLP2013
+    - Purpose: bacterial community composition (relative abundance of T-RFs).
+    - Key columns: unique.id, sample, plot, time; X52–X505 columns for T-RF abundances.
+    - Methods: DNA extraction and 16S rRNA markers.
+  - ColtParkdailyprecipitation2013
+    - Purpose: daily precipitation data.
+    - Key columns: julian, mm.
+  - Ecosystemrespiration2013
+    - Purpose: ecosystem respiration (CO2 flux).
+    - Key columns: unique.id, date, plot, CO2flux (g CO2 m-2 h-1), block, trt, dr, seed, fert, julian.
+  - FungirelativeabundanceTRFLP2013
+    - Purpose: fungal community composition (relative abundance of fungal T-RFs).
+    - Key columns: unique.id, sample, plot, time; X62–X485 columns for T-RF abundances.
+    - Time codes include before/during/after drought; treatment, drought, seed, fertiliser.
+  - NetEcosystemExchange2013
+    - Purpose: net ecosystem exchange (CO2 flux).
+    - Key columns: unique.id, date, plot, CO2flux, block, trt, dr, seed, fert, julian.
+  - PARdata2013
+    - Purpose: photosynthetically active radiation and related microclimate.
+    - Key columns: unique.id, date, julian, plot.no, PAR (µmol m-2 s-1), soiltemp, airtemp.
+  - Plantcommunitycomposition2013
+    - Purpose: vascular plant species composition and biomass metrics.
+    - Key columns: plot; species columns (e.g., Agrostis capillaris … Veronica chamaedrys) with percentage cover; trt, drht, fert, seed, block; sp.richness.
+    - Biomass/weight columns: grss.dwt, legs.dwt, forbs.dwt, para.dwt, moss.dwt, other.dwt, root.dwt.
+    - Tissue chemistry: grss.n, grss.c, grss.cn, forb.n, forb.c, forb.cn, legs.n, legs.c, legs.cn, para.n, para.c, para.cn.
+  - Soilandairtemperature2013
+    - Purpose: paired soil and air temperatures at 30-minute resolution.
+    - Key columns: seq, time; soil9886420–air9886452 (temperature readings).
+  - Soildata2013
+    - Purpose: soil chemistry and microbial biomass data.
+    - Key columns: unique.id, time (p = before drought, m = during drought, a = after drought, n = post-drought), MBNmcg, MB.CN, DOCmcg, DONmcg, ph, BACTmcg, FUNGImcg, FBratio.
+  - Speciesdiversity2012restorationplots
+    - Purpose: pre-drought plant diversity and biomass by plot (2012, year before drought experiment).
+    - Key columns: original.plot.number, total (vascular plant species in 2m x 2m quadrat), plot.no, block, treatment, seed, fert; grss.dwt, legs.dwt, forbs.dwt, para.dwt, moss.dwt, other.dwt, root.dwt; sp.richness; grss.n, grss.c, grss.cn, forb.n, forb.c, forb.cn, legs.n, legs.c, legs.cn, para.n, para.c, para.cn.
+  - General notes on data quality and structure
+    - Missing data indicated as NA.
+    - Measurements rely on standard equipment and established methods cited in the accompanying references (e.g., Ward et al. 2013; Bardgett et al. 1996; Brookes et al. 1985).
+
+- Location and integration notes
+  - Experimental plots tied to the Colt Park restoration layout and prior meadow restoration literature (Smith et al., 2000–2011).
+  - Data capture integrates plant community structure, soil biogeochemistry, soil microbial communities, and greenhouse gas flux measurements to assess drought resistance and the influence of restoration treatments on carbon flux resilience.
+
+- Potential analyses and insights for analysts
+  - Assess how drought-induced changes in soil moisture relate to CO2 flux, Net Ecosystem Exchange, and respiration across fertiliser and seed addition treatments.
+  - Investigate interactions between restoration treatments (fertiliser, seed) and drought on plant community composition, biomass allocation among functional groups, and species richness.
+  - Explore microbial vs. plant community responses: link fungal/bacterial PLFA shifts (FUNGImcg, BACTmcg, FBratio) with soil chemistry (MBNmcg, DOCmcg, DONmcg, pH) and with carbon flux outcomes.
+  - Model predictive relationships of drought shelter type and treatment combinations on ecosystem carbon flux metrics, accounting for temporal phases (before/during/after drought) and Julian day.
+  - Utilize multi-omics/biogeochemical data (soil moisture, PAR, soil/air temperature, soil chemistry, microbial biomarkers, plant data) to identify drivers of drought resistance in carbon fluxes as reported in related literature (e.g., Cole et al. 2019).
+  - Cross-reference 2012 restoration plots with 2013 drought outcomes to understand lag effects of restoration on drought resilience.
+
+- References and context
+  - Data associated with the study: Cole et al. (2019) Grassland biodiversity restoration increases resistance of carbon fluxes to drought, Journal of Applied Ecology.
+  - Supporting methodological references: Smith et al. (2000; 2003; 2008), De Deyn et al. (2011); Ward et al. (2013); Plassart et al. (2012); Bardgett et al. (1996); Brookes et al. (1985); White et al. (1979).

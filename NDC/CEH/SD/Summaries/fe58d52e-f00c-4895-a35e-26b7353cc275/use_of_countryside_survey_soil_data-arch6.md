@@ -1,0 +1,27 @@
+# Sampling design
+
+- The Countryside Survey soils component was conducted in 1978, 1998, 2007, and 2019, with a rolling survey starting in 2019 aiming to measure about 100 squares per year for five years before repeating. A pilot occurred in 2018.
+- Sampling frame and locations:
+  - Soil samples come from CS X-plots, with 5 X-plots randomly spaced within each CS square.
+  - X-plots within a square are not replicates and may vary by land use or soil type.
+  - Over time, X-plots can be relocated if a plot is destroyed, access is denied, or certainty about location is lost. Each location has a unique repeat identifier (e.g., 2RPT1) referring to the square and repeat plot, with sampling positions typically 2–3 meters apart around a 2 m x 2 m marked plot.
+- Sampling design and depth:
+  - Soils are collected from the top 15 cm (8 cm for the invertebrate sample); 1998/2007/rolling survey use a hammered core, while 1978 used a soil pit.
+  - In some cases, full 15 cm cores could not be collected due to stones or shallow soils.
+  - In 2007, core photographs and measurements of core dimensions were taken for a subset of cores.
+- Measurements and data structure:
+  - 1978 measurements were limited to pH and loss-on-ignition (LOI); later surveys (1998, 2007, rolling survey 2018/19–2023) collected multiple cores per X-plot with varying measurements per core.
+  - Bulk density was measured in 2007 and again in 2018/19–2023, but not using ISO core methods.
+  - Samples are homogenised before pH and LOI analyses; chemical analyses by soil horizons were not performed.
+- Data quality and planning considerations:
+  - A pilot and power analyses informed the sampling intensity to detect significant change (as described in Emmett et al. 2008).
+  - Core data include depth, core dimensions, and photos; not all measurements are collected on all samples.
+- Statistical analysis considerations:
+  - Analyses should account for land class structure; ignoring land classes yields stock and change estimates that may be biased.
+  - With land classes used, estimates are weighted and can reflect national stock and change estimates.
+  - Bootstrapping is not consistently applied across analyses.
+  - The CS design typically involves multiple X-plots per square; analysis should use a mixed model with square as a random factor to reflect this clustering.
+  - Because the design emphasizes spatial dispersion rather than fine-scale spatial structure, a dispersed sampling approach generally improves regional precision and coverage.
+  - For analysis and interpretation, users are advised to consult UKCEH and review CS publications available on the CS website; design-based approaches may be appropriate when spatial structure is not of primary interest.
+- References:
+  - Emmett, BA et al. Countryside Survey Soils 2007: Method development, power analyses and protocols. Centre for Ecology and Hydrology Project No. C03042/ DEFRA Contact No. CR0334.

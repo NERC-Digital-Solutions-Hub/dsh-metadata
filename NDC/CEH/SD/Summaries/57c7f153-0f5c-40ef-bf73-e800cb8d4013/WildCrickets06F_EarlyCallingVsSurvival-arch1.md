@@ -1,0 +1,24 @@
+# WildCrickets06F_EarlyCallingVsSurvival
+
+- Overview
+  - A dataset describing individual male lifespan in days, classified by early calling activity as high or low relative to the population median.
+- Variables and definitions
+  - Year: Year when the cricket was alive.
+  - Lifespan: Lifespan measured in days.
+  - EarlyCalling: Categorical indicator H (High) or L (Low) representing early calling effort.
+  - Classification rule: EarlyCalling is H if the cricket’s early calling effort is greater than the population median; L otherwise.
+- Data structure
+  - Each record includes Year, Lifespan (days), and EarlyCalling (H/L) for an individual male cricket.
+- Potential analyses
+  - Compare lifespans between High vs Low early calling groups.
+  - Survival analysis by EarlyCalling (e.g., Kaplan-Meier, hazard modeling).
+  - Explore correlations between Lifespan and Year to identify cohort or temporal effects.
+  - Assess the impact of using a population median threshold on classification stability.
+- Data quality and limitations
+  - Median-based classification is dataset-specific; consider sensitivity to threshold.
+  - Missing data and sample size are not specified; evaluate completeness before modeling.
+  - Year interpretation: described as the year the cricket was alive; clarify whether this is birth, capture, or observation year if applying to broader analyses.
+  - Potential measurement inconsistencies or biases in field data collection.
+- Practical use for analysts
+  - Inform hypotheses about whether early acoustic behavior predicts longevity.
+  - Build predictive models of Lifespan using EarlyCalling as a predictor, possibly with additional covariates.

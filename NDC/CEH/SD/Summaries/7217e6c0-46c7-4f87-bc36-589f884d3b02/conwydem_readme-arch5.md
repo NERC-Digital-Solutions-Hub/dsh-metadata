@@ -1,0 +1,47 @@
+# Collection/generation methods
+
+- Data provenance and sources
+  - Seabed bathymetry for the Menai Strait, Conwy Bay and estuary mouth: marine DEMs from OceanWise, accessed via Digimap; 1 arc-second raster tiles; WGS84, bathymetry referenced to local Chart Datum (CD) at Llandudno.
+  - Land elevations: NRW lidar-derived DTMs/DSMs (1 m resolution) via Digimap; OSGB36 projection; elevations referenced to Ordnance Datum (OD) with ±0.15 m RMSE. Remaining land (27%) from OS Terrain 5 m DTM via Digimap; 5 m resolution, OSGB36, elevations referenced to OD.
+  - Flood defences: NRW data catalogue; vector shapefiles in British National Grid; crest heights and types of defence (e.g., wall, embankment).
+- Data integration and domain generation
+  - All spatial data imported into ArcGIS Pro 3.0 and processed to generate the model domain.
+  - Coordinate and datum management:
+    - Marine DEM transformed to OSGB36 and from Chart Datum to Ordnance Datum by applying Elevation OD = Elevation CD - 3.85 m.
+  - Data layer prioritisation and gap filling:
+    - Where marine DEM, Lidar DTM, and OS Terrain 5 m DTM overlap, a hierarchy is applied (marine DEM for underwater areas; Lidar DTM for land areas; OS Terrain 5 m DTM to fill gaps).
+  - Surface creation:
+    - Raster mosaicking of all sources to a single surface, converted to points, and interpolated to a continuous 20 m resolution surface (topo-to-raster method) to balance detail and computational cost.
+  - Flood defence integration:
+    - Flood defence polylines checked against Lidar DSM; missing defences digitised with crest heights estimated from DSM elevations.
+    - Augmented defences converted to 20 m polygons (buffer 20 m) and to 20 m rasters, then added to the surface to form the final model domain.
+- Model domain characteristics
+  - Final surface represents floodplain elevations, defence heights, and marine elevations; riverbed elevations are not well represented due to LiDAR limitations over inundated areas, requiring separate calibration adjustments.
+- Data structure and units
+  - Final DEM in metres, vertically referenced to Ordnance Datum (Newlyn), spatially referenced to British National Grid.
+  - Data provided in ASCII DEM format.
+- Quality control and calibration (overview)
+  - Calibration uses the Caesar-Lisflood hydrodynamic model in reach mode with 15-minute time steps.
+  - Boundaries:
+    - Upstream discharge time series (15-minute, 1 March–16 April 2021) from Cwmlanerch gauge.
+    - Offshore water levels (15-minute) from BODC, converted from Chart Datum to OD.
+  - Model parameters:
+    - Manning’s n = 0.022; Courant number = 0.6; Froude limit = 0.8; water loss on floodplains = 0.2 m/day.
+  - Validation data:
+    - Gauges: Pont Fawr, Trefriw, Tal-y-Cafn (15-minute OD-referenced levels).
+  - Calibration approach:
+    - Adjust river channel bed elevations (per Neal et al., 2021) to reconcile LiDAR gaps and inundated-area limitations; stepwise model runs to reach agreement with observed levels.
+  - Calibration outcomes:
+    - Final DEM RMSE: Pont Fawr 0.59 m, Trefriw 0.39 m, Tal-y-Cafn 0.69 m.
+    - Kling-Gupta Efficiency (KGE): Pont Fawr 0.90, Trefriw 0.90, Tal-y-Cafn 0.70.
+    - Flood peak RMSE: Pont Fawr 0.57 m, Trefriw 0.19 m, Tal-y-Cafn 0.29 m.
+    - Higher RMSE and weaker KGE in upper estuary attributed to missing tributaries; overall setup suitable for study objectives.
+- Data lineage and documentation
+  - Figures S1 and S2 describe the workflow and calibration results, including flowcharts and longitudinal profiles.
+  - Key references: Gupta et al. (2009) on NSE/KGE metrics; Neal et al. (2021) on estimating river channel bathymetry for large-scale flood models.
+- Data governance and stewardship implications
+  - Provenance: data from NRW, OceanWise, Digimap, and BODC; clear source attribution.
+  - Metadata and reproducibility: explicit processing steps, datum transformations, interpolation choices, and calibration targets documented for auditability.
+  - Data formats and accessibility: DEM in ASCII; model inputs rely on standard GIS and hydrodynamic-model formats; potential for updates requires re-running mosaic, re-applying transformations, and re-calibration.
+  - Update and maintenance considerations: riverbed elevations required calibration due to LiDAR limitations; ongoing updates would necessitate revalidation against gauges and potential re-calibration of the DEM.
+  - Limitations and caveats for data users: river channel elevations not fully captured by marine LiDAR-derived surfaces; upper estuary sensitivity to missing tributaries; caution when extrapolating beyond calibrated boundaries.

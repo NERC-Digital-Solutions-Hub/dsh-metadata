@@ -1,0 +1,62 @@
+# Supporting documentation for data
+
+- Overview
+  - Clocaenog field site: automated manipulation experiment assessing potential climate change effects on upland moorland. Solar/wind powered, established 1998, replicated drought and warming treatments. Location: Clocaenog Forest, North East Wales (coordinates provided in document). Site biology dominated by Calluna vulgaris (heather).
+  - Purpose of the document: summarise methods and changes to fortnightly data collection; pointers to additional supporting documentation for data series.
+
+- Measured fortnightly variables and methods
+  - Rainfall (mm)
+    - Measured with ground-level storage rain gauge (funnel diameter 12.7 cm); two-week accumulation.
+    - Preferable to AWS data due to robustness to logger/power issues.
+    - Holidays: sampling extended to 3–4 weeks, but never exceeded gauge capacity.
+  - Throughfall (mm)
+    - Collected bi-weekly using a funnel (16.8 cm) and 3000 mL bottle per plot.
+    - Data used to compute percent change relative to site rainfall; apply percent differences to site rainfall to estimate plot-level rainfall.
+    - Missing or compromised data (e.g., funnel/bottle issues) excluded and marked as NA.
+  - Water table depth (cm)
+    - Measured bi-weekly via water-permeable tubes down to bedrock (installed 2009).
+    - Measurements recorded in field sheets; maximum detectable depths differ by plot (list of maxima provided).
+  - Soil respiration (mg CO2-C m-2 hr-1)
+    - Measured bi-weekly with three 20 cm diameter collars per plot (installed 5–10 cm deep).
+    - Equipment: IR gas analyser (EGM4) with SRC-1 chamber from 2014 onwards; sampling duration 120 seconds.
+    - Above-ground growth within collars removed regularly; vegetation disturbance minimal.
+    - Data processing: field readings converted to mg CO2-C m-2 hr-1; conversion from g CO2 m-2 hr-1 using factor 0.272727 and then to mg CO2-C m-2 hr-1 (multiplied by 1000).
+    - Three measurements per plot averaged; unrealistically high values excluded.
+    - 2013 note: larger collars installed for automated measurements may alter local soil moisture and affect results.
+  - Soil temperature (°C)
+    - Measured near respiration chambers with digital thermometer; data averaged per plot.
+  - Soil moisture (Vol%)
+    - Measured near respiration chambers with Theta Probe (ML3); data averaged per plot.
+  - PAR (µmol m-2 s-1)
+    - Measured near respiration chambers with a pyranometer; data averaged per plot.
+  - Data collection context
+    - In-field data sheets; later transcribed to Excel.
+    - Emphasis on integrating plot-level measurements with micro-meteorological data and site AWS measurements for robust interpretation.
+
+- Data handling, quality, and transformation
+  - Data processing
+    - Raw measurements consolidated per plot to produce plot-level averages where applicable.
+    - For rainfall and throughfall, calculations involve applying percent change methods to align plot data with site rainfall.
+  - Quality control
+    - Missing or compromised data marked as NA.
+    - Unrealistically high soil respiration values removed from plot averages.
+  - Documentation and provenance
+    - General site/methods documented in accompanying files (e.g., Clocaenog_supporting_documentation_Data_series.rtf).
+    - This document notes method changes and data processing steps to aid reproducibility.
+
+- Particular considerations for Data Stewards
+  - Metadata and lineage
+    - Capture site context, experimental treatments (drought and warming), equipment used, collection cadence, units, and data processing steps.
+    - Reference to supporting documents for methods and data series to provide complete provenance.
+  - Data formats and interoperability
+    - Time-series per plot with consistent units; handle NA values for missing data; clearly flag data points affected by equipment issues or protocol changes (e.g., 2013 collar changes).
+  - Data quality and governance
+    - Document data quality flags, measurement uncertainties, and exclusions (e.g., unrealistic respiration values).
+    - Track method changes (e.g., collar upgrades, instrumentation upgrades in 2014) to maintain comparability across years.
+  - Availability and reuse
+    - Ensure linkage between raw field sheets, master Excel files, and processed data; provide clear guidance on how to reproduce calculated values (e.g., rainfall adjustments, unit conversions).
+
+- Endnotes and caveats
+  - Measurements can be influenced by equipment changes (e.g., 2013 collar changes) and site conditions (e.g., soil moisture differences near collars).
+  - Throughfall data handling requires careful application of percent differences to achieve seasonally and annually comparable datasets.
+  - The dataset integrates plot-level measurements with site-level meteorological data to support robust analyses of soil processes and climate treatment effects.

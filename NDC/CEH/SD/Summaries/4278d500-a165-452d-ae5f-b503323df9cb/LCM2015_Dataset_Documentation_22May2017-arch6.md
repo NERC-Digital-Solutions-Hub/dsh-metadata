@@ -1,0 +1,59 @@
+# Dataset documentation
+
+- LCM2015 (Land Cover Map 2015) is a parcel-based UK land cover map classifying satellite data into 21 Broad Habitat classes, using Landsat-8 (30 m) as the primary source with AWIFS (60 m) as needed.
+- Outputs and data products
+  - Core vector dataset: polygons with rich attributes and per-polygon metadata.
+  - 25 m raster: two-band product (band 1 = dominant class; band 2 = mean per-polygon probability).
+  - 1 km raster products: dominant class and percentage cover (for both 21 target classes and 10 aggregate classes).
+  - Separate datasets for Great Britain and Northern Ireland, reflecting different projections.
+  - Minimum mappable area > 0.5 ha; parcels smaller than 0.5 ha and certain linear features dissolved.
+- Data formats and access
+  - Vector: polygons with attributes including gid, dominant class, pixel counts per class, uncertainty, and modal_class.
+  - 25 m raster: per-polygon classification with probability band.
+  - 1 km rasters: aggregate percentage covers and dominant class per 1 km cell.
+  - GB and NI coordinate systems: GB (British National Grid); NI (TM75 Irish Grid).
+  - Access: 1 km rasters via CEH Environmental Information Platform; full vector and 25 m products available on request under licence (fees may apply).
+  - DOIs: Each product has a DOI for citation; see Tables 4 and 5 for GB and NI DOIs.
+- Classification framework and methodology
+  - 21 LCM2015 target classes are defined from JNCC Broad Habitats (Jackson 2000) and mapped to per-pixel spectral data.
+  - Random Forest classifier used (instead of Maximum Likelihood); integrates satellite data with ancillary data (e.g., slope, distance to water) as needed.
+  - Training areas based on stable areas across prior maps, supplemented for coastal zones and hard-to-map classes.
+  - No spectral sub-classes are used; sub-classes were previously eliminated to simplify training and improve robustness for change mapping.
+  - Spatial framework: no segmentation-based polygons in LCM2015; per-pixel classification with polygons derived from per-pixel results.
+- Outputs and metadata details
+  - Vector dataset contains approximately 6.7 million polygons for Great Britain and 0.9 million for Northern Ireland.
+  - Each vector polygon provides:
+    - gid: unique geometry identifier
+    - BHAB: dominant Broad Habitat class (text and integer)
+    - Pix_dist: 23-number vector (counts per class 1–21, plus total pixels and modal class)
+    - unc: mean per-polygon probability (0–255 scale)
+    - Unc_stdev: standard deviation of uncertainty
+    - npix: number of pixels in the polygon
+    - Modal_class: recommended display class (1–21)
+    - Modal_prop: proportion of polygon classified as dominant class
+    - Composite: which composite image the classification derives from
+  - 25 m raster: band 1 = dominant class; band 2 = mean per-polygon probability
+  - 1 km rasters: provide dominant class and percentage cover per class (21 classes and 10 aggregate classes)
+- Class taxonomy and mapping
+  - 21 target classes correspond to Broad Habitat definitions; several classes are subdivided or mapped to reflect spectral signatures (e.g., urban/suburban, woody types, various grassland categories, coastal and littoral habitats).
+  - Appendix 3 provides a standard colour mapping for mapping these classes.
+  - Tables link 21 LCM2015 target classes to Broad Habitat definitions (JNCC framework) and to aggregate class structures used in raster products.
+- Differences from earlier LCM versions (methodological and output)
+  - Montane class removed; upland areas reclassified to Inland Rock or other upland habitats based on spectral data.
+  - Rough grassland class removed; grassland types now align with JNCC Broad Habitats and rely on spectral data without soil data, avoiding inconsistent soil datasets.
+  - 25 m raster redesigned as a two-band image (classification band + probability band).
+  - Probability data recording streamlined: per-polygon mean probability in vector; mean per-polygon probability in 25 m raster band 2; not provided for 1 km products.
+  - Spectral sub-classes removed; Random Forest reduces need for sub-class training and improves robustness.
+  - Spatial framework changes: no segmentation-based polygons in LCM2015; segmentation from LCM2007 removed to reduce mismatch with final classifications and simplify change mapping.
+- Practical usage notes and cautions
+  - LCM2015 maps land cover, not necessarily land use; care needed when interpreting land use from cover classes.
+  - Differences between LCM2015 and earlier maps can affect change detection; the dataset is designed with a stable methodology but still requires careful validation for time-series analyses.
+  - LCM2015 is a stable, archived dataset with DOIs to support reproducible citing in publications.
+- Documentation and support
+  - Comprehensive documentation, including Appendices detailing class definitions, color mappings, and composite image usage.
+  - Contact: CEH Spatial Data team; queries and data requests via spatialdata@ceh.ac.uk.
+  - Additional information and access: CEH Land Cover Map 2015 pages and EIDP/EIP portals.
+- Summary for data support use
+  - Provides a multi-resolution, richly annotated data product suite (vector, 25 m, 1 km) for 21 Broad Habitat classes across GB and NI.
+  - Enables self-service exploration with per-polygon metadata, uncertainty measures, and probability-based confidence.
+  - Supports cross-study data integration through DOIs, standardized class definitions, and well-documented color mappings and classifications.

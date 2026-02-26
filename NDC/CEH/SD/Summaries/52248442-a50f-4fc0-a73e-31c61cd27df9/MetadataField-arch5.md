@@ -1,0 +1,91 @@
+# PhenotypeField.txt
+
+- Overview
+  - Data dictionary for phenotypic measurements across years and sites, with explicit naming for budburst stages, time-to-event metrics, and shoot-related measurements. Also references GenotypeField.txt for SNP data and unique tree identifiers.
+
+- Key data categories
+  - Site and population identifiers
+    - Site of Population
+    - Population code (PopCode)
+    - Family and family code (from the same mother tree)
+  - Spatial and design metadata
+    - Latitude and Longitude (decimal degrees)
+    - Planted trial and block design (Block, Randomised)
+  - Individual-level identifiers
+    - Seedling number within family
+    - Unique individual tree id (for genotypic linkage)
+  - Metadata about data supply
+    - Notes on data availability, embargoes, and limitations where applicable
+
+- Core phenotype fields (structure and types)
+  - Site and population descriptors
+    - Site, Population code, Family, and related fields
+  - Geographic coordinates
+    - Latitude, Longitude (decimal)
+  - Experimental design
+    - Seedling, Block, Randomised details
+  - Time-series and measurement fields
+    - Year-specific phenotype blocks (e.g., 2015, 2016, 2017, 2018, 2019, 2020)
+    - Measurements such as Height, I15/I16/I17/I18/I19/I20 etc. (I = initial measurement, numeric)
+    - Height-related fields and units (mm/cm, decimal)
+    - "Increment" fields (height or other growth increments) across years
+    - Stage-based budburst data
+      - Stage 4: scales open along length of shoot (no needles), with sub-entries describing timing, duration, and stages
+      - Stage 5: budburst with specific needle phenotype (e.g., white tipped needles visible)
+      - Stage 6: budburst with green needles visible
+    - Stage-related timing
+      - T4-15, T4-16, T4-17, T4-18, T4-19, T5-15, T6-15, etc. representing time (in days) to reach the respective budburst stage
+      - For each year, similar sets of fields exist (e.g., T5-16, T6-16, etc.)
+    - First observation timing
+      - First observation at each site for each tree
+    - Along length of shoot metrics
+      - Measurements like length of shoot and related timing/observations
+    - Additional descriptive fields
+      - Observations for “budburst days since first observation,” “days to stage,” “length to reach stage,” and related narrative descriptors
+  - Yearly naming conventions
+    - 2015: I15, Height, increment, Stage 4/5/6 descriptions, budburst timing metrics
+    - 2016: I16, Height, increment, Stage 4/5/6, budburst timing, shoot length
+    - 2017-2020: Similar patterns with year-specific suffixes (e.g., T4-18 for 2018, T5-18, T6-18, etc.)
+
+- Phenotype field specifics (examples of patterns)
+  - Budburst stage descriptions
+    - Stage 4: scales open along length of shoot; some entries specify “no needles” or “tipped needles visible”
+    - Stage 5: buds with white tipped needles visible
+    - Stage 6: buds with green needles visible
+  - Time-to-stage metrics
+    - Time taken to reach a given budburst stage (e.g., T4-16 Time taken to reach stage 4 budburst)
+  - Observational timing
+    - First observation at site, days to reach stage, and duration-related fields
+  - Measurement orientation
+    - Along length of shoot measurements (with associated descriptive text)
+
+- Genotype linkage (GenotypeField.txt)
+  - GenotypeField.txt
+    - snpid: Name of SNP marker
+    - Name of SNP marker: Descriptor for SNP
+    - Remaining columns: Unique individual tree id (linking genotype to phenotype)
+
+- Data quality, provenance and governance considerations (for Data Stewards)
+  - Metadata completeness
+    - Ensure all year-specific fields are documented (I-values, height units, budburst stage definitions, time-to-reach metrics)
+  - Standardization and interoperability
+    - Align field naming and units across years; manage the extensive year-to-year field evolution (e.g., T4-15, T4-16, etc.)
+  - Data supply and updates
+    - Track data availability, potential embargoes, and identify “NA” or missing values
+    - Implement processes to chase data from creators and to upload updated datasets to portals/catalogs
+  - Data quality and transformation
+    - Quality assure, clean, and transform datasets prior to sharing; maintain traceability of any edits
+  - Documentation and metadata
+    - Document work done on datasets; provide clear definitions for complex stage descriptors and time-to-reach metrics
+  - Sharing and governance
+    - Respect sharing limitations; ensure proper data governance, licensing, and provenance for both phenotypic and genotypic data
+
+- Particular challenges (as context for stewardship)
+  - Incomplete picture of user needs and priorities
+  - Timely acquisition of data from multiple sites and years
+  - Ensuring data creators meet standards (metadata richness and consistency)
+  - Handling multiple systems/formats and large, potentially non-interoperable datasets
+  - Managing outdated databases that require bespoke solutions
+
+- Practical takeaway for data stewardship
+  - This dataset provides a comprehensive, year-spanning phenotypic record with detailed budburst and growth measurements, plus corresponding genotype linkage. Effective stewardship requires robust metadata, consistent naming and units across years, timely data acquisition, and careful documentation of stage definitions and time-to-event metrics. It also necessitates clear processes for updating the data, handling embargoes, and linking phenotypes to genotypes through consistent identifiers.

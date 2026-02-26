@@ -1,0 +1,23 @@
+# Data collected on Mt Etna during the field transplant in 2017
+
+- Overview of the experiment
+  - Five genotypes randomly selected for each of two Senecio species
+  - Four cuttings per genotype at each transplant elevation
+  - Four leaves measured per plant
+  - Measurements repeated on a second day to account for weather and timing
+  - After 30 minutes of dark adaptation, light response measured with an IMAGING-PAM M-series chlorophyll fluorometer
+- Measurements and instrument
+  - Instrument: IMAGING-PAM M-series chlorophyll fluorometer
+  - Primary output used in analysis: PI(total), representing total photosynthetic capacity
+- Variables collected
+  - Species: AE = S. aethnensis; CH = S. chrysanthemifolius
+  - Genotype: ID from individuals grown in the glasshouse
+  - TGSite: Elevation of the transplant sites
+  - TGBlock: Replicate experimental blocks in the field
+  - Grid: Grid location within each block (genotype randomized to grid locations)
+  - Day: Day measurements were taken
+  - Columns 7-22: Fluorometer outputs; PI(total) used for analysis
+- Data handling and analysis notes
+  - Data collected on Mt Etna during the field transplant in 2017
+  - Measurements designed to be standardized and comparable across conditions
+  - Analysis focuses on PI(total) as an indicator of total photosynthetic capacity

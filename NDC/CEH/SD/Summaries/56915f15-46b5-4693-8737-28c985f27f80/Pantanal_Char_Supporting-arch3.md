@@ -1,0 +1,109 @@
+# SUPPORTING DOCUMENTATION FOR 'Radiocarbon-dated charcoal datasets obtained from lake sediments from the Pantanal, Brazil'
+
+- Purpose and scope
+  - Documents charcoal datasets derived from macroscopic charcoal fragments in radiocarbon-dated lake sediment cores from the Brazilian Pantanal.
+  - Provides site data, collection/generation details, quality control, data structure, and radiocarbon dating information to enable analysis, replication, and use in environmental monitoring.
+
+- Datasets and sites
+  - Laguna Mandioré core M1
+    - Collection date: 2001
+    - Coordinates: 18°11′33"S, 57°34′05"W
+    - Lake area: 150 km
+    - Water depth: 4–6 m
+    - Elevation: 90 masl
+    - Max core depth: 68 cm
+    - Sediment: Organic clay – unconsolidated
+    - Collection method: 5 cm diameter Perspex tube with piston, sliced in field to 1 cm
+  - Laguna Mandioré core M5
+    - Collection date: 2001
+    - Coordinates: 18°5′30"S, 57°33′45"W
+    - Lake area: 150 km
+    - Water depth: 4–6 m
+    - Elevation: 90 masl
+    - Max core depth: 77 cm
+    - Sediment: Organic clay – unconsolidated
+    - Collection method: 5 cm diameter Perspex tube with piston, sliced in field to 1 cm
+  - Laguna Mimoso
+    - Collection date: 2019
+    - Coordinates: 16°15'14.79"S, 55°45'7.10"W
+    - Lake area: 1 km
+    - Water depth: <1 m
+    - Elevation: 135 masl
+    - Max core depth: 112 cm
+    - Sediment: Organic clay – consolidated
+    - Collection method: 5 cm diameter PVC tube, sliced to 1 cm
+  - Laguna Cáceres
+    - Collection date: 2020
+    - Coordinates: 19°7'8.77"S, 56°53'3.33"W
+    - Lake area: 0.1 m (likely 0.1 km2)
+    - Water depth: <1 m
+    - Elevation: 88 masl
+    - Max core depth: 84 cm
+    - Sediment: Organic clay – consolidated
+    - Collection method: 7 cm diameter PVC tube, sliced to 1 cm
+
+- Data collected and units
+  - Charcoal concentration: particles >125 μm per cm3 at each 1-cm horizon
+  - Depths: midpoint of each 1-cm sampling interval
+  - Radiocarbon dates: uncalibrated conventional radiocarbon years BP linked to horizons
+
+- Sampling, laboratory methods, and quality control
+  - Quality control procedures
+    - Standard laboratory procedures for preparation and counting of charcoal fragments
+    - Deflocculation approach chosen by sediment type:
+      - Clay-rich sediments: 200 ml of 7% sodium hexametaphosphate
+      - Organic-rich sediments: 200 ml of 10% potassium hydroxide
+    - Heating: 80°C for 30 minutes
+    - Additional rinsing: organic-rich residues treated with hydrogen peroxide (H2O2) for 24 hours
+    - Sieving: 125 μm and 250 μm residues counted under low-powered microscopy (Bogorov tray)
+  - Data structure
+    - Concentration data stored in individual CSV files for each horizon
+    - Radiocarbon dates provided as headers for each file
+    - Radiocarbon data presented as conventional (uncalibrated) ages
+  - Data provenance and metadata
+    - Detailed site and core metadata captured (coordinates, lake characteristics, core depth, sediment type, collection method)
+    - Full laboratory reporting available for each radiocarbon date (lab ISO details available via individual laboratories)
+
+- Radiocarbon dating details
+  - Laguna Mandioré core M1
+    - No. radiocarbon dates: 3
+    - Date provider: Beta Analytic
+    - Units: Conventional Radiocarbon years BP
+    - Data structure: Sediments dated at 3 discrete horizons to create an age-depth profile
+  - Laguna Mandioré core M5
+    - No. radiocarbon dates: 3
+    - Date provider: Beta Analytic
+    - Units: Conventional Radiocarbon years BP
+    - Data structure: Sediments dated at 3 discrete horizons to create an age-depth profile
+  - Laguna Mimoso
+    - No. radiocarbon dates: 2
+    - Date providers: Beta Analytic, UGAMS
+    - Units: Conventional Radiocarbon years BP
+    - Data structure: Sediments dated at 2 discrete horizons to create an age-depth profile
+  - Laguna Cáceres
+    - No. radiocarbon dates: 3
+    - Date provider: Beta Analytic
+    - Units: Conventional Radiocarbon years BP
+    - Data structure: Sediments dated at 3 discrete horizons to create an age-depth profile
+  - Uncalibrated radiocarbon date examples (selected)
+    - Caceres core: Cac-41 (41 cm) 1940 ± 30 BP; Cac-21 (21 cm) 1150 ± 30 BP; Cac-13 (13 cm) 260 ± 30 BP
+    - Mandiore surface cores: Man-Sur-60 (60 cm) 3120 ± 30 BP; Man-Sur-44 (44 cm) 1690 ± 30 BP; Man-Sur-26 (26 cm) 1050 ± 30 BP
+    - Mimoso core: Mi46 (46 cm) 850 ± 80 BP; Mimo-20 (20 cm) 310 ± 30 BP
+  - Isotope data
+    - d13C values provided for individual dated samples
+
+- Data accessibility and governance notes
+  - Each horizon’s charcoal concentration data and corresponding radiocarbon dates are organized to support age-depth modeling and cross-core comparisons
+  - Full laboratory reporting accompanies dates, enabling transparent verification
+  - The dataset is designed to support monitoring, synthesis, and policy-relevant analyses of environmental change in the Pantanal, with explicit metadata and QA procedures to facilitate data sharing and governance
+
+- Relevance for monitoring frameworks
+  - Provides standardized, horizon-based charcoal data with associated radiocarbon dating, enabling long-term environmental monitoring and fire regime reconstruction
+  - Includes comprehensive metadata (location, lake characteristics, sampling methods) and QA, aiding data integration, governance, and reproducibility
+  - Highlights the need for calibration of radiocarbon dates for inter-study comparisons and time-series analysis in monitoring contexts
+  - Demonstrates rigorous data handling (deflocculation, sieving, counting, ISO-quality considerations) relevant to data quality assurance in monitoring frameworks
+
+- Key considerations for future monitoring
+  - Calibration of radiocarbon dates is necessary for cross-dataset comparability
+  - Metadata completeness (especially around area units and sampling resolutions) is critical for data reuse and governance
+  - Transparent sharing of underlying data and lab reports supports openness and reduces barriers to data integration across institutions and programmes

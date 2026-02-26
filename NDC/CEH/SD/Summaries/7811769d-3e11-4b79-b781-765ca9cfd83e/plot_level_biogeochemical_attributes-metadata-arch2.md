@@ -1,0 +1,30 @@
+# Definition of sites and plots in this experiment
+
+- Purpose and scope
+  - Outline the hierarchical sampling design used to monitor windthrow disturbance in Kielder Forest, including site, plot, and transect definitions, and the measured soil properties and location data.
+- Hierarchy and definitions
+  - Site: Unique site in Kielder Forest defined by common stand type and topography (refer to Fig 1).
+  - Plot: Each plot is 50 m2 within a site; includes a disturbance score (categorical windthrow disturbance).
+  - Transect: A 10 m transect spanning a plot; two transects per plot located perpendicular to each other; transects are used for collecting soil cores.
+  - Disturbance_score: Categorical measure of windthrow disturbance (as described and used in Fig 2).
+- Measured variables and metadata
+  - nitrogen: Soil nitrogen content (%).
+  - carbon: Soil carbon content (%).
+  - Soil.Moisture: Gravimetric soil moisture (%).
+  - root_mg_per_cm3: Dry root mass in a 10 x 10 x 20 cm soil core (mg).
+  - Latitude / Longitude: Geographic coordinates of sample collection.
+  - disturbance_score: Categorical disturbance classification aligned with the decision tree (Fig 2).
+- Field methods and data structure
+  - Each plot contains two perpendicular 10 m transects, from which soil cores are taken.
+  - Disturbance is assessed every 20 m along a ~200–400 m transect spanning known intact and windthrown stands (guided by Fig 2).
+- Figures referenced
+  - Fig 1: Definition of sites and plots in this experiment.
+  - Fig 2: Decision tree for assessing degree of disturbance every 20 m along the transect.
+- Data management and analytic context
+  - The schema provides standardized variables and units to enable consistent analysis and cross-site comparison.
+  - Structured data supports quality assurance, cleaning, and transformation, and enables production of outputs like maps and charts.
+- Relevance to environmental monitoring goals (analyst perspective)
+  - Creates a consistent framework to monitor environmental health and how windthrow impacts soil properties over space and time.
+- Data-use challenges (aligned with monitoring aims)
+  - Increasing the value of datasets by integrating with other relevant data sources.
+  - Enabling access to the underlying data used to generate final outputs.

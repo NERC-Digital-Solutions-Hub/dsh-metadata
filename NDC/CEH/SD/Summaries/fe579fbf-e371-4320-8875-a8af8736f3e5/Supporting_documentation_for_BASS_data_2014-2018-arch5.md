@@ -1,0 +1,39 @@
+# Surface temperature, surface oxygen, water clarity, water chemistry and phytoplankton chlorophyll a data from Bassenthwaite Lake 2014 to 2018
+
+- Long-term, fortnightly monitoring dataset from Bassenthwaite Lake, Cumbria, England (2014–2018) covering multiple limnological parameters.
+- Measured variables and units:
+  - TEMP: surface temperature in degrees Celsius
+  - OXYG: surface oxygen saturation in % air-saturation
+  - SECC: Secchi depth in metres
+  - ALKA: alkalinity in µg CaCO3 per litre
+  - pH: pH
+  - NH4N: ammonium in µg N per litre
+  - NO3N: nitrate in µg N per litre
+  - PO4P: soluble reactive phosphate in µg P per litre
+  - TOTP: total phosphorus in µg P per litre
+  - SIO2: dissolved reactive silicon in µg per litre
+  - TOCA: phytoplankton chlorophyll a in µg per litre
+- Water samples were taken from 0–5 m depth; usually collected from a marked buoy location on the deepest part of the lake; when inaccessible, samples were taken from the shore (Flag 2).
+- Data are provided as a CSV with these columns: Date, Variable/Description, Value/Description, Sign (for <LOD), Flag (1 = buoy sample, 2 = shore sample).
+- Detection limits: values below detection limit indicated with a "<" sign in the Sign column.
+- Sampling regime notes:
+  - Fortnightly sampling as part of an ongoing long-term monitoring program.
+  - Measurements conducted from a boat at the buoy; shore samples used when buoy access was not possible.
+- Data status:
+  - Raw data not yet quality controlled or calibrated; double-entered and visually checked.
+  - Missing data attributed to weather or staff shortages.
+  - Long-term monitoring ended early 2019 due to funding shortages.
+- Data structure details:
+  - Variables described with concise units and definitions for each column.
+  - Flag 1 indicates proper buoy site sampling; Flag 2 indicates shore sampling due to unavailability of buoy access.
+- Provenance and usage:
+  - Example publications where dataset has been used include:
+    - Wang et al. 2016, Scientific Reports
+    - Winfield, Fletcher & James 2017, Fundamental and Applied Limnology
+    - Woolway et al. 2016, Bulletin of the American Meteorological Society (Lake temperatures)
+  - An overview reference: Maberly et al. 2017, Ecological Informatics (long-term ecological data generation)
+- Governance and stewardship considerations:
+  - Dataset is part of a long-running program; ensure ongoing metadata, versioning, and accessibility.
+  - Plan for future quality control calibration and documentation of any reprocessing.
+  - Ensure clear data quality notes, limitations, and sampling method descriptions are maintained for downstream users.
+  - Provide clear citation guidance and links to related publications for data users.

@@ -1,0 +1,37 @@
+# Methods
+
+- 1x1 km grid-based datasets for Average Accumulated Exceedance (AAE) of acidity and nutrient nitrogen deposition for 2016–2018.
+- AAE summarises exceedances across multiple habitats within each grid cell, accounting for both the extent of each habitat exceeded and total habitat area in the cell.
+- Calculation steps per habitat:
+  - AE (keq year-1) = exceedance (keq ha-1 year-1) × exceeded habitat area (ha)
+  - AAE (keq ha-1 year-1) = total AE across habitats in the grid cell / total habitat area in the grid cell
+  - If deposition is below the critical load, AAE is set to zero.
+- Habitats included in each AAE data set:
+  - Acidity: acid grassland, calcareous grassland, dwarf shrub heath, bog, montane, managed productive coniferous woodland, managed productive broadleaved woodland, unmanaged coniferous and broadleaved woodland.
+  - Nutrient nitrogen: acid grassland, calcareous grassland, dwarf shrub heath, bog, montane, managed productive coniferous woodland, managed productive broadleaved woodland, unmanaged beech woodland, unmanaged oak woodland, unmanaged Scots pine woodland, other unmanaged woodland, dune grassland, saltmarsh.
+- Data structure and files:
+  - acidhab_AAE_2016-18.csv (AAE for acidity)
+  - nutnhab_AAE_2016-18.csv (AAE for nutrient nitrogen)
+  - Coverage differs by country due to habitat distribution; each row includes:
+    - East_m, North_m (centre coordinates in OSGB metres)
+    - Unique1km (unique 1x1 km grid square identifier)
+    - AAE_keq (keq ha-1 year-1)
+    - CountryID (1=England, 2=Wales, 3=Scotland, 4=Northern Ireland)
+- Units and conversions:
+  - AAE values are in keq ha-1 year-1
+  - For nutrient nitrogen, 1 keq ha-1 year-1 = 14 kg N ha-1 year-1
+  - Acidity AAE cannot be converted to kg of S or N
+- Quality control and provenance:
+  - Methods agreed at UNECE CLRTAP; detailed reporting in Hall et al. (2015)
+  - Trends and summaries in Hall et al. (2015, 2017) and Rowe et al. (2019)
+  - Metadata and data availability via EIDC and CEH data catalog
+- Use and interpretation for GIS work:
+  - Critical-load maps reflect long-term, steady-state concepts; exceedance indicates potential risk, not immediate damage
+  - Habitat and grid-area definitions may differ from other national habitat maps
+  - Reducing deposition below the critical load does not imply immediate ecological recovery; chemical and biological recovery can be slow
+  - Use Unique1km to link acidity and nitrogen AAE files for combined analyses
+  - Freshwater data are not included in AAE calculations, as they are catchment-based rather than grid-based
+- References for further details:
+  - Hall et al. 2015 (Methods for calculating UK critical loads and exceedances)
+  - Rowe et al. 2019 (Trends in critical load and critical level exceedances in the UK)
+  - EIDC and CEH metadata and documentation linked in the dataset descriptions

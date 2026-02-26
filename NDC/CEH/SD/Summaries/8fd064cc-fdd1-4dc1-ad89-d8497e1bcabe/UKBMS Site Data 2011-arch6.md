@@ -1,0 +1,33 @@
+# Experimental design/sampling regime
+
+- The UK Butterfly Monitoring Scheme (UKBMS) collects data from over 1,000 sites annually across the UK, using standardized methods to estimate butterfly abundance.
+- Data collection methods include:
+  - All-species transects (Pollard walks): fixed-route, weekly counts along a 2–4 km transect divided into habitat-related sections; counts occur from early April to end of September with ~26 counts per year.
+  - Weather and timing constraints: observations conducted between 10:45 and 15:45, under suitable butterfly activity conditions (dry, Beaufort wind < 5, temperature ≥ 13°C with at least 60% sunshine or >17°C if overcast).
+  - Fixed-width recording: all species recorded in a fixed 5 m band along the transect.
+  - Single-species transects: follow the all-species methodology but record only for one or a few weeks during the focal species’ flight period.
+  - Timed counts: abundance of a particular species recorded over a set period and area.
+  - Egg/larval web counts: counting eggs or larval webs in suitable habitat areas (e.g., Marsh Fritillary).
+- Data collection workflow:
+  - Site location data captured in the field and entered into Transect Walker (a free software tool); data can be entered by the recorder or a regional transect coordinator.
+  - If a transect route changes, the new route is treated as a new site with a new site number; data for the new route are submitted through the same process.
+  - Transect Walker files are uploaded into an Oracle database that stores all records.
+- Nature and units of recorded values:
+  - Site location data include OS grid reference, transect length (m), and number of sections on the transect; grid references are further broken into Easting (X) and Northing (Y) coordinates.
+  - In some sites, data may be incomplete.
+- Quality control:
+  - Each site belongs to a region overseen by a transect coordinator who has good knowledge of the sites.
+  - Records undergo preliminary validation by the regional coordinator, followed by automated and manual validation to verify site location data accuracy.
+- Format of stored data:
+  - Site Location Data stored as a CSV with columns:
+    - Site number: unique sequential site identifier
+    - Site name: name of the site
+    - Gridreference: OS grid reference (typically 6-figure accuracy) for the transect center
+    - Easting: x-coordinate of the transect center
+    - Northing: y-coordinate of the transect center
+    - Length: transect length in metres
+    - Country: country containing the site
+    - No. Sections: number of sections the transect is divided into
+    - No. Yrs surveyed: number of years butterfly abundance data collected at the site under UKBMS (up to 2011)
+    - First year surveyed: first year data were collected under UKBMS
+    - Last year surveyed: most recent year of data collection (up to 2012) under UKBMS

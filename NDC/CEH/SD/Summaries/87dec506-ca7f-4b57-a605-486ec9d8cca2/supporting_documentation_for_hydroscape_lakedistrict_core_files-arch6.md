@@ -1,0 +1,67 @@
+# Headings used to record the stratigraphic data collected for each core
+
+- Overview
+  - Describes the headings (columns) used to record stratigraphic data for each core.
+  - Data are organized as a matrix: rows correspond to contiguous core-depth intervals; columns (determinands) hold measurements or metadata.
+  - Blanks indicate no measurement; associated files consist of multiple CSVs named with lake WBID and project code.
+
+- Data structure and key determinands
+  - Core metadata and depth
+    - Sub_ID: internal unique ID for each core slice
+    - Top_Depth_cm, Bottom_Depth_cm: depth interval boundaries from sediment–water interface
+  - Sediment mass and density
+    - DW: percentage of dry weight after drying
+    - LOI_550: loss on ignition at 550°C for 2 hours
+    - LOI_950: loss on ignition at 950°C for 2 hours
+    - wetd: mass per unit volume (g cm^-3) of wet sediment
+  - Radioisotopes and dating
+    - Pb210_Total, Pb210_Total_err
+    - Pb210_Supported, Pb210_Supported_err
+    - Pb210_Unsupported, Pb210_Unsupported_err
+    - Cum_Unsupported_Pb210, Cum_Unsupported_Pb210_err
+    - Cs137, Cs137_err
+    - Am241, Am241_err
+    - Date_AD
+    - Age_yr, Age_yr_err (CRS dating model)
+    - SAR: sediment dry mass accumulation rate
+    - SR, SR_err: sedimentation rate and its error
+  - XRF elemental concentrations and related measurements
+    - Na_per, Al_per, Si_per, P_per, S_per, Cl_per, K_per, Ca_per, Ti_per
+    - V_µg_g, Mn_per, Fe_per
+    - Br_µg_g, Rb_µg_g, Sr_µg_g, Y_µg_g, Nb_µg_g, Ba_µg_g, Pb_µg_g
+    - Co_µg_g, Ni_µg_g, Cu_µg_g, Zn_µg_g, Ga_µg_g, As_µg_g
+  - Mercury and other measurements
+    - Hg_µg_g (concentration of total mercury by fluorescence spectroscopy)
+  - Elemental content expressed as % dry mass (XRF)
+    - Na_per, Al_per, Si_per, P_per, S_per, Cl_per, K_per, Ca_per, Ti_per
+  - Additional contextual notes
+    - Units and method-specific notes accompany many determinands (e.g., g g^-1, µg g^-1)
+
+- Measurement methods and data provenance
+  - Loss on ignition and density
+    - DW, LOI_550, LOI_950 determined by mass loss after drying/combustion following Heiri et al. (2001)
+    - Wet density (wetd) measured in triplicate; mean used and scaled to 1 cm^3
+  - XRF spectroscopy
+    - Freeze-dried sediments milled (~2 g) and analyzed by energy dispersive XRF (EDXRF) in helium
+    - Daily re-calibration with a multi-element reference bead
+    - Reference sediment used in each run; QC documented in supporting file
+    - Supporting documentation for XRF QC provided: supporting_documentation_for_hydroscape_lakedistrict_core_xrf_qc.docx
+  - Radiometric dating
+    - 210Pb dating, 226Ra, 137Cs, 241Am measured by direct gamma assay with HPGe detector at UCL
+    - 210Pb via 46.5 keV gamma emissions; 226Ra via its daughters
+    - Corrections for self-absorption applied
+    - CRS (Constant Rate of Supply) dating model used for age chronology
+  - References
+    - Heiri, Lotter, Lemcke (2001) on LOI methods
+    - Appleby et al. (1986, 1992) and Appleby (2001) on 210Pb dating and related methods
+
+- Data quality, availability, and usage considerations
+  - Data may be patchy or provided in multiple formats across cores and lakes
+  - Blanks indicate missing measurements; users should merge datasets carefully
+  - Data are structured to enable self-serve exploration, dashboards, pivot tables, and reports
+  - Outputs may be promoted and iterated based on user feedback; early prototypes may be shared
+
+- Supporting materials and references
+  - Associated data files: 28965_DERW_DEEP.csv, 28965_DERW_LITT.csv, 28965_DERW_INT.csv, 29166_EASE_DEEP.csv, etc. (WBID and lake/core location in filenames)
+  - Supporting documentation for XRF QC: included document
+  - Key methodological references for LOI, 210Pb dating, and CRS dating models cited within the document

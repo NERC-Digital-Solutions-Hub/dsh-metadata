@@ -1,0 +1,22 @@
+# Notes on the downloadable data
+
+- The precise locations of Countryside Survey (CS) field survey squares are kept confidential by CEH to preserve representativeness; external users cannot identify whether squares fall within defined areas below a 100 square km precision.
+- CS data come from 1 km squares in GB with two sampling levels: whole squares characterized and within-square measurements; data include binary and continuous variables (e.g., vegetation, soils).
+- Sampling design is not a simple random subset. It is stratified by Land Classification, with country-specific revisions:
+  - Originally 32 land classes; expanded to 42 in 1998 for Scotland; further revised to 45 for Wales.
+  - Current practice effectively uses separate classifications per country: England (21), Wales (8), Scotland (16).
+- Not all GB squares were surveyed. Excluded squares are those >90% sea or >75% urban by 1:250000 OS map area. Estimates are for the included squares; extrapolation to GB or regions assumes excluded squares have similar vegetative land composition, which is generally reasonable but may introduce bias if a region has a high sea/urban proportion.
+- Estimation approach:
+  - Use ratio estimates (Cochran, 1963) for each land class, weighting by vegetative land area within each class.
+  - Since 1998, standard errors and confidence intervals are estimated via bootstrap methods (Efron & Tibshirani, 1993) due to skewness concerns.
+- Implications for analysis:
+  - Analyses and estimates must account for stratification; ignoring it can yield non-representative results or biased variation estimates.
+  - External analyses should apply appropriate weights and consider the two-level sampling structure (square and within-square) to avoid misinterpretation.
+- Practical considerations for GIS work:
+  - Data may be distributed across multiple sources; significant cleaning and transformation are often required.
+  - Large or complex datasets may need to be packaged into manageable GIS-ready formats.
+  - When creating map products, document the sampling design, areas of representativeness, and uncertainty (bootstrap-derived CIs) in metadata.
+- References:
+  - Barr et al. (1993) Countryside Survey 1990 Main Report
+  - Cochran (1963) Sampling techniques
+  - Efron & Tibshirani (1993) An introduction to the bootstrap

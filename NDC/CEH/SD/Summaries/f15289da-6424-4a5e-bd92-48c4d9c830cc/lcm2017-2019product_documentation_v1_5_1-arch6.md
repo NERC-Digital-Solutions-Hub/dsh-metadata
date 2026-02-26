@@ -1,0 +1,62 @@
+# The UKCEH Land Cover Maps for 2017, 2018 and 2019 v1.5.1
+
+- Purpose and scope
+  - User guide accompanying the release of three new UKCEH Land Cover Maps: LCM2017, LCM2018, and LCM2019.
+  - Map products consist of 21 UKCEH Land Cover Classes, aligned with Biodiversity Action Plan (BAP) Broad Habitats; designed for UK-wide land cover mapping with rapid, automatic production.
+  - Aims to help users make informed decisions on data usage and future work; notes the maps are automatically produced with limited manual correction.
+
+- Key datasets and structure
+  - Total product suite: 42 datasets (per year and geographic edition), with GB and Northern Ireland (NI) versions.
+  - Core datasets (GB and NI for each year):
+    - 20m Classified Pixels (new; RF classification results with per-pixel class probability; two-band rasters: class and confidence 0–100).
+    - Land Parcels (attributes describing each parcel within the UKCEH Land Parcel Spatial Framework).
+    - 25m Rasterised Land Parcels (three-band raster: band 1 modal class, band 2 average confidence, band 3 parcel purity).
+    - 1km Percent Cover (21-band raster: percentage cover by each class per 1km).
+    - 1km Percent Aggregate Cover (10-band raster: percent cover by UKCEH Aggregate Classes per 1km).
+    - 1km Dominant Cover (single-band raster: dominant class per 1km).
+    - 1km Dominant Aggregate Cover (noted as a related product).
+  - Pixel/parcel resolution and extents
+    - 20m Classified Pixels (GB and NI variants) are the base; 25m Land Parcels rasterise the parcel data; 1km rasters aggregate parcel data within 1km squares.
+    - Great Britain (GB) uses British National Grid (EPSG:27700); Northern Ireland (NI) uses Irish Grid (EPSG:29903).
+    - Pixel sizes: Classified Pixels 20m; Land Parcels 25m; Percent/Dominant 1km.
+  - Dataset descriptions and attributes
+    - Land Parcels attributes include:
+      - gid (unique parcel id), _hist (histogram of class counts per parcel), _mode (most frequent class), _purity (percentage of modal class), _conf (mean class-probability per pixel), _stdev (std dev of confidence), _n (number of 20m pixels in parcel).
+    - New 20m Classified Pixels provide a per-pixel class probability (Band 2) alongside Band 1 (nominal class).
+    - Terminology and class mappings follow UKCEH conventions; Appendix 1–2 detail relationships with UK BAP Broad Habitats and derived Aggregates.
+
+- Production methodology
+  - Bootstrap Training
+    - Fully automatic training process that uses historic UKCEH LCMs to sample training data for new maps, minimizing the need for fresh field data.
+    - Bootstrap sources for 2017–2019 derive from LCM2015; future maps planned to bootstrap from majority signals across multiple years.
+  - Random Forest classification
+    - RF classifier trained with balanced sampling (10,000 samples per class per training instance) to produce the 20m Classified Pixels product.
+    - Training data drawn from Bootstrap Training sets to ensure robust learning across 21 classes.
+  - Seasonal composites and context information
+    - Classification Scenes built from Sentinel-2 Seasonal Composite Images (TOA reflectance) for four seasons (winter, spring, summer, autumn).
+    - Seasonal images are combined with 20m Context Rasters (e.g., terrain, proximity to roads/buildings/coast) to reduce spectral confusion.
+    - Context Rasters used GB: height, aspect, slope, distances to buildings/roads/sea/freshwater, foreshore, tidal water, woodland.
+    - NI context rasters include height, aspect, slope plus urban mask and various distance layers.
+  - Classification Scenes and tile approach
+    - GB: 100x100 km tile system to create 36-band Seasonal Composite Images; 74 overlapping Classification Scenes classified independently; overlaps reconciled by visual inspection to select best results.
+    - NI: single 43-band scene per year determined by NI landmass extent.
+  - UKCEH Land Parcel Spatial Framework
+    - 0.5 ha minimum parcel size; parcels designed to reflect discrete real-world units (fields, parks, urban areas, etc.).
+    - The parcel framework was updated for performance (gid values do not match LCM2015 identifiers; use gid for cross-year comparisons).
+  - Validation and outputs
+    - UK-scale validation using 22,325 points from GB countryside survey (2019), National Forest Inventory, IACS, and bespoke validation points.
+    - Overall accuracies: LCM2017 ≈ 78.6%; LCM2018 ≈ 79.6%; LCM2019 ≈ 79.4%.
+    - Validation data share across products; accuracy is an indicator rather than an absolute truth; results show substantial agreement and ongoing improvement expectations.
+
+- Data use, interpretation, and future plans
+  - Outputs are designed to enable self-service and data exploration, with guidance on usage and interpretation of outputs (e.g., per-pixel confidence, parcel-level summaries).
+  - The 20m Classified Pixels preserve fine-grained landscape detail; 25m Land Parcels provide a cleaner, parcel-based summary; 1km rasters enable broad-scale aggregation.
+  - Future work may expand satellite inputs (e.g., Sentinel-1 radar) and explore increased inclusion of land-surface reflectance products; current production used TOA for consistency and practicality.
+  - Users should note: classification is automatic with no manual corrections this release; minor uncertainties due to spectral similarity and training-data limitations are acknowledged.
+
+- Appendices and supplementary information
+  - Appendix 1–2: Detailed notes on UKCEH Land Cover Classes and their relation to UK BAP Broad Habitats (definitions, detection considerations, and class derivations).
+  - Appendix 3: Recommended RGB color recipe for displaying UKCEH Land Cover Classes.
+  - Appendix 4: Validation confusion matrices and accuracy measures by class (LCM2017–LCM2019) with producer's and user's accuracies and notes on interpretation.
+  - Appendix 5: Full list of datasets for LCM2017, LCM2018, and LCM2019, including dataset names, geographic scope, and status (GB/NI).
+  - Additional figures and tables illustrate dataset structure, classification flow, and example dataset visualizations.

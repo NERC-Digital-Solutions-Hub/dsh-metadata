@@ -1,0 +1,47 @@
+# Methods
+
+- The Concentration Based Estimated Deposition (CBED) methodology produces 5x5 km gridded surfaces of wet and dry deposition for sulphur, oxidised and reduced nitrogen, and base cations, derived from gas/particle concentrations and precipitation ion measurements from the UK Eutrophying and Acidifying Pollutants (UKEAP) network.
+- Data workflow
+  - Site measurements are interpolated to UK-wide concentration maps.
+  - Wet deposition is calculated by coupling precipitation data with precipitation ion concentrations, including occult (cloud-droplet) deposition to vegetation and an orographic enhancement factor.
+  - Dry deposition is computed using habitat-specific deposition velocities and combined across five land-cover categories (forest, moorland, grassland, arable, urban); grid-square deposition is obtained by weighting by land-cover proportions.
+  - For critical-load exceedance, deposition values are applied as moorland for non-woodland habitats and as forest for woodland habitats.
+- Data sources and modelling approaches
+  - SO2 concentration uses rural measurements with an urban enhancement factor.
+  - Oxidised nitrogen dry deposition uses interpolated nitric acid and NO2 from the PCM model; NO2 concentrations are from PCM data.
+  - Ammonia concentrations combine FRAME model outputs with annual UKEAP measurements to capture local variability.
+  - Wet deposition components include sulphate, ammonium, nitrate, calcium, magnesium, and acidity (hydrogen ion); sea-salt corrections separate anthropogenic from total contributions.
+- Temporal framework
+  - Depositions include inter-annual variability due to weather and emissions.
+  - Values are annual but provided as rolling 3-year means to smooth variability.
+  - Ecosystem-specific outputs are provided for moorland and forest, plus grid-average values.
+- Outputs and data products
+  - Three 3-year mean datasets for 2014–2016:
+    - CBED-deposition-moorland-2014-2016.csv
+    - CBED-deposition-forest-2014-2016.csv
+    - CBED-deposition-gridaverage-2014-2016.csv
+  - Each dataset covers 5x5 km grid squares across the UK, with:
+    - Coordinates: easting and northing (metres) for the centre of each 5x5 km square (OS Great Britain grid).
+    - Deposition fields (keq ha-1 year-1):
+      - Moorland: nox_m (oxidised N), nhx_m (reduced N), nms_m (non-marine S), nm_ca_mg_m (non-marine base cations to moorland)
+      - Forest: nox_f, nhx_f, nms_f, nm_ca_mg_f
+      - Grid average: nox_ga, nhx_ga, nms_ga, nm_ca_mg_ga
+- Units and interpretation
+  - All deposition values are expressed as keq ha-1 year-1.
+  - Conversion to kg per hectare per year:
+    - S: keq ha-1 year-1 × 16 = kg S ha-1 year-1
+    - N: keq ha-1 year-1 × 14 = kg N ha-1 year-1
+    - Base cations: keq ha-1 year-1 × 20 = kg Ca ha-1 year-1
+- Data quality and provenance
+  - Methods align with government QA practices and peer-reviewed validation; part of Defra model inter-comparison work.
+  - Mass-balance checks and version control are in place; method developments are overseen by senior responsible officers.
+  - Supporting information and related data sources are documented in the provided references.
+- Access and metadata
+  - Resource locators:
+    - http://www.pollutantdeposition.ceh.ac.uk/ukeap
+    - https://uk-air.defra.gov.uk/networks/network-info?view=ukeap
+  - Fieldwork/lab instrumentation and calibration: not applicable (N/A) for this dataset.
+- Relevance for GIS work
+  - Produces readily mappable 5x5 km gridded deposition surfaces compatible with standard GIS workflows.
+  - Coordinates are in metres (OSGB grid), enabling straightforward spatial joins and integration with other UK geospatial datasets.
+  - Clear per-ecosystem and grid-average products allow scenario analyses by land-cover type or across the landscape.

@@ -1,0 +1,32 @@
+# Controls on C and N cycling across a successional chronosequence in Glacier Bay National Park and Preserve
+
+- Objective
+  - Test hypotheses about controls on carbon (C) and nitrogen (N) cycling across a successional chronosequence in Glacier Bay, Alaska.
+- Study area
+  - Glacier Bay National Park and Preserve, southeast Alaska.
+  - Maritime climate with cool summers (10–20°C) and mild winters (-2 to 5°C).
+  - Area ≈11,000 km² along a Y-shaped tidal fjord, originally glaciated with neoglacial ice retreating since ~1700 CE.
+- Chronosequence and sites
+  - Six catchments (ca. 10–30 km² each): Stone Fly Creek (SFC), Wolf Point Creek (WPC), Ice Valley Stream (IVS), North Fingers South Stream (NFS), Burge Bay South Stream (BBS), Rush Point Creek (RPC).
+  - Surfaces exposed for 38 to 207 years since deglaciation, representing progressively younger ecosystems up fjord.
+  - Vegetation types associated with age gradients:
+    - Near mouth (older sites, >150 years): Tsuga heterophylla (hemlock) – temperate rainforest.
+    - 50–150 years: Pinus sitchensis (spruce) and Populus trichocarpa (cottonwood).
+    - 5–50 years: Alnus sinuatta (Alnus) and Dryas drummondii (Drummond's Avens).
+- Site selection and layout
+  - Selected to span vegetation types and topographies across the chronosequence.
+  - Site selection based on Landsat imagery analysis of catchment vegetation and topography.
+  - Excluded riparian zones defined by terraces bordering the active floodplain.
+- Sampling design
+  - For each vegetation type, collected composite soil samples from three locations.
+  - At each location, combined three soil samples taken within 1 m² to account for small-scale heterogeneity.
+  - Depth of soil collection: 10 cm with a hand trowel and soil corer.
+  - Sampling occurred once per site during June–August 2011 or 2012.
+- Vegetation classification
+  - Three broad classes:
+    - N-fixer: Alnus sinuatta and Dryas drummondii.
+    - Deciduous: Populus trichocarpa and Salix spp.
+    - Coniferous: Pinus sitchensis and Tsuga heterophylla.
+- Data and reporting notes
+  - Common names used in accompanying data files.
+  - Site elevation and slope manually surveyed and categorized as low (<5°), medium (5–15°), or high (>15°).

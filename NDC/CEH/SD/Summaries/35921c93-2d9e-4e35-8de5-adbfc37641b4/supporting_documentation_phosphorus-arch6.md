@@ -1,0 +1,29 @@
+# Experimental design
+
+- Long-term grassland nutrient manipulation experiment conducted in Wardlow, Peak District National Park, UK, with mesocosm work at the Bradfield Environment Laboratory. Two grassland types: limestone (Festuca-Avenula CG2d) and acidic (Festuca-Agrostis-Galium U4e), differing soil horizons and pH/organic content.
+- Design features:
+  - From each treatment, ten replicate soil monoliths (0.35 m x 0.35 m) were collected in Feb–Mar 2017.
+  - Monoliths excavated to 10 cm (limestone) or 20 cm (acidic) and transplanted into polypropylene mesocosm boxes at Bradfield, with limestone base added for the limestone soils.
+  - Mesocosms embedded in native soil, fully enclosed sides and base, and freely drained through a mesh voile base.
+  - Local climate similar between Wardlow and Bradfield (≤~20 km apart; altitude ~390 m vs ~350 m a.s.l.).
+- Treatments and nutrient regime:
+  - No treatment (control, natural P limitation, distilled water only), phosphorus addition (P) at 3.5 g m-2 y-1, and nitrogen additions at low (LN, 3.5 g m-2 y-1) and high (HN, 14 g m-2 y-1) levels.
+  - Each mesocosm assigned to elevated CO2 (eCO2) or ambient CO2, with one mesocosm per nutrient treatment within each grassland, totaling 8 mesocosms.
+- CO2 enrichment:
+  - miniFACE system with five 1.6 m diameter rings and five controls; one ring per nutrient treatment per grassland.
+  - CO2 delivery controlled by sensors and microprocessors; daytime target of 600 ppm during 2018–2020 (April–October); ambient ~410 ppm.
+- Soil sampling and processing:
+  - Annual soil collection (Sept–Oct) from each mesocosm.
+  - Triplicate 2 cm diameter cores sampled; in acidic grassland, horizons separated into A and B.
+  - Samples passed through 10 mm and then 2 mm sieves; roots removed; moisture determined by oven-drying at 105°C.
+- Soil microbial biomass phosphorus (MBP) measurement:
+  - Chloroform fumigation method (Vance et al., 1987) comparing fumigated vs non-fumigated samples.
+  - Extraction with 0.5 M NaHCO3 (pH 8.5) and ICP-OES for phosphorus.
+  - MBP calculated as (fumigated − non-fumigated) / 0.4 (Brookes et al., 1982).
+  - Data issues: some non-fumigated samples missing (NA) or negative MBP values leading to exclusions.
+- Data structure and units:
+  - Key fields include Location (Mesocosm ID), Year, Depth (0–10 cm, 10–20 cm), Grass (Acidic or Calc, i.e., limestone), Treat (P, 0N, LN, HN), Pair (experimental block), CO2 (A for ambient, E for eCO2), Position within ring, Soil_P (mg kg-1), MBP (mg kg-1), Bulk density (g cm-3).
+  - Units specified for each field (e.g., Soil_P in mg kg-1, MBP in mg kg-1, depth as depth increment).
+- References for methods:
+  - Vance, Brookes, Jenkinson (1987) for microbial biomass extraction method.
+  - Brookes, Powlson, Jenkinson (1982) for MBP calculation protocol.

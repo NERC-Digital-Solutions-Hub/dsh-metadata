@@ -1,0 +1,40 @@
+# Summary
+
+- Purpose: Provides code and workflow to assess active river channel change (planform adjustments) around a user-defined region of interest (ROI) using Landsat 5, 7 and 8 in Google Earth Engine (GEE). Used by Boothroyd et al. (2020a) to study decadal river migration near critical bridge infrastructure in the Philippines.
+- ROI definition: Circular buffer around each bridge point (radius 4.5 km in related work); buffers extended upstream and downstream to capture potential migration toward or away from the bridge reach. Proximity to outlets (ocean/lakes) edited to exclude large water bodies.
+- Time framing: Two-year time windows for imagery; decadal comparison intervals T1 (1988-89), T2 (1998-99), T3 (2008-09), T4 (2018-19). Planform change quantified with Jaccard index between T1 and T4; decadal changes summarized with mean Jaccard between consecutive periods (T1-T2, T2-T3, T3-T4).
+- Data outputs: 
+  - Binary active river channel masks exported as GeoTIFFs to Google Drive for each time interval.
+  - RivWidthCloud outputs (CSV) providing active channel centreline points and width statistics, plus a range of metadata fields.
+  - Similarity coefficients (e.g., Jaccard, Kulczynski, Dice, Ochiai) and summary metrics output to the GEE console for analysis.
+- Processing workflow (three main steps in GEE):
+  - Cloud masking and temporal compositing: 
+    - Build image collections from Landsat 5, 7, 8 for each two-year period.
+    - Apply CFmask for cloud/cloud shadow masking.
+    - Use median reducer to create a single temporal composite per spectral band.
+  - Active river channel classification:
+    - Compute wetted channel and alluvial deposits from multi-spectral indices.
+    - classify water using Zou et al. (2018) approach with thresholds: MNDWI ≥ -0.4 and NDVI ≤ 0.2; open-water/matted vegetation distinctions incorporated with NDVI thresholding (0.2 for dense riparian vegetation).
+    - Binary masks for wetted channel and alluvial deposits are combined (union) to form an intermediate binary active channel mask.
+  - Cleaning and export:
+    - Remove disconnected areas smaller than 100 pixels.
+    - Apply a 3-pixel morphological closing to smooth edges.
+    - Export final binary active channel mask for each time interval; export RivWidthCloud outputs for analysis.
+- Active channel width and centreline calculation:
+  - RivWidthCloud is used with binary active channel masks to derive river centrelines and widths.
+  - Parameter settings (based on sensitivity testing): maximum search distance 50 km, maximum island size 10 pixels, maximum branch length 500 pixels.
+  - Outputs include centreline points, width estimates, and summary statistics (mean, min, max, standard deviation) per interval.
+- Outputs in detail:
+  - Binary active river channel masks: one GeoTIFF per interval (T1, T2, T3, T4); binary unit (0 = non-channel, 1 = active channel).
+  - RivWidthCloud summary statistics and similarity coefficients: per-interval figures (area in km^2, number of centreline points, min/max/mean/std widths) and inter-interval similarity measures (e.g., Jaccard) reported in the GEE console.
+  - Centreline point attributes (CSV, Google Drive): includes CRS, image_id, latitude, longitude, orthogonalDirection, width, endsInWater, endsOverEdge, flag_elevation, and other metadata (image_id, projection, and cross-sectional attributes).
+- Generalizability and limitations:
+  - Parameter sets are tailored to rivers in the Philippines; may not be directly transferable to other hydro-geomorphic settings without re-calibration.
+  - User-defined inputs are present throughout the workflow, allowing adaptation but requiring careful validation for new regions.
+- Data sources and acknowledgements:
+  - Bridge inventory data provided by the Philippines Department of Public Works and Highways (DPWH) and associated statistics division.
+  - Funded as part of an NERC-DOST Newton Fund grant (NE/S003312).
+- References (key sources for methods and tools):
+  - Jaccard index, Dice similarity, surface water indices (MNDWI, NDVI, EVI) and vegetation/water classification methods (Zou et al. 2018; Xu 2006; Huete et al. 2002; Rouse et al. 1974).
+  - RivWidthCloud tool for width and centreline extraction (Yang et al., 2019).
+  - Prior applications and methodology guidance for fluvial geomorphology using GEE (Boothroyd et al. 2020a, 2020b; Lagasse et al. 2004; Long & Giri 2011; Dingle et al. 2019).

@@ -1,0 +1,56 @@
+# DATA HEADER information for Sapling_carbon_stock.csv
+
+- Overview
+  - Records the carbon stock of the regenerating tree cluster.
+  - Part of the ESPA Programme and the Project P4GES.
+  - DOI provided; acknowledgement required for outputs derived from these data.
+- Context and provenance
+  - Data linked to P4GES site codes (site_ID) and ESPA projects.
+  - Acknowledgement: Laboratoire des Radio Isotopes, Université d'Antananarivo.
+- Key data fields and definitions
+  - site_ID
+    - Information: P4GES site code
+    - Type: Text string
+    - Unit: none
+  - Number_saplings
+    - Information: number of trees with diameter < 5 cm and height > 1.3 m counted within a 2 m radius circle
+    - Type: Numeric
+    - Unit: none
+  - Number_collected_saplings
+    - Information: number of sapling trees collected among the population inside the 2 m radius circle
+    - Type: Numeric
+    - Unit: none
+  - Fresh_weight_total
+    - Information: weight of all collected saplings
+    - Type: Numeric
+    - Unit: grams
+  - Fresh_weight_sample
+    - Information: weight of the sample among the collected saplings (samples collected for biomass analysis; weighed in the field)
+    - Type: Numeric
+    - Unit: grams
+  - Dry_weight_sample
+    - Information: weight of subsample after oven drying (stabilized dry weight)
+    - Type: Numeric
+    - Unit: grams
+  - Dry_weight_collected_saplings
+    - Information: weight of all collected saplings after oven drying (stabilized dry weight)
+    - Type: Numeric
+    - Unit: grams
+  - Biomass
+    - Information: biomass stock of sapling
+    - Type: Numeric
+    - Unit: milligrams per hectare (Mg.ha-1)
+  - Stock_C
+    - Information: carbon stock of sapling
+    - Type: Numeric
+    - Unit: milligrams per hectare (Mg.ha-1)
+- Data notes and interpretation
+  - Notes: "means no data" indicates missing entries for applicable fields.
+  - Some units may require clarification (e.g., Biomass and Stock_C lists mg/ha with the Mg.ha-1 notation).
+- Methodological context
+  - Measurements are centered on saplings within a 2 m radius around each site, focusing on biomass and carbon stock calculations.
+  - Field and sample weights are used to derive biomass; subsequent conversion yields biomass stock and carbon stock estimates.
+- Practical considerations for analysts
+  - Ensure correct interpretation of units (mg/ha vs. Mg/ha notation) when merging with other datasets.
+  - Be mindful of missing data indicated by notes; plan imputation or exclusion accordingly.
+  - Cross-check with related materials (Manual 1_Classical_Survey) for methodological details.

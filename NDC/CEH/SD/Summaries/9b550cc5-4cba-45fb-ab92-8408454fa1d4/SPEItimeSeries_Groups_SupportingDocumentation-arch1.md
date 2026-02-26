@@ -1,0 +1,25 @@
+# Supporting Information
+
+- IHU SPEI dataset: Time series of Standardised Precipitation-Evapotranspiration Index (SPEI) for Integrated Hydrological Units (IHU) groups. SPEI is based on Climatic Water Balance (precipitation minus evapotranspiration) over various accumulation periods (1, 3, 6, 12, 18, 24 months) and for each calendar month.
+- Timeframe: 1961–2012 (distribution fitting period 1961–2010; data period limited by available inputs).
+- Data format: CSV. 9 columns total; columns 4–9 hold six different SPEI aggregations; values are normal scores with mean 0 and SD 1, limited to -5 to +5; -9999 denotes No Data.
+- Data characteristics: Monthly SPEI time series per location are likely autocorrelated, especially for longer accumulation periods due to overlapping data; serial correlation may affect trend analyses.
+- Purpose: Created for incorporation into a CEH droughts portal to study drought over specific areas by aggregating SPEI over IHU groups; SPEI’s inclusion of evapotranspiration provides drought sensitivity across time scales.
+- Methodology (III.2):
+  - SPEI computed as cumulative CWB over specified durations, assigned to the month the accumulation ends.
+  - For each location, 72 time series (6 durations × 12 months) are derived.
+  - Distributions fitted to historical CWB using the generalised logistic (log-logistic) distribution, fitted via SCI in R (MLE; fallback to L-moments or method of moments if needed).
+  - Data transformed to normal scores (mean 0, SD 1). Extreme values truncated at ±5.
+  - Discussion on distribution choice: generalised logistic favored over GEV for gridded data due to tail behavior and parameter stability; GEV could overstate extremes and cause unrealistic return periods.
+  - Note on overlapping data for >12-month durations leading to autocorrelation; concatenated monthly SPEI series are also likely autocorrelated.
+- Data sources (III.1):
+  - Integrated Hydrological Units (IHU) groups (UK) for spatial units.
+  - CEH-Gridded Estimates of Areal Rainfall [CEH-GEAR] for rainfall inputs.
+  - CHESS PET dataset for potential evapotranspiration.
+- Format details (IV):
+  - File: SPEI_IHU_groups.csv
+  - Columns: RID, POLYGONID (IHU group ID), THEDATETIME (date/time), plus six SPEI aggregation columns (Columns 4–9).
+  - SPEI values are unitless normal scores; range limited to -5 to +5.
+- Acknowledgments (V):
+  - Project DrIVER (Drought Impacts and Vulnerability thresholds in monitoring and Early warning Research).
+  - Funding: Natural Environment Research Council (NE/L010038/1) as part of Belmont Forum initiative.

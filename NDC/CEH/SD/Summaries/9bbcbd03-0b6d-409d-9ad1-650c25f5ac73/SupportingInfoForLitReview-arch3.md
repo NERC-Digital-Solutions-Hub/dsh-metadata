@@ -1,0 +1,35 @@
+# Supporting information for interpreting
+
+- Purpose
+  - Describes the methodology and data structure used to interpret the KM trend studies on knowledge management (KM) in environmental science and the science-policy interface, with a focus on China.
+- Data sources and search strategy
+  - Databases: Web of Science™ (WoS, All database) and Scopus; ProQuest considered but not used for this stage due to lack of statistical analysis on annual publications.
+  - Keywords: "knowledge exchange (KE)", "knowledge shar*", "knowledge transfer" (KT).
+  - Scope: documents published up to the end of 2017; no language restriction applied.
+  - Geographic note: In China-related counts, China comprises China, Taiwan, and Hong Kong; in WoS counts, China comprises People’s Republic of China; UK comprises England, Scotland, Wales, Northern Ireland.
+- Screening and inclusion criteria
+  - Topics screened: science-policy interface and environmental science/management.
+  - Screening criteria by topic:
+    - Science-policy interface: TOPIC includes KM terms; TITLE includes scien* OR policy OR stakeholder OR practice OR decision.
+    - Environmental science: TOPIC includes KM terms; TITLE includes environment OR socio-ecological OR land use OR pollut* OR development OR agric* OR farm* OR aquacult* OR sustainab* OR catchment OR coast* OR marine OR wetland OR water* OR climate OR soil OR ecol*.
+  - Retained articles required to address at least one of:
+    - Description of KM frameworks or practices used within/between organisations.
+    - Explanation of why KM was conducted (evidence-based decision making).
+    - Understanding of how knowledge is shared and delivered (e.g., one-way or two-way, via expert systems).
+    - Description of challenges/factors affecting KM effectiveness (e.g., psychological factors, incentives).
+  - Additional search: reverse citation check on retained articles; no additional relevant items found.
+- Results and data availability
+  - For science-policy interface searches: no publications matched the criteria; no data file is provided for this subset.
+  - For environmental science/management: data files retained and analyzed as described.
+- Data structure (4 files)
+  - LitReview_KMTrend_Year: annual amount of KM publications in China and worldwide.
+  - LitReview_KMTrend_CountyWoS: WoS data – total KM publications per year for top 20 countries.
+  - LitReview_KMTrend_CountyScopus: Scopus data – total KM publications per year for top 20 countries.
+  - LitReview_Env_China_RetainedPublication: information about retained KM publications for environmental management in China.
+- Quality control and methodology
+  - Systematic literature review employed to enhance rigor of the search results.
+- Context and related work
+  - Notable contextual citation: Zheng Y., Naylor L.A., Waldron S., Oliver D.M. Knowledge management across the environment-policy interface in China: what knowledge is exchanged, why, and how is this undertaken? Environmental Science & Policy, 2018.
+- Implications for monitoring frameworks
+  - Highlights data availability and sharing issues relevant to monitoring KM in environmental policy contexts (e.g., need for transparent data and metadata, potential data gaps, and governance considerations).
+  - Indicates that while measurable KM trends can be tracked (via the four datasets), gaps remain for science-policy interface KM due to lack of qualifying publications.

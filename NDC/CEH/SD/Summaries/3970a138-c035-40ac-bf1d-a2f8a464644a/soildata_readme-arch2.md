@@ -1,0 +1,33 @@
+# Data for soil samples taken from three locations at each transplant elevation
+
+- Overview: At each transplant elevation on Mt Etna, soil was extracted and analysed at Nucleo Chimico Mediterraneo laboratories, Catania, Italy.
+- Sampling design
+  - Site: Transplant elevation
+  - Sample: Replicate sample at each elevation
+  - Three locations per elevation
+- Measured soil properties
+  - Grain size and texture
+    - Grain>2mm: Proportion of large-grained substrate
+    - Grain<2mm: Proportion of small-grained substrate
+    - Sand: Proportion of sand
+    - Silt: Proportion of silt
+    - Clay: Proportion of clay
+  - General soil chemistry
+    - Total N (grams/kilogram): Total nitrogen content
+    - C:N: Carbon to nitrogen ratio
+    - Organic matter (grams/kilogram): Total organic matter present
+  - Nutrients and nutrients availability
+    - Available P (milligrams/kilogram): Available phosphorus
+    - Available K (milligrams/kilogram): Available potassium
+    - Total K (milligrams/kilogram): Total potassium
+  - Soil acidity and salinity
+    - pH
+    - Conductibility (dS/m; deciSiemens per metre): Electrical conductibility
+  - Ion content (soluble)
+    - Columns 16-22: Soluble ions in milliequivalents per litre — chloride, nitrate, sulphites, sodium, calcium, magnesium, potassium
+  - Cation exchange properties
+    - Cation exchange capacity (milliequivalents per 100 grams)
+  - Exchangeable ions (per 100 g)
+    - Columns 24-27: Exchangeable ions — calcium, magnesium, sodium, potassium
+  - Ratios
+    - K:Mg: Potassium to magnesium ratio

@@ -1,0 +1,83 @@
+# CORINE land cover technical guide - Addendum 2000
+
+- Purpose and scope
+  - An addendum to the CORINE Land Cover Technical Guide (1994) to support data collection and updating with additional information not in the original guide.
+  - Describes new methodological developments, especially softcopy interpretation of satellite data and (semi-)automated pixel-to-nomenclature conversions.
+  - Extends the CORINE Land Cover nomenclature to Central and Eastern Europe and provides generalisation rules for mapping at 1:100,000 scale.
+  - Aims to improve understanding of landscape contents and their representation in land cover products.
+
+- Part I: State-of-play production methods of the CORINE land cover database
+  - Introduction
+    - Tracks evolution from hardcopy inventory (photo-interpretation on satellite image printouts) to softcopy and GIS-based workflows.
+    - Acknowledges valid use of both analogue and digital approaches; automated classifications require substantial human interpretation to align with CORINE classes.
+  - Hardcopy inventory
+    - Original method: computer-assisted photo-interpretation with transparencies over 1/100,000 hardcopy prints and ancillary data.
+    - Strengths and drawbacks: effective historically but prone to digitisation errors; border matching depended on physical sheets and print quality.
+  - Softcopy inventory
+    - Advances: interpret and digitise in a single pass with integrated GIS; possible use of digital image processing for focusing on areas of interest.
+    - Data management: integration of raster and vector data; support for multiple data formats; importance of image and ancillary data integration.
+  - GIS, data types and integration
+    - Emphasizes the need for robust GIS design to manage multi-source raster and vector data, georeferencing, and interoperability (e.g., geoTIFF for rasters; DXF/Arc/Info for vectors).
+    - Supports linking alphanumeric attributes with images, text, and icons for enhanced object descriptions.
+  - System customization and functionalities
+    - Recommends modular software architectures with customizable user interfaces and extendable functionality (from simple VB apps to C/C++ modules).
+    - Identifies a minimal functional suite: interactive display/editing of geometry and attributes, image management, various types of queries, a configurable database, import/export, georeferencing, statistics, and overlaying legends.
+  - Co-pilot software
+    - JRC’s Co-pilot (MS Windows) provides an integrated GIS for CORINE data, managing geographic objects (points, lines, surfaces) via a Catalogue, Typelook, and GraphicSet; data are stored in ASCII files and designed for easy editing.
+    - Co-pilot supports national CORINE land cover production teams and maintains seamless data with temporal continuity.
+  - Conversion of (semi-) automated classifications
+    - Cautions about converting automated classifications to CORINE classes due to variable image quality, differences between land cover (sensitive to context) and land use, and the human capacity for holistic interpretation.
+    - Encourages careful, supervised use of automated conversions, which can yield good positional accuracy but may struggle with thematic accuracy.
+    - General conversion approach includes spatial generalisation techniques:
+      - Reclassification: regrouping features into CORINE classes (often hierarchical).
+      - Aggregation and amalgamation: merging or redistributing features for coherence.
+      - Smoothing and simplification: boundary refinement and reduction of boundary complexity.
+    - Highlights that the accuracy of automated per-pixel classifications is a major limiting factor.
+  - Specific conversion quality issues
+    - Land cover as a nominal, discrete variable mapped on two data models: polygon (areas of homogeneous value) and raster (dominant class per cell).
+    - Discusses the significance of pixel size relative to minimum mapping units; when appropriately small, boundary positional errors are less critical.
+    - Identifies main error sources in multispectral classification: spectral confusion, mixed pixels, system errors, and conceptual mismatches.
+  - Statistical properties and generalisation
+    - Introduces a phase-space model to relate taxonomic definitions to map outputs and to study how accuracy impinges on derived measures.
+    - Notes that most quality measures are not directly suitable for discrete land cover classes; non-parametric or descriptive statistics are preferred.
+    - Generalisation reduces data complexity but increases error; current quality measures often fail to account for this trade-off.
+  - Validation methodology
+    - Validation evaluates inventory reliability using the CORINE methodology, not the data-collection method itself.
+    - Repeats data collection with random sampling, producing a confusion matrix to analyse omission/commission errors and enabling area- and nomenclature-level accuracy assessments.
+  - Sampling methodology (5.1)
+    - Uses stratified random sampling: strata can be land cover items or geographic regions.
+    - Aims to minimize standard error and to enable stratified accuracy estimates.
+    - Describes inputs (digital land cover map) and outputs (points per stratum) with area-proportional selection and random placement within units.
+  - Determination of the number of sampling points (5.2)
+    - Points per stratum h: n_h = p_h(1 - p_h) / sigma_h^2, where p_h is prior error rate and sigma_h is the accepted standard error.
+    - Notes: higher expected error leads to more points; practical cap of about 2 points per square kilometer to avoid excessive sampling density.
+  - Random sampling steps (5.3)
+    - Step 1: area-proportional, systematic selection of land cover units within each stratum.
+    - Step 2: determine sampling point locations within each unit using local/random/systematic approaches depending on the required number of points.
+    - Various geometric rules are provided for placing one, several, or many points within units.
+  - Interpretation of random sampling points (5.4)
+    - Validation interpreters delineate units at higher levels first and progressively subdivide, using on-screen interpretation with a fixed scale (not exceeding 1:40,000).
+    - Validation can’t rely on field checks due to restrictions and uses detailed documentation and meta-data to support interpretation.
+  - The raising (5.5)
+    - After interpretation, overlaid with sampling points to determine the validated land cover key codes and to build a confusion matrix.
+    - Provides formulas for estimating correctly classified area per stratum and for aggregated levels, including standard error calculations.
+- References
+  - CEC (1994) CORINE Land Cover Technical Guide; methodological and statistical references; related national and European sources.
+- Part II: Addendum to the CORINE land cover nomenclature illustrated guide
+  - Introduction
+    - Consolidates long-standing experience from Landsat and SPOT interpretation to refine class definitions without changing core content, includes guidance for Phare countries.
+    - Adds clarifications on class contents, chosen dominant objects, representative patterns and photos, and generalised patterns to aid interpretation.
+  - Methodology
+    - Visual interpretation remains central; emphasizes interpretation elements and landscape-object relationships to describe class characteristics, textures, and patterns.
+  - Class content and generalisation
+    - Provides refined documentation for the entire CORINE hierarchy, including photos and examples to illustrate typical textures and patterns.
+    - Includes generalisation rules and thresholds (e.g., urban fabric density, minimum mapping sizes, and 25–80% thresholds for various classes) to ensure consistent mapping at 1:100,000 scale.
+  - Representative materials
+    - Contains representative photographs and descriptive details for numerous classes to support consistent interpretation across Europe and CEEC contexts.
+  - References
+    - CEC 1994 CORINE Land Cover Technical Guide; Phare/ETC inputs; supporting methodological sources.
+
+- Overall takeaway for data support context
+  - The Addendum documents the shift from hardcopy photo-interpretation to softcopy GIS-based workflows, including the introduction of Co-pilot and standardized validation procedures.
+  - It clarifies the limitations and opportunities of automated classification and generalisation in CORINE mapping, and provides robust validation and sampling frameworks to quantify and communicate data reliability.
+  - Part II augments the nomenclature with refined, illustrated definitions and patterns to improve consistency and interpretability across Europe, including CEEC extension.

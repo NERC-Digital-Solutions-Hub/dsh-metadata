@@ -1,0 +1,39 @@
+# UK Environmental Change Network (http://www.ecn.ac.uk) Vegetation: Woodland (VW)
+
+- Purpose and audience
+  - Long-term vegetation data for woodland plots intended for GIS-based map visualisations and spatial analyses of environmental change.
+- Data origin, ownership, and use requirements
+  - Originator: ECN Data Centre, Centre for Ecology and Hydrology.
+  - Owners: UK ECN programme; acknowledge in use and provide one reprint of any publication citing the data.
+- Protocol and data collection
+  - Coarse-grain plots: 2m x 2m with a centered 10m x 10m subplot for trees/shrubs, including seedlings and DBH.
+  - Measurements: trees, shrubs, seedlings, DBH, height, dominance; repeated every nine years; DBH every three years.
+  - Data integration: linked to ECN core protocols and other ECN datasets; quality metadata provided for robust GIS use.
+- Data structure and schema
+  - Storage: two Oracle tables per site (D1VW_xxx for core/site-level data; D2VW_xxx for plot-level data).
+  - Core fields (site-level example): SITECODE, SYEAR, PLOTPID, CELLID, TREEID, STEMID, TREE_SPEC, FIELDNAME, VALUE.
+  - Plot-level fields: PLOTPID, DOMDATE, DBHDATE, SEEDDATE; encoding via predefined codes and lookup tables.
+  - Metadata: core metadata tables exist; full schema details in ECN metadata documentation.
+- Site codes and locations
+  - T08: Wytham – 51°46'52.86"N, 1°20'9.81"W; data range 1993–2012.
+  - T09: Alice Holt – 51°9'16.46"N, 0°51'47.58"W; data range 1994–2011.
+- Field names and data encoding
+  - Vegetation attributes captured with codes (e.g., A, E, I, S, U, H, HEIGHT, DIAMETER, NUM_STEMS, SEEDLING) plus quality indicators (Q1–Q8) and quality code 999 for unusual events.
+  - Species and field codes are linked to lookup tables (including extensive mappings for taxonomic synonyms) to support consistent GIS symbolisation and queries.
+- Data access, usage notes, and attribution
+  - Protocol and metadata documented; use quality metadata when applying data.
+  - Acknowledgement requested; supply ECN with one reprint of publications citing the data.
+  - Designed for GIS analyses and map-based products enabling spatial exploration of woodland vegetation across sites and years.
+- GIS readiness and usage considerations
+  - Data are map-ready at plot and tree levels; can be joined to generate fine-scale vegetation maps and temporal change analyses.
+  - Two-site Oracle schema (D1VW_xxx and D2VW_xxx) supports scalable GIS workflows; coordinate and site metadata enable cross-site comparisons and integration with other layers.
+  - Quality metadata and site-level metadata should be consulted to ensure reliable representation and interpretation.
+- Limitations and considerations for GIS practitioners
+  - Data dispersed across multiple sites and tables; variation in resolutions and standards; substantial cleaning/transformation may be required for harmonised GIS outputs.
+  - Emphasis on rigorous field protocols and quality metadata; integrate quality codes and site metadata in map products.
+
+- Species codes: mapping and synonym resolution
+  - The provided text contains extensive mappings between species codes and authoritative taxonomic names (e.g., Salix cinerea ssp oleifolia, Salix repens, Sambucus nigra, etc.), including multiple synonyms and cross-references to ensure consistent GIS interpretation across datasets.
+- Quality Codes: guidance for data quality
+  - A comprehensive list of ECN quality codes (100–999) with detailed descriptions (e.g., data lost, sample issues, weather or field conditions impacts, laboratory/measurement notes).
+  - Code 999 indicates an unusual event requiring accompanying quality text.

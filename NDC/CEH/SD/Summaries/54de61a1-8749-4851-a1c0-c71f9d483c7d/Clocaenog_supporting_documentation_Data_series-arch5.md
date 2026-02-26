@@ -1,0 +1,82 @@
+# Climoor field site in Clocaenog forest Supporting documentation for data
+
+- Overview
+  - Climoor is a climate change manipulation experiment using automated roof technology to simulate drought and warming treatments reflecting 20–30 year climate predictions.
+  - Located in Clocaenog Forest, North East Wales; established in 1998; powered by solar and wind.
+  - Experimental design comprises replicated drought (D), warming (W), and control (C) treatments across nine plots (4 m x 5 m each) with three blocks.
+  - Drought treatment reduces rainfall via retractable polyethylene roofs; warming treatment uses retractable aluminium mesh curtains to limit heat loss at night. Both treatments have operational limits in high winds.
+  - Data cover a wide range of abiotic and biotic measurements, spanning 1998–current, with varying data formats and storage locations.
+
+- Data inventory (Categories and key aspects)
+  - AWS meteorological data (on-site automated weather station)
+    - Variables: relative humidity, air temperature, rainfall, air pressure, net radiation, solar radiation, PAR, wind speed/direction.
+    - Frequency/time scale: daily to current day (1999–present); mast height increased in 2007 after thefts.
+  - Micro-meteorological plot data
+    - Soil temperature (5, 10, 20 cm) and soil moisture (various methods, currently TDR since 2008).
+    - Measurements are daily; logged as hourly or half-hourly averages after 2016.
+  - Rainfall data
+    - Site-level storage rain gauge (biweekly samples) plus rainfall chemistry (pH, NO3, Cl, SO4, DOC, ammonium) from Warren springs collectors.
+  - Throughfall data (plot-level rainfall)
+    - Plot-level rainfall captured biweekly; used to compute treatment-specific rainfall changes and adjust site rainfall to generate plot-level rainfall estimates.
+  - Water table depth
+    - Permeable tubes installed in 2009; biweekly measurements; maximum detectable depths per plot documented.
+  - Soil respiration
+    - CO2 flux measured with collars; multiple measurement methods over time (CIRAS-2, LICOR LI-8100, automated systems from 2013–2014); flux converted to mg CO2-C m-2 h-1.
+    - Seasonal to ongoing campaigns; three collars per plot; vegetation disturbance monitored.
+  - Trace gases (CH4 and N2O)
+    - Measured with static chambers on the same collars as soil respiration; samples analyzed by GC; multiple time periods (1999–2000, 2007–2009).
+  - Net ecosystem CO2 exchange (NEE)
+    - Measured in 2002–2004 and 2011 using Perspex chambers; data converted to mg CO2-C m-2 h-1; biomass adjustments applied to account for plot variation.
+  - Photosynthesis
+    - Ambient measurements and response curves (PAR and Ci) for multiple years (2001–2007); data include leaf-level measurements and leaf mass data for standardization.
+  - Vegetation survey data (plant biomass) – Pin Point method
+    - Years: 1998–2012; three quadrats per plot; 300 pins per plot; pin-hits converted to biomass using calibration factors; biomass data converted to g m-2.
+    - Detailed species codes and biomass calibration tables included.
+  - Canopy reflectance
+    - Ground-based NDVI (680 and 570) and PRI indices using spectrometer; measurements around solar noon; two time blocks (2001–2002, 2003–2004).
+  - Vegetation phenology, growth and pathogens
+    - Spring phenology for Calluna vulgaris, Vaccinium myrtillus, Empetrum nigrum; shoot elongation, budburst, leaf counts, herbivory and pathogen signs; annual growth measurements across selected years.
+  - Vegetation chemistry
+    - Chemical analyses on green and senesced material; determinants include C, N, P, K, Ca, Mg, lignin, tannin, alpha-cellulose, carbohydrates.
+  - Litterfall
+    - Collected via litterfall collectors; 1999–2002 monthly; later irregular collection; samples dried and weighed; carbon and nitrogen analyses performed.
+  - Root biomass
+    - Core-based measurements across several years (2003–2013) using varying methods (soil cores, sieving, WinRHIZO analysis); depth-specific root extraction.
+  - Soil microbial biomass
+    - Chloroform fumigation method; 2000, 2001, 2012; microbial biomass carbon expressed per g soil organic matter.
+  - Nitrogen mineralisation
+    - Sporadic measurements (1998–2004) using initial/final cores and KCl extraction; ammonium and nitrate determined photometrically/autoanalyser.
+  - SOM, SOC and bulk density
+    - SOM and SOC determined from paired cores; bulk density calculated; data converted to g m-2 basis.
+  - Soil solution and leachate chemistry
+    - Lysimeters and tensioned samplers; biweekly sampling; analyses include pH, NO3, Cl, SO4, DOC via TOC, ammonium.
+  - Appendix: site layout and quadrat layout
+    - Plot layout references (Lysimeters, Pin quadrats, Soil suction samplers); quadrat positions.
+
+- Data processing, units and methods
+  - Data are processed to standardised flux units and time scales; examples:
+    - Soil respiration: raw to mg CO2-C m-2 h-1; historical instruments used CIRAS-2, LICOR 8100, automated systems; conversions based on methane/CO2 gas constants and instrument-specific factors.
+    - Net ecosystem exchange and photosynthesis: conversions between g CO2 m-2 h-1 and mg CO2-C m-2 h-1; LI-COR and CIRAS data reconciled with conversion factors.
+  - Throughfall adjustments: plot-level rainfall inferred by applying percent differences to site rainfall data; missing data infilled with mean reductions when applicable.
+  - Pin-point vegetation data: pin hits converted to biomass using species-specific calibration factors; missing pins corrected by ratios to maintain 300 pins per plot.
+  - Data quality control: visual QC in Excel due to practical limitations; legacy data notes indicate some data processing steps for trace gases and other datasets may not be fully documented.
+  - Data storage and access: not all data are stored in the EIDC; some datasets exist outside the on-site archive; contact CEH Bangor for access and specifics.
+
+- Data governance, access and stewardship
+  - Data stewardship focus: maintain data integrity, metadata, and provenance across diverse measurement platforms and long timescales; ensure metadata includes measurement methods, instruments, calibration, and time periods.
+  - Accessibility notes: The documentation explicitly states that not all data are stored in the EIDC; for more details and access, contact Sabine Reinsch or Bridget Emmett at CEH Bangor.
+  - Data continuity and legacy considerations: method changes (e.g., soil respiration instrumentation, throughfall corrections) require careful interpretation; some datasets are legacy with incomplete documentation of processing steps.
+  - Recommended practices: maintain consistent site and plot identifiers, document data lineage, provide clear data dictionaries, and ensure data are accompanied by metadata describing collection methods, units, and processing steps.
+
+- Appendices and site layout
+  - Appendix 1 and 2 provide site and quadrat layouts; Appendix 3 shows plot layouts with quadrats and measurement areas.
+  - Site reference: Grid SJ019519; coordinates 53.055 N, -3.465 W; notes on climate treatments and block structure.
+
+- Practical takeaways for data stewardship
+  - The Climoor dataset presents a comprehensive, multi-disciplinary time-series collection with diverse measurement technologies and several treatment regimes; requires robust metadata to enable discoverability, reuse, and cross-study synthesis.
+  - Data governance should emphasize:
+    - Clear data provenance and method documentation for each data type and year.
+    - Consistent metadata standards across AWS, micro-met, soil, vegetation, and soil solution datasets.
+    - Explicit storage plan for datasets not yet in centralized repositories (EIDC) and pathways for future data deposition.
+    - Documentation of legacy processing steps and any data gaps or corrections to facilitate reproducibility.
+  - Stakeholder contacts for data access and provenance verification: Sabine Reinsch (sabrei@ceh.ac.uk) and Bridget Emmett (bae@ceh.ac.uk) at CEH Bangor; primary authorship: Alwyn Sowerby, edited by Sabine Reinsch (version5, 14/10/2016).

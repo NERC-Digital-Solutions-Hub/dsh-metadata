@@ -1,0 +1,30 @@
+# Visualising UKCEH Land Cover Class using a GIS application
+
+- Dataset structure:
+  - Land cover map rasters for 2017-2020 are multi-band rasters.
+  - 20m and 10m rasters: two bands (Band 1 = UKCEH Land Cover Class identifier; Band 2 = classification confidence).
+  - 25m rasters: three bands (Band 1 = dominant UKCEH Land Cover Class identifier; Bands 2 and 3 = classification confidence).
+- Purpose of the document:
+  - A short guide for visualising the Land Cover Class data contained in Band 1 using common GIS applications.
+  - For a full data description, refer to the product documentation.
+- Visualisation workflow by GIS application:
+  - QGIS:
+    - Add the file to your project; layer appears in the layers panel.
+    - Open Layer Properties > Symbology; select Paletted/Unique Values, Band 1.
+    - Use “Load style” and choose LCMcolours_QGIS.qml to apply correct classification colors.
+    - OK to redraw the map with correct classification.
+  - ArcGIS Desktop:
+    - In Catalog, locate the data folder and expand the raster bands.
+    - Drag band_1 into the Table of Contents; open Layer Properties > Symbology.
+    - Choose Unique Values (confirm value-building if prompted).
+    - Click Import and load LCMcolours.lyr; OK to redraw with correct classification.
+  - ArcGIS Pro:
+    - Open Catalog, locate the data folder, expand the raster bands.
+    - Drag band_1 into the Contents; open Layer Properties > Symbology.
+    - Set Primary/Unique Values; if prompted to build an attribute table, choose Yes.
+    - Use the hamburger menu in the Symbology panel to Import and load LCMcolours.lyr; map updates to show correct classification.
+- Notes for data governance and stewardship:
+  - The guide uses a standardized approach to visualization by relying on provided style files, supporting consistent representation across datasets.
+  - Visualisation of Band 1 (class identifiers) is central; Bands 2 and 3 provide confidence metrics for quality assessment.
+  - Use of accompanying style files ensures reproducibility and easier discovery/usage for data users.
+  - Ensure reference to the product documentation for comprehensive data details.

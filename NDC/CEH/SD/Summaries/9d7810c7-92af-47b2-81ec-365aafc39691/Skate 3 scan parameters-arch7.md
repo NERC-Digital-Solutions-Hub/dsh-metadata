@@ -1,0 +1,62 @@
+# Skate 3 pt1
+
+- Overview
+  - A CT reconstruction configuration (XTekCT) for Skate 3 pt1, detailing voxel grid, imaging geometry, processing parameters, and output settings. Also includes CT processing presets and X-ray source settings.
+
+- Core parameters (XTekCT)
+  - Data and output paths
+    - Name: Skate 3 pt1
+    - InputFolderName / OutputFolderName: Skate 3 pt1
+  - Voxel and detector grid
+    - VoxelsX = 2000, VoxelsY = 2000, VoxelsZ = 2000
+    - VoxelSizeX = VoxelSizeY = VoxelSizeZ = 0.0738158705594889 mm
+    - DetectorPixelsX = 2000, DetectorPixelsY = 2000
+    - DetectorPixelSizeX = DetectorPixelSizeY = 0.2 mm
+  - Geometry and alignment
+    - SrcToObject = 433.124931335449
+    - SrcToDetector = 1173.528
+    - CentreOfRotationTop = CentreOfRotationBottom = 0
+    - AutomaticCentreOfRotation = 1 (with offsets 0)
+  - Region and projection setup
+    - RegionStartX = RegionStartY = 0
+    - RegionPixelsX = RegionPixelsY = 2000
+    - Projections = 1080
+    - InitialAngle = 205.514755249023 degrees
+    - AngularStep = 0.33331118491503 degrees
+  - Image quality and processing
+    - WhiteLevel = 60000.0
+    - Scattering = 0.0
+    - CoefX4=0, CoefX3=0, CoefX2=0.25, CoefX1=0.75, CoefX0=0
+    - FilterType = 0
+    - CutOffFrequency = 2.4999999627471
+    - Exponent = 1.0
+    - Normalisation = 1.0
+    - InterpolationType = 1
+    - MedianFilterKernelSize = 1
+    - Scale = 1.32
+    - Scaling = 1000.0
+    - OutputUnits = /m
+    - Units = mm
+  - Output and data handling
+    - OutputType = 0
+    - TIFFScaling = 1
+    - ImportConversion = 0
+    - AutoScalingType = 0
+    - LowPercentile = 0.2, HighPercentile = 99.8
+
+- Processing and materials
+  - CTPro
+    - FilterPreset = 0
+    - Filter_ThicknessMM = 0.000
+    - Filter_Material = None
+  - Shuttling = False
+
+- X-ray source settings
+  - Xrays
+    - XraykV = 120
+    - XrayuA = 145
+
+- Relevance for GIS work
+  - Produces a 3D voxel dataset (2000^3) with explicit voxel size in millimeters, suitable for 3D spatial visualizations and volumetric analysis in GIS workflows.
+  - Spatial scale is defined in consistent units (mm with scaling to per-meter outputs), enabling integration with GIS coordinate frameworks after appropriate georeferencing.
+  - Detailed projection geometry, region specification, and center-of-rotation data support accurate spatial reconstruction and mapping of internal structures into map-based visualizations.

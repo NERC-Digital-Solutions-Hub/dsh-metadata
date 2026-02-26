@@ -1,0 +1,21 @@
+# General information
+
+- The dataset contains estimates of plant abundance (leaf area, floral units, and seeds by number, mass, and energy) from field sampling on Norwood Farm, Somerset, UK, collected in 2007 and 2008 as part of a study of ecological interactions (food webs and plant-pollinator networks). The farm was managed organically at relatively low intensity during the study.
+- Primary reference: Pocock et al. (2012); the dataset of interactions is published in the Dryad Digital Repository. Full study details and site description are in Pocock et al. (2012) and its Supplementary Online Material (SOM). Extract_from_SOM.rtf accompanies the data.
+- Study site and design:
+  - Norwood Farm coordinates: 51.3128 N, 2.3206 W.
+  - Data cover multiple habitats; sampling conducted monthly or seasonally using transects.
+  - Leaf area (leaf area index) estimated via transects and LAI-2000 meter (or literature for woodland).
+  - Floral units estimated from transects; floral units defined as entities that flower-visiting insects will fly between.
+  - Seeds sampled across habitats monthly/seasonally using a vacuum sampler; seeds dried, identified, and corrected for under-sampling. Seed mass and energy sourced from site-derived data and databases.
+- Files and their purposes:
+  - leafarea.csv: leaf area of each identified plant taxon per habitat per month; leaf area index apportioned among species by abundance/height and scaled to habitat area.
+  - floralunits.csv: number of floral units per taxon, habitat, and month; defines floral unit for each taxon.
+  - seeds.csv: seed counts, total mass (kg), and total energy (kJ) per taxon, habitat, and season; includes correction factor for under-sampling.
+  - habitatarea.csv: habitat codes with descriptions and area measurements for Year 1 (2007) and Year 2 (2008) used to scale totals by habitat area.
+- Data quality and accessibility:
+  - Methods and scaling are documented; alongside the main files, there is a link to detailed methods in the cited Pocock et al. papers and SOM.
+  - Data are prepared to support analyses of ecological networks and resource distributions across habitats and seasons.
+- Acknowledgements and references:
+  - Funded by UK BBSRC (grant no. BBD0156341) and DEFRA (grant no. BD2303).
+  - Key references include Evans et al. (2009, 2011) and Pocock et al. (2010, 2012), with the primary dataset available via the Dryad repository and described in the accompanying materials (SOM and Extract_from_SOM.rtf).

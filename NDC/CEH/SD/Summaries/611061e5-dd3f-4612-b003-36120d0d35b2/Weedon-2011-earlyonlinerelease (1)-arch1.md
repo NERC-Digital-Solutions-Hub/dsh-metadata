@@ -1,0 +1,118 @@
+# The WATCH Forcing Data 1958-2001: a meteorological forcing dataset for land surface- and hydrological-models
+
+- Overview of basins and variables
+  - Presents basin-level statistics for PET rc (Penman–Monteith) and PET PT (Priestley–Taylor), plus key meteorological drivers (Net Radiation, VPD, Wind, Rainfall, Snowfall, Precipitation) across multiple time intervals: 1901–1957, 1958–2001, and 1979–2001.
+  - Each basin table includes the average (mm/yr or W/m^2 as appropriate), the annual slope (units/yr) with its min/max range, Neff (effective sample size), and an Adjusted Slope P value indicating statistical significance.
+
+- Orange River Basin
+  - PET rc (mm/yr)
+    - 1901–1957: average 1586.19; slope 1.2338 (p < 0.010)
+    - 1958–2001: average 1604.15; slope 0.6463 (not significant by adjusted P)
+    - 1979–2001: average 1623.47; slope −2.3898 (not significant)
+  - PET PT (mm/yr)
+    - 1901–1957: average 1114.63; slope 0.2471 (not significant)
+    - 1958–2001: average 1123.40; slope 1.1023 (significant, p < 0.020)
+    - 1979–2001: average 1131.46; slope 0.7341 (not significant)
+  - Net Radiation
+    - 1901–1957: 96.75 W/m^2; slope −0.0030
+    - 1958–2001: 96.79 W/m^2; slope 0.0805
+    - 1979–2001: 97.17 W/m^2; slope 0.0648
+  - VPD
+    - 1901–1957: 1.4479 kPa; slope 0.0021
+    - 1958–2001: 1.4879 kPa; slope 0.0013
+    - 1979–2001: 1.5289 kPa; slope −0.0040
+  - Wind
+    - 1901–1957: 2.20 m/s; slope 0.0006
+    - 1958–2001: 2.20 m/s; slope 0.0002
+    - 1979–2001: 2.21 m/s; slope −0.0037
+  - Rainfall
+    - 1958–2001: average 346.47 mm/yr; slope 0.8493
+    - 1979–2001: average 337.84 mm/yr; slope 3.8769
+  - Snowfall
+    - 1958–2001: average 0.12 mm/yr; slope −0.0040
+    - 1979–2001: average 0.00 mm/yr; slope −0.0060
+  - Precipitation
+    - 1958–2001: average 447.70 mm/yr; slope 0.2570
+    - 1979–2001: average 386.93 mm/yr; slope 1.0798
+  - Notes
+    - Significance of slopes varies by period; some increases in PET rc and PET PT are evident, while others are not statistically significant after adjustment.
+
+- Murray-Darling River Basin
+  - Data in this excerpt are incomplete or not fully populated (placeholders present for many variables and interval results).
+  - Unable to extract robust basin-wide trends from this snippet; indicates a gap in the tabulated results for this basin in the provided text.
+
+- Lena River Basin
+  - PET rc (mm/yr)
+    - 1901–1957: average 363.47; slope 0.1315
+    - 1958–2001: average 366.70; slope −0.0454
+    - 1979–2001: average 366.11; slope 0.5366
+  - PET PT (mm/yr)
+    - 1901–1957: average 312.82; slope 0.1505
+    - 1958–2001: average 313.48; slope 0.2437
+    - 1979–2001: average 314.73; slope 0.4203
+  - Net Radiation
+    - 1901–1957: average 29.05 W/m^2; slope 0.0137
+    - 1958–2001: average 28.65 W/m^2; slope 0.0072
+    - 1979–2001: average 28.65 W/m^2; slope −0.0658
+  - VPD
+    - 1901–1957: average 0.2404 kPa; slope 0.0001
+    - 1958–2001: average 0.2443 kPa; slope −0.0004
+    - 1979–2001: average 0.2453 kPa; slope 0.0010
+  - Wind
+    - 1901–1957: average 1.69 m/s; slope −0.0003
+    - 1958–2001: average 1.69 m/s; slope −0.0019
+    - 1979–2001: average 1.99 m/s; slope −0.0060
+  - Rainfall
+    - 1958–2001: average 259.68 mm/yr; slope −0.1461
+    - 1979–2001: average 255.52 mm/yr; slope 0.1876
+  - Snowfall
+    - 1958–2001: average 132.34 mm/yr; slope −0.1109
+    - 1979–2001: average 131.41 mm/yr; slope 0.2453
+  - Precipitation
+    - 1958–2001: average 1426.27 mm/yr; slope 0.2336
+    - 1979–2001: average 1426.74 mm/yr; slope −1.3292
+  - Notes
+    - PET rc shows modest increases and then declines across intervals; PET PT trends are generally positive but with varying significance; precipitation signals show regional variability.
+
+- Ganges-Brahmaputra River Basin
+  - PET rc (mm/yr)
+    - 1901–1957: average 889.32; slope 0.0368
+    - 1958–2001: average 869.68; slope −2.2561
+    - 1979–2001: average 843.63; slope −1.8416
+  - PET PT (mm/yr)
+    - 1901–1957: average 798.70; slope 0.0968
+    - 1958–2001: average 767.99; slope −1.2596
+    - 1979–2001: average 752.00; slope −0.8951
+  - Net Radiation
+    - 1901–1957: average 69.75 W/m^2; slope −0.0008
+    - 1958–2001: average 67.01 W/m^2; slope −0.1230
+    - 1979–2001: average 65.45 W/m^2; slope −0.1041
+  - VPD
+    - 1901–1957: average 0.9467 kPa; slope 0.0003
+    - 1958–2001: average 0.9570 kPa; slope −0.0032
+    - 1979–2001: average 0.9281 kPa; slope −0.0035
+  - Wind
+    - 1901–1957: average 1.97 m/s; slope −0.0002
+    - 1958–2001: average 1.69 m/s; slope −0.0019
+    - 1979–2001: average 1.68 m/s; slope −0.0060
+  - Rainfall
+    - 1958–2001: average 1400.84 mm/yr; slope 0.1620
+    - 1979–2001: average 1426.74 mm/yr; slope −1.3292
+  - Snowfall
+    - 1958–2001: average 25.43 mm/yr; slope 0.0716
+    - 1979–2001: average 26.34 mm/yr; slope −0.1199
+  - Precipitation
+    - 1958–2001: average 1426.27 mm/yr; slope 0.2336
+    - 1979–2001: average 1426.74 mm/yr; slope −1.3292
+  - Notes
+    - PET rc and PET PT generally show declines from 1901–1957 to 1958–2001, with continued declines into 1979–2001; precipitation shows mixed behavior, while Net Radiation and VPD trends are modest and variable in sign.
+  
+- Appendix: ERA-40 basis years order
+  - Documents the sequence and mapping of ERA-40 basis years used to construct the WATCH Forcing Data for 1901–1957, illustrating the data-shuffling approach (e.g., WFD, 1 = ERA-40, WFD, 2 = WFD, etc.) to preserve diurnal-to-seasonal statistics and interannual variability.
+  - Provides the year-by-year basis year assignments (e.g., 1901 basis years mapped to specific ERA-40 years like 1974, 1920, 1984, etc.), underscoring methodological details behind the 1901–1957 data generation.
+
+- Key implications for analysts
+  - PET rc and PET PT offer complementary evaporation perspectives, with PET PT often showing more pronounced long-term trends in some basins.
+  - Regional precipitation signals are highly variable; some basins show increasing rainfall over certain periods, while others decline, complicating broad regional inferences.
+  - Data quality and significance vary by basin and variable period; several slopes are not statistically significant after adjustment, and pre-1958 data carry additional uncertainties due to ERA-40 reliance and bias corrections.
+  - The dataset remains valuable for multi-model comparisons and climate-impact studies, but basin-specific interpretations should account for data coverage gaps (notably Murray-Darling) and the coarse spatial resolution relative to flux-tower scales.

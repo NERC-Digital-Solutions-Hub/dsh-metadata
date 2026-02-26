@@ -1,0 +1,31 @@
+# Supporting documentation
+
+- This dataset comprises two CSV files: ARGtype.csv and ARGSubtype.csv.
+- Purpose: reporting antibiotic resistance genes (ARGs) in metagenomic data from cattle faecal samples.
+- Data structure:
+  - ARGtype.csv: 10 columns; Column 1 is Type.level.results; columns 2–10 correspond to nine samples. Rows 2–25 contain data for “Copy of Antibiotic Resistant Genes (ARGs) per copy of 16S rRNA gene.” Rows 26–49 contain “Copy of ARGs per cell.” Empty cells indicate ARGs not detected.
+  - ARGSubtype.csv: 10 columns; Column 1 is Type.level.results; columns 2–10 correspond to nine samples. Rows 2–1209 contain data for “Copy of ARGs per copy of 16S rRNA gene”; rows 1210–2417 contain data for “Copy of ARGs per cell.” Empty cells indicate ARGs not detected.
+- Samples and provenance:
+  - Pool of faecal samples from 30 cattle (10 per farmlet: Red, Blue, Green) at North Wyke Farm Platform, Rothamsted Research, North Wyke, Devon.
+  - Each farmlet contributed 3 pooled samples (9 total samples) from cattle entering housing for the winter; DNA extracted from these pools.
+  - Sample identifiers: LZ1–LZ9, mapped as Red (LZ1–3), Blue (LZ4–6), Green (LZ7–9).
+- Laboratory and sequencing:
+  - DNA extracted using MO BIO PowerSoil DNA Isolation kit with a 65°C pre-heating step.
+  - DNA quality assessed with NanoDrop.
+  - Sequencing performed by the University of Exeter sequencing unit (commercial contract).
+  - Metagenomic data analyzed at the Environmental Biotechnology Laboratory, University of Hong Kong (commercial contract).
+- Reference methodology:
+  - Based on Yin, Xiaole et al. 2018, ARGs-OAP v2.0 with expanded SARG database and HMMs for ARG characterization and quantification in environmental metagenomes.
+- Licences and data linkage:
+  - Establishment licence XA11784A2; project licence P592D2677.
+  - Dataset linked to a previously deposited dataset (EIDC_SA_ec83a4ea-923a-4f02-8a9f-aeecc43d7123).
+- Data interpretation notes:
+  - EMPTY cells indicate ARGs not detected in that sample.
+  - Two measurement contexts: per copy of 16S rRNA gene and per cell.
+- Relevance for data governance and reuse (Data Leaders perspective):
+  - Clear data structure and metadata (sample mapping, sequencing provenance, and measurement units) support discoverability and reuse.
+  - Licences and project provenance enable proper governance and downstream integration with other datasets.
+  - Data can support cross-farmlet comparative analyses of ARG prevalence and assist in planning data standards, data sharing, and collaboration across the wider data community. 
+- Considerations and caveats:
+  - Pooling design reduces within-farmlet variability; nine samples total may limit granular inference.
+  - Data from 2016; context needed for temporal comparisons and cross-study harmonization.

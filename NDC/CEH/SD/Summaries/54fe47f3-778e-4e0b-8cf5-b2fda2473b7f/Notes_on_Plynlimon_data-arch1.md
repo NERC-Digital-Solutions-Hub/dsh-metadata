@@ -1,0 +1,29 @@
+# Plynlimon hydrochemistry data
+
+- Time period covered: March 2016 to March 2019
+- Sampling regime
+  - March 2016 – July 2017: sampling fortnightly
+  - August 2017 – November 2018: stream samples every 4 weeks; rain sample every 2 weeks
+  - December 2018 onwards: all samples every 4 weeks
+- Collection methods
+  - See Plynlimon_field_measurements_and_methods.csv for detailed procedures
+- Sample sites
+  - See Plynlimon_site_information.csv for site locations and related notes
+- Laboratory instrumentation and measurements
+  - See Description_of_column_headings.csv for details on instrumentation, units, and recorded values
+- Nature and units of recorded values
+  - See Description_of_column_headings.csv
+- Analytical methods
+  - See Description_of_column_headings.csv
+- Details of data structure
+  - See Description_of_column_headings.csv
+- Notes on reported values
+  - Values below the limit of detection (LOD) are recorded as half the LOD
+  - LOD values are provided in Description_of_column_headings.csv
+  - Determinants and methods described using the CEH Analytical Services Thesaurus (CAST)
+- Quality control and calibration
+  - pH, conductivity, and alkalinity measured at CEH Bangor; participate in LGC AquaCheck Proficiency Testing
+  - Other chemical analyses performed at CEH Lancaster; UKAS-accredited to ISO 17025:2005 for many analyses
+  - Data checked for missing values; blank cells indicate missing data due to insufficient sample, instrument failure, or fieldworker error
+- Other information useful to interpretation
+  - For consistency with earlier Plynlimon hydrochemistry data, Carregwen rainfall chemistry (C) rainfall measurements are taken from a rain gauge near Hafren (B) rather than the Carregwen Standard gauge site (A J); rainfall measurements at Carregwen began in September 2010

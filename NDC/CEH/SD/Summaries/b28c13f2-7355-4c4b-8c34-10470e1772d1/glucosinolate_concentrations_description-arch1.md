@@ -1,0 +1,23 @@
+# Description, Experimental Design and Collection:
+
+- This dataset contains glucosinolate concentrations collected from Brassica napus plants within FreeAir Diesel and Ozone Enrichment (FADOE) rings; full details and quality control are described by Ryalls et al. 2022 (reference [1]).
+- Each sample is coded by Sample_ug_g-1_dw (Column A) based on FADOE ring number, aphid inoculation treatment, plant number, and replicate per plant.
+- Field layout and timing:
+  - Four pollution treatments: diesel exhaust (D), ozone (O3), diesel exhaust plus ozone (D+O3), and control (CON).
+  - Two fields: originally in 2018 (lat 51.482853, lon -0.897749) and moved to an adjacent field in 2019 (lat 51.482374, lon -0.895855).
+  - Two rings assigned to each pollution treatment (Column C).
+- Aphid treatments:
+  - Inoculation with 50 aphids, 10 aphids, or no aphids.
+  - Leaves sampled from three plants for two aphid treatments: Aphids_present = Yes (50 aphids) or Aphids_present = No (no aphids) (Column E indicates Aphids_present).
+- Sample processing:
+  - Leaves were freeze-dried and ground to a fine powder; up to three replicate samples per ground sample (Column F: Replicate).
+- Glucosinolate measurements:
+  - Seven glucosinolates quantified by LC-MS following protocol in Jasper et al. 2020 (reference [2]): Progoitrin, Glucoalyssin, Gluconapin, Glucobrassicanapin, Glucobrassicin, 4-methoxyglucobrassicin, Neoglucobrassicin (Columns G–M).
+  - Totals calculated: Indolic_GLS (Column N), Aliphatic_GLS (Column O), Total_GLS (Column P).
+- Data provenance and methods:
+  - FADOE configuration methodology (reference [1]) and LC-MS protocol (reference [2]) cited for quality control and measurement details.
+- Data structure highlights:
+  - Key identifiers include Ring (Column B), Pollutant (Column C), Plant_ID (Column D), Aphids_present (Column E), and Sample_ug_g-1_dw (Column A) for traceability.
+- References:
+  - [1] Ryalls et al. 2022 (Anthropogenic air pollutants reduce insect-mediated pollination services), Environmental Pollution 297, 118847.
+  - [2] Jasper et al. 2020 (Growth temperature influences glucosinolate concentrations in rocket salad), Postharvest Biology and Technology 163, 111157.

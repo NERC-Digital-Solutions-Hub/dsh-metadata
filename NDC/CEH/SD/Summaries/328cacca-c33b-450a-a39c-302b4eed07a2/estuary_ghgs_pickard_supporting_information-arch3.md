@@ -1,0 +1,48 @@
+# Sampling regime
+
+- Purpose and scope
+  - Conduct sampling at seven UK estuaries to measure greenhouse gases and water chemistry across a salinity gradient, supporting environmental health monitoring and policy evaluation.
+  - Four coordinated sampling campaigns: July and October 2017, and January and April 2018.
+- Study sites
+  - Clyde, Forth, Tay (central Scotland)
+  - Conwy, Clwyd (northern Wales)
+  - Dart, Tamar (southwest England)
+- Sampling design and logistics
+  - Axial estuary surveys conducted from rigid inflatable boats or fixed points (bridges).
+  - Targeted salinity intervals across the gradient: 1 ppt, 2 ppt, 5 ppt, 10 ppt, 15 ppt, and >25 ppt; sampling point locations varied with salinity to span the gradient.
+  - In situ measurements of physico-chemical parameters at each location.
+- Field measurements and sample collection
+  - Temperature and salinity measured in situ ~10 cm below the surface using a probe, with readings from a Hach HQ30D sensor.
+  - Surface water collected in acid-washed buckets; a bulk sample split into subsamples for various analyses.
+- Greenhouse gas sampling methods
+  - Clyde, Clwyd, Conwy, Forth, and Tay: duplicates collected via headspace method.
+    - 40 mL estuary water equilibrated with 20 mL ambient headspace in a luer-lock syringe with a 3-way valve; syringe shaken underwater for equilibration.
+    - Headspace samples injected into pre-evacuated 12 mL vials for GC analysis; ambient air sample also collected.
+  - Tamar and Dart estuaries: samples collected into 500 mL borosilicate bottles, overfilled three times to expel air bubbles, preserved with 100 µL mercuric chloride, and analyzed by GC.
+- Gas analysis and data processing
+  - Clyde, Clywd, Conwy, Forth, Tay: GC with FID for CH4 and CO2; μECD for N2O; specific limits of detection (CH4 40 ppb, CO2 5000 ppb, N2O 5 ppb).
+  - Tamar and Dart: single-phase equilibration GC with FID for CH4 and an electron capture detector for N2O.
+  - Calibration against certified standards traceable to NOAA/WMO; multiple standards used (e.g., CH4 1.12–98.2 ppm; CO2 202–5253 ppm; N2O 0.208–1.04 ppm).
+  - Temperature equilibration for Tamar/Dart samples to ~25°C; gas concentrations calculated using Henry’s Law and Bunsen solubility corrections for temperature and salinity.
+  - CH4 concentrations in seawater adjusted to salinity and ~25°C using solubility tables (Weiss and Price, 1980).
+- Water chemistry analyses
+  - Dissolved organic carbon (DOC) measured at UKCEH using a Shimadzu TOC-L after filtration (0.45 µm); LoD not specified here; full method described in García-Martín et al. (2021).
+  - Total dissolved carbon (TDC) for freshwater samples measured to include inorganic and organic carbon; method excludes inorganic carbon in acidified steps.
+  - Freshwater nutrients (Position 1; with Conwy sampling variation) analyzed at UKCEH using:
+    - Nitrate + nitrite (NO3- + NO2-): ion chromatography; LoD 0.06 mg/L N; QC samples every 10 samples; different QC every 20 samples.
+    - Ammonium (NH4-N): colorimetric indophenol blue with nitrate citrate; LoD 0.033 mg/L N; calibration and QC as above.
+    - Total Nitrogen (TN): Shimadzu TOC-L with TNM-L module; LoD 0.08 mg/L N.
+    - Total Phosphorus (TP): K2S2O8 digestion and molybdenum blue colorimetry; LoD 0.008 mg/L P.
+    - Soluble reactive phosphorus (PO4-P): colorimetric with ammonium molybdenum blue; LoD 0.005 mg/L P.
+  - Saline nutrients (Positions 2–6) analyzed at Plymouth Marine Laboratory by SEAL Analytical AAIII autoanalyser; methods aligned with GO-SHIP protocols; LoDs:
+    - NO3- + NO2-: 0.02 µM/L
+    - Nitrite: 0.01 µM/L
+    - Ammonium: 0.04 µM/L
+    - Phosphate and Silicate: 0.02 µM/L
+  - Data handling across labs
+    - Labs differ for freshwater vs saline analyses; many missing values arise where data are not collected at both labs.
+    - Data reported to two decimal places; missing values marked with an asterisk in the CSV.
+    - Column definitions describe estuary, position (1 = upstream freshwater to 6 = downstream saline), coordinates, date fields, salinity, temperature, and various nutrient and carbon species.
+- Data quality, governance, and documentation
+  - Acknowledges the need for consistent metadata and cross-lab comparability; explicit notes on missing data due to lab separation and sampling positions.
+  - References provided for methods and calibration standards, ensuring traceability and replicability (e.g., GOSHIP nutrient manual, GO-SHIP protocols, and established analytical methods from supporting literature).

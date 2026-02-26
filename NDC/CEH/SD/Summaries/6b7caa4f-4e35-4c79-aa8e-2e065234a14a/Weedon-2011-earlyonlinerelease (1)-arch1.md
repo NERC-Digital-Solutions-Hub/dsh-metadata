@@ -1,0 +1,41 @@
+# Creation of the WATCHForcing Data and its use to assess global and regional reference crop evaporation over land during the twentieth century
+
+- Provides basin- and period-specific data and trends for key evapotranspiration and meteorological variables used in the WATCH Forcing Data (WFD), focusing on 1901–1957, 1958–2001, and 1979–2001 intervals.
+- Key variables documented per basin and period:
+  - PET rc (mm/yr) and PET PT (mm/yr)
+  - Net Radiance (Net Rad, W/m^2)
+  - Vapor Pressure Deficit (VPD, kPa)
+  - Wind (m/s)
+  - Rainfall and Precipitation (mm/yr)
+  - Snowfall (mm/yr)
+- For each basin, reports:
+  - Average values for each period
+  - Slopes (rate of change per year) with min/max bounds
+  - Neff (effective sample size)
+  - Adjusted P-values indicating statistical significance of trends
+- Observed patterns across basins and periods:
+  - PET rc generally shows varying trends by basin; some basins exhibit modest increases or decreases over time, with significant changes in certain subperiods.
+  - PET PT trends often differ from PET rc, typically showing distinct regional responses and sometimes larger long-term changes, underscoring uncertainty in PET estimation methods.
+  - Net Rad and VPD display notable temporal changes in several basins, influencing PET and water balance.
+  - Precipitation trends are basin- and period-dependent, with some basins showing increases and others decreases; rainfall and snowfall contributions vary considerably by region.
+- Basin examples highlighted:
+  - Orange River Basin
+    - PET rc: 1901–1957 average 1429.10 mm/yr; 1958–2001 average 1449.35 mm/yr; 1979–2001 average 1623.47 mm/yr with varying slopes and significance.
+    - PET PT: 1901–1957 average 959.10 mm/yr; 1958–2001 average 997.21 mm/yr; 1979–2001 average 1028.81 mm/yr with generally positive trends.
+    - Net Rad and VPD show modest shifts; Wind relatively stable; Rainfall and Snowfall variable.
+  - Lena River Basin
+    - PET rc: 1901–1957 average 363.47 mm/yr; 1958–2001 average 366.70 mm/yr (slight negative trend); 1979–2001 average 366.11 mm/yr.
+    - PET PT: 1901–1957 average 312.82 mm/yr; 1958–2001 average 313.48 mm/yr; 1979–2001 average 314.73 mm/yr.
+    - Net Rad remains low; VPD and Wind show modest changes; Rainfall and Snowfall patterns vary across periods.
+  - Ganges-Brahmaputra River Basin
+    - PET rc: 1901–1957 average 889.32 mm/yr; 1958–2001 average 869.68 mm/yr; 1979–2001 average 843.63 mm/yr (declining trends across periods).
+    - PET PT: 1901–1957 average 798.70 mm/yr; 1958–2001 average 767.99 mm/yr; 1979–2001 average 752.00 mm/yr (declining trends).
+    - Net Rad tends to be higher in the earlier period and declines in later periods; VPD and Wind show regional variations; Rainfall and Snowfall exhibit substantial interannual variability.
+- Data context and purpose:
+  - These basin-level figures illustrate how PET estimates (rc vs PT) and driving meteorological variables evolve over time, informing model sensitivity analyses, hydrological assessments, and intercomparison studies.
+  - The dataset supports evaluating diurnal-to-dennial variability and long-term hydrological responses under the WATCH forcing framework.
+- Methodological notes:
+  - PET rc is computed with a fixed reference crop and resistances; PET PT is used as an alternative, particularly in humid regions.
+  - Trends are reported with corresponding statistical indicators (slope, min/max slope, Neff, and adjusted P-values) to indicate significance and robustness.
+- Appendix-related information:
+  - Appendix Table 1 documents the order of ERA-40 basis years used for 1901–1957, outlining periods in which ERA-40 and WATCH Forcing Data basis years alternate (ERA-40 and WFD, five-year cycles), to support reproducibility of the forcing data construction.

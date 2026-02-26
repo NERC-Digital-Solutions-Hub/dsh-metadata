@@ -1,0 +1,37 @@
+# Data collection/generation methods
+
+- Study design and sampling scope
+  - Targeted freshwater systems: streams and rivers in the English Lake District; lakes/broads sampled in pelagic zones; sampling adapted when boats unavailable (shore sampling 2–5 m from shore).
+  - Norfolk Broads: all rivers sampled by boat from well-mixed flow areas.
+- Field sampling procedures
+  - In-field measurements: water temperature, pH, and electrical conductivity measured on unfiltered samples immediately using handheld probes (WTW 3420 and WTW 340i).
+  - Sample filtration: NO3, NO2, NH4, and SRP filtered in the field using 0.45 µm cellulose acetate syringe filters; NO3 isotope samples filtered to 0.2 µm.
+  - Sample preservation: all water samples kept on ice during transport; stored at 4°C in the dark (NO3 isotopes frozen at -20°C).
+- Laboratory analyses
+  - Nutrient concentrations: NO2, NO3, NH4, and SRP analysed colorimetrically with an AQ2 Discrete Analyser.
+  - Method specifics:
+    - NO2: USEPA 353.2 (sulfanilamide), range 0.01–0.1 mg NO2-N/L.
+    - NO3: reduction to NO2 with copperised cadmium coil; range 0.012–2.0 mg NO3-N/L; NO3 calculated by difference.
+    - NH4: USEPA Method 350.1, range 0.02–1.0 mg NH4-N/L.
+    - SRP: USEPA Method 365.1 (molybdate/ascorbic acid), range 0.005–1.0 mg PO4-P/L.
+- Isotope analyses
+  - Dual isotope signatures of NO3 (δ15N-NO3 and δ18O-NO3) via the denitrifier method.
+  - Interference removal: if NO2 > 0.01 mg NO2-N/L, treated with sulfamic acid.
+  - Sample processing: 20 or 10 nmol NO3 converted to N2O depending on concentration; isotopes measured with Isoprime TraceGas system at NEIF, UKCEH Lancaster.
+- Quality control and calibration
+  - Field blanks included each sampling visit; calibration with externally certified standards.
+  - 10% of samples reanalyzed for precision.
+  - Isotopic calibrations: δ15N-NO3 with USGS-34 and IAEA-NO-3; δ18O-NO3 with USGS-34, USGS-35, IAEA-NO-3.
+  - Standards run in triplicate; environmental samples run in triplicate; target precision: ≤0.2‰ for δ15N-NO3 and ≤0.5‰ for δ18O-NO3.
+- Data structure and metadata
+  - Datasets comprise 13 headers including: Date_and_time, Sample_ID, Temperature, pH, EC, NO2, NO3, NH4, SRP, δ15N_NO3, δ18O_NO3, Latitude, Longitude (plus other field identifiers).
+  - Units:
+    - pH: dimensionless (log H+)
+    - EC: µS/cm at 25°C
+    - Temperature: °C
+    - Concentrations (NO2, NO3, NH4, SRP): mg N/L or mg P/L as specified
+    - δ15N_NO3: per mil relative to AIR-N2
+    - δ18O_NO3: per mil relative to VSMOW
+- Data handling and governance notes (implied)
+  - Emphasis on sample handling consistency (ice, dark storage) and in-field QC to support data reliability for monitoring frameworks.
+  - Detailed methodological documentation facilitates comparability and potential data sharing, with clear unit conventions and calibration standards.

@@ -1,0 +1,32 @@
+# Experimental design/sampling regime
+
+- The UK Butterfly Monitoring Scheme (UKBMS) collects data from over 1,000 sites per year across the UK, using standardized field methods to estimate butterfly abundance.
+- Sampling approaches
+  - All-species transects: fixed-route line transect (2–4 km), 5 m wide band, weekly counts from early April to late September (roughly 26 counts/year); routes fixed to compare sightings year over year.
+  - Single-species transects: follow the same methodology but record only one focal species for a subset of weeks.
+  - Timed counts and egg/larval web counts: record abundance for a species over a set period/area; conducted under specified weather conditions.
+- Data collection workflow
+  - Field data recorded on standard forms; entered into Transect Walker software (free download via UKBMS site).
+  - Data input by the recorder or regional transect coordinator; transect coordinators compile region data at season end.
+  - Transect Walker files uploaded to an Oracle database containing all records.
+- Analytical methods
+  - After validation, missing values are imputed and a site index is computed using General Additive Models (GAM).
+  - Collated Index: national annual index per species derived by aggregating site indices; estimated with a log-linear regression to handle incomplete annual monitoring.
+  - Trends are derived from collated indices using linear regression:
+    - Whole time series (1976–2011)
+    - Last 20 years (1992–2011)
+    - Last 10 years (2002–2011)
+  - Note: earlier years may lack collated indices for some species due to insufficient data; trends specify the number of contributing years.
+- Data terminology and units
+  - Site index: a relative measure of population size, expected to scale with more intensive methods (e.g., MRR); not absolute counts.
+  - Collated Indices are log10-transformed; indices are scaled so the average equals 2.
+  - Reported trends are the slope of the Collated Index over time, with descriptive labels (rapid decline/increase, stable) based on significance.
+- Quality control and validation
+  - Automatic checks in Transect Walker flag data entry errors (e.g., unusually high counts, records outside flight periods).
+  - Regional coordinators review records; additional automated/manual checks verify species distribution, flight periods, new site records, and outlier abundances.
+- Data products and storage
+  - Stored format: CSV file describing species trends with fields such as species, common name, number of years, series slope/Std.Err/P-value, series trend, percent change, and 10- and 20-year slope/trend/percent change.
+  - Species identifiers use scientific names (Fauna Europaea) and vernacular names (standard references).
+- Temporal and data availability notes
+  - Indices are updated annually as new monitoring data are incorporated; past years’ indices may be revised.
+  - Long-term trends cover multiple timeframes, with explicit notes on years contributing to the analysis for each species.

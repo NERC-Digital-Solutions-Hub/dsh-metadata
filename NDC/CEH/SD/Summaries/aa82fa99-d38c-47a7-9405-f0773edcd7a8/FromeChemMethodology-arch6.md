@@ -1,0 +1,40 @@
+# Methodology
+
+- Overview
+  - Long-term water quality dataset for River Frome at East Stoke, with samples filtered on return to the laboratory and analysed as soon as possible to minimise sample stability errors.
+  - Samples not analysed within the allotted time were omitted from the dataset.
+- Sampling and data inclusion
+  - Main river flow sampled at the East Stoke gauging station; analyses typically completed within a week.
+  - Omission criteria include instrument breakdowns, failure to meet quality control standards, or insufficient analytical staff time.
+  - Across the dataset lifetime, methodological changes were managed by parallel running old and new methods for 3–6 months to maintain comparability; any value changes due to new methods are discussed in the relevant determinand notes.
+- Determinands and analytical methods
+  - Nitrogen (NO3-N and TON)
+    - 1965–1986: nitrate as NO3-N by diphenyl sulphonic acid colorimetry.
+    - 1986–2004: combined NO3-N and NO2-N (TON) measured after cadmium reduction to NO2, with colorimetry; slight method-related differences observed.
+    - 2006 onward: nitrate-N analysed by ion chromatography (Dionex); TON approximates NO3-N in most rivers.
+  - Phosphorus
+    - Soluble reactive phosphorus (SRP) measured by molybdenum blue colorimetry; various handling/automation steps from 1965 onward.
+    - TP and TDP: digestion of filtered and unfiltered samples with acidic persulfate, followed by molybdate reaction and spectrophotometric measurement; pre-2004, LOCAR 2004–2006, and CEH 2007–2009 periods used different approaches (including ICP-OES during LOCAR), causing notable inter-method differences.
+    - A two-year portion (2004–2006) analysed by different laboratories showed significant differences and was omitted from the long-term data set.
+  - Dissolved reactive silicon
+    - Measured via molybdate-based method forming silicomolybdenum blues; automation progressed from FIAstar 5012 (1986) to Seal AutoAnalyzer 2 (2006), with reductant changes from metol-sulfite to tin(II) chloride.
+  - Major ions and cations
+    - Na, K, Mg, Ca: atomic absorption spectroscopy (1965–1996); IC (1997–2009).
+    - Sulfate and chloride: IC (1997 onward).
+  - pH
+    - Measured on unfiltered samples within 6 hours of sampling; method evolution included colorimetric pH indicators (1965–1995) and later an Autotitrator (1996–2004) with glass electrode; equilibration times adjusted.
+  - Conductivity
+    - Measured on unfiltered samples within 6 hours using handheld meters with a 2-minute equilibration.
+  - Alkalinity
+    - Determined by titration with HCl; Metrohme 702 Autotitrator used 1996–2004; Gran titration plots used for calculation.
+  - Suspended solids
+    - Measured by filtering a known mass, drying the filter to constant weight at 70°C for 24 h, and weighing.
+- Temporal changes and data comparability
+  - Method changes prompted parallel testing to align results; long-term comparability relies on documentation of changes and discussion in determinand-specific notes.
+  - Notable inter-method differences include TON vs NO3-N interpretation, SRP stability, and TP discrepancies between ICP-OES and earlier methods.
+  - Specific long-term data adjustments included omitting a two-year portion (2004–2006) due to significant discrepancies.
+- Data quality controls and gaps
+  - Omission of data when analyses could not be completed within the defined time window.
+  - Acknowledgement of variability introduced by method changes and laboratory differences, with explicit notes in the respective determinand sections.
+- References to methodologies
+  - Methods are grounded in standard references and project-specific publications (e.g., APHA 1965; Murphy & Riley; Mullin & Riley; Tecator; Bowes et al. 2009; Casey et al. 1993; Eisenreich et al. 1975; House & Warwick 1998).

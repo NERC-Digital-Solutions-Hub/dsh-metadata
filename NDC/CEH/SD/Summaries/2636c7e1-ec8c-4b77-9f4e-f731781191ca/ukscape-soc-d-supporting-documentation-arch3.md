@@ -1,0 +1,84 @@
+# Soil Organic Carbon Dynamics (SOC-D) data description for five grassland-to-woodland contrasts across England
+
+- Purpose and scope
+  - Describes co-located aboveground and belowground measurements across five grassland-to-woodland contrasts in England (2018–2021) to understand soil organic carbon (SOC) dynamics.
+  - Aims to identify biotic and abiotic controls on SOC, quantify where UK soil carbon stocks are at risk, and inform land-management policies to increase SOC.
+  - Supports development of a flexible, process-based SOC dynamics model that can be embedded in other soil models.
+
+- What was measured
+  - Aboveground and litter
+    - Aboveground net primary productivity (ANPP) and litter layer depth; used leaf dry matter content (LDMC) and cover-weighted LDMC (cLDMC) to estimate ANPP.
+  - Soil physical, chemical and biological properties (0–100 cm)
+    - Common measurements on 0–100 cm cores across up to six depth increments; in some sites, limited to top and bottom layers or grids.
+    - Key properties: bulk density (BD), soil moisture, pH (DIW and CaCl2), electrical conductivity (EC), LOI, total carbon (C), total nitrogen (N), total phosphorus (P), dissolved organic carbon (DOC), nitrate (NO3-N), cation exchange capacity (CEC), NO3-N, NH4-N, and related soil chemistry.
+  - Soil physical properties and hydrology
+    - Soil hydraulic properties: water release curves (HYPROP) and unsaturated hydraulic conductivity (K) from field mini-disk infiltrometer tests.
+    - Deep soil cores (0–100 cm) with multiple corer types; field and laboratory measurements of moisture retention and conductivity.
+  - Earthworms
+    - Hand-sorted earthworm counts and fresh biomass (species-level data where possible).
+  - Soil texture and structure
+    - Particle size distribution (PSD) and texture via laser diffraction; mineral and organic fractions; aggregate size distribution (ASD).
+  - Soil organic matter (SOM) pools
+    - Density fractionation to obtain four SOM pools: dissolved organic carbon (DOC), light fraction (LP, i.e., particulate organic matter), occluded particulate (OP), and mineral-associated (MA) fractions; C and N quantified in each fraction; C:N ratios reported.
+  - Enzyme activities (selected sites)
+    - Extracellular enzyme activities (β-glucosidase, N-acetylglucosaminidase, leucine aminopeptidase, phosphatase, phenol oxidase) for AH, WW, KF sites (not available at Gisburn due to method issues).
+  - Microbial communities
+    - Prokaryotic and fungal community composition via amplicon sequencing (16S rRNA gene, ITS2) and shotgun metagenomics; data processed to NMDS axes and taxonomic/functional summaries; microbial biomass proxies from sequencing metrics.
+  - Additional soil metrics
+    - DOM measurements, various soil nutrients, CEC, NO3, inorganic N, enzyme-to-C/N ratios, and other top- and sub-soil metrics as part of the soil metrics datasets.
+
+- Study design and site details
+  - Sites and land-use contrasts
+    - Gisburn-1: grazed grassland x conifer
+    - Gisburn-2: ungrazed grassland x broadleaf
+    - Alice Holt: grazed grassland x broadleaf
+    - Wytham Woods: grazed grassland x broadleaf
+    - Kielder Forest: unmanaged grassland x conifer
+  - Plot and grid layout
+    - Each contrast has two plots (grassland and woodland). Each plot divided into three grids (grassland grids 1–3; woodland grids 4–6), with nine sampling locations per grid, totaling 18 sampling locations per contrast.
+    - Sampling locations randomized within grids; field maps created to relate sampling points to the grassland-woodland boundary and to measure distances from boundary and grid edges.
+  - Sampling timeframe
+    - Field sampling of soil cores between November 2018 and March 2019; additional measurements (infiltration, earthworms, ANPP) conducted 2020–2021.
+  - Sampling methods
+    - Multiple core types and depths (0–5 cm, 5–15 cm, 15–30 cm, 30–50/60 cm, 50/60–100 cm); HyPROP cores for water retention (0–5 cm; 30–35 cm at some sites); 0–15 cm topsoil cores via national survey-type corers; deeper 0–100 cm cores via Cobra precision corer or Russian Auger as appropriate.
+    - Litter and vegetation measurements collected in proximity to sampling points; litter depth measured at three points per location.
+  - Data processing and quality control
+    - ANPP derived from LDMC using regression models with error propagation via Monte Carlo methods; detailed R-Markdown workflow for predictions.
+    - HYPROP data analyzed with HYPROP-FIT; K measured with mini-disk infiltrometer; QA includes internal standards, blanks, duplicates.
+    - Soil chemical analyses (C, N, P, NO3, DOC, CEC, etc.) performed with standardized, UKAS-accredited methods; SC/LOI measured via thermogravimetric analysis with QA checks and internal standards.
+    - PSD and ASD measured with laser diffraction; fixed QA with standard samples and replicated measurements.
+    - SOM density fractionation performed with sodium polytungstate (SPT) density separation; fractions (LP, OP, MA) and DOM quantified; carbon and nitrogen quantified in each fraction; enzyme activities assayed where possible; microbial sequencing data generated and processed with standard pipelines (DADA2 for amplicons; Kraken2 for metagenomics).
+  - Data management and sharing
+    - Datasets are organized into multiple CSV files linked by a central connector file; 458 sample IDs and 91 locations; coordinates and site metadata provided for geolocation.
+    - Some measurements flagged as NA where not collected at particular sites or where data quality prevented analysis (e.g., HYPROP at Alice Holt; earthworms at WW; some enzyme data omitted due to incorrect buffer).
+    - Microbial sequence data deposited in ENA under project PRJEB66294; derived metrics included.
+    - Missing values are explicitly marked as NA; data structure includes explicit connectors (site, plot, grid, core, slice, depth).
+
+- Data structure and accessibility
+  - Core data files
+    - SOC-D_DATABASE_CONNECTOR.csv: links sample IDs to site, land-use, plots, grids, cores, transition and lateral distances, slices, and location IDs.
+    - SOC-D_DATABASE_LOCATIONS.csv: location-level metadata, including grid references and coordinates (X, Y; latitude/longitude).
+    - SOC-D_DATABASE_ANPP.csv: ANPP estimates with site, land-use, LDMC-derived inputs, and model types; includes ANPP mean, high, and low values.
+    - SOC-D_DATABASE_LITTER_DEPTH.csv: litter depth (cm) per location.
+    - SOC-DATABASE_COMMON_SOIL_METRICS.csv: top-level soil metrics ( FIELD_WATER_CONTENT, BD, pH, LOI, C/N, EC, NO3, DOC, CEC, etc.) across all depths and samples.
+    - SOC-DATABASE_SOIL_METRICS_GRID2_GRID5.csv: depth- and grid-specific soil metrics (grid 2 grassland; grid 5 woodland) including detailed mineral fractions and related properties.
+    - SOC-DATABASE_HYPROP_1-3, HYPROP_RETENTION_T_PF.csv, HYPROP_CONDUCTIVITY_K_PF.csv, HYPROP_CONDUCTIVITY_K_T.csv: HYPROP raw data and derived hydraulic properties.
+    - SOC-DATABASE_EARTHWORMS.csv: earthworm counts and biomass by species (with species-specific columns and total abundance/biomass).
+  - Supplementary materials
+    - Supplement A: field-site visuals and location mapping data.
+    - Supplement B: detailed coring information by site.
+    - Supplement C: measurement prioritization and analysis plans for additional measurements.
+
+- Data gaps and considerations for monitoring frameworks
+  - Completeness varies by site and measurement; some high-cost or site-specific measurements are limited or NA at certain sites (e.g., HYPROP at Alice Holt; earthworms in Wytham; some enzyme data not collected due to buffer issues at Gisburn).
+  - Data quality controls implemented (blanks, standards, duplicates) with documented QA procedures; certain analyses faced logistical constraints (e.g., microbial biomass measurements affected by freezing, delaying some analyses).
+  - The dataset provides a modular structure suitable for integration into larger monitoring frameworks and process-based SOC models; allows cross-site comparisons of land-use contrasts and depth-dependent SOC dynamics.
+
+- Context and projects
+  - Part of the UK-SCAPE programme; linked to SOC-D project NE/R016429/1 (2018–2024); collaborations with Forest Research and five UK sites.
+  - Related projects and data platforms: ELUM, GMEP, UGRASS, ERAMMP; data described here support national-scale SOC understanding and policy-relevant decision-making.
+
+- Data usage and potential applications
+  - Enables analysis of SOC sensitivity to climate and land-management changes, SOC–soil-structure–biota feedbacks, and assessment of key soil metrics and modelling approaches for SOC dynamics.
+  - Supports identification of UK regions and soil-vegetation-climate combinations where SOC may be at risk and where management interventions could maximize SOC storage.
+  - Provides open, well-documented datasets with connectors to enable integration into monitoring frameworks, policy evaluation, and model development.

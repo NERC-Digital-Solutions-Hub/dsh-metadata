@@ -1,0 +1,42 @@
+# 1.1 Brief methods overview
+
+- Context and objective: The SANH (South Asia Nitrogen Hub) collected and analyzed nitrogen-related policies in South Asia to identify gaps and opportunities for managing reactive nitrogen (Nr) and to inform future policy needs. The work builds on Kanter et al. (2020) global assessment.
+- Dataset scope: SANH created a policy database with 966 nitrogen-relevant policies valid in 2019, collected in 2020–2021, across eight South Asian countries (Afghanistan, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan, Sri Lanka).
+- Data sources and provenance:
+  - Primary sources: FAOLEX/ECOLEX (55%) and other web sources (45%).
+  - The SANH dataset extends Kanter et al. (2020) global data with regional additions.
+  - For each policy: title, year, data source, Rec.Id (if FAOLEX), URL, policy type, country, territorial level, language, and responsible ministry.
+- Country-level policy counts (2019SANH dataset): Afghanistan 89; Bangladesh 187; Bhutan 60; India 192; Maldives 40; Nepal 108; Pakistan 175; Sri Lanka 115 (total 966).
+- Policy coverage: Documents include legislation, acts, laws, regulations, plans, strategies, standards, rules, codes, frameworks, and guidelines across sectors such as agriculture, land use, environment, health, marine, urban development, water/waste, transport, energy, and industry.
+- Data collection and documentation:
+  - Systematic collection of nitrogen-relevant policies from FAOLEX and government sources; descriptive fields recorded in a spreadsheet.
+  - For FAOLEX-sourced policies, Rec.Id and direct URL were captured.
+- Collection timeframe and methodology:
+  - Policies were collected up to December 2019; compilation and validation occurred 2020–2021.
+  - A structured workflow included data capture, source linking, and consistency checks across partners.
+- Filtering (relevance and structure):
+  - Relevance guided by sector alignment and keywords (e.g., fertilizer, nitrogen pollution, nitrate, ammonia, emissions, water/air quality, etc.).
+  - Policies were assessed for core (central) vs subordinate (amendments, regulations) and whether amendments added substantial nitrogen content; some were clustered or excluded if minor.
+- Classification framework:
+  - Policies classified by environmental sink, sector/sub-sector, policy type, pollution source type, impact direction, impact scope, and relevance.
+  - Classification mirrors Kanter et al. (2020) with additional categories; detailed definitions are provided in the accompanying tables (Table 2 and Table 3).
+  - Examples of classifications:
+    - Sinks: Water, Air, Climate, Soil, Ecosystem, Multiple, NA.
+    - Sectors: Agriculture, Energy, Food, Industry, Land Use Change, Transport, Urban Development & Tourism, Waste, Other, Multiple, NA.
+    - Policy types: Regulatory, Economic, Framework, Data & Methods, R&D, Commerce, Pro-nitrogen, etc.
+    - Pollution types: Point source, Non-point source, Both, Unspecified, NA.
+    - Impact direction: Positive, Mixed/Neutral, Negative.
+    - Impact scope: Large, Medium, Small.
+    - Relevance: High (direct), Medium (indirect).
+- Data quality control and governance:
+  - Collaborative, interdisciplinary approach with Kanter as co-author to align with the global study.
+  - Core coordination team facilitated co-design, consistency, and progress; biweekly online meetings supported momentum.
+  - One-to-one training and discussions ensured uniform capacity across partners.
+  - Country datasets were quality-checked by coordinators and external reviewers (including Kanter) to ensure alignment of filtering and classification.
+  - Local partners were essential to identifying datasets and overcoming language barriers.
+- Purpose and output:
+  - The SANH database supports identifying policy gaps and opportunities for nitrogen management in South Asia.
+  - It provides a structured, multi-criteria view of nitrogen-related policy instruments, across sinks, sectors, and policy types, enabling analysis of coverage, strength, and potential coordination needs.
+- Context for data leaders:
+  - Demonstrates the value of a centralized, well-documented policy data asset with clear provenance, metadata, and versioning.
+  - Highlights importance of cross-source integration, rigorous filtering/classification, and robust quality control to produce actionable policy insights.

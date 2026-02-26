@@ -1,0 +1,11 @@
+# Notes on the downloadable data
+
+- Location privacy: CEH keeps the precise locations of Countryside Survey (CS) squares confidential; external users cannot identify squares to better than 100 square km, so you cannot determine if squares fall within defined areas below that threshold.
+- Data scope and structure: CS field survey data come from a sample of 1 km squares in GB, with measurements at two levels—whole square and within-square (e.g., quadrats for vegetation, soils, etc.); measurements include binary and continuous variables.
+- Sampling design: not a random subset; the sample is stratified by the ITE Land Classification. Country-specific classifications are used (England: 21 classes, Wales: 8, Scotland: 16). The classification has evolved (32 → 42 → 45 classes) to accommodate separate country reporting.
+- Representativeness and exclusions: not all GB squares are surveyed; squares that are >90% sea or >75% urban were excluded. Official GB estimates assume excluded squares have similar vegetative land composition to sampled squares; bias is likely small except in regions with substantial sea/urban areas.
+- Estimation method: estimates by land class use ratio estimation, weighted by the vegetative land area in each class. Land-class estimates are then combined using these vegetative-area weights.
+- Uncertainty and inference: since 1998, standard errors and confidence intervals are estimated using bootstrap methods due to skewness in some features.
+- Data interpretation notes: measurements span various data types and scales; results are contingent on accounting for stratification and the sampling design to avoid biased estimates of variation.
+- Practical guidance for data use: apply the stratified design and weights when analyzing CS data; be mindful of limited geographic precision and the potential differences between included and excluded squares; leverage bootstrap-based uncertainty measures for robust inferences.
+- References for methodology: Barr et al. (1993); Cochran (1963); Efron & Tibshirani (1993).

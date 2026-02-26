@@ -1,0 +1,46 @@
+# GLASTIR MONITORING & EVALUATION PROGRAMME MAPPING FIELD HANDBOOK Part 1: Habitat attributes
+
+- The Visit Status field is mandatory for every Event, Point, and Area to indicate survey progress and access permissions. Statuses include:
+  - UNSURVEYED (0)
+  - IN PROGRESS (1)
+  - COMPLETED (2)
+  - REFUSED ACCESS (3)
+- How visit status is used:
+  - REFUSED ACCESS marks areas where surveying is not possible.
+  - IN PROGRESS serves as a reminder to complete species composition data later.
+  - COMPLETED should only be used when the feature is fully mapped; if extent, changes, or internal patches are uncertain, do not mark as completed.
+  - Upon finishing a square, all features should be either COMPLETED or REFUSED ACCESS.
+- GIS searching and status management:
+  - Three search methods are available, each with pros and cons:
+    - FIND command (binocular icon): search by layer and Visit Status (0 or 1 is common); can flash features on the map; right-click for “Zoom to feature.”
+    - SELECT BY ATTRIBUTE: highlights features across the map; can search multiple terms but does not generate a feature list; useful for multi-criteria searches.
+    - ATTRIBUTE TABLE: shows a table of features to select and edit; can work through selections but typically single-criteria searches.
+  - Tips:
+    - Use the FIND or SELECT BY ATTRIBUTE to identify unsurveyed or in-progress features to finish.
+    - Save and reload search criteria to speed up repeated surveying across sub-areas.
+    - Use the unique values option to quickly access 0, 1, 2, 3 without typing.
+    - Clear highlights when done and adjust layers as needed.
+- Minimum mapping unit (MMU) and editing guidance:
+  - Features smaller than MMU should not be mapped as polygons; line and point handling follows its own rules.
+  - If a corner of a field intrudes into a square, include it in the adjoining polygon when appropriate.
+  - To split or merge polygons without losing data fields, use the UPDATE tool rather than manual splitting; you can also copy selections from other layers to add to existing polygons.
+  - Freehand drawing and combining selections across layers via Copy+ and Copy- enables editing without losing previous work.
+- Identifying Ancient (Veteran) Trees:
+  - An ancient/veteran tree is generally old for its species and often features:
+    - Large girth for the species
+    - Substantial dead wood in the canopy
+    - Hollow or progressively hollow trunk
+    - Various indicators such as water pools, trunk damage, decay holes, bark loss, crevices, sap, fungal fruiting bodies, epiphytic plants, and high wildlife interdependence
+    - An old appearance and potential cultural/historic value
+  - The term “ancient” and “veteran” are interchangeable in this guidance.
+  - Girth-based classification:
+    - Minimum girth thresholds are species-specific and reported in a detailed table (girth is measured at 1.3 metres above ground, DBH is the equivalent metric).
+    - The table links maximum girth and threshold categories (potentially interesting, valuable, truly ancient) to approximate DBH values; thresholds serve as a guide and are not sole determinants.
+  - Important caveats:
+    - Girth alone is not a definitive indicator of age; conditions, management (e.g., pollarding), and growth rates vary by species and site.
+    - Use a combination of girth and multiple indicators to assess ancient status.
+  - Species have species-specific thresholds and guidance notes, including for factors such as pollarding history, cavity presence, and ecological value.
+- Practical notes on data capture and interpretation:
+  - Tree girth measurements integrate with the broader dataset on ancient trees and habitat assets.
+  - The guidance emphasizes caution in relying solely on size, and encourages comprehensive assessment using multiple indicators.
+  - The data model supports incorporation of ancient-tree attributes alongside other biodiversity and habitat indicators for robust analyses.

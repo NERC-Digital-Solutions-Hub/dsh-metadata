@@ -1,0 +1,79 @@
+# Details of Cleaned UK Rainfall Chemistry Data (1986 - 2011)
+
+- Scope and provenance
+  - Based on UK rainfall chemistry data from the UK-AIR database (Defra).
+  - Subset of 20 sites selected for the longest continuous data record from 1986 to 2011.
+  - Samples collected weekly or every two weeks and analyzed by a central laboratory.
+
+- Data quality and cleaning process
+  - Contamination and sampling issues identified in raw data (bird droppings, wind-blown dust, sample loss).
+  - Ion balance check: (cations − anions) / (cations + anions) used to judge quality.
+    - Acceptable range: −10% to +20%, extended to −10% to +30% when total ion concentration < 200 µeq L−1.
+  - Contamination criteria and exclusions:
+    - Phosphate (PO4 3−) > 10 µeq L−1: eliminated.
+    - Ammonium (NH4+) > 100 µeq L−1: examined.
+    - Potassium (K+) > 8 µeq L−1: eliminated.
+    - Calcium (Ca2+) > 50 µeq L−1 with Ca > Na: excluded as wind-blown dust contamination (conservative).
+  - Missing data handling: after contamination removal, missing values estimated using GENSTAT MULTMISSING with time- and space-based interpolation.
+  - Final datasets: contain both accepted measurements and estimated values, with appropriate flags.
+
+- Data content and structure
+  - Each site file (e.g., Sitename.csv) contains:
+    - Sample start date and end date.
+    - Ion concentration columns: Ca2+, Cl−, H+, K+, Mg2+, NH4+, NO3−, Na+, PO4 3−, SO4 2−, non-sea SO4 2− (calculated from Na+ using average sea-salt composition).
+    - Conductance (µS cm−1).
+    - Precipitation depth (mm).
+    - Data flag for each sample.
+  - Units and conversions:
+    - Concentrations in microequivalents per litre (µeq L−1).
+    - Deposition can be obtained by multiplying concentration by rainfall depth (mm) to yield µeq m−2.
+    - Equivalents-to-mass conversion uses mass per equivalent (e.g., 16 for sulfur as a reference).
+  - Non-sea sulfate: calculated from Na+ to separate sea-salt contribution.
+  - Data file structure is repeated across sites; site list is provided below.
+
+- Data flags and interpretation
+  - 0: no sample
+  - 1: contaminated and omitted (no correction possible)
+  - 2: rain sample volume but not analysed
+  - 3: missing data replaced by estimates
+  - 4: contaminated data replaced by estimates
+  - −1: raw data OK
+  - NA for chemical species and conductance: no analysis
+  - Precipitation_depth NA: denotes no sample (likely no rain)
+  - Precipitation_depth missing (no value): denotes rain volume not recorded
+
+- Site list and data files
+  - 20 UK sites with coordinates and UK-AIR IDs, each linked to a data file:
+    - Allt a’Mharcaidh
+    - Bannisdale
+    - Barcombe Mills
+    - Bottesford
+    - Eskdalemuir
+    - Flatford Mill
+    - Goonhilly
+    - High Muffles
+    - Hillsborough
+    - Loch Dee
+    - Lough Navar
+    - Preston Montfort
+    - Pumlumon
+    - Stoke Ferry
+    - Strathvaich
+    - Thorganby
+    - Tycanol Wood
+    - Wardlow Hay Cop
+    - Whiteadder
+    - Yarner Wood
+  - Each site has a dedicated data file (e.g., AlltaMharcaidh.csv, Bannisdale.csv, BarcombeMills.csv, etc.) containing the monthly/wide-range time-series data for 1986–2011.
+
+- Practical implications for analysis
+  - Rich multi-site, long-term rainfall chemistry dataset suitable for:
+    - Correlation analyses among ions and with precipitation.
+    - Temporal trends and regional deposition patterns.
+    - Development of deposition metrics (µeq m−2) and mass-based interpretations.
+    - Cross-site standardization challenges due to cleaning steps and data flags.
+  - Key caveats to consider
+    - Contaminated samples removed or corrected; some data replaced with estimates.
+    - Data gaps and varying sample volumes across sites and time.
+    - Some samples may still carry conservative contamination risks despite cleaning.
+    - Availability of site metadata and dataset-level provenance to ensure reproducibility.

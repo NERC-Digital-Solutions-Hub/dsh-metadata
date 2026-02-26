@@ -1,0 +1,33 @@
+# Summary
+
+- This dataset captures key photosynthesis and respiration measurements from three common garden sites along an elevation/temperature gradient in the Colombian Andes, collected June–August 2019.
+- Files included:
+  - ACiData_ColombianAndes_2019.csv
+  - VcmaxJmaxData_ColombianAndes_2019.csv
+  - RdarkData_ColombianAndes_2019.csv
+- Content overview:
+  - A-Ci data: leaf-level gas exchange measurements using LI-6800; eight ambient CO2 concentrations per leaf; standardized cuvette conditions; accompanying MontaneAcclim-ACiData2019.csv.
+  - Vcmax and Jmax data: derived from A-Ci fits to Farquhar model using plantecoPhys in R; two fitting approaches (default nonlinear and bilinear when needed); quality-controlled, with most curves retained.
+  - Rdark data: dark respiration rates measured after dark adaptation; 12 measurements per leaf; adjusted to measurement temperature and site MAT.
+- Key columns and units (examples):
+  - ID (genus, species, ID), Date (YYYY-MM-DD), Time (HH:MM:SS)
+  - A (µmol m⁻² s⁻¹), Ci (µmol mol⁻¹), gsw (mmol m⁻² s⁻¹), Tleaf (°C), RH (%), Qin (µmol m⁻² s⁻¹), Patm (kPa)
+  - Vcmax25, VcmaxTg (µmol m⁻² s⁻¹); Jmax25, JmaxTg (µmol m⁻² s⁻¹); Rdark25, RdarkTg (µmol m⁻² s⁻¹)
+- Experimental design:
+  - Three sites at different altitudes: high (2516 m; MAT ~14°C), mid (1357 m; MAT ~22°C), low (736 m; MAT ~26°C).
+  - Each site: six blocks per plot, 6x15 plants per plot, 4x90 plants per site; eight species; 123 individuals measured.
+  - Plants grown from nursery seed (two years) at mid-elevation before transplanting in 2018; common soils and irrigation ensured soil moisture consistency.
+- Data processing details:
+  - A-Ci curves collected with LI-6800; cuvette at 29°C, 65% RH, 410 ppm CO2; PPFD scaled per species; eight CO2 steps (410, 300, 175, 60, 410, 800, 1500, 2000).
+  - Vcmax and Jmax estimated by fitting A-Ci data with Farquhar model (R, plantarReflect) using fitacis; includes measured Rdark; site-specific Patm values applied.
+  - Quality control: default method used first; some curves re-fitted with bilinear method if needed; some data excluded (unusually high/low Vcmax/Jmax or Rubisco-limited curves); 144 of 147 individuals retained; 9 Jmax values excluded.
+  - Temperature corrections:
+    - Vcmax and Jmax corrected to 25°C and to site MAT using an Arrhenius-type function with Ea, ΔS, and Hd (parameters from Kumarathunge et al. 2019).
+    - Rdark corrected to 25°C and site MAT using a Q10-based exponential model.
+- Data availability and references:
+  - All datasets, methodology, and code references are documented; analyses executed in R (v4.2.1); key references include Duursma 2015, Farquhar et al. 1980, Kumarathunge et al. 2019, Scafaro et al. 2017, Tjoelker et al. 2001.
+- GIS relevance and potential uses:
+  - Three-site elevation gradient enables spatial comparison of photosynthetic capacity and respiration across climates.
+  - Variables (Vcmax, Jmax, Rdark) are map-ready for spatial modeling of plant physiology, acclimation, and carbon flux.
+  - Data can be linked with site metadata (altitude, MAT, temperature regimes) for creating climate-physiology maps, resilience assessments, or habitat suitability models.
+  - Clear metadata, including units and data processing steps, supports data integration with other GIS datasets and reproducible mapping workflows.

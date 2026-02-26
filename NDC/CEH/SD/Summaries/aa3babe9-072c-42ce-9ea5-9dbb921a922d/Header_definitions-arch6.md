@@ -1,0 +1,47 @@
+# Rio_forests_metadata_corrected_May2019.csv
+
+- Purpose: Documents standardized metadata and data structure for Rainfor forest plots, with supporting DryFlor Brazil census data linkages.
+- Standards and sources:
+  - Plots installed following standard RAINFOR protocols.
+  - Full manuals available in multiple languages at rainfor.org (and accompanying PDFs).
+- Experimental design:
+  - Use of standardized plotting regime to ensure cross-site comparability.
+  - Plot-level census information and plot view concepts (Main Plot View vs Preferred Plot View) to support flexible data extraction.
+- Units and measurement conventions:
+  - Recording units include hectares (Ha), metres (m), millimetres (mm), among others.
+  - Detailed field definitions appear in the included data tables (metadata and census data).
+- Data structure overview:
+  - Rio_forests_metadata_corrected_May2019.csv: Comprehensive metadata for each plot, including:
+    - Plot identifiers (PlotID, PlotCode, PlotName)
+    - Principal investigator team (PITeam) and field leadership
+    - Geographic information (Country, Continent, BiogeographicalRegion, EcoRegion, LocationSource, LatitudeDecimal, LongitudeDecimal, Altitude)
+    - Plot characteristics (PlotAreaLocation, GroundArea, Minimum/MaximumDimension, TotalPlotEdge, FragmentSize, NearestAnthropogenicEdge, ForestMoisture, ForestElevation, ForestEdaphicType, ForestComposition, SubstrateGeology, ForestStatus, AreaType, AveragePlotSlope)
+    - Biogeographic and ecological classifications (BiogeographicalRegion, Climate/Forest classifications, AllometricRegion)
+    - Plot metadata fields for data provenance and status (PlotDatabaseManager, ForestPlotsContact, DateEstablished, LastCensusDate, No.ofCensuses, Status, VerifiedBy)
+  - DryFlorBrazil_tree_census_data_corrected_May2019.csv: Individual stem data linked to plots with:
+    - Plot and view identifiers (PlotID, PlotCode, PlotViewID, PlotViewName)
+    - Taxonomic details (Family, Genus, Species, OriginalIdentification, Authority, AcceptedFamilyName, AcceptedFullSpeciesName, FamilyAPGID, GenusID, SpeciesID)
+    - Census and sample metadata (CensusNo, CensusDate, VoucherCode, D0, D1, DPOMtMinus1, D2, D3, D4, POM)
+    - Measurement flags and quality codes (F1–F5, LI, CI, and corresponding Rainfor data code flags)
+    - Tree identifiers and measurements (TreeID, TagNumber, SubPlot T1, Height)
+    - Allometric region reference (AllometricRegionID) and various plot-level descriptors
+- Data interpretation and guidance:
+  - Tables include detailed definitions for every field; users should consult the data dictionary for exact meanings.
+  - The DryFlor data includes automated handling of diameter changes across Point of Measurement (POM) transitions, including DBH adjustments (DBH0–DBH4) and provenance of measurement changes.
+  - Plot views can be customized to filter stems by minimum DBH or census period, with outputs downloadable via Advanced Search (Main Plot View or Preferred Plot View).
+- Data quality and codes:
+  - Data quality flags and measurement techniques are defined in Rainfor data codes (linked PDFs in the documentation).
+  - Flags cover alive/dead status, mode of death, measurement technique, and post-field data management.
+- Practical data support notes:
+  - Data can be self-serve via dashboards or exports; ensure consistent joins on PlotID, PlotCode, and PlotViewID.
+  - Patchy data across sites and formats is common; cross-reference with the metadata table for interpretation and filtering.
+  - Documentation includes source references and versioned corrections (May 2019 corrections noted).
+- Access and references:
+  - Rainfor manuals and data code references provided:
+    - Rainfor manuals: http://www.rainfor.org/en/manuals
+    - RAINFO R data codes: https://www.forestplots.net/upload/ManualsEnglish/RAINFO R_data_codes_EN.pdf
+    - CrownLiana protocols: https://www.forestplots.net/upload/ManualsEnglish/CrownLianaProtocols_EN.pdf
+- Intended use for data support:
+  - Facilitates data integration across multiple plots and datasets.
+  - Supports creating self-serve data products (dashboards, pivot tables) with clear provenance.
+  - Enables data quality assurance, transformation, and re-use in broader analyses and policy discussions.

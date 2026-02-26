@@ -1,0 +1,32 @@
+# Experimental design/sampling regime
+
+- Scope and methods
+  - UK Butterfly Monitoring Scheme (UKBMS) collects data from over 2,000 sites per year across the UK.
+  - Uses fixed-route transects (Pollard walks) for most sites, including both standard all-species transects and the reduced-effort Wider Countryside Butterfly Survey (WCBS); some single-species transects and other standardised methods (timed counts, egg/larval web counts) are also employed.
+- Transect design
+  - All-species transects: fixed 2–4 km routes, typically 45 minutes to 2 hours, recorded weekly under specified weather conditions, counted within a 5 m wide band along the transect.
+  - Transects are chosen to sample habitat types/management and remain fixed to enable year-to-year comparisons.
+  - Typically 26 counts per year from April to September.
+- WCBS ( Wider Countryside Butterfly Survey)
+  - Reduced-effort sampling in wider countryside habitats (farmland, etc.), modeled on the BTO’s Breeding Bird Survey.
+  - Based on two parallel 1-km transects within randomly selected 1-km squares; 2–4 visits per year, with at least 2 visits in July/August.
+- Data collection workflow
+  - Site location data collected in the field and entered online via ukbms.org/mydata or Transect Walker software.
+  - If a transect route changes, the new route is treated as a new site with a new site number; data for new routes follow the same submission process.
+  - Online data and Transect Walker files are uploaded into an Oracle database.
+- Nature and units of recorded values
+  - Site location data include OS grid reference, transect length (m), number of sections, WCBS status, and coordinates (Easting/Northing).
+  - For WCBS sites, some information may be incomplete due to randomised 1-km squares.
+- Quality control and validation
+  - A regional transect coordinator oversees data quality for their sites.
+  - Records undergo preliminary checks, followed by automated and manual validation to ensure accuracy of location data.
+- Data format and storage
+  - Site Location Data stored as CSV.
+  - Key fields: site number, site name, grid reference, Easting, Northing, length, country, number of sections, years surveyed, first year surveyed, last year surveyed, and survey type (WCBS or UKBMS).
+- Data constraints and timing
+  - Observations occur between 10:45 and 15:45 under suitable butterfly activity conditions.
+  - Weather thresholds influence data collection (e.g., dry conditions, wind < Beaufort 5, specific temperature thresholds with sun or overcast conditions).
+- Implications for data management and use
+  - Establishes a standardized, long-running dataset suitable for temporal and spatial trend analyses.
+  - Emphasizes data provenance, metadata completeness, and discoverability through centralized entry, validation, and storage processes.
+  - Supports integration across different survey types (all-species, single-species, timed counts, egg/larval counts, WCBS) within a unified framework.

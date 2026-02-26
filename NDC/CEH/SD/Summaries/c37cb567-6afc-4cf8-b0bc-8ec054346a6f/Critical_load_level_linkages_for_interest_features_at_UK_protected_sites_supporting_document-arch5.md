@@ -1,0 +1,73 @@
+# Assigning Relevant Critical Loads/Levels to designated features of protected nature conservation sites
+
+- Overview
+  - The project assigns relevant critical loads and critical levels to designated features of protected nature conservation sites, using a phased approach across Annex I habitat features, Annex II plant and non-plant species features, SPA features, and A/SSSI habitat features.
+  - Critical loads are set for nutrient nitrogen and acidity, linked to habitat classifications (EUNIS, NVC, Broad Habitats) and guided by international frameworks (UNECE, CLRTAP) and national/classification schemes (APIS, NBN).
+
+- Data Governance and stewardship implications for Data Stewards
+  - Data scope and governance
+    - Involves three main datasets: critical loads/levels linkages for SAC, SPA, and SSSI designated features.
+    - Datasets encode rich feature metadata, including codes, names, habitat classifications, deposition types, sensitivity assessments, and justification fields.
+  - Metadata, provenance, and transparency
+    - Explicit mappings between EUNIS classes, Broad Habitats, NVC codes, and APIS feature names to assign appropriate critical loads/levels.
+    - Justifications for each linkage and sensitivity assessments are documented to ensure traceability and auditability.
+    - Uses established scientific sources (Noordwijkerhout 2010 Noordwijkerhout Expert Workshop, UNECE, CLRTAP, WHO) and expert judgments from statutory bodies (English Nature/Natural England, SNH, CEH).
+  - Data quality and curation
+    - Combines empirical data with expert judgment; clearly records uncertainties and potential positive/negative effects of eutrophication.
+    - Quality control performed by multiple conservation bodies; transparent handling of exceptions where no suitable EUNIS match exists.
+  - Data models and standards
+    - Standardized interfaces between habitat features and their critical loads/levels via a structured CSV schema.
+    - Field-level alignment across datasets to enable cross-site comparability (e.g., INTERESTCODE, INTERESTNAME, NVC_CODE, BROAD_HABITATCODE, CLMIN_NUTN, CLMAX_NUTN, AMMONIA_NOX_SOX values, etc.).
+    - Linking across multiple classification systems (EUNIS, NVC, Broad Habitats) to ensure consistent terminology and interoperability.
+  - Data access, sharing, and discoverability
+    - Data are documented with metadata describing fields and data structure; example dataset fields are enumerated for transparency.
+    - Resource locators provided for contextual background and data sources (APIS, APIS_SAC/SPA/SSSI linkage datasets).
+  - Data lifecycle and updates
+    - Methodology supports updating critical loads/levels as new science or policy guidance emerges.
+    - Provides a framework to handle site-by-site assessments and non-matches (exceptions), ensuring the dataset remains current and defensible.
+
+- Data structure and content highlights
+  - Datasets
+    - APIS_SAC_feature_critical_load_level_linkages.csv
+    - APIS_SPA_feature_critical_load_level_linkages.csv
+    - APIS_SSSI_feature_critical_load_level_linkages.csv
+  - Core fields (illustrative)
+    - INTERESTCODE, INTERESTNAME, INTERESTLAYNAME
+    - INTERESTTYPECODE, INTERESTTYPE
+    - NVC_CODE, BROAD_HABITATCODE, BROADHABITAT
+    - DEPTYPE, SENSITIVENDEP
+    - NCLCODE, NCLCLASS, JUSTIFICATIONALLOCATIONNCL
+    - EUNIS, CLMIN_NUTN, CLMAX_NUTN, RECOMMENDED_VALUE, NTEXT
+    - SENSITIVEACIDITY, ACCODE, ACIDITYCLASS, JUSTIFYSPECIESSENSITIVITYA, ATEXT
+    - BRYOPHYTES, LICHENS
+    - AMMONIA_CL_VALUE, AMMONIA_CL_TEXT
+    - NITROGEN_DIOXIDE_CL_VALUE, NITROGEN_DIOXIDE_CL_TEXT
+    - SULPHUR_DIOXIDE_CL_VALUE, SULPHUR_DIOXIDE_CL_TEXT
+    - SPECIES_SENSITIVE_NH3, SPECIES_SENSITIVE_NOX, SPECIES_SENSITIVE_SO2, and corresponding justification/text fields
+  - Linkages and classifications
+    - Critical loads/levels are linked to designated features via habitat correspondence (EUNIS, NVC, Broad Habitats)
+    - Distinctions made for nutrients (NOx, NH3) and acidity (SOx) with species- and habitat-level considerations
+    - Where a direct linkage to bird or non-plant species is inappropriate, linkage is inferred from habitat integrity and potential impacts on breeding/feeding/roosting
+
+- Methodology and decision logic relevant to governance
+  - Phased assignment process
+    - Phase 1: Annex I habitat features and Annex II plant species features (in situ viewpoint)
+    - Phase 2: SPA bird features and Annex II non-plant species features (habitat-based assessment for species)
+    - Phase 3: A/SSSI habitat features
+  - Assessment and justification
+    - Uses empirical critical loads where possible; documents sensitivity to eutrophication and acidification
+    - Applies expert judgments where direct data are lacking; records assumptions and potential uncertainties
+    - Provides explicit criteria (habitat type, sensitivity, potential impacts) to justify critical load/level allocations
+  - Exceptions and non-matches
+    - Acknowledges cases where no suitable EUNIS class exists; indicates site-by-site assessments or further investigations as needed
+  - Quality control and review
+    - Expert reviews and cross-validation by statutory bodies and CEH to ensure consistency and credibility
+  - Documentation and transparency
+    - Justifications, caveats, and possible positive effects of eutrophication are captured to support reproducibility and audit trails
+
+- Practical implications for Data Stewards
+  - Ensure alignment of datasets with international/national classification standards and internal taxonomy
+  - Maintain rigorous metadata and field-level descriptions to enable discoverability and reuse
+  - Implement versioning and change control to track updates to critical loads/levels and associated justifications
+  - Facilitate data sharing with stakeholders while preserving provenance and sources
+  - Plan for handling data gaps, non-matches, and site-specific assessments within governance workflows

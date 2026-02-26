@@ -1,0 +1,43 @@
+# Details of data and its generation
+
+- Overview
+  - The document provides full data-generation details for a DCV virus evolution experiment across 19 Drosophilidae host species, aligned with the stated policy to repeat data-generation details.
+- Data assets and generation workflow
+  - Virus production
+    - DCV is a positive-sense RNA virus; single infectious clone (B6A) selected via serial dilution to minimise genetic variation.
+    - Production in Schneider's Drosophila line 2 (DL2) cells; TCID50 of 6.32 x 10^9 infectious particles per ml.
+    - Cloning, amplification, storage at -80°C; debris removal prior to aliquoting.
+  - Inoculating fly species
+    - Virus passaged through 19 Drosophilidae species (10 replicates per species; except D. montana with 8 due to stock reproduction issues).
+    - Inoculation of 4–11 day old males using sterile needles; randomised order to avoid confounding.
+    - Sampling: 3 days post-infection, flies frozen, homogenised, and processed for RNA extraction and infection supernatants for next passage.
+    - Each lineage inoculated into a mean of 11 flies per passage; total generational scope estimates ~100–200 generations.
+  - Sequencing
+    - RNA/cDNA synthesis and amplification covering ~97% of DCV genome (62–9050 bp; 8989 bp total) using eight overlapping PCRs.
+    - Nextera XT libraries prepared per viral lineage; sequencing on Illumina MiSeq (600 cycles, 300 bp paired-end).
+- Data processing and quality control
+  - Read processing
+    - FastQC for quality assessment; Trimmomatic for adapter/low-quality base removal with specified thresholds.
+    - Ancestral DCV sequence amplified and sequenced; sequences edited and checked.
+  - Alignment and variant calling
+    - Reads aligned to ancestral reference with BWA-MEM; SAM/BAM processing with SAMtools; read groups added with Picard.
+    - Variant calling with GATK UnifiedGenotyper, configured for low-frequency variants (sample_ploidy 100; stand_call_conf 30; downsample_to_coverage 1000).
+    - Coverage and alignment quality report indicates high mapping quality (99.5% of reads with Q > 60).
+- Host phylogeny and data context
+  - A trimmed ultrametric host phylogeny (time-based) for the 19 species, inferred with BEAST and pruned for current analysis.
+- Statistical analyses and interpretation
+  - SNP filtering
+    - Excluded pre-existing sequencing errors or low-frequency variation; include SNPs with frequency > 0.05 across lineages; triallelic sites included with all three alleles.
+  - Parallel evolution within species
+    - Estimated FST between viral lineages using per-site heterozygosity measures Hb and Hw; compared FST for lineages evolved in the same host species vs. different hosts via permutation tests (1000 iterations).
+    - Identified SNPs with signatures of within-species parallel evolution.
+  - Parallel evolution between species
+    - Correlated pairwise FST across viruses from different hosts with genetic distances between host species; significance assessed by permutation of host labels on the phylogeny (1000 iterations).
+    - Per-SNP analyses to identify frequencies correlated with host genetic distance.
+- Data availability and reproducibility
+  - Raw sequencing data: NCBI SRA (Accession SRP119720).
+  - Processed data and materials: BAM files, host phylogeny, derived allele frequencies, first/second derived allele frequencies, and associated R scripts available from the NERC data repository.
+  - Reproducibility: Supporting R scripts provided to reproduce figures and statistics from the submission.
+- Tooling and references
+  - Key software and versions used: FastQC, Trimmomatic, BWA-MEM, SAMtools, Picard, GATK UnifiedGenotyper, BEAST, BEAUti, R (APE package).
+  - Acknowledged references include methodological papers for sequencing, alignment, phylogenetics, and population genetics analyses.

@@ -1,0 +1,25 @@
+# NERC Data Repository - Supporting Information
+
+- Overview: Describes the multidisciplinary, anonymised expert inputs that shaped the research summarized in the paper “Exploring the smart-natural city interface; re-imagining and re-integrating urban planning and governance,” and the associated data repository “Record of expert inputs shaping future city discourses for Urban Living Birmingham.”
+- Data availability and structure:
+  - An anonymised set of expert inputs and outputs from the Birmingham Innovation Workshop (12 September 2017) and subsequent discussions (Sept–Nov 2017).
+  - A meta-table that organises and summarises all workshop outputs and later conversations.
+- Data repository contents:
+  - Records of group/table outputs from the Innovation Workshop.
+  - Photographs of collective “stickies” contributions from the workshop.
+  - Original transcripts from semi-structured interviews.
+  - Records of group telephone or meeting conversations.
+  - “Work in progress” collations of comments, shared with contributors and co-authors.
+- Purpose and application:
+  - Transcripts and inputs informed the development of new ways to integrate urban futures discourses.
+  - Specifically used to shape the Smart City – Natural City interface, using Birmingham as a case study.
+- Researchers and affiliations:
+  - Mike Grace and Prof. David Proverbs (Birmingham City University)
+  - Prof. Alister Scott (Northumbria University)
+  - Prof. Jonathan Sadler (University of Birmingham)
+  - Nick Grayson (Birmingham City Council)
+- Funding and project context:
+  - Funded by Research Councils UK (RCUK) and Innovate UK as part of the Urban Living Partnership (grant EP/P002021/1), 2015–2018.
+  - Urban Living Birmingham project, one of five ULP cities.
+- Data presentation and capture:
+  - Images record the active capture of data from expert contributors.

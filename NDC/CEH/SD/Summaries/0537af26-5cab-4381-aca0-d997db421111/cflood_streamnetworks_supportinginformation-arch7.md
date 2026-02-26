@@ -1,0 +1,33 @@
+# Shapefiles of stream networks for CFLOOD project in Mundeni Aru, Maduru Oya and Miyangolla Ela river basins
+
+- What: Shapefiles of stream networks, including both natural and artificial watercourses (rivers, streams, canals, etc.)
+- Where: Mundeni Aru, Maduru Oya, and Miyangolla Ela river basins in eastern Sri Lanka
+- How: 
+  - Manually mapped from satellite imagery in Google Earth
+  - OpenStreetMap (OSM) used as a starting reference; watercourses already in OSM re-mapped
+  - Centrelines traced and snapped at vertices using QGIS; flow direction indicated by the order of points
+  - Widths assigned from the maximum breadth observed in imagery
+  - Some networks may have directional uncertainty in flat areas; breaks occur where lakes exist
+- Why: For hydrologic modelling in the CFLOOD project (compound flooding from tropical cyclone-induced sea surge and precipitation)
+- Who: Mapped by J.B.R Matthews; oversight and advice from R. Jayaratne and A. Raby
+- Completeness and limitations:
+  - Aims for detailed mapping suitable for modelling, but dense vegetation blocked some watercourses
+  - Some minor canals not mapped; missing watercourses should be accounted for in modelling
+  - Watercourses not visible in imagery cannot be mapped
+- Data collection and transformation details:
+  - Imagery selected based on river level (wider features preferred at high levels), recency, and image quality
+  - Some watercourses present in OSM were re-mapped; where gaps exist, users should consider them in modelling
+- Data structure and schema:
+  - Shapefiles organized into three folders:
+    - CFLOOD_MundeniAru_StreamNetwork_utm
+    - CFLOOD_MaduruOya_StreamNetwork_utm
+    - CFLOOD_MiyangollaEla_StreamNetwork_utm
+  - Each shapefile contains a single attribute: Width_m (width in meters)
+- Coordinate system and units:
+  - UTM Zone 44N (EPSG:32644)
+  - Width_m provided in meters; widths are general indications and may vary along a segment
+- Quality control:
+  - Integrity checks on vertex connections and flow-direction ordering
+- Practical notes for use:
+  - Widths may require smoothing for hydrologic modelling
+  - Direction uncertainty may exist in flat delta regions; verify with ancillary data if precise flow direction is critical

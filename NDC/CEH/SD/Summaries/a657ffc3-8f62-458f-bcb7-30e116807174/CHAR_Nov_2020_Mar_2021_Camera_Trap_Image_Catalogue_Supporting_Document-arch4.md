@@ -1,0 +1,34 @@
+# CHAR_November_2020_March_2021_Camera_Trap_Image_Catalogue _Supporting_Document
+
+- Study context: Following extensive wildfires in the Ukrainian part of the Chornobyl Exclusion Zone, the CHAR project (NERC funded) deployed motion-activated digital trap cameras to assess large mammal activity from June 2020 to August 2021. This document covers setup 2 (November 2020 – March 2021) across three sites (each ~80 km2).
+- Study design:
+  - Three sites within the Ukrainian exclusion zone; each site had 13 cameras (Ltl Acorn 6210MC).
+  - Cameras set to capture day, night, and transition images via PIR sensor and 940 nm infrared flash; height ~0.6–0.7 m; mounted on trees; most faced north.
+  - Area cleared in front of cameras (~100 m2) to reduce false triggers; no bait used.
+  - Triggering events defined by motion activation; typically a new event begins after ~90 seconds since last observed animal; three-image burst per trigger with 0–1 s between images; ~2–4 s recovery between bursts.
+  - 16 poles with 1 m height used during initial setup to position cameras; poles removed after imaging for calibration purposes.
+- Data collection and processing:
+  - Chornobyl Center for Nuclear Safety deployed, maintained, and downloaded images and metadata; UKCEH performed quality checks and data assembly.
+  - Images and metadata catalogued by site, camera location, setup, and folder structure; descriptive parameters supplied by Chornobyl Center staff.
+- Dataset contents:
+  - Image catalogue: CHAR_Nov_2020_Mar_2021_Camera_Trap_Image_Catalogue containing 11,633 images (setup 2 period). Excludes images containing people, vehicles, or CHAR staff during setup (692 images catalogued but not included to protect privacy).
+  - Images organized by folders: Setup2_Site1, Setup2_Site2, Setup2_Site3, with sub-folders per species (e.g., Setup2_Site1_1570) containing the individual image files (.jpg).
+  - Data fields per image: site, camera location identifier, setup number, image location folder name, image filename, date, time, day period (day/night/transition), species common name, number of animals in image, total number of animals per triggering event, triggering event sequential number, notes.
+  - Triggering events: sequential numbers per site/camera; first row of an event contains the total animals for that event; subsequent rows marked as not applicable (n/a).
+  - Disturbance notes: images containing people or vehicles flagged as disturbance due to potential behavioral impact; these records exist but such images are not included in the dataset.
+- Species and metadata summary:
+  - Table 1 lists species observed and image counts (total images attributed vs. images where species was visible). Notable taxa include:
+    - Mammals: red deer (Cervus elaphus) and Przewalski’s horse (Equus ferus przewalskii) have high counts; red fox, roe deer, wild boar, red deer, elk, wolf, lynx, badger, otter, hare, raccoon dog, etc.
+    - Birds: several taxa with limited counts (e.g., bullfinch, great tit, tawny owl, Spotted nutcracker, unidentifiable birds).
+    - Unidentifiable images and the category “Service” (maintenance) are catalogued with distinct handling.
+  - “Service” images (camera setup/maintenance) are catalogued (590/545 in the record) but the images themselves are not included.
+- Site and camera metadata:
+  - Site descriptions and camera location details include GPS coordinates (WGS84), habitat descriptors, ambient dose rates measured at camera locations (µSv/h), and vegetation descriptions (lists of boreal and riparian species).
+  - Additional descriptive fields cover animal trails within 20 m, burn degree of area within 200 m of camera location (June 2020), and plant species observed.
+  - Notable data quality notes: some camera locations (e.g., 1575) and camera serial numbers (e.g., 2081) were stolen during setup 2.
+- Data structure and accessibility:
+  - Data are organized for straightforward mapping between catalogue rows and physical image files, using fields such as Image_Location_Folder_Name and Image_Filename to locate each image.
+  - The dataset references a companion site description file (CHAR_Nov_2020_Mar_2021_Camera_Trap_Site_Descriptions) with setup details, coordinates, habitat descriptors, and environmental context; another file (CHAR_Nov_2020_Mar_2021_Camera_Trap_Details) provides camera serial numbers, folder names, and deployment periods.
+  - For data related to CHAR setup 1, reference is made to Barnett et al., 2022.
+- References and acknowledgements:
+  - Barnett, C.L.; Gashchak, S.; Wood, M.D.; Beresford, N.A. (2022). Wildlife camera trap photographs from the Chornobyl Exclusion Zone, Ukraine (June 2020 - November 2020) following extensive wildfires. NERC EDS Environmental Information Data Centre. Funding: NERC NE/V009346/1; EP/V520846/1; CERAD (Norway) support for data preparation. Acknowledgements to field team members for assistance.

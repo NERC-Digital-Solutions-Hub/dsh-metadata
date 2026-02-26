@@ -1,0 +1,24 @@
+# About the UK Butterfly Monitoring Scheme
+
+- Purpose and organization: The UK Butterfly Monitoring Scheme (UKBMS) is organized and funded by Butterfly Conservation, the Centre for Ecology and Hydrology, the British Trust for Ornithology, and the Joint Nature Conservation Committee, with thanks to volunteers contributing data. It provides annual data on butterfly populations to understand biodiversity status and trends and to inform policy questions.
+- Temporal and spatial scope: Active since 1976, with data from over 2,500 sites each year across the UK.
+- Sampling framework and components:
+  - Standard butterfly transects (Pollard walks): fixed-route 2–4 km transects, 5 m wide, recording all species weekly from April to September (ideally 26 counts/year) at around 2,000 sites.
+  - Reduced effort surveys: single-species transects, alternative methods (e.g., timed counts, egg/larval web counts) focusing on specific species.
+  - Wider Countryside Butterfly Survey (WCBS): stratified-random 1 km squares with two parallel 1 km transects, 2–4 visits per year (minimum 2 visits in July/August), ~750 squares/year (established 2009).
+- Data nature and trend analysis:
+  - Uses abundance indices (relative measures) rather than absolute population sizes.
+  - Generalised Abundance Index (GAI) method (2016) combines site indices, weighting site-year data by the proportion of the species flight period surveyed, to estimate seasonal counts and extrapolate gaps.
+- Quality control and data validation:
+  - Field-recording on standard forms; online entry via UKBMS data portal or Transect Walker; automatic and manual validation.
+  - Regional transect coordinators verify data; checks include distribution range, flight period alignment, first-time site records, extreme or anomalous counts.
+  - Corrections are made through queries and discussions with coordinators/recorders; final edits applied to the UKBMS dataset.
+- Data download details:
+  - This download includes location and attribute data for UK sites monitored 1976–2018; excludes sensitive sites; provided as CSV.
+  - Key columns: Site number, Site name, Gridreference, Easting, Northing, Length, Country, No. Sections, No. Yrs surveyed, First year surveyed, Last year surveyed, Survey type (UKBMS or WCBS).
+- Licence and attribution:
+  - Open Government Licence (OGL) for reuse; must cite the dataset with the provided DOI and include the attribution: “Contains UK Butterfly Monitoring Scheme (UKBMS) data © Butterfly Conservation, Centre for Ecology & Hydrology, British Trust for Ornithology, and the Joint Nature Conservation Committee.”
+  - Since 2017, submitters agreed to OGL release at submission; historic data may have IP restrictions if any submitters object.
+- Collaboration and contact:
+  - UKBMS partners offer advisory support and potential co-authorship on publications resulting from UKBMS data.
+  - Contacts: Butterfly Conservation, Tom Brereton (tbrereton@butterfly-conservation.org); Centre for Ecology & Hydrology, Marc Botham (ukbms@ceh.ac.uk).

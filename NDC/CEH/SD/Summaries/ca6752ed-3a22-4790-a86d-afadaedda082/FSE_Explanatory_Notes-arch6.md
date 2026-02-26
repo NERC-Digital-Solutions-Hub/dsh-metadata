@@ -1,0 +1,82 @@
+# Explanatory notes
+
+- Purpose and scope
+  - The Farm Scale Evaluations (FSE) were set up to determine whether genetically-modified herbicide-tolerant (GMHT) crops have significant effects on farmland wildlife caused by management practices.
+  - Data cover four crops (Beet, Maize, Spring-sown oilseed rape, Winter-sown oilseed rape) and a range of ecological measurements.
+
+- Dataset components and data collected
+  - Seedbank
+    - Seedbank: counts of plant species germinating from soil samples taken before planting.
+    - Seedbank Follow-up 1: repeat soil sample one year after initial seedbank sample.
+    - Seedbank Follow-up 2: final soil sample taken two years after the initial sample.
+  - Vegetation in the crop
+    - First-seedling: first vegetation survey before herbicide.
+    - Mezzanine (Beet and Winter Rape): additional vegetation survey around herbicide timing.
+    - Post-herbicide: vegetation survey after herbicide on both conventional and GM sides.
+    - Final Counts: vegetation survey concurrent with biomass sampling.
+    - Biomass: weeds measured in the month prior to harvest.
+    - Seed Rain: seeds counted throughout the crop’s growing season.
+    - Follow-up 1/Follow-up 2: vegetation surveys one and two years after the trial crop.
+  - Field edge vegetation
+    - Margin Attributes: physical features around the trial field edge.
+    - Edge Veg Cover: plant cover in June.
+    - Edge Veg Flower: flowering from April–August.
+    - Edge Veg Seed: seed setting in July–August.
+    - Edge Bare Ground: percent bare ground.
+    - Edge Spray Damage: vegetation damage from spraying.
+  - Invertebrates
+    - Bee and Butterfly transects: monthly counts April–August; Pollinators combines these counts.
+    - Crop Pests: counts of herbivores on the crop early and late in the season.
+    - Gastropod Search: gastropods in field margins.
+    - Gastropod Trap: gastropods trapped in crop in spring and autumn.
+    - Pitfall: counts of surface-active invertebrates across season phases.
+    - Vortis: arthropods on plants, sampled early/late in season in verge and crop.
+  - Additional tables
+    - Crop drilling date; Herbicide applications; Height/Cover of weeds and crop.
+  - Table naming convention
+    - Tables are named with the pattern: abbreviatedprefix_crop_(sample date)_protocol (e.g., sum_b_seedrain for Beet seedrain; sum_b_early_pitfall for Beet early-season pitfall).
+
+- Data structure and metadata
+  - Each row represents half-field totals (counts, biomass, mean percent cover) for a separate site.
+  - Includes both group totals and species-level components.
+  - Sites are referenced within Defra regions; South-eastern and Eastern England regions are aggregated for confidentiality.
+  - Nulls appear where no verified data were collected.
+  - Some counts are decimal due to calculation across only a proportion of transects.
+  - Specific table properties
+    - crop_pest tables use suffixes W+ (winged) or W- (wingless).
+  - Column headings (examples)
+    - conv_count, conv_count_FL, conv_count_GE4TL, conv_count_L4TL, conv_count_SE
+    - gm_count, gm_count_FL, gm_count_GE4TL, gm_count_L4TL, gm_count_SE
+    - crop_cover (percent), crop_unit (C for conventional, GM for GM crop)
+    - crop_height (cm)
+    - name (species or group name)
+    - site_ref (site reference)
+    - Region (Defra region)
+    - VEG/ARTHROPOD/GASTROPOD/BB_BRC codes
+    - weed_cover_pc (percent non-crop vegetation cover)
+
+- Data provenance and references
+  - See additional information on related studies:
+    - The 2003 Phil. Trans. R. Soc. paper: The theme issue on spring crops.
+    - The 2005 Proceedings of the Royal Society B paper: Effects on weed and invertebrate abundance and diversity of herbicide management in GMHT winter-sown oilseed rape.
+
+- Data quality, challenges, and usage considerations
+  - Data are collected across multiple crops, timings, and measurement types, requiring careful integration.
+  - Regional aggregation for confidentiality may affect site-level analyses.
+  - Missing data (nulls) must be accounted for in analyses and dashboards.
+  - The dataset supports analysis of changes in weed and invertebrate abundance and diversity under different herbicide management regimes.
+
+- How this data can be productized for end users
+  - Self-serve dashboards and pivot-table style reports comparing:
+    - Seedbank, vegetation in-crop, and edge vegetation metrics across crops and timepoints.
+    - Invertebrate counts (pollinators, pests, gastropods) by region and by crop/management regime.
+  - Time-series views across Seedbank follow-ups, vegetation surveys, and biomass measurements.
+  - Species- vs. group-level summaries with region-level aggregation where appropriate.
+  - Exportable datasets (CSV/Excel) aligned with table naming conventions for downstream analyses.
+
+- Alignment with Data Support objectives
+  - Clear “ask” understanding by detailing what each dataset measures and how it contributes to evaluating GMHT crop effects on farmland wildlife.
+  - Data collation and verification from multiple sources (seedbank, vegetation, edge habitat, invertebrates) to create cohesive data products.
+  - Quality assurance through standardized table properties, consistent site references, and explicit handling of missing data.
+  - Facilitation of self-serve exploration via structured summaries and well-documented variables and conventions.
+  - Promotion of outputs and opportunities for feedback to refine data products and media outputs.

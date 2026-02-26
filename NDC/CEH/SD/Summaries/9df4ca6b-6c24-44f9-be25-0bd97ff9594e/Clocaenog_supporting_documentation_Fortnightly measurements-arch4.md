@@ -1,0 +1,44 @@
+# Supporting documentation for data
+
+- Overview of the Clocaenog field site: automated manipulation experiment to project climate change impacts on upland moorland over coming decades; solar and wind powered; established in 1998; located in Clocaenog Forest, North East Wales; habitat dominated by Calluna vulgaris (heather) with Vaccinium myrtillus and Empetrum nigrum also present.
+- Purpose of the document: summarizes methods and changes to methods for fortnightly measurements; general site information and experimental treatments are described in the supporting documentation for the data series; non-continuous measurements and methods are detailed in separate supporting documentation.
+- Measurements performed (fortnightly):
+  - Rainfall (mm)
+  - Plot-level rain throughfall (mm)
+  - Water table depth (cm)
+  - Soil respiration (mg CO2-C m-2 h-1)
+  - Soil temperature (°C)
+  - Soil moisture (Vol%)
+  - Photosynthetic active radiation (PAR; µmol m-2 s-1)
+- Rainfall data collection and considerations:
+  - Ground-level storage rain gauge (12.7 cm funnel) collects over two weeks; holidays may extend collection to 3–4 weeks.
+  - Gauge data preferred over AWS data due to robustness against logger/power outages.
+  - Data handling: hourly data not required; ensure gauge capacity is not exceeded.
+- Throughfall data collection and calibration:
+  - Bi-weekly collection using a 16.8 cm funnel and 3000 mL bottle per plot.
+  - Throughfall is used to derive percent changes relative to site rainfall; applied to site-level rainfall to obtain plot-level values.
+  - Data losses or compromised data (e.g., funnel detachment) lead to excluding the plot data point (NA).
+- Water table depth data collection:
+  - Bi-weekly measurements via water-permeable tubes installed to bedrock (started 2009).
+  - Measurements taken with a tape measure and head torch; maximum detectable depths vary by plot (listed per plot).
+- Soil respiration data collection and processing:
+  - Fortnightly measurements using three 20 cm diameter soil collars per plot; automated measurements introduced in 2014 with EGM4 IR gas analyzer linked to SRC-1 chamber.
+  - Vegetation around collars regularly managed; 2013 changes included bigger collars to accommodate automation, which may alter surrounding soil moisture and respiration readings.
+  - Data conversion: raw CO2 flux converted to mg CO2-C m-2 h-1;  g CO2 m-2 h-1 values multiplied by 0.272727 and then by 1000.
+  - Three measurements per plot averaged; outliers removed if implausible.
+- Ancillary measurements and guidance:
+  - Soil temperature (digital thermometer), soil moisture (Theta Probe ML3), and PAR (pyranometer) measured near respiration chambers.
+  - Full dataset interpreted with micro-meteorological data and AWS PAR data; prefer AWS/micro-meteorological data for analyses, but plots may show local variation.
+  - Data collected on field sheets and then transferred to Excel; processed into site-level and plot-level data as appropriate.
+- Data management and provenance:
+  - Field raw data are compiled in a raw data master file and later converted to processed data.
+  - Supporting documentation and data series documentation exist to describe general information, measurement methods, and any methodological changes.
+- Methodological notes and limitations:
+  - Data quality hinges on handling of missing or compromised data (e.g., throughfall gaps, funnel losses).
+  - 2013 collar changes and 2014 automation may affect comparability with earlier measurements.
+  - Emphasis on using site-level rainfall with percent-difference adjustments for plot-level analyses to maintain comparability.
+- For data governance and future use (Data Leaders perspective):
+  - Maintain clear metadata on measurement methods, equipment changes, and data processing steps (including conversion factors and exclusion criteria).
+  - Ensure robust data provenance by linking raw field sheets, master files, and processed datasets.
+  - Document data gaps, NA treatment, and any seasonal/annual aggregation approaches.
+  - Align data collection with broader data series documentation to support reuse across networks and collaborations.

@@ -1,0 +1,44 @@
+# CONSENT FORM
+
+- Purpose: A survey to determine farmers’ preferences for environmental land management contracts that host flood control measures. Participants respond to a series of hypothetical schemes as if making real land-use decisions. Completion is expected to take 20-30 minutes.
+- Organizer and funding:
+  - Corresponding investigator: Doctoral Student Daniel J. Leppert, Centre for Environmental and Energy Economics, Durham Business School, Durham University.
+  - Investigators: Dr Ashar Aftab, Dr Sim M. Reany, Prof. Ric Scarpa, Durham University.
+  - Funded by the Natural Environment Research Council (NERC) and the Economic and Social Research Council (ESRC); independent of DEFRA or other government agencies.
+- Consent, participation, and deception:
+  - Participation is voluntary and you may withdraw at any time.
+  - The study will not involve deception.
+  - You will be asked to provide information about yourself and your land, then consider hypothetical NFM (natural flood management) initiatives and choose between two alternatives for each scenario.
+- Risks and benefits:
+  - No foreseeable risks identified.
+  - Benefits include a £50 incentive payable via bank transfer for participation.
+- Confidentiality and data protection:
+  - All information will be kept confidential; email addresses will not be linked to personal data; demographic information will be limited to survey responses.
+  - Data will not be publicly disseminated with identifying characteristics.
+  - Identifying information will be removed and destroyed at study end.
+  - Data management will be compliant with GDPR.
+  - Some sections indicate data may be anonymized for analysis; control questions explicitly reference GDPR compliance and secure storage.
+- Data collection scope:
+  - Demographics: gender, birth year, education, farming start year.
+  - Farm and land details: farm size, total land area, land ownership, primary household income source, farming activities, number of land tracts, boundary sharing with other farms, involvement in AES or CSF schemes.
+  - Perceptions and behaviors: concern about flooding on farm and catchment; engagement in local farming community; rating of who influences farming decisions.
+  - Scheme-specific data: detailed responses to eight contract-structure questions for NFM schemes (type, location, land quality, size, payment) and multiple trading/willingness-to-accept (WTA) and willingness-to-pay (WTP) questions.
+  - Ecological connectivity: proposals for linking natural features (corridors) within and across farms, including corridor width, number of neighbors, and possible bonuses.
+  - Descriptive notes and examples accompany the contract descriptions to illustrate how options differ.
+- Data use and dissemination:
+  - Data will be used for the PhD research and related analyses.
+  - Results will be reported in anonymized form; identifying data will not be released publicly.
+  - Payment-related information is collected for stipend purposes and handled separately from research data.
+- Participation and contact for payment:
+  - Final section requests name, address, email, and bank details to process the £50 incentive via BACS within approximately two weeks after submission.
+  - If payment issues arise, participants are asked to contact a provided email (business.financehub@durham.ac.uk).
+
+Key sections and content described in this form:
+- Consent statement and options (I CONSENT / I DO NOT CONSENT).
+- Control questions confirming funding, data handling, and study aims (e.g., high-risk vs low-risk land; GDPR compliance; data anonymity; objectives about remuneration, trading schemes, and cooperation schemes).
+- Description of the environmental schemes and contract structures (NFM contracts, 5-year terms with renewal, maintenance responsibilities, and periodic inspections).
+- Detailed, scenario-based questions (CE1T1–CE1T8 and CE2/CE3 series) comparing different NFM features, locations, land quality, sizes, and payments.
+- Tradable flood mitigation scheme: 3% land requirement, trading ratios (e.g., 5:1, 10:1), central market, 5-year contracts, example scenarios illustrating trading payoffs and fees.
+- WTA (willingness to accept) and WTP (willingness to pay) sections exploring preferred terms, payments, fees, and trading ratios for intra- and inter-farm NFM implementation.
+- Ecological connectivity scheme: payments for creating corridors within and across farms, corridor dimensions, number of neighbors, coordination bonuses, and contract terms.
+- ConclusionBankForm: final payment details template and instructions for submission to process the incentive payment.

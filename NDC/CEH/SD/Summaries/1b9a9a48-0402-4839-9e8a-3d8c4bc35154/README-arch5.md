@@ -1,0 +1,31 @@
+# Package overview
+
+- Purpose: A collection of R functions to predict spatial patterns of encounter rate for marine mammals around the southwest coast of Cornwall (Seaquest Southwest monitoring scheme).
+- Core functionalities:
+  - Clean unclear site designations by linking site coordinates to the nearest major site.
+  - Identify the viewable seascape from any coastal point and height.
+  - Compute mean and variability of environmental conditions across the viewable seascape for a given site/time.
+  - Compute environmental conditions at evenly spaced coastal points to support encounter-rate predictions.
+  - Automatic download of Modis SST data.
+  - Automatic processing of VGPM and Modis SST data to a user-defined grid.
+  - Model encounter rate as a function of environmental/observation conditions, space, and time using a calibrated random forest.
+  - Predict and plot encounter rate.
+- Data collection and scope:
+  - Designed to analyse data from the Seaquest Southwest monitoring scheme (Cornwall Wildlife Trust).
+  - The Seaquest data themselves are not included in the package and must be requested from ERCCIS (Cornwall Wildlife Trust).
+- Data governance and access:
+  - Data not supplied with the package; access controlled via external data provider (ERCCIS) with a request process.
+  - Package enables reproducible analysis workflows using external datasets while keeping data provenance outside the package.
+- Data structure and storage:
+  - The package follows a standard R package structure.
+  - Main code is in the R/ directory.
+  - Environmental data and coastal boundaries required for analysis live in data/.
+  - Seaquest data are stored externally and can be requested; documentation for functions is accessible via help(function_name) or ?function_name.
+- Observations about data quality and provenance:
+  - Data quality control is not provided within the package since data are not included.
+  - Documentation and tooling support discoverability and reuse of analyses once external data are obtained.
+- Governance implications for Data Stewards:
+  - Clear separation between code (package) and data (external datasets), aiding data governance, storage, and sharing decisions.
+  - Encourages standardized processing steps (site designation, seascape derivation, environmental variable calculation) to promote consistency and interoperability.
+  - Emphasizes documentation and reproducibility to facilitate discovery and reuse of analyses across stakeholders.
+  - Highlights data access constraints and the need to manage data requests and provenance for external datasets.

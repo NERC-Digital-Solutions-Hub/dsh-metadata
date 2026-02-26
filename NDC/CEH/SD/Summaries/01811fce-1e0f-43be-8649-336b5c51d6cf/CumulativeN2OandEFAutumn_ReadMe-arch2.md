@@ -1,0 +1,26 @@
+# ReadMe file for CumulativeN2OandEFAutumn.csv
+
+- Purpose: This dataset provides cumulative N2O emissions and N2O-N emission factors measured from control (no urine), artificial sheep urine, and real sheep urine applied to a humic gleysol in unimproved grazing land, Carneddau mountains, Snowdonia National Park, Wales, UK. The study uses a randomised block design to support environmental monitoring and policy performance analyses over time.
+- Site context:
+  - Location: Snowdonia National Park, Carneddau mountains, Wales, UK
+  - Soil: Humic gleysol
+  - Elevation: 556 m above sea level
+  - Coordinates: 53°22'N, 3°95'W
+- Treatments and rates:
+  - Treatments: Control (no urine), ArtUrine (artificial sheep urine), Urine (real sheep urine)
+  - N application rates: 1120 kg N ha-1 for artificial sheep urine; 106 kg N ha-1 and 213 kg C ha-1 for the nitrate and glucose treatment (note: the header list for this dataset includes the three treatments above; there is a mention of nitrate and glucose treatment in the description, which appears to refer to related treatments outside the three headers)
+- Experimental design: Randomised block design
+- Measurements and calculations:
+  - N2O emissions: Cumulative N2O emissions calculated from the area under the curve of each replicate chamber, using trapezoidal integration from the time of treatment application onward
+  - Emission factors (EF): Calculated as the percentage of total N applied that is emitted as N2O-N, corrected for chamber area not treated (because artificial urine was applied in discrete patches within the chamber)
+  - Data quality: Visually checked for errors
+- Data structure and headers:
+  - Treatment: Control, ArtUrine, Urine
+  - Chamber: Chamber identifier
+  - Cum_N2O: Cumulative N2O emissions (μg N2O-N) per chamber over 118 days
+  - EF: N2O-N emission factor (% of total N applied)
+- Data usage notes:
+  - Authors must be acknowledged if data are reused or reproduced
+- Relevance for analysts:
+  - Provides standardized, time-series emissions data suitable for monitoring environmental health and evaluating policy-related emission trends
+  - Emphasizes linkage between input treatments, emissions, and emission factors to support cross-study comparisons and data integration with other environmental datasets

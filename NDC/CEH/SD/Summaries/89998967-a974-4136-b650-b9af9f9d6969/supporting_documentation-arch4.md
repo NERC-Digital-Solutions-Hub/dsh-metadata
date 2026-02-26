@@ -1,0 +1,27 @@
+# Supporting documentation
+
+- Purpose: Dataset for validation of a potassium sensor that will be inserted into a plant stem. Includes in vitro validation data; in vivo validation inside a tomato stem is ongoing.
+- Experimental setup and conditions:
+  - Measurements conducted with a semiconductor device analyzer (Keysight B1500A) and an Ag/AgCl pellet as gate electrode.
+  - Faraday cage, ambient conditions: 40% relative humidity at 20 °C, ambient light.
+  - PDMS well confines analyte solution; fixed gate and drain voltages (VG = 0 V, VD = -0.4 V) during real-time monitoring.
+- Data collection and response:
+  - Real-time drain current recorded as potassium ion concentration changes stepwise.
+  - Datasets include:
+    - Potassium_sensor_target_ion_data.csv: target K+ concentrations (DI water followed by 1, 10, 20, 40, 80 mM).
+    - Potassium_sensor_interfering_ion_data.csv: interfering Na+ concentrations (DI water followed by 1, 10, 20, 40, 80 mM).
+    - Potassium_sensor_invitro_data.csv: artificial sap with interfering ions (Na+ 15 mM, Ca2+ 10 mM, Mg2+ 15 mM) plus K+ concentration increased from 1 to 80 mM.
+- Data files and structure:
+  - Three CSV files: Potassium_sensor_target_ion_data.csv, Potassium_sensor_interfering_ion_data.csv, Potassium_sensor_invitro_data.csv.
+  - Each file contains five columns: Time_second, Drain_current, Gate_current, Gate_voltage, Drain_voltage.
+  - Time is in seconds; currents are in amperes; voltages are in volts.
+- Data quality and scope:
+  - Five sensors validated; dataset represents in vitro validation.
+  - In vivo validation inside tomato stem is not yet included in this dataset.
+- Metadata and notes for data management:
+  - Clear units and column labels to support discoverability and reuse.
+  - Includes layout/design information for sensor fabrication as part of the dataset context.
+- Implications for data strategy and use:
+  - Demonstrates end-to-end data capture for sensor validation, including baseline, target and interfering conditions.
+  - Highlights need for careful consideration of environmental conditions, variability across sensors, and translation to in vivo contexts.
+  - Useful for reproducibility, cross-lab comparison, and informing future data collection plans for similar biosensor datasets.

@@ -1,0 +1,35 @@
+# Data overview
+
+- Purpose: A data resource of high-resolution aerial imagery (0.2 m spatial resolution) of two riverscapes in the Philippines, enabling multi-temporal analysis for tropical river management applications.
+- Sites: 
+  - Bislak River downstream segment
+  - Confluence of Abuan, Bintacan, and Pinacanauan de Ilagan Rivers (Ilagan)
+  - Both sites on Luzon island; prone to hydrometeorological hazards (flooding, bank migration)
+- Sensor setup and platforms:
+  - ALTM Pegasus airborne LIDAR system with D8900 aerial camera
+  - Mounted on a Cessna T206H RP-C9122
+- Flight planning and acquisition:
+  - Sites subdivided into blocks; 750–800 m above ground level (AGL)
+  - 20–40% overlap per scan along flight lines
+  - Aerial surveys on dates: Bislak 2019-03-21; Bislak 2020-01-22; Ilagan 2019-04-05; Ilagan 2020-02-14
+  - Dates chosen to capture low-flow conditions and minimize cloud shadow and sun-glint
+- Aerial image processing:
+  - Output: spatially corrected orthoimagery
+  - Processing steps: colour corrections, tie-point definition, colour points and selection shapes, rectification
+  - Software used for colour corrections: Capture One and Adobe Lightroom
+  - Steps 2–4 performed with TerraPhoto
+  - Output format: TIFF 8-bit with 0.20 m RGB orthoimagery
+  - Coordinate system: WGS 84 / UTM Zone 51N
+- Data characteristics:
+  - RGB values scaled 0–255
+- Quality control:
+  - Positional accuracy verified by the third-party aerial survey provider
+- Data structure / files:
+  - Bislak_2019: Bislak_2019_Orthoimagery_20cm.tif (Orthoimagery for Bislak river segment, 21 Mar 2019)
+  - Bislak_2020: Bislak_2020_Orthoimagery_20cm.tif (Orthoimagery for Bislak river segment, 22 Jan 2020)
+  - Ilagan_2019: Ilagan_2019_Orthoimagery_20cm.tif (Orthoimagery for Ilagan river segment, 5 Apr 2019)
+  - Ilagan_2020: Ilagan_2020_Orthoimagery_20cm.tif (Orthoimagery for Ilagan river segment, 14 Feb 2020)
+- Potential GIS applications:
+  - Multi-temporal visualization of river morphology changes
+  - Hazard assessment (flooding, bank migration) and river management planning
+  - Basemap support for policy, client, or public-facing GIS applications

@@ -1,0 +1,66 @@
+# SUMMARY
+
+- Overview
+  - Four-year study under the NERC Soil Biodiversity Thematic Programme focused on a large field experiment at Sourhope (Scottish Borders) to understand soil biodiversity and the links to above-ground plant communities.
+  - Sixty-four plots across five replicate blocks with five main treatments (plus controls) applied at plot level and regular site-wide mowing.
+  - Treatments include nitrogen and/or lime fertilisation, insecticide application (Dursban), and a management regime that included mowing and trampling in certain plots. Phase II expanded activity with major fieldwork by other projects and inclusion of labelled 13CO2 pulses.
+
+- Datasets and Data Collection (data types and provenance)
+  - Weather and climate data
+    - On-site Automatic Weather Station collecting temperature, rainfall, radiation, soil moisture, etc., from February 1999 onward.
+    - 2002 data included missing periods due to a weather station malfunction; some data substituted from a nearby Konza station.
+    - Appendix 5 contains headline measures; ongoing data support for climate-vegetation analyses.
+  - Above-ground biomass and productivity
+    - Annual biomass estimates from random 0.5 m2 cells within sub-plots (S, T, U, V) collected May–Sept; samples dried and weighed.
+    - Longitudinal data from 1999–2002; Appendix 6 presents annual biomass per plot; Appendix 7 provides rank/orders of biomass samples.
+  - Botanical surveys and species data
+    - Baseline vegetation survey in 1998; subsequent point-analysis surveys in 2000–2002 using a 0.5 m2 cell with a 100-hole grid and a pin-down method; bryophytes identified to species level in 2002.
+    - Appendix 3 contains complete species list; Appendix 8 presents species rank abundance data across treatments.
+    - Principal Components Analysis (PCA) performed on 2002 point-analysis data to separate improved vs unimproved plots; bryophyte dynamics documented (e.g., Rhytidiadelphus squarrosus increases across the site).
+  - Soil properties
+    - Soil pH measured since 1998 (approx. 5 cm depth); 2002 measurements across plots and cells show lime raising pH toward ~7 in limed plots; nitrogen adds modest pH increases.
+    - Soil moisture measured via theta probe in 2002 at the botanical survey cells; soil moisture correlates with pH and productivity.
+  - Additional surveys and data products
+    - Small-scale vegetation surveys (litter, cover) and biomass sub-samples in various years; detailed methodology in Appendix 2 and related appendices.
+    - Phase II fieldwork included 13CO2 pulses and trace-gas measurements using CEH mobile laboratories.
+    - Site activity logs and maps (Appendices 1, 4) detailing treatment allocations, mowing dates, and field operations.
+
+- Treatments and observed impacts on plant communities
+  - Mowing effects
+    - Reduction in Agrostis capillaris and Agrostis vinealis across all treatments; possible site-level cause beyond specific treatments (e.g., mowing homogenization, climatic/biotic factors).
+    - Festuca rubra expands, especially in more fertile, lime- and/or nitrogen-enhanced plots; bryophyte expansion (mosses) linked to reduced disturbance and sward height around 6 cm.
+  - Fertilisation effects
+    - Nitrogen and/or lime increase above-ground productivity; greatest productivity in plots with both nitrogen and lime.
+    - Lime pushes soil pH toward 7.0; very high lime application may cause stress under some conditions (chlorosis observed); potential moisture stress in high-N + lime plots due to increased productivity and moisture uptake.
+    - Functional-group shifts: C-S-R (competitive-stress-ruderal) species expand in nitrogen + lime plots; stress-tolerant (S) species dominate unfertilised/un-disturbed plots; SR/C-S-R groups reduced in lime- and insecticide-treated plots.
+  - Insecticide effects
+    - Insecticide treatment associated with higher relative diversity in some analyses; mechanistic links to reduced herbivory are not definitively proven in this study, though patterns align with prior work suggesting herbivory pressure can shape plant diversity.
+  - Trampling effects
+    - In C2 plots (first-time surveys in 2002) productivity reductions linked to trampling during intensive 13CO2 pulse activities.
+  - Functional-group and diversity dynamics
+    - Three main functional groupings (stress-tolerators S, C-S-R, SR/C-S-R) account for the majority of plant hits; treatment differences become pronounced by 2000–2002.
+    - Diversity (Shannon index) generally increases in some treatments (e.g., insecticide plots) and decreases or remains stable in others; bryophyte incidence rises across the site, particularly in unimproved plots.
+  - Community composition shifts
+    - PCA and rank-abundance analyses separate improved vs unimproved plots; lime-treated plots cluster together; nitrogen-treated plots show mixed associations with lime-treated plots depending on block.
+    - Bryophyte proportion increases over time, especially in unimproved plots; vascular plant changes show decreases in dominant Agrostis spp. and increases in Festuca rubra or other grasses in fertile plots.
+
+- Data governance, provenance, and access (Data Steward focus)
+  - Coordination and provenance
+    - Data span 1998–2002 across multiple projects (Phase I and II) with central site management and cross-project data usage; full project details available via project PIs and the Soil Biodiversity website.
+    - Appendices provide comprehensive metadata: site map (Appendix 1), treatment summaries (Appendix 2), species lists (Appendix 3), site activity (Appendix 4), weather (Appendix 5), biomass (Appendix 6), biomass rankings (Appendix 7), and species rank-abundance (Appendix 8).
+  - Data documentation and metadata
+    - Descriptions of site setup, treatments, mowing regime, sampling protocols, and measurement methods accompany the datasets; essential for reproducibility and cross-study comparability.
+    - Taxonomic identifications include detailed bryophyte and vascular plant lists; consistent terminology used in analyses (e.g., CSR functional typing).
+  - Access and reuse
+    - Data are associated with project PIs and are accessible through the Soil Biodiversity Programme portal and related CEH contacts; additional data are available from PI authors.
+  - Data quality and gaps
+    - Data quality affected by weather-station outage in 2002; where data were missing, substitutions from external stations were used.
+    - Methodological notes emphasize baseline measures (1998) and repeated sampling to enable longitudinal analysis; potential issues include potential identification ambiguities in certain plant groups (re: Festuca rubra vs Festuca ovina) and the need to maintain consistent taxonomic naming across years.
+
+- Practical takeaways for Data Stewards
+  - Ensure comprehensive metadata for all datasets: measurement protocols, units, sampling dates, plot and treatment IDs, block structure, and accessibility details.
+  - Maintain data provenance links between datasets (biomass, soil chemistry, weather, vegetation surveys, and Phase II measurements) to support cross-analysis.
+  - Preserve and document data quality notes, including missing data and substitution methods, to support transparency and reproducibility.
+  - Centralize storage with clear versioning and cross-referencing to appendices and site maps; provide stable access points (e.g., Soil Biodiversity website) for researchers and data users.
+  - Manage taxonomy and functional-group classifications (e.g., CSR types) consistently across years to avoid comparability issues.
+  - Plan for long-term archiving of multi-project, long-term ecological data and ensure governance for data reuse across Phase I and Phase II projects.

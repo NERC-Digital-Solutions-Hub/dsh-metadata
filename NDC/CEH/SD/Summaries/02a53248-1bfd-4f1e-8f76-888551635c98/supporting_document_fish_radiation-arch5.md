@@ -1,0 +1,44 @@
+# Impact of Environmental Radiation on the Health and Reproductive Status of Fish from Chernobyl
+
+- Aim: Assess health and reproductive status of perch and roach collected from lakes in Belarus and Ukraine, in relation to environmental radiation exposure.
+- Sampling design and sites:
+  - 2014 (September): 124 perch and 82 roach from seven lakes in Belarus and Ukraine.
+  - 2015 (September): 74 fish from four lakes in Ukraine.
+  - 2015 (March): 38 perch and 60 roach collected just before spawning.
+  - Relative abundance measured via June 2015 sampling.
+  - Lakes categorized by contamination level: high (Glubokoye, Yanovsky, Cooling Pond), medium (Svyatoye), low (Stoyacheye, Dvoriche, Gorova); distances 1.5–225 km from the Chernobyl NPP.
+- Biological sampling and processing:
+  - Fish removed from nets, euthanized following UK Home Office procedures to limit suffering.
+  - Scales used for age determination; record body weight, total length, external disease signs, and macroscopic tumors.
+  - Health metrics calculated: Fulton condition index (K), hepatosomatic index (HSI), gonadosomatic index (GSI).
+- Dose assessment (radiation exposure):
+  - External dose: Cs-137–driven, using sediment activity and ERICA-based dose coefficients; surfaces assumed to hold majority of activity in the top 15 cm of sediment.
+  - Internal dose: calculated for Cs-137 in all lakes; for lakes near the NPP also for 90Sr, 241Am, 238Pu, 239,240Pu.
+  - Dose coefficients and specific activities applied to compute internal doses; uncertainties: typically ≤20% (137Cs), ≤15% (90Sr), ≤25% (transuranics) at 95% CI.
+- Radiological measurements:
+  - 137Cs: whole-body activity in five fish per lake via gamma spectrometry (DGDK-100); detection limit ~0.6 Bq.
+  - 90Sr: whole-body activity in select high-contamination lakes via radiochemical oxalate procedure (β measurement).
+  - Plutonium and americium isotopes: measured in liver and muscle from a subset of high-contamination lakes using radiochemical separation followed by alpha spectrometry; 241Am linked to gamma emissions measured with HPGe detector.
+  - Measurement uncertainties explicitly noted for radionuclide analyses.
+- Liver chemistry analyses:
+  - ICP-MS of liver digests to quantify major elements (Na, Mg, S, K, Ca) and trace elements (As, Sr, Cd, Cs, Pb, U) in mg/L or µg/L.
+  - Sample preparation and internal standards (Ge, Rh, Ir) described; two calibration sets for major and trace elements.
+- Genetic and cellular endpoints:
+  - Micronucleus test on erythrocytes: scored blindly in five fish; 1000 cells per fish assessed for micronuclei.
+  - Histology of gonads: fixed, processed, sectioned, stained (H&E); oocyte development staged by counting perinuclear and cortical alveolar oocytes; germ cell stage distribution by area.
+- Data structure and datasets (documentation of data columns):
+  - fish_biometry.csv: body metrics and derived indices (weight, total length, gonad/liver weights, K, GSI, HSI).
+  - fish_composition.csv: species presence across lakes and sampling dates.
+  - fish_whole.csv: radionuclide levels in whole fish (e.g., 137Cs, 90Sr) with species-specific values.
+  - fish_tissue.csv: radionuclide concentrations in tissue types (muscle, liver) by species (Cs-137, Sr-90, Am, Pu isotopes).
+  - fish_liverchem.csv: liver tissue mass (wet/dry), and concentrations of major and trace elements (B, Na, Mg, P, S, K, Ca, Al, V, Cr, Mn, Fe, Co, Ni, Cu, Zn, As, Se, Rb, Sr, Mo, Ag, Cd, Cs, Ba, Pb, U) with specified units.
+  - fish_micronucleus.csv: site/species/sex data; number of micronuclei per 1000 erythrocytes; percentage metrics.
+  - fish_oocyte.csv: oocyte counts for cortical alveolar and perinuclear oocytes, per defined microscopic area.
+- Data quality and provenance:
+  - Explicit uncertainties for radiochemical measurements.
+  - Standardized methods and detailed metadata (units and methodology) included for each dataset to support reproducibility and reuse.
+  - Sampling and analytical approaches described to enable traceability from field collection to analytical results.
+- Relevance to data stewardship:
+  - Demonstrates management of multi-lake, multi-dataset data with standardized metadata, cross-referenced sample identifiers, and rich ontologies for biosamples, tissues, and endpoints.
+  - Highlights the need for clear data structures, consistent units, and documentation to enable reuse by researchers studying biodiversity, radiological exposure, and reproductive health in aquatic systems.
+  - Provides a comprehensive example of handling both physical measurements (morphometrics, chemistry, radiological activity) and biological endpoints (micronuclei, histology, oocytes) in an integrated dataset suite.

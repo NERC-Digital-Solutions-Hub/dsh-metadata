@@ -1,0 +1,36 @@
+# Soil profile descriptions, biomass data and vegetation species from a joint sampling event at Sourhope, Scotland, 2000 [NERC Soil Biodiversity Programme]
+
+- Overview
+  - Part of the NERC Soil Biodiversity Thematic Programme (1999–2000) focused on understanding soil biodiversity and soil process roles.
+  - Conducted at Sourhope, Macaulay Land Use Research Institute (now James Hutton Institute) farm in the Scottish Borders (grid reference NT8545019630).
+  - A joint sampling event (27–28 July 2000) coordinated across multiple project groups to link various datasets to the same time/space point.
+  - Aimed to monitor changes in aboveground biomass productivity, species composition, and relative abundance (diversity) in soil-related contexts.
+
+- Datasets from the Joint Sampling Event
+  - Root Cores Dataset (JT_SAMPLING_2000_ROOTS.csv)
+    - Biomass data for roots, shoots, and litter from soil core samples.
+    - Sub-samples derived from larger soil blocks across sub-plots S–V within each main-plot (excluding C2 controls).
+    - Core dimensions roughly 4 x 4 x 8 cm; oven-dried at 80°C for 48 hours after wet sieving.
+    - Data structure includes: SUID, Sub_sample_ID, Sampling_Date, Block/Main_plot/Sub_plot, X_Cell/Y_Cell, core dimensions, and biomass metrics (Root_DW, Litter_DW, Vol_core, Vol_litter, densities, etc.).
+    - Field period: 27–28 July 2000; Location: Sourhope Rigg Foot Field Experiment Site.
+    - Originators: Macaulay Land Use Research Institute; Contacts: J. Ross, L. Dawson.
+  - Vegetation Survey Dataset (JT_SAMPLING_2000_VEG.csv)
+    - Vegetation species abundance data for all soil blocks (excluding Control 2) across sub-plots S–V from all main plots.
+    - Abundance recorded as classes (e.g., % cover equivalents) for species per soil block (18 x 18 cm blocks).
+    - Data structure includes: SUID, Sampling_Date, Treatment_Type (Control 1, Lime, Nitrogen, Nitrogen+Lime, Biocide), Block/Main_plot/Sub_plot, X_Cell/Y_Cell, Species, Abundance, and %Cover coding.
+    - Field period: 27–28 July 2000; Location: Sourhope Rigg Foot Field Experiment Site.
+  - Soil Survey Dataset (JT_SAMPLING_2000_SOIL.csv)
+    - Soil profile descriptions by horizon type and depth with pH and moisture values by horizon for blocks from sub-plots S–V across all blocks/main-plots (excluding Control 2).
+    - Methods: pH measured in H2O; moisture via Thetaprobe and calibrated to %vol moisture; horizons described per Soil Survey Field Handbook conventions.
+    - Data structure includes: SUID, Sampling_Date, Treatment_Type, Block/Main_plot/Sub_plot, X_Cell/Y_Cell, Horizon_type/Depth_upper/Depth_lower, pH_H2O, PC_Moisture, Moisture_voltage, and related fields.
+    - Field period: 27–28 July 2000; Location: Sourhope Rigg Foot Field Experiment Site.
+    - Originators: University of Stirling; MLURI; Contact: P. Bruneau; Dataset creation date: 27-9-2000.
+- Site context and sampling design
+  - Sampling framework used blocks within main-plots A–F, with sub-plots S–V; 5 blocks per main-plot (1–5).
+  - Excluded Control 2 plots from the joint sampling data.
+  - Sub-sampling allowed multiple participants to contribute comparable data points tied to the same time/space reference (SUID).
+- Methods and quality assurance
+  - Biomass samples: oven-dried for 48 hours at 80°C after wet sieving (0.5 mm mesh) to separate plant material from soil.
+  - Vegetation: species presence and abundance recorded within each soil block; abundance converted to percent cover classes.
+  - Soil measurements: pH using wet method with deionised water; moisture content derived from Thetaprobe readings and calibrated to volumetric moisture values.
+  - QA and provenance: numeric range checks, formatting checks, and logical integrity checks applied; data provided with no warranty on accuracy; liability disclaimer for data use. Dataset originators and contact points documented; supporting references include the Sourhope Field Data Handbook (2003).

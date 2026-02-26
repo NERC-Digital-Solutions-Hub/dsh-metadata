@@ -1,0 +1,24 @@
+# Multiplexed shotgun genotyping for rapid and efficient genetic mapping
+
+- Objective: Identify loci contributing to discrimination between males of related species by genotyping female progeny from a D. simulans backcross (F2 from an F1 backcross) in a two-choice mate assay.
+- Experimental setup:
+  - Flies: adult females (>3 days and <28 days) and males (7–28 days) from D. simulans and D. sechellia.
+  - Assay: three test females and three test males (from each species) per trial; monitored for up to four hours or until copulation.
+  - Outcome: after the first mating, vials frozen to preserve mating pair; species of copulating male determined by male genitalia.
+- Genotyping and data structure:
+  - Genotyping method: Multiplexed Shotgun Genotyping (MSG) to obtain genotypes; libraries prepared with standard molecular biology techniques.
+  - Library metadata: an ID column that combines library name with a unique barcode.
+  - Phenotype encoding: pheno column where 0 = female mated with D. simulans males and 1 = female mated with D. sechellia males.
+  - Genomic references: columns specify specific genome locations (D. simulans, Hu et al. 2013; parental genomes A2A2B for D. simulans and D1A1C for D. sechellia).
+  - Data processing: genotypes obtained via MSG; thinning of files performed with pull_thin (David Stern's script).
+- Quality control and data filtering:
+  - Exclusion criteria: individuals with more than 25% ambiguous genotype calls (NA) removed due to low DNA content.
+  - Reporting of genotypes: coding BB = sim/sim alleles; BA = sech/sim; NA = data not available.
+- Data provenance and references:
+  - Data sources and methods tied to Andolfatto et al. 2011 (MSG method) and Hu et al. 2013 (D. simulans genome assembly).
+  - Additional context provided by the cited genomes and assembly work.
+- Implications for monitoring framework perspectives:
+  - Emphasizes meticulous metadata (library IDs, barcodes, phenotype encoding, parental lines) to support traceability and reuse.
+  - Highlights the importance of data quality assurance (removing NA-heavy samples, documenting criteria for exclusion).
+  - Demonstrates reproducibility through use of established pipelines (MSG, pull_thin) and transparent references.
+  - Underlines potential data governance needs: sharing underlying data and ensuring data provenance and versioning are maintained.

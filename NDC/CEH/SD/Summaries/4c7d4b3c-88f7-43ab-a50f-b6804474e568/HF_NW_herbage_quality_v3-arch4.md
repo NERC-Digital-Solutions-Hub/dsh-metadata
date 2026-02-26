@@ -1,0 +1,26 @@
+# Details of data structure to ' HF_NW_herbage_quality.csv '
+
+- This document supplements the supporting documentation for data series described in Supporting_documentation_CINAg_experiments_final_check_v2.1.pdf.
+- Dataset scope: 13 columns and 96 rows; herbage quality data from grassland fertiliser trials conducted in 2016 at Henfaes Research Station (Bangor University) and North Wyke Research Station (Rothamsted Research).
+- Data provenance and processing:
+  - Henfaes samples were pre-dried and sent to Sciantec Analytical (Stockbridge Technology Centre, Y08 3SD, UK).
+  - North Wyke samples were from fresh material and sent to Trouw Nutrition GB, Blenheim House, Ashbourne, UK.
+- Analytes measured (via near-infrared spectrometry):
+  - Dry matter, ADF (acid-detergent fibre), Ash, Crude Protein, Metabolisable Energy (ME), Non-digestible Fibre (NDF).
+- Digestibility metric:
+  - D = ME/0.16
+- Dataset structure: Column header → explanation; Unit provided.
+- Column details:
+  - Date: Date of grass cut
+  - Site: HF|NW (HF = Henfaes, NW = North Wyke)
+  - N_app: 1|2|3 denotes fertiliser application (1st & 2nd applications 90 kg ha-1, 3rd application 60 kg ha-1)
+  - Block: 1|2|3|4 (randomised block design)
+  - Plot: 1–16 (plot harvested; size 2 × 6 m)
+  - Treatment: AN|U|IU|C (AN = ammonium nitrate, U = urea, IU = inhibited urea (agrotain), C = 0N control)
+  - Dry_matter: g kg-1
+  - ADF: g kg-1
+  - Ash: g kg-1
+  - Crude_Protein: g kg-1
+  - ME: MJ kg-1
+  - NDF: MJ kg-1
+  - D: %

@@ -1,0 +1,34 @@
+# Introduction to the Database Catalogue
+
+- Purpose: Documents instrumentation and data collection across Pontbren study sites, how data are organized, quality assurance processes, and appendices (borehole logs, neutron probe logs, field diaries) to support data reuse and interpretation.
+- Data organization: Data provided in six-month blocks; files organized in descriptive directories guiding end users to instrument locations and dataset contents. Folder structure includes AWS, Bowl study site runoff and soil water tension data, Groundwater, Hillslope study site data, Llyn Hir, Land use manipulation plots, Neutron probe soil moisture data, Rain gauge data, Field Diaries, Streamflow, and Appendices.
+- Datasets and contents (high-level overview):
+  - A) Automatic Weather Station (AWS): minute-level sensors with daily and 10-minute averages; extra humidity and air temperature columns added in 2009.
+  - B) Bowl study site runoff and soil water tension: weir-box and tipping-bucket measurements; tensiometer arrays at multiple depths.
+  - C) Groundwater: five boreholes monitored with Diver/BaroDiver; height relative to soil surface and temperature; sampling frequency changes over time.
+  - D) Hillslope study site runoff and soil water tension: runoff weirs, tensiometers, and related measurements.
+  - E) Llyn Hir: tensiometer arrays (multiple depths) with specific sampling intervals.
+  - F) Land use manipulation plots: four sites with replicates; treatments include Grazed, Ungrazed, Trees; tensiometer and overland flow measurements.
+  - G) Neutron-probe soil moisture: profile measurements across multiple sites with depth-specific conversions.
+  - H) Rain gauges: tipping bucket and storage gauges across various locations; units in mm-based measures.
+  - I) Field diaries: narrative notes documenting issues affecting data.
+  - J) Streamflow: 13 sites using Starflow systems and other sensors; minute-by-minute data with calibration against manual spot measurements.
+  - K) Calibration and site-specific notes: site-specific Starflow calibration (α*, β*) and standard deviations; neutron-probe moisture conversions with default parameters (α = 0.96, β = -0.01) and site-specific adjustments.
+- Quality assurance and metadata:
+  - Appendix A: QA coding system for data quality, calibration issues, instrument faults, etc.
+  - Appendix B: Borehole logs (equipment, methods, location, depth, soil descriptions, water levels).
+  - Appendix C: Neutron-probe access-tube logs (locations, depths, soil descriptions).
+  - Additional notes: Field diaries and site-specific QA notes accompany the data.
+- Calibration and key equations:
+  - Streamflow (Starflow): y = αx + β with site-specific α* and β* to align Starflow estimates with manual measurements.
+  - Neutron-probe moisture: y = α * (soil_count / water_count) + β with default α = 0.96, β = -0.01; site adjustments may be needed (e.g., peat-affected layers).
+  - AWS notes: humidity and temperature columns added after sensor upgrades in 2009.
+- Access, usage, and interpretation:
+  - Data are organized with descriptive folder names to guide data reuse; QA codes and calibration details support comparability across datasets.
+  - When integrating streams, soils, and groundwater data, apply site-specific calibrations and QA notes.
+  - Consult appendices for borehole and neutron-probe logs to understand sampling depths, soil types, and installation context.
+- Practical implications for data support:
+  - Expect six-month data blocks with occasional deviations due to sampling frequency changes, equipment replacements, or site issues (e.g., rodent damage, logger failures).
+  - Use six-month blocks alongside site-specific calibration equations to ensure comparability.
+  - Use neutron-probe conversions and plot metadata to interpret soil-moisture dynamics across sites.
+  - Refer to appendices for borehole and neutron-probe logs to understand context critical for interpretation.

@@ -1,0 +1,84 @@
+# Details on data collection:
+
+- Overview
+  - This document describes a composite dataset from wood mice (Apodemus sylvaticus) and other small mammals collected during 2014–2018, including wild (Wytham Woods, Oxfordshire) and captive populations.
+  - The main longitudinal trapping study (2015–2018) profiled gut microbiomes, diet, and parasite infections from captured individuals, with fortnightly sampling and subsequent dissection to quantify gut helminths and microbiota along GI tract.
+  - A captive diet-shift experiment assessed microbiome responses to varying seed (peanut) and insect (mealworm) supplementation.
+  - Associated data include results from a population at Silwood Park (Project 1: “Wild rodents social networks and the microbiome”).
+
+- Datasets and scope
+  - Longitudinal Trapping (Wytham Woods, 2015–2018)
+    - 100 m² main grid with additional 100×50 m habitat grids (conifer and meadow) in 2018.
+    - Species include Apodemus sylvaticus, A. flavicollis, and Myodes glareolus.
+    - Fortnightly trapping with Sherman traps; processing includes species ID, sex, weight, age, PIT-tagging, and release in the same grid cell.
+    - Faecal samples collected for gut microbiota, parasite analysis; samples stored at -80°C.
+  - Dissection Study (Wytham Woods, 2017–2018)
+    - Ethical exclusion criteria applied; euthanasia performed to obtain GI tract sections for microbiota and helminth analysis.
+    - Five gut sections were sampled (duodenum, jejunum, ileum, caecum, colon) with tissue preserved for microbiota and ethanol-preserved for helminths.
+  - Experimental Diet Shift (Captive colony, University of Edinburgh, 2017)
+    - Diets varied in seed (peanut) and insect (mealworm) content, plus control chow.
+    - 25-day diet perturbation with five diet treatments, followed by a 5-day post-treatment period on chow.
+    - Faecal samples collected during handling; additional bedding-derived faecal material collected for metabolite analyses.
+  - Additional/Associated Data
+    - Diet shift metadata and other associated measurements collected for the 2017 experiment (see dataset list).
+
+- Data collection methods and handling
+  - Field methods
+    - Sherman live traps, checkerboard coverage, trap baiting with peanuts and apple, bedding, and early-morning trap retrieval.
+    - Processing includes species identification, sexing, weighing, aging; PIT-tags implanted on first capture.
+    - Occasional mortality in traps; ethical and welfare considerations noted.
+  - Sample collection and storage
+    - Faecal samples for microbiota stored at -80°C within 8 hours; parasite samples stored in 10% formalin.
+    - Traps and utensils sterilized between samples (70% ethanol, bleach).
+  - Dissection-specific sampling
+    - Tissue and contents from each GI tract section preserved for microbiota; helminth specimens preserved for later quantification.
+  - Diet-shift experiment protocols
+    - Mice housed in single cages during the perturbation; sample collection aligned with 5-day periods; fresh faecal samples collected, including bedding material for metabolite analysis.
+  - Ethics approvals
+    - RVC Clinical Research Ethical Review Board (URN 2017 1721-2) and University of Oxford Department of Zoology Animal Welfare and Ethical Review Board (APA/1/5/ZOO/NASPA/Knowles/Wood mouse).
+    - UK Home Office Regulations under Project license 70/8543 for the diet experiment.
+
+- Sample analyses and data processing
+  - Microbiome sequencing
+    - DNA extracted from samples using Zymo Quick-DNATM kits; homogenization with bead beating.
+    - Targeted 16S rRNA gene (V4 region) amplicon sequencing; dual-indexing with Illumina barcoding; MiSeq runs (2×250 bp).
+    - Four sequencing runs conducted; samples grouped across runs by study type.
+    - Bioinformatics: DADA2 pipeline for ASV inference; primer/adapter trimming; merge reads; remove chimeras; assign taxonomy against SILVA v138; create a phyloseq object containing ASV counts, taxonomy, and sample metadata. The provided phyloseq object is as raw as possible (no downstream filtering).
+  - Diet and metabolite characterization
+    - Faecal metabolite profiling via GC-FID (acidic metabolites) with internal standard; metabolites quantified against a standard mix.
+  - Gut helminth quantification
+    - Faecal flotation in sodium nitrate solution to detect nematodes, cestodes, and Eimeria oocysts; eggs/oocysts per gram (EPG) calculated for identified parasites.
+  - Metadata and data structure
+    - Data organized into multiple files with extensive field-level metadata to enable traceability and reuse.
+
+- Data outputs and formats (files provided)
+  - Project_4_processed_microbiome_data.rds
+    - A phyloseq object containing gut microbiome data after DADA2 processing, including:
+      - OTU table (ASV counts per sample)
+      - Taxonomy table (ASV assignments)
+      - Sample metadata (extraction/sequencing details, etc.)
+      - Reference sequence (raw ASV DNA strings)
+    - Note: This object is as raw as possible; non-gut taxa (chloroplast, mitochondria) removed in preprocessing.
+  - Wytham_longitudinal_sample_metadata.csv
+    - Metadata per trapping event for the longitudinal study, including:
+      - Sequence_sample_code, collection date, trap details, grid/habitat, PIT tag information, species, sex, age, reproductive status, body measurements, ectoparasite screen results, parasite counts, diet-related measures, and sample types (fecal, microbiome, parasite, etc.).
+      - Multiple phenotype and measurement fields (e.g., AGD, foot measurements, general condition, ectoparasite counts).
+  - Full_Wytham_trapping_data.csv
+    - Comprehensive field-level trapping data for all captures, including:
+      - Data entry details, trap information, processing times, grid/habitat context, species/sex/age, PIT detection, ear/tat tags, body measurements, ectoparasite screens and counts, food bait left, sample types (microbiome, parasite, soil, bedding), releases, notes, adverse events.
+  - Diet_shift_experiment_2017_metadata.csv
+    - Day-by-day measurements for individual mice during the 30-day diet shift experiment, including:
+      - Seq_ID, Mouse.ID, date, intervention (single housing or diet shift), shift period, diet type (seed/insect mix, or chow), sex, cage origin, processing time, body weight and condition, jar/food weights, food intake, top-up, fecal/pooling samples (fresh/fresh-poo from bag, bedding), time stamps, notes, and various metabolite and SCFA measurements.
+  - (Additional nested or supporting metadata files describe faecal metabolite and SCFA measurements; detailed variable lists are provided within the datasets.)
+
+- Data quality, governance, and reuse considerations
+  - The microbiome data are provided in a raw processing state (DADA2-derived ASVs; SILVA v138 taxonomy) without post-hoc filtering or normalization.
+  - Batch information is noted for sequencing (four Miseq runs); metadata links samples to batches for potential batch correction during reuse.
+  - Some data fields are described with placeholders (e.g., XXX) indicating counts or specifics that would be filled in the published dataset; users should consult the accompanying CSVs for exact values.
+  - Ethical compliance and permits are explicitly documented, supporting appropriate reuse in line with animal welfare standards.
+  - The dataset supports cross-study analyses of host microbiome, diet, and parasite interactions in wild and captive wood mice, with explicit linking between field trapping data, dissection data, and diet experiments.
+
+- Governance and stewardship implications
+  - This collection exemplifies comprehensive data governance: clearly defined field collection protocols, detailed metadata, ethical approvals, and a transparent microbiome processing workflow.
+  - Data stewards should ensure links between the datasets remain intact (e.g., Sequence_sample_code across microbiome, longitudinal metadata, and Full_Wytham_trapping_data) to maintain traceability.
+  - When sharing or integrating with other datasets, consider harmonizing habitat classifications, trap IDs, and sample identifiers to promote interoperability across studies and repositories.

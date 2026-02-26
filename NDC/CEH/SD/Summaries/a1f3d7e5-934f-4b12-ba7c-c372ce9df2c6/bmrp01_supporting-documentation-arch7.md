@@ -1,0 +1,22 @@
+# Sampling regime and collection methods
+
+- Study location and population: Banded mongoose (Mungos mungo) on the Mweya Peninsula, Queen Elizabeth National Park, Uganda (0°12′ S, 29°54′ E). Continuous study since 1995; typically 10–12 social groups occupying distinct territories; groups ~20 adults plus offspring.
+- Individual identification and tracking: Individuals uniquely marked (adult shaved patches; pups dye marks). Regular trapping every two months to maintain marks. Radio collars (~30 g) fitted to 1–2 individuals per group with a 20 cm antenna to enable group location via radio telemetry. Most groups are habituated to observers at close range (<5 m).
+- Observation regime: Groups visited every 1–3 days for ~20 minutes to record group composition, life history, and reproductive behaviour. Daily visits during pregnancy to record birth dates. Pups marked around 30 days old; 2 mm tail-tip tissue sampled for genetic analyses to determine parentage.
+- Genetic and sexing data: DNA genotyped using 43 polymorphic microsatellites (or 35 for a subset) to assign maternity/paternity with 90–95% assignment probabilities.
+- Data collection tools and workflow: Field data collected with Psion II data loggers (until 2014) and later via a bespoke Mongoose 2000 app on Samsung Galaxy tablets; data downloaded into an MS Access database. Calibration of field instruments performed to factory settings.
+- Instrumentation specifics: Radio collars with ~30 g weight and 20 cm whip antenna (suppliers Sirtrack and Biotrack).
+- Data quality safeguards: Mongoose 2000 includes internal checks (e.g., presence required for recording data). Quality control performed with MS Access queries and custom R code to detect inconsistencies (e.g., multiple death records for an individual).
+- Data structure and storage: Data stored in three CSV files, each with clearly defined columns:
+  - Mortality rates from intergroup conflict (2000–2015): group.id; sex; death; exposure; mortality.rate; observed mongoose-years.
+  - Fitness benefits from intergroup conflict (2000–2019): sex; lego (lifetime extra-group pups); lrs (lifetime reproductive success); number.igis; age.at.death.
+  - Frequency of intergroup interactions (IGIs) and estrus state (2000–2019): focal.group.id; rival.group.id; focal.rival.estrus.state; number.igis; days.in.estrus.state; olre (observation identity).
+- Analytical focus and measures:
+  - Mortality analysis: adult deaths (>1 year) due to intergroup conflict; compute male and female mortality rates per year using exposure in mongoose-years.
+  - Reproductive success: LEGO and LRS for adults post-2000, using genetic pedigree data for parentage; quantify lifetime exposure to IGIs and age at death.
+  - Intergroup interaction dynamics: IGIs categorized by estrus states of focal and rival groups (four states), tallying IGIs and observation days in each state.
+- Spatial relevance and GIS considerations:
+  - Location data tied to group territories and radio-tracked group positions via telemetry, enabling spatial analyses of intergroup interactions and movement patterns.
+  - Longitudinal, multi-resolution data (individuals, groups, territories) suitable for map-based visualization of interactions, mortality hotspots, and reproductive success across space and time.
+- Scope and accessibility:
+  - Long-term, high-resolution behavioral, genetic, and demographic data designed for integration into GIS-based studies and map visualizations for diverse audiences.

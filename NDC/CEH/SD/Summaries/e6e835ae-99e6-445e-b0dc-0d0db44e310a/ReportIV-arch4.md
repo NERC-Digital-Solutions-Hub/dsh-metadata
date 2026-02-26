@@ -1,0 +1,61 @@
+# NERC Soil Biodiversity Thematic Programme: Sourhope Site Summary
+
+- Overview
+  - Four years into the NERC Soil Biodiversity Thematic Programme at Sourhope, focusing on above-ground biomass (productivity), species composition, and diversity within a large field experiment.
+  - Five replicate blocks along a downslope gradient; each block contains six main plots with five plot-level treatments (Control 1, Control 2, Nitrogen, Lime, Nitrogen & Lime) and an Insecticide treatment (Dursban), plus a site-wide mowing regime.
+  - Broad aim to link above- and below-ground processes, with botanical monitoring (biomass, diversity, species presence) integrated with extensive soil and weather data.
+
+- Data assets and collection methods
+  - Experimental design and treatments
+    - 5 blocks, 6 main plots per block; plots subdivided into 10 sub-plots; 0.5 m x 0.5 m cells allocated to research groups.
+    - Treatments: Control 1, Control 2 (no treatment); Nitrogen; Lime; Nitrogen & Lime; Insecticide (biocide renamed); site-wide mowing (6 cm sward height).
+  - Data collected (since 1998–1999 onward)
+    - Above-ground biomass: harvests from randomly selected 0.5 m2 cells within sub-plots, dried and weighed (five cuts per summer; annual totals).
+    - Vegetation surveys: baseline (1998) and annual/ biennial point analyses (2000–2002) using 0.5 m2 cells with 100-point grid; bryophyte/vascular plant identification improved in 2002.
+    - Species lists: comprehensive vascular plants and bryophytes; Appendix 3 lists species recorded in 2002.
+    - Soil data: soil pH at ~5 cm depth (since 1998); soil moisture (theta probe) measured in 2002; periodic soil sampling.
+    - Weather data: on-site Automatic Weather Station since Feb 1999; headline measures (rainfall, radiation, temperatures) with notable 2002 data gaps due to station malfunction.
+  - Data volumes and site activity
+    - Over 11,621 soil samples collected to date; ongoing multi-project data sharing; substantial field activity in 2002 with 7 of 8 Phase II projects visiting Sourhope.
+    - Appendices document detailed datasets: biomass per plot (Appendix 6), plant hit ranks (Appendix 8), species lists (Appendix 3), weather data (Appendix 5).
+
+- Key findings by topic
+  - Mowing effect
+    - Reduction of Agrostis capillaris and A. vinealis since 2000 across all treatments.
+    - Festuca rubra expands, especially in fertilised plots; mosses/bryophytes expand under regular mowing and reduced grazing.
+    - Disturbance reduction (due to grazing exclusion) favors stress-tolerant species and mosses; diminished SR/C-S-R species across treatments.
+  - Fertilisation effect
+    - Nitrogen and/or lime increase above-ground productivity; plots with both N and lime show the strongest productivity gains.
+    - pH rises with lime application (near 7.0 in limed plots); higher soil pH linked to higher productivity overall, though relationships vary by treatment.
+    - N and lime together shift plant functional composition toward competitive-stress-ruderals (CSR) types; high pH appears more influential for CSR expansion than nitrogen alone.
+    - Potential moisture stress in high-N and lime plots may contribute to chlorosis and reduced growth during dry periods.
+  - Insecticide effect
+    - Highest plant diversity trends observed in insecticide-treated plots, though causality is cautious due to limited data on actual herbivory control.
+    - Possible indirect benefit to palatable species when herbivory is reduced; broader inference aligns with literature on insect-plant interactions.
+  - Trampling effect
+    - 2002 productivity declines in C2 plots attributed to trampling during intense activity (e.g., labelled 13CO2 pulses), illustrating the impact of short-term disturbance on growth.
+  - Soil pH, moisture, and productivity interactions
+    - Lime raises pH significantly; strong negative correlation between soil moisture and pH observed.
+    - Across all treatments, higher pH generally correlates with higher biomass, but within N- or lime-treated plots the positive relationship weakens or reverses, indicating complex interactions.
+  - Functional group dynamics (CSR framework)
+    - Early years dominated by stress-tolerators (S) in unimproved plots; fertilised plots show expansion of C-S-R and SR/C-S-R groups.
+    - By 2002, CN&L plots show clear CSR-related shifts; unimproved plots retain more stress-tolerant dominance, while bryophyte representation increases in unimproved conditions.
+  - Bryophytes and overall diversity
+    - Bryophyte hits rise across the site, particularly in unimproved plots; increasing moss abundance corresponds with reduced vascular plant diversity in those plots.
+  - Diversity metrics
+    - Shannon diversity indices decline in some fertilised plots relative to unfertilised plots over time, while insecticide-treated plots show notable diversity increases in some years.
+
+- Data gaps, caveats, and data quality notes
+  - 2002 weather data gaps due to station malfunction; missing periods (late July–Nov) were substituted with data from Konza; remaining 2002 data exclude those missing dates for several variables.
+  - Control 2 plots were not surveyed in 2000–2001 for some analyses; Appendix data provide per-plot and per-year detail.
+  - Bryophyte identification improved in 2002, affecting species-level interpretation.
+  - Some correlations and causal links (e.g., insecticide effects on diversity) are interpretive and require cautious inference due to design and measurement limitations.
+
+- Implications for data strategy and data leaders
+  - The Sourhope dataset exemplifies an integrated, multi-layer data system across management regimes, with longitudinal biomass, species, soil, and weather data essential for understanding data-informed policy and practice.
+  - Key considerations for data leaders:
+    - Maintain consistent metadata standards across years and treatments to enable cross-study integration.
+    - Preserve documentation of treatments, timings, and measurement protocols (e.g., mowing dates, fertilizer rates, insecticide applications).
+    - Ensure data quality and traceability amid interruptions (e.g., weather station faults) and provide transparent data imputation or substitution records.
+    - Publish and curate comprehensive datasets (e.g., Appendix 6 biomass time series, Appendix 3 species lists, Appendix 5 weather data) to support downstream analysis and cross-institution collaboration.
+    - Recognize the value of multi-faceted data (biomass, soil chemistry, plant functional types, bryophytes) to inform broader data strategy and communities of practice.

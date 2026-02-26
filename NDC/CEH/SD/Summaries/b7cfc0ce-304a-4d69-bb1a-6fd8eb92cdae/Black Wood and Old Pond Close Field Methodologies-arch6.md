@@ -1,0 +1,29 @@
+# Atmospheric inputs and Filtration and storage
+
+- Sampling frequency and scope
+  - Samples collected weekly to fortnightly to capture high variability in throughfall and stemflow volumes and chemistry.
+  - Rainfall, throughfall, stemflow, and a stream sample were collected to build a representative dataset.
+- Atmospheric inputs collection methods
+  - Rainfall: polypropylene funnel on towers above the canopy; field storage in 1 L polythene bottles; samples returned to Wallingford Laboratories.
+  - Throughfall: roving collectors randomly distributed within a block (Black Wood) or along a transect (Old Pond Close).
+  - Stemflow: plastic silicone rubber collar tubing around the tree; runoff collected in a large bin.
+  - Throughfall and stemflow: simultaneous collection using a sheet collector attached to trees.
+- Stream sampling
+  - Old Pond Close stream sampled by grab using a polythene bucket attached to a nylon chord.
+- Filtration and storage workflow
+  - All samples returned to Wallingford Laboratories for processing; both unfiltered and filtered samples required for chemical analysis.
+- Unfiltered samples and initial analyses
+  - Unfiltered samples used for pH and alkalinity determination.
+  - For streams, samples kept in filled glass bottles to minimize CO2 degassing and pH changes; rainfall samples degassing in the field while standing.
+- Filtration process
+  - Filtration performed with 0.45 µm Whatman cellulose nitrate filters (47 mm) under vacuum using a Millipore holder.
+- Post-filter handling and storage
+  - Unfiltered samples analyzed on the same day for pH and alkalinity.
+  - Filtered samples stored prior to cation analysis after acidification to 1% with concentrated high-purity nitric acid.
+  - Anions and nutrients (including silicon and ammonium) stored without acidification.
+- Storage materials and conditions
+  - Polypropylene bottles cleaned with 10% hydrochloric acid and rinsed with distilled water.
+  - Storage at 4 °C in the dark.
+- Data quality and analysis implications
+  - Separate handling for pH/alkalinity (unfiltered) versus cation analysis (acidified filtrate) and anions/nutrients (non-acidified filtrates) to ensure accurate chemical measurements.
+  - Field degassing considerations important for interpreting pH readings, particularly in rainfall versus stream samples.

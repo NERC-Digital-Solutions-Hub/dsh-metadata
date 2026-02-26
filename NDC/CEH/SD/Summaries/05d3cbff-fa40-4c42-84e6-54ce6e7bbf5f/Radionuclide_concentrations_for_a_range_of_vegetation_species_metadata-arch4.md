@@ -1,0 +1,56 @@
+# Radionuclide meta-data
+
+- Overview
+  - A data dictionary for radionuclide analysis from the CEH Radiochemistry laboratory.
+  - Captures sample identifiers, sampling site and date, plant species or soil context, and analytical details.
+  - Includes activity concentration measurements for K-40, Cs-137, Be-7 with related quality indicators and metadata.
+
+- Key data fields and meanings
+  - Sample identity and context
+    - Sample_ID: unique sample identifier.
+    - Sampling_Site: sampling location.
+    - Sampling_date: date the plant or soil was sampled.
+    - Analysed_date: date the sample was analysed (dd/mm/yyyy).
+  - Taxonomy and sample description
+    - Species: Latin name of the plant species (n/a if soil sample).
+    - Common_name: common name if available (n/a if soil sample).
+    - Order, Family, Genus: taxonomic categories (n/a for soil samples).
+  - Sample characteristics
+    - Mass_of_sample_g: mass of sample in grams (dry weight).
+  - Analytical details
+    - Analysis_time_days: duration of analysis in days.
+  - Radionuclide activity concentrations and quality metrics
+    - Activity_concentration_40K_Bq_kg_dry: K-40 activity concentration (Bq/kg dry weight).
+    - Counting_error_40K_Bq_kg_dry: counting error for 40K concentration.
+    - 40K_<: indicator (< present if concentration below LOD).
+    - MDA_40K_Bq_kg_dry: minimum detectable activity for 40K.
+    - Activity_concentration_1_37Cs_Bq_kg_dry: Cs-137 concentration (Bq/kg dry weight).
+    - Counting_error_137Cs_Bq_kg_dry: counting error for Cs-137 concentration.
+    - 137Cs_<: indicator (< present if concentration below LOD).
+    - MDA_137Cs_Bq_kg_dry: minimum detectable activity for Cs-137.
+    - 7Be_<: indicator (< present if Be-7 concentration below LOD).
+    - MDA_7Be_Bq_kg_dry: minimum detectable activity for Be-7.
+  - Notes
+    - Notes: information related to samples that may impact reported results; otherwise not applicable.
+
+- Data quality, standards, and interpretability
+  - Units and formats
+    - Mass_of_sample_g uses grams (dry weight).
+    - Analysed_date uses dd/mm/yyyy.
+    - Activity concentrations and MDAs use Bq per kg dry weight.
+  - Data completeness and flags
+    - LOD indicators (e.g., 40K_<, 137Cs_<, 7Be_<) flag values below detection.
+    - Some fields may be not applicable for soil samples (n/a).
+  - Provenance and lineage
+    - Laboratory source specified as CEH Radiochemistry laboratory; implicit traceability to sample collection and analysis dates.
+
+- Practical implications for Data Leaders
+  - Data governance
+    - Ensure consistent naming, units, and formats across the radionuclide dataset.
+    - Maintain and harmonize LOD/MDA semantics for reliable interpretation.
+  - Data quality and usability
+    - Track mass, dates, and taxonomic metadata to enable cross-sample comparability.
+    - Use notes to capture result-impacting context and potential data caveats.
+  - Data discovery and collaboration
+    - Rich metadata supports discoverability by researchers across plant/soil radiochemistry studies.
+    - Clear structure enables integration with broader environmental data systems and communities of practice.

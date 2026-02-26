@@ -1,0 +1,40 @@
+# Loch Leven long-term monitoring dataset
+
+- Overview
+  - Dataset from Loch Leven, a lowland lake in Scotland, collected as part of a long-term monitoring programme that began in 1968 and is ongoing.
+  - Analyses conducted by former and current National Environmental Research Council (NERC) staff, most recently NERC / UK Centre for Ecology & Hydrology.
+  - Produced under the UK-SCAPE WP7 LEVEN project.
+- Sampling regime and sites
+  - Fortnightly sampling with two main sampling sites per occasion: Reed Bower (RB) and Sluices/Outflow (L/Sl8); Harbour (H) also referenced in site codes.
+  - Reed Bower sample is boat-accessible; Sluices can be sampled by boat or from shore. Occasionally access is limited by weather, ice, or resource constraints.
+  - Two primary measurement locations are used, with occasional samples from Harbour site data.
+  - Site locations and coordinates are provided (UK National Grid EPSG:27700).
+- Measurements, sampling, and analysis
+  - In situ measurements: conductivity, pH, temperature (hand-held probes); Secchi depth measured at Reed Bower only.
+  - Water samples collected as duplicates per site; field samples transported to the laboratory for later analysis.
+  - Determinands analyzed in the lab: SRP (soluble reactive phosphorus), TP (total phosphorus, unfiltered), TSP (total soluble phosphorus, filtered), soluble silica, total diatom silica, chlorophyll a.
+  - Phosphorus analyses follow established methods (Murphy & Riley, Wetzel & Likens); SRP via phosphomolybdate-blue chemistry; TP via persulfate digestion; chla via filtration and fluorometry.
+  - Weather data (cloud cover, wind direction, wind force) recorded when possible; wind force mapped to Beaufort scale with a detailed lookup table.
+- Crustacean & zooplankton component
+  - Densities of crustacean zooplankton taxa recorded (ind/l) at Reed Bower and Sluices sites, including Daphnia, Eudiaptomus, Cyclopidae, Bosmina, Leptodora, Bythotrephes, Chydoridae, Polyphemus pediculus, and others.
+  - Sampling methods differ by site (4 m net haul at Reed Bower; 30 L surface water through a 120 µm net at Sluices); samples preserved in formaldehyde.
+  - Laboratory analysis involved subsampling and microscopic counting, with species-level identification where possible; counts converted to individuals per litre.
+  - As of 2022, some column names were updated for consistency; two new taxa added (Ceriodaphnia sp. and Polyphemus pediculus) at the end of the dataset.
+- Data processing and quality assurance
+  - An R script was used to process data prior to database entry; documented decision rules for data handling.
+  - Wind force: when given as a range (e.g., 4-5), the first value is used.
+  - Probe replicate handling: values within Median ± MAD are retained; median/MAD applied after converting pH to 10^pH and back; single-value replicates may be retained; rounding applied to key fields.
+  - Inter-calibration: HQ30d probe replaced by HQ4300; calibration performed to maintain consistency; column names updated accordingly, but column order unchanged.
+  - Automated and manual QA checks performed; anomalous values investigated and corrected where appropriate.
+- Data format and metadata
+  - Data stored in a single CSV file with comprehensive column metadata, including determinand, site, units, and contextual information.
+  - Missing data represented as NA.
+  - Column naming provides descriptive context (e.g., Date, Site, Week_of_Year, water quality metrics, biomass/density counts, etc.).
+- Column schema and references
+  - Table-style column descriptions cover dates, site conditions, lake chemistry (conductivity, pH, temperature, DO), Secchi depth, and zooplankton/crustacean counts, plus specific units.
+  - Detailed column headings include site-specific measurements (e.g., Water_Level_cm, Cloud_cover_Eighths, Wind_Direction, Depth, Secchi depth, Conductivity, Temperature, DO, pH, TP/SRP/TSP, chlorophyll a, and numerous zooplankton taxa abundances).
+  - The dataset references standard methodologies and prior publications for analyses (Golterman et al. 1978; Murphy & Riley 1962; Wetzel & Likens 2000; and related Hydrobiologia/JR sources).
+- Data provenance and usage notes
+  - Data originate from a long-term, government/academic monitoring program with established sampling protocols, site geolocation, and QA processes.
+  - Designed to support environmental policy scrutiny, evaluation of monitoring approaches, and informing future decisions through transparent methods, data processing rules, and openly described metadata.
+  - Potential use in monitoring framework design includes: long-term trend assessment, data quality governance, metadata completeness, data standardization across sites, and transparent data transformation steps.

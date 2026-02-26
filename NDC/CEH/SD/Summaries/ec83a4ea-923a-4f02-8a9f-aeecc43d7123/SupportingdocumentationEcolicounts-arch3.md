@@ -1,0 +1,22 @@
+# Supporting documentation
+
+- This dataset consists of a single CSV file, Ecolidatafaeces.csv, with 38 columns that describe faecal samples from animals on the North Wyke farm platform.
+- The dataset captures extensive metadata at multiple levels:
+  - Sample and collection details: sample number, sample type, collection method (freshly voided or from the floor; grab from rectum), sampling date.
+  - Animal and grouping information: up to four animals identified by ear tag numbers; farmlet origin (blue, green, red); cohort (1 or 2); pooling information (nine libraries from 30 animals grouped 3, 3 & 4 per farmlet).
+  - Medication and context: date medicated, medication name, and reason for administration.
+  - E. coli quantification (multiple metrics): counts at dilution series (10^-1 to 10^-4) for E. coli, including counts with antibiotics (Tet - tetracycline; Ceph - cephalexin; Marb - marbofloxacin; Merop - meropenem); mean CFU/g wet weight and corresponding mean log values; mean CFU/g dry weight and corresponding mean log values.
+  - Dry matter and related metrics: % dry matter (gravimetric), TMC (too many colonies to count), NS (not sampled), and ND (no data).
+  - Data processing outputs: means for wet and dry weight measurements, including log transformations.
+- Analytical methods:
+  - Sample preparation: 1 g of faecal material transferred to 9 ml sterile Ringers solution; serial 10-fold dilutions prepared.
+  - Plating and enumeration: 0.1 ml aliquots plated in duplicate on Membrane Lactose Glucuronide Agar (MLGA); antibiotics added to plates (16 mg/L tetracycline; 16 mg/L cephalexin; 1.0 mg/L marbofloxacin; 8 mg/L meropenem) after autoclaving and before pouring.
+  - Incubation: plates inverted and incubated at 44.5°C (±0.2°C) for 18–24 hours.
+- Moisture content determination:
+  - Gravimetric method: ~50 g of faecal material dried in an oven at 105°C to constant weight.
+  - Calculation of % dry matter: 100 - ((fresh wt. - dry wt.) / fresh wt.) × 100.
+- Licensing and governance:
+  - Establishment licence: XA11784A2.
+  - Project licence: P592D2677.
+- Context and intent:
+  - The dataset supports analysis of faecal E. coli counts in relation to sampling context, farmlet grouping, and medicated status, with detailed metadata to enable reproducibility and auditability of laboratory results.

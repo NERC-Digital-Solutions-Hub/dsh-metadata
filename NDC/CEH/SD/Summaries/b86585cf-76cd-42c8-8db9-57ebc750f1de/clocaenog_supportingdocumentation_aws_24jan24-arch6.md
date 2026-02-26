@@ -1,0 +1,88 @@
+# Climoor field site in Clocaenog forest. Supporting documentation for data
+
+- Data access
+  - Data can be accessed from the Environmental Information Data Centre (EIDC) under the data collection: Daily automated weather station (AWS) data from Climoor field site in Clocaenog forest. Link: https://catalogue.ceh.ac.uk/documents/198980ac-8f5e-4a16-b1c0-bc6d61516b99
+
+- Data structure
+  - Dataset: CLM_AWS_2022-2023_summaryQA.csv
+  - Size: 1 spreadsheet, 10 columns, 731 rows
+  - Missing data: labelled as 'NA'; faulty data replaced by -9999
+  - Columns (Date, Unit, Description)
+    - Date, Year-Month-Day
+    - Mean_air_temperature_degC, oC
+    - Minimum_air_temperature_degC, oC
+    - Maximum_air_temperature_degC, oC
+    - Rainfall_mm, mm
+    - Air_pressure_mbar, mbar
+    - Solar_radiation_kW_per_m2, kW/m2
+    - Photosynthetic active radiation_umol_per_m2_per_sec, umol m-2 s-1
+    - Wind_speed_m_per_sec, ms-1
+    - Wind_direction_degrees, degrees
+
+- Site information
+  - Location and purpose
+    - Automated climate change manipulation site at Clocaenog Forest, North East Wales, established 1998
+    - Replicated drought and warming treatments; powered by solar and wind
+  - Habitat and vegetation
+    - Upland west-atlantic moorland; dominant Calluna vulgaris (heather) with Vaccinium myrtillus and Empetrum nigrum; bryophytes present
+  - Soil and horizons
+    - Humo-ferric podzol with variable eluvial (E) and illuvial (Bh) horizons; typical E horizon at 6–17 cm
+  - Climate (1997–2014)
+    - Mean air temperature: 8.0 °C
+    - Mean soil temperature (control): 7.5 °C
+    - Mean annual rainfall: 1411 mm
+    - Total N-deposition: 20–25 kg N ha-1 yr-1
+  - Vegetation structure
+    - Shrub and bryophyte cover with measured biomass at start of experiment (1998)
+
+- Climate change treatment information
+  - Treatments and layout
+    - Two treatments: drought and warming; each with three replicate plots (4 m x 5 m)
+    - Three control plots with scaffolding to mirror shading (total n=9 plots)
+  - Drought treatment
+    - May–Sept drought implemented 1999–2011 (and later adjustments)
+    - Mechanism: retractable polyethylene roof triggered by rainfall sensor; reduces annual rainfall by ~20%
+    - Limitations: some small rain events missed; since 2012 extended to Apr–Oct; since 2016 rainwater accumulation prevented roof retraction
+  - Warming treatment
+    - Uses retractable aluminum mesh curtains to reduce infrared radiation (reflects 96–97%) and limit nighttime heat loss
+    - Operated at night; retracted during rain to avoid removing rainfall; some rainfall exclusion occurs due to lag
+    - Rainfall reductions ~14% overall
+  - Maintenance and changes
+    - 2016–2017: original frames replaced with new frames installed atop old ones to reduce disturbance
+    - 2018: rainfall sensor on site broken; drought roofs not in operation during some periods
+    - 2020–2021: field work affected by COVID; some years with incomplete data
+  - Treatment timing and metrics
+    - Table 6a: yearly drought dates and percent rainfall reductions (varied by year)
+    - Table 6b: warming treatment data; growing degree days (GDD) compared between control and warming; provides percentage change per year
+    - GDD calculations rely on plot-level temperature data; some years NA due to missing data or not measured
+
+- Equipment, protocols and data processing methodology
+  - Automated weather station (AWS) and micro-meteorological data
+    - AWS mounted at 4 m after thefts; sensors measure: air temperature, relative humidity, rainfall, air pressure, net radiation, solar radiation, PAR, wind speed/direction
+    - Measurements: 1-minute intervals; hourly averages
+    - Data quality control: visual QC using Excel after collection
+  - Micro-meteorological plot data
+    - Plot-level soil and air temperature; soil moisture via TDR sensors since 2008 (CS616)
+    - Earlier soil moisture measured with ML-2 theta probe
+    - Data frequency: 1 minute; hourly averages (pre-2016) and half-hour averages (post-2016)
+  - Rain gauge data (site-level rainfall) and rainfall chemistry
+    - Ground-level rain gauge with 12.7 cm funnel; rainfall accumulated biweekly
+    - Considered more robust than AWS data due to logger/power issues
+  - Throughfall data (plot-level rainfall)
+    - Biweekly collection using funnels and bottles per plot
+    - Data processing: compute seasonal/annual plot rainfall by applying percent change from throughfall to site-level rainfall; exclude data from plots with measurement loss; occasional infilling with year-average reductions
+  - Data availability and contact
+    - Not all micro-dataset stored in EIDC; contact Sabine Reinsch or Bridget Emmett (enquiries@ceh.ac.uk) for details
+  - Data processing notes
+    - Data quality checks include consistency across years and handling of missing or corrupted measurements
+    - Throughfall data require adjustments to align with site-level rainfall for comparative analyses
+
+- Appendix and site layout
+  - Figures referenced (site layout and quadrat measurements) illustrate plot arrangement and measurement areas
+  - Each quadrat is 0.5 m^2; layout used for vegetation and measurement areas
+
+- Key takeaways for data use
+  - A single CSV (CLM_AWS_2022-2023_summaryQA.csv) provides core AWS meteorological data for the site, with explicit missing-data codes
+  - Comprehensive, multi-faceted data exist beyond AWS, including plot-level microclimate, rainfall, throughfall, rainfall chemistry, soil/vegetation metrics, and long-term climate manipulation records
+  - Data quality considerations include equipment maintenance history, sensor outages (e.g., rainfall sensor 2018 onward), COVID-related gaps, and the need to harmonize throughfall with site rainfall for treatment effect analyses
+  - For access or additional datasets not in the EIDC, contact project leads at CEH Bangor

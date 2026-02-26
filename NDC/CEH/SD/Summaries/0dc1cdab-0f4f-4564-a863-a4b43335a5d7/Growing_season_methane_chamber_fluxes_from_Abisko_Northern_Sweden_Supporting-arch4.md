@@ -1,0 +1,40 @@
+# Supporting Documentation
+
+- Site: Stordalen mire, a subarctic peatland in Northern Sweden, characterized by heterogeneous hydrology and vegetation (wetlands and birch forest areas) with thawing permafrost affecting moisture regimes.
+- Study design: Flux measurements of CH4 using static chambers across three campaigns in 2013 (June, August, September). 60 chambers measured simultaneously at any time (with 64 total chamber locations due to replacements); chambers 61-64 were waterlogged and lacked PRS probes.
+- Data products and scope: 
+  - CH4 fluxes computed for each chamber using GCFlux v2 with multiple models; best-fit model selected per chamber. Flux units: nmol CH4 m-2 s-1.
+  - Ancillary environmental data collected alongside fluxes: soil temperature (10 cm depth), chamber-height air temperature, volumetric soil moisture content (VMC), chamber vegetation assessment.
+  - Nutrient data from Plant Root Simulator (PRS) probes adjacent to each chamber, including total N/P and individual ions (NO3-N, NH4-N, Ca, Mg, K, P, Fe, Mn, Cu, Zn, B, S, Pb, Al, Cd) and veg_class metadata.
+  - Daily parameters for forest chambers (parameters_daily.csv) capturing CH4-related measurements with date, chamberID, sm_vmc_mean, soil_temp, and air_temp.
+  - Site-level and chamber-level metadata (oneoff_data.csv) including chamber ID, vegetation classification, coordinates (lat, long), and PRS-derived nutrient rates.
+- Data structure and key files:
+  - RCfluxOutput.csv: CH4 flux calculations and model outputs per chamber, including
+    - flux_linear, flux_quadratic, flux_linear2nd, flux_quadratic2nd, flux_asymptotic
+    - flux_bestfit or bestFitMethod indicators
+    - model fit metrics: ci95lo_linear, ci95h_linear, ci95l_bestfit, ci95hi_bestfit, adjr2_linear, adjr2_quadratic
+    - chamberID, HMR model results, and bestFitMethod codes
+  - oneoff_data.csv: chamber_id, total_N_PRS, NO3-N, NH4-N, Ca, Mg, K, P, Fe, Mn, Cu, Zn, B, S, Pb, Al, Cd; veg_class; lat; long
+  - nutrients PRS data: per chamber nutrient supply rates and vegetation class; includes lat/long coordinates
+  - parameters_daily.csv: Date, chamberID, sm_vmc_mean, soil_temp, air_temp (forest chambers)
+  - Table 2 and vegetation coding references for site classification
+- Data collection and quality control:
+  - Field methods: 40 cm diameter opaque polypropylene static chambers with shallow 10 cm bases; 45-minute flux measurement windows; 4 air samples collected per chamber per occasion; vials analyzed later in Edinburgh.
+  - Ancillary measurements: soil temperature (10 cm depth), chamber-height air temperature, and VMC; vegetation recorded visually per chamber.
+  - PRS probes: deployed adjacent to each chamber (26/06/2013–13/08/2013 and 21/08/2013–23/09/2013); concentrations corrected for deployment length; probes analyzed by Western Ag Innovations.
+  - Instrumentation: CH4 and N2O data from GC with ECD and CH4 FID; calibration with four-point standards; detection limits specified (<7 μg L^-1 for N2O; <70 μg L^-1 for CH4).
+  - Calibration and processing: 4-point calibration tables provided; GCFlux v2 used to compute fluxes from chamber data; selection of best-fit model per chamber; reporting includes multiple flux estimates and quality metrics.
+- Provenance and references:
+  - Methodology and calibration sources: Chamber design guidelines (Clough et al., 2015); CH4/CO2 flux dynamics in subarctic ecosystems (Jammet et al., 2017); vegetation changes and net fluxes over decades (Johansson et al., 2006); uncertainty quantification in chamber-derived fluxes (Levy et al., 2011).
+- Governance, accessibility, and stewardship considerations for Data Leaders:
+  - Data are stored as multiple CSV files with explicit naming conventions and linked by chamber IDs and dates; raw GC data and processed outputs are documented.
+  - Maintained by research teams at the Centre for Ecology and Hydrology, Edinburgh (analysis workflow) and Western Ag Innovations Inc. (PRS analysis); clear lineage from field collection to processed flux outputs.
+  - Metadata elements include precise location (lat/long), vegetation classification, chamber IDs, deployment dates, and environmental covariates, enabling reuse and cross-study integration.
+  - Limitations and caveats: historical data from 2013; some chambers were relocated or underwater; PRS data coverage varies by chamber; units and model outputs must be harmonized when integrating with other datasets.
+- Practical implications for Data Leaders:
+  - Opportunities to integrate with broader peatland gas flux datasets by aligning metadata, units, and vegetation classifications; potential for cross-site comparability through standardized data dictionaries and ontologies.
+  - Recommendations to strengthen data governance:
+    - Develop a comprehensive data dictionary and metadata schema covering all files (RCfluxOutput.csv, oneoff_data.csv, PRS data, parameters_daily.csv).
+    - Establish data lineage, versioning, and licensing to support reuse beyond the original study.
+    - Ensure consistent units and naming conventions across datasets and document any deviations.
+    - Create data discovery aids (indexing by chamberID, date, and site type) to improve accessibility for policy, research collaborations, and cross-network data sharing.

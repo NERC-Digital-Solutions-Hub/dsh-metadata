@@ -1,0 +1,56 @@
+# Soil Biodiversity Thematic Programme – Sourhope Site Summary
+
+- Context and aims
+  - Four years into the NERC Soil Biodiversity Thematic Programme, focused on understanding soil biodiversity and its functional roles, using a large field experiment at Sourhope, Scottish Borders.
+  - Emphasis on linking below-ground processes with above-ground plant communities and broader ecological feedbacks.
+- Experimental design and treatments
+  - Location: Rigg Foot Experimental Site, Sourhope with 5 replicate blocks along a downslope gradient.
+  - Each block contains 6 main plots; plots subdivided into 10 sub-plots; 0.5 m2 cells used for data collection.
+  - Treatments (applied at plot level or site level): Control 1, Control 2, Nitrogen, Lime, Nitrogen + Lime, Insecticide (Dursban 4 OPA).
+  - Management: monthly mowing to 6 cm May–September since 1999; insecticide applied after mowing; fertilisers applied in spring (N and/or lime).
+  - Baseline conditions: initial grazing until 1998; site re-surveyed post-treatment start; 1998 vegetation survey placed the site in a Festuca ovina-Agrostis capillaris-Galium saxatile grassland context.
+- Data assets and collection methods
+  - Data types: above-ground biomass (productivity), species composition, diversity indices; bryophyte presence; soil pH and moisture; weather data from on-site Automatic Weather Station; extensive botanical surveys and point analysis data.
+  - Time series: data collected from 1998 baseline through 2002; annual biomass sampling across five summer cuts; point analyses in 2000–2002; soil pH measured periodically since 1998; moisture measured in 2002 within point-analysis cells.
+  - Sample scale and monitoring: 11621 soil samples collected by 2002; numerous supplementary vegetation surveys and biomass sorting by species; Appendix data include species lists and biomass by plot.
+  - Data analyses used: ANOVA (split-plot), PCA, correlations, and year-by-year comparisons to track treatment effects and trends.
+- Key findings (data-driven highlights)
+  - Mowing effects
+    - Consistent decline of Agrostis capillaris and Agrostis vinealis since 2000; overall site-level mowing (6 cm sward) favors Festuca rubra in fertilised plots and stress-tolerant species across treatments.
+    - Bryophyte expansion (notably Rhytidiadelphus squarrosus) across the site, linked to reduced disturbance and maintained sward height; mosses contribute to a shift in community structure, particularly in less fertile plots.
+  - Fertilisation effects
+    - Nitrogen and/or lime fertilisation increases above-ground productivity, with the strongest gains where both N and lime are applied.
+    - Productivity in N+L plots appears very high but may peak as soil pH approaches 7.0 and soil moisture declines; plots with high lime show near-neutral pH in 2002 and possible chlorosis under high lime in some seasons.
+    - Functional group shift: C-S-R (competitive-stress-ruderal) species expand in N+L plots; stress-tolerant (S) species dominate unfertilised plots; lime and nitrogen influence the balance of functional groups and species dominance.
+  - Insecticide effects
+    - Diversity trends (e.g., Shannon index) show increases in some plots with insecticide treatment, but evidence linking reduced herbivory to higher diversity remains circumstantial.
+    - Patterns suggest herbivory pressure relief may benefit a subset of palatable species, potentially maintaining diversity under infertile conditions.
+  - Trampling effects
+    - 2002 C2 (post-13CO2 pulse) plots show noticeable productivity reductions, likely due to trampling during peak sampling and lab activities.
+- Data governance, quality and accessibility
+  - Documentation and metadata
+    - Detailed treatment maps and descriptions are maintained (Appendix 2), with species lists (Appendix 3) and extensive site activity records (Appendix 4).
+    - Weather data and site measurements are archived (Appendix 5: weather station; Appendix 6–8: biomass, species hits, and PCA results).
+  - Data quality and gaps
+    - 2002 weather data includes a noted outage (July–November) from the on-site station; data for that period were supplemented from a nearby Konza station; some missing data were acknowledged and handled in analyses.
+    - New data collection in 2002 for some plots (C2) reflects ongoing experimental expansion and trampling considerations.
+  - Access and dissemination
+    - The Soil Biodiversity programme maintains project details on a central website (http://www.nerc-merlewood.ac.uk/soilbio/index.html) or via the Centre for Ecology and Hydrology, Windermere Road.
+    - Data and appendices provide rich, machine-readable detail (e.g., biomass by plot, species hits, functional-group composition) to support cross-project integration and secondary analyses.
+- Practical implications for Data Leaders
+  - Longitudinal data strategy
+    - Importance of maintaining consistent measurement protocols over years to enable robust time-series analyses across multiple treatments.
+    - Baseline data (1998) critical for detecting shifts in composition and productivity.
+  - Metadata and data discoverability
+    - Comprehensive metadata (treatment allocation, plot and cell mapping, measurement techniques, sampling dates) essential for re-use across Phase I and Phase II projects.
+    - Centralized repositories and appendices strengthen discoverability of species lists, biomass time series, and point-analysis results.
+  - Data integration and governance
+    - The experiment demonstrates the value of integrating above- and below-ground data (biomass, species composition, bryophyte presence, soil chemistry, microhabitat factors) with spatially explicit experimental design (block, plot, sub-plot, cell).
+    - Clear documentation of data limitations (outages, trampling events, missing years) supports transparent interpretation and future work planning.
+  - Data products and decision support
+    - Potential for data products including biomass time series by treatment, Shannon diversity indices by year, functional-group composition trends, and pH–moisture–productivity relationships to guide management and policy discourse.
+  - Community and collaboration
+    - Wide engagement across 16 Phase I and Phase II projects and use of mobile labs indicate value in cross-project data sharing and harmonisation to build a richer, system-wide data picture.
+
+- Endnote
+  - The Sourhope site provides a rich, multi-dimensional data landscape illustrating how data strategy, quality, and accessibility enable nuanced evaluation of how management practices (mowing, fertilisation, insecticides, and trampling) shape plant productivity, diversity, and functional composition over time.

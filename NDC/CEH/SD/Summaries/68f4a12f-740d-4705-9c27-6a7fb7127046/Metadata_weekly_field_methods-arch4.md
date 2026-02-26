@@ -1,0 +1,32 @@
+# SAMPLING
+
+- This document is a metadata snapshot for multiple environmental sampling datasets collected between the 1980s and early 2000s, spanning rainfall, cloud, stream water, groundwater, throughfall, and stemflow.
+- For each measurement type, the metadata captures:
+  - COLLECTION METHOD (e.g., bulk samples or grab samples)
+  - COLLECTION DEVICE (e.g., continuously open raingauges, Warren Spring pattern collector, CEH harp-type collector, BGS borehole sampler, plastic bucket, trough collector, or tubing around trees)
+  - FLOW/VOLUME (descriptions of how volume is recorded or inferred)
+  - FIELD MEASUREMENTS (what was measured in the field; some types include temperature or electrical conductivity, others have none)
+  - SAMPLING INTERVAL (ranging from weekly/daily to fortnightly and monthly/fortnightly/weekly)
+  - START and FINISH dates (indicating the active period for each dataset; some items continue beyond the finish as “Cont.”)
+  - FILTRATION (all entries indicate Lab or Field filtration)
+- Specific dataset details:
+  - Rainfall (two datasets)
+    - Dataset 1: Bulk sample; 15 cm PVC collector; ground-level raingauge; air temperature measured; weekly/daily interval; 10 May 1983 to 18 May 1999; Lab filtration.
+    - Dataset 2: Bulk sample; Warren Spring pattern collector; ground-level measurement and similar parameters; weekly/daily interval; 25 May 1999 to continuous; Lab filtration.
+  - Cloud
+    - Bulk sample; CEH Edinburgh lidded harp-type passive collector; weight of sample as flow/volume; no field measurements; weekly interval; 25 Sep 1990 to continuous; Lab filtration.
+  - Stream water
+    - Grab samples; plastic bucket; flow/volume via CEH flume gauges; field measurements include stream temperature and conductivity; weekly/daily interval; 10 May 1983 to continuous; Field filtration.
+  - Groundwater
+    - Grab samples after flushing boreholes; BGS borehole sampler; dip-level recorder for flow/volume; field measurements include groundwater temperature and conductivity; monthly/fortnightly/weekly interval; 24 Apr 1994 to 14 Feb 2001; Field filtration.
+  - Throughfall
+    - Bulk sample; trough collector; volume-based flow; no field measurements; fortnightly interval; 6 Feb 1984 to 2 Sep 1991; Lab filtration.
+  - Stemflow
+    - Bulk sample; plastic tubing around trees with carboy collector; volume-based flow; no field measurements; fortnightly interval; 6 Feb 1984 to 2 Sep 1991; Lab filtration.
+- Data provenance and institutions:
+  - Involves UK environmental data collection bodies, including CEH (Edinburgh) and BGS, indicating collaboration across national research sites.
+- Data implications for data leaders:
+  - Demonstrates a structured approach to metadata across hydrological and atmospheric sampling domains, supporting data discovery, interoperability, and reuse.
+  - Highlights the importance of standardized metadata fields (collection method, device, sampling interval, start/finish, and filtration) to manage data products effectively.
+  - Points to potential archival and ongoing update needs, given “Cont.” finish statuses and long temporal spans.
+  - Underlines variability in data richness (some datasets include field measurements, others do not), which can affect cross-dataset analyses and the assessment of data coherence and quality.

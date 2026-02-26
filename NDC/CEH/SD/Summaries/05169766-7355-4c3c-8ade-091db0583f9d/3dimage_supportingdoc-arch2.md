@@ -1,0 +1,34 @@
+# OVERVIEW
+
+- The dataset contains 3D colour images from scanned insect specimens and modified intermediate images that combine traits from two specimens; the intermediate images are suitable for 3D printing.
+- Insect specimens were collected June 2020–August 2021 across England using a hand net; specimens were euthanized by freezing (-18 C for ~30 minutes), pinned, oriented anatomically, and dried (6–24 hours).
+- 3D digital images were produced via photogrammetry following a protocol adapted from Nguyen et al. (2014):
+  - Specimens suspended on a motorized turntable with white background and indirect lighting.
+  - 36 photographs per specimen (36 angles: 12 orientations, 3 vertical positions); wings removed and photographed separately.
+  - A 3D mesh (.obj) was generated with 3DSOM; colour texture projected onto the mesh to create raw reconstructions with associated textures (.jpg).
+- Post-processing and morphometric manipulation (Blender, Deformetrica, R) include:
+  - Deforming shapes along four axes: shape, colour, pattern, and size; creation of intermediate or extrapolated phenotypes.
+  - Digital removal and later reattachment of legs, antennae, and wings to facilitate processing and printing.
+  - Pattern manipulation via clustering (K-means) and distance maps to generate color patterns, with colours assigned as medians of vertex colours.
+  - Wings; attached base; printing constraints lead to standardized leg/antenna shapes and a flat wing shape with uniform colour (50% grey) to mimic translucency.
+- Output formats:
+  - Raw reconstructions: 39 .obj files (shape), with corresponding .map0.jpg textures and .mtl material files.
+  - Modified intermediate images suitable for 3D printing: 130 .ply files with naming that encodes contributing specimens and trait proportions (e.g., specimen1_spec1%_spec2% or trait letters; some files with _v2/_v3 variants).
+  - All 3D coordinates are in millimetres (XYZ).
+- Metadata and provenance:
+  - reconstructed_specimens.csv: 39 rows, 15 columns, including specimen_id, genus, species, sex, order, family, collection date/location, and quality assessments for specimen, shape, and texture.
+  - transect_details.csv: 130 rows, 6 columns, detailing file_name, category, specimen1/specimen2, and their contributions (percent or trait-based, e.g., S, P, C, Z; with 50 indicating a 50% intermediate).
+- File naming conventions:
+  - Raw reconstructions named by genus/species with specimen number (e.g., Amellifera7).
+  - Intermediate .ply files named to reflect contributions from two specimens and trait composition (e.g., Ca1_025_Vv12_075.ply; Tf3_C_Vv5_SPZ.ply).
+  - Full specimen details available in transect_details.csv and reconstructed_specimens.csv.
+- Data scope and units:
+  - 3D meshes use standard OBJ/PLY formats with millimetre units for shapes and textures.
+- Quality control:
+  - Each raw scan is manually checked for artefacts (holes, missing parts, misaligned textures); quality notes are recorded in reconstructed_specimens.csv; modified intermediates are checked for shape integrity.
+- Potential uses for environmental monitoring:
+  - Provides standardized, citable 3D morphometric data that could be linked to environmental variables (habitat, climate, phenology) to study morphological variation across environments.
+  - The dataset design emphasises reusability and interoperability by exporting in common 3D formats and including detailed provenance metadata.
+- Key considerations for reuse and data sharing:
+  - Underlying data are documented with specimen-level metadata (location, date, microhabitat) and per-file transect details to enable replication or synthesis with other datasets.
+  - The metadata supports integration with broader environmental monitoring efforts by enabling cross-dataset comparisons and data integration.

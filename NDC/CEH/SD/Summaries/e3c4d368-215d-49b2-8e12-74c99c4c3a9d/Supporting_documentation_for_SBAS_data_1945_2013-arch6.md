@@ -1,0 +1,52 @@
+# Surface temperature, surface oxygen, water clarity, water chemistry and phytoplankton chlorophyll a data from South Basin of Windermere 1945 to 2013
+
+- Purpose and scope
+  - Long-term monitoring dataset for the South Basin of Windermere, Cumbria, England.
+  - Covers surface temperature, surface oxygen saturation, Secchi depth, water chemistry, and phytoplankton chlorophyll a from 1945 to 2013 (some variables start later).
+  - Collected by the Freshwater Biological Association originally, now by the Centre for Ecology & Hydrology (CEH) and predecessors since 1989.
+- Variables and units
+  - TEMP: surface temperature, °C
+  - OXYG: surface oxygen saturation, % air-saturation
+  - SECC: Secchi depth, m
+  - ALKA: alkalinity, µg CaCO3 per L
+  - PH: pH
+  - NH4N: ammonium, µg N per L
+  - NO3N: nitrate, µg N per L
+  - PO4P: soluble reactive phosphate, µg P per L
+  - TOTP: total phosphorus, µg P per L
+  - SIO2: dissolved reactive silicon, µg per L
+  - TOCA: phytoplankton chlorophyll a, µg per L
+- Sampling regime and methods
+  - Weekly or fortnightly sampling.
+  - Water samples integrated from depth intervals: 0–5 m (1945–1962), 0–10 m (1962–1964), 0–7 m (1964 onwards).
+  - Measurements taken from a boat at a buoy at the deepest part of the lake.
+- Data structure and format
+  - Provided as a comma-separated values (CSV) file.
+  - Columns include:
+    - sdate: date of measurement
+    - variable: description of the variable (TEMP, OXYG, SECC, ALKA, PH, NH4N, NO3N, PO4P, TOTP, SIO2, TOCA)
+    - value: measured value
+    - sign_if_LT_LOD: indicator if value is below detection limit (a "<" sign)
+  - Additional descriptive columns for each variable/value.
+- Quality control and reliability
+  - Data are raw and have not been quality controlled or calibrated (except for double entries from 2005 onwards).
+  - Visual checks have been performed.
+  - Some measurements may be below detection limits, flagged accordingly.
+- Data limitations and considerations
+  - Raw data; no formal calibration available within this document.
+  - Patchy data across time and variables; depth-integrated sampling regime changed over time.
+  - Measurements are taken at a single location (deepest part of the lake), which may limit spatial representativeness.
+- Usage and outputs
+  - Suitable for time-series analysis, trend detection, and multi-variable dashboards to enable self-service exploration.
+  - Data can be cleaned and transformed to create readable dashboards, pivot tables, or charts; support for handling < LOD values via the sign_if_LT_LOD column.
+  - Could be combined with other Windermere datasets (historical or contemporary) for broader analyses.
+- Provenance and related publications
+  - Data originally collected by the Freshwater Biological Association; maintained by CEH and predecessors since 1989.
+  - Recent uses include:
+    - Do early warning indicators consistently predict non-linear change in long-term ecological data? (Journal of Applied Ecology, 2016)
+    - Insights into perch population and ecology from a 70-year study (2015)
+    - Various ecological and climate-related studies cited in the document (e.g., Oecologia, Freshwater Biology, Nature Climate Change, etc.)
+- Access and practical notes for data teams
+  - The dataset is distributed as a CSV with explicit per-variable value fields and an LOD indicator.
+  - For integration, plan data cleaning steps to handle raw measurements, missing periods, and LOD indicators.
+  - Recommend documenting any depth-integrated changes and aligning time stamps to ensure consistent temporal analyses.

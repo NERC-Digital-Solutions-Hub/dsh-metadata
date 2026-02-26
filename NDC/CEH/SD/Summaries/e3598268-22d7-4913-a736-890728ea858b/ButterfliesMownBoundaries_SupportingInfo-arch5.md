@@ -1,0 +1,33 @@
+# Lepidoptera data from a mown boundary experiment within the Stonehenge landscape, UK
+
+- Scope: Describes raw data sets on the behavior and distribution of Lepidoptera (butterflies and day-flying moths) at the Stonehenge Landscape in 2012, including associated botanical data and data quality checks.
+- Origin and adaptation: Based on the background and methods from Grace Twiston-Davies’s PhD thesis (2014), with data quality assurance applied to identify outliers and anomalies.
+- Study site: National Trust Stonehenge Landscape, Wiltshire, UK, within the Stonehenge WHS. The site features a mosaic of chalk grassland fragments, grassland restoration fields (sown 2000), arable land, pasture, and woodland.
+- Experimental design: Seven Barrows grassland restoration field used for the experiment. Two large grassland areas (40 m x 50 m) with eight 20 m survey boundaries (1–8). Four treatment boundaries adjacent to a mown area and four corresponding control boundaries in continuous unmown grass. Two blocks (sheltered and exposed) to evaluate edge effects; boundaries within 25 m of each other to minimize within-site variation.
+- Boundary setup and constraints: Mown area limited by tenant farmer to 400 m2 total and a fenced area no larger than 100 m; boundaries arranged to minimize confounding effects from fences and woodland. Boundaries surveyed 24 July–23 August 2012.
+- Survey protocol: 
+  - Flight-path surveys conducted by a single surveyor at each boundary (or dummy boundary in controls), recording Lepidoptera within 10 m either side of the boundary.
+  - Each individual’s flight path tracked for three minutes; boundary surveyed for 20 minutes per occasion; three occasions per survey period across five weeks.
+  - Boundaries were surveyed in a randomized sequence with equal effort on both sides; survey times and order randomized to spread across the period.
+  - Three survey periods: early (Jul 24–Aug 9), mid (Aug 10–11), late (Aug 14–23); weather conditions aligned with UK Butterfly Monitoring Scheme standards.
+- Data captured per observation: species, start/finish location (within unmown or mown side or control), flight path, behavior upon exiting the survey area (crossing, following, avoiding, staying), and any notes (e.g., nectar sources, double-backing, origin at boundary).
+- Environmental variables: 
+  - Vegetation: height and density (via drop-disc method) and recording of nectar flower availability (flowering units by family: Asteraceae, Fabaceae, Dipsacaceae) using eight 0.5 m x 0.5 m quadrats per boundary side (four per side, plus control).
+  - Botanical context: plant community characteristics similar to chalk grassland; key species and habitat associations noted.
+  - Weather: average wind speed and direction from nearby Boscombe Down station; cloud cover estimated; measurements taken at survey start.
+- Nomenclature and data dictionaries: 
+  - Plant names follow Stace (2010); Lepidoptera names follow Langmaid et al. (1989) and Heath & Emmet (1985); field identifications guided by standard field guides.
+  - Data dictionaries and taxonomic codes provided for Lepidoptera (e.g., ADS.sta for Forester) and flowering plants (e.g., Collected as code and common name).
+- Data structure and columns: 
+  - Data labeled in tables such as “ButterflyMownBoundaries” and “7_Barrows_Lepidoptera_2012” with columns including DATE, TEMPERATURE, WIND SPEED/DIRECTION, CLOUD COVERAGE, GRID SQUARE, PLOT, EDGE, HABITAT TYPE, SIDE OF SURVEY EDGE, QUADRAT NO., DROP DISC, BARE GROUND, DEAD VEG, SPECIES, SPECIES CODE, SEX, BEHAVIOUR, START/END HABITAT TYPE, DIRECTION OF MOVEMENT, NOTES, NECTARING ON, etc.
+  - Separate tables list Lepidoptera species codes and corresponding scientific/common names and a companion table for flowering plant species.
+- Data quality assurance and limitations: 
+  - Outliers and anomalies were sought through species occurrence expectations and exploratory analysis (methods referenced but results not shown).
+  - Surveys constrained by edge effects (perpendicular mown boundary edge, fences) and proximity of transects; design attempts to minimize confounding but interpretation must consider potential edge responses.
+  - Short sampling window focused on peak abundance of specific species; variation due to weather and site constraints acknowledged.
+- Data usage and governance notes for Data Stewards:
+  - Rich, multi-table dataset with explicit data dictionaries and standardized nomenclature to aid interoperability.
+  - Clear documentation of field methods, survey timing, and environmental context to support reproducibility and meta-analyses.
+  - Recognition of potential biases and limitations (edge effects, proximity of boundaries, limited temporal window) to inform data curation, access, and reuse planning.
+- References and provenance: 
+  - Key references for methods and nomenclature include Campbell (2009), Hardy et al. (2007), Heath & Emmet (1985), Langmaid et al. (1989), Pemberton (2011), Pollard & Yates (1993), Ries & Debinski (2001), Rodwell (1992), Stace (2010), Stewart et al. (2001), and Young et al. (2009).

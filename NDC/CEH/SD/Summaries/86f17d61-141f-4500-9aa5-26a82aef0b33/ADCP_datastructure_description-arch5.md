@@ -1,0 +1,76 @@
+# Teledyne WinRiver II Software User's Guide (P/N 957-6231-00, August 2016) – Excerpt on Classic ASCII Output Format and GGA NMEA Data
+
+- Overview
+  - Describes how WinRiver II writes data to Classic ASCII output files, including initial header notes, per-ensemble data organization, and the GPS (GGA) data integration.
+  - Highlights data provenance details (device-specific prefixes) and the relationship between ADCP data and GPS information.
+
+- Classic ASCII Output Format
+  - File initialization
+    - When a new ASCII-out data file is opened, WinRiver II writes three header lines:
+      - Line A: Note 1 (editable via Add Note in the Transect context)
+      - Line B: Note 2 (editable via Add Note in the Transect context)
+      - Line C: Description of fields at the top, including DEPTH CELL LENGTH and other field descriptors
+  - Ensemble structure
+    - Each data segment (ensemble) begins with a set of leader/scaling/navigation/discharge information (the first six rows).
+    - Starting with row seven, data are written in columns that are organized by bin depth.
+    - Ensembl es are not split across files; a file contains one or more complete ensembles.
+    - The file size grows to accommodate at least one ensemble.
+  - Data handling and quality
+    - Missing data (data not sent from the ADCP) are not included (no dashes or fill values).
+    - Bad data sentinel values include: velocity = -32768; discharge = 2147483647; latitude/longitude = 30000.
+  - Field content and references
+    - The majority of a current ensemble’s data describe: ensemble time, date, reference, number of ensembles, pitch, roll, heading, temperature, bottom-track velocity, GPS-derived velocity, depth readings, and discharge values.
+    - The layout is described in detail for each bin, with row references that depend on the chosen data reference (Bottom-Track vs. GPS GGA).
+    - Beams and depth readings are presented per bin, with Beam depths not corrected for Pitch and Roll.
+    - Specific sections indicate bottom-track vs GPS reference (Row three fields one through five reference BT or GGA accordingly).
+  - Units and measurements
+    - Units vary by field (examples include velocities in cm/s or ft/s, discharge in m^3/s or ft^3/s, depth in meters or feet), configurable by user settings.
+  - Device provenance
+    - The first two characters of output data must match your device and are configured in the Peripheral Configuration Dialog (example reference to interconnections with the depth sounder).
+
+- GGA - Global Positioning System Fix Data
+  - Purpose
+    - Captures time, position, and fix-related GPS data for each ensemble, used as a reference or alternative to Bottom-Track data.
+  - Format and content
+    - Encoded as NMEA GGA sentences with fields for UTC time, latitude, longitude, fix quality, number of satellites, HDOP, altitude, geoidal separation, and DGPS information.
+  - Device configuration
+    - The two-character device prefix must match the connected device, as set in the Peripheral Configuration Dialog.
+
+- GGA NMEA Format (Table 27)
+  - Key fields (in order)
+    - UTC time (hhmmss.ss)
+    - Latitude (degrees/minutes), latitude hemisphere (N/S)
+    - Longitude (degrees/minutes), longitude hemisphere (E/W)
+    - GPS quality indicator
+    - Number of satellites
+    - Horizontal dilution of precision (HDOP)
+    - Antenna altitude above mean sea level (meters) and geoid-related fields
+    - DGPS age and DGPS reference station ID
+  - Notes
+    - Optional fields may be omitted if full resolution is not required.
+    - The first two characters must match the device; they are set via device configuration.
+
+- Data Stewardship Implications and Best Practices
+  - Provenance and traceability
+    - Maintain device prefix and peripheral configuration to map output data to the originating hardware.
+    - Preserve header notes and the exact ensemble structure to support reproducibility.
+  - Metadata and standards alignment
+    - Capture and store metadata about: device version, configuration, field units, reference mode (BT vs GGA), and data coverage (ensembles, number of pings).
+  - Data quality management
+    - Implement QA procedures to identify and handle sentinel values (e.g., velocity -32768, discharge 2147483647, lat/lon 30000).
+    - Distinguish between missing data (not recorded) and invalid data (sentinel values) for accurate analysis.
+  - Interoperability and mapping
+    - Map ASCII fields to a standard internal schema, accounting for reference mode (BT vs GGA) and per-bin data organization.
+    - Ensure consistent unit interpretation across datasets (meters/feet, cm/s/ft/s, m^3/s/ft^3/s).
+  - Data governance and sharing
+    - Maintain a clear record of when ensembles were recorded, how GPS vs bottom-track references were used, and any configuration changes.
+    - Document any device-specific variations (prefix matching, configuration dialogs) that affect data interpretation.
+  - Versioning and auditability
+    - Note the guide’s 2016 publication date and verify compatibility with current devices or configurations when reusing historical ASCII outputs.
+  - Practical data handling
+    - Expect large files with multiple ensembles; plan storage and indexing accordingly.
+    - Use the header notes and ensemble metadata to facilitate discovery and proper downstream processing in data catalogs.
+
+- End-to-end takeaway for Data Stewards
+  - WinRiver II’s ASCII output provides rich ensemble-level metadata and GPS information, but requires careful handling of device-specific prefixes, reference modes, and sentinel values.
+  - Effective governance hinges on thorough metadata capture, clear provenance, robust quality checks for missing/invalid data, and precise mapping of fields to standardized data schemas for discovery and reuse.

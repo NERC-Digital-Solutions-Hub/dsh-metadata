@@ -1,0 +1,33 @@
+# Vegetation change at whim Moss (2002 -2016) Materials and methods
+
+- Field site: Whim bog, Scottish Borders, transition between lowland raised bog and blanket bog on 3–6 m peat; mean air temperature 7.9°C and soil 7.6°C (2002–2016); annual rainfall ~1141 mm; water table ~10 cm below surface (less wet during 2013 drought); hummock-hollow mosaic with Calluna vulgaris and Sphagnum species; highly acidic peat (pH ~3.4).
+- Experimental design overview:
+  - Two nitrogen deposition systems: dry deposition of NH3 via a free-air release system and wet deposition of NH4+ and NO3− via a rain-spray system.
+  - Treatments began June 2002 and ran year-round (except near freezing).
+  - Dry NH3: released from a 10 m pipe, activated when wind direction is SW (180–215°), temps above freezing, wind >2.5 m/s; concentration gradients measured with passive samplers at multiple distances (0.1 m above vegetation; 8–60 m along transects); deposition estimated and interpolated across plots.
+  - Wet NH4+/NO3−: rainwater collected on a 178 m2 surface, concentrated solutions applied to plots to create three N-rate levels plus control; PK added at the lowest and highest N treatments in a P:N ratio of 1:14; total N deposition targets: 1.6, 3.2, 6.4 g N ha−1 y−1 with ambient control ~0.8 g N ha−1 y−1; application ~120 times per year, automatically triggered every 15 minutes when conditions allowed.
+  - Experimental layout: 4 blocks with 11 treatment combinations per block (1 control, 3 NH4+ only, 2 NH4+ with PK, 3 NO3− only, 2 NO3− with PK) totaling 44 plots.
+- Measurements and data collection:
+  - NH3 monitoring: concentration measurements used to derive deposition fluxes; spatial gradient data captured for model interpolation.
+  - Soil and nutrient tracking: soil water sampled monthly from 2006 onward; ions measured by ion chromatography; detection limits 0.014 mg N L−1 for NH4+-N and 0.062 mg N L−1 for NO3−-N.
+  - Vegetation surveys: conducted every ~2 years; within each plot, three permanent 40×40 cm quadrats subdivided into 16 10×10 cm sub-quadrats; percent cover recorded for all species, averaged across sub-quadrats to obtain quadrat-level values.
+- Data products and structure:
+  - Main dataset: Whim_veg_2002-2006.csv (vegetation data).
+  - Key fields:
+    - year, year of survey; PLOT, plot identifier; QUADRAT, quadrat within plot; ASSESSMENT.DATE, date of survey; SPECIES.LIST.NUMBER and SPECIES.LIST.NAME, species identifiers and Latin names.
+    - SUB.SQUARE.1-16, percent cover of each species in each sub-square.
+    - distance_m, distance from NH3 source (for transect plots).
+    - Expt, Form, PK, BLOCK, TREATMENT, DOSE, Fnh3, Fnh4, Fno3, PK (treatment-related metadata and nitrogen flux values).
+  - Deposition and treatment metadata:
+    - FORM indicates ammonia, nitrate, or ammonium deposition.
+    - DOSE and Fnh3/Fnh4/Fno3 provide total N fluxes per plot.
+    - PK indicates whether phosphate was added ("PLUSPK") or not ("MINUSPK" or similar).
+- Data management and interpretation notes:
+  - Deposit calculations and interpolation rely on established methods (e.g., Cape et al. 2008; ordinary kriging for spatial interpolation assuming uniform deposition velocity).
+  - Documentation includes detailed unit conventions and data descriptions to support reuse and meta-analysis.
+- References (key background methods):
+  - Cape et al. (2008) deposition estimates for NH3 to a fumigated bog.
+  - Leeson et al. (2017) nitrous oxide emissions after 13 years of nitrogen deposition.
+  - Leith et al. (2004) dry NH3 deposition quantification.
+  - Sheppard et al. (2004) automated wet deposition systems for N treatments.
+  - Tang et al. (2001) development of passive samplers for NH3/NO2.

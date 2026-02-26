@@ -1,0 +1,30 @@
+# Introduction
+
+- Dataset purpose: monthly global methane emissions from natural wetlands at 0.5° x 0.5° resolution, derived from the JULES land surface model driven by WFDEI data.
+- Spatial/temporal coverage: global, monthly emissions, stored in yearly netCDF files.
+- Key output variables:
+  - fwetl (1): fraction of wetland in each grid box.
+  - fch4_wetl (mg CH4 m-2 day-1): gridbox methane flux from natural wetland, scaled so global wetlands emissions total 180 Tg CH4.
+  - cs (kg m-2): soil carbon in decomposable plant material, resistant plant material, microbial biomass and humus.
+  - t_soil (K): sub-surface temperature of the top soil layer.
+- Modeling framework:
+  - JULES (Joint UK Land Environment Simulator) v4.5 with TRIFFID vegetation model (competition disabled) for vegetation growth; vegetation fractional cover prescribed from IGBP data.
+  - Methane emission scheme uses a dynamic soil carbon pool approach with TOPMODEL-based hydrology.
+  - Emission formula: fch4_wetl = k * fwetl * Q10(t_soil1m)^(t_soil1m/T0) * sum_i (κ_i * cs_i) with i representing soil pools (DPM, RPM, BIO, HUM) and specified κ values.
+  - Global scaling factor k chosen so that global methane emissions equal 180 Tg/year (2000 baseline).
+- Input data sources:
+  - Meteorology: WFDEI (WATCH Forcing Data for ERA-Interim).
+  - Soil properties: Harmonised World Soil Database (HWSD).
+  - Topography/topographic index: HydroSHEDS-based data.
+  - Vegetation: IGBP land cover map, regridded.
+- File format and organization:
+  - NetCDF format, CF-compliant, CEH gridded dataset conventions.
+  - Data stored in yearly files with all variables included in each file.
+- How to use in GIS:
+  - The dataset’s decomposed terms (e.g., fwetl vs fch4_wetl) enable users to apply their own wetland maps or adjust inputs.
+  - Example workflow: divide fch4_wetl by fwetl to map flux per unit wetland area, then multiply by a user-provided wetland dataset.
+- Practical considerations for GIS work:
+  - Global gridded, model-based product suitable for map-based visualizations and spatial analyses.
+  - Allows disaggregation or re-aggregation with other geospatial layers and datasets.
+- References (major sources for context and methods):
+  - Best et al. (JULES description), Clark et al. (carbon fluxes), Gedney et al. (wetland methane emissions), Parker et al. (year-to-year methane emission analyses), McNorton et al. (regional wetland emissions), Weedon et al. (WFDEI data), and IGBP, FAO HWSD, HydroSHEDS/Marthews et al. for ancillary data.

@@ -1,0 +1,53 @@
+# DNA extraction procedure from environmental samples and bacterial isolates NERC study NE/N019555/1
+
+- Purpose and scope
+  - Describes DNA extraction procedures for environmental samples (soil, water, stool) and bacterial isolates from the NERC study NE/N019555/1.
+  - Covers multiple kits (e.g., DNeasy PowerSoil, DNeasy PowerWater, QIAamp DNA Stool Mini Kit) and standard downstream handling.
+- General precautions
+  - Wear gloves; avoid skin contact with reagents; follow MSDS for emergencies.
+  - Do not ingest; keep flammable reagents away from open flames.
+- Storage of DNA and reagents
+  - Extracted DNA: recommended storage frozen at -20°C to -80°C.
+  - Kit reagents generally stored at room temperature (15–30°C) unless specified otherwise.
+- DNA extraction from soil samples (DNeasy PowerSoil DNA Isolation Kit)
+  - Equipment and reagents: PowerBead tubes, 10,000 x g microcentrifuge, vortex, etc.
+  - Key procedure steps:
+    - Add 0.25 g soil to PowerBead Tube; vortex to mix.
+    - If Solution C1 precipitates, heat to 60°C to dissolve before use.
+    - Add 60 μl Solution C1 and mix; vortex for 10 minutes with the tubes secured to a horizontal holder.
+    - Centrifuge at 10,000 x g for 30 seconds; transfer supernatant to a clean tube.
+    - Add C2, incubate on ice, then centrifuge; transfer up to 600 μl of supernatant.
+    - Add C3, incubate on ice, centrifuge; transfer up to 750 μl of supernatant.
+    - Add C4, mix; load ~675 μl onto a Spin Filter; perform sequential centrifugations with 675 μl portions until all supernatant is processed.
+    - Add C5; centrifuge; discard flow through; then centrifuge again.
+    - Place Spin Filter in a new tube; elute with 100 μl of Solution C6 (or sterile water) to collect DNA.
+    - Store extracted DNA frozen.
+- DNA extraction from water samples (DNeasy PowerWater DNA Isolation Kit)
+  - Equipment and special precautions
+    - Vacuum filtration system; warm PW1 to 55°C; warm PW3 if precipitated; shake PW4 before use.
+  - Key procedure steps:
+    - Filter water samples; prepare filter in PowerWater Bead Tube.
+    - Add 1 ml PW1; vortex horizontally for 5 minutes; optional brief centrifugation to recover supernatant.
+    - Transfer supernatant to a clean tube; centrifuge 13,000 x g for 1 minute.
+    - Add 200 μl Solution IRS; incubate on ice 5 minutes; centrifuge.
+    - Add 650 μl PW3; vortex; process on MB Spin Column by loading 650 μl at a time; centrifuge each time.
+    - Place MB Spin Column in new tube; add 650 μl PW4; centrifuge; add PW5; centrifuge; final spin to dry.
+    - Place Spin Column into new tube; add 650 μl PW6; centrifuge to elute DNA.
+    - Store DNA frozen.
+- DNA extraction from stool samples (QIAamp DNA Stool Mini Kit)
+  - Procedure steps (summary):
+    - Weigh 180–220 mg stool; add 1.4 ml Buffer ASL; vortex thoroughly; heat at 70°C for 5 minutes.
+    - Centrifuge to pellet stool particles; transfer supernatant to new tube.
+    - Add InhibitEX Tablet; vortex and incubate to bind inhibitors; centrifuge to pellet inhibitors.
+    - Transfer supernatant to new tube; add proteinase K and Buffer AL; mix; incubate at 70°C.
+    - Add ethanol; apply lysate to QIAamp spin column; centrifuge to bind.
+    - Wash with Buffer AW1 and AW2; perform final elution with Buffer AE.
+    - Store DNA frozen.
+- Preparation of Template DNA
+  - Steps:
+    - Transfer 1 loopful of culture from a TSA plate into 500 μl autoclaved dH2O.
+    - Boil for 10 minutes; place on ice for 5–10 minutes.
+    - Centrifuge at 6,000 rpm for 5 minutes; collect ~200 μl of supernatant.
+    - Store template DNA at -20°C to -80°C (document also notes -200 C in one line, likely a typographical error).
+- References
+  - Qiagen genomic DNA isolation resources: https://www.qiagen.com/us/shop/sample-technologies/dna/genomic-dna/

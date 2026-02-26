@@ -1,0 +1,51 @@
+# Soil Biodiversity Thematic Programme – Sourhope Site Summary
+
+- Four-year monitoring of a large field experiment at Sourhope, Scottish Borders, focused on above-ground biomass production (productivity), plant species composition, and diversity, within the NERC Soil Biodiversity Thematic Programme.
+- Treatments and management:
+  - Site-wide mowing (approximately 6 cm sward height) with five summer cuts per year.
+  - Plot-level treatments: Control 1, Control 2 (no treatment), Nitrogen, Lime, Nitrogen & Lime, Insecticide (Dursban 4).
+  - Insecticide applied after mowing; fertilisers applied in spring.
+- Data collection and methods:
+  - On-site Automatic Weather Station for climate data.
+  - Above-ground biomass estimates from 0.5 m2 sub-plot samples collected pre-mow each year.
+  - Baseline vegetation survey (1998) and annual point analysis surveys (2000–2002) using 0.5 m2 cells with a 100-point grid; bryophytes identified in 2002; moss/liverwort data added.
+  - Soil sampling for pH (5 cm depth) and soil moisture (2002) with theta probe; additional small-scale botanical surveys and biomass sorting by species.
+  - Data total: over 11,600 soil samples collected since start; 16 Phase I projects plus Phase II fieldwork in 2002.
+- 2002 key results:
+  - Biomass productivity:
+    - Overall biomass in 2002 lower than 2001 across several treatments; long-term upward trend since 1999.
+    - Nitrogen and Lime together (N+L) most productive; Control 2 consistently less productive; slope position affected productivity (Block 5 lowest, Block 1 highest increase previously).
+  - Nutrient and pH effects:
+    - Lime raised soil pH to about 7 in the upper soil profile; nitrogen had a smaller positive effect.
+    - Higher soil pH generally associated with higher biomass when considering all plots; the relationship varied by treatment (positive overall, but sometimes negative within N and/or Lime alone; most pronounced with N+L).
+    - Negative correlation between soil moisture and pH.
+  - Plant community composition (Point Analysis):
+    - In improved plots, grasses Festuca rubra and Poa pratensis dominated; Agrostis spp. declined sharply (over 40% since 2000 across treatments).
+    - In unimproved plots, Festuca ovina and Anthoxanthum odoratum remained more prominent; bryophytes (mosses) increased across the site, reaching ~19.9% hits in 2002.
+    - Bryophytes and other taxa increased in unimproved plots; six bryophyte species identified in 2002.
+  - Diversity and functional groups:
+    - Shannon Diversity Index rose post-2000 across most treatments but fell by 15% in N+L plots in 2002; other treatments saw modest to substantial increases.
+    - Principal Components Analysis (PCA) separated improved vs unimproved plots; lime-treated plots clustered together; some N-treated samples overlapped with limed plots.
+    - Functional groups (stress-tolerant S, competitive-stress-ruderal CSR, stress-ruderal/competitive-stress-ruderals SR/CSR) accounted for 69–95% of live vascular plant hits in all surveys.
+    - By 2002, C-S-R and SR/C-S-R groups expanded in N+L plots; stress-tolerant species favored unimproved plots; lime and/or nitrogen influenced the balance of functional groups.
+- Interpretations and discussion:
+  - Mowing effect:
+    - Decline of Agrostis capillaris and Agrostis vinealis (~40% since 2000) across all treatments suggests a site-level response to mowing or other consistent factors; Festuca rubra expands in fertile plots.
+    - Moss expansion linked to consistent mowing height (~6 cm) and lack of grazing, with bryophytes more abundant where disturbance is reduced.
+  - Fertilisation effect:
+    - Nitrogen and lime improves productivity; possible peak in lime+nitrogen plots due to near-neutral pH and potential moisture limitations; high lime-induced pH may increase chlorosis under dry conditions.
+    - Higher pH with N+L supports a shift toward competitive-stress-ruderal species; N alone shows less robust productivity gains than N+L.
+  - Insecticide effect:
+    - Insecticide plots show higher diversity in some analyses; causality not proven due to complex herbivore-plant interactions and lack of direct herbivory measurements; possible indirect effects via altered herbivore pressure enabling certain palatable species.
+  - Trampling effect:
+    - 2002 C2 plots show productivity declines likely due to trampling associated with 13CO2 pulse experiments.
+- Data management and limitations:
+  - Data richness enables cross-project analysis but comes with complexities:
+    - Missing or partial data: 2002 weather data gaps due to a weather station outage; Control2 plots not surveyed in some years (2000–2001) in certain analyses.
+    - Taxonomic updates (bryophyte identification improved in 2002) may affect cross-year comparisons.
+    - Multi-method data (point analysis, biomass, bryophyte counts) require careful metadata and provenance tracking.
+- Implications for data leaders and data strategy:
+  - Ensure comprehensive metadata for long-term, multi-treatment studies, including dates, rates, and locations of management actions.
+  - Maintain consistent measurement protocols across years and researchers; document taxonomic updates and data harmonization steps.
+  - Plan for data gaps and instrument maintenance; establish data recovery and cross-site comparability with clear provenance.
+  - Leverage the rich, multi-dimensional dataset to inform broader data strategy across partner projects, including data discoverability, interoperability, and integration with ecosystem-function metrics.

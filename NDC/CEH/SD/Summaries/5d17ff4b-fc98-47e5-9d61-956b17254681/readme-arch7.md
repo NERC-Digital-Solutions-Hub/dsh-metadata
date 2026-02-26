@@ -1,0 +1,24 @@
+# Topographic Change Maps for Antamok River Catchment, Itogon, Philippines during Typhoon Mangkhut (2018) Using r.avaflow v2.4
+
+- Overview
+  - Generated via numerical simulations with r.avaflow v2.4 to produce maps of topographic change.
+  - Study area: Antamok River catchment in Itogon, Philippines; event: Typhoon Mangkhut, 2018.
+- Data collected and interpretation
+  - Change in topography: positive values indicate deposition; negative values indicate erosion.
+  - Units: metres.
+- Quality control
+  - Data validated against observed channel widening limits using remote sensing observations before and after the Typhoon event.
+- Data structure and content
+  - Northern part files:
+    - Test1_N.asc – final topographic change for the Northern part
+    - N_3.tif, N_30.tif, N_60.tif, N_180.tif – topographic change at 3, 30, 60, and 180 seconds in the simulation
+  - Southern part files:
+    - Test1_S.asc – final topographic change for the Southern part
+    - S_3.tif, S_30.tif, S_60.tif, S_180.tif – topographic change at 3, 30, 60, and 180 seconds in the simulation
+- Coordinate Reference System (CRS)
+  - EPSG:3124 – PRS92 zone 4
+- GIS usage notes
+  - Data are provided in ASCII (.asc) and TIFF (.tif) rasters; Northern and Southern parts are separated and should be combined for full-catchment analysis.
+  - Time-step rasters allow visualization of the dynamic evolution of deposition and erosion over the simulated period.
+  - Ensure alignment to EPSG:3124 when integrating with other datasets; interpret values as metres of change, with positive indicating deposition and negative indicating erosion.
+  - Data quality is supported by remote-sensing validation; consider scale and resolution when integrating with other sources.

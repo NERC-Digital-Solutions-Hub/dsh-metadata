@@ -1,0 +1,30 @@
+# Data overview
+
+- A controlled soil disturbance experiment using samples from 30 European grassland sites, spanning diverse climates and soil types, to study microbial responses and soil functioning under four climatic disturbances plus a control.
+- Disturbances applied for 14 days: Drought (10% WHC), Flood (100% WHC), Freeze (-20°C), and Heat (35°C), with a Control (18°C, 60% WHC). Recovery monitored for four timepoints after disturbance end: S1 (peak disturbance), S2 (1 day), S3 (8 days), S4 (26 days).
+- Multi-omics and functional measurements collected:
+  - Microbial communities: whole-metagenome sequencing, bacterial 16S rRNA (V4-V5), fungal ITS2; data processed with DADA2; taxonomic assignments via SILVA (bacteria) and UNITE (fungi).
+  - Functional and activity measures: substrate-induced respiration profiles (MicroResp), enzymatic activities (acetyl esterase, β-glucosidase, phosphatase, leucine-aminopeptidase) and associated substrates, soil CO2/N2O/CH4 fluxes, dissolved and total soil C and N, pH.
+  - DNA analyses: DNA extraction from initial and microcosm samples; sequencing performed on Illumina MiSeq and NovaSeq; functional gene annotation via MG-RAST SEED subsystems.
+- Data availability and structure:
+  - Molecular data linked with European Nucleotide Archive accession numbers.
+  - Two CSV data files: Disturbance_data.csv (91 columns, 620 samples) and Disturbance_metadata_header_description.csv (detailed header descriptions).
+  - 620 total samples: 30 initial field samples and 590 microcosm samples across 10 countries, 3 replicate sites per country, 5 treatments, and 4 sampling times.
+  - NA used for missing information; some measurements were only performed for select samples (INITIAL vs. lab manipulations) and some assays only on subsets (e.g., enzymes, whole-genome metagenomics).
+- Experimental design and sampling regime:
+  - Sites: 30 replicate sites across Europe, including alpine, subarctic, arctic, Atlantic, boreal, continental, Mediterranean, and steppe climates; soil types dominated by Haplic Cambisols and other subtypes.
+  - Randomized arrangement: seven 1 m x 1 m plots per replicate site; 4 soil cores per plot pooled into one composite per replicate site.
+  - Microcosm setup: 20 pots per replicate site (240 mL each), standardized to 100 g dry soil per pot; initial moisture and nutrient baselines measured; 20 g and 5 g sub-samples taken for immediate analyses; 52 g stored for DNA analyses.
+  - Sampling schedule: S1 (before final disturbance adjustments), S2 (1 day after end of disturbance), S3 (8 days after), S4 (26 days after).
+- Data processing and quality control:
+  - DNA quality checks (gel, 280/260 ratios) and DNA quantification performed; samples with insufficient DNA or low-quality sequences excluded from DNA analyses.
+  - Amplicon data processed with DADA2; taxonomic assignment against SILVA (bacteria) and UNITE (fungi); minimum read threshold applied (2,000 reads) to retain samples.
+  - Metagenomic data sequenced and annotated via MG-RAST (SEED subsystems); 574 samples used for DNA analyses after exclusions.
+- Data provenance and references:
+  - Methodologies for primers and sequencing aligned with Earth Microbiome Project standards; sequencing platforms include Illumina MiSeq and NovaSeq.
+  - Protocols and references provided for amplicon processing and functional annotation (DADA2, SILVA, UNITE, MG-RAST SEED, MicroResp).
+- Intended use, integration, and accessibility:
+  - Dataset designed to be combined with external climate and environmental data (e.g., WorldClim) for cross-site analyses.
+  - Clear metadata and accession numbers enable re-use and integration with other datasets; datasets are structured to support monitoring and policy-performance evaluations over time.
+- Limitations and caveats:
+  - Some measurements available only for initial samples or lab manipulations; several assays conducted on subsets; some sites excluded due to DNA yield or data quality; presence of missing values (NA) in several fields.

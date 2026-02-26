@@ -1,0 +1,27 @@
+# Overview of the data being described
+
+- Context: Public health concern for diarrhoeal disease and safe water in developing countries; project uses a One Health approach to quantify microbial contamination pathways between livestock and drinking water in rural sub-Saharan Africa.
+- Aim of the project: Develop or adapt low-cost bacteriophage-based Microbial Source Tracking (MST) techniques applicable to sub-Saharan Africa; differentiate human vs cattle fecal contamination in water sources.
+- Data collected and described:
+  - Recovery and isolation of novel Bacteroides spp. strains from human and cattle fecal sources in rural western Kenya.
+  - Testing the suitability of Bacteroides spp. as MST hosts for bacteriophage-based contamination assessment.
+  - Assessment of geographic stability of Bacteroides fragilis GB124 as an indicator of human fecal contamination in drinking water sources within Siaya County (Kenya).
+  - Detected levels of:
+    - Bacteriophages capable of infecting the newly isolated Bacteroides hosts.
+    - Fecal indicator bacteria: total coliforms, Escherichia coli, and intestinal enterococci.
+    - Somatic coliphages.
+    - Bacteriophages capable of infecting Bacteroides fragilis GB124.
+  - Sample sites include rural West Kenya water sources and a Kisumu wastewater treatment plant (KIWASCO).
+- Data outputs and intended use:
+  - Data described here to be used as MST markers in bacteriophage-based methods for assessing drinking water quality.
+  - Aimed at enabling better source attribution of fecal contamination and informing water safety practices.
+- Roles and responsibilities:
+  - Data collection: Dr Diogo Trajano Gomes da Silva and Mr Kevin Ives.
+  - Data interpretation: Dr Diogo Trajano Gomes da Silva.
+- Geographic and contextual scope:
+  - Rural western Kenya, including Siaya County.
+  - Involves a Kisumu wastewater treatment plant (KIWASCO) as a sampling site.
+- Background considerations:
+  - Prior MST work in Africa is limited due to geographical limitations and variable detection rates, motivating the search for more applicable Bacteroides spp. strains locally.
+- Implications:
+  - Supports the development of locally relevant MST tools to distinguish human vs cattle fecal contamination in drinking water, contributing to public health risk assessment and Water, Sanitation, and Hygiene (WASH) strategies in the region.

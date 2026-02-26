@@ -1,0 +1,43 @@
+# Experimental design/sampling regime
+
+- The UK Butterfly Monitoring Scheme (UKBMS) collects data from over 2,000 sites annually across the UK to monitor butterfly populations.
+- Data collection methods include:
+  - All-species transects (Pollard walks): fixed routes 2–4 km long, weekly counts 26 times/year (April–September), 5 m sampling band, weather- and activity-conditioned observations; routes fixed to enable year-to-year comparisons.
+  - Single-species transects: follow all-species methodology but recorded only during focal-species flight periods.
+  - Timed counts and egg/larval web counts: counts for a specified time/area; eggs/larval webs in suitable habitats.
+  - Wider Countryside Butterfly Survey (WCBS): reduced-effort survey (2009–present) using two 1-km parallel transects within randomly selected 1-km squares; 2–4 visits per year, with minimum visits in July/August.
+- Data collection workflow:
+  - Field data recorded on standard forms; entered online via the UKBMS data entry site or Transect Walker software.
+  - Data entry performed by recorders or regional transect coordinators; coordinators compile data by region and season.
+  - Online data and Transect Walker files uploaded to an Oracle database housing all records.
+- Analytical methods:
+  - Wider countryside species: two-stage model using all counts to estimate seasonal patterns and compute annual indices; generalised additive model (GAM) to estimate seasonal flight patterns, normalised to a consistent seasonal pattern across years; second stage uses counts with seasonal terms as offsets to estimate annual changes.
+  - Habitat specialists and regular migrants: GAM-based imputation of missing values to produce site indices; a log-linear regression then derives a national Collated Index for each species.
+  - Trends: linear regression on collated indices to quantify change over time; trends calculated for full series (1976–2016), last 20 years (1997–2016), and last 10 years (2007–2016).
+  - Collated Indices are updated annually as new monitoring data are incorporated, which may slightly alter past years’ indices.
+- Nature and units of recorded values:
+  - Site indices are relative measures of population size, proportional to actual abundance; not absolute counts.
+  - Collated Indices are presented as log10 indices (LCI) with species-specific scaling so the average index equals 2.
+  - Trends are expressed as slopes (rate of change) of the Collated Index over time.
+- Quality control:
+  - Automatic checks in Transect Walker flag anomalous entries (e.g., unusually high counts, flight-period mismatches).
+  - Regional coordinators validate data; continuous validation during the season.
+  - Additional automated/manual validation checks for records outside known distribution, off-season observations, first-time site records, and atypical abundances.
+- Format and structure of stored data:
+  - Stored as CSV with columns including:
+    - Sci_Name, Common_name
+    - No_years, Series_slope, Series_Std_Err, Series_P_value, Series_trend, Series_%_change
+    - 20_yr_Slope, 20_yr_Std_Err, 20_yr_P_value, 20_yr_Trend, 20_yr_%_change
+    - 10_yr_Slope, 10_yr_Std_Err, 10_yr_P_value, 10_yr_Trend, 10_yr_%_change
+  - Site indices and trends are derived measures tied to the Collated Index framework.
+- Data governance and interoperability considerations for Data Stewards:
+  - Metadata and versioning implications: Collated Indices may change as new data are incorporated; maintain provenance and documentation of updates.
+  - Taxonomic standardisation: species names follow Fauna Europaea conventions; common names follow established references.
+  - Cross-method consistency: different analytical approaches for wide-ranging vs. habitat-specific species require clear documentation of method choices and data preparation steps.
+- Particular challenges (relevant to data governance and stewardship):
+  - Incomplete understanding of user needs and priorities.
+  - Timely receipt of data from numerous sites and coordinators.
+  - Ensuring data creators meet metadata and standardization requirements.
+  - Handling many diverse systems and formats, including non-interoperable legacy solutions.
+  - Managing large, potentially hard-to-transfer datasets.
+  - Updating outdated databases that may require bespoke integration approaches.

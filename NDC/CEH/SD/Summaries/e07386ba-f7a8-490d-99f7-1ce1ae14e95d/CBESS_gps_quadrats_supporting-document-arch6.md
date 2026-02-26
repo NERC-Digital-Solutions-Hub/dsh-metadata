@@ -1,0 +1,31 @@
+# Coastal Biodiversity and Ecosystem Service Sustainability (CBESS) global positioning system (GPS) locations of quadrats in saltmarsh and mudflat habitats
+
+- Overview
+  - GPS locations and elevations for CBESS wave monitoring and sedimentation/erosion instruments (CBESS_wave_monitoring, CBESS_sedimentation_erosion)
+  - Staff: Tom Spencer, Ben Evans
+- Locations and sites
+  - Essex sites: Abbotts Hall (AH), Fingringhoe Wick (FW), Tillingham Marshes (TM)
+  - Morecambe Bay sites: Cartmel Sands (CS), Warton Sands (WS), West Plain (WP)
+  - Each site comprises a salt marsh area and an adjacent mudflat
+  - Saltmarsh habitats represent contrasting soil types: clay soils (Essex) and sandy soils (Morecambe Bay)
+  - Mudflats: Essex with cohesive clays/mud/silt; Morecambe Bay with coarse, mobile sediments
+- Sampling design
+  - For each site: 22 quadrats on the unvegetated mudflat and 22 quadrats on the salt marsh
+  - Quadrats are 1 m square, located at the south-east corner
+  - Quadrats oriented North-South and East-West
+- Data collected and variables
+  - Primary coordinates and elevation: Northing, Easting, Elevation relative to Ordnance Datum Newlyn
+  - Seasonal context: Winter (W) and Summer (S) 2013
+  - Scale fields indicating quadrat sub-sections (A, B, C, D) for location granularity
+- Data collection methods and formats
+  - GPS: Leica GS08 GNSS with real-time Leica RTK corrections
+  - Observations recorded within two weeks prior to or during CBESS main campaigns (Winter and Summer 2013)
+  - Data exported as ASCII text; unnecessary/duplicate points removed in MS Excel; no further processing reported
+- Data quality and notes
+  - Quality check: 50 mm positional accuracy threshold; points above this rejected
+  - NA values indicate measurements not performed
+  - Dataset fields described via headers (Description, Row number), with core fields for site, habitat, quadrat, scale, Easting, Northing, Elevation, and Season
+- Dataset structure and interoperability
+  - OSGB1936(2) coordinate system used
+  - South-east corner of 1 m quadrats as spatial reference; suitable for GIS integration and cross-dataset linking within CBESS
+  - Raw, unprocessed data intended to support spatial mapping and downstream analyses of coastal biodiversity and ecosystem services

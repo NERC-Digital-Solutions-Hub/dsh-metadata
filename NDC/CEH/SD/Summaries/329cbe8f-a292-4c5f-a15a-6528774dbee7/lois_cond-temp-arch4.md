@@ -1,0 +1,24 @@
+# LOIS Core Programme
+
+- Scope: On-site measurements of pH, conductivity, and temperature at 16 sites (13 Humber catchment sites and 3 Tweed catchment sites) from 1994 to 1997.
+- Variables and units:
+  - pH (pH units)
+  - Conductivity at 25°C (µS/cm)
+  - Temperature (°C)
+- Measurement locations (examples of site codes and locations):
+  - Humber catchment sites include Swale at Catterick Bridge (S1), Swale at Thornton Manor (S2), Ure at Boroughbridge (U3), Nidd at Skip Bridge (N4), Wharfe at Tadcaster (W5), Ouse at Clifton Bridge (O6), Derwent at Bubwith (D7), Aire at Beal Bridge (A8), Calder at Methley Bridge (C9), Don at Sprotborough Bridge (D10), Trent at Cromwell Lock (T11), Ouse at Acaster Malbis (O12), Aire at Allerton Bywater (A20), and Aire at Beal Bridge etc.
+  - Tweed catchment sites: Boleside (TW13), Norham (TW14), Ormiston Mill (TW15).
+- Sampling schedule:
+  - Regular weekly sampling, with additional sampling about once per month per site during high-flow periods.
+- Sampling methods:
+  - Water samples collected with a wide-neck PTFE bottle in a plastic carrier (from bridges where possible; otherwise by immersion near main flow).
+  - pH and conductivity measured with Mettler Toledo Check Mate meters; temperature measured with a PT100 probe and Digitron 3204 meter.
+- Quality control and data quality:
+  - pH probes calibrated in the lab with buffers pH 7.0 and 10.00.
+  - Conductivity probes calibrated in air and with a 1417 µS KCl standard; site drift checked and recalibrated if necessary.
+  - Each reading is a three-reading average after gentle swirling in a freshly collected sample.
+- Who measured:
+  - Measurements conducted by the field sampling team at York University.
+- Provenance and references:
+  - Primary description: Leeks et al., 1997 (The LOIS river monitoring network: strategy and implementation).
+  - SOP references: House et al. on conductivity and pH measurement (SOPs from IFE, East Stoke, Wareham, 1993).

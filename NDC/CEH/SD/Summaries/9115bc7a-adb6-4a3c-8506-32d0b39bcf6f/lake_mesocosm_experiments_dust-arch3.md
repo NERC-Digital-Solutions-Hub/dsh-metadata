@@ -1,0 +1,39 @@
+# Overview of the data
+
+- Purpose and scope
+  - Data from a mesocosm experiment in three Greenland lakes (Kangerlussuaq area) to assess the effects of dust addition on water chemistry and phototrophs in water and sediments.
+  - Collected by Suzanne McGowan and Amanda Burson.
+- Experimental design
+  - In situ mesocosms installed in July 2018 across three lakes (six enclosures per lake).
+  - Dust treatment: three mesocosms received dust (0.196 g/L; adjusted by water depth) and three served as controls.
+  - Enclosures: polythene tubes (60 cm diameter, ~1 m depth) embedded in sediments; artificial substrate provided by terracotta pots for phytobenthos.
+  - Sampling: start and end of the 14-day experiment (or end only if sampling was destructive); arrangements were 3x2 (dust vs no dust) within each lake.
+  - Sampling schedule varied by lake and site, with explicit dates provided.
+- Measurements and sampling regime
+  - In situ water measurements: specific conductivity, temperature, and dissolved oxygen using a YSI multiprobe (upper 20 cm water).
+  - Water and phytoplankton sampling from mesocosm water at start and end; surface sediments collected at start and end; pot scrapes taken at end.
+  - Replication: six enclosures per lake; three treated, three controls; three replicates per mesocosm for sediments and pot scrapes.
+- Collection, transformation, and storage methods
+  - Water samples filtered in the field (GF/F filters) for dissolved nutrients; chlorophyll a estimated from filter papers.
+  - Terracotta pots removed at end; biofilms scraped, washed, and suspended material frozen for analysis.
+  - Surface sediments stored frozen prior to analysis.
+  - Whole sample volumes recorded; analyzed via volumetric subsampling for quantitative results.
+- Analytical methods and units
+  - Water chemistry: soluble reactive phosphorus (SRP), ammonium, silicate, total phosphorus (TP), total nitrogen (TN); units in µg/L or mg/L for silicate; TN analyzed separately at University of Maine.
+  - Phytoplankton chlorophyll a (Water Chla) and chlorophylls from phytobenthos and sediments via standard spectrophotometric methods.
+  - Pigments (chlorophylls and carotenoids) quantified by HPLC with detailed extraction and separation conditions; pigment concentrations reported as nanomoles per gram sediment or per cm² for pot scrapes, and related units for water/biomass.
+  - Calibration and quality controls embedded in each analysis (e.g., colorimetric calibration curves with high R², ion chromatography calibrations, daily YSI calibrations, yearly pigment standards, stability checks).
+  - References for methods: APHA (2005), Chen et al. (2001), Parsons & Strickland (1963).
+- Quality control and data integrity
+  - Analytical calibrations performed with rigorous criteria (e.g., r² ≥ 0.998 for colorimetric curves; IC calibrations with 10 points; daily pH and DO calibrations; pigment identifications manually validated).
+  - Stability checks included by adding an extract from green plants at start and end of each HPLC run.
+  - All methodologies aligned to standard references, ensuring traceability and reliability of measurements.
+- Data structure and variables
+  - Dataset contains 37 rows and 46 columns.
+  - Columns 1-5: experimental descriptors (lake code, dust treatment, replicate, time point, sample date).
+  - Columns 6-17: water measurements in mesocosms (start and end) including chlorophyll a and various nutrients.
+  - Columns 18-31: surface sediment analyses (chlorophylls and pigment concentrations).
+  - Columns 32-46: artificial substrate (terracotta pot scrapes) analyses (pigments, pigments-related metrics, and wet density of material).
+  - Example data descriptors include: WaterChla, WaterTP-P, WaterSRP-P, WaterNH4-N, WaterNO3-N, WaterSilicate, chlorophyll and pigment concentrations (various species), and substrate-related pigment measurements.
+- Data references
+  - Primary methods and standards cited: APHA 2005; Chen et al. 2001; Parsons & Strickland 1963.

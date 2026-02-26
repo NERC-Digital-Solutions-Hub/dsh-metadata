@@ -1,0 +1,99 @@
+# ESPA p4ges PROJECT Work Package Carbon (WP4-Carbon)
+
+- Context and aims
+  - The p4ges project in Madagascar aims to influence the development and implementation of payment for ecosystem services at an international scale, focusing on carbon among ecosystem services in the Ankeniheny-Zahamena Forest Corridor (CAZ).
+  - WP4 conducts carbon stock assessment across multiple pools (Aboveground Biomass AGB, Belowground Biomass BGB, Litter, Dead Wood, Soil Organic Carbon SOC) to support carbon quantification and policy-relevant insights.
+  - Datasets generated are archived at Environmental Information Data Centre (EIDC) and linked to project outputs and publications.
+
+- Monitoring framework design and governance (how the project aligns with the archetype’s aims)
+  - Stakeholder-informed design: Zones of Interest (ZOI) defined to capture representative conditions of CAZ through collaboration across biophysical WPs (Carbon, Hydrology, Biodiversity) and CI team.
+  - Data standards and openness: field and lab data are organized, archived (EIDC), and prepared for publication; samples tracked with lab numbers and provenance, supporting data quality and traceability.
+  - Metadata and data availability: explicit data archiving in EIDC and sharing of underlying data through project datasets; documentation of data collection forms and procedures supports data verification and reuse.
+  - Data governance and quality: standardized sampling design, site criteria, and field/lab procedures, with clear roles (field teams, lab responsible) and lab workflows to ensure data are clean, comparable, and auditable.
+
+- Zoning, site selection, and sampling design (core monitoring framework elements)
+  - Zone of Interest (ZOI) criteria:
+    - Biophysical criteria (altitude, slope, bioclimate, dry season length, soil type)
+    - Deforestation history and access
+    - Four ZOIs selected as representative CAZ sub-regions: Lakato, Andasibe, Anjahamana/Ambalarondra, Didy
+  - Land use (LU) types for sampling:
+    - Closed canopy, Tree fallow, Shrub fallow, Tany maty/Degraded land; reforestation included as identified by NGOs/local communities
+  - Site identification criteria beyond LU:
+    - Slope < 45 degrees; sites near habitat centers to minimize edge effects
+    - Plot size ≥ 120 m × 120 m; transects not across streams; minimum 500 m between sites
+  - Sampling density and layout:
+    - 16 plots per ZOI (4 LU types × 4 replicates)
+    - Extra plots for WP4 to capture carbon stock variability
+    - Totals: ZOI1 Lakato 28 sites, ZOI2 Andasibe 48 sites, ZOI3 Anjahamana 28 sites, ZOI4 Didy 28 sites
+  - Field reconnaissance and minimal area testing:
+    - Reconnaissance to validate remote-sensing site suitability, assess indicator species, land-use history, and accessibility
+    - Minimal area test using 1 m × 1 m quadrats, expanding until no new species appear, establishing 16 m² as the minimal area for C stock quantification
+
+- Field data collection and sampling procedures (operationalisation of the framework)
+  - Administrative and preparatory steps:
+    - Permits, mission orders, insurances, and field forms prepared in advance
+  - Data collection forms and materials:
+    - Five field forms: site characteristics, inventory (regeneration, standing/dead wood, tree inventory), percent cover (Braun-Blanquet), sapling/litter/root sampling, soil profile
+    - Materials: forest inventory tools (compass, vertex, decameter, flags), biomass/soil sampling tools (cylinders, augers), sample bags
+  - Plot-level design for biomass assessment:
+    - 5 m radius plot with nested subplots:
+      - 2 m radius: sapling inventory (DBH < 5 cm, H > 1.3 m) for 5 species
+      - 5 m radius: DBH and height for trees 5–10 cm DBH
+      - 10 m radius: DBH and height for trees 10–20 cm DBH
+      - 20 m radius: DBH, height, and local name for trees > 20 cm DBH; standing dead wood density categories (S, I, R)
+    - Lying dead wood: 100 m transect with intercept diameters recorded and density classified
+  - Biomass measurement approaches:
+    - Direct aboveground biomass measurement in closed canopy: 54 trees selected by species contribution, felled, and weighed (trunk, branches, leaves) with moisture determination via lab analysis
+    - Understorey vegetation, litter, and root mat sampling: 1 m × 1 m plots for biomass; 25 cm × 25 cm quadrats for litter/root mats; samples sent to lab
+  - Root sampling and soil assessments:
+    - 1 m² soil pit for root description; roots categorized as MR (2–10 mm) and CR (>10 mm); roots washed, weighed, and described
+    - Soil sampling in four subplots at multiple depths (0–100 cm in 10 cm increments) using augers for carbon and cylinders for bulk density (0–10, 10–20, 20–30, 50–60, 80–90 cm)
+    - Soil profile description to 1.30 m depth in center subplot, including horizon color (Munsell), texture, structure, and root depth
+  - Additional data:
+    - GPS coordinates, slope, deforestation history (collected via interviews)
+
+- Laboratory analyses and data integration (linking field to interpretation)
+  - Biomass and wood density:
+    - Drying of biomass samples to stable weight; determination of dry biomass and wood specific gravity (WSG)
+  - Soil analyses:
+    - Walkley-Black method for soil organic carbon (calibration reference)
+    - Mid Infra-Red Spectroscopy (MIRS) for soil carbon content prediction
+    - Carbon stable isotope analysis (δ13C) for land-use type determination and carbon dynamics
+  - Data handling and storage:
+    - Field forms scanned and archived; data entered into Excel; photos stored in project data center; data series archived in EIDC
+    - Lab analyses linked to field provenance with lab and worksheet numbering
+
+- Data processing, carbon stock calculations (how monitoring outputs are produced)
+  - Aboveground biomass (AGB):
+    - Allometric approaches: tree-level biomass via allometry (various published equations) and density scaling to plot-level Mg ha⁻¹
+    - Carbon stock derived from biomass using established conversion factors (e.g., Brown 2002)
+    - Inclusion of floristic analyses and vertical stratification in biomass estimation
+  - Litter, understorey vegetation, and root mat:
+    - Biomass densities from field weights extrapolated to 1 ha using standard scaling
+    - Carbon stock inferred using the same 0.5 conversion factor
+  - Dead wood:
+    - Lying dead wood: volume estimated from diameters along 100 m transect and density categories; biomass calculated with volume × density
+    - Standing dead wood: biomass estimated from volume and density
+  - Soil organic carbon (SOC) stock:
+    - SOC stock per depth layer computed using the equation: SOC = sum(BD_i × C_i × (1 − CF_i) × t_i × 0.1)
+      - BD_i: bulk density by soil layer
+      - C_i: soil carbon content by layer
+      - CF_i: coarse fraction >2 mm
+      - t_i: layer thickness
+    - SOC30 and SOC100 calculated to assess carbon stock at 0–30 cm and 0–100 cm depths
+    - Equivalent mass method used to account for density differences across land uses
+  - Data harmonization:
+    - Data organized into data series; QA steps implied through provenance tracking and lab verification
+
+- Data publication and references (dissemination of monitoring outputs)
+  - Data products published or in process; key publications listed for soil organic carbon mapping, land-use impacts on carbon stocks, and carbon stock variability
+  - Data publication and references section includes standard climate and soil carbon literature (IPCC guidelines, Brown, Brauns-Blanquet, etc.)
+
+- Key takeaways for monitoring frameworks (relevant to policy and governance)
+  - A robust, multi-pool carbon monitoring framework linked to policy objectives (PES) requires:
+    - Representative, well-documented zoning and site-selection strategies to capture variability
+    - Clear, standardized field protocols with nested sampling to estimate multiple carbon pools
+    - Transparent data management: field forms, lab procedures, provenance tracking, and centralized archiving (EIDC)
+    - Integration of field data with laboratory analyses and established allometric approaches for upscaling to per-hectare stocks
+    - Use of both traditional (Walkley-Black) and modern (MIRS, δ13C) analyses to enhance carbon stock estimates and land-use discrimination
+    - Commitment to data sharing and publication while maintaining traceability and metadata for verification and future decision-making

@@ -1,0 +1,44 @@
+# Historic Reconstructions of Daily River Flow for 303 UK Catchments
+
+- Purpose: Provides consistent modeled daily river flow timeseries for 303 UK catchments from 1891 to 2015, with uncertainty estimates, to support drought and water-resource analysis.
+- Methods: Uses the GR4J lumped hydrological model calibrated with newly rescued rainfall data and temperature-derived potential evapotranspiration (PET) data. Produces:
+  - A single flow timeseries with upper and lower uncertainty bands.
+  - An ensemble flow timeseries from 500 model realizations.
+- Calibration and performance: Calibrated over 1982–2014 using a multi-objective approach with six metrics (NSE, NSE on log flows, MAPE, PBIAS, MAM30, Q95). Top ensemble runs are included in the dataset; performance varies across catchments, with some not reproducing observed flows well. Metadata files document model parameters and performance for each catchment.
+- Key caveats: 
+  - Observed flows are not explicitly adjusted for human influences (e.g., abstractions); some catchments show poor replication.
+  - The dataset is biased toward low flows due to calibration focus.
+  - Some catchments rely on naturalised calibrations (_thames Kingston_ and _Lee Feildes Weir_ adjustments).
+- Context and projects: Produced as part of the Historic Droughts and IMPETUS projects under the UK Droughts and Water Scarcity Programme, aimed at:
+  - Reconstructing historic flows for periods without gauged observations.
+  - Improving drought forecasts and drought management tools with ensemble uncertainties.
+- Catchment coverage and selection: 
+  - 303 UK catchments chosen to span diverse hydrology; about 115 are part of the UK Benchmark Network (near-natural) and suitable for low-flow analysis.
+  - Diversity includes catchments influenced by human activity; two adjustments provided for naturalised flows.
+- Input data and meteorology:
+  - Daily rainfall reconstructions (1891–1958 extension) and reconstructed daily PET data based on reconstructed monthly temperatures, to drive the GR4J model consistently.
+  - PET derived using McGuinness-Bordne equation due to historical data limitations; rainfall data extended with digitised gauges.
+- Hydrological model and parameters:
+  - GR4J (four parameters X1–X4) chosen for simplicity, speed, open source code, and suitability for large-ensemble uncertainty analyses.
+  - No snow module (CemaNeige) included due to computational demands of 500 realizations.
+- Ensemble design and evaluation:
+  - 500,000 parameter sets (Latin Hypercube sampling) evaluated per catchment; top realizations selected based on six metrics with specified thresholds.
+  - Ensemble metrics across calibration and evaluation periods include uncertainty width and containment ratio to quantify ensemble spread and reliability.
+- Data format and access:
+  - Files are CSV, covering 1891-01-01 to 2015-11-30 for all 303 catchments.
+  - Single_Run folder: 305 daily flow files (top ensemble member) plus a metadata file with 23 columns detailing parameters and performance.
+    - File naming: HD_FlowSingle_<catchmentID>_18910101_20151130.csv
+    - Metadata: HD_FlowSingle_Metadata.csv
+  - Ensemble_500 folder: 305 daily flow files for 500 realizations plus 305 metadata files per catchment.
+    - Daily file naming: HD_FlowEnsemble_<catchmentID>_18910101_20151130.csv
+    - Metadata: HD_FlowEnsemble_<catchmentID>_Metadata.csv
+  - Key fields include catchment IDs, dates, flow values for top member or each realization, and metadata columns such as Param1–Param4, NSE_Cal, NSE_Eval, MAPE_Eval, UncertWidth_500, ContRatio_500, etc.
+- Guidance for users:
+  - Use metadata to select catchments and understand model performance for the study area of interest.
+  - The 500-member ensemble provides probabilistic information; the single run gives a deterministic output but lacks parameter uncertainty.
+  - Some catchments may require cautious interpretation due to human influences not captured by the model; consult metadata to assess reliability.
+  - If resources are limited, the top ensemble member (Single_Run) can be used, but it omits parameter uncertainty.
+- Acknowledgements:
+  - Funded by NERC UK Droughts and Water Scarcity Programme (Historic Droughts and IMPETUS).
+- References:
+  - Supporting literature and data sources related to GR4J, rainfall and PET reconstructions, and UK drought studies.

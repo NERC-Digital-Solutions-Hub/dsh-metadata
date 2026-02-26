@@ -1,0 +1,47 @@
+# Overview
+
+- Objective: Measure herbivory occurrence and herbivory intensity on exotic Clidemia hirta and native Melastoma spp. across disturbance gradients in Sabah, Malaysian Borneo, to inform comparisons between species and the influence of habitat on herbivory and reproductive traits.
+- Location and design: 21 forest sites within RSPO-certified oil palm landscapes; two 100 m transects per site (one at forest edge, one in forest interior), totaling 39 usable transects after exclusions.
+- Sampling within transects: up to 10 C. hirta plants surveyed per transect; nearest Melastoma plant surveyed when present; plants taller than 30 cm selected to ensure sufficient leaves for herbivory assessment.
+- Measured outcomes:
+  - Herbivory occurrences: proportion of damaged leaves per plant.
+  - Herbivory intensity: estimated percent area removed/damaged on the first four fully expanded leaves per plant (scored by eye from scanned leaves, later converted to continuous values).
+  - Reproductive effort: number of reproductive organs per plant for both exotic and native species.
+  - Spatial and local context: distance to nearest Melastoma, local Melastoma density, local Clidemia density, local canopy cover, transect canopy cover, light environment proxy.
+- Habitat and disturbance variables:
+  - Habitat type: Forest-oil palm edge vs. Disturbed forest (interior), representing a disturbance gradient.
+  - Canopy cover: measured with a densiometer at multiple points along each transect; used as light proxy for analyses.
+- Trait and plant metrics:
+  - Plant size: total number of leaves per plant.
+  - Local plant density: presence/absence of C. hirta within 5 m on either side of focal plant.
+  - Specific Leaf Area (SLA) data: collected to assess leaf economics across habitat types.
+- Data files and content:
+  - herbivory_habitat.csv: Herbivory measurements for exotic C. hirta and native Melastoma spp., plus local habitat variables (occurrence and intensity, reproductive organs, canopy metrics, plant densities, etc.).
+  - SLA.csv: Measurements for leaf area and SLA across habitat types; includes Leaf1–Leaf4 areas, total and mean SLA, and plant-level metadata.
+  - SLA.csv and other variables capture four leaves per plant for SLA-related analyses; habitat categories include Oil palm, Forest-oil palm edge, Disturbed forest, and Intact forest.
+- Data collection details and quality control:
+  - Herbivory intensity scored by a single observer to minimize bias; validated approach aligning with image-based methods.
+  - Canopy measurements conducted by the same observer; standard protocols followed.
+  - Data points are geospatially and methodologically organized with site codes and transect identifiers; some site codes omitted in related holdings.
+- Units and data interpretation:
+  - Herbivory occurrence: proportion of damaged leaves per plant (0–100).
+  - Herbivory intensity: percentage area damaged per leaf (0–100), scored in 10% increments and converted to midpoints for analysis (e.g., 0, 1, 3.5, 7.5, 15, etc.).
+  - Canopy cover: percentage (0–100) from densiometer readings.
+  - SLA metrics: leaf area (cm2), leaf weight (g), total leaf area, mean SLA (cm2 g−1).
+  - Reproductive organs: counts per plant for buds, flowers, and fruits; binary presence/absence for reproductive activity.
+- Context and references:
+  - Study aligns with existing literature on invasion ecology, herbivory measurement, and canopy/light effects on herbivory.
+  - Related datasets and site information referenced from Waddell et al. (2020a, 2020b) and general methodological sources.
+- Potential analyses enabled by the data:
+  - Compare herbivory occurrence and intensity between exotic and native species across disturbance gradient.
+  - Assess how canopy cover and light environment relate to herbivory rates.
+  - Examine whether herbivory correlates with reproductive output in each species.
+  - Analyze SLA and leaf-area variation across habitat types and its association with herbivory pressure.
+  - Explore local density effects (conspecific and confamiliar neighbors) on herbivory and plant performance.
+- Limitations and considerations:
+  - Taxonomic uncertainty: Melastoma spp. identification is broad (likely M. malabathricum in most cases) due to morphological similarity and possible hybridization.
+  - Intensity measurement relies on by-eye scoring, although standardized and validated against imaging methods.
+  - Sampling focused on transects with detectable C. hirta; intact closed-canopy forest had too few C. hirta individuals for surveying.
+  - Spatial autocorrelation addressed by spacing transects >1 km apart; some site variation remains due to prior logging and disturbance history.
+- Data accessibility:
+  - Data available as CSV files with site, transect, and plant-level records; linked to prior data holdings and published/referenced sources (Waddell et al., 2020a, 2020b; EIDC repository).

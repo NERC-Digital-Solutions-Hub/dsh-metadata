@@ -1,0 +1,59 @@
+# The road to recovery: a synthesis of outcomes from ecosystem restoration in tropical and sub-tropical Asian forests
+
+- Purpose: A dataset accompanying Banin LF, Raine EH et al. (2023) that aggregates planted-tree survival and growth outcomes from forest restoration studies in tropical and subtropical Asia, enabling cross-site comparisons and meta-analyses.
+- Scope and scale:
+  - 151 studies, 176 restoration sites across South and Southeast Asia
+  - 2,477 planting cases (a species at a site, under a treatment, established at a time)
+  - 625 tree species (252 genera; 81 families)
+  - 148 sites reported survival data; 136 sites reported height growth
+  - 108 sites on mineral soils; 68 peat swamp forest sites
+- Data licensing and access:
+  - Sharing permitted under a Creative Commons license; datasets stored in the Environmental Information Data Centre (EIDC)
+  - Climate and soil variables sourced from external global datasets (WorldClim and Harmonized World Soil Database) and not embedded in the EIDC data repository due to licensing
+  - Supplementary datasets and provenance documented; some unpublished grey literature included via FOR-RESTOR partners
+- Data provenance and extraction:
+  - Systematic search up to May 15, 2021 (Web of Science); 427 references screened; 108 studies selected for the seedling dataset; 43 additional peat swamp studies included; 7 unpublished datasets contributed
+  - Seedling data compiled from field planting, excluding nurseries or greenhouse studies; final seedling dataset comprises 176 restoration sites and 2,477 cases across peat swamp and mineral soils
+  - Data extraction included digits from figures (WebPlotDigitizer), literature cross-checks, and taxonomic harmonization
+- Data fields and variables:
+  - Study and site metadata: study year, country, region, coordinates, disturbance history, restoration aim, pre-planting site condition, restoration methods, planting diversity, planting density, seed source, study duration, taxonomic names, numbers planted and monitored, planting age, planting height, census times, survival, seedling dimensions and growth
+  - Derived and ancillary data: wood density (from global wood density database), climate and elevation (WorldClim), dry-season precipitation, forest type (mineral soil vs peat swamp)
+  - Planting design and treatments: whether planting was mixed or single-species; planting density; presence of nurse plants; replication details
+  - Disturbance and current condition classifications:
+    - Disturbance types: logging, agriculture, plantation, fire, mining, draining (peat swamp only)
+    - Current condition: plantation enrichment, forest enrichment, open degraded
+  - Restoration purpose classifications (eight categories, Table S2)
+  - Additional restoration treatments alongside planting (Table S3): removal of competition, fertilisation, protection, shading, water regulation, soil preparation, and cases with no reported restoration activities beyond planting
+- Taxonomy and data quality:
+  - Taxonomic names harmonized to World Flora Online; synonyms resolved; ambiguous entries discarded
+  - Excluded sites where single non-native/exotic-species focus dominated
+  - Seedling data include 625 species (252 genera; 81 families); common species and genera identified
+  - Wood density data linked to species (and genus/family levels when necessary) to support trait analyses
+- Data processing and replication for analyses:
+  - Mortality analyses: Section 4 outlines generalized linear mixed models (GLMMs) with binomial error and complementary log-log link; random effects for site, species, and site-by-species; fixed effects including climate (mean annual temperature, elevation, dry-season precipitation), forest type, forest condition, species richness, and wood density; model selection via multi-model inference (MuMIn) with AIC; exposure time incorporated for longer-term datasets; model diagnostics (DHARMa) and marginal vs conditional R^2 reported
+  - Growth rate analyses: Section 5 uses height-based annual size-standardised growth rate (AGR); comparison of linear, exponential, and Gompertz growth curves; AGR computed at reference heights (100, 200, 300 cm) within observed height range; linear mixed models (lme4) with similar fixed and random effects as mortality models; uncertainty propagation via simulation and delta-method-derived standard errors
+  - Uncertainty assessment: delta method for AGR variance; comparison of within- vs between- combination variance; simulation-based sensitivity analysis to assess impact of AGR uncertainty on model outputs
+- Reproducibility and accessibility:
+  - Analyses supported by explicit code: script_SynthesisAnalysis_MortalityModels.R, height_ASGR_nlms.R, and related functions (e.g., height_nlm_functions.R)
+  - Documentation of model structure, variable importance (importance > 0.8 for retained effects), and data processing steps to facilitate reuse and verification
+- Key insights relevant to data governance and stewardship:
+  - A large, multi-site, multi-species dataset with standardized mortality and growth metrics across diverse forest types and disturbance histories
+  - Emphasis on metadata completeness ( disturbance type, restoration aim, prior conditions, methods, density, seed source) to enable robust cross-site analyses
+  - Use of external biophysical layers (WorldClim, soil databases) to contextualize outcomes, with clear notes on licensing and data integration
+  - Transparent handling of uncertainty and model validation, enabling informed reuse and meta-analyses
+- Practical considerations for Data Stewards:
+  - Maintain and update provenance records for each site-case, including licensing status of external data layers
+  - Ensure taxonomy harmonization remains aligned with World Flora Online and related authorities; handle synonyms and ambiguous identifications consistently
+  - Preserve and provide access to code and supporting material to enable reproducibility of mortality and growth analyses
+  - Document any deviations or data gaps (e.g., missing population-level metrics, censoring, or inconsistent reporting) and provide guidance for imputation or exclusion criteria
+  - Facilitate data discovery by capturing both peat swamp and mineral soil contexts and clearly tagging disturbances, restoration aims, and management practices
+- Key challenges highlighted for data stewardship:
+  - Incomplete understanding of user needs and priorities for restoration data
+  - Timely acquisition of datasets from diverse partners and systems
+  - Ensuring standardization across heterogeneous formats, measures, and reporting styles
+  - Managing very large datasets and older, non-interoperable databases
+  - Balancing metadata richness with practical data collection constraints across regions
+
+- Reference framework and related works:
+  - Banin LF et al. 2023: The road to recovery: a synthesis of outcomes from ecosystem restoration in tropical and sub-tropical Asian forests
+  - Supporting data sources include WorldClim (climate surfaces) and Harmonized World Soil Database (soil classification), with data sharing and code references listed in the accompanying supplementary materials

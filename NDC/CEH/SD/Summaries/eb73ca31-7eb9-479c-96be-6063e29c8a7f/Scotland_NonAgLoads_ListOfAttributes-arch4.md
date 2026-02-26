@@ -1,0 +1,28 @@
+# Data Structure
+
+- The Non-agricultural pollution to rivers in Scotland data are stored as comma-separated value (CSV) files:
+  - NonAgLoadsInland_Scotland.csv
+  - NonAgLoadsCoastal_Scotland.csv
+- Key identifiers:
+  - CATCH_ID: Unique Water Framework Directive (WFD) catchment identifier
+  - INLAND_ID: SEPA ID for inland catchments
+  - COASTAL_ID: SEPA ID for coastal catchments
+- Variables (examples include):
+  - Z variables for suspended solids (e.g., STW_Z, Urban_Z, Wood_Z, Bank_Z, Montane_Z, Other_Z)
+  - P variables for phosphorus (e.g., STW_P, SEP_P, Urban_P, Wood_P, Bank_P, Montane_P, Other_P)
+  - N variables for nitrogen (e.g., STW_N, SEP_N, Urban_N, Wood_N, Bank_N, Montane_N, Other_N)
+  - F variables for faecal coliform (e.g., STW_F, SEP_F, Urban_F)
+- Units (as described for each column):
+  - Z: kg sediment per year
+  - P: kg phosphorus per year
+  - N: kg nitrate per year
+  - F: 10^6 cfu per year
+- GIS mapping:
+  - Data can be joined to WFD catchment polygons to map pollution loads
+  - WFD catchments are not yet published by SEPA; SEPA intends to add the WFD catchment dataset to its Environmental data page
+- Identifiers for mapping:
+  - CATCH_ID links to WFD catchments
+  - INLAND_ID links to inland catchments
+  - COASTAL_ID links to coastal catchments
+- References:
+  - Gooday, R. et al. (2016) Predicting and Understanding the Effectiveness of Measures to Mitigate Rural Diffuse Pollution. Final report for SNIFFER Project DP1, 298pp.

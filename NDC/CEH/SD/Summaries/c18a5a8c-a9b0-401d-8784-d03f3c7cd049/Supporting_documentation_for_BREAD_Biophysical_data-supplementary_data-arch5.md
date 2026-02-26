@@ -1,0 +1,87 @@
+# Experimental design/Sampling regime
+
+- Purpose and scope
+  - Detailed soil and fertility data collection across households to study soil properties and moisture dynamics.
+  - Data collected includes pore water conductivity, volumetric water content, and soil temperature across multiple months.
+
+- Sampling design
+  - Household-level sampling with three fertility zones per household:
+    - Home: near the house with higher management inputs
+    - Near: field between home and far field
+    - Far: owner’s field furthest from the house
+  - Replication and scale
+    - Two main design scales:
+      - Smaller scale: 36 households, 108 measurement sites, 324 samples
+      - Larger scale: 72 households, 216 measurement sites, 648 samples
+    - Within each fertility zone, 3 replicates per household
+    - Kebeles (districts) involved: Konicha and 1st Choroko (and expanded for larger design)
+  - Depths and zones
+    - Soil measurements taken at three depth intervals per area: 0–5 cm, 5–10 cm, 10–15 cm
+    - Measurements conducted in all three fertility zones for each household
+
+- Collection methods
+  - Random positioning
+    - Sample positions determined randomly within each fertility zone
+    - Three replicates per zone per area
+  - Measurement regiment
+    - Measurements taken at 0–5 cm, 5–10 cm, and 10–15 cm depths
+    - Instruments: W.E.T sensor for soil water content, electrical conductivity, and temperature
+  - Field logistics
+    - Data collected by two experienced soil scientists
+    - Immediate data upload via tablet and ODK to minimize data loss
+  - Documentation
+    - Soil samples labeled and stored; minor loss due to label issues (<5%)
+
+- Calibration and data processing
+  - W.E.T sensor calibration for soil water content
+    - Two-point calibration using damp and dry soil
+    - Determine b0 and b1 parameters, then configure W.E.T custom soil type (Custom 1) with these values
+    - Use Custom 1 soil type for field measurements
+  - Calibration for pore water conductivity
+    - Calibrate EC using a procedure involving soil slurry and double-volume water
+    - Extract parameters to compute EC_p using specific equations and set them in the sensor
+  - In-field operation
+    - Calibrations saved in sensor settings (b0, b1, and EC parameters)
+    - Ensure field measurements consistently use Custom 1 soil type
+
+- Quality control
+  - Sampling strategy accounts for spatial variability with random replicates
+  - Routine checks of the WET sensor in saline solutions
+  - Data capture workflow
+    - Field data collected on tablet with predefined variables
+    - Regular calibration checks of sensors and equipment
+  - Lab analysis
+    - Standard procedures and SOPs from the University of Aberdeen
+    - Regular calibration and validation of nutrients and pH measurements
+  - Data quality notes
+    - Data checked for normal distribution and consistency
+    - Minor losses due to labeling (<5%)
+
+- Data files and schema
+  - IPORE-Soil EC.csv
+    - Columns include: S. no., HH no., Kebele, HH ID, Fertility Zone, Top depth, Bottom depth, Replicates, and monthly pore water conductivity (January–July)
+  - IPORE-Soil water.csv
+    - Columns include: S. no., HH no., Kebele, HH ID, Fertility Zone, Top depth, Bottom depth, Replicates, and monthly volumetric water content (January–July)
+  - IPORE-Soil temperature.csv
+    - Columns include: S. no., HH no., Kebele, HH ID, Fertility Zone, Top depth, Bottom depth, Replicates, and monthly soil temperature (January–July)
+  - Common schema details
+    - Each record includes: fertility zone (Home/near/far), depth range, replicate number
+    - Monthly measurements for Jan–Jul across all three data types
+
+- Governance and dataset context for data stewards
+  - The dataset integrates sensor-derived measurements (EC, water content, temperature) with field metadata and spatial replication
+  - Important metadata to capture and preserve
+    - Sensor calibration constants (b0, b1) and selected soil type (Custom 1)
+    - Pore water conductivity calibration parameters
+    - Field protocol details (randomization, depth intervals, replication)
+    - Data provenance (field collection dates, personnel, locations, kebeles)
+  - Data quality considerations
+    - Consistent labeling and sample tracking to minimize data loss
+    - Documentation of measurement uncertainties (sensor accuracy specifications)
+    - Clear versioning and linked data dictionaries for dataset fields
+  - Sharing and updates
+    - Data catalog entries should reflect hierarchical design (household, fertility zone, depth, replicate)
+    - Update mechanisms needed for ongoing data collection and potential recalibrations
+  - Usability and interoperability
+    - Standardized column names and units across files
+    - Alignment with metadata standards to facilitate discovery and reuse by data users and systems with large datasets

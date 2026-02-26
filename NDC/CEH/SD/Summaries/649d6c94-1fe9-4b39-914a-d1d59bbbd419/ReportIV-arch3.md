@@ -1,0 +1,47 @@
+# SUMMARY
+
+- Four-year overview of the NERC Soil Biodiversity Thematic Programme at Sourhope, focusing on how management treatments affect above-ground productivity, species composition, and functional plant groups in a long-term soil biodiversity field experiment.
+- Site and design highlights:
+  - Rigg Foot Experimental Site, Sourhope: 5 replicated blocks on a downslope gradient; each block contains 6 main plots subdivided into 10 sub-plots with a 0.5 m x 0.5 m cell system for group allocation.
+  - Treatments (plot-level): Control 1, Control 2, Nitrogen, Lime, Nitrogen & Lime, Insecticide (Dursban 4). Site-wide mowing to ~6 cm (May–Sept) and periodic insecticide application post-mowing; spring applications of Nitrogen and/or Lime.
+  - Field management since 1999 includes regular mowing, nutrient amendments, and insecticide applications; phased Phase I (1998–2001) and Phase II projects involved.
+- Key measurements and data collected:
+  - Above-ground biomass: annual estimates from 0.5 m^2 cells within sub-plots, dried and weighed after mowing.
+  - Botanical surveys: baseline (1998) and annual July/August point analyses (2000–2002) using 0.5 m^2 cells and 100-point grids to record species hits; bryophyte counts identified to species level in 2002.
+  - Soil and climate data: soil pH (since 1998, with 2002 central plot measurements), soil moisture (theta probe in 2002), and on-site Automatic Weather Station data (rainfall, radiation, temperature) from 1999 onward.
+  - Ancillary surveys: periodic vegetation cover estimates, biomasses by subset plots, and species lists (Appendices with full datasets and methods).
+- Main findings (2002 and trends 1999–2002):
+  - Fertilisation effects:
+    - Nitrogen and Lime, especially combined (N&L), strongly promote above-ground biomass; productivity highest in N&L plots, though signs of potential plateau or stress at high pH/moisture in the densest plots.
+    - Soil pH rises with lime application (approaching 7.0 in limed plots); higher pH coupled with lower moisture in some plots may offset gains in productivity.
+  - Mowing effects:
+    - Consistent decline of Agrostis capillaris and Agrostis vinealis across treatments, suggesting a site-level response to mowing rather than a single-treatment effect.
+    - Festuca rubra expands particularly in fertilised plots; regular mowing and absence of grazing appear to facilitate bryophyte expansion, increasing bryophyte abundance across the site.
+  - Insecticide effects:
+    - Shannon diversity indices are higher in insecticide-treated plots, though direct causal links to reduced herbivory remain cautious; patterns align with prior work showing insect herbivory can shape plant diversity.
+  - Trampling effects:
+    - In C2 plots (introduced for trampling/13CO2 pulses), productivity declines linked to trampling activity, particularly during pulse application periods.
+  - Functional-group dynamics (CSR framework):
+    - Under higher nutrient availability, competitive (C) and stress-ruderal (SR-C-S-R) types become more dominant; stress-tolerators (S) expand in unimproved plots, with lime and/or nitrogen favouring shifts toward more competitive behaviours.
+    - Nitrogen+Lime plots show pronounced C-S-R and SR/C-S-R representation; unimproved plots show greater S-type prevalence.
+  - Biodiversity patterns:
+    - Bryophyte hits increase over time, particularly in unimproved plots; vascular plant hits show shifts in dominant species (Agrostis spp. decline; Festuca rubra increases; Poa pratensis relatively common in improved plots).
+    - PCA and targeted analyses separate improved versus unimproved plots; treatment groups show distinct species and bryophyte assemblages.
+- Data quality, gaps, and governance:
+  - Long-running dataset: over 16,000 soil samples since start; comprehensive biomass, species, and abiotic data.
+  - Gaps and issues:
+    - 2002 weather data period affected by a malfunction; approximately six weeks of data lost, with substitute data from Konza weather station for affected dates.
+    - Some data subsets were added later (e.g., 2002 central measurement of soil moisture) and various small-scale surveys were intermittently conducted.
+  - Data access and sharing:
+    - Full project details and datasets are publicly available via the Soil Biodiversity website and CEH channels; underlying datasets are openly shared where possible, with metadata and provenance maintained.
+- Implications for monitoring frameworks and policy evaluation:
+  - Long-term, multi-factor experiments are valuable for disentangling interactions among mowing, fertilisation, pest control, and trampling on plant communities and productivity.
+  - Functional-type analysis (CSR framework) provides insight into ecosystem processes beyond simply counting species.
+  - Data management considerations highlight the need for robust metadata, data provenance, and contingency planning for data losses (e.g., equipment failures).
+  - Cross-cutting data governance and sharing challenges (siloing, access constraints, and metadata adequacy) can hinder rapid policy evaluation; transparent, standardized data schemas and governance processes are essential.
+- Practical takeaways for monitoring framework authors:
+  - Design long-term, replicated experiments with clearly defined management regimes and consistent sampling protocols to detect both short-term and lagged responses.
+  - Integrate above-ground, below-ground, and abiotic measurements to capture ecosystem function changes.
+  - Employ functional classification (e.g., CSR) to interpret shifts in community strategies under different management and soil conditions.
+  - Ensure comprehensive metadata, data stewardship, and open data practices to enhance reuse and comparability across projects.
+  - Build resilience against data gaps (e.g., redundant data sources, documented data-loss contingencies) to maintain dataset integrity for policy signals.

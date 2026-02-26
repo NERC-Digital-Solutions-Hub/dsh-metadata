@@ -1,0 +1,48 @@
+# SUMMARY
+
+- Four years into the NERC Soil Biodiversity Thematic Programme at Sourhope (Macaulay Farm, Sourhope, Scottish Borders) focusing on above-ground productivity (biomass), species composition, and diversity in a controlled field experiment.
+- Primary management effects driving botanical changes:
+  - Mowing: around 6 cm sward height; promotes Festuca spp. over Agrostis spp.; may increase bryophyte abundance (mosses) through sustained sward height and reduced disturbance.
+  - Fertilisation: nitrogen and/or lime increases productivity; plots with both nitrogen and lime show the strongest productivity; lime application raises soil pH toward ~7.0; potential moisture stress and chlorosis in highly limed plots.
+  - Insecticide: potential link to higher plant diversity via reduced herbivory; evidence is circumstantial but discussed in context with Brown & Gange (1989).
+- Experimental design and treatments:
+  - Site: Rigg Foot Experimental Site, Sourhope; 5 replicate blocks on a downslope gradient; 6 main plots per block subdivided into 10 sub-plots; 0.5 m2 sampling cells.
+  - Treatments (plot-level): Control 1, Control 2, Nitrogen, Lime, Nitrogen & Lime, Insecticide (Dursban 4 OPA).
+  - Management: monthly mowing May–September to ~6 cm; insecticide applied after mowing to insecticide plots; nitrogen and/or lime applied in spring.
+  - Data collection: on-site Automatic Weather Station (weather issues in 2002), above-ground biomass from random 0.5 m2 samples, baseline and repeated point analyses (2000–2002) identifying species and bryophytes, soil pH (5 cm depth), soil moisture (theta probe in 2002), and additional small surveys.
+- Key findings (2002, with context to 1999–2002 trends):
+  - Biomass productivity
+    - 2002 biomass lower than 2001 across many treatments; however, long-term trend shows biomass increasing from 1999 baseline.
+    - Highest productivity in plots receiving both nitrogen and lime (N+L); nitrogen and/or lime alone also boost productivity relative to unfertilised plots.
+    - Control 2 plots generally less productive than Control 1; slope hillside location (Block 5) shows lower biomass than lower blocks (Block 1) with a notable gradient effect.
+  - Soil chemistry and water relations
+    - Lime strongly increases soil pH to near 7.0 in upper soil; nitrogen also increases pH but to a lesser extent; untreated controls remain near baseline.
+    - Negative correlation between soil moisture and pH (r ≈ -0.68); higher pH plots tend to be drier.
+    - Overall positive relationship between soil pH and biomass across treatments (r ≈ 0.69), but within nitrogen- or lime-only plots the relationship weakens; in N+L plots the relationship can be less positive or negative due to moisture effects.
+  - Plant community composition
+    - Agrostis capillaris and Agrostis vinealis decline by >40% since 2000 across most treatments, suggesting a site-wide mowing effect rather than a single-treatment effect.
+    - Festuca rubra expands in fertilised plots; Festuca ovina declines; relative abundance shifts reflect fertility and disturbance changes.
+    - Bryophytes expand across the site, with Rhytidiadelphus squarrosus increasing; bryophyte hits rise from 10.8% (2001) to ~20% (2002) of total hits, especially in unimproved plots.
+  - Functional groups and diversity
+    - Point analysis shows major functional groups: stress-tolerators (S), competitive-stress-ruderals (CSR), and SR/CSR; between 69% and 95% of hits fall within these groups, with shifts by treatment by 2002.
+    - In 2002, C-S-R and SR/C-S-R groups expand in N+L plots; stress-tolerators predominate in unimproved plots (lack of fertility and disturbance).
+    - Shannon diversity index declines in nitrogen+lime plots by about 15% from baseline, while unimproved and some insecticide plots show increases (up to ~29% in some insecticide plots).
+  - Point analyses and multivariate patterns
+    - PCA of 2002 point analyses separates improved (fertilised/limed) versus unimproved plots; lime-treated plots cluster distinctly; some nitrogen-treated plots align with limed plots, others with controls or insecticide plots.
+    - Bryophyte presence increases with time and is negatively associated with some fertiliser treatments; several dominant vascular species shift with treatment.
+  - Trampling effects
+    - 2002 first-year sampling in C2 plots coincided with noticeable trampling during labelled 13CO2 pulse experiments, likely reducing productivity in those plots.
+- Discussion highlights (synthesis):
+  - Mowing acts as a major, non-treatment-specific driver shifting species composition away from Agrostis toward Festuca and stress-tolerant taxa; moss proliferation likely tied to consistent 6 cm mowing height and reduced grazing.
+  - Fertilisation enhances productivity but may reduce diversity in N+L plots due to competitive exclusion and high pH/moisture stress; lime largely drives pH changes, influencing which functional groups dominate.
+  - Insecticide effects on diversity remain plausible but require caution; potential reduction in herbivory could allow more palatable species to persist, maintaining overall diversity in infertile conditions.
+  - Trampling in C2 plots likely confounded productivity signals in 2002, underscoring the importance of accounting for disturbance events in analyses.
+- Practical implications for data-driven decisions:
+  - If maximizing productivity is the aim, N+L is most effective, but monitor for long-term diversity costs and moisture stress.
+  - If biodiversity and functional diversity are priorities, limiting fertiliser intensity and managing disturbance (grazing, mowing regimes) may help maintain higher Shannon diversity and a broader functional group representation.
+  - Regularly monitor soil pH and moisture correlations with productivity to anticipate potential downturns in lime-rich plots.
+  - Use point-analysis and PCA results to track shifts in key species and bryophytes as early indicators of regime change.
+- Scope for further analysis
+  - More explicit linking of insecticide effects to diversity with controlled herbivory data.
+  - Deeper exploration of CSR/SR-C-S-R dynamics across all years to predict long-term community trajectories under different fertility and disturbance regimes.
+  - Continued integration of biomass, species, bryophyte, and litter data to refine understanding of ecosystem functional changes under management.

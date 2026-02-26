@@ -1,0 +1,23 @@
+# Experimental design/sampling regime
+
+- The UK Butterfly Monitoring Scheme (UKBMS) collects data from over 2,000 sites annually across the UK, primarily via fixed all-species transects called Pollard walks; additional methods include Wider Countryside Butterfly Survey (WCBS) transects, timed counts, and egg/larval web counts.
+- Transect design aims to sample habitat types and management activity while remaining fixed year to year to enable longitudinal comparisons.
+- Data collection methods:
+  - All-species transects: fixed routes, weekly counts from April to September in suitable weather; transects 2–4 km long, 45 minutes to 2 hours, divided into habitat-based sections; counts in a 5 m band; 10:45–15:45 window; weather thresholds (dry, Beaufort <5, temperature ≥13°C with sun or ≥17°C if overcast).
+  - Single-species transects: follow all-species methodology but recorded only on a few focal weeks.
+  - Timed counts and egg/larval web counts: counts of target species within a set time and area; weather and time windows similar to transects.
+  - WCBS: reduced-effort sampling in wider countryside habitats; two parallel 1-km transects per 1-km square, 2–4 visits (minimum 2 in July/August; spring visits encouraged).
+- Data collection workflow:
+  - Field data recorded on standard forms; entered online via the UKBMS data entry site or Transect Walker software.
+  - Data are uploaded to an Oracle database; regional transect coordinators oversee data from their region.
+- Analytical approach (two national index methods):
+  - Wider Countryside species: two-stage method using all data (including WCBS and other survey types). Stage 1: generalized additive model to estimate daily seasonal patterns; Stage 2: counts model with seasonal pattern as off-set to estimate annual changes in abundance.
+  - Habitat specialists and regular migrants: use GAM to impute missing values and compute a site index; combine site indices to form a Collated Index; a log-linear regression model estimates missing values and produces national indices and trends.
+- Timeframe and trends:
+  - Collated Indices are updated annually as new data arrive; some early years lack indices due to insufficient data at the time.
+  - Species trends are calculated via linear regression on collated indices for: the full series (since 1976), the last 20 years, and the last 10 years.
+- Species categorization:
+  - Wider Countryside: mobile species across diverse habitats.
+  - Habitat Specialists: low mobility, restricted to semi-natural habitats.
+  - Regular Migrants: do not overwinter in the UK; migrate from continental Europe.
+- Overall aim: produce comparable, longitudinal indicators of butterfly abundance to support monitoring and conservation decisions, accounting for varying data collection methods and seasonality.

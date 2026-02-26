@@ -1,0 +1,68 @@
+# The UKCEH Land Cover Maps for 2017, 2018 and 2019 v1.5.1 30/06/2020
+
+- The document is a user guide for three new UKCEH Land Cover Maps: LCM2017, LCM2018 and LCM2019. Each map extends a series mapping land cover in 21 UKCEH Land Cover Classes derived from Biodiversity Action Plan (BAP) Broad Habitats, designed for UK-wide, remotely sensed classification and rapid production.
+- Aims and scope
+  - Provide UK-wide land cover maps produced automatically to enable rapid release and time-series analysis.
+  - Maintain a 21-class scheme (UKCEH Land Cover Classes) aligned with earlier maps (LCM2015/LCM2007/LCM2000) while acknowledging BAP origins and updates.
+  - Introduce annual releases to monitor land cover change and policy-related environmental indicators.
+- Production philosophy and data quality
+  - Fully automatic classification (no manual corrections this cycle) to enable annual updates; visual checks and formal validation were performed.
+  - Validation against GB countryside survey (2019), National Forest Inventory, IACS and bespoke validation points (22,325 total) with overall accuracies around 78.6%–79.6% across 2017–2019.
+  - Acknowledges that some validation classes differ in definition from UKCEH classes; crosswalks and conversions used for assessment.
+- Data products and structure
+  - 21 UKCEH Land Cover Classes (not a direct UK BAP mapping, but closely related) and an accompanying UKCEH Aggregate Class option.
+  - Core dataset structure includes multiple products per year:
+    - 20m Classified Pixels: new addition; RF classification results from 20m Sentinel-2 Seasonal Composite Images, with per-pixel class and a confidence score (0–100). Keeps high detail features (no generalisation to larger parcels).
+    - Land Parcels: attributes derived from intersecting 20m classified pixels with the UKCEH Land Parcel Spatial Framework; includes histograms of class counts, mode, purity, confidence, standard deviation, and pixel counts.
+    - 25m Rasterised Land Parcels: three-band raster (band 1: modal class, band 2: mean confidence, band 3: parcel purity) derived by rasterising Land Parcels.
+    - 1km Raster Products: 
+      -1km Percent Cover (21 bands; percentage per class)
+      -1km Percent Aggregate Cover (10 bands; per UKCEH Aggregate Class)
+      -1km Dominant Cover (1 band; dominant class per 1km cell)
+      -1km Dominant Aggregate Cover (1 band; dominant aggregate class per 1km cell)
+  - GB vs Northern Ireland (NI) extents and processing
+    - GB: classification scenes built from overlapping 100x100 km tiles producing a 46-band Classification Scene (36 spectral bands + 10 context rasters); 74 overlapping scenes classified independently.
+    - NI: a single 43-band Classification Scene per year (36 spectral bands + 7 context rasters) optimized for NI extent.
+  - Context rasters (20m) to aid disambiguation
+    - GB: terrain (height, aspect, slope), proximity masks (buildings, roads, sea, freshwater), foreshore, tidal water, woodland.
+    - NI: terrain plus urban mask, coast, freshwater, road proximity, etc.
+  - Seasonal imagery
+    - Seasonal Composite Images derived from Google Earth Engine using Sentinel-2 bands across four seasons (winter, spring, summer, autumn) at 20m resolution (TOA reflectance; some seasonal gaps due to cloud).
+    - TOA chosen over surface reflectance in this cycle due to no observed accuracy gain; future planning includes exploring additional data sources (e.g., SAR) to fill gaps or improve outputs.
+- Datasets and metadata
+  - Coordinate systems and extents provided separately for Great Britain (GB) and Northern Ireland (NI).
+  - Pixel and parcel resolutions vary by product: 20m classified pixels; 25m land parcels; 1km rasters (percentage/cover).
+  - Appendix 5 lists year-specific datasets and their storage names (e.g., 20m Classified Pixels GB/NI, Land Parcels GB/NI, 25m Rasterised Land Parcels GB/NI, 1km products).
+- UKCEH Land Parcel Spatial Framework
+  - Framework aligns with previous LCM2007/LCM2015, with minor internal reorganisations for faster processing; parcel count and geometry unchanged.
+  - Minimum mapping unit ~0.5 hectares; parcels designed to represent discrete real-world units (fields, parks, woodlands, water bodies, urban areas).
+  - gid identifiers exist for 2017–2019 parcels but do not match LCM2015 parcel IDs; comparisons between 2017–2019 use gid for temporal alignment.
+  - The framework enables consistent temporal change detection, while allowing users to apply their own parcel schemes if desired.
+- Bootstrap Training and Random Forest classification
+  - Bootstrap Training is an automatic, self-starting process that leverages historic maps to sample spectral training data for the classifier.
+  - For LCM2017–2019, bootstrap samples were drawn from LCM2015 parcels with purity ≥ 99%, providing a majority-signal training set for RF classification.
+  - RF classifier: 10,000 samples per class, balanced via sampling with replacement to ensure rarer classes are learned adequately.
+  - Production software integrates open-source tools (WEKA, PostGIS, GDAL).
+- Classification scenes and data generation
+  - GB uses multiple 100x100 km tiles to assemble 46-band Classification Scenes; 74 scenes overlap to ensure training diversity and balance.
+  - NI uses a single, larger-scene approach with 43 bands per year.
+- Class definitions and crosswalks
+  - UKCEH Land Cover Classes are mapped against UK BAP Broad Habitats; crosswalks and appendices explain differences and how to interpret classes (Appendix 1 and 2).
+  - Table relationships clarify how each UKCEH class corresponds to BAP categories (e.g., Broadleaved Woodland vs. Deciduous woodland; Urban vs. Suburban).
+  - Interpretive notes emphasize the limitations of remote sensing for some BAP categories and the need for context rasters to improve discrimination.
+- Visualizations, color schemes and documentation
+  - Appendix 3 provides recommended RGB color recipes for displaying the 21 UKCEH Land Cover Classes.
+  - Appendices include detailed notes on class definitions (Appendix 1), BAP Broad Habitats (Appendix 2), and validation results (Appendix 4).
+- Validation and accuracy
+  - Validation dataset comprised of GB countryside survey points, NFI data, IACS data, and bespoke LCM validation points (22,325 total).
+  - Reported producer's and user’s accuracies summarized in confusion matrices per year (LCM2017, LCM2018, LCM2019); overall accuracy around high-70s percent for 21-class maps.
+  - Validation data limitation: used a common validation set across all three products; some class-level and year-specific currency differences exist due to relabeling and scheme changes.
+- Future plans and considerations
+  - Intention to release new LCMs annually; development trajectory includes evolving Bootstrap Training strategies and potential inclusion of additional data sources to address gaps (e.g., cloud cover, different sensors).
+  - Recognizes that annual maps enable tracking land cover change but that higher thematic detail or alternate training data may improve discrimination for some upland and peatland habitats (e.g., bog, peatland vegetation) in future iterations.
+  - Acknowledges that the Land Parcel Spatial Framework may be refined as higher-resolution data become available, potentially enabling finer MMU and feature detection.
+- Practical implications for environmental analysts
+  - Provides a consistent, auditable time series of land cover maps across 2017–2019 suitable for monitoring environment policy performance and habitat change.
+  - The 20m Classified Pixels product preserves fine landscape detail and is compatible with subsequent parcel-based summarization or custom boundary analyses.
+  - The availability of Land Parcels, 25m Rasterised Parcels, and 1km summary products supports multi-scale analyses and integration with other environmental datasets.
+  - Clear guidance on data interpretation, class relationships, and validation helps ensure reproducibility and transparency in monitoring programs.

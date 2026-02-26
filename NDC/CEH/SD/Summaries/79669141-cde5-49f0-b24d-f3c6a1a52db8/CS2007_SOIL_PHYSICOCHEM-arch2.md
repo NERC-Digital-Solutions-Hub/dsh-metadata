@@ -1,0 +1,93 @@
+# Soil physico-chemical properties 2007 [Countryside Survey], Great Britain
+
+- Purpose and scope
+  - Provides soil physico-chemical properties from the Countryside Survey 2007 across Great Britain.
+  - Focused on standardised, comparable measurements to support environmental health monitoring and policy assessment over time.
+  - Data cover up to 591 1km squares (Great Britain) with multiple plots per square.
+
+- Data structure and coverage
+  - CS2007_SOIL_PHYSICOCHEM.csv contains per-site and per-sample measurements for:
+    - SQUARE, PLOT, YEAR
+    - PH (fresh soil pH in water)
+    - LOI (loss on ignition; %)
+    - C_CONC_LOI (carbon concentration from LOI; g/kg; 0.55 x LOI)
+    - C_STOCK_LOI (carbon stock from LOI; t/ha; 0.55 x LOI)
+    - BULK_DENSITY (g/cm3)
+    - MOISTURE (%)
+    - N_PERCENT (% nitrogen)
+    - N_STOCK (N stock; t/ha; 0-15 cm)
+    - PO4_OLSEN (Olsen phosphorus; mg/kg)
+    - LC07, LC07_NUM (ITE Land Class 2007)
+    - COUNTRY, COUNTY07, EZ_DESC_07 (geographic descriptors)
+  - Core depth for LOI and N measurements: topsoil (about 0-15 cm) with specific sampling geometry across years.
+
+- Measurement methods and calculations
+  - pH measurements
+    - Two measurements per subsample: pH in deionised water and in 0.01 M CaCl2.
+    - Fresh soil pH in water: 10 g soil with 25 ml deionised water (soil:water ratio 1:2.5); read after 30 minutes.
+    - Field conditions: measure promptly after opening; temperature of buffers within 1°C of soil suspension; careful electrode cleaning between measurements.
+  - Quality control for pH
+    - Batch calibration checked after every 25 samples with pH 4 and pH 7 buffers; recalibrate if deviations >0.02 pH units.
+    - Include a standard soil, a certified reference soil, and a duplicate per batch.
+  - LOI (Loss on Ignition)
+    - Up to 3145 black cores analysed at CEH Lancaster.
+    - Method: 10 g air-dried sub-sample; dry at 105°C for 16 h; weigh; combust at 375°C for 16 h; reweigh to calculate LOI (%).
+    - Across CS programs, 1978 method used for CS2007 to maintain comparability with CS2000 and CS1978 datasets.
+  - Quality control for LOI
+    - Each batch includes standard material and a duplicate; reported good repeatability and precision.
+  - Bulk density (BD)
+    - Up to 3145 cores analysed; BD derived from core dimensions and masses, with moisture content and stone corrections.
+    - Uses LOI-derived moisture protocols; acknowledges lack of a single control soil but uses cross-checks (e.g., expected BD by soil type, comparisons with CS2000/2007).
+    - ISO 11272:1998 method referenced but CS-specific adaptation used.
+  - Olsen-P
+    - Up to 1280 samples (from original 256 squares, 5 x-plots per square).
+    - Extraction: 5 g air-dried, sieved soil with 100 ml 0.5 M NaHCO3 (pH 8.5).
+    - Phosphorus quantified colorimetrically (molybdenum blue) with a Skalar analyser; dialysis step to mitigate reagent effects.
+    - Quality control considerations: drying can affect extractable P; extraction conditions (temperature, soil:solution ratio) must be consistent.
+    - Quality control for Olsen-P
+      - Replicate analyses plus one standard soil and one certified reference soil per batch of 25 samples; match extraction procedure to CS2000.
+  - Total Nitrogen (N)
+    - Up to 1280 samples; measured by CEH Lancaster using UKAS-accredited SOP3102.
+    - Instrument: Elementar Vario-EL elemental analyser; combustion in excess O2; CO2 and N2 detection with calibration via acetanilide standard.
+    - Sample weights: typically 15 mg (peat) or 15–60 mg (mineral soil).
+    - Quality control for N
+      - Two in-house reference materials analysed with each batch; QA conforming to Defra/NERC/BBSRC Joint Codes of Practice.
+  - Land classification and site descriptors
+    - LC07 and LC07_NUM link soil measurements to ITE Land Classification 2007.
+    - COUNTRY, COUNTY07, EZ_DESC_07 provide geographic context and environmental zone descriptions.
+
+- Quality assurance and governance
+  - Quality assurance framework: Defra/NERC/BBSRC Joint Codes of Practice.
+  - Data provenance and cross-checks
+    - Methods cross-checked or reanalysed if issues identified; cross-lab comparisons performed where necessary.
+  - Documentation and reproducibility
+    - Detailed soil manual and technical reports underpinning all laboratory and field procedures (CS Soils Manual and associated technical reports).
+  - Acknowledgement and rights
+    - All CS data usage must acknowledge Countryside Survey data owned by NERC - CEH; rights reserved.
+
+- Sampling strategy and study design
+  - Nationally representative sampling plan
+    - Great Britain stratified into Land Classes across environmental gradients to ensure representative national statistics.
+  - Sample layout and numbers
+    - 591 sample squares in 2007 (289 England, 107 Wales, 195 Scotland).
+    - Sampling design adapted from earlier surveys; 0-15 cm soil samples collected in 1978, with subsequent surveys (CS2000 and CS2007) refining sampling geometry (e.g., from the western corner of Main Plots in 2007).
+  - Power analyses
+    - Conducted pre-2007 to ensure sufficient samples for reporting across major habitats and countries; some analytes with reduced sample sizes still meet required confidence levels.
+
+- Data management, archiving and documentation
+  - Protocols and data management
+    - Field and lab processing protocols documented; archiving practices described; data manipulation procedures outlined in the Soils Manual.
+  - Access and references
+    - Key publications: Countryside Survey Soils Manual (2008), Countryside Survey: Soils Report (2010), UK Results from 2007 (2008), and related Land Classification references.
+  - Data outputs and usage
+    - Outputs include soil pH, LOI-derived carbon metrics, bulk density, moisture, nitrogen, Olsen-P, and phosphorus and their spatially distributed statistics for Great Britain.
+    - Data designed for integration with other environmental datasets to monitor soil health, carbon stocks, and nutrient status over time.
+
+- Endnotes and additional resources
+  - CS2007 Soils Manual (Emmett et al., 2008) provides sampling strategy, QC, archiving, and data manipulation details.
+  - Links and DOIs provided in the referenced materials for deeper methodological context and historical comparability.
+
+- Practical implications for environmental monitoring
+  - Enables time-series comparisons of soil health indicators (pH, SOM via LOI, nutrient status, carbon stocks) across GB.
+  - Facilitates data integration with other Countryside Survey datasets and external environmental information for policy evaluation and monitoring of environmental health trends.
+  - Emphasises standardized procedures and rigorous QA to ensure data reliability for downstream analyses and policy scrutiny.

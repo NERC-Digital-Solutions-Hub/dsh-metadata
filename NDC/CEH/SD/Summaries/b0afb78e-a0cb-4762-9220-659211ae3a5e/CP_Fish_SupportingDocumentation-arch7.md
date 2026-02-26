@@ -1,0 +1,99 @@
+# Fish abundance, habitat, water quality, flow and climate in English rivers 1975-2017 dataset
+
+- Goal and scope
+  - Time-series dataset for 1180 English river fish sites (1975–2017) combining species abundances with habitat, water quality, flow and climate covariates.
+  - Open data product created as part of the Chempop project to investigate whether chemical releases affect wildlife populations and how these effects compare to other drivers.
+  - Data synthesized from multiple primary sources; final outputs acknowledge gaps due to non-standardised inputs and missing records.
+
+- Data sources and provenance
+  - Environment Agency National Fish Population Database (NFPD) for adult and juvenile fish survey data; spatially and temporally extensive.
+  - University of Hull (UoH) for supplementary fish population data and HABSCORE habitat assessments.
+  - River Habitat Survey (RHS) for habitat modification (HMS) and habitat quality (HQA).
+  - HABSCORE for habitat-quality expectations by species/size classes.
+  - Land Cover Map 2015 (LCM2015) and Integrated Hydrological Digital Terrain Model (IHDTM) for catchment-scale land cover upstream of fish sites.
+  - CHESS-Met for daily air temperatures; UK National River Flow Archive (NRFA) for river flow data.
+  - LF2000-WQX model for Effluent Dilution Factor (EDF) to estimate wastewater influence.
+  - Water Quality Archive (EA) for 41 chemical determinands (1960–2017); licensing restricted some data (excluded in some sites).
+  - Gulf Stream Index (GSI) and North Atlantic Oscillation Index (NAOI) for climate context.
+  - Altitude data sourced from IHDTM.
+  - Data authors and funders acknowledged; dataset built under NERC ChemPop project framework.
+
+- GIS and data integration approach
+  - Spatial and temporal alignment to link covariates with fish survey sites:
+    - Fish sites matched to nearest RHS, water quality, river flow gauging stations, and land-cover data using proximity within river network context.
+    - Primary spatial matching along the river network; fish site and covariate locations are defined by British National Grid coordinates.
+    - RHS sites linked to fish sites within 5 km along the river network using ArcGIS IRN extension; extracted RHS values (HMS, HMS classes, HQA, HQA Adjusted).
+  - Data integration workflow (three core steps):
+    - Spatially match survey locations along the river network.
+    - Spatial/temporal integration of modelled or analysis-generated variables (e.g., EDF, land cover accumulations).
+    - Temporal alignment of environmental observations to fish survey dates.
+  - River network and sampling geometry
+    - Matching uses a 5 km downstream/upstream window; UKCEH IHDTM and flow-direction grids underpin land-cover accumulation and distance-based matching.
+  - Land cover processing
+    - Land Cover Map 2015 raster (50 m grid) reclassified into 4 macro-categories; 21 classes collapsed into Woodlands, Arable, Seminatural, Urban.
+    - Flow-direction based accumulation (GRASS GIS) to derive upstream proportions for each macro-category; values linked to each fish site.
+  - Water temperature modelling
+    - Temperature time series built per fish site using GAMMs across 0.1 increments of Base Flow Index (BFI) (0.3–0.99).
+    - Best model uses month, time, and air temperature (GAMM Model 1) with ARMA structures; RMSE/NRMSE/Scatter Index used to select model.
+    - Result: site-specific daily water temperatures converted to cumulative degree days (days ≥12°C) in the year before each survey.
+  - River flow statistics
+    - NRFA gauging stations matched to nearest fish site along the river network.
+    - Extraction of mean, median, SD, CV, and percentile-based thresholds (5/25/75/95) for 3, 6, and 12-month antecedent periods; additional metrics (exceedances, duration, patch lengths) computed.
+  - Effluent Dilution Factor (EDF)
+    - LF2000-WQX model used to estimate wastewater distribution across England and Wales, focusing on WWTWs contributing to 95% of DWF; site-level EDF estimates derived from nearest modeled reach.
+    - EDF outputs: EDF_Mn, EDF_SD, EDF_Q90, EDF_Q95; missing data flagged when no match.
+  - Water quality data linkage
+    - 41 chemical determinands (Table A1) matched to fish sites via nearest WQ determinand sites (preferably with 12+ surveys and temporally overlapping windows).
+    - Determinand statistics extracted for the antecedent 12 months prior to each fish survey date, with LOQ handling scenarios (three LOQ configurations).
+    - Data exclusions: 33 fish sites lack water quality data due to licensing restrictions (excluded for WQ data).
+  - Quality checks and data completeness
+    - Distances from fish points to WQ/EDF/NRFA/ RHS match points checked; ≤1 km considered acceptable.
+    - Completeness heatmaps show varying data availability by year/region and covariate; notable gap areas described.
+  - Data structure and file organization
+    - Five data file types produced, regionally split by the seven regions:
+      - CP_Fish_SpeciesTable.csv: unique species codes, Latin names, EA codes, common names.
+      - CP_Fish_SiteVariables_region.csv: site-level covariates (location, habitat scores, altitude, land cover metrics, BFI, EDF metrics, etc.).
+      - CP_Fish_DataTable_region.csv: survey-level data including Fish_SurveyID, survey date, coordinates, species densities, and HABSCORE metrics by size/stock where available.
+      - CP_Fish_HydrologyStats_Region.csv: hydrology-derived statistics (flow metrics, NRFA station IDs, thresholds, exceedance metrics, patch lengths, etc.) per region.
+      - Region_FISHWIMSStats_DET.csv: water quality determinand data per region for each determinand (A1) and related WQ statistics.
+    - Determinands data tables: 329 data tables (Region_DET) mapping fish sites to 41 chemical determinands with detailed LOQ/summary statistics (min, max, median, mean, SD, counts, LOQ treatments).
+    - Data columns include Fish_SiteID, SurveyDate, Easting/Northing, Densities (per 100 m^2), HQS values (HABSCORE), GSI, NAOI, Degree Days, and numerous hydrology/EDFs metrics.
+
+- Key variables and transformations
+  - Fish data
+    - Densities derived from EA NFPD counts; standardized to densities per 100 m^2; juvenile data excluded; multi-species densities summed where applicable; species coded with ChemPop codes.
+  - Habitat and habitat quality
+    - RHS: HMS and HQA scores; HQA adjusted for 1994 data alignment for comparability.
+    - HABSCORE: habitat quality scores linked to salmon/trout in the same survey as expected densities; limited coverage.
+  - Land cover and altitude
+    - Upstream catchment land-cover percentages and areas for four macro-categories; catchment area land-cover contributions aggregated per fish site.
+    - Altitude values derived from IHDTM cell centers and bilinear interpolation for surrounding cells; estuarine sites assigned 0 m when no data.
+  - Climate and hydrology
+    - GSI and NAOI included as regional climate covariates.
+    - Water temperature: modeled with GAMMs by BFI class; cumulative degree days used as a key metric.
+    - River flow: NRFA-derived statistics and various percentile/exceedance metrics calculated for 3/6/12 months prior to surveys; network-based gauging station assignment.
+  - Water quality and EDF
+    - 41 determinands with LOQ handling options (three LOQ schemes) and multiple summary statistics (min, max, median, mean, SD, counts).
+    - EDF: mean, SD, 90th/95th percentile values and site-level EDF_SITE_ID mapping; discordant matches flagged as no data.
+
+- Data quality, limitations, and exclusions
+  - Open data with valuable longitudinal depth, yet non-standardised data across sources caused gaps and the need for careful alignment.
+  - Some RHS/HABSCORE/RHS matching limitations; certain sites could not be matched to RHS or WQ sites.
+  - Water quality data licensing restrictions excluded 33 fish sites from WQ data.
+  - Data completeness varies by region and year; figures and heatmaps included in the documentation illustrate these patterns.
+
+- How to use and integrate (GIS-focused)
+  - Core linking key: Fish_SiteID as the central join key across species, site, hydrology, land cover, and water quality tables.
+  - Spatial integration relies on river-network proximity and nearest-neighbor logic, with network-based distance calculations for robust downstream/upstream association.
+  - Coordinate system: British National Grid; spatial alignment with ArcGIS IRN, IHDTM, LCM2015 rasters, and the LF2000-WQX network.
+  - Useful data layers for GIS analyses: NFPD fish densities, RHS/HMS/HQA, HABSCORE habitat expectations, EDF distributions, land-cover accumulations, water temperature time series, river flow statistics, and determinand concentrations.
+  - Data outputs can support spatial analyses of how chemical exposure and environmental covariates relate to fish population dynamics across England.
+
+- Access, usage, and provenance notes
+  - Data structure designed for analysis-ready GIS workflows; files are region-split to ease regional analyses.
+  - Missing data coded as -9999 where applicable; LOQ handling configurations documented for transparency.
+  - Acknowledgments and references provided; data sources, acquisition dates, and licensing constraints described.
+
+- Authors, contributions, and acknowledgments
+  - Detailed author contributions and dataset production roles listed; funding acknowledged (NERC ChemPop).
+  - Acknowledgments for licensing and data providers (Environment Agency, UKCEH, CHESS, NRFA, PML, NCAR, etc.).

@@ -1,0 +1,32 @@
+# Experimental design/sampling method
+
+- Purpose and approach
+  - Track changing chemical profiles of Maculinea rebeli caterpillars across different rearing contexts with ants, to observe semio-chemical dynamics from uncontaminated pre-adoption stages through six weeks with ants, and after isolation to allow dispersal of acquired chemicals and emergence of caterpillar secretions.
+- Experimental design and timepoints
+  - Four main categories of hexane surface chemical extracts collected:
+    - (i) Unparasitized Myrmica schencki and Myrmica sabuleti on study sites (Pyrenees, Poland) and naïve ants in France (unexperienced with M. rebeli). Sampling: n = 5 workers from 5 nests of each ant per locality.
+    - (ii) Eight regional batches of pre-adoption final instar M. rebeli larvae sampled after leaving Gentiana cruciata before contact with ants. Sampling: n = 5 larvae per batch (total 40 larvae per type).
+    - (iii) M. rebeli larvae after living 6 weeks with naïve French ants. Sampling: n = 5 (Spanish+schencki and Polish+sabuleti) and n = 3 (Spanish+sabuleti and Polish+schencki).
+    - (iv) M. rebeli larvae from (iii) then isolated from ants, kept unfed and singly for 5 days. Sampling: n = 5 (Spanish+schencki), n = 4 (Polish+schencki), n = 3 (Spanish+sabuleti and Polish+sabuleti).
+- Regions and partners
+  - Regions include Spain, Poland, France, and the Pyrenees.
+  - Ant species/hosts involved: Myrmica sabuleti and Myrmica schencki.
+- Analytical method and quality assurance
+  - GC-MS analysis of extracts using HP 5890II GC and HP 5971A MSD with ultra-high purity helium.
+  - Mass spectra acquired 40–600 m/z in full scan mode.
+  - Initial screening for hydrocarbons via ion chromatogram at m/z 57; peaks integrated with a threshold of 12 (HP integrator) to obtain total ion peak areas.
+  - Use of alkane standards (n-C20 to n-C36); peak position converted to Equivalent Chain Length (ECL).
+  - Peak identification by ECL and full-scan mass spectra, matched to NIST-97/08 database; interferences checked.
+  - Data normalization: peak areas expressed as the proportion of the sum of all peaks in the chromatogram.
+  - Contaminant exclusion: column bleed, siloxanes, and phthalate plasticizers excluded (identified by a characteristic m/z 149).
+- Data format and metadata
+  - Stored as CSV text files.
+  - Column labeling scheme provides detailed metadata, e.g. sample labels like Rebeli_sab_0_ES_1141 indicate Maculinea rebeli reared with Myrmica sabuleti; country of origin, sample number, and context (e.g., pre-adoption, post-isolation).
+  - Example explanations:
+    - Rebeli_sab_0_ES_1141: Maculinea rebeli reared with M. sabuleti, Spain, sample 1141.
+    - Rebeli_sab_5_ES_1155: same sample after 5 days isolation, Spain, sample 1155.
+    - rebeli_none_pre_PL_1029: pre-adoption Maculinea rebeli from Poland, sample 1029.
+- Data quality and processing notes
+  - Analyses follow an established protocol with concentration steps (Maculinea extracts to 20 ml; ant extracts to 50 ml; 2 ml per sample analyzed by GC-MS).
+  - Chromatograms checked for interferences and peak integrity (distinct branched/straight alkanes and alkenes).
+  - Quantification as relative composition (proportions) enables comparison across samples with varying total signal.

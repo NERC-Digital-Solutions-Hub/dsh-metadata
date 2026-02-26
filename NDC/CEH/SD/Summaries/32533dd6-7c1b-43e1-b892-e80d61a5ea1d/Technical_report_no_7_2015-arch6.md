@@ -1,0 +1,58 @@
+# Copernicus land CORINE metadata 2012
+
+- Overview
+  - Metadata report for Copernicus CORINE Land Cover (CLC) 2012 and 2006-2012 changes across the UK, Guernsey, and Jersey.
+  - Datasets describe land cover classes, area, and change information to support environmental monitoring and policy indicators.
+  - Metadata adheres to INSPIRE/EEA guidelines; available in English; dataset-level metadata provided.
+
+- Datasets covered
+  - Dataset 1: Corine land cover 2006 (revised), 2012 and changes (2006-2012) for the UK
+    - Filename: CLC2012_UK.mdb
+    - Layers: CLC-Changes (2006-2012), CLC2006revised, CLC2012
+    - Projection: Transverse Mercator (British National Grid)
+    - Geographic CS: GCS_OSGB_1936
+    - Datum: D_OSGB_1936
+  - Dataset 2: Corine land cover 2006 (revised), 2012 and changes (2006-2012) for Guernsey
+    - Filename: CLC2012_UK.mdb
+    - Layers: CLC-Changes (2006-2012), CLC2006revised, CLC2012
+    - Projection: Transverse Mercator (Guernsey Grid)
+    - Geographic CS: GCS_WGS_1984
+    - Datum: D_WGS_1984
+  - Dataset 3: Corine land cover 2006 (revised), 2012 and changes (2006-2012) for Jersey
+    - Filename: CLC2012_UK.mdb
+    - Layers: CLC-Changes (2006-2012), CLC2006revised, CLC2012
+    - Projection: Transverse Mercator (New JTM)
+    - Geographic CS: GCS_ETRF_1989
+    - Datum: D_ETRF_1989
+
+- Core content and technical details
+  - Abstract and purpose
+    - Provides Corine Land Cover (CLC) 2012 data and 2006-2012 change data; supports land cover monitoring, environmental indicators, and EU policy frameworks.
+    - CLC uses 44 hierarchical classes; minimum mapping unit (MMU) for status layers is 25 ha; MMU for changes is 5 ha.
+  - Update and methodology
+    - Updated for reference year 2012; based on satellite imagery from 2011-2013; aerial imagery (e.g., Google Earth) used to support interpretation.
+    - Unlike prior UK updates, no up-to-date national land cover map existed at update time; used InterChange with EEA guidelines to map changes.
+  - Coverage and resolution
+    - Geographic extent covers the UK (including Northern Ireland and Isle of Man) and Channel Islands.
+    - Spatial resolution expressed with a denominator of 100,000 (coarser-scale thematic mapping suitable for regional/continental analyses).
+  - Lineage and data quality
+    - Data lineage describes the processing flow from satellite/aerial imagery to CLC2012 and change maps; supports tracking of changes from 2006 to 2012.
+  - Access and use constraints
+    - Data use governed by EU licensing; free, full, and open access with attribution and clear state of any modifications.
+    - Users must acknowledge source and not imply Union endorsement; licensing framework references EU regulations (historical context provided).
+  - Online resources and metadata
+    - Metadata language: eng; dataset metadata aligned with INSPIRE/EEA guidelines.
+    - Online linkage: http://cdr.eionet.europa.eu/gb/eea/clc/envvlpnwa/
+  - Point of contact and organizations
+    - Originator: University of Leicester (Centre for Landscape and Climate Research)
+    - Custodian: Defra
+    - Owner/Metadata contact: European Environment Agency (EEA)
+    - Additional involvement: European Commission - DG ENTR; project support by Defra and EEA
+  - Date stamps and acknowledgments
+    - Metadata date: 2015-01-09
+    - Acknowledgments: University of Leicester, Defra, Specto Natura; funding under EU Copernicus/GMES program
+
+- Relevance for data use and product development (Data Support perspective)
+  - Provides standardized, cross-region land cover data and change information suitable for dashboards, reports, and self-serve analyses across UK and Channel Islands.
+  - Clear datasets and layers enable integration with other spatial data (e.g., environmental indicators, policy monitoring).
+  - Important considerations for use include licensing requirements, attribution, and recognition of the landscape-scale MMU differences when combining with higher-resolution datasets.

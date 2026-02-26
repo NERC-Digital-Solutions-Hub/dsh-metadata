@@ -1,0 +1,34 @@
+# Site Abbreviations and Names Mapping
+
+- Overview
+  - A straightforward mapping of short site codes to human-readable site names and locations, intended to support GIS labeling, map-based visualization, and data integration.
+- Mappings
+  - Tm — Thame at Wheatley
+  - Ra — Ray at Islip
+  - Ch — Cherwell at Hampton Poyle
+  - Ev — Evenlode at Cassington Mill
+  - TS — Thames at Swinford
+  - TN — Thames at Newbridge
+  - Wi — Windrush at Newbridge
+  - Le — Leach at Lechlade (Mill Lane)
+  - Cl — Cole at Lynt Bridge
+  - Cn — Coln at Whelford
+  - Oc — Ock at Abingdon
+  - Pa — Pang at Tidmarsh
+  - Tso — Thames at Sonning
+  - Lo — Lodden at Charvil
+  - Cu — The Cut at Paley Street
+  - TR — Thames at Runnymede
+  - Wy — Wye at Bourne End
+  - TW — Thames at Wallingford
+  - TH — Thames at Hannington Wick
+  - Ke — Kennet at Woolhampton
+  - En — Emborne at Brimpton
+  - Ju — Jubilee River at Pocock's Bridge
+  - Cs — Colne at Staines
+- Geographic scope
+  - Primarily focuses on sites within the Thames catchment area and adjacent waterways in southern England, with multiple Thames-associated locations (e.g., Swinford, Newbridge, Sonning, Runnymede, Wallingford).
+- GIS workflow relevance
+  - Enables consistent labeling across datasets that use abbreviations.
+  - Facilitates joining geographically-referenced data with descriptive site information.
+  - Supports clear map visualizations by providing exact site names and locations for each code.

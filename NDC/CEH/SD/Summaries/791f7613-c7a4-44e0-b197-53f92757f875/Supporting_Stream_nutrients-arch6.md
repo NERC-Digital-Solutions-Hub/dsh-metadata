@@ -1,0 +1,24 @@
+# Supporting information
+
+- File: BLEL_Stream_nutrients.csv
+- Collected by: Emma Gray for the project NEC05744
+- Purpose: Nutrient concentrations (mg/L) for nitrate, silica, total nitrogen, total phosphorus and soluble reactive phosphorus at Blelham Tarn
+- Sampling locations and depth:
+  - Main buoy at 1 m depth
+  - Inflows/outflows: Wray Beck (inflow), Blelham Beck (outflow), Fish Pond Beck (inflow), Ford Wood Beck (inflow)
+- Sampling timeline:
+  - Monthly samples from June–December 2016 and January–December 2017
+  - Figure 1 shows the watercourse layout
+- Analytes and units: nitrate, silica, total nitrogen, total phosphorus, soluble reactive phosphorus (SRP) in mg/L
+- Analytical procedures (summary):
+  - SRP: field filtration (47 mm), colorimetric determination using ammonium molybdate and antimony potassium tartrate, reduced with ascorbic acid, read at 880 nm; calibration with SRP standards; quality control with a 50 µg/L solution diluted to 10 µg/L
+  - TP: potassium persulphate digestion followed by colorimetric molybdenum blue; SEAL AQ2 analyser; calibration and blanks correction
+  - TN: acidify with HCl, purge inorganic carbon, measure with Shalar Formacs CA16 (ND25)
+  - Nitrate: ion chromatography; filtration through 0.45 µm filters; Dionex ICS2100
+  - Silica: colorimetric with ammonium molybdate, reduced with ascorbic acid to form silicomolybdenum blue; read at 880 nm; background corrections
+- Data structure: columns - Date (dd/mm/yyyy), Site (inflow/outflow/lake), nitrate, silica, total nitrogen, total phosphorus, SRP (all in mg/L)
+- Provenance: data collected for NEC05744; SRP analyzed by Emma Gray; TP, TN, nitrate, silica analyzed by UK Centre for Ecology & Hydrology chemistry department (Lancaster)
+- Data usage notes for data support:
+  - Suitable for trend analysis and site-based comparisons
+  - Requires quality assurance and potential data cleaning due to multi-site sampling and varied formats
+  - Can be combined with other hydrological or ecological datasets to create dashboards or self-serve data products

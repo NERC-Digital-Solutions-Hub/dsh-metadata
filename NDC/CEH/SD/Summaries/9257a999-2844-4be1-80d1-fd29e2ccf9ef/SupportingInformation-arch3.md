@@ -1,0 +1,62 @@
+# Exotic Plantations Increase Risk of Flooding in Mountainous Landscapes
+
+- Overview of the dataset and its purpose
+  - Used to support results of the manuscript examining how land cover affects rain-runoff response, carbon sequestration, and nutrient/sediment discharge in mountainous landscapes.
+  - Focuses on ecohydrology in the Upper Nilgiris Reserve Forest, Tamil Nadu, Western Ghats, India.
+  - Data collection spans 2013–2016 (with dry-season data excluded); collaboration among four research agencies.
+- Data components
+  - DailyRainDischarge2014to2016.csv
+    - Daily rainfall and discharge for eight small catchments with varying land cover in the Upper Nilgiris during May 2014–Dec 2016.
+    - Rainfall measured with tipping bucket gauges (tips per minute converted to mm).
+    - Water-level data collected via stilling wells with capacitance-based loggers; discharge estimated for most stations using velocity-area methods (except unit 101, which used a weir-based approach).
+  - KSatLandCovers.csv
+    - Saturated hydraulic conductivity (Ks) under major land covers (Shola, Grassland, Pine, Wattle).
+    - Data collected 2013–2016 using a mini-disk infiltrometer.
+- Fieldwork and instrumentation
+  - Rainfall
+    - Tipping-bucket, wired gauges (Rainwise) deployed on ridges and grasslands in approximately a 1x1 km grid.
+    - Data logged at 1-minute intervals; retrieved biweekly.
+    - Calibration: yearly calibration at dry-to-monsoon transition; fixed-volume calibration to determine mm per tip.
+  - Discharge
+    - Water levels recorded at five-minute intervals in 11 streams using stilling wells with capacitance probes.
+    - Discharge conversion:
+      - Velocity-area method for most units.
+      - Unit 101 used a compound weir with standard discharge equations.
+    - Catchment boundaries derived from SRTM DEM.
+  - Infiltration
+    - Ks measured at multiple sites under patches of land cover using a mini-disk infiltrometer.
+    - GPS accuracy around ±20 m for patches with dense canopy; coordinates provided as averages.
+    - Sample sites included Shola, Grassland, Pine, and Wattle.
+- Calibration and methods for data quality
+  - Water level recorders calibrated per manufacturer instructions.
+  - Rain gauges calibrated annually using fixed volumes of water; tips/mm determined from multiple trials.
+  - Mini-disk infiltrometer used according to manufacturer manual; multiple readings per sample; discard readings with air-leaks.
+  - Data quality checks included cross-verification with a permanent scale (benchmark against probe placement) and parallel salt-dilution gauging (slug and constant-rate methods) for discharge QA.
+- Analytical methods and data processing
+  - Data imported into R and aggregated to daily time steps; analysis scripts provided.
+  - Processing workflow (examples of scripts and functions):
+    - Tipping Bucket Rain Gauges: tbrg_nlg.R (master), myfuncts.R (core functions), data-specific functions (e.g., tips, fix times, import, gap-fill, aggregate), and control flow for sequencing.
+    - Water Level Recorders: wlr.nlg.R (master), wlr_calib.R (calibration), wlr_import.R (import/calibrate/gap-fill), wlr_null.R (insert nulls), wlr_mergenull.R, wlr_aggreg.R (output).
+    - Discharge Calculations: dis.control.R (master), dis.functs.R (rating-curve calculations, flume/weir options, plotting, NA handling), stn_101.R to stn_113.R (location-specific discharge processing), Readme_discharge.md, and disch_pyg routines when applicable.
+    - Rating Curve Calculations: disch_nlg.R (master), useful.functs.R (utility functions), and related plotting/management scripts.
+- Data structure and outputs
+  - Rain/runoff data (Table 5 description)
+    - dt.tm: Timestamp (IST)
+    - wlr: Water level recorder number
+    - Discharge: Discharge in m3 s-1
+    - DepthDischarge: Depth of discharge in mm
+    - flowD: Daily flow in mm
+    - mm: Daily rainfall (mm)
+    - PeakDischarge / PeakDepthDischarge: Peak daily discharge and depth
+    - AMI: Antecedent moisture index (14-day early rainfall/streamflow)
+    - area, CircularityIndex, slopeSteep, drainDensity: catchment characteristics
+    - catchment: land cover composition (Wattle, Grassland, Shola)
+  - Saturated hydraulic conductivity data (Table 6)
+    - Date, Land.Cover, LSAT, K (Ks in m s-1)
+- Context and references
+  - Data collected under collaborative ecohydrology projects and aligned with standard references and equipment manuals (e.g., Rainwise gauges, mini-disk infiltrometer, Dataflow capacitive loggers).
+  - Research context emphasizes biodiversity hotspots (Nilgiris, Western Ghats) and integration of land-cover effects on hydrology and sediment transport.
+- Practical implications for monitoring/framework authors
+  - Demonstrates end-to-end data lifecycle: from field deployment and calibration to QA, metadata, data processing pipelines, and open scripting for reproducibility.
+  - Highlights common monitoring challenges: data gaps, access and interoperability of datasets, and the importance of robust metadata to ensure data usability and verifiability.
+  - Provides a concrete example of combining multiple data streams (rainfall, discharge, infiltration) to support ecological and hydrological conclusions, along with governance considerations for sharing data and maintaining data quality over time.

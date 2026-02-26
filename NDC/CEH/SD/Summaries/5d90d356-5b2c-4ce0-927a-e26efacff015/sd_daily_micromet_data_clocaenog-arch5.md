@@ -1,0 +1,25 @@
+# Details of data structure
+
+- Dataset scope: A single spreadsheet with 28 columns and 1,683 rows, named clm_micromet_2016-2021_summaryqa.csv, covering data from 2016 to 2021.
+- Data content: Time-series measurements for soil temperature and soil moisture across 9 plots.
+  - 1 Date column (Header: Date; Unit: Year-Month-Day).
+  - 9 columns for soil temperature at 5 cm depth (TSoil5cm_Plot1_degC to TSoil5cm_Plot9_degC; Unit: °C; Description: Soil temperature at 5 cm depth for each plot).
+  - 9 columns for soil temperature at 20 cm depth (TSoil20cm_Plot1_degC to TSoil20cm_Plot9_degC; Unit: °C; Description: Soil temperature at 20 cm depth for each plot).
+  - 9 columns for soil moisture (Soil_moisture_Plot1_m3_per_m-3 to Soil_moisture_Plot9_m3_per_m-3; Unit: m3 m-3; Description: Soil volumetric water content for each plot).
+- Data quality and handling:
+  - Missing data are marked as 'NA'.
+  - Faulty data are replaced by '-9999'.
+- Data dictionary details:
+  - Each column has a header, unit, and description (e.g., TSoil5cm_PlotX_degC, Soil_moisture_PlotX_m3_per_m-3, with Date as the time index).
+  - The 5 cm and 20 cm temperature columns cover plots 1 through 9; similarly for soil moisture across plots 1 through 9.
+- Notable observations:
+  - The description list includes a potential duplication/typo for TSoil5cm_Plot4_degC (listed twice), which should be reviewed for consistency.
+- Governance and stewardship implications:
+  - Metadata completeness: ensure row-level context (collection methods, instruments, calibration, sampling interval) is captured alongside the column definitions.
+  - Standardization: verify consistent column naming, units, and clear handling of missing/faulty data to support interoperable data sharing.
+  - Provenance and accessibility: confirm data provenance, update procedures, and any sharing restrictions or embargoes; document data versioning.
+- Recommendations for Data Stewards:
+  - Correct any naming inconsistencies (e.g., duplicate TSoil5cm_Plot4_degC entry) and ensure unique, stable column identifiers.
+  - Provide or confirm dataset-level metadata (methods, instruments, calibration, measurement intervals, geographic context).
+  - Harmonize missing data codes and consider additional quality flags or data quality scores.
+  - Ensure data is prepared for repository upload with clear data lineage and versioning; consider exporting to interoperable formats and attaching the full data dictionary.

@@ -1,0 +1,32 @@
+# Supporting information for: Hydraulic properties of peat extracted from 20 locations at Rensjön palsa mire, Sweden in July 2022
+
+- Dataset scope: Laboratory measurements of peat depth, horizontal saturated hydraulic conductivity (Kh), dry bulk density, and peat humification (von Post scale) for degrading palsas at Rensjön palsa mire, Norrbotten, Sweden. Funded by Natural Environment Research Council Grant NE/S007458/1.
+- Sample and site details: 20 locations on degrading palsas (68.0868°N, 19.8314°E) sampled in July 2022 using PVC downpipes; 82 subsamples analyzed.
+- Data collection workflow:
+  - Peat cores transported to the University of Leeds, UK for analysis.
+  - Kh measured via split-cylinder permeameter method.
+  - Dry bulk density measured on adjacent peat core offcuts using standard technique.
+  - Peat humification measured on adjacent offcuts using von Post classification.
+- Quality control:
+  - Measurements conducted by the authors.
+  - Instrument checks performed; outliers removed (e.g., anomalously high Kh values).
+  - Measurements repeated where necessary.
+- Data file and structure:
+  - File: fewster_2023_wrr_data.csv (CSV) with seven columns.
+  - Columns and definitions:
+    - FID: Field identifier (no units).
+    - Subsample_ID: Subsample code (no units); used to identify subsamples during laboratory analyses.
+    - Kh_m_s: Horizontal saturated hydraulic conductivity (m s^-1); measured from split-cylinder permeameter.
+    - Depth_midpoint_m: Sample midpoint depth (m).
+    - Von_Post_score: Degree of peat humification (von Post scale; H-score).
+    - Dry_bulk_density_g_cm3: Dry bulk density (g cm^-3); measured from adjacent offcuts.
+    - Degradation_stage: Stage of palsa degradation (desiccating or collapsed); no units.
+- Provenance and references:
+  - Methods references: Chambers, Beilman, and Yu (2011) for peat humification and bulk density methods; Ekono (1981) for energy use of peat.
+  - Data custody: samples processed at Leeds; dataset prepared as fewster_2023_wrr_data.csv.
+- Implications for data governance (Data Steward perspective):
+  - Metadata completeness: ensure clear documentation of site coordinates, collection date, subsample mapping, measurement methods, and units.
+  - Data quality and traceability: retain QC notes (outlier handling, repeated measurements) and method details to support reproducibility.
+  - Format and interoperability: data provided in SI units within a structured CSV; standardize variable names and descriptions for cataloguing.
+  - Provenance and access: preserve grant acknowledgment and method references; plan for dataset dissemination via appropriate portals and catalogue systems.
+  - Limitations and caveats: dataset reflects measurements from 82 subsamples across 20 locations with potential limitations noted in QC (outliers removed) and method-specific constraints (e.g., Kh estimation via permeameter).

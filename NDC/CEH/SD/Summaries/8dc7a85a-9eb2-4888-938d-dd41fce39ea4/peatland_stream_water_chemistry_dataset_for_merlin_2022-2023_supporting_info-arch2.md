@@ -1,0 +1,45 @@
+# Data Overview
+
+- The MERLIN project aims to upscale and transform freshwater restoration across Europe by developing a framework for replicable nature-based solutions. This dataset comprises the first two years of water quality data from Hare Moss (peatland in the Forth catchment, Case Study 17) and uses a control-intervention approach to characterize baseline conditions before restoration.
+- Timeframe and scope
+  - Fortnightly sampling at multiple sites from December 2021 to May 2022, with additional Hare Burn sites added in May 2022 and the original Hare Burn site later discontinued, resulting in three active monitoring sites (Hare Burn Upstream, Hare Burn Downstream, Black Burn) during later periods.
+  - The study design includes a downstream site in Hare Burn (near the planned restoration area) and a control site at Black Burn (Auchencorth Research Facility) to compare baseline conditions and restoration effects.
+  - Observed influence of upstream peat extraction on site conditions, including bank erosion and sand deposition along Hare Burn during the monitoring period.
+- Sampling locations and details
+  - Initial monitoring site: Hare Burn downstream of the planned restoration area.
+  - Control site: Black Burn near Auchencorth Research Facility (monitored since 2006 in prior datasets).
+  - Additional Hare Burn sites added: Hare Burn Upstream and Hare Burn Downstream (May 2022); later data collection continued at three sites after the Hare Burn site was discontinued.
+  - Full site details and geolocations are provided in accompanying figures and tables.
+- In-field collection and analytes
+  - Parameters measured in the field: pH, electrical conductivity, dissolved oxygen (DO), and temperature using a multi-parameter instrument; multiple probe temperatures recorded for each parameter.
+  - Water samples collected for laboratory analyses:
+    - Total Phosphorus (TP)
+    - Soluble Reactive Phosphorus (SRP)
+    - Dissolved Organic Carbon / Total dissolved Nitrogen (DOC/TdN)
+    - Particulate Organic Carbon (POC) (unfiltered sample for LOI-based calculation)
+  - Dissolved greenhouse gas samples collected in duplicate using headspace method (for CH4, CO2, N2O).
+  - Sample collection methods included careful handling (filters, syringes, sterile bottles) and rigorous labelling to ensure traceability.
+- Sample handling and storage
+  - TP, SRP, and spare filtered samples stored at -18°C until batch analysis.
+  - DOC and POC samples stored at 4°C and analyzed within a week or as soon as possible.
+  - Greenhouse gas samples stored at room temperature until analysis.
+- Laboratory analyses and QA/QC
+  - DOC/TdN: Shimadzu TOC-LCPH analyser with NPOC method; standards and blanks used for calibration and quality control; duplicate measurements with a replicate rule to ensure precision.
+  - UV/Vis (SUVA): Absorbance measured from 230 to 800 nm; SUVA254 calculated to indicate DOC aromaticity.
+  - POC: Pre-combusted filters; LOI method with conversion factor 0.58 to estimate carbon content.
+  - TP and SRP: SEAL AQ2 Discrete analyser with acid digestion (K2S2O8) and colorimetric molybdate method; calibration with a series of standards.
+  - Greenhouse gases: Gas chromatography (Agilent 7890B) with μECD for N2O and FID for CH4/CO2; concentrations calibrated against mixed standards and converted to µg/L using Henry’s law.
+- Data structure, units, and recording
+  - Dataset resources are organised with columns for site information and physicochemical measurements (A–K) and laboratory results (L–V); detailed column descriptions and units are provided (e.g., Date in dd/mm/yy, pH in 2 decimals, temperatures in °C, DO in mg/L, etc.).
+  - The dataset supports standardized outputs such as maps and charts for monitoring environmental health and evaluating policy performance over time.
+- Dataset completeness and data quality management
+  - Field instrument or laboratory analyser failures resulted in missed or excluded observations; a detailed exclusion log documents reasons and dates (e.g., below detection limits, time not recorded, sample not collected, pH probe issues, sample contamination, instrument faults).
+  - Examples of exclusions include:
+    - 15/12/2021 (HARE): N2O-N below detection; time not recorded.
+    - 06/01/2022 (AUCH/HARE): TP, SRP, POC missing; samples not collected; time/pH issues.
+    - 29/04/2022 (AUCH/HARE): Abs at 254, SUVA; sample unavailable.
+    - 12/10/2023 (AUCH/HARE US/DS): DOC, TdN, C:N, SUVA; abnormally low results due to instrument fault.
+  - The dataset acknowledges potential data gaps and clearly documents corrections or exclusions to maintain data integrity.
+- Accessibility and acknowledgements
+  - MERLIN is funded under the European Commission’s Horizon 2020 program (grant agreement No 101036337).
+  - The dataset references prior related work and standard methods to facilitate comparability and reuse.

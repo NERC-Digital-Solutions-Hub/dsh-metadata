@@ -1,0 +1,33 @@
+# UK Environmental Change Network Vegetation: Fine Grain (VF) Dataset
+
+- A long-term vegetation monitoring dataset from the UK Environmental Change Network (ECN), focusing on Fine Grain (VF) vegetation data.
+- Governance and access:
+  - Managed by ECN Data Centre with site-level metadata and protocol documentation to support understanding and reuse.
+  - Data are structured for cross-site comparability and reuse, with emphasis on data stewardship, versioning, and collaboration across networks.
+- Data scope and sampling:
+  - 12 sites with 10m x 10m plots and 40cm x 40cm cells for species presence/abundance.
+  - Cadence typically every three years, with some sites conducting more frequent (annual) surveys on a subset of plots.
+  - Metadata accompanies data to aid interpretation and quality assessment.
+- Data structure and access:
+  - Core data stored in site-specific Oracle tables, organized into three table groups per site (D1VF_xxx, D2VF_xxx, D3VF_xxx).
+  - Common fields across tables: SITECODE, SYEAR, PLOTPID, CELLID, FIELDNAME, VALUE (where applicable).
+  - D2VF contains environmental data (date of recording, land-use codes, slope, aspect, etc.); D3VF contains cell-level feature data.
+  - Site-centric organization supports cross-site comparability (12 sites: T01–T12, with named sites and coordinates).
+- Standards, codes, and metadata:
+  - Land Use: Hodgson codes (1–22) with defined descriptions.
+  - Slope Form: Hodgson codes describing slope form (convex, straight, concave).
+  - Features: Codes for features in cells (e.g., Path, Wall, Stream, Hedge, Ditch, Fence, etc.).
+  - Species and taxonomic codes: An extensive, cross-referenced catalog linking species codes to Latin names and common names, including numerous synonyms and taxonomic mappings to support interoperability with other botanical databases.
+  - Core metadata and reference tables described in the protocol to support data interpretation.
+- Data quality, metadata, and usage:
+  - Quality information is provided with the VF dataset; site managers apply a standard set of ECN quality codes and may append free-text notes for unusual events (code 999).
+  - Metadata supports data discovery, understanding, and reuse, with site-level details (names, coordinates, date ranges) and detailed data-table definitions.
+  - Emphasis on data governance, versioning, and collaboration across networks; potential for co-ownership of data products.
+- Specific content highlights from the dataset:
+  - Species codes section demonstrates a comprehensive mapping of individual codes (e.g., 1167, 2741, 2631, etc.) to multiple taxonomic concepts and synonyms (e.g., Salix aurita with synonyms Salix caprea, Salix cinerea, Salix herbacea, etc.), illustrating the depth of the cross-referenced catalog used for interoperability.
+  - Quality Codes section lists an extensive set of ECN quality codes (e.g., 100–191, 200–236) with descriptions for data loss, sampling issues, equipment problems, environmental disturbances, and other factors; includes 999 for unusual events and accompanying notes.
+- Considerations for Data Leaders:
+  - Demonstrates how a well-structured, long-term, multi-site data collection system supports system-wide data discovery, integration, and comparative analysis.
+  - Highlights the importance of standardized coding (land use, slope, features, species) and rich metadata for cross-network interoperability.
+  - Shows the value of explicit quality metadata and governance to enable reliable decision-making and reproducible analyses.
+  - Supports co-ownership and broader community engagement through standardized codes and comprehensive taxonomic mappings.

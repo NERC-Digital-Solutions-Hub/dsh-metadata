@@ -1,0 +1,84 @@
+# REPORT III RESULTS FROM THE SOURHOPE FIELD EXPERIMENT: 1999-2001
+
+- Purpose and context
+  - Part of the NERC Soil Biodiversity Thematic Programme focusing on a large, intensive field trial at Sourhope to provide a broad monitoring context for related studies.
+  - Aimed to establish general monitoring context and enable cross-year and cross-project comparisons, following a Baseline Data Survey (Nov 1998).
+
+- Monitoring measures and data collected
+  - Weather and climate
+    - Automatic Weather Station data: rainfall, radiation, soil moisture, and air/soil temperatures at various depths; regular data transmission to the Soil Biodiversity Data Manager.
+  - Above-ground productivity
+    - Biomass measurements via five summer harvests per year (1999–2001), with biomass sums and normalization against a reference treatment (C1) to enable year-to-year comparisons.
+  - Soil chemistry
+    - Soil pH measurements (upper 5 cm) to assess lime and nitrogen effects; baseline (1998) vs. October 2001 comparisons.
+  - Botanical composition
+    - Point Analysis surveys (July 2001; mirrored 2000 methodology) to determine species abundance and community composition; species coded and tracked across treatments.
+  - Site and plot structure
+    - 0–5 cm soil samples, 0.5 m2 quadrats within sub-plots (S, T, U, V) in each plot; inclusion of litter and bryophytes; multi-year sampling planned to monitor changes.
+  - Management and experimental design
+    - Treatments: Control 1, Control 2, Nitrogen (N), Lime (L), Nitrogen & Lime (N&L), Biocide.
+    - Management events: liming, nitrogen application, pH measurements, biomass collections, vegetation cutting, and biocide applications; occasional protocol deviations due to events (e.g., FMD outbreak in 2001).
+
+- Experimental design and context
+  - Location: Sourhope field site, Macaulay Institute, Scottish Borders.
+  - Design: A long-term, controlled, multi-treatment experiment with yearly monitoring to identify treatment effects on productivity, soil chemistry, and plant community composition.
+  - 2001 disruptions: Foot and Mouth Disease restrictions limited site access; operations were adapted under protocol with vet oversight; one biocide application in May was missed but others completed.
+  - Personnel and process notes: Officer in Charge changes in 2001; data continuity maintained through agreed management and sampling protocols.
+
+- Key results and interpretations (highlights common to 1999–2001 with emphasis on 2001)
+  - Weather and conditions
+    - 2001 rainfall near long-term average; radiation similar to prior years; slight cooling and higher soil moisture relative to previous years.
+  - Above-ground biomass
+    - Clear treatment hierarchy: nitrogen and/or lime additions increased biomass relative to unimproved plots.
+    - 2001 biomass higher than 2000 across treatments, partly due to personnel changes and switch from manual cutting to mechanical shears.
+    - Biomass analysis shows significant differences between improved (N and/or L) vs. non-improved plots; positive year-to-year interaction with treatment and year.
+  - Soil pH
+    - Lime additions raised surface pH (October 2001: ~6.19 in limed plots, ~6.38 in N&L plots); nitrogen alone also increased pH but to a lesser extent.
+    - Control plots remained near baseline pH.
+  - Botanical composition and diversity
+    - 2001 point-quadrat results: total species hits increased by ~58% vs 2000, suggesting denser sward formation possibly due to changes in grazing history (1998 removal of grazing stock).
+    - Species shifts by treatment:
+      - Festuca rubra and Poa pratensis increased in fertilized/improved plots.
+      - Agrostis capillaris declined across most treatments, remaining dominant only in Control 1 and Limed plots.
+      - Unimproved plots (Control and Biocide) showed higher presence of less fertile-associated taxa (e.g., Agrostis capillaris, Nardus stricta, Anthoxanthum odoratum).
+    - Diversity indicators
+      - 24 species in unimproved treatments vs 18 in Nitrogen & Lime plots, suggesting potential early diversity decline in high-fertility plots.
+    - Multivariate patterns
+      - Principal Components Analysis separated improved plots (N and/or L) from unimproved plots; reduced dominance of certain bryophytes and grasses in improved plots.
+    - Biomass-species relationships
+      - Positive correlations: Festuca rubra and Poa pratensis abundance increases with biomass.
+      Negative associations: Anthoxanthum odoratum, Nardus stricta, bryophytes decline as biomass rises.
+      - Increased litter in plots with nitrogen and/or lime, indicating faster vegetation turnover with higher soil fertility.
+  - Site heterogeneity and spatial patterns
+    - Spatial variation across the site observed; columns on the right-facing slope showed more acidic plots, potentially related to underlying spatial heterogeneity and treatment distribution.
+    - Biomass variation correlated with pH and location; central plots tended to show higher biomass.
+    - Strong positive correlation between surface soil pH and biomass, with no significant block-level differences.
+
+- Data quality, metadata, and governance considerations (as demonstrated by the report)
+  - Methodological consistency
+    - Consistent protocols for biomass harvesting, botanical surveys, and soil sampling; cross-year comparability aided by normalization against C1 and standardized measurement windows.
+  - Data validation
+    - Inter-surveyor comparison showed no significant difference in 2001 results, supporting reliability of point-analysis data.
+  - Data management and sharing
+    - Weather data managed by a dedicated data manager; results organized in annual tables and figures to support cross-year analyses.
+  - Access and governance context
+    - External events (FMD outbreak) impacted field access but were managed via an agreed protocol to minimize data gaps.
+  - Documentation and transparency
+    - Detailed descriptions of methods, timing, and species coding; explicit note of year-to-year changes and management actions to aid interpretation.
+
+- Implications for monitoring frameworks
+  - Demonstrates the value of a multi-metric monitoring framework combining:
+    - Weather/climate data to contextualize biological responses.
+    - Production metrics (biomass) and soil chemistry (pH) to assess treatment effects.
+    - Plant community composition (point analysis) and diversity indicators to detect ecological shifts.
+  - Highlights the importance of:
+    - Standardized protocols and cross-year comparability (normalization against a reference treatment).
+    - Incorporation of spatial site heterogeneity into experimental design and interpretation.
+    - Use of multivariate approaches (e.g., PCA) to interpret community-level responses beyond single-species changes.
+    - Documentation of management events and external disruptions that may influence monitoring outcomes.
+  - Data governance takeaways:
+    - Regular data validation (inter-surveyor checks) and centralized data management facilitate transparency.
+    - Structured reporting (tables, figures) supports reuse and comparative analyses across projects and years.
+  - Practical monitoring insights:
+    - Fertilization and liming can enhance productivity and shift species composition toward grasses common in improved pastures, with potential reductions in overall plant diversity in highly fertilized plots.
+    - Site heterogeneity must be accounted for in interpretation and when extrapolating results to wider landscapes.

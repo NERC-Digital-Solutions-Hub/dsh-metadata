@@ -1,0 +1,26 @@
+# Visualising UKCEH Land Cover Class using a GIS application
+
+- Data structure
+  - 20m and 10m rasters: two bands per raster; Band 1 = UKCEH Land Cover Class identifier; Band 2 = classification confidence
+  - 25m rasters: three bands; Band 1 = dominant class; Bands 2–3 = classification confidence
+- Purpose of the guide
+  - A short guide for visualising the Land Cover Class data (band 1) in commonly used GIS applications; full data description available in product documentation
+- Visualising in QGIS
+  - Add the file to your project; layer appears in layers panel
+  - Open layer properties > Symbology; render as Paletted/Unique Values; Band 1
+  - Click Load style and choose LCMcolours_QGIS.qml; map redraws with correct classification
+- Visualising in ArcGIS Desktop
+  - In Catalog, locate the data folder and expand the raster to show bands
+  - Drag band_1 into the Table of Contents; open layer properties > Symbology
+  - Choose Unique Values; if prompted to build an attribute table, click Yes
+  - Import LCMcolours.lyr provided with the instructions; map redraws with correct classification
+- Visualising in ArcGIS Pro
+  - In the Catalog, locate and open the data folder; expand raster bands
+  - Drag band_1 into the Table of Contents
+  - Layer properties > Contents > Symbology; set to Unique Values
+  - Use the hamburger menu in the Symbology panel > Import; load LCMcolours.lyr; map redraws
+- Supporting files
+  - LCMcolours_QGIS.qml (QGIS style)
+  - LCMcolours.lyr (ArcGIS style)
+- Additional note
+  - For a full description of the data, refer to the product documentation

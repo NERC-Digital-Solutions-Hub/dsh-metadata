@@ -1,0 +1,38 @@
+## Locations of sampled worker bumblebees across an agricultural landscape centred on the Hillesden Estate, Buckinghamshire, UK
+
+- Objective: Document locations of worker bumblebees from five species, using non-lethal DNA sampling to confirm species and assign individuals to full-sib groups (colonies) for spatial and genetic analyses.
+- Study area: Agricultural landscape covering 1,950 hectares centered on the Hillesden Estate, Buckinghamshire, Southern England, UK.
+- Species sampled: Bombus terrestris (Bter), B. lapidarius (Blap), B. pascuorum (Bpas), B. hortorum (Bhor), B. ruderatus (Brud).
+- Sampling design:
+  - Landscape divided into 250 x 250 m grid cells; samples collected across all habitat patches within each cell.
+  - Sampling intensity proportional to relative habitat cover of nesting/foraging habitats.
+  - Sampling period: 20 June – 5 August 2011, 4–5 days per week.
+  - Scope linked to agri-environment mitigation options established in 2005.
+- Collection and genetic analysis:
+  - Individuals captured with entomological nets.
+  - DNA sampled non-lethally; genotyped and species/colony assigned using COLONY v2.0.
+  - Geographic coordinates recorded with a Garmin Etrex 10 GPS (accuracy ~3 m); data read into ArcGIS and exported as an ESRI Shapefile.
+  - Data checked for errors by the Centre for Ecology and Hydrology (CEH) and the Institute of Zoology.
+- Data products and structure:
+  - ArcGIS shapefile containing 2,826 point records (one point per worker).
+  - Underlying table (.dbf) readable by Excel or similar.
+  - Shapefile attributes include:
+    - FID: unique feature ID
+    - Shape: point geometry
+    - Sample_Cod: field-assigned sample code
+    - Date: collection date
+    - Time: collection time
+    - GridRef: Ordnance Survey grid reference
+    - Genetic_Sp: species confirmed by genetics (codes: Bter, Blap, Bpas, Bhor, Brud)
+    - Colony: colony code from sibship assignment
+    - Colony_Cod: unique colony code (species + sibship)
+- Data quality and provenance:
+  - Data generation followed standard genetic analysis protocols (Dreier et al.; Wang 2004).
+  - Geographic data georeferenced to British National Grid; accuracy suitable for fine-scale spatial analyses.
+  - Dataset curated and quality-checked at multiple stages by CEH and Institute of Zoology; stored as GIS-ready formats.
+- Analytical potential:
+  - Enables investigation of spatial genetic structure, colony distribution, and habitat associations at fine scales.
+  - Facilitates cross-dataset integration with habitat maps and agri-environment management layers for correlational or predictive analyses.
+- References:
+  - Wang J (2004) Sibship reconstruction from genetic data with typing errors. Genetics, 166, 1963-1979.
+  - Dreier et al. (2014a, 2014b) on microsatellite genotype data and fine-scale spatial genetic structure in Buckinghamshire bumblebees.

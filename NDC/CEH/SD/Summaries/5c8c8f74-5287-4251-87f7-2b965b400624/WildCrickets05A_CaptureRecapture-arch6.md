@@ -1,0 +1,27 @@
+# WildCrickets05A-CaptureRecapture Description of content
+
+- Overview
+  - A dataset providing basic information on each male adult cricket tagged in the population, focusing on temporal markers and recapture observations.
+- Key fields and definitions
+  - Year: Year in which the cricket was alive.
+  - ID: Individual identification.
+  - Birth: Day of birth relative to the day of birth of the first adult cricket emerging that year. A value of 0 indicates an unknown birth date.
+  - Death: Date of death relative to the date of birth of the first adult cricket emerging that year.
+  - 2-99: Recapture days (the days on which recapture events occurred, within the study window; values likely range within 2 to 99).
+- Data interpretation notes
+  - Birth = 0 means the birth date is unknown and may require imputation or exclusion from birth-date dependent analyses.
+  - Birth and Death are both relative to the first emergence day, enabling computation of life span only when both are known.
+  - Recapture days indicate sampling opportunities or observed recaptures within the 2–99 day window; clarify the exact meaning in the study protocol for accurate modelling.
+- Potential data handling steps
+  - Validate data types and ranges (integers; non-negative for Birth/Death; 2–99 for Recapture Days).
+  - Derive life span when possible: lifeSpan = Death − Birth (where both are known and meaningful).
+  - Construct capture histories per individual using the 2–99 recapture days for capture-recapture analyses.
+  - Separate or flag records with Birth = 0 for missing birth date handling.
+- Suggested analyses and products for data support
+  - Survival and recapture probability estimation (e.g., Cormack–Jolly–Seber style analyses) using Year, ID, Birth, Death, and recapture indicators.
+  - Descriptive summaries: per-year counts, distribution of birth offsets, survival ranges, and recapture frequencies.
+  - Visualizations: life-span distributions, per-year capture histories, recapture sequence plots.
+- Considerations and caveats
+  - Relative timing (Birth and Death are not absolute dates) may constrain cross-year comparisons without additional alignment data.
+  - Missing birth data (Birth = 0) limits lifetime inferences; consider imputation strategies or sensitivity analyses.
+  - Clarify the exact meaning and measurement window for Recapture Days (2–99) to ensure correct interpretation in analyses.

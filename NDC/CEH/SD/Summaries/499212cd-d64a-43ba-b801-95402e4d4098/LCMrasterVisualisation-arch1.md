@@ -1,0 +1,30 @@
+# Visualising UKCEH Land Cover Class using a GIS application
+
+- Purpose: A short guide to visualising the Land Cover Class data in band 1 of UKCEH land cover rasters (2017–2020). Notes that rasters come in different resolutions with different band configurations (see details below) and directs readers to the product documentation for full data description.
+- Data structure:
+  - 20m and 10m rasters: two bands (Band 1 = UKCEH Land Cover Class identifier; Band 2 = classification confidence).
+  - 25m rasters: three bands (Band 1 = dominant UKCEH Land Cover Class; Bands 2–3 = confidence indicators).
+- Focus: Visualising the Land Cover Class information contained in Band 1 using common GIS applications.
+- GIS applications covered:
+  - QGIS
+  - ArcGIS Desktop
+  - ArcGIS Pro
+- Visualisation steps in QGIS:
+  - Add the file to the project; locate in layers panel.
+  - Open layer properties and choose Symbology.
+  - Set render type to Paletted/Unique Values and Band to Band 1.
+  - Load the colour style from LCMcolours_QGIS.qml to apply the correct classification colors.
+  - The map will redraw with the correct classification.
+- Visualisation steps in ArcGIS Desktop:
+  - In the Catalogue, navigate to the data folder and expand the raster to view bands.
+  - Drag band_1 into the Table of Contents.
+  - Open Layer Properties → Symbology and select Unique Values (choose Yes if prompted to calculate values).
+  - Click Import and load LCMcolours.lyr provided with the instructions.
+  - The map will redraw with the correct classification.
+- Visualisation steps in ArcGIS Pro:
+  - In the Catalog, locate the data and expand to view raster bands.
+  - Drag band_1 into the Table of Contents.
+  - Open layer properties → Appearance > Symbology; set primary symbology to Unique Values.
+  - Use the hamburger menu in the Symbology panel to Import and load LCMcolours.lyr.
+  - The map will redraw with the correct classification.
+- Additional note: This document is a concise guide; refer to the full product documentation for a complete data description.

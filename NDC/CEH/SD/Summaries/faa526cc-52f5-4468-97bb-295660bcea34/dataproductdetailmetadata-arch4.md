@@ -1,0 +1,57 @@
+# Macroinvertebrate taxonomic abundance, water quality, river flow, air temperature and environmental site descriptors from English rivers, 1965 - 2018
+
+- A long-term open data product (ChemPop) combining macroinvertebrate taxonomic abundance with environmental covariates across England (1965–2018) to enable environmental data analyses and modelling.
+- Core coverage:
+  - 1,519 macroinvertebrate monitoring sites across English rivers.
+  - 41 water quality determinands, plus river flow and air temperature data.
+  - Static site descriptors: wastewater dilution factor, habitat quality, upstream land cover, elevation, slope, distance from source, channel width/depth, substrate type.
+  - Associated habitat data from River Habitat Survey (RHS) and Land Cover Map 2015; three-dimensional site descriptors (e.g., altitude, distance from source).
+- Datasets derived from multiple sources:
+  - Environment Agency (EA) Freshwater river macroinvertebrate surveys (FRMS/Biosys).
+  - EA Water Quality Archive and National River Flow Archive (NRFA).
+  - UKCEH CHESS-met (air temperature).
+  - LF2000-WQX model for wastewater effluent exposure (EDF).
+  - RHS habitat survey data (RHS).
+  - Land Cover Map 2015 (LCM2015) and Integrated Hydrological Digital Terrain Model (IHDTM).
+- Data integration approach:
+  - Spatial matching: pair macroinvertebrate sites with nearest water quality, river flow, and RHS sites along the river network.
+  - Spatial integration: attach model/derived variables (EDF, land cover, air temperature) to macroinvertebrate sites.
+  - Temporal matching: align environmental observations with macroinvertebrate sampling dates; 6-month antecedent period used for time-series covariates (mean, median, min, max, SD).
+  - Land cover and RHS data treated as site descriptors (no temporal dimension for most RHS data; RHS has 72 sites with multiple surveys).
+- Data processing and quality assurance:
+  - FRMS data cleaned and harmonised (relational CSVs by EA region); taxonomy reconciled to Davies & Edwards (2011) standard; non-freshwater taxa removed; abundance data converted from historical log categories to fully quantified values post-2002.
+  - Water quality data integrated from 2000 onward (pre-2000 licensed EA data used where available); paired to macroinvertebrate sites with manual validation to ensure on-river proximity and absence of upstream wastewater treatments between sites.
+  - 41 determinands' statistics computed per 6-month window prior to macroinvertebrate sampling; handling for values below LoQ and above measurement range via three configurations (LoQ1/LoQ2/LoQ3) and reporting of min, max, median, mean, and SD.
+  - River flow statistics computed for period of interest (POI: 20/05/1974–29/03/2019) and the 6 months preceding each macroinvertebrate date; metrics include mean, median, SD, coefficient of variation, various quantiles, exceedance metrics, and patch length.
+  - CHESS-met temperature data extracted for each site; statistics computed for 6 months preceding sampling; CHESS-met ends in 2017, so post-2017 temperatures missing.
+  - Habitat quality indices (HMS, HMS_Class, RSB_SubScore, HQA, HQA_ADJ) derived from RHS; RHS provides a single observation per site (with 72 sites having multiple RHS surveys); site descriptors extracted accordingly.
+  - Land cover upstream of each site quantified from LCM2015 via flow-accumulation grid, aggregated to Woodlands, Arable, Seminatural, Urban categories.
+  - Data quality checks confirm acceptable spatial proximity (within 1 km to IHDTM cell) and that land-cover up to 100% matches upstream catchments.
+- Data structure and file organization (region-based):
+  - 7 EA region files (AN, MI, NE, NW, SW, SO, TH) containing:
+    - Macroinvertebrate taxon abundance: CP_<REGION>_MInv_taxonAbundance_<startDate-endDate>.csv
+    - Macroinvertebrate site descriptors: CP_<REGION>_MInv_siteVariables.csv
+    - Site matched locations: CP_<REGION>_MInv_siteMatchedLocation.csv
+    - Water quality statistics for each determinand: CP_<REGION>_MInv_<determinand>Stats_<startDate-endDate>.csv
+    - River flow statistics: CP_<REGION>_MInv_riverFlowStats_<startDate-endDate>.csv
+    - Air temperature statistics: CP_<REGION>_MInv_airTempStats_<startDate-endDate>.csv
+  - RHS habitat data linked via site descriptors; additional file SiteswithmultipleRHSsurveys.csv contains RHS data for sites with more than one RHS survey.
+- Data coverage and statistics (key counts):
+  - BIO sites: 1,519
+  - Water quality sites: 1,333
+  - River flow gauging stations: 466
+  - River habitat survey sites: 1,242
+- Notable caveats and gaps:
+  - Some macroinvertebrate sites lack water quality data due to EA licensing restrictions (34 sites) and a few matched sites lack water chemistry data due to extraction errors (5 sites).
+  - Land cover is treated as static because successive Land Cover Map updates are resource-intensive to harmonize.
+  - EDF values can be zero in headwater stretches where small WWTWs have negligible contribution, though in reality their impact may be non-zero.
+  - Pre-2000 water quality data required special handling due to licensing and alignment with older EA datasets.
+  - CHESS-met data terminates in 2017, limiting post-2017 temperature covariates.
+- Accessibility and usage guidance:
+  - Data are intended as an analysis-ready open data product to support environmental data research and modelling.
+  - Users should review the methodological sections to assess suitability for their needs, particularly regarding data harmonisation, EDF assumptions, LoQ handling, and matching criteria.
+  - Data sources and licensing details are provided; EA, UKCEH and NRFA data are acknowledged with usage guidance and citations.
+- Appendices and supplementary information:
+  - Appendix includes GIS-based site location maps, lists of water quality determinands, and heatmaps showing data completeness over time.
+  - Appendix 1 provides the full list of the 41 water quality determinands used, with units and short labels.
+  - Appendices 2–4 cover site-location maps, data discrepancies/exclusions, and temporal heatmaps.

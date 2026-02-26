@@ -1,0 +1,26 @@
+# Groundwater2030: Data structure for field survey files
+
+- Four CSV data files provided:
+  - Groundwater2030_sanrisk.csv: Sanitary risk inspection data; primary key fields identified by Wellcode.
+  - Groundwater2030_waterquality.csv: Water quality test results; primary key fields identified by Wellcode.
+  - Groundwater2030_well_owner_survey.csv: Questionnaire survey of well owners; primary key is Well number.
+  - Groundwater2030_WellCustomerSurvey.csv: Questionnaire survey of well customers; primary key is Well number.
+- Join strategy:
+  - Tables can be linked using common identifier fields; these identifiers are unique to each groundwater source and form primary keys for the first two datasets and foreign keys for the others.
+- Identifiers and formatting:
+  - Unique identifiers use prefixes W, S, or B (W = well, S = spring, B = borehole) followed by a numeric suffix (e.g., W1, S2, B3).
+  - An O suffix indicates wells from the baseline survey for which current water quality data could not be collected.
+- Linking between datasets:
+  - Sanitary risk and water quality datasets use Wellcode as the primary key.
+  - Owner and customer surveys use Well number as the primary key and can be linked to wells via these identifiers.
+- Data relationships:
+  - A groundwater source can have multiple associated customers.
+  - Owner and customer questionnaires include neighbourhood information even when a direct well link is not possible.
+  - If a questionnaire cannot be linked to a specific well, it is labeled None followed by a numeric suffix (None1, None2, etc.).
+- Data quality and preparation notes:
+  - All four datasets are separate but designed to be joined through their identifiers.
+  - Consistency of W/S/B prefixes and numeric codes is essential for accurate merging.
+- Practical considerations for analysts:
+  - Be aware of potential gaps where wells have no current water quality data (O-coded).
+  - Handle multiple customers per source when aggregating results.
+  - Maintain awareness of the local scale and boundary details implicit in neighbourhood information.

@@ -1,0 +1,102 @@
+# Column definitions for AVONMOUTH.csv
+
+- Site number
+  - Explanation/Units: Number allocated to site
+  - Method: N/A
+- Easting
+  - Explanation/Units: Ordnance Survey Easting
+  - Method: N/A
+- Northing
+  - Explanation/Units: Ordnance Survey Northing
+  - Method: N/A
+- Site description
+  - Explanation/Units: Brief site description
+  - Method: N/A
+- Distance to smelter
+  - Explanation/Units: kilometres
+  - Method: N/A
+- Soil pH
+  - Explanation/Units: Soil pH
+  - Method: Electrode from a 1:2.5 by volume soil:water mix
+- Loss On Ignition
+  - Explanation/Units: Soil organic matter (%)
+  - Method: Standard method (furnace combustion at 375°C; Allen, 1989)
+- Aluminium
+  - Explanation/Units: mg/kg
+  - Method: ICPOES
+- Chromium
+  - Explanation/Units: mg/kg
+  - Method: ICPMS
+- Iron
+  - Explanation/Units: mg/kg
+  - Method: ICPOES
+- Copper
+  - Explanation/Units: mg/kg
+  - Method: ICPMS
+- Zinc
+  - Explanation/Units: mg/kg
+  - Method: ICPMS
+- Nickel
+  - Explanation/Units: mg/kg (isotope Nickel-60)
+  - Method: ICPMS
+- Arsenic
+  - Explanation/Units: mg/kg
+  - Method: ICPMS
+- Cadmium
+  - Explanation/Units: mg/kg
+  - Method: ICPMS
+- Mercury
+  - Explanation/Units: mg/kg
+  - Method: ICPMS
+- Lead
+  - Explanation/Units: mg/kg
+  - Method: ICPMS
+
+Notes:
+- ICPMS - inductively-coupled plasma mass spectrometry
+- ICPOES - inductively-coupled plasma optical emission spectrometry
+
+# Materials and methods (from Outdoor and indoor cadmium distributions near an abandoned smelting works and their relations to human exposure)
+
+- Study design and sampling
+  - Two soil sampling campaigns were used: a nested grid-based set within 5 km of the smelter and a 5–15 km outer grid (44 locations in total; October 2007)
+  - Sampling sites were on publicly accessible land with mixed vegetation
+  - At each of the 44 sites, five soil cores (15 cm deep × 4 cm) were collected within a 10 m × 10 m area and pooled to form a homogeneous sample
+- Grid layout and coverage
+  - 1 km grid within 5 km of the smelter
+  - 5 km grid from 5 to 15 km radius (westerly sampling limited by Bristol Channel)
+- Sample processing
+  - Soils were air-dried, sieved to remove large roots/stones (2 mm mesh)
+  - A portion of air-dried soil was coned and quartered and milled with a non-metallic agate ball mill
+  - Total metal concentrations (Cd and Al, Cr, Cu, Zn, Ni, As, Pb, Hg) determined after aqua regia digestion (0.5 g soil in 12 mL aqua regia) with microwave digestion up to 200°C
+- Analytical methods
+  - ICP-MS analysis using Perkin Elmer Elan DRC II; matrix-matched calibrants
+  - Internal standards: Ga, In, Re
+  - Detection limits set as four times the standard deviation of blank replicates
+  - Cd detection limit: 0.02 μg g^-1
+- Quality control
+  - Certified soil reference ISE 921 included with each batch; recoveries vs. certified values: Cd 96.3%; Al 42.3%; Cr 78.0%; Cu 89.5%; Zn 85.7%; Ni 85.6%; As 104%; Pb 93.4%; Hg 109%
+- Additional soil characteristics
+  - Soil organic matter content measured by furnace combustion at 375°C (Allen, 1989)
+  - Soil pH measured with a electrode in a 1:2.5 soil:water suspension
+- Key references
+  - Allen (Chemical Analysis of Ecological Materials, 1989)
+  - Jones (Biological Monitoring of Metal Pollution in Terrestrial Ecosystems, 1991)
+  - Spurgeon et al. (Geographical and pedological drivers of distribution and risks to soil fauna of seven metals, Environmental Pollution, 2008)
+
+# GIS considerations and data quality
+
+- Spatial data context
+  - Attributes include precise spatial coordinates (Easting/Northing) suitable for GIS mapping on British National Grid
+  - Distance to smelter provides a proximity measure for spatial analyses
+- Data integration
+  - Multiple metals with uniform units (mg/kg) and consistent digestion/measurement methods facilitate multi-layer map visuals
+  - Differences in sampling resolution (1 km near vs. 5 km outer grids) should be accounted for in analyses and visualization
+- Data quality and limitations
+  - QA results indicate generally good accuracy for key metals, with Cd recoveries high and other metals showing satisfactory recoveries; note especially variable Al recovery (42.3%)
+  - Data gathered from two distinct grid schemes and a single campaign; consider temporal context (October 2007) when comparing with other datasets
+- Applications for GIS specialists
+  - Create choropleth or point-based maps of metal concentrations, distance-to-smelter analyses, and correlations with soil properties (pH, organic matter)
+  - Integrate with other spatial layers (land use, exposure pathways) for environmental health or policy-oriented visualizations
+- References and provenance
+  - Data documentation aligned with methodologies from the cited studies; ensure proper citation in maps and metadata

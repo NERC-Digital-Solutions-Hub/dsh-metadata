@@ -1,0 +1,115 @@
+# Risk analysis for Phytophthora infection ( P. ramorum and P. kernoviae ) Core Native Woodland fragments across Scotland April 2013
+
+- Purpose and scope
+  - Updates the 2012 risk analysis with new infection sites in larch woodlands and garden/trade premises.
+  - Introduces a climate suitability model to estimate climatically driven risk specific to P. ramorum (Pr) and P. kernoviae (Pk).
+  - Produces pathogen-specific risk maps at the core native woodland fragment level across Scotland to guide surveillance and monitoring.
+
+- Data and risk factors considered
+  - Core Native Woodland fragments: 79,269 fragments analyzed for risk calculations.
+  - Risk factors integrated:
+    - Proximity to premises and infected premises (garden/trade and others).
+    - Proximity to larch and larch infections.
+    - Host habitat suitability for Rhododendron ponticum (reservoir host).
+    - Abundance of Vaccinium myrtillus (host presence/cover).
+    - Climatic suitability for each pathogen (species-specific thresholds).
+    - Proximity to watercourses and roads.
+  - Data access and metadata considerations:
+    - Scotland-wide maps not provided for some risk factors due to data access restrictions.
+    - Final risk scores are provided in two formats (CSV and ArcGIS shapefile) with linking via a fragment ID.
+  - Missing data handling:
+    - Some fragments lacked climate or VM data; missing data is mapped (Figures 4–5) and adjusted scores account for available factors.
+
+- Risk scoring framework (key components)
+  - Premises proximity
+    - No premises within 1.5 km: score 0
+    - Uninfected premises within 1.5 km: score 1
+    - Premises within 250 m: score 2
+    - Infected premises within 100 m: score 3
+  - Larch infections proximity
+    - No larch within 500 m: score 0
+    - Larch within 500 m: score 2
+    - Larch infection within 5 km: score 3
+    - Larch infection within 500 m: score 4
+  - Rhododendron ponticum habitat suitability
+    - Unsuitable (RP presence probability ≤ 0.337): score 0
+    - Suitable - low abundance: score 2
+    - Highly suitable - high abundance: score 3
+  - Vaccinium myrtillus abundance (DOMIN)
+    - Absent (VM probability ≤ 0.66): score 0
+    - Low abundance (DOMIN 1–4): score 1
+    - High abundance (DOMIN 5–10): score 2
+  - Climatic suitability
+    - For Pr: categories from <100 to >200 suitable days; scores 0–3
+    - For Pk: categories from <17.5 to >17.5 suitable days (specific thresholds differ from Pr); scores 0 and 2 in the presented scheme
+  - Hydrological and road proximity
+    - Watercourses present: score 1
+    - Roads present: score 1
+  - Overall scoring and data caveats
+    - Final risk scores (Pr and Pk) are sums of component scores; maximums are Pr = 17 and Pk = 16.
+    - Climate scores for the two pathogens are treated separately to reflect species-specific climatic suitability; maps show relative, not absolute, risk comparisons between species.
+    - Uncertainty and data gaps are quantified (unc_pr, unc_pk) to indicate data completeness.
+
+- Outputs and how to use them
+  - Data formats
+    - FHN_2013.csv: risk scores (fragment-level)
+    - FHN_2013.shp: shapefile with detailed calculations and original input fields
+  - Key fields for decision-making
+    - adj_risk_p: adjusted Pr risk score (taking data availability into account)
+    - adj_risk_1: adjusted Pk risk score
+    - risk_sco_1: sum of Pr risk factors
+    - risk_sco_2: sum of Pk risk factors
+    - Avail_pr / Avail_pk: maximum possible scores given available data
+    - missing_type: indicators of which risk factors are missing (climate, VM, or both)
+  - Geographic outputs
+    - Maps show risk distribution across Scotland, with green representing low risk and yellow to red representing medium to high risk
+  - Use cases for monitoring frameworks
+    - Prioritize surveillance and resource allocation in higher-risk fragments, especially where climate suitability and hosts align
+    - Update risk as new infection data or host/climate information become available
+
+- Results and regional patterns
+  - Overall geographic pattern
+    - Risk for both pathogens concentrated in southern and western Scotland due to current infection sites and host/climate factors.
+  - Pathogen-specific findings
+    - Phytophthora ramorum (Pr)
+      - High risk in southern and western woodlands distant from current infections due to favorable host presence (R. ponticum), larch proximity, and climate suitability.
+      - Notable high risk in parts of the north-east as well.
+    - Phytophthora kernoviae (Pk)
+      - Higher climate suitability across broader areas; risk elevated in south, west, and parts of central/highlands and north/east where host presence and larch are present.
+      - In some eastern regions, climate suitability for Pk elevates risk even where current infections are limited.
+  - Relative risk interpretation
+    - Climate and host factors drive national-scale risk; risk maps identify surveillance priorities beyond currently infected premises.
+
+- Appendix: host modelling and methodological notes
+  - Vaccinium myrtillus modelling
+    - Data: 335 NVC surveys with percent cover (DOMIN scale); 89 non-zero occurrences.
+    - Modeling approach: two-phase GLMM within a Bayesian framework
+      - Phase 1: presence-absence modeled with an overdispersed binomial GLMM (accounts for site and quadrat-level random effects; interval-censored DOMIN data)
+      - Phase 2: abundance (percent cover) at sites with presence modeled with a logit-normal GLMM (random effects for site and quadrats)
+    - Rationale: addresses overdispersion, sampling imbalance, and interval-censoring of DOMIN classes
+  - Rhododendron ponticum modelling
+    - Maxent habitat suitability models developed from 11 datasets (presence/absence and abundance data)
+    - Predictions indicate suitable habitat aligns with continuous broadleaved woodland, lower elevations, and intermediate soil moisture
+  - Data integrity and uncertainty
+    - Missing climate data and VM data mapped; risk scores adjusted for missing information
+    - Figures illustrate uncertainty patterns and data gaps across fragments
+
+- Data governance and implications for monitoring frameworks
+  - Data transparency and sharing
+    - Outputs include both CSV and GIS formats to balance accessibility and reproducibility
+    - Full calculation details available in shapefile fields, enabling audit of risk factors and scoring
+  - Data accessibility and restrictions
+    - Some layers not provided at a national scale due to data access restrictions; practitioners must be aware of potential gaps in factor layers
+  - Versioning and updates
+    - Methodology allows incorporation of new infection sites and host/climate data to re-calculate risk scores
+  - Practical monitoring guidance
+    - Use risk scores to focus surveys and surveillance in higher-risk fragments
+    - Reassess risk levels as new data on premises, larch infections, host distributions, and climate suitability become available
+  - Quality assurance and governance
+    - Clear documentation of weighting and factor contributions supports consistency across monitoring programs
+    - Emphasis on data quality, metadata, and the need to publicly share underlying data where feasible
+
+- Bottom-line takeaway for monitoring framework authors
+  - The study demonstrates how to integrate diverse data sources (infection premises, host distributions, climate suitability, landscape features) into a transparent, GIS-driven risk framework with species-specific considerations.
+  - It highlights practical challenges for monitoring work, including data access barriers, missing metadata, and the need for explicit data governance practices.
+  - The approach yields actionable surveillance priorities and a framework adaptable to updates with new data inputs.

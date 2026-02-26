@@ -1,0 +1,41 @@
+# Experimental_Evolution_Design.csv
+
+- Objective: Establish an experimental evolution microcosm to understand evolutionary adaptation to drought in two bacterial taxa, with post-drought assessment of resistance and resilience.
+- Experimental system:
+  - Microcosms using sterilised natural rendzina soil.
+  - Two bacterial taxa (inoculated isolates) with 12 isolates per taxon.
+  - Two treatments: drought vs. control (continuously high soil moisture).
+  - All microcosms fed with artificial root exudate.
+- Experimental design:
+  - Factorial, randomised block design.
+  - 12 isolates per taxon × 2 treatments (drought/control) × 4 blocks.
+  - A fifth replicate of each isolate–treatment combination allocated randomly to one of the four blocks.
+  - Microcosm spatial position within blocks randomized (grid layout).
+- Data collection plan (linked datasets):
+  - Soil moisture monitoring via mass determination (four timepoints; subset sampled at additional timepoints).
+  - Bacterial population relative abundance measured by qPCR at 11 timepoints (launch, end of each drought, post-wetting, through four drought cycles; 12 microcosms per taxon/treatment subset monitored; 3 technical qPCR replicates per sample).
+  - Post-evolution soil samples for genome resequencing and respiration physiology assessment (following the fourth drought treatment) for microbial respiration analyses (see Experimental_Evolution_Microresp.csv).
+- Instrumentation and methods:
+  - Mass determinations with a pan balance to two decimals.
+  - No calibration routine described for this dataset; standardised measurement protocol.
+- Metadata structure (key variables):
+  - jarID, batch, inoculation (bacterial genus), isolate, replicate, treatment, block, row, column.
+  - jar_mass, soil_mass, microcosm_dry_mass, target_mass_0.4 (soil water content target).
+  - date, evo_strain_ID, comment.
+- Quality control and randomisation:
+  - Randomisation used to assign replicates and blocks.
+  - Clear documentation of blocking and spatial arrangement to minimise positional effects.
+- Data governance:
+  - Datasets intended to be stored and uploaded to appropriate data portals; designed for standardised, comparable outputs across time and treatments.
+- Linkages to other datasets (for integrated analyses):
+  - Experimental_Evolution_SWC.csv for soil moisture mass data across four phases.
+  - Experimental_Evolution_qPCR.csv for relative abundance of inoculated taxa across 11 timepoints (with detailed qPCR protocol and controls).
+  - Experimental_Evolution_Microresp.csv for soil CO2 efflux responses to substrates (glucose, cellulose, artificial root exudate) following four drought cycles.
+- Challenges and opportunities (analytical context):
+  - Value-adding potential by integrating these monitoring datasets with external environmental or functional data.
+  - Emphasis on enabling access to underlying data to promote reuse and cross-study comparisons.
+- References for methods:
+  - Campbell et al. (2003) MicroResp method.
+  - Creamer et al. (2009) interlaboratory comparison for respiration assays.
+  - Griffiths et al. (2000) coextraction of DNA/RNA from environmental samples.
+  - Lopez-Sangil et al. (2017) Automated Root Exudate System (ARES).

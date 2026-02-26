@@ -1,0 +1,30 @@
+# Gridded data of water debt for year 2000
+
+- What it is
+  - Global gridded dataset expressing water debt (WD) as the number of years required by the hydrological cycle to replenish water sources used for annual production of nine major crops.
+  - Crops: wheat, maize, rice, soybean, sugar cane, sugar beet, cotton, barley, sorghum.
+- Core concept and calculation
+  - WD per grid cell and crop source is calculated as the ratio of the annual water footprint (WF) to the average renewable water available in the cell.
+  - Annual renewability is estimated as a long-term average over 1987–2013 to smooth out extreme years.
+  - WF for a crop and source (CWFs,cr,l) equals local crop water footprint (CWFs,cr,l, m3 per ton) times annual production (Pcr,l, in tons).
+  - WD for a given crop and cell, across sources, is the sum of each crop’s WD across sources.
+  - WD across the three water sources (groundwater, surface water, soil moisture) for a crop in a cell is the maximum WD value among the sources for that crop.
+- Data scope and resolution
+  - Spatial scope: global; spatial resolution: 5 arcminutes.
+  - Temporal scope: 1997–2003 (circa year 2000); temporal resolution: annual.
+  - Units: years.
+- Metadata and documentation
+  - Coordinate Reference System: WGS 84.
+  - File format: text files (.txt) that can be processed in MATLAB, Python, or R; alternatively, change extension to ".ascii" to import into GIS.
+  - File naming: each file contains WD for all nine crops for one water source or for allsources (covering groundwater, surface water, and soil moisture combined).
+- Access and references
+  - Full methodological details available in open access at DOI 10.1029/2018WR023146.
+  - Metadata and data are open and consumable with common scientific software.
+- Practical considerations for data stewards
+  - Provides a standardized, globally consistent raster dataset aligned to WGS84 with clear temporal framing and naming conventions.
+  - Allows users to map and compare WD across crops and water sources, aiding governance and governance-related analyses.
+  - The year 2000 is used because it is the most referenced in literature; renewability is a long-term average, which may affect interpretation for specific years.
+  - Interoperability relies on simple ASCII/Text formats and straightforward GIS import via .ascii extension.
+- Governance and quality notes
+  - Documentation includes methodology and metadata; open access facilitates validation and reuse.
+  - Processing steps (WF components, production data, and max-vs-sum rules) are defined, enabling reproducibility and potential re-computation with updated inputs if needed.

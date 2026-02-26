@@ -1,0 +1,67 @@
+# QGIS Generated Color Map Export File
+
+## Overview
+- A QGIS color map export using discrete interpolation to assign colors to land cover classes.
+- Each entry maps a class to an RGBA color and a descriptive label (e.g., "111 - Continuous urban fabric").
+- Includes a wide range of land cover types, plus special codes for NODATA and UNCLASSIFIED.
+
+## File Structure and Encoding
+- Each line has the format: class_id, R, G, B, A, class_code - description.
+  - R, G, B specify the color (0–255); A is the alpha (typically 255, fully opaque).
+  - class_code is a numeric identifier shown alongside the human-readable description.
+- The palette uses discrete colors for clear category separation (INTERPOLATION:DISCRETE).
+
+## Class List (sample entries)
+- 1,230,000,077,255, 111 - Continuous urban fabric
+- 2,255,000,000,255, 112 - Discontinuous urban fabric
+- 3,204,077,242,255, 121 - Industrial or commercial units
+- 4,204,000,000,255, 122 - Road and rail networks and associated land
+- 5,230,204,204,255, 123 - Port areas
+- 6,230,204,230,255, 124 - Airports
+- 7,166,000,204,255, 131 - Mineral extraction sites
+- 8,166,077,000,255, 132 - Dump sites
+- 9,255,077,255, 255,133 - Construction sites
+- 10,255,166,255,255,141 - Green urban areas
+- 11,255,230,255,255,142 - Sport and leisure facilities
+- 12,255,255,168,255,211 - Non-irrigated arable land
+- 13,255,255,000,255,212 - Permanently irrigated land
+- 14,230,230,000,255,213 - Rice fields
+- 15,230,128,000,255,221 - Vineyards
+- 16,242,166,077,255,222 - Fruit trees and berry plantations
+- 17,230,166,000,255,223 - Olive groves
+- 18,230,230,077,255,231 - Pastures
+- 19,255,230,166,255,241 - Annual crops associated with permanent crops
+- 20,255,230,077,255,242 - Complex cultivation patterns
+- 21,230,204,077,255,243 - Agriculture with significant natural vegetation
+- 22,242,204,166,255,244 - Agro-forestry areas
+- 23,128,255,000,255,311 - Broad-leaved forest
+- 24,000,166,000,255,312 - Coniferous forest
+- 25,077,255,000,255,313 - Mixed forest
+- 26,204,242,077,255,321 - Natural grasslands
+- 27,166,255,128,255,322 - Moors and heathland
+- 28,166,230,077,255,323 - Sclerophyllous vegetation
+- 29,166,242,000,255,324 - Transitional woodland-shrub
+- 30,230,230,230,255,331 - Beaches, dunes, sands
+- 31,204,204,204,255,332 - Bare rocks
+- 32,204,255,204,255,333 - Sparsely vegetated areas
+- 33,000,000,000,255,334 - Burnt areas
+- 34,166,230,204,255,335 - Glaciers and perpetual snow
+- 35,166,166,255,255,411 - Inland marshes
+- 36,077,077,255,255,412 - Peat bogs
+- 37,204,204,255,255,421 - Salt marshes
+- 38,230,230,255,255,422 - Salines
+- 39,166,166,230,255,423 - Intertidal flats
+- 40,000,204,242,255,511 - Water courses
+- 41,128,242,230,255,512 - Water bodies
+- 42,000,255,166,255,521 - Coastal lagoons
+- 43,166,255,230,255,522 - Estuaries
+- 44,230,242,255,255,523 - Sea and ocean
+- 48,255,255,255,255,999 - NODATA
+- 49,255,255,255,255,990 - UNCLASSIFIED LAND SURFACE
+- 50,255,255,255,255,990 - UNCLASSIFIED
+
+## Usage and Practical Notes
+- Purpose: to visually distinguish land cover classes in maps and dashboards; can be used to create intuitive legends for data products.
+- The discrete interpolation ensures clear category boundaries, aiding interpretability for broad audiences.
+- When integrating with other datasets, ensure consistent class definitions and mappings to maintain coherence across analyses.
+- Includes explicit categories for NODATA and UNCLASSIFIED to handle missing or miscellaneous areas.

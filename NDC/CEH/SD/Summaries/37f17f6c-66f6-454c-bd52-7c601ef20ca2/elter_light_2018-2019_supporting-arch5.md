@@ -1,0 +1,24 @@
+# Elter_light_2018-2019.txt
+
+- Description of dataset: Weekly to monthly vertical profiles of underwater photosynthetically active radiation (PAR) collected between May 2018 and December 2019 at the deepest point of Elterwater inner basin. Coordinates: Lat 54.4287°, Long -3.0350°.
+- Instrument and measurement details: Measured PAR using a LI-COR LI-192 underwater quantum sensor. Profiles collected at 0.5 to 6 m depth, in 0.5 m intervals.
+- Measurement cadence: Profiles collected with weekly to monthly frequency.
+- Data quality assurance: Measurements were checked via visual inspection.
+- Data structure and units:
+  - Date: YYYY-MM-DD
+  - Depth: meters (m)
+  - Light: PAR in μmol s^-1 m^-2
+- Metadata considerations for governance:
+  - Sensor model (LI-COR LI-192) and serial number
+  - Calibration date and procedures
+  - Exact sampling depths and depth reference (surface vs. bottom)
+  - Sampling interval and any gaps or deviations from schedule
+  - Data provenance (who collected, when, and any processing performed)
+- Data management recommendations for Data Stewards:
+  - Capture comprehensive metadata (instrument details, calibration, field conditions)
+  - Maintain consistent data formats and units; verify date formats
+  - Document any data cleaning or transformations performed beyond visual QA
+  - Ensure versioned storage and clear data sharing/access pathways or portals
+  - Consider adding automated QA checks to complement visual inspection
+- Potential data sharing considerations:
+  - No sharing details provided; plan to upload to relevant datasets portals and catalogue holdings with the described structure and metadata.

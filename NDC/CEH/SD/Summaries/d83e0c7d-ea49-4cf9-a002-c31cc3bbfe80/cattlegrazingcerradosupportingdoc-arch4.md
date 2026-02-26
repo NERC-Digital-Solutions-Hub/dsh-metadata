@@ -1,0 +1,29 @@
+# Data overview
+
+- What it is: Plant community data from 100 plots (1 m² each) across ten old-growth Cerrado grasslands in São Félix do Tocantins, Tocantins, Brazil, collected in March–April 2022 to compare cattle-grazed and burned sites with ungrazed and unburned sites.
+- Data assets (3 files):
+  - CattleGrazingCerrado1.txt: plot-level diversity, structure, cover, and biomass metrics for 100 plots (columns include site, land_use, plot, total_richness, shrub/graminoid/forb_richness, covers, dead_biomass_cover, bare_ground, and biomass by category in g m⁻²).
+  - CattleGrazingCerrado2.txt: per-site average cover for 118 recorded species (zeros indicate absence).
+  - CattleGrazingCerrado3.txt: geographic coordinates (lat/lon) of the ten old-growth grasslands.
+- Study design and scope:
+  - Two land-use categories: grazed and burned vs ungrazed and unburned old-growth grasslands.
+  - 10 sites total (5 per category); 10 plots per site; 100 plots overall.
+  - Across each site: 50 m transect with ten 1 m² plots along the transect; within each plot, a 0.5 m × 0.5 m subplot for biomass separation (graminoid, forb, shrub, dead biomass).
+  - Measurements include species identity (field or via specialists/herbarium), growth form (graminoids, forbs, shrubs), percent cover (0–100%), dead biomass, bare ground, and biomass per category (g m⁻²); average species cover per site also computed.
+- Data collection context:
+  - Region: northern Cerrado, ~500 m altitude; dry winter and humid summer; 1,400–1,500 mm annual rainfall; arenosol soils.
+  - Grasslands have a century-long cattle-ranching history; fire is used (burn after dry season ends) and grazing occurs during the rainy season; burned sites carry low cattle density (~0.3 Nelore ha⁻¹ at sampling).
+  - All sampled grasslands were free of African grasses, with no prior soil management.
+- Data processing and structure:
+  - Biomass samples dried at 80°C for 48 h; data converted to g m⁻².
+  - Total, graminoid, forb, and shrub richness/cover computed; totals can exceed 100% due to 3D structure.
+  - Files provide both plot-level metrics (CattleGrazingCerrado1.txt) and site-level species abundance (CattleGrazingCerrado2.txt); site coordinates are in CattleGrazingCerrado3.txt.
+- Provenance and funding:
+  - Part of two projects: ecological/economic evaluation of beef cattle on Cerrado pastures; adaptive management of invasive species using FAPESP (Grant 2020/04713-5) and NERC (Grant NE/S011641/1).
+- Data quality and usage notes:
+  - Clear variable definitions and units (e.g., biomass in g m⁻², covers in %); zero values indicate absence.
+  - Documentation includes sampling design and methodology to support reproducibility and cross-site comparisons.
+- Relevance for data leadership and strategy:
+  - Demonstrates end-to-end data lifecycle: field collection, lab processing, data coding, and per-site aggregation.
+  - Highlights data structure that supports cross-network data discovery, integration, and reuse for ecosystem management, land-use impact studies, and biodiversity assessments.
+  - Illustrates the importance of metadata richness, data provenance, and accessibility (text/tab-delimited formats) for discoverability and collaborative analysis.

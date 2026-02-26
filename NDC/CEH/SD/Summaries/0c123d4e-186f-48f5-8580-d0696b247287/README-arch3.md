@@ -1,0 +1,21 @@
+# General information
+
+- Study context: Field-based estimates of plant abundance (leaf area, floral units, seed abundance, mass, and energy) from Norwood Farm, Somerset, UK (51.3128N, -2.3206W) during 2007–2008, on an organically managed, relatively low-intensity farm.
+- Primary purpose: Part of a study on ecological interactions (food webs and plant-pollinator networks); data underpin a broader analysis of ecological networks. The main publication is Pocock et al. (2012); the interaction dataset is available in Dryad (DOI provided). Full methodological details are in Pocock et al. (2010) and the Supplementary Online Material (Extract_from_SOM.rtf).
+- Data files described
+  - leafarea.csv: Leaf area index (LEAFAREA_square_metres) for each plant taxon, in each habitat, each month; methods involve surveying up to four 9x1 m transects per habitat and estimating leaf area using LAI-2000 (or literature for woodland). Leaf area apportioned among species by abundance x height; scaled by habitat area.
+  - floralunits.csv: Number of floral units per taxon, habitat, month; defines floral units as units for pollinator movement (flowers). Surveyed using 3–4 transects per habitat per month; transects were 25x1 m (2007) or 50x1 m (2008).
+  - seeds.csv: Number, mass, and energy of seeds per taxon, habitat, season; collected with a vacuum sampler, oven-dried, seeds identified by specialists; correction factor applied for under-sampling (Evans et al. 2009) and totals scaled by habitat area.
+  - habitatarea.csv: Habitat codes, descriptions, and areas per Year1 (2007) and Year2 (2008); provides the spatial context and seasonal/year mapping.
+  - Acknowledgements: Funding sources (BBSRC and Defra) and data provenance notes.
+  - References: Key sources detailing methods, data interpretation, and supporting studies (Evans et al. 2009, 2011; Pocock et al. 2010, 2012).
+- Site and temporal scope
+  - Norwood Farm as the study site; data capture across multiple habitats and monthly (leafarea and floralunits) or seasonal (seeds) times.
+  - Year 1 corresponds to 2007 data for leafarea and floralunits; Year 2 corresponds to 2008 data for those files; seeds data align with autumn 2007, winter-spring-summer 2007/2008 depending on file.
+- Data collection and processing notes
+  - Methods emphasize direct field measurements, standardized transect sampling, and area upscaling to provide habitat-level resource estimates.
+  - Seed data include a correction factor to account for under-sampling and energy content drawn from existing databases.
+  - Detailed methodological context is available in the cited Pocock et al. papers and the Supplementary Online Material.
+- Data sharing and governance
+  - Dataset associated with published ecological network work and accessible via Dryad; the description highlights the importance of metadata, data provenance, and openness of underlying data for reuse.
+  - The study demonstrates integration of multiple data types (vegetation structure, floral resources, and seed resources) with habitat-area context, enabling cross-habitat and temporal monitoring analyses.

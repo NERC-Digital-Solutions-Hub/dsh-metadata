@@ -1,0 +1,53 @@
+# The UKCEH Land Cover Map for 2023
+
+- Purpose and scope
+  - UKCEH’s annual land cover map (LCM2023) providing 21 UKCEH Land Cover Classes (based on Biodiversity Broad Habitats) for Great Britain and Northern Ireland.
+  - Built to support monitoring policy, decision-making, and change detection through a consistent, auditable data product.
+  - Validation reports an overall accuracy of 83% at full thematic detail.
+- Product suite
+  - 10 m Classified Pixel datasets (GB and NI): per-pixel land cover with a second band indicating classification confidence.
+  - 25 m Rasterised Land Parcel datasets (GB and NI): land parcels linked to the UKCEH Land Parcel Spatial Framework with three bands (dominant class, conf, purity).
+  - 1 km raster summary datasets (GB and NI): dominant class, percentage cover per class and per aggregate, with rounding considerations near edges.
+  - Land Parcel Spatial Framework: fixed 0.5 ha minimum mapping unit, designed to support change detection; some identifiers differ from LCM2015.
+  - Seasonal Composite Images (Sentinel-2) and 10 m Context Rasters to improve classification accuracy.
+  - Classification Scenes: GB classified in 32 tiles (typical 100 x 100 km), NI classified as a single scene; a tile-based approach helps manage regional phenology and processing.
+- Data sources and methods
+  - Seasonal composites: four-season Sentinel-2 reflectance, sourced via Google Earth Engine; masked gaps handled by the classifier’s tolerance to partial data.
+  - Context rasters (GB/NI): terrain (height, aspect, slope) and proximity masks (distance to buildings, roads, tidal water, freshwater, foreshore, woodland, saltmarsh).
+  - Bootstrap Training: automatic training using historical LCM data (LCM2020–LCM2022) with >80% probability pixels to train a Random Forest classifier; designed to avoid new field campaigns.
+  - Training and classification: Random Forest with balanced samples (10,000 per bag per run); bespoke UKCEH software integrating WEKA, PostGIS, and GDAL.
+- Validation and performance
+  - Validation set: 33,107 points across all 21 classes from national surveys, forest inventories, Rural Payments data, and manual image interpretation.
+  - Reported overall accuracy: 83% for full thematic detail; performance metrics include user’s and producer’s accuracies by class (see appendix tables in the dataset documentation).
+- Data structure and access
+  - Coordinate systems: Great Britain uses British National Grid (EPSG 27700); Northern Ireland uses Irish Grid TM75 (EPSG 29903).
+  - 10 m Classified Pixels: two-band raster (dominant class, confidence); retains fine detail not generalised by the Land Parcel Spatial Framework.
+  - 25 m Rasterised Land Parcels: three-band rasters with per-parcel attributes (gid, hist, mode, purity, conf, agg, n, etc.).
+  - 1 km Summary Rasters: four products (dominant cover GB&NI, dominant cover by aggregates, percentage cover in 21 classes, percentage cover in 10 aggregates); rounding can cause sums not to equal exactly 100 near coastlines.
+  - Accessibility: each dataset has a DOI and formal citation; see Table 5 for specifics; accompanying methodological references provided.
+- UKCEH Land Cover Classes and BAP Broad Habitats
+  - 21 UKCEH Land Cover Classes mapped against Biodiversity Action Plan (BAP) Broad Habitats; some mappings are not one-to-one, with occasional splits (e.g., Heather vs Heather grassland) and combinations (e.g., Freshwater combining Standing Open Water/Canals and Rivers/Streams).
+  - Appendices detail class definitions, relationships, and considerations for spectral confusion and context-based improvements.
+- Classification detail and interpretation guidance
+  - Classification Scenes: GB tiles allow regionally tailored training; NI uses a single scene for efficiency.
+  - Context rasters help disambiguate spectrally similar land covers (e.g., rocks vs urban surfaces, coastal vs inland features).
+  - Outputs designed to support change detection: annual maps distinguish persistent changes from random classification errors.
+- Known issues and caveats
+  - Some land parcel polygons are missing in the vector products, causing nodata areas in 25 m rasters; impact considered negligible for 1 km outputs.
+  - 10 m classified pixels are not validated against the land parcel dataset; formal validation focused on 25 m rasterised parcels.
+  - Method changes year-on-year may cause differences beyond actual land cover change; users should treat year-to-year changes with this context.
+- Governance, metadata, and data sharing
+  - Outputs are delivered with metadata and DOIs; the producers emphasise data governance, openness, and clear presentation of underlying data.
+  - Acknowledges potential barriers to publicly sharing certain dataset components at origin; nevertheless, outputs are shared with appropriate governance.
+- Applications for monitoring frameworks
+  - Provides a robust, auditable time-series suitable for state-and-change monitoring, policy evaluation, and gap analysis in land cover.
+  - The combination of high-resolution 10 m data and parcel-level 25 m data enables both detailed local analysis and stable, comparable regional/change assessments over time.
+- Color schemes and accessibility
+  - Appendices include recommended color recipes for displaying UKCEH Land Cover Classes; color-blind friendly options are also provided.
+  - QGIS symbology files accompany the data to facilitate immediate, standardized visualization.
+- References and further reading
+  - Key methodological references include Breiman (Random Forest), Carrasco et al. (spectral combinations), and Morton et al. on earlier LCMs.
+  - Cited dataset DOIs and related publications are provided to support reproducibility and traceability.
+- Practical notes for users
+  - Use 1 km rasters for broad, policy-level assessments and comparability across regions; use 10 m pixels for detailed habitat mapping and small features.
+  - When combining datasets across years, be mindful of potential methodological changes and the Bootstrap Training basis for the latest map.

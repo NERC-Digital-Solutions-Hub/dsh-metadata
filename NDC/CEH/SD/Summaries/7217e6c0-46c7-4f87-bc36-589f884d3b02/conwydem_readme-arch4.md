@@ -1,0 +1,41 @@
+# Collection/generation methods
+
+- Scope and aim
+  - DEM domain covering the tidally influenced Conwy estuary, downstream of the Cwmlanerch river gauge, extending offshore into Conwy Bay and the Menai Strait.
+  - Integrated land elevations, seabed bathymetry, and flood Defence data to create a continuous surface for flood modelling.
+- Data sources and types
+  - Seabed bathymetry: marine DEMs from OceanWise, accessed via Digimap; 1 arc-second resolution, referenced to WGS84/CD and Chart Datum (Llandudno).
+  - Land elevations: primarily NRW Lidar data (73%) processed into 1 m DTMs/DSMs via Digimap (OSGB36; OD vertical datum; ±0.15 m RMSE). Remaining areas from OS Terrain 5 m DTM (5 m resolution; OSGB36; OD).
+  - Flood defences: NRW data catalogue with vector polylines describing locations, types, and crest heights.
+- Data integration and processing workflow
+  - Imported all datasets into ArcGIS Pro 3.0; mosaicked rasters and resampled to 5 m resolution.
+  - Datum handling and projection:
+    - Marine DEM projected to OSGB36; converted from Chart Datum to Ordnance Datum by subtracting 3.85 m.
+    - In overlapping regions, priority rules applied: underwater areas use marine DEM; land areas use Lidar DTM; gaps filled with OS Terrain 5 m DTM.
+  - Surface generation
+    - Coalesced raster datasets into a single surface at 20 m resolution using topo-to-raster interpolation to balance domain detail with computational cost.
+    - Flood defences digitised from Lidar DSM and converted to 20 m buffered rasters, then merged into the surface.
+    - Final continuous surface represents floodplain elevations, flood defences, and marine elevations; riverbed elevations were not directly captured by marine DEM and required estimation from Lidar data.
+- Riverbed representation and calibration focus
+  - River channels were underrepresented by LiDAR in inundated zones; channel bed elevations were calibrated as part of the hydrodynamic model calibration.
+  - Calibration addressed LiDAR limitations in inundated areas to improve river channel bathymetry representation.
+- Data format and units
+  - Final DEM values are in metres, vertically referenced to Ordnance Datum (Newlyn) and spatially referenced to British National Grid.
+  - Output format: Digital Elevation Model ASCII.
+- Model calibration and hydrodynamic setup
+  - Hydrodynamic model: Caesar-Lisflood, run in reach mode with upstream discharge and downstream sea level time series.
+  - Upstream boundary: NRW discharge data at 15-minute intervals (1 Mar–16 Apr 2021).
+  - Offshore boundary: BODC sea levels at 15-minute intervals, converted from Chart Datum to Ordnance Datum (offset -3.85 m).
+  - Hydraulic parameters: Manning’s n = 0.022; Courant number = 0.6; Froude limit = 0.8; water loss function = 0.2 m/day applied to floodplains to prevent artificial ponding behind defences.
+  - Validation: simulated water levels compared with gauges at Pont Fawr, Trefriw, and Tal-y-Cafn (OD-referenced, 15-minute intervals). Channel bed elevations iteratively adjusted (per Neal et al., 2022) to improve fit.
+  - Calibration outcomes: RMSEs of 0.59 m (Pont Fawr), 0.39 m (Trefriw), 0.69 m (Tal-y-Cafn); Kling-Gupta Efficiency (KGE) of 0.90, 0.90, and 0.70 respectively; flood peaks RMSEs of 0.57 m, 0.19 m, and 0.29 m.
+  - Interpretation: model captures major flood peaks well; higher RMSE and weaker KGE in the upper estuary may reflect missing tributaries; overall suitability for research purposes is maintained.
+- Outputs and limitations
+  - Outputs include a calibrated DEM surface suitable for hydrodynamic modelling of the Conwy estuary and adjacent coastal areas.
+  - Key limitation: riverbed elevations are approximate due to LiDAR limitations in inundated zones; calibration addressed this to improve model accuracy.
+- Supporting materials
+  - Figure S1: Flowchart of the steps to generate the model domain.
+  - Figure S2: Calibration visuals including domain elevations, river profile, and observed vs. simulated water levels.
+- References cited for methods
+  - Gupta, Kling, Yilmaz, Martinez (2009) on NSE decompositions for hydrological modelling.
+  - Neal, Hawker, Savage, Durand, Bates, Sampson (2021) on estimating river channel bathymetry in large-scale flood models.

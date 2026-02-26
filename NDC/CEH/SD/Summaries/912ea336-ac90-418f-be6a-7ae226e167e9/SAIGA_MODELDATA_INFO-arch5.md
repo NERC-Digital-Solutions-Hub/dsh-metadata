@@ -1,0 +1,43 @@
+# Environmental conditions at saiga calving and die-off sites in Kazakhstan, 1979 to 2016
+
+- Aim: Document environmental conditions at saiga calving sites to model and understand the drivers of mass mortality events (MMEs) and calving dynamics; provide data to support data governance and reuse by researchers and organisations managing large dataset collections.
+- Context and scope:
+  - Saiga population focused: Betpak-dala, Kazakhstan; one of three populations in the country.
+  - Timeframe: 1979–2016; MMEs occurred in 1981, 1988, and 2015.
+  - Datasets: Shapefile of 214 calving/die-off sites; attached dataset covers 135 sites with sufficient predictor data for modelling.
+  - Purpose: Predictors used to model MME probability at calving aggregations; data and modelling described in Kock et al. (2018).
+- Data sources and environmental predictors:
+  - Climate data: ERA-Interim daily reanalysis (ECMWF) for temperature, humidity, precipitation, soil moisture, snow depth, wind, etc.
+  - Precipitation: GPCC gauge-based products included to complement ERA data (available from 1988 onward).
+  - Vegetation and snow indicators: NDVI and snow data from MODIS and SPOT/PROBA-V LifeWatchWB anomalies; snow anomaly data from LifeWatch WB (1998–2016; 2000–2016 for some sites).
+  - Data coverage: High spatial resolution and long time series across a large geographic extent; several predictors available only for subsets of sites.
+- Data processing and generation of predictors:
+  - Temporal framework: Predictors aggregated over periods leading up to calving onset or index die-off (the “zero hour”).
+  - Time windows: Metrics computed for 3, 5, and 10 days before onset, with additional precipitation metrics for the 2 months to onset.
+  - Onset handling: In many cases exact onset dates were missing; metrics generated using real dates where available and generalized dates (9 May for start of calving, 14 May for peak calving) when needed.
+  - Temperature variables: Measures of daily variability and broader changes (e.g., average and max temperature variation over 0, 3, 5, 10 days; overall temperature variation; max/min daily temps).
+  - Snow metrics: Snow melt date derived from last three consecutive snow-cover days; metrics for total snow cover duration and days between snow melt and calving/onset.
+  - NDVI and snow/NDVI anomalies: Daily interpolation of anomalies used to compute aggregates over multiple days and fixed periods (e.g., end-of-winter green-up, April/May weeks).
+  - Data integration: Extracted climate data from rasters using the calving/die-off shapefile; datasets merged via variable ID to align environmental predictors with site events.
+- Dataset structure and metadata:
+  - Sites: 214 total sites in the shapefile; 135 sites in the attached environmental dataset with complete predictor data for modelling.
+  - Key fields: Year, Dieoff (1 = die-off, 0 = normal calving), Calving start and peak dates (Calving_ST, Calving_PK; CALVE_STGN and CALVE_PKGN as generalized dates), onset and death dates (Onset, Obs_deaths, Last_death).
+  - Predictor naming conventions: Core fields (unspecified subset) and four generated sets with suffixes:
+    - _STGN (dates up to 9 May)
+    - _PKGN (dates up to 14 May)
+    - _STGNONSET (mixture of real dates and generalized estimates)
+  - Data tables: Core field names and associated metadata provided; full variable lists and corresponding table references described (Table 1 in the original document).
+  - Access to data and metadata: Shapefile and site metadata available at the EIDC catalog (example: https://catalogue.ceh.ac.uk/documents/8ad12782-e939-4834-830a-c89e503a298b).
+- Linkages to modelling and literature:
+  - Modelling context: Predictor variables used to model MME probability at calving aggregations; modelling approach and results discussed in Kock et al. (2018) in Science Advances.
+  - Data sources and references: ERA-Interim (Dee et al., 2011), GPCC precipitation (Schamm et al., 2014), NDVI data (Pinzon & Tucker, 2014; Vuolo et al., 2012), Snow/NDVI anomaly literature (Rousseau et al., 2015; Radoux et al., 2015).
+- Data quality, limitations, and stewardship considerations:
+  - Uncertainties: Onset dates often missing; imputation via generalized dates introduces uncertainty in predictors.
+  - Data heterogeneity: Multiple data sources with varying temporal coverage and resolutions; some predictors available only for subsets of sites and years.
+  - Model relevance: NDVI data not used in final models for all sites; some predictor variables rely on interpolated or anomaly data with varying reliability.
+  - Documentation and provenance: Clear linkage between site metadata, shapefile attributes, and environmental predictors; extensive metadata and variable naming conventions provided to support reproducibility.
+- Governance, storage, and reuse implications for Data Stewards:
+  - Standards and metadata: Maintain and communicate metadata, data provenance, variable naming conventions, and data generation methods (including suffix conventions _STGN, _PKGN, _STGNONSET).
+  - Discoverability: Preserve links to the original shapefile and EIDC repository; ensure dataset can be discovered via site IDs and predictor IDs.
+  - Data sharing and updates: Track versions and updates; document any changes to onset date handling or predictor computations; consider embargo policies when data are updated.
+  - Data quality management: Document uncertainties, data gaps, and processing steps to enable informed reuse in future analyses or governance reviews.

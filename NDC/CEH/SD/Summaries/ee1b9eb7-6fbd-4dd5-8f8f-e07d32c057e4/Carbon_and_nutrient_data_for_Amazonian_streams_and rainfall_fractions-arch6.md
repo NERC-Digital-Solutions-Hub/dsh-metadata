@@ -1,0 +1,34 @@
+# Sampling Regime
+
+- Location and scope: Western Amazonian basin, Tambopata National Reserve, Madre de Dios, Peru. Data from two small streams (MT Main Trail, NC New Colpita) and two rivers (LT La Torre, TP Tambopata). Catchments upstream range from ~2000 km2 (LT) to ~14000 km2 (TP).
+- Timeframe: Field campaigns Feb 2011–May 2012; targeted wet and dry seasons. Rainfall fractions collected Apr–May 2012.
+- Measured parameters:
+  - Fluvial samples: DIC (mg/L) and δ13C-DIC, DOC (mg/L), POC (mg/L); select samples analyzed for nutrients (Ca, Mg, K, Na, TotP, Si).
+  - Rainfall fractions: DIC, δ13C-DIC, DOC, POC, Ca, Mg, K, Na, TotP, Si; nutrients analyzed in rainfall and throughfall.
+- Sampling design and campaigns:
+  - Fluvial sampling during three campaigns (Feb–Apr 2011; Sept–Dec 2011; Mar–May 2012); MT often dries in the dry season, affecting sample collection.
+  - Varied flow conditions to assess hydrological controls on carbon concentrations and fluxes.
+  - Rainfall fractions collected from open-area rainwater, throughfall collectors near a biomass plot, stemflow from eight trees, and an overland flow collector.
+- Sites and catchment context:
+  - MT: width 3.5–5 m; upstream drainage ~4.9 km2.
+  - NC: width 4.5–7.5 m; upstream drainage ~7.2 km2.
+  - LT catchment ~2000 km2; TP catchment ~14000 km2; rivers at sampling point ~40–80 m wide (MT) and ~200 m wide (TP).
+- Field and lab methods:
+  - DIC: pre-acidified exetainers, headspace method with GasBench/Delta V Plus; triplicate exetainers per sample; drift checks and standards included.
+  - DOC: filtered, acidified to pH ~3.9, degassed; measured by TOC analyzer; filter papers dried and weighed for LOI-based POC estimation (assumed OC = 50%).
+  - POC: determined by loss on ignition from dried filter papers.
+  - Cations and nutrients: Ca/Mg by Atomic Absorption Spectrometry (AAS); K/Na by flame photometry; TotP and Si by colorimetric methods.
+- Quality control and calibration:
+  - DIC: drift corrections every ~10 samples; use of replicate standards for instrument performance.
+  - DOC: eight-point calibration with drift checks; beginning and end run calibration comparison.
+  - Cations and Si/TotP: repeated standards and blanks to ensure instrument stability.
+- Data structure and format:
+  - Two CSV files: "Amazon streams C and nutrients" and "Amazon rainfall fractions C and nutrients".
+  - Streams/rivers: 14 columns; Rainfall fractions: 12 columns.
+  - Key columns include Time (hh:mm:ss), Date (dd/mm/yyyy), Type (stream/river or TF/SF/OF/RW), Site/Collector IDs, and concentrations for DIC, δ13C-DIC, DOC, POC, Ca, Mg, K, Na, TotP, Si; NA indicates not analyzed.
+- Data provenance and references:
+  - Prior data submissions exist for DIC and related datasets (DOIs provided); this document describes additional campaigns and methods.
+  - Method references include APHA (Standard Methods) and Waldron et al. (2014) for DIC isotopic measurements.
+- Purpose and potential use:
+  - Facilitates exploration of hydrological controls on carbon concentrations and fluxes in tropical rainforest streams and rivers.
+  - Supports data self-service, with clear documentation of collection, analysis, QA/QC, and data structure to enable reuse and integration with other datasets.

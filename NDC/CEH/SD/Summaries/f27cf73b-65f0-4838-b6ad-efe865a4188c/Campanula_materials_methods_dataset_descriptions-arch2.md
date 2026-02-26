@@ -1,0 +1,48 @@
+# Campanula rotundifolia study: Plant material, cytotype determination, and common garden data
+
+- Objective and scope
+  - Large-scale study of Campanula rotundifolia across Britain and Ireland, with additional samples for broader context.
+  - Focus on cytotype diversity (tetraploid, pentaploid, hexaploid) and how cytotype variation relates to phenology and growth in a common garden.
+  - Involves citizen scientists/volunteers, commercial/seed sources, and Botanic Gardens to maximize geographic coverage.
+- Data collection and materials
+  - >1300 samples from ~900 geo-referenced locations across diverse habitats.
+  - Sample types: seeds, leaves, or stem cuttings; some material propagated to produce clonal material for the common garden.
+  - Storage and handling: leaf tissue refrigerated; silica-dried leaves; seeds air-dried and stored at 4°C; cuttings rooted in a cool glasshouse.
+  - Sampling strategy aimed to avoid sampling the same clone (≥5 m between plants when possible); intensified sampling in known hexaploid hotspots to determine extent.
+  - Location data provided at 0.01° resolution to protect site anonymity; sample materials stored at CEH Edinburgh with sample codes.
+- Cytotype determination
+  - Cytotypes previously counted cytologically; verified by flow cytometry and used to calibrate further measurements.
+  - Flow cytometry method (one-step protocol, Doležel et al. 2007) using Pisum sativum standard (2C = 9.09 pg) and propidium iodide staining.
+  - Procedure: tissue chopped with standard, nuclei extracted, stained with PI, internal standard co-analyzed; groups of samples sometimes analyzed together to save resources.
+  - Instruments: FACSCalibur or Accuri C6 flow cytometers; standard software used for gating and peak analysis.
+  - Quality control: CV < 5% required for accepted peaks; stored/dried samples may bias DNA content estimates and were treated accordingly (excluded from mean DNA content calculations).
+  - Final cytotype assignments are stored in campanula_cytotype.csv, with location and sample details.
+- Common garden study design
+  - Clones produced from field material (cuttings or seeds) planted October 2008 in an external raised bed near CEH Edinburgh (55.86 N, 3.21 W; 190 m a.s.l.).
+  - Experimental design: five randomized blocks containing clonal tetraploids, pentaploids, and hexaploids; 55 tetraploid, 1 pentaploid, and 37 hexaploid clones distributed across blocks.
+  - Clones established from two-year field collection efforts; no pollination restrictions imposed.
+  - Site management: occasional weeding; monitoring of growth and survival; no explicit environmental manipulation.
+- Phenology and growth measurements
+  - Phenology (flowering) assessments in 2009 and 2010: daily inspections; first flowering date (FFD) recorded when the first flower opened to bees.
+  - Phenology data stored in campanula_FFD.csv (FFD for 2009 and 2010).
+  - Growth and fecundity assessments (2009): August harvests to count flowering stems, stem height, seedhead counts, and flower counts on selected stems (blocks 1 and 3); data stored in Dest_harvest_Aug_2009_blocks_1_and_3.csv.
+  - Sept 2009 harvests (blocks 2 and 5): above-ground dry weight and total flowering stems measured; data stored in Dest_harvest_Sept_2009_blocks_2_and_5.csv.
+- Data files and schema
+  - Campanula_cytotype.csv: country, location, sample code, latitude, longitude, cytotype.
+  - campanula_FFD.csv: block number, clone code, date of first flowering (2009), converted day number, notes for 2009 and 2010, and 2010 day-number.
+  - Dest_harvest_Aug_2009_blocks_1_and_3.csv: block number, clone code, total flowering stems, stem height, seedhead counts, open flowers, buds, per stem (stems 1–3), and plant condition notes.
+  - Dest_harvest_Sept_2009_blocks_2_and_5.csv: block number, clone code, total stem dry weight, number of flowering stems.
+  - Dead/missing data indicated by an asterisk (*) in all files; data arranged in columns.
+- Data quality, storage, and accessibility
+  - Standardized protocols for cytotype determination and careful calibration against known counts.
+  - Exclusion of certain samples from mean DNA content calculations (e.g., stored/dried samples, grouped analyses) to preserve data integrity.
+  - Datasets stored with clear sample codes and location metadata; physical material retained at CEH Edinburgh for potential re-analysis.
+  - Data are organized to enable cross-dataset analyses (phenology, growth, fecundity) and potential linkage to geographic/environmental datasets.
+- Figure reference
+  - Figure 1 depicts the layout of clonal plants across five blocks in the common garden study.
+  - Clonal codes and cytotype origins are elaborated in campanula_cytotype.csv.
+- References
+  - Doležel J, Greilhuber J, Suda J (2007). Estimation of nuclear DNA content in plants using flow cytometry. Nature Protocols.
+  - Greilhuber J, Temsch EM, Loureiro JCM (2007). Nuclear DNA content measurement. In Flow Cytometry with Plant Cells.
+  - McAllister HA (1972). The experimental taxonomy of Campanula rotundifolia L.
+  - Stevens CJ, Wilson J, McAllister HA (2012). Biological Flora of the British Isles: Campanula rotundifolia. Journal of Ecology.

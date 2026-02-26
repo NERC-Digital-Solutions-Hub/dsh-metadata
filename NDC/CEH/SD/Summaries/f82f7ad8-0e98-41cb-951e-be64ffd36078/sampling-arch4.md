@@ -1,0 +1,81 @@
+# Sampling Design
+
+- Study period and location
+  - July 2015 to December 2015
+  - Gurue district, Zambezia province
+- Village selection and design
+  - Ten villages chosen to create a land scarcity gradient from land-abundant to land-constrained
+  - Villages selected during a scoping visit with similar infrastructure, soils, rainfall, and vegetation
+  - Gradient-based sampling intended to capture diversity in land use and pressures
+
+- Data collection methods and participatory activities
+  - Participatory maps
+    - Village leader organizes participants in the village center
+    - Led by a research assistant fluent in the local language (Elomwe)
+    - Group discussions lasting 1–2 hours
+    - Ground-illustrated notes using a field protocol legend (points for description, check, notes; features like streets, community limits, houses, fields, crops, water sources, energy sources, forest products, and other elements)
+  - Seasonal calendar
+    - Village leader convenes a group; discussions take about one hour
+    - Conducted by a field assistant in Elomwe
+    - Collects: main subsistence and cash crops; average household cropland; field isolation vs blocks; seasonal timelines for key crops (sowing, growing, harvest) across crops such as maize, manioc, beans, vegetables, soya
+  - Trend analysis
+    - Village leader facilitates discussions with a group; one-hour sessions
+    - Cards and stone voting to illustrate changes over time across topics:
+      - Agricultural production (land under cultivation, soya area, productivity)
+      - Land availability and use
+      - Forest and forest products
+      - Wellbeing and migration trends
+    - Topics evaluated over years and changes (e.g., deforestation, crop pests, market access)
+  - Land allocation and access
+    - Questions on how families obtain land/forest for new fields
+    - Considerations of migrants, settlers, and natives
+    - Triggers for opening new land (commercial crops, fertility, land loss, capital, tractors)
+    - Vegetation type conversion (native forest, secondary forest, shrub land, etc.)
+    - Location preferences for commercial crops (most fertile land, newly opened land, proximity to home)
+  - Village profiles
+    - Interviews with village leader and key persons
+    - Guideline coverage: village structure, foundation year, war displacement and return, education, health, water, land tenure (DUAT), markets and distance, migration patterns, livelihoods (charcoal, agriculture, livestock, others), external actors, and external commercial activities
+  - Interview with local leader details
+    - Charcoal: production locations, sales, licenses, associations, chainsaws, external producers
+    - Agriculture: main crops, productivity, field locations and sizes, marketing outside the village, extension services, training, processing of soya, possible conflicts, producer associations, historical land use, deforestation concerns
+    - Livestock and other products: main animals, sales, pasture, other forest products
+    - Origin of forest products; sources if no forest locally
+    - Natural disasters or shocks and impacts
+  - Change and drivers assessment
+    - Social change: most notable changes, whether conditions improved or worsened
+    - Environmental changes: forest area, biodiversity, water, soil quality; implications for daily life; beneficiaries vs. those affected; future change expectations
+    - Reasons for changes: deforestation, soil fertility loss, market access, climate, etc.
+  - Wealth ranking
+    - All households in each village ranked by wealth
+    - Led by local leaders with Elomwe-speaking assistant
+    - Qualitative notes accompany the ranking (categories: very poor, poor, middle, rich) and potential movement between categories
+
+- Data themes and variables captured
+  - Land and agriculture
+    - Cropland area per household; land under soya; productivity indicators
+    - Land availability perceptions and constraints
+    - Field location, isolation vs blocks; vegetation conversion
+  - Crops and farming practices
+    - Main subsistence and cash crops (e.g., maize, sorghum, manioc, beans, rice, vegetables, soya, etc.)
+    - Seasonal calendars for sowing, growing, and harvesting across crops
+  - Forestry and natural resources
+    - Forest area changes; forest products (timber, charcoal, honey, fruits, construction materials)
+  - Wellbeing and social factors
+    - Quality of life indicators; migration trends; access to services
+  - Village structure and livelihoods
+    - Village foundation, education, health, water, markets, migration, livelihoods activities
+  - Conflict and risk
+    - War impacts, post-war recovery, natural disasters, crises
+  - Wealth and social organization
+    - Wealth categories, potential mobility between categories
+
+- Language, protocol, and operational notes
+  - Fieldwork conducted with local language support (Elomwe)
+  - Exercises follow a standardized field protocol with timelines (group sessions ranging from 1–2 hours, 1-hour calendar sessions)
+  - Interviews and profiles structured to capture a mix of quantitative indicators and qualitative context
+  - Documentation includes structured legends, annual/year-based trend prompts, and mapped, ground-illustrated data collection
+
+- Practical aims for data use
+  - Build a multi-village, gradient-based data set on land scarcity, agricultural change, forest use, and household wellbeing
+  - Enable cross-village comparisons and trend analysis over time
+  - Inform data governance considerations such as data quality, metadata, discoverability, and user-centered data products through participatory and community-informed methods

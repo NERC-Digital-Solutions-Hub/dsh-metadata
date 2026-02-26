@@ -1,0 +1,66 @@
+# Metadata for the dataset ' Half hourly fluxes of sensible heat, latent energy and carbon, observed by eight eddy covariance towers in the Northern Chihuahuan Desert, 2018-2019 ' by Boschetti and Cunliffe et al .
+
+- Overview
+  - A metadata collection describing half-hourly fluxes of sensible heat (H), latent energy (LE), and carbon (net ecosystem exchange, NEE) from eight eddy covariance towers at the Sevilleta Refuge, New Mexico, USA.
+  - Data collection period: 2018-11-01 to 2019-11-01.
+  - Towers are low-frequency (1 Hz) eddy covariance systems; main sensors include sonic anemometer, relative humidity sensor, and CO2 concentration sensor.
+  - Pre-processing, gap-filling, and quality control applied prior to flux estimation; time lags and corrections applied for closed-path gas analysis.
+  - Flux signs: negative NEE represents a terrestrial carbon sink.
+  - Data intended to support assessment of spatial variability of fluxes and to enable map-based GIS visualisations and analyses.
+
+- Data files and structure
+  - 1) Data files 1 to 8 (Fluxes)
+    - SEG_EC1_fluxes, SEG_EC2_fluxes, SEG_EC3_fluxes, SEG_EC4_fluxes
+    - SES_EC1_fluxes, SES_EC2_fluxes, SES_EC3_fluxes, SES_EC4_fluxes
+    - Each file contains half-hourly observations with key fields (examples):
+      - Date_Time (center of half-hour), P (air pressure), mean_vCO2 (CO2 concentration), mean_vT (air temperature), mean_cRH (relative humidity), wind components and speeds (pre-rotation and post-rotation), friction_velocity, height, wind_path information, fluxes Hc and cLEc (sensible and latent heat flux after frequency response correction), and Fcc (Net Ecosystem Exchange after correction).
+    - Notes on data processing:
+      - Raw EC data pre-processed with EdiRe v1.5.0.32 (spike detection, coordinate rotation, frequency response correction, cross-correlation, WPL correction).
+      - Gap-filling performed with code from GitHub; season-specific u* filtering using REddyProc v1.2.
+      - Time lags for closed-path sensors derived by covariance with RH and CO2 sensors; lags set to 0, 5.5, and 7 seconds for H, LE, and NEE respectively; water lag constant across RH 5–90%.
+      - Spikes removed using Tukey fence method (IQR-based, with k = 30 to avoid over-filtering).
+  - 2) Data files 9 to 18 (Footprints)
+    - SEG_EC1_footprint_80, SEG_EC2_footprint_80, SEG_EC3_footprint_80, SEG_EC4_footprint_80
+    - SEG_EC0_footprint_80, SES_EC1_footprint_80, SES_EC2_footprint_80, SES_EC3_footprint_80, SES_EC4_footprint_80, SES_EC0_footprint_80
+    - Content: 80% flux footprint coordinates for ten towers (the eight REC towers plus two AmeriFlux towers US-Seg and US-Ses).
+    - Structure: two columns
+      - x (m) – Easting in UTM 13N based on NAD83
+      - y (m) – Northing in UTM 13N based on NAD83
+  - 3) Data files 19 to 20 (Land cover)
+    - SEG_Extract_land_cover, SES_Extract_land_cover
+    - Land cover maps within a 440 m radius centered on US-SEG and US-SES
+    - Categories (1 m2 cells):
+      - 0 = barren
+      - 1 = shrubland
+      - 2 = herbaceous
+  - 4) References
+    - Key methodological and software references for eddy covariance measurements and data processing (e.g., Eddy Covariance fundamentals, EdiRe software, gap-filling strategies, footprint parameterisations, NEE partitioning, Tukey-based outlier detection, and density corrections).
+
+- Spatial and temporal coverage
+  - Location: Sevilleta Refuge, New Mexico, USA.
+  - Spatial products:
+    - Footprint maps for each tower in NAD83 UTM 13N coordinates (80% footprint).
+    - Land cover rasters at 1 m2 resolution within 440 m of US-SEG and US-SES towers.
+  - Temporal products:
+    - Half-hourly flux measurements for 2018-11-01 to 2019-11-01.
+    - Time stamps correspond to the center of each half-hour interval.
+
+- Data quality, standards, and interoperability notes
+  - Data quality: pre-processed fluxes with standard corrections; gap-filled data; u* filtering; outlier removal using robust Tukey-based approach.
+  - Units and conventions:
+    - Flux signs: standard eddy covariance conventions; NEE sign as terrestrial carbon sink when negative.
+    - Multiple sensor data streams (CO2, humidity, wind) harmonised for flux computation.
+  - Coordinate system and georeferencing:
+    - Footprints provided in NAD83/Utm13N; land cover and footprints aligned for integration in GIS environments.
+  - Data integration considerations for GIS:
+    - The eight flux files can be joined by tower and time to create spatially explicit flux maps or to cross-reference footprints with land cover.
+    - Land cover rasters enable contextual analyses of fluxes relative to land-cover types.
+  - Accessibility note:
+    - Data processing references include an online REddyProc web resource for gap-filling workflows.
+
+- Practical notes for GIS specialists
+  - Use footprint coordinates to attribute flux observations to spatial footprints and assess footprint overlap with land-cover types.
+  - Combine flux data (H, LE, NEE) with land-cover maps to investigate land-cover–flux relationships at the tower scale.
+  - Ensure coordinate reference alignment (UTM 13N NAD83) when integrating footprints with other GIS layers.
+  - Be aware of time lags and quality-control steps when aggregating fluxes or comparing across towers.
+  - Consider the signs of fluxes and the convention for NEE when interpreting net flux patterns (negative NEE = carbon sink).

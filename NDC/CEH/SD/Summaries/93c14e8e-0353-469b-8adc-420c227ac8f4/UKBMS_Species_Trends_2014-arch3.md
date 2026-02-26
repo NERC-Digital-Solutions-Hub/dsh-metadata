@@ -1,0 +1,35 @@
+# Experimental design/sampling regime
+
+- UK Butterfly Monitoring Scheme (UKBMS) collects data from over 2,000 sites annually across the UK to monitor butterfly abundance and inform policy and conservation decisions.
+- Sampling design and effort
+  - All-species transects: fixed-route 2–4 km walks, recorded weekly from April to September in suitable weather; 5-meter recording band along the transect; routes fixed to enable year-on-year comparisons; typically 26 counts per year.
+  - Weather and activity constraints: data collection occurs 10:45–15:45 and only under conditions conducive to butterfly activity (e.g., dry, Beaufort wind ≤5, temperature thresholds with sunshine or overcast conditions).
+  - Single-species transects: follow the all-species approach but record only during a subset of weeks for focal species.
+  - Timed counts: quantify abundance of a focal species over a fixed time and area; conducted under similar daily timing and weather rules.
+  - Egg/larval web counts: count eggs or larval webs in suitable habitats for selected species.
+  - Wider Countryside Butterfly Survey (WCBS): introduced in 2009 as a reduced-effort sampling method for wider countryside habitats; uses two parallel 1-km transects within randomly selected 1-km squares, with 2–4 visits per year (minimum two visits in July/August; spring visits encouraged).
+- Data collection and management
+  - Field data are recorded on standard forms and entered online via the UKBMS data site or Transect Walker software.
+  - Local responsibility lies with transect coordinators who gather data for their region; online data and Transect Walker files are uploaded to a central Oracle database.
+  - Quality control includes automatic checks in Transect Walker to flag anomalies, regional coordinator reviews, and additional automated/manual checks for out-of-range distributions, atyp flight periods, first-time site records, and unusual values.
+- Analytical methods for national indices and trends
+  - For wider countryside species (mobile species across habitats): a two-stage modelling approach using all survey data.
+    - Stage 1: Generalised additive model estimates the annual seasonal flight pattern for each species.
+    - Stage 2: Seasonal values are used as an offset in a full-data model to estimate annual abundance changes, producing annual indices and trends (referencing Dennis et al. 2013).
+  - For habitat specialists and regular migrants (less WCBS data, more reduced-effort data): a GAM-based imputation approach to derive a site index, then a linear regression on collated indices to produce national trends.
+    - Collated Index (CI) is updated annually as new data arrive; trends are calculated over the full series (1976–2013), the last 20 years (1993–2013), and the last 10 years (2003–2013).
+- Nature and interpretation of indices
+  - Site indices: relative measures of population size, not absolute counts, proportional to true abundance and influenced by detectability.
+  - Collated Indices: log10-transformed to standardize scales across species; a consistent reference (mean across the series set to a standard value) enables temporal comparison.
+  - Trends: reported as slopes (change per year) with accompanying statistics and qualitative trend descriptions (rapid decline, rapid increase, or stable) based on slope magnitude and p-values.
+- Data coverage and limitations
+  - Not all species have a complete or uniform time series; some species have shorter trends due to insufficient years of data, and earlier years may lack collated indices for certain species.
+  - The methodology explicitly accounts for year effects and site effects, providing robust trends despite incomplete annual sampling across all sites.
+- Data format and schema
+  - Data are stored as CSV files with fields including species name (SCI_NAME, COMMON_NAME), years analyzed (NYEARS), and multiple statistical measures for each timespan:
+    - F_LIN_B, F_LIN_SE, F_LIN_P, F_TRENDDETAIL, F_FULL_R for overall trends
+    - T20_LIN_B, T20_LIN_SE, T20_LIN_P, T20_TRENDDETAIL, T20_20_R for 20-year trends
+    - T10_LIN_B, T10_LIN_SE, T10_LIN_P, T10_TRENDDETAIL, T10_10_R for 10-year trends
+- Key outputs and purpose
+  - Provides national indices and species-specific trends to inform conservation policy and monitor changes in butterfly populations over time.
+  - Indices and trends are updated as new data are received, with transparent documentation of methods and data quality controls.

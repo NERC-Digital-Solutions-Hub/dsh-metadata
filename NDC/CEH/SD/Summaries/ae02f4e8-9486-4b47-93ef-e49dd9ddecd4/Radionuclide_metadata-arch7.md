@@ -1,0 +1,95 @@
+# A 'Reference Site' in the Chernobyl Exclusion Zone: radionuclide and stable element data, and estimated dose rates
+
+- Overview
+  - Metadata for two CSV datasets describing radionuclide activity concentrations and site dose rates from the Chernobyl Exclusion Zone reference site study.
+  - Source: Beresford et al.; NERC Environmental Information Data Centre.
+  - Datasets focus on radionuclide measurements in biota and soil, plus ambient dose-rate estimates; include spatial (latitude/longitude) and temporal (sampling date) information along with sample identifiers and taxonomic details.
+
+- Datasets included
+  - Biota_radionuclide_data.csv
+  - Soil_radionuclide_data.csv
+  - Both datasets provide sample identifiers, location coordinates (WGS84), and measurement values with associated units and, for soil data, uncertainty information.
+
+- Key fields and definitions (biota)
+  - Sample identifiers and taxonomy
+    - Chornobyl_Center_ID: unique sample identifier
+    - Biota_latin_name / Biota_Common_name: scientific and common names
+  - Sampling details
+    - Date_biota_sampled: date of biota collection (dd/mm/yyyy)
+    - Latitude / Longitude: decimal degrees (WGS84)
+    - Trap: sampling line or trap context (where applicable)
+    - Age_of_biota: SAD, Juv, or adult
+    - Sex_of_biota: recorded sex, where available
+  - Biometric data
+    - Fresh_mass_of_biota_in_grams: fresh mass
+    - Individuals_in_sample: count when >1
+  - Radionuclide activity concentrations (biota, fresh mass)
+    - Cs-137_Bq_per_kg_FM
+    - Sr-90_Bq_per_kg_FM
+    - Am-241_Bq_per_kg_FM
+    - Pu239_240_Bq_per_kg_FM
+    - Pu-238_Bq_per_kg_FM
+  - Concentration ratios (CRs)
+    - Cs-137_CR, Sr-90_CR, Am-241_CR, Pu_CR
+  - Notes: unit descriptions and data availability indicated; many fields may be not available or not applicable in some records.
+
+- Key fields and definitions (soil)
+  - Sample identifiers
+    - N: laboratory sample identifier
+    - GP_Point: sampling site descriptor (inner area or Pine Tree), bulking context
+  - Spatial and temporal data
+    - Latitude_WGS84 / Longitude_WGS84: decimal coordinates
+    - Date_Soil_sampled: date of soil sampling
+  - Dose rate measurements (ambient)
+    - Dose_rate_microSv_per_hour_measurement_1 to 10: ambient dose rate at site (µSv/h)
+  - Dry mass and per-sample measurements
+    - Dry_mass_of_soil_in_grams: dry soil mass analysed
+  - Radionuclide activity concentrations (soil)
+    - Cs-137_Soil_Bq_per_sample_DM: activity per sample (dry mass)
+    - Am-241_Soil_Bq_per_sample_DM
+    - Sr-90_Soil_Bq_per_sample_DM
+    - Pu-239_240_Soil_Bq_per_sample_DM
+    - Pu-238_Soil_Bq_per_sample_DM
+  - Per kg dry mass values
+    - Cs-137_Soil_Bq_kg_DM
+    - Sr-90_Soil_Bq_kg_DM
+    - Am-241_Soil_Bq_kg_DM
+    - Pu-239_240_Soil_Bq_kg_DM
+    - Pu-238_Soil_Bq_kg_DM
+  - Uncertainty information
+    - error_Cs-137_Bq_per_Sample_DM_P (e.g., 0.95 for 95% CI)
+    - Similar error fields for Am-241, Sr-90, Pu-239/240, Pu-238
+  - Notes on interpretation
+    - Some fields include guidance on confidence intervals and units; values may be marked as not available in places.
+
+- Measurements, units, and data quality
+  - Units used
+    - Bq per kg fresh mass (FM) for biota; Bq per sample (dry mass) and Bq per kg dry mass (DM) for soil
+    - Dose rates in microsieverts per hour (µSv/h)
+  - Uncertainty
+    - 95% confidence interval fields provided for several soil radionuclide measurements
+  - Data completeness
+    - Many fields show optional or unavailable values; users should account for missing data in analyses
+  - Data provenance and structure
+    - Field explanations and units are documented to support correct interpretation and metadata-driven GIS integration
+
+- GIS and data usage notes
+  - Spatial context
+    - Coordinates (latitude/longitude) enable mapping of radionuclide distributions and dose-rate surfaces
+    - GP_Point and sampling area designations help relate samples to specific site features (e.g., inner areas or pine tree zones)
+  - Integration opportunities
+    - Combine with other geospatial layers (land cover, exposure pathways, ecological features) to assess spatial patterns of contamination and exposure
+  - Visualization ideas for GIS specialists
+    - Create choropleth or dot-density maps of radionuclide concentrations by species (biota) and by soil
+    - Map ambient dose-rate measurements across sampling sites
+    - Generate CR (bioaccumulation) ratio maps for Cs-137, Sr-90, Am-241, Pu
+    - Link sample metadata (species, age, mass) to population-level exposure assessments
+
+- Usage considerations
+  - Data are derived from a specific reference-site study in the Chernobyl Exclusion Zone; ensure appropriate caveats for temporal and spatial scope
+  - Be mindful of incomplete fields and presence of not-available entries; implement robust handling for missing values in GIS workflows
+  - Properly interpret uncertainty fields (P values) when presenting statistical bounds or when performing spatial analyses that incorporate measurement error
+
+- Citation and access
+  - Data originate from the published work and metadata in the NERC Environmental Information Data Centre
+  - Use the provided citation to acknowledge source material in GIS-derived products and analyses

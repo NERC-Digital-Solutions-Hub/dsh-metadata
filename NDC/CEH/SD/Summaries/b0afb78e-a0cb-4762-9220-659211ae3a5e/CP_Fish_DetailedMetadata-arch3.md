@@ -1,0 +1,106 @@
+# Data output supporting information document
+
+- A ChemPop WP1 data product describing fish abundance, habitat, water quality, flow and climate in English rivers (1975–2017) at 1180 sites, with associated covariates and regional classifications. The dataset is intended as an open data product to support environmental data analysis and modelling, linked through a site identifier system and structured into regional files.
+
+- Purpose and scope
+  - Timeframe: 1975–2017
+  - Geography: English rivers
+  - Primary aim: provide time-series fish abundances and covariates to examine chemical and environmental influences on wildlife populations and support policy scrutiny, monitoring decisions, and future forecasting.
+  - Output structure: linked tables and region-specific files, enabling integration of fish data with habitat, hydrology, land use, climate and water quality covariates.
+
+- Key data components and covariates
+  - Fish abundance data (NFPD)
+    - 1180 fish sites; selection: sites with ≥10 annual surveys (1975–2017)
+    - Species-specific densities (counts converted to densities per unit area)
+    - Covariates linked to sites: habitat quality (RHS, HABSCORE), land use, wastewater (EDF), altitude
+    - Processing workflow includes data cleaning, density conversion, handling of qualitative/semi-quantitative data, and species code harmonisation (ChemPop vs EA codes)
+  - River Habitat Survey (RHS) and HABSCORE
+    - RHS used to derive Habitat Modification Score (HMS) and Habitat Quality Assessment (HQA)
+    - Matching RHS sites to fish sites within 5 km along the river network (Arc GIS with IRN extension)
+    - HABSCORE data added where available; limited by data access barriers and site coverage
+  - Land cover
+    - Upstream land cover upstream of fish sites derived from Land Cover Map 2015
+    - Raster processing (50 m cells) and grouping into four macro-categories: Woodlands, Arable, Seminatural, Urban
+    - Tools: ArcGIS, GRASS, Python (pandas, geopandas, rasterio), DataLab workflows
+  - Water temperature
+    - Temperature influence via cumulative degree days ≥ 12°C (prior-year) for each survey
+    - Data sources: water temperature gauging stations, CHESS-MET air temperature
+    - Baseflow Index (BFI) stratification; separate GAMMs (seven BFI ranges) used to predict site-specific water temperature
+    - Degree days calculated from predicted temperatures; modelling performed in R (mgcv) with GAMMs and ARMA structures
+  - Hydrology (river flow)
+    - NRFA daily flow data matched to fish sites via river network network-snapping (Arc GIS, Python)
+    - Summary statistics for 3, 6, and 12 months prior to surveys; distance-based matching, with manual checks
+  - Effluent Dilution Factor (EDF)
+    - EDF estimates wastewater contribution using LF2000-WQX model (90% of dry weather flow in catchment)
+    - Linking EDF to fish sites via 1:50,000 river network; mean and percentile summaries (EDF_Mn, EDF_SD, EDF_Q90, EDF_Q95)
+    - Data gaps flagged where matching was ambiguous
+  - Water Quality Determinand (chemical concentrations)
+    - 41 determinands (1960–2017) from EA Water Quality Data Archive
+    - Nearest three chemical determinand sites considered; site selection criteria include sampling frequency, time overlap with fish surveys, and river network proximity
+    - Data extraction via Python; handling of below-LoQ values and maximum thresholds for certain determinands; licensing-restricted sites removed
+  - Altitude
+    - Elevation derived from UKCEH Integrated Hydrological Digital Terrain Model (IHDTM)
+    - Extraction using ArcGIS Extract Multi Values to Points
+  - Climatic variables
+    - Gulf Stream Index (GSI) and North Atlantic Oscillation Index (NAOI)
+    - GSI: annual mean values; NAOI: annual values (1975–2017)
+    - Data sources: Plymouth Marine Laboratory (GSI) and NCAR Climate Data guides (NAOI)
+
+- Data tables and file structure (region-specific)
+  - CP_Fish_DataTable_region
+  - CP_Fish_SiteTable_region
+  - CP_Fish_SpeciesTable.csv
+  - CP_Fish_HydrologyStats_Region.csv
+  - Region_FISHWIMSStats_DET.csv (chemical determinands)
+  - ENG_Fish_LC2015.csv (Land Cover Map 2015)
+  - 20200622_NFPD_Fish_England_PrioritySitesOnly_SiteTablewithBFI (BFI integration)
+  - GSI [ Gulf Stream Data.pdf]
+  - NAOI [ NAOI_station_annual.txt]
+  - EDF [ CP_0101_FISH_England_keys_v1_figures.csv ]
+  - Cumulative degree days (Deg_days) [ NFPD_CumulativeDegreeDays.csv ]
+  - Altitude data: 20201110_NFPD_Fish_ENG_Altitude
+  - RHS scores: RHS scores_V2.xls
+  - Land Cover upstream metrics: ENG_Fish_LC2015.csv
+  - Water quality determinand site data: WIMS and related outputs
+  - Hydrology and model summary statistics: CP_Fish_HydrologyStats_Region.csv
+
+- Processing tools, code and workflows (highlights)
+  - Data processing platforms and languages
+    - ArcGIS (various versions) for site matching (RHS, NRFA, land cover, river network snapping)
+    - Python 3 (pandas, geopandas, numpy, rasterio, shapely, netCDF4, xarray) for data extraction, LOQ handling, determinand extraction, EDF linking, and summary statistics
+    - R (R Studio) for GAMM water-temperature modelling, degree days calculations, model selection, and temperature predictions
+  - Notable workflow steps (selected)
+    - Fish data: filter sites with ≥10 surveys; convert counts to densities; align with covariates; harmonise species codes; retain surveys with data and sampling effort where appropriate
+    - RHS/HMS/HQA matching: GIS-based nearest-neighbour matching within 5 km; extract HMS/HQA values for matched RHS sites
+    - Land cover: rasterise LC maps, calculate upstream percentages and areas, group into macro-categories; validate coverage
+    - Water temperature: compile long-term temperature data; extract CHESS-MET air temperature; compute 12-month degree days; build GAMMs by 0.1-BFI increments; select best-performing model; predict site-specific temperatures
+    - Hydrology: map NRFA gauges to fish sites; compute 3, 6, 12-month flow summaries; perform manual checks to resolve mismatches
+    - EDF: apply LF2000-WQX modelling framework; link EDF to fish sites via river network reach; derive EDF_Mn, EDF_SD, EDF_Q90, EDF_Q95
+    - Water quality determinands: identify nearest three determinand sites; apply thresholds (sampling frequency, temporal overlap, proximity, intervening WWTWs); extract determinand data; handle LOQ and maximum thresholds; compute 12-month summary statistics; exclude licensing-restricted sites
+    - Altitude: extract IHDTM-based altitude for each fish site
+    - Climatic covariates: download and extract annual GSI/NAOI values; align with fish survey years
+  - Data notes and caveats
+    - Some differences may exist between Fish_Easting/Northing in site vs data tables; not all RHS/HQA/HMS matches are complete due to data availability
+    - HABSCORE data access is restricted and may not cover all relevant sites
+    - Some WQ determinand sites licensed restrictions limit inclusion
+    - Only sites with robust coverage and appropriate data are retained for modelling and analyses
+
+- Data quality, gaps and governance considerations
+  - Data gaps: incomplete RHS/HQA coverage; missing HABSCORE data at many sites
+  - Metadata and data standardisation: efforts described to ensure data provenance and transform raw counts to densities; metadata gaps identified as potential barriers
+  - Data sharing: dataset described as open data product, but certain data sources have access/licensing constraints; underlying data sharing processes and governance are referenced
+  - Data integration risk: multiple data sources with differing temporal/spatial resolutions; alignment relies on nearest-neighbour matching along river networks and ecologically meaningful timeframes
+
+- Modelling and outputs (summary)
+  - Temperature modelling: GAMMs used to predict site temperatures with stratification by BFI; degree days derived for growth/recruitment indicators
+  - No models were created for several components (e.g., some hydrology, EDF, and many covariates are model-free summaries)
+  - Outputs include site-level covariate values (habitat, land cover, temperature, hydrology, EDF, water quality determinants, altitude) and derived metrics (e.g., cumulative degree days, EDF percentiles)
+
+- Accessibility and references
+  - Data sources include EA NFPD, EA Water Quality Archive, UKCEH IHDTM, LCM 2015, NRFA, CHESS-MET, LF2000-WQX, GSI, NAOI
+  - Public data portals cited for data access and supporting documents (e.g., data.gov.uk, environment.data.gov.uk, CEH, PML)
+
+- Summary takeaway for monitoring framework authors
+  - The data output provides a comprehensive, multi-covariate time-series framework linking fish abundance to habitat, land use, water quality, hydrology, temperature, and climate indicators across English rivers (1975–2017)
+  - It integrates diverse data sources with explicit processing workflows, data transformations, and region-specific file structures, enabling scrutiny of policy questions and informing future monitoring decisions
+  - While offering rich covariate coverage, it also highlights data access barriers, metadata needs, and the importance of standardized, openly accessible data governance to improve reproducibility and reuse in monitoring frameworks

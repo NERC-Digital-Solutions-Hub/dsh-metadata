@@ -1,0 +1,54 @@
+# Summary of the NERC Soil Biodiversity Thematic Programme at Sourhope
+
+- A four-year field study at Sourhope (Macaulay Land Use Research Institute, Scottish Borders) monitoring above-ground biomass (productivity), plant species composition, and diversity within a controlled, fenced grassland experiment.
+- Primary management drivers influencing plant communities:
+  - Mowing frequency and sward height (about 6 cm) after fencing (no grazing since 1998).
+  - Fertilisation with nitrogen and/or lime, altering soil pH and nutrient status.
+  - Insecticide treatments (Dursban 4) to explore herbivore-mediated effects on plant diversity.
+- Study design and spatial layout:
+  - Rigg Foot Experimental Site: 5 replicate blocks along a downslope gradient.
+  - Each block contains 6 main plots, subdivided into 10 sub-plots; 0.5 m x 0.5 m cells used for data collection.
+  - Treatments allocated randomly across plots and sub-plots; treatments include Control 1, Control 2, Nitrogen, Lime, Nitrogen & Lime, Insecticide.
+- Data collection and timelines:
+  - On-site Automatic Weather Station providing regular climatic data (since 1999).
+  - Above-ground biomass estimated yearly via 0.5 m2 samples collected before each mowing (1999–2002).
+  - Baseline and repeated botanical surveys using 0.5 m2 points, with a 100-hole grid point frame and pin-through method (2000–2002; bryophyte identification expanded in 2002).
+  - Soil sampling to monitor pH (5 cm depth) and soil moisture (theta probe) in 2002; additional measurements (e.g., bryophyte taxonomy) updated over years.
+  - Research groups across phases I and II conducted extensive fieldwork, including CO2 pulse experiments and trace-gas measurements.
+- Key 2002 findings:
+  - Biomass productivity: overall increase across years, but 2002 saw declines in several treatments relative to 2001; nitrogen and lime together remained the most productive, while Control 2 plots were least productive.
+  - Spatial pattern: productivity declined with upslope position; strongest productivity gains in fertile (N and/or Lime) plots.
+  - Soil chemistry and moisture: lime raised soil pH toward ~7.0 in the upper soil; nitrogen had smaller pH impact; higher pH was associated with lower soil moisture and varied relationship to productivity depending on treatment.
+  - Plant community composition:
+    - Improved pastures species (Festuca rubra, Poa pratensis) increased in fertilised plots; unimproved plots remained dominated by Festuca ovina and Agrostis spp., with lower relative abundances of improved pasture species.
+    - Agrostis capillaris and Agrostis vinealis declined substantially (~40%) since 2000 across all treatments, suggesting a site-level mowing effect rather than a treatment effect.
+  - Bryophytes: significant expansion of bryophytes, especially Rhytidiadelphus squarrosus, across the site; moss/dominance patterns linked to sward height and disturbance regime.
+  - Diversity and functional groups:
+    - Shannon diversity Index: declines in nitrogen+lime plots (relative to baseline), increases in several other treatments, with notable rise in diversity in insecticide plots.
+    - Point Analysis functional groups (stress-tolerators S, competitive-stress-ruderal CSR/SR-C-S-R): by 2002, clear treatment effects emerged; N+L plots favored C-S-R and SR/C-S-R, while unimproved plots favored stress-tolerators.
+- Notable interactions and interpretations:
+  - Mowing likely reduces disturbance and shifts community toward stress-tolerant and moss-rich communities, while fertilisation promotes competitive, fast-growing species and higher biomass production under higher pH conditions.
+  - High lime inputs lead to near-neutral to slightly alkaline soil, which may support higher productivity but can also reduce moisture and alter plant functional dynamics.
+  - Insecticide effects on diversity may reflect indirect changes in palatable species and herbivore pressure; results align with some prior grassland studies, but causality remains cautious without additional herbivory data.
+  - Trampling in the C2 plots (intense sampling activity) appears to have reduced productivity locally, illustrating how management tempo can influence short-term outcomes.
+- Implications for GIS and data-product development:
+  - Spatial mapping opportunities:
+    - Plot- and block-level biomass productivity mapped against slope position, treatment, and soil pH/moisture gradients.
+    - Species distribution maps showing relative abundance of key vascular plants (e.g., Festuca spp., Agrostis spp., Poa pratensis) and bryophytes (e.g., Rhytidiadelphus squarrosus) by treatment and year.
+    - Mosses and liverworts distribution expansion as a function of mowing and disturbance regime.
+  - Data layers and integration:
+    - 5-block downslope gradient with 6 main plots per block and 0.5 m2 sampling cells; link biomass, species hits, and environmental variables (pH, moisture) to fine-scale grid cells.
+    - Time-series layers for biomass (1999–2002), soil pH, soil moisture, and Shannon diversity per plot/cell.
+    - Functional-group composition (S, CSR, SR/CSR) per treatment over years to visualize shifts in ecological strategies.
+  - Potential map products:
+    - Annual and cumulative biomass per plot and per treatment.
+    - Species/hits density rasters by year, with emphasis on improved vs unimproved pasture indicators.
+    - Bryophyte density and diversity maps across treatments and years.
+    - pH-moisture- productivity relationships, with treatment-specific trend overlays.
+- References and data availability:
+  - Extensive appendices with site maps, treatment summaries, species lists, automatic weather data, biomass datasets, and point-analysis results for 2000–2002.
+  - Data useful for cross-site comparisons of mowing, fertilisation, and insecticide effects on plant diversity and functional composition.
+- Overall takeaway for GIS-focused users:
+  - The Sourhope site provides a rich, spatially-explicit dataset linking management practices, soil chemistry, microhabitat moisture, and plant community responses.
+  - It supports map-based exploration of how mowing, nutrient amendments, and pest control influence productivity, species composition, bryophyte expansion, and functional group structure over time.
+  - The data enable visualization of interactions between slope-position, soil pH, moisture, and biological responses, enabling targeted GIS-driven analyses and data products for policy, research, or outreach audiences.

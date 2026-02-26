@@ -1,0 +1,33 @@
+# DATA HEADER INFORMATION for Pivot_and_Stump_data_per_direct_measured_tree_voronoi_method.csv
+
+- Purpose: Describes the dataset that records measurements on stump, pivot (taproot), and surface roots after tree felling, including how weights were collected and stored for downstream analysis.
+- Context and provenance:
+  - Related manual: Manual_2_Belowground_Root_Survey (page 9).
+  - DOI and program: DOI provided; ESPA programme; Project P4GES.
+  - Acknowledgement: Laboratoire des Radio Isotopes, Université d'Antananarivo must be acknowledged for derived products.
+- Data content overview:
+  - Targeted measurements: fresh and dry weights of pivot (taproot), stump, and coarse roots above soil (CR0); includes both total weights and sample weights.
+  - Location and identification fields: Zone of Interest (ZOI) with categorical type, Location (text), Site_Id (site code), Local_name (vernacular tree name), and Code_target_tree (linking site, species, and diameter class).
+  - Data categorization and units:
+    - ZOI: Information (Zone of Interest), Variable Type (Categorical), Unit (not specified).
+    - Location-related fields: Text strings with no unit.
+    - Weight fields: Numeric, all weights in grammes (g).
+- Key variables described:
+  - Weight_Freshtotal_Pivot, Weight_Freshsample_Pivot, Weight_Drysample_Pivot
+  - Weight_Freshtotal_Stump, Weight_Freshsample_Stump, Weight_Drysample_Stump
+  - Weight_Freshtotal_CR0, Weight_Freshsample_CR0, Weight_Drysample_CR0
+  - Location and identification fields: Location, Site_Id, Local_name, Code_target_tree
+  - Code_target_tree links to site, species, and diameter class
+- Measurements and methods:
+  - Pivot (taproot) and stump weights recorded as total fresh weight and separated fresh and dry sample weights.
+  - CR0 (coarse roots above soil) weights recorded similarly.
+  - Stump and pivot measurements reflect post-helling processing (stump cut, taproot excavated and weighed).
+- Data usage considerations for analysts (Data Support perspective):
+  - Enables cross-site comparisons of belowground biomass components by root type.
+  - Supports creation of dashboards or pivot tables to explore relationships between location, site, species, and root biomass.
+  - Requires careful handling of varying data formats and potential patchiness when integrating with other datasets.
+  - Properly cite the DOI and acknowledge the contributing laboratory when using derived products.
+- Practical notes for end users:
+  - Ensure consistent unit interpretation (weights in grams).
+  - Use Code_target_tree to join with species and site metadata.
+  - Leverage ZOI, Location, Site_Id, and Local_name to contextualize root measurements by sampling point.

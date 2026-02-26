@@ -1,0 +1,35 @@
+# Data collection
+
+- What it is: Terrestrial LiDAR (laser scanning) point cloud data from Bramcote Hills Park (Nottinghamshire, UK), consisting of two overlapping scans covering ~18,000 m² of woodland, including lianas (Hendra helix) and non-infested trees. Collected to study ecological connections facilitated by lianas by linking forest structure with eDNA metabarcoding of soil and leaf litter.
+- Acquisition and scope:
+  - Date: 13 January 2023
+  - Instrument: Leica RTC360
+  - Coverage: approximately 52.936–52.938 N and -1.251–-1.249 E
+  - Combined dataset contains ~200 million points; point density ~11,000 points per m²
+- Data products and workflow:
+  - Two scans converted from proprietary .scan to LAS (.las) using Leica Cyclone; missing header info added with LAStools
+  - File names: wooded_scan_location1.las and wooded_scan_location2.las
+  - Individual scan statistics: scan1 ≈ 94.9 million points; scan2 ≈ 100.7 million points
+- Data format and content (LAS format):
+  - Per-point attributes:
+    - X, Y, Z: coordinates (easting, northing, height) in metres
+    - intensity: 0–65534 (unitless)
+    - return_number: order of the return for a laser pulse
+    - number_of_returns: total returns for the pulse
+    - R, G, B: color values (0–65280)
+- Coordinate system and units:
+  - Spatial reference: WGS84 UTM Zone 30N
+  - Distances (X, Y) and heights (Z) in metres
+- Quality and reliability:
+  - Horizontal/vertical accuracy: 5.3 mm at 40 m distance (sensor specification)
+  - Overall data quality supported by high point density and dual-scan coverage
+- Data structure summary:
+  - LAS format with key fields: X, Y, Z, intensity, return_number, number_of_returns, R, G, B
+- Relevance for data use and analysis:
+  - Enables high-resolution analysis of forest structure (e.g., canopy and understory geometry)
+  - Facilitates integration with ecological data (e.g., eDNA metabarcoding) to explore links between physical structure and biodiversity or litter/soil processes
+  - Supports development of data products for end users (e.g., dashboards, self-serve analyses) and potential visualization or export of structural metrics
+- Practical considerations for data support:
+  - Ensure consistent coordinate reference when combining with other datasets
+  - Maintain metadata on processing steps (conversion from .scan to LAS, header completion)
+  - Be mindful of integrating data from two scans to avoid duplicate features or misalignment when creating unified products

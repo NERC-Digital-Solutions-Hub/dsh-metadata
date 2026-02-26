@@ -1,0 +1,76 @@
+# Headwaters (Countryside Survey 2007)
+
+- Purpose and scope
+  - UK national survey ( Countryside Survey 2007, CS2007 ) focusing on headwater streams and integrated pond condition assessment.
+  - Aims to provide standardized, comparable data on hydromorphology, macroinvertebrates, aquatic plants (macrophytes), and water chemistry across GB.
+  - Re-surveys at 425 squares from CS2000 for headwater streams; pond surveys in randomly selected CS2007 squares containing ponds.
+
+- Data streams and data types
+  - Macroinvertebrate community data (RIVPACS) including environmental variables and sample area data.
+  - Hydromorphology data (River Habitat Survey, RHS) collected via field forms and entered into RAPID.
+  - Water chemistry data (pH, conductivity; SRP, TON, alkalinity) collected from headwater streams; filtered samples prepared on-site.
+  - Aquatic plant data (macrophytes) using MTR (Mean Trophic Rank) methodology, recorded via IRIS in the field.
+  - Pond condition survey data (including turbidity, water chemistry, environment, macrophytes, and pond management and surrounding land use).
+
+- Field data collection and standardization
+  - Headwater survey design
+    - Each headwater site comprises 500 m of watercourse for RHS and macroinvertebrate sampling; aquatic plant survey spans 100 m around the macroinvertebrate sampling point.
+    - Sampling sequence emphasizes representative habitat coverage with proportional sampling times and habitats.
+  - Sampling procedures
+    - Macroinvertebrates: three-minute kick-sweep sampling plus one-minute manual search; use 25 cm2 pond net; retain most material; careful handling of rare/important taxa; avoid spates; fix and preserve samples in formalin for lab processing.
+    - Water chemistry: on-site field measurements of conductivity and pH; filtered SRP, TON, and alkalinity samples prepared with 0.45 µm filters; standardized bottle labeling and on-site labeling.
+    - RHS data: 500 m reach centered on macroinvertebrate site; sub-components captured via spot-checks; photographs and detailed environmental data recorded; data entered in RAPID with validation.
+    - Macrophyte survey (MTR): 100 m reach walked/waded to record presence and percent cover of submerged, floating-leaved, and emergent species; grapnel used for deeper sampling; specimens collected for lab confirmation when needed; percentage cover estimated with defined classes.
+  - Data capture systems
+    - RAPID (River Habitat Survey field data entry) for RHS: tablet-based, 17 sections across 4 pages; validation checks ensure completeness and consistency before submission.
+    - IRIS for aquatic plant data: two-page data entry form with plant list, abundance categories, and accompanying physical data; on-site data validation prior to leaving site.
+    - On-site data practices include GPS-based NGRs for sampling points, square numbers, survey dates, and surveyors’ initials; all data entered with drop-down menus to minimize coding errors.
+  - Data quality and training
+    - All surveyors hold Environment Agency RHS certificates; team rotations to prevent drift; regular audits (approximately 7% of headwater sites) by CEH staff.
+    - Field survey checklist completed by both surveyors before leaving site to ensure all tasks are finished.
+  - Data governance and logistics
+    - Samples and field data transported to CEH Dorset in labeled containers with Transport Emergency Card (TREM) and strict chain-of-custody.
+    - Typical shipment: 6–8 macroinvertebrate pots per box; formaldehyde fixative prepared to preserve specimens; samples stored in CEH facilities until processing.
+    - Project management and data sharing: data exported to CEH via standardized workflows; plant specimens handled with lab confirmation or digital/photo confirmation when necessary.
+
+- Pond condition survey (CS2007)
+  - Overview and workflow
+    - Ponds identified by mappers with CS2000 pond mapping; one survey pond per square, chosen to reflect pond conditions within the square.
+    - Two surveyors work together to minimize health and safety risks in ponds; column of steps includes pond mapping, water sampling, macrophyte survey, environmental survey, and data submission.
+  - Data collection and fields
+    - Pond mapping recording sheet collected; outer boundary defined by winter water level; boundary sketch and scale diagram created; pond area estimated.
+    - Water quality: turbidity estimated; pH and conductivity measured; filtered SRP/TON/ALK samples collected; 50 ml labeled bottles prepared and sent with sample information sheets.
+    - Environment and macrophyte surveys: environmental attributes documented; macrophyte survey covers all wetland plants within the pond boundary; species identified to the extent possible; specimens submitted for lab confirmation when needed.
+    - Macrophyte survey methodology
+      - Survey 100 m of pond perimeter; record submerged, floating-leaved, and emergent species with abundance categories (dominant, abundant, frequent, occasional, rare).
+      - Use of grapnel to sample submerged macrophytes, with careful handling to minimize disturbance; detached plant material noted; rare species require confirmation via lab or expert.
+      - Identification references and lab sample submission guidelines provided; careful handling of Ranunculus and similar taxa due to misidentification risk.
+  - Data capture and formats
+    - CS2007 Pond Condition Survey Recording Sheets include water quality, environmental data, pond mapping, and macrophyte survey sections.
+    - Macrophyte data recorded with presence/absence, abundance, and total coverage of submerged, floating-leaved, and emergent species; notes on overhanging trees for shade assessment.
+    - Environmental data sheets (site-specific) record land use around the pond perimeter, inflows/outflows, turbidity, depths, substrate composition, and pollution indicators.
+  - Data handling and submission
+    - Plant and invertebrate specimens sent to CEH Dorset for confirmation or processing; TREM cards accompany shipments; lab confirmations linked to the appropriate CS square/pond code.
+    - Final data packages include field sheets stapled together, photos, and plant/animal specimens; monthly dispatch to Pond Conservation as appropriate.
+
+- Data integration and governance implications for data leaders
+  - End-to-end data lifecycle
+    - From field collection (macroinvertebrates, RHS, macrophytes, pond attributes) to digital data capture (RAPID, IRIS) and centralized processing at CEH Dorset.
+    - On-site validation reduces data cleaning overhead and improves integrity before archival.
+  - Metadata and relocatability
+    - Comprehensive spatial (NGR, square, site), temporal (date), and personnel metadata captured to enable future relocation and longitudinal analysis.
+  - Standards and interoperability
+    - Adoption of established protocols (RIVPACS, RHS 2003, MTR) with standardized data entry formats; cross-system compatibility through RAPID and IRIS data models.
+  - Quality control and risk management
+    - Formal QA processes (certificate-based staff, audits, and field checklists) to ensure data quality across large-scale, multi-site surveys.
+    - Health and safety protocols for field work in streams and ponds, with risk assessments and team-based sampling strategies.
+  - Data sharing and stewardship
+    - Clear data handling workflows for shipment, labeling, and archival; collaboration with Pond Conservation for specimen handling and long-term data curation.
+    - Documentation and user guidance for data governance, with references to Environment Agency RHS guidance and allied taxonomic references for macrophytes.
+
+- Key takeaways for Data Leaders
+  - Implement a robust, multi-stream data architecture that mirrors field workflows (macroinvertebrates, RHS, macrophytes, pond data) with integrated digital entry and validation.
+  - Enforce standardized protocols and metadata capture to ensure data comparability and reusability across years and geographies.
+  - Invest in on-site data validation and QA through structured forms, drop-down codings, and field checklists to minimize downstream data cleaning.
+  - Ensure data traceability and relocatability via precise GPS/NGS coordinates, square/pond identifiers, and comprehensive site sketches.
+  - Establish secure, auditable data and specimen handling pipelines (TREM cards, labeled containers, controlled dispatch) to support timely, accurate processing and long-term stewardship.

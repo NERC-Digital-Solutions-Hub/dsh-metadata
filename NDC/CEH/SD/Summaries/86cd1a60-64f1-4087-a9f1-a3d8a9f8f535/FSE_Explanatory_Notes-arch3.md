@@ -1,0 +1,72 @@
+# The Farm Scale Evaluations (FSE)
+
+- Purpose and scope
+  - Set up to determine whether genetically-modified herbicide-tolerant (GMHT) crops might have significant effects on farmland wildlife due to crop management.
+  - Data collected across four crops: Beet, Maize, Spring-sown oilseed rape, and Winter-sown oilseed rape.
+
+- Dataset descriptions and measurement domains
+  - Seedbank
+    - Seedbank: counts of plant species germinating from soil samples collected before planting.
+    - Seedbank Follow-up 1: repeat soil sample one year after the initial sample.
+    - Seedbank Follow-up 2: final soil sample two years after the initial sample.
+  - Vegetation in the crop
+    - First-seedling: initial vegetation survey before herbicide application.
+    - Mezzanine (Beet; Winter Rape): additional vegetation survey around herbicide timing differences.
+    - Post-herbicide: vegetation survey after herbicide applications on both conventional and GM sides.
+    - Final Counts: vegetation survey concurrent with biomass sampling just before harvest.
+    - Biomass: weeds sampled in the crop just before harvest.
+    - Seed Rain: counts of seeds produced throughout the crop’s growing season.
+    - Follow-up 1 and Follow-up 2: vegetation surveys one and two years after the trial.
+  - Field edge vegetation
+    - Margin Attributes: data from the field boundary, margin, and verge.
+    - Edge Veg Cover: percent cover of non-crop vegetation (recorded in June).
+    - Edge Veg Flower: plant flowering (April–August).
+    - Edge Veg Seed: plant seed setting (July–August).
+    - Edge Bare Ground: percent bare ground.
+    - Edge Spray Damage: vegetation damage from spraying.
+  - Invertebrates
+    - Bee and Butterfly transects: monthly counts in crop and field margins (April–August); Pollinators combines these counts.
+    - Crop Pests: counts of herbivores on the crop (early and late season).
+    - Gastropod Search: gastropods in field margins.
+    - Gastropod Trap: gastropods trapped in the crop (spring and autumn).
+    - Pitfall: counts of surface-active invertebrates (early, mid, late season).
+    - Vortis: arthropods on plants (early and late season) in the field verge and crop.
+  - Additional tables
+    - Crops drilled dates.
+    - Herbicides applied to the crops.
+    - Height/Cover of weeds and crop.
+
+- Data structure, naming conventions and properties
+  - Table naming convention
+    - Named as abbreviatedprefix_crop_(sample date)_protocol, e.g., sum_b_seedrain (Beet seedrain summary) or sum_b_early_pitfall (Beet early pitfall).
+  - Generic table properties
+    - Each row represents half-field totals (counts/biomass/mean percent cover) for a separate site.
+    - Group totals and contributing species are provided.
+    - Sites are referenced within Defra Government regions; South-eastern and Eastern England regions are aggregated.
+    - Nulls appear where no verified data were collected.
+    - Some counts are shown with decimal places (calculated using only a proportion of transects).
+  - Specific table properties
+    - All crop_pest tables have a suffix 'W+' or 'W-' indicating winged vs. wingless forms.
+  - Column headings and meanings
+    - conv_count, conv_count_FL, conv_count_GE4TL, conv_count_L4TL, conv_count_SE: conventional crop counts
+    - gm_count, gm_count_FL, gm_count_GE4TL, gm_count_L4TL, gm_count_SE: GMHT crop counts
+    - crop_cover, crop_unit, crop_height: crop cover, unit (C or GM), and height
+    - name: species or group name
+    - site_ref: site reference number (consistent across all tables)
+    - Region: Defra Government region or aggregate
+    - VEG/ARTHROPOD/GASTROPOD/BB_BRC: dataset code for vegetation, arthropods, gastropods, or bees & butterflies
+    - weed_cover_pc: percent cover of non-crop vegetation
+  - Contextual references
+    - For spring crops: The Farm Scale Evaluations of spring-sown genetically modified crops (Phil. Trans. R. Soc., 2003)
+    - For winter rape: Effects on weed and invertebrate abundance and diversity of herbicide management in GM herbicide-tolerant winter-sown oilseed rape (Proc. R. Soc. B, 2005)
+
+- Data quality, openness and governance considerations (as relevant to monitoring frameworks)
+  - Standardized protocols and explicit data schemas to enhance comparability and future use.
+  - Metadata and data provenance considerations are central to ensuring data quality and reuse, including regional aggregation and site-level references.
+  - Data sharing implications: public sharing of underlying data may pose barriers; the dataset reflects explicit structuring to facilitate clarity and potential openness.
+  - Ongoing data quality aspects include handling nulls, ensuring consistent region coding, and documenting measurement methods across crops and transects.
+
+- Relevance for policy monitoring and decision-making
+  - Demonstrates end-to-end monitoring design: multi-taxa field measurements, standardized data collection, and explicit data organization to support scrutiny of GM crop management effects on farmland wildlife.
+  - Provides a comprehensive, extensible data model (with clear naming, timing, and spatial references) suitable for evaluating policy questions and informing future decisions.
+  - Highlights the importance of data governance, metadata quality, and accessible outputs (reports, charts, dashboards) in monitoring programmes.

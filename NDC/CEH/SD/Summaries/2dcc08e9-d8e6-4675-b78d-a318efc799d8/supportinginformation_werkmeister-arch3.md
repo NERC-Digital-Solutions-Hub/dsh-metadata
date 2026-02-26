@@ -1,0 +1,81 @@
+# SUPPORTING INFORMATION Temperature and humidity data supporting use of an in situ passive heating method, and associated whole tree responses, Cerrado, Brazil, 2020
+
+- Overview
+  - Documents data collected to evaluate a novel in situ passive heating method (whole-tree heating) for assessing daytime warming responses in Cerrado trees and shrubs.
+  - Aims to support understanding of how whole individuals up to 2.5 m tall respond to ~3°C daytime warming.
+  - Collaboration between University of Leeds (UK) and Universidade do Estado de Mato Grosso (Brazil).
+
+- Experimental design and study organisms
+  - Whole-tree heating structure (WTHS) prototypes:
+    - Prototype: six-sided cube around a Davilla elliptica (2.4 m tall) to test functioning in a remote field setting.
+    - Three additional four-sided WTHSs (S1–S3) around Cerrado shrubs Erythroxylum suberosum.
+  - Heating target: daytime temperature increase of approximately 3°C inside the WTHS.
+  - Focal individuals:
+    - Davilla elliptica (prototype) for initial WTHS testing.
+    - Erythroxylum suberosum shrubs for a short-term heating experiment.
+  - Experimental design for E. suberosum:
+    - Six individuals selected; three designated as treatment (T1–T3) and three as controls (C1–C3).
+    - Measurements taken on the first morning before heating (baseline) and then across weeks 1–3 after heating commenced.
+    - Repeated measurements on each tree: days 0, 7, 14, 21 (note: one respiration measurement was removed due to wind damage).
+  - Measurement focus:
+    - Photosynthesis and dark respiration response curves across leaf temperature ranges.
+
+- Microclimate data collection
+  - Sensor setup:
+    - Temperature and relative humidity (RH) recorded every minute with DTH22 sensors inside shields; above-crown sensor inside each WTHS center; ambient readings from a nearby control individual.
+    - Ambient solar irradiance and environmental conditions monitored by a nearby WatchDog weather station.
+  - Timeframe:
+    - Prototype: 9–27 June 2020.
+    - WTHS around E. suberosum (S1–S3): 4 August–23 August 2020 (plus 24–25 August data for S3).
+  - Data handling:
+    - Data from WTHS-open periods (testing) excluded from analyses.
+  - Data outputs:
+    - Continuous microclimate data to quantify internal WTHS conditions versus ambient environment.
+
+- Photosynthesis and respiration measurements
+  - Instrumentation:
+    - Two LI-6400XT portable photosynthesis systems (one with a fluorometer chamber, one with an LED chamber).
+    - Measurements conducted on one healthy, fully expanded leaf per leaf per plant per day (two leaves per individual per day).
+  - Measurement protocol:
+    - Leaves acclimated, photosynthesis measured under 1100 µmol m−2 s−1 light; respiration measured in darkness.
+    - CO2 concentration maintained at 400 ppm; RH at 50% for all measurements.
+    - Temperature steps: 20°C to 50°C in 10 increments with full equilibration at each step.
+    - Temperature control:
+      - Photosynthesis: leaf temperature raised via active heating (water jackets) to exceed 40°C as needed.
+      - Respiration: leaves kept in darkness for at least 40 minutes prior to testing.
+  - Timing:
+    - Daily measurements conducted between 08:00–11:30 hours.
+  - Data collected:
+    - Leaf temperature, photosynthesis rate, and respiration rate across temperature range.
+
+- Data structure, content, and units
+  - WeatherStationClimateData.csv
+    - Variables: DateTime, SolarR, RH, AirTemp
+    - Timeframe: 01/06/2020 to 01/09/2020
+    - Units: DateTime (dd/mm/yyyy hh:mm), SolarR (W/m²), RH (%), AirTemp (°C)
+  - StructuresTempRH.csv
+    - Variables: DateTime, Temp_T, Temp_C, RH_T, RH_C, Structure
+    - Timeframe: 09/06/2020 to 25/08/2020
+    - Units: Temp_T and Temp_C (°C), RH_T and RH_C (%), Structure (category)
+  - PhotosynthesisMeasurements.csv
+    - Variables: Week, Treatment, Individual, LogNumber, AirTemp, LeafTemp, PhotosynthRate
+    - Measurements across leaf temperatures for treatment vs. control during the 4-week heating period
+    - Units: AirTemp (°C), LeafTemp (°C), PhotosynthRate (µmol m−2 s−1)
+  - RespirationMeasurements.csv
+    - Variables: Week, Treatment, Individual, LogNumber, AirTemp, LeafTemp, RespRate
+    - Measurements across leaf temperatures for treatment vs. control during the 4-week heating period
+    - Units: AirTemp (°C), LeafTemp (°C), RespRate (µmol m−2 s−1)
+  - Structure and naming:
+    - Structure labels include Prototype, S1, S2, S3 to distinguish different WTHS configurations and monitored individuals.
+  - Metadata and data quality:
+    - Sensor calibration performed against known steady temperatures and cross-sensor comparisons.
+    - Data screening removed anomalous readings; leaves were photographed and health-checked before/after analyses.
+
+- Quality assurance and governance
+  - Emphasis on careful data collection, calibration, and health assessment to ensure reliability of microclimate and plant physiological measurements.
+  - Data curated to support the methodology of in situ passive heating and to enable replication and re-use.
+
+- Relevance for monitoring frameworks
+  - Demonstrates a structured approach to designing in situ environmental manipulation experiments and capturing high-resolution microclimate alongside physiological responses.
+  - Provides explicit data schemas, column definitions, units, and temporal sequencing that support metadata-driven data governance, sharing, and reproducibility.
+  - Highlights practical considerations for data access, metadata completeness, and potential barriers (e.g., data sharing, metadata gaps) relevant to monitoring framework development and implementation.

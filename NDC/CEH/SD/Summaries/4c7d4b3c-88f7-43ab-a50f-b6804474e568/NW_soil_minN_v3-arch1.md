@@ -1,0 +1,25 @@
+# Details of data structure to ' NW_soil_minN.csv '
+
+- The dataset contains 9 columns and 512 rows, capturing soil NH4-N and NO3-N + NO2-N concentrations along with soil moisture contents.
+- Source and context:
+  - Data originate from a grassland fertiliser trial conducted in 2016 at North Wyke Research Station (Rothamsted Research).
+  - This document serves as a supplement to the supporting documentation for data series described in Supporting_documentation_CINAg_experiments_final_check_v2.1.pdf.
+- Data structure overview:
+  - Date: Date of sampling.
+  - N_app: Fertiliser application event indicator with values 1, 2, or 3 (1st and 2nd applications at 90 kg ha-1; 3rd application at 60 kg ha-1).
+  - Block: Blocking factor of the randomised block design (1–4).
+  - Plot: Plot identifier within the experiment (1–16).
+  - Treatment: Fertiliser type with categories AN (ammonium nitrate), U (urea), IU (inhibited urea), C (0N control).
+  - Soil_NH4_mgNkg: Ammonium concentration in soil, mg NH4-N per kg, expressed on a dry weight basis.
+  - Soil_NO3_NO2_mgNkg: Nitrate + nitrite concentration in soil, mg NO3-N per kg, expressed on a dry weight basis.
+  - moisture_dry: Soil moisture on a dry weight basis (g H2O per g dry soil).
+  - moisture_wet: Soil moisture on a wet weight basis (g H2O per g wet soil).
+- Sampling and laboratory methods:
+  - Soil sample 0–10 cm depth collected with a 25 mm diameter corer; 6–8 sub-samples per plot bulked.
+  - Extraction with 2 M KCl (50 g fresh soil to 100 ml KCl), shaken 60 minutes at 150 rpm.
+  - NH4-N measured by discrete photometric analysis.
+  - NO3-N + NO2-N measured by discrete photometric analysis.
+  - Soil moisture determined after drying at 105°C for at least 24 hours.
+- Purpose and use:
+  - Designed to support analysis of soil nitrogen dynamics under different fertiliser treatments, enabling cross-column comparisons (N species, moisture) across plots, blocks, and applications.
+  - Intended for integration with the broader CINAg experiments documentation and datasets.

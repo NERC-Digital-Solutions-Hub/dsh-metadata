@@ -1,0 +1,83 @@
+# Climoor field site in Clocaenog forest. Supporting documentation for data
+
+- Data access and citation
+  - Data available at https://doi.org/10.5285/5d90d356-5b2c-4ce0-927a-e26efacff015
+  - License: Open Government Licence; users must comply with licensing terms and cite the dataset: Reinsch, R. et al. (2022). Daily plot level (micro meteorological) data at Climoor field site in Clocaenog Forest 2016-2021. NERC EDS Environmental Information Data Centre. (Dataset). https://doi.org/10.5285/5d90d356-5b2c-4ce0-927a-e26efacff015
+
+- Data structure
+  - A single CSV file: clm_micromet_2016-2021_summaryqa.csv with 28 columns
+  - Data quality markers: "NA" for missing; "-9999" for faulty data
+  - Sample content includes:
+    - Soil temperature: TSoil5cm_PlotX_degC (plots 1–9 at 5 cm)
+    - Soil temperature: TSoil20cm_PlotX_degC (plots 1–9 at 20 cm)
+    - Soil moisture: Soil_moisture_PlotX_m3_per_m-3 (plots 1–9)
+  - Data spans daily timestamps (Date, Year-Month-Day)
+
+- Site information
+  - Location and purpose
+    - Clocaenog Forest, North East Wales; upland moorland habitat
+    - Automated climate manipulation using drought and warming treatments since 1998
+    - Power: solar and wind; designed for remote UK sites
+  - Ecosystem context
+    - Dominated by Calluna vulgaris (heather) >60% biomass; other species present (Vaccinium myrtillus, Empetrum nigrum, mosses and liverworts)
+  - Soil and vegetation
+    - Humo-ferric podzols with variable eluvial (E) and illuvial (Bh) horizons
+    - Tabled soil characteristics across horizons (N, C, C:N, base cations, etc.)
+  - Climate and site characteristics (1997–2014 data)
+    - Mean air temperature: 8.0 C
+    - Mean soil temperature in control plots: 7.5 C
+    - Mean annual rainfall: 1411 mm
+    - Total nitrogen deposition: 20–25 kg N ha-1 yr-1
+  - Additional site data
+    - Vegetation composition, litterfall (177 g m-2), and baseline chemistry
+    - Plant and bryophyte species presence; bryophytes indicated with asterisk
+
+- Climate change treatment information
+  - Treatments and replication
+    - Two treatments: drought and warming; each with three replicate plots
+    - Three control plots to mirror shading; total 9 plots
+  - Drought treatment
+    - Mechanism: retractable polyethylene roof; active May–September (1999–2011), later adjusted to April–October (since 2012)
+    - Effect: ~20% reduction in annual rainfall; up to ~80% exclusion of rainfall during drought periods
+    - Operational constraints: some small rain events missed; wind (>10 m/s) stops operation
+    - Plant-water interactions: some roof-related surface water accumulation observed (not permanently damaging)
+  - Warming treatment
+    - Mechanism: retractable aluminium mesh curtains over plots; reflects infrared radiation
+    - Rainfall interactions: rain detected by a sensor triggers retraction to minimize rainfall loss; typical annual rainfall reduction ~14%
+    - Operational details: night-time warming; sometimes rain exclusion due to sensor timing
+  - Operational challenges and updates
+    - Frame wear and failure led to 2017 replacement of frames (new frames installed atop old ones)
+    - 2016–2017 refurbishment caused longer maintenance times
+    - 2016–2021: some years with no drought operation due to refurbishments, high winds, water on roofs, or COVID-19
+  - Data and interpretation notes
+    - Table 6 provides year-by-year drought and warming operation details (dates, reductions)
+    - Growing Degree Days (GDD) calculated to compare warming impact; values provided for control and warming years
+
+- Equipment, protocols and data processing methodology
+  - Data collection infrastructure
+    - Automated Weather Station (AWS) for meteorological data
+    - Plot-level sensors for micro-meteorological data (soil/air temperature, soil moisture)
+    - Rainfall measurement: storage rain gauge (site-level) and plot-level throughfall collectors
+    - Additional data: soil respiration, trace gas fluxes, net ecosystem CO2 exchange, vegetation surveys, canopy reflectance, phenology, and chemistry
+  - Data types and frequency
+    - AWS meteorological data: daily measurements (air temp, humidity, rainfall, pressure, radiation, wind)
+    - Micro-meteorological data: daily plot-level measurements (soil/air temp, soil moisture)
+    - Rainfall: site-level storage gauge (biweekly) and plot-level throughfall (biweekly)
+    - Other measurements: periodic (monthly, seasonal, annual) depending on variable
+  - Data handling and quality control
+    - Early micro-meteorological data logged in hourly; since 2016, half-hour averages
+    - Basic visual QC in Excel; no automated meta-constraints due to contextual reasons (e.g., unusual cold weeks)
+    - Data not fully stored in the Environmental Information Data Centre (EIDC); contact project staff for additional details
+  - Data processing notes
+    - Throughfall calculations to derive treatment-specific rainfall changes; data gaps treated by excluding affected plots or infilling with average reductions when appropriate
+    - Rainfall data preferred from the robust ground-level gauge when available (less prone to logger/power issues)
+
+- Appendix and figures
+  - Site layout and quadrat mapping included (figures referenced in Appendix)
+  - Details of plot and quadrat arrangement for measurement areas
+
+- Practical implications for data users
+  - Licensing and citation requirements clearly specified
+  - Comprehensive metadata on sensors, sampling frequency, and data processing steps provided
+  - Acknowledgement of gaps due to frame refurbishment, weather extremes, and COVID-19 constraints
+  - Contact points for further data inquiries: Sabine Reinsch or Bridget Emmett (enquiries@ceh.ac.uk) for datasets not stored in EIDC

@@ -1,0 +1,21 @@
+# Countryside Survey: Ash tree distribution in areas <5ha,  2007
+
+- Purpose: Provides estimates of ash trees for Great Britain within broadleaved woodland areas smaller than 5 hectares, derived from Countryside Survey 2007 data; dataset file named CS07_ashtree_areas (data © NERC CEH).
+- Data content and structure:
+  - Columns: Gridcode (1-7) and Ha_per_km (ash hectares per km^2) across seven bands: 0-0.2, 0.2-0.4, 0.4-0.6, 0.6-0.8, 0.8-1, 1-5, >5.
+  - Resolution: 1 km.
+  - Extent: Great Britain.
+  - Coordinate system and projection: British National Grid (OSGB1936), Transverse Mercator.
+- Dataset scope and limitations:
+  - Represents ash presence in 2007 within woodlands <0.5 ha to avoid duplication with Forestry Commission data.
+  - Uses mean ash woodland area within a 1 km square by land class, then scales by land class area to generate national estimates in hectares.
+- Methodology and data provenance:
+  - Countryside Survey uses stratified random sampling of 1 km squares across GB, classified by land class and habitat type; dominant species recorded by percentage cover categories.
+  - Land classification: 1990 ITE Land Classification (32 classes); means per land class scaled by the proportion of Broadleaved Woodland in each 1 km square according to Land Cover Map 2007.
+  - Calculation approach: sum across land classes of (mean ash area per land class × land class area) to produce GB-wide estimates.
+- Related data sources:
+  - ITE Land Classification (1990)
+  - Land Cover Map 2007 (1 km raster)
+  - Countryside Survey website (outputs and metadata)
+- References and further reading:
+  - Distribution of Ash trees (Fraxinus excelsior) in Countryside Survey data (2013) and related CS technical reports and publications listed in the document.

@@ -1,0 +1,30 @@
+# Data access
+
+- Data availability: Data is accessible at https://doi.org/10.5285/0be0aed3-f205-4f1f-a65d-84f8cfd8d50f
+- Dataset originator: ECN Data Centre (data.ecn.ac.uk)
+- Dataset owners and sponsors: UK Environmental Change Network (ECN) programme, funded by a consortium of UK government departments and agencies (e.g., Defra, Natural England, Environment Agency, etc.)
+- Acknowledgement and use: ECN requests acknowledgment of data usage and one reprint of any publication citing ECN data
+- Protocol and comparability: ECN has standard operating procedures to ensure data comparability across sites; accompanying PDF explains data collection methods
+- Usage notes and methodology:
+  - Dropping counts are recorded on transects twice a year (late March and late September)
+  - Population size is estimated via an index method based on dropping counts (for deer, rabbits, grouse; direct counts of population size are not practicable)
+  - Moor House uses the same method for grouse relative abundance
+  - Use accompanying quality information when using the data
+- Data download structure:
+  - Key fields: SITECODE (site code), LCODE (location within site), SDATE (sampling date), PLOTID (transect section), FIELDNAME (variable), VALUE (measured value)
+- Supporting documentation:
+  - ECN_BU2.csv: survey information (SITECODE, LCODE, CLEARDATE, SDATE, PLOTID, SURVEY)
+  - ECN_BU3.csv: transect information (SITECODE, FROM_DATE, TO_DATE, LCODE, PLOTID, LENGTH, HABDESC)
+  - ECN_BU_qtext.csv: qualitative notes for data quality (SITECODE, LCODE, FIELDNAME, FROM_DATE, TO_DATE, DATETYPE, CONTINUING, DESCRIPTION)
+- Explanatory information: Site codes and locations (e.g., T01 Drayton, T04 Moor House - Upper Teesdale, etc., with precise coordinates)
+- Explanatory information: Variables and measurements
+  - FIELDNAME values: D (deer droppings; count), G (grouse droppings; count), R (rabbit droppings; count), S (sheep droppings; count)
+  - Q1–Q8: quality code fields (integers) indicating data quality or issues
+  - 100–999 quality codes cover various data issues; 999 indicates an unusual event
+- Additional information:
+  - Explanatory links: Further ECN site information at the CEH catalogue (URL provided in the document)
+  - Site code list with site names and coordinates for context and cross-referencing
+- Relevance for monitoring frameworks:
+  - Provides a structured, standardized data product with provenance, governance, and quality metadata
+  - Demonstrates data sharing expectations, data quality coding, and procedures to ensure comparability across sites
+  - Highlights potential data governance considerations, such as metadata completeness and the need to interpret quality codes before analysis

@@ -1,0 +1,43 @@
+# Experimental design/sampling regime
+
+- The UK Butterfly Monitoring Scheme (UKBMS) collects data from over 2,000 sites annually across the UK, primarily using fixed Pollard walk transects to estimate butterfly abundance.
+- All-species transects
+  - Fixed-route line transect at each site, recording all butterflies along a 5 m wide belt, typically 2–4 km long.
+  - Counts occur weekly from April to September (ideally 26 counts per year) under suitable weather (dry, wind < Beaufort 5, temperature thresholds).
+  - Transects are fixed to allow year-to-year comparison; divided into habitat/management sections.
+- Single-species transects
+  - Follow the same methodology as all-species transects but record only for specific focal weeks.
+- Timed counts and egg/larval web counts
+  - Timed counts: abundance of a focal species over a set time in a defined area, under weather constraints.
+  - Egg/larval web counts: counting eggs or larval webs in suitable habitat areas.
+- Wider Countryside Butterfly Survey (WCBS)
+  - Established in 2009 to sample wider countryside habitats with reduced effort.
+  - Two parallel 1-km transects inside randomly selected 1-km squares; 2–4 visits per year, minimum 2 visits in July/August, spring visits encouraged.
+- Data collection and entry
+  - Field data recorded on standard forms, entered online via UKBMS MyData or Transect Walker software.
+  - Transect coordinators compile region data; online and Transect Walker files are uploaded to an Oracle database.
+- Analytical methods for national indices
+  - WCBS species: two-stage model using all survey data.
+    - Stage 1: generalised additive model (GAM) estimates annual seasonal flight pattern.
+    - Stage 2: counts are modeled with seasonal values as an offset to estimate annual abundance changes and trends.
+    - Described in Dennis et al. 2013.
+  - Habitat specialists and regular migrants: GAM-based imputation to derive a site index.
+    - Collated Index (CI) is produced by combining site indices; missing values are estimated with a log-linear regression model accounting for year and site effects.
+    - A linear regression on collated indices yields trends across the UK since 1976.
+  - Trends are calculated for: the full series (1976–2016), the last 20 years (1997–2016), and the last 10 years (2007–2016).
+  - Species are categorized as wider countryside, habitat specialists, or regular migrants (with examples like Red Admiral noted).
+- Data and trend outputs
+  - Collated Indices are log10-transformed; trends are reported as slopes (change per year).
+  - Site indices are relative measures, tied to a standard proportion of true population size; Collated Indices are scaled so the average index over the series equals 2.
+- Quality control and validation
+  - Automatic checks in Transect Walker flag implausible counts or out-of-season records.
+  - Regional transect coordinators review data; ongoing validation and automated/manual checks ensure consistency with known distributions and flight periods.
+- Data storage format
+  - Species Trends stored as CSV with columns including:
+    - Sci_Name, Common_name, No_years, Series_slope, Series_Std_Err, Series_P_value, Series_trend, Series_%_change
+    - 20_yr_Slope, 20_yr_Std_Err, 20_yr_P_value, 20_yr_Trend, 20_yr_%_change
+    - 10_yr_Slope, 10_yr_Std_Err, 10_yr_P_value, 10_yr_Trend, 10_yr_%_change
+- Interpretive notes
+  - Site indices provide relative population size; the accuracy depends on detectability and flight period alignment.
+  - The Collated Index is updated with new data each year, which can slightly adjust past years’ indices.
+  - Some early years may lack collated indices for certain species due to insufficient data.

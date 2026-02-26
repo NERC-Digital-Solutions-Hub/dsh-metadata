@@ -1,0 +1,87 @@
+# Forest structure, composition, and bird counts in windblown and control sites in Kielder Forest, Northumberland, UK, May-July 2022
+
+- Overview
+  - Study location: Kielder Forest, Northumberland, UK
+  - Timeframe: May–July 2022
+  - Research aims: quantify forest structure, tree composition, and bird counts; compare windblown vs. control sites across paired plots
+  - Collaborating institutions: University of Aberdeen (Biological Sciences) and CONICET-Universidad Nacional de Tucumán (Argentina)
+
+- Data Collection and Key Variables
+  - Bird counts
+    - Method: bird point counts at paired windblown and control sites; each site contains 2 or 4 points, with two visits per point
+    - Protocol: 5-minute fixed-radius observations per point; birds recorded by species and distance band (0–10 m, 10–20 m, 20–30 m, 30–40 m, 40–50 m)
+    - Time window: 6:00–10:30 am
+    - Output: coordinates and metadata stored separately; species-level counts per site, point, visit, and distance band
+  - Timber and plant surveys
+    - Timber: three 10x10 m plots along a 100 m transect; counts and measurements of fallen trees; DBH measurements for volume estimates
+    - Plants: three 2x2 m quadrats along transect; cover estimates (Braun-Blanquet scale) for grasses, shrubs, ferns, mosses, fungi, lichens; vascular plant IDs
+    - Plots/quadrats positioned at 0–10 m, 50–60 m, and 90–100 m along transects
+  - Environmental characterization
+    - Buffers: 100 m, 200 m, and 400 m buffers around survey sites
+    - Data sources: National Forest Estate Subcompartments England 2019 dataset; features include main tree species, cover, and relational links
+    - Spatial processing: QGIS buffers and intersection to extract environmental attributes for each site/buffer
+  - Coordinate handling
+    - Coordinates provided in multiple formats (Original GPS coordinates, British National Grid references, and converted WGS84 lat/long)
+    - SiteID encoding: paired windblown (1) vs. control (2) within a pair; helps compare treatment effects
+
+- Datasets and Files
+  - BirdCounts-Kielder.csv
+    - Contains species-by-site-by-point-by-visit counts across five distance bands
+    - Columns include SiteID, PointNumber, Type (windblown/control), coordinates (X.or, Y.or, Lat, Long), Date, HourStart, Visit, and species counts per distance band
+  - Coordinates-Sites-Birds.csv
+    - Bird point count coordinates (SiteID, Type, X.or, Y.or, ODS, X, Y, Lat, Long, Date, HourStart, Visit, Comments, species)
+  - Coordinates-Sites-Total.csv
+    - Coordinates for 10x10 m plots, 2x2 m quadrats, and bird points; used for buffer definitions
+  - Kielder-FallenTimberTransect.csv
+    - Results for fallen timber along 100 m transects; per-tree records with site, date, plot location, species, and three diameter measurements for volume estimation
+  - Kielder-Trees10x10Plots.csv
+    - Tree data within three 10x10 m plots per site; plot location, species, DBH data, standing/snapped status
+  - Kielder-Plants2x2Quadrats.csv
+    - Plant quadrat data; species, Braun-Blanquet cover scores for grasses, shrubs, ferns, mosses, fungi, lichens
+    - Includes Quadrat location and plot/side information
+  - Coordinates-Sites-PlotsTimber.csv
+    - Coordinates for 10x10 m plots and 2x2 m quadrats used to survey timber and plants
+  - KielderBuffer-100mTotal-Subcompartments.csv
+  - KielderBuffer-200mTotal-Subcompartments.csv
+  - KielderBuffer-400mTotal-Subcompartments.csv
+    - Environmental attributes derived from National Forest Estate Subcompartments England 2019 for 100/200/400 m buffers
+  - ESRI shapefiles and related files
+    - Kielder-100mBufferPoints-Birds.* (points buffers around bird counts at 100 m)
+    - Kielder-200mBufferPoints-Birds.* (buffers around bird counts at 200 m)
+    - Kielder-400mBufferPoints-Birds.* (buffers around bird counts at 400 m)
+    - Kielder-100mBufferPoints-Timber.* (buffers around plots/quadrats at 100 m)
+    - Kielder-200mBufferPoints-Timber.* (buffers around plots/quadrats at 200 m)
+    - Kielder-400mBufferPoints-Timber.* (buffers around plots/quadrats at 400 m)
+  - Content note: Some datasets contain only coordinates; results from bird surveys and other measurements are in the associated data files listed above
+
+- Spatial and Analytical Context
+  - Geospatial framework
+    - Coordinates provided in British National Grid, with converted lat/long in WGS84
+    - Buffers and environment data prepared via QGIS (intersection with National Forest Estate Subcompartments England 2019)
+  - Data integration
+    - SiteID encodes paired windblown/control comparisons; cross-linking across species counts, plot-level measurements, and environmental attributes is supported
+  - Temporal scope
+    - Data collected within May–July 2022 window; multiple visits per site/point
+
+- Data Use, Reuse, and Documentation
+  - Intended uses
+    - Compare forest structure, tree composition, and bird abundance across windblown vs. control sites
+    - Explore relationships between bird counts, timber/plant metrics, and environmental context
+    - Build self-serve dashboards or reports to enable end users to access site-level and plot-level insights
+  - Data quality and provenance
+    - Data are organized with explicit field protocols, coordinate derivations, and buffer-based environmental attributes
+    - Derived datasets (buffers, subcompartment attributes) generated via defined GIS workflows
+  - Access and format considerations
+    - Primary data in CSVs for easy ingestion; spatial data provided as ESRI shapefiles for GIS analyses
+    - Documentation embedded in file headers and dataset descriptions for linking across files
+
+- Practical Considerations for Data Support
+  - Data linking
+    - Use SiteID, Type, and Plot/Quadrat IDs to join datasets (bird counts, timber, plants, coordinates, buffers)
+  - Coordinate handling
+    - Be mindful of multiple coordinate systems; prefer Lat/Long (WGS84) for mapping and join keys
+  - Temporal alignment
+    - Consider Visit/Date fields when analyzing repeated measures or site-level comparisons
+  - Reusability and expansion
+    - The buffers and subcompartment attributes enable exposure of environmental covariates at multiple spatial scales (100/200/400 m)
+    - Shapefiles enable GIS-driven analyses and integration with other geospatial layers

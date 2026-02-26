@@ -1,0 +1,38 @@
+# Coastal Biodiversity and Ecosystem Service Sustainability (CBESS) GPS locations for instruments and features associated with wave monitoring and sedimentation-erosion table installations in saltmarsh and mudflat habitats
+
+- Dataset overview: Global positioning system (GPS) locations for instruments and features tied to wave monitoring and sedimentation-erosion table (SET) installations in saltmarsh and mudflat habitats; includes surface elevation relative to a rod SET instrument on local benchmarks and depths of sediment above marker horizons adjacent to the SET benchmark.
+- Staff responsible: Tom Spencer, Ben Evans.
+- Study locations and habitat descriptions:
+  - Essex: Abbotts Hall (AH), Fingringhoe Wick (FW), Tillingham Marshes (TM) representing contrasting habitats and sediment types.
+  - Morecambe Bay: Cartmel Sands (CS), representing contrasting sediment types.
+  - Saltmarsh: two contrasting soil types in Essex (clay) and Morecambe Bay (sandy).
+  - Mudflat: Essex (cohesive clays, mud, silt) vs. Morecambe Bay (coarse, mobile sediments).
+- Monitoring cadence: Twice within a 1-year monitoring period.
+- Observed variables:
+  - Heights at pins 1–9.
+  - Horizon depths at cores 1–3.
+  - SET-related readings and associated metadata (e.g., SET number, horizon depths, notes).
+- Measurement procedures and standards:
+  - Monitoring stations installed autumn 2012.
+  - Rod Surface Elevation Table (rSET) used to enable inter-comparability with a globally standardized method (see Cahoon et al. 2002; USGS SET reference).
+  - Benchmarks driven to refusal; receivers bolted and top of rod cemented into protective pipes around the benchmark.
+  - Measurements taken every 3–6 months around the benchmark within four quadrants and nine pins per quadrant.
+  - 50 cm x 50 cm feldspar marker horizons installed just beyond instrument reach; depth of sediment above horizon measured via coring; horizontal horizon corrections via averaging measurements if not perfectly horizontal.
+  - If horizon depth < 1 mm, recorded as 0 mm; if horizon not detectable, recorded as NA.
+  - Notes on readings captured in spreadsheets to reflect potentially significant factors.
+- GPS and coordinate details:
+  - Coordinates for SET benchmarks per site provided; accuracy better than 50 mm in all directions; OSGB1936 coordinate system used.
+  - GPS locations of benchmarks and marker horizons are contained in the associated dataset CBESS_gps_wave_transects.
+- Calibration and data handling:
+  - Real-time Leica RTK corrections used where applicable.
+  - Data were entered into Excel spreadsheets; dataset field descriptions and header/row metadata documented.
+  - Calibration references: Cahoon et al. (2002) on high-precision wetland elevation measurements.
+- Data schema and metadata:
+  - Comprehensive dataset field descriptions covering season, location, site, habitat, quadrats, scales, records, dates, times, SET numbers, pin readings (1–9), horizon depths (core 1–3), notes, and provenance.
+  - Multiple levels of categorization (Season, Location, Site, Habitat, Quadrat, Scale) to support filtering and interoperability.
+- Data governance considerations for reuse:
+  - Data stewardship need to maintain interoperability across sites and formats, ensure timely transfer from field to dataset, and uphold metadata completeness.
+  - Clear provenance linking between CBESS_gps_wave_transects and this dataset ensures traceability.
+- References and external sources:
+  - Cahoon et al. (2002) on Rod Surface Elevation Table methodology.
+  - USGS SET documentation linked in the dataset description.

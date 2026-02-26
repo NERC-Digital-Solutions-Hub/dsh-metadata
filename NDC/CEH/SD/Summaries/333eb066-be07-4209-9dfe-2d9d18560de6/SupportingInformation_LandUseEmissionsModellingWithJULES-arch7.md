@@ -1,0 +1,75 @@
+# Background, Experiment Design and Analytical Methods
+
+- Purpose and scope
+  - Summary of a dataset used in Harper et al. (2018) to study carbon cycle implications of land-use change for Paris climate targets.
+  - Combines JULES land surface modeling (v4.8) with a multi-layer soil carbon model and the IMOGEN climate–carbon cycle emulator.
+  - Uses 6 simulation sets representing combinations of temperature pathways and land-use scenarios to explore BECCS and forest regrowth/conservation effects.
+- Modeling framework
+  - JULES (global land surface model) run in an inverted IMOGEN configuration to emulate climate–carbon outcomes.
+  - IMOGEN uses pattern scaling to reflect 34 CMIP5 GCMs; prescribed temperature pathways drive simulations.
+- Experimental design (six simulation configurations, 12 runs)
+  - Temperature pathways:
+    - 2deg: stabilisation at 2°C by 2100
+    - 1p5deg: stabilisation at 1.5°C by 2100
+    - 2deg_1p5CO2: 2°C climate with CO2 from the 1.5°C scenario to isolate climate vs CO2 effects
+  - Land-use scenarios:
+    - IM19: IMAGE SSP2-SPA0-RCP1.9
+    - IM26: IMAGE SSP2-SPA2-RCP2.6
+  - Resulting directory structure for outputs:
+    - 1p5deg_IM19, 1p5deg_IM26, 2deg_IM19, 2deg_IM26, 2deg_IM19_1p5CO2, 2deg_IM26_1p5CO2
+- Data products and time coverage
+  - Outputs cover 2000–2099; earlier years (1850–1999) are stored in linked datasets.
+  - Variables span carbon stocks, soil carbon, vegetation dynamics, BECCS pools, crop fractions, NPP, and water/energy cycle components.
+- Linked datasets and access
+  - CMIP5 GCM outputs used to drive JULES-IMOGEN (linked via EIDC DOIs).
+  - Historical period data (1850–2000) available from linked dataset.
+  - File naming conventions:
+    - BL_CEN_<centre>_MOD_<model>_<scenario>.CarbonStocks.2000-2099.nc
+    - BL_CEN_<centre>_MOD_<model>_<scenario>.WaterCycle.2000-2099.nc
+  - Scenario identifiers in file names correspond to the three temperature pathways ('2deg', '1p5deg', '2deg_IM19/IM26' with optional _1p5CO2).
+- Variables and data structure
+  - CarbonStocks group includes:
+    - cv: gridbox total vegetation carbon (kg m-2)
+    - cs_gb: gridbox total soil carbon (kg m-2)
+    - frac: fractional cover of each surface type (1)
+    - npp: net primary productivity (kg m-2 s-1) per PFT
+    - harvest: harvest on crop tiles (kg m-2 s-1)
+    - ccs_gb: BECCS pool carbon (kg m-2)
+    - Frac_agr, Frac_biocrop, Frac_past: fractional area of crops, bioenergy crops, pasture
+    - wood_products: wood product carbon pools
+    - co2_ppmv: CO2 concentration (ppmv)
+  - WaterCycle group includes:
+    - t_soil: soil temperature by layer (K)
+    - smcl: soil moisture by layer (kg m-2)
+    - Swet_tot: soil moisture fraction
+    - Fqw_gb: surface moisture flux (kg m-2 s-1)
+    - Ftl_gb: sensible heat flux (W m-2)
+    - fwetl: wetland fraction
+    - runoff: surface runoff (kg m-2 s-1)
+    - zw: depth to water table (m)
+- Spatial structure and weighting
+  - Each grid box consists of 17 tiles (13 plant functional types + 4 non-vegetated tiles).
+  - NPP and other grid-box totals require weighting by frac to account for within-gridbox composition.
+- Ancillary files and model setup
+  - Ancillary files needed to run rose suites for JULES-IMOGEN (grid info, ordering, boundary conditions, CO2 concentrations, non-CO2 radiative forcing, land cover, initial conditions).
+  - Key ancillary items include:
+    - grid_info.nc, imogen_order.dat, points.all.dat
+    - SSP2.6_IMAGE_concs_co2.txt and related CO2/CH4/N2O files
+    - Land-cover files for IM1.9 and IM2.6 scenarios
+    - Initial condition files for each GCM and temperature scenario
+- File access and documentation
+  - NetCDF files are self-describing and readable with standard tools (R, Python, NCO, etc.).
+  - Directory structure organized by land-use and CO2 experiment; Appendix lists the climate modeling centers and GCM names used (CMIP5-based).
+  - Data and related publications provide context and methodology (Harper et al. 2018; Comyn-Platt et al. 2018; IMOGEN and JULES references).
+- Practical notes for GIS use
+  - Use time, latitude, longitude dimensions to create temporal GIS layers for 2000–2099.
+  - For grid-box totals (e.g., NPP, carbon stocks), apply weighting by frac to obtain accurate map-level sums.
+  - The dataset enables map-based visualization of:
+    - Vegetation and soil carbon stocks
+    - BECCS carbon pools
+    - Land-cover fractions (crops, bioenergy crops, pasture)
+    - NPP dynamics by PFT
+    - Water-cycle and energy-budget components (soil temperature/moisture, fluxes, runoff)
+- Reproducibility and references
+  - Described dataset underpins publications by Harper et al. (2018) and related works (e.g., Comyn-Platt et al., 2018).
+  - Appendix provides a list of rose suites used to complete simulations; access requires code.metoffice.gov.uk registration.

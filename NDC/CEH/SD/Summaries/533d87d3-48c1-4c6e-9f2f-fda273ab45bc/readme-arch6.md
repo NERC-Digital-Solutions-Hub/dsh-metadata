@@ -1,0 +1,35 @@
+# This document describes the wind and strain data collected for 21 trees in Wytham Woods [1], a mature temperate woodland in southern England (51°46'27.2"N 1°20'20.1"W), from September 2015 to June 2016.
+
+- Purpose
+  - Extract resonant frequencies of trees
+  - Estimate critical wind speeds at which trees would break
+  - Test a finite element model of tree-wind dynamics
+- Metadata and linkage
+  - Census IDs available to link trees to the Wytham Woods census (tree_species_censusID.txt)
+- Data collection overview
+  - Strain data collected at 4 Hz
+  - Two strain gauges per tree, attached at 1.3 m on the trunk and approximately perpendicular
+  - Six data loggers used; data availability is non-uniform due to battery/storage limits
+  - Each logger file is separate and named by the trees it contains (e.g., T1, T2_3, T4_7)
+- Data format and calibration
+  - First column: UTC datestamp
+  - Subsequent columns: strain measurements
+  - Two columns per tree (one per gauge), projected into Northward and Eastward directions
+  - Data converted from millivolts to strain using calibration information in calibration.txt
+- Data processing and reproducibility
+  - MATLAB-based processing scripts and smaller MATLAB data files available
+  - Processing descriptions, assumptions, and sensitivities documented in the code repository
+  - Repository: github.com/TobyDJackson/WindAndTrees_Wytham
+- Wind data and environmental context
+  - Wind measurements from the canopy walkway
+  - Winter: cup anemometer (Vector Instruments A100LK/5M)
+  - Summer: Gill Sonic-1
+  - Time resolution varies by instrument
+  - Local climate data and long-term wind data available from the Environmental Change Institute (data.ecn.ac.uk)
+- Access and contact
+  - Data and scripts available via GitHub
+  - Email for questions: tobydjackson@gmail.com
+- References
+  - Savill et al. (2010), Wytham Woods: Oxford's Ecological Library
+  - Butt et al. (2009), Long-term broadleaf monitoring at Wytham Woods
+  - Moore et al. (2004), Instrument to measure dynamic response of standing trees to wind loading

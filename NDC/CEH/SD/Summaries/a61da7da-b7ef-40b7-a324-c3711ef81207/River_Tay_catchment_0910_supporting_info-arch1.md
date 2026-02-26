@@ -1,0 +1,62 @@
+# Sampling regime
+
+- Study period and scope
+  - River Tay and its tributaries sampled monthly for chemical analysis and greenhouse gas concentrations at nine sites.
+  - Sampling duration: February 2009 to December 2010.
+  - Site locations chosen based on existing SEPA flow gauging and water sampling sites.
+
+- Sample collection methods
+  - Headspace technique used to determine dissolved CH4, CO2, and N2O concentrations.
+  - For each sample: three 60 mL syringes used to extract 40 mL of river water from 10 cm below the surface; 20 mL ambient air added.
+  - Syringes shaken vigorously underwater for 1 minute to equilibrate headspace and water.
+  - Headspace gas injected into pre-evacuated 12 mL gas-tight vials for later GC analysis.
+  - An ambient atmosphere sample collected as a reference.
+  - Water temperature and atmospheric pressure recorded.
+  - On-site water sampling: Hydrolab Quanta Probe used to measure temperature.
+  - A 1 L bottle of main stream water collected from the river edge, then filtered on-site through pre-combusted GF/F (0.7 µm, 47 mm) paper using a filtration unit and electric vacuum pump.
+  - Filtered sub-samples stored at 5 °C until analysis.
+
+- Analytical methods
+  - Gases
+    - CH4 and N2O measured with HP5890 Series II GC equipped with an electron capture detector (ECD) and a flame ionisation detector (FID); accuracy ~30 ppb for N2O and ~70 ppb for CH4.
+    - CO2 measured on a separate HP5890 Series II GC.
+    - Dissolved concentrations calculated from headspace measurements using:
+      - CH4: Wiesenburg and Guinasso (1979) Bunsen solubility data.
+      - CO2 and N2O: Weiss and Price (1980) solubility data.
+    - Gas-saturation values calculated as the ratio of dissolved gas concentration to the expected equilibrium water concentration.
+  - Dissolved inorganic and organic carbon
+    - DOC and TDC measured with a PPM LABTOC analyser using ultraviolet oxidation and infrared gas analysis.
+    - DIC calculated as the difference between TDC and DOC.
+    - Instrument accuracy ≈ 1% of the calibration standard concentration.
+  - Nutrients and nitrogen species
+    - Total dissolved nitrogen (TDN), NO3-, and NH4+ analyzed on a Skalar San Plus automated flow analyser using standard colorimetric methods.
+    - NO3- determined via copper/cadmium reduction and sulphanilamide/NEDD reaction to form a red/purple color (absorbance at 540 nm).
+    - TDN via oxidation/digestion by persulfate/UV digestion.
+    - NH4+ via hypochlorite reaction forming chloroamine, then reacting with nitroprusside and salicylate to form an indophenol dye (absorbance at 640 nm).
+
+- Nature and units of recorded values
+  - Missing data marked in the CSV with an asterisk.
+  - Data reported to two decimal places.
+  - Units (summary):
+    - Temperature: °C
+    - N2O-N: µg/L
+    - CH4-C: µg/L
+    - CO2-C: mg/L
+    - NO3-N: mg/L
+    - NH4-N: mg/L
+    - TDN-N: mg/L
+    - DON-N: mg/L
+    - DOC: mg/L
+    - TDC: mg/L
+    - DIC: mg/L
+    - CO2 Sat: %
+    - CH4 Sat: %
+    - N2O Sat: %
+  - Table 1 in the dataset details the specific units for each data column.
+
+- References for methods and solubility data
+  - Billett MF, Moore TR. 2008. Supersaturation and evasion of CO2 and CH4 in surface waters at Mer Bleue peatland, Canada.
+  - Hope D, Palmer S, Billett MF, Dawson JJC. 2004. Variations in dissolved CO2 and CH4 in a first-order stream and catchment: soil-stream linkages.
+  - Kling GW, Kipphut GW, Miller MC. 1991. Arctic lakes and streams as gas conduits to the atmosphere: implications for tundra carbon budgets.
+  - Weiss, R.F., Price, B.A., 1980. Nitrous oxide solubility in water and seawater.
+  - Wiesenburg, D. A. and Guinasso, N. L. Jr. 1979. Equilibrium solubilities of methane, carbon monoxide and hydrogen in water and seawater.

@@ -1,0 +1,47 @@
+# Supporting information for: Eddy covariance measurements of carbon dioxide, energy and water fluxes at an organically managed grassland, Berkshire, UK, 2017 to 2019
+
+- Data access, licensing and citation
+  - Data must be cited as Morrison et al. (2019) and accessed via the provided DOIs.
+  - Full terms of use are available at the linked data access page.
+- Overview of dataset
+  - Contains time series of land surface–atmosphere exchanges: net ecosystem CO2 exchange (NEE), sensible heat (H), latent heat (LE), and momentum (τ).
+  - Measurements from an organically managed grassland (site code BD-OG) on Berkshire Downs, UK, from 2017-01-01 to 2019-11-16.
+  - Includes ancillary weather and soil physics observations and variables describing atmospheric turbulence.
+- Study site
+  - Location: BD-OG flux site, Sheepdrove Organic Farm, near Lambourn, UK (coordinates provided; 184 m a.s.l.).
+  - Environment: temperate maritime climate; shallow chalky, silty loams with flints; typical mean climate from 1981–2010.
+  - Land management: organically managed, extensively grazed grassland.
+- Sampling regime
+  - Automated flux, meteorological and soil measurements conducted throughout 2017-01-01 to 2019-11-16.
+- Flux data acquisition
+  - Eddy covariance measurements above the canopy at 2.0 m height.
+  - Instruments: Windmaster ultrasonic anemometer (velocity components, sonic temperature) and LI-7500 CO2/H2O infrared gas analyzer.
+  - Raw data: 20 Hz sampling of turbulence variables; logged by a CR3000 Micrologger.
+- Ancillary data acquisition
+  - Co-located COSMOS-UK Station for meteorology and soil physics (Ta, pressure, RH, radiation components, soil heat flux, soil moisture, soil temperature, precipitation).
+  - Ancillary data aggregated to 30-minute means (and precipitation sums).
+- Data processing
+  - Turbulent fluxes computed with EddyPRO v6.1; 30-minute block-averaging.
+  - Processing steps include QC of 20 Hz data, angle-of-attack correction, 2D rotation to local terrain, cospectral attenuation corrections, density corrections, and flux adjustments for humidity and density effects.
+  - Random uncertainties computed for fluxes; additional metrics (u*, TKE, Obukhov length L, z/L, etc.) derived.
+- Quality control
+  - Outliers removed via median absolute deviation; non-stationary turbulence periods excluded.
+  - Flux ranges applied: H, LE, NEE within specified limits; NEE excluded at night or below friction velocity threshold (u* < 0.18 m s^-1).
+  - Footprint analysis (ART Footprint Tool) used to ensure >80% flux originates from target grassland.
+  - Weekly QC checks and manual removal of clearly erroneous values.
+- Data gap-filling and flux partitioning
+  - Gaps in EC data filled with Marginal Distribution Sampling (Reichstein et al., 2005).
+  - NEE partitioned into GEP and TER using Ta-driven algorithm.
+  - Gap-filling and partitioning performed with REddyProc (R) for reproducible results.
+- Details of data structure
+  - Data provided as a single CSV (BD-OG_Organic_Grassland_2017_2019.csv) with columns described in the accompanying table.
+  - Gap-filled and partitioned flux products included; missing records denoted by -9999.
+- Nature and units of recorded values
+  - Variables include DateTime (UTC), NEE, NEE_unc, LE, LE_unc, H, H_unc, Tau, Tau_unc, and storage terms (CO2_strg, LE_strg, H_strg).
+  - Ancillary variables cover CO2, Ta, RH, VPD, pressure, radiation components, soil heat flux (G1, G2), soil temperature (Tsoil1, Tsoil2), soil moisture (VWC1, VWC2), precipitation, wind metrics, footprint fraction, u*, TKE, L, zL, and NEE_filled plus standard deviations.
+  - Units follow standard micrometeorological conventions (e.g., NEE in μmol CO2 m⁻² s⁻¹, LE/H in W m⁻², etc.).
+- Acknowledgments
+  - Funded by Natural Environment Research Council (award NE/R016429/1) as part of UK-SCAPE National Capability.
+  - COSMOS-UK data contributions and field/technical support acknowledged.
+- References
+  - Includes foundational papers and software relevant to EC measurement, QC, processing, and gap-filling (e.g., Reichstein et al., Mauder et al., Moncrieff et al., Papale et al., EddyPRO, REddyProc).

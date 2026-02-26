@@ -1,0 +1,34 @@
+# CEH digital 1:50,000 river network of Great Britain
+
+- Overview
+  - First of its kind in the UK; produced by the Institute of Hydrology (now CEH) between the mid-1970s and late 1990s.
+  - Digitised the Ordnance Survey 1:50,000 2nd series blue line layer, including river centre-lines for double-sided rivers, lakes, and estuaries.
+  - Gaps closed using local knowledge to create a continuous river network from source to mouth.
+  - Key contributors: Roger Moore and Dave Morris; with subsequent minor modifications.
+- Data structure and attributes
+  - Three attributes per line segment:
+    - ID: unique integer
+    - LENGTH: length in metres
+    - TYPE: River, Canal, Pipe (man-made channels), or Misc (including estuary, lake centre-lines, some underground channels)
+- Content scope and purpose
+  - Aimed at higher-resolution mapping of rivers and streams.
+  - Provides a continuous network suitable for network analysis (may require bespoke tools).
+  - Related to CEH’s IHDTM (Integrated Hydrological Digital Terrain Model) flow paths; used to define rivers within the Flood Estimation Handbook (FEH).
+  - Web Map Service (WMS) available for viewing; vector dataset downloadable under licence with usage restrictions.
+- Access, licensing, and related tools
+  - Data can be downloaded under licence; FEH software and resources available via CEH (FEH CD-ROM and related tools).
+  - FEH-related workflows rely on the same lines as the dataset.
+- Quality, limitations, and caveats
+  - Not provided as a geometric network suitable for standard GIS tracing or network analyses without additional tools.
+  - Lacks river names and may have inconsistent classification between River and Misc across the country.
+  - Canal and pipe data generally of lower quality than rivers.
+  - Intended for CEH scientific use; general-use caveats apply.
+- Updates, maintenance, and ongoing work
+  - Significant efforts have been made to create a consistent network with richer attributes (e.g., river names) within CEH’s Intelligent River Network.
+  - Online tools exist to link sites and identify locations on rivers.
+  - For further information, contact CEH (enquiries@ceh.ac.uk).
+- Implications for data leaders
+  - Strategic importance of a long-running, cross-sector dataset with provenance from national mapping.
+  - Importance of data discoverability, licensing terms, and integration with other CEH tools (FEH, IHDTM).
+  - Need to manage data quality, metadata, and classification consistency; plan for upgrades to enable GIS-ready analyses and richer attribute data (e.g., names).
+  - Potential for collaboration to align data standards and reduce duplicative efforts in the sector.

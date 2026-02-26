@@ -1,0 +1,39 @@
+# Experimental design/sampling regime
+
+- The UK Butterfly Monitoring Scheme (UKBMS) collects data from over 2,000 sites annually across the UK, primarily via fixed linear transects known as Pollard walks, plus other standardized methods (timed counts, egg/larval web counts) for some species.
+- All-species transects
+  - Fixed-route line transect per site; all butterflies recorded along a 2–4 km route, 5 m wide, with about 26 counts per year from April to September.
+  - Transects are designed to sample habitat types and management; routes fixed to enable year-on-year comparisons.
+  - Weekly counts occur under specific weather conditions; typical recording window is 10:45–15:45, with weather criteria (wind < Beaufort 5, temperature ≥13°C with sun or >17°C if overcast).
+  - Transects are divided into habitat/management sections.
+- Single-species transects
+  - Follow the all-species transect methodology but focus on a focal species for a subset of weeks.
+- Timed counts and egg/larval web counts
+  - Timed counts record a species' abundance over a set time/area; weather constraints similar to transects.
+  - Egg/larval web counts monitor eggs or larval webs in suitable habitat.
+- Wider countryside butterfly survey (WCBS)
+  - Reduced-effort sampling started in 2009 to better cover farmland and wider countryside habitats.
+  - Based on the BTO Breeding Bird Survey approach: two parallel 1-km transects, subdivided into 10 sections within randomly selected 1-km squares; 2–4 visits per year (min 2 visits in July/August; spring visits encouraged).
+- Data collection and submission
+  - Field data recorded on standard forms; entered online via the UKBMS data entry site or via Transect Walker software.
+  - Data entry can be performed by recorders or regional transect coordinators; coordinators compile data for their region and submit.
+  - Online data and Transect Walker files are uploaded to an Oracle database containing all records.
+- Analytical framework (overview)
+  - Two separate analytical approaches produce national indices per species, depending on data type and survey method:
+    - Wider countryside species: a two-stage model using all counts to estimate seasonal patterns and then annual changes, with counts weighted by seasonal estimates (GAM-based first stage; offset in second stage). Details in Dennis et al. 2013.
+    - Habitat specialists and regular migrants: a GAM-based imputation of missing values to create a site index, then a Collated Index (log10-transformed) is derived from all sites; a log-linear regression on collated indices yields national trends.
+  - Collated Indices are updated annually as new data are incorporated; trends are derived for the full series (1976–2013), last 20 years (1993–2013), and last 10 years (2003–2013).
+- Species categories and definitions
+  - Wider countryside species: mobile, across a range of habitats.
+  - Habitat specialists: low mobility, restricted to semi-natural habitats.
+  - Regular migrants: overwinter outside the UK; annual arrivals from continental Europe.
+  - Note: Red Admiral is variably resident in parts of the UK but generally considered migratory.
+- Outputs and data quality
+  - Site indices are relative measures correlated with more intensive population estimates; Collated Indices are scaled so the average index across the series equals 2.
+  - Trends are reported as slopes (change per year) and expressed with accompanying statistics (standard errors, P-values) and trend descriptions (rapid decline/increase or stable).
+- Quality assurance and data validation
+  - Automatic validation in Transect Walker flags unusual counts and out-of-season records; regional coordinators perform ongoing checks.
+  - Additional automated and manual validation screens ensure records align with known distributions, flight periods, and typical site-level patterns.
+- Data storage and structure
+  - Stored as CSV with fields including scientific name, common name, years contributing (NYEARS), site/trend slopes and errors (F_LIN_B, F_LIN_SE, F_LIN_P), trend details, and percent changes (F_FULL_R, T20/ T10 variants, with corresponding SEs and P-values).
+  - The dataset accommodates multiple time horizons (10-year, 20-year, and full series) for trend reporting and interpretation.

@@ -1,0 +1,62 @@
+# This document describes the headings used to record the stratigraphic data collected for each core
+
+- Purpose and scope
+  - Defines the standardized headings (determinands) used to record stratigraphic data for each lake core.
+  - Data are stored as a matrix of columns (determinands) and rows representing contiguous core-depth intervals.
+  - Blanks indicate missing measurements.
+
+- Data schema and key fields
+  - Core and depth identifiers
+    - Sub_ID: internal UCL Amphora database unique ID for a core slice
+    - Top_Depth_cm / Bottom_Depth_cm: depth range of the sliced core section from the sediment/water interface
+  - Physical and compositional measurements
+    - Mass of sediment after drying (DW) and related LOI measurements
+    - LOI 550 / LOI 950: carbonate and organic content via ignition methods (with Ref 1 guidance)
+    - wetd: mass of 1 cm3 of wet sediment
+  - Radiometric dating and chronology
+    - Pb210_Total / Pb210_Supported / Pb210_Unsupported and their errors
+    - Cum_Unsupported_Pb210 and its error
+    - Cs137 / Cs137_err
+    - Am241 / Am241_err
+    - Date_AD: calculated year (AD)
+    - Age_yr / Age_yr_err: age estimates via Constant Rate of Supply (CRS) model
+  - Sedimentation metrics
+    - SAR: sediment dry mass accumulation rate (g cm-2 yr-1)
+    - SR / SR_err: sedimentation rate (cm-2 yr-1) and its error
+  - Geochemical and elemental data (XRF)
+    - Hg: total mercury (µg/g) via cold vapour
+    - Na%, Mg%, Al%, Si%, P%, S%, Cl%, K%, Ca%, Ti%: element concentrations as % dry mass
+    - V, Cr, Ni, Co, Cu, Zn, Ga, As, Br, Rb, Sr, Y, Nb, Ba, Pb: trace element concentrations in µg/g or equivalent units
+  - Data provenance and metadata
+    - Description fields (Description) accompany many determinands as references to dataset definitions
+  - References (method guidance)
+    - Ref 1: LOI method for organic/carbonate content (Heiri et al. 2001)
+    - Ref 2: CRS Pb-210 dating method (Appleby & Oldfield 1978)
+
+- Data provenance and file mappings
+  - Associated files (example names)
+    - 25855_doug_deep.csv
+    - 25866_bard_deep.csv
+    - 25866_bard_litt.csv
+    - 26001_possi_lit.csv
+    - 26145_hogg_deep.csv
+    - 26163_bish_deep.csv
+    - 26167_wode_deep.csv
+    - 26392_semp_deep.csv
+    - 26392_semp_int.csv
+    - 26392_semp_litt.csv
+    - 26535_libo_deep.csv
+  - File naming convention
+    - Uses water body identification number (WBID) and project code/name of lake and core location
+  - Purpose of fields
+    - Data blanks indicate no measurement for that interval
+    - Sub_ID and Depth fields anchor each measurement interval to the core slice
+
+- Data quality, interpretation, and use
+  - Data are structured to support cross-core comparisons and metadata discoverability
+  - Units and measurement methods are specified (e.g., LOI, Pb210 dating, XRF elemental concentrations)
+  - Potential data challenges for data leaders include gaps (missing measurements), fragmentation across cores, and variability in metadata completeness
+
+- References
+  - LOI method validation: Heiri, Lotter, Lemcke (2001)
+  - Pb-210 dating using CRS model: Appleby & Oldfield (1978)

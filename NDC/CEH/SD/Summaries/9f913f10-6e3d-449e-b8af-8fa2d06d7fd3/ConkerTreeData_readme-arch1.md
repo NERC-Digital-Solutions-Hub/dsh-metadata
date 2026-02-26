@@ -1,0 +1,76 @@
+# Records of leaf damage caused by and parasitism of Cameraria ohridella in Britain in 2010 collected with a citizen science approach, plus validation of the data.
+
+- Aim
+  - Investigate two hypotheses about Cameraria ohridella in Britain during 2010:
+    - Whether leaf damage on horse-chestnut trees (Aesculus hippocastanum) is greatest where the moth has been present the longest.
+    - Whether parasitism levels of C. ohridella larvae are greatest where the moth has been present the longest.
+
+- Study design and data collection
+  - Citizen science project: Conker Tree Science; more than 3,500 participants across Great Britain contributed data via the project website (www.conkertreescience.org.uk).
+  - Leaf damage data
+    - Collected during summer 2010 (1 July – 15 October).
+    - Participants scored leaf damage on an ordinal scale 0–4, with illustrated guidance.
+  - Parasitism data (rearing method)
+    - Participants sampled leaves in early July 2010 and stored infested leaves for two weeks.
+    - Reported counts of leaf mines, adult moths, parasitoids, and other insects after rearing.
+    - School children aged 8–11 were involved; eight trained volunteers led classes but did not provide directive guidance during counting to avoid bias.
+    - A random subset of 669 samples counted by children was selected for expert blind assessment; an additional 75 samples with reported parasitoids were included.
+  - Long-term arrival data and modeling
+    - Used Forest Research data to determine observed year of arrival in 10 km squares (with permission).
+    - Modeled predicted year of arrival by augmenting the known distribution (2006–2010) with a demographic spread model parameterized from continental Europe, comprising short-distance diffusion and rare long-distance movements (long-distance parameter not directly used in the modeled distribution; data inform potential long-distance events).
+    - Implemented on a 2.5 km grid; modeled both two- and three-generations-per-year scenarios.
+    - End-of-generation updates: at the end of every second or third generation, the predicted distribution was updated with observed distribution; moth presence was assumed in all 16 of the 2.5 km cells within each observed 10 km cell.
+  - Location privacy and data provenance
+    - Full location data were provided by participants but are restricted in the released data to 10 km grid squares for privacy.
+    - Observed year of arrival data were sourced from Forest Research.
+
+- Data quality and validation
+  - Quality statement
+    - Counts submitted by the public via the Conker Tree Science website are provided without correction or validation.
+    - Parasitoid counts in parasitoidrecords.csv are binned for higher counts (e.g., 26–30, 31–40, etc.) and converted to representative values (e.g., 28, 35, 45, 55, 65).
+    - A subset of samples used for validation was retained; validation data are provided in validationdata.csv.
+  - Validation approach
+    - Blind expert validation of counts for the random subset; additional samples with reported parasitoids included in validation.
+  - Data privacy and accessibility
+    - Location data limited to 10 km squares; raw coordinates not published.
+    - Observed year of arrival and modeled year of arrival data used with permission from Forest Research.
+
+- Data files and structure
+  - leafdamagerecords.csv
+    - Column highlights:
+      - LineID: reference line number.
+      - SubmissionDate: observation date.
+      - ParticipantID: unique participant identifier.
+      - LeafDamageScore: damage score (0–4) with explanatory scale.
+      - Easting10km, Northing10km: 10 km grid location coordinates.
+      - ObservedYearOfArrival, ModeledYearOfArrival3Generations, ModeledYearOfArrival2Generations: arrival year data.
+  - parasitoidrecords.csv
+    - Column highlights:
+      - LineID: reference line number.
+      - SubmissionDate: observation date.
+      - Mines, AdultMoths, Parasitoids, OtherInsects: counts recorded at the end of the rearing period.
+      - Easting10km, Northing10km: 10 km grid location.
+      - VolunteerID, ParticipantID: identifiers; School: indicator if from a school activity.
+      - ObservedYearOfArrival, ModeledYearOfArrival3Generations, ModeledYearOfArrival2Generations: arrival year data.
+  - validationdata.csv
+    - Column highlights:
+      - LineID: reference line number.
+      - VolunteerID: anonymized validator identifier.
+      - Source: 'random' or 'extra' validation samples.
+      - SchoolID, ClassID: anonymized school/class identifiers.
+      - ReportedMines, ReportedMoths, ReportedParasitoids: counts reported by participants (with binning for high counts).
+      - TrueMines, TrueMoths, TrueParasitoids: counts verified by expert (actual counts); TrueMinotetrastichusFrontalis: parasitoid species identification where available.
+
+- Supporting documentation and modeling details
+  - Modeled distribution notes
+    - Observed year of arrival data from Forest Research; modeled arrival years via a two-component demography-based spread model using short-distance diffusion (probability of presence exp(-0.025 × d^2), with d being distance to the nearest occupied square) and optional long-distance dispersal events inferred from data.
+    - Implemented on a 2.5 km grid; modeled with two and three generations per year; updating the predicted distribution periodically as new observed data became available.
+    - Assumes presence in all 16 cells within each 10 km cell for squares where presence was recorded.
+  - Data origin and usage
+    - Data are drawn from public participation in citizen science, with additional expert validation and long-term distribution modeling to contextualize current observations.
+
+- Access, provenance, and potential uses
+  - Data collected to analyze spatial and temporal patterns of leaf damage and parasitism in relation to the duration of C. ohridella presence.
+  - Suitable for exploring correlations between damage severity, parasitism rates, and the inferred arrival history.
+  - Data are designed for reproducibility, with explicit modeling approach and clearly defined data schemas, though privacy constraints limit precise location granularity.
+  - Original project website and supporting publications provide access to detailed methodologies and potential downloadable data, with datasets accompanied by metadata and documentation.

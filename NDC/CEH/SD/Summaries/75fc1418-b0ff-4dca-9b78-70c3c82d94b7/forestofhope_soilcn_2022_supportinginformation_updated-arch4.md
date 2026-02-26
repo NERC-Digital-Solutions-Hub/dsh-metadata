@@ -1,0 +1,24 @@
+# Forest of Hope Soil CN Winter2022
+
+- Purpose and context: Baseline soil carbon (C) and nitrogen (N) data for the Forest of Hope afforestation site on Highlands Rewilding's Beldorney Estate; supports monitoring of tree establishment, soil health, and biodiversity metrics across planted and natural regeneration plots.
+- Site and planting design: Forest planted with 1600 stems/ha mix including birch, sessile oak, hazel, alder, rowan, willow, and hawthorn; planting began Winter 2022 with completion aimed for early 2024 after a 2023 review. 17 40×40 m unplanted plots established to assess natural regeneration, stratified by distance from seed sources and eastern native woodland.
+- Sampling plan and controls:
+  - 17 soil samples on a 100 m grid within planting area; 8 additional samples in surrounding grassland for a control baseline.
+  - Additional sampling in November 2022 in 40×40 m natural regeneration plots.
+  - Grassland control and unplanted plots enable comparison between planted and natural regeneration conditions.
+- Depths and scope: Soil cores collected at 0–10 cm and 10–30 cm depths where possible; one unplanted plot (U8) omitted due to a pond.
+- Timeline: Baseline soil sampling conducted Autumn 2022 (with September 2022 grid collection prior to mounding/planting); subsequent sampling in Nov 2022 for unplanted plots.
+- Sampling and lab methods: 
+  - Use of a 1.9 cm diameter auger; fresh and dry weights recorded; samples dried at 60°C for at least 48 hours.
+  - Samples sieved to <2 mm; weights separated into <2 mm and >2 mm fractions.
+  - Subsample of <2 mm ball milled; ~10 mg sent for elemental analysis to determine %C and %N.
+  - Calculation of soil bulk density from core volume and <2 mm fraction; absolute total C and N derived from bulk density and percentages.
+- Data collected and metrics:
+  - For each sample: location identifiers, coordinates, What3words, collection date, core depths/heights/diameter, core volume, fresh and dry weights, fraction masses, bulk density, %N, %C, and total C/N (g/cm3) values.
+- Data structure and file: A single dataset named ForestOfHope_SoilCN_Winter2022.csv with fields including Location_ID, Type (planted 100 m grid, grassland, natural regeneration), Lat/Long, What3words, Date_collected, Top_core_cm, Bottom_core_cm, Core_height_cm, Core_diameter_cm, Core_volume_cm3, Fresh_weight_g, Dry_weight_g, More_2mm_g, Less_2mm_g, Bulk_density_gcm3, N_percent, C_percent, Total_N_gcm3, Total_C_gcm3, plus descriptive metadata for each category.
+- Quality control: Pre-defined sample numbering for traceability; experienced lab technicians; precise weighing and documentation of exact sample transfer masses to ensure accurate carbon and nitrogen measurements.
+- Data governance and future use:
+  - Clear metadata and structured dataset to support cross-site comparisons (planted vs. natural regeneration) and tracking soil C/N dynamics over time.
+  - Foundation for ongoing monitoring of tree establishment, soil properties, and biodiversity within the Forest of Hope project.
+- Figures and layout references:
+  - Site boundary, 100 m sampling grid, grassland control, planting area, planted plots, and natural regeneration plots are described to support spatial interpretation of results.

@@ -1,0 +1,50 @@
+Supporting information for Grid-to-Grid model estimates of river flow for Northern Ireland driven by UK Climate Projections 2018 (UKCP18) Regional (12km) data (1980 to 2080)
+
+- Data accessibility and licensing
+  - Open Government Licence; dataset available at the provided DOI.
+  - Users must cite: Kay et al. 2021, Grid-to-Grid model estimates of river flow for Northern Ireland driven by UK Climate Projections 2018 (UKCP18) Regional (12km) data (1980 to 2080). NERC EDS Environmental Information Data Centre.
+- Brief dataset scope and purpose
+  - Part of UK-SCAPE program (WP2) examining climate-change impacts on water quantity (river flow) across Britain.
+  - Grid-to-Grid (G2G) hydrological model outputs for Northern Ireland on a 1km x 1km grid, driven by UKCP18 Regional (12km) projections.
+  - Covers 1980–2080 under RCP8.5, using a 12-member perturbed parameter ensemble (PPE) of the Hadley Centre Regional Climate Model.
+  - Complementary dataset exists for observation-based driving data.
+  - Additional spatial datasets provided: 1km catchment areas, majority lake cells, and estimated NRFA gauging-station locations on the 1km grid.
+- Hydrological model and lineage
+  - Model: Grid-to-Grid (G2G) national-scale hydrological model at 1km grid with a 15-minute time-step; configured to NI and some ROI catchments draining to NI rivers.
+  - Outputs: monthly mean river flow (m3 s-1), annual maxima of daily mean river flow (m3 s-1), and annual minima of 7-day mean river flow (m3 s-1) for non-tidal river cells with catchment area >= 50 km2.
+  - Input data: precipitation and potential evapotranspiration (PE), plus daily min/max temperature for optional snow module.
+  - Driving data: UKCP18 Regional PPE with 12 ensemble members; 360-day calendar used in climate model data.
+  - Data processing: bias-corrected precipitation (monthly multiplicative factors); PE via Penman-Monteith (plus MORECS-based stomatal resistance adjustments); downscaling from 12km to 1km (spatial weighting); temporal downscaling by even distribution across model time-steps.
+- Data formats and file structure
+  - NetCDF4 format; one file per ensemble member and variable.
+  - Naming conventions: G2G_NI_mmflow_UKCP18RCM_ensnum_1980_2080.nc (monthly mean flow); G2G_NI_amaxflow_UKCP18RCM_ensnum_1980_2080.nc (annual maxima with dates); G2G_NI_aminflow_UKCP18RCM_ensnum_1980_2080.nc (annual minima with dates).
+  - Domain: Northern Ireland on a 187km x 170km GB National Grid, 1km grid cells (non-tidal rivers, catchment area >= 50 km2); missing values coded as -9999.
+  - Temporal specifics: 30-day months (due to 360-day calendar); time units are days since 1900-01-01; monthly flows assigned to first day of month; annual extrema assigned to start year of the 12-month period.
+  - Supporting datasets:
+    - UKSCAPE_G2G_NI_CatchmentAreaGrid.nc: catchment areas (km2) per 1km cell.
+    - UKSCAPE_G2G_NI_LakeGrid.nc: majority lake cells (land=1, lake=2, sea=-9999).
+    - UKSCAPE_G2G_NI_NRFAStationIDGrid.nc and UKSCAPE_NI_NRFAStationIDs.csv: estimated locations for NRFA gauging stations (best 1km grid cell matches).
+- How to use and interpret the dataset
+  - Historical comparisons: compare G2G results driven by UKCP18 PPE with those driven by observation-based input data or NRFA observations; use statistical comparisons over multi-decadal periods rather than point-for-point matches.
+  - Future/baseline comparisons: assess potential climate-change impacts on river flows using consistent ensemble members across periods.
+  - Ensemble and period guidance: use the same ensemble member across baseline and future periods (e.g., member 01 with 01 in both periods); ensemble numbers exclude 02, 03, and 14 (valid members: 01, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 15).
+  - Caveats:
+    - Water bodies like lakes and reservoirs are not explicitly represented; lakes are treated as rivers (Lough Neagh/Lough Erne flows appear in the data).
+    - Lake storage effects on downstream flows are neglected; NRFA catchment areas for some smaller catchments may not align perfectly due to grid discretisation.
+    - Flow at gauging-station locations is an estimate on the 1km grid; checks were performed to match the correct river tributary, but discrepancies can occur for small catchments.
+    - The model assumes spatially consistent, nationally applicable parameters; calibration is not performed per catchment.
+- Data quality, limitations, and assumptions relevant to Data Stewards
+  - Strengths: high-resolution (1km) gridded river-flow estimates across NI, suitable for climate-change impact assessment.
+  - Limitations: reduced accuracy in areas with artificial hydrological influence or complex subsurface hydrology; potential underestimation of extreme flows downstream of flood regulation (e.g., near Lough Neagh).
+  - Temporal resolution and calendar differences (360-day year) should be accounted for in analyses; ensemble member selection must be consistent across periods.
+- Governance, metadata, and documentation considerations for data stewardship
+  - Licensing and citation requirements clearly stated; data should be properly cited using the provided DOI and authors.
+  - Comprehensive provenance: UKCP18-derived inputs, bias correction, downscaling methods, and model configuration documented; related references provided for traceability.
+  - File-level and dataset-level metadata are embedded in NetCDF conventions; supplementary datasets enable interpretation of catchments, lakes, and NRFA stations.
+- Supporting materials and acknowledgments
+  - Acknowledged NERC grant NE/R016429/1 (UK-SCAPE National Capability).
+  - References listed for model development, calibration, and supporting data sources.
+- Practical considerations for data management and reuse
+  - Ensure use of the same ensemble member across baseline and future periods.
+  - When combining NI G2G outputs with other regions or models, respect the 1km grid and 12km-to-1km downscaling conventions, and be mindful of calendar and temporal alignment.
+  - Store and catalogue the NetCDF4 files alongside the three supporting datasets (catchment area, lake grid, NRFA station grid) to preserve context and enable streamlined discovery.

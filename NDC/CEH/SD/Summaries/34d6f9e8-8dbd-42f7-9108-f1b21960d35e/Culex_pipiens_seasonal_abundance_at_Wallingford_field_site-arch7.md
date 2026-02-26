@@ -1,0 +1,53 @@
+# Overview
+
+- A dataset documenting the seasonal abundance of life stages of the mosquito species Culex pipiens at the CEH Wallingford field site in 2015, covering immature stages (eggs, larvae, pupae) and adults.
+- Temporal coverage:
+  - Immature life stages monitored three times per week from March to October 2015.
+  - Adult mosquitoes monitored four times per week from April to October 2015.
+- Field site setup and sampling regime:
+  - Immature sampling used four 450-litre circular water butts placed in close proximity at the Wallingford site, with varied exposure and shelter conditions.
+  - Eggs counted as rafts in each butt; sampling included dipping at the four butt edges (north, south, east, west) and photographing trays when counts were high.
+  - Larvae and pupae counted per sampling occasion, with counts taken from edges due to aggregation at the margins.
+  - Adult sampling used four John W. Hock Miniature Downdraft Blacklight (UV) traps baited with dry ice, run nightly from 1700 to 0900, 4 nights a week, April–October (with some sessions missed due to logistic issues).
+  - Adults identified to species level in the lab; males not counted.
+- Data collection instruments and procedures:
+  - Temperature: HOBO surface water temperature loggers recorded hourly in each butt.
+  - Identification: morphological identification of 4th instar larvae via microscopy; 20 4th instar larvae per butt monthly used for species-level confirmation.
+  - Sampling schedule: egg counts on specified weekdays; larval/pupal sampling aligned with butt corners; adult traps set at defined locations around the field.
+- Data contents and structure:
+  - Six CSV spreadsheets:
+    - Egg_abundance_2015_Wallingford.csv
+    - Larval_abundance_2015_Wallingford.csv
+    - Pupal_abundance_2015_Wallingford.csv
+    - Adult_abundance_2015_Wallingford.csv
+    - Larval_identification_2015_Wallingford.csv
+    - Water_temperatures_2015_Wallingford.csv
+  - Data representation:
+    - Eggs: counts of egg rafts per butt per day.
+    - Larvae/Pupae: counts per butt per sampling date; collaring by butt and by instar (L1/2 and L3/4) for larvae, plus pupae counts.
+    - Adults: counts of adult female Cx. pipiens per trap per date; other species recorded when identified.
+    - Larval identification: dates and numbers identified as Cx. pipiens by butt.
+    - Water temperatures: hourly surface temperatures for each butt.
+- Data fields and column details (highlights):
+  - Egg_abundance: Date; Butt n (1–4).
+  - Larval_abundance: Date; directional corners (N,E,S,W); L1/2; L3/4 (butt groupings by (B-P for butt 1, Q-AE for butt 2, AF-AT for butt 3, AU-BI for butt 4)).
+  - Pupal_abundance: similar structure to larval data (by butt, counts, date).
+  - Adult_abundance: Date; Location (trap); Cx. pipiens counts; other species counts (Cs. annulata, Ae. geniculatus) when identified; NA entries where traps could not be run.
+  - Larval_identification: Dates of identification; number identified; number identified as Cx. pipiens; butt source.
+  - Water_temperatures: Date; Time; Butt; Temperature (°C).
+- Quality control and validation:
+  - Larval/pupal counts derived from photographic counts of tray contents; cross-checked against direct counts on the first two sampling days to ensure consistency.
+- Spatial context and GIS relevance:
+  - Site layout includes four closely spaced water butts with variable exposure and four UV traps at defined distances around a grazing field; an adjacent weather station is noted.
+  - Spatial mapping possible by linking butt IDs and trap locations to map coordinates, though explicit coordinates are not stored in the CSVs themselves; the accompanying figure provides spatial references.
+- Practical considerations and limitations:
+  - Some adult trap data contain NA values due to staff or resource constraints.
+  - Data are limited to the 2015 field season at a single site; temporal and spatial scope should be considered when integrating with broader GIS analyses.
+- Potential GIS applications:
+  - Map and analyze spatial-temporal patterns of Cx. pipiens abundance across butts and traps.
+  - Correlate adult and immature abundance with hourly temperature data to explore environmental drivers.
+  - Integrate with other environmental layers (e.g., land cover, weather) for risk modeling, vector surveillance, or public health planning.
+- Key considerations for data use and integration:
+  - Ensure consistent butt and trap labeling across files for reliable joins (butt numbers 1–4; trap locations WB-1, F1-2, F2-3, F3-4).
+  - Align dates and times across files (date-level matching for abundance and hourly temperature data).
+  - Handle NA values in adult counts appropriately in analyses.

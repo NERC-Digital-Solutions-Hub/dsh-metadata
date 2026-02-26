@@ -1,0 +1,49 @@
+# Study sites and focal species
+
+- Objective: Assess generalisability of findings across forest biomes by conducting shade-house experiments at two distinct sites (Kabili-Sepilok Forest Reserve, Malaysia, and Heishiding Nature Reserve, China) with ECM-dominated overstorey and AM-dominated understory, enabling cross-site comparisons of seedling P preferences linked to mycorrhizal type.
+- Site overview:
+  - Sepilok, Malaysia: lowland tropical rainforest, 5543 ha, high rainfall (≈2975 mm/yr), mean temps ~26.7–27.7 °C.
+  - Heishiding, China: subtropical evergreen broad-leaved forest, ≈4200 ha, monsoonal climate, mean temp ≈19.6 °C.
+- Focal species:
+  - Eight common tree species per site with sufficient seeds/ fruits; mycorrhizal status determined a priori.
+  - ECM species (Malaysia) and AM/ECM mix across species; species list summarized in the study's table.
+- Experimental design:
+  - Shade-house experiments conducted between late 2015 and 2016 (Sepilok: Nov 2015–May 2016; Heishiding: Sep 2015–Apr 2016).
+  - Seed collection timing: Heishiding (Oct–Dec 2014) and Sepilok (Aug 2015).
+  - Seedlings germinated and grown in controlled conditions, then transplanted into pots with sterilised field soil mixed with sand; each pot received 20 g live soil from beneath adult conspecific trees to introduce native microbial communities.
+  - Experimental layout: 12 blocks per site; 40 pots per block (8 species × 5 P treatments) → 480 pots per site; randomised treatment arrangement within blocks; 0.5 m separation between blocks.
+  - Plant maintenance: monthly watering and height measurements; replacement of damaged or poor seedlings after initial transplant.
+- Phosphorus treatments:
+  - Five P treatments: Water (control), Inorganic P (Na3PO4), Simple organic P (AMP), Complex organic P (phytic acid), and Mixture (1/3 Na3PO4 + 1/3 AMP + 1/3 phytic acid).
+  - P dosing: site-specific background P (Heishiding 0.24 mg P g−1 soil; Sepilok 0.27 mg P g−1 soil) with 10 mL solution per pot; treatments repeated monthly for 6 months.
+- Data collected and measurements:
+  - Growth metrics: seedling height (cm) and total biomass (g) at harvest; also root biomass (g).
+  - Biomass standardisation: TotalBiomassStandard = TotalBiomass divided by species-specific maximum biomass.
+  - Root mycorrhizal colonisation: AM (percentage of root length colonised) and ECM (percentage of root tips colonised) using appropriate staining and counting methods.
+  - Nutrient analyses: leaf N (Kjeldahl), leaf P and K (ICP-OES after acid digestion), soil available P (Olsen method).
+  - Sampling: harvest of shoot/root for biomass; 10 fine root fragments per seedling for colonisation assessment; soil samples from 6 blocks per site for nutrient analyses.
+- Laboratory methods:
+  - N: Kjeldahl method (Foss Kjeltec 2300).
+  - P and K: ICP-OES after acid digestion (HNO3:HCl 1:3).
+  - Olsen soil P: standard Olsen extraction protocol.
+  - Mycorrhizal assessment:
+    - AM: root staining with trypan blue; 200 intersections per seedling; colonisation = intersections with AM structures / total intersections.
+    - ECM: counting 30–50 live ECM root tips per seedling under a microscope.
+- Data structure and fields (data dictionary overview):
+  - Column A – Site: Sepilok, Malaysia or Heishiding, China.
+  - Column B – Block: 24 blocks (1–12 Sepilok; 13–24 Heishiding).
+  - Column C – Ptreatment: 5 levels (1–5) corresponding to the five P treatments.
+  - Column D – P: Descriptive label for treatments (Water, Na3PO4, AMP, Phytic acid, Mixture).
+  - Column E – Species: Species code (A–H).
+  - Column F – SpName: Binomial species name.
+  - Column G – MycorrhizalType: ECM or AM.
+  - Column H – Height: Seedling height (cm) at end of experiment.
+  - Column I – TotalBiomass: Seedling total dry biomass (g) at end.
+  - Column J – TotalBiomassStandard: Biomass scaled to species maximum.
+  - Column K – RootBiomass: Root biomass (g) at end.
+  - Column L – RootColonization: Proportion of root length (AM) or root tips (ECM) colonised; NA if not sampled.
+- Practical implications for data management:
+  - Strong, trans-site standardisation of treatments and measurements to enable cross-site comparability.
+  - Comprehensive metadata and a explicit data dictionary (columns A–L) support reproducibility and downstream analyses.
+  - Clear separation of mycorrhizal types and P forms facilitates analysis of nutrient-mymcorrhiza interactions.
+  - An example of robust experimental design with replication (12 blocks × 8 species × 5 treatments) and explicit procedures for seed handling, soil inoculation, and laboratory analyses.

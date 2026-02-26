@@ -1,0 +1,60 @@
+# SUMMARY
+
+- Four years into the NERC Soil Biodiversity Thematic Programme at Sourhope (Scottish Borders), the project monitors above-ground biomass production, plant species composition, and relative abundance on a field-scale grassland experiment.
+- Site design and treatments
+  - 5 replicate blocks on a downslope gradient; 6 main plots per block, subdivided into 10 sub-plots; 0.5 m x 0.5 m cells for end-user data groups.
+  - Treatments across plots: Control 1, Control 2 (no treatment), Nitrogen, Lime, Nitrogen + Lime, Insecticide (Dursban 4 OPA).
+  - Management includes monthly mowing to ~6 cm (May–Sept) across the whole site, plus plot-level applications of nitrogen and/or lime, and insecticide on designated plots.
+  - Research groups use a 0.5 m^2 sampling cell system; additional small-scale botanical surveys, soil sampling, and weather monitoring are conducted.
+- Data collection and scope
+  - On-site Automatic Weather Station provides regular climate data; 1999–2002 headline measures are reported.
+  - Above-ground productivity estimated annually via 0.5 m^2 vegetation samples before each mowing; samples dried and weighed.
+  - Baseline survey in 1998; annual point-analysis surveys (2000–2002) using a 100-hole grid to track species hits and community structure; bryophytes identified to species in 2002.
+  - Soil chemistry and moisture monitored: soil pH at ~5 cm depth; soil moisture measured with a theta probe in 2002.
+  - Total site soil samples collected since start: 11,621.
+- Key 2002 findings (overarching patterns)
+  - Biomass and productivity
+    - A consistent treatment hierarchy remains (fertilised plots more productive than unfertilised), but 2002 saw a general drop in biomass across most treatments relative to 2001.
+    - Nitrogen and Lime together yielded the strongest biomass response; Control 2 plots were consistently less productive than Control 1.
+    - Productivity declined more on steeper blocks (Block 5) and on certain blocks with lower baseline productivity.
+  - Soil chemistry and productivity relationships
+    - Lime dramatically increases soil pH (to near 7 in the upper soil profile); nitrogen also increases pH but to a lesser extent.
+    - A strong negative relationship between soil moisture and pH was observed; higher pH plots tended to be drier.
+    - Across all plots, higher soil pH generally supports higher biomass, though the relationship weakens within plots receiving nitrogen or lime, and may reverse in plots with both N and Lime.
+  - Plant functional types and community structure (Point Analysis)
+    - Species associated with improved pastures (Festuca rubra and Poa pratensis) are more frequent in fertilised plots; Festuca ovina and Anthoxanthum odoratum are relatively more common in unimproved plots.
+    - Bryophytes (mosses) increase across the site, particularly in unimproved plots, contributing a notable portion of total hits and biomass in some years.
+    - Agrostis capillaris and Agrostis vinealis decline by >40% since 2000 across treatments, suggesting a mowing- or disturbance-related shift rather than a single-treatment effect.
+    - Dominant vascular plants shift toward Festuca rubra in fertile plots, with Agrostis spp. declines persisting across treatments.
+    - Shannon Diversity Indices indicate rising diversity in most treatments after 2000, but a notable decline in the Nitrogen + Lime plots by 2002 (−15% from baseline), while other treatments show increases (up to ~29% in Insecticide plots).
+  - Functional group dynamics (CSR framework)
+    - Three predominant functional groups—stress tolerators (S), competitive-stress-ruderal (CSR), and stress-ruderal/competitive-stress-ruderal (SR/CSR)—account for the majority of species hits.
+    - By 2002, CSR and SR/CSR groups become more prominent in Nitrogen + Lime plots, whereas stress-tolerant species dominate unimproved plots.
+    - Lime and Nitrogen together tend to suppress SR/CSR relative to unimproved conditions.
+- Notable methodological points relevant for GIS use
+  - Spatial design includes a downslope environmental gradient and block-level replication, enabling spatial mapping of treatment responses.
+  - Data types suitable for GIS products:
+    - Spatially explicit biomass productivity by plot/year (including slope position effects).
+    - Soil pH and moisture layers per plot/color-coded by treatment.
+    - Species-hits and functional-group distributions from point analyses, enabling classification by treatment and year.
+    - Bryophyte distribution and biomass contributions across treatments.
+    - PCA and other multivariate results that can be translated into spatially stratified habitat- or community-type maps.
+- Data products and implications for GIS work
+  - Map-ready layers to illustrate:
+    - Treatment-specific above-ground productivity across the site and over time.
+    - Soil chemical and moisture gradients and their relationship to productivity.
+    - Shifts in functional groups (S, CSR, SR/CSR) by treatment and year.
+    - Distribution of key vascular plant species and bryophytes, with emphasis on changes since 1998 and in 2002.
+  - Potential analyses:
+    - Spatial correlation of productivity with slope position and treatment.
+    - Overlay of pH and moisture surfaces with biomass to identify interaction hotspots.
+    - Change-detection maps showing shifts in dominant species and bryophyte expansion.
+- Overall interpretation
+  - Management actions (mowing, fertilisation, insecticide application) have predictable, but interacting, effects on production, plant composition, and functional structure.
+  - The introduction of lime (pH rise) and nitrogen shifts community toward competitive, fast-growing species, with potential moisture stress in drier, high-pH plots.
+  - Exclusion of grazing and mowing regime influence bryophyte expansion and reduce disturbance, favoring stress-tolerant species in unimproved plots.
+  - Insecticide treatment correlates with higher diversity in some years, but causality is not definitive; further evaluation of herbivory effects would enhance interpretation.
+- Core data sources and references
+  - Field data from 1998–2002, including biomass, point analyses, soil pH, soil moisture, weather data, and bryophyte identification.
+  - Functional-type framework informed by CSR (Grime) and related plant ecology literature.
+  - Appendices provide detailed treatment schedules, species lists, and site activity logs for deeper GIS-enabled analyses.

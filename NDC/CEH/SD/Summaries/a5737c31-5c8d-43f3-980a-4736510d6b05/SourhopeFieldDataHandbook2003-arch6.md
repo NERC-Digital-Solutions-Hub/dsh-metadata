@@ -1,0 +1,44 @@
+# SOURHOPE FIELD DATA HANDBOOK 2003
+
+- Purpose: Document the Sourhope Field site data collection framework and its data streams to support long-term, large-scale analyses of soil-vegetation interactions, and to enable cross-plot data products and insights.
+- Data streams:
+  - Vegetation surveys (species presence/absence, abundance indicators)
+  - Soil chemical and physical analyses (horizons, textures, pH, nutrients, LOI, moisture)
+  - Climate context and environmental data
+  - Climate/environment collaborations (ECN, SERAD Micronet, Ecotron facilities)
+- Study site overview:
+  - Sourhope Farm, Rigg Foot site; upland grassland with Euoceanic climate; data collected across multiple blocks and plots to explore treatment and environmental effects.
+- Data sources and collection framework:
+  - Vegetation: plots with fixed subplots; 50x50 cm point quadrats; 25 points per quadrat; presence/absence data used to infer composition and indicators.
+  - Soil: 0–30 cm auger cores per plot (W-pattern), horizon pits for depth profiles; samples archived at -80°C; horizons described and sampled for chemical analyses.
+  - Treatments and experimental design: five blocks, multiple main plots per block with treatments (Control, Lime, Nitrogen, Lime+Nitrogen, Biocide, Fallow); grazing management and exclusion implemented to simulate grazing and control impacts.
+- Data structure and outputs:
+  - Vegetation: species lists per plot, dominant indicator species, plot-level species composition; analyses include Twinspan clustering, NVC classification (U4d/U5b alternatives) and association analyses.
+  - Soil: horizon-level data tables (Wt, %N, %C, C:N, Ca, Na, K, Mg, %Moisture loss, %LOI, pH H2O, pH CaCl2); horizons include LF, FH, H, Ah, AB, Bg, BCg, Cg, etc; block-level and horizon-level summaries; data are organized by block, plot, horizon, and archived identifiers.
+- Data processing, QA, and analysis:
+  - Aggregation of core samples into plot-level data, horizon descriptions, and archiving for traceability.
+  - Analyses span vegetation (Twinspan, NVC matching, indicator species) and soil (descriptive statistics, correlations, regression, PCA) to link soil properties with vegetation communities and treatments.
+  - Data products envisioned: dashboards, maps, and time-series analyses to explore soil-vegetation relationships, treatment effects, and spatial patterns.
+- Data quality, limitations, and governance:
+  - Representativeness: vegetation data cover only a subset of subplots in the establishment year; caution advised for site-wide inference.
+  - Soil data: extensive and well-documented across horizons and blocks; some block-level anomalies noted; archival storage for long-term preservation; emphasis on traceability through sample IDs and barcodes.
+  - Recommendations for improvement: increase sampling density across subplots; ensure consistent long-term data collection; develop standardized data dictionaries to align vegetation and soil datasets.
+- Appendices and data availability:
+  - Block-specific site details, soil profiles, horizon descriptions, and laboratory data (e.g., Blocks 4 and 5) with MLURI barcodes.
+  - Detailed vegetation and soil tables (Tables 2–9) and horizon-level measurements; records include plot numbers, horizons, sample IDs, and laboratory barcodes.
+- Block and site-specific data highlights:
+  - BLOCK 4 (Rigg Foot, Sourhope):
+    - Detailed horizon sequence: LF (0–1 cm), FH (1–4 cm), H (4–8 cm), Ah (8–29 cm), Abg (29–40 cm), B sg (40–61 cm), C gx (61–95 cm).
+    - Rich horizon-level data: weight, %N, %C, C:N, Ca, Mg, K, Na, %Moisture loss, %LOI, pH (H2O and CaCl2).
+    - Vegetation data by plots (A–F subplots) with species totals and presence/absence indicators.
+  - BLOCK 5 (Rigg Foot, Sourhope):
+    - Soil profile sequence: LF (0–1 cm), FH (1–5 cm), H (5–7 cm), Ah (7–25 cm), AB (25–35 cm), Bg (35–49 cm), BCg (49–70 cm), Cg (70–100 cm).
+    - Horizon-level data including %N, %C, C:N, Ca, Mg, K, Na, %Moisture loss, %LOI, pH(H2O), pH(CaCl2); auger sample data (A–F) with similarly detailed measurements.
+    - Vegetation survey data across plots 5A–5F with subplots and species tallies; species totals per plot and per subplot.
+  - ECOTRON PLOT (Rigg Foot, Sourhope):
+    - Soil analysis: Wt, %N, %C, C:N, Ca, Na, K, Mg, %Moisture loss, %LOI, pH(H2O), pH(CaCl2).
+    - Vegetation survey: subplot-level species counts and totals for ecotron context.
+- Overall takeaway for data use:
+  - The handbook provides a comprehensive, block- and horizon-scale dataset linking soil properties with vegetation communities under different treatments and grazing regimes.
+  - The data are organized for cross-linking across soil and vegetation datasets, enabling data products and analyses that explore soil-vegetation relationships, treatment effects, and spatial patterns across blocks.
+  - Long-term archival and cross-referencing through barcodes and sample IDs support reuse and replication of analyses.

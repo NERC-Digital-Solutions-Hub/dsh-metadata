@@ -1,0 +1,46 @@
+# Experimental design/sampling regime
+
+- The UK Butterfly Monitoring Scheme (UKBMS) collects data from over 2,000 UK sites annually, primarily via fixed-route transects called Pollard walks to estimate butterfly abundance. Additional methods include timed counts and egg/larval web counts for some species, and the Wider Countryside Butterfly Survey (WCBS) for broader habitat sampling.
+- Transect types and timing:
+  - All-species transects: fixed 2–4 km routes, 5 m wide, weekly counts from early April to late September (ideally 26 counts/year). Observations restricted to suitable butterfly activity weather conditions and daylight hours.
+  - Single-species transects: follow the all-species methodology but recorded only during focal periods.
+  - Timed counts and egg/larval web counts: alternative methods during the flight period when weather is appropriate.
+  - WCBS (established 2009): reduced-effort survey using two parallel 1-km transects within randomly chosen 1-km squares, totaling 2–4 visits per year (minimum two in July/August; spring visits encouraged).
+- Data collection workflow:
+  - Field data recorded on standard forms and entered online via UKBMS MyData or Transect Walker software.
+  - Data entry can be by the recorder or a regional transect coordinator; end-of-season data consolidation is the responsibility of the regional coordinator.
+  - Online data and Transect Walker files are uploaded to an Oracle database containing all records.
+- Data organization and terminology:
+  - Species are categorized as wider countryside species (mobile, across habitats), habitat specialists (low mobility, semi-natural habitats), or regular migrants (not overwintering in the UK).
+  - Red Admiral noted as increasingly resident in parts of the UK but still largely migratory overall.
+- Data processing and analytics:
+  - Two primary analytical approaches:
+    - For wider countryside species: a two-stage model using all survey data. Stage one uses a generalised additive model (GAM) to estimate annual seasonal flight patterns; stage two fits a model to annual counts with seasonal values as an offset to estimate annual abundance changes across years.
+    - For habitat specialists and regular migrants: a GAM imputes missing values and computes site indices; a log-linear regression on site indices yields national Collated Indices.
+  - Collated Indices are updated annually with new data; prior years’ indices may be revised as data are incorporated.
+  - Trends are derived from linear regression on the Collated Indices for:
+    - All years (1976–2013)
+    - Last 20 years (1993–2013)
+    - Last 10 years (2003–2013)
+- Data values and units:
+  - Site indices are relative, not absolute population counts, reflecting a constant proportion of actual population size.
+  - Collated Indices are presented as Log10(Collated Index); trends are reported as slopes (change per year).
+  - Output fields in the dataset include species name (SCI_NAME), common name, number of years NYEARS, multiple slope/statistic fields (F_LIN_B, F_LIN_SE, F_LIN_P), trend descriptions (F_TRENDDETAIL), and percentage changes (F_FULL_R).
+  - Yearly, 10-year, and 20-year slope statistics exist for both linear trends and descriptive trend details (e.g., T20_LIN_B, T20_LIN_SE, T20_LIN_P, T20_TRENDDETAIL, T20_20_R; similarly for 10-year values).
+- Data quality and validation:
+  - In-field automatic checks in Transect Walker flag obvious data-entry issues (e.g., abnormally high counts, records outside known flight periods); recorders may modify or confirm entries.
+  - Regional transect coordinators review data for questionable values and ensure consistency within their regions.
+  - Additional automated and manual validation checks assess species distribution consistency, flight periods, first-time site records, extreme values, and differences from typical site conditions.
+- Data storage and metadata:
+  - “Species Trends” dataset stored as CSV with detailed columns (scientific and common names, years counted, slope values, standard errors, P-values, trend descriptions, and percent changes).
+  - Species naming follows Fauna Europaea; common names align with Emmet and Heath (1990).
+  - Documentation and references underpinning methods include Pollard & Yates (1993), Dennis et al. (2013) for the two-stage GAM approach, Moss & Pollard (1993) for collated indices, and Rothery & Roy (2001) for GAM applications to transect data.
+- Practical implications for data stewards:
+  - Ensure robust provenance by maintaining links from field forms to online entry, Transect Walker outputs, and Oracle storage.
+  - Preserve metadata about survey type, habitat category, weather constraints, and transect specifications to support reproducibility and appropriate data discovery.
+  - Manage updates to Collated Indices as new data are received; monitor potential revisions to historical trends.
+  - Maintain standardization of species naming and data fields to support cross-method comparability (all-species, single-species, timed counts, larval counts, WCBS).
+- Key challenges to consider for governance:
+  - Integrating data from multiple collection methods with differing sampling intensities and seasonal coverage.
+  - Handling missing data and imputation for habitat specialists and migrants.
+  - Keeping historical trend values stable or clearly versioned as new data may revise past indices.

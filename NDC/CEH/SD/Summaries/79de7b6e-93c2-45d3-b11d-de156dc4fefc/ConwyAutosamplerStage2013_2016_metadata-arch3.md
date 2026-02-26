@@ -1,0 +1,38 @@
+# Experimental design/Sampling regime
+
+- Purpose and scope: 15-minute river stage height measurements at 6 river monitoring stations in the Conwy catchment, North Wales, with water temperature also sampled at Cwm Llanerch. Data span: 2013–2016, collected for the NERC project NE/J011991/1. Gaps exist due to equipment/battery or system failures.
+- Sites and parameters (with coordinates):
+  - Cwm Llanerch: lat 53.106627, lon -3.7916149; parameters: water level (mm), water temperature (°C)
+  - Glasgwm: lat 53.027723, lon -3.8462502; parameters: water level (mm)
+  - Nant y Brwyn: lat 52.990162, lon -3.8018288; parameters: water level (mm)
+  - Nant y Coed: lat 53.049063, lon -3.7183329; parameters: water level (mm)
+  - Hiraethlyn: lat 53.204355, lon -3.7827381; parameters: water level (mm)
+  - Dyffryn Mymbyr: lat 53.089587, lon -3.9718091; parameters: water level (mm)
+- Collection cadence:
+  - Water level: measured every 10 seconds by pressure transducers; hourly/15-minute means logged every 15 minutes.
+  - Temperature (only at Cwm Llanerch): measured and logged similarly.
+  - Data are downloaded to field laptops and uploaded to an Access database.
+- Field instrumentation and rationale:
+  - Most sites used Druck PDCR 1830 pressure transducers with Campbell CR10 data loggers.
+  - Cwm Llanerch used Campbell CS451 pressure transducer with Campbell CR1000 data logger (due to discontinuation of CR10x/PDCR kit and availability at the time).
+  - Pressure transducers located in still wells at the channel edge; kit substitutions occurred because original equipment was no longer available.
+- Calibration:
+  - PDCR 1830 sensors calibrated with Druck DPI 510 at CEH Wallingford (2013).
+  - CS451 sensor at Cwm Llanerch factory-calibrated prior to deployment.
+- Data quality and validation:
+  - Regular site visits and data downloads; data visually checked for obvious issues.
+  - Common issue: periods with no data due to power failures, resolved by battery changes during site visits.
+- Data recorded and units:
+  - Stage_ht_mm: water height above transducer (mm)
+  - Battery_volt: logger/transducer power supply voltage (V)
+  - Temp_degC (only at Cwm Llanerch): water temperature (°C)
+- Data structure and file organization:
+  - Data stored as site-specific CSV files; file names indicate site and time span (e.g., 2013–2016).
+  - Non-Cwm Llanerch sites: 5 columns per file (ID, Date, Time, Stage_ht_mm, Battery_volt).
+  - Cwm Llanerch: includes an extra Temp_degC column.
+- Supporting data and metadata:
+  - Start and end data ranges provided for each site (e.g., Cwm Llanerch 12/03/201? to 03/02/2016; several sites 2013–2016).
+  - Supporting coordinates documented for all sites to enable geospatial provenance.
+- Data governance and accessibility (implications for monitoring frameworks):
+  - Data are organized for traceability and reuse (site-specific CSVs, clear column definitions, calibration notes).
+  - Potential barriers for broader sharing include data gaps, equipment changes over time, and metadata completeness, which are addressed through documented calibration, QA processes, and structured data formats.

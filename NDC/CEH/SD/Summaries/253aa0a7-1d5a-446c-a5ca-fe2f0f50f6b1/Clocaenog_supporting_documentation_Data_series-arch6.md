@@ -1,0 +1,45 @@
+# Climoor field site in Clocaenog forest Supporting documentation for data
+
+- A climate manipulation field site using automated roof technology to simulate drought and warming over the next 20–30 years in upland moorland at Clocaenog Forest, North East Wales. Established in 1998 with replicated drought and warming treatments plus controls.
+- Site characteristics:
+  - Location: Clocaenog Forest, UK (grid SJ019519; 53.055 N, -3.465 W).
+  - Ecosystem: Wet upland heath dominated by Calluna vulgaris (>60% biomass); other species include Vaccinium myrtillus, Empetrum nigrum, Deschampsia flexuosa, and various mosses.
+  - Soil: Humo-ferric podzol with variable eluvial (E) and illuvial (Bh) horizons; soil depth and horizons vary across plots.
+  - Treatments and layout: 9 plots total (3 warming, 3 drought, 3 control) arranged in blocks to mirror shading from the experimental structures; small-scale scaffolding used on control plots to match shading.
+- Climate change treatments:
+  - Drought (D): Retractable polyethylene roof reduces rainfall on treatment plots; timing primarily May–September (1999–2011) and Apr–Oct since 2012; reduces annual rainfall by about 14–28% and growing-season rainfall by up to ~80% in some years; operation paused in high winds (>10 m s-1).
+  - Warming (W): Retractable aluminum mesh curtains over plots to reduce nocturnal heat loss; roof retracted automatically during rain to maintain rainfall; typical annual rainfall reduction around 14%.
+  - Treatment details and timing vary by year; full 1997–2014 climate data and GDD adjustments available.
+- Data collection and processing framework:
+  - On-site automated weather station (AWS) plus plot-level micro-meteorological sensors; data are logged daily with hourly or minute-level resolution; initial sensor height changed from 1 m to 4 m after thefts in 2007.
+  - Wide range of abiotic and biotic data collected across plots, summarized in Table 3 (data types, methods, and time scales). Note: not all data are stored in the central EIDC repository after mid-2015; contact CEH Bangor for access and details.
+  - Longitudinal data include: AWS meteorological data, plot-level soil temperature and moisture, site rainfall and rainfall chemistry, throughfall (plot-level rainfall), water table depth, soil respiration and trace gas fluxes (CH4, N2O), net ecosystem CO2 exchange (NEE), photosynthesis, vegetation biomass (pin-point method), canopy reflectance, vegetation phenology and growth, vegetation chemistry, litterfall, root biomass, soil microbial biomass, nitrogen mineralisation, soil organic matter and carbon density, soil solution and leachate chemistry.
+- Data collection specifics and data processing notes:
+  - AWS and micro-meteorological data: sensors measure temperature, humidity, rainfall, solar and PAR radiation, net radiation, wind; data quality controlled via manual visual checks in Excel; minute-by-minute data aggregated to hourly or daily values as appropriate.
+  - Rainfall data: storage rain gauge (site-level) used preferentially for robustness; biweekly sampling for chemical analyses (pH, NO3, Cl, SO4, DOC, ammonium).
+  - Throughfall data: plot-level rainfall collected biweekly using funnel samplers; plot means derived by applying percent change relative to site-level rainfall; occasional data loss leads to plot-level exclusions or infilling.
+  - Water table depth: measured with permeable tubes to bedrock; biweekly measurements with maximum detectable depths per plot.
+  - Soil respiration: measured with collars over plots; transition across methods (CIRAS-2, LICOR LI-8100, automated systems) with data converted to mg CO2-C m-2 h-1; 40–120 s chamber closure periods; 2013–2014 automated campaigns introduced a 20.3 cm collar in one plot per plot for automation; SfR calculated via linear regression (slope) using the HMR R package.
+  - Trace gases (CH4, N2O): measured with static chambers and headspace sampling; samples analyzed by GC with calibration gases; legacy documentation caveat on data processing.
+  - Net ecosystem exchange (NEE): measured with Perspex chambers linked to CO2 analyzers in 2002–2004 and 2010–2011; biomass-based adjustments applied to fluxes via above-ground biomass estimates from pin-point surveys.
+  - Photosynthesis: ambient and response-curve measurements (PAR and Ci) across multiple years; leaf area not always directly measured; leaf mass and area determined for standardization; data include response curves and fixed-CiPAR measurements.
+  - Vegetation survey (pin-point biomass): annual surveys from 1998–2012 (and beyond); three quadrats per plot using a 300-pin grid; pin hits converted to biomass via species-specific calibration; missing pins corrected by a ratio-based conversion factor; bryophyte biomass pooled; calibration performed using destructive sampling in 2000.
+  - Canopy reflectance: NDVI and PRI indices derived from ground-based spectrometry in 2001–2004; measurements taken at ~1 m canopy height around solar noon.
+  - Vegetation phenology and growth: shoot elongation, budburst, leaf-out, and phenophases recorded for Calluna vulgaris, Vaccinium myrtillus, and Empetrum nigrum; maximum yearly elongation measurements across multiple years.
+  - Vegetation chemistry: biomass samples analyzed for C, N, P, K, Ca, Mg, lignin, tannin, alpha-cellulose, carbohydrates; both green and senesced material analyzed.
+  - Litterfall: collected via litter traps (1999–2002 monthly; later periodic); samples oven-dried and weighed; total litter mass converted to g m-2; carbon and nitrogen analyses conducted on pooled-year litter.
+  - Root biomass: multiple methods across years (2003–2013) including soil cores, washing, sieving, and WinRHIZO analysis for root traits.
+  - Soil microbial biomass: chloroform fumigation method (2000, 2001, 2012) with DOC measurements and KC correction to estimate microbial carbon per g soil organic matter.
+  - Nitrogen mineralisation: comparative initial and final cores with CK extraction and NH4+/NO3- analysis to determine net mineralisation and ammonification rates.
+  - SOM, SOC, and bulk density: derived from paired cores; SOM via weight loss on heating; SOC calculated as SOM × 0.55; bulk density from core volume and mass; results scaled to g m-2.
+  - Soil solution and leachate chemistry: lysimeters and tensioned samplers extract soil pore waters biweekly; analyses include pH, NO3-, Cl-, SO4-, DOC; samples stored at 4 C prior to analysis.
+- Data accessibility and contact:
+  - A substantial collection of on-site data spans 1997–2014 (with ongoing sampling in some datasets); not all data are stored in the EIDC repository post-2015.
+  - For data access, metadata, or clarification, contact Sabine Reinsch (sabrei@ceh.ac.uk) or Bridget Emmett (bae@ceh.ac.uk) at CEH Bangor.
+- Key data quality and challenges:
+  - Data quality control relies on manual Excel checks; legacy datasets may lack complete documentation of processing steps.
+  - Patchy records across years and varied instrumentation methods (e.g., soil respiration instruments) introduce cross-year conversion and calibration complexities.
+  - Throughfall and plot-level data require careful processing to derive treatment-level rainfall differences; occasional data loss leads to exclusion or infilling.
+  - Data are highly multi-disciplinary, spanning abiotic and biotic domains, with variability in sampling frequency and data formats across datasets.
+- Appendix and site layout:
+  - Appendix includes detailed plot layout, quadrat arrangement, and site plant associations; 2012 Climoor plot layout includes lysimeters, pin quadrats, and soil suction samplers.

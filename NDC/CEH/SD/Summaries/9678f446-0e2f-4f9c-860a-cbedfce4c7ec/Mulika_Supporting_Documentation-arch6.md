@@ -1,0 +1,37 @@
+# Materials and Methods
+
+- Purpose and setting: Ozone (O3) exposure experiment conducted April–August 2015 at CEH air pollution facility, Abergwyngregyn, North Wales, using wheat (Triticum aestivum L., cv. Mulika).
+- Experiment design:
+  - Eight solardomes (ventilated hemispherical glasshouses) used to impose O3 exposure profiles over 82 days.
+  - Seeds: 40 per pot in 25 L pots with John Innes No.3 compost; density ~260 seedlings/m².
+  - O3 treatments: four low-background with high midday peaks (max 36–115 ppb) and four high-background with small daily peaks (max 32–65 ppb); 24 h mean ranged 27–57 ppb.
+  - Non-replicated design: no true treatment replication due to limited solardomes; pseudoreplication addressed in analysis with mixed models; random allocation of treatments to solardomes; climatic conditions monitored to be similar across domes.
+  - Environment control: two air changes per minute with charcoal-filtered air; added O3 from oxygen; continuous monitoring with 30-min cycle O3 analysers; one solardome had continuous weather monitoring (temperature, PAR, RH).
+- Watering and pest/dertilizer regime:
+  - Drought treatments: well-watered, early-season drought (booting/flag leaf stages), late-season drought (late milk/early dough); each drought event lasted 10 days with one mid-drought watering.
+  - Pests and fertilizer: fungicide for powdery mildew, aphids managed; three insecticide applications; fertilizer (ammonium nitrate) applied after anthesis.
+- Measurements and timing:
+  - Growth stages: assessed using the Tottman system on four dates (9 Jun, 30 Jun, 14 Jul, 27 Jul); maximum growth stage recorded per pot.
+  - Chlorophyll content index (CCI): 523 measurements across 28 days using CCM-200 chlorophyll meter; calibration line applied to standardize measurements.
+  - Stomatal conductance to water (gs): 318 measurements across 9 days using AP4 porometer; measured on the flag leaf during daytime; paired with soil water content (SWC) and CCI.
+  - Harvest: 5–12 Aug 2015; separate straw and ears; fresh and dry weights recorded; grains threshed and weighed; data validated for anomalies.
+- Data handling and quality:
+  - Data entered into Excel; unusual values re-checked and re-weighed as needed.
+  - Data linked to ozone exposure and watering treatments, enabling self-serve access to end users and potential dashboards or reports.
+
+- Data structures and files:
+  - Mulika_growth_stage_data_2015.csv
+    - 9 variables, 320 observations.
+    - Key fields: Date_of_measurement, Day_of_year, solardome_number, Ozone_profile, Seasonal_POD6_bespoke_DO3SE (mmolm-2), 24h_mean_ozone_ppb, Watering_treatment, Pot_ID, Maximum_decimal_growth_stage.
+  - Mulika_harvest_2015.csv
+    - 26 variables, 96 observations.
+    - Key fields: Dome_number, Ozone_profile, Target_24h_mean_O3 (ppb), Measured_24h_mean_O3 (ppb), AOT40_ppm, POD6_bespokeDO3SE (mmolm-2), Watering_treatment; includes yield and biomass metrics (e.g., Ear counts, grain and straw weights, Harvest_index, Yield_kg/m², Yield_kg/ha).
+  - Mulika_CCI_2015.csv
+    - 11 variables, 524 observations.
+    - Key fields: Person_measuring, Date_of_measurement, Day_of_year, time, solardome_number, pot_ID, watering_treatment, Current_watering_status, stomatal_cond_adaxial_water, Chlorophyll_content_index, Soil_moisture_content_%.
+  - Mulika_stomatal_conductance_2015.csv
+    - 17 variables, 318 observations.
+    - Key fields: Date_of_measurement, Day_of_year, time_of_day, Solardome_number, Watering_treatment, Current_watering_status, stomatal_cond_adaxial_water, stomatal_cond_abaxial_water, stomatal_cond_adaxial_ozone, stomatal_cond_PLA_ozone, Soil_moisture_content_%, Time_canopy_computer_recording, Relative_humidity_in_dome7, PAR_in_dome7, corrected_dome_7_temperature, corrected_dome_7_VPD.
+- Data provenance and usage notes:
+  - Measurements are aligned with O3 dose concepts (DO3SE) and cultivar-specific parameterizations; data support potential model parameterization and cross-dataset analyses across growth, physiological, and yield responses to ozone and drought.
+  - Datasets collectively enable exploration of relationships among ozone exposure, water availability, stomatal behavior, chlorophyll content, soil moisture, and final yield.

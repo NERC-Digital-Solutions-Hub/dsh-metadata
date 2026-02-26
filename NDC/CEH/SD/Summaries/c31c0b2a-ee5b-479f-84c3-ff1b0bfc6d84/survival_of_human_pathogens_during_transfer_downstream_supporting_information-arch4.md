@@ -1,0 +1,34 @@
+# Data from mesocosm experiments on the survival of human pathogens bound to microplastics during transfer through the freshwater-marine continuum
+
+- Objective: Document the survival of Escherichia coli, Enterococcus faecalis, and Pseudomonas aeruginosa when colonising polyethylene or glass particles, to understand the fate of microbial hitchhikers on plastics across freshwater to marine environments.
+- Study design:
+  - Experiment 1: Direct discharge of microplastics from wastewater treatment plants (WWTPs) into freshwater or seawater; 30 cages per mesocosm with 100 microplastics or 100 glass particles per cage; inoculated WWTP effluent introduced and monitored over time.
+  - Experiment 2: Downstream transport from effluent discharge through river, estuary, seawater to beach sand; sequential passage through a series of mesocosm tanks; biofilm and bacterial loads quantified on plastics and in water/sand.
+- Data scope and structure:
+  - 14 CSV data files, with full descriptions in section 8, covering background conditions, experimental conditions, initial bacterial additions, CFU counts on water, plastics, and glass, biofilm measurements (crystal violet), sand dry weight, and related metadata.
+  - File examples include BackgroundWaterCharacteristics_Mesocosm1/2, ExperimentalWaterCharacteristics_Mesocosm1, InitialBacteriaAdded_Mesocosm1/2, WaterCFU_Mesocosm1, PlasticCFU_Mesocosm1/2, GlassCFU_Mesocosm1/2, CrystalViolet_Plastic_Glass_Mesocosm2, SandDryWeight_Mesocosm2, BackgroundCFU_Mesocosm2, among others.
+- Data collection context:
+  - Location: University of Stirling, Scotland.
+  - Timeframe: April–June 2022 (Experiment 1 in June; Experiment 2 involved sampling in April).
+  - Sampling sites for WWTP effluent and water/sand along the Forth Catchment.
+- Measurements and variables:
+  - Bacterial concentrations: CFU per unit (e.g., CFU_per_100ml, CFU_per_10 µl, CFU_DF0 to CFU_DF100000 depending on dilution factors).
+  - Biofilm quantification: Crystal violet absorbance at 550 nm as a proxy for biofilm on microplastics and glass.
+  - Physicochemical background: water type, pH, electrical conductivity (EC), turbidity, salinity, temperature.
+  - Particle types: polyethylene microplastics vs glass beads (2 mm diameter); cages used for housing particles.
+  - Timepoints: multiple sampling days (Experiment 1) and hours for crystal violet measurements (Experiment 2).
+  - Sand treatment: 40 g sand per dish for downstream sand experiments with CFU enumeration in washes.
+- Data quality and completeness:
+  - Data checked for anomalies; completeness reported as no missing data.
+  - Some measurements labeled as Too Many To Count (TMTC) or NR (No Reading) in certain entries.
+- Provenance and responsibilities:
+  - Data collection and interpretation led by Rebecca Metcalf.
+  - Funded under UKRI NERC grants related to microbial hitchhikers of marine plastics (Ne/S005196/1; NE/V005847/1).
+- Data governance and discoverability considerations for Data Leaders:
+  - Rich metadata exists with clear variable descriptions and units across files; file naming supports discoverability and reuse.
+  - Two integrated experiments with consistent measurement themes (CFU, biofilm, water/sand characteristics) enabling cross-experiment comparisons.
+  - Completeness asserted; however, users should account for TMTC/NR entries in downstream analyses.
+- Practical implications for data strategy:
+  - Demonstrates the value of multi-table datasets with harmonized metadata (units, dilution factors, sampling times) for end-user research and modelling.
+  - Highlights the importance of provenance, data stewardship, and clear documentation to support reuse by policy colleagues, researchers, and network partners.
+  - Indicates potential data gaps typical in complex environmental experiments (e.g., variable data density across timepoints or dilution series) that should be planned for in data governance and product development.

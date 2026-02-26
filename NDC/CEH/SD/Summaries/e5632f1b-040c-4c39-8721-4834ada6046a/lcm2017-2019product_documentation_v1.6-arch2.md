@@ -1,0 +1,75 @@
+# The UKCEH Land Cover Maps for 2017, 2018 and 2019 v1.6
+
+- Purpose and scope
+  - Release of three UKCEH land cover maps: LCM2017, LCM2018 and LCM2019.
+  - Each map contains 21 UKCEH Land Cover Classes (based on Biodiversity Action Plan Broad Habitats) and aligns with prior LCM2015 classes for consistency.
+  - Maps are produced automatically using Bootstrap Training with a Random Forest classifier; no manual corrections were applied to enable annual production.
+  - Data are derived from Sentinel-2 Seasonal Composite Images (TOA reflectance) plus 10 Context Layers, classified into Classification Scenes to yield pixel-level land cover.
+  - Aims to provide rapid, UK-wide land cover maps to support time-series analysis and monitoring of environmental change; plan to release a new LCM annually.
+
+- Data and methods
+  - Bootstrap Training
+    - Uses historic LCM2015 as the training base; selects parcels with ≥99% purity to create bootstrap training data.
+    - Training data reused across 2017–2019 classifications, enabling rapid map updates; future maps will use majority signals across multiple years.
+  - Random Forest classification
+    - Pixel-level classification (20 m) with RF; 10,000 samples per class per training bag; balanced sampling to avoid bias toward common classes.
+    - Produces 20 m Classified Pixels (21 classes) which underpin all other products.
+  - Seasonal Composite Images and context
+    - Sentinel-2 seasonal composites (winter, spring, summer, autumn) derived in Google Earth Engine; four-season phenology aids discrimination.
+    - Context Rasters (20 m) provide terrain, proximity to buildings/roads/coast/freshwater, urban foreshore, and woodland masks to reduce spectral confusion.
+  - Classification Scenes and tiles
+    - Great Britain classified in 100 x 100 km GB tiles (46-band scenes); NI uses a single 43-band scene per year.
+  - UK Land Parcel Spatial Framework
+    - Fixed framework with ~0.5 ha minimum mapping unit; parcels used to aggregate 20 m classified pixels into fixed units for change detection.
+    - Framework retained from LCM2015 but re-indexed for faster processing; gid identifiers do not match LCM2015.
+  - Data provenance and extent
+    - Datasets provided for Great Britain (GB) and Northern Ireland (NI) in respective coordinate systems (GB: EPSG:27700; NI: EPSG:29903).
+    - Product suite includes 42 datasets (20 m, 25 m, and 1 km products) across years.
+
+- Product suite and dataset descriptions
+  - 20 m Classified Pixels
+    - New addition in 2017–2019; RF classification results with per-pixel class memberships.
+    - Band 1: dominant class; Band 2: per-pixel class membership probability (0–100).
+    - Preserves detailed landscape features (not generalised by Land Parcels).
+  - Land Parcels
+    - Attributes describing parcel composition: gid, hist (frequency distribution by class), mode (dominant class), purity, conf (mean class membership probability), stdev, n (pixel count).
+    - Attribute names updated from LCM2015; parcel identifiers (gid) no longer cross-match with LCM2015.
+  - 25 m Rasterised Land Parcels
+    - Rasterised representation of Land Parcels with three bands: mode, conf, purity.
+  - 1 km Rasters
+    - 1 km grid summaries derived by aggregating 25 m parcels:
+      - 1 km Percent Cover (21 bands): fractional cover per class.
+      - 1 km Percent Aggregate Cover (10 bands): cover per UKCEH Aggregate Class.
+      - 1 km Dominant Cover: single-band dominant class per 1 km cell.
+      - 1 km Dominant Aggregate Cover: dominant aggregate class per 1 km cell.
+    - Rounding may cause sum differences; coastal cells may sum to less than 100.
+  - Dataset specifics
+    - GB: 21 classes; NI: 10 or 21 classes depending on product.
+    - Pixel sizes: 20 m (classified pixels), 25 m (rasterised parcels), 1 km (summary rasters).
+    - Number of classes and bands vary by dataset; Appendix 6 provides full list of datasets per year.
+
+- Validation and accuracy
+  - UK-scale validation against countryside survey (2019), open data inventories, IACS, and bespoke validation points (22,325 points).
+  - Overall accuracy (UK-scale):
+    - 2017: 78.6%
+    - 2018: 79.6%
+    - 2019: 79.4%
+  - Validation notes
+    - Validation points were converted to UKCEH classes; some misclassification is expected due to class definition differences.
+    - About 80% overall correspondence is considered strong for automatically produced 21-class maps; ongoing improvements anticipated.
+  - Appendix 5 contains full confusion matrices and producer/user accuracy by class.
+
+- Considerations for monitoring and use
+  - Temporal monitoring: annual maps enable detection of land cover change; random spatial distribution of errors helps distinguish real changes over time.
+  - Data interpretation: 21-class scheme mirrors historical classifications for comparability; some BAP Broad Habitat nuances are simplified for remote sensing practicality.
+  - Data access and integration
+    - Datasets are structured to support time-series analyses; the Land Parcel Framework provides a stable basis for change detection, while 20 m Classified Pixels offer high-detail inputs for user-defined summaries.
+  - Limitations and future directions
+    - No manual corrections mean some regional/class confusion persists; exploration of additional data sources (e.g., Sentinel-1 SAR) to fill gaps and improve accuracy.
+    - Ongoing refinement of Bootstrap Training and future LCMs will adjust to changes in training data and class definitions.
+    - Prospective enhancements include better upland peatland mapping and potential improvements in coastal and aquatic classifications.
+
+- Practical implications for environmental monitoring
+  - Standardised, annually updated land cover data across GB and NI support consistent environmental health assessments and policy performance monitoring.
+  - Multi-scale products allow detailed local analyses (20 m) and broad-area trend analyses (1 km), with parcel-based change detection via the Land Parcel Spatial Framework.
+  - Clear documentation of methodology, validation, and data relationships facilitates reproducibility and integration into monitoring workflows.

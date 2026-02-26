@@ -1,0 +1,48 @@
+# Summary
+
+- Purpose
+  - Present two CFD data collections describing fluid-structure interactions in environmental flow contexts:
+    - Biofilm streamer in laminar flow: investigates how changing Reynolds number (Re = 400–700) affects ambient flow hydrodynamics and biofilm oscillation frequency.
+    - Bed permeability and dunes: assesses how bed permeability influences surface and subsurface flow over bedforms (dunes) using a model that couples boundary layer flow and Brinkman-layer dynamics.
+- Modelled domains and setup
+  - Biofilm streamer study
+    - Channel: length 25 cm, depth 4 cm.
+    - Biofilm: oscillating tail 2.5 cm attached to a rigid cylindrical base (1 cm diameter), centered 2 cm from inlet and 2 cm from top/bottom walls.
+    - Flow regime: laminar; Re varies from 400 to 700; parabolic inlet velocity with Umean = 0.4–0.7 m/s.
+    - Simulation structure: two nonoverlapping domains—fluid (Navier–Stokes) and solid (linear elastic biofilm). Total run time: 30 s; first 2 s for flow development; 2 s for development before structural solver begins. Point P coordinates tracked over time.
+    - Data characteristics: 310 files per simulation, with 4 Reynolds-number cases; time steps every 0.12 s starting at 0.12 s.
+  - Bed permeability and dunes study
+    - Channel: 4.8 m length, 0.35 m width, 0.60 m height.
+    - Bed types: permeable bed comprised of six layers of uniform spheres (D = 0.038 m), ~50% porosity; permeable section depth hbed = 0.228 m; overall flow depth hw = 0.19 m (hw/hbed = 0.8).
+    - Dune geometry: wavelength 0.41 m, amplitude 0.056 m, leeside angle 27°; dune spans channel width.
+    - Inlet conditions: freestream velocity Uo = 0.16 m/s; Reynolds number Re ≈ 3.0 × 10^4; Froude number Fr ≈ 0.12.
+    - Boundary conditions: downstream outlet with fixed pressure; walls no-slip; free surface treated with a rigid-lid approximation.
+- Data and variables
+  - Biofilm dataset
+    - Coordinates: X, Y, Z (m)
+    - Scalar: Cn (concentration, g/L)
+    - Velocity components: U (downstream), V (cross-stream), W (vertical)
+  - Bedform dataset
+    - Coordinates: X, Y, Z (m)
+    - Fluid/solid fields and derived quantities:
+      - P1 (pressure, Pa)
+      - U1, V1, W1 (velocity components)
+      - KE (turbulent kinetic energy)
+      - Ε (dissipation rate)
+      - EP (turbulent dissipation rate)
+      - EPKE (product of KE and dissipation)
+      - XN, ZN (dimensionless X and Z)
+      - NKE (KE normalized by inlet velocity squared)
+      - UN, WN (velocity components normalized by inlet velocity)
+      - PRPS (material indicator: water/solid)
+      - VEL1-X, VEL1-Y, VEL1-Z (velocities in x, y, z directions)
+- Model and references
+  - Biofilm study uses a coupled fluid-structure interaction (FSI) solver with Navier–Stokes equations for the fluid and linear elastic mechanics for the biofilm, tracking oscillation frequency and ambient-flow influence via time-series at a probe point.
+  - Bed permeability and dunes study presents a CFD model that simultaneously resolves boundary-layer and Brinkman-layer flow to study surface and subsurface effects due to bed permeability.
+  - Related open-access publication for full methodology: Sinha et al. (2017) Water Resources Research, on bed-permeability influence on turbulent flow over bedforms (doi provided in source).
+- Outputs and relevance
+  - Aimed at understanding how Reynolds number and bed properties affect hydrodynamics, oscillatory behavior of biofilms, and flow structure over bedforms.
+  - Data are organized for analysis of flow fields, oscillation dynamics, and permeability effects, with detailed variable lists enabling cross-comparison and standardised assessment of environmental-flow scenarios.
+- Context for environmental monitoring
+  - These datasets exemplify standardised, traceable CFD workflows for environmental flow conditions, including explicit domain definitions, boundary conditions, time-stepping, and comprehensive data variables suitable for validation, visualization, and policy-relevant analysis.
+  - The studies illustrate how complex flow–structure interactions and substrate properties can be encoded in reproducible numerical experiments, aligning with environmental-monitoring aims to quantify system state and response under varying conditions.

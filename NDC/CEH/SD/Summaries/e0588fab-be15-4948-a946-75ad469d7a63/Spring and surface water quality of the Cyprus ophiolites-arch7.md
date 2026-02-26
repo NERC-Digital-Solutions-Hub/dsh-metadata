@@ -1,0 +1,30 @@
+# Sampling, chemical analysis and thermodynamic treatment
+
+- Geographic and study context
+  - Cyprus location and its three main physiographic regions: Kyrenia Range (northern), Troodos Massif (central/southern), and Mesaoria Plain (east-west).
+  - Typical Mediterranean climate, with spatial variation in rainfall and temperature; low population density outside major towns; soils and land use characteristics.
+- Sampling design and field procedures
+  - 21 sites within the Troodos ophiolite area chosen to represent major waters (per prior work by Pantazis, 1978).
+  - Sampling conducted in mid-May 1985 with collaboration from the Geological Survey of Cyprus.
+  - Water samples filtered in the field (0.45 μm) and stored in appropriate bottles to preserve sample integrity.
+  - In-field measurements: pH determined electrochemically with minimal atmospheric contact; alkalinity titrated to pH ~4.0; reduced sulfur measured with an ion-selective electrode.
+- Laboratory analyses (UK)
+  - Alkalinity and pH measurements performed promptly after collection to minimize CO2 exchange.
+  - Major anions, bromide, and total iodine analyzed colorimetrically.
+  - Major cations, trace metals, and boron analyzed by inductively coupled plasma optical emission spectroscopy (ICP-OES).
+  - Sample preservation: acids used for storage (nitric acid for metals; high-purity water for anions).
+- Thermodynamic treatment and calculations
+  - Dissolved CO2 and saturation concepts
+    - EpCO2: ratio of dissolved CO2 in a sample to CO2 in pure water in equilibrium with the atmosphere at the same temperature/pressure; calculated from pH, calcium, and alkalinity data (Neal et al., 1998a).
+    - EpCO2 values indicate 0.1 (tenth saturation), 1 (saturation), or 10 (ten times saturation).
+  - Mineral saturation indices (SIs)
+    - Calcium carbonate (SICaCO3) = log10({Ca2+}*{CO3^2-}) – log10(KCaCO3); SI = 0 at saturation, +1 or -1 indicate tenfold saturation or tenfold undersaturation, respectively.
+    - Magnesium hydroxide saturation index used for microcrystalline brucite; SI formulation based on the corresponding equilibrium constant.
+    - PHREEQC thermodynamic model (Parkhurst, 1995) used to compute saturation indices.
+  - Handling values below detection
+    - When determinands fall below the lowest quotable value, indices are calculated using half the lowest quotable value to enable comparison.
+    - Italicized entries in tables indicate such cases; lowest quotable value defined as twice the detection limit.
+    - For aluminium and magnesium, estimates provide upper bounds to saturation.
+- Data presentation and references
+  - Results and saturation data are presented in tabular form in a subsequent section.
+  - References cited include Neal (1988); Neal, Smith, and Hill (1992); Neal, House, and Down (1998a); Pantazis (1978); Parkhurst (1995).

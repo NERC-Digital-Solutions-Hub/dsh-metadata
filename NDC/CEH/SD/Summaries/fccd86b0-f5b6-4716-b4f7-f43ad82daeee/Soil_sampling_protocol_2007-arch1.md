@@ -1,0 +1,64 @@
+# A1.1. Equipment and Soil Core Sampling Protocol
+
+- Purpose and scope
+  - Field protocol for collecting soil cores from X-plots across squares.
+  - Each square yields five soil sampling locations and one composite 8–10 sub-sample soil bag.
+  - Samples are labeled, bagged, stored in a cool box, and posted to regional CEH coordinators.
+
+- Equipment
+  - Electric Cold Box (kept cool when vehicle is driven)
+  - Electrical mains charger for accommodation
+  - Tools: 2 knives, 2 plastic plates, hammer, 2 pairs of pliers, mallet, regular trowel, long thin trowel, notebook and pen, parcel tape
+  - Spare cores and 1 pack per square containing:
+    - X-plot packs with cores, end caps, labelled bags
+    - Stamped and addressed mailbags for 5 X-plots
+
+- Soil core sampling procedures
+  - Core locations (per X-plot in each square)
+    - Core C (Black): 15 cm south of the centre quadrat corner
+    - Core F (Short White): 15 cm east of Core C
+    - Core N (Long White): 15 cm south of Core C
+    - Core P (Long Grey): 15 cm west of Core C
+  - Core specifics
+    - Core C: 15 cm long, 5 cm diameter; core must be upright, bevel end on soil surface
+    - Core F: 8 cm long, 4 cm diameter; leave litter layer intact
+    - Core N: 15 cm long, 4 cm diameter
+    - Core P: 15 cm long, 4 cm diameter; ensure right orientation
+  - Sampling steps (general)
+    - Clear vegetation and plant material
+    - Insert pipe upright, cut bottom edge through roots
+    - Push pipe into ground until upright; place grey plate on top and hammer to level with surface
+    - If depth is insufficient, relocate and record the change
+    - If pipe breaks, use a spare pipe
+    - Remove pipe carefully to avoid losing soil; use trowel to prevent soil loss
+    - Remove exterior lumps from pipe; cap ends; bag and seal
+  - Composite soil sample (SQID samples)
+    - 120 squares total (as applicable)
+    - 8–10 sub-samples collected using long thin trowel to 15 cm depth
+    - Sub-samples placed along the boundary of the 5 m quadrat, evenly around sides
+    - If insufficient depth, relocate and continue; repeat 8–10 times (minimum 2 per side)
+    - Fill bag to top white panel; if under-filled, collect more until full
+    - Seal the bag, place inside a second bag, and seal
+    - Record any issues (e.g., unusual vegetation, cow pat, boulder)
+
+- Soil sample storage and dispatch (per core type)
+  - Core C (Black)
+    - Store in its bag; after all black cores for a square are collected, store together in a spare plastic bag
+    - Keep in a cardboard box in the vehicle, cool and out of direct sunlight; return to regional coordinator
+  - Core F (Short White)
+    - Place in its bag with other short white cores; store in the cool box
+    - After all five samples for the square are collected, place in mailbag labeled CEH Lancaster and post promptly
+  - Core P (Grey)
+    - Place in its bag with other long grey cores; store in the cool box
+    - After all five samples are collected, mail to CEH Lancaster
+  - Core N (White)
+    - Place in its bag with other long grey cores; store in the cool box
+    - After all five samples are collected, mail to CEH Bangor
+  - Soil Sample Bag
+    - Place in the cool box immediately; post to CEH Lancaster as soon as possible
+
+- Posting and timing
+  - Post samples as soon as possible
+  - If last post is on Thursday, post on Thursday; do not post on Friday
+  - If local post boxes cannot accept packages, use a convenient Post Office
+  - Use OS map data or Road Atlas to locate Post Offices

@@ -1,0 +1,32 @@
+# 25m raster
+
+- Overview: The raster 25m dataset is created by converting land parcels from the vector dataset into a 25-meter grid. Each grid cell records the dominant land cover at that location using LCM2000 Subclasses. There is a corresponding 1km raster summarised from this 25m data.
+- Datasets and scope:
+  - Great Britain (GB) and Northern Ireland (NI) separately represented.
+  - 25m raster records the dominant LCM2000 Subclass for each 25m cell.
+  - 1km raster produced by summarising the 25m raster within 1km grid cells.
+- Metadata and structure (Table 1):
+  - GB grid: 24,400 columns x 48,400 rows; NI grid: 7,600 columns x 7,200 rows.
+  - Lower-left corner coordinates (easting/northing) differ by region; pixel centre offset details provided (GB +12.5m, NI +12.5m).
+  - Pixel size: 25m for both GB and NI.
+  - Coordinate systems and projections:
+    - GB: British National Grid, Transverse Mercator, Spheroid Airy, Datum OSGB 1936.
+    - NI: Irish National Grid, Transverse Mercator, Spheroid Airy Modified 1849, Datum Ireland 1965.
+- Data storage and coding:
+  - LCM2000 Subclass codes (float with one decimal, stored as 8-bit byte by multiplying by 10 to fit 0–255). Example: Water (inland) Subclass 22.1 becomes 221 in the raster.
+- 1km raster (Table 2):
+  - GB: 700 columns x 1,300 rows; NI: 500 columns x 500 rows.
+  - Pixel size: 1000m.
+  - Coordinate systems and projections mirror the 25m dataset per region.
+  - Created by summarising the 25m data within each 1km cell.
+  - Pixel centre note: add 500m to lower-left coordinates to locate pixel centres.
+- Subclass to 1km code and Aggregate class mapping (Table 3):
+  - The document provides a correspondence between LCM2000 Subclass codes (25m), their 1km codes, and the LCM2000 Aggregate classes (e.g., Oceanic seas, Standing open water, Coastal, Broad-leaved/mixed woodland, Coniferous woodland, various grasslands, arable types, built-up areas, etc.).
+  - This mapping supports cross-scale interpretation and storage efficiency (e.g., certain categories aggregate to common classes like Coastal or Built up areas and gardens).
+- Practical notes for data management:
+  - 25m codes are concentrated into a compact 0–255 range for efficient raster storage.
+  - The documents emphasize the need to understand the regional differences in coordinate systems and datums for proper integration and use.
+  - The dataset structure enables cross-reference between fine (25m) and aggregated (1km) land cover information, aiding scalable analyses and data discovery.
+- Relevance for data strategy:
+  - Demonstrates a multi-resolution land cover data product with clear metadata, code mappings, and regional coordinate system handling.
+  - Highlights the importance of a robust mapping table to translate between detailed subclass codes and broader aggregate classes for consistent reporting and analysis across scales.

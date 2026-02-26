@@ -1,0 +1,36 @@
+# Mine water data from legacy coal mines in the Midland Valley, Scotland
+
+- This study measures greenhouse gas concentrations, physico-chemical water properties, metal concentrations, and carbon radiogenic and stable isotopes to investigate mine water from legacy coal mines in the Midland Valley, Scotland, collected June–September 2022.
+- Primary objectives:
+  - Quantify origins, concentrations, fluxes, and sinks of GHGs and heavy metals across multiple sites.
+  - Determine the origins of CH4 and CO2 and how these origins may vary between environments.
+  - Assess how metal concentrations change across environments and what drives these changes.
+  - Evaluate treatment processes (oxidation, settling ponds, reed beds) on water properties, metals, and GHGs.
+- Study design:
+  - Sampling at 16 mine water outflows (MA1–MA16) distributed across Fife, Central, Lothian, and Ayrshire coal fields; some sites include treatment systems and others discharge directly.
+  - Four treatment locations sampled to evaluate treatment impact: two cascades (MA7, MA10) and two peroxide systems (MA11, MA12). Additional reference sampling at treatment points to compare with source data.
+  - Complementary data collection at treatment schemes to assess changes through treatment trains (source, cascade end, deep pool exit, reed bed, outflow).
+- Data scope and contents:
+  - Water properties: temperature, pH, conductivity, dissolved oxygen, DO%, dissolved carbon, dissolved nitrogen; total dissolved carbon (TDC), dissolved organic carbon (DOC); major ions (via ion chromatography); and gas partial pressures derived from headspace analyses.
+  - GHGs: concentrations of CO2, CH4, and N2O; CH4-C and CO2-C measurements; CH4 and CO2 saturation in water; pCH4 and pCO2 in air (headspace).
+  - Metals: broad suite of elements measured by ICP-MS (e.g., Li, Be, B, Na, Mg, Al, Si, P, K, Ca, Ti, V, Cr, Mn, Fe, Co, Ni, Cu, Zn, Ga, As, Se, Rb, Sr, Nb, Mo, Ag, Cd, Sb, Cs, Tl, Hg, Pb, U, etc.), with data provided as filtered and unfiltered where applicable.
+  - Isotopes: radiogenic (Δ14C) and stable (δ13C) carbon isotope data for dissolved CH4 and CO2.
+  - Data organization: CSV files with detailed metadata including location, sample code, date, coordinates, measurement type, and units; tables outlining parameters, units, and data fields; notes on detection limits and data gaps.
+- Site and sampling details:
+  - Location specifics range from MA1 (Lathallan Mill-Adit) to MA16 (Kames-Adjacent Shaft); sampling includes source points, treatment-stage points (cascade, deep pool, reed bed, outflow), and where sampling could occur near the mine water outflows.
+  - Some caveats noted: MA13 likely reflects seepage with sampling in a stream; MA4 and others may have had underground to surface piping causing outgassing; several sites experienced turbulence during sampling; last mine closure dates vary (1989–1995), influencing hydrology and gas dynamics.
+- Methods and analytical approach:
+  - Gas analyses: headspace sampling with triplicates using syringes to quantify CO2, CH4, and N2O by GC (Agilent 7890B) with a headspace autosampler; calibrations with multi-gas standards; samples analyzed within a week.
+  - Water analyses: filtration for dissolved constituents; TOC (TDN, TDC, DOC) assays; ion chromatography for anions/cations; ICP-MS for trace metals; isotope analyses performed at NEIF and partner laboratories.
+  - Isotope analyses: CH4 and CO2 isotopes measured to elucidate origins and processes; radiocarbon and stable carbon isotopes processed at dedicated facilities (NEIF Radiocarbon Laboratory).
+  - Data interpretation: dissolved gas concentrations derived from headspace equilibria using mass-balance relations; conversion to ppmv via gas law considerations; acknowledgments of potential underestimation due to supersaturation and outgassing, with estimated errors typically under 5%.
+- Data quality and limitations:
+  - Outgassing, turbulence, and high supersaturation can bias gas measurements, meaning reported concentrations are conservative minimums.
+  - Filtration prior to ion analyses may underrepresent dissolved inorganic carbon (DIC) and DOC in Mn- and Fe-rich waters; some NH4+ measurements could not be obtained due to matrix effects (Na+ peaks dominating NH4+ at certain sites).
+  - Datasets note missing values with asterisks and provide clear documentation of detection limits and measurement caveats.
+- Data governance and accessibility considerations for Data Leaders:
+  - Data are structured with site-level detail, measurement type, and standardized units to enable cross-site comparisons and integration into broader water-data systems.
+  - Metadata include precise lat/long to four decimals, sampling dates, and location types (Source, Cascade, Reed, Deep, Out) to support discoverability and reproducibility.
+  - The dataset supports analyses of treatment effectiveness, gas flux modeling, and cross-site comparisons of CH4/CO2 origins and metal dynamics, but users should account for potential underestimation due to outgassing and sampling constraints.
+- Acknowledgements:
+  - Funded by Natural Environment Research Council (NERC) via IAPETUS Doctoral Training Partnership; radiocarbon/isotope work supported by NEIF; access supported by Coal Authority and Severn Trent Services.

@@ -1,0 +1,31 @@
+# INTRODUCTION
+
+- The Plynlimon experimental/research catchments were established in the late 1960s by the Institute of Hydrology (IH), a component of NERC, now part of CEH, to study how land use affects catchment water availability, flooding, and low flows.
+- Location: adjacent catchments at the headwaters of the River Severn and River Wye in mid-Wales, chosen to represent two main upland land uses (coniferous forestry vs sheep-grazed grassland) while remaining similar in other environmental aspects.
+- The catchments were heavily instrumented with long-term climatic, hydrological, and soil moisture records, along with surveys of physical characteristics (topography, soils) and land use; datasets include various thematic maps.
+- Spatial datasets included: catchment and subcatchment boundaries, river network, spot heights, Wye/Severn elevation contours, soil parental materials, and vegetation map; a hydrologically corrected elevation grid (DTM) was created for analysis.
+- Source maps originated from a detailed aerial survey (Hunting survey, 1967). In the late 1990s, topographic and hydrographic data were digitised into GIS layers, including elevation, boundaries, and river networks.
+- Early field surveys mapped soils, geology, vegetation, and land use; some data are not available due to ownership or loss, with an exception being the soil hydrology map by J.P. Bell (1969), digitised and reissued by CEH in 2005.
+- Digitising of maps:
+  - CEH digitised most shapefiles from hard copies using a CALCOMP table with ground control points; elevation points and contours were captured at 10 and 20 m intervals and saved as Arcinfo files.
+  - Severn contour lines were captured at Edinburgh University and converted to lines; this dataset was cleaned to remove artefacts.
+- Hydrologically corrected DEM:
+  - Built from 1:5,000 contour maps, spot heights, stream maps, and catchment boundaries.
+  - A TIN was created and used to produce the Plynlimon hydrologically corrected DEM (Plyn_DEM), a 15 m grid in British National Grid.
+- Datasets and shapefiles described:
+  - Catchment and subcatchments (PlynlimonCatchments.shp)
+  - River network (PlynlimonRiverNetwork.shp)
+  - Spot heights (PlynlimonSpotHeight.shp)
+  - Wye elevation contours (Plynlimon_WyeElevationContours.shp)
+  - Soil parental materials (Plynlimon_SoilParentalMaterials)
+  - Vegetation map (Plynlimon_VegetationMap2013) with classification and variants
+  - Severn elevation contours (Plynlimon_SevernElevationContours.shp)
+- Vegetation mapping:
+  - Updated from CEH Land Cover Map 2000 (LCM2000) to better reflect heath, bracken, improved grassland, etc., for SoilTrEC analyses.
+  - Draft vegetation maps were created from 2009 aerial photography, refined with 2013 field observations; differences often due to timing and phenology.
+  - Final mapping class Names: coniferous woodland (including new and felled plantations), acid grassland, bracken, heath, improved grassland, woodland, bare ground, water features.
+- Appendix A: Hunting Survey
+  - Describes the 1967 aerial photography survey used to derive the topographic base; film negatives are lost, but printed frames have been digitised and rectified to preserve footprint data.
+- Background and context:
+  - The dataset suite supports soil-vegetation boundary identification for related SoilTrEC work.
+  - Data are stored and described with explicit coordinate systems, file names, and attributes to enable reuse and integration into analyses, models, or monitoring frameworks.

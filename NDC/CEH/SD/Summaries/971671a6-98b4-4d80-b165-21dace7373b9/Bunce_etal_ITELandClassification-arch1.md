@@ -1,0 +1,88 @@
+# ITE LAND CLASSIFICATION: CLASSIFICATION OF ALL SQUARES IN GB
+
+- Objective and scope
+  - Classify every 1 km square in Great Britain into land classes.
+  - Preserve the original ISA (Merlewood) classifications while enabling automated, scalable classification.
+  - Use machine-readable data and comprehensive datasets covering all squares.
+  - Maintain historical databases and the relative distribution of sample squares across classes.
+
+- Data and datasets
+  - Data requirements: any used feature could be drawn from existing datasets or recorded automatically.
+  - Data types used (structured as data sources for classification)
+    - COASTAL: coastal cliff, rock, sand, mud, shingle, tidal
+    - ALTITUDE: height-related metrics, distance to hills/valleys, aspect, slope
+    - MAPDATA: OS-derived layers (sea, woodland, villages, roads, canals, water, towns, railways, rivers, etc.)
+    - DISTANCE: distance to south and west coasts
+    - ISLAND: island status
+    - CLIMATE: sunshine hours, snow days, mean January temp
+    - GEOLOGY: detailed rock types
+    - DRIFT: drift types (e.g., alluvium, moraines, sands, gravels, etc.)
+  - Spatial and data scale
+    - Initial approach aimed at reproducing the original ISA at 1 km square scale.
+    - Data collection and processing considered over 15 months with various datasets and refinements.
+  - Sample and attributes
+    - Original ISA based on 1212 squares with 282 attributes.
+    - Expanded with an additional 4800 squares identified by 76 key attributes.
+    - 1 km squares used as the primary unit of analysis across GB.
+
+- Methods tested and evaluated
+  - Overview of approaches
+    - Original ISA-based classification (baseline)
+    - Discriminant Function analysis
+    - Logistic Regression (with discriminant-style integration)
+    - Other multivariate techniques (e.g., SIM ordination-based simulations)
+  - Evaluation criteria used
+    - Geographical distribution and dispersion of land classes
+    - Allocation consistency for original 1212 squares
+    - Proportional representation of classes across GB
+    - Relationship to the principal environmental gradient and variability
+    - Proportion of field-sampled squares over time
+    - Relationship to vegetation composition and environmental/ecological data
+  - Key findings from method comparisons
+    - Discriminant Function alone:
+      - Failed to identify coastal classes 7 and 8 in southern Britain, implying redefinition of coastal classes or regional misallocations.
+      - Midlands/North–South distributions shifted, with some regions extending into areas outside original ranges.
+      - Showed better alignment with vegetation gradients in some respects but problematic coastal classifications.
+    - Logistic Regression (LR) and LR combined with Discriminant (Logistic/Discriminant, LR-DF):
+      - Higher correspondence with the original 1212-squares classification than some alternatives, though not uniformly superior across all measures.
+      - Produced tighter, more coherent clusters in many classes but diverged for a few coastal/non-coastal classes.
+      - Balanced sampling (closer to proportional to stratum size) and lower standard errors in many comparisons.
+      - Better overall dispersion properties and improved predictability for land cover estimation in 1978 data.
+  - Environmental gradient and vegetation correlation
+    - Gradient analysis showed a south/east lowland to north/west upland axis as a robust environmental gradient for evaluating classifications.
+    - Correlations with vegetation gradients (based on limited quadrats) were:
+      - Original classification: 0.827
+      - Discriminant Function: 0.845
+      - Logistic Regression: 0.813
+    - Indicates Discriminant Function aligned slightly better with vegetation gradient in this specific comparison, but LR-DF offered other practical advantages.
+
+- Results and conclusions
+  - Primary conclusion
+    - The Logistic/Discriminant approach is recommended as the preferred method for GB land classification.
+  - Reasons for recommending LR/DF
+    - Discriminant Function alone failed to identify certain coastal classes, risking redefinition of coastal classes and regional misclassifications.
+    - LR/DF provides a balance closer to proportional sampling across strata and GB-wide class distributions.
+    - LR/DF (and LR-DF) generally showed lower standard errors and reduced dispersion compared with the original ISA, aiding policy development and large-scale applications.
+    - When compared to simulations based on indicator attributes for broader square coverage, LR/DF showed substantial improvements over the patterns produced by those alternative expansions.
+  - Additional supporting observations
+    - The LR and LR-DF approaches improved sample representation and yielded more stable dispersion patterns than the original, while preserving much of the original classification structure.
+    - A number of outputs and datasets (e.g., various map versions and training schemes) are available for further analysis and validation.
+
+- Outputs, maps, and data accessibility
+  - Distribution maps for GB derived from the LR/DF method are produced and analyzed.
+  - Additional outputs available on request from ITE Merlewood include:
+    - Original 32-class ISA derived from 1212 squares with 282 attributes
+    - Original 1212 squares plus 4800 squares identified via 76 attributes
+    - Fully trained LR classification for all squares based on the original 1212 squares
+  - Tables and figures include environmental means, standard errors, cross-tabulations, and correlations with vegetation and land cover indicators.
+
+- Practical implications and recommendations
+  - Adopt the Logistic/Discriminant approach for national-scale land classification in GB due to better balance, lower error terms, and more reliable dispersion characteristics.
+  - Maintain and leverage the existing ISA-derived data and the expanded 4800-square set to enhance model robustness.
+  - Continue to validate classifications against environmental gradients and vegetation data to ensure ecological coherence.
+  - Provide accessible datasets and metadata to facilitate discoverability and reuse, with emphasis on documenting data sources, scales, and methods used.
+
+- Appendices and references
+  - Appendix A: references to studies using the Merlewood Land Classification System
+  - Appendix B: multivariate discrimination details
+  - Ongoing collaborative studies and institutions contributing to refinement and application (Nature Conservancy Council, Edinburgh University, Nottingham University, Royal Society for the Protection of Birds, and others)

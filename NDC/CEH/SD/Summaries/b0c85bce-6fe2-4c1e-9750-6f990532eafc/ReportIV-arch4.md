@@ -1,0 +1,53 @@
+# SUMMARY
+
+- The report documents four years of the NERC Soil Biodiversity Thematic Programme at Sourhope, focusing on above-ground productivity (biomass), species composition, and diversity within a controlled field experiment.
+- Site and design:
+  - Rigg Foot Experimental Site, Sourhope, Scotland, with 5 replicate blocks, each containing 6 main plots subdivided into 10 sub-plots.
+  - Five management regimes (plot-level treatments): Control 1, Control 2 (no treatment), Nitrogen, Lime, Nitrogen & Lime (N&L), and Insecticide; plus a site-wide mowing regime (about 6 cm, May–Sept).
+  - Treatments applied annually since 1999; measurements collected across 1999–2002.
+- Data streams and measurements:
+  - Weather data from an on-site Automatic Weather Station (temperature, rainfall, radiation, soil moisture).
+  - Above-ground biomass: regular harvests from randomly selected 0.5 m2 cells within sub-plots; samples dried and weighed.
+  - Plant community surveys: baseline 1998 and annual 2000–2002 point analysis using 0.5 m2 cells with 100-hole grid; bryophyte and vascular plant species recorded.
+  - Soil measurements: soil pH (5 cm depth) and soil moisture (theta probe) at selected times.
+  - Additional vegetation surveys: litter, biomass sorting by species, and supplementary micro-surveys (minirhizotron zones, disturbance plots).
+  - Data volume: over 11,600 soil samples collected since the start; extensive Appendix data (species lists, treatment summaries, weather, biomass, PCA results).
+- Key findings by theme:
+  - Mowing effect:
+    - Dominance shift away from Agrostis spp. toward Festuca rubra, with bryophyte expansion (mosses) associated with a ~6 cm sward height maintained by mowing and absence of grazing.
+    - Stress-tolerant species expand across most plots, particularly unfertilised ones; disturbance reduction likely supports bryophyte growth.
+  - Fertilisation effect:
+    - Nitrogen and/or lime increase above-ground productivity, with the strongest gains where both N and lime are applied.
+    - Productivity in lime- or nitrogen-only plots remains variable; soil pH approaches 7.0 in limed plots, potentially affecting moisture and plant stress.
+    - A functional shift expected: from stress-tolerant to competitive species in fertilised plots; in unfertilised plots, disturbance reduction and nutrient loss from clipping may favor stress-tolerant species.
+  - Insecticide effect:
+    - Dursban insecticide may influence plant diversity; evidence is interpretive rather than definitive. Trends align with literature showing herbivory reductions can alter species composition.
+  - Trampling effect:
+    - New C2 plots (2002) show sharp productivity reductions likely due to trampling during 13CO2 pulse activities.
+- Data analyses and indicators:
+  - Biomass trends show a long-term increase across treatments since 1999, but 2002 biomass was generally lower than 2001 for many treatments.
+  - Nitrogen and Lime, especially in combination, most effectively boost productivity; 2002 patterns reveal treatment-by-year interactions.
+  - Statistical results (ANOVA) show significant treatment effects on biomass and significant year effects, with notable interactions.
+  - Point analysis and PCA show clear grouping of improved (fertilised) vs. unimproved plots; bryophyte presence increases over time, particularly in unimproved plots.
+  - Shannon Diversity Indices decline under nitrogen & lime treatment by 2002, while other treatments show increases or smaller declines.
+  - Functional groups (stress-tolerators, C-S-R, SR/C-S-R) shift with treatments; stress-tolerant species dominate unfertilised plots, while competitive/ruderal types expand in N and/or lime plots.
+- Data quality, gaps, and limitations:
+  - 2002 weather data includes missing periods due to a station malfunction; some measurements substituted from a nearby station for those dates.
+  - Control 2 plots were not surveyed in 2000 and 2001, introducing some gaps in comparative analyses.
+  - Bryophyte identification improved in 2002 (species-level), affecting cross-year comparability for some taxa.
+  - Trampling and intense activity potentially confound biomass measurements in certain plots.
+- Data governance and accessibility:
+  - Data are collected across multiple streams (weather, biomass, plant surveys, soils) with standardized protocols; long-term archiving and cross-project use are evident.
+  - Detailed appendices (species lists, treatment summaries, weather data, biomass time series, PCA results) accompany the main report.
+  - Data and project details are linked to the Soil Biodiversity website and CEH Centre for Ecology and Hydrology, Windermore Road, Grange-over-Sands.
+- Implications for Data Leaders (archetype perspective):
+  - Demonstrates the value of a multi-stream, long-term data infrastructure to understand complex, interacting drivers of ecosystem Function and Biodiversity.
+  - Highlights the importance of consistent, documented metadata and standardized measurement approaches across years and plots to enable cross-study analysis.
+  - Shows how treatment heterogeneity (nutrients, lime, insecticide) and management (mowing, trampling) shape data quality, gaps, and interpretability.
+  - Underlines the need for robust data governance to manage missing data, instrument failures, and changes in taxonomic resolution over time.
+- Takeaways and recommendations for data management:
+  - Maintain a centralized, well-documented data repository with clear metadata schemas for treatments, plots, and measurement methods.
+  - Ensure consistent year-to-year data continuity, with explicit handling of missing years or plots (e.g., Control 2 survey gaps).
+  - Capture and preserve taxonomic resolution changes (e.g., bryophyte species-level updates) and their impact on longitudinal analyses.
+  - Implement data quality checks, provenance tracking, and versioning to support cross-project collaboration and future re-use.
+  - Provide user-friendly access and documentation (datacards, data dictionaries) to enable stakeholders across networks to leverage the multi-stream data for policy, modelling, and synthesis work.

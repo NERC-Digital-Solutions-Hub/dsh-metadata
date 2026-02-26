@@ -1,0 +1,27 @@
+# Climoor field site in Clocaenog forest Supporting documentation for data
+
+- The Climoor field site is a climate change manipulation experiment in Clocaenog Forest, North East Wales, established in 1998. It uses automated roof technology to simulate drought and warming conditions expected over the next 20–30 years.
+- The site is an upland west-atlantic moorland dominated by Calluna vulgaris (heather), with a soil type described as humo-ferric podzol. The vegetation includes Calluna vulgaris, Vaccinium myrtillus, Empetrum nigrum, and several bryophytes; bryophytes are indicated with asterisks in species lists.
+- Experimental design features replicated drought and warming treatments, plus controls, across 9 plots (4 m x 5 m). Three plots per treatment category (drought, warming, control) are arranged in blocks to manage spatial variation.
+- Treatments and timing:
+  - Drought: annual May–Sept (1999–2011), extended to Apr–Oct since 2012, achieved with retractable polyethylene roofs that exclude rainfall and reduce site rainfall by about 20% (approx. 80% of rain excluded during treatment periods). Curtains not operated in winds above 10 m/s.
+  - Warming: thermally moderated by retractable aluminum mesh curtains that reflect infrared radiation; night-time warming with a partial rainfall-retraction mechanism to minimize rainfall loss (~14% annual rainfall reduction). Curtain operation is triggered by light levels and rainfall detection, with a 15-minute dark period used for triggering.
+- Climate context: typical mean air temperature around 8.0°C, mean control soil temperature about 7.5°C, mean annual rainfall ~1411 mm, and total N deposition around 20–25 kg N ha⁻¹ yr⁻¹. The site experiences distinct growing seasons and winter dormancy.
+- Data stewardship and scope:
+  - A wide range of abiotic and biotic datasets are collected, including meteorology, soil and plot-scale microclimate, rainfall and rainfall chemistry, throughfall, water table depth, soil respiration, trace gas fluxes (CH4 and N2O), net ecosystem CO2 exchange, photosynthesis, vegetation biomass and composition, canopy reflectance, phenology and growth, litterfall, root biomass, soil microbial biomass, nitrogen mineralisation, soil organic matter and carbon (SOC/SOM), soil solution and leachate chemistry.
+  - Data collection spans from 1998 through at least 2015 for multiple datasets, with periodic updates and methodological changes over time.
+- Data collection methods (highlights):
+  - AWS meteorological data: minute-level sensors (air temp, RH, rainfall, wind, radiation, PAR, pressure) on a secured mast; hourly averages stored daily (1999–present).
+  - Micro-meteorological plot data: daily soil and air temperature, soil moisture (TDR), and related plot measurements (1998–present, with various sensor upgrades).
+  - Rainfall: site-level storage rain gauge and biweekly sampling for chemistry; throughfall collected biweekly per plot and adjusted to match site rainfall for annual/seasonal totals.
+  - Water table depth: measured via permeable tubes installed to bedrock (since 2009) with biweekly manual readings.
+  - Soil respiration and trace gases: measured via soil collars and closed/mixed chamber systems; multiple instrument transitions used (CIRAS-2, LICOR 8100, LI-COR systems) with standardized conversion factors to express flux as mg CO2-C m⁻² h⁻¹ or µmol m⁻² s⁻¹.
+  - Net Ecosystem CO2 Exchange (NEE): measured in select years (2002–2004, 2011) with varying chamber designs; photosynthesis estimates adjusted for biomass.
+  - Vegetation and soil analyses: Pin-point vegetation biomass surveys (1998–2012 and beyond), canopy reflectance (NDVI and PRI indices), phenology and annual growth, plant chemistry, litterfall collection and analysis, root biomass from cores, soil microbial biomass (chloroform fumigation), nitrogen mineralisation, SOM/SOC and bulk density, soil solution chemistry (lysimeters and tension samplers).
+  - Data processing and QA: data stored in CEH/Bangor and related archives; some datasets noted as legacy with incomplete contemporary documentation of processing steps; quality control relied on basic visual checks and project-specific conversion factors.
+- Notable data and metadata notes:
+  - Equipment and methods evolved over time (e.g., AWS height moved from 1 m to 4 m; different soil respiration chamber systems used over years).
+  - Throughfall data may require exclusion of incomplete plot measurements; missing data may be infilled using year-average reductions where appropriate.
+  - Appendices include site layout and quadrat layouts (quadrats D3, E4, F6; three plots per quadrant; 0.5 m² subplots) to standardize spatial sampling.
+- Access and contacts:
+  - For details on specific datasets not stored in the main data portal (EIDC) or for legacy data processing specifics, contact Sabine Reinsch or Bridget Emmett at CEH Bangor.

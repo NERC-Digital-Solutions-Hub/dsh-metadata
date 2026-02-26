@@ -1,0 +1,33 @@
+# Table 1. Broad Habitats and their relation to LCM2000 Target classes, Subclasses and Variants (the Suclasses are shown in their map display colours).
+
+- Purpose of the document: present broad habitat classifications and their mapping between LCM2000 Target classes, Subclasses, and Variants, with adjacent tables showing area estimates and validation against field surveys (CS2000/FS). Includes national UK totals and cross-country breakdowns (England, Wales, Scotland, Northern Ireland) and discusses data quality, coastal coverage, and urban/generalisation considerations.
+- Data sources and methodology:
+  - LCM2000: land-cover map from a full count at 25 m grid resolution.
+  - CS2000 and FS: field survey datasets used for validation and calibration.
+  - Tables include uncalibrated LCM2000 cover (Table 6), UK-wide totals by broad habitats (Table 5), and summary correspondence matrices (Tables 8–10) derived from bootstrapped, strata-based analyses.
+  - Footnotes explain coastal variability, NI exclusions, and definitions of FS population (1 km squares) used in comparisons.
+- What is being compared:
+  - LCM2000 vs field survey estimates (FS/CS2000) across broad habitats and target classes.
+  - 95% confidence intervals for field survey estimates where available (e.g., Table 6).
+  - Summary correspondence matrices to assess how well LCM2000 categories align with CS2000 field survey categories, including generalisation of urban areas.
+- UK-wide totals and major habitat categories (high-level):
+  - Total UK LCM2000 cover: approximately 246,700 km².
+  - Major components typically include substantial extents of arable and horticulture, improved grassland, broadleaved/mixed woodland, coniferous woodland, and built-up areas/gardens.
+  - Coastal and urban-related classes are treated with separate tallies and noted for variability due to tidal states and inclusion/exclusion of offshore inter-tidal areas.
+- Validation and key findings (highlights):
+  - Validation Tables (e.g., Table 6) show how CS2000 field-survey estimates compare with LCM2000, including 95% CI ranges for several habitat types in England, Wales, Scotland, and Northern Ireland.
+  - In many cases, LCM2000 estimates differ from field-survey estimates, with notable discrepancies in certain habitats (e.g., bogs and some semi-natural classes), highlighting potential under- or over-estimation by satellite-based mapping relative to ground surveys.
+  - Summary correspondence matrices (Tables 8–10) quantify how regularly LCM2000 broad habitats align with CS2000 categories, and they illustrate the degree of generalisation needed when translating urban areas for analysis.
+- Data quality, limitations, and caveats:
+  - Differences between LCM2000 and FS/CS2000 are explained in the text; differences are influenced by data capture methods, coastal coverage variability, and definitional differences in habitat classes.
+  - Coastal coverage is variable due to tidal states and offshore inter-tidal area inclusion/exclusion.
+  - Northern Ireland (NI) field-survey coverage may exclude some BHs, affecting UK totals.
+  - Urban/generalisation: Tables include notes on generalising urban areas for cross-comparisons, which can affect the interpretation of habitat extents in urbanized landscapes.
+- Practical implications for data use and products:
+  - The document provides structured mappings between land-cover classifications and field-survey categories, enabling data users to build self-serve analyses (dashboards, pivot tables) that compare LCM2000 against CS2000/FS outputs.
+  - The correspondence matrices support evaluation of how closely remotely sensed land-cover aligns with on-the-ground survey classifications, informing data quality assessments and targeted improvements.
+  - The tables support cross-country (England, Wales, Scotland, NI) and UK-wide planning applications by clarifying where large disparities exist and where urban/generalisation needs to be applied.
+- Takeaways for data-support work:
+  - When delivering data products to policy or planning teams, provide clear notes on potential biases by habitat type (e.g., certain BP classes) and the coastal/urban generalisation caveats.
+  - Use the validation matrices to communicate alignment levels and to justify any adjustments or calibration steps needed for end-user dashboards.
+  - Ensure users understand that coastal and urban boundaries may differ depending on definitions and data source (LCM2000 vs field surveys), which can influence comparative analyses and decision-making.

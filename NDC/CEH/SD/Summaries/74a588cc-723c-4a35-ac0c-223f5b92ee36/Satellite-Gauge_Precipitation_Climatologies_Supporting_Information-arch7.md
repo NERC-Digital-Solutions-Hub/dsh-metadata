@@ -1,0 +1,32 @@
+# climatologies of the tropical Andes 2
+
+- Dataset: mean monthly and annual climatological rainfall maps at 5 km resolution for the tropical Andes in South America.
+- Data sources: TRMM Precipitation Radar (TPR) and 723 monthly rainfall gauges.
+- Merging methods: seven approaches to combine satellite and gauge data
+  - TPR: TRMM 2A25-based climatology (1998-2014 for monthly/annual; re-projected to 1 km grid, then averaged to 5 km).
+  - OK: mean monthly/annual gauge climatologies (1981-2010) interpolated by ordinary kriging.
+  - ROK: residual ordinary kriging—interpolates residuals from TPR vs gauge differences and adds back to TPR field.
+  - KED: kriging with external drift using monthly TPR climatologies as predictors (universal kriging with a linear mean).
+  - KED_TN: similar to KED but adds NDVI (MODIS) as external drift with a two-month lag (NDVI climatologies correlated with rainfall).
+  - RIDW: residual inverse distance weighting—IDW on kriging residuals added to TPR field.
+  - LM: linear model linking TPR rainfall to gauge rainfall (scaling) for ungauged locations.
+- Data handling notes:
+  - Oceans set to NA (except OK uses gauge-only information).
+  - OK estimates beyond ~185 km from nearest gauge are NA.
+- Mapped variables
+  - Monthly precipitation (mm per month) for 1981-2010 (OK, KED, KED_TN, ROK, RIDW, LM); TPR monthly means (1998-2014).
+  - Annual precipitation (mm per year) for 1981-2010 (OK, KED, KED_TN, ROK, RIDW, LM); TPR annual means (1998-2014).
+  - Kriging estimation variance (monthly and annual) in mm^2/month or mm^2/year, as an uncertainty proxy.
+- Data file structure and spatial projection
+  - File format: GeoTIFF (.tif) at 5 km resolution in a Universal Transverse Mercator (UTM) projection based on UTM zone 18.
+  - Spatial extent: approximately -19.2°S to 13.1°N latitude and -81.7°W to -66.7°W longitude.
+  - File naming: 130 files named by merging method and calendar month (e.g., KED_apr.tif); annual files end with _yr.tif. Kriging variance files are named with Var (e.g., KED_Var_apr.tif).
+  - Ocean pixels are NA; OK estimates far from gauges are NA.
+  - Example: KED_apr.tif for April; KED_Var_apr.tif for its kriging variance; OK, KED, KED_TN, ROK, RIDW, LM have corresponding monthly and annual files.
+- Accessing and using the data (R example)
+  - Unzip and read files with libraries such as sp and rgdal.
+  - Read a file (example: KED_apr.tif) and its variance (KED_Var_apr.tif).
+  - Re-project to latitude/longitude with spTransform to WGS84 for mapping or analysis.
+  - The example demonstrates the SpatialGridDataFrame structure and provides coordinates, projection, and basic metadata for each file.
+- Reference for data provenance and methodology
+  - Manz, B., et al. (2016) High-resolution satellite-gauge merged precipitation climatologies of the tropical Andes, Journal of Geophysical Research: Atmospheres.
