@@ -1,75 +1,101 @@
 {
-    "tabs": [
+    "tabGroups": [
         {
-            "title": "Metadata",
-            "content": [
+            "title": "General",
+            "tabs": [
                 {
-                    "type": "xml",
-                    "link": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/gmd/e5e1af92-521e-48af-9af2-633f357f9fb4.xml"
-                }
-            ]
-        },
-        {
-            "title": "Infographics",
-            "content": [
-                {
-                    "type": "image",
-                    "link": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/infographics/no01.png"
-                }
-            ]
-        },
-        {
-            "title": "Slides",
-            "content": [
-                {
-                    "type": "slideshow",
-                    "links": [
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no01.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no02.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no03.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no04.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no05.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no06.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no07.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no08.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no09.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no10.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no11.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no12.png"
+                    "title": "Information",
+                    "content": [
+                        {
+                            "type": "arcgisInfo"
+                        }
                     ]
                 },
                 {
-                    "type": "slideshow",
-                    "links": [
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no01.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no02.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no03.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no04.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no05.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no06.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no07.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no08.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no09.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no10.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no11.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no12.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no13.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no14.png",
-                        "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no15.png"
+                    "title": "Metadata",
+                    "content": [
+                        {
+                            "type": "xml",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/gmd/e5e1af92-521e-48af-9af2-633f357f9fb4.xml"
+                        }
+                    ]
+                },
+                {
+                    "title": "Supporting Documents",
+                    "content": [
+                        {
+                            "type": "docx",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/support-docs/Information_UK_Ensembles_ES.docx"
+                        },
+                        {
+                            "type": "pdf",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/support-docs/Information_UK_Ensembles_ES.pdf"
+                        }
                     ]
                 }
             ]
         },
         {
-            "title": "Supporting Documents",
-            "content": [
+            "title": "AI Generated Content",
+            "tabs": [
                 {
-                    "type": "docx",
-                    "link": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/support-docs/Information_UK_Ensembles_ES.docx"
+                    "title": "Infographics",
+                    "content": [
+                        {
+                            "type": "disclaimer",
+                            "value": "This content was generated by an AI and may not be accurate or up-to-date."
+                        },
+                        {
+                            "type": "image",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/infographics/no01.png"
+                        }
+                    ]
                 },
                 {
-                    "type": "pdf",
-                    "link": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/support-docs/Information_UK_Ensembles_ES.pdf"
+                    "title": "Slides",
+                    "content": [
+                        {
+                            "type": "disclaimer",
+                            "value": "This content was generated by an AI and may not be accurate or up-to-date."
+                        },
+                        {
+                            "type": "slideshow",
+                            "source": [
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no01.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no02.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no03.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no04.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no05.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no06.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no07.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no08.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no09.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no10.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no11.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no12.png"
+                            ]
+                        },
+                        {
+                            "type": "slideshow",
+                            "source": [
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no01.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no02.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no03.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no04.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no05.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no06.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no07.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no08.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no09.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no10.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no11.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no12.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no13.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no14.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no15.png"
+                            ]
+                        }
+                    ]
                 }
             ]
         }
