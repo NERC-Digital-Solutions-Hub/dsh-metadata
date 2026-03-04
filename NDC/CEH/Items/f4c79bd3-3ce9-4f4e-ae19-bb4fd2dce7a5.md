@@ -1,0 +1,1046 @@
+## Id
+
+f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5
+
+
+## Uri
+
+[https://catalogue.ceh.ac.uk/id/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5](https://catalogue.ceh.ac.uk/id/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5)
+
+
+## Type
+
+dataset
+
+
+## Title
+
+Concentrations of antibiotics in wastewater and receiving waters following water treatment in SW England, June-October, 2015
+
+
+## Description
+
+This dataset comprises of weekly concentrations of fluoroquinolones in wastewater and receiving waters collected in the Avon river catchment South West UK. The following fluoroquinolones were analysed: (±)-ofloxacin, (±)-ofloxacin-N-oxide, (±)-desmethyl-ofloxacin, (±)-lomefloxacin, (±)-moxifloxacin, S,S-moxifloxacin-N-sulfate, R-(+)-besifloxacin, (±)-prulifloxacin, (±)-ulifloxacin, (±)-flumequine and (±)-nadifloxacin; ciprofloxacin, desethylene-ciprofloxacin, norfloxacin and nalidixic acid.
+
+The concentrations of (fluoro)quinolones were measured in receiving treated wastewater from 5 wastewater treatment plants (WWTPs), which serves 1.5 million people accounting for 75% of inhabitants living in the catchment area in the South West of England.
+
+NERC Grant NE/N019261/1
+
+
+## Metadata Date
+
+2025-11-13T16:22:29
+
+
+## Resource Identifiers
+
+### Code
+
+[https://catalogue.ceh.ac.uk/id/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5](https://catalogue.ceh.ac.uk/id/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5)
+
+
+### Code
+
+10.5285/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5
+
+
+### Code Space
+
+doi:
+
+
+
+
+## Lineage
+
+Wastewater influent and effluent were collected for 7 consecutive days running from Wednesday to Tuesday between June and October 2015 from five major WWTPs contributing to one river catchment in the South-West UK.
+
+Measurements of antibiotic were conducted using  chiral liquid chromatography coupled with tandem mass spectrometry. See supporting documentation for further details.
+
+
+## Spatial Representation Types
+
+- textTable
+
+
+## Topic Categories
+
+environment
+
+### Uri
+
+[http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment](http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment)
+
+
+
+
+## Keywords Theme
+
+Environmental survey
+
+### Uri
+
+[http://onto.nerc.ac.uk/CEHMD/topic/7](http://onto.nerc.ac.uk/CEHMD/topic/7)
+
+
+
+
+## Keywords Other
+
+antibiotic
+
+### Uri
+
+[http://www.eionet.europa.eu/gemet/concept/473](http://www.eionet.europa.eu/gemet/concept/473)
+
+
+waste water
+
+### Uri
+
+[http://www.eionet.europa.eu/gemet/concept/9127](http://www.eionet.europa.eu/gemet/concept/9127)
+
+
+
+
+## Distribution Formats
+
+### Name
+
+Comma-separated values (CSV)
+
+
+### Type
+
+text/csv
+
+
+### Version
+
+unknown
+
+
+
+
+## Inspire Themes
+
+### Theme
+
+Environmental Monitoring Facilities
+
+
+### Uri
+
+[http://inspire.ec.europa.eu/theme/ef](http://inspire.ec.europa.eu/theme/ef)
+
+
+
+
+## Spatial Resolutions
+
+### Distance
+
+100
+
+
+
+
+## Funding
+
+### Funder Name
+
+Natural Environment Research Council
+
+
+### Funder Identifier
+
+[https://ror.org/02b5d8509](https://ror.org/02b5d8509)
+
+
+### Award Title
+
+Impact of stereochemistry of antimicrobial agents on their environmental fate, biological potency and the emergence of resistance
+
+
+### Award Number
+
+NE/N019261/1
+
+
+### Award U R I
+
+[https://gtr.ukri.org/projects?ref=NE/N019261/1](https://gtr.ukri.org/projects?ref=NE/N019261/1)
+
+
+### Ror
+
+True
+
+
+### Orcid
+
+False
+
+
+
+
+## Bounding Boxes
+
+### West Bound Longitude
+
+-2.65
+
+
+### East Bound Longitude
+
+-2.112
+
+
+### South Bound Latitude
+
+51.36
+
+
+### North Bound Latitude
+
+51.501
+
+
+### Bounds
+
+{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-2.65, 51.36], [-2.65, 51.501], [-2.112, 51.501], [-2.112, 51.36], [-2.65, 51.36]]]      }}
+
+
+### Coordinates
+
+[[[-2.65, 51.36], [-2.65, 51.501], [-2.112, 51.501], [-2.112, 51.36], [-2.65, 51.36]]]
+
+
+
+
+## Distributor Contacts
+
+### Organisation Name
+
+NERC EDS Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+distributor
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Responsible Parties
+
+### Family Name
+
+Kasprzyk-Hordern
+
+
+### Given Name
+
+B.
+
+
+### Organisation Name
+
+University of Bath
+
+
+### Organisation Identifier
+
+[https://ror.org/002h8g185](https://ror.org/002h8g185)
+
+
+### Role
+
+author
+
+
+### Email
+
+B.Kasprzyk-Hordern@bath.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0002-6809-2875](https://orcid.org/0000-0002-6809-2875)
+
+
+### Full Name
+
+Kasprzyk-Hordern, B.
+
+
+### Family Name
+
+Castrignano
+
+
+### Given Name
+
+E.
+
+
+### Organisation Name
+
+University of Bath
+
+
+### Organisation Identifier
+
+[https://ror.org/002h8g185](https://ror.org/002h8g185)
+
+
+### Role
+
+author
+
+
+### Email
+
+erika.castrignano@kcl.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0002-5555-9894](https://orcid.org/0000-0002-5555-9894)
+
+
+### Full Name
+
+Castrignano, E.
+
+
+### Family Name
+
+Feil
+
+
+### Given Name
+
+E.
+
+
+### Organisation Name
+
+University of Bath
+
+
+### Organisation Identifier
+
+[https://ror.org/002h8g185](https://ror.org/002h8g185)
+
+
+### Role
+
+author
+
+
+### Email
+
+E.Feil@bath.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0003-1446-6744](https://orcid.org/0000-0003-1446-6744)
+
+
+### Full Name
+
+Feil, E.
+
+
+### Family Name
+
+Lewis
+
+
+### Given Name
+
+S.
+
+
+### Organisation Name
+
+University of Bath
+
+
+### Organisation Identifier
+
+[https://ror.org/002h8g185](https://ror.org/002h8g185)
+
+
+### Role
+
+author
+
+
+### Email
+
+S.Lewis@bath.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0003-4555-4907](https://orcid.org/0000-0003-4555-4907)
+
+
+### Full Name
+
+Lewis, S.
+
+
+### Honorific Prefix
+
+Professor
+
+
+### Family Name
+
+Kasprzyk-Hordern
+
+
+### Given Name
+
+Barbara
+
+
+### Organisation Name
+
+University of Bath
+
+
+### Organisation Identifier
+
+[https://ror.org/002h8g185](https://ror.org/002h8g185)
+
+
+### Role
+
+pointOfContact
+
+
+### Email
+
+b.kasprzyk-hordern@bath.ac.uk
+
+
+### Full Name
+
+Kasprzyk-Hordern, B.
+
+
+### Point Of Contact
+
+University of Bath
+
+
+### Organisation Name
+
+NERC EDS Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+custodian
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+### Organisation Name
+
+NERC Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+publisher
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Temporal Extents
+
+### Begin
+
+2015-06-01
+
+
+### End
+
+2015-10-31
+
+
+
+
+## Online Resources
+
+### Url
+
+[https://data-package.ceh.ac.uk/data/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5](https://data-package.ceh.ac.uk/data/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5)
+
+
+### Name
+
+Download the data
+
+
+### Description
+
+Download a copy of this data
+
+
+### Function
+
+download
+
+
+### Type
+
+OTHER
+
+
+### Url
+
+[https://data-package.ceh.ac.uk/sd/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5.zip](https://data-package.ceh.ac.uk/sd/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5.zip)
+
+
+### Name
+
+Supporting information
+
+
+### Description
+
+Supporting information available to assist in re-use of this dataset
+
+
+### Function
+
+information
+
+
+### Type
+
+OTHER
+
+
+
+
+## Spatial Reference Systems
+
+### Code
+
+[http://www.opengis.net/def/crs/EPSG/0/27700](http://www.opengis.net/def/crs/EPSG/0/27700)
+
+
+### Title
+
+OSGB 1936 / British National Grid
+
+
+
+
+## Supplemental
+
+### Description
+
+Castrignanò, E., Kannan, A.M., Proctor, K., Petrie, B., Hodgen, S., Feil, E.J., Lewis, S.E., Lopardo, L., Camacho-Muñoz, D., Rice, J., Cartwright, N., Barden, R., & Kasprzyk-Hordern, B. (2020). (Fluoro)quinolones and quinolone resistance genes in the aquatic environment: A river catchment perspective. Water Research, 182, 116015. 
+
+
+### Url
+
+[https://doi.org/10.1016/j.watres.2020.116015](https://doi.org/10.1016/j.watres.2020.116015)
+
+
+### Function
+
+relatedArticle
+
+
+
+
+## Dataset Reference Date
+
+### Publication Date
+
+2021-03-05
+
+
+
+## Use Constraints
+
+This resource is available under the terms of the Open Government Licence
+
+### Code
+
+license
+
+
+### Uri
+
+[https://eidc.ac.uk/licences/ogl/plain](https://eidc.ac.uk/licences/ogl/plain)
+
+
+© Natural Environment Research Council
+
+### Code
+
+copyright
+
+
+
+
+## Resource Type
+
+dataset
+
+### Uri
+
+[http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset](http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset)
+
+
+
+## Access Limitation
+
+no limitations to public access
+
+### Code
+
+Available
+
+
+### Uri
+
+[http://purl.org/coar/access_right/c_abf2](http://purl.org/coar/access_right/c_abf2)
+
+
+
+## Not G E M I N I
+
+False
+
+
+## Licences
+
+This resource is available under the terms of the Open Government Licence
+
+### Code
+
+license
+
+
+### Uri
+
+[https://eidc.ac.uk/licences/ogl/plain](https://eidc.ac.uk/licences/ogl/plain)
+
+
+
+
+## Incoming Citation Count
+
+0
+
+
+## Topics
+
+- [http://onto.nerc.ac.uk/CEHMD/topic/7](http://onto.nerc.ac.uk/CEHMD/topic/7)
+
+
+## Resource Status
+
+Available
+
+
+## Points Of Contact
+
+### Honorific Prefix
+
+Professor
+
+
+### Family Name
+
+Kasprzyk-Hordern
+
+
+### Given Name
+
+Barbara
+
+
+### Organisation Name
+
+University of Bath
+
+
+### Organisation Identifier
+
+[https://ror.org/002h8g185](https://ror.org/002h8g185)
+
+
+### Role
+
+pointOfContact
+
+
+### Email
+
+b.kasprzyk-hordern@bath.ac.uk
+
+
+### Full Name
+
+Kasprzyk-Hordern, B.
+
+
+### Point Of Contact
+
+University of Bath
+
+
+
+
+## Info Links
+
+### Url
+
+[https://data-package.ceh.ac.uk/sd/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5.zip](https://data-package.ceh.ac.uk/sd/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5.zip)
+
+
+### Name
+
+Supporting information
+
+
+### Description
+
+Supporting information available to assist in re-use of this dataset
+
+
+### Function
+
+information
+
+
+### Type
+
+OTHER
+
+
+
+
+## Publishers
+
+### Organisation Name
+
+NERC Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+publisher
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Authors
+
+### Family Name
+
+Kasprzyk-Hordern
+
+
+### Given Name
+
+B.
+
+
+### Organisation Name
+
+University of Bath
+
+
+### Organisation Identifier
+
+[https://ror.org/002h8g185](https://ror.org/002h8g185)
+
+
+### Role
+
+author
+
+
+### Email
+
+B.Kasprzyk-Hordern@bath.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0002-6809-2875](https://orcid.org/0000-0002-6809-2875)
+
+
+### Full Name
+
+Kasprzyk-Hordern, B.
+
+
+### Family Name
+
+Castrignano
+
+
+### Given Name
+
+E.
+
+
+### Organisation Name
+
+University of Bath
+
+
+### Organisation Identifier
+
+[https://ror.org/002h8g185](https://ror.org/002h8g185)
+
+
+### Role
+
+author
+
+
+### Email
+
+erika.castrignano@kcl.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0002-5555-9894](https://orcid.org/0000-0002-5555-9894)
+
+
+### Full Name
+
+Castrignano, E.
+
+
+### Family Name
+
+Feil
+
+
+### Given Name
+
+E.
+
+
+### Organisation Name
+
+University of Bath
+
+
+### Organisation Identifier
+
+[https://ror.org/002h8g185](https://ror.org/002h8g185)
+
+
+### Role
+
+author
+
+
+### Email
+
+E.Feil@bath.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0003-1446-6744](https://orcid.org/0000-0003-1446-6744)
+
+
+### Full Name
+
+Feil, E.
+
+
+### Family Name
+
+Lewis
+
+
+### Given Name
+
+S.
+
+
+### Organisation Name
+
+University of Bath
+
+
+### Organisation Identifier
+
+[https://ror.org/002h8g185](https://ror.org/002h8g185)
+
+
+### Role
+
+author
+
+
+### Email
+
+S.Lewis@bath.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0003-4555-4907](https://orcid.org/0000-0003-4555-4907)
+
+
+### Full Name
+
+Lewis, S.
+
+
+
+
+## Publication Date
+
+2021-03-05T00:00:00.000+00:00
+
+
+## Custodians
+
+### Organisation Name
+
+NERC EDS Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+custodian
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Updated Date
+
+2025-11-13T16:22:29.000+00:00
+
+
+## Citation
+
+### Authors
+
+- Kasprzyk-Hordern, B.
+- Castrignano, E.
+- Feil, E.
+- Lewis, S.
+
+
+### Doi
+
+10.5285/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5
+
+
+### Title
+
+Concentrations of antibiotics in wastewater and receiving waters following water treatment in SW England, June-October, 2015
+
+
+### Publisher
+
+NERC Environmental Information Data Centre
+
+
+### Resource Type General
+
+dataset
+
+
+### Year
+
+2021
+
+
+### Month
+
+3
+
+
+### Day
+
+5
+
+
+### Bibtex
+
+[https://catalogue.ceh.ac.uk/documents/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5/citation?format=bib](https://catalogue.ceh.ac.uk/documents/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5/citation?format=bib)
+
+
+### Ris
+
+[https://catalogue.ceh.ac.uk/documents/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5/citation?format=ris](https://catalogue.ceh.ac.uk/documents/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5/citation?format=ris)
+
+
+### Url
+
+[https://doi.org/10.5285/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5](https://doi.org/10.5285/f4c79bd3-3ce9-4f4e-ae19-bb4fd2dce7a5)
+
+
