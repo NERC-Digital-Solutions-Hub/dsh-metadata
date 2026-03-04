@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ce442ab8-cfd9-4da2-9712-268bbf0f9c80</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>ce442ab8-cfd9-4da2-9712-268bbf0f9c80</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/ce442ab8-cfd9-4da2-9712-268bbf0f9c80">https://catalogue.ceh.ac.uk/id/ce442ab8-cfd9-4da2-9712-268bbf0f9c80</a></p>
+<h2>Type</h2>
+<p>model</p>
+<h2>Title</h2>
+<p>Rept4pop model for the simulation of foraging, dispersal and population processes of UK common lizards</p>
+<h2>Description</h2>
+<p>Rept4pop is a process-based model, written in R, that simulates the foraging, dispersal and population processes of reptiles around their basking sites. It accounts for amount, configuration and shading of habitat resources to predict spatially-explicit relative abundance and foraging rates, for a given input landscape. The input landcover information must be in raster format. The model can ingest a base landcover raster as well as edgecover rasters, which represent the locations of small habitat features that occupy only a fraction of a pixel. It also requires an input digital elevation raster to incorporate habitat shading effects. Model outputs are raster stacks with the same spatial extent and resolution as the input landcover raster. </p>
+<p>The rept4pop model was co-developed by the UK Centre for Ecology &amp; Hydrology and the Amphibian and Reptile Groups of the UK. It has been parameterised for one UK reptile species (common lizard; Zootoca vivipara). These parameter files (rept_guild_params.csv and rept_habitat_params.csv, along with rept_shading_params.csv) are included. The model’s predictions have been validated against observations of this reptile species collected in Surrey, UK, by Surrey Amphibian and Reptile Group.</p>
+<p>Data in rept_guild_params.csv includes typical movement ranges (foraging range in meters, dispersal range in meters), population growth parameters (maximum basking density per hectare, maximum offspring produced per breeding female per year, growth parameters in arbitrary units) and survival parameters (yearly adult survival probability, yearly juvenile survival probability) for common lizard, used in the rept4pop model. </p>
+<p>Data in rept_habitat_params consists of scores representing the relative availability of suitable basking sites (on a scale from 0-1, where 0 = none and 1 = very high) and the relative availability of foraging resources (on a scale from 0-5, where 0 = none and 5 = very high) for common lizard and the 78 landcover classes, used in the rept4pop model. Given scores are the mean values across n contributing experts. The data also include the number of contributing experts, the standard error on the mean score, and the alpha and beta values that describe a beta distribution consistent with the measured mean and variance for each score. Data in rept_shading_params.csv consists of assumed approximate canopy heights.</p>
+<p>This model is intended to help support understanding of how common lizards might be using landscapes. No decisions should ever be made solely on the basis of this model’s predictions – on-the-ground ecological surveys and integration of local knowledge are always required before any landscape-level or site-level decisions are made, due to real-life common lizard activity levels potentially differing from predicted levels. Users are recommended to get in touch with the model developers to ensure they have the most up-to-date version of the code and to receive support on model use and interpretation.</p>
+<h2>Metadata Date</h2>
+<p>2025-11-21T09:48:42</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/ce442ab8-cfd9-4da2-9712-268bbf0f9c80">https://catalogue.ceh.ac.uk/id/ce442ab8-cfd9-4da2-9712-268bbf0f9c80</a></p>
+<h3>Code</h3>
+<p>10.5285/ce442ab8-cfd9-4da2-9712-268bbf0f9c80</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Lineage</h2>
+<p>Rept4pop model code was developed from the poll4pop model (Gardner et al., 2020; Yclough, 2020). It contains functions that are identical to those used in the poll4pop model, functions that are adapted from functions used in the poll4pop model, and new functions. </p>
+<p>Data in rept_guild_params.csv is derived from literature data, with subsequent processing to convert. The growth parameters are set by selecting the values that produced the highest R2 values when comparing the model predictions to observational survey data collected in Surrey, UK. </p>
+<p>Data in rept_habitat_params is derived from an expert opinion questionnaire completed by ten individuals with research and/or survey experience of this taxon. The mean scores and their standard error are weighted according to the self-reported certainty scores that experts gave alongside their habitat resource scores.
+Data in rept_shading_params.csv consists of assumed approximate canopy heights.</p>
+<h2>Topic Categories</h2>
+<p>biota</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/biota">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/biota</a></p>
+<h2>Keywords Theme</h2>
+<p>Animal behaviour</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/20">http://onto.nerc.ac.uk/CEHMD/topic/20</a></p>
+<h2>Keywords Other</h2>
+<p>process based model</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/20097">http://vocabs.lter-europe.net/EnvThes/20097</a></p>
+<p>spatially explicit</p>
+<p>foraging behavior</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/20564">http://vocabs.lter-europe.net/EnvThes/20564</a></p>
+<p>dispersal</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/21038">http://vocabs.lter-europe.net/EnvThes/21038</a></p>
+<p>population</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/20715">http://vocabs.lter-europe.net/EnvThes/20715</a></p>
+<p>basking resources</p>
+<p>foraging resources</p>
+<p>habitat use</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/22128">http://vocabs.lter-europe.net/EnvThes/22128</a></p>
+<p>foraging rates</p>
+<p>visitation rates</p>
+<p>population size</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/22199">http://vocabs.lter-europe.net/EnvThes/22199</a></p>
+<p>Population distribution</p>
+<p>relative abundance</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/22211">http://vocabs.lter-europe.net/EnvThes/22211</a></p>
+<p>reptiles</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/20640">http://vocabs.lter-europe.net/EnvThes/20640</a></p>
+<p>common lizard</p>
+<p>viviparous lizard</p>
+<p>lizards</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/20641">http://vocabs.lter-europe.net/EnvThes/20641</a></p>
+<p>Zootoca vivipara</p>
+<h3>Uri</h3>
+<p><a href="http://www.wikidata.org/entity/Q204061">http://www.wikidata.org/entity/Q204061</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>Comma-separated values (CSV)</p>
+<h3>Type</h3>
+<p>text/csv</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h3>Name</h3>
+<p>R script</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Title</h3>
+<p>How many trees should we plant and where? Modelling the landscape-level benefits and biodiversity consequences of woodland creation.</p>
+<h3>Award Number</h3>
+<p>NE/V007831/1</p>
+<h3>Award U R I</h3>
+<p><a href="https://gtr.ukri.org/projects?ref=NE/V007831/1">https://gtr.ukri.org/projects?ref=NE/V007831/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Family Name</h3>
+<p>Gardner</p>
+<h3>Given Name</h3>
+<p>E.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-1669-7151">https://orcid.org/0000-0002-1669-7151</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Maclean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Gardner, E.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Family Name</h3>
+<p>Gardner</p>
+<h3>Given Name</h3>
+<p>E.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-1669-7151">https://orcid.org/0000-0002-1669-7151</a></p>
+<h3>Full Name</h3>
+<p>Gardner, E.</p>
+<h3>Family Name</h3>
+<p>Julian</p>
+<h3>Given Name</h3>
+<p>A.</p>
+<h3>Organisation Name</h3>
+<p>ARG UK</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>info@arguk.org </p>
+<h3>Full Name</h3>
+<p>Julian, A.</p>
+<h3>Family Name</h3>
+<p>Langham</p>
+<h3>Given Name</h3>
+<p>S.</p>
+<h3>Organisation Name</h3>
+<p>SARG</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>info@arguk.org </p>
+<h3>Full Name</h3>
+<p>Langham, S.</p>
+<h3>Family Name</h3>
+<p>Monk</p>
+<h3>Given Name</h3>
+<p>C.</p>
+<h3>Organisation Name</h3>
+<p>ARG UK</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>info@arguk.org </p>
+<h3>Full Name</h3>
+<p>Monk, C.</p>
+<h3>Family Name</h3>
+<p>Pitt</p>
+<h3>Given Name</h3>
+<p>K.</p>
+<h3>Organisation Name</h3>
+<p>ARG UK</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>info@arguk.org </p>
+<h3>Full Name</h3>
+<p>Pitt, K.</p>
+<h3>Family Name</h3>
+<p>Allain</p>
+<h3>Given Name</h3>
+<p>S.J.R.</p>
+<h3>Organisation Name</h3>
+<p>University of Kent</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00xkeyj56">https://ror.org/00xkeyj56</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>steveallain@live.co.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Giles Lane</p>
+<h4>City</h4>
+<p>Canterbury</p>
+<h4>Administrative Area</h4>
+<p>Kent</p>
+<h4>Postal Code</h4>
+<p>CT2 7NR1</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Allain, S.J.R.</p>
+<h3>Family Name</h3>
+<p>Cartwright</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>ARC Trust</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@arc-trust.org </p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>744 Christchurch Road</p>
+<h4>City</h4>
+<p>Boscombe</p>
+<h4>Administrative Area</h4>
+<p>Dorset</p>
+<h4>Postal Code</h4>
+<p>BH7 6BZ</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Cartwright, M.</p>
+<h3>Family Name</h3>
+<p>Clarke</p>
+<h3>Given Name</h3>
+<p>K.</p>
+<h3>Organisation Name</h3>
+<p>ARG UK</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>info@arguk.org </p>
+<h3>Full Name</h3>
+<p>Clarke, K.</p>
+<h3>Family Name</h3>
+<p>Cranfield</p>
+<h3>Given Name</h3>
+<p>J.</p>
+<h3>Organisation Name</h3>
+<p>Herpetologic Ltd</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>jon@herpetologic.co.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>38 Nursery Rd</p>
+<h4>City</h4>
+<p>Alresford </p>
+<h4>Postal Code</h4>
+<p>SO24 9JR</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Cranfield, J.</p>
+<h3>Family Name</h3>
+<p>Gandola</p>
+<h3>Given Name</h3>
+<p>R. </p>
+<h3>Organisation Name</h3>
+<p>Herpetological Society of Ireland</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>rgandola@thehsi.org</p>
+<h3>Full Name</h3>
+<p>Gandola, R.</p>
+<h3>Family Name</h3>
+<p>Gent</p>
+<h3>Given Name</h3>
+<p>T.</p>
+<h3>Organisation Name</h3>
+<p>ARC Trust</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@arc-trust.org </p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>744 Christchurch Road</p>
+<h4>City</h4>
+<p>Boscombe</p>
+<h4>Administrative Area</h4>
+<p>Dorset</p>
+<h4>Postal Code</h4>
+<p>BH7 6BZ</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Gent, T.</p>
+<h3>Family Name</h3>
+<p>Reading</p>
+<h3>Given Name</h3>
+<p>C. </p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Reading, C.</p>
+<h3>Family Name</h3>
+<p>Wilkinson</p>
+<h3>Given Name</h3>
+<p>J.</p>
+<h3>Organisation Name</h3>
+<p>ARC Trust</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@arc-trust.org </p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>744 Christchurch Road</p>
+<h4>City</h4>
+<p>Boscombe</p>
+<h4>Administrative Area</h4>
+<p>Dorset</p>
+<h4>Postal Code</h4>
+<p>BH7 6BZ</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Wilkinson, J.</p>
+<h3>Family Name</h3>
+<p>Baker</p>
+<h3>Given Name</h3>
+<p>J.</p>
+<h3>Organisation Name</h3>
+<p>ARC Trust</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@arc-trust.org </p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>744 Christchurch Road</p>
+<h4>City</h4>
+<p>Boscombe</p>
+<h4>Administrative Area</h4>
+<p>Dorset</p>
+<h4>Postal Code</h4>
+<p>BH7 6BZ</p>
+<h3>Full Name</h3>
+<p>Baker, J.</p>
+<h3>Family Name</h3>
+<p>Dyason</p>
+<h3>Given Name</h3>
+<p>S.</p>
+<h3>Organisation Name</h3>
+<p>ARG UK</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>info@arguk.org </p>
+<h3>Full Name</h3>
+<p>Dyason, S.</p>
+<h3>Family Name</h3>
+<p>Pywell</p>
+<h3>Given Name</h3>
+<p>R.F.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Pywell, R.F.</p>
+<h3>Family Name</h3>
+<p>Bullock</p>
+<h3>Given Name</h3>
+<p>J.M.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Bullock, J.M.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/data/ce442ab8-cfd9-4da2-9712-268bbf0f9c80">https://data-package.ceh.ac.uk/data/ce442ab8-cfd9-4da2-9712-268bbf0f9c80</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>download</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/ce442ab8-cfd9-4da2-9712-268bbf0f9c80.zip">https://data-package.ceh.ac.uk/sd/ce442ab8-cfd9-4da2-9712-268bbf0f9c80.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Supplemental</h2>
+<h3>Name</h3>
+<p>Rept4pop model</p>
+<h3>Description</h3>
+<p>Gardner E, Robinson RA, Julian A, et al. A family of process-based models to simulate landscape use by multiple taxa. Landscape Ecology, 2024; 39(5), 102. <a href="https://doi.org/10.1007/s10980-024-01866-4">https://doi.org/10.1007/s10980-024-01866-4</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1007/s10980-024-01866-4">https://doi.org/10.1007/s10980-024-01866-4</a></p>
+<h3>Function</h3>
+<p>relatedArticle</p>
+<h3>Name</h3>
+<p>poll4pop model</p>
+<h3>Description</h3>
+<p>Gardner E, Breeze TD, Clough Y, et al. Reliably predicting pollinator abundance: Challenges of calibrating process-based ecological models. Methods Ecol. Evol. 2020; 11: 1673–1689. [8]<a href="https://doi.org/10.1111/2041-210X.13483">https://doi.org/10.1111/2041-210X.13483</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1111/2041-210X.13483">https://doi.org/10.1111/2041-210X.13483</a></p>
+<h3>Function</h3>
+<p>relatedArticle</p>
+<h3>Name</h3>
+<p>poll4pop model code</p>
+<h3>Description</h3>
+<p>yclough. (2020). yclough/poll4pop: Gardner_etal_MEE (v1.1.1). Zenodo. [10]<a href="https://doi.org/10.5281/zenodo.4001015">https://doi.org/10.5281/zenodo.4001015</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5281/zenodo.4001015">https://doi.org/10.5281/zenodo.4001015</a></p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2025-08-07</p>
+<h2>Use Constraints</h2>
+<p>This model is intended to help support understanding of how common lizards might be using landscapes. No decisions should ever be made solely on the basis of this model’s predictions – on-the-ground ecological surveys and integration of local knowledge are always required before any landscape-level or site-level decisions are made, due to real-life common lizard activity levels potentially differing from predicted levels.</p>
+<h3>Code</h3>
+<p>otherRestrictions</p>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Resource Type</h2>
+<p>model</p>
+<h2>Access Limitation</h2>
+<p>no limitations to public access</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="http://purl.org/coar/access_right/c_abf2">http://purl.org/coar/access_right/c_abf2</a></p>
+<h2>Not G E M I N I</h2>
+<p>False</p>
+<h2>Licences</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>0</p>
+<h2>Topics</h2>
+<ul>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/20">http://onto.nerc.ac.uk/CEHMD/topic/20</a></li>
+</ul>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Family Name</h3>
+<p>Gardner</p>
+<h3>Given Name</h3>
+<p>E.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-1669-7151">https://orcid.org/0000-0002-1669-7151</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Maclean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Gardner, E.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/ce442ab8-cfd9-4da2-9712-268bbf0f9c80.zip">https://data-package.ceh.ac.uk/sd/ce442ab8-cfd9-4da2-9712-268bbf0f9c80.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Gardner</p>
+<h3>Given Name</h3>
+<p>E.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-1669-7151">https://orcid.org/0000-0002-1669-7151</a></p>
+<h3>Full Name</h3>
+<p>Gardner, E.</p>
+<h3>Family Name</h3>
+<p>Julian</p>
+<h3>Given Name</h3>
+<p>A.</p>
+<h3>Organisation Name</h3>
+<p>ARG UK</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>info@arguk.org </p>
+<h3>Full Name</h3>
+<p>Julian, A.</p>
+<h3>Family Name</h3>
+<p>Langham</p>
+<h3>Given Name</h3>
+<p>S.</p>
+<h3>Organisation Name</h3>
+<p>SARG</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>info@arguk.org </p>
+<h3>Full Name</h3>
+<p>Langham, S.</p>
+<h3>Family Name</h3>
+<p>Monk</p>
+<h3>Given Name</h3>
+<p>C.</p>
+<h3>Organisation Name</h3>
+<p>ARG UK</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>info@arguk.org </p>
+<h3>Full Name</h3>
+<p>Monk, C.</p>
+<h3>Family Name</h3>
+<p>Pitt</p>
+<h3>Given Name</h3>
+<p>K.</p>
+<h3>Organisation Name</h3>
+<p>ARG UK</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>info@arguk.org </p>
+<h3>Full Name</h3>
+<p>Pitt, K.</p>
+<h3>Family Name</h3>
+<p>Allain</p>
+<h3>Given Name</h3>
+<p>S.J.R.</p>
+<h3>Organisation Name</h3>
+<p>University of Kent</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00xkeyj56">https://ror.org/00xkeyj56</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>steveallain@live.co.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Giles Lane</p>
+<h4>City</h4>
+<p>Canterbury</p>
+<h4>Administrative Area</h4>
+<p>Kent</p>
+<h4>Postal Code</h4>
+<p>CT2 7NR1</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Allain, S.J.R.</p>
+<h3>Family Name</h3>
+<p>Cartwright</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>ARC Trust</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@arc-trust.org </p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>744 Christchurch Road</p>
+<h4>City</h4>
+<p>Boscombe</p>
+<h4>Administrative Area</h4>
+<p>Dorset</p>
+<h4>Postal Code</h4>
+<p>BH7 6BZ</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Cartwright, M.</p>
+<h3>Family Name</h3>
+<p>Clarke</p>
+<h3>Given Name</h3>
+<p>K.</p>
+<h3>Organisation Name</h3>
+<p>ARG UK</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>info@arguk.org </p>
+<h3>Full Name</h3>
+<p>Clarke, K.</p>
+<h3>Family Name</h3>
+<p>Cranfield</p>
+<h3>Given Name</h3>
+<p>J.</p>
+<h3>Organisation Name</h3>
+<p>Herpetologic Ltd</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>jon@herpetologic.co.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>38 Nursery Rd</p>
+<h4>City</h4>
+<p>Alresford </p>
+<h4>Postal Code</h4>
+<p>SO24 9JR</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Cranfield, J.</p>
+<h3>Family Name</h3>
+<p>Gandola</p>
+<h3>Given Name</h3>
+<p>R. </p>
+<h3>Organisation Name</h3>
+<p>Herpetological Society of Ireland</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>rgandola@thehsi.org</p>
+<h3>Full Name</h3>
+<p>Gandola, R.</p>
+<h3>Family Name</h3>
+<p>Gent</p>
+<h3>Given Name</h3>
+<p>T.</p>
+<h3>Organisation Name</h3>
+<p>ARC Trust</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@arc-trust.org </p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>744 Christchurch Road</p>
+<h4>City</h4>
+<p>Boscombe</p>
+<h4>Administrative Area</h4>
+<p>Dorset</p>
+<h4>Postal Code</h4>
+<p>BH7 6BZ</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Gent, T.</p>
+<h3>Family Name</h3>
+<p>Reading</p>
+<h3>Given Name</h3>
+<p>C. </p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Reading, C.</p>
+<h3>Family Name</h3>
+<p>Wilkinson</p>
+<h3>Given Name</h3>
+<p>J.</p>
+<h3>Organisation Name</h3>
+<p>ARC Trust</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@arc-trust.org </p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>744 Christchurch Road</p>
+<h4>City</h4>
+<p>Boscombe</p>
+<h4>Administrative Area</h4>
+<p>Dorset</p>
+<h4>Postal Code</h4>
+<p>BH7 6BZ</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Wilkinson, J.</p>
+<h3>Family Name</h3>
+<p>Baker</p>
+<h3>Given Name</h3>
+<p>J.</p>
+<h3>Organisation Name</h3>
+<p>ARC Trust</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@arc-trust.org </p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>744 Christchurch Road</p>
+<h4>City</h4>
+<p>Boscombe</p>
+<h4>Administrative Area</h4>
+<p>Dorset</p>
+<h4>Postal Code</h4>
+<p>BH7 6BZ</p>
+<h3>Full Name</h3>
+<p>Baker, J.</p>
+<h3>Family Name</h3>
+<p>Dyason</p>
+<h3>Given Name</h3>
+<p>S.</p>
+<h3>Organisation Name</h3>
+<p>ARG UK</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>info@arguk.org </p>
+<h3>Full Name</h3>
+<p>Dyason, S.</p>
+<h3>Family Name</h3>
+<p>Pywell</p>
+<h3>Given Name</h3>
+<p>R.F.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Pywell, R.F.</p>
+<h3>Family Name</h3>
+<p>Bullock</p>
+<h3>Given Name</h3>
+<p>J.M.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Bullock, J.M.</p>
+<h2>Publication Date</h2>
+<p>2025-08-07T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-21T09:48:42.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Gardner, E.</li>
+<li>Julian, A.</li>
+<li>Langham, S.</li>
+<li>Monk, C.</li>
+<li>Pitt, K.</li>
+<li>Allain, S.J.R.</li>
+<li>Cartwright, M.</li>
+<li>Clarke, K.</li>
+<li>Cranfield, J.</li>
+<li>Gandola, R.</li>
+<li>Gent, T.</li>
+<li>Reading, C.</li>
+<li>Wilkinson, J.</li>
+<li>Baker, J.</li>
+<li>Dyason, S.</li>
+<li>Pywell, R.F.</li>
+<li>Bullock, J.M.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/ce442ab8-cfd9-4da2-9712-268bbf0f9c80</p>
+<h3>Title</h3>
+<p>Rept4pop model for the simulation of foraging, dispersal and population processes of UK common lizards</p>
+<h3>Publisher</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>model</p>
+<h3>Year</h3>
+<p>2025</p>
+<h3>Month</h3>
+<p>8</p>
+<h3>Day</h3>
+<p>7</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/ce442ab8-cfd9-4da2-9712-268bbf0f9c80/citation?format=bib">https://catalogue.ceh.ac.uk/documents/ce442ab8-cfd9-4da2-9712-268bbf0f9c80/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/ce442ab8-cfd9-4da2-9712-268bbf0f9c80/citation?format=ris">https://catalogue.ceh.ac.uk/documents/ce442ab8-cfd9-4da2-9712-268bbf0f9c80/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/ce442ab8-cfd9-4da2-9712-268bbf0f9c80">https://doi.org/10.5285/ce442ab8-cfd9-4da2-9712-268bbf0f9c80</a></p>
+</body>
+</html>

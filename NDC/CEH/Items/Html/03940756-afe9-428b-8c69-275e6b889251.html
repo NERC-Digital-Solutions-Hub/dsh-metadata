@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03940756-afe9-428b-8c69-275e6b889251</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>03940756-afe9-428b-8c69-275e6b889251</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/03940756-afe9-428b-8c69-275e6b889251">https://catalogue.ceh.ac.uk/id/03940756-afe9-428b-8c69-275e6b889251</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>Vector maps of the 1960 Second Land Utilisation Survey in England and Wales, from 110 published maps</p>
+<h2>Description</h2>
+<p>This is a vector dataset representing land use in the 1960s across a selection of areas in England and Wales. The land use data is digitised from 110 published maps of the 1960s Second Land Utilisation Survey (2LUS) which was directed by Professor Alice Coleman. The published maps were digitised using a semi-automated supervised classification, followed by extensive post-processing to clean the vector dataset. The resulting dataset maps 11 land-use categories including “Arable”, “Broadleaved and mixed woodland”, “Coastal”, “Coniferous woodland”, “Grassland”, “Heath, moorland and rough land”, “Market gardening and orchards”, “Open space”, “Settlement”, “Unvegetated land”, “Water and Marsh”. </p>
+<h2>Metadata Date</h2>
+<p>2025-11-20T17:20:06</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/03940756-afe9-428b-8c69-275e6b889251">https://catalogue.ceh.ac.uk/id/03940756-afe9-428b-8c69-275e6b889251</a></p>
+<h3>Code</h3>
+<p>10.5285/03940756-afe9-428b-8c69-275e6b889251</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Lineage</h2>
+<p>All 110 published Second Land Utilisation Survey (2LUS) maps were digitised using a semi-automated supervised classification method. Firstly, maps were scanned and saved as Tiff images at 300 dots per inch at a colour depth of 8 bits per channel (24-bit depth). These were georeferenced in ArcGIS v10.7 using the Ordnance Survey (OS) 1km National Grid. For the classification, georeferenced 3-band images were converted to 16-bit single band images (256 colours). A manual look-up table was created for each map image identifying the dominant unique pixel values of the different land use classes. Any “noise” present on the images including text, contour lines and symbols were assigned a single blank value of 0. Similarly, pixel values which were common to multiple land use classes, such as the white colour were also assigned to 0. For these reasons it was not possible to classify either the “unvegetated land” or the “derelict land” land use categories. The model reclassified the 256 colours within a range of 0 to 10, representing the 10 land use categories and the noise category (pixel value = 0), with the latter being removed and replaced. Classified images were vectorised and manually cleaned using eliminate functions in ArcGIS. All “unvegetated land” was manually digitised as this could not be classified, along with a new category for “coastal” areas which were not classified. Railway lines, roads and very small rivers were inconsistently classified and were therefore removed, while “industry” and “transport” classes were grouped with “settlement” to ensure uniformity. “Derelict land” could not be classified but was often mapped in the classification as “settlement”, so this was later grouped with this category. Woodland was manually split into broadleaved and coniferous using the woodland symbology provided on the OS background, this usually aligned with the manual over-printed symbols but the latter was not present for all woodlands, thus the OS backdrop was used. The date of each OS basemap varied, however these were largely published or reprinted in the 1960s and were largely consistent with the surveyed land cover data, though there were exceptions e.g. Bristol East. </p>
+<p>To validate the classified 2LUS maps, 3,000 random points were generated across the digitised maps. For each point, a manual assessment was undertaken assigning the most representative land cover class to the point based on the raw georeferenced 3-band images. A confusion matrix between the manually assigned points and the classified 2LUS maps revealed an overall accuracy of 95.8%. Please see supporting documentation for more information.</p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>vector</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>environment</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment</a></p>
+<h2>Keywords Theme</h2>
+<p>Land use</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/12">http://onto.nerc.ac.uk/CEHMD/topic/12</a></p>
+<p>Land cover</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/11">http://onto.nerc.ac.uk/CEHMD/topic/11</a></p>
+<h2>Keywords Other</h2>
+<p>England</p>
+<p>Wales</p>
+<p>habitat</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/3808">http://www.eionet.europa.eu/gemet/concept/3808</a></p>
+<p>land cover</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/4612">http://www.eionet.europa.eu/gemet/concept/4612</a></p>
+<p>land use</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/4678">http://www.eionet.europa.eu/gemet/concept/4678</a></p>
+<p>mapping</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/5013">http://www.eionet.europa.eu/gemet/concept/5013</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>Shapefile</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Inspire Themes</h2>
+<h3>Theme</h3>
+<p>Land Use</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/theme/lu">http://inspire.ec.europa.eu/theme/lu</a></p>
+<h3>Theme</h3>
+<p>Land Cover</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/theme/lc">http://inspire.ec.europa.eu/theme/lc</a></p>
+<h2>Spatial Resolutions</h2>
+<h3>Distance</h3>
+<p>10</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Number</h3>
+<p>NE/T000244/1</p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Number</h3>
+<p>NE/W005050/1</p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>-6.452</p>
+<h3>East Bound Longitude</h3>
+<p>1.768</p>
+<h3>South Bound Latitude</h3>
+<p>49.864</p>
+<h3>North Bound Latitude</h3>
+<p>55.812</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-6.452, 49.864], [-6.452, 55.812], [1.768, 55.812], [1.768, 49.864], [-6.452, 49.864]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[-6.452, 49.864], [-6.452, 55.812], [1.768, 55.812], [1.768, 49.864], [-6.452, 49.864]]]</p>
+<h3>West Bound Longitude</h3>
+<p>-5.473</p>
+<h3>East Bound Longitude</h3>
+<p>-2.654</p>
+<h3>South Bound Latitude</h3>
+<p>51.375</p>
+<h3>North Bound Latitude</h3>
+<p>53.434</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-5.473, 51.375], [-5.473, 53.434], [-2.654, 53.434], [-2.654, 51.375], [-5.473, 51.375]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[-5.473, 51.375], [-5.473, 53.434], [-2.654, 53.434], [-2.654, 51.375], [-5.473, 51.375]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Family Name</h3>
+<p>Ridding</p>
+<h3>Given Name</h3>
+<p>L.E.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-3141-8795">https://orcid.org/0000-0003-3141-8795</a></p>
+<h3>Full Name</h3>
+<p>Ridding, L.E.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Family Name</h3>
+<p>Ridding</p>
+<h3>Given Name</h3>
+<p>L.E</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-3141-8795">https://orcid.org/0000-0003-3141-8795</a></p>
+<h3>Full Name</h3>
+<p>Ridding, L.E.</p>
+<h3>Family Name</h3>
+<p>Wickenden</p>
+<h3>Given Name</h3>
+<p>A.R</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>a.r.wickenden@hotmail.com</p>
+<h3>Full Name</h3>
+<p>Wickenden, A.R.</p>
+<h3>Family Name</h3>
+<p>Orsler</p>
+<h3>Given Name</h3>
+<p>Z</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Orsler, Z.</p>
+<h3>Family Name</h3>
+<p>Rowland</p>
+<h3>Given Name</h3>
+<p>C.S</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Rowland, C.S.</p>
+<h3>Family Name</h3>
+<p>Hampton</p>
+<h3>Given Name</h3>
+<p>J.M</p>
+<h3>Organisation Name</h3>
+<p>Office for National Statistics</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/021fhft25">https://ror.org/021fhft25</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>jen.hampton@ons.gov.uk</p>
+<h3>Full Name</h3>
+<p>Hampton, J.M.</p>
+<h3>Family Name</h3>
+<p>Mitchell</p>
+<h3>Given Name</h3>
+<p>B</p>
+<h3>Organisation Name</h3>
+<p>Office for National Statistics</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/021fhft25">https://ror.org/021fhft25</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>bruce.mitchell@ons.gov.uk</p>
+<h3>Full Name</h3>
+<p>Mitchell, B.</p>
+<h3>Family Name</h3>
+<p>Edwardes</p>
+<h3>Given Name</h3>
+<p>A</p>
+<h3>Organisation Name</h3>
+<p>Department for Environment Food and Rural Affairs</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00tnppw48">https://ror.org/00tnppw48</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>alistair.edwardes@defra.gov.uk</p>
+<h3>Full Name</h3>
+<p>Edwardes, A.</p>
+<h3>Family Name</h3>
+<p>Mullin</p>
+<h3>Given Name</h3>
+<p>K</p>
+<h3>Organisation Name</h3>
+<p>Department for Environment Food and Rural Affairs</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00tnppw48">https://ror.org/00tnppw48</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>karen.mullin@defra.gov.uk</p>
+<h3>Full Name</h3>
+<p>Mullin, K.</p>
+<h3>Family Name</h3>
+<p>Haughton</p>
+<h3>Given Name</h3>
+<p>G</p>
+<h3>Organisation Name</h3>
+<p>Department for Environment Food and Rural Affairs</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00tnppw48">https://ror.org/00tnppw48</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>gavin.haughton@defra.gov.uk</p>
+<h3>Full Name</h3>
+<p>Haughton, G.</p>
+<h3>Family Name</h3>
+<p>Thurston</p>
+<h3>Given Name</h3>
+<p>N</p>
+<h3>Organisation Name</h3>
+<p>Wood PLC</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>neil.thurston@owcltd.com</p>
+<h3>Full Name</h3>
+<p>Thurston, N.</p>
+<h3>Family Name</h3>
+<p>Pola</p>
+<h3>Given Name</h3>
+<p>I</p>
+<h3>Organisation Name</h3>
+<p>Wood PLC</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>ivano.geo@gmail.com</p>
+<h3>Full Name</h3>
+<p>Pola, I.</p>
+<h3>Family Name</h3>
+<p>Sinclair</p>
+<h3>Given Name</h3>
+<p>G</p>
+<h3>Organisation Name</h3>
+<p>Environment Information Services</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>geoffrey.eis@btinternet.com</p>
+<h3>Full Name</h3>
+<p>Sinclair, G.</p>
+<h3>Family Name</h3>
+<p>Sinclair</p>
+<h3>Given Name</h3>
+<p>M.R</p>
+<h3>Organisation Name</h3>
+<p>Environment Information Services</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>environmentinformationservices@btinternet.com</p>
+<h3>Full Name</h3>
+<p>Sinclair, M.R.</p>
+<h3>Family Name</h3>
+<p>Shaw</p>
+<h3>Given Name</h3>
+<p>J</p>
+<h3>Organisation Name</h3>
+<p>King's College</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>je.shaw50@btopenworld.com</p>
+<h3>Full Name</h3>
+<p>Shaw, J.</p>
+<h3>Family Name</h3>
+<p>Pywell</p>
+<h3>Given Name</h3>
+<p>R.F</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Pywell, R.F.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Temporal Extents</h2>
+<h3>Begin</h3>
+<p>1960-01-01</p>
+<h3>End</h3>
+<p>1960-12-31</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/03940756-afe9-428b-8c69-275e6b889251.zip">https://data-package.ceh.ac.uk/sd/03940756-afe9-428b-8c69-275e6b889251.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/data/03940756-afe9-428b-8c69-275e6b889251">https://data-package.ceh.ac.uk/data/03940756-afe9-428b-8c69-275e6b889251</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>download</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://www.opengis.net/def/crs/EPSG/0/27700">http://www.opengis.net/def/crs/EPSG/0/27700</a></p>
+<h3>Title</h3>
+<p>OSGB 1936 / British National Grid</p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2025-09-24</p>
+<h3>Released Date</h3>
+<p>2025-11-20</p>
+<h2>Use Constraints</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset">http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset</a></p>
+<h2>Access Limitation</h2>
+<p>no limitations to public access</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="http://purl.org/coar/access_right/c_abf2">http://purl.org/coar/access_right/c_abf2</a></p>
+<h2>Not G E M I N I</h2>
+<p>True</p>
+<h2>Has Online Service Agreement</h2>
+<p>True</p>
+<h2>Licences</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>0</p>
+<h2>Topics</h2>
+<ul>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/12">http://onto.nerc.ac.uk/CEHMD/topic/12</a></li>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/11">http://onto.nerc.ac.uk/CEHMD/topic/11</a></li>
+</ul>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Family Name</h3>
+<p>Ridding</p>
+<h3>Given Name</h3>
+<p>L.E.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-3141-8795">https://orcid.org/0000-0003-3141-8795</a></p>
+<h3>Full Name</h3>
+<p>Ridding, L.E.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/03940756-afe9-428b-8c69-275e6b889251.zip">https://data-package.ceh.ac.uk/sd/03940756-afe9-428b-8c69-275e6b889251.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Ridding</p>
+<h3>Given Name</h3>
+<p>L.E</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-3141-8795">https://orcid.org/0000-0003-3141-8795</a></p>
+<h3>Full Name</h3>
+<p>Ridding, L.E.</p>
+<h3>Family Name</h3>
+<p>Wickenden</p>
+<h3>Given Name</h3>
+<p>A.R</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>a.r.wickenden@hotmail.com</p>
+<h3>Full Name</h3>
+<p>Wickenden, A.R.</p>
+<h3>Family Name</h3>
+<p>Orsler</p>
+<h3>Given Name</h3>
+<p>Z</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Orsler, Z.</p>
+<h3>Family Name</h3>
+<p>Rowland</p>
+<h3>Given Name</h3>
+<p>C.S</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Rowland, C.S.</p>
+<h3>Family Name</h3>
+<p>Hampton</p>
+<h3>Given Name</h3>
+<p>J.M</p>
+<h3>Organisation Name</h3>
+<p>Office for National Statistics</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/021fhft25">https://ror.org/021fhft25</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>jen.hampton@ons.gov.uk</p>
+<h3>Full Name</h3>
+<p>Hampton, J.M.</p>
+<h3>Family Name</h3>
+<p>Mitchell</p>
+<h3>Given Name</h3>
+<p>B</p>
+<h3>Organisation Name</h3>
+<p>Office for National Statistics</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/021fhft25">https://ror.org/021fhft25</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>bruce.mitchell@ons.gov.uk</p>
+<h3>Full Name</h3>
+<p>Mitchell, B.</p>
+<h3>Family Name</h3>
+<p>Edwardes</p>
+<h3>Given Name</h3>
+<p>A</p>
+<h3>Organisation Name</h3>
+<p>Department for Environment Food and Rural Affairs</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00tnppw48">https://ror.org/00tnppw48</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>alistair.edwardes@defra.gov.uk</p>
+<h3>Full Name</h3>
+<p>Edwardes, A.</p>
+<h3>Family Name</h3>
+<p>Mullin</p>
+<h3>Given Name</h3>
+<p>K</p>
+<h3>Organisation Name</h3>
+<p>Department for Environment Food and Rural Affairs</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00tnppw48">https://ror.org/00tnppw48</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>karen.mullin@defra.gov.uk</p>
+<h3>Full Name</h3>
+<p>Mullin, K.</p>
+<h3>Family Name</h3>
+<p>Haughton</p>
+<h3>Given Name</h3>
+<p>G</p>
+<h3>Organisation Name</h3>
+<p>Department for Environment Food and Rural Affairs</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00tnppw48">https://ror.org/00tnppw48</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>gavin.haughton@defra.gov.uk</p>
+<h3>Full Name</h3>
+<p>Haughton, G.</p>
+<h3>Family Name</h3>
+<p>Thurston</p>
+<h3>Given Name</h3>
+<p>N</p>
+<h3>Organisation Name</h3>
+<p>Wood PLC</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>neil.thurston@owcltd.com</p>
+<h3>Full Name</h3>
+<p>Thurston, N.</p>
+<h3>Family Name</h3>
+<p>Pola</p>
+<h3>Given Name</h3>
+<p>I</p>
+<h3>Organisation Name</h3>
+<p>Wood PLC</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>ivano.geo@gmail.com</p>
+<h3>Full Name</h3>
+<p>Pola, I.</p>
+<h3>Family Name</h3>
+<p>Sinclair</p>
+<h3>Given Name</h3>
+<p>G</p>
+<h3>Organisation Name</h3>
+<p>Environment Information Services</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>geoffrey.eis@btinternet.com</p>
+<h3>Full Name</h3>
+<p>Sinclair, G.</p>
+<h3>Family Name</h3>
+<p>Sinclair</p>
+<h3>Given Name</h3>
+<p>M.R</p>
+<h3>Organisation Name</h3>
+<p>Environment Information Services</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>environmentinformationservices@btinternet.com</p>
+<h3>Full Name</h3>
+<p>Sinclair, M.R.</p>
+<h3>Family Name</h3>
+<p>Shaw</p>
+<h3>Given Name</h3>
+<p>J</p>
+<h3>Organisation Name</h3>
+<p>King's College</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>je.shaw50@btopenworld.com</p>
+<h3>Full Name</h3>
+<p>Shaw, J.</p>
+<h3>Family Name</h3>
+<p>Pywell</p>
+<h3>Given Name</h3>
+<p>R.F</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Pywell, R.F.</p>
+<h2>Publication Date</h2>
+<p>2025-09-24T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-20T17:20:06.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Ridding, L.E.</li>
+<li>Wickenden, A.R.</li>
+<li>Orsler, Z.</li>
+<li>Rowland, C.S.</li>
+<li>Hampton, J.M.</li>
+<li>Mitchell, B.</li>
+<li>Edwardes, A.</li>
+<li>Mullin, K.</li>
+<li>Haughton, G.</li>
+<li>Thurston, N.</li>
+<li>Pola, I.</li>
+<li>Sinclair, G.</li>
+<li>Sinclair, M.R.</li>
+<li>Shaw, J.</li>
+<li>Pywell, R.F.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/03940756-afe9-428b-8c69-275e6b889251</p>
+<h3>Title</h3>
+<p>Vector maps of the 1960 Second Land Utilisation Survey in England and Wales, from 110 published maps</p>
+<h3>Publisher</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2025</p>
+<h3>Month</h3>
+<p>9</p>
+<h3>Day</h3>
+<p>24</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/03940756-afe9-428b-8c69-275e6b889251/citation?format=bib">https://catalogue.ceh.ac.uk/documents/03940756-afe9-428b-8c69-275e6b889251/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/03940756-afe9-428b-8c69-275e6b889251/citation?format=ris">https://catalogue.ceh.ac.uk/documents/03940756-afe9-428b-8c69-275e6b889251/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/03940756-afe9-428b-8c69-275e6b889251">https://doi.org/10.5285/03940756-afe9-428b-8c69-275e6b889251</a></p>
+</body>
+</html>

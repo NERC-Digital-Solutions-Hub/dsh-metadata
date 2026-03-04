@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1f7687de-d68e-4349-b4d3-b7d3a127a7df</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>1f7687de-d68e-4349-b4d3-b7d3a127a7df</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/1f7687de-d68e-4349-b4d3-b7d3a127a7df">https://catalogue.ceh.ac.uk/id/1f7687de-d68e-4349-b4d3-b7d3a127a7df</a></p>
+<h2>Type</h2>
+<p>software</p>
+<h2>Title</h2>
+<p>Code and synthetic data for analysis of relation between species sizes and local abundances trends</p>
+<h2>Description</h2>
+<p>This resource contains the R code and core results of a study seeking to identify whether there are global patterns in whether larger or smaller bodied species are showing different population trends within communities. This used the global BioTIME database (including community time series from hundreds of studies of mostly covering the last 20-50 years) and several large trait databases to gain a very large sample size (12,956 assemblage time series from 144 studies, incorporating 2,109,593 observations of 10,286 species, of which 7,234 could be linked to at least one size trait). </p>
+<p>Data resources in this deposit include matched trait values for each species, several population trends of each species, and community level correlations between population trends and body-size trait values. Additionally, html files describing the R markdown code to produce the data resources are included. This resource does not contain the raw population and trait data, which are openly available from various sources that are listed in the supporting documentation.</p>
+<p>The matching between global databases required a large amount of initial cleaning and filtering steps. Although the data was subject to a number of checks, with tens of thousands of species, it was too large to check all alignments manually, and trait matches assume a single bodysize value for a species across its range. The original purpose was to generate a relative rank within a community, but caution is needed for more fine-grained analyses using this approach. </p>
+<h2>Metadata Date</h2>
+<p>2025-11-13T16:27:45</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/1f7687de-d68e-4349-b4d3-b7d3a127a7df">https://catalogue.ceh.ac.uk/id/1f7687de-d68e-4349-b4d3-b7d3a127a7df</a></p>
+<h3>Code</h3>
+<p>10.5285/1f7687de-d68e-4349-b4d3-b7d3a127a7df</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Lineage</h2>
+<p>To generate the assemblage time series, we downloaded all studies available in the ‘open' component of the BioTIME database of community time series from Zenodo. We identified studies as ‘multi-site' or ‘single-site' based on the number of coordinates in the BioTIME database. Single-site studies were considered as one combined assemblage, whilst widely dispersed ‘multi-site' studies were portioned into assemblages based on a global hexagonal grid of 96 km2 cells using the dggridR package in R. We retained records from assemblages with abundance or biomass data of at least 10 distinct species and at least 5 years between the first and last record.
+We used four separate trait databases that include some measure of organism size, but we did not mix information between databases. For amniotes, an amniote life history database was downloaded. For plants, we used the TRY database. For fish, we downloaded a curated database of fish traits, which in turn is largely based on data from the FishBase database. It is focused on the North Atlantic and Pacific continental shelf, but this represents the majority of the relevant BioTIME studies. For marine species, we downloaded size data from the WoRMS database. </p>
+<p>Data cleaning was performed in order to match up species names in the trait databases and BioTIME database.</p>
+<p>We assessed each assemblage–trait combination where ≥40% and ≥5 of the species had data for that trait and &gt;80% of year samples contained at least 5 species. We excluded transitory species within each assemblage by including only those species that were seen in over half of the year samples. Where this filtering left data from less than 1% of the cells in the original study, we removed the whole study. Where a study included both ‘abundance' and ‘biomass' data, we preferentially used the abundance data. Studies with only presence–absence data were not used.
+To calculate the relative change in abundance of each species, we fitted the square-root transformed and scaled species totals as a function of year for each assemblage using ordinary least-squares regression models and calculate the slope β for each species.</p>
+<p>The main response variable τ for each assemblage was then computed as Kendall's rank correlation coefficient between size trait values and the set of βs. Species with missing trait values were excluded from the calculation of τ. Where there were multiple assemblages per study, study-level τ was taken as a simple arithmetic mean of all assemblage-level τ values. We also test two alternative transformations of the population data.
+To examine study-level determinates of τ within each size trait, for each study we calculated: (1) the mean total species richness of each assemblage over the time frame, (2) the mean assemblage-level trait data completeness, (3) the mean number of years from which there were data, (4) the mean span of years from which there were data, (5) the log10-transformed number of assemblages within the study (that is, the spatial extent), (6) the absolute latitude of the centre of the study and (7) the range of traits in the assemblage (log10(max) − log10(min)). We fitted a set of linear models to assess whether these factors could predict either τ or τ2.</p>
+<p>All analysis used the R language, and scripts are included in the KnittedScripts folder. More information is provided in the supporting information.</p>
+<h2>Topic Categories</h2>
+<p>biota</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/biota">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/biota</a></p>
+<h2>Keywords Theme</h2>
+<p>Biodiversity</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/2">http://onto.nerc.ac.uk/CEHMD/topic/2</a></p>
+<h2>Keywords Other</h2>
+<p>body size</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/21366">http://vocabs.lter-europe.net/EnvThes/21366</a></p>
+<p>community ecology</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/45">http://vocabs.lter-europe.net/EnvThes/45</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>Comma-separated values (CSV)</p>
+<h3>Type</h3>
+<p>text/csv</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h3>Name</h3>
+<p>html</p>
+<h3>Type</h3>
+<p>text/html</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h3>Name</h3>
+<p>md</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Number</h3>
+<p>NE/T003510/1</p>
+<h3>Award U R I</h3>
+<p><a href="https://gtr.ukri.org/projects?ref=NE/T003510/1">https://gtr.ukri.org/projects?ref=NE/T003510/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Family Name</h3>
+<p>Terry</p>
+<h3>Given Name</h3>
+<p>J.C.D.</p>
+<h3>Organisation Name</h3>
+<p>Queen Mary University of London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/026zzn846">https://ror.org/026zzn846</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>christopher.terry@biology.ox.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-0626-9938">https://orcid.org/0000-0002-0626-9938</a></p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>London</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Terry, J.C.D.</p>
+<h3>Family Name</h3>
+<p>Terry</p>
+<h3>Given Name</h3>
+<p>J.C.D.</p>
+<h3>Organisation Name</h3>
+<p>Queen Mary University of London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/026zzn846">https://ror.org/026zzn846</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>christopher.terry@biology.ox.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-0626-9938">https://orcid.org/0000-0002-0626-9938</a></p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>London</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Terry, J.C.D.</p>
+<h3>Point Of Contact</h3>
+<p>Queen Mary University of London</p>
+<h3>Family Name</h3>
+<p>O'Sullivan</p>
+<h3>Given Name</h3>
+<p>J.D.</p>
+<h3>Organisation Name</h3>
+<p>Queen Mary University of London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/026zzn846">https://ror.org/026zzn846</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>j.osullivan@zoho.com</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-2386-6635">https://orcid.org/0000-0003-2386-6635</a></p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>London</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>O'Sullivan, J.D.</p>
+<h3>Family Name</h3>
+<p>Rossberg</p>
+<h3>Given Name</h3>
+<p>A.G. </p>
+<h3>Organisation Name</h3>
+<p>Queen Mary University of London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/026zzn846">https://ror.org/026zzn846</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>a.rossberg@qmul.ac.uk</p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>London</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Rossberg, A.G.</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>Queen Mary University of London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/026zzn846">https://ror.org/026zzn846</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>christopher.terry@biology.ox.ac.uk</p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>London</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/data/1f7687de-d68e-4349-b4d3-b7d3a127a7df">https://data-package.ceh.ac.uk/data/1f7687de-d68e-4349-b4d3-b7d3a127a7df</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>download</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/1f7687de-d68e-4349-b4d3-b7d3a127a7df.zip">https://data-package.ceh.ac.uk/sd/1f7687de-d68e-4349-b4d3-b7d3a127a7df.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Supplemental</h2>
+<h3>Description</h3>
+<p>Terry, J.C.D., O'Sullivan, J.D., &amp; Rossberg, A.G.  (2022). No pervasive relationship between species size and local abundance trends. Nat Ecol Evol, 6, 140–144. </p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1038/s41559-021-01624-8">https://doi.org/10.1038/s41559-021-01624-8</a></p>
+<h3>Function</h3>
+<p>relatedArticle</p>
+<h3>Description</h3>
+<p>Biotime - bodysize: archived files on Zenodo</p>
+<h3>Url</h3>
+<p><a href="https://zenodo.org/doi/10.5281/zenodo.4745553">https://zenodo.org/doi/10.5281/zenodo.4745553</a></p>
+<h3>Function</h3>
+<p>relatedDataset</p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2024-05-01</p>
+<h2>Use Constraints</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Resource Type</h2>
+<p>software</p>
+<h2>Access Limitation</h2>
+<p>no limitations to public access</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="http://purl.org/coar/access_right/c_abf2">http://purl.org/coar/access_right/c_abf2</a></p>
+<h2>Not G E M I N I</h2>
+<p>False</p>
+<h2>Licences</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>0</p>
+<h2>Topics</h2>
+<ul>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/2">http://onto.nerc.ac.uk/CEHMD/topic/2</a></li>
+</ul>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Family Name</h3>
+<p>Terry</p>
+<h3>Given Name</h3>
+<p>J.C.D.</p>
+<h3>Organisation Name</h3>
+<p>Queen Mary University of London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/026zzn846">https://ror.org/026zzn846</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>christopher.terry@biology.ox.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-0626-9938">https://orcid.org/0000-0002-0626-9938</a></p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>London</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Terry, J.C.D.</p>
+<h3>Point Of Contact</h3>
+<p>Queen Mary University of London</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>Queen Mary University of London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/026zzn846">https://ror.org/026zzn846</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>christopher.terry@biology.ox.ac.uk</p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>London</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/1f7687de-d68e-4349-b4d3-b7d3a127a7df.zip">https://data-package.ceh.ac.uk/sd/1f7687de-d68e-4349-b4d3-b7d3a127a7df.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Terry</p>
+<h3>Given Name</h3>
+<p>J.C.D.</p>
+<h3>Organisation Name</h3>
+<p>Queen Mary University of London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/026zzn846">https://ror.org/026zzn846</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>christopher.terry@biology.ox.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-0626-9938">https://orcid.org/0000-0002-0626-9938</a></p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>London</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Terry, J.C.D.</p>
+<h3>Family Name</h3>
+<p>O'Sullivan</p>
+<h3>Given Name</h3>
+<p>J.D.</p>
+<h3>Organisation Name</h3>
+<p>Queen Mary University of London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/026zzn846">https://ror.org/026zzn846</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>j.osullivan@zoho.com</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-2386-6635">https://orcid.org/0000-0003-2386-6635</a></p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>London</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>O'Sullivan, J.D.</p>
+<h3>Family Name</h3>
+<p>Rossberg</p>
+<h3>Given Name</h3>
+<p>A.G. </p>
+<h3>Organisation Name</h3>
+<p>Queen Mary University of London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/026zzn846">https://ror.org/026zzn846</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>a.rossberg@qmul.ac.uk</p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>London</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Rossberg, A.G.</p>
+<h2>Publication Date</h2>
+<p>2024-05-01T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-13T16:27:45.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Terry, J.C.D.</li>
+<li>O'Sullivan, J.D.</li>
+<li>Rossberg, A.G.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/1f7687de-d68e-4349-b4d3-b7d3a127a7df</p>
+<h3>Title</h3>
+<p>Code and synthetic data for analysis of relation between species sizes and local abundances trends</p>
+<h3>Publisher</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>software</p>
+<h3>Year</h3>
+<p>2024</p>
+<h3>Month</h3>
+<p>5</p>
+<h3>Day</h3>
+<p>1</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/1f7687de-d68e-4349-b4d3-b7d3a127a7df/citation?format=bib">https://catalogue.ceh.ac.uk/documents/1f7687de-d68e-4349-b4d3-b7d3a127a7df/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/1f7687de-d68e-4349-b4d3-b7d3a127a7df/citation?format=ris">https://catalogue.ceh.ac.uk/documents/1f7687de-d68e-4349-b4d3-b7d3a127a7df/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/1f7687de-d68e-4349-b4d3-b7d3a127a7df">https://doi.org/10.5285/1f7687de-d68e-4349-b4d3-b7d3a127a7df</a></p>
+</body>
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>445381ce-f412-48a0-bc3c-2d0ef4737274</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>445381ce-f412-48a0-bc3c-2d0ef4737274</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/445381ce-f412-48a0-bc3c-2d0ef4737274">https://catalogue.ceh.ac.uk/id/445381ce-f412-48a0-bc3c-2d0ef4737274</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>Species richness and recording priority derived from species distribution models for Lepidoptera in Great Britain</p>
+<h2>Description</h2>
+<p>This dataset includes a set of modelled outputs produced as part of the DECIDE project. Three groups were modelled; butterflies, day-flying moths and night-flying moths. (For the moths, we only considered 'macro-moths'.) For each group there are three outputs; species richness, model variability and DECIDE recording priority. The outputs summarise across multiple species within each group. The model’s prediction probability of occurrence for individual species is not made available. The outputs are in a raster format on Ordnance Survey National Grid reference system (OSGB) at 100m x 100m resolution.</p>
+<p>Species richness layers are a modelled prediction of how many species are present at a location. Model variability is used to determine where a model is uncertain about its prediction of species occurrence. Model variability is combined with information about how recently a species had been recorded to produce the DECIDE recording priority. The DECIDE recording priority is a measure to prioritise locations to support adaptive sampling of where to collect species occurrence data to improve species distribution models.</p>
+<h2>Metadata Date</h2>
+<p>2025-11-13T16:24:21</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/445381ce-f412-48a0-bc3c-2d0ef4737274">https://catalogue.ceh.ac.uk/id/445381ce-f412-48a0-bc3c-2d0ef4737274</a></p>
+<h3>Code</h3>
+<p>10.5285/445381ce-f412-48a0-bc3c-2d0ef4737274</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Lineage</h2>
+<p>Outputs are derived from species distribution models (SDMs) fitted to species occurrence data and environmental data. The species occurrence data is from structured surveys and opportunistic species record. Data is from Butterflies for the New Millennium (<a href="https://butterfly-conservation.org/our-work/recording-and-monitoring/butterflies-for-the-new-millennium">https://butterfly-conservation.org/our-work/recording-and-monitoring/butterflies-for-the-new-millennium</a> and the UK Butterfly Monitoring Scheme and the National Moth Recording Scheme. Environmental data used for fitting SDMs included; BIOCLIM variables derived from long term average climate data, altitude, slope, aspect, land-cover (UKCEH land-cover map).</p>
+<p>SDMs were fitted for species separately using an ensemble modelling approach using four different model types; logistic regression (GLM), general additive model (GAM), random forest (RF) and Maxent (ME). Best performing models for each species were used. Species richness is the summed predicted probability of presence across all species within each group (butterfly, day-flying moths, and night-flying moths).</p>
+<p>Model variability was calculated using a bootstrapping approach. For each model type, we fit the model 10 times on 90% random subsets of the total species' occurrence dataset. Model variability was calculated as the standard deviation across each model’s predicted probability of occurrence at each location for each species. The model variability was summed across all species within each group to produce the model variability layer. </p>
+<p>The DECIDE recording priority (where a recorder should visit next) was calculated as a composite of model variability and how recently a record had been made in a location. Specifically, the model variability was down-weighted by the days since each record by dividing by the number of months since last record.</p>
+<p>In the DECIDE tool (<a href="https://decide.ceh.ac.uk">https://decide.ceh.ac.uk</a> the DECIDE recording priority layer is updated daily as new records are made on iRecord, iNaturalist and iSpot. The data presented here is a snapshot of the layers as of 20-Feb-2023.</p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>grid</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>biota</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/biota">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/biota</a></p>
+<p>environment</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment</a></p>
+<h2>Keywords Theme</h2>
+<p>Biodiversity</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/2">http://onto.nerc.ac.uk/CEHMD/topic/2</a></p>
+<h2>Keywords Other</h2>
+<p>moth</p>
+<p>Lepidoptera</p>
+<h3>Uri</h3>
+<p><a href="http://www.wikidata.org/entity/Q28319">http://www.wikidata.org/entity/Q28319</a></p>
+<p>species distribution model</p>
+<p>adaptive sampling</p>
+<p>butterfly</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/1091">http://www.eionet.europa.eu/gemet/concept/1091</a></p>
+<p>lepidopteran</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/4777">http://www.eionet.europa.eu/gemet/concept/4777</a></p>
+<p>biodiversity</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/827">http://www.eionet.europa.eu/gemet/concept/827</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>TIFF</p>
+<h3>Type</h3>
+<p>image/tiff</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Inspire Themes</h2>
+<h3>Theme</h3>
+<p>Environmental Monitoring Facilities</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/theme/ef">http://inspire.ec.europa.eu/theme/ef</a></p>
+<h2>Spatial Resolutions</h2>
+<h3>Distance</h3>
+<p>100</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Title</h3>
+<p>DECIDE: Delivering Enhanced Biodiversity Information with Adaptive Citizen Science and Intelligent Digital Engagements</p>
+<h3>Award Number</h3>
+<p>NE/V003054/1</p>
+<h3>Award U R I</h3>
+<p><a href="https://gtr.ukri.org/projects?ref=NE/V003054/1">https://gtr.ukri.org/projects?ref=NE/V003054/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>-8.648</p>
+<h3>East Bound Longitude</h3>
+<p>1.768</p>
+<h3>South Bound Latitude</h3>
+<p>49.864</p>
+<h3>North Bound Latitude</h3>
+<p>60.861</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-8.648, 49.864], [-8.648, 60.861], [1.768, 60.861], [1.768, 49.864], [-8.648, 49.864]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[-8.648, 49.864], [-8.648, 60.861], [1.768, 60.861], [1.768, 49.864], [-8.648, 49.864]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Rolph</p>
+<h3>Given Name</h3>
+<p>Simon</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6755-9456">https://orcid.org/0000-0001-6755-9456</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Maclean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Rolph, S.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Family Name</h3>
+<p>Rolph</p>
+<h3>Given Name</h3>
+<p>S</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6755-9456">https://orcid.org/0000-0001-6755-9456</a></p>
+<h3>Full Name</h3>
+<p>Rolph, S.</p>
+<h3>Family Name</h3>
+<p>Mondain-Monval</p>
+<h3>Given Name</h3>
+<p>T.O.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-6770-2002">https://orcid.org/0000-0002-6770-2002</a></p>
+<h3>Full Name</h3>
+<p>Mondain-Monval, T.O.</p>
+<h3>Family Name</h3>
+<p>August</p>
+<h3>Given Name</h3>
+<p>T.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-1116-3385">https://orcid.org/0000-0003-1116-3385</a></p>
+<h3>Full Name</h3>
+<p>August, T.</p>
+<h3>Family Name</h3>
+<p>Jarvis</p>
+<h3>Given Name</h3>
+<p>S.G.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-5382-5135">https://orcid.org/0000-0001-5382-5135</a></p>
+<h3>Full Name</h3>
+<p>Jarvis, S.G.</p>
+<h3>Family Name</h3>
+<p>Wright</p>
+<h3>Given Name</h3>
+<p>E.</p>
+<h3>Organisation Name</h3>
+<p>Joint Nature Conservation Committee</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/05tzsrw37">https://ror.org/05tzsrw37</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>Emma.Wright@jncc.gov.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-3346-0743">https://orcid.org/0000-0003-3346-0743</a></p>
+<h3>Full Name</h3>
+<p>Wright, E.</p>
+<h3>Family Name</h3>
+<p>Fox</p>
+<h3>Given Name</h3>
+<p>R.</p>
+<h3>Organisation Name</h3>
+<p>Butterfly Conservation</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/05jg03a59">https://ror.org/05jg03a59</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>rfox@butterfly-conservation.org </p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6992-3522">https://orcid.org/0000-0001-6992-3522</a></p>
+<h3>Full Name</h3>
+<p>Fox, R.</p>
+<h3>Family Name</h3>
+<p>Pocock</p>
+<h3>Given Name</h3>
+<p>M.J.O.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-4375-0445">https://orcid.org/0000-0003-4375-0445</a></p>
+<h3>Full Name</h3>
+<p>Pocock, M.J.O.</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/data/445381ce-f412-48a0-bc3c-2d0ef4737274">https://data-package.ceh.ac.uk/data/445381ce-f412-48a0-bc3c-2d0ef4737274</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>download</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/445381ce-f412-48a0-bc3c-2d0ef4737274.zip">https://data-package.ceh.ac.uk/sd/445381ce-f412-48a0-bc3c-2d0ef4737274.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://www.opengis.net/def/crs/EPSG/0/27700">http://www.opengis.net/def/crs/EPSG/0/27700</a></p>
+<h3>Title</h3>
+<p>OSGB 1936 / British National Grid</p>
+<h2>Supplemental</h2>
+<h3>Name</h3>
+<p>DECIDE tool</p>
+<h3>Url</h3>
+<p><a href="https://decide.ceh.ac.uk">https://decide.ceh.ac.uk</a></p>
+<h3>Function</h3>
+<p>website</p>
+<h2>Dataset Reference Date</h2>
+<h3>Creation Date</h3>
+<p>2022-11-18</p>
+<h3>Publication Date</h3>
+<p>2023-07-07</p>
+<h2>Use Constraints</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset">http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset</a></p>
+<h2>Access Limitation</h2>
+<p>no limitations to public access</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="http://purl.org/coar/access_right/c_abf2">http://purl.org/coar/access_right/c_abf2</a></p>
+<h2>Not G E M I N I</h2>
+<p>False</p>
+<h2>Licences</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>0</p>
+<h2>Topics</h2>
+<ul>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/2">http://onto.nerc.ac.uk/CEHMD/topic/2</a></li>
+</ul>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Rolph</p>
+<h3>Given Name</h3>
+<p>Simon</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6755-9456">https://orcid.org/0000-0001-6755-9456</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Maclean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Rolph, S.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/445381ce-f412-48a0-bc3c-2d0ef4737274.zip">https://data-package.ceh.ac.uk/sd/445381ce-f412-48a0-bc3c-2d0ef4737274.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Rolph</p>
+<h3>Given Name</h3>
+<p>S</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6755-9456">https://orcid.org/0000-0001-6755-9456</a></p>
+<h3>Full Name</h3>
+<p>Rolph, S.</p>
+<h3>Family Name</h3>
+<p>Mondain-Monval</p>
+<h3>Given Name</h3>
+<p>T.O.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-6770-2002">https://orcid.org/0000-0002-6770-2002</a></p>
+<h3>Full Name</h3>
+<p>Mondain-Monval, T.O.</p>
+<h3>Family Name</h3>
+<p>August</p>
+<h3>Given Name</h3>
+<p>T.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-1116-3385">https://orcid.org/0000-0003-1116-3385</a></p>
+<h3>Full Name</h3>
+<p>August, T.</p>
+<h3>Family Name</h3>
+<p>Jarvis</p>
+<h3>Given Name</h3>
+<p>S.G.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-5382-5135">https://orcid.org/0000-0001-5382-5135</a></p>
+<h3>Full Name</h3>
+<p>Jarvis, S.G.</p>
+<h3>Family Name</h3>
+<p>Wright</p>
+<h3>Given Name</h3>
+<p>E.</p>
+<h3>Organisation Name</h3>
+<p>Joint Nature Conservation Committee</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/05tzsrw37">https://ror.org/05tzsrw37</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>Emma.Wright@jncc.gov.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-3346-0743">https://orcid.org/0000-0003-3346-0743</a></p>
+<h3>Full Name</h3>
+<p>Wright, E.</p>
+<h3>Family Name</h3>
+<p>Fox</p>
+<h3>Given Name</h3>
+<p>R.</p>
+<h3>Organisation Name</h3>
+<p>Butterfly Conservation</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/05jg03a59">https://ror.org/05jg03a59</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>rfox@butterfly-conservation.org </p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6992-3522">https://orcid.org/0000-0001-6992-3522</a></p>
+<h3>Full Name</h3>
+<p>Fox, R.</p>
+<h3>Family Name</h3>
+<p>Pocock</p>
+<h3>Given Name</h3>
+<p>M.J.O.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-4375-0445">https://orcid.org/0000-0003-4375-0445</a></p>
+<h3>Full Name</h3>
+<p>Pocock, M.J.O.</p>
+<h2>Publication Date</h2>
+<p>2023-07-07T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-13T16:24:21.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Rolph, S.</li>
+<li>Mondain-Monval, T.O.</li>
+<li>August, T.</li>
+<li>Jarvis, S.G.</li>
+<li>Wright, E.</li>
+<li>Fox, R.</li>
+<li>Pocock, M.J.O.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/445381ce-f412-48a0-bc3c-2d0ef4737274</p>
+<h3>Title</h3>
+<p>Species richness and recording priority derived from species distribution models for Lepidoptera in Great Britain</p>
+<h3>Publisher</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2023</p>
+<h3>Month</h3>
+<p>7</p>
+<h3>Day</h3>
+<p>7</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/445381ce-f412-48a0-bc3c-2d0ef4737274/citation?format=bib">https://catalogue.ceh.ac.uk/documents/445381ce-f412-48a0-bc3c-2d0ef4737274/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/445381ce-f412-48a0-bc3c-2d0ef4737274/citation?format=ris">https://catalogue.ceh.ac.uk/documents/445381ce-f412-48a0-bc3c-2d0ef4737274/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/445381ce-f412-48a0-bc3c-2d0ef4737274">https://doi.org/10.5285/445381ce-f412-48a0-bc3c-2d0ef4737274</a></p>
+</body>
+</html>

@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8b5834a5-ae8a-4f24-836c-16fab961aeb3</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>8b5834a5-ae8a-4f24-836c-16fab961aeb3</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/8b5834a5-ae8a-4f24-836c-16fab961aeb3">https://catalogue.ceh.ac.uk/id/8b5834a5-ae8a-4f24-836c-16fab961aeb3</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>Virtual urban testbed representing a Global South urban setting based on Nairobi, Kenya and Kathmandu, Nepal contexts</p>
+<h2>Description</h2>
+<p>This dataset contains a digital urban scenario, named Tomorrowville, that is developed as a testbed for multi-hazard risk assessments and to evaluate the performance of urbanisation scenarios. Tomorrowville was created to represent a global-south urban setting by means of its socio-economic and physical aspects. It covers an area of 500ha located south of Kathmandu (Nepal).  The dataset consists of 5 different data types:</p>
+<ul>
+<li>Buildings: Data representing the building footprints for today and 50 years from now including specific attributes to be used within multi-hazard risk assessments.</li>
+<li>Land uses: Data representing the land use information for today and 50 years from now.</li>
+<li>Vulnerability: Tabular files that contain vulnerability functions for buildings under earthquake and flood hazards.</li>
+<li>Household: Data that contains social attributes of the Tomorrowville, such as the level of education, age, gender and working status of the individuals and their states in the households.</li>
+<li>Hazards: Data representing the hazards (earthquake (eq), floods (fl) and debris flows (df) that may impact the case study areas of Tomorrowville.</li>
+</ul>
+<p>Observational data of the built environment and socio-economical properties of Kathmandu and Nairobi were used in addition to synthetic social data to create the initial scenario. This is a synthetic social dataset, meaning it was derived from existing population projections and distributions for the testbed but does not reflect the reality on the ground. It is synthetically created using specific algorithms in a GIS environment to represent a Global South social context.</p>
+<p>For the building data, Open Street Map (OSM) database is used as a basis. The data is scraped from OSM and modified to represent an urban context for Tomorrowville. The attributes are also modified to be able to use in a multi-hazard risk computation. A taxonomy string is generated for each building that represents an acronym for its building code level, number of storeys, occupation type and structural system. The hazards that were existing in the selected spatial extent were earthquake, flood, and debris flow. Hazard data represents an intensity measure for the relevant hazard type (ground acceleration for earthquake, flow velocity for the flood and debris flow hazards). The following hazard input data are included:</p>
+<ul>
+<li>For the flood simulations, the discharge and rainfall time series are generated based on moderate to peak daily data based on recorded data from the Department of Hydrology and Meteorology, Nepal.</li>
+<li>Earthquake hazard sources are generated and simulated by Jenkins et al. (2023).</li>
+<li>For the debris-flow and flood simulations tri-stereo Pleiades satellite imagery is used to produce a 2m resolution Digital Elevation Model.</li>
+</ul>
+<p>The work to create this dataset is supported by NERC as part of the GCRF Urban Disaster Risk Hub (NE/S009000/1)</p>
+<h2>Metadata Date</h2>
+<p>2025-11-19T15:12:17</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/8b5834a5-ae8a-4f24-836c-16fab961aeb3">https://catalogue.ceh.ac.uk/id/8b5834a5-ae8a-4f24-836c-16fab961aeb3</a></p>
+<h3>Code</h3>
+<p>10.5285/8b5834a5-ae8a-4f24-836c-16fab961aeb3</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Lineage</h2>
+<p>As an interdisciplinary process, knowledge and perspective of different disciplines helped us shape the characteristics holistically and enabled us to construct a comprehensive understanding of the testbed. By bringing qualitative and quantitative approaches together, it became possible to integrate both social and physical characteristics with the facilitation of urban planning and GIS disciplines. The development of Tomorrowville started in June 2021. Between June and December 2021, there have been around 30 inter-disciplinary online meetings within our research group regarding the development of Tomorrowville. The team consisted of 2 structural engineers, 4 geoscientists, 4 social scientists and a GIS expert with an urban planning background. Local researchers from Kathmandu and Nairobi had structural engineering and urban planning expertise and they provided insight into our approach which enabled us to be more realistic in terms of the spatial context we represent within Tomorrowville.</p>
+<p>The building footprints are derived from some sample data gathered from Open Street Map database and modified to fit the aims of the dataset. The exposure data is synthetic. All flood simulations are generated using Caesar-Lisflood, a landscape evolution model (LEM) that combines the hydrological and surface flow model, Lisflood-FP (Bates et al. 2010), with the CAESAR landscape evolution model (Coulthard et al. 2013). For landslide analysis digital elevation model from tri-stereo Pleiades satellite imagery is benefited. For debris-flow analysis, rainfall-driven LaharFlow dynamic hazard model is used. The vulnerability data are produced based on consultation with local partners and global vulnerability databases such as Joint Research Center’s “Global flood depth-damage functions: Methodology and the database with guidelines”.</p>
+<p>The synthetic social data was produced through bespoke algorithms that considered population characteristics and projections relevant for the area. These algorithms are developed to generate a population that would live in future urban scenario within the designed built environment. The algorithms were coded in MATLAB software environment.</p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>vector</li>
+<li>grid</li>
+<li>textTable</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>society</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/society">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/society</a></p>
+<p>structure</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/structure">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/structure</a></p>
+<h2>Keywords Project</h2>
+<p>GCRF Urban Disaster Risk Hub</p>
+<h2>Keywords Theme</h2>
+<p>Environmental risk</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/5">http://onto.nerc.ac.uk/CEHMD/topic/5</a></p>
+<h2>Keywords Other</h2>
+<p>GIS digital format</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/14917">http://www.eionet.europa.eu/gemet/concept/14917</a></p>
+<p>exposure</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/3067">http://www.eionet.europa.eu/gemet/concept/3067</a></p>
+<p>multi-hazard</p>
+<p>city</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/1421">http://www.eionet.europa.eu/gemet/concept/1421</a></p>
+<p>virtual</p>
+<p>testbed</p>
+<p>Tomorrowville</p>
+<p>risk assessment</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/20271">http://vocabs.lter-europe.net/EnvThes/20271</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>Shapefile</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h3>Name</h3>
+<p>Comma-separated values (CSV)</p>
+<h3>Type</h3>
+<p>text/csv</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h3>Name</h3>
+<p>TIFF</p>
+<h3>Type</h3>
+<p>image/tiff</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h3>Name</h3>
+<p>json</p>
+<h3>Type</h3>
+<p>text/plain</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Title</h3>
+<p>GCRF Urban Disaster Risk Hub</p>
+<h3>Award Number</h3>
+<p>NE/S009000/1</p>
+<h3>Award U R I</h3>
+<p><a href="https://gtr.ukri.org/projects?ref=NE/S009000/1">https://gtr.ukri.org/projects?ref=NE/S009000/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>85.28</p>
+<h3>East Bound Longitude</h3>
+<p>85.365</p>
+<h3>South Bound Latitude</h3>
+<p>27.656</p>
+<h3>North Bound Latitude</h3>
+<p>27.745</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[85.28, 27.656], [85.28, 27.745], [85.365, 27.745], [85.365, 27.656], [85.28, 27.656]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[85.28, 27.656], [85.28, 27.745], [85.365, 27.745], [85.365, 27.656], [85.28, 27.656]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Family Name</h3>
+<p>Menteşe</p>
+<h3>Given Name</h3>
+<p>Emin Yahya</p>
+<h3>Organisation Name</h3>
+<p>Anofa Engineering, Planning and Informatics Ltd</p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>emin.mentese@anofa.co</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-7187-4384">https://orcid.org/0000-0002-7187-4384</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Ayazağa, Kemerburgaz Cd. No:7</p>
+<h4>City</h4>
+<p>Istanbul</p>
+<h4>Postal Code</h4>
+<p>34396</p>
+<h4>Country</h4>
+<p>Türkiye</p>
+<h3>Full Name</h3>
+<p>Menteşe, E.Y.</p>
+<h3>Point Of Contact</h3>
+<p>Anofa Engineering, Planning and Informatics Ltd</p>
+<h3>Family Name</h3>
+<p>McCloskey</p>
+<h3>Given Name</h3>
+<p>J.</p>
+<h3>Organisation Name</h3>
+<p>University of Edinburgh</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/01nrxwf90">https://ror.org/01nrxwf90</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Buccleuch Pl</p>
+<h4>City</h4>
+<p>Edinburgh </p>
+<h4>Postal Code</h4>
+<p>EH8 9NT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>McCloskey, J.</p>
+<h3>Family Name</h3>
+<p>Menteşe</p>
+<h3>Given Name</h3>
+<p>Emin Yahya</p>
+<h3>Organisation Name</h3>
+<p>Anofa Engineering, Planning and Informatics Ltd.</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>emin.mentese@anofa.co</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-7187-4384">https://orcid.org/0000-0002-7187-4384</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Ayazağa, Kemerburgaz Cd. No:7</p>
+<h4>City</h4>
+<p>Istanbul</p>
+<h4>Postal Code</h4>
+<p>34396</p>
+<h4>Country</h4>
+<p>Türkiye</p>
+<h3>Full Name</h3>
+<p>Menteşe, E.Y.</p>
+<h3>Family Name</h3>
+<p>Cremen</p>
+<h3>Given Name</h3>
+<p>G.</p>
+<h3>Organisation Name</h3>
+<p>University College London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/02jx3x895">https://ror.org/02jx3x895</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>g.cremen@ucl.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-6699-7312">https://orcid.org/0000-0002-6699-7312</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Gower St</p>
+<h4>City</h4>
+<p>London</p>
+<h4>Postal Code</h4>
+<p>WC1E 6BT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Cremen, G.</p>
+<h3>Family Name</h3>
+<p>Gentile</p>
+<h3>Given Name</h3>
+<p>R.</p>
+<h3>Organisation Name</h3>
+<p>University College London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/02jx3x895">https://ror.org/02jx3x895</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>r.gentile@ucl.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-7682-4490">https://orcid.org/0000-0002-7682-4490</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Gower St</p>
+<h4>City</h4>
+<p>London</p>
+<h4>Postal Code</h4>
+<p>WC1E 6BT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Gentile, R.</p>
+<h3>Family Name</h3>
+<p>Galasso</p>
+<h3>Given Name</h3>
+<p>C.</p>
+<h3>Organisation Name</h3>
+<p>University College London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/02jx3x895">https://ror.org/02jx3x895</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>c.galasso@ucl.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-5445-4911">https://orcid.org/0000-0001-5445-4911</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Gower St</p>
+<h4>City</h4>
+<p>London</p>
+<h4>Postal Code</h4>
+<p>WC1E 6BT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Galasso, C.</p>
+<h3>Family Name</h3>
+<p>Filippi</p>
+<h3>Given Name</h3>
+<p>M.E.</p>
+<h3>Organisation Name</h3>
+<p>University of Bristol</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/0524sp257">https://ror.org/0524sp257</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>evangelina.filippi@gmail.com</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6182-9208">https://orcid.org/0000-0001-6182-9208</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Beacon House, Queens Rd</p>
+<h4>City</h4>
+<p>Bristol</p>
+<h4>Postal Code</h4>
+<p>BS8 1QU</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Filippi, M.E.</p>
+<h3>Family Name</h3>
+<p>Jenkins</p>
+<h3>Given Name</h3>
+<p>L.</p>
+<h3>Organisation Name</h3>
+<p>University of Bristol</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/0524sp257">https://ror.org/0524sp257</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>luke.jenkins.geophys@gmail.com</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-0422-4063">https://orcid.org/0000-0003-0422-4063</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Beacon House, Queens Rd</p>
+<h4>City</h4>
+<p>Bristol</p>
+<h4>Postal Code</h4>
+<p>BS8 1QU</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Jenkins, L.</p>
+<h3>Family Name</h3>
+<p>Creed</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>University of Glasgow</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00vtgdb53">https://ror.org/00vtgdb53</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>maggie.creed@glasgow.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6694-8994">https://orcid.org/0000-0001-6694-8994</a></p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>Glasgow</p>
+<h4>Postal Code</h4>
+<p>G12 8QQ</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Creed, M.</p>
+<h3>Family Name</h3>
+<p>Watson</p>
+<h3>Given Name</h3>
+<p>C.S.</p>
+<h3>Organisation Name</h3>
+<p>University of Leeds</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/024mrxd33">https://ror.org/024mrxd33</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>c.s.watson@leeds.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-2656-961X">https://orcid.org/0000-0003-2656-961X</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Woodhouse</p>
+<h4>City</h4>
+<p>Leeds</p>
+<h4>Postal Code</h4>
+<p>LS2 9JT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Watson, C.S.</p>
+<h3>Family Name</h3>
+<p>Sinclair</p>
+<h3>Given Name</h3>
+<p>H.</p>
+<h3>Organisation Name</h3>
+<p>University of Edinburgh</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/01nrxwf90">https://ror.org/01nrxwf90</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>Hugh.Sinclair@ed.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-4719-7130">https://orcid.org/0000-0003-4719-7130</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Buccleuch Pl</p>
+<h4>City</h4>
+<p>Edinburgh</p>
+<h4>Postal Code</h4>
+<p>EH8 9NT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Sinclair, H.</p>
+<h3>Family Name</h3>
+<p>Pelling</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>University College London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/02jx3x895">https://ror.org/02jx3x895</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>mark.pelling@ucl.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-6472-9875">https://orcid.org/0000-0002-6472-9875</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Gower St</p>
+<h4>City</h4>
+<p>London</p>
+<h4>Postal Code</h4>
+<p>WC1E 6BT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Pelling, M.</p>
+<h3>Organisation Name</h3>
+<p>University of Edinburgh</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/01nrxwf90">https://ror.org/01nrxwf90</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>emin.mentese@anofa.co</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Buccleuch Pl</p>
+<h4>City</h4>
+<p>Edinburgh</p>
+<h4>Postal Code</h4>
+<p>EH8 9NT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/data/8b5834a5-ae8a-4f24-836c-16fab961aeb3">https://data-package.ceh.ac.uk/data/8b5834a5-ae8a-4f24-836c-16fab961aeb3</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>download</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/8b5834a5-ae8a-4f24-836c-16fab961aeb3.zip">https://data-package.ceh.ac.uk/sd/8b5834a5-ae8a-4f24-836c-16fab961aeb3.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://www.opengis.net/def/crs/EPSG/0/4326">http://www.opengis.net/def/crs/EPSG/0/4326</a></p>
+<h3>Title</h3>
+<p>WGS 84</p>
+<h2>Supplemental</h2>
+<h3>Description</h3>
+<p>Gentile, R., Cremen, G., Galasso, C., Jenkins, L. T., Manandhar, V., Menteşe, E. Y., Guragain, R., &amp; McCloskey, J. (2022). Scoring, selecting, and developing physical impact models for multi-hazard risk assessment. In International Journal of Disaster Risk Reduction (Vol. 82, p. 103365). Elsevier BV. <a href="https://doi.org/10.1016/j.ijdrr.2022.103365">https://doi.org/10.1016/j.ijdrr.2022.103365</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1016/j.ijdrr.2022.103365">https://doi.org/10.1016/j.ijdrr.2022.103365</a></p>
+<h3>Function</h3>
+<p>relatedArticle</p>
+<h3>Description</h3>
+<p>Jenkins, L. T., Creed, M. J., Tarbali, K., Muthusamy, M., Trogrlić, R. Š., Phillips, J. C., Watson, C. S., Sinclair, H. D., Galasso, C., &amp; McCloskey, J. (2023). Physics-based simulations of multiple natural hazards for risk-sensitive planning and decision making in expanding urban regions. In International Journal of Disaster Risk Reduction (Vol. 84, p. 103338). Elsevier BV. <a href="https://doi.org/10.1016/j.ijdrr.2022.103338">https://doi.org/10.1016/j.ijdrr.2022.103338</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1016/j.ijdrr.2022.103338">https://doi.org/10.1016/j.ijdrr.2022.103338</a></p>
+<h3>Function</h3>
+<p>relatedArticle</p>
+<h3>Description</h3>
+<p>Menteşe, E. Y., Cremen, G., Gentile, R., Galasso, C., Filippi, M. E., &amp; McCloskey, J. (2023). Future exposure modelling for risk-informed decision making in urban planning. In International Journal of Disaster Risk Reduction (Vol. 90, p. 103651). Elsevier BV. <a href="https://doi.org/10.1016/j.ijdrr.2023.103651">https://doi.org/10.1016/j.ijdrr.2023.103651</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1016/j.ijdrr.2023.103651">https://doi.org/10.1016/j.ijdrr.2023.103651</a></p>
+<h3>Function</h3>
+<p>relatedArticle</p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2025-04-22</p>
+<h2>Use Constraints</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset">http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset</a></p>
+<h2>Access Limitation</h2>
+<p>no limitations to public access</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="http://purl.org/coar/access_right/c_abf2">http://purl.org/coar/access_right/c_abf2</a></p>
+<h2>Not G E M I N I</h2>
+<p>True</p>
+<h2>Has Online Service Agreement</h2>
+<p>False</p>
+<h2>Licences</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>0</p>
+<h2>Topics</h2>
+<ul>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/5">http://onto.nerc.ac.uk/CEHMD/topic/5</a></li>
+</ul>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Family Name</h3>
+<p>Menteşe</p>
+<h3>Given Name</h3>
+<p>Emin Yahya</p>
+<h3>Organisation Name</h3>
+<p>Anofa Engineering, Planning and Informatics Ltd</p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>emin.mentese@anofa.co</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-7187-4384">https://orcid.org/0000-0002-7187-4384</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Ayazağa, Kemerburgaz Cd. No:7</p>
+<h4>City</h4>
+<p>Istanbul</p>
+<h4>Postal Code</h4>
+<p>34396</p>
+<h4>Country</h4>
+<p>Türkiye</p>
+<h3>Full Name</h3>
+<p>Menteşe, E.Y.</p>
+<h3>Point Of Contact</h3>
+<p>Anofa Engineering, Planning and Informatics Ltd</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>University of Edinburgh</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/01nrxwf90">https://ror.org/01nrxwf90</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>emin.mentese@anofa.co</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Buccleuch Pl</p>
+<h4>City</h4>
+<p>Edinburgh</p>
+<h4>Postal Code</h4>
+<p>EH8 9NT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/8b5834a5-ae8a-4f24-836c-16fab961aeb3.zip">https://data-package.ceh.ac.uk/sd/8b5834a5-ae8a-4f24-836c-16fab961aeb3.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>McCloskey</p>
+<h3>Given Name</h3>
+<p>J.</p>
+<h3>Organisation Name</h3>
+<p>University of Edinburgh</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/01nrxwf90">https://ror.org/01nrxwf90</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Buccleuch Pl</p>
+<h4>City</h4>
+<p>Edinburgh </p>
+<h4>Postal Code</h4>
+<p>EH8 9NT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>McCloskey, J.</p>
+<h3>Family Name</h3>
+<p>Menteşe</p>
+<h3>Given Name</h3>
+<p>Emin Yahya</p>
+<h3>Organisation Name</h3>
+<p>Anofa Engineering, Planning and Informatics Ltd.</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>emin.mentese@anofa.co</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-7187-4384">https://orcid.org/0000-0002-7187-4384</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Ayazağa, Kemerburgaz Cd. No:7</p>
+<h4>City</h4>
+<p>Istanbul</p>
+<h4>Postal Code</h4>
+<p>34396</p>
+<h4>Country</h4>
+<p>Türkiye</p>
+<h3>Full Name</h3>
+<p>Menteşe, E.Y.</p>
+<h3>Family Name</h3>
+<p>Cremen</p>
+<h3>Given Name</h3>
+<p>G.</p>
+<h3>Organisation Name</h3>
+<p>University College London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/02jx3x895">https://ror.org/02jx3x895</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>g.cremen@ucl.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-6699-7312">https://orcid.org/0000-0002-6699-7312</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Gower St</p>
+<h4>City</h4>
+<p>London</p>
+<h4>Postal Code</h4>
+<p>WC1E 6BT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Cremen, G.</p>
+<h3>Family Name</h3>
+<p>Gentile</p>
+<h3>Given Name</h3>
+<p>R.</p>
+<h3>Organisation Name</h3>
+<p>University College London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/02jx3x895">https://ror.org/02jx3x895</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>r.gentile@ucl.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-7682-4490">https://orcid.org/0000-0002-7682-4490</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Gower St</p>
+<h4>City</h4>
+<p>London</p>
+<h4>Postal Code</h4>
+<p>WC1E 6BT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Gentile, R.</p>
+<h3>Family Name</h3>
+<p>Galasso</p>
+<h3>Given Name</h3>
+<p>C.</p>
+<h3>Organisation Name</h3>
+<p>University College London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/02jx3x895">https://ror.org/02jx3x895</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>c.galasso@ucl.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-5445-4911">https://orcid.org/0000-0001-5445-4911</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Gower St</p>
+<h4>City</h4>
+<p>London</p>
+<h4>Postal Code</h4>
+<p>WC1E 6BT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Galasso, C.</p>
+<h3>Family Name</h3>
+<p>Filippi</p>
+<h3>Given Name</h3>
+<p>M.E.</p>
+<h3>Organisation Name</h3>
+<p>University of Bristol</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/0524sp257">https://ror.org/0524sp257</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>evangelina.filippi@gmail.com</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6182-9208">https://orcid.org/0000-0001-6182-9208</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Beacon House, Queens Rd</p>
+<h4>City</h4>
+<p>Bristol</p>
+<h4>Postal Code</h4>
+<p>BS8 1QU</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Filippi, M.E.</p>
+<h3>Family Name</h3>
+<p>Jenkins</p>
+<h3>Given Name</h3>
+<p>L.</p>
+<h3>Organisation Name</h3>
+<p>University of Bristol</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/0524sp257">https://ror.org/0524sp257</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>luke.jenkins.geophys@gmail.com</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-0422-4063">https://orcid.org/0000-0003-0422-4063</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Beacon House, Queens Rd</p>
+<h4>City</h4>
+<p>Bristol</p>
+<h4>Postal Code</h4>
+<p>BS8 1QU</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Jenkins, L.</p>
+<h3>Family Name</h3>
+<p>Creed</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>University of Glasgow</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00vtgdb53">https://ror.org/00vtgdb53</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>maggie.creed@glasgow.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6694-8994">https://orcid.org/0000-0001-6694-8994</a></p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>Glasgow</p>
+<h4>Postal Code</h4>
+<p>G12 8QQ</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Creed, M.</p>
+<h3>Family Name</h3>
+<p>Watson</p>
+<h3>Given Name</h3>
+<p>C.S.</p>
+<h3>Organisation Name</h3>
+<p>University of Leeds</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/024mrxd33">https://ror.org/024mrxd33</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>c.s.watson@leeds.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-2656-961X">https://orcid.org/0000-0003-2656-961X</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Woodhouse</p>
+<h4>City</h4>
+<p>Leeds</p>
+<h4>Postal Code</h4>
+<p>LS2 9JT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Watson, C.S.</p>
+<h3>Family Name</h3>
+<p>Sinclair</p>
+<h3>Given Name</h3>
+<p>H.</p>
+<h3>Organisation Name</h3>
+<p>University of Edinburgh</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/01nrxwf90">https://ror.org/01nrxwf90</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>Hugh.Sinclair@ed.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-4719-7130">https://orcid.org/0000-0003-4719-7130</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Buccleuch Pl</p>
+<h4>City</h4>
+<p>Edinburgh</p>
+<h4>Postal Code</h4>
+<p>EH8 9NT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Sinclair, H.</p>
+<h3>Family Name</h3>
+<p>Pelling</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>University College London</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/02jx3x895">https://ror.org/02jx3x895</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>mark.pelling@ucl.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-6472-9875">https://orcid.org/0000-0002-6472-9875</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Gower St</p>
+<h4>City</h4>
+<p>London</p>
+<h4>Postal Code</h4>
+<p>WC1E 6BT</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Pelling, M.</p>
+<h2>Publication Date</h2>
+<p>2025-04-22T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-19T15:12:17.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>McCloskey, J.</li>
+<li>Menteşe, E.Y.</li>
+<li>Cremen, G.</li>
+<li>Gentile, R.</li>
+<li>Galasso, C.</li>
+<li>Filippi, M.E.</li>
+<li>Jenkins, L.</li>
+<li>Creed, M.</li>
+<li>Watson, C.S.</li>
+<li>Sinclair, H.</li>
+<li>Pelling, M.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/8b5834a5-ae8a-4f24-836c-16fab961aeb3</p>
+<h3>Title</h3>
+<p>Virtual urban testbed representing a Global South urban setting based on Nairobi, Kenya and Kathmandu, Nepal contexts</p>
+<h3>Publisher</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2025</p>
+<h3>Month</h3>
+<p>4</p>
+<h3>Day</h3>
+<p>22</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/8b5834a5-ae8a-4f24-836c-16fab961aeb3/citation?format=bib">https://catalogue.ceh.ac.uk/documents/8b5834a5-ae8a-4f24-836c-16fab961aeb3/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/8b5834a5-ae8a-4f24-836c-16fab961aeb3/citation?format=ris">https://catalogue.ceh.ac.uk/documents/8b5834a5-ae8a-4f24-836c-16fab961aeb3/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/8b5834a5-ae8a-4f24-836c-16fab961aeb3">https://doi.org/10.5285/8b5834a5-ae8a-4f24-836c-16fab961aeb3</a></p>
+</body>
+</html>
