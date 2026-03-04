@@ -1,0 +1,1524 @@
+## Id
+
+b93de9e7-176b-49cb-92aa-4eccdb72aac1
+
+
+## Uri
+
+[https://catalogue.ceh.ac.uk/id/b93de9e7-176b-49cb-92aa-4eccdb72aac1](https://catalogue.ceh.ac.uk/id/b93de9e7-176b-49cb-92aa-4eccdb72aac1)
+
+
+## Type
+
+dataset
+
+
+## Title
+
+Land Cover Map 2000 (25m raster, N. Ireland)
+
+
+## Description
+
+This dataset consists of a 25m resolution raster version of the Land Cover Map 2000 for Northern Ireland. Each 25m pixel represents a 25m area of land cover target class, broadly representing Broad Habitats (see below). The dataset is part of a series of data products produced by the Centre for Ecology & Hydrology known as LCM2000. LCM2000 is a parcel-based thematic classification of satellite image data covering the entire United Kingdom. LCM2000 is derived from a computer classification of satellite scenes obtained mainly from Landsat, IRS and SPOT sensors and also incorporates information derived from other ancillary datasets. LCM2000 was classified using a nomenclature corresponding to the Joint Nature Conservation Committee (JNCC) Broad Habitats, which encompasses the entire range of UK habitats. In addition, it recorded further detail where possible. The series of LCM2000 products includes vector and raster formats, with a number of different versions containing varying levels of detail and at different spatial resolutions.
+
+
+## Metadata Date
+
+2026-01-09T10:18:02
+
+
+## Resource Identifiers
+
+### Code
+
+1292508342177
+
+
+### Code Space
+
+CEH:EIDC:
+
+
+### Code
+
+[https://catalogue.ceh.ac.uk/id/b93de9e7-176b-49cb-92aa-4eccdb72aac1](https://catalogue.ceh.ac.uk/id/b93de9e7-176b-49cb-92aa-4eccdb72aac1)
+
+
+### Code
+
+10.5285/b93de9e7-176b-49cb-92aa-4eccdb72aac1
+
+
+### Code Space
+
+doi:
+
+
+
+
+## Relationships
+
+### Relation
+
+[https://vocabs.ceh.ac.uk/eidc#memberOf](https://vocabs.ceh.ac.uk/eidc#memberOf)
+
+
+### Target
+
+fc77c9b3-570d-4314-82ba-bc914538a748
+
+
+### Relation
+
+[https://vocabs.ceh.ac.uk/eidc#memberOf](https://vocabs.ceh.ac.uk/eidc#memberOf)
+
+
+### Target
+
+[https://catalogue.ceh.ac.uk/id/fc77c9b3-570d-4314-82ba-bc914538a748](https://catalogue.ceh.ac.uk/id/fc77c9b3-570d-4314-82ba-bc914538a748)
+
+
+
+
+## Lineage
+
+In a major development of earlier methods, LCM2000 used image segmentation to identify land parcels in the pixel-based images. An automated procedure grouped the image pixels into spectrally 'uniform' segments. These were built around 'seedpoints' selected to avoid parcel boundaries. The segmentation recorded a field-by-field pattern, also separating land use zones within urban and suburban areas, and subdividing mosaics of semi-natural vegetation. Generalisation gave minimum mappable units of a half hectare. A 'vector' version was then created in the geographical information system (GIS), where the boundaries between the pixel-based segments were represented by digital linework. The resultant land parcels were treated as GIS objects to which attribute data could then be attached covering such topics as land cover class, parcel area, length of boundary, processing history, knowledge-based correction and identification of the original satellite scene. The raster products have been derived from the vector dataset. LCM2000 was produced at CEH Monks Wood. For further information on the methodology developed and used to create Land Cover Map 2000, see on-line supporting documentation.
+
+
+## Metadata Standard Version
+
+1.0
+
+
+## Spatial Representation Types
+
+- grid
+
+
+## Dataset Languages
+
+- eng
+
+
+## Topic Categories
+
+imageryBaseMapsEarthCover
+
+### Uri
+
+[http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover](http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover)
+
+
+
+
+## Keywords Theme
+
+Mapping
+
+### Uri
+
+[http://onto.nerc.ac.uk/CEHMD/topic/18](http://onto.nerc.ac.uk/CEHMD/topic/18)
+
+
+Land cover
+
+### Uri
+
+[http://onto.nerc.ac.uk/CEHMD/topic/11](http://onto.nerc.ac.uk/CEHMD/topic/11)
+
+
+
+
+## Keywords Other
+
+Habitats
+
+Northern Ireland
+
+### Uri
+
+[http://sws.geonames.org/2641364](http://sws.geonames.org/2641364)
+
+
+land cover
+
+### Uri
+
+[http://www.eionet.europa.eu/gemet/concept/4612](http://www.eionet.europa.eu/gemet/concept/4612)
+
+
+
+
+## Distribution Formats
+
+### Name
+
+ESRI ASCII grid
+
+
+### Type
+
+text/plain
+
+
+### Version
+
+unknown
+
+
+### Name
+
+ESRI .hdr RAW raster
+
+
+### Version
+
+unknown
+
+
+### Name
+
+TIFF
+
+
+### Type
+
+image/tiff
+
+
+### Version
+
+unknown
+
+
+
+
+## Inspire Themes
+
+### Theme
+
+Land Cover
+
+
+### Uri
+
+[http://inspire.ec.europa.eu/theme/lc](http://inspire.ec.europa.eu/theme/lc)
+
+
+
+
+## Spatial Resolutions
+
+### Distance
+
+25
+
+
+
+
+## Bounding Boxes
+
+### West Bound Longitude
+
+-8.21
+
+
+### East Bound Longitude
+
+-5.26
+
+
+### South Bound Latitude
+
+53.68
+
+
+### North Bound Latitude
+
+55.77
+
+
+### Bounds
+
+{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-8.21, 53.68], [-8.21, 55.77], [-5.26, 55.77], [-5.26, 53.68], [-8.21, 53.68]]]      }}
+
+
+### Coordinates
+
+[[[-8.21, 53.68], [-8.21, 55.77], [-5.26, 55.77], [-5.26, 53.68], [-8.21, 53.68]]]
+
+
+
+
+## Distributor Contacts
+
+### Organisation Name
+
+NERC EDS Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+distributor
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Responsible Parties
+
+### Family Name
+
+Morton
+
+
+### Given Name
+
+Dan
+
+
+### Organisation Name
+
+UK Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+pointOfContact
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Address
+
+#### Delivery Point
+
+Lancaster Environment Centre, Library Avenue, Bailrigg
+
+
+#### City
+
+Lancaster
+
+
+#### Administrative Area
+
+Lancashire
+
+
+#### Postal Code
+
+LA1 4AP
+
+
+#### Country
+
+United Kingdom
+
+
+
+### Full Name
+
+Morton, D.
+
+
+### Point Of Contact
+
+UK Centre for Ecology & Hydrology
+
+
+### Family Name
+
+Fuller
+
+
+### Given Name
+
+R.M.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Fuller, R.M.
+
+
+### Family Name
+
+Smith
+
+
+### Given Name
+
+G.M.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Smith, G.M.
+
+
+### Family Name
+
+Sanderson
+
+
+### Given Name
+
+J.M.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Sanderson, J.M.
+
+
+### Family Name
+
+Hill
+
+
+### Given Name
+
+R.A.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Hill, R.A.
+
+
+### Family Name
+
+Thomson
+
+
+### Given Name
+
+A.G
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Thomson, A.G.
+
+
+### Family Name
+
+Cox
+
+
+### Given Name
+
+R.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Cox, R.
+
+
+### Family Name
+
+Brown
+
+
+### Given Name
+
+N.J.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Brown, N.J.
+
+
+### Family Name
+
+Clarke
+
+
+### Given Name
+
+R.T.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Clarke, R.T.
+
+
+### Family Name
+
+Rothery
+
+
+### Given Name
+
+P.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Rothery, P.
+
+
+### Family Name
+
+Gerard
+
+
+### Given Name
+
+F.F.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0001-5916-5174](https://orcid.org/0000-0001-5916-5174)
+
+
+### Full Name
+
+Gerard, F.F.
+
+
+### Organisation Name
+
+NERC Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+publisher
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+### Organisation Name
+
+NERC EDS Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+custodian
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Temporal Extents
+
+### Begin
+
+2000-01-01
+
+
+### End
+
+2000-12-31
+
+
+
+
+## Online Resources
+
+### Url
+
+[https://order-eidc.ceh.ac.uk/resources/1G6PBA7K/order](https://order-eidc.ceh.ac.uk/resources/1G6PBA7K/order)
+
+
+### Name
+
+Download the data
+
+
+### Description
+
+Bespoke licensing and/or fees may apply to these data. If you choose to download the data, the CEH Data Licensing team will contact you to discuss your exact requirements.
+
+
+### Function
+
+order
+
+
+### Type
+
+OTHER
+
+
+### Url
+
+[https://data-package.ceh.ac.uk/sd/b93de9e7-176b-49cb-92aa-4eccdb72aac1.zip](https://data-package.ceh.ac.uk/sd/b93de9e7-176b-49cb-92aa-4eccdb72aac1.zip)
+
+
+### Name
+
+Supporting information
+
+
+### Description
+
+Supporting information available to assist in re-use of this dataset
+
+
+### Function
+
+information
+
+
+### Type
+
+OTHER
+
+
+
+
+## Spatial Reference Systems
+
+### Code
+
+[http://www.opengis.net/def/crs/EPSG/0/29902](http://www.opengis.net/def/crs/EPSG/0/29902)
+
+
+### Title
+
+TM65 / Irish Grid
+
+
+
+
+## Supplemental
+
+### Description
+
+Fuller, R.M., Smith, G.M., Sanderson, J.M., Hill, R.A., & Thomson, A.G. (2002). The UK Land Cover Map 2000: construction of a parcel-based vector map from satellite images. Cartographic Journal, 39. 15-25.
+
+
+### Url
+
+[https://doi.org/10.1179/caj.2002.39.1.15](https://doi.org/10.1179/caj.2002.39.1.15)
+
+
+### Function
+
+relatedArticle
+
+
+
+
+## Dataset Reference Date
+
+### Creation Date
+
+2000-01-01
+
+
+### Publication Date
+
+2002-01-01
+
+
+
+## Resource Maintenance
+
+### Frequency Of Update
+
+notPlanned
+
+
+
+
+## Use Constraints
+
+Licence terms and conditions apply
+
+### Code
+
+license
+
+
+### Uri
+
+[https://eidc.ac.uk/licences/lcm-raster/plain](https://eidc.ac.uk/licences/lcm-raster/plain)
+
+
+
+
+## Resource Type
+
+dataset
+
+
+## Access Limitation
+
+controlled
+
+### Code
+
+Controlled
+
+
+### Description
+
+To access this data, a licence needs to be negotiated with the provider.  There may be a cost
+
+
+
+## Not G E M I N I
+
+False
+
+
+## Licences
+
+Licence terms and conditions apply
+
+### Code
+
+license
+
+
+### Uri
+
+[https://eidc.ac.uk/licences/lcm-raster/plain](https://eidc.ac.uk/licences/lcm-raster/plain)
+
+
+
+
+## Incoming Citation Count
+
+0
+
+
+## Topics
+
+- [http://onto.nerc.ac.uk/CEHMD/topic/18](http://onto.nerc.ac.uk/CEHMD/topic/18)
+- [http://onto.nerc.ac.uk/CEHMD/topic/11](http://onto.nerc.ac.uk/CEHMD/topic/11)
+
+
+## Resource Status
+
+Controlled
+
+
+## Points Of Contact
+
+### Family Name
+
+Morton
+
+
+### Given Name
+
+Dan
+
+
+### Organisation Name
+
+UK Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+pointOfContact
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Address
+
+#### Delivery Point
+
+Lancaster Environment Centre, Library Avenue, Bailrigg
+
+
+#### City
+
+Lancaster
+
+
+#### Administrative Area
+
+Lancashire
+
+
+#### Postal Code
+
+LA1 4AP
+
+
+#### Country
+
+United Kingdom
+
+
+
+### Full Name
+
+Morton, D.
+
+
+### Point Of Contact
+
+UK Centre for Ecology & Hydrology
+
+
+
+
+## Info Links
+
+### Url
+
+[https://data-package.ceh.ac.uk/sd/b93de9e7-176b-49cb-92aa-4eccdb72aac1.zip](https://data-package.ceh.ac.uk/sd/b93de9e7-176b-49cb-92aa-4eccdb72aac1.zip)
+
+
+### Name
+
+Supporting information
+
+
+### Description
+
+Supporting information available to assist in re-use of this dataset
+
+
+### Function
+
+information
+
+
+### Type
+
+OTHER
+
+
+
+
+## Publishers
+
+### Organisation Name
+
+NERC Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+publisher
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Authors
+
+### Family Name
+
+Fuller
+
+
+### Given Name
+
+R.M.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Fuller, R.M.
+
+
+### Family Name
+
+Smith
+
+
+### Given Name
+
+G.M.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Smith, G.M.
+
+
+### Family Name
+
+Sanderson
+
+
+### Given Name
+
+J.M.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Sanderson, J.M.
+
+
+### Family Name
+
+Hill
+
+
+### Given Name
+
+R.A.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Hill, R.A.
+
+
+### Family Name
+
+Thomson
+
+
+### Given Name
+
+A.G
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Thomson, A.G.
+
+
+### Family Name
+
+Cox
+
+
+### Given Name
+
+R.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Cox, R.
+
+
+### Family Name
+
+Brown
+
+
+### Given Name
+
+N.J.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Brown, N.J.
+
+
+### Family Name
+
+Clarke
+
+
+### Given Name
+
+R.T.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Clarke, R.T.
+
+
+### Family Name
+
+Rothery
+
+
+### Given Name
+
+P.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Full Name
+
+Rothery, P.
+
+
+### Family Name
+
+Gerard
+
+
+### Given Name
+
+F.F.
+
+
+### Organisation Name
+
+Centre for Ecology & Hydrology
+
+
+### Organisation Identifier
+
+[https://ror.org/00pggkr55](https://ror.org/00pggkr55)
+
+
+### Role
+
+author
+
+
+### Email
+
+enquiries@ceh.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0001-5916-5174](https://orcid.org/0000-0001-5916-5174)
+
+
+### Full Name
+
+Gerard, F.F.
+
+
+
+
+## Publication Date
+
+2002-01-01T00:00:00.000+00:00
+
+
+## Custodians
+
+### Organisation Name
+
+NERC EDS Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+custodian
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Updated Date
+
+2026-01-09T10:18:02.000+00:00
+
+
+## Citation
+
+### Authors
+
+- Fuller, R.M.
+- Smith, G.M.
+- Sanderson, J.M.
+- Hill, R.A.
+- Thomson, A.G.
+- Cox, R.
+- Brown, N.J.
+- Clarke, R.T.
+- Rothery, P.
+- Gerard, F.F.
+
+
+### Doi
+
+10.5285/b93de9e7-176b-49cb-92aa-4eccdb72aac1
+
+
+### Title
+
+Land Cover Map 2000 (25m raster, N. Ireland)
+
+
+### Publisher
+
+NERC Environmental Information Data Centre
+
+
+### Resource Type General
+
+dataset
+
+
+### Year
+
+2002
+
+
+### Month
+
+1
+
+
+### Day
+
+1
+
+
+### Bibtex
+
+[https://catalogue.ceh.ac.uk/documents/b93de9e7-176b-49cb-92aa-4eccdb72aac1/citation?format=bib](https://catalogue.ceh.ac.uk/documents/b93de9e7-176b-49cb-92aa-4eccdb72aac1/citation?format=bib)
+
+
+### Ris
+
+[https://catalogue.ceh.ac.uk/documents/b93de9e7-176b-49cb-92aa-4eccdb72aac1/citation?format=ris](https://catalogue.ceh.ac.uk/documents/b93de9e7-176b-49cb-92aa-4eccdb72aac1/citation?format=ris)
+
+
+### Url
+
+[https://doi.org/10.5285/b93de9e7-176b-49cb-92aa-4eccdb72aac1](https://doi.org/10.5285/b93de9e7-176b-49cb-92aa-4eccdb72aac1)
+
+
