@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>86d07d98-2956-4395-8b02-29dd5d98e6be</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>86d07d98-2956-4395-8b02-29dd5d98e6be</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/86d07d98-2956-4395-8b02-29dd5d98e6be">https://catalogue.ceh.ac.uk/id/86d07d98-2956-4395-8b02-29dd5d98e6be</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>Predicted soil erosion rates, nutrient fluxes and topsoil lifespans, modelled for Kenya at a 30 metre resolution</p>
+<h2>Description</h2>
+<p>This dataset presents predicted soil erosion rates (t ha-1 yr-1) and its impact on topsoils, including lifespans (yr) assuming erosion rates remain constant and there is no replacement of soil; flux rates of soil organic carbon via erosion (t SOC ha-1 yr-1); flux rates of soil nitrogen via erosion (t N ha-1 yr-1); and flux rates of soil phosphorous via erosion (t P ha-1 yr-1). The dataset comes in the form of  three multi-band raster GeoTiff files, structured as follows:</p>
+<p>LC16_Results.tif:  Model predictions generated under the 2016 Copernicus Land Cover Map at 30-metre resolution (five bands)
+Mitigation_scenarios.tif:  Predicted reductions in erosion rates in the event of implementing mitigation scenarios described in sixteen  different scenarios (sixteen bands).
+PNV_Results.tif: Same structure as LC16_Results.tif, but stores predictions generated under the Potential Natural Vegetation cover map for East Africa at 30-metre resolution (five bands)</p>
+<h2>Metadata Date</h2>
+<p>2025-11-13T16:26:00</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/86d07d98-2956-4395-8b02-29dd5d98e6be">https://catalogue.ceh.ac.uk/id/86d07d98-2956-4395-8b02-29dd5d98e6be</a></p>
+<h3>Code</h3>
+<p>10.5285/86d07d98-2956-4395-8b02-29dd5d98e6be</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Relationships</h2>
+<h3>Relation</h3>
+<p><a href="https://vocabs.ceh.ac.uk/eidc#memberOf">https://vocabs.ceh.ac.uk/eidc#memberOf</a></p>
+<h3>Target</h3>
+<p>f358a601-ab80-4007-9c2e-2fcacbdb5bf4</p>
+<h2>Lineage</h2>
+<p>Topsoil (0-20 cm) erosion rates were predicted by applying the Revised Universal Soil Loss Equation to 4 spatial layers (full details are provided in the supporting documentation file).
+In the case of Mitigation_scenarios.tif, we multiplied the erosion rate predictions in LC16_Results.tif by coefficients that represent various mitigation scenarios on cropland. These predictions were then subtracted from the LC16_Results.tif erosion rate predictions to produce estimated erosion rate reductions under sustainable land-use scenarios.
+Topsoil nutrient concentration maps were combined with erosion rate predictions to estimate rates of soil organic carbon, nitrogen and phosphorous fluxes with soil loss. Topsoil bulk density predictions were combined with erosion rate predictions to estimate topsoil lifespans across Kenya. Predicted soil erosion rates and topsoil lifespans were evaluated against available observational measurements and shown to be reasonably accurate. No observational data on soil organic carbon, nitrogen or phosphorous fluxes via erosion were available for evaluation purposes.
+To reduce the overall sizes of each data file, we converted the data from floating point to integer format. Before converting our data, we multiplied each raster layer (individual band in our GeoTiffs) by a conversion factor appropriate to the number of decimal places for each property (see Supporting Documentation for more details). The user of our data will thus need to divide the values stored in our raster layers by a conversion factor to get the “true” values.
+After converting our data into integer format, each raster band was harmonised to the same coordinate reference system and spatial extent before stacking into multi-band GeoTiff files. Please note that while within each of the 3 files, the spatial extents are identical, between the 3 files, the spatial extents differ. This is because the LC16_Results.tif layers include predictions for the Ilemi Triangle in northwest Kenya, whereas the PNV_Results.tif layers do not. The Mitigation_scenarios.tif layers meanwhile cover only Kenya’s croplands.</p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>grid</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>environment</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment</a></p>
+<h2>Keywords Place</h2>
+<p>Kenya</p>
+<h2>Keywords Theme</h2>
+<p>Soil erosion</p>
+<p>Topsoil nutrient fluxes</p>
+<p>Topsoil lifespans</p>
+<p>Land degradation</p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>TIFF</p>
+<h3>Type</h3>
+<p>image/tiff</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Spatial Resolutions</h2>
+<h3>Distance</h3>
+<p>30</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Number</h3>
+<p>NE/X006247/1</p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>33.267</p>
+<h3>East Bound Longitude</h3>
+<p>42.275</p>
+<h3>South Bound Latitude</h3>
+<p>-5.354</p>
+<h3>North Bound Latitude</h3>
+<p>5.572</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[33.267, -5.354], [33.267, 5.572], [42.275, 5.572], [42.275, -5.354], [33.267, -5.354]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[33.267, -5.354], [33.267, 5.572], [42.275, 5.572], [42.275, -5.354], [33.267, -5.354]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Family Name</h3>
+<p>Feeney</p>
+<h3>Given Name</h3>
+<p>C.J.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-2175-1842">https://orcid.org/0000-0003-2175-1842</a></p>
+<h3>Full Name</h3>
+<p>Feeney, C.J.</p>
+<h3>Family Name</h3>
+<p>Robinson</p>
+<h3>Given Name</h3>
+<p>D.A.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-7290-4867">https://orcid.org/0000-0001-7290-4867</a></p>
+<h3>Full Name</h3>
+<p>Robinson, D.A.</p>
+<h3>Family Name</h3>
+<p>Thomas</p>
+<h3>Given Name</h3>
+<p>A.R.C.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-4929-7285">https://orcid.org/0000-0002-4929-7285</a></p>
+<h3>Full Name</h3>
+<p>Thomas, A.R.C.</p>
+<h3>Family Name</h3>
+<p>Borrelli</p>
+<h3>Given Name</h3>
+<p>P.</p>
+<h3>Organisation Name</h3>
+<p>Roma Tre University</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>pasquale.borrelli@uniroma3.it</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-4767-5115">https://orcid.org/0000-0002-4767-5115</a></p>
+<h3>Full Name</h3>
+<p>Borrelli, P.</p>
+<h3>Family Name</h3>
+<p>Cooper</p>
+<h3>Given Name</h3>
+<p>D.M.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-7578-7918">https://orcid.org/0000-0001-7578-7918</a></p>
+<h3>Full Name</h3>
+<p>Cooper, D.M.</p>
+<h3>Family Name</h3>
+<p>May</p>
+<h3>Given Name</h3>
+<p>L.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-3385-9973">https://orcid.org/0000-0003-3385-9973</a></p>
+<h3>Full Name</h3>
+<p>May, L.</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Family Name</h3>
+<p>Feeney</p>
+<h3>Given Name</h3>
+<p>C.J.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Lancaster Environment Centre, Library Avenue, Bailrigg</p>
+<h4>City</h4>
+<p>Lancaster</p>
+<h4>Administrative Area</h4>
+<p>Lancashire</p>
+<h4>Postal Code</h4>
+<p>LA1 4AP</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Feeney, C.J.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Temporal Extents</h2>
+<h3>Begin</h3>
+<p>2016-01-01</p>
+<h3>End</h3>
+<p>2016-12-31</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://catalogue.ceh.ac.uk/datastore/eidchub/86d07d98-2956-4395-8b02-29dd5d98e6be">https://catalogue.ceh.ac.uk/datastore/eidchub/86d07d98-2956-4395-8b02-29dd5d98e6be</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>fileAccess</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/86d07d98-2956-4395-8b02-29dd5d98e6be.zip">https://data-package.ceh.ac.uk/sd/86d07d98-2956-4395-8b02-29dd5d98e6be.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://www.opengis.net/def/crs/EPSG/0/27700">http://www.opengis.net/def/crs/EPSG/0/27700</a></p>
+<h3>Title</h3>
+<p>OSGB 1936 / British National Grid</p>
+<h2>Incoming Citations</h2>
+<h3>Description</h3>
+<p>This dataset is the product of analyses published in:
+Feeney, C.J., Robinson, D.A., Thomas, A.R., Borrelli, P., Cooper, D.M. &amp; May, L., 2023. Agricultural practices drive elevated rates of topsoil decline across Kenya, but terracing and reduced tillage can reverse this. Science of the Total Environment, 870, 161925. <a href="https://doi.org/10.1016/j.scitotenv.2023.161925">https://doi.org/10.1016/j.scitotenv.2023.161925</a> </p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1016/j.scitotenv.2023.161925">https://doi.org/10.1016/j.scitotenv.2023.161925</a> </p>
+<h3>Description</h3>
+<p>Feeney, C.J., Robinson, D.A., Thomas, A.R.C., Borrelli, P., Cooper, D.M. &amp; May, L. (2023) Agricultural practices drive elevated rates of topsoil decline across Kenya, but terracing and reduced tillage can reverse this. Science of The Total Environment 870, 161925.</p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1016/j.scitotenv.2023.161925">https://doi.org/10.1016/j.scitotenv.2023.161925</a></p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2023-06-19</p>
+<h2>Use Constraints</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset">http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset</a></p>
+<h2>Access Limitation</h2>
+<p>Registration is required to access this data</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="https://www.eidc.ac.uk/help/faq/registration">https://www.eidc.ac.uk/help/faq/registration</a></p>
+<h2>Not G E M I N I</h2>
+<p>True</p>
+<h2>Licences</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>2</p>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Family Name</h3>
+<p>Feeney</p>
+<h3>Given Name</h3>
+<p>C.J.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Lancaster Environment Centre, Library Avenue, Bailrigg</p>
+<h4>City</h4>
+<p>Lancaster</p>
+<h4>Administrative Area</h4>
+<p>Lancashire</p>
+<h4>Postal Code</h4>
+<p>LA1 4AP</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Feeney, C.J.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/86d07d98-2956-4395-8b02-29dd5d98e6be.zip">https://data-package.ceh.ac.uk/sd/86d07d98-2956-4395-8b02-29dd5d98e6be.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Feeney</p>
+<h3>Given Name</h3>
+<p>C.J.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-2175-1842">https://orcid.org/0000-0003-2175-1842</a></p>
+<h3>Full Name</h3>
+<p>Feeney, C.J.</p>
+<h3>Family Name</h3>
+<p>Robinson</p>
+<h3>Given Name</h3>
+<p>D.A.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-7290-4867">https://orcid.org/0000-0001-7290-4867</a></p>
+<h3>Full Name</h3>
+<p>Robinson, D.A.</p>
+<h3>Family Name</h3>
+<p>Thomas</p>
+<h3>Given Name</h3>
+<p>A.R.C.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-4929-7285">https://orcid.org/0000-0002-4929-7285</a></p>
+<h3>Full Name</h3>
+<p>Thomas, A.R.C.</p>
+<h3>Family Name</h3>
+<p>Borrelli</p>
+<h3>Given Name</h3>
+<p>P.</p>
+<h3>Organisation Name</h3>
+<p>Roma Tre University</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>pasquale.borrelli@uniroma3.it</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-4767-5115">https://orcid.org/0000-0002-4767-5115</a></p>
+<h3>Full Name</h3>
+<p>Borrelli, P.</p>
+<h3>Family Name</h3>
+<p>Cooper</p>
+<h3>Given Name</h3>
+<p>D.M.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-7578-7918">https://orcid.org/0000-0001-7578-7918</a></p>
+<h3>Full Name</h3>
+<p>Cooper, D.M.</p>
+<h3>Family Name</h3>
+<p>May</p>
+<h3>Given Name</h3>
+<p>L.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-3385-9973">https://orcid.org/0000-0003-3385-9973</a></p>
+<h3>Full Name</h3>
+<p>May, L.</p>
+<h2>Publication Date</h2>
+<p>2023-06-19T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-13T16:26:00.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Feeney, C.J.</li>
+<li>Robinson, D.A.</li>
+<li>Thomas, A.R.C.</li>
+<li>Borrelli, P.</li>
+<li>Cooper, D.M.</li>
+<li>May, L.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/86d07d98-2956-4395-8b02-29dd5d98e6be</p>
+<h3>Title</h3>
+<p>Predicted soil erosion rates, nutrient fluxes and topsoil lifespans, modelled for Kenya at a 30 metre resolution</p>
+<h3>Publisher</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2023</p>
+<h3>Month</h3>
+<p>6</p>
+<h3>Day</h3>
+<p>19</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/86d07d98-2956-4395-8b02-29dd5d98e6be/citation?format=bib">https://catalogue.ceh.ac.uk/documents/86d07d98-2956-4395-8b02-29dd5d98e6be/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/86d07d98-2956-4395-8b02-29dd5d98e6be/citation?format=ris">https://catalogue.ceh.ac.uk/documents/86d07d98-2956-4395-8b02-29dd5d98e6be/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/86d07d98-2956-4395-8b02-29dd5d98e6be">https://doi.org/10.5285/86d07d98-2956-4395-8b02-29dd5d98e6be</a></p>
+</body>
+</html>

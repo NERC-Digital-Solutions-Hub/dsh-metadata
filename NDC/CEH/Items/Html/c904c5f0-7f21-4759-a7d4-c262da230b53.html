@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>c904c5f0-7f21-4759-a7d4-c262da230b53</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>c904c5f0-7f21-4759-a7d4-c262da230b53</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/c904c5f0-7f21-4759-a7d4-c262da230b53">https://catalogue.ceh.ac.uk/id/c904c5f0-7f21-4759-a7d4-c262da230b53</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>Larval and juvenile fish abundance, habitat, water quality, flow and climate data from English rivers, 1984-2017</p>
+<h2>Description</h2>
+<p>This dataset contains monthly/annual time series of species-specific abundances and covariates for 137 targeted larval/juvenile fish surveys at sites in a range of English lowland rivers. Larval/juvenile fish data come from two different sources: The Environment Agency’s (EA) National Fish Population Database (NFPD) between 1974 and 2017 and a dataset created by the University of Hull (UoH) between 1984 and 2017 inclusive. Biological data consists of density estimates of each fish species from each survey (per metre squared) and also the average length of specified species at the end of their first year of growth. Covariate data include habitat quality indicator (River Habitat Survey), climatic variables (Gulf Stream and North Atlantic Oscillation indices), land-use change, river hydrology, water temperature, effluent dilution factor and concentrations of chemical determinands. This dataset was created as larvae and juveniles may be particularly useful indicators and respond differently than older fish to environmental stressors.</p>
+<p>The work was supported by the Natural Environment Research Council (Grant NE/S000100/2).</p>
+<h2>Metadata Date</h2>
+<p>2025-11-13T16:24:59</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/c904c5f0-7f21-4759-a7d4-c262da230b53">https://catalogue.ceh.ac.uk/id/c904c5f0-7f21-4759-a7d4-c262da230b53</a></p>
+<h3>Code</h3>
+<p>10.5285/c904c5f0-7f21-4759-a7d4-c262da230b53</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Relationships</h2>
+<h3>Relation</h3>
+<p><a href="https://vocabs.ceh.ac.uk/eidc#memberOf">https://vocabs.ceh.ac.uk/eidc#memberOf</a></p>
+<h3>Target</h3>
+<p>5ed19178-28f9-4403-95f3-81255f8f3fc9</p>
+<h2>Lineage</h2>
+<p>Fish Data
+Juvenile fish density data was collected from two sources: the EA NFPD "Freshwater Fish Counts for all species for all Areas and all Years" dataset (1974-2017) and the UoH fish count dataset (1984-2017). Fish counts were converted into densities (numbers per m-2) by dividing species counts by the sampling area (converted NFPD units from 100 m-2 to m-2 to match UoH data). To determine the mean length of juvenile fish (chub, roach, common bream, dace, bleak, gudgeon, minnow, and three-spined sticklebacks) at the end of the growing season (last surveys between August and October), length frequency histograms were created for each species and survey using R 4.2.1. Only individuals in their first year were considered in the calculation, providing the mean length of first-year fish at the end of the growing season for each survey. Species in the NFPD dataset were assigned Chempop Species Codes adapted from EA species codes, and when multiple EA species codes matched one Chempop Species Code, their densities were summed for each survey. Data without a Chempop species code (e.g., hybrids or broad categories like "all species") were removed, while surveys with zero fish captures were retained in the dataset.</p>
+<p>Habitat Quality indicators
+Habitat scores were obtained from the Environment Agency's River Habitat Survey (RHS) dataset, with ArcGIS used to link fish sites to their nearest RHS site. Two key scores were extracted: the Habitat Modification Score (HMS), which reflects the degree of artificial channel modification, and the Habitat Quality Assessment (HQA), which provides a broad assessment of habitat quality based on the diversity and abundance of natural features in the river channel and riparian zone. The HQA is suitable for comparing similar river types. To enable comparisons with data from 1994, new rules for flow-types and channel vegetation were established and applied across all sites, resulting in the HQA adjusted for 1994 data. The most recent RHS survey data was extracted for this analysis.</p>
+<p>Land Use
+Land use in the catchment upstream of fish sites (NFPD) were calculated from the UKCEH Land Cover Map 2015 (25m raster, GB). The 21 land cover types were grouped to cover four broad categories of: Woodland, Arable, Seminatural and Urban. The catchment tool in DataLabs was used to extract and process the data, which were summed into percentage and areas of each land use group. The sum of the percentages of the grouped categories were checked and were found to fall in the range of 99.96-100.04 %. </p>
+<p>Water Temperature
+To assess its influence on fish growth, the cumulative annual degree-days ≥12 degC, indicating the total temperature sum for days exceeding 12 degC in the year prior to the survey date, was calculated. Water temperature data was sourced from the EA Surface Water Temperature Archive for sites with at least 3 years of records, and daily mean air temperature was collected from the Climate Hydrology and Ecology Research Support System (CHESS). The Baseflow Index for each water temperature gauging station and fish site was determined using the UKCEH National River Flow Archive. Generalized additive mix modeling (GAMM) was chosen to model water temperature, accounting for seasonal and year-to-year variation in water temperature, along with the nonlinear relationship between air and water temperature. Seven GAMM models, each covering a 0.1 BFI range, were developed, with the best model (Model: month, time, and air temperature, using ARMA structures) identified based on evaluation metrics like RMSE, NRMSE, and SI. This model was employed to estimate water temperature for fish sites.</p>
+<p>River Flow
+River flow data was sourced from the National River Flow Archive (NRFA) hosted by UKCEH and matched with fish sites based on the shortest distance along the river network. Data was extracted for the 12 months leading up to each fish survey, and various statistics were computed, including mean, median, standard deviation, coefficient of variation, Q5/mean, and Q95/mean. Additionally, threshold statistics were calculated for different percentiles (5, 25, 75, and 95), encompassing the threshold discharge value (estimated discharge quantile), days exceeded, number of exceedance events, and average event length.</p>
+<p>Water Quality-Effluent Dilution factor
+To gauge river pollution levels across England, the study used the LowFlows2000-WQX (lowFlows2000 Water Quality eXtension) model, which characterizes wastewater discharge by wastewater treatment works (WWTWs) in terms of location, domestic population served, dry weather flow (DWF), and treatment type. It's important to note that only significant WWTWs were considered for computational purposes, based on specific criteria: those in catchments contributing to 95% of each hydrometric area and those accounting for 95% of the total discharged DWF to the estuary, ranked by DWF. The model produced predicted wastewater percentages for all reaches in the modelled river network, which is a truncated version of the 1:50,000 digital river network derived from the UK Ordnance Survey Panorama Data Set. To estimate the percentage of wastewater at each fish site, a python script was used to link each site to the nearest reach in the river network. The results are reported in terms of mean, standard deviation, 90th percentile, and 95th percentile, denoted as EDF_Mn, EDF_SD, EDF_Q90, and EDF_Q95, respectively.</p>
+<p>Chemical Determinands
+Chemical concentration data spanning 1960-2017, involving 41 determinands, was extracted from the UK's Environment Agency's Water Quality Data Archive. Fish sites were matched to the nearest chemical determinand site using specific criteria like site distance, sample count, and data collection timeframe through ArcGIS. To identify and exclude erroneous data, a threshold of 10 mg/l was set for some determinands, with values exceeding this threshold omitted from statistical calculations. Handling values below the Limit of Quantification (LoQ) involved three options: setting values to LoQ (LoQ1), setting them to 0 (LoQ2), or setting them to LoQ/2 (LoQ3). For the 12 months preceding the surveys at each fish site, various statistics were computed, including minimum, maximum, median, mean, standard deviation, total sample count, and counts of samples below and above the LoQ. Some sites had to be excluded from the final dataset due to licensing restrictions.</p>
+<p>Altitude
+Elevation values for each fish site were extracted from the Integrated Hydrological Digital Terrain Model (IHDTM) using Arc GIS' Extract Multi Values to Points' tool. Two elevation values were calculated: Elevation values corresponding to the value of the IHDTM cell centre. Elevation values corresponding to an average value calculated from the adjacent cells with valid values using bilinear interpolation; NoData values were ignored in the interpolation unless all adjacent cells were NoData.</p>
+<p>Climate variables
+The Gulf Stream Index (GSI) data spanning 1975-2017 was obtained from the Plymouth Marine Laboratory website (<a href="http://www.pml-gulfstream.org.uk/data.htm">http://www.pml-gulfstream.org.uk/data.htm</a> Annual mean data were employed due to substantial month-to-month variability resulting from Gulf Stream meandering (Plymouth Marine Laboratory, 2019). Positive GSI values signify a northward shift from the long-term mean location, while negative values indicate a southward movement.</p>
+<p>Data for the North Atlantic Oscillation Index (NAOI) spanning 1975-2017 was obtained from the National Centre for Atmospheric Research website (<a href="https://www.ncei.noaa.gov/access/monitoring/nao">https://www.ncei.noaa.gov/access/monitoring/nao</a> The NAOI's winter (December-March) station-based index relies on the normalized sea level pressure (SLP) difference between Lisbon, Portugal, and Reykjavik, Iceland, dating back to 1864. Positive NAOI values indicate stronger westerlies over mid-latitudes, more intense North Atlantic weather systems, and wetter/milder conditions in Western Europe.</p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>textTable</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>biota</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/biota">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/biota</a></p>
+<h2>Keywords Place</h2>
+<p>England</p>
+<h2>Keywords Theme</h2>
+<p>Environmental survey</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/7">http://onto.nerc.ac.uk/CEHMD/topic/7</a></p>
+<p>Water quality</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/16">http://onto.nerc.ac.uk/CEHMD/topic/16</a></p>
+<h2>Keywords Other</h2>
+<p>pollution</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/6445">http://www.eionet.europa.eu/gemet/concept/6445</a></p>
+<p>hydrology</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/4118">http://www.eionet.europa.eu/gemet/concept/4118</a></p>
+<p>river</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/7244">http://www.eionet.europa.eu/gemet/concept/7244</a></p>
+<p>Larval fish</p>
+<p>Juvenile fish</p>
+<p>NFPD</p>
+<p>Juvenile fish densities and pollution in English rivers</p>
+<p>land use</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/4678">http://www.eionet.europa.eu/gemet/concept/4678</a></p>
+<p>Larval fish densities and pollution in English rivers</p>
+<p>chemical</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/1327">http://www.eionet.europa.eu/gemet/concept/1327</a></p>
+<p>fish</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/3252">http://www.eionet.europa.eu/gemet/concept/3252</a></p>
+<p>Fish fry</p>
+<p>land use change</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/21246">http://vocabs.lter-europe.net/EnvThes/21246</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>Comma-separated values (CSV)</p>
+<h3>Type</h3>
+<p>text/csv</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Inspire Themes</h2>
+<h3>Theme</h3>
+<p>Environmental Monitoring Facilities</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/theme/ef">http://inspire.ec.europa.eu/theme/ef</a></p>
+<h2>Spatial Resolutions</h2>
+<h3>Distance</h3>
+<p>1</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Number</h3>
+<p>NE/S000100/2</p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>-6.452</p>
+<h3>East Bound Longitude</h3>
+<p>1.768</p>
+<h3>South Bound Latitude</h3>
+<p>49.864</p>
+<h3>North Bound Latitude</h3>
+<p>55.812</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-6.452, 49.864], [-6.452, 55.812], [1.768, 55.812], [1.768, 49.864], [-6.452, 49.864]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[-6.452, 49.864], [-6.452, 55.812], [1.768, 55.812], [1.768, 49.864], [-6.452, 49.864]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Family Name</h3>
+<p>Ainsworth</p>
+<h3>Given Name</h3>
+<p>R.F.</p>
+<h3>Organisation Name</h3>
+<p>University of Hull</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>r.ainsworth@hull.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6669-0356">https://orcid.org/0000-0001-6669-0356</a></p>
+<h3>Full Name</h3>
+<p>Ainsworth, R.F.</p>
+<h3>Family Name</h3>
+<p>Keller</p>
+<h3>Given Name</h3>
+<p>V.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-4489-5363">https://orcid.org/0000-0003-4489-5363</a></p>
+<h3>Full Name</h3>
+<p>Keller, V.</p>
+<h3>Family Name</h3>
+<p>Bachiller-Jareno</p>
+<h3>Given Name</h3>
+<p>N.</p>
+<h3>Organisation Name</h3>
+<p>University of Portsmouth</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>nuria.bachiller-jareno@port.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-9732-6725">https://orcid.org/0000-0001-9732-6725</a></p>
+<h3>Full Name</h3>
+<p>Bachiller-Jareno, N.</p>
+<h3>Family Name</h3>
+<p>Jürgens</p>
+<h3>Given Name</h3>
+<p>M.D.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-6526-589X">https://orcid.org/0000-0002-6526-589X</a></p>
+<h3>Full Name</h3>
+<p>Jürgens, M.D.</p>
+<h3>Family Name</h3>
+<p>Eastman</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>Met Office</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>Michael.eastman@metoffice.gov.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-8212-5872">https://orcid.org/0000-0002-8212-5872</a></p>
+<h3>Full Name</h3>
+<p>Eastman, M.</p>
+<h3>Family Name</h3>
+<p>Sadykova</p>
+<h3>Given Name</h3>
+<p>D</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-3930-5974">https://orcid.org/0000-0002-3930-5974</a></p>
+<h3>Full Name</h3>
+<p>Sadykova, D.</p>
+<h3>Family Name</h3>
+<p>Rizzo</p>
+<h3>Given Name</h3>
+<p>C.</p>
+<h3>Organisation Name</h3>
+<p>Wallingford HydroSolutions</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>clarissa.rizzo@hydrosolutions.co.uk</p>
+<h3>Full Name</h3>
+<p>Rizzo, C.</p>
+<h3>Family Name</h3>
+<p>Scarlett</p>
+<h3>Given Name</h3>
+<p>P.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6242-8158">https://orcid.org/0000-0001-6242-8158</a></p>
+<h3>Full Name</h3>
+<p>Scarlett, P.</p>
+<h3>Family Name</h3>
+<p>Peirson</p>
+<h3>Given Name</h3>
+<p>G. </p>
+<h3>Organisation Name</h3>
+<p>UK Environment Agency</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>graeme.peirson@environment-agency.gov.uk</p>
+<h3>Full Name</h3>
+<p>Peirson, G.</p>
+<h3>Family Name</h3>
+<p>Eley</p>
+<h3>Given Name</h3>
+<p>F.</p>
+<h3>Organisation Name</h3>
+<p>UK Environment Agency</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>frances.eley@environment-agency.gov.uk</p>
+<h3>Full Name</h3>
+<p>Eley, F.</p>
+<h3>Family Name</h3>
+<p>Antoniou</p>
+<h3>Given Name</h3>
+<p>V.</p>
+<h3>Organisation Name</h3>
+<p>Agricultural University of Athens</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>vantoniou@aua.gr</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6011-4075">https://orcid.org/0000-0001-6011-4075</a></p>
+<h3>Full Name</h3>
+<p>Antoniou, V.</p>
+<h3>Family Name</h3>
+<p>Cowx</p>
+<h3>Given Name</h3>
+<p>I.G.</p>
+<h3>Organisation Name</h3>
+<p>University of Hull</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>i.g.cowx@hull.ac.uk</p>
+<h3>Full Name</h3>
+<p>Cowx, I.G.</p>
+<h3>Family Name</h3>
+<p>Johnson</p>
+<h3>Given Name</h3>
+<p>A.C.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-1570-3764">https://orcid.org/0000-0003-1570-3764</a></p>
+<h3>Full Name</h3>
+<p>Johnson, A.C.</p>
+<h3>Family Name</h3>
+<p>Nunn</p>
+<h3>Given Name</h3>
+<p>A.D.</p>
+<h3>Organisation Name</h3>
+<p>University of Hull</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>a.d.nunn@hull.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-8370-1221">https://orcid.org/0000-0001-8370-1221</a></p>
+<h3>Full Name</h3>
+<p>Nunn, A.D.</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Family Name</h3>
+<p>Ainsworth</p>
+<h3>Given Name</h3>
+<p>R.F.</p>
+<h3>Organisation Name</h3>
+<p>University of Hull</p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>r.ainsworth@hull.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6669-0356">https://orcid.org/0000-0001-6669-0356</a></p>
+<h3>Address</h3>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Ainsworth, R.F.</p>
+<h3>Point Of Contact</h3>
+<p>University of Hull</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>The University of Hull</p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Address</h3>
+<h4>Administrative Area</h4>
+<p>UK</p>
+<h2>Temporal Extents</h2>
+<h3>Begin</h3>
+<p>1984-01-01</p>
+<h3>End</h3>
+<p>2017-12-31</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/data/c904c5f0-7f21-4759-a7d4-c262da230b53">https://data-package.ceh.ac.uk/data/c904c5f0-7f21-4759-a7d4-c262da230b53</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>download</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/c904c5f0-7f21-4759-a7d4-c262da230b53.zip">https://data-package.ceh.ac.uk/sd/c904c5f0-7f21-4759-a7d4-c262da230b53.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://www.opengis.net/def/crs/EPSG/0/27700">http://www.opengis.net/def/crs/EPSG/0/27700</a></p>
+<h3>Title</h3>
+<p>OSGB 1936 / British National Grid</p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2024-06-18</p>
+<h3>Released Date</h3>
+<p>2025-09-01</p>
+<h2>Use Constraints</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset">http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset</a></p>
+<h2>Access Limitation</h2>
+<p>no limitations to public access</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="http://purl.org/coar/access_right/c_abf2">http://purl.org/coar/access_right/c_abf2</a></p>
+<h2>Not G E M I N I</h2>
+<p>False</p>
+<h2>Licences</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>0</p>
+<h2>Topics</h2>
+<ul>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/7">http://onto.nerc.ac.uk/CEHMD/topic/7</a></li>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/16">http://onto.nerc.ac.uk/CEHMD/topic/16</a></li>
+</ul>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Family Name</h3>
+<p>Ainsworth</p>
+<h3>Given Name</h3>
+<p>R.F.</p>
+<h3>Organisation Name</h3>
+<p>University of Hull</p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>r.ainsworth@hull.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6669-0356">https://orcid.org/0000-0001-6669-0356</a></p>
+<h3>Address</h3>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Ainsworth, R.F.</p>
+<h3>Point Of Contact</h3>
+<p>University of Hull</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>The University of Hull</p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Address</h3>
+<h4>Administrative Area</h4>
+<p>UK</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/c904c5f0-7f21-4759-a7d4-c262da230b53.zip">https://data-package.ceh.ac.uk/sd/c904c5f0-7f21-4759-a7d4-c262da230b53.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Ainsworth</p>
+<h3>Given Name</h3>
+<p>R.F.</p>
+<h3>Organisation Name</h3>
+<p>University of Hull</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>r.ainsworth@hull.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6669-0356">https://orcid.org/0000-0001-6669-0356</a></p>
+<h3>Full Name</h3>
+<p>Ainsworth, R.F.</p>
+<h3>Family Name</h3>
+<p>Keller</p>
+<h3>Given Name</h3>
+<p>V.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-4489-5363">https://orcid.org/0000-0003-4489-5363</a></p>
+<h3>Full Name</h3>
+<p>Keller, V.</p>
+<h3>Family Name</h3>
+<p>Bachiller-Jareno</p>
+<h3>Given Name</h3>
+<p>N.</p>
+<h3>Organisation Name</h3>
+<p>University of Portsmouth</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>nuria.bachiller-jareno@port.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-9732-6725">https://orcid.org/0000-0001-9732-6725</a></p>
+<h3>Full Name</h3>
+<p>Bachiller-Jareno, N.</p>
+<h3>Family Name</h3>
+<p>Jürgens</p>
+<h3>Given Name</h3>
+<p>M.D.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-6526-589X">https://orcid.org/0000-0002-6526-589X</a></p>
+<h3>Full Name</h3>
+<p>Jürgens, M.D.</p>
+<h3>Family Name</h3>
+<p>Eastman</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>Met Office</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>Michael.eastman@metoffice.gov.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-8212-5872">https://orcid.org/0000-0002-8212-5872</a></p>
+<h3>Full Name</h3>
+<p>Eastman, M.</p>
+<h3>Family Name</h3>
+<p>Sadykova</p>
+<h3>Given Name</h3>
+<p>D</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-3930-5974">https://orcid.org/0000-0002-3930-5974</a></p>
+<h3>Full Name</h3>
+<p>Sadykova, D.</p>
+<h3>Family Name</h3>
+<p>Rizzo</p>
+<h3>Given Name</h3>
+<p>C.</p>
+<h3>Organisation Name</h3>
+<p>Wallingford HydroSolutions</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>clarissa.rizzo@hydrosolutions.co.uk</p>
+<h3>Full Name</h3>
+<p>Rizzo, C.</p>
+<h3>Family Name</h3>
+<p>Scarlett</p>
+<h3>Given Name</h3>
+<p>P.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6242-8158">https://orcid.org/0000-0001-6242-8158</a></p>
+<h3>Full Name</h3>
+<p>Scarlett, P.</p>
+<h3>Family Name</h3>
+<p>Peirson</p>
+<h3>Given Name</h3>
+<p>G. </p>
+<h3>Organisation Name</h3>
+<p>UK Environment Agency</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>graeme.peirson@environment-agency.gov.uk</p>
+<h3>Full Name</h3>
+<p>Peirson, G.</p>
+<h3>Family Name</h3>
+<p>Eley</p>
+<h3>Given Name</h3>
+<p>F.</p>
+<h3>Organisation Name</h3>
+<p>UK Environment Agency</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>frances.eley@environment-agency.gov.uk</p>
+<h3>Full Name</h3>
+<p>Eley, F.</p>
+<h3>Family Name</h3>
+<p>Antoniou</p>
+<h3>Given Name</h3>
+<p>V.</p>
+<h3>Organisation Name</h3>
+<p>Agricultural University of Athens</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>vantoniou@aua.gr</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6011-4075">https://orcid.org/0000-0001-6011-4075</a></p>
+<h3>Full Name</h3>
+<p>Antoniou, V.</p>
+<h3>Family Name</h3>
+<p>Cowx</p>
+<h3>Given Name</h3>
+<p>I.G.</p>
+<h3>Organisation Name</h3>
+<p>University of Hull</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>i.g.cowx@hull.ac.uk</p>
+<h3>Full Name</h3>
+<p>Cowx, I.G.</p>
+<h3>Family Name</h3>
+<p>Johnson</p>
+<h3>Given Name</h3>
+<p>A.C.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-1570-3764">https://orcid.org/0000-0003-1570-3764</a></p>
+<h3>Full Name</h3>
+<p>Johnson, A.C.</p>
+<h3>Family Name</h3>
+<p>Nunn</p>
+<h3>Given Name</h3>
+<p>A.D.</p>
+<h3>Organisation Name</h3>
+<p>University of Hull</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>a.d.nunn@hull.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-8370-1221">https://orcid.org/0000-0001-8370-1221</a></p>
+<h3>Full Name</h3>
+<p>Nunn, A.D.</p>
+<h2>Publication Date</h2>
+<p>2024-06-18T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-13T16:24:59.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Ainsworth, R.F.</li>
+<li>Keller, V.</li>
+<li>Bachiller-Jareno, N.</li>
+<li>Jürgens, M.D.</li>
+<li>Eastman, M.</li>
+<li>Sadykova, D.</li>
+<li>Rizzo, C.</li>
+<li>Scarlett, P.</li>
+<li>Peirson, G.</li>
+<li>Eley, F.</li>
+<li>Antoniou, V.</li>
+<li>Cowx, I.G.</li>
+<li>Johnson, A.C.</li>
+<li>Nunn, A.D.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/c904c5f0-7f21-4759-a7d4-c262da230b53</p>
+<h3>Title</h3>
+<p>Larval and juvenile fish abundance, habitat, water quality, flow and climate data from English rivers, 1984-2017</p>
+<h3>Publisher</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2024</p>
+<h3>Month</h3>
+<p>6</p>
+<h3>Day</h3>
+<p>18</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/c904c5f0-7f21-4759-a7d4-c262da230b53/citation?format=bib">https://catalogue.ceh.ac.uk/documents/c904c5f0-7f21-4759-a7d4-c262da230b53/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/c904c5f0-7f21-4759-a7d4-c262da230b53/citation?format=ris">https://catalogue.ceh.ac.uk/documents/c904c5f0-7f21-4759-a7d4-c262da230b53/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/c904c5f0-7f21-4759-a7d4-c262da230b53">https://doi.org/10.5285/c904c5f0-7f21-4759-a7d4-c262da230b53</a></p>
+</body>
+</html>

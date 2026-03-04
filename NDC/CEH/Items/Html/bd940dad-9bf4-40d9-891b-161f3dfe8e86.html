@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bd940dad-9bf4-40d9-891b-161f3dfe8e86</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>bd940dad-9bf4-40d9-891b-161f3dfe8e86</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/bd940dad-9bf4-40d9-891b-161f3dfe8e86">https://catalogue.ceh.ac.uk/id/bd940dad-9bf4-40d9-891b-161f3dfe8e86</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>Global ensembles of Ecosystem Service map outputs modelled at 1km resolution for water supply, recreation, carbon storage, fuelwood and forage production</p>
+<h2>Description</h2>
+<p>This data set contains Global maps of five ecosystem services using 6 different among-model ensemble approaches: the provisioning services of water supply, biomass for fuelwood and forage production, the regulating service Carbon Storage for CO2 retention and the cultural non-material service Recreation. For water, the data comes as one shapefile with polygons per watershed, each polygon containing seven ensemble estimates. The other services – recreation, carbon storage, biomass for fuelwood and forage production – come as seven tiff- maps at a 1-km2 resolution with associated world files for each tiff-map contains 43,200 x 18,600 pixels for one ensemble approach, with LZW compressed file sizes between 400MB and 950MB. For all maps, 600dpi jpg depictions are added to the supporting information with uniform colour scaling set for the median ensemble per service. </p>
+<p>Ensemble output maps were calculated with different approaches following the supporting documentation and associated publication. Uncertainty estimates for these services are included as variation among contributing model outputs and among the employed ensemble approaches.</p>
+<p>The work was completed under the ‘EnsemblES - Using ensemble techniques to capture the accuracy and sensitivity of ecosystem service models’ project (NE/T00391X/1) funded by the UKRI Landscape Decisions programme, with additional funding from ES/R009279/1 (MobilES) &amp; ES/T007877/1 (RUST).</p>
+<h2>Metadata Date</h2>
+<p>2025-11-13T16:25:58</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/bd940dad-9bf4-40d9-891b-161f3dfe8e86">https://catalogue.ceh.ac.uk/id/bd940dad-9bf4-40d9-891b-161f3dfe8e86</a></p>
+<h3>Code</h3>
+<p>10.5285/bd940dad-9bf4-40d9-891b-161f3dfe8e86</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Relationships</h2>
+<h3>Relation</h3>
+<p><a href="https://vocabs.ceh.ac.uk/eidc#relatedTo">https://vocabs.ceh.ac.uk/eidc#relatedTo</a></p>
+<h3>Target</h3>
+<p>11689000-f791-4fdb-8e12-08a7d87ad75f</p>
+<h3>Relation</h3>
+<p><a href="https://vocabs.ceh.ac.uk/eidc#relatedTo">https://vocabs.ceh.ac.uk/eidc#relatedTo</a></p>
+<h3>Target</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/a9ae773d-b742-4d42-ae42-2b594bae5d38">https://catalogue.ceh.ac.uk/id/a9ae773d-b742-4d42-ae42-2b594bae5d38</a></p>
+<h3>Relation</h3>
+<p><a href="https://vocabs.ceh.ac.uk/eidc#relatedTo">https://vocabs.ceh.ac.uk/eidc#relatedTo</a></p>
+<h3>Target</h3>
+<p>a9ae773d-b742-4d42-ae42-2b594bae5d38</p>
+<h3>Relation</h3>
+<p><a href="https://vocabs.ceh.ac.uk/eidc#relatedTo">https://vocabs.ceh.ac.uk/eidc#relatedTo</a></p>
+<h3>Target</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/11689000-f791-4fdb-8e12-08a7d87ad75f">https://catalogue.ceh.ac.uk/id/11689000-f791-4fdb-8e12-08a7d87ad75f</a></p>
+<h2>Lineage</h2>
+<p>The ensembles, their approach methodology, and their validations are currently in revision after review in Science Advances as Willcock et al. (2023): Model Ensembles of Ecosystem Services Fill Global Certainty and Capacity Gaps. Relevant Matlab and Python codes can be found at <a href="https://github.com/GlobalEnsembles">https://github.com/GlobalEnsembles</a>   </p>
+<p>Global among model ensembles for recreation, carbon storage, and biomass for fuelwood and forage production are provided as 1-km2 gridcells; water supply ensembles are provided per catchment polygons associated to the 15,289 worldwide HydroSHEDS catchment definitions (<a href="https://www.hydrosheds.org/">https://www.hydrosheds.org/</a> Model data included outputs from among others: InVEST, ARIES, WaterWorld, Co$ting Nature, LPJ-GUESS, TEEB, Scholes, Aqueduct, FAO livestock distributions, and a wide variety of biomass models such as from ESA CCI Biomass Climate Change Initiative, GEOCARBON global forest biomass and Global Forest Watch. These data sets are not provided here, but a full list with links to these data sets or software, where applicable, can be found in the supporting documentation. Note that license restrictions could apply. </p>
+<p>Ensembles approaches include: unweighted (mean and median) approaches and weighted averaging with weights determined following multiple methods according to Hooftman et al. (2022): the deterministic correlation coefficient among models, the first principal component among models and weights iterated as regression to the median and leave-one-out cross validation. Uncertainty is presented by the Standard Error of Mean among contributing model outputs and among ensemble approaches, calculated as the standard deviation corrected with the amount of contributing models/ensembles per cell.</p>
+<p>Prior to ensemble calculations: all individual model outputs have been normalised against the lower 2.5% and upper 97.5% percentile. Afterwards, the resulting Ensembles have been identically re-normalised to ensure a 0-1 scale. For all details about the individual model approaches, their synchronisation, ensemble algorithms and their validation we refer to the supporting documentation and associated publication.</p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>grid</li>
+<li>vector</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>environment</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment</a></p>
+<p>economy</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/economy">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/economy</a></p>
+<h2>Keywords Other</h2>
+<p>Carbon stocks</p>
+<p>Ensemble modelling</p>
+<p>Fuelwood</p>
+<p>Global maps</p>
+<p>Weighted averaging</p>
+<p>natural capital</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/15234">http://www.eionet.europa.eu/gemet/concept/15234</a></p>
+<p>recreation</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/7001">http://www.eionet.europa.eu/gemet/concept/7001</a></p>
+<p>water supply</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/9244">http://www.eionet.europa.eu/gemet/concept/9244</a></p>
+<p>livestock</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/4862">http://www.eionet.europa.eu/gemet/concept/4862</a></p>
+<p>ecosystem services</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/15138">http://www.eionet.europa.eu/gemet/concept/15138</a></p>
+<p>sustainable development</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/8247">http://www.eionet.europa.eu/gemet/concept/8247</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>TIFF</p>
+<h3>Type</h3>
+<p>image/tiff</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h3>Name</h3>
+<p>Shapefile</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Inspire Themes</h2>
+<h3>Theme</h3>
+<p>Environmental Monitoring Facilities</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/theme/ef">http://inspire.ec.europa.eu/theme/ef</a></p>
+<h3>Theme</h3>
+<p>Land Use</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/theme/lu">http://inspire.ec.europa.eu/theme/lu</a></p>
+<h2>Spatial Resolutions</h2>
+<h3>Distance</h3>
+<p>1000</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Title</h3>
+<p>EnsemblES</p>
+<h3>Award Number</h3>
+<p>NE/T00391X/1</p>
+<h3>Award U R I</h3>
+<p><a href="https://gtr.ukri.org/projects?ref=NE/T00391X/1">https://gtr.ukri.org/projects?ref=NE/T00391X/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h3>Funder Name</h3>
+<p>Economic and Social Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/03n0ht308">https://ror.org/03n0ht308</a></p>
+<h3>Award Title</h3>
+<p>MobilES</p>
+<h3>Award Number</h3>
+<p>ES/R009279/1</p>
+<h3>Award U R I</h3>
+<p><a href="https://gtr.ukri.org/projects?ref=ES/R009279/1">https://gtr.ukri.org/projects?ref=ES/R009279/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h3>Funder Name</h3>
+<p>Economic and Social Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/03n0ht308">https://ror.org/03n0ht308</a></p>
+<h3>Award Title</h3>
+<p>RUST</p>
+<h3>Award Number</h3>
+<p>ES/T007877/1</p>
+<h3>Award U R I</h3>
+<p><a href="https://gtr.ukri.org/projects?ref=ES/T007877/1">https://gtr.ukri.org/projects?ref=ES/T007877/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>-180</p>
+<h3>East Bound Longitude</h3>
+<p>180</p>
+<h3>South Bound Latitude</h3>
+<p>-90</p>
+<h3>North Bound Latitude</h3>
+<p>90</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-180, -90], [-180, 90], [180, 90], [180, -90], [-180, -90]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[-180, -90], [-180, 90], [180, 90], [180, -90], [-180, -90]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Family Name</h3>
+<p>Hooftman</p>
+<h3>Given Name</h3>
+<p>D.A.P.</p>
+<h3>Organisation Name</h3>
+<p>Lactuca: Environmental Data Analyses and Modelling</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>Danny.hooftman@lactuca.nl</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-9835-6897">https://orcid.org/0000-0001-9835-6897</a></p>
+<h3>Address</h3>
+<h4>Country</h4>
+<p>The Netherlands</p>
+<h3>Full Name</h3>
+<p>Hooftman, D.A.P.</p>
+<h3>Family Name</h3>
+<p>Bullock</p>
+<h3>Given Name</h3>
+<p>J.M.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-0529-4020">https://orcid.org/0000-0003-0529-4020</a></p>
+<h3>Full Name</h3>
+<p>Bullock, J.M.</p>
+<h3>Family Name</h3>
+<p>Neugarten</p>
+<h3>Given Name</h3>
+<p>R.A. </p>
+<h3>Organisation Name</h3>
+<p>Cornell University</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>ran63@cornell.edu </p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-0647-0516">https://orcid.org/0000-0003-0647-0516</a></p>
+<h3>Address</h3>
+<h4>Country</h4>
+<p>USA</p>
+<h3>Full Name</h3>
+<p>Neugarten, R.A.</p>
+<h3>Family Name</h3>
+<p>Chaplin-Kramer</p>
+<h3>Given Name</h3>
+<p>R.</p>
+<h3>Organisation Name</h3>
+<p>Natural Capital Project</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>rchaplin@umn.edu</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-1539-5231">https://orcid.org/0000-0002-1539-5231</a></p>
+<h3>Address</h3>
+<h4>Country</h4>
+<p>USA</p>
+<h3>Full Name</h3>
+<p>Chaplin-Kramer, R.</p>
+<h3>Family Name</h3>
+<p>Willcock</p>
+<h3>Given Name</h3>
+<p>S.</p>
+<h3>Organisation Name</h3>
+<p>Bangor University</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>s.willcock@bangor.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6704-3548">https://orcid.org/0000-0001-6704-3548</a></p>
+<h3>Address</h3>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Willcock, S.</p>
+<h3>Organisation Name</h3>
+<p>Bangor University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/006jb1a24">https://ror.org/006jb1a24</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Family Name</h3>
+<p>Hooftman</p>
+<h3>Given Name</h3>
+<p>D.A.P.</p>
+<h3>Organisation Name</h3>
+<p>Lactuca: Environmental Data Analyses and Modelling</p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>Danny.hooftman@lactuca.nl </p>
+<h3>Full Name</h3>
+<p>Hooftman, D.A.P.</p>
+<h3>Point Of Contact</h3>
+<p>Lactuca: Environmental Data Analyses and Modelling</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://catalogue.ceh.ac.uk/datastore/eidchub/bd940dad-9bf4-40d9-891b-161f3dfe8e86">https://catalogue.ceh.ac.uk/datastore/eidchub/bd940dad-9bf4-40d9-891b-161f3dfe8e86</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>fileAccess</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/bd940dad-9bf4-40d9-891b-161f3dfe8e86.zip">https://data-package.ceh.ac.uk/sd/bd940dad-9bf4-40d9-891b-161f3dfe8e86.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://www.opengis.net/def/crs/EPSG/0/4326">http://www.opengis.net/def/crs/EPSG/0/4326</a></p>
+<h3>Title</h3>
+<p>WGS 84</p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2023-01-23</p>
+<h2>Use Constraints</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset">http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset</a></p>
+<h2>Access Limitation</h2>
+<p>Registration is required to access this data</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="https://www.eidc.ac.uk/help/faq/registration">https://www.eidc.ac.uk/help/faq/registration</a></p>
+<h2>Not G E M I N I</h2>
+<p>False</p>
+<h2>Licences</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>0</p>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Family Name</h3>
+<p>Hooftman</p>
+<h3>Given Name</h3>
+<p>D.A.P.</p>
+<h3>Organisation Name</h3>
+<p>Lactuca: Environmental Data Analyses and Modelling</p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>Danny.hooftman@lactuca.nl </p>
+<h3>Full Name</h3>
+<p>Hooftman, D.A.P.</p>
+<h3>Point Of Contact</h3>
+<p>Lactuca: Environmental Data Analyses and Modelling</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>Bangor University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/006jb1a24">https://ror.org/006jb1a24</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/bd940dad-9bf4-40d9-891b-161f3dfe8e86.zip">https://data-package.ceh.ac.uk/sd/bd940dad-9bf4-40d9-891b-161f3dfe8e86.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Hooftman</p>
+<h3>Given Name</h3>
+<p>D.A.P.</p>
+<h3>Organisation Name</h3>
+<p>Lactuca: Environmental Data Analyses and Modelling</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>Danny.hooftman@lactuca.nl</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-9835-6897">https://orcid.org/0000-0001-9835-6897</a></p>
+<h3>Address</h3>
+<h4>Country</h4>
+<p>The Netherlands</p>
+<h3>Full Name</h3>
+<p>Hooftman, D.A.P.</p>
+<h3>Family Name</h3>
+<p>Bullock</p>
+<h3>Given Name</h3>
+<p>J.M.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-0529-4020">https://orcid.org/0000-0003-0529-4020</a></p>
+<h3>Full Name</h3>
+<p>Bullock, J.M.</p>
+<h3>Family Name</h3>
+<p>Neugarten</p>
+<h3>Given Name</h3>
+<p>R.A. </p>
+<h3>Organisation Name</h3>
+<p>Cornell University</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>ran63@cornell.edu </p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-0647-0516">https://orcid.org/0000-0003-0647-0516</a></p>
+<h3>Address</h3>
+<h4>Country</h4>
+<p>USA</p>
+<h3>Full Name</h3>
+<p>Neugarten, R.A.</p>
+<h3>Family Name</h3>
+<p>Chaplin-Kramer</p>
+<h3>Given Name</h3>
+<p>R.</p>
+<h3>Organisation Name</h3>
+<p>Natural Capital Project</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>rchaplin@umn.edu</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-1539-5231">https://orcid.org/0000-0002-1539-5231</a></p>
+<h3>Address</h3>
+<h4>Country</h4>
+<p>USA</p>
+<h3>Full Name</h3>
+<p>Chaplin-Kramer, R.</p>
+<h3>Family Name</h3>
+<p>Willcock</p>
+<h3>Given Name</h3>
+<p>S.</p>
+<h3>Organisation Name</h3>
+<p>Bangor University</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>s.willcock@bangor.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6704-3548">https://orcid.org/0000-0001-6704-3548</a></p>
+<h3>Address</h3>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Willcock, S.</p>
+<h2>Publication Date</h2>
+<p>2023-01-23T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-13T16:25:58.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Hooftman, D.A.P.</li>
+<li>Bullock, J.M.</li>
+<li>Neugarten, R.A.</li>
+<li>Chaplin-Kramer, R.</li>
+<li>Willcock, S.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/bd940dad-9bf4-40d9-891b-161f3dfe8e86</p>
+<h3>Title</h3>
+<p>Global ensembles of Ecosystem Service map outputs modelled at 1km resolution for water supply, recreation, carbon storage, fuelwood and forage production</p>
+<h3>Publisher</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2023</p>
+<h3>Month</h3>
+<p>1</p>
+<h3>Day</h3>
+<p>23</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/bd940dad-9bf4-40d9-891b-161f3dfe8e86/citation?format=bib">https://catalogue.ceh.ac.uk/documents/bd940dad-9bf4-40d9-891b-161f3dfe8e86/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/bd940dad-9bf4-40d9-891b-161f3dfe8e86/citation?format=ris">https://catalogue.ceh.ac.uk/documents/bd940dad-9bf4-40d9-891b-161f3dfe8e86/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/bd940dad-9bf4-40d9-891b-161f3dfe8e86">https://doi.org/10.5285/bd940dad-9bf4-40d9-891b-161f3dfe8e86</a></p>
+</body>
+</html>

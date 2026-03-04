@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2efd24f9-e745-4f54-8bbd-6439b0ad93e5</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>2efd24f9-e745-4f54-8bbd-6439b0ad93e5</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/2efd24f9-e745-4f54-8bbd-6439b0ad93e5">https://catalogue.ceh.ac.uk/id/2efd24f9-e745-4f54-8bbd-6439b0ad93e5</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>River channel migration and characteristics from 1988 to 2019 at 74 bridges in the Philippines</p>
+<h2>Description</h2>
+<p>The data set contains the Philippines bridge inventory, river migration geodatabase and source code to assess active river channel change (i.e. planform adjustments) using Landsat 5, 7 and 8 products in Google Earth Engine. The data set contains hydro-morphological and bridge characteristics for 74 bridges (&gt; 200 m deck length) in the Philippines from 1988 to 2019 and is available in .csv and .shp format.  For a given region of interest (ROI), the code will extract active river channel masks, calculate similarity coefficients between active river channel masks at decadal intervals and calculate active widths and centreline statistics. The code was used by Boothroyd et al. (in press) to investigate decadal river migration at critical bridge infrastructure in the Philippines.</p>
+<h2>Metadata Date</h2>
+<p>2025-11-13T16:21:21</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/2efd24f9-e745-4f54-8bbd-6439b0ad93e5">https://catalogue.ceh.ac.uk/id/2efd24f9-e745-4f54-8bbd-6439b0ad93e5</a></p>
+<h3>Code</h3>
+<p>10.5285/2efd24f9-e745-4f54-8bbd-6439b0ad93e5</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Lineage</h2>
+<p>Bridge characteristics were derived from a geospatial database of Philippine bridges retrieved in April 2020 from the Detailed Bridge Inventory Application (DPWH, 2020). The database was filtered to include only permanent bridges where the bridge deck length was equal to or greater than 200 m (n = 256). A visual inspection was performed to ensure that bridges were located at contemporary river crossings (n = 182) and only those bridges where the active river channel width exceeded 150 m (equivalent to five Landsat pixels) were retained for analysis (n = 74).</p>
+<p>Stream network and geomorphology characteristics were derived from a nationwide digital elevation model (DEM) acquired in 2013 and generated through airborne Interferometric Synthetic Aperture Radar, with a 5 m spatial resolution and 1 m root-mean-square error vertical accuracy (Grafil and Castro, 2014) was used for topographic analysis and extraction of the stream network.</p>
+<p>Google Earth Engine (GEE) was used to extract active river channel masks from Landsat 5, 7 and 8 satellite imagery. The workflow contained three main processing steps: (i) cloud masking and temporal compositing; (ii) active river channel classification; and, (iii) cleaning and image export.</p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>vector</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>structure</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/structure">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/structure</a></p>
+<p>inlandWaters</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/inlandWaters">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/inlandWaters</a></p>
+<h2>Keywords Place</h2>
+<p>Philippines</p>
+<h3>Uri</h3>
+<p><a href="http://sws.geonames.org/1694008/">http://sws.geonames.org/1694008/</a></p>
+<h2>Keywords Theme</h2>
+<p>Mapping</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/18">http://onto.nerc.ac.uk/CEHMD/topic/18</a></p>
+<h2>Keywords Other</h2>
+<p>Fluvial geomorphology</p>
+<p>river migration</p>
+<p>Jaccard index</p>
+<p>Dice similarity coefficient</p>
+<p>RivWidthCloud</p>
+<p>stream network characteristics</p>
+<p>bridge</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/1001">http://www.eionet.europa.eu/gemet/concept/1001</a></p>
+<p>river channelling</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/7257">http://www.eionet.europa.eu/gemet/concept/7257</a></p>
+<p>river</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/7244">http://www.eionet.europa.eu/gemet/concept/7244</a></p>
+<p>geomorphology</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/3654">http://www.eionet.europa.eu/gemet/concept/3654</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>Comma-separated values (CSV)</p>
+<h3>Type</h3>
+<p>text/csv</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h3>Name</h3>
+<p>Shapefile</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h3>Name</h3>
+<p>TIFF</p>
+<h3>Type</h3>
+<p>image/tiff</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Spatial Resolutions</h2>
+<h3>Distance</h3>
+<p>5</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Title</h3>
+<p>Catchment susceptibility to hydrometeorological events: sediment flux and geomorphic change as drivers of flood risk in the Philippines</p>
+<h3>Award Number</h3>
+<p>NE/S003312/1</p>
+<h3>Award U R I</h3>
+<p><a href="https://gtr.ukri.org/projects?ref=NE/S003312/1">https://gtr.ukri.org/projects?ref=NE/S003312/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>116.191</p>
+<h3>East Bound Longitude</h3>
+<p>127.617</p>
+<h3>South Bound Latitude</h3>
+<p>4.303</p>
+<h3>North Bound Latitude</h3>
+<p>21.371</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[116.191, 4.303], [116.191, 21.371], [127.617, 21.371], [127.617, 4.303], [116.191, 4.303]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[116.191, 4.303], [116.191, 21.371], [127.617, 21.371], [127.617, 4.303], [116.191, 4.303]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Boothroyd</p>
+<h3>Given Name</h3>
+<p>Richard</p>
+<h3>Organisation Name</h3>
+<p>University of Glasgow</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00vtgdb53">https://ror.org/00vtgdb53</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>richard.boothroyd@glasgow.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-9742-4229">https://orcid.org/0000-0001-9742-4229</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>School of Geographical and Earth Sciences</p>
+<h4>Country</h4>
+<p>UK</p>
+<h3>Full Name</h3>
+<p>Boothroyd, R.</p>
+<h3>Point Of Contact</h3>
+<p>University of Glasgow</p>
+<h3>Family Name</h3>
+<p>Boothroyd</p>
+<h3>Given Name</h3>
+<p>R.J.</p>
+<h3>Organisation Name</h3>
+<p>University of Glasgow</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00vtgdb53">https://ror.org/00vtgdb53</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>richard.boothroyd@glasgow.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-9742-4229">https://orcid.org/0000-0001-9742-4229</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>School of Geographical and Earth Sciences</p>
+<h4>Country</h4>
+<p>UK</p>
+<h3>Full Name</h3>
+<p>Boothroyd, R.J.</p>
+<h3>Family Name</h3>
+<p>Williams</p>
+<h3>Given Name</h3>
+<p>R.D.</p>
+<h3>Organisation Name</h3>
+<p>University of Glasgow</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00vtgdb53">https://ror.org/00vtgdb53</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>richard.williams@glasgow.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6067-1947">https://orcid.org/0000-0001-6067-1947</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>School of Geographical and Earth Sciences</p>
+<h4>Country</h4>
+<p>UK</p>
+<h3>Full Name</h3>
+<p>Williams, R.D.</p>
+<h3>Family Name</h3>
+<p>Hoey</p>
+<h3>Given Name</h3>
+<p>T.B.</p>
+<h3>Organisation Name</h3>
+<p>Brunel University London</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>trevor.hoey@brunel.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-0734-6218">https://orcid.org/0000-0003-0734-6218</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Department of Civil and Environmental Engineering</p>
+<h4>Country</h4>
+<p>UK</p>
+<h3>Full Name</h3>
+<p>Hoey, T.B.</p>
+<h3>Family Name</h3>
+<p>Tolentino</p>
+<h3>Given Name</h3>
+<p>P.L.M.</p>
+<h3>Organisation Name</h3>
+<p>University of the Philippines</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/03tbh6y23">https://ror.org/03tbh6y23</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>plmtolentino@gmail.com</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>National Institute of Geological Sciences</p>
+<h4>Country</h4>
+<p>Philippines</p>
+<h3>Full Name</h3>
+<p>Tolentino, P.L.M.</p>
+<h3>Family Name</h3>
+<p>Yang</p>
+<h3>Given Name</h3>
+<p>X.</p>
+<h3>Organisation Name</h3>
+<p>University of North Carolina</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>yangxiao@live.unc.edu</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Department of Geological Sciences</p>
+<h4>Country</h4>
+<p>USA</p>
+<h3>Full Name</h3>
+<p>Yang, X.</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>University of Glasgow</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00vtgdb53">https://ror.org/00vtgdb53</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Temporal Extents</h2>
+<h3>Begin</h3>
+<p>1988-01-01</p>
+<h3>End</h3>
+<p>2019-12-31</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://catalogue.ceh.ac.uk/datastore/eidchub/2efd24f9-e745-4f54-8bbd-6439b0ad93e5">https://catalogue.ceh.ac.uk/datastore/eidchub/2efd24f9-e745-4f54-8bbd-6439b0ad93e5</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>fileAccess</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/2efd24f9-e745-4f54-8bbd-6439b0ad93e5.zip">https://data-package.ceh.ac.uk/sd/2efd24f9-e745-4f54-8bbd-6439b0ad93e5.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://www.opengis.net/def/crs/EPSG/0/4326">http://www.opengis.net/def/crs/EPSG/0/4326</a></p>
+<h3>Title</h3>
+<p>WGS 84</p>
+<h2>Incoming Citations</h2>
+<h3>Description</h3>
+<p>Boothroyd, R.J., Williams, R.D., Hoey, T.B., Tolentino, P.L.M., &amp; Yang, X. (2021). National-scale assessment of decadal river migration at critical bridge infrastructure in the Philippines. Science of The Total Environment, 144460. </p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1016/j.scitotenv.2020.144460">https://doi.org/10.1016/j.scitotenv.2020.144460</a></p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2020-12-17</p>
+<h3>Released Date</h3>
+<p>2021-01-11</p>
+<h2>Use Constraints</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset">http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset</a></p>
+<h2>Access Limitation</h2>
+<p>no limitations to public access</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="http://purl.org/coar/access_right/c_abf2">http://purl.org/coar/access_right/c_abf2</a></p>
+<h2>Not G E M I N I</h2>
+<p>True</p>
+<h2>Licences</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>1</p>
+<h2>Topics</h2>
+<ul>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/18">http://onto.nerc.ac.uk/CEHMD/topic/18</a></li>
+</ul>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Boothroyd</p>
+<h3>Given Name</h3>
+<p>Richard</p>
+<h3>Organisation Name</h3>
+<p>University of Glasgow</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00vtgdb53">https://ror.org/00vtgdb53</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>richard.boothroyd@glasgow.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-9742-4229">https://orcid.org/0000-0001-9742-4229</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>School of Geographical and Earth Sciences</p>
+<h4>Country</h4>
+<p>UK</p>
+<h3>Full Name</h3>
+<p>Boothroyd, R.</p>
+<h3>Point Of Contact</h3>
+<p>University of Glasgow</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>University of Glasgow</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00vtgdb53">https://ror.org/00vtgdb53</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/2efd24f9-e745-4f54-8bbd-6439b0ad93e5.zip">https://data-package.ceh.ac.uk/sd/2efd24f9-e745-4f54-8bbd-6439b0ad93e5.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Boothroyd</p>
+<h3>Given Name</h3>
+<p>R.J.</p>
+<h3>Organisation Name</h3>
+<p>University of Glasgow</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00vtgdb53">https://ror.org/00vtgdb53</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>richard.boothroyd@glasgow.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-9742-4229">https://orcid.org/0000-0001-9742-4229</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>School of Geographical and Earth Sciences</p>
+<h4>Country</h4>
+<p>UK</p>
+<h3>Full Name</h3>
+<p>Boothroyd, R.J.</p>
+<h3>Family Name</h3>
+<p>Williams</p>
+<h3>Given Name</h3>
+<p>R.D.</p>
+<h3>Organisation Name</h3>
+<p>University of Glasgow</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00vtgdb53">https://ror.org/00vtgdb53</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>richard.williams@glasgow.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6067-1947">https://orcid.org/0000-0001-6067-1947</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>School of Geographical and Earth Sciences</p>
+<h4>Country</h4>
+<p>UK</p>
+<h3>Full Name</h3>
+<p>Williams, R.D.</p>
+<h3>Family Name</h3>
+<p>Hoey</p>
+<h3>Given Name</h3>
+<p>T.B.</p>
+<h3>Organisation Name</h3>
+<p>Brunel University London</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>trevor.hoey@brunel.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-0734-6218">https://orcid.org/0000-0003-0734-6218</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Department of Civil and Environmental Engineering</p>
+<h4>Country</h4>
+<p>UK</p>
+<h3>Full Name</h3>
+<p>Hoey, T.B.</p>
+<h3>Family Name</h3>
+<p>Tolentino</p>
+<h3>Given Name</h3>
+<p>P.L.M.</p>
+<h3>Organisation Name</h3>
+<p>University of the Philippines</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/03tbh6y23">https://ror.org/03tbh6y23</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>plmtolentino@gmail.com</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>National Institute of Geological Sciences</p>
+<h4>Country</h4>
+<p>Philippines</p>
+<h3>Full Name</h3>
+<p>Tolentino, P.L.M.</p>
+<h3>Family Name</h3>
+<p>Yang</p>
+<h3>Given Name</h3>
+<p>X.</p>
+<h3>Organisation Name</h3>
+<p>University of North Carolina</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>yangxiao@live.unc.edu</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Department of Geological Sciences</p>
+<h4>Country</h4>
+<p>USA</p>
+<h3>Full Name</h3>
+<p>Yang, X.</p>
+<h2>Publication Date</h2>
+<p>2020-12-17T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-13T16:21:21.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Boothroyd, R.J.</li>
+<li>Williams, R.D.</li>
+<li>Hoey, T.B.</li>
+<li>Tolentino, P.L.M.</li>
+<li>Yang, X.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/2efd24f9-e745-4f54-8bbd-6439b0ad93e5</p>
+<h3>Title</h3>
+<p>River channel migration and characteristics from 1988 to 2019 at 74 bridges in the Philippines</p>
+<h3>Publisher</h3>
+<p>NERC Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2020</p>
+<h3>Month</h3>
+<p>12</p>
+<h3>Day</h3>
+<p>17</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/2efd24f9-e745-4f54-8bbd-6439b0ad93e5/citation?format=bib">https://catalogue.ceh.ac.uk/documents/2efd24f9-e745-4f54-8bbd-6439b0ad93e5/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/2efd24f9-e745-4f54-8bbd-6439b0ad93e5/citation?format=ris">https://catalogue.ceh.ac.uk/documents/2efd24f9-e745-4f54-8bbd-6439b0ad93e5/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/2efd24f9-e745-4f54-8bbd-6439b0ad93e5">https://doi.org/10.5285/2efd24f9-e745-4f54-8bbd-6439b0ad93e5</a></p>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>82055942-386a-4a8b-b2a1-0c3eea12b168</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>82055942-386a-4a8b-b2a1-0c3eea12b168</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/82055942-386a-4a8b-b2a1-0c3eea12b168">https://catalogue.ceh.ac.uk/id/82055942-386a-4a8b-b2a1-0c3eea12b168</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>Flood risk assessment of the Luanhe river basin under different development strategies and climate scenarios</p>
+<h2>Description</h2>
+<p>The dataset describes the data needed for and results produced by the flood risk assessment framework under different development strategies of Luanhe river basin under a changing climate. The Luanhe river basin is located in the northeast of the North China Plain (115°30' E-119°45' E, 39°10' N-42°40'N) of China, is an essential socio-economic zone on its own in North-Eastern China, and also directly contributes to and influences the socio-economic development of the Beijing-Tianjin-Hebei region. The dataset here used for investigating the flood risk includes:
+ (1) uplifts of future climate scenarios to 2030
+ (2) the validation results of a historical event that happened in 2012
+ (3) the flood inundation prediction under different development strategies and climate scenarios to 2030
+ (4) and the spatial resident density map in Luanhe river basin to 2030. </p>
+<p>Wherein, the uplifts of the future climate change is generated based on the NASA Earth Exchange Global Daily Downscaled Projections (NEX-GDDP) dataset and will be applied to the future design rainfall to represent the future climate scenarios; a 2012 event is select to validate the flood model, and the remote sensing data is adopted as real-world observation data; considering the uplifts and future land use data as input, the validated flood model is applied to produce flood inundation prediction under different development strategies and climate scenarios to 2030; and the inundation results are used to overlay the Gridded Population of the World, Version 4 (GPWv4) and then calculate the flood risk map of the local resident. These data are mainly open data or produced by authors. With all these data, the flood risk of the Luanhe river basin in the near future (2030) can be assessed. </p>
+<h2>Metadata Date</h2>
+<p>2025-11-13T16:18:29</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/82055942-386a-4a8b-b2a1-0c3eea12b168">https://catalogue.ceh.ac.uk/id/82055942-386a-4a8b-b2a1-0c3eea12b168</a></p>
+<h3>Code</h3>
+<p>10.5285/82055942-386a-4a8b-b2a1-0c3eea12b168</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Lineage</h2>
+<p>The base data (population, climate scenarios) are mainly based on the open data (GPWv4, NEX-GDDP), and the flood inundation results are produced by the in-house high-performance integrated hydrodynamic modelling system (HiPIMS).</p>
+<p>The uplifts of climate scenarios are calculated by fitting a Log-Pearson type III distribution to the NEX-GDDP dataset to calculate the magnitudes of 100-year design rainfall at each pixel within the domain for the 'retrospective run'/historical period (i.e. 1950~2005) without climate change to give (mm/day), and future periods (2006~2030) with climate change (RCP4.5 and RCP8.5) to provide (mm/day). And this pixel-based climate change uplift is then averaged to the city-wide mask to create a city-based uplift (rcp45.csv, rcp85.csv). </p>
+<p>The parameters of the flood model are calibrated to the 2012 event, wherein the remote sensing data is considered as real-world observation (RemoteSensing_validation.tif and Validation.tif). And this calibrated model is then applied to the future development strategies (reflected by land use data) and climate change scenarios (reflected by uplifts) to calculate the flood inundation map for the future scenarios in Luanhe river basin (Baseline.tif, Conservation<em>.tif, Expansion</em>.tif, Sustainability<em>.tif, Trend</em>.tif).</p>
+<p>Base on the inundation map, the flood risk map of the local resident can be calculated by overlaying it on the GPWv4 data (Popu_2000.tif, Popu_2005.tif, Popu_2010.tif, Popu_2015.tif, Popu_2020.tif, Popu_2025.tif, Popu_2030.tif).</p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>textTable</li>
+<li>grid</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>environment</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment</a></p>
+<h2>Keywords Theme</h2>
+<p>Climate and climate change</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/4">http://onto.nerc.ac.uk/CEHMD/topic/4</a></p>
+<p>Hydrology</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/9">http://onto.nerc.ac.uk/CEHMD/topic/9</a></p>
+<p>Modelling</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/13">http://onto.nerc.ac.uk/CEHMD/topic/13</a></p>
+<h2>Keywords Other</h2>
+<p>hydrology</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/4118">http://www.eionet.europa.eu/gemet/concept/4118</a></p>
+<p>modelling</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/5327">http://www.eionet.europa.eu/gemet/concept/5327</a></p>
+<p>climate change</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/1471">http://www.eionet.europa.eu/gemet/concept/1471</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>Comma-separated values (CSV)</p>
+<h3>Type</h3>
+<p>text/csv</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h3>Name</h3>
+<p>TIFF</p>
+<h3>Type</h3>
+<p>image/tiff</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Number</h3>
+<p>NE/S012427/1</p>
+<h3>Award U R I</h3>
+<p><a href="https://gtr.ukri.org/projects?ref=NE/S012427/1">https://gtr.ukri.org/projects?ref=NE/S012427/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>104.028</p>
+<h3>East Bound Longitude</h3>
+<p>120.99</p>
+<h3>South Bound Latitude</h3>
+<p>32.951</p>
+<h3>North Bound Latitude</h3>
+<p>43.858</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[104.028, 32.951], [104.028, 43.858], [120.99, 43.858], [120.99, 32.951], [104.028, 32.951]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[104.028, 32.951], [104.028, 43.858], [120.99, 43.858], [120.99, 32.951], [104.028, 32.951]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Zhao</p>
+<h3>Given Name</h3>
+<p>Jiaheng</p>
+<h3>Organisation Name</h3>
+<p>Loughborough University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04vg4w365">https://ror.org/04vg4w365</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>j.zhao@lboro.ac.uk</p>
+<h3>Full Name</h3>
+<p>Zhao, J.</p>
+<h3>Point Of Contact</h3>
+<p>Loughborough University</p>
+<h3>Family Name</h3>
+<p>Zhao</p>
+<h3>Given Name</h3>
+<p>J.H.</p>
+<h3>Organisation Name</h3>
+<p>Loughborough University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04vg4w365">https://ror.org/04vg4w365</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>j.zhao@lboro.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-0494-1743">https://orcid.org/0000-0002-0494-1743</a></p>
+<h3>Full Name</h3>
+<p>Zhao, J.H.</p>
+<h3>Family Name</h3>
+<p>Liang</p>
+<h3>Given Name</h3>
+<p>Q.H.</p>
+<h3>Organisation Name</h3>
+<p>Loughborough University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04vg4w365">https://ror.org/04vg4w365</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>q.liang@lboro.ac.uk</p>
+<h3>Full Name</h3>
+<p>Liang, Q.H.</p>
+<h3>Family Name</h3>
+<p>Chen</p>
+<h3>Given Name</h3>
+<p>H.L.</p>
+<h3>Organisation Name</h3>
+<p>Loughborough University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04vg4w365">https://ror.org/04vg4w365</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>h.chen2@lboro.ac.uk</p>
+<h3>Full Name</h3>
+<p>Chen, H.L.</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>Loughborough University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04vg4w365">https://ror.org/04vg4w365</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>j.zhao@lboro.ac.uk</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://catalogue.ceh.ac.uk/datastore/eidchub/82055942-386a-4a8b-b2a1-0c3eea12b168">https://catalogue.ceh.ac.uk/datastore/eidchub/82055942-386a-4a8b-b2a1-0c3eea12b168</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>fileAccess</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/82055942-386a-4a8b-b2a1-0c3eea12b168.zip">https://data-package.ceh.ac.uk/sd/82055942-386a-4a8b-b2a1-0c3eea12b168.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://www.opengis.net/def/crs/EPSG/0/4326">http://www.opengis.net/def/crs/EPSG/0/4326</a></p>
+<h3>Title</h3>
+<p>WGS 84</p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2021-08-09</p>
+<h2>Use Constraints</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset">http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset</a></p>
+<h2>Access Limitation</h2>
+<p>no limitations to public access</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="http://purl.org/coar/access_right/c_abf2">http://purl.org/coar/access_right/c_abf2</a></p>
+<h2>Not G E M I N I</h2>
+<p>True</p>
+<h2>Licences</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>0</p>
+<h2>Topics</h2>
+<ul>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/4">http://onto.nerc.ac.uk/CEHMD/topic/4</a></li>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/9">http://onto.nerc.ac.uk/CEHMD/topic/9</a></li>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/13">http://onto.nerc.ac.uk/CEHMD/topic/13</a></li>
+</ul>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Zhao</p>
+<h3>Given Name</h3>
+<p>Jiaheng</p>
+<h3>Organisation Name</h3>
+<p>Loughborough University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04vg4w365">https://ror.org/04vg4w365</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>j.zhao@lboro.ac.uk</p>
+<h3>Full Name</h3>
+<p>Zhao, J.</p>
+<h3>Point Of Contact</h3>
+<p>Loughborough University</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>Loughborough University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04vg4w365">https://ror.org/04vg4w365</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>j.zhao@lboro.ac.uk</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/82055942-386a-4a8b-b2a1-0c3eea12b168.zip">https://data-package.ceh.ac.uk/sd/82055942-386a-4a8b-b2a1-0c3eea12b168.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Zhao</p>
+<h3>Given Name</h3>
+<p>J.H.</p>
+<h3>Organisation Name</h3>
+<p>Loughborough University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04vg4w365">https://ror.org/04vg4w365</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>j.zhao@lboro.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-0494-1743">https://orcid.org/0000-0002-0494-1743</a></p>
+<h3>Full Name</h3>
+<p>Zhao, J.H.</p>
+<h3>Family Name</h3>
+<p>Liang</p>
+<h3>Given Name</h3>
+<p>Q.H.</p>
+<h3>Organisation Name</h3>
+<p>Loughborough University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04vg4w365">https://ror.org/04vg4w365</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>q.liang@lboro.ac.uk</p>
+<h3>Full Name</h3>
+<p>Liang, Q.H.</p>
+<h3>Family Name</h3>
+<p>Chen</p>
+<h3>Given Name</h3>
+<p>H.L.</p>
+<h3>Organisation Name</h3>
+<p>Loughborough University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04vg4w365">https://ror.org/04vg4w365</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>h.chen2@lboro.ac.uk</p>
+<h3>Full Name</h3>
+<p>Chen, H.L.</p>
+<h2>Publication Date</h2>
+<p>2021-08-09T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-13T16:18:29.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Zhao, J.H.</li>
+<li>Liang, Q.H.</li>
+<li>Chen, H.L.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/82055942-386a-4a8b-b2a1-0c3eea12b168</p>
+<h3>Title</h3>
+<p>Flood risk assessment of the Luanhe river basin under different development strategies and climate scenarios</p>
+<h3>Publisher</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2021</p>
+<h3>Month</h3>
+<p>8</p>
+<h3>Day</h3>
+<p>9</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/82055942-386a-4a8b-b2a1-0c3eea12b168/citation?format=bib">https://catalogue.ceh.ac.uk/documents/82055942-386a-4a8b-b2a1-0c3eea12b168/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/82055942-386a-4a8b-b2a1-0c3eea12b168/citation?format=ris">https://catalogue.ceh.ac.uk/documents/82055942-386a-4a8b-b2a1-0c3eea12b168/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/82055942-386a-4a8b-b2a1-0c3eea12b168">https://doi.org/10.5285/82055942-386a-4a8b-b2a1-0c3eea12b168</a></p>
+</body>
+</html>

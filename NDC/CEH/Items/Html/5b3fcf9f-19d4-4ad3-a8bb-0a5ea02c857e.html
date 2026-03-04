@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e">https://catalogue.ceh.ac.uk/id/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>Drought indicator time series for European NUTS regions based on remote sensing data (2000-2015)</p>
+<h2>Description</h2>
+<p>This dataset consists in a collection of remotely sensed drought indicators time series. The data was extracted from CEH's gridded remotely sensed drought indicators product (Tanguy et al., 2016; <a href="http://doi.org/10.5285/4e0d0e50-2f9c-4647-864d-5c3b30bb5f4b">http://doi.org/10.5285/4e0d0e50-2f9c-4647-864d-5c3b30bb5f4b</a> which has gridded data for Europe for three drought indicators:
+ - the Vegetation Condition Index (VCI) based on satellite product NDVI (Normalised Difference Vegetation Index);
+ - the Temperature Condition Index (TCI) based on remotely sensed LST (Land Surface Temperature);
+ - the Vegetation Health Index (VHI) which is a combination of VCI and TCI.</p>
+<p>These three drought indicators have been extracted for European NUTS regions (level 0, 1, 2 and 3). These have been masked with a land use land cover map to be able to study different responses for various land cover types. A simplified LULC was created, with only four classes: forest, crop, shrub and grass. One extra time series was created for all classes together.</p>
+<h2>Metadata Date</h2>
+<p>2025-11-13T16:16:18</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e">https://catalogue.ceh.ac.uk/id/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e</a></p>
+<h3>Code</h3>
+<p>10.5285/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Lineage</h2>
+<p>Time series for three drought indicators based on remote sensing have been extracted for European NUTS regions (level 0, 1, 2 and 3). The Nomenclature of Territorial Units for Statistics, (NUTS, for the French Nomenclature des unités territoriales statistiques), developed by the European Union, is a geocode standard for referencing the administrative divisions of countries for statistical purposes. A land use mask was applied to extract the time series, to differentiate the contribution of crops, grass, forest and shrubs. There is also one time series for each NUTS region which includes all classes. The land cover product used to produce the mask was remote sensing MODIS product MCD12C1 (year 2012) which has a 0.05 degree resolution. The three drought indicators extracted are (i) the Vegetation Condition Index (VCI) based on satellite product NDVI (Normalised Difference Vegetation Index) (ii) the Temperature Condition Index based on remotely sensed LST (Land Surface Temperature) and (iii) the Vegetation Health Index (VHI) which is a combination of VCI and TCI. These indicators were first calculated as a gridded product for Europe with a 0.05 degree resolution and monthly time step (2000-2015), using MODIS product MOD13C2 for NDVI, and MODIS product MOD11C3 for LST, following methodology described by Kogan (1995; <a href="https://doi.org/10.1016/0273-1177(95)00079-T">https://doi.org/10.1016/0273-1177(95)00079-T</a> The time series were then extracted applying the simplified land use classification mask (crops, forest, grass, shrubs) to each NUTS region, and an additional time series for all classes. For each time step, a value was produced only if at least 50% of the pixels within the non-masked area had valid values.</p>
+<p>NOTE: there are two types of "No Data" value. Value '--' means there were no pixels with valid values within the non-masked area. Value 'nan' means there were some pixels with valid values within the non-masked area, but these covered less than 50% of the area. These time steps were discarded as less than 50% was considered not representative enough of the whole area.</p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>textTable</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>environment</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment</a></p>
+<h2>Keywords Theme</h2>
+<p>Environmental risk</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/5">http://onto.nerc.ac.uk/CEHMD/topic/5</a></p>
+<h2>Keywords Other</h2>
+<p>Vegetation Condition Index </p>
+<p>VCI</p>
+<p>Normalised Difference Vegetation Index</p>
+<p>NVDI</p>
+<p>moderate-resolution imaging spectroradiometer</p>
+<p>MODIS</p>
+<p>Land Surface Temperature</p>
+<p>LST</p>
+<p>Temperature Condition Index </p>
+<p>TCI</p>
+<p>DrIVER</p>
+<p>NUTS</p>
+<p>crops</p>
+<p>shrubs</p>
+<p>monitoring and early warning system</p>
+<p>Nomenclature of Territorial Units for Statistics</p>
+<p>Nomenclature des unités territoriales statistiques</p>
+<p>drought</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/2347">http://www.eionet.europa.eu/gemet/concept/2347</a></p>
+<p>grass</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/3729">http://www.eionet.europa.eu/gemet/concept/3729</a></p>
+<p>forest</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/3406">http://www.eionet.europa.eu/gemet/concept/3406</a></p>
+<p>land cover</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/4612">http://www.eionet.europa.eu/gemet/concept/4612</a></p>
+<p>land use</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/4678">http://www.eionet.europa.eu/gemet/concept/4678</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>Comma-separated values (CSV)</p>
+<h3>Type</h3>
+<p>text/csv</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Inspire Themes</h2>
+<h3>Theme</h3>
+<p>Meteorological geographical features</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/theme/mf">http://inspire.ec.europa.eu/theme/mf</a></p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>-15</p>
+<h3>East Bound Longitude</h3>
+<p>45</p>
+<h3>South Bound Latitude</h3>
+<p>30</p>
+<h3>North Bound Latitude</h3>
+<p>75</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-15, 30], [-15, 75], [45, 75], [45, 30], [-15, 30]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[-15, 30], [-15, 75], [45, 75], [45, 30], [-15, 30]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Family Name</h3>
+<p>Tanguy</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>McLean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Tanguy, M.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Family Name</h3>
+<p>Tanguy</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-1516-6834">https://orcid.org/0000-0002-1516-6834</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>McLean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Tanguy, M.</p>
+<h3>Family Name</h3>
+<p>Bachmair</p>
+<h3>Given Name</h3>
+<p>S.</p>
+<h3>Organisation Name</h3>
+<p>Albert-Ludwigs-University of Freiburg</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/0245cg223">https://ror.org/0245cg223</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>sophie.bachmair@hydrology.uni-freiburg.de</p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>Freiburg</p>
+<h4>Country</h4>
+<p>Germany</p>
+<h3>Full Name</h3>
+<p>Bachmair, S.</p>
+<h3>Family Name</h3>
+<p>Stahl</p>
+<h3>Given Name</h3>
+<p>K.</p>
+<h3>Organisation Name</h3>
+<p>Albert-Ludwigs-University of Freiburg</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/0245cg223">https://ror.org/0245cg223</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>kerstin.stahl@hydrology.uni-freiburg.de</p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>Freiburg</p>
+<h4>Country</h4>
+<p>Germany</p>
+<h3>Full Name</h3>
+<p>Stahl, K.</p>
+<h3>Family Name</h3>
+<p>Hannaford</p>
+<h3>Given Name</h3>
+<p>J.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-5256-3310">https://orcid.org/0000-0002-5256-3310</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>McLean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Hannaford, J.</p>
+<h3>Organisation Name</h3>
+<p>NERC Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Temporal Extents</h2>
+<h3>Begin</h3>
+<p>2000-01-01</p>
+<h3>End</h3>
+<p>2015-12-31</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://catalogue.ceh.ac.uk/datastore/eidchub/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e">https://catalogue.ceh.ac.uk/datastore/eidchub/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>fileAccess</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e.zip">https://data-package.ceh.ac.uk/sd/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://ec.europa.eu/eurostat/web/nuts">http://ec.europa.eu/eurostat/web/nuts</a></p>
+<h3>Title</h3>
+<p>EU NUTS Regions</p>
+<h2>Incoming Citations</h2>
+<h3>Description</h3>
+<p>Bachmair, S., Tanguy, Hannaford, J., Stahl, K., (2018). How well do meteorological indicators represent agricultural and forest drought across Europe? Environmental Research Letters, 13 , 3</p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1088/1748-9326/aaafda">https://doi.org/10.1088/1748-9326/aaafda</a></p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2016-07-11</p>
+<h2>Use Constraints</h2>
+<p>This resource is made available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<p>© UK Centre for Ecology &amp; Hydrology</p>
+<h3>Code</h3>
+<p>copyright</p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h2>Access Limitation</h2>
+<p>no limitations to public access</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="http://purl.org/coar/access_right/c_abf2">http://purl.org/coar/access_right/c_abf2</a></p>
+<h2>Not G E M I N I</h2>
+<p>False</p>
+<h2>Licences</h2>
+<p>This resource is made available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>1</p>
+<h2>Topics</h2>
+<ul>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/5">http://onto.nerc.ac.uk/CEHMD/topic/5</a></li>
+</ul>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Family Name</h3>
+<p>Tanguy</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>McLean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Tanguy, M.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e.zip">https://data-package.ceh.ac.uk/sd/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Tanguy</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-1516-6834">https://orcid.org/0000-0002-1516-6834</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>McLean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Tanguy, M.</p>
+<h3>Family Name</h3>
+<p>Bachmair</p>
+<h3>Given Name</h3>
+<p>S.</p>
+<h3>Organisation Name</h3>
+<p>Albert-Ludwigs-University of Freiburg</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/0245cg223">https://ror.org/0245cg223</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>sophie.bachmair@hydrology.uni-freiburg.de</p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>Freiburg</p>
+<h4>Country</h4>
+<p>Germany</p>
+<h3>Full Name</h3>
+<p>Bachmair, S.</p>
+<h3>Family Name</h3>
+<p>Stahl</p>
+<h3>Given Name</h3>
+<p>K.</p>
+<h3>Organisation Name</h3>
+<p>Albert-Ludwigs-University of Freiburg</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/0245cg223">https://ror.org/0245cg223</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>kerstin.stahl@hydrology.uni-freiburg.de</p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>Freiburg</p>
+<h4>Country</h4>
+<p>Germany</p>
+<h3>Full Name</h3>
+<p>Stahl, K.</p>
+<h3>Family Name</h3>
+<p>Hannaford</p>
+<h3>Given Name</h3>
+<p>J.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-5256-3310">https://orcid.org/0000-0002-5256-3310</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>McLean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Hannaford, J.</p>
+<h2>Publication Date</h2>
+<p>2016-07-11T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-13T16:16:18.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Tanguy, M.</li>
+<li>Bachmair, S.</li>
+<li>Stahl, K.</li>
+<li>Hannaford, J.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e</p>
+<h3>Title</h3>
+<p>Drought indicator time series for European NUTS regions based on remote sensing data (2000-2015)</p>
+<h3>Publisher</h3>
+<p>NERC Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2016</p>
+<h3>Month</h3>
+<p>7</p>
+<h3>Day</h3>
+<p>11</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e/citation?format=bib">https://catalogue.ceh.ac.uk/documents/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e/citation?format=ris">https://catalogue.ceh.ac.uk/documents/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e">https://doi.org/10.5285/5b3fcf9f-19d4-4ad3-a8bb-0a5ea02c857e</a></p>
+</body>
+</html>
