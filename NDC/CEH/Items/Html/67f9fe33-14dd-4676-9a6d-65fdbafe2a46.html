@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>67f9fe33-14dd-4676-9a6d-65fdbafe2a46</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>67f9fe33-14dd-4676-9a6d-65fdbafe2a46</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/67f9fe33-14dd-4676-9a6d-65fdbafe2a46">https://catalogue.ceh.ac.uk/id/67f9fe33-14dd-4676-9a6d-65fdbafe2a46</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>Simulated landscape metrics of configuration and Ecosystem Service provision across virtual landscapes, based within River Conwy </p>
+<h2>Description</h2>
+<p>These data are metrics of landscape configuration and modelled provision of Ecosystem services for a large number of virtual landscapes (c. 7500) superimposed on real topography. The landscapes are made up of patches of woodland interspersed across a grassland, and were generated with the landscapeR package in R.  The topography used is from the Conwy catchment, split into 10 sections to enable comparison between topographies. Metrics were generated for each virtual landscape to quantify landscape configuration. An Ecosystem Services model (LUCI) was run to calculate a metric of “area mitigated” as a proxy for the provision of runoff mitigation Ecosystem Services. Simulated landscapes were established to answer two questions: firstly to identify the relative controls of patch area and fragmentation on service provision and secondly to identify catchment feature controls on these relationships. </p>
+<p>The work was done by Dario Masante and Amy Thomas, with input from Laurence Jones, as part of work under the NERC Biodiversity and Ecosystem Services (BESS) project NERC Grant Ref: NE/K015508/1.</p>
+<h2>Metadata Date</h2>
+<p>2025-11-13T16:24:59</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/67f9fe33-14dd-4676-9a6d-65fdbafe2a46">https://catalogue.ceh.ac.uk/id/67f9fe33-14dd-4676-9a6d-65fdbafe2a46</a></p>
+<h3>Code</h3>
+<p>10.5285/67f9fe33-14dd-4676-9a6d-65fdbafe2a46</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Lineage</h2>
+<p>Relatively simple landscapes were produced consisting of two components in varying landscape configurations. To do this LandscapeR, was artificially set with the whole area as improved grassland. Patches of woodland were then added within this landscape, in controlled combinations of patch area and number of patches. LandscapeR was set to expand patches in circular patterns to minimise the influence of patch shape on our analysis.
+In the first stage of the simulation, 100 simulated landscape configurations of woodland patches and improved grassland were created for the Hiraethlyn sub-catchment, allocating patches randomly up to the user input number of patches and area of coverage.</p>
+<p>In the second phase of analysis,  the landscape generation approach was repeated for 10 test areas. For this phase, landscape proportion and patch number were not pre-set, so the landscapes generated have random numbers of patches and fall along a continuum from 0-100% woodland, instead of being clustered around set landscape proportions.</p>
+<p>The Land Utilisation Capability Indicator (LUCI) model was run for each landscape to provide a value of “area mitigated”. For both datasets, landscape metrics were calculated using SDMTools and SAGA terrain modules in R.
+QA: Note that as patches start accumulating in the landscape, they merge and so the complexity of patch shapes inevitably increases. For dataset “Output_SummaryHiraethlyn”, since patch placement was random, some user set combinations were not achieved in the output, due to merging of patches, reducing the actual number of patches. To minimise merging, when allocation resulted in a lesser number of patches than seeded, the process was repeated until the seed number was reached, or the highest in one hundred trials. User input landscape proportion was given preference over achieving the number of patches. Merging may therefore result in a negative correlation between landscape proportion and number of patches across the dataset, and we must take this into account when analysing the outputs.</p>
+<p>Data were output to Excel spreadsheets. Data was then exported to comma separated files for ingestion into the EIDC.</p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>textTable</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>environment</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment</a></p>
+<h2>Keywords Other</h2>
+<p>landscape configuration</p>
+<p>non-linear response</p>
+<p>land use change</p>
+<p>Ecosystem Service bundles</p>
+<p>LandscapeR</p>
+<p>Land Utilisation Capability Indicator (LUCI)</p>
+<p>ecosystem services</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/15138">http://www.eionet.europa.eu/gemet/concept/15138</a></p>
+<p>land use</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/4678">http://www.eionet.europa.eu/gemet/concept/4678</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>Comma-separated values (CSV)</p>
+<h3>Type</h3>
+<p>text/csv</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Inspire Themes</h2>
+<h3>Theme</h3>
+<p>Environmental Monitoring Facilities</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/theme/ef">http://inspire.ec.europa.eu/theme/ef</a></p>
+<h2>Spatial Resolutions</h2>
+<h3>Distance</h3>
+<p>5</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Title</h3>
+<p>Biodiversity and Ecosystem Services (BESS) </p>
+<h3>Award Number</h3>
+<p>NE/K015508/1</p>
+<h3>Award U R I</h3>
+<p><a href="https://gtr.ukri.org/projects?ref=NE/K015508/1">https://gtr.ukri.org/projects?ref=NE/K015508/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>-3.966</p>
+<h3>East Bound Longitude</h3>
+<p>-3.724</p>
+<h3>South Bound Latitude</h3>
+<p>53.028</p>
+<h3>North Bound Latitude</h3>
+<p>53.278</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-3.966, 53.028], [-3.966, 53.278], [-3.724, 53.278], [-3.724, 53.028], [-3.966, 53.028]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[-3.966, 53.028], [-3.966, 53.278], [-3.724, 53.278], [-3.724, 53.028], [-3.966, 53.028]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Thomas</p>
+<h3>Given Name</h3>
+<p>Amy</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Environment Centre Wales, Deiniol Road</p>
+<h4>City</h4>
+<p>Bangor</p>
+<h4>Administrative Area</h4>
+<p>Gwynedd</p>
+<h4>Postal Code</h4>
+<p>LL57 2UW</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Thomas, A.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Family Name</h3>
+<p>Masante</p>
+<h3>Given Name</h3>
+<p>D.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Masante, D.</p>
+<h3>Family Name</h3>
+<p>Thomas</p>
+<h3>Given Name</h3>
+<p>A.R.C.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-4929-7285">https://orcid.org/0000-0002-4929-7285</a></p>
+<h3>Full Name</h3>
+<p>Thomas, A.R.C.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/data/67f9fe33-14dd-4676-9a6d-65fdbafe2a46">https://data-package.ceh.ac.uk/data/67f9fe33-14dd-4676-9a6d-65fdbafe2a46</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>download</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/67f9fe33-14dd-4676-9a6d-65fdbafe2a46.zip">https://data-package.ceh.ac.uk/sd/67f9fe33-14dd-4676-9a6d-65fdbafe2a46.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://www.opengis.net/def/crs/EPSG/0/27700">http://www.opengis.net/def/crs/EPSG/0/27700</a></p>
+<h3>Title</h3>
+<p>OSGB 1936 / British National Grid</p>
+<h2>Incoming Citations</h2>
+<h3>Description</h3>
+<p>Thomas, A., Masante, D., Jackson, B., Cosby, B., Emmett, B., &amp; Jones, L. (2020). Fragmentation and thresholds in hydrological flow‐based ecosystem services. Ecological Applications, 30(2). </p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1002/eap.2046">https://doi.org/10.1002/eap.2046</a></p>
+<h2>Supplemental</h2>
+<h3>Name</h3>
+<p>landscapeR package</p>
+<h3>Description</h3>
+<p>The landscapeR package was used to vary simulated land cover under controlled conditions, superimposed on real topography. </p>
+<h3>Url</h3>
+<p><a href="https://cran.r-project.org/web/packages/landscapeR/">https://cran.r-project.org/web/packages/landscapeR/</a></p>
+<h3>Function</h3>
+<p>website</p>
+<h3>Name</h3>
+<p>Land Utilisation Capability Indicator (LUCI) website</p>
+<h3>Url</h3>
+<p><a href="https://www.lucitools.org/">https://www.lucitools.org/</a></p>
+<h3>Function</h3>
+<p>website</p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2019-09-30</p>
+<h2>Resource Maintenance</h2>
+<h3>Frequency Of Update</h3>
+<p>notPlanned</p>
+<h2>Use Constraints</h2>
+<p>© UK Centre for Ecology &amp; Hydrology</p>
+<h3>Code</h3>
+<p>copyright</p>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset">http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset</a></p>
+<h2>Access Limitation</h2>
+<p>no limitations to public access</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="http://purl.org/coar/access_right/c_abf2">http://purl.org/coar/access_right/c_abf2</a></p>
+<h2>Not G E M I N I</h2>
+<p>False</p>
+<h2>Licences</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>1</p>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Thomas</p>
+<h3>Given Name</h3>
+<p>Amy</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Environment Centre Wales, Deiniol Road</p>
+<h4>City</h4>
+<p>Bangor</p>
+<h4>Administrative Area</h4>
+<p>Gwynedd</p>
+<h4>Postal Code</h4>
+<p>LL57 2UW</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Thomas, A.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/67f9fe33-14dd-4676-9a6d-65fdbafe2a46.zip">https://data-package.ceh.ac.uk/sd/67f9fe33-14dd-4676-9a6d-65fdbafe2a46.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Masante</p>
+<h3>Given Name</h3>
+<p>D.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Full Name</h3>
+<p>Masante, D.</p>
+<h3>Family Name</h3>
+<p>Thomas</p>
+<h3>Given Name</h3>
+<p>A.R.C.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-4929-7285">https://orcid.org/0000-0002-4929-7285</a></p>
+<h3>Full Name</h3>
+<p>Thomas, A.R.C.</p>
+<h2>Publication Date</h2>
+<p>2019-09-30T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-13T16:24:59.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Masante, D.</li>
+<li>Thomas, A.R.C.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/67f9fe33-14dd-4676-9a6d-65fdbafe2a46</p>
+<h3>Title</h3>
+<p>Simulated landscape metrics of configuration and Ecosystem Service provision across virtual landscapes, based within River Conwy </p>
+<h3>Publisher</h3>
+<p>NERC Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2019</p>
+<h3>Month</h3>
+<p>9</p>
+<h3>Day</h3>
+<p>30</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/67f9fe33-14dd-4676-9a6d-65fdbafe2a46/citation?format=bib">https://catalogue.ceh.ac.uk/documents/67f9fe33-14dd-4676-9a6d-65fdbafe2a46/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/67f9fe33-14dd-4676-9a6d-65fdbafe2a46/citation?format=ris">https://catalogue.ceh.ac.uk/documents/67f9fe33-14dd-4676-9a6d-65fdbafe2a46/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/67f9fe33-14dd-4676-9a6d-65fdbafe2a46">https://doi.org/10.5285/67f9fe33-14dd-4676-9a6d-65fdbafe2a46</a></p>
+</body>
+</html>
