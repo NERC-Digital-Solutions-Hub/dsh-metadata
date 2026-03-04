@@ -1,0 +1,1124 @@
+## Id
+
+d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded
+
+
+## Uri
+
+[https://catalogue.ceh.ac.uk/id/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded](https://catalogue.ceh.ac.uk/id/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded)
+
+
+## Type
+
+dataset
+
+
+## Title
+
+Coastal Biodiversity and Ecosystem Service Sustainability (CBESS) total organic carbon in mudflat and saltmarsh habitats
+
+
+## Description
+
+The dataset details organic carbon content of sediments across 6 intertidal sites in the winter and summer of 2013. The data provide a quantitative measure of the organic carbon present within surface sediments (up to a depth of 2 cm). Three sites were located in Essex, South East England and the other 3 in Morecambe Bay, North West England. Each site consisted of a saltmarsh habitat and adjacent mudflat habitat. 22 sampling quadrats were placed in each habitat covering 4 spatial scales. 3 replicate samples of surface sediment were collected at each quadrat. They were then processed for organic carbon content using the Loss on Ignition method (detailed below) Values are expressed as a percentage of the total sample collected.
+
+This data was collected as part of Coastal Biodiversity and Ecosystem Service Sustainability (CBESS): NE/J015644/1. The project was funded with support from the Biodiversity and Ecosystem Service Sustainability (BESS) programme. BESS is a six-year programme (2011-2017) funded by the UK Natural Environment Research Council (NERC) and the Biotechnology and Biological Sciences Research Council (BBSRC) as part of the UK's Living with Environmental Change (LWEC) programme.
+
+
+
+## Metadata Date
+
+2025-11-13T16:26:12
+
+
+## Resource Identifiers
+
+### Code
+
+[https://catalogue.ceh.ac.uk/id/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded](https://catalogue.ceh.ac.uk/id/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded)
+
+
+### Code
+
+10.5285/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded
+
+
+### Code Space
+
+doi:
+
+
+
+
+## Relationships
+
+### Relation
+
+[https://vocabs.ceh.ac.uk/eidc#memberOf](https://vocabs.ceh.ac.uk/eidc#memberOf)
+
+
+### Target
+
+413dc2b2-f38b-4f8a-a198-f78b07534fb8
+
+
+
+
+## Lineage
+
+The location of the sample sites was determined by randomly allocated quadrats. Twenty two 1 x 1 m quadrats were randomly allocated to each mudflat and saltmarsh site using R (R Development Core Team, 2014) to specify four different spatial scales (A = 1 quadrat only, B = 3 quadrats at 1 m to 10 m apart, C = 6 quadrats at 10 m to 100 m apart, D = 12 quadrats at 100 m to 1000 m or site maximum).
+
+Mudflats: surface scrapes of sediment were taken. Saltmarsh: sediment was cut from 2cm below the surface. All samples were frozen at minus 20 degrees and then analysed using standard loss on ignition (LOI) technique, full details of which can be found here: [http://www.geog.cam.ac.uk/facilities/laboratories/techniques/loi.html](http://www.geog.cam.ac.uk/facilities/laboratories/techniques/loi.html)
+
+
+
+## Spatial Representation Types
+
+- textTable
+
+
+## Topic Categories
+
+oceans
+
+### Uri
+
+[http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/oceans](http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/oceans)
+
+
+
+
+## Keywords Place
+
+Essex
+
+### Uri
+
+[http://sws.geonames.org/2649889](http://sws.geonames.org/2649889)
+
+
+Morecambe Bay
+
+### Uri
+
+[http://sws.geonames.org/2642213](http://sws.geonames.org/2642213)
+
+
+United Kingdom
+
+### Uri
+
+[http://sws.geonames.org/2635167](http://sws.geonames.org/2635167)
+
+
+
+
+## Keywords Project
+
+BESS
+
+CBESS
+
+
+
+## Keywords Other
+
+spatial scale
+
+organic carbon
+
+### Uri
+
+[http://www.eionet.europa.eu/gemet/concept/5892](http://www.eionet.europa.eu/gemet/concept/5892)
+
+
+season
+
+### Uri
+
+[http://www.eionet.europa.eu/gemet/concept/7529](http://www.eionet.europa.eu/gemet/concept/7529)
+
+
+intertidal zone
+
+### Uri
+
+[http://www.eionet.europa.eu/gemet/concept/4454](http://www.eionet.europa.eu/gemet/concept/4454)
+
+
+benthic ecosystem
+
+### Uri
+
+[http://www.eionet.europa.eu/gemet/concept/773](http://www.eionet.europa.eu/gemet/concept/773)
+
+
+sediment
+
+### Uri
+
+[http://www.eionet.europa.eu/gemet/concept/7565](http://www.eionet.europa.eu/gemet/concept/7565)
+
+
+salt marsh
+
+### Uri
+
+[http://www.eionet.europa.eu/gemet/concept/7396](http://www.eionet.europa.eu/gemet/concept/7396)
+
+
+mud flat
+
+### Uri
+
+[http://www.eionet.europa.eu/gemet/concept/5415](http://www.eionet.europa.eu/gemet/concept/5415)
+
+
+
+
+## Distribution Formats
+
+### Name
+
+Comma-separated values (CSV)
+
+
+### Type
+
+text/csv
+
+
+### Version
+
+unknown
+
+
+
+
+## Inspire Themes
+
+### Theme
+
+Habitats and Biotopes
+
+
+### Uri
+
+[http://inspire.ec.europa.eu/theme/hb](http://inspire.ec.europa.eu/theme/hb)
+
+
+
+
+## Funding
+
+### Funder Name
+
+Natural Environment Research Council
+
+
+### Funder Identifier
+
+[https://ror.org/02b5d8509](https://ror.org/02b5d8509)
+
+
+### Award Number
+
+NE/J015644/1
+
+
+### Award U R I
+
+[https://gtr.ukri.org/projects?ref=NE/J015644/1](https://gtr.ukri.org/projects?ref=NE/J015644/1)
+
+
+### Ror
+
+True
+
+
+### Orcid
+
+False
+
+
+
+
+## Bounding Boxes
+
+### West Bound Longitude
+
+-3
+
+
+### East Bound Longitude
+
+1
+
+
+### South Bound Latitude
+
+51.5
+
+
+### North Bound Latitude
+
+54.25
+
+
+### Bounds
+
+{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-3, 51.5], [-3, 54.25], [1, 54.25], [1, 51.5], [-3, 51.5]]]      }}
+
+
+### Coordinates
+
+[[[-3, 51.5], [-3, 54.25], [1, 54.25], [1, 51.5], [-3, 51.5]]]
+
+
+
+
+## Distributor Contacts
+
+### Organisation Name
+
+NERC EDS Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+distributor
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Responsible Parties
+
+### Honorific Prefix
+
+Professor
+
+
+### Family Name
+
+Solan
+
+
+### Given Name
+
+Martin
+
+
+### Organisation Name
+
+University of Southampton
+
+
+### Organisation Identifier
+
+[https://ror.org/01ryk1543](https://ror.org/01ryk1543)
+
+
+### Role
+
+pointOfContact
+
+
+### Email
+
+m.solan@soton.ac.uk
+
+
+### Full Name
+
+Solan, M.
+
+
+### Point Of Contact
+
+University of Southampton
+
+
+### Family Name
+
+Wood
+
+
+### Given Name
+
+C.L.
+
+
+### Organisation Name
+
+University of Southampton
+
+
+### Organisation Identifier
+
+[https://ror.org/01ryk1543](https://ror.org/01ryk1543)
+
+
+### Role
+
+author
+
+
+### Email
+
+c.l.wood@soton.ac.uk
+
+
+### Full Name
+
+Wood, C.L.
+
+
+### Family Name
+
+Hawkins
+
+
+### Given Name
+
+S.J.
+
+
+### Organisation Name
+
+University of Southampton
+
+
+### Organisation Identifier
+
+[https://ror.org/01ryk1543](https://ror.org/01ryk1543)
+
+
+### Role
+
+author
+
+
+### Email
+
+S.J.Hawkins@soton.ac.uk
+
+
+### Full Name
+
+Hawkins, S.J.
+
+
+### Family Name
+
+Godbold
+
+
+### Given Name
+
+J.A.
+
+
+### Organisation Name
+
+University of Southampton
+
+
+### Organisation Identifier
+
+[https://ror.org/01ryk1543](https://ror.org/01ryk1543)
+
+
+### Role
+
+author
+
+
+### Email
+
+J.A.Godbold@soton.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0001-5558-8188](https://orcid.org/0000-0001-5558-8188)
+
+
+### Full Name
+
+Godbold, J.A.
+
+
+### Honorific Prefix
+
+Professor
+
+
+### Family Name
+
+Solan
+
+
+### Given Name
+
+Martin
+
+
+### Organisation Name
+
+University of Southampton
+
+
+### Organisation Identifier
+
+[https://ror.org/01ryk1543](https://ror.org/01ryk1543)
+
+
+### Role
+
+author
+
+
+### Email
+
+m.solan@soton.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0001-9924-5574](https://orcid.org/0000-0001-9924-5574)
+
+
+### Full Name
+
+Solan, M.
+
+
+### Organisation Name
+
+NERC Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+publisher
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+### Organisation Name
+
+NERC EDS Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+custodian
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+### Organisation Name
+
+University of Southampton
+
+
+### Organisation Identifier
+
+[https://ror.org/01ryk1543](https://ror.org/01ryk1543)
+
+
+### Role
+
+rightsHolder
+
+
+
+
+## Temporal Extents
+
+### Begin
+
+2013-01-01
+
+
+### End
+
+2013-08-01
+
+
+
+
+## Online Resources
+
+### Url
+
+[https://data-package.ceh.ac.uk/data/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded](https://data-package.ceh.ac.uk/data/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded)
+
+
+### Name
+
+Download the data
+
+
+### Description
+
+Download a copy of this data
+
+
+### Function
+
+download
+
+
+### Type
+
+OTHER
+
+
+### Url
+
+[https://data-package.ceh.ac.uk/sd/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded.zip](https://data-package.ceh.ac.uk/sd/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded.zip)
+
+
+### Name
+
+Supporting information
+
+
+### Description
+
+Supporting information available to assist in re-use of this dataset
+
+
+### Function
+
+information
+
+
+### Type
+
+OTHER
+
+
+
+
+## Spatial Reference Systems
+
+### Code
+
+[http://www.opengis.net/def/crs/EPSG/0/27700](http://www.opengis.net/def/crs/EPSG/0/27700)
+
+
+### Title
+
+OSGB 1936 / British National Grid
+
+
+
+
+## Dataset Reference Date
+
+### Creation Date
+
+2013-08-01
+
+
+### Publication Date
+
+2015-12-31
+
+
+### Released Date
+
+2018-03-31
+
+
+
+## Resource Maintenance
+
+### Frequency Of Update
+
+notPlanned
+
+
+### Note
+
+Dataset is complete
+
+
+
+
+## Use Constraints
+
+This resource is made available under the terms of the Open Government Licence
+
+### Code
+
+license
+
+
+### Uri
+
+[https://eidc.ac.uk/licences/ogl/plain](https://eidc.ac.uk/licences/ogl/plain)
+
+
+© University of Southampton
+
+### Code
+
+copyright
+
+
+
+
+## Resource Type
+
+dataset
+
+
+## Access Limitation
+
+no limitations to public access
+
+### Code
+
+Available
+
+
+### Uri
+
+[http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations](http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations)
+
+
+
+## Not G E M I N I
+
+False
+
+
+## Licences
+
+This resource is made available under the terms of the Open Government Licence
+
+### Code
+
+license
+
+
+### Uri
+
+[https://eidc.ac.uk/licences/ogl/plain](https://eidc.ac.uk/licences/ogl/plain)
+
+
+
+
+## Incoming Citation Count
+
+0
+
+
+## Resource Status
+
+Available
+
+
+## Points Of Contact
+
+### Honorific Prefix
+
+Professor
+
+
+### Family Name
+
+Solan
+
+
+### Given Name
+
+Martin
+
+
+### Organisation Name
+
+University of Southampton
+
+
+### Organisation Identifier
+
+[https://ror.org/01ryk1543](https://ror.org/01ryk1543)
+
+
+### Role
+
+pointOfContact
+
+
+### Email
+
+m.solan@soton.ac.uk
+
+
+### Full Name
+
+Solan, M.
+
+
+### Point Of Contact
+
+University of Southampton
+
+
+
+
+## Rights Holders
+
+### Organisation Name
+
+University of Southampton
+
+
+### Organisation Identifier
+
+[https://ror.org/01ryk1543](https://ror.org/01ryk1543)
+
+
+### Role
+
+rightsHolder
+
+
+
+
+## Info Links
+
+### Url
+
+[https://data-package.ceh.ac.uk/sd/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded.zip](https://data-package.ceh.ac.uk/sd/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded.zip)
+
+
+### Name
+
+Supporting information
+
+
+### Description
+
+Supporting information available to assist in re-use of this dataset
+
+
+### Function
+
+information
+
+
+### Type
+
+OTHER
+
+
+
+
+## Publishers
+
+### Organisation Name
+
+NERC Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+publisher
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Authors
+
+### Family Name
+
+Wood
+
+
+### Given Name
+
+C.L.
+
+
+### Organisation Name
+
+University of Southampton
+
+
+### Organisation Identifier
+
+[https://ror.org/01ryk1543](https://ror.org/01ryk1543)
+
+
+### Role
+
+author
+
+
+### Email
+
+c.l.wood@soton.ac.uk
+
+
+### Full Name
+
+Wood, C.L.
+
+
+### Family Name
+
+Hawkins
+
+
+### Given Name
+
+S.J.
+
+
+### Organisation Name
+
+University of Southampton
+
+
+### Organisation Identifier
+
+[https://ror.org/01ryk1543](https://ror.org/01ryk1543)
+
+
+### Role
+
+author
+
+
+### Email
+
+S.J.Hawkins@soton.ac.uk
+
+
+### Full Name
+
+Hawkins, S.J.
+
+
+### Family Name
+
+Godbold
+
+
+### Given Name
+
+J.A.
+
+
+### Organisation Name
+
+University of Southampton
+
+
+### Organisation Identifier
+
+[https://ror.org/01ryk1543](https://ror.org/01ryk1543)
+
+
+### Role
+
+author
+
+
+### Email
+
+J.A.Godbold@soton.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0001-5558-8188](https://orcid.org/0000-0001-5558-8188)
+
+
+### Full Name
+
+Godbold, J.A.
+
+
+### Honorific Prefix
+
+Professor
+
+
+### Family Name
+
+Solan
+
+
+### Given Name
+
+Martin
+
+
+### Organisation Name
+
+University of Southampton
+
+
+### Organisation Identifier
+
+[https://ror.org/01ryk1543](https://ror.org/01ryk1543)
+
+
+### Role
+
+author
+
+
+### Email
+
+m.solan@soton.ac.uk
+
+
+### Name Identifier
+
+[https://orcid.org/0000-0001-9924-5574](https://orcid.org/0000-0001-9924-5574)
+
+
+### Full Name
+
+Solan, M.
+
+
+
+
+## Publication Date
+
+2015-12-31T00:00:00.000+00:00
+
+
+## Custodians
+
+### Organisation Name
+
+NERC EDS Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+custodian
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Updated Date
+
+2025-11-13T16:26:12.000+00:00
+
+
+## Citation
+
+### Authors
+
+- Wood, C.L.
+- Hawkins, S.J.
+- Godbold, J.A.
+- Solan, M.
+
+
+### Doi
+
+10.5285/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded
+
+
+### Title
+
+Coastal Biodiversity and Ecosystem Service Sustainability (CBESS) total organic carbon in mudflat and saltmarsh habitats
+
+
+### Publisher
+
+NERC Environmental Information Data Centre
+
+
+### Resource Type General
+
+dataset
+
+
+### Year
+
+2015
+
+
+### Month
+
+12
+
+
+### Day
+
+31
+
+
+### Bibtex
+
+[https://catalogue.ceh.ac.uk/documents/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded/citation?format=bib](https://catalogue.ceh.ac.uk/documents/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded/citation?format=bib)
+
+
+### Ris
+
+[https://catalogue.ceh.ac.uk/documents/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded/citation?format=ris](https://catalogue.ceh.ac.uk/documents/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded/citation?format=ris)
+
+
+### Url
+
+[https://doi.org/10.5285/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded](https://doi.org/10.5285/d4e9f0f7-637a-4aa4-b9df-2a4ca5bfaded)
+
+

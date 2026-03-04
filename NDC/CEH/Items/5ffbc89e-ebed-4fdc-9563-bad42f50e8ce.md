@@ -1,0 +1,896 @@
+## Id
+
+5ffbc89e-ebed-4fdc-9563-bad42f50e8ce
+
+
+## Uri
+
+[https://catalogue.ceh.ac.uk/id/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce](https://catalogue.ceh.ac.uk/id/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce)
+
+
+## Type
+
+dataset
+
+
+## Title
+
+Coastal Biodiversity and Ecosystem Service Sustainability (CBESS) surface sediment water content in saltmarsh and mudflat habitats
+
+
+## Description
+
+The dataset details surface sediment water content across six intertidal sites in the winter and summer of 2013. Three of the sites were in Morecambe Bay, North West England and three of the sites were in Essex, South East England. Each of these sites consisted of a saltmarsh area and adjacent mudflat area, with twenty two sampling quadrats placed on each area. Five replicate sediment samples were taken at each quadrat and then freeze dried to give average percentage water content. 
+
+This data was collected as part of Coastal Biodiversity and Ecosystem Service Sustainability (CBESS): NE/J015644/1. The project was funded with support from the Biodiversity and Ecosystem Service Sustainability (BESS) programme. BESS is a six-year programme (2011-2017) funded by the UK Natural Environment Research Council (NERC) and the Biotechnology and Biological Sciences Research Council (BBSRC) as part of the UK's Living with Environmental Change (LWEC) programme.
+
+
+
+## Metadata Date
+
+2025-11-13T16:16:55
+
+
+## Resource Identifiers
+
+### Code
+
+[https://catalogue.ceh.ac.uk/id/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce](https://catalogue.ceh.ac.uk/id/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce)
+
+
+### Code
+
+10.5285/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce
+
+
+### Code Space
+
+doi:
+
+
+
+
+## Relationships
+
+### Relation
+
+[https://vocabs.ceh.ac.uk/eidc#memberOf](https://vocabs.ceh.ac.uk/eidc#memberOf)
+
+
+### Target
+
+[https://catalogue.ceh.ac.uk/id/413dc2b2-f38b-4f8a-a198-f78b07534fb8](https://catalogue.ceh.ac.uk/id/413dc2b2-f38b-4f8a-a198-f78b07534fb8)
+
+
+### Relation
+
+[https://vocabs.ceh.ac.uk/eidc#memberOf](https://vocabs.ceh.ac.uk/eidc#memberOf)
+
+
+### Target
+
+413dc2b2-f38b-4f8a-a198-f78b07534fb8
+
+
+
+
+## Lineage
+
+Sediment water content was determined through the collection of contact cores. Contact cores use liquid nitrogen to freeze the top 2mm of the sediment surface, excess unfrozen sediment is removed and the sample core is stored below -80 degree centigrade. The sample is weighed to determine wet weight and freeze dried to remove all water. The sample is re-weighed to give dry weight; the difference between the wet and dry weights gives the water content as a percentage. The location of the sample sites was determined by randomly allocated quadrats. Twenty two 1 x 1 m quadrats were randomly allocated to each mudflat and saltmarsh site using R (R Development Core Team, 2014) to specify four different spatial scales (A = 1 quadrat only, B = 3 quadrats at 1 m to 10 m apart, C = 6 quadrats at 10 m to 100 m apart, D = 12 quadrats at 100 m to 1000 m or site maximum).
+
+
+## Spatial Representation Types
+
+- textTable
+
+
+## Topic Categories
+
+oceans
+
+### Uri
+
+[http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/oceans](http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/oceans)
+
+
+
+
+## Keywords Place
+
+Essex
+
+### Uri
+
+[http://sws.geonames.org/2649889](http://sws.geonames.org/2649889)
+
+
+Morecambe Bay
+
+### Uri
+
+[http://sws.geonames.org/2642213](http://sws.geonames.org/2642213)
+
+
+
+
+## Keywords Project
+
+CBESS
+
+BESS
+
+
+
+## Keywords Other
+
+saltmarsh
+
+mudflat
+
+sediment water content
+
+surface sediment
+
+contact core
+
+
+
+## Distribution Formats
+
+### Name
+
+Comma-separated values (CSV)
+
+
+### Type
+
+text/csv
+
+
+### Version
+
+unknown
+
+
+
+
+## Inspire Themes
+
+### Theme
+
+Habitats and Biotopes
+
+
+### Uri
+
+[http://inspire.ec.europa.eu/theme/hb](http://inspire.ec.europa.eu/theme/hb)
+
+
+
+
+## Funding
+
+### Funder Name
+
+Natural Environment Research Council
+
+
+### Funder Identifier
+
+[https://ror.org/02b5d8509](https://ror.org/02b5d8509)
+
+
+### Award Number
+
+NE/J015644/1
+
+
+### Award U R I
+
+[https://gtr.ukri.org/projects?ref=NE/J015644/1](https://gtr.ukri.org/projects?ref=NE/J015644/1)
+
+
+### Ror
+
+True
+
+
+### Orcid
+
+False
+
+
+
+
+## Bounding Boxes
+
+### West Bound Longitude
+
+-3
+
+
+### East Bound Longitude
+
+1
+
+
+### South Bound Latitude
+
+51.5
+
+
+### North Bound Latitude
+
+54.25
+
+
+### Bounds
+
+{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-3, 51.5], [-3, 54.25], [1, 54.25], [1, 51.5], [-3, 51.5]]]      }}
+
+
+### Coordinates
+
+[[[-3, 51.5], [-3, 54.25], [1, 54.25], [1, 51.5], [-3, 51.5]]]
+
+
+
+
+## Distributor Contacts
+
+### Organisation Name
+
+NERC EDS Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+distributor
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Responsible Parties
+
+### Family Name
+
+Maunder
+
+
+### Given Name
+
+J.
+
+
+### Organisation Name
+
+University of St Andrews
+
+
+### Organisation Identifier
+
+[https://ror.org/02wn5qz54](https://ror.org/02wn5qz54)
+
+
+### Role
+
+pointOfContact
+
+
+### Email
+
+jm280@st-andrews.ac.uk
+
+
+### Full Name
+
+Maunder, J.
+
+
+### Point Of Contact
+
+University of St Andrews
+
+
+### Organisation Name
+
+NERC Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+publisher
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+### Organisation Name
+
+NERC EDS Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+custodian
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+### Family Name
+
+Maunder
+
+
+### Given Name
+
+J.
+
+
+### Organisation Name
+
+University of St Andrews
+
+
+### Organisation Identifier
+
+[https://ror.org/02wn5qz54](https://ror.org/02wn5qz54)
+
+
+### Role
+
+author
+
+
+### Email
+
+jm280@st-andrews.ac.uk
+
+
+### Full Name
+
+Maunder, J.
+
+
+### Family Name
+
+Paterson
+
+
+### Given Name
+
+D.M.
+
+
+### Organisation Name
+
+University of St Andrews
+
+
+### Organisation Identifier
+
+[https://ror.org/02wn5qz54](https://ror.org/02wn5qz54)
+
+
+### Role
+
+author
+
+
+### Email
+
+dp1@st-andrews.ac.uk
+
+
+### Full Name
+
+Paterson, D.M.
+
+
+### Organisation Name
+
+University of St Andrews
+
+
+### Organisation Identifier
+
+[https://ror.org/02wn5qz54](https://ror.org/02wn5qz54)
+
+
+### Role
+
+rightsHolder
+
+
+
+
+## Temporal Extents
+
+### Begin
+
+2013-01-01
+
+
+### End
+
+2013-08-31
+
+
+
+
+## Online Resources
+
+### Url
+
+[https://data-package.ceh.ac.uk/data/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce](https://data-package.ceh.ac.uk/data/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce)
+
+
+### Name
+
+Download the data
+
+
+### Description
+
+Download a copy of this data
+
+
+### Function
+
+download
+
+
+### Type
+
+OTHER
+
+
+### Url
+
+[https://data-package.ceh.ac.uk/sd/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce.zip](https://data-package.ceh.ac.uk/sd/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce.zip)
+
+
+### Name
+
+Supporting information
+
+
+### Description
+
+Supporting information available to assist in re-use of this dataset
+
+
+### Function
+
+information
+
+
+### Type
+
+OTHER
+
+
+
+
+## Spatial Reference Systems
+
+### Code
+
+[http://www.opengis.net/def/crs/EPSG/0/27700](http://www.opengis.net/def/crs/EPSG/0/27700)
+
+
+### Title
+
+OSGB 1936 / British National Grid
+
+
+
+
+## Dataset Reference Date
+
+### Creation Date
+
+2013-08-31
+
+
+### Publication Date
+
+2015-12-11
+
+
+### Released Date
+
+2018-04-03
+
+
+
+## Resource Maintenance
+
+### Frequency Of Update
+
+notPlanned
+
+
+
+
+## Use Constraints
+
+This resource is made available under the terms of the Open Government Licence
+
+### Code
+
+license
+
+
+### Uri
+
+[https://eidc.ac.uk/licences/ogl/plain](https://eidc.ac.uk/licences/ogl/plain)
+
+
+© University of St Andrews
+
+### Code
+
+copyright
+
+
+
+
+## Resource Type
+
+dataset
+
+
+## Access Limitation
+
+no limitations to public access
+
+### Code
+
+Available
+
+
+### Uri
+
+[http://purl.org/coar/access_right/c_abf2](http://purl.org/coar/access_right/c_abf2)
+
+
+
+## Not G E M I N I
+
+False
+
+
+## Licences
+
+This resource is made available under the terms of the Open Government Licence
+
+### Code
+
+license
+
+
+### Uri
+
+[https://eidc.ac.uk/licences/ogl/plain](https://eidc.ac.uk/licences/ogl/plain)
+
+
+
+
+## Incoming Citation Count
+
+0
+
+
+## Resource Status
+
+Available
+
+
+## Points Of Contact
+
+### Family Name
+
+Maunder
+
+
+### Given Name
+
+J.
+
+
+### Organisation Name
+
+University of St Andrews
+
+
+### Organisation Identifier
+
+[https://ror.org/02wn5qz54](https://ror.org/02wn5qz54)
+
+
+### Role
+
+pointOfContact
+
+
+### Email
+
+jm280@st-andrews.ac.uk
+
+
+### Full Name
+
+Maunder, J.
+
+
+### Point Of Contact
+
+University of St Andrews
+
+
+
+
+## Rights Holders
+
+### Organisation Name
+
+University of St Andrews
+
+
+### Organisation Identifier
+
+[https://ror.org/02wn5qz54](https://ror.org/02wn5qz54)
+
+
+### Role
+
+rightsHolder
+
+
+
+
+## Info Links
+
+### Url
+
+[https://data-package.ceh.ac.uk/sd/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce.zip](https://data-package.ceh.ac.uk/sd/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce.zip)
+
+
+### Name
+
+Supporting information
+
+
+### Description
+
+Supporting information available to assist in re-use of this dataset
+
+
+### Function
+
+information
+
+
+### Type
+
+OTHER
+
+
+
+
+## Publishers
+
+### Organisation Name
+
+NERC Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+publisher
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Authors
+
+### Family Name
+
+Maunder
+
+
+### Given Name
+
+J.
+
+
+### Organisation Name
+
+University of St Andrews
+
+
+### Organisation Identifier
+
+[https://ror.org/02wn5qz54](https://ror.org/02wn5qz54)
+
+
+### Role
+
+author
+
+
+### Email
+
+jm280@st-andrews.ac.uk
+
+
+### Full Name
+
+Maunder, J.
+
+
+### Family Name
+
+Paterson
+
+
+### Given Name
+
+D.M.
+
+
+### Organisation Name
+
+University of St Andrews
+
+
+### Organisation Identifier
+
+[https://ror.org/02wn5qz54](https://ror.org/02wn5qz54)
+
+
+### Role
+
+author
+
+
+### Email
+
+dp1@st-andrews.ac.uk
+
+
+### Full Name
+
+Paterson, D.M.
+
+
+
+
+## Publication Date
+
+2015-12-11T00:00:00.000+00:00
+
+
+## Custodians
+
+### Organisation Name
+
+NERC EDS Environmental Information Data Centre
+
+
+### Organisation Identifier
+
+[https://ror.org/04xw4m193](https://ror.org/04xw4m193)
+
+
+### Role
+
+custodian
+
+
+### Email
+
+info@eidc.ac.uk
+
+
+
+
+## Updated Date
+
+2025-11-13T16:16:55.000+00:00
+
+
+## Citation
+
+### Authors
+
+- Maunder, J.
+- Paterson, D.M.
+
+
+### Doi
+
+10.5285/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce
+
+
+### Title
+
+Coastal Biodiversity and Ecosystem Service Sustainability (CBESS) surface sediment water content in saltmarsh and mudflat habitats
+
+
+### Publisher
+
+NERC Environmental Information Data Centre
+
+
+### Resource Type General
+
+dataset
+
+
+### Year
+
+2015
+
+
+### Month
+
+12
+
+
+### Day
+
+11
+
+
+### Bibtex
+
+[https://catalogue.ceh.ac.uk/documents/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce/citation?format=bib](https://catalogue.ceh.ac.uk/documents/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce/citation?format=bib)
+
+
+### Ris
+
+[https://catalogue.ceh.ac.uk/documents/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce/citation?format=ris](https://catalogue.ceh.ac.uk/documents/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce/citation?format=ris)
+
+
+### Url
+
+[https://doi.org/10.5285/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce](https://doi.org/10.5285/5ffbc89e-ebed-4fdc-9563-bad42f50e8ce)
+
+
