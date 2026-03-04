@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>f710bed1-e564-47bf-b82c-4c2a2fe2810e</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>f710bed1-e564-47bf-b82c-4c2a2fe2810e</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/f710bed1-e564-47bf-b82c-4c2a2fe2810e">https://catalogue.ceh.ac.uk/id/f710bed1-e564-47bf-b82c-4c2a2fe2810e</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>Historic reconstructions of daily river flow for 303 UK catchments (1891-2015)</p>
+<h2>Description</h2>
+<p>This dataset is model output from the GR4J lumped catchment hydrology model. It provides 500 model realisations of daily river flow, in cubic metres per second (cumecs, m3/s), for 303 UK catchments for the period between 1891-2015. The modelled catchments are part of the National River Flow Archive (NRFA)  (<a href="https://nrfa.ceh.ac.uk/">https://nrfa.ceh.ac.uk/</a> and provide good spatial coverage across the UK.  These flow reconstructions were produced as part of the Research Councils UK (RCUK) funded Historic Droughts and IMPETUS projects, to provide consistent modelled daily flow data across the UK from 1891-2015, with estimates of uncertainty. This dataset is an outcome of the Historic Droughts Project (grant number: NE/L01016X/1).
+The data are provided in two formats to help the user account for uncertainty: 
+(1) a 500-member ensemble of daily river flow time series for each catchment, with their corresponding model parameters and evaluation metric scores of model performance. 
+(2)  a single river flow time series (one corresponding to the top run of the 500), with the maximum and minimum daily limits of the 500 ensemble members.</p>
+<h2>Metadata Date</h2>
+<p>2025-11-13T16:26:12</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/f710bed1-e564-47bf-b82c-4c2a2fe2810e">https://catalogue.ceh.ac.uk/id/f710bed1-e564-47bf-b82c-4c2a2fe2810e</a></p>
+<h3>Code</h3>
+<p>10.5285/f710bed1-e564-47bf-b82c-4c2a2fe2810e</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Relationships</h2>
+<h3>Relation</h3>
+<p><a href="https://vocabs.ceh.ac.uk/eidc#memberOf">https://vocabs.ceh.ac.uk/eidc#memberOf</a></p>
+<h3>Target</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/af1db516-3411-416f-9c51-5ab99d912f8a">https://catalogue.ceh.ac.uk/id/af1db516-3411-416f-9c51-5ab99d912f8a</a></p>
+<h3>Relation</h3>
+<p><a href="https://vocabs.ceh.ac.uk/eidc#memberOf">https://vocabs.ceh.ac.uk/eidc#memberOf</a></p>
+<h3>Target</h3>
+<p>af1db516-3411-416f-9c51-5ab99d912f8a</p>
+<h2>Lineage</h2>
+<p>The GR4J model (v 1.0.2)  was run over the calibration period (1982-2014) using 500,000 Latin Hypercube Sampled model parameter sets. These model parameters were assessed against observations from the National River Flow Archive (NRFA). For two catchments (the Thames at Kingston, and the Lea at Feildes Weir) the model was also calibrated against naturalised flows. The model was calibrated using a multi-objective approach comprising of 6 evaluation metrics: Nash Sutcliffe Efficiency (NSE), NSE on log flows (log NSE), Mean Absolute Percent Error (MAPE), Absolute Percent Bias (PBIAS), Absolute Percent Error in Mean Annual Minimum flows over a 30 day accumulation period (MAM30), and Absolute Percent Error in the flow exceeded 95% of the time (Q95).</p>
+<p>The 500,000 model runs were then ranked by each evaluation metric, the ranks were summed, and the runs were reordered according to this final rank. Finally, in order to prevent uneven trade-offs between metrics, the runs were re-ordered according to thresholds of acceptability. 
+Reconstructed flow timeseries were then run for the top 500 ranking model parameter sets, using PET (Potential Evapotranspiration) (Tanguy et al., 2017: doi <a href="https://doi.org/10.5285/17b9c4f7-1c30-4b6f-b2fe-f7780159939c">https://doi.org/10.5285/17b9c4f7-1c30-4b6f-b2fe-f7780159939c</a> and reconstructed daily rainfall data, provided by the UK Met Office.
+The modelled data, and the supporting metadata files, were exported from the R software programme as comma separated value files (.csv), and ingested into the EIDC in this format.</p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>textTable</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>inlandWaters</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/inlandWaters">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/inlandWaters</a></p>
+<h2>Keywords Place</h2>
+<p>United Kingdom</p>
+<h3>Uri</h3>
+<p><a href="http://sws.geonames.org/2635167">http://sws.geonames.org/2635167</a></p>
+<h2>Keywords Project</h2>
+<p>Historic Droughts</p>
+<h2>Keywords Other</h2>
+<p>Drought inventory</p>
+<p>Drought catalogue</p>
+<p>Discharge</p>
+<p>GR4J</p>
+<p>Uncertainty</p>
+<p>Reconstructions</p>
+<p>drought</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/2347">http://www.eionet.europa.eu/gemet/concept/2347</a></p>
+<p>water scarcity</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/15332">http://www.eionet.europa.eu/gemet/concept/15332</a></p>
+<p>catchment</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/12231">http://www.eionet.europa.eu/gemet/concept/12231</a></p>
+<p>river</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/7244">http://www.eionet.europa.eu/gemet/concept/7244</a></p>
+<p>flow</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/3311">http://www.eionet.europa.eu/gemet/concept/3311</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>Comma-separated values (CSV)</p>
+<h3>Type</h3>
+<p>text/csv</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Inspire Themes</h2>
+<h3>Theme</h3>
+<p>Hydrography</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/theme/hy">http://inspire.ec.europa.eu/theme/hy</a></p>
+<h2>Spatial Resolutions</h2>
+<h3>Distance</h3>
+<p>100</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Title</h3>
+<p>Analysis of historic drought and water scarcity in the UK: a systems-based study of drivers, impacts and their interactions</p>
+<h3>Award Number</h3>
+<p>NE/L01016X/1</p>
+<h3>Award U R I</h3>
+<p><a href="http://gtr.ukri.org/projects?ref=NE/L01016X/1">http://gtr.ukri.org/projects?ref=NE/L01016X/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Title</h3>
+<p>IMPETUS: Improving Predictions of Drought for user Decision-making</p>
+<h3>Award Number</h3>
+<p>NE/L010267/1</p>
+<h3>Award U R I</h3>
+<p><a href="http://gtr.ukri.org/projects?ref=NE/L010267/1">http://gtr.ukri.org/projects?ref=NE/L010267/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>-8.648</p>
+<h3>East Bound Longitude</h3>
+<p>1.768</p>
+<h3>South Bound Latitude</h3>
+<p>49.864</p>
+<h3>North Bound Latitude</h3>
+<p>60.861</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-8.648, 49.864], [-8.648, 60.861], [1.768, 60.861], [1.768, 49.864], [-8.648, 49.864]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[-8.648, 49.864], [-8.648, 60.861], [1.768, 60.861], [1.768, 49.864], [-8.648, 49.864]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Smith</p>
+<h3>Given Name</h3>
+<p>Katie</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Maclean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Smith, K.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Family Name</h3>
+<p>Smith</p>
+<h3>Given Name</h3>
+<p>K.A.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-1060-9103">https://orcid.org/0000-0003-1060-9103</a></p>
+<h3>Full Name</h3>
+<p>Smith, K.A.</p>
+<h3>Family Name</h3>
+<p>Tanguy</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-1516-6834">https://orcid.org/0000-0002-1516-6834</a></p>
+<h3>Full Name</h3>
+<p>Tanguy, M.</p>
+<h3>Family Name</h3>
+<p>Hannaford</p>
+<h3>Given Name</h3>
+<p>J.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-5256-3310">https://orcid.org/0000-0002-5256-3310</a></p>
+<h3>Full Name</h3>
+<p>Hannaford, J.</p>
+<h3>Family Name</h3>
+<p>Prudhomme</p>
+<h3>Given Name</h3>
+<p>C.</p>
+<h3>Organisation Name</h3>
+<p>European Centre for Medium Range Weather Forecasts</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/014w0fd65">https://ror.org/014w0fd65</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-1722-2497">https://orcid.org/0000-0003-1722-2497</a></p>
+<h3>Full Name</h3>
+<p>Prudhomme, C.</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Temporal Extents</h2>
+<h3>Begin</h3>
+<p>1891-01-01</p>
+<h3>End</h3>
+<p>2015-11-30</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/f710bed1-e564-47bf-b82c-4c2a2fe2810e.zip">https://data-package.ceh.ac.uk/sd/f710bed1-e564-47bf-b82c-4c2a2fe2810e.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://catalogue.ceh.ac.uk/datastore/eidchub/f710bed1-e564-47bf-b82c-4c2a2fe2810e">https://catalogue.ceh.ac.uk/datastore/eidchub/f710bed1-e564-47bf-b82c-4c2a2fe2810e</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>fileAccess</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://www.opengis.net/def/crs/EPSG/0/27700">http://www.opengis.net/def/crs/EPSG/0/27700</a></p>
+<h3>Title</h3>
+<p>OSGB 1936 / British National Grid</p>
+<h2>Incoming Citations</h2>
+<h3>Description</h3>
+<p>West, H., Quinn, N., &amp; Horswell, M. (2022). Spatio-temporal propagation of North Atlantic Oscillation (NAO) rainfall deviations to streamflow in British catchments. In Hydrological Sciences Journal (Vol. 67, Issue 5, pp. 676–688). Informa UK Limited</p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1080/02626667.2022.2038791">https://doi.org/10.1080/02626667.2022.2038791</a></p>
+<h3>Type</h3>
+<p>academic</p>
+<h3>Description</h3>
+<p>Smith, K.A., Barker, L.J., Tanguy, M., Parry, S., Harrigan, S., Legg, T.P., Prudhomme, C., &amp; Hannaford, J. (2019). A multi-objective ensemble approach to hydrological modelling in the UK: an application to historic drought reconstruction. In Hydrology and Earth System Sciences (Vol. 23, Issue 8, pp. 3247–3268). Copernicus GmbH.</p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5194/hess-23-3247-2019">https://doi.org/10.5194/hess-23-3247-2019</a></p>
+<h3>Type</h3>
+<p>academic</p>
+<h3>Description</h3>
+<p>Barker, L.J., Hannaford, J., Parry, S., Smith, K.A., Tanguy, M., &amp; Prudhomme, C. (2019). Historic hydrological droughts 1891-2015: systematic characterisation for a diverse set of catchments across the UK.Hydrology and Earth System Sciences, 23(11), 4583-4602.</p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5194/hess-23-4583-2019">https://doi.org/10.5194/hess-23-4583-2019</a></p>
+<h3>Type</h3>
+<p>academic</p>
+<h3>Description</h3>
+<p>Chan, W.C.H., Shepherd, T.G., Facer-Childs, K., Darch, G., &amp; Arnell, N.W. (2022). Storylines of UK drought based on the 2010-2012 event. Hydrology and Earth System Sciences, 26(7), 1755-1777.</p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5194/hess-26-1755-2022">https://doi.org/10.5194/hess-26-1755-2022</a></p>
+<h3>Type</h3>
+<p>academic</p>
+<h3>Description</h3>
+<p>Parry, S., Lavers, D., Wilby, R., Prudhomme, C., Wood, P., Murphy, C. &amp; O’Connor, P. (2023) Abrupt drought termination in the British–Irish Isles driven by high atmospheric vapour transport. Environmental Research Letters 18, 104050.</p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1088/1748-9326/acf145">https://doi.org/10.1088/1748-9326/acf145</a></p>
+<h3>Type</h3>
+<p>academic</p>
+<h3>Description</h3>
+<p>Environment Agency (2025) Review of stochastic and other approaches in water resources planning. The UK Government.</p>
+<h3>Url</h3>
+<p><a href="https://www.gov.uk/government/publications/review-of-stochastic-and-other-approaches-in-water-resources-planning">https://www.gov.uk/government/publications/review-of-stochastic-and-other-approaches-in-water-resources-planning</a></p>
+<h3>Type</h3>
+<p>policy</p>
+<h2>Supplemental</h2>
+<h3>Name</h3>
+<p>National River Flow Archive (NRFA)</p>
+<h3>Description</h3>
+<p>Website for National River Flow Archive (NRFA)</p>
+<h3>Url</h3>
+<p><a href="https://nrfa.ceh.ac.uk/">https://nrfa.ceh.ac.uk/</a></p>
+<h3>Function</h3>
+<p>website</p>
+<h2>Dataset Reference Date</h2>
+<h3>Creation Date</h3>
+<p>2018-02-23</p>
+<h3>Publication Date</h3>
+<p>2018-03-12</p>
+<h2>Resource Maintenance</h2>
+<h3>Frequency Of Update</h3>
+<p>notPlanned</p>
+<h2>Use Constraints</h2>
+<p>This resource is made available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<p>© UK Centre for Ecology &amp; Hydrology</p>
+<h3>Code</h3>
+<p>copyright</p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset">http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset</a></p>
+<h2>Access Limitation</h2>
+<p>no limitations to public access</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations</a></p>
+<h2>Not G E M I N I</h2>
+<p>False</p>
+<h2>Licences</h2>
+<p>This resource is made available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>6</p>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Smith</p>
+<h3>Given Name</h3>
+<p>Katie</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Maclean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Smith, K.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/f710bed1-e564-47bf-b82c-4c2a2fe2810e.zip">https://data-package.ceh.ac.uk/sd/f710bed1-e564-47bf-b82c-4c2a2fe2810e.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Smith</p>
+<h3>Given Name</h3>
+<p>K.A.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-1060-9103">https://orcid.org/0000-0003-1060-9103</a></p>
+<h3>Full Name</h3>
+<p>Smith, K.A.</p>
+<h3>Family Name</h3>
+<p>Tanguy</p>
+<h3>Given Name</h3>
+<p>M.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-1516-6834">https://orcid.org/0000-0002-1516-6834</a></p>
+<h3>Full Name</h3>
+<p>Tanguy, M.</p>
+<h3>Family Name</h3>
+<p>Hannaford</p>
+<h3>Given Name</h3>
+<p>J.</p>
+<h3>Organisation Name</h3>
+<p>Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-5256-3310">https://orcid.org/0000-0002-5256-3310</a></p>
+<h3>Full Name</h3>
+<p>Hannaford, J.</p>
+<h3>Family Name</h3>
+<p>Prudhomme</p>
+<h3>Given Name</h3>
+<p>C.</p>
+<h3>Organisation Name</h3>
+<p>European Centre for Medium Range Weather Forecasts</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/014w0fd65">https://ror.org/014w0fd65</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-1722-2497">https://orcid.org/0000-0003-1722-2497</a></p>
+<h3>Full Name</h3>
+<p>Prudhomme, C.</p>
+<h2>Publication Date</h2>
+<p>2018-03-12T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-13T16:26:12.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Smith, K.A.</li>
+<li>Tanguy, M.</li>
+<li>Hannaford, J.</li>
+<li>Prudhomme, C.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/f710bed1-e564-47bf-b82c-4c2a2fe2810e</p>
+<h3>Title</h3>
+<p>Historic reconstructions of daily river flow for 303 UK catchments (1891-2015)</p>
+<h3>Publisher</h3>
+<p>NERC Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2018</p>
+<h3>Month</h3>
+<p>3</p>
+<h3>Day</h3>
+<p>12</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/f710bed1-e564-47bf-b82c-4c2a2fe2810e/citation?format=bib">https://catalogue.ceh.ac.uk/documents/f710bed1-e564-47bf-b82c-4c2a2fe2810e/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/f710bed1-e564-47bf-b82c-4c2a2fe2810e/citation?format=ris">https://catalogue.ceh.ac.uk/documents/f710bed1-e564-47bf-b82c-4c2a2fe2810e/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/f710bed1-e564-47bf-b82c-4c2a2fe2810e">https://doi.org/10.5285/f710bed1-e564-47bf-b82c-4c2a2fe2810e</a></p>
+</body>
+</html>

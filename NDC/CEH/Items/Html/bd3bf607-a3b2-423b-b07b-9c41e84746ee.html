@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bd3bf607-a3b2-423b-b07b-9c41e84746ee</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>bd3bf607-a3b2-423b-b07b-9c41e84746ee</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/bd3bf607-a3b2-423b-b07b-9c41e84746ee">https://catalogue.ceh.ac.uk/id/bd3bf607-a3b2-423b-b07b-9c41e84746ee</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>Weekly, monthly and yearly recreation demand maps for the UK</p>
+<h2>Description</h2>
+<p>This dataset contains recreation demand maps for the UK based on weekly, monthly and yearly visit frequencies. Recreation includes activities such as walking, hiking, cycling, etc, i.e., ‘outdoor non-vehicular recreation’. Recreation demand was calculated as the number of projected visits for local recreation, estimated using the universal law of human mobility (Schläpfer et al., 2021, Nature). Recreation demand maps are supplied at 250 m resolution in a British National Grid transverse Mercator projection (EPSG 27700). For each visit frequency (weekly, monthly and yearly), there is a map with and without attractiveness included in the calculation, where protected areas are used a proxy for attractiveness.</p>
+<p>This research was funded by the Natural Environment Research Council (NERC) under research programme NE/W005050/1 AgZero+ : Towards sustainable, climate-neutral farming. AgZero+ is an initiative jointly supported by NERC and the Biotechnology and Biological Sciences Research Council (BBSRC).</p>
+<h2>Metadata Date</h2>
+<p>2025-11-13T16:24:19</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/bd3bf607-a3b2-423b-b07b-9c41e84746ee">https://catalogue.ceh.ac.uk/id/bd3bf607-a3b2-423b-b07b-9c41e84746ee</a></p>
+<h3>Code</h3>
+<p>10.5285/bd3bf607-a3b2-423b-b07b-9c41e84746ee</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Lineage</h2>
+<p>Predicted recreation demand was expressed as the total number of projected visits for local recreation in target cells. To estimate the total number of projected visits in each 250 m target cell, a bespoke version of the universal law of human mobility was used (Schläpfer et al., 2021), as seen in the function below:</p>
+<p>Demand_i = Attractiveness_i × ∑ |j=1 to j= all| [(Population_j) / ((Frequency_ij × Traveling distance_ij)^∝)]</p>
+<p>with i the target cell, j the source cell and the scaling factor α = 2.17, following Schläpfer et al. (2021); frequency is expressed as number of visits per year; travelling distance in kilometres.</p>
+<p>The distance decay gravity function considers the number of visits to single target cells (i) depending on the "Population" size in a source cell (j), corrected by the "Traveling distance" from that source cell to the target cell and the "Attractiveness" of the target cell – the assumed relative likelihood of visiting that target cell. Traveling distance was estimated non-Euclidean, as a cost-weighted distance using the UK road network in 2.5 km cells and the distance to the nearest road within cells. The number of visits per year from the source cell to the target cell, i.e. the Frequency, is also included (weekly, monthly and yearly), since people tend to visit more often where there is a shorter distance to travel. Thus, for a given distance more predicted visits will arise from more densely populated cells compared with less populated cells, whereas at shorter distances more visits are predicted than at longer distances for a given source population density. For each target cell, the equation is summed over all potential source cells. See documentation accompanying the data for a detailed description of the data used for each parameter in the equation. </p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>grid</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>society</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/society">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/society</a></p>
+<p>environment</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment</a></p>
+<h2>Keywords Place</h2>
+<p>UK</p>
+<h2>Keywords Theme</h2>
+<p>Mapping</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/18">http://onto.nerc.ac.uk/CEHMD/topic/18</a></p>
+<h2>Keywords Other</h2>
+<p>accessibility</p>
+<p>protected areas</p>
+<p>natural areas protection</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/10032">http://www.eionet.europa.eu/gemet/concept/10032</a></p>
+<p>mapping</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/5013">http://www.eionet.europa.eu/gemet/concept/5013</a></p>
+<p>landscape</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/4648">http://www.eionet.europa.eu/gemet/concept/4648</a></p>
+<p>cultural ecosystem services</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/15111">http://www.eionet.europa.eu/gemet/concept/15111</a></p>
+<p>recreation</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/7001">http://www.eionet.europa.eu/gemet/concept/7001</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>TIFF</p>
+<h3>Type</h3>
+<p>image/tiff</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Inspire Themes</h2>
+<h3>Theme</h3>
+<p>Environmental Monitoring Facilities</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/theme/ef">http://inspire.ec.europa.eu/theme/ef</a></p>
+<h3>Conformity</h3>
+<p>Not conformant</p>
+<h2>Spatial Resolutions</h2>
+<h3>Distance</h3>
+<p>250</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Title</h3>
+<p>Towards Sustainable, Climate-Neutral Farming Systems (AgZero+)</p>
+<h3>Award Number</h3>
+<p>NE/W005050/1</p>
+<h3>Award U R I</h3>
+<p><a href="https://gtr.ukri.org/projects?ref=NE/W005050/1">https://gtr.ukri.org/projects?ref=NE/W005050/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h3>Funder Name</h3>
+<p>Biotechnology and Biological Sciences Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/00cwqg982">https://ror.org/00cwqg982</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>-8.648</p>
+<h3>East Bound Longitude</h3>
+<p>1.768</p>
+<h3>South Bound Latitude</h3>
+<p>49.864</p>
+<h3>North Bound Latitude</h3>
+<p>60.861</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-8.648, 49.864], [-8.648, 60.861], [1.768, 60.861], [1.768, 49.864], [-8.648, 49.864]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[-8.648, 49.864], [-8.648, 60.861], [1.768, 60.861], [1.768, 49.864], [-8.648, 49.864]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Family Name</h3>
+<p>Ridding</p>
+<h3>Given Name</h3>
+<p>L.E.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-3141-8795">https://orcid.org/0000-0003-3141-8795</a></p>
+<h3>Full Name</h3>
+<p>Ridding, L.E.</p>
+<h3>Family Name</h3>
+<p>Hooftman</p>
+<h3>Given Name</h3>
+<p>D.A.P.</p>
+<h3>Organisation Name</h3>
+<p>Lactuca: Environmental Data Analyses and Modelling</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>danny.hooftman@lactuca.nl</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-9835-6897">https://orcid.org/0000-0001-9835-6897</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Speenkruid 100</p>
+<h4>City</h4>
+<p>1112NC, Diemen</p>
+<h4>Country</h4>
+<p>The Netherlands</p>
+<h3>Full Name</h3>
+<p>Hooftman, D.A.P.</p>
+<h3>Family Name</h3>
+<p>Redhead</p>
+<h3>Given Name</h3>
+<p>J.W.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-2233-3848">https://orcid.org/0000-0002-2233-3848</a></p>
+<h3>Full Name</h3>
+<p>Redhead, J.W.</p>
+<h3>Family Name</h3>
+<p>Willcock</p>
+<h3>Given Name</h3>
+<p>S.</p>
+<h3>Organisation Name</h3>
+<p>Rothamsted Research </p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/0347fy350">https://ror.org/0347fy350</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>simon.willcock@rothamsted.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-9534-9114">https://orcid.org/0000-0001-9534-9114</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>West Common</p>
+<h4>City</h4>
+<p>Harpenden</p>
+<h4>Postal Code</h4>
+<p>AL5 2JQ</p>
+<h4>Country</h4>
+<p>UK</p>
+<h3>Full Name</h3>
+<p>Willcock, S.</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>Rothamsted Research</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/0347fy350">https://ror.org/0347fy350</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>Harpenden</p>
+<h4>Administrative Area</h4>
+<p>Hertfordshire</p>
+<h4>Country</h4>
+<p>UK</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Family Name</h3>
+<p>Ridding</p>
+<h3>Given Name</h3>
+<p>L.E.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Maclean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Ridding, L.E.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/data/bd3bf607-a3b2-423b-b07b-9c41e84746ee">https://data-package.ceh.ac.uk/data/bd3bf607-a3b2-423b-b07b-9c41e84746ee</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>download</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/bd3bf607-a3b2-423b-b07b-9c41e84746ee.zip">https://data-package.ceh.ac.uk/sd/bd3bf607-a3b2-423b-b07b-9c41e84746ee.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://www.opengis.net/def/crs/EPSG/0/27700">http://www.opengis.net/def/crs/EPSG/0/27700</a></p>
+<h3>Title</h3>
+<p>OSGB 1936 / British National Grid</p>
+<h2>Incoming Citations</h2>
+<h3>Description</h3>
+<p>Hooftman, D.A.P., Ridding, L.E., Redhead, J.W., &amp; Willcock, S. (2023). National scale mapping of supply and demand for recreational ecosystem services. In Ecological Indicators (Vol. 154, p. 110779). Elsevier BV. </p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1016/j.ecolind.2023.110779">https://doi.org/10.1016/j.ecolind.2023.110779</a></p>
+<h2>Supplemental</h2>
+<h3>Name</h3>
+<p>Schläpfer, M., Dong, L., O’Keeffe, K., Santi, P., Szell, M., Salat, H., Anklesaria, S., Vazifeh, M., Ratti, C., West, G.B., 2021. The universal visitation law of human mobility. Nature 593, 522–527</p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.1038/s41586-021-03480-9">https://doi.org/10.1038/s41586-021-03480-9</a></p>
+<h3>Function</h3>
+<p>relatedArticle</p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2023-06-27</p>
+<h3>Released Date</h3>
+<p>2023-11-03</p>
+<h2>Use Constraints</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset">http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset</a></p>
+<h2>Access Limitation</h2>
+<p>no limitations to public access</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="http://purl.org/coar/access_right/c_abf2">http://purl.org/coar/access_right/c_abf2</a></p>
+<h2>Not G E M I N I</h2>
+<p>False</p>
+<h2>Licences</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>1</p>
+<h2>Topics</h2>
+<ul>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/18">http://onto.nerc.ac.uk/CEHMD/topic/18</a></li>
+</ul>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Family Name</h3>
+<p>Ridding</p>
+<h3>Given Name</h3>
+<p>L.E.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Maclean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Ridding, L.E.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>Rothamsted Research</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/0347fy350">https://ror.org/0347fy350</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Address</h3>
+<h4>City</h4>
+<p>Harpenden</p>
+<h4>Administrative Area</h4>
+<p>Hertfordshire</p>
+<h4>Country</h4>
+<p>UK</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/bd3bf607-a3b2-423b-b07b-9c41e84746ee.zip">https://data-package.ceh.ac.uk/sd/bd3bf607-a3b2-423b-b07b-9c41e84746ee.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Ridding</p>
+<h3>Given Name</h3>
+<p>L.E.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-3141-8795">https://orcid.org/0000-0003-3141-8795</a></p>
+<h3>Full Name</h3>
+<p>Ridding, L.E.</p>
+<h3>Family Name</h3>
+<p>Hooftman</p>
+<h3>Given Name</h3>
+<p>D.A.P.</p>
+<h3>Organisation Name</h3>
+<p>Lactuca: Environmental Data Analyses and Modelling</p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>danny.hooftman@lactuca.nl</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-9835-6897">https://orcid.org/0000-0001-9835-6897</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Speenkruid 100</p>
+<h4>City</h4>
+<p>1112NC, Diemen</p>
+<h4>Country</h4>
+<p>The Netherlands</p>
+<h3>Full Name</h3>
+<p>Hooftman, D.A.P.</p>
+<h3>Family Name</h3>
+<p>Redhead</p>
+<h3>Given Name</h3>
+<p>J.W.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-2233-3848">https://orcid.org/0000-0002-2233-3848</a></p>
+<h3>Full Name</h3>
+<p>Redhead, J.W.</p>
+<h3>Family Name</h3>
+<p>Willcock</p>
+<h3>Given Name</h3>
+<p>S.</p>
+<h3>Organisation Name</h3>
+<p>Rothamsted Research </p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/0347fy350">https://ror.org/0347fy350</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>simon.willcock@rothamsted.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-9534-9114">https://orcid.org/0000-0001-9534-9114</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>West Common</p>
+<h4>City</h4>
+<p>Harpenden</p>
+<h4>Postal Code</h4>
+<p>AL5 2JQ</p>
+<h4>Country</h4>
+<p>UK</p>
+<h3>Full Name</h3>
+<p>Willcock, S.</p>
+<h2>Publication Date</h2>
+<p>2023-06-27T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2025-11-13T16:24:19.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Ridding, L.E.</li>
+<li>Hooftman, D.A.P.</li>
+<li>Redhead, J.W.</li>
+<li>Willcock, S.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/bd3bf607-a3b2-423b-b07b-9c41e84746ee</p>
+<h3>Title</h3>
+<p>Weekly, monthly and yearly recreation demand maps for the UK</p>
+<h3>Publisher</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2023</p>
+<h3>Month</h3>
+<p>6</p>
+<h3>Day</h3>
+<p>27</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/bd3bf607-a3b2-423b-b07b-9c41e84746ee/citation?format=bib">https://catalogue.ceh.ac.uk/documents/bd3bf607-a3b2-423b-b07b-9c41e84746ee/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/bd3bf607-a3b2-423b-b07b-9c41e84746ee/citation?format=ris">https://catalogue.ceh.ac.uk/documents/bd3bf607-a3b2-423b-b07b-9c41e84746ee/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/bd3bf607-a3b2-423b-b07b-9c41e84746ee">https://doi.org/10.5285/bd3bf607-a3b2-423b-b07b-9c41e84746ee</a></p>
+</body>
+</html>

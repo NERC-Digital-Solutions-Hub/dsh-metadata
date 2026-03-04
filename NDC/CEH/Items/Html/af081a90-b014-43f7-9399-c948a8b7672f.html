@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>af081a90-b014-43f7-9399-c948a8b7672f</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>af081a90-b014-43f7-9399-c948a8b7672f</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/af081a90-b014-43f7-9399-c948a8b7672f">https://catalogue.ceh.ac.uk/id/af081a90-b014-43f7-9399-c948a8b7672f</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>Simulated 15-min discharge time-series and baseline simulations for the River Kent following a Natural Flood Management intervention of 'Enhanced Hillslope Storage', Sedgewick, October 2015 to January 2016</p>
+<h2>Description</h2>
+<p>Simulated 15-min discharge time-series (1/10/2015-17/1/2016) for the River Kent at Sedgwick following a Natural Flood Management intervention of ‘Enhanced Hillslope Storage’ plus the baseline simulations are presented.</p>
+<p>To derive these data, the observed 15-minute discharge River Kent measured at the Environment Agency (EA) Sedgwick gauging station (<a href="https://nrfa.ceh.ac.uk/data/station/info/73005">https://nrfa.ceh.ac.uk/data/station/info/73005</a> through the 1 Oct 2015 to 17 Jan 2016 period were modelled using the latest version of Lancaster University’s Dynamic TOPMODEL (<a href="https://cran.r-project.org/web//packages/dynatop/index.html">https://cran.r-project.org/web//packages/dynatop/index.html</a> </p>
+<p>The spatially distributed rainfall field used as input to TOPMODEL was derived from a new direction-dependent and topographically controlled interpolation using observed rainfall data for the Cumbrian Mountains (Page et al., 2022. Hydrological Processes 36: e14758, <a href="https://doi.org/10.1002/hyp.14758">https://doi.org/10.1002/hyp.14758</a> </p>
+<p>Lack of perfect understanding of the hydrological processes routing rainfall for stream channels and then along stream channels to the Sedgwick gauge was represented by using a very wide range of model parameters applied randomly within 10,000 simulations. Using the approach detailed in Beven et al. (2022a. Hydrological Processes 36(10): e14703, <a href="https://doi.org/10.1002/hyp.14703">https://doi.org/10.1002/hyp.14703</a> the resultant wide range of simulated discharge time-series was reduced by rejecting all but 67 simulations that passed the prescribed criteria. These 67 baseline simulations of observed behaviour through the +3 month period at Sedgwick are presented here.</p>
+<p>To represent the effect of adding surface storage distributed across this 209 sq km River Kent catchment, the Digital Elevation Model (DEM) used in the baseline simulations according to Hankin et al (2018. Technical report SC150005/R6. Environment Agency, Bristol. 77pp, <a href="https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/working-with-natural-processes-to-reduce-flood-risk">https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/working-with-natural-processes-to-reduce-flood-risk</a> to represent bunds placed on hillslopes in rural areas. The bunds are a type of flood mitigation measure known as Natural Flood Management or NFM. These are known formally as ‘Enhanced Hillslope Storage’ or EHS features (Beven et al 2022b. Hydrological Processes 36: e14752, <a href="https://doi.org/10.1002/hyp.14752">https://doi.org/10.1002/hyp.14752</a> The TOPMODEL parameter sets producing the 67 ‘acceptable’ baseline simulations were then re-run with the modified DEM. These results are also presented here.</p>
+<h2>Metadata Date</h2>
+<p>2026-02-06T13:36:12</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/af081a90-b014-43f7-9399-c948a8b7672f">https://catalogue.ceh.ac.uk/id/af081a90-b014-43f7-9399-c948a8b7672f</a></p>
+<h3>Code</h3>
+<p>10.5285/af081a90-b014-43f7-9399-c948a8b7672f</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Relationships</h2>
+<h3>Relation</h3>
+<p><a href="https://vocabs.ceh.ac.uk/eidc#relatedTo">https://vocabs.ceh.ac.uk/eidc#relatedTo</a></p>
+<h3>Target</h3>
+<p>ea641367-dc35-4695-97b8-63f7d6fa9105</p>
+<h2>Lineage</h2>
+<p>The simulations were performed with the latest version of Lancaster University’s distributed catchment model called ‘Dynamic TOPMODEL’. Version 0.2.1 and this is publicly available at: 
+<a href="https://cran.r-project.org/web//packages/dynatop/index.html">https://cran.r-project.org/web//packages/dynatop/index.html</a> </p>
+<p>Dynamic TOPMODEL was used to assess change in flood peaks associated with Natural Flood Management (NFM) by refining the baseline results according to a Condition Tree Approach, where the first step is the choice of model, in this case Dynamic TOPMODEL. </p>
+<p>The second step is establishing a prior range of model parameters (see Table 1 in Beven et al., 2022, <a href="https://doi.org/10.1002/hyp.14752">https://doi.org/10.1002/hyp.14752</a> </p>
+<p>The third step is the initial sampling strategy of Monte Carlo sampling of prior parameter distributions assuming independent uniform distributions. This gave 100,000 simulated river discharge datasets for the before (baseline) and post-intervention (Enhanced Hillslope Storage) simulations. </p>
+<p>The fourth step was to apply the Limits of Acceptability criteria determined from 2.5 to 97.5 quantiles of distributions of runoff coefficients from past events. These were applied to ranked hydrograph time steps for period in 2015 (Table 1 in Beven et al., 2022b, <a href="https://doi.org/10.1002/hyp.14703">https://doi.org/10.1002/hyp.14703</a> including the largest flood on record, with additional timing constraint of ± 2 h. This gave 3249 surviving river discharge datasets for each scenario. </p>
+<p>The fifth step was to undertake additional evaluation of flood peaks, where Limits of acceptability approach was applied ranked hydrograph time steps in 2005 and 2009 (as set out in Table 2 in Beven et al., 2022, <a href="https://doi.org/10.1002/hyp.14752">https://doi.org/10.1002/hyp.14752</a> This gave 118 surviving river discharge datasets for each scenario. </p>
+<p>Lastly, step six, the valuation of areas producing saturation excess overland flow was applied. Here simulations producing less than 10% of the area with surface storage greater than 1 mm at any time step additionally rejected. This gave 67 surviving river discharge datasets for each scenario. These 67 results are those presented in this shared dataset.</p>
+<p>For the NFM scenario, the location of the Enhanced Hillslope Storage features across the modelled River Kent catchment was based on the publically available WwNP (Working with Natural Processes) dataset (Hankin et al., 2018 Technical report SC150005/R6. Environment Agency, Bristol. 77pp, <a href="https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/working-with-natural-processes-to-reduce-flood-risk">https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/working-with-natural-processes-to-reduce-flood-risk</a> For the simulations presented in this NFM-scenario dataset, each bund feature was modelled with a residence time of 10 hours.</p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>textTable</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>environment</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment</a></p>
+<h2>Keywords Place</h2>
+<p>River Kent</p>
+<p>Cumbria</p>
+<h2>Keywords Theme</h2>
+<p>Hydrology</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/9">http://onto.nerc.ac.uk/CEHMD/topic/9</a></p>
+<h2>Keywords Other</h2>
+<p>Q-NFM</p>
+<p>Dynamic TOPMODEL</p>
+<p>distributed model</p>
+<p>uncertainty</p>
+<p>natural flood management (NFM)</p>
+<p>NbS</p>
+<p>flood</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/3298">http://www.eionet.europa.eu/gemet/concept/3298</a></p>
+<p>resilience</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/15275">http://www.eionet.europa.eu/gemet/concept/15275</a></p>
+<p>model</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/5325">http://www.eionet.europa.eu/gemet/concept/5325</a></p>
+<p>hydrograph</p>
+<p>storm</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/8115">http://www.eionet.europa.eu/gemet/concept/8115</a></p>
+<p>condition tree</p>
+<p>parsimony</p>
+<p>Monte Carlo</p>
+<p>simulation</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/7702">http://www.eionet.europa.eu/gemet/concept/7702</a></p>
+<p>river discharge</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/21242">http://vocabs.lter-europe.net/EnvThes/21242</a></p>
+<p>flood risk management</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/15173">http://www.eionet.europa.eu/gemet/concept/15173</a></p>
+<p>nature-based solution</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/15379">http://www.eionet.europa.eu/gemet/concept/15379</a></p>
+<p>runoff</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/7340">http://www.eionet.europa.eu/gemet/concept/7340</a></p>
+<p>rainfall</p>
+<h3>Uri</h3>
+<p><a href="http://vocabs.lter-europe.net/EnvThes/10069">http://vocabs.lter-europe.net/EnvThes/10069</a></p>
+<p>atmospheric precipitation</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/637">http://www.eionet.europa.eu/gemet/concept/637</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>Comma-separated values (CSV)</p>
+<h3>Type</h3>
+<p>text/csv</p>
+<h3>Version</h3>
+<p>unknown</p>
+<h2>Inspire Themes</h2>
+<h3>Theme</h3>
+<p>Environmental Monitoring Facilities</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/theme/ef">http://inspire.ec.europa.eu/theme/ef</a></p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Number</h3>
+<p>NE/R004722/1</p>
+<h3>Award U R I</h3>
+<p><a href="https://gtr.ukri.org/projects?ref=NE/R004722/1">https://gtr.ukri.org/projects?ref=NE/R004722/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>-3.168</p>
+<h3>East Bound Longitude</h3>
+<p>-2.642</p>
+<h3>South Bound Latitude</h3>
+<p>54.038</p>
+<h3>North Bound Latitude</h3>
+<p>54.456</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-3.168, 54.038], [-3.168, 54.456], [-2.642, 54.456], [-2.642, 54.038], [-3.168, 54.038]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[-3.168, 54.038], [-3.168, 54.456], [-2.642, 54.456], [-2.642, 54.038], [-3.168, 54.038]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Chappell</p>
+<h3>Given Name</h3>
+<p>Nick A.</p>
+<h3>Organisation Name</h3>
+<p>Lancaster University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04f2nsd36">https://ror.org/04f2nsd36</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>n.chappell@lancaster.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6683-951X">https://orcid.org/0000-0001-6683-951X</a></p>
+<h3>Full Name</h3>
+<p>Chappell, N.A.</p>
+<h3>Family Name</h3>
+<p>Beven</p>
+<h3>Given Name</h3>
+<p>K.J.</p>
+<h3>Organisation Name</h3>
+<p>Lancaster University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04f2nsd36">https://ror.org/04f2nsd36</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>k.beven@lancaster.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-7465-3934">https://orcid.org/0000-0001-7465-3934</a></p>
+<h3>Full Name</h3>
+<p>Beven, K.J.</p>
+<h3>Family Name</h3>
+<p>Smith</p>
+<h3>Given Name</h3>
+<p>P.</p>
+<h3>Organisation Name</h3>
+<p>Lancaster University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04f2nsd36">https://ror.org/04f2nsd36</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>p.j.smith@lancaster.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-0034-3412">https://orcid.org/0000-0002-0034-3412</a></p>
+<h3>Full Name</h3>
+<p>Smith, P.</p>
+<h3>Family Name</h3>
+<p>Hankin</p>
+<h3>Given Name</h3>
+<p>B.</p>
+<h3>Organisation Name</h3>
+<p>Lancaster University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04f2nsd36">https://ror.org/04f2nsd36</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>Barry.Hankin@jbaconsulting.com</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-7315-3321">https://orcid.org/0000-0001-7315-3321</a></p>
+<h3>Full Name</h3>
+<p>Hankin, B.</p>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Chappell</p>
+<h3>Given Name</h3>
+<p>Nick A</p>
+<h3>Organisation Name</h3>
+<p>Lancaster University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04f2nsd36">https://ror.org/04f2nsd36</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>n.chappell@lancaster.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6683-951X">https://orcid.org/0000-0001-6683-951X</a></p>
+<h3>Full Name</h3>
+<p>Chappell, N.A.</p>
+<h3>Point Of Contact</h3>
+<p>Lancaster University</p>
+<h3>Organisation Name</h3>
+<p>Lancaster University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04f2nsd36">https://ror.org/04f2nsd36</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>n.chappell@lancaster.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Temporal Extents</h2>
+<h3>Begin</h3>
+<p>2015-10-01</p>
+<h3>End</h3>
+<p>2016-01-17</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/data/af081a90-b014-43f7-9399-c948a8b7672f">https://data-package.ceh.ac.uk/data/af081a90-b014-43f7-9399-c948a8b7672f</a></p>
+<h3>Name</h3>
+<p>Download the data</p>
+<h3>Description</h3>
+<p>Download a copy of this data</p>
+<h3>Function</h3>
+<p>download</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/af081a90-b014-43f7-9399-c948a8b7672f.zip">https://data-package.ceh.ac.uk/sd/af081a90-b014-43f7-9399-c948a8b7672f.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://www.opengis.net/def/crs/EPSG/0/4326">http://www.opengis.net/def/crs/EPSG/0/4326</a></p>
+<h3>Title</h3>
+<p>WGS 84</p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2024-04-09</p>
+<h2>Use Constraints</h2>
+<p>Creative Commons Attribution 4.0 International (CC BY 4.0)</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/cc-by/plain">https://eidc.ac.uk/licences/cc-by/plain</a></p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset">http://inspire.ec.europa.eu/metadata-codelist/ResourceType/dataset</a></p>
+<h2>Access Limitation</h2>
+<p>no limitations to public access</p>
+<h3>Code</h3>
+<p>Available</p>
+<h3>Uri</h3>
+<p><a href="http://purl.org/coar/access_right/c_abf2">http://purl.org/coar/access_right/c_abf2</a></p>
+<h2>Not G E M I N I</h2>
+<p>False</p>
+<h2>Licences</h2>
+<p>Creative Commons Attribution 4.0 International (CC BY 4.0)</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/cc-by/plain">https://eidc.ac.uk/licences/cc-by/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>0</p>
+<h2>Topics</h2>
+<ul>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/9">http://onto.nerc.ac.uk/CEHMD/topic/9</a></li>
+</ul>
+<h2>Resource Status</h2>
+<p>Available</p>
+<h2>Points Of Contact</h2>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Chappell</p>
+<h3>Given Name</h3>
+<p>Nick A</p>
+<h3>Organisation Name</h3>
+<p>Lancaster University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04f2nsd36">https://ror.org/04f2nsd36</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>n.chappell@lancaster.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6683-951X">https://orcid.org/0000-0001-6683-951X</a></p>
+<h3>Full Name</h3>
+<p>Chappell, N.A.</p>
+<h3>Point Of Contact</h3>
+<p>Lancaster University</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>Lancaster University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04f2nsd36">https://ror.org/04f2nsd36</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>n.chappell@lancaster.ac.uk</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/af081a90-b014-43f7-9399-c948a8b7672f.zip">https://data-package.ceh.ac.uk/sd/af081a90-b014-43f7-9399-c948a8b7672f.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Honorific Prefix</h3>
+<p>Dr</p>
+<h3>Family Name</h3>
+<p>Chappell</p>
+<h3>Given Name</h3>
+<p>Nick A.</p>
+<h3>Organisation Name</h3>
+<p>Lancaster University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04f2nsd36">https://ror.org/04f2nsd36</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>n.chappell@lancaster.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-6683-951X">https://orcid.org/0000-0001-6683-951X</a></p>
+<h3>Full Name</h3>
+<p>Chappell, N.A.</p>
+<h3>Family Name</h3>
+<p>Beven</p>
+<h3>Given Name</h3>
+<p>K.J.</p>
+<h3>Organisation Name</h3>
+<p>Lancaster University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04f2nsd36">https://ror.org/04f2nsd36</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>k.beven@lancaster.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-7465-3934">https://orcid.org/0000-0001-7465-3934</a></p>
+<h3>Full Name</h3>
+<p>Beven, K.J.</p>
+<h3>Family Name</h3>
+<p>Smith</p>
+<h3>Given Name</h3>
+<p>P.</p>
+<h3>Organisation Name</h3>
+<p>Lancaster University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04f2nsd36">https://ror.org/04f2nsd36</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>p.j.smith@lancaster.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-0034-3412">https://orcid.org/0000-0002-0034-3412</a></p>
+<h3>Full Name</h3>
+<p>Smith, P.</p>
+<h3>Family Name</h3>
+<p>Hankin</p>
+<h3>Given Name</h3>
+<p>B.</p>
+<h3>Organisation Name</h3>
+<p>Lancaster University</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04f2nsd36">https://ror.org/04f2nsd36</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>Barry.Hankin@jbaconsulting.com</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0001-7315-3321">https://orcid.org/0000-0001-7315-3321</a></p>
+<h3>Full Name</h3>
+<p>Hankin, B.</p>
+<h2>Publication Date</h2>
+<p>2024-04-09T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2026-02-06T13:36:12.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Chappell, N.A.</li>
+<li>Beven, K.J.</li>
+<li>Smith, P.</li>
+<li>Hankin, B.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/af081a90-b014-43f7-9399-c948a8b7672f</p>
+<h3>Title</h3>
+<p>Simulated 15-min discharge time-series and baseline simulations for the River Kent following a Natural Flood Management intervention of 'Enhanced Hillslope Storage', Sedgewick, October 2015 to January 2016</p>
+<h3>Publisher</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2024</p>
+<h3>Month</h3>
+<p>4</p>
+<h3>Day</h3>
+<p>9</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/af081a90-b014-43f7-9399-c948a8b7672f/citation?format=bib">https://catalogue.ceh.ac.uk/documents/af081a90-b014-43f7-9399-c948a8b7672f/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/af081a90-b014-43f7-9399-c948a8b7672f/citation?format=ris">https://catalogue.ceh.ac.uk/documents/af081a90-b014-43f7-9399-c948a8b7672f/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/af081a90-b014-43f7-9399-c948a8b7672f">https://doi.org/10.5285/af081a90-b014-43f7-9399-c948a8b7672f</a></p>
+</body>
+</html>

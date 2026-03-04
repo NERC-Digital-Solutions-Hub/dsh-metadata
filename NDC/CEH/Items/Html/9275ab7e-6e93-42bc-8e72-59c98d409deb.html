@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9275ab7e-6e93-42bc-8e72-59c98d409deb</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<h2>Id</h2>
+<p>9275ab7e-6e93-42bc-8e72-59c98d409deb</p>
+<h2>Uri</h2>
+<p><a href="https://catalogue.ceh.ac.uk/id/9275ab7e-6e93-42bc-8e72-59c98d409deb">https://catalogue.ceh.ac.uk/id/9275ab7e-6e93-42bc-8e72-59c98d409deb</a></p>
+<h2>Type</h2>
+<p>dataset</p>
+<h2>Title</h2>
+<p>Potential evapotranspiration derived from HadUK-Grid 1km gridded climate observations 1969-2021 (Hydro-PE HadUK-Grid)</p>
+<h2>Description</h2>
+<p>Gridded potential evapotranspiration calculated from HadUK-Grid gridded observed meteorological data at 1 km resolution over the United Kingdom for the years 1969-2021. This dataset contains two potential evapotranspiration variables: daily total potential evapotranspiration (PET; kg m-2 d-1) and daily total potential evapotranspiration with interception correction (PETI; kg m-2 d-1). The units kg m-2 d-1 are equivalent to mm d-1.</p>
+<p>The data are provided in gridded netCDF files. There is one file for each variable, for each calendar month.</p>
+<p>These data were generated as part of NERC grant NE/S017380/1 (Hydro-JULES: Next generation land surface and hydrological prediction.)</p>
+<h2>Metadata Date</h2>
+<p>2026-01-09T12:56:43</p>
+<h2>Resource Identifiers</h2>
+<h3>Code</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/9275ab7e-6e93-42bc-8e72-59c98d409deb">https://catalogue.ceh.ac.uk/id/9275ab7e-6e93-42bc-8e72-59c98d409deb</a></p>
+<h3>Code</h3>
+<p>10.5285/9275ab7e-6e93-42bc-8e72-59c98d409deb</p>
+<h3>Code Space</h3>
+<p>doi:</p>
+<h2>Relationships</h2>
+<h3>Relation</h3>
+<p><a href="https://vocabs.ceh.ac.uk/eidc#supersedes">https://vocabs.ceh.ac.uk/eidc#supersedes</a></p>
+<h3>Target</h3>
+<p><a href="https://catalogue.ceh.ac.uk/id/470d9bf9-8c82-487c-956e-f15f9d8aac64">https://catalogue.ceh.ac.uk/id/470d9bf9-8c82-487c-956e-f15f9d8aac64</a></p>
+<h3>Relation</h3>
+<p><a href="https://vocabs.ceh.ac.uk/eidc#supersedes">https://vocabs.ceh.ac.uk/eidc#supersedes</a></p>
+<h3>Target</h3>
+<p>470d9bf9-8c82-487c-956e-f15f9d8aac64</p>
+<h2>Lineage</h2>
+<p>This dataset was derived from the HadUK-Grid gridded observed meteorological dataset v1.0.3.0 at 1 km resolution over the United Kingdom for the years 1969-2020 and v1.1.0.0 for 2021. (<a href="https://catalogue.ceda.ac.uk/uuid/4dc8450d889a491ebb20e724debe2dfb">https://catalogue.ceda.ac.uk/uuid/4dc8450d889a491ebb20e724debe2dfb</a> HadUK-Grid is a gridded dataset derived from observed meteorological station data. The daily total potential evapotranspiration (PET; kg m-2 d-1) was calculated using the Penman-Monteith equation parameterised for a well-watered grass surface. The daily total potential evapotranspiration with interception correction (PETI; kg m-2 d-1), was calculated as PET then a correction added for interception by a grass canopy on days with non-zero precipitation. 
+The HadUK-Grid meteorological variables used were: daily maximum and minimum air temperature at 1.5 m (°C), daily precipitation (mm d-1), monthly mean water vapour pressure (hPa), monthly mean sea level pressure (hPa), monthly total sunshine hours (hours) and monthly mean wind speed at 10 m (m s-1). Other variables used were the surface elevation (m) and Ångström coefficients a, b and c. A description of the methodology is available in the supporting documentation.</p>
+<h2>Reason Changed</h2>
+<p>A number of missing data points were discovered in this dataset. The majority of the missing data points were occurring when the wind speed was set to 0 during the interpolation from monthly to daily, which occurred if the interpolation resulted in the wind speed dropping below 0. The zero wind speed resulted in a divide-by-zero in the PET calculation (when calculating aerodynamic resistance), therefore resulting in NaNs (missing data) in both the PET and PETI datasets. This was fixed by raising all 0 wind values to the minimum non-zero value found in the daily-interpolated wind dataset.</p>
+<p>Further missing data was found over St Kilda. This was due to missing data in the original, monthly sfcWind variable in the HadUK dataset used in the PET calculations for Jan and Apr 2009. This was fixed by simply interpolating the monthly data linearly in time to obtain values for these months.</p>
+<p>Two further minor bugs were identified that only affected the PETI dataset, resulting in a few further NaNs and a few incorrect values:
+The first bug was due to the fact that the code calculates the amount of time it takes the canopy to dry out as the inverse of the potential interception. Even though this is done before it sets negative values to be zero, the potential interception rate (PEI) is sometimes equal to zero, which makes t_to_dry NaN, which then propagates through to the PETI as missing values. It’s rare that the PEI is numerically exactly zero, but it does happen! The simple fix was to set t_to_dry=D if PEI&lt;0, so that those points worked out as expected (they end up as PETI=0). The other bug was that the code didn’t properly handle cases where PEI is negative (i.e., condensation, so the canopy never dries out). This meant there were some points which had positive PETI where it should actually have been zero. The impact of these two bugs was very minor.</p>
+<h2>Spatial Representation Types</h2>
+<ul>
+<li>grid</li>
+</ul>
+<h2>Topic Categories</h2>
+<p>environment</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment</a></p>
+<p>climatologyMeteorologyAtmosphere</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/climatologyMeteorologyAtmosphere">http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/climatologyMeteorologyAtmosphere</a></p>
+<h2>Keywords Theme</h2>
+<p>Hydrology</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/9">http://onto.nerc.ac.uk/CEHMD/topic/9</a></p>
+<p>Modelling</p>
+<h3>Uri</h3>
+<p><a href="http://onto.nerc.ac.uk/CEHMD/topic/13">http://onto.nerc.ac.uk/CEHMD/topic/13</a></p>
+<h2>Keywords Other</h2>
+<p>Potential evapotranspiration</p>
+<p>Potential evaporation</p>
+<p>evapotranspiration</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/3022">http://www.eionet.europa.eu/gemet/concept/3022</a></p>
+<p>evaporation</p>
+<h3>Uri</h3>
+<p><a href="http://www.eionet.europa.eu/gemet/concept/3019">http://www.eionet.europa.eu/gemet/concept/3019</a></p>
+<h2>Distribution Formats</h2>
+<h3>Name</h3>
+<p>NetCDF</p>
+<h3>Type</h3>
+<p>application/netcdf</p>
+<h3>Version</h3>
+<p>4</p>
+<h2>Inspire Themes</h2>
+<h3>Theme</h3>
+<p>Atmospheric Conditions</p>
+<h3>Uri</h3>
+<p><a href="http://inspire.ec.europa.eu/theme/ac">http://inspire.ec.europa.eu/theme/ac</a></p>
+<h2>Spatial Resolutions</h2>
+<h3>Distance</h3>
+<p>1000</p>
+<h2>Funding</h2>
+<h3>Funder Name</h3>
+<p>Natural Environment Research Council</p>
+<h3>Funder Identifier</h3>
+<p><a href="https://ror.org/02b5d8509">https://ror.org/02b5d8509</a></p>
+<h3>Award Title</h3>
+<p>Hydro-JULES: Next generation land surface and hydrological prediction.</p>
+<h3>Award Number</h3>
+<p>NE/S017380/1</p>
+<h3>Award U R I</h3>
+<p><a href="https://gtr.ukri.org/projects?ref=NE/S017380/1">https://gtr.ukri.org/projects?ref=NE/S017380/1</a></p>
+<h3>Ror</h3>
+<p>True</p>
+<h3>Orcid</h3>
+<p>False</p>
+<h2>Bounding Boxes</h2>
+<h3>West Bound Longitude</h3>
+<p>-8.648</p>
+<h3>East Bound Longitude</h3>
+<p>1.768</p>
+<h3>South Bound Latitude</h3>
+<p>49.864</p>
+<h3>North Bound Latitude</h3>
+<p>60.861</p>
+<h3>Bounds</h3>
+<p>{"type": "Feature",      "properties": {},      "geometry": {        "type": "Polygon",        "coordinates": [[[-8.648, 49.864], [-8.648, 60.861], [1.768, 60.861], [1.768, 49.864], [-8.648, 49.864]]]      }}</p>
+<h3>Coordinates</h3>
+<p>[[[-8.648, 49.864], [-8.648, 60.861], [1.768, 60.861], [1.768, 49.864], [-8.648, 49.864]]]</p>
+<h2>Distributor Contacts</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>distributor</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Responsible Parties</h2>
+<h3>Family Name</h3>
+<p>Brown</p>
+<h3>Given Name</h3>
+<p>Matt</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-1127-0279">https://orcid.org/0000-0003-1127-0279</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Maclean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Brown, M.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Family Name</h3>
+<p>Brown</p>
+<h3>Given Name</h3>
+<p>M.J.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-1127-0279">https://orcid.org/0000-0003-1127-0279</a></p>
+<h3>Full Name</h3>
+<p>Brown, M.J.</p>
+<h3>Family Name</h3>
+<p>Robinson</p>
+<h3>Given Name</h3>
+<p>E.L.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-3746-4517">https://orcid.org/0000-0002-3746-4517</a></p>
+<h3>Full Name</h3>
+<p>Robinson, E.L.</p>
+<h3>Family Name</h3>
+<p>Kay</p>
+<h3>Given Name</h3>
+<p>A.L.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-5526-1756">https://orcid.org/0000-0002-5526-1756</a></p>
+<h3>Full Name</h3>
+<p>Kay, A.L.</p>
+<h3>Family Name</h3>
+<p>Chapman</p>
+<h3>Given Name</h3>
+<p>R.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-3842-1420">https://orcid.org/0000-0002-3842-1420</a></p>
+<h3>Full Name</h3>
+<p>Chapman, R.</p>
+<h3>Family Name</h3>
+<p>Bell</p>
+<h3>Given Name</h3>
+<p>V.A.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-0792-5650">https://orcid.org/0000-0002-0792-5650</a></p>
+<h3>Full Name</h3>
+<p>Bell, V.A.</p>
+<h3>Family Name</h3>
+<p>Blyth</p>
+<h3>Given Name</h3>
+<p>E.M.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-5052-238X">https://orcid.org/0000-0002-5052-238X</a></p>
+<h3>Full Name</h3>
+<p>Blyth, E.M.</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Temporal Extents</h2>
+<h3>Begin</h3>
+<p>1969-01-01</p>
+<h3>End</h3>
+<p>2021-12-31</p>
+<h2>Online Resources</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/9275ab7e-6e93-42bc-8e72-59c98d409deb.zip">https://data-package.ceh.ac.uk/sd/9275ab7e-6e93-42bc-8e72-59c98d409deb.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Spatial Reference Systems</h2>
+<h3>Code</h3>
+<p><a href="http://www.opengis.net/def/crs/EPSG/0/27700">http://www.opengis.net/def/crs/EPSG/0/27700</a></p>
+<h3>Title</h3>
+<p>OSGB 1936 / British National Grid</p>
+<h2>Incoming Citations</h2>
+<h3>Description</h3>
+<p>Kay, A.L., Bell, V.A., Davies, H.N., Lane, R.A. &amp; Rudd, A.C. (2023) The UKSCAPE-G2G river flow and soil moisture datasets: Grid-to-Grid model estimates for the UK for historical and potential future climates. Earth System Science Data 15, 2533–2546.</p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5194/essd-15-2533-2023">https://doi.org/10.5194/essd-15-2533-2023</a></p>
+<h3>Description</h3>
+<p>Robinson, E.L. (2023) NERC-CEH/hydro-pe: v1.2.0. Zenodo</p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5281/zenodo.8363164">https://doi.org/10.5281/zenodo.8363164</a></p>
+<h3>Description</h3>
+<p>Robinson, E.L., Brown, M.J., Kay, A.L., Lane, R.A., Chapman, R., Bell, V.A., &amp; Blyth, E.M. (2023). Hydro-PE: gridded datasets of historical and future Penman–Monteith potential evaporation for the United Kingdom. In Earth System Science Data (Vol. 15, Issue 10, pp. 4433–4461). Copernicus GmbH. </p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5194/essd-15-4433-2023">https://doi.org/10.5194/essd-15-4433-2023</a></p>
+<h2>Supplemental</h2>
+<h3>Name</h3>
+<p>HadUK-Grid gridded and regional average climate observations for the UK</p>
+<h3>Url</h3>
+<p><a href="https://catalogue.ceda.ac.uk/uuid/4dc8450d889a491ebb20e724debe2dfb">https://catalogue.ceda.ac.uk/uuid/4dc8450d889a491ebb20e724debe2dfb</a></p>
+<h3>Function</h3>
+<p>relatedDataset</p>
+<h2>Dataset Reference Date</h2>
+<h3>Publication Date</h3>
+<p>2022-08-10</p>
+<h3>Unavailable Date</h3>
+<p>2023-10-24</p>
+<h3>Superseded Date</h3>
+<p>2023-12-07</p>
+<h2>Use Constraints</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Resource Type</h2>
+<p>dataset</p>
+<h2>Access Limitation</h2>
+<p>superseded</p>
+<h3>Code</h3>
+<p>Superseded</p>
+<h2>Not G E M I N I</h2>
+<p>False</p>
+<h2>Licences</h2>
+<p>This resource is available under the terms of the Open Government Licence</p>
+<h3>Code</h3>
+<p>license</p>
+<h3>Uri</h3>
+<p><a href="https://eidc.ac.uk/licences/ogl/plain">https://eidc.ac.uk/licences/ogl/plain</a></p>
+<h2>Incoming Citation Count</h2>
+<p>3</p>
+<h2>Topics</h2>
+<ul>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/9">http://onto.nerc.ac.uk/CEHMD/topic/9</a></li>
+<li><a href="http://onto.nerc.ac.uk/CEHMD/topic/13">http://onto.nerc.ac.uk/CEHMD/topic/13</a></li>
+</ul>
+<h2>Resource Status</h2>
+<p>Superseded</p>
+<h2>Points Of Contact</h2>
+<h3>Family Name</h3>
+<p>Brown</p>
+<h3>Given Name</h3>
+<p>Matt</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>pointOfContact</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-1127-0279">https://orcid.org/0000-0003-1127-0279</a></p>
+<h3>Address</h3>
+<h4>Delivery Point</h4>
+<p>Maclean Building, Benson Lane, Crowmarsh Gifford</p>
+<h4>City</h4>
+<p>Wallingford</p>
+<h4>Administrative Area</h4>
+<p>Oxfordshire</p>
+<h4>Postal Code</h4>
+<p>OX10 8BB</p>
+<h4>Country</h4>
+<p>United Kingdom</p>
+<h3>Full Name</h3>
+<p>Brown, M.</p>
+<h3>Point Of Contact</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h2>Rights Holders</h2>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>rightsHolder</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h2>Info Links</h2>
+<h3>Url</h3>
+<p><a href="https://data-package.ceh.ac.uk/sd/9275ab7e-6e93-42bc-8e72-59c98d409deb.zip">https://data-package.ceh.ac.uk/sd/9275ab7e-6e93-42bc-8e72-59c98d409deb.zip</a></p>
+<h3>Name</h3>
+<p>Supporting information</p>
+<h3>Description</h3>
+<p>Supporting information available to assist in re-use of this dataset</p>
+<h3>Function</h3>
+<p>information</p>
+<h3>Type</h3>
+<p>OTHER</p>
+<h2>Publishers</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>publisher</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Authors</h2>
+<h3>Family Name</h3>
+<p>Brown</p>
+<h3>Given Name</h3>
+<p>M.J.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0003-1127-0279">https://orcid.org/0000-0003-1127-0279</a></p>
+<h3>Full Name</h3>
+<p>Brown, M.J.</p>
+<h3>Family Name</h3>
+<p>Robinson</p>
+<h3>Given Name</h3>
+<p>E.L.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-3746-4517">https://orcid.org/0000-0002-3746-4517</a></p>
+<h3>Full Name</h3>
+<p>Robinson, E.L.</p>
+<h3>Family Name</h3>
+<p>Kay</p>
+<h3>Given Name</h3>
+<p>A.L.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-5526-1756">https://orcid.org/0000-0002-5526-1756</a></p>
+<h3>Full Name</h3>
+<p>Kay, A.L.</p>
+<h3>Family Name</h3>
+<p>Chapman</p>
+<h3>Given Name</h3>
+<p>R.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-3842-1420">https://orcid.org/0000-0002-3842-1420</a></p>
+<h3>Full Name</h3>
+<p>Chapman, R.</p>
+<h3>Family Name</h3>
+<p>Bell</p>
+<h3>Given Name</h3>
+<p>V.A.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-0792-5650">https://orcid.org/0000-0002-0792-5650</a></p>
+<h3>Full Name</h3>
+<p>Bell, V.A.</p>
+<h3>Family Name</h3>
+<p>Blyth</p>
+<h3>Given Name</h3>
+<p>E.M.</p>
+<h3>Organisation Name</h3>
+<p>UK Centre for Ecology &amp; Hydrology</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/00pggkr55">https://ror.org/00pggkr55</a></p>
+<h3>Role</h3>
+<p>author</p>
+<h3>Email</h3>
+<p>enquiries@ceh.ac.uk</p>
+<h3>Name Identifier</h3>
+<p><a href="https://orcid.org/0000-0002-5052-238X">https://orcid.org/0000-0002-5052-238X</a></p>
+<h3>Full Name</h3>
+<p>Blyth, E.M.</p>
+<h2>Publication Date</h2>
+<p>2022-08-10T00:00:00.000+00:00</p>
+<h2>Custodians</h2>
+<h3>Organisation Name</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Organisation Identifier</h3>
+<p><a href="https://ror.org/04xw4m193">https://ror.org/04xw4m193</a></p>
+<h3>Role</h3>
+<p>custodian</p>
+<h3>Email</h3>
+<p>info@eidc.ac.uk</p>
+<h2>Updated Date</h2>
+<p>2026-01-09T12:56:43.000+00:00</p>
+<h2>Citation</h2>
+<h3>Authors</h3>
+<ul>
+<li>Brown, M.J.</li>
+<li>Robinson, E.L.</li>
+<li>Kay, A.L.</li>
+<li>Chapman, R.</li>
+<li>Bell, V.A.</li>
+<li>Blyth, E.M.</li>
+</ul>
+<h3>Doi</h3>
+<p>10.5285/9275ab7e-6e93-42bc-8e72-59c98d409deb</p>
+<h3>Title</h3>
+<p>Potential evapotranspiration derived from HadUK-Grid 1km gridded climate observations 1969-2021 (Hydro-PE HadUK-Grid)</p>
+<h3>Publisher</h3>
+<p>NERC EDS Environmental Information Data Centre</p>
+<h3>Resource Type General</h3>
+<p>dataset</p>
+<h3>Year</h3>
+<p>2022</p>
+<h3>Month</h3>
+<p>8</p>
+<h3>Day</h3>
+<p>10</p>
+<h3>Bibtex</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/9275ab7e-6e93-42bc-8e72-59c98d409deb/citation?format=bib">https://catalogue.ceh.ac.uk/documents/9275ab7e-6e93-42bc-8e72-59c98d409deb/citation?format=bib</a></p>
+<h3>Ris</h3>
+<p><a href="https://catalogue.ceh.ac.uk/documents/9275ab7e-6e93-42bc-8e72-59c98d409deb/citation?format=ris">https://catalogue.ceh.ac.uk/documents/9275ab7e-6e93-42bc-8e72-59c98d409deb/citation?format=ris</a></p>
+<h3>Url</h3>
+<p><a href="https://doi.org/10.5285/9275ab7e-6e93-42bc-8e72-59c98d409deb">https://doi.org/10.5285/9275ab7e-6e93-42bc-8e72-59c98d409deb</a></p>
+</body>
+</html>
