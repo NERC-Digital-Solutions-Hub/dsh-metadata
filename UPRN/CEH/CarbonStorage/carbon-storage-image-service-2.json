@@ -16,7 +16,7 @@
                     "content": [
                         {
                             "type": "xml",
-                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/gmd/Carbon_DevianceWeightedEnsemble.xml"
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/gmd/carbon-storage-image-service-2.xml"
                         }
                     ]
                 },
