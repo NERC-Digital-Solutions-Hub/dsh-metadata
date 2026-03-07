@@ -4,14 +4,6 @@
             "title": "General",
             "tabs": [
                 {
-                    "title": "Information",
-                    "content": [
-                        {
-                            "type": "arcgisInfo"
-                        }
-                    ]
-                },
-                {
                     "title": "Metadata",
                     "content": [
                         {
