@@ -1,1 +1,101 @@
-﻿<?xml version="1.0" encoding="utf-8"?><MD_Metadata xmlns="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gml="http://www.opengis.net/gml" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><language><LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode></language><characterSet><MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode></characterSet><hierarchyLevel><MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode></hierarchyLevel><hierarchyLevelName><gco:CharacterString>dataset</gco:CharacterString></hierarchyLevelName><contact gco:nilReason="missing" /><dateStamp><gco:Date>2024-05-07</gco:Date></dateStamp><metadataStandardName><gco:CharacterString>ISO 19139 Geographic Information - Metadata - Implementation Specification</gco:CharacterString></metadataStandardName><metadataStandardVersion><gco:CharacterString>2007</gco:CharacterString></metadataStandardVersion><spatialRepresentationInfo><MD_VectorSpatialRepresentation><topologyLevel><MD_TopologyLevelCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopologyLevelCode" codeListValue="geometryOnly" codeSpace="ISOTC211/19115">geometryOnly</MD_TopologyLevelCode></topologyLevel><geometricObjects><MD_GeometricObjects><geometricObjectType><MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="composite" codeSpace="ISOTC211/19115">composite</MD_GeometricObjectTypeCode></geometricObjectType></MD_GeometricObjects></geometricObjects></MD_VectorSpatialRepresentation></spatialRepresentationInfo><referenceSystemInfo><MD_ReferenceSystem><referenceSystemIdentifier><RS_Identifier><code><gco:CharacterString>3857</gco:CharacterString></code><codeSpace><gco:CharacterString>EPSG</gco:CharacterString></codeSpace><version><gco:CharacterString>6.18.3(9.3.1.2)</gco:CharacterString></version></RS_Identifier></referenceSystemIdentifier></MD_ReferenceSystem></referenceSystemInfo><identificationInfo><MD_DataIdentification><citation><CI_Citation><title><gco:CharacterString>WA_LSOA_2011_BFC_V3_2022_CJ</gco:CharacterString></title><date gco:nilReason="missing" /><presentationForm><CI_PresentationFormCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="mapDigital" codeSpace="ISOTC211/19115">mapDigital</CI_PresentationFormCode></presentationForm></CI_Citation></citation><abstract><gco:CharacterString>This table provides a comprehensive overview of various socio-economic and environmental indicators for Lower Layer Super Output Areas (LSOAs) in Wales, based on the 2011 boundaries. Each LSOA is identified by its unique code ('LSOA11CD') and name ('LSOA11NM'). The table includes indices measuring sensitivity, preparedness, response, and recovery capabilities related to both flood and heat vulnerabilities, such as the 'Socio-Spatial Flood Vulnerability Index' ('SSFVI') and the 'Socio-Spatial Heat Vulnerability Index' ('SSHVI'). Demographic data encompasses population counts, age distributions (e.g., percentages of young children and older adults), and health indicators like emergency hospital admission rates. Socio-economic factors are represented through metrics on employment and income deprivation, housing characteristics, language proficiency, internet access, and crime rates. Environmental aspects cover urbanization levels, access to green spaces, and exposure to historical flood zones. Additionally, the table provides information on accessibility to essential services, including average travel times to pharmacies and general practitioners by both public and private transport. Geospatial attributes, such as area and perimeter measurements, are also included to facilitate spatial analysis. Overall, this dataset offers a detailed snapshot of the vulnerabilities and characteristics of Welsh LSOAs as of 2022.</gco:CharacterString></abstract><purpose><gco:CharacterString>This dataset provides a detailed snapshot of socio-economic, demographic, environmental, and geospatial characteristics of Welsh LSOAs (2011 boundaries) as of 2022, highlighting vulnerabilities to flood and heat risks, accessibility to essential services, and key indicators of community resilience.</gco:CharacterString></purpose><spatialRepresentationType><MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" codeSpace="ISOTC211/19115">vector</MD_SpatialRepresentationTypeCode></spatialRepresentationType><language><LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode></language><characterSet><MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode></characterSet><environmentDescription><gco:CharacterString>Esri ArcGIS 13.1.3.41833</gco:CharacterString></environmentDescription></MD_DataIdentification></identificationInfo><distributionInfo><MD_Distribution><distributionFormat><MD_Format><name><gco:CharacterString>File Geodatabase Feature Class</gco:CharacterString></name><version gco:nilReason="missing" /></MD_Format></distributionFormat></MD_Distribution></distributionInfo></MD_Metadata>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MD_Metadata xmlns="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<language>
+		<LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+	</language>
+	<characterSet>
+		<MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+	</characterSet>
+	<hierarchyLevel>
+		<MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+	</hierarchyLevel>
+	<hierarchyLevelName>
+		<gco:CharacterString>dataset</gco:CharacterString>
+	</hierarchyLevelName>
+	<contact gco:nilReason="missing"/>
+	<dateStamp>
+		<gco:Date>2024-05-07</gco:Date>
+	</dateStamp>
+	<metadataStandardName>
+		<gco:CharacterString>ISO 19139 Geographic Information - Metadata - Implementation Specification</gco:CharacterString>
+	</metadataStandardName>
+	<metadataStandardVersion>
+		<gco:CharacterString>2007</gco:CharacterString>
+	</metadataStandardVersion>
+	<spatialRepresentationInfo>
+		<MD_VectorSpatialRepresentation>
+			<topologyLevel>
+				<MD_TopologyLevelCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopologyLevelCode" codeListValue="geometryOnly" codeSpace="ISOTC211/19115">geometryOnly</MD_TopologyLevelCode>
+			</topologyLevel>
+			<geometricObjects>
+				<MD_GeometricObjects>
+					<geometricObjectType>
+						<MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="composite" codeSpace="ISOTC211/19115">composite</MD_GeometricObjectTypeCode>
+					</geometricObjectType>
+				</MD_GeometricObjects>
+			</geometricObjects>
+		</MD_VectorSpatialRepresentation>
+	</spatialRepresentationInfo>
+	<referenceSystemInfo>
+		<MD_ReferenceSystem>
+			<referenceSystemIdentifier>
+				<RS_Identifier>
+					<code>
+						<gco:CharacterString>3857</gco:CharacterString>
+					</code>
+					<codeSpace>
+						<gco:CharacterString>EPSG</gco:CharacterString>
+					</codeSpace>
+					<version>
+						<gco:CharacterString>6.18.3(9.3.1.2)</gco:CharacterString>
+					</version>
+				</RS_Identifier>
+			</referenceSystemIdentifier>
+		</MD_ReferenceSystem>
+	</referenceSystemInfo>
+	<identificationInfo>
+		<MD_DataIdentification>
+			<citation>
+				<CI_Citation>
+					<title>
+						<gco:CharacterString>WA_LSOA_2011_BFC_V3_2022_CJ</gco:CharacterString>
+					</title>
+					<date gco:nilReason="missing"/>
+					<presentationForm>
+						<CI_PresentationFormCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="mapDigital" codeSpace="ISOTC211/19115">mapDigital</CI_PresentationFormCode>
+					</presentationForm>
+				</CI_Citation>
+			</citation>
+			<abstract>
+				<gco:CharacterString>This table provides a comprehensive overview of various socio-economic and environmental indicators for Lower Layer Super Output Areas (LSOAs) in Wales, based on the 2011 boundaries. Each LSOA is identified by its unique code ('LSOA11CD') and name ('LSOA11NM'). The table includes indices measuring sensitivity, preparedness, response, and recovery capabilities related to both flood and heat vulnerabilities, such as the 'Socio-Spatial Flood Vulnerability Index' ('SSFVI') and the 'Socio-Spatial Heat Vulnerability Index' ('SSHVI'). Demographic data encompasses population counts, age distributions (e.g., percentages of young children and older adults), and health indicators like emergency hospital admission rates. Socio-economic factors are represented through metrics on employment and income deprivation, housing characteristics, language proficiency, internet access, and crime rates. Environmental aspects cover urbanization levels, access to green spaces, and exposure to historical flood zones. Additionally, the table provides information on accessibility to essential services, including average travel times to pharmacies and general practitioners by both public and private transport. Geospatial attributes, such as area and perimeter measurements, are also included to facilitate spatial analysis. Overall, this dataset offers a detailed snapshot of the vulnerabilities and characteristics of Welsh LSOAs as of 2022.</gco:CharacterString>
+			</abstract>
+			<purpose>
+				<gco:CharacterString>This dataset provides a detailed snapshot of socio-economic, demographic, environmental, and geospatial characteristics of Welsh LSOAs (2011 boundaries) as of 2022, highlighting vulnerabilities to flood and heat risks, accessibility to essential services, and key indicators of community resilience.</gco:CharacterString>
+			</purpose>
+			<spatialRepresentationType>
+				<MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" codeSpace="ISOTC211/19115">vector</MD_SpatialRepresentationTypeCode>
+			</spatialRepresentationType>
+			<language>
+				<LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+			</language>
+			<characterSet>
+				<MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+			</characterSet>
+			<environmentDescription>
+				<gco:CharacterString>Esri ArcGIS 13.1.3.41833</gco:CharacterString>
+			</environmentDescription>
+		</MD_DataIdentification>
+	</identificationInfo>
+	<distributionInfo>
+		<MD_Distribution>
+			<distributionFormat>
+				<MD_Format>
+					<name>
+						<gco:CharacterString>File Geodatabase Feature Class</gco:CharacterString>
+					</name>
+					<version gco:nilReason="missing"/>
+				</MD_Format>
+			</distributionFormat>
+		</MD_Distribution>
+	</distributionInfo>
+</MD_Metadata>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><MD_Metadata xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:xalan="http://xml.apache.org/xalan" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns="http://www.isotc211.org/2005/gmd">
+    <characterSet>
+        <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+    </characterSet>
+    <hierarchyLevel>
+        <MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+    </hierarchyLevel>
+    <hierarchyLevelName>
+        <gco:CharacterString>dataset</gco:CharacterString>
+    </hierarchyLevelName>
+    <contact gco:nilReason="missing"/>
+    <dateStamp gco:nilReason="missing"/>
+    <metadataStandardName>
+        <gco:CharacterString>ISO 19139 Geographic Information - Metadata - Implementation Specification</gco:CharacterString>
+    </metadataStandardName>
+    <metadataStandardVersion>
+        <gco:CharacterString>2007</gco:CharacterString>
+    </metadataStandardVersion>
+    <identificationInfo>
+        <MD_DataIdentification>
+            <citation>
+                <CI_Citation>
+                    <title>
+                        <gco:CharacterString>Map</gco:CharacterString>
+                    </title>
+                    <date gco:nilReason="missing"/>
+                </CI_Citation>
+            </citation>
+            <abstract>
+                <gco:CharacterString>
+                    <h2>Climate Just Spatial Feature Layers<h2>
+                    <br>
+                    The Climate Just spatial data suite consists of six primary feature layers that integrate <b>high-resolution climate hazard projections</b> with <b>socio-economic vulnerability indicators</b> to map climate disadvantage across the United Kingdom. These layers are designed to help public service providers identify who is vulnerable to extreme weather events, such as flooding and heatwaves, and which specific locations are most at risk of experiencing negative social impacts.
+                    <br>
+                    <b>Geographic and Spatial Scope</b> The data are provided at multiple scales to support varied levels of decision-making:
+                    <br>
+                    <ul>
+                        <li><b>National-scale 25km grids</b> provide broad patterns for heat-related disadvantage in England and probabilistic climate projections (UKCP18) for the entire UK.</li>
+                        <li><b>Neighborhood-level data</b> are mapped at the <b>Middle Super Output Area (MSOA) and Lower Super Output Area (LSOA)</b> levels. This includes comprehensive 2022 datasets for England and Wales and specific flood risk indexes for the UK.</li>
+                    </ul>
+                    <br>
+                    <h3>Thematic Components.<h3>
+                    <br>The layers categorize climate risk through three primary lenses:
+                    <br>
+                    <ol>
+                        <li><strong>Hazard Exposure:</strong> Utilizing UKCP09 and UKCP18 projections, the data map the likelihood of extreme events, including mean summer maximum temperatures, pluvial (surface water) flooding, and fluvial (river/coastal) flooding.</li>
+                        <li><strong>Social Vulnerability:</strong> The data quantify the personal, social, and environmental factors—such as age, health, income, and community networks—that affect a population's ability to prepare for, respond to, and recover from climate impacts.</li>
+                        <li><strong>Climate Disadvantage:</strong> By combining hazard exposure with socio-spatial vulnerability, these layers identify "hot spots" where extreme events are likely to have the most severe impacts on community wellbeing.</li>
+                    </ol>
+                    <br>
+                    <h3>Core Metrics and Indicators.</h3>
+                    <br>
+                    Key metrics within these layers include the <b>Socio-Spatial Heat Vulnerability Index (SSHVI)</b>, the <b>Neighbourhood Flood Vulnerability Index (NFVI)</b>, and the <b>Social Flood Risk Index (SFRI)</b>. The datasets also incorporate a wide array of supporting indicators, such as internet access, pharmacy accessibility, and housing characteristics, which are provided as Z-scores to facilitate comparative analysis across different regions.
+                    <br>
+                    <h3>Temporal Range.</h3>
+                    The suite offers a temporal perspective on climate risk, featuring <b>historical data from 1961</b> alongside <b>future projections</b> for several scenarios (e.g., +2°C and +4°C Global Mean Temperature rises) and epochs reaching into the 2050s and 2080s.
+                    <br>
+                    By synthesizing these diverse data sources, the Climate Just feature layers provide a robust evidence base for developing <b>socially just adaptation strategies</b>, ensuring that resources are prioritized for the communities that need them most.
+                </gco:CharacterString>
+            </abstract>
+            <purpose>
+                <gco:CharacterString>The ClimateJust Feature Service is designed to assist public service providers in addressing climate justice issues. Its aim is to provide valuable resources and insights, helping users to navigate the complex intersection of climate change and social equity.</gco:CharacterString>
+            </purpose>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>climate</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>climate justice</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>climate change</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>social equity</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>environment</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>flood</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>heat</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>climate vulnerability</gco:CharacterString>
+                    </keyword>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <language gco:nilReason="missing"/>
+            <characterSet>
+                <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+            </characterSet>
+        </MD_DataIdentification>
+    </identificationInfo>
+</MD_Metadata>

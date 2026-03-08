@@ -1,1 +1,46 @@
-﻿<?xml version="1.0" encoding="utf-8"?><MD_Metadata xmlns="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gml="http://www.opengis.net/gml" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><characterSet><MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode></characterSet><hierarchyLevel><MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode></hierarchyLevel><hierarchyLevelName><gco:CharacterString>dataset</gco:CharacterString></hierarchyLevelName><contact gco:nilReason="missing" /><dateStamp><gco:Date>2024-06-13</gco:Date></dateStamp><metadataStandardName><gco:CharacterString>ISO 19139 Geographic Information - Metadata - Implementation Specification</gco:CharacterString></metadataStandardName><metadataStandardVersion><gco:CharacterString>2007</gco:CharacterString></metadataStandardVersion><identificationInfo><MD_DataIdentification><citation><CI_Citation><title><gco:CharacterString>Grid (England) - Heat</gco:CharacterString></title><date gco:nilReason="missing" /></CI_Citation></citation><abstract gco:nilReason="missing" /><purpose><gco:CharacterString>This dataset contains heat exposure and disadvantage data for England.</gco:CharacterString></purpose><language gco:nilReason="missing" /><characterSet><MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode></characterSet></MD_DataIdentification></identificationInfo></MD_Metadata>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MD_Metadata xmlns="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<characterSet>
+		<MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+	</characterSet>
+	<hierarchyLevel>
+		<MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+	</hierarchyLevel>
+	<hierarchyLevelName>
+		<gco:CharacterString>dataset</gco:CharacterString>
+	</hierarchyLevelName>
+	<contact gco:nilReason="missing"/>
+	<dateStamp>
+		<gco:Date>2024-06-13</gco:Date>
+	</dateStamp>
+	<metadataStandardName>
+		<gco:CharacterString>ISO 19139 Geographic Information - Metadata - Implementation Specification</gco:CharacterString>
+	</metadataStandardName>
+	<metadataStandardVersion>
+		<gco:CharacterString>2007</gco:CharacterString>
+	</metadataStandardVersion>
+	<identificationInfo>
+		<MD_DataIdentification>
+			<citation>
+				<CI_Citation>
+					<title>
+						<gco:CharacterString>Grid (England) - Heat</gco:CharacterString>
+					</title>
+					<date gco:nilReason="missing"/>
+				</CI_Citation>
+			</citation>
+			<abstract>
+				<gco:CharacterString>
+					This dataset contains heat exposure and disadvantage data for England. The maps of heat hazard-exposure broadly show where there is likely to be a greater chance of coming into contact with heat-related events. There are four representations of heat-related hazard and therefore four sets of maps. They are: mean summer maximum temperature in the 2050s; change in mean summer maximum temperature from the climate baseline to the 2050s; change in the temperature of the warmest day from the climate baseline to the 2050s; and change in the temperature of the warmest night from the climate baseline to the 2050s. The maps are shown by 25km grid cell, conforming to climate scenario outputs from UKCP09. In line with UKCP09 guidance, maps are provided for three scenarios and three probability levels. The maps for the central (50th percentile) estimate of the medium scenario for mean summer maximum temperature in the 2050s are a recommended starting point. More information is available in the ClimateJust portal (www.climatejust.org.uk). The heat disadvantage data shows how heat-related social vulnerability combines with the potential for exposure to heat-related events. This accounts for both the likelihood of coming into contact with high temperatures and also the severity of negative impacts on the health and wellbeing of local communities that could occur as a result of that contact. There are eight combinations of maps bringing together two representations of social vulnerability (population-weighted and average) and four representations of heat-related hazard (see below). They show the result of an equally-weighted combination of neighbourhood-level scores for: · Socio-spatial heat vulnerability – a map of where negative social impacts are more likely. There are two types of maps both of which are represented over a 25km grid. The first shows a population-weighted representation of vulnerability and the second shows average heat-related vulnerability for each 25km grid cell across England.· High temperature hazard-exposure – a map of where high temperatures are more likely. This map uses a 25km grid over England. There are four measures of high temperature hazard-exposure and therefore four maps. They are: mean summer maximum temperature in the 2050s; change in mean summer maximum temperature from the climate baseline to the 2050s; change in the temperature of the warmest day from the climate baseline to the 2050s; and change in the temperature of the warmest night from the climate baseline to the 2050s. The maps are shown by 25km grid cell, conforming to climate scenario outputs from UKCP09. In line with UKCP09 guidance, maps are provided for three scenarios and three probability levels. The maps for the central (50th percentile) estimate of the medium scenario for mean summer maximum temperature in the 2050s is a recommended starting point.
+				</gco:CharacterString>
+			</abstract>
+			<purpose>
+				<gco:CharacterString>This dataset contains heat exposure and disadvantage data for England.</gco:CharacterString>
+			</purpose>
+			<language gco:nilReason="missing"/>
+			<characterSet>
+				<MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+			</characterSet>
+		</MD_DataIdentification>
+	</identificationInfo>
+</MD_Metadata>
