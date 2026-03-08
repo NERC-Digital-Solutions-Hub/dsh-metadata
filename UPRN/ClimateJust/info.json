@@ -51,7 +51,19 @@
                         },
                         {
                             "type": "image",
-                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/infographics/no01.png"
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/infographics/climatejust-data-ecosystem.png"
+                        },
+                        {
+                            "type": "image",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/infographics/6-pillars.png"
+                        },
+                        {
+                            "type": "image",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/infographics/anatomy-of-climate-disadvantage.png"
+                        },
+                        {
+                            "type": "image",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/infographics/climate-justice.png"
                         }
                     ]
                 },
@@ -65,38 +77,38 @@
                         {
                             "type": "slideshow",
                             "source": [
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no01.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no02.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no03.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no04.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no05.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no06.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no07.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no08.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no09.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no10.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no11.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no01/no12.png"
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd01/no01.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd01/no02.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd01/no03.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd01/no04.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd01/no05.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd01/no06.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd01/no07.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd01/no08.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd01/no09.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd01/no10.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd01/no11.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd01/no12.png"
                             ]
                         },
                         {
                             "type": "slideshow",
                             "source": [
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no01.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no02.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no03.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no04.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no05.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no06.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no07.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no08.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no09.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no10.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no11.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no12.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no13.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no14.png",
-                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/CarbonStorage/slide-decks/no02/no15.png"
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no01.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no02.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no03.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no04.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no05.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no06.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no07.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no08.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no09.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no10.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no11.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no12.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no13.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no14.png",
+                                "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/slide-decks/sd02/no15.png"
                             ]
                         }
                     ]
