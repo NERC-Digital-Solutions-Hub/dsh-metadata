@@ -61,10 +61,11 @@ A highlighted notice shown to users. This will display text in a disclaimer text
 
 - **value** _(string, required)_: Disclaimer text to display.
 
+---
+
 ### ArcGIS Information
 
-Renders ArcGIS information for the dataset. This fetches the ArcGIS information based on the ArcGIS item in the
-webpage, so no additional fields are required.
+Renders ArcGIS information for the dataset. This fetches the ArcGIS information based on the ArcGIS item in the webpage, so no additional fields are required.
 
 ```json
 {
@@ -72,9 +73,26 @@ webpage, so no additional fields are required.
 }
 ```
 
+---
+
+### XML Key Information
+
+Source to an XML document (e.g., metadata record). This parses the XML document in order to display key information (e.g., title, abstract, organisation, etc.).
+
+```json
+{
+	"type": "xmlKeyInfo",
+	"source": "https://example.org/record.xml"
+}
+```
+
+- **source** _(string, required)_: Source to the XML file.
+
+---
+
 ### XML
 
-Source to an XML document (e.g., metadata record).
+Source to an XML document (e.g., metadata record). This displays a raw XML document.
 
 ```json
 {
@@ -87,6 +105,21 @@ Source to an XML document (e.g., metadata record).
 
 ---
 
+### Markdown
+
+Source to a markdown document. This parses the markdown document to HTML and displays it.
+
+```json
+{
+	"type": "md",
+	"source": "https://example.org/record.md"
+}
+```
+
+- **source** _(string, required)_: Source to the markdown file.
+
+---
+
 ### DOCX
 
 Source to a Word document.
@@ -94,10 +127,12 @@ Source to a Word document.
 ```json
 {
 	"type": "docx",
+	"name": "Example 1",
 	"source": "https://example.org/document.docx"
 }
 ```
 
+- **name** _(string, optional)_: Optional name of the DOCX file.
 - **source** _(string, required)_: Source to the DOCX file.
 
 ---
@@ -109,10 +144,12 @@ Source to a PDF document.
 ```json
 {
 	"type": "pdf",
+	"name": "Example 1",
 	"source": "https://example.org/document.pdf"
 }
 ```
 
+- **name** _(string, optional)_: Optional name of the PDF file.
 - **source** _(string, required)_: Source to the PDF file.
 
 ---
