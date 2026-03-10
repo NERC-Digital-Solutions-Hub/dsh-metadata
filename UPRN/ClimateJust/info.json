@@ -1,7 +1,7 @@
 {
     "tabGroups": [
         {
-            "title": "General",
+            "title": "Official Documents",
             "tabs": [
                 {
                     "title": "Information",
@@ -24,16 +24,22 @@
                     "title": "Supporting Documents",
                     "content": [
                         {
-                            "type": "pdf",
-                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/support-docs/climate-change-justice-vulnerabilityEBOOK.pdf"
-                        },
-                        {
+                            "name": "Climate change, justice and vulnerability - November 2011",
+                            "description": "Full Report",
                             "type": "pdf",
                             "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/support-docs/climate-change-social-vulnerability-full.pdf"
                         },
                         {
+                            "name": "Climate change, justice and vulnerability - November 2011",
+                            "description": "Summary",
                             "type": "pdf",
                             "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/support-docs/climate-change-social-vulnerability-summary.pdf"
+                        },
+                        {
+                            "name": "Climate change, justice and vulnerability - November 2011",
+                            "description": "E-Book",
+                            "type": "pdf",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/support-docs/climate-change-justice-vulnerabilityEBOOK.pdf"
                         }
                     ]
                 }

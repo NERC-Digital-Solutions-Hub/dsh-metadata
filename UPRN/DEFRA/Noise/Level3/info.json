@@ -1,7 +1,7 @@
 {
     "tabGroups": [
         {
-            "title": "General",
+            "title": "Official Documents",
             "tabs": [
                 {
                     "title": "Information",
@@ -24,6 +24,8 @@
                     "title": "Supporting Documents",
                     "content": [
                         {
+                            "name": "Strategic noise mapping - July 2019",
+                            "description": "Explaining which noise sources were included in 2017 noise maps",
                             "type": "pdf",
                             "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/Noise/Level3/support-docs/strategic-noise-mapping-round3.pdf"
                         }
