@@ -1,0 +1,14 @@
+### Lack of Community Support (Community Support Characteristic)
+
+**Description:** 
+This field (alias: `Lack of community support`) represents one of the five core characteristics that make up the Neighbourhood Flood Vulnerability Index (NFVI). It measures the availability and quality of institutional and social help within a neighbourhood, which heavily influences the severity of harm a community will experience during and after a flood. A higher score in this field indicates a *lack* of support, translating to higher social vulnerability. 
+
+**Vulnerability Rationale / Components:** 
+Because a formal, direct measurement of "community cohesion" is difficult to obtain, this characteristic is gauged by looking at proxies for the nature of local support. It is constructed by combining indicators across four main domains:
+*   **Housing Characteristics:** The proportion of households living in caravans or other mobile/temporary structures, which offer less physical protection and indicate potentially weaker ties to the permanent community.
+*   **Direct Flood Experience:** The proportion of properties within the historical flood zone. Unlike other metrics, this is given a *negative* weighting in the index, because communities with more collective experience of past floods generally have more knowledge and better-established support networks to deal with future events.
+*   **Service Availability:** The likelihood that critical local community services—such as emergency services, care homes, GP surgeries, and schools—will remain available. If these are exposed to flood risk, institutional support is severely compromised.
+*   **Social Networks:** Demographic factors that indicate potential social isolation (such as high proportions of single-pensioner or lone-parent households) versus demographic factors that typically foster strong local community ties (such as the presence of primary school-age children).
+
+**Data Source and Calculation:** 
+This characteristic index is calculated by taking the data from the 27 underlying supporting variables for these four domains, transforming them into *z-scores*, and combining them assuming an equal weighting (with the notable exception of the 'direct flood experience' indicator, which is negatively weighted). The foundational data draws from the 2011 UK Census, Environment Agency historical flood zone outlines, and the 2015 Climate Change Risk Assessment (CCRA). The final data is mapped down to the neighbourhood level, corresponding to Lower Super Output Areas (LSOAs) in England and Wales, Data Zones (DZs) in Scotland, and Super Output Areas (SOAs) in Northern Ireland.

@@ -1,0 +1,18 @@
+{
+    "tabGroups": [
+        {
+            "title": "Official Documents",
+            "tabs": [
+                {
+                    "title": "Metadata",
+                    "content": [
+                        {
+                            "type": "md",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/md/climatejust_lsoas_uk_2011_flood_data/015_longtermunemployed.md"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
