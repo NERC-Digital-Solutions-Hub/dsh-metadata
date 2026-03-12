@@ -7,7 +7,8 @@
                     "title": "Information",
                     "content": [
                         {
-                            "type": "arcgisInfo"
+                            "type": "isoMetadata",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/MetOffice/AQREAN/gmd/aqrean.xml"
                         }
                     ]
                 },
