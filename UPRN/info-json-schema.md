@@ -75,13 +75,28 @@ Renders ArcGIS information for the dataset. This fetches the ArcGIS information 
 
 ---
 
-### XML Key Information
+### ArcGIS Portal Page
 
-Source to an XML document (e.g., metadata record). This parses the XML document in order to display key information (e.g., title, abstract, organisation, etc.).
+Source to an ArcGIS portal page. This parses the HTML in order to display key information (e.g., title, abstract, organisation, etc.).
 
 ```json
 {
-	"type": "xmlKeyInfo",
+	"type": "portalPage",
+	"source": "https://example.com/portal/home/item.html?id=123"
+}
+```
+
+- **source** _(string, required)_: Source to the portal page.
+
+---
+
+### ISO Metadata
+
+Source to an ISO XML document This parses the XML document in order to display key information (e.g., title, abstract, organisation, etc.).
+
+```json
+{
+	"type": "isoMetadata",
 	"source": "https://example.org/record.xml"
 }
 ```
