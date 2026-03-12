@@ -77,16 +77,16 @@ Renders ArcGIS information for the dataset. This fetches the ArcGIS information 
 
 ### ArcGIS Portal Page
 
-Source to an ArcGIS portal page. This parses the HTML in order to display key information (e.g., title, abstract, organisation, etc.).
+Source to an ArcGIS portal page JSON. This parses the HTML from the JSON in order to display key information (e.g., title, abstract, organisation, etc.).
 
 ```json
 {
 	"type": "portalPage",
-	"source": "https://example.com/portal/home/item.html?id=123"
+	"source": "https://example.com/portal/home/item.html?id=123?f=pjson"
 }
 ```
 
-- **source** _(string, required)_: Source to the portal page.
+- **source** _(string, required)_: Source to the portal page JSON.
 
 ---
 
