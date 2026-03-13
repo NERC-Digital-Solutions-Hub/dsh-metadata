@@ -7,7 +7,7 @@
                     "title": "Information",
                     "content": [
                         {
-                            "type": "arcgisInfo"
+                            "type": "isoMetadata"
                         }
                     ]
                 },
