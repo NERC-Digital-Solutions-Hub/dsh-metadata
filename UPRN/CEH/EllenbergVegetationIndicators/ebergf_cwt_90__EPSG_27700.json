@@ -5,14 +5,17 @@
             "tabs": [
                 {
                     "title": "Information",
+                    "type": "info",
                     "content": [
                         {
-                            "type": "arcgisInfo"
+                            "type": "isoMetadata",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/EllenbergVegetationIndicators/gmd/ebergf_cwt_90__EPSG_27700.xml"
                         }
                     ]
                 },
                 {
                     "title": "Metadata",
+                    "type": "metadata",
                     "content": [
                         {
                             "type": "xml",
@@ -22,6 +25,7 @@
                 },
                 {
                     "title": "Supporting Documents",
+                    "type": "sdoc",
                     "content": [
                         {
                             "type": "docx",
@@ -40,6 +44,7 @@
             "tabs": [
                 {
                     "title": "Infographics",
+                    "type": "infog",
                     "content": [
                         {
                             "type": "disclaimer",

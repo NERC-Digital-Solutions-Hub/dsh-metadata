@@ -5,14 +5,17 @@
             "tabs": [
                 {
                     "title": "Information",
+                    "type": "info",
                     "content": [
                         {
-                            "type": "arcgisInfo"
+                            "type": "portalPage",
+                            "source": "https://nercdsh.dev.azure.manchester.ac.uk/portal/sharing/rest/content/items/0c35df29fad8424b82d03289d2f9ad35?f=pjson"
                         }
                     ]
                 },
                 {
                     "title": "Metadata",
+                    "type": "metadata",
                     "content": [
                         {
                             "type": "xml",
@@ -27,6 +30,7 @@
             "tabs": [
                 {
                     "title": "Infographics",
+                    "type": "infog",
                     "content": [
                         {
                             "type": "disclaimer",

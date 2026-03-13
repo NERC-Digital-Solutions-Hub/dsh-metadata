@@ -5,14 +5,17 @@
             "tabs": [
                 {
                     "title": "Information",
+                    "type": "info",
                     "content": [
                         {
-                            "type": "arcgisInfo"
+                            "type": "isoMetadata",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/gmd/so2/so2__annual_mean__ug_m3__2011.xml"
                         }
                     ]
                 },
                 {
                     "title": "Metadata",
+                    "type": "metadata",
                     "content": [
                         {
                             "type": "xml",
@@ -27,6 +30,7 @@
             "tabs": [
                 {
                     "title": "Infographics",
+                    "type": "infog",
                     "content": [
                         {
                             "type": "disclaimer",
@@ -40,6 +44,7 @@
                 },
                 {
                     "title": "Slides",
+                    "type": "sdeck",
                     "content": [
                         {
                             "type": "disclaimer",

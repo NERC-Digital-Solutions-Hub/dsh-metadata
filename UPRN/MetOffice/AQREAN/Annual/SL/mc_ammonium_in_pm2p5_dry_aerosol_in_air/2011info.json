@@ -5,6 +5,7 @@
             "tabs": [
                 {
                     "title": "Information",
+                    "type": "info",
                     "content": [
                         {
                             "type": "arcgisInfo"
@@ -13,9 +14,10 @@
                 },
                 {
                     "title": "Metadata",
+                    "type": "metadata",
                     "content": [
                         {
-                            "type": "xml"
+                            "type": "xml",
                             "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/MetOffice/AQREAN/Annual/SL/mc_ammonium_in_pm2p5_dry_aerosol_in_air/gmd/2011.xml"
                         }
                     ]
@@ -27,6 +29,7 @@
             "tabs": [
                 {
                     "title": "Infographics",
+                    "type": "infog",
                     "content": [
                         {
                             "type": "disclaimer",

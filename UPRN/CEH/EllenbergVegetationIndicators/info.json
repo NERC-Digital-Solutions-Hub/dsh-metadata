@@ -5,14 +5,17 @@
             "tabs": [
                 {
                     "title": "Information",
+                    "type": "info",
                     "content": [
                         {
-                            "type": "arcgisInfo"
+                            "type": "portalPage",
+                            "source": "https://nercdsh.dev.azure.manchester.ac.uk/portal/sharing/rest/content/items/e23adb6b5e594439bc0736f165cffa65?f=pjson"
                         }
                     ]
                 },
                 {
                     "title": "Metadata",
+                    "type": "metadata",
                     "content": [
                         {
                             "type": "xml",
@@ -22,6 +25,7 @@
                 },
                 {
                     "title": "Supporting Documents",
+                    "type": "sdoc",
                     "content": [
                         {
                             "name": "Information - Version 1.0 12 Aug 2022",
@@ -44,6 +48,7 @@
             "tabs": [
                 {
                     "title": "Infographics",
+                    "type": "infog",
                     "content": [
                         {
                             "type": "disclaimer",
