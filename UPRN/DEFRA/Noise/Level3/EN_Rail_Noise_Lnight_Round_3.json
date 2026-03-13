@@ -8,7 +8,8 @@
                     "type": "info",
                     "content": [
                         {
-                            "type": "arcgisInfo"
+                            "type": "arcgisInfo",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/Noise/Level3/gmd/EN_Rail_Noise_Lnight_Round_3.xml"
                         }
                     ]
                 },
