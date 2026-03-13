@@ -5,6 +5,7 @@
             "tabs": [
                 {
                     "title": "Information",
+                    "type": "info",
                     "content": [
                         {
                             "type": "portalPage"
@@ -13,6 +14,7 @@
                 },
                 {
                     "title": "Metadata",
+                    "type": "metadata",
                     "content": [
                         {
                             "type": "xml",
@@ -27,6 +29,7 @@
             "tabs": [
                 {
                     "title": "Infographics",
+                    "type": "infog",
                     "content": [
                         {
                             "type": "disclaimer",
@@ -40,6 +43,7 @@
                 },
                 {
                     "title": "Slides",
+                    "type": "sdeck",
                     "content": [
                         {
                             "type": "disclaimer",
