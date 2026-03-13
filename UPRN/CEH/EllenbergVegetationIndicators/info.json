@@ -8,7 +8,8 @@
                     "type": "info",
                     "content": [
                         {
-                            "type": "arcgisInfo"
+                            "type": "portalPage",
+                            "source": "https://nercdsh.dev.azure.manchester.ac.uk/portal/sharing/rest/content/items/e23adb6b5e594439bc0736f165cffa65?f=pjson"
                         }
                     ]
                 },

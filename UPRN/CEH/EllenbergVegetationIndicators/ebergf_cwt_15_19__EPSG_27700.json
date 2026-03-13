@@ -8,7 +8,8 @@
                     "type": "info",
                     "content": [
                         {
-                            "type": "arcgisInfo"
+                            "type": "isoMetadata",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/CEH/EllenbergVegetationIndicators/gmd/ebergf_cwt_15_19__EPSG_27700.xml"
                         }
                     ]
                 },
