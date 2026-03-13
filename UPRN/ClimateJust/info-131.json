@@ -5,6 +5,7 @@
             "tabs": [
                 {
                     "title": "Metadata",
+                    "type": "mmetadatad",
                     "content": [
                         {
                             "type": "md",
