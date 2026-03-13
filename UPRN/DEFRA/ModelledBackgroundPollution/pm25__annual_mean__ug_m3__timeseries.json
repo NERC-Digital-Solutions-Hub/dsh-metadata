@@ -8,7 +8,8 @@
                     "type": "info",
                     "content": [
                         {
-                            "type": "portalPage"
+                            "type": "portalPage",
+                            "source": "https://nercdsh.dev.azure.manchester.ac.uk/portal/sharing/rest/content/items/d9583548d9b04c3db5f445d2604d912f?f=json"
                         }
                     ]
                 },
