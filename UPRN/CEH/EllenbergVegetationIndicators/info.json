@@ -5,6 +5,7 @@
             "tabs": [
                 {
                     "title": "Information",
+                    "type": "info",
                     "content": [
                         {
                             "type": "arcgisInfo"
@@ -13,6 +14,7 @@
                 },
                 {
                     "title": "Metadata",
+                    "type": "md",
                     "content": [
                         {
                             "type": "xml",
@@ -22,6 +24,7 @@
                 },
                 {
                     "title": "Supporting Documents",
+                    "type": "sdoc",
                     "content": [
                         {
                             "name": "Information - Version 1.0 12 Aug 2022",
@@ -44,6 +47,7 @@
             "tabs": [
                 {
                     "title": "Infographics",
+                    "type": "infog",
                     "content": [
                         {
                             "type": "disclaimer",
