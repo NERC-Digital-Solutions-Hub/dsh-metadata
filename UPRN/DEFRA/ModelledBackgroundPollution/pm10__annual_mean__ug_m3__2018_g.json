@@ -8,7 +8,8 @@
                     "type": "info",
                     "content": [
                         {
-                            "type": "isoMetadata"
+                            "type": "isoMetadata",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/DEFRA/ModelledBackgroundPollution/gmd/pm10/pm10__annual_mean__ug_m3__2018_g.xml"
                         }
                     ]
                 },
