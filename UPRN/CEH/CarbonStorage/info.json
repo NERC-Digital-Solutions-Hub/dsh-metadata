@@ -15,7 +15,7 @@
                 },
                 {
                     "title": "Metadata",
-                    "type": "md",
+                    "type": "metadata",
                     "content": [
                         {
                             "type": "xml",
