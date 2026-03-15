@@ -8,7 +8,8 @@
                     "type": "info",
                     "content": [
                         {
-                            "type": "arcgisInfo"
+                            "type": "isoMetadata",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/MetOffice/AQREAN/Annual/SL/daily_aqi_pm2p5_dry_aerosol/gmd/2004.xml"
                         }
                     ]
                 },
