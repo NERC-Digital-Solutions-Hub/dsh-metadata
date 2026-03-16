@@ -1,0 +1,23 @@
+{
+  "tabGroups": [
+    {
+      "title": "Official Documents",
+      "tabs": [
+        {
+          "title": "Metadata",
+          "type": "metadata",
+          "content": [
+            {
+              "type": "md",
+              "source": "https://nrc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/md/climatejust_lsoas_wa_2011_2022_v3_2022_data/109_sshvi.md"
+            },
+            {
+              "type": "md",
+              "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/info-204.json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
