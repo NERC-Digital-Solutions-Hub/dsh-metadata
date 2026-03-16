@@ -28,23 +28,24 @@
             </citation>
             <abstract>
                 <gco:CharacterString>
-                    The Climate Just spatial data suite consists of six primary feature layers that integrate high-resolution climate hazard projections with socio-economic vulnerability indicators to map climate disadvantage across the United Kingdom. These layers are designed to help public service providers identify who is vulnerable to extreme weather events, such as flooding and heatwaves, and which specific locations are most at risk of experiencing negative social impacts.
+                    The Climate Just spatial data suite consists of **six primary feature layers** that integrate high-resolution climate hazard projections with socio-economic vulnerability indicators to map climate disadvantage across the United Kingdom. These layers are designed to help public service providers identify who is vulnerable to extreme weather events, such as flooding and heatwaves, and which specific locations are most at risk of experiencing negative social impacts.
 
-                    Geographic and Spatial Scope The data are provided at multiple scales to support varied levels of decision-making:
+                    **Geographic and Spatial Scope**
+                    The data are provided at multiple scales to support varied levels of decision-making:
                     - National-scale 25km grids provide broad patterns for heat-related disadvantage in England and probabilistic climate projections (UKCP18) for the entire UK.
                     - Neighborhood-level data are mapped at the Middle Super Output Area (MSOA) and Lower Super Output Area (LSOA) levels. This includes comprehensive 2022 datasets for England and Wales and specific flood risk indexes for the UK.
 
-                    Thematic Components.
+                    **Thematic Components.**
                     The layers categorize climate risk through three primary lenses:
 
-                    1. Hazard Exposure: Utilizing UKCP09 and UKCP18 projections, the data map the likelihood of extreme events, including mean summer maximum temperatures, pluvial (surface water) flooding, and fluvial (river/coastal) flooding.
-                    2. Social Vulnerability: The data quantify the personal, social, and environmental factors—such as age, health, income, and community networks—that affect a population's ability to prepare for, respond to, and recover from climate impacts.
-                    3. Climate Disadvantage: By combining hazard exposure with socio-spatial vulnerability, these layers identify "hot spots" where extreme events are likely to have the most severe impacts on community wellbeing.
+                    1. **Hazard Exposure:** Utilizing UKCP09 and UKCP18 projections, the data map the likelihood of extreme events, including mean summer maximum temperatures, pluvial (surface water) flooding, and fluvial (river/coastal) flooding.
+                    2. **Social Vulnerability:** The data quantify the personal, social, and environmental factors—such as age, health, income, and community networks—that affect a population's ability to prepare for, respond to, and recover from climate impacts.
+                    3. **Climate Disadvantage:** By combining hazard exposure with socio-spatial vulnerability, these layers identify "hot spots" where extreme events are likely to have the most severe impacts on community wellbeing.
 
-                    Core Metrics and Indicators.
+                    **Core Metrics and Indicators.**
                     Key metrics within these layers include the Socio-Spatial Heat Vulnerability Index (SSHVI), the Neighbourhood Flood Vulnerability Index (NFVI), and the Social Flood Risk Index (SFRI). The datasets also incorporate a wide array of supporting indicators, such as internet access, pharmacy accessibility, and housing characteristics, which are provided as Z-scores to facilitate comparative analysis across different regions.
                     
-                    Temporal Range.
+                    **Temporal Range.**
                     The suite offers a temporal perspective on climate risk, featuring historical data from 1961 alongside future projections for several scenarios (e.g., +2°C and +4°C Global Mean Temperature rises) and epochs reaching into the 2050s and 2080s.
 
                     By synthesizing these diverse data sources, the Climate Just feature layers provide a robust evidence base for developing socially just adaptation strategies, ensuring that resources are prioritized for the communities that need them most.
