@@ -95,17 +95,17 @@
         </gmd:citation>
         <gmd:abstract>
           <gco:CharacterString>
-            This collection of seven feature layers represents the core spatial outputs of the 2017 (Round 3) strategic noise mapping project conducted by the Department for Environment, Food and Rural Affairs (Defra). These datasets were developed to fulfill the requirements of the Environmental Noise Directive (Directive 2002/49/EC) and the Environmental Noise (England) Regulations 2006, providing a high-level snapshot of estimated environmental noise from major road and rail sources across England.
+						This collection of **seven feature layers** represents the core spatial outputs of the 2017 (Round 3) strategic noise mapping project conducted by the Department for Environment, Food and Rural Affairs (Defra). These datasets were developed to fulfill the requirements of the Environmental Noise Directive (Directive 2002/49/EC) and the Environmental Noise (England) Regulations 2006, providing a high-level snapshot of estimated environmental noise from major road and rail sources across England.
 
-            The collection encompasses six noise exposure layers—three dedicated to road sources and three to rail sources—modeled according to three distinct annual average metrics:
+						The collection encompasses six noise exposure layers—three dedicated to road sources and three to rail sources—modeled according to three distinct annual average metrics:
 
-            - LAeq 16h: Daytime noise levels for the 16-hour period between 07:00 and 23:00.
-            - Lden: A 24-hour average noise level that applies separate weightings for evening and night periods to reflect increased sensitivity.
-            - Lnight: Night-time noise levels for the period between 23:00 and 07:00.
+						- **LAeq 16h:** Daytime noise levels for the 16-hour period between 07:00 and 23:00.
+						- **Lden:** A 24-hour average noise level that applies separate weightings for evening and night periods to reflect increased sensitivity.
+						- **Lnight:** Night-time noise levels for the period between 23:00 and 07:00.
 
-            The mapping scope focuses on agglomerations (urban areas with a population of at least 100,000) and major transport routes, including regional or national roads with over 3 million vehicle passages per year and rail sections with over 30,000 vehicle passages per year. These layers were produced using computer modeling techniques rather than field measurements, utilizing a 10m grid at a receptor height of 4m above ground to generate polygons categorized by decibel (dB) noise classes.
+						The mapping scope focuses on agglomerations (urban areas with a population of at least 100,000) and major transport routes, including regional or national roads with over 3 million vehicle passages per year and rail sections with over 30,000 vehicle passages per year. These layers were produced using computer modeling techniques rather than field measurements, utilizing a 10m grid at a receptor height of 4m above ground to generate polygons categorized by decibel (dB) noise classes.
 
-            Completing the collection is the Agglomerations feature layer, which spatially defines the 65 urban areas in England where Defra is required to perform this strategic mapping. As a whole, these datasets provide the essential evidence base for transport authorities, planners, and researchers to assess noise impacts and prioritize local management efforts through the development of Noise Action Plans.
+						Completing the collection is the Agglomerations feature layer, which spatially defines the 65 urban areas in England where Defra is required to perform this strategic mapping. As a whole, these datasets provide the essential evidence base for transport authorities, planners, and researchers to assess noise impacts and prioritize local management efforts through the development of Noise Action Plans.
           </gco:CharacterString>
         </gmd:abstract>
         <gmd:pointOfContact>

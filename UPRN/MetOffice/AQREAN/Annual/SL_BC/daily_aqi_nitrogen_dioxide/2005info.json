@@ -8,7 +8,8 @@
                     "type": "info",
                     "content": [
                         {
-                            "type": "arcgisInfo"
+                            "type": "isoMetadata",
+                            "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/MetOffice/AQREAN/Annual/SL_BC/daily_aqi_nitrogen_dioxide/gmd/2005.xml"
                         }
                     ]
                 },
