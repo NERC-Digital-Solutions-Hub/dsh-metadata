@@ -1,0 +1,13 @@
+The field 'Summer extreme Relative Z-score maximum temperature moderate emissions 20 year return period 2080 10th percentile' (internal name z_ar_tasmax_rcp45_rp20_2080_10p) represents the standardized low estimate of late-century temperatures during a 1-in-20 year extreme heatwave under RCP 4.5.
+Description
+This "All-Relative" Z-score converts the 10th percentile projection for the 2080 window (the 20-year average from 2070–2090) into a standardized score
+. It identifies neighbourhoods projected to face the minimum expected intensification of relative 5% annual-chance heat hazards toward the end of the century in a world that slowly transitions to a low-carbon future
+.
+Assumption: Mapping future relative hazard distributions helps prioritize long-term resilient infrastructure for vulnerable communities
+.
+Vulnerability Dimension: Standardized input for Hazard Exposure
+.
+Caveat: Late-century projections carry significant probabilistic uncertainty due to the long time scales and complex climate feedback mechanisms
+.
+Data Source: Standardized from UKCP18 late-century probabilistic data
+.
