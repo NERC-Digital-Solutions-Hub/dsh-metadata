@@ -1,0 +1,19 @@
+{
+  "tabGroups": [
+    {
+      "title": "Official Documents",
+      "tabs": [
+        {
+          "title": "Metadata",
+          "type": "metadata",
+          "content": [
+            {
+              "type": "md",
+              "source": "C:/NDSH/GitHub/dsh-metadata/dev/UPRN/ClimateJust/md/climatejust_grid_uk_ukcp18/104_z_all_rel_tas_rcp85_2049_50p.md"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

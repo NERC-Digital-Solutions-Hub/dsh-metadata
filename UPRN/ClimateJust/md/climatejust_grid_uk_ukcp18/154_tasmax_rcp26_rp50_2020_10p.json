@@ -1,0 +1,19 @@
+{
+  "tabGroups": [
+    {
+      "title": "Official Documents",
+      "tabs": [
+        {
+          "title": "Metadata",
+          "type": "metadata",
+          "content": [
+            {
+              "type": "md",
+              "source": "C:/NDSH/GitHub/dsh-metadata/dev/UPRN/ClimateJust/md/climatejust_grid_uk_ukcp18/154_tasmax_rcp26_rp50_2020_10p.md"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
