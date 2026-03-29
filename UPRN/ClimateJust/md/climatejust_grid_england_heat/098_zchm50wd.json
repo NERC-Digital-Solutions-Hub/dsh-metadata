@@ -1,0 +1,19 @@
+{
+  "tabGroups": [
+    {
+      "title": "Official Documents",
+      "tabs": [
+        {
+          "title": "Metadata",
+          "type": "metadata",
+          "content": [
+            {
+              "type": "md",
+              "source": "https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/md/climatejust_grid_england_heat/098_zchm50wd.md"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
