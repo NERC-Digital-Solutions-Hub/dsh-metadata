@@ -1,3 +1,14 @@
-# Change in temperature of the warmest night baseline to 2050s (10th percentile) (z-score)
+### Change in temperature of the warmest night baseline to 2050s (10th percentile) (z-score)
 
-**Internal name:** `zchh10wn`
+#### Description
+
+This metric identifies the minimum expected relative intensification of extreme night-time heat in a high emissions world.
+
+* **Internal name:** `zchh10wn`
+* **Hazard Metric:** Standardized z-score for the projected change in the temperature of the **warmest summer night** from the climate baseline to the 2050s.
+* **Statistical Context:** Uses a **high emissions scenario** (H50) and the **10th percentile (low estimate)**, where actual increases are 90% likely to be higher.
+
+
+#### Data Source
+
+Hazard-exposure indices are derived from the **UK Climate Projections 2009 (UKCP09)** probabilistic projections. Standardisation (z-scores) is relative to the **English mean**.

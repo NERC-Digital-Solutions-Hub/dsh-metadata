@@ -1,5 +1,9 @@
-# Average vulnerability and change in the temperature of the warmest day baseline to 2050s - Low estimate (10th percentile)
+### Average vulnerability and change in the temperature of the warmest day baseline to 2050s - Low estimate (10th percentile)
 
-**Internal name:** r_hzz_cv25
+#### Description
 
-Source: https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/md/climatejust_grid_england_heat/025_r_hzz_cv25.md
+(Internal name: `r_hzz_cv25`)
+
+This metric provides the minimum baseline of expected disadvantage from **peak extreme heat** intensification for a mid-range emissions pathway.
+*   **Hazard Metric:** The projected change in the temperature of the **warmest summer day** compared to the 1961–1990 baseline.
+*   **Statistical Context:** Uses a **medium emissions scenario** (M50) and the **10th percentile (low estimate)**.
