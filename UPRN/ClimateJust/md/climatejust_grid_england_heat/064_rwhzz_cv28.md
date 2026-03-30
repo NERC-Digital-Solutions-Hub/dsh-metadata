@@ -1,3 +1,10 @@
-# Population weighted vulnerability and change in the temperature of the warmest night baseline to 2050s - Low estimate (10th percentile)
+### Population weighted vulnerability and change in the temperature of the warmest night baseline to 2050s - Low estimate (10th percentile)
 
-**Internal name:** `rwhzz_cv28`
+#### Description
+
+(Internal name: `rwhzz_cv28`)
+
+This field combines population-weighted vulnerability with the minimum expected intensification of **extreme night-time heat** under **high global emissions** (H50).
+
+*   **Hazard Metric:** The projected change in the temperature of the **warmest summer night** from the 1961–1990 baseline to the 2050s.
+*   **Statistical Context:** Uses the **10th percentile (low estimate)**.

@@ -1,5 +1,9 @@
-# Average vulnerability and change in the temperature of the warmest day baseline to 2050s - Central estimate (50th percentile)
+### Average vulnerability and change in the temperature of the warmest day baseline to 2050s - Central estimate (50th percentile)
 
-**Internal name:** r_hzz_cv23
+#### Description
 
-Source: https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/md/climatejust_grid_england_heat/023_r_hzz_cv23.md
+(Internal name: `r_hzz_cv23`)
+
+This field identifies likely disadvantage from increases in **extreme mid-century peak heat** assuming successful global carbon mitigation.
+*   **Hazard Metric:** Change in the temperature of the warmest day baseline to 2050s.
+*   **Statistical Context:** Uses a **low emissions scenario** (L50) and the **50th percentile (central estimate)**.

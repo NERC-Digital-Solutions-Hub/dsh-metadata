@@ -1,5 +1,9 @@
-# Average vulnerability and mean summer maximum temperature 2050s - High estimate (90th percentile)
+### Average vulnerability and mean summer maximum temperature 2050s - High estimate (90th percentile)
 
-**Internal name:** r_hzz_cv9
+#### Description
 
-Source: https://nerc-digital-solutions-hub.github.io/dsh-metadata/UPRN/ClimateJust/md/climatejust_grid_england_heat/009_r_hzz_cv9.md
+(Internal name: `r_hzz_cv9`)
+
+This metric identifies areas of significant relative disadvantage under a mid-range emissions pathway if climate sensitivity is high.
+*   **Hazard Metric:** Mean summer maximum temperatures for the 2050s time horizon.
+*   **Statistical Context:** Uses a **medium emissions scenario** (M50) and the **90th percentile (high estimate)**.
