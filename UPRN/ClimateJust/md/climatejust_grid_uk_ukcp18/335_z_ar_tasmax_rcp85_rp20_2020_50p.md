@@ -1,1 +1,14 @@
-Median estimate current 1-in-20 year event (RCP 8.5).
+### Summer extreme Relative Z-score maximum temperature very high emissions 20 year return period 2020 median
+
+#### Description
+
+This **"All-Relative" Z-score** provides a standardized measure of the likely current severity of a 5% annual-chance daytime heat event in an unmitigated global emissions path. Standardizing across all scenarios highlights neighbourhoods that are currently "relatively hot" during these rare events compared to the dataset mean across all time periods and scenarios.
+
+* **Assumption:** Neighbourhood disadvantage is higher where high social vulnerability and intensified relative hazards for rare events converge.
+* **Vulnerability Dimension:** Standardized input for **Hazard Exposure**.
+* **Caveat:** While the median is a central estimate, absolute peak temperatures during an event may still exceed these standardized 20-year averages.
+* **Data Source:** Standardized from **UKCP18** current period probabilistic maximum temperature data.
+
+#### Interpretation
+
+This indicator is a relative Z-score. Higher values indicate greater relative exposure to extreme heat compared to the full dataset, while lower values indicate comparatively reduced exposure.

@@ -1,11 +1,14 @@
-The field **'Summer extreme Relative Z-score maximum temperature very high emissions 50 year return period 2080 90th percentile'** (internal name `z_ar_tasmax_rcp85_rp50_2080_90p`) represents .
+### Summer extreme Relative Z-score maximum temperature very high emissions 50 year return period 2080 90th percentile
 
-### **Description**
-This metric is an **"All-Relative" Z-score**, calculated using the mean and standard deviation across all scenarios and time periods in the dataset. It standardizes projected extreme heat conditions to enable comparison across time horizons and emissions pathways.
+#### Description
 
-It represents a probabilistic estimate (10th, 50th, or 90th percentile) of extreme daytime maximum temperatures during rare heat events, expressed relative to the overall dataset distribution.
+This **"All-Relative" Z-score** standardizes the high-end late-century projection for exceptionally rare 2% annual-chance daytime maximums against all other database scenarios. It identifies areas potentially facing catastrophic late-century relative extreme heat hazard exposure.
 
-* **Assumption:** Higher relative Z-scores indicate greater exposure to extreme heat hazards and increased potential for adverse health and well-being impacts.
-* **Vulnerability Dimension:** Standardized input for the **Hazard Exposure** component.
-* **Caveat:** Values are relative (unitless) and do not represent absolute temperatures in °C. Late-century projections carry greater uncertainty.
-* **Data Source:** Standardized from **UKCP18** probabilistic projections.
+* **Assumption:** Neighbourhoods with the highest relative maximum temperatures face the greatest challenge in protecting sensitive residents.
+* **Vulnerability Dimension:** Standardized input for **Hazard Exposure**.
+* **Caveat:** There is only a 10% probability that actual temperatures exceed these values.
+* **Data Source:** Standardized from **UKCP18** projections.
+
+#### Interpretation
+
+This indicator is a relative Z-score. Higher values indicate greater relative exposure to extreme heat compared to the full dataset, while lower values indicate comparatively reduced exposure.
