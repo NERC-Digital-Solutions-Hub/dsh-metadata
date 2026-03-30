@@ -1,9 +1,15 @@
-The field **'Summer extreme Relative Z-score maximum temperature high emissions 50 year return period 2050 90th percentile'** (internal name `z_ar_tasmax_rcp60_rp50_2050_90p`) represents the standardized high estimate of projected mid-century temperatures during a 1-in-50 year extreme heatwave under a high emissions scenario (RCP 6.0).
+### Summer extreme Relative Z-score maximum temperature high emissions 50 year return period 2050 90th percentile
 
-### **Description**
-This metric is an **"All-Relative" Z-score**, calculated across all scenarios and time periods. It converts the 90th percentile projection for mid-century (2040–2060) daytime maximums during a 2% annual-probability event into a standardized score.
+#### Description
 
-* **Assumption:** Higher relative temperatures indicate greater catastrophic heat risk.
-* **Vulnerability Dimension:** Hazard Exposure.
-* **Caveat:** Masks absolute Celsius values.
-* **Data Source:** UKCP18.
+This metric is an **"All-Relative" Z-score**, meaning it is calculated using the mean and standard deviation across all four considered temperature scenarios and all time periods in the database. It converts the 90th percentile (high estimate) projection for mid-century (2040–2060 window) daytime maximums during a very rare extreme event—one with only a 2% (1 in 50) annual probability—into a standardized score. This identifies neighbourhoods potentially facing acute mid-century extreme heat exposure relative to the entire dataset average if the climate responds aggressively to high emissions.
+
+*   **Assumption:** Higher relative temperatures signify a greater potential for residents to experience catastrophic heat-related health and welfare impacts.
+*   **Vulnerability Dimension:** Standardized input for the **Hazard Exposure** dimension.
+*   **Caveat:** Standardized scores highlight relative risk across all considered warming levels but mask absolute physical risk in degrees Celsius.
+*   **Data Source:** Standardized from **UKCP18** probabilistic projections.
+
+#### Interpretation
+
+This indicator is a relative Z-score. Higher values indicate greater relative exposure to extreme heat compared to the full dataset, while lower values indicate comparatively reduced exposure.
+

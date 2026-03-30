@@ -1,11 +1,14 @@
-The field **'Summer extreme Relative Z-score maximum temperature very high emissions 50 year return period 2050 10th percentile'** (internal name `z_ar_tasmax_rcp85_rp50_2050_10p`) represents .
+### Summer extreme Relative Z-score maximum temperature very high emissions 50 year return period 2050 10th percentile
 
-### **Description**
-This metric is an **"All-Relative" Z-score**, calculated using the mean and standard deviation across all scenarios and time periods in the dataset. It standardizes projected extreme heat conditions to enable comparison across time horizons and emissions pathways.
+#### Description
 
-It represents a probabilistic estimate (10th, 50th, or 90th percentile) of extreme daytime maximum temperatures during rare heat events, expressed relative to the overall dataset distribution.
+This **"All-Relative" Z-score** converts the **10th percentile (low estimate)** mid-century projection for very rare 2% annual-chance extreme events into a standardized score. It identifies neighbourhoods projected to face the minimum expected intensification of relative 50-year daytime heat hazards by the 2050s in a world where global fossil fuel use expands rapidly.
 
-* **Assumption:** Higher relative Z-scores indicate greater exposure to extreme heat hazards and increased potential for adverse health and well-being impacts.
-* **Vulnerability Dimension:** Standardized input for the **Hazard Exposure** component.
-* **Caveat:** Values are relative (unitless) and do not represent absolute temperatures in °C. Late-century projections carry greater uncertainty.
-* **Data Source:** Standardized from **UKCP18** probabilistic projections.
+* **Assumption:** Understanding the geographical distribution of future relative extreme hazards is essential for ensuring justice in adaptation planning.
+* **Vulnerability Dimension:** Standardized input for **Hazard Exposure**.
+* **Caveat:** Standardized scores simplify complex probabilistic data but mask absolute peak physical temperatures reached during specific heatwaves.
+* **Data Source:** Standardized from **UKCP18** mid-century probabilistic data.
+
+#### Interpretation
+
+This indicator is a relative Z-score. Higher values indicate greater relative exposure to extreme heat compared to the full dataset, while lower values indicate comparatively reduced exposure.

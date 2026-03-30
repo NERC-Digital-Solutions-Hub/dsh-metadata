@@ -1,11 +1,14 @@
-The field **'Summer extreme Relative Z-score maximum temperature very high emissions 50 year return period 2080 median'** (internal name `z_ar_tasmax_rcp85_rp50_2080_50p`) represents .
+### Summer extreme Relative Z-score maximum temperature very high emissions 50 year return period 2080 median
 
-### **Description**
-This metric is an **"All-Relative" Z-score**, calculated using the mean and standard deviation across all scenarios and time periods in the dataset. It standardizes projected extreme heat conditions to enable comparison across time horizons and emissions pathways.
+#### Description
 
-It represents a probabilistic estimate (10th, 50th, or 90th percentile) of extreme daytime maximum temperatures during rare heat events, expressed relative to the overall dataset distribution.
+This **"All-Relative" Z-score** provides a standardized measure of the likely late-century hottest part of an extremely rare 2% annual-chance extreme summer day. It identifies neighbourhoods facing the most acute intensification of relative hazards by the 2080s.
 
-* **Assumption:** Higher relative Z-scores indicate greater exposure to extreme heat hazards and increased potential for adverse health and well-being impacts.
-* **Vulnerability Dimension:** Standardized input for the **Hazard Exposure** component.
-* **Caveat:** Values are relative (unitless) and do not represent absolute temperatures in °C. Late-century projections carry greater uncertainty.
-* **Data Source:** Standardized from **UKCP18** probabilistic projections.
+* **Assumption:** Positive Z-scores highlight areas of increasing inequality due to climate change.
+* **Vulnerability Dimension:** Standardized input for the **Hazard Exposure** assessment.
+* **Caveat:** Values represent averages and do not capture peak event extremes.
+* **Data Source:** Standardized from **UKCP18** late-century projections.
+
+#### Interpretation
+
+This indicator is a relative Z-score. Higher values indicate greater relative exposure to extreme heat compared to the full dataset, while lower values indicate comparatively reduced exposure.
