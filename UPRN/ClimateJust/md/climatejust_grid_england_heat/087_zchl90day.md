@@ -1,18 +1,14 @@
-### zchl90day
+### Change in mean summer maximum temperature baseline to 2050s (90th percentile) (z-score)
 
-#### Description
+**Description:**
+This field represents a measure of **heat hazard-exposure** for a given 25km grid cell in England. It provides the projected change in the mean summer maximum temperature from the climate baseline (1961-1990) to the 2050s. The data has been standardized into a **z-score**. Specifically, this metric uses the "High estimate" or 90th percentile probability level from the climate projections.
 
-The following descriptions provide information for the specified fields in the **climatejust_grid_england_heat** dataset (Heat Disadvantage & Exposure Projections - England 25km Grid). Each field represents either a measure of **Heat Disadvantage** (combining vulnerability and hazard) or a standardized **Heat Hazard-Exposure** index.
+**Z-Score & Exposure Context:**
+Unlike raw temperature values (measured in degrees Celsius), a z-score is a statistical measurement that shows how an individual grid cell's projected temperature change relates to the average (mean) value across the entire country. This standardization process is used to provide a uniform scale so that the physical heat exposure data can be equally weighted and added to socio-spatial heat vulnerability scores to calculate the final combined "heat disadvantage" indices. 
 
-### **Heat Disadvantage Metrics (Population-Weighted)**
-These fields combine **population-weighted socio-spatial vulnerability** with the projected intensification of extreme night-time heat. Population-weighting identifies areas where larger numbers of sensitive people are likely to be affected.
+**Interpretation:**
+*   **High positive values:** Denote grid cells where the projected increase in the mean summer maximum temperature is higher than the English average, indicating a greater relative physical potential for exposure to rising temperatures. 
+*   **90th Percentile Context:** Because climate models have inherent uncertainties, the UK Climate Projections 2009 (UKCP09) provide probabilistic estimates. The "90th percentile" represents a high-end estimate for the temperature change, meaning that the projected temperature increases are 90% likely to be *below* this threshold. 
 
-### **Standardized Heat Hazard-Exposure Indices (Absolute Temperatures)**
-These fields provide **standardized z-scores** for mean summer maximum temperatures in the 2050s (the 20-year window centered on 2050). Z-scores allow for direct comparison between different locations, identifying relative hazard levels from "slight" to "acute".
-
-### **Standardized Heat Hazard-Exposure Indices (Temperature Change)**
-These fields provide **standardized z-scores** for the projected **change** in mean summer maximum temperatures from the 1961–1990 climate baseline to the 2050s. They highlight areas where the future intensification of heat hazards is relatively high or low compared to the English average.
-
-### **Data Source**
-Hazard-exposure data are derived from the **UK Climate Projections 2009 (UKCP09)**. Socio-spatial vulnerability components are based on neighbourhood-level scores from the **2011 Census**.
-
+**Data Source:**
+This field is derived from the UK Climate Projections 2009 (UKCP09) 25km grid data for the 2050s. In the dataset, these probabilistic z-score indicators are calculated across low, medium, and high emissions scenarios.
