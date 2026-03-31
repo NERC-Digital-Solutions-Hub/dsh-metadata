@@ -1,14 +1,13 @@
 ### Population weighted vulnerability and change in the temperature of the warmest day baseline to 2050s - Central estimate (50th percentile)
 
-**Description:**
-This field represents a measure of **heat disadvantage** for a given 25km grid cell in England. It is calculated as an equally-weighted combination of the *population-weighted* socio-spatial heat vulnerability score (aggregated from local neighbourhoods) and the projected change in the temperature of the warmest summer day from the climate baseline (1961-1990) to the 2050s. Specifically, this metric uses the "Central estimate" or 50th percentile probability level from the climate projections.
+This field measures **heat disadvantage**, which identifies geographic "hot spots" where a community’s underlying social vulnerability intersects with the projected physical change in heat exposure. It accounts for both the likelihood of a neighborhood experiencing increased extreme temperatures and the potential severity of negative impacts on community health and wellbeing.
 
-**Vulnerability Context:**
-Heat disadvantage maps evaluate how heat-related social vulnerability combines with the physical potential for exposure to heat-related events. The goal is to account for both the likelihood of a community coming into contact with high temperatures and the severity of negative health and wellbeing impacts that could occur as a result of that contact. Using a *population-weighted* vulnerability score means that the neighbourhood (MSOA) data allocated to the 25km grid accounts for where populations are actually concentrated within that grid cell by using population-weighted centre-points. 
+#### Description
 
-**Interpretation:**
-*   **High values:** Denote areas of high climate disadvantage, where a highly socially vulnerable population geographically coincides with larger projected increases in the temperature of the warmest summer day. 
-*   **50th Percentile Context:** Because climate models have inherent uncertainties, the UK Climate Projections 2009 (UKCP09) provide probabilistic estimates. The "50th percentile" represents the central estimate or median for the expected temperature change. Projections at this central probability level for the medium emissions scenario are generally provided as a recommended starting point for assessing future climate disadvantage.
+The metric represents an equally weighted combination of socio-spatial vulnerability and projected temperature change, provided as a **standardized score (z-score)** relative to the English average:
 
-**Data Source:**
-This field combines social vulnerability indicators (mapped originally at the MSOA level using Census and other data) with the UK Climate Projections 2009 (UKCP09) 25km grid data for the 2050s.
+* **Population Weighted Vulnerability:** This component represents **socio-spatial heat vulnerability** aggregated to a 25km grid cell. It is calculated by taking the social vulnerability scores of neighborhoods (MSOAs), which account for sensitivity, housing characteristics, and adaptive capacity, and allocating them to grid cells using their **population-weighted centre-points**. This ensures the vulnerability score for a 25km area more accurately reflects where the population is actually located within that cell.
+* **Change in the Temperature of the Warmest Day baseline to 2050s:** This hazard-exposure metric focuses on the projected **increase** in temperature for the single hottest day of the summer. The "change" is measured from the 1961–1990 climate baseline to the **2050s** time horizon, which represents the 20-year average for the period from **2040–2060**.
+* **Central Estimate (50th Percentile):** Based on **UKCP09 probabilistic projections**, this represents the **median scenario**, indicating there is an equal probability that actual temperature changes will be higher or lower than this threshold.
+* **RECOMMENDED:** This combination of the medium emissions scenario and the central estimate is explicitly identified by mapping guidance as the **recommended starting point** for assessing future heat risks.
+* **Standardization:** The final value is provided as a **z-score**, indicating how many standard deviations a grid cell deviates from the **English average**. A score of 0 represents the national mean; **higher positive values** indicate higher levels of climate disadvantage relative to the rest of the country.
