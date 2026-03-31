@@ -1,10 +1,12 @@
 ### Population weighted vulnerability and change in the temperature of the warmest day baseline to 2050s - High estimate (90th percentile)
 
+This field measures **heat disadvantage**, which identifies geographic "hot spots" where a community’s underlying social vulnerability intersects with the projected physical change in heat exposure. It identifies areas where communities are most likely to experience negative health and wellbeing impacts due to projected increases in extreme summer temperatures.
+
 #### Description
 
-(Internal name: `rwhzz_cv27`)
+The metric represents an equally-weighted combination of socio-spatial vulnerability and projected temperature change, provided as a **standardized score (z-score)** relative to the English average:
 
-This metric identifies significant population-weighted disadvantage driven by high-end intensification of **extreme peak heat** under a **medium emissions pathway** (M50).
-
-*   **Hazard Metric:** Change in the temperature of the warmest day baseline to 2050s.
-*   **Statistical Context:** Uses the **90th percentile (high estimate)**.
+* **Population Weighted Vulnerability:** This component represents **socio-spatial heat vulnerability** aggregated to a 25km grid cell. It is calculated using the **population-weighted centre-points** of neighborhoods (MSOAs) to allocate social vulnerability scores, based on factors like sensitivity (age and health), enhanced exposure (housing and environment), and the ability to prepare, respond, and recover, to the corresponding grid cell. This method ensures the vulnerability score for a 25km area more accurately reflects where the population is actually located within that cell.
+* **Change in the Temperature of the Warmest Day baseline to 2050s:** This hazard-exposure metric focuses on the projected **increase** in temperature for the single hottest day of the summer. The "change" is measured from the 1961–1990 climate baseline to the **2050s** time horizon, which represents the 20-year average for the period from **2040–2060**.
+* **High Estimate (90th Percentile):** Based on **UKCP09 probabilistic projections**, this represents a "high" or cautious estimate scenario. Statistically, it indicates there is a **90% probability** that the actual increase in temperature for the warmest day will be **below** this threshold.
+* **Standardization:** The final value is provided as a **z-score**, indicating how many standard deviations a grid cell deviates from the **English average**. A score of 0 represents the national mean; **higher positive values** indicate higher levels of climate disadvantage relative to the rest of the country.

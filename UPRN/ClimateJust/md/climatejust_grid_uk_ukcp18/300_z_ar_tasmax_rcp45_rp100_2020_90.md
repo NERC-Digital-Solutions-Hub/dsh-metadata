@@ -12,4 +12,3 @@ This metric is an **"All-Relative" Z-score**, meaning it is calculated using the
 #### Interpretation
 
 This indicator is a relative Z-score. Higher values indicate greater relative exposure to extreme heat compared to the full dataset, while lower values indicate comparatively reduced exposure.
-

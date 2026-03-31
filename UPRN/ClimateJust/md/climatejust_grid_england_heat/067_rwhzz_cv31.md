@@ -1,18 +1,12 @@
-### rwhzz_cv31
+### Population weighted vulnerability and change in the temperature of the warmest night baseline to 2050s - Low estimate (10th percentile)
+
+This field measures **heat disadvantage**, identifying geographic "hot spots" where a community’s underlying social vulnerability intersects with the projected physical change in heat exposure. It accounts for both the likelihood of neighborhoods experiencing increased extreme temperatures and the potential severity of negative impacts on community health and wellbeing.
 
 #### Description
 
-The following descriptions provide information for the specified fields in the **climatejust_grid_england_heat** dataset (Heat Disadvantage & Exposure Projections - England 25km Grid). Each field represents either a measure of **Heat Disadvantage** (combining vulnerability and hazard) or a standardized **Heat Hazard-Exposure** index.
+The metric represents an equally weighted combination of socio-spatial vulnerability and projected temperature change, provided as a **standardized score (z-score)** relative to the average for England:
 
-### **Heat Disadvantage Metrics (Population-Weighted)**
-These fields combine **population-weighted socio-spatial vulnerability** with the projected intensification of extreme night-time heat. Population-weighting identifies areas where larger numbers of sensitive people are likely to be affected.
-
-### **Standardized Heat Hazard-Exposure Indices (Absolute Temperatures)**
-These fields provide **standardized z-scores** for mean summer maximum temperatures in the 2050s (the 20-year window centered on 2050). Z-scores allow for direct comparison between different locations, identifying relative hazard levels from "slight" to "acute".
-
-### **Standardized Heat Hazard-Exposure Indices (Temperature Change)**
-These fields provide **standardized z-scores** for the projected **change** in mean summer maximum temperatures from the 1961–1990 climate baseline to the 2050s. They highlight areas where the future intensification of heat hazards is relatively high or low compared to the English average.
-
-### **Data Source**
-Hazard-exposure data are derived from the **UK Climate Projections 2009 (UKCP09)**. Socio-spatial vulnerability components are based on neighbourhood-level scores from the **2011 Census**.
-
+* **Population Weighted Vulnerability:** This component represents **socio-spatial heat vulnerability** aggregated to a 25km grid cell. It is calculated by taking the social vulnerability scores of neighborhoods (MSOAs), which account for sensitivity (age and health), enhanced exposure (housing and environment), and adaptive capacity (the ability to prepare, respond, and recover), and allocating them to grid cells using their **population-weighted centre-points**. This method ensures the vulnerability score for a 25km area more accurately reflects where the population is actually located within that cell.
+* **Change in the Temperature of the Warmest Night baseline to 2050s:** This hazard-exposure metric focuses on the projected **increase** in temperature for the single hottest night of the summer. The "change" is measured from the 1961–1990 climate baseline to the **2050s** time horizon, which represents the 20-year average for the period from **2040–2060**.
+* **Low Estimate (10th Percentile):** Based on **UKCP09 probabilistic projections**, this represents a conservative or "low estimate" scenario. Statistically, it indicates there is a **90% probability** that the actual increase in temperature for the warmest night will be **higher** than this threshold.
+* **Standardization:** The final value is provided as a **z-score**, which measures how many standard deviations an individual grid cell deviates from the **English average**. A score of 0 represents the national mean; **higher positive values** indicate higher levels of climate disadvantage relative to the rest of the country.

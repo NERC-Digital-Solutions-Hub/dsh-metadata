@@ -1,18 +1,18 @@
-### zabsl10day
+### Mean summer maximum temperature 2050s (10th percentile) (z-score)
 
 #### Description
 
-The following descriptions provide information for the specified fields in the **climatejust_grid_england_heat** dataset (Heat Disadvantage & Exposure Projections - England 25km Grid). Each field represents either a measure of **Heat Disadvantage** (combining vulnerability and hazard) or a standardized **Heat Hazard-Exposure** index.
+This field represents a measure of **heat hazard-exposure** for a given 25km grid cell in England. It provides the projected mean summer maximum temperature for the 2050s, which has been standardized into a **z-score**. Specifically, this metric uses the "Low estimate" or 10th percentile probability level from the climate projections.
 
-### **Heat Disadvantage Metrics (Population-Weighted)**
-These fields combine **population-weighted socio-spatial vulnerability** with the projected intensification of extreme night-time heat. Population-weighting identifies areas where larger numbers of sensitive people are likely to be affected.
+#### Z-Score & Exposure Context
 
-### **Standardized Heat Hazard-Exposure Indices (Absolute Temperatures)**
-These fields provide **standardized z-scores** for mean summer maximum temperatures in the 2050s (the 20-year window centered on 2050). Z-scores allow for direct comparison between different locations, identifying relative hazard levels from "slight" to "acute".
+Unlike raw temperature values, a z-score is a statistical measurement that shows how an individual grid cell's projected temperature relates to the average (mean) value across the entire country. This standardization process is used to provide a uniform scale so that physical heat exposure data can be added to socio-spatial heat vulnerability scores to calculate the final "heat disadvantage" indices.
 
-### **Standardized Heat Hazard-Exposure Indices (Temperature Change)**
-These fields provide **standardized z-scores** for the projected **change** in mean summer maximum temperatures from the 1961–1990 climate baseline to the 2050s. They highlight areas where the future intensification of heat hazards is relatively high or low compared to the English average.
+#### Interpretation
 
-### **Data Source**
-Hazard-exposure data are derived from the **UK Climate Projections 2009 (UKCP09)**. Socio-spatial vulnerability components are based on neighbourhood-level scores from the **2011 Census**.
+* **High positive values:** Denote grid cells where the projected mean summer maximum temperature is significantly higher than the English average, indicating a greater physical potential for exposure to high temperatures.
+* **10th Percentile Context:** Because climate models have inherent uncertainties, the UK Climate Projections 2009 (UKCP09) provide probabilistic estimates. The "10th percentile" represents a low-end estimate for the temperature, meaning that projected temperatures are 90% likely to be *above* this threshold.
 
+#### Data Source
+
+This field is derived from the UK Climate Projections 2009 (UKCP09) 25km grid data for the 2050s. In the dataset, these z-score indicators are calculated across low, medium, and high emissions scenarios.
