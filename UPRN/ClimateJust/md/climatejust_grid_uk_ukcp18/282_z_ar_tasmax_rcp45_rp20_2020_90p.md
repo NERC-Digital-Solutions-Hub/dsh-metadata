@@ -12,4 +12,3 @@ This **"All-Relative" Z-score** converts the 90th percentile (high estimate) of 
 #### Interpretation
 
 This indicator is a relative Z-score. Higher values indicate greater relative exposure to extreme heat compared to the full dataset, while lower values indicate comparatively reduced exposure.
-
