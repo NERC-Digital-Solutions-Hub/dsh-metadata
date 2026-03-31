@@ -1,9 +1,12 @@
 ### Average vulnerability and mean summer maximum temperature 2050s - Central estimate (50th percentile)
 
+This field measures **heat disadvantage**, which is the result of an equally-weighted combination of community characteristics (socio-spatial vulnerability) and projected physical heat exposure. It identifies geographic "hot spots" where high social vulnerability coincides with a high likelihood of exposure to extreme heat, indicating where negative impacts on health and wellbeing are most probable.
+
 #### Description
 
-(Internal name: `r_hzz_cv5`)
+The metric consists of two primary elements, standardized as a z-score to allow for national comparison:
 
-This field represents the likely heat disadvantage by mid-century assuming global emissions are successfully mitigated.
-*   **Hazard Metric:** Mean summer maximum temperatures for the 2050s time horizon.
-*   **Statistical Context:** Uses a **low emissions scenario** (L50) and the **50th percentile (central estimate)**, representing the median probabilistic outcome.
+* **Average Vulnerability:** This component is the simple mean of **socio-spatial heat vulnerability** scores for all neighborhoods (MSOAs) located within a specific **25km grid cell** across England. It reflects the personal, social, and environmental factors—such as age, health, and housing—that determine a community's ability to prepare for, respond to, and recover from heat events.
+* **Mean Summer Maximum Temperature (2050s):** This hazard-exposure metric utilizes projections for average daily maximum temperatures during the summer months (June, July, and August) for the **2050s** time horizon.
+* **Central Estimate (50th Percentile):** Based on **UKCP09 probabilistic projections**, this represents the **median scenario**, where there is an equal probability that actual temperatures will be higher or lower than this threshold. This is the recommended starting point for assessing future heat risks.
+* **Standardization:** The final value is provided as a **standardized score (z-score)**. This indicates how far a grid cell deviates from the English average, with higher positive values representing higher levels of climate disadvantage relative to the rest of the country.
