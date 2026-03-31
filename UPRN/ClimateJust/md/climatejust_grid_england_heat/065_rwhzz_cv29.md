@@ -1,10 +1,14 @@
-### Population weighted vulnerability and change in the temperature of the warmest night baseline to 2050s - Central estimate (50th percentile)
+### Population weighted vulnerability and change in the temperature of the warmest night baseline to 2050s - Central estimate (50th percentile) RECOMMENDED
 
-#### Description
+**Description:**
+This field represents a measure of **heat disadvantage** for a given 25km grid cell in England. It is calculated as an equally-weighted combination of the *population-weighted* socio-spatial heat vulnerability score (aggregated from local neighbourhoods) and the projected change in the temperature of the warmest summer night from the climate baseline (1961-1990) to the 2050s. Specifically, this metric uses the "Central estimate" or 50th percentile probability level for the medium emissions scenario from the climate projections. 
 
-(Internal name: `rwhzz_cv29`)
+**Vulnerability Context:**
+Heat disadvantage maps evaluate how heat-related social vulnerability combines with the physical potential for exposure to heat-related events. The goal is to account for both the likelihood of a community coming into contact with high temperatures and the severity of negative health and wellbeing impacts that could occur as a result of that contact. Using a *population-weighted* vulnerability score means that the neighbourhood (MSOA) data allocated to the 25km grid accounts for where populations are actually concentrated within that grid cell by using population-weighted centre-points. 
 
-This metric maps likely mid-century population-weighted disadvantage driven by the median projected increase in **extreme night-time temperatures** under **high global emissions** (H50).
+**Interpretation:**
+*   **High values:** Denote areas of high climate disadvantage, where a highly socially vulnerable population geographically coincides with larger projected increases in the temperature of the warmest summer night. 
+*   **50th Percentile & "RECOMMENDED" Context:** Because climate models have inherent uncertainties, the UK Climate Projections 2009 (UKCP09) provide probabilistic estimates. The "50th percentile" represents the central estimate or median for the expected temperature change. Projections at this central probability level for the medium emissions scenario are explicitly provided as a **recommended starting point** for assessing future climate disadvantage and are flagged as such in the dataset.
 
-*   **Hazard Metric:** Change in the temperature of the warmest night baseline to 2050s.
-*   **Statistical Context:** Uses the **50th percentile (central estimate)**.
+**Data Source:**
+This field combines social vulnerability indicators (mapped originally at the MSOA level using Census and other data) with the UK Climate Projections 2009 (UKCP09) 25km grid data for the 2050s.

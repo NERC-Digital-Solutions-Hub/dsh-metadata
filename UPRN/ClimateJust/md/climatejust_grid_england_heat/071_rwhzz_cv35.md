@@ -1,18 +1,14 @@
-### rwhzz_cv35
+### Population weighted vulnerability and change in the temperature of the warmest night baseline to 2050s - Central estimate (50th percentile) RECOMMENDED
 
-#### Description
+**Description:**
+This field represents a measure of **heat disadvantage** for a given 25km grid cell in England. It is calculated as an equally-weighted combination of the *population-weighted* socio-spatial heat vulnerability score (aggregated from local neighbourhoods) and the projected change in the temperature of the warmest summer night from the climate baseline (1961-1990) to the 2050s. Specifically, this metric uses the "Central estimate" or 50th percentile probability level for the medium emissions scenario from the climate projections.
 
-The following descriptions provide information for the specified fields in the **climatejust_grid_england_heat** dataset (Heat Disadvantage & Exposure Projections - England 25km Grid). Each field represents either a measure of **Heat Disadvantage** (combining vulnerability and hazard) or a standardized **Heat Hazard-Exposure** index.
+**Vulnerability Context:**
+Heat disadvantage maps evaluate how heat-related social vulnerability combines with the physical potential for exposure to heat-related events. The goal is to account for both the likelihood of a community coming into contact with high temperatures and the severity of negative health and wellbeing impacts that could occur as a result of that contact. Using a *population-weighted* vulnerability score means that the neighbourhood (MSOA) data allocated to the 25km grid accounts for where populations are actually concentrated within that grid cell by using population-weighted centre-points. 
 
-### **Heat Disadvantage Metrics (Population-Weighted)**
-These fields combine **population-weighted socio-spatial vulnerability** with the projected intensification of extreme night-time heat. Population-weighting identifies areas where larger numbers of sensitive people are likely to be affected.
+**Interpretation:**
+*   **High values:** Denote areas of high climate disadvantage, where a highly socially vulnerable population geographically coincides with larger projected increases in the temperature of the warmest summer night. 
+*   **50th Percentile & "RECOMMENDED" Context:** Because climate models have inherent uncertainties, the UK Climate Projections 2009 (UKCP09) provide probabilistic estimates. The "50th percentile" represents the central estimate or median for the expected temperature change. Projections at this central probability level for the medium emissions scenario are explicitly provided as a **recommended starting point** for assessing future climate disadvantage and are flagged as such in the dataset.
 
-### **Standardized Heat Hazard-Exposure Indices (Absolute Temperatures)**
-These fields provide **standardized z-scores** for mean summer maximum temperatures in the 2050s (the 20-year window centered on 2050). Z-scores allow for direct comparison between different locations, identifying relative hazard levels from "slight" to "acute".
-
-### **Standardized Heat Hazard-Exposure Indices (Temperature Change)**
-These fields provide **standardized z-scores** for the projected **change** in mean summer maximum temperatures from the 1961–1990 climate baseline to the 2050s. They highlight areas where the future intensification of heat hazards is relatively high or low compared to the English average.
-
-### **Data Source**
-Hazard-exposure data are derived from the **UK Climate Projections 2009 (UKCP09)**. Socio-spatial vulnerability components are based on neighbourhood-level scores from the **2011 Census**.
-
+**Data Source:**
+This field combines social vulnerability indicators (mapped originally at the Middle Super Output Area or MSOA level using Census and other data) with the UK Climate Projections 2009 (UKCP09) 25km grid data for the 2050s.
