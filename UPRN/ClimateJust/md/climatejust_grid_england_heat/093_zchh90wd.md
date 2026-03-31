@@ -1,14 +1,18 @@
 ### Change in the temperature of the warmest day baseline to 2050s (90th percentile) (z-score)
 
-**Description:**
+#### Description
+
 This field represents a measure of **heat hazard-exposure** for a given 25km grid cell in England. It provides the projected change in the temperature of the warmest summer day from the climate baseline (1961-1990) to the 2050s. The data has been standardized into a **z-score**. Specifically, this metric uses the "High estimate" or 90th percentile probability level from the climate projections.
 
-**Z-Score & Exposure Context:**
+#### Z-Score & Exposure Context
+
 Unlike raw temperature values, a z-score is a statistical measurement that shows how an individual grid cell's projected temperature change relates to the average (mean) value across the entire country. This standardization process is used to provide a uniform scale so that the physical heat exposure data can be equally weighted and combined with socio-spatial heat vulnerability scores to calculate the final combined "heat disadvantage" indices.
 
-**Interpretation:**
-*   **High positive values:** Denote grid cells where the projected increase in the temperature of the warmest day is higher than the English average, indicating a greater relative physical potential for exposure to extreme heat events. 
-*   **90th Percentile Context:** Because climate models have inherent uncertainties, the UK Climate Projections 2009 (UKCP09) provide probabilistic estimates. The "90th percentile" represents a high-end estimate for the temperature change, meaning that the projected temperature increases are 90% likely to be *below* this threshold.
+#### Interpretation
 
-**Data Source:**
+* **High positive values:** Denote grid cells where the projected increase in the temperature of the warmest day is higher than the English average, indicating a greater relative physical potential for exposure to extreme heat events.
+* **90th Percentile Context:** Because climate models have inherent uncertainties, the UK Climate Projections 2009 (UKCP09) provide probabilistic estimates. The "90th percentile" represents a high-end estimate for the temperature change, meaning that the projected temperature increases are 90% likely to be *below* this threshold.
+
+#### Data Source
+
 This field is derived from the UK Climate Projections 2009 (UKCP09) 25km grid data for the 2050s. In the dataset, these probabilistic z-score indicators are calculated across low, medium, and high emissions scenarios.

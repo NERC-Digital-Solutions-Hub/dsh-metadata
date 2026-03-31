@@ -1,14 +1,18 @@
 ### Mean summer maximum temperature 2050s (90th percentile) (z-score)
 
-**Description:**
+#### Description
+
 This field represents a measure of **heat hazard-exposure** for a given 25km grid cell in England. It provides the projected mean summer maximum temperature for the 2050s, which has been standardized into a **z-score**. Specifically, this metric uses the "High estimate" or 90th percentile probability level from the climate projections.
 
-**Z-Score & Exposure Context:**
-Unlike raw temperature measurements, a z-score is a statistical value that demonstrates how an individual grid cell's projected temperature relates to the average (mean) value across the entire country. This standardization process is used to provide a uniform scale, which allows the physical heat exposure data to be equally weighted and added to socio-spatial heat vulnerability scores to calculate the final "heat disadvantage" indices. 
+#### Z-Score & Exposure Context
 
-**Interpretation:**
-*   **High positive values:** Denote grid cells where the projected mean summer maximum temperature is higher than the English average, indicating a greater physical potential for exposure to extreme high temperatures. 
-*   **90th Percentile Context:** Because climate models have inherent uncertainties, the UK Climate Projections 2009 (UKCP09) provide probabilistic estimates. The "90th percentile" represents a high-end estimate for the temperature, meaning that the projected temperatures are 90% likely to be *below* this threshold. 
+Unlike raw temperature measurements, a z-score is a statistical value that demonstrates how an individual grid cell's projected temperature relates to the average (mean) value across the entire country. This standardization process is used to provide a uniform scale, which allows the physical heat exposure data to be equally weighted and added to socio-spatial heat vulnerability scores to calculate the final "heat disadvantage" indices.
 
-**Data Source:**
+#### Interpretation
+
+* **High positive values:** Denote grid cells where the projected mean summer maximum temperature is higher than the English average, indicating a greater physical potential for exposure to extreme high temperatures.
+* **90th Percentile Context:** Because climate models have inherent uncertainties, the UK Climate Projections 2009 (UKCP09) provide probabilistic estimates. The "90th percentile" represents a high-end estimate for the temperature, meaning that the projected temperatures are 90% likely to be *below* this threshold.
+
+#### Data Source
+
 This field is derived from the UK Climate Projections 2009 (UKCP09) 25km grid data for the 2050s. In the dataset, these probabilistic estimates are calculated across low, medium, and high emissions scenarios.
